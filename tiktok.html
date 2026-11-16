@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikTok do dia · MinhaMoto</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#060b17;--card:#0e1628;--line:#1d2a45;--blue:#3d86ff;--txt:#e9eefb;--mut:#93a3c4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.4 -apple-system,Segoe UI,Inter,sans-serif}
+header{padding:20px 16px 8px}h1{margin:0;font-size:22px}h1 b{color:var(--blue)}
+.sub{color:var(--mut);font-size:14px;margin-top:4px}
+.dias{display:flex;gap:8px;padding:8px 16px;overflow-x:auto}
+.dias button{flex:0 0 auto;background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
+.dias button.on{background:var(--blue);border-color:var(--blue)}
+.post{margin:12px 16px 20px;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.post.feito{opacity:.45}
+.topo{display:flex;justify-content:space-between;align-items:center;padding:12px 14px}
+.hora{font-size:20px;font-weight:800}.hora small{font-size:13px;color:var(--mut);font-weight:500;margin-left:6px}
+.tag{font-size:12px;padding:4px 10px;border-radius:999px;background:#1a2a4d;color:#9fc1ff}
+.tag.agora{background:#ff3b5c;color:#fff}
+.imgs{display:flex;gap:6px;overflow-x:auto;padding:0 14px 10px;scroll-snap-type:x mandatory}
+.imgs img{height:220px;border-radius:10px;scroll-snap-align:start;background:#111}
+.leg{margin:0 14px;padding:10px 12px;background:#0a1120;border:1px solid var(--line);border-radius:10px;font-size:14px;white-space:pre-wrap}
+.acoes{display:flex;gap:8px;padding:12px 14px 14px;flex-wrap:wrap}
+.acoes button{flex:1 1 30%;min-width:100px;border:0;border-radius:12px;padding:12px 8px;font-weight:700;font-size:14px;color:#fff;background:#1d2a45}
+.acoes .pri{background:var(--blue)}.acoes .ok{background:#1f8a4c}
+.msg{color:var(--mut);text-align:center;padding:30px 16px}
+</style></head><body>
+<header><h1>TikTok do dia · <b>MinhaMoto</b></h1><div class="sub" id="sub">Carregando…</div></header>
+<div class="dias" id="dias"></div><main id="lista"></main>
+<script>
+const HORARIOS=[12,15,18,21];
+const hojeBR=()=>{const d=new Date(Date.now()-3*3600e3);return d.toISOString().slice(0,10)};
+const lsGet=k=>{try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let fila=[],estado={},plano={},diaSel=hojeBR();
+async function carregar(){
+ const [f,e]=await Promise.all([fetch('fila/carrosseis.json?'+Date.now()).then(r=>r.json()),fetch('fila/estado.json?'+Date.now()).then(r=>r.json())]);
+ fila=f;estado=e;montarPlano();desenhar();
+}
+function montarPlano(){
+ // dias já publicados no Instagram: agrupa pela data (Brasília) da publicação
+ plano={};const pub=estado.publicados||{};
+ const feitos=fila.filter(p=>pub[p.id]&&pub[p.id].ig).map(p=>({p,t:new Date(new Date(pub[p.id].ig.em).getTime()-3*3600e3)}));
+ feitos.forEach(({p,t})=>{const d=t.toISOString().slice(0,10);(plano[d]=plano[d]||[]).push({p,hora:null,t})});
+ Object.values(plano).forEach(l=>{l.sort((a,b)=>a.t-b.t);l.forEach(x=>{const h=x.t.getUTCHours();x.hora=HORARIOS.filter(H=>H<=h).pop()??HORARIOS[0]})});
+ // próximos da fila: completa hoje e os próximos 6 dias nos horários livres
+ let pend=fila.filter(p=>!(pub[p.id]&&pub[p.id].ig));let d=new Date(hojeBR()+'T00:00:00Z');
+ const agoraH=new Date(Date.now()-3*3600e3).getUTCHours()+new Date(Date.now()-3*3600e3).getUTCMinutes()/60;
+ for(let i=0;i<7&&pend.length;i++){const ds=d.toISOString().slice(0,10);const l=plano[ds]=plano[ds]||[];
+  const usados=l.map(x=>x.hora);
+  for(const H of HORARIOS){if(!pend.length)break;if(usados.includes(H))continue;if(i===0&&H+2<=agoraH)continue;l.push({p:pend.shift(),hora:H,prev:true})}
+  l.sort((a,b)=>a.hora-b.hora);d=new Date(d.getTime()+864e5)}
+}
+function desenhar(){
+ const dias=Object.keys(plano).filter(d=>d>=hojeBR()).sort().slice(0,7);
+ if(!dias.includes(diaSel))diaSel=dias[0]||hojeBR();
+ const nome=d=>{const dt=new Date(d+'T12:00:00Z');const h=hojeBR();if(d===h)return'Hoje';const am=new Date(new Date(h+'T12:00:00Z').getTime()+864e5).toISOString().slice(0,10);if(d===am)return'Amanhã';return dt.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit',timeZone:'UTC'})};
+ document.getElementById('dias').innerHTML=dias.map(d=>`<button class="${d===diaSel?'on':''}" data-d="${d}">${nome(d)}</button>`).join('');
+ document.querySelectorAll('#dias button').forEach(b=>b.onclick=()=>{diaSel=b.dataset.d;desenhar()});
+ const l=plano[diaSel]||[];const feitosTT=lsGet('tt_feitos')||{};
+ const agoraH=new Date(Date.now()-3*3600e3).getUTCHours();
+ document.getElementById('sub').textContent=`${l.length} posts · ${l.filter(x=>feitosTT[x.p.id]).length} já no TikTok`;
+ document.getElementById('lista').innerHTML=l.length?l.map((x,i)=>{const feito=feitosTT[x.p.id];const agora=diaSel===hojeBR()&&x.hora<=agoraH&&agoraH<x.hora+3&&!feito;
+  return `<section class="post ${feito?'feito':''}"><div class="topo"><div class="hora">${x.hora}h<small>${x.p.titulo}</small></div><span class="tag ${agora?'agora':''}">${feito?'Postado ✓':agora?'Postar agora':'Na fila'}</span></div>
+  <div class="imgs">${x.p.cards.map(c=>`<img src="${c}" loading="lazy">`).join('')}</div>
+  <div class="leg">${x.p.legenda_tiktok.replace(/</g,'&lt;')}</div>
+  <div class="acoes"><button class="pri" data-salvar="${i}">Salvar ${x.p.cards.length} imagens</button><button data-copiar="${i}">Copiar legenda</button><button class="ok" data-feito="${i}">${feito?'Desmarcar':'Marcar postado'}</button></div></section>`}).join(''):'<div class="msg">Nada programado pra esse dia.</div>';
+ document.querySelectorAll('[data-copiar]').forEach(b=>b.onclick=async()=>{const p=l[b.dataset.copiar].p;try{await navigator.clipboard.writeText(p.legenda_tiktok);b.textContent='Copiada ✓'}catch(e){b.textContent='Segure o texto pra copiar'}});
+ document.querySelectorAll('[data-feito]').forEach(b=>b.onclick=()=>{const p=l[b.dataset.feito].p;const f=lsGet('tt_feitos')||{};f[p.id]?delete f[p.id]:f[p.id]=Date.now();lsSet('tt_feitos',f);desenhar()});
+ document.querySelectorAll('[data-salvar]').forEach(b=>b.onclick=async()=>{const p=l[b.dataset.salvar].p;b.textContent='Preparando…';
+  try{const files=await Promise.all(p.cards.map(async(c,n)=>{const bl=await (await fetch(c)).blob();return new File([bl],`${p.id}-${String(n+1).padStart(2,'0')}.jpg`,{type:'image/jpeg'})}));
+   if(navigator.canShare&&navigator.canShare({files})){await navigator.share({files});b.textContent='Pronto ✓'}
+   else{files.forEach(f=>{const a=document.createElement('a');a.href=URL.createObjectURL(f);a.download=f.name;a.click()});b.textContent='Baixadas ✓'}}
+  catch(e){b.textContent='Segure cada imagem pra salvar'}});
+}
+carregar().catch(e=>{document.getElementById('sub').textContent='Erro ao carregar a fila.'});
+</script></body></html>
