@@ -122,8 +122,11 @@ def main(path):
 
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
-        b = pw.chromium.launch(executable_path='/usr/bin/google-chrome',
-                               args=['--no-sandbox', '--force-color-profile=srgb'])
+        args = ['--no-sandbox', '--force-color-profile=srgb']
+        if os.path.exists('/usr/bin/google-chrome'):
+            b = pw.chromium.launch(executable_path='/usr/bin/google-chrome', args=args)
+        else:  # fallback: chromium do playwright (playwright install chromium)
+            b = pw.chromium.launch(args=args)
         pg = b.new_page(viewport={'width': 1080, 'height': 1350})
         for i, card in enumerate(rot['cards'], 1):
             doc = BUILDERS[card['tipo']](card)
