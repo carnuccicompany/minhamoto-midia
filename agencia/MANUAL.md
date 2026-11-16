@@ -31,6 +31,11 @@ Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com b
 | **Curtos AIDA** | 4-5 cards de venda direta do app | produto |
 | **Temas gerais** | Comportamento, economia, rotina do motociclista | foto ou editorial |
 
+### Série do Davi (DV01–DV30) — já na fila, NÃO repetir o ângulo
+Tutoriais de função do app, formato 9:16 (convertido pra 4:5 no IG/FB, original no TikTok), fundo pastel por série, gancho-pergunta → passos com tela → "Essa é uma das funções" → CTA preto "Assine por R$19,90/mês".
+Temas cobertos: plano de revisão do modelo, histórico de serviços, cuidados feitos/pendentes, planejamento pela média de uso, combustível/consumo, comparação de postos, várias motos na garagem, documentos (cópias), especificações (óleo/pneu), cuidados por tempo (moto que roda pouco), primeira moto, moto usada, moto de alto valor, viagem, motoclube, moto de trabalho, ida à oficina, gastos do mês, quem faz a própria manutenção, estados da Saúde (verde/amarelo/vermelho), próximos marcos, bateria/itens por condição, completar histórico desconhecido.
+→ A agência pode falar desses assuntos, mas com ângulo de VALOR (dica, erro comum, história, dado do mundo real) — não como tutorial de tela, que o Davi já fez.
+
 Proporção alvo da fila: ~70% valor (dicas, educacional, marcas, temas) / ~30% venda (AIDA, produto).
 Nunca dois carrosséis da mesma linha em sequência na fila.
 
