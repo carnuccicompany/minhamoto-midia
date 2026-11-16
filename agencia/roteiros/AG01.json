@@ -1,48 +1,60 @@
 {
  "id": "AG01",
- "titulo": "Quanto sua moto te custa por mês",
+ "titulo": "Sua moto começou a beber mais?",
  "linha": "Educacional",
  "estilo": "dark",
  "cards": [
   {
    "layout": "capa",
-   "kicker": "Custo real",
-   "titulo": "Quanto sua moto te custa *por mês?*",
-   "apoio": "Se você respondeu de cabeça, chutou pra baixo.",
-   "print": "historico-detalhes.png"
+   "kicker": "Consumo",
+   "titulo": "Sua moto começou a *beber mais?*",
+   "apoio": "Antes de culpar a gasolina, olha a moto.",
+   "shot_top": 740,
+   "shot_w": 640,
+   "print": "dv-combustivel-resumo.png",
+   "crop": [
+    0,
+    0,
+    458,
+    296
+   ]
   },
   {
    "layout": "texto",
-   "kicker": "O truque",
-   "titulo": "O gasto nunca vem de uma vez.\n*Ele vem picado.*",
-   "apoio": "Óleo num mês. Relação no outro. Pneu, gasolina, documento. Separado parece troco. Somado, assusta."
+   "kicker": "O sintoma",
+   "titulo": "Média caindo é *aviso,* não azar.",
+   "apoio": "Quando a moto passa a fazer menos km por litro, quase sempre tem manutenção pedindo atenção."
   },
   {
-   "layout": "numero",
-   "grande": "2x",
-   "titulo": "Quem não anota *paga duas vezes.*",
-   "apoio": "Troca o que já tinha trocado. Esquece o que custava pouco até virar conserto caro."
+   "layout": "item",
+   "n": 1,
+   "titulo": "Pneu *murcho*",
+   "apoio": "Mais atrito com o chão, mais força pra empurrar a moto. E mais gasolina no tanque."
   },
   {
-   "layout": "phone",
-   "kicker": "A saída",
-   "titulo": "Anota uma vez.\n*Fica guardado pra sempre.*",
-   "apoio": "Data, km, peça e valor de cada serviço, num lugar só.",
-   "print": "historico-completo.png"
+   "layout": "item",
+   "n": 2,
+   "titulo": "Filtro de ar *sujo*",
+   "apoio": "Entra menos ar no motor, e ele compensa queimando mais combustível."
   },
   {
-   "layout": "phone",
-   "kicker": "E a gasolina?",
-   "titulo": "Entra na conta também.\n*Consumo real, sem achismo.*",
-   "apoio": "Anota o abastecimento e o app calcula sua média de km/L.",
-   "print": "combustivel-media.png"
+   "layout": "item",
+   "n": 3,
+   "titulo": "Vela *gasta*",
+   "apoio": "A queima fica imprecisa e parte da gasolina vai embora sem virar força."
+  },
+  {
+   "layout": "item",
+   "n": 4,
+   "titulo": "Freio *preso*",
+   "apoio": "Pinça travada ou freio apertado demais seguram a roda o tempo todo."
   },
   {
    "layout": "cta",
-   "titulo": "Para de chutar.\n*Começa a contar.*",
-   "apoio": "Baixe o *MinhaMoto* e descubra quanto sua moto custa de verdade."
+   "titulo": "Anota cada abastecida.\n*A média te avisa.*",
+   "apoio": "No *MinhaMoto*, o consumo é calculado entre dois tanques cheios. Caiu a média, você percebe."
   }
  ],
- "legenda_ig_fb": "Quanto sua moto te custou esse mês? Se você respondeu de cabeça, chutou pra baixo.\n\nO gasto da moto nunca vem de uma vez: é um óleo aqui, uma relação ali, pneu, gasolina, documento. Separado parece troco. Somado, assusta. Quem anota data, km e valor de cada serviço para de pagar duas vezes pela mesma coisa.\n\n📌 Salva pra não esquecer e manda pra quem jura que moto não dá gasto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #custodemoto #economia #gasolina #minhamoto",
- "legenda_tiktok": "Quanto sua moto te custou esse mês? Se você respondeu de cabeça, chutou pra baixo. 📌 Salva e manda pra quem jura que moto não dá gasto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #custodemoto #economia #gasolina #moto #motociclista #fyp #motostiktok"
+ "legenda_ig_fb": "Sua moto tá fazendo menos km por litro? Nem sempre a culpa é da gasolina.\n\nMédia caindo costuma ser aviso de manutenção: pneu murcho, filtro de ar sujo, vela gasta e freio preso fazem a moto beber mais. Anota cada abastecida e acompanha a média: quando ela cai, você descobre antes de gastar à toa.\n\n📌 Salva pra não esquecer e manda pra quem vive reclamando do preço da gasolina.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #consumodemoto #gasolina #economia #minhamoto",
+ "legenda_tiktok": "Sua moto tá fazendo menos km por litro? Nem sempre a culpa é da gasolina. 📌 Salva e manda pra quem vive reclamando do preço da gasolina. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #consumodemoto #gasolina #economia #moto #motociclista #fyp #motostiktok"
 }

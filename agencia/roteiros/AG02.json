@@ -8,15 +8,15 @@
    "layout": "capa",
    "kicker": "Ouviu isso?",
    "titulo": "5 barulhos que você *não pode ignorar*",
-   "apoio": "Sua moto avisa antes de deixar você na mão.",
-   "foto": "3822784.jpg",
-   "pos": "center 30%"
+   "apoio": "Sua moto avisa antes de quebrar.",
+   "foto": "10103321.jpg",
+   "pos": "center 60%"
   },
   {
    "layout": "item",
    "n": 1,
    "titulo": "Chiado metálico *na freada*",
-   "apoio": "Pode ser pastilha no fim. Metal raspando no disco estraga o disco junto.",
+   "apoio": "Pode ser pastilha no fim. Metal no metal come o disco junto.",
    "foto": "19949302.jpg"
   },
   {
@@ -24,36 +24,39 @@
    "n": 2,
    "titulo": "Corrente *batendo*",
    "apoio": "Folga fora do ponto ou relação gasta. Regular custa pouco. Arrebentar custa caro.",
-   "foto": "37131862.jpg"
+   "foto": "37131862-corrente.jpg",
+   "pos": "70% center"
   },
   {
    "layout": "item",
    "n": 3,
-   "titulo": "Ronco que *cresce com a velocidade*",
+   "titulo": "Ronco que cresce\n*com a velocidade*",
    "apoio": "Pode ser rolamento de roda. Quanto mais rápido, mais alto o barulho.",
    "foto": "17024710.jpg"
   },
   {
    "layout": "item",
    "n": 4,
-   "titulo": "Estouro no escape *ao reduzir*",
+   "titulo": "Estouro no escape\n*ao reduzir*",
    "apoio": "Pode ser entrada de ar ou mistura desregulada. Vale levar pra avaliar.",
-   "foto": "13722393.jpg"
+   "foto": "29740729.jpg",
+   "pos": "62% center"
   },
   {
    "layout": "item",
    "n": 5,
-   "titulo": "Motor *batendo pino* na subida",
+   "titulo": "Batendo pino\n*na subida*",
    "apoio": "Pode ser combustível ruim ou carbonização. Ignorar desgasta o motor por dentro.",
-   "foto": "27704018.jpg"
+   "foto": "33233592.jpg",
+   "pos": "center 40%"
   },
   {
    "layout": "cta",
    "titulo": "Ouviu um desses?\n*Leva no mecânico.*",
-   "apoio": "E chega lá com o histórico da moto no MinhaMoto: o que foi feito, quando e com quantos km.",
-   "foto": "3855217.jpg"
+   "apoio": "E chega lá com o histórico da moto no *MinhaMoto*: o que foi feito, quando e com quantos km.",
+   "estilo": "dark"
   }
  ],
- "legenda_ig_fb": "Sua moto avisa antes de quebrar. O problema é que quase ninguém escuta.\n\nChiado na freada, corrente batendo, ronco que cresce com a velocidade, estouro no escape ao reduzir e motor batendo pino na subida. Nenhum desses é “normal da moto”. Na dúvida, não arrisca: leva no mecânico de confiança.\n\n📌 Salva pra não esquecer e manda pra quem acha que todo barulho é normal da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #barulhonamoto #mecanicademoto #freiodemoto #minhamoto",
+ "legenda_ig_fb": "Sua moto avisa antes de quebrar. O problema é que quase ninguém escuta.\n\nChiado na freada, corrente batendo, ronco que cresce com a velocidade, estouro no escape ao reduzir e motor batendo pino na subida. Nenhum desses dá pra ignorar. Na dúvida, leva no mecânico de confiança antes que o barulho vire conserto.\n\n📌 Salva pra não esquecer e manda pra quem acha que todo barulho é normal da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #barulhonamoto #mecanicademoto #freiodemoto #minhamoto",
  "legenda_tiktok": "Sua moto avisa antes de quebrar. O problema é que quase ninguém escuta. 📌 Salva e manda pra quem acha que todo barulho é normal da moto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #barulhonamoto #mecanicademoto #freiodemoto #moto #motociclista #fyp #motostiktok"
 }

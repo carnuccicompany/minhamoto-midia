@@ -6,10 +6,12 @@
  "cards": [
   {
    "layout": "capa",
+   "estilo": "foto",
    "kicker": "Moto parada",
    "titulo": "Ficou parada?\n*Não sai ligando.*",
    "apoio": "Faz esse checklist antes de girar a chave.",
-   "print": "tempo-visao.png"
+   "foto": "30817486.jpg",
+   "pos": "45% center"
   },
   {
    "layout": "item",
@@ -33,7 +35,7 @@
    "layout": "item",
    "n": 4,
    "titulo": "Confere *óleo e freio.*",
-   "apoio": "Nível do óleo certo e freio firme no manete e no pedal."
+   "apoio": "Nível do óleo certo e freio firme na mão e no pé."
   },
   {
    "layout": "item",
@@ -43,7 +45,7 @@
   },
   {
    "layout": "cta",
-   "titulo": "Parada também\n*tem prazo vencendo.*",
+   "titulo": "Moto parada também\n*tem prazo correndo.*",
    "apoio": "O *MinhaMoto* acompanha cada cuidado por km e por tempo. Baixe agora."
   }
  ],

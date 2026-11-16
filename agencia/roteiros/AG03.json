@@ -1,53 +1,49 @@
 {
  "id": "AG03",
- "titulo": "Corrente: lubrificar, regular ou trocar",
+ "titulo": "O aviso escondido no pneu (TWI)",
  "linha": "Educacional",
  "estilo": "claro",
  "cards": [
   {
    "layout": "capa",
-   "marca": "Corrente",
-   "titulo": "Lubrificar, regular ou trocar? *Não é a mesma coisa.*",
-   "apoio": "Muita gente confunde os três. E a corrente cobra.",
-   "print": "lubrificar.png"
-  },
-  {
-   "layout": "item",
-   "marca": "Corrente",
-   "n": 1,
-   "titulo": "*Lubrificar*: o cuidado de toda hora.",
-   "apoio": "Lubrificante próprio pra corrente, com ela limpa. Depois de chuva ou lavagem, de novo.",
-   "print": "lubrificar.png"
-  },
-  {
-   "layout": "item",
-   "marca": "Corrente",
-   "n": 2,
-   "titulo": "*Regular*: a folga certa.",
-   "apoio": "Nem esticada, nem frouxa. A medida certa está no manual da sua moto.",
-   "print": "ajuste.png"
-  },
-  {
-   "layout": "item",
-   "marca": "Corrente",
-   "n": 3,
-   "titulo": "*Trocar*: quando o kit gastou.",
-   "apoio": "Corrente, coroa e pinhão se gastam juntos. Por isso a troca costuma ser do kit inteiro.",
-   "print": "registro-relacao.png"
+   "marca": "Pneu",
+   "titulo": "Seu pneu tem um *aviso escondido.*",
+   "grande": "TWI",
+   "grande_tam": 330,
+   "apoio": "Quase ninguém olha. E é ele que diz a hora certa da troca."
   },
   {
    "layout": "texto",
-   "marca": "Corrente",
-   "titulo": "Sinal de troca: *dente da coroa pontudo.*",
-   "apoio": "Corrente que volta a ficar frouxa logo depois de regular também é aviso."
+   "marca": "Pneu",
+   "titulo": "TWI é o indicador *de desgaste.*",
+   "apoio": "São ressaltos pequenos no fundo dos sulcos. A sigla TWI na lateral do pneu mostra onde eles ficam."
+  },
+  {
+   "layout": "numero",
+   "marca": "Pneu",
+   "grande": "1,6",
+   "titulo": "Milímetro: *o limite da lei.*",
+   "apoio": "Pela Resolução 913/2022 do Contran, com menos de 1,6 mm de sulco o pneu não pode rodar."
+  },
+  {
+   "layout": "texto",
+   "marca": "Pneu",
+   "titulo": "Banda na altura do TWI? *Hora de trocar.*",
+   "apoio": "Se o sulco chegou no ressalto, o pneu já está no limite. Não espera ele ficar liso."
+  },
+  {
+   "layout": "texto",
+   "marca": "Pneu",
+   "titulo": "Na chuva, *é aqui que pesa.*",
+   "apoio": "Pneu gasto escoa menos água: freia pior e derrapa mais fácil no molhado."
   },
   {
    "layout": "cta",
-   "marca": "Corrente",
-   "titulo": "Cada cuidado registrado.\n*Cada prazo na mão.*",
-   "apoio": "No *MinhaMoto*, lubrificar, ajustar e trocar ficam registrados com data e km."
+   "marca": "Pneu",
+   "titulo": "Anota a troca do pneu.\n*Acompanha o desgaste.*",
+   "apoio": "No *MinhaMoto*, a troca fica registrada com data e km, junto com o resto da manutenção."
   }
  ],
- "legenda_ig_fb": "Lubrificar, regular e trocar a corrente não são a mesma coisa. E confundir sai caro.\n\nLubrificar é o cuidado de toda hora, principalmente depois de chuva ou lavagem. Regular é deixar a folga na medida do manual. Trocar é quando o kit (corrente, coroa e pinhão) gastou. Dente da coroa pontudo é sinal claro de troca.\n\n📌 Salva pra não esquecer e manda pra quem vive com a corrente batendo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #corrente #relacaodemoto #kitrelacao #minhamoto",
- "legenda_tiktok": "Lubrificar, regular e trocar a corrente não são a mesma coisa. E confundir sai caro. 📌 Salva e manda pra quem vive com a corrente batendo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #corrente #relacaodemoto #kitrelacao #moto #motociclista #fyp #motostiktok"
+ "legenda_ig_fb": "Todo pneu tem um aviso escondido que diz a hora da troca. Você sabe onde fica?\n\nO TWI é o indicador de desgaste: ressaltos no fundo dos sulcos, marcados pela sigla TWI na lateral. Quando a banda chega na altura dele, o pneu está no limite. Pela Resolução 913/2022 do Contran, abaixo de 1,6 mm de sulco o pneu não pode rodar.\n\n📌 Salva pra não esquecer e manda pra quem nunca olhou o sulco do pneu.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #pneudemoto #twi #segurancanotransito #minhamoto",
+ "legenda_tiktok": "Todo pneu tem um aviso escondido que diz a hora da troca. Você sabe onde fica? 📌 Salva e manda pra quem nunca olhou o sulco do pneu. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #pneudemoto #twi #segurancanotransito #moto #motociclista #fyp #motostiktok"
 }

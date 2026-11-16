@@ -6,38 +6,53 @@
  "cards": [
   {
    "layout": "capa",
-   "marca": "Real",
+   "marca": "Memória",
    "titulo": "Sua memória *não é* sistema de manutenção.",
    "apoio": "E tá tudo bem. Ninguém lembra de tudo.",
-   "print": "plano-coerente.png"
+   "shot_top": 760,
+   "shot_w": 860,
+   "print": "rec-saude-emdia.png",
+   "crop": [
+    10,
+    140,
+    1070,
+    520
+   ]
   },
   {
    "layout": "texto",
-   "marca": "Real",
+   "marca": "Memória",
    "titulo": "Nota fiscal *some.*\nOficina *fecha.*\nMemória *falha.*",
    "apoio": "E quando você precisa da informação, ela sumiu junto."
   },
   {
    "layout": "numero",
-   "marca": "Real",
+   "marca": "Memória",
    "grande": "0",
    "titulo": "Esforço pra lembrar: *zero.*",
    "apoio": "Registrou uma vez, tá guardado. Data, km, peça e valor."
   },
   {
    "layout": "phone",
-   "marca": "Real",
-   "titulo": "O app mostra *o que vem pela frente.*",
-   "apoio": "Próximos cuidados pelo plano do seu modelo, por km e por tempo.",
-   "print": "plano-atual.png"
+   "marca": "Memória",
+   "titulo": "Saiu do prazo? *O app te avisa.*",
+   "apoio": "O lembrete chega no celular quando um cuidado vence.",
+   "shot_w": 820,
+   "print": "rec-notificacoes.png",
+   "crop": [
+    10,
+    680,
+    1070,
+    1400
+   ]
   },
   {
    "layout": "cta",
-   "marca": "Real",
+   "marca": "Memória",
    "titulo": "Você pilota.\n*O MinhaMoto lembra.*",
-   "apoio": "Baixe agora e tire a manutenção da cabeça."
+   "apoio": "Baixe agora por R$19,90 e tire a manutenção da cabeça."
   }
  ],
- "legenda_ig_fb": "Sua memória não foi feita pra lembrar troca de filtro, óleo e relação. E nem precisa.\n\nNota fiscal some, oficina fecha, memória falha. Registra uma vez e pronto: o histórico fica guardado e o app mostra os próximos cuidados pelo plano do seu modelo, por km e por tempo.\n\n📌 Salva pra não esquecer e manda pra quem esquece tudo da manutenção da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #organizacao #manutencaopreventiva #revisaodemoto #minhamoto",
+ "legenda_ig_fb": "Sua memória não foi feita pra lembrar troca de filtro, óleo e relação. E nem precisa.\n\nNota fiscal some, oficina fecha, memória falha. Registra uma vez e pronto: o histórico fica guardado e, quando um cuidado sai do prazo, o lembrete chega no celular.\n\n📌 Salva pra não esquecer e manda pra quem esquece tudo da manutenção da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #organizacao #manutencaopreventiva #revisaodemoto #minhamoto",
  "legenda_tiktok": "Sua memória não foi feita pra lembrar troca de filtro, óleo e relação. E nem precisa. 📌 Salva e manda pra quem esquece tudo da manutenção da moto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #organizacao #manutencaopreventiva #revisaodemoto #moto #motociclista #fyp #motostiktok"
 }

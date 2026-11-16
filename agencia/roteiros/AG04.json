@@ -8,8 +8,16 @@
    "layout": "capa",
    "kicker": "Revenda",
    "titulo": "Duas motos iguais.\n*Só uma tem histórico.*",
-   "apoio": "Adivinha qual o comprador escolhe.",
-   "print": "historico-filtros.png"
+   "apoio": "Adivinha qual delas o comprador leva.",
+   "shot_top": 780,
+   "shot_w": 860,
+   "print": "rec-sem-historico.png",
+   "crop": [
+    10,
+    690,
+    1070,
+    1240
+   ]
   },
   {
    "layout": "texto",
@@ -21,21 +29,27 @@
    "layout": "numero",
    "grande": "?",
    "titulo": "“Quando trocou o óleo?”\n*Você sabe responder?*",
-   "apoio": "Sem registro, vira sua palavra contra a desconfiança dele. E desconfiança puxa o preço pra baixo."
+   "apoio": "Sem registro, vira sua palavra contra a desconfiança dele. E desconfiança derruba o preço."
   },
   {
    "layout": "phone",
    "kicker": "Com histórico",
-   "titulo": "Data, km, peça e valor.\n*Tudo na tela.*",
+   "titulo": "O que foi feito e quando.\n*Tudo na tela.*",
    "apoio": "Cada serviço registrado vira argumento na hora de negociar.",
-   "print": "historico-detalhes.png"
+   "print": "rec-saude-emdia.png",
+   "crop": [
+    10,
+    140,
+    1070,
+    520
+   ]
   },
   {
    "layout": "cta",
-   "titulo": "Começa hoje.\n*A venda de amanhã agradece.*",
-   "apoio": "Baixe o *MinhaMoto* e monte o histórico da sua moto."
+   "titulo": "O histórico de hoje\n*vale dinheiro amanhã.*",
+   "apoio": "Baixe o *MinhaMoto* por R$19,90 e monte o histórico da sua moto."
   }
  ],
- "legenda_ig_fb": "Duas motos iguais, mesmo ano, mesmo km. Só uma tem histórico. Qual você compraria?\n\nQuem compra usada tem medo de levar problema pra casa. “Sempre cuidei” não convence ninguém. Serviço registrado com data, km, peça e valor convence, e ajuda a segurar o preço na negociação.\n\n📌 Salva pra não esquecer e manda pra quem vai vender a moto esse ano.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #motousada #vendermoto #revenda #minhamoto",
+ "legenda_ig_fb": "Duas motos iguais, mesmo ano, mesmo km. Só uma tem histórico. Qual você compraria?\n\nQuem compra usada tem medo de levar problema pra casa, e “sempre cuidei” não convence ninguém. Serviço registrado, com data e km, convence e ajuda a segurar o preço na negociação.\n\n📌 Salva pra não esquecer e manda pra quem vai vender a moto esse ano.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #motousada #vendermoto #revenda #minhamoto",
  "legenda_tiktok": "Duas motos iguais, mesmo ano, mesmo km. Só uma tem histórico. Qual você compraria? 📌 Salva e manda pra quem vai vender a moto esse ano. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #motousada #vendermoto #revenda #moto #motociclista #fyp #motostiktok"
 }

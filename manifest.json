@@ -888,14 +888,15 @@
   ]
  },
  "AG01": {
-  "origem": "agencia v2 (dark) - Quanto sua moto te custa por mês",
+  "origem": "agencia v2 (dark) - Sua moto começou a beber mais?",
   "cards": [
    "01.jpg",
    "02.jpg",
    "03.jpg",
    "04.jpg",
    "05.jpg",
-   "06.jpg"
+   "06.jpg",
+   "07.jpg"
   ]
  },
  "DV01": {
@@ -1284,7 +1285,7 @@
   ]
  },
  "AG03": {
-  "origem": "agencia v2 (claro) - Corrente: lubrificar, regular ou trocar",
+  "origem": "agencia v2 (claro) - O aviso escondido no pneu (TWI)",
   "cards": [
    "01.jpg",
    "02.jpg",
@@ -1305,15 +1306,14 @@
   ]
  },
  "AG05": {
-  "origem": "agencia v2 (foto) - Chuva chegando: 5 checagens",
+  "origem": "agencia v2 (foto) - Chuva chegando: 4 checagens",
   "cards": [
    "01.jpg",
    "02.jpg",
    "03.jpg",
    "04.jpg",
    "05.jpg",
-   "06.jpg",
-   "07.jpg"
+   "06.jpg"
   ]
  },
  "AG06": {
@@ -1340,7 +1340,7 @@
   ]
  },
  "AG08": {
-  "origem": "agencia v2 (foto) - Só quem trabalha de moto entende",
+  "origem": "agencia v2 (dark) - Só quem trabalha de moto entende",
   "cards": [
    "01.jpg",
    "02.jpg",

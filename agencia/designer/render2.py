@@ -20,8 +20,17 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(BASE, '..', '..'))
 A = os.path.join(BASE, 'assets')
 
+CURTAS = ('a','o','e','é','as','os','à','às','ao','aos','no','na','nos','nas','do','da','dos','das','de','em','um','uma',
+          'com','que','por','pra','pro','seu','sua','se','te','me','só','já','não','nem','tá','ou','mas','sem','até')
+def glue(t):
+    """Cola palavra curta (artigo, preposição...) na palavra seguinte com espaço inquebrável."""
+    pat = re.compile(r'(?<![\w])(' + '|'.join(sorted(CURTAS, key=len, reverse=True)) + r') (?=\S)', re.I)
+    for _ in range(2): t = pat.sub(lambda m: m.group(1) + '\u00a0', t)
+    return t
+
 def fmt(t):
-    t = html.escape(t or '').replace('\\n', '\n').replace('\n', '<br>')
+    t = glue(t or '')
+    t = html.escape(t).replace('\\n', '\n').replace('\n', '<br>')
     t = re.sub(r'\*(.+?)\*', r'<span class="ac">\1</span>', t)
     return t
 
@@ -36,12 +45,17 @@ BASE_CSS = FONTS + """
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
 .k{font-weight:800;font-size:26px;letter-spacing:5px;text-transform:uppercase}
-.t{font-weight:900;letter-spacing:-2.5px;line-height:1.02}
+.t{font-weight:900;letter-spacing:-2.5px;line-height:1.06;text-wrap:balance}
+.a{text-wrap:pretty}
 .a{font-weight:600;line-height:1.34}
 .phone{position:absolute;background:#0a0a0c;border-radius:62px;padding:12px}
 .phone img{display:block;width:100%;border-radius:50px}
 .selos img{width:560px;display:block}
 .swipe{position:absolute;z-index:5;font-weight:800;font-size:28px;letter-spacing:3px;text-transform:uppercase}
+.shot{position:absolute;border-radius:36px;background-repeat:no-repeat;border:2px solid rgba(255,255,255,.10)}
+.rod{position:absolute;left:84px;right:84px;bottom:62px;display:flex;align-items:center;gap:16px;font-weight:800;font-size:26px;letter-spacing:2px;color:#7f8ea6}
+.rod img{width:44px;height:44px;border-radius:12px}
+.rod b{margin-left:auto;font-weight:800;color:#3d8bff}
 """
 
 # ---------------- DARK ----------------
@@ -60,7 +74,8 @@ body{background:#05080f}
 .a{color:#9aabc4}
 .a .ac{color:#fff;font-weight:800}
 .phone{border:1px solid rgba(255,255,255,.08);box-shadow:0 50px 110px rgba(0,0,0,.75),0 0 120px rgba(46,120,255,.35)}
-.big{font-weight:900;color:transparent;-webkit-text-stroke:3px #3d8bff;letter-spacing:-8px;line-height:.9}
+.shot{box-shadow:0 50px 110px rgba(0,0,0,.75),0 0 120px rgba(46,120,255,.32)}
+.big{font-weight:900;letter-spacing:-8px;line-height:.9;background:linear-gradient(180deg,#7db2ff 0%,#2f6fe4 70%,#1d4fc4 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 40px rgba(46,120,255,.35))}
 .n{color:#3d8bff}
 .swipe{color:#3d8bff}
 .line{position:absolute;height:6px;width:110px;background:#3d8bff;border-radius:3px}
@@ -72,10 +87,15 @@ body{background:#f3f1ec}
 .bg{position:absolute;inset:0;background:#f3f1ec}
 .k{color:#0c0f14}
 .t{color:#0c0f14}
-.t .ac{background:#1f5fff;color:#fff;padding:0 .14em;margin:0 -.04em;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:6px}
+.t{line-height:1.12}
+.t .ac{background:#1f5fff;color:#fff;padding:.02em .14em 0;margin:0 -.04em;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:6px}
+.hl-under > .ac{color:transparent!important}
+.hl-over{position:absolute;left:0;top:0;width:100%;margin:0!important;max-height:none!important;pointer-events:none}
+.hl-over .ac{background:none!important}
 .a{color:#3a3f48}
 .a .ac{color:#1f5fff;font-weight:800}
 .phone{box-shadow:0 46px 90px rgba(12,15,20,.35),0 12px 26px rgba(12,15,20,.22)}
+.shot{box-shadow:0 46px 90px rgba(12,15,20,.35),0 12px 26px rgba(12,15,20,.22);border-color:rgba(0,0,0,.08)}
 .big{font-weight:900;color:#1f5fff;letter-spacing:-10px;line-height:.86}
 .n{color:#1f5fff}
 .swipe{color:#fff;background:#0c0f14;padding:16px 28px;border-radius:40px}
@@ -96,6 +116,7 @@ body{background:#04080e}
 .n{color:#4b8dff}
 .swipe{color:#fff}
 .phone{box-shadow:0 50px 110px rgba(0,0,0,.8)}
+.shot{box-shadow:0 50px 110px rgba(0,0,0,.8)}
 """
 
 STYLES = {'dark': DARK, 'claro': CLARO, 'foto': FOTO}
@@ -105,11 +126,46 @@ def page(estilo, body):
 
 # encolhe fontes .fit até caber na caixa (max-height)
 FIT_JS = """<script>
-document.fonts.ready.then(()=>{document.querySelectorAll('.fit').forEach(el=>{
- let s=parseFloat(getComputedStyle(el).fontSize);const mh=parseFloat(el.style.maxHeight)||1e9;
- el.style.maxHeight='none';el.style.height='auto';
- while((el.scrollHeight>mh||el.scrollWidth>el.clientWidth+4)&&s>30){s-=2;el.style.fontSize=s+'px'}
-});document.body.dataset.ok=1});
+function linhas(el){
+ const ws=[]; const tw=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n;
+ while(n=tw.nextNode()){ if(n.parentElement.closest('.hl-over'))continue; const re=/[^\\s\\u00a0]+/g; let m;
+  while(m=re.exec(n.data)){ const r=document.createRange(); r.setStart(n,m.index); r.setEnd(n,m.index+m[0].length);
+   const rc=r.getClientRects(); if(rc.length) ws.push({w:m[0],t:rc[0].top,b:rc[rc.length-1].bottom,l:rc[0].left,r:rc[rc.length-1].right}); } }
+ const L=[]; ws.forEach(w=>{ const l=L.find(x=>Math.abs(x.t-w.t)<12); l?l.ws.push(w):L.push({t:w.t,ws:[w]}) }); return L;
+}
+document.fonts.ready.then(()=>{
+ document.querySelectorAll('.fit').forEach(el=>{
+  let s=parseFloat(getComputedStyle(el).fontSize);const mh=parseFloat(el.style.maxHeight)||1e9;
+  el.style.maxHeight='none';el.style.height='auto';
+  while((el.scrollHeight>mh||el.scrollWidth>el.clientWidth+4)&&s>30){s-=2;el.style.fontSize=s+'px'}
+ });
+ // evita palavra sozinha na última linha do título: reduz a fonte aos poucos (máx. ~14%)
+ document.querySelectorAll('.t').forEach(el=>{
+  let s=parseFloat(getComputedStyle(el).fontSize); const s0=s;
+  const viuva=()=>{ const L=linhas(el); if(L.length<2) return false; const u=L[L.length-1].ws; return u.length===1 && u[0].w.replace(/[^\\p{L}\\d]/gu,'').length<=7; };
+  while(viuva() && s>s0*0.78){ s-=2; el.style.fontSize=s+'px'; }
+  if(viuva()) el.style.fontSize=s0+'px';
+ });
+ // marca-texto por baixo: o texto de todas as linhas fica sempre por cima da caixa
+ document.querySelectorAll('.t').forEach(el=>{
+  const ac=el.querySelector(':scope > .ac'); if(!ac)return;
+  const bg=getComputedStyle(ac).backgroundColor; if(!bg||bg==='rgba(0, 0, 0, 0)'||bg==='transparent')return;
+  if(getComputedStyle(el).position==='static') el.style.position='relative';
+  const c=el.cloneNode(true); c.className='t hl-over'; c.style.cssText='font-size:'+getComputedStyle(el).fontSize;
+  el.classList.add('hl-under'); el.appendChild(c);
+ });
+ const issues=[]; const W=innerWidth,H=innerHeight;
+ const phones=[...document.querySelectorAll('.phone, .shot')].map(p=>p.getBoundingClientRect());
+ document.querySelectorAll('.t:not(.hl-over), .a, .k').forEach(el=>{
+  const L=linhas(el); if(!L.length)return; const nome=el.className.split(' ')[0];
+  const txt=L.map(l=>l.ws.map(w=>w.w).join(' ')).join(' / ');
+  if(nome==='t' && L.length>1 && L[L.length-1].ws.length===1 && L[L.length-1].ws[0].w.replace(/[^\\p{L}\\d]/gu,'').length<=7) issues.push('palavra sozinha na última linha do título: '+txt);
+  L.forEach(l=>l.ws.forEach(w=>{ if(w.l<36||w.r>W-36||w.t<20||w.b>H-20) issues.push('texto colado/fora da borda: "'+w.w+'" em '+txt);
+    phones.forEach(p=>{ if(w.r>p.left+8&&w.l<p.right-8&&w.b>p.top+8&&w.t<p.bottom-8) issues.push('texto em cima do celular: "'+w.w+'"'); }); }));
+ });
+ document.querySelectorAll('.shot').forEach(sh=>{ const r=sh.getBoundingClientRect(); if(r.bottom>H-30||r.top<20||r.left<20||r.right>W-20) issues.push('recorte de tela vazando da arte ['+Math.round(r.left)+','+Math.round(r.top)+','+Math.round(r.right)+','+Math.round(r.bottom)+']'); });
+ document.body.dataset.issues=JSON.stringify(issues); document.body.dataset.ok=1;
+});
 </script>"""
 
 def phone_html(c, left, top, width, rot=0):
@@ -126,6 +182,23 @@ def boxauto(cls, txt, left, top, width, maxh, size, extra=''):
             f"max-height:{maxh}px;font-size:{size}px;{extra}'>{fmt(txt)}</div>")
 
 SELOS = f"<img src='file://{A}/selos-lojas.png'>"
+
+def shot_html(c, left, top, width, rot=0):
+    """Recorte de uma tela do app (zoom no que importa): c['print'] + c['crop']=[x0,y0,x1,y1] em px da imagem."""
+    from PIL import Image
+    p = img_path(c['print'], 'prints'); iw, ih = Image.open(p).size
+    x0, y0, x1, y1 = c['crop']; s = width / (x1 - x0); h = (y1 - y0) * s
+    return (f"<div class='shot' style='left:{left}px;top:{top}px;width:{width}px;height:{h:.0f}px;transform:rotate({rot}deg);"
+            f"background-image:url(\"file://{p}\");background-size:{iw*s:.0f}px {ih*s:.0f}px;background-position:-{x0*s:.0f}px -{y0*s:.0f}px'></div>")
+
+def shot_flow(c, width=820):
+    from PIL import Image
+    x0, y0, x1, y1 = c['crop']; h = (y1 - y0) * width / (x1 - x0)
+    return (f"<div style='position:relative;margin-top:56px;height:{h:.0f}px'>" + shot_html(c, 0, 0, width) + "</div>")
+
+def rodape(i, total, est):
+    if est != 'dark': return ''
+    return (f"<div class='rod'><img src='file://{A}/icon.png'><span>MinhaMoto</span><b>{i:02d}/{total:02d}</b></div>")
 
 # ------------------------------------------------------------------ DARK / CLARO (layout em fluxo)
 def T(txt, size, maxh, extra=''):
@@ -148,13 +221,19 @@ def flow(c, i, total, est):
     top = 200 if est == 'claro' else 110
     if L == 'capa':
         has_p = bool(c.get('print'))
-        if has_p:
+        if has_p and c.get('crop'):
+            out += col(K(k) + T(c['titulo'], 124, 520) + AP(c.get('apoio'), 42, 'max-width:860px'), top, 200)
+            x0, y0, x1, y1 = c['crop']; top_s = c.get('shot_top', 820)
+            w = min(c.get('shot_w', 700), (1350 - 175 - top_s) * (x1 - x0) / (y1 - y0))
+            left = c.get('shot_left', (1080 - w) / 2)
+            out += shot_html(c, left, top_s, w, -3 if est == 'dark' else 2)
+        elif has_p:
             out += col(K(k) + T(c['titulo'], 124, 470) + AP(c.get('apoio'), 42, 'max-width:470px'), top, 200)
             out += phone_html(c, 600, 790, 430, -7 if est == 'dark' else 6)
         else:
             out += col(K(k) + T(c['titulo'], 132, 560) + AP(c.get('apoio'), 44, 'max-width:820px'), top, 200)
             if c.get('grande'):
-                out += (f"<div class='big' style='position:absolute;right:56px;bottom:40px;font-size:440px;"
+                out += (f"<div class='big' style='position:absolute;right:56px;bottom:40px;font-size:{c.get('grande_tam', 440)}px;"
                         f"line-height:.8'>{fmt(c['grande'])}</div>")
         out += (f"<div class='swipe' style='left:84px;bottom:96px'>Arrasta →</div>")
     elif L == 'texto':
@@ -164,12 +243,14 @@ def flow(c, i, total, est):
                    + T(c['titulo'], 90, 420, 'margin-top:30px') + AP(c.get('apoio'), 44), top, 120, 'center')
     elif L == 'item':
         n = html.escape(str(c['n']).zfill(2))
-        num = f"<div class='big' style='font-size:230px;margin-bottom:10px'>{n}</div>"
+        num = f"<div class='big' style='font-size:{300 if est == 'dark' else 230}px;margin-bottom:10px'>{n}</div>"
         if c.get('print'):
             out += col(num + T(c['titulo'], 76, 420) + AP(c.get('apoio'), 38), top, 120, 'center', 84, 470)
             out += phone_html(c, 640, 380 if est == 'dark' else 460, 380, 0 if est == 'dark' else 5)
         else:
-            out += col(num + T(c['titulo'], 100, 500) + AP(c.get('apoio'), 46), top, 120, 'center')
+            out += col(num + T(c['titulo'], 112 if est == 'dark' else 100, 520) + AP(c.get('apoio'), 50 if est == 'dark' else 46), top, 160, 'center')
+    elif L == 'phone' and c.get('crop'):
+        out += col(K(k) + T(c['titulo'], 90, 360) + AP(c.get('apoio'), 40) + shot_flow(c, c.get('shot_w', 912)), top, 120)
     elif L == 'phone':
         out += col(K(k) + T(c['titulo'], 84, 340) + AP(c.get('apoio'), 38) + phone_flow(c), top, -400)
     elif L == 'cta':
@@ -180,7 +261,8 @@ def flow(c, i, total, est):
     return out
 
 def dark(c, i, total):
-    return "<div class='bg'></div><div class='grid'></div>" + flow(c, i, total, 'dark')
+    return ("<div class='bg'></div><div class='grid'></div>" + flow(c, i, total, 'dark')
+            + (rodape(i, total, 'dark') if c['layout'] not in ('capa', 'cta', 'phone') else ''))
 
 def claro(c, i, total):
     head = (f"<div class='bg'></div><div class='rule' style='top:92px'></div>"
@@ -219,6 +301,7 @@ def foto(c, i, total):
     return out
 
 BUILD = {'dark': dark, 'claro': claro, 'foto': foto}
+PROBLEMAS = []
 
 def main(path):
     rot = json.load(open(path, encoding='utf-8'))
@@ -242,6 +325,8 @@ def main(path):
             pg.wait_for_selector('body[data-ok]', timeout=10000)
             pg.wait_for_timeout(150)
             pg.screenshot(path=os.path.join(outdir, f'{i:02d}.jpg'), type='jpeg', quality=92)
+            for it in json.loads(pg.evaluate('document.body.dataset.issues') or '[]'):
+                PROBLEMAS.append(f'{rid} card {i:02d}: {it}')
         b.close()
     mpath = os.path.join(REPO, 'manifest.json')
     m = json.load(open(mpath, encoding='utf-8'))
@@ -253,3 +338,6 @@ def main(path):
 if __name__ == '__main__':
     for p in sys.argv[1:]:
         main(p)
+    if PROBLEMAS:
+        print('\n'.join('PROBLEMA: ' + x for x in PROBLEMAS))
+        sys.exit(2)
