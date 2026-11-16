@@ -1,0 +1,330 @@
+[
+ {
+  "id": "AG01",
+  "tipo": "carrossel",
+  "titulo": "Quanto sua moto te custa por mês",
+  "veredito": "REPROVADO",
+  "nota": 5.0,
+  "erros": [
+   "[card 03] O \"x\" do \"2x\" vazado está com o contorno quebrado: aparecem triângulos e linhas internas onde os traços se cruzam. Evidência: `evidencias/AG01_card03_x_contorno_quebrado.jpg`.",
+   "[capa → card 06] A capa promete \"Quanto sua moto te custa por mês?\" e nenhum card mostra o custo do mês. Os prints mostram serviços avulsos (R$ 65, R$ 30) e consumo. O CTA \"descubra quanto sua moto custa de verdade\" fica sem prova.",
+   "[ângulo] Repete o B16 do acervo (\"Quanto você gastou cuidando da moto?\") e o DV19 do Davi (gastos registrados). O card 05 é tutorial da função combustível (\"Anota o abastecimento e o app calcula…\"), ângulo que o Davi já fez."
+  ],
+  "melhorias": [
+   "[card 02] O kicker \"O TRUQUE\" não combina com o texto, que não é um truque. Trocar por \"O PROBLEMA\".",
+   "[card 05] O print mostra \"Autonomia estimada --\" (vazio) e \"1 ciclo válido\", o que passa a impressão de app sem dados. Usar um print com histórico cheio e um **total do mês** (ex.: \"Novembro: R$ 412\") pra cumprir a capa.",
+   "[cards 01 e 04] O mesmo print de histórico aparece duas vezes. Viúvas no corpo: \"baixo.\" (capa) e \"lugar só.\" (card 04).",
+   "[cards 02, 03, 06] O bloco de texto ocupa só a metade de cima e a de baixo fica vazia."
+  ]
+ },
+ {
+  "id": "AG02",
+  "tipo": "carrossel",
+  "titulo": "5 barulhos que você não pode ignorar",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "[card 04] O título quebra em \"RONCO QUE / CRESCE COM A / VELOCIDADE\": o artigo \"A\" fica solto no fim da linha (MANUAL §4). Usar \"RONCO QUE CRESCE / COM A VELOCIDADE\".",
+   "[card 05 — estouro no escape] A foto é guidão e velocímetro de **Harley-Davidson, com o logo legível** na mesa do guidão. Não mostra escape e põe marca de terceiro em destaque. Evidência: `AG02_card05_logo_HarleyDavidson_foto_nao_casa.jpg`.",
+   "[card 07 — CTA] O título \"OUVIU UM DESSES?\" cai sobre o rosto do modelo e a janela clara. O contraste local medido é de 2,3:1 no pior ponto. Evidência: `AG02_card07_titulo_sobre_rosto_contraste.jpg`."
+  ],
+  "melhorias": [
+   "[card 06 — batendo pino] A foto mostra alguém despejando óleo, que não tem a ver com batida de pino. Trocar por foto de moto subindo ladeira ou de motor.",
+   "[cards 01 e 07] É o mesmo modelo do B16 e do VP03, e a foto do card 02 é a mesma do AG05 card 03. Variar o banco de fotos.",
+   "[card 02] \"estraga o disco junto\" repete \"disco\". Sugestão: \"Metal no metal come o disco junto.\"",
+   "[legenda] \"Nenhum desses é 'normal da moto'\" é absoluto demais, porque estouro leve na desaceleração pode ser do sistema de emissões. Sugestão: \"Nenhum desses dá pra ignorar.\"",
+   "O tema \"barulho\" já foi usado no A11. O ângulo é diferente, mas não postar perto dele."
+  ]
+ },
+ {
+  "id": "AG03",
+  "tipo": "carrossel",
+  "titulo": "Corrente: lubrificar, regular ou trocar",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "[card 06] A caixa azul de \"Cada prazo na\" corta a perna do \"g\" de \"registrado\". Evidência: `AG03_card06_descendente_g_cortado.jpg`.",
+   "[cards 01, 02, 03] Artigo solto no fim da linha do título: \"trocar? Não é a / mesma coisa\", \"Lubrificar: o / cuidado de\", \"Regular: a / folga certa\". O MANUAL §4 proíbe.",
+   "[card 05] \"dente da coroa pontudo\" não foi confirmado como sinal de troca nas fontes. Sugestão: \"dente da coroa gasto, fino ou em gancho\" (o manual Honda fala em \"dentes excessivamente gastos\").",
+   "[ângulo] Repete o E05 do acervo (\"Lubrificou a corrente? Ou trocou a relação? São registros distintos\")."
+  ],
+  "melhorias": [
+   "[card 02] \"cuidado de toda hora\" é exagero: a referência é semanal ou a cada ~500 km, e depois de chuva. Sugestão: \"o cuidado de toda semana.\"",
+   "[card 03] \"Nem esticada, nem frouxa\" confunde, porque no jargão \"corrente esticada\" quer dizer corrente gasta. Sugestão: \"Nem tensa demais, nem frouxa.\"",
+   "[card 06] O título usa \"regular\" e o CTA usa \"ajustar\". Padronizar.",
+   "[prints] Lubrificar, ajustar e trocar o kit aparecem todos em 07/11/2026 e 18.400 km, o que contradiz a ideia de que são momentos diferentes (e o AG01 mostra ajuste em 05/09). Usar datas e km diferentes.",
+   "[capa] Viúva no corpo: \"cobra.\"."
+  ]
+ },
+ {
+  "id": "AG04",
+  "tipo": "carrossel",
+  "titulo": "Moto com histórico vende melhor",
+  "veredito": "REPROVADO",
+  "nota": 6.5,
+  "erros": [
+   "[card 01 × card 04] Os prints se contradizem. A capa mostra \"Filtro de ar / Filtro de óleo — 07/11/2026 — **24.400 km**\"; o card 04 mostra \"Óleo do motor — 07/11/2026 — **18.400 km**\". É a mesma moto, no mesmo dia, com 6.000 km de diferença, num post que vende confiança no histórico. Evidência: `AG04_cards01x04_km_contraditorio.jpg`.",
+   "[card 03] \"“Quando trocou o / óleo?”\" deixa o \"o\" solto no fim da linha. Usar \"“Quando trocou / o óleo?”\"."
+  ],
+  "melhorias": [
+   "[capa] \"Adivinha qual o comprador escolhe.\" soa truncado. Sugestão: \"Adivinha qual delas o comprador leva.\"",
+   "[card 05] O CTA \"A venda de amanhã agradece\" usa a mesma fórmula do AG07 (\"O motor agradece\"). Variar.",
+   "[card 03] No corpo, \"contra a\" e \"puxa o\" ficam soltos no fim da linha."
+  ]
+ },
+ {
+  "id": "AG05",
+  "tipo": "carrossel",
+  "titulo": "Chuva chegando: 5 checagens",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "[card 04] \"Na chuva, ver e ser visto vale a sua vida.\" O sentido está errado (\"vale a vida\" = custa a vida). Usar \"…pode salvar sua vida.\"",
+   "[card 06] O título \"CAPA DE CHUVA NO / BAÚ\" deixa \"NO\" no fim e \"BAÚ\" sozinho na linha. A foto não tem nem baú nem capa, e mostra **placa indiana \"WB-01AT-887\"** legível. Evidência: `AG05_card06_placa_estrangeira.jpg`.",
+   "[card 02] A foto de pneu de trilha enlameado, com placa estrangeira, ilustra \"pneu careca no asfalto\". Não combina com o texto."
+  ],
+  "melhorias": [
+   "[card 03] É a mesma foto do AG02 card 02. [card 05] É a mesma moto do AG02 card 03.",
+   "[card 02] \"aquaplanagem esperando acontecer\" é decalque do inglês. Sugestão: \"Na chuva, pneu careca é aquaplanagem na certa.\"",
+   "[legenda] Tirar \"Leva 5 minutos\" (sem base).",
+   "[card 07] \"não te deixa na mão\" repete a capa do AG02.",
+   "[capa] \"5 checagens\" inclui a capa de chuva, que não é checagem da moto. Trocar por \"fluido/pastilha\" ou \"pressão do pneu\"."
+  ]
+ },
+ {
+  "id": "AG06",
+  "tipo": "carrossel",
+  "titulo": "Por que todo mundo tem uma CG",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "Caixas de destaque cortando letras da linha de cima: [card 01] perna do \"q\" de \"Por que\"; [card 02] cedilha de \"Peça\"; [card 03] perna do \"q\" de \"que\"; [card 06] cedilha de \"atenção\"; [card 07] perna do \"j\" de \"Seja\". Evidência: `AG06_cards01-02-03-06-07_descendentes_cortados.jpg`."
+  ],
+  "melhorias": [
+   "Os 7 cards são só texto e a CG não aparece nenhuma vez. A linha Marcas pede o template foto (§3). Uma CG real na capa dá o impacto que o post precisa.",
+   "O fato \"mais vendida do Brasil\" está confirmado. Dá pra usar o número (\"224 mil vendidas só no 1º semestre de 2025\") e citar a Fenabrave.",
+   "Viúvas: \"Brasil.\" (capa), \"errado.\" (card 03), \"dia.\" (card 05)."
+  ]
+ },
+ {
+  "id": "AG07",
+  "tipo": "carrossel",
+  "titulo": "Passou do prazo do óleo",
+  "veredito": "REPROVADO",
+  "nota": 6.5,
+  "erros": [
+   "[capa × card 05] Os prints se contradizem. A capa mostra troca de óleo em **07/11/2026 com 18.400 km**; o card 05 mostra \"Última realização **9 mai 2026, 18.000 km**\", \"Atenção — vence neste mês\" e \"próximo prazo 9 nov 2026\", data que já passou quando o post for ao ar. Evidência: `AG07_cards01x05_dados_contraditorios.jpg`."
+  ],
+  "melhorias": [
+   "[cards 02–04] São três cards seguidos só de texto, com a metade de baixo vazia. Pôr um visual de óleo velho × novo.",
+   "O \"2\" vazado e a fórmula \"O motor agradece\" já aparecem no AG01/AG04. \"Moto parada também vence\" repete o AG10.",
+   "[card 05] Mostrar o estado \"Vencido\" em vermelho dá mais força ao post do que \"Atenção\"."
+  ]
+ },
+ {
+  "id": "AG08",
+  "tipo": "carrossel",
+  "titulo": "Só quem trabalha de moto entende",
+  "veredito": "REPROVADO",
+  "nota": 4.0,
+  "erros": [
+   "[card 05] Logo **Shell V-Power** gigante, macacão Dainese, Ducati e bomba com preço em dólar e \"Litres\". É marca de terceiro em destaque e nada a ver com o motoboy brasileiro. `AG08_card05_Shell_Ducati_dolar.jpg`",
+   "[card 07 — CTA] Baú da **J&T Express** com texto em vietnamita (\"GIAO ĐÚNG GIỜ NHẬN CHU TOÀN\"). A empresa opera no Brasil, então o post parece anúncio dela. `AG08_card07_JT_Express_vietnamita.jpg`",
+   "[card 01] Jaqueta **\"maxim\"** (app de corrida russo) na capa. `AG08_card01_logo_maxim.jpg`",
+   "[todos] As fotos são todas da Ásia: capacetes coco, placas, ruas. O post pede identificação (\"vida de motoboy\") e o público brasileiro não vai se reconhecer."
+  ],
+  "melhorias": [
+   "[card 02] O topo da imagem corta o capacete.",
+   "[card 07] \"Cuida como tal\" soa traduzido. Sugestão: \"Cuida dela como cuida do seu ganha-pão.\"",
+   "[legenda] Tem dois CTAs sociais (\"Marca o parceiro\" e \"manda pra quem\") e \"trabalha de moto\" aparece 3 vezes.",
+   "A copy dos cards é a melhor do lote (\"Chuva não é desculpa. É só mais um dia.\"). Vale refazer com fotos de motoboy brasileiro (CG/Fan, baú, capa de chuva, iFood/Loggi sem logo)."
+  ]
+ },
+ {
+  "id": "AG09",
+  "tipo": "carrossel",
+  "titulo": "Sua memória não é um sistema de manutenção",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "Caixas de destaque cortando letras: [card 04] pernas dos \"p\" de \"app\" e do \"q\" de \"que\"; [card 05] perna do \"p\" de \"pilota\". Evidência: `AG09_cards04-05_descendentes_cortados.jpg`."
+  ],
+  "melhorias": [
+   "[cards 01–05] O kicker \"REAL\" não quer dizer nada. Usar \"MEMÓRIA\" ou \"MANUTENÇÃO\".",
+   "[cards 01 e 04] O print mostra \"21 itens a confirmar\" e \"0/5\", ou seja, pendência acumulada, que prova o contrário de \"Esforço pra lembrar: zero\". Usar um print com tudo em dia e o próximo cuidado destacado.",
+   "[card 04] \"O app mostra o que vem pela frente\" é o ângulo do Davi (próximos marcos)."
+  ]
+ },
+ {
+  "id": "AG10",
+  "tipo": "carrossel",
+  "titulo": "Moto parada: checklist antes de ligar",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "[card 05] O \"4\" vazado está com o contorno quebrado (retângulos internos sobrepostos). Evidência: `AG10_card05_4_contorno_quebrado.jpg`."
+  ],
+  "melhorias": [
+   "[cards 02–06] São cinco cards seguidos só de número e texto, com a metade de baixo vazia: no feed parece inacabado. A linha Dicas pede foto (§3): pneu, corrente, bateria, vareta de óleo.",
+   "[card 07] \"Parada também tem prazo vencendo\" repete o AG07 card 04.",
+   "[card 05] O dicionário registra \"a manete\". Se quiser evitar, usar \"freio firme na mão e no pé\"."
+  ]
+ },
+ {
+  "id": "VP01",
+  "tipo": "video",
+  "titulo": "Sua moto não quebra do nada",
+  "veredito": "REPROVADO",
+  "nota": 5.0,
+  "erros": [
+   "[05,20–07,40] \"Quem ignora, / paga o / conserto.\": a caixa branca de \"conserto.\" corta as pernas do \"p\" e do \"g\" de \"paga\", e o \"g\" de \"ignora\" (texto branco) some dentro da caixa branca de \"paga o\". O \"o\" fica solto no fim da linha. `evidencias/VP01_05.60s_descendentes_g_p_cortados_paga_o.jpg`",
+   "Tempo de leitura: [02,20–05,20] \"Ela avisa antes: barulho novo, freio mais mole, corrente batendo.\" tem 10 palavras e só fica completa de 3,73s a 5,20s (1,5s), quando precisaria de ~5s. [07,40–09,63] \"Quem anota, paga só a manutenção.\" tem 6 palavras em 2,2s, quando precisaria de 3s. O gancho só fica completo de 0,53s a 2,2s. `VP01_02.2-05.2s_tempo_de_leitura.jpg`",
+   "Legendas: IG/FB está \"📌 Salva e manda…\" (o formato é \"📌 Salva pra não esquecer e manda pra quem…\"); TikTok está \"📌 Manda pra quem…\" (o formato é \"📌 Salva e manda pra quem…\")."
+  ],
+  "melhorias": [
+   "É um slide de texto sem nenhum motion design. O nível do acervo pede pelo menos ícones ou B-roll de moto em cada frase.",
+   "[05,20] e [07,40] Cortes secos de fundo escuro para azul chapado e de volta, com salto de luminância de 22 para 80, que incomodam no celular. Usar wipe ou máscara.",
+   "Ponto positivo: o loop fecha bem (termina na frase do gancho)."
+  ]
+ },
+ {
+  "id": "VP02",
+  "tipo": "video",
+  "titulo": "O app em ação",
+  "veredito": "REPROVADO",
+  "nota": 4.5,
+  "erros": [
+   "[04,60–07,20 × 07,20–09,80] Prints contraditórios: \"Filtro de óleo 07/11/2026, 24.400 km\" e depois \"Óleo do motor 07/11/2026, 18.400 km\".",
+   "Zona segura: o celular desce até y≈1700. O botão \"Confirmar troca\" (04,6–7,2s) e o texto da tela de combustível (12,4–14,8s, medido até y=1688) ficam dentro dos 380px de baixo, onde a legenda do TikTok/Reels cobre. `VP02_05.67s_e_14.70s_print_na_zona_insegura.jpg`",
+   "Tempo de leitura: cada cena dura ~2,6s com título, subtítulo e print. Exemplo: \"Tudo vira histórico. Com o quanto você pagou em cada serviço.\" tem 11 palavras em 2,6s.",
+   "Legendas fora do formato do §5 (o mesmo problema do VP01)."
+  ],
+  "melhorias": [
+   "O formato promete \"app em ação\" e não tem ação: são prints parados com crossfade, sem toque, rolagem ou zoom no dado que importa.",
+   "[00,00–02,00] O gancho é genérico e quebra mal (\"Onde você / anota / a manutenção / da sua moto?\", com \"anota\" sozinho). Sugestão: \"Caderninho, nota fiscal ou memória?\"",
+   "[12,4–14,8] O print mostra \"Autonomia estimada --\" (vazio). [15,3–17,4] O final fica parado 2,1s e não volta pro começo."
+  ]
+ },
+ {
+  "id": "VP03",
+  "tipo": "video",
+  "titulo": "POV: o mecânico pergunta",
+  "veredito": "REPROVADO",
+  "nota": 6.0,
+  "erros": [
+   "[00,00–03,40] O gancho \"O MECÂNICO PERGUNTA: QUANDO FOI A ÚLTIMA TROCA DE ÓLEO?\" tem 9 palavras em caixa-alta, texto médio (~54px), por 3,4s. Precisaria de ~4,5s pra 2 leituras e de letra maior no 1º frame.",
+   "Legendas fora do formato do §5."
+  ],
+  "melhorias": [
+   "[00,00–03,40] A foto é o mesmo modelo do AG02 e do B16, olhando pra baixo. O POV não fecha: a cena não mostra mecânico nenhum perguntando. Pôr um mecânico olhando pra câmera, ou só texto sobre a oficina.",
+   "[05,80] e [07,20] Cortes secos de fundo escuro para azul chapado (Δ72 de luminância).",
+   "[10,40] O subtítulo \"Baixe o MinhaMoto.\" entra antes do título \"Seja o cliente que sabe.\", em ordem invertida.",
+   "A piada \"Uns 3 meses… ou 6? Sei lá.\" é a melhor ideia de roteiro do lote. Estender esse momento."
+  ]
+ },
+ {
+  "id": "VP04",
+  "tipo": "video",
+  "titulo": "5 erros que encurtam a vida da moto",
+  "veredito": "REPROVADO",
+  "nota": 4.0,
+  "erros": [
+   "**[10,60s, frame 318] Frame com fundo preto**, só com o número \"1\", entre a cena 2 e a cena 1: um flash preto de 1 frame. `evidencias/VP04_10.53-10.77s_frame318_fundo_preto.jpg`",
+   "[02,20–04,33] \"RODAR COM PNEU MURCHO\" aparece sobre pneu de trilha enlameado (cheio, não murcho) com placa estrangeira. A foto não combina com o texto.",
+   "[00,00–02,20] O gancho quebra em \"5 erros que / encurtam a / vida / da sua moto\": \"a\" solto no fim e \"vida\" sozinha.",
+   "Tempo de leitura: cada item dura ~2,1s com título e subtítulo de 8–10 palavras, quando precisaria de ~4–5s.",
+   "Legendas: fora do formato do §5, e \"manda pra quem precisa ver esse vídeo\" não é pessoa específica."
+  ],
+  "melhorias": [
+   "Todas as fotos são recicladas dos carrosséis do mesmo lote (pneu, moto Kawasaki, entregador borrado).",
+   "[02,20] \"Gasta mais\" fica vago: gasta o quê? Sugestão: \"Gasta pneu e combustível e tira estabilidade.\"",
+   "O final fica parado 2,1s e não faz loop."
+  ]
+ },
+ {
+  "id": "VP05",
+  "tipo": "video",
+  "titulo": "Quiz 10W-30",
+  "veredito": "REPROVADO",
+  "nota": 5.0,
+  "erros": [
+   "[05,73–08,33] A tela da explicação fica 2,6s sem nenhuma mudança visual, acima do limite de 2,5s do checklist. `VP05_05.73-08.33s_tela_parada_2.6s.jpg`",
+   "[09,00–11,80] \"Regra de ouro: / use o que o / manual da sua / moto / indica.\": \"o\" solto no fim da linha e \"moto\" e \"indica.\" sozinhas.",
+   "Tempo de leitura: a explicação \"10W: como o óleo se comporta no frio. 30: na temperatura de trabalho do motor.\" tem 14 palavras, em letra de ~40px, por ~3,7s.",
+   "Legendas: fora do formato do §5. A IG/FB pede \"Responde nos comentários antes de ver a resposta\" e na frase seguinte já dá a resposta."
+  ],
+  "melhorias": [
+   "O conteúdo fica todo entre y 220 e 1100 e a metade de baixo da tela fica vazia o vídeo inteiro. Centralizar e aumentar as opções.",
+   "A contagem 4-3-2-1 não tem tensão. Pôr uma barra de tempo e destacar o erro antes do acerto.",
+   "O fato está correto (W = winter, 30 = viscosidade a quente)."
+  ]
+ },
+ {
+  "id": "ST01",
+  "tipo": "story",
+  "titulo": "Enquete",
+  "veredito": "REPROVADO",
+  "nota": 7.0,
+  "erros": [
+   "O título quebra em \"quando foi a / última troca\": \"a\" solto no fim da linha."
+  ],
+  "melhorias": [
+   "O sticker fica bem posicionado (y≈1180–1475, fora das zonas) e o texto começa em y≈300. Está OK.",
+   "Opção de enquete mais forte: \"Sei de cabeça\" / \"Vou ter que chutar\"."
+  ]
+ },
+ {
+  "id": "ST02",
+  "tipo": "story",
+  "titulo": "Você sabia",
+  "veredito": "REPROVADO",
+  "nota": 4.0,
+  "erros": [
+   "A caixa azul corta a perna do \"p\" de \"por km\", corta o \"r\" de \"por\" na borda direita e encosta em \"tempo.\" sem margem na borda esquerda, onde o \"p\" também some. A linha \"e também por\" tem um espaço inicial dentro da caixa. `evidencias/ST02_destaque_cortando_letras.jpg`"
+  ],
+  "melhorias": [
+   "O fato está confirmado. O \"?\" gigante no canto ficou bom."
+  ]
+ },
+ {
+  "id": "ST03",
+  "tipo": "story",
+  "titulo": "Tela do app",
+  "veredito": "REPROVADO",
+  "nota": 5.0,
+  "erros": [
+   "O celular vai até a borda de baixo (y=1920), e as linhas \"Tubo de dreno do filtro de ar\" e \"Facho do farol\" ficam na faixa dos 340px que a barra de resposta cobre. O `como_usar` manda pôr o sticker de link \"no rodapé\", que é justamente onde está o print: o sticker vai cobrir o print. `evidencias/ST03_print_na_zona_insegura.jpg`"
+  ],
+  "melhorias": [
+   "O print mostra \"21 itens a confirmar / 0/5\", que dá impressão de bagunça. Usar um print com tudo em dia."
+  ]
+ },
+ {
+  "id": "ST04",
+  "tipo": "story",
+  "titulo": "Caixa de perguntas",
+  "veredito": "APROVADO",
+  "nota": 8.0,
+  "erros": [],
+  "melhorias": [
+   "No corpo, \"revisão. A / gente\" deixa o \"A\" solto. Quebrar antes: \"revisão. / A gente responde…\"",
+   "\"A gente responde as melhores nos stories\" → \"…nos próximos stories.\"",
+   "O sticker está em y≈1180–1475, livre e centralizado. O contraste é alto."
+  ]
+ },
+ {
+  "id": "ST05",
+  "tipo": "story",
+  "titulo": "CTA de download",
+  "veredito": "REPROVADO",
+  "nota": 6.5,
+  "erros": [
+   "O título quebra em \"Sua moto no / controle.\": \"no\" solto no fim da linha."
+  ],
+  "melhorias": [
+   "\"Sua moto\" fica sobre o espelho e o guidão da foto (área poluída). Escurecer mais o topo ou descer o título.",
+   "Confirmar o link \"minhamotopagina.online\" antes de publicar.",
+   "O sticker de link está em y 1360–1510, dentro da área segura. OK."
+  ]
+ }
+]
