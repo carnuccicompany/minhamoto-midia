@@ -35,3 +35,12 @@
 ### Temas gerais
 - [ ] Temas gerais | O custo invisível de trabalhar de moto (e como reduzir) | ângulo: conta real de desgaste por km
 - [ ] Temas gerais | Rotina de quem roda 100 km por dia: o que muda na manutenção | ângulo: intervalo de revisão encurta e ninguém avisa
+
+### Do radar (16/11)
+- [ ] Temas gerais | Quanto custa cada revisão da CG 160 até 36 mil km | ângulo: da 1ª (R$114,75) à de 36 mil km (R$630,67) numa concessionária de SP — fonte AutoPapo 08/11/2025, citar valores como "exemplo de concessionária em SP"
+- [ ] Temas gerais | A conta real de quem roda 130 km por dia | ângulo: ~R$200/mês de manutenção + ~R$481/mês de gasolina (AutoPapo) — e o que ainda fica de fora (pneu, relação, freio)
+- [ ] Curtos AIDA | Moto com histórico vende mais caro | ângulo: o que o comprador pergunta e você não sabe responder; histórico registrado = argumento de venda | prova no app: histórico completo
+- [ ] Educacional | O que o app da montadora não te lembra | ângulo: app de marca = conectividade, não plano de manutenção do dia a dia pra CG/Fan/Biz | prova no app: plano do modelo
+- [ ] Curtos AIDA | "App de controle é tudo igual." Não é | ângulo: app genérico você configura na mão; o MinhaMoto já sabe o plano do seu modelo | prova no app: plano de revisão
+- [ ] Temas gerais | O custo que motoboy não coloca na conta | ângulo: depreciação, pneu, relação, freio — o que some do bolso sem perceber
+- [ ] Temas gerais | Moto alugada × moto própria: quem paga a manutenção? | ângulo: comparação honesta pro entregador decidir (sem citar marca de locadora)
