@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Painel da Agência · MinhaMoto</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#05080e">
+<link rel="icon" href="agencia/designer/assets/icon.png">
+<style>
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--bg:#05080e;--bg2:#0a1424;--card:#0d1a2e;--card2:#10203a;--line:#1b2c4a;--blue:#2f6fe4;--blue2:#4b8dff;--txt:#eef3fb;--mut:#8ea2c2;--ok:#22c55e;--warn:#f5b300;--bad:#ff4d5e}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:#05080e}
+body{margin:0;background:radial-gradient(120% 60% at 50% -10%,rgba(47,111,228,.22),rgba(47,111,228,0) 60%),linear-gradient(180deg,var(--bg),var(--bg2) 60%,var(--bg));color:var(--txt);font:15px/1.45 Inter,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+a{color:var(--blue2);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px 60px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 0 10px}
+.marca{display:flex;align-items:center;gap:10px}
+.marca img{width:38px;height:38px;border-radius:10px}
+h1{margin:0;font-size:20px;font-weight:800;letter-spacing:-.3px}h1 b{color:var(--blue2)}
+.sub{color:var(--mut);font-size:12.5px}
+.atual{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:999px;padding:8px 13px;font:600 13px Inter,sans-serif;cursor:pointer;white-space:nowrap}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;padding:10px 0;margin:0 -16px;padding-left:16px;padding-right:16px;background:rgba(5,8,14,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;font-size:13px;font-weight:600;color:var(--mut);padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+nav a .n{display:inline-block;min-width:18px;margin-left:5px;padding:0 5px;border-radius:999px;background:var(--blue);color:#fff;font-size:11px;text-align:center}
+section{margin-top:26px;scroll-margin-top:60px}
+h2{font-size:17px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px;letter-spacing:-.2px}
+h2 small{font-weight:600;color:var(--mut);font-size:12.5px}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px}
+/* saúde */
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.kpi{padding:14px}
+.kpi .rot{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.kpi .val{font-size:30px;font-weight:800;letter-spacing:-1px;margin-top:2px;line-height:1.1}
+.kpi .det{color:var(--mut);font-size:12.5px;margin-top:2px}
+.kpi.estoque{grid-column:1/-1;display:flex;align-items:center;gap:14px}
+.semaforo{width:60px;height:60px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-weight:800;font-size:22px;color:#05080e}
+.v-ok{background:var(--ok);box-shadow:0 0 30px rgba(34,197,94,.35)}.v-warn{background:var(--warn);box-shadow:0 0 30px rgba(245,179,0,.35)}.v-bad{background:var(--bad);box-shadow:0 0 30px rgba(255,77,94,.4)}
+.slots{display:flex;gap:8px;overflow-x:auto;padding:12px 14px 14px;scrollbar-width:none}
+.slots::-webkit-scrollbar{display:none}
+.slot{flex:0 0 auto;padding:8px 11px;border-radius:12px;border:1px solid var(--line);background:#0a1426;font-size:13px;font-weight:700}
+.slot small{display:block;font-weight:600;font-size:11px;color:var(--mut)}
+.slot.feito{opacity:.55}.slot.prox{border-color:var(--blue2);box-shadow:0 0 0 1px var(--blue2) inset}
+.slot.video{border-style:dashed}
+/* dias */
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--txt);border-radius:999px;padding:7px 14px;font:600 13px Inter,sans-serif;cursor:pointer}
+.tabs button.on{background:var(--blue);border-color:var(--blue)}
+.grade{display:grid;grid-template-columns:1fr;gap:10px}
+.post{display:flex;gap:12px;padding:10px;align-items:center}
+.post img{width:72px;height:90px;object-fit:cover;border-radius:10px;background:#0a1222;flex:0 0 auto}
+.post .h{font-size:20px;font-weight:800;letter-spacing:-.5px}
+.post .t{font-weight:700;font-size:14px;line-height:1.3;margin:2px 0}
+.post .l{color:var(--mut);font-size:12px}
+.selo{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:#13284d;color:#9fc1ff;margin-left:6px;vertical-align:2px}
+.selo.pub{background:rgba(34,197,94,.15);color:#6ee7a0}.selo.agora{background:var(--bad);color:#fff}
+/* aprovação */
+.ap{padding:14px;margin-bottom:12px}
+.ap-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.ap-id{font-size:12px;color:var(--mut);font-weight:700;letter-spacing:.4px}
+.ap-t{font-size:16px;font-weight:800;line-height:1.25;margin-top:2px}
+.ap-meta{color:var(--mut);font-size:12.5px;margin-top:2px}
+.rev{flex:0 0 auto;font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px;background:#1b2740;color:var(--mut);white-space:nowrap}
+.rev.aprov{background:rgba(34,197,94,.16);color:#6ee7a0}.rev.reprov{background:rgba(255,77,94,.16);color:#ff8a95}
+.cards{display:flex;gap:8px;overflow-x:auto;margin:12px -14px 0;padding:0 14px 4px;scroll-snap-type:x mandatory}
+.cards img{height:260px;aspect-ratio:4/5;object-fit:cover;border-radius:12px;scroll-snap-align:start;background:#0a1222;flex:0 0 auto}
+.cards img.story{aspect-ratio:9/16}
+video{display:block;width:100%;max-width:300px;aspect-ratio:9/16;border-radius:14px;background:#000;margin:12px auto 0}
+details{margin-top:10px;border:1px solid var(--line);border-radius:12px;background:#08111f}
+summary{cursor:pointer;padding:10px 12px;font-weight:700;font-size:13px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';float:right;color:var(--mut)}details[open] summary:after{content:'−'}
+details pre{margin:0;padding:0 12px 12px;white-space:pre-wrap;font:13px/1.45 Inter,sans-serif;color:#d6e0f0}
+.btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn{flex:1 1 auto;border:0;border-radius:12px;padding:12px;font:700 14px Inter,sans-serif;color:#fff;background:var(--blue);cursor:pointer}
+.btn.sec{background:#1b2c4a}
+.vazio{color:var(--mut);text-align:center;padding:22px 14px;font-size:14px}
+.subh{font-size:13px;font-weight:800;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 8px}
+/* fila */
+.mix{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.mix span{font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.mix b{color:var(--blue2)}
+.alerta{padding:10px 12px;border-radius:12px;background:rgba(245,179,0,.1);border:1px solid rgba(245,179,0,.35);color:#ffd36b;font-size:13px;margin-bottom:10px}
+.fila{display:grid;grid-template-columns:1fr;gap:8px}
+.fi{display:flex;gap:10px;align-items:center;padding:8px}
+.fi img{width:48px;height:60px;object-fit:cover;border-radius:8px;background:#0a1222;flex:0 0 auto}
+.fi .n{width:26px;text-align:center;color:var(--mut);font-weight:800;font-size:12px;flex:0 0 auto}
+.fi .t{font-weight:700;font-size:13.5px;line-height:1.3}
+.fi .d{color:var(--mut);font-size:12px}
+.fi.colado{border-color:rgba(245,179,0,.5)}
+/* agentes */
+.ags{display:grid;grid-template-columns:1fr;gap:10px}
+.ag{padding:14px;display:flex;gap:12px;align-items:flex-start}
+.ag .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:#13284d;flex:0 0 auto}
+.ag .nm{font-weight:800}.ag .fn{color:var(--mut);font-size:13px;margin-top:2px}
+.ag a{font-size:12.5px;font-weight:700;display:inline-block;margin-top:6px}
+.rotinas{padding:4px 14px}
+.rt{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.rt:last-child{border:0}
+.rt .s{font-size:11.5px;font-weight:800;padding:3px 9px;border-radius:999px;white-space:nowrap;align-self:center}
+.s.on{background:rgba(34,197,94,.15);color:#6ee7a0}.s.off{background:rgba(245,179,0,.15);color:#ffd36b}
+.rel{padding:14px}
+.rel pre{white-space:pre-wrap;font:13px/1.5 Inter,sans-serif;color:#d6e0f0;margin:8px 0 0;max-height:340px;overflow:auto}
+footer{color:var(--mut);font-size:12px;text-align:center;margin-top:36px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;background:var(--ok);color:#05230f;font-weight:800;padding:12px 18px;border-radius:999px;transition:.25s;z-index:9;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(min-width:760px){
+ .kpis{grid-template-columns:repeat(4,1fr)}.kpi.estoque{grid-column:span 2}
+ .grade{grid-template-columns:repeat(2,1fr)}
+ .fila{grid-template-columns:repeat(2,1fr)}
+ .ags{grid-template-columns:repeat(3,1fr)}
+ .duas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+}
+</style></head><body>
+<div class="wrap">
+<header>
+ <div class="marca"><img src="agencia/designer/assets/icon.png" alt=""><div><h1>Painel da <b>Agência</b></h1><div class="sub" id="atualizado">Carregando…</div></div></div>
+ <button class="atual" id="recarregar">↻ Atualizar</button>
+</header>
+<nav id="nav">
+ <a href="#saude">Saúde</a><a href="#dias">Hoje e amanhã</a><a href="#aprovacao">Aprovação<span class="n" id="nAprov">0</span></a><a href="#fila">Fila</a><a href="#agentes">Agentes</a><a href="#relatorios">Relatórios</a><a href="tiktok.html">TikTok do dia ↗</a>
+</nav>
+
+<section id="saude"><h2>Saúde da operação</h2>
+ <div class="kpis">
+  <div class="card kpi estoque"><div class="semaforo" id="semaforo">–</div><div><div class="rot">Estoque de carrosséis</div><div class="val" id="dias-estoque">–</div><div class="det" id="det-estoque"></div></div></div>
+  <div class="card kpi"><div class="rot">Publicados</div><div class="val" id="k-pub">–</div><div class="det">Instagram + Facebook</div></div>
+  <div class="card kpi"><div class="rot">Aguardando você</div><div class="val" id="k-aprov">–</div><div class="det" id="k-aprov-det"></div></div>
+ </div>
+ <div class="card" style="margin-top:10px"><div class="subh" style="margin:12px 14px 0">Horários de hoje</div><div class="slots" id="slots"></div></div>
+</section>
+
+<section id="dias"><h2>Hoje e amanhã</h2>
+ <div class="tabs" id="tabsDias"></div>
+ <div class="grade" id="grade"></div>
+</section>
+
+<section id="aprovacao"><h2>Aguardando sua aprovação <small id="aprovResumo"></small></h2>
+ <div class="sub" style="margin:-6px 0 12px">Toque em "Copiar comando" e cole no chat com o Claude pra mandar pra fila.</div>
+ <div class="subh">Carrosséis</div><div id="apCarr"></div>
+ <div class="subh">Vídeos (Reels / TikTok)</div><div id="apVid"></div>
+ <div class="subh">Stories</div><div id="apSto"></div>
+</section>
+
+<section id="fila"><h2>Fila de publicação <small id="filaResumo"></small></h2>
+ <div class="mix" id="mix"></div>
+ <div id="alertaFila"></div>
+ <div class="fila" id="listaFila"></div>
+</section>
+
+<section id="agentes"><h2>Os agentes</h2>
+ <div class="ags" id="ags"></div>
+ <div class="subh">Rotinas automáticas</div>
+ <div class="card rotinas">
+  <div class="rt"><div><b>Publicação</b><div class="sub">12h · 15h · 18h · 21h — Instagram + Facebook + aviso do TikTok</div></div><span class="s on">Ligada</span></div>
+  <div class="rt"><div><b>Produção diária</b><div class="sub">7h24 — produz, revisa e manda pra sua aprovação · pausada até você aprovar o padrão novo</div></div><span class="s off">Pausada</span></div>
+  <div class="rt"><div><b>Relatório semanal</b><div class="sub">Segunda 8h26 — Analista: placar, dobrar / cortar / testar</div></div><span class="s on">Ligada</span></div>
+ </div>
+</section>
+
+<section id="relatorios"><h2>Relatórios</h2>
+ <div class="duas">
+  <div class="card rel"><b>Último relatório do Analista</b><div id="relAnalista" class="sub" style="margin-top:6px">Carregando…</div></div>
+  <div class="card rel"><b>Último radar de concorrentes</b><div id="relRadar" class="sub" style="margin-top:6px">Carregando…</div></div>
+ </div>
+</section>
+
+<footer>MinhaMoto · painel lê a fila em tempo real do GitHub · <a href="https://github.com/carnuccicompany/minhamoto-midia">repositório</a></footer>
+</div>
+<div class="toast" id="toast">Copiado ✓</div>
+
+<script>
+const HORARIOS=[12,15,18,21], VIDEO_H=['12h40','20h30'];
+const REPO='https://github.com/carnuccicompany/minhamoto-midia/blob/main/';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const brNow=()=>new Date(Date.now()-3*3600e3);
+const hojeBR=()=>brNow().toISOString().slice(0,10);
+const addDia=(d,n)=>new Date(new Date(d+'T00:00:00Z').getTime()+n*864e5).toISOString().slice(0,10);
+const itens=j=>Array.isArray(j)?j:(j&&Array.isArray(j.itens)?j.itens:[]);
+async function get(path,fallback){try{const r=await fetch(path+(path.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)return fallback;const ct=r.headers.get('content-type')||'';return path.endsWith('.json')?await r.json():await r.text()}catch(e){return fallback}}
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1600)}
+async function copiar(txt,btn){try{await navigator.clipboard.writeText(txt);toast('Copiado ✓')}catch(e){const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('Copiado ✓')}catch(_){toast('Segure o texto pra copiar')}ta.remove()}}
+
+let D={};
+async function carregar(){
+ $('atualizado').textContent='Atualizando…';
+ const [fila,estado,pend,vid,sto,manifest,relIdx,radIdx,revRel]=await Promise.all([
+  get('fila/carrosseis.json',[]),get('fila/estado.json',{}),get('fila/pendentes.json',{itens:[]}),
+  get('videos/pendentes.json',{itens:[]}),get('stories/pendentes.json',{itens:[]}),get('manifest.json',{}),
+  get('dados/relatorios/index.json',[]),get('agencia/radar/index.json',[]),get('revisao/relatorio.json',null)]);
+ D={fila:itens(fila),estado:estado||{},pend:itens(pend),vid:itens(vid),sto:itens(sto),manifest,relIdx:Array.isArray(relIdx)?relIdx:[],radIdx:Array.isArray(radIdx)?radIdx:[],revRel};
+ D.pub=D.estado.publicados||{};
+ montarPlano();desenhar();
+ $('atualizado').textContent='Atualizado às '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+}
+function publicado(p){return !!(D.pub[p.id]&&D.pub[p.id].ig)}
+let plano={};
+function montarPlano(){
+ plano={};
+ D.fila.filter(publicado).forEach(p=>{const t=new Date(new Date(D.pub[p.id].ig.em).getTime()-3*3600e3);const d=t.toISOString().slice(0,10);const h=t.getUTCHours();
+  (plano[d]=plano[d]||[]).push({p,hora:HORARIOS.filter(H=>H<=h).pop()??HORARIOS[0],t,pub:true})});
+ Object.values(plano).forEach(l=>l.sort((a,b)=>a.t-b.t));
+ const pend=D.fila.filter(p=>!publicado(p));let d=hojeBR();
+ const agora=brNow(),agoraH=agora.getUTCHours()+agora.getUTCMinutes()/60;
+ D.previsao=[];
+ for(let i=0;pend.length&&i<60;i++){const l=plano[d]=plano[d]||[];const usados=l.map(x=>x.hora);
+  for(const H of HORARIOS){if(!pend.length)break;if(usados.includes(H))continue;if(i===0&&H+2<=agoraH)continue;const x={p:pend.shift(),hora:H,dia:d};l.push(x);D.previsao.push(x)}
+  l.sort((a,b)=>a.hora-b.hora);d=addDia(d,1)}
+}
+function nomeDia(d){const h=hojeBR();if(d===h)return'Hoje';if(d===addDia(h,1))return'Amanhã';return new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit',timeZone:'UTC'})}
+function thumb(p){return (p.cards&&p.cards[0])||''}
+let diaSel=null;
+function desenhar(){
+ // SAÚDE
+ const naoPub=D.fila.filter(p=>!publicado(p)).length, dias=naoPub/4;
+ const sem=$('semaforo');sem.className='semaforo '+(dias>=14?'v-ok':dias>=7?'v-warn':'v-bad');sem.textContent=dias>=14?'✓':dias>=7?'!':'!!';
+ $('dias-estoque').textContent=(Math.round(dias*10)/10).toLocaleString('pt-BR')+' dias';
+ const fim=D.previsao.length?D.previsao[D.previsao.length-1].dia:null;
+ $('det-estoque').textContent=`${naoPub} carrosséis prontos na fila${fim?' · dura até '+new Date(fim+'T12:00:00Z').toLocaleDateString('pt-BR',{day:'2-digit',month:'short',timeZone:'UTC'}):''}`;
+ $('k-pub').textContent=D.fila.filter(publicado).length;
+ const nAp=D.pend.length+D.vid.length+D.sto.length;
+ $('k-aprov').textContent=nAp;$('nAprov').textContent=nAp;
+ $('k-aprov-det').textContent=`${D.pend.length} carrosséis · ${D.vid.length} vídeos · ${D.sto.length} stories`;
+ const hoje=hojeBR(),agora=brNow(),agoraMin=agora.getUTCHours()*60+agora.getUTCMinutes();
+ const lHoje=plano[hoje]||[];
+ const slots=[...HORARIOS.map(H=>({min:H*60,tipo:'c',H})),{min:12*60+40,tipo:'v',lab:'12h40'},{min:20*60+30,tipo:'v',lab:'20h30'}].sort((a,b)=>a.min-b.min);
+ let marcou=false;
+ $('slots').innerHTML=slots.map(s=>{
+  if(s.tipo==='v')return `<div class="slot video">${s.lab}<small>vídeo · em breve</small></div>`;
+  const x=lHoje.find(y=>y.hora===s.H);const feito=x&&x.pub;let cls=feito?'feito':'';
+  if(!feito&&!marcou&&s.min+120>agoraMin){cls='prox';marcou=true}
+  return `<div class="slot ${cls}">${s.H}h<small>${feito?'publicado ✓':x?esc(x.p.titulo).slice(0,26):(s.min+120<=agoraMin?'passou':'livre')}</small></div>`}).join('');
+ // DIAS
+ const ds=[hoje,addDia(hoje,1)];if(!ds.includes(diaSel))diaSel=hoje;
+ $('tabsDias').innerHTML=ds.map(d=>`<button class="${d===diaSel?'on':''}" data-d="${d}">${nomeDia(d)} <span style="opacity:.7">(${(plano[d]||[]).length})</span></button>`).join('');
+ $('tabsDias').querySelectorAll('button').forEach(b=>b.onclick=()=>{diaSel=b.dataset.d;desenhar()});
+ const l=plano[diaSel]||[];
+ $('grade').innerHTML=l.length?l.map(x=>{const ag=diaSel===hoje&&!x.pub&&x.hora*60<=agoraMin&&agoraMin<x.hora*60+120;
+  return `<div class="card post"><img src="${esc(thumb(x.p))}" loading="lazy" alt=""><div><div class="h">${x.hora}h ${x.pub?'<span class="selo pub">publicado ✓</span>':ag?'<span class="selo agora">saindo agora</span>':'<span class="selo">na fila</span>'}</div><div class="t">${esc(x.p.titulo)}</div><div class="l">${esc(x.p.linha||'')} · ${esc(x.p.id)}</div></div></div>`}).join(''):'<div class="card vazio">Nada programado pra esse dia.</div>';
+ // APROVAÇÃO
+ $('aprovResumo').textContent=nAp?`${nAp} itens`:'';
+ $('apCarr').innerHTML=D.pend.length?D.pend.map(p=>itemAprov(p,'carr')).join(''):'<div class="card vazio">Nenhum carrossel aguardando.</div>';
+ $('apVid').innerHTML=D.vid.length?D.vid.map(p=>itemAprov(p,'vid')).join(''):'<div class="card vazio">Nenhum vídeo aguardando — os vídeos-piloto aparecem aqui quando ficarem prontos.</div>';
+ $('apSto').innerHTML=D.sto.length?D.sto.map(p=>itemAprov(p,'sto')).join(''):'<div class="card vazio">Nenhum story aguardando.</div>';
+ document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>copiar(b.dataset.copy,b));
+ // FILA
+ const prox=D.previsao.slice(0,40);
+ $('filaResumo').textContent=`próximos ${prox.length} de ${naoPub}`;
+ const mix={};D.fila.filter(p=>!publicado(p)).forEach(p=>{const k=(p.linha||'Sem linha').replace(/\s+\d+$/,'');mix[k]=(mix[k]||0)+1});
+ $('mix').innerHTML=Object.entries(mix).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<span>${esc(k)} <b>${v}</b></span>`).join('');
+ const lin=p=>(p.linha||'').replace(/\s+\d+$/,'');
+ const colados=[];prox.forEach((x,i)=>{if(i&&lin(x.p)&&lin(x.p)===lin(prox[i-1].p))colados.push(i)});
+ $('alertaFila').innerHTML=colados.length?`<div class="alerta">⚠️ ${colados.length} ${colados.length>1?'pares':'par'} de posts da mesma linha editorial em sequência nos próximos 40 (marcados em amarelo).</div>`:'';
+ $('listaFila').innerHTML=prox.map((x,i)=>`<div class="card fi ${colados.includes(i)?'colado':''}"><div class="n">${i+1}</div><img src="${esc(thumb(x.p))}" loading="lazy" alt=""><div><div class="t">${esc(x.p.titulo)}</div><div class="d">${nomeDia(x.dia)} · ${x.hora}h · ${esc(lin(x.p)||'—')}</div></div></div>`).join('')||'<div class="card vazio">Fila vazia.</div>';
+ // AGENTES
+ const ags=[['🧠','Pauteiro','Mantém 30+ pautas prontas, baseado em dores reais e no que performa.','01-pauteiro.md'],['✍️','Roteirista','Transforma pauta em roteiro: texto de cada card + as duas legendas.','02-roteirista.md'],['🎨','Designer','Renderiza carrosséis, vídeos e stories no padrão visual aprovado.','03-designer.md'],['🔍','Revisor','Tolerância zero: caça erro frame a frame antes de qualquer entrega.','04-revisor.md'],['🚀','Publicador','Garante que tudo sai no horário nas três redes, sem falha silenciosa.','05-publicador.md'],['📊','Analista','Toda semana: o que dobrar, o que cortar, o que testar.','06-analista.md']];
+ $('ags').innerHTML=ags.map(a=>`<div class="card ag"><div class="ic">${a[0]}</div><div><div class="nm">${a[1]}</div><div class="fn">${a[2]}</div><a href="${REPO}agencia/agentes/${a[3]}" target="_blank" rel="noopener">Ver playbook →</a></div></div>`).join('');
+ // RELATÓRIOS
+ relatorio('relAnalista',D.relIdx,'dados/relatorios/','Ainda sem relatório — o primeiro sai na segunda às 8h26.');
+ relatorio('relRadar',D.radIdx,'agencia/radar/','Ainda sem radar publicado.');
+}
+function statusRev(p){
+ let r=p.revisao;
+ if(!r&&D.revRel){const src=Array.isArray(D.revRel)?D.revRel:(D.revRel.itens||D.revRel.pecas||D.revRel);r=Array.isArray(src)?src.find(x=>x.id===p.id):(src&&src[p.id])}
+ if(!r)return '<span class="rev">aguardando revisor</span>';
+ const st=String(r.status||r.resultado||r.veredito||r).toUpperCase();const nota=r.nota!=null?` · ${r.nota}/10`:'';
+ const ok=st.includes('APROV')&&!st.includes('REPROV');
+ return `<span class="rev ${ok?'aprov':'reprov'}">${ok?'APROVADO':'REPROVADO'}${nota}</span>`;
+}
+function itemAprov(p,tipo){
+ let midia='';
+ if(tipo==='vid'){const mp4=p.video||p.arquivo||`videos/${p.id}/video.mp4`;const capa=p.capa||`videos/${p.id}/capa.jpg`;midia=`<video src="${esc(mp4)}" poster="${esc(capa)}" controls playsinline preload="none"></video>`}
+ else{const imgs=p.cards||p.imagens||(p.imagem?[p.imagem]:(tipo==='sto'?[`stories/${p.id}.jpg`]:[]));midia=`<div class="cards">${imgs.map(c=>`<img class="${tipo==='sto'?'story':''}" src="${esc(c)}" loading="lazy" alt="">`).join('')}</div>`}
+ const meta=[p.linha,p.estilo,p.formato,p.tipo].filter(Boolean).map(esc).join(' · ');
+ const legs=[];
+ if(p.legenda_ig_fb)legs.push(`<details><summary>Legenda Instagram / Facebook</summary><pre>${esc(p.legenda_ig_fb)}</pre></details>`);
+ if(p.legenda_tiktok)legs.push(`<details><summary>Legenda TikTok</summary><pre>${esc(p.legenda_tiktok)}</pre></details>`);
+ const uso=p.uso||p.texto||p.descricao;if(uso&&tipo==='sto')legs.push(`<details><summary>Como usar</summary><pre>${esc(uso)}</pre></details>`);
+ return `<div class="card ap"><div class="ap-top"><div><div class="ap-id">${esc(p.id)}</div><div class="ap-t">${esc(p.titulo||p.nome||'')}</div>${meta?`<div class="ap-meta">${meta}</div>`:''}</div>${statusRev(p)}</div>${midia}${legs.join('')}
+ <div class="btns"><button class="btn" data-copy="aprova ${esc(p.id)}">Copiar comando: aprova ${esc(p.id)}</button>${p.legenda_tiktok?`<button class="btn sec" data-copy="${esc(p.legenda_tiktok)}">Copiar legenda TikTok</button>`:''}</div></div>`;
+}
+async function relatorio(el,idx,base,vazio){
+ const lista=idx.map(x=>typeof x==='string'?x:(x.arquivo||x.file||x.path)).filter(Boolean).sort();
+ if(!lista.length){$(el).innerHTML=esc(vazio);return}
+ const ult=lista[lista.length-1];const path=ult.includes('/')?ult:base+ult;
+ const txt=await get(path,'');
+ $(el).innerHTML=`<a href="${REPO}${esc(path)}" target="_blank" rel="noopener">${esc(path.split('/').pop())} →</a><pre>${esc(String(txt).slice(0,2500))}${String(txt).length>2500?'\n…':''}</pre>`;
+}
+$('recarregar').onclick=carregar;
+carregar().catch(e=>{$('atualizado').textContent='Erro ao carregar. Toque em Atualizar.';console.warn(e)});
+setInterval(carregar,5*60e3);
+</script></body></html>
