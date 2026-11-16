@@ -6,7 +6,9 @@
 Depois do Roteirista, na rotina diária.
 
 ## Ferramentas
-- `agencia/designer/render.py` — lê o roteiro JSON, monta HTML dos templates e renderiza com Chrome/Playwright.
+- `agencia/designer/render2.py` — **renderizador oficial** (estilos dark / foto / claro, ver MANUAL §4). Uso: `python3 agencia/designer/render2.py agencia/roteiros/ID.json`.
+- `agencia/designer/video.py` — vídeos 9:16 (MANUAL §6b). `agencia/designer/stories.py` — stories (MANUAL §6c).
+- `agencia/designer/render.py` — legado (templates antigos), só manutenção do acervo.
 - `agencia/designer/templates/` — foto.html, produto.html, editorial.html (os templates oficiais; mudança neles só com aprovação do Léo).
 - `agencia/designer/assets/`:
   - `fotos/` — banco de fotos Pexels de moto/oficina (usadas nos carrosséis aprovados)
@@ -18,7 +20,7 @@ Depois do Roteirista, na rotina diária.
 1. Lê o roteiro. Escolhe foto/print de cada card:
    - Foto tem que casar com o texto do card (card de oficina = foto de oficina). Não repetir a mesma foto em cards vizinhos nem em carrosséis próximos na fila.
    - Print tem que PROVAR o que o texto afirma (texto fala de histórico → print do histórico).
-2. Roda `python3 agencia/designer/render.py agencia/roteiros/{ID}.json` → gera `carrosseis/{ID}/01.jpg ... NN.jpg`.
+2. Roda `python3 agencia/designer/render2.py agencia/roteiros/{ID}.json` → gera `carrosseis/{ID}/01.jpg ... NN.jpg`.
 3. Confere cada card renderizado EM IMAGEM (abre e olha): texto cortado? contraste ruim? foto estranha atrás do texto? Corrigiu, renderiza de novo.
 4. Atualiza `manifest.json` com o novo ID.
 

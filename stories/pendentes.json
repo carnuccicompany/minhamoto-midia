@@ -1,0 +1,34 @@
+{
+ "itens": [
+  {
+   "id": "ST01",
+   "tipo": "Enquete",
+   "imagem": "stories/ST01.jpg",
+   "como_usar": "Adicionar o sticker de ENQUETE no quadro tracejado. Opções: “Sei de cabeça” / “Nem faço ideia”. No dia seguinte, repostar o resultado."
+  },
+  {
+   "id": "ST02",
+   "tipo": "Você sabia",
+   "imagem": "stories/ST02.jpg",
+   "como_usar": "Postar sozinho ou antes do ST03. Sem sticker; opcional: sticker de reação (emoji slider)."
+  },
+  {
+   "id": "ST03",
+   "tipo": "Bastidor / tela do app",
+   "imagem": "stories/ST03.jpg",
+   "como_usar": "Pode ir com o sticker de LINK (link da bio) no rodapé, acima da barra de resposta."
+  },
+  {
+   "id": "ST04",
+   "tipo": "Caixa de perguntas",
+   "imagem": "stories/ST04.jpg",
+   "como_usar": "Adicionar o sticker de PERGUNTAS no quadro tracejado com o texto “Sua dúvida de manutenção”. Responder as melhores nos stories dos dias seguintes."
+  },
+  {
+   "id": "ST05",
+   "tipo": "CTA de download",
+   "imagem": "stories/ST05.jpg",
+   "como_usar": "Adicionar o sticker de LINK apontando pro link da bio (minhamotopagina.online), em cima do quadro tracejado."
+  }
+ ]
+}

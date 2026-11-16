@@ -39,27 +39,38 @@ Temas cobertos: plano de revisão do modelo, histórico de serviços, cuidados f
 Proporção alvo da fila: ~70% valor (dicas, educacional, marcas, temas) / ~30% venda (AIDA, produto).
 Nunca dois carrosséis da mesma linha em sequência na fila.
 
-## 4. Sistemas visuais (aprovados pelo Léo — não inventar sistema novo)
+## 4. Sistemas visuais
 
-Formato: **1080×1350 (4:5)**, 5 a 7 cards, JPG q92. Fonte: **Inter** (variável, pesos 400–900).
+Formato: **1080×1350 (4:5)**, 5 a 7 cards, JPG q92. Fonte: **Inter** (400–900). Renderizador oficial: `agencia/designer/render2.py` (campo `"estilo"` no roteiro + `"layout"` em cada card: capa, texto, numero, item, phone, cta). Azul continua sendo a cor da marca.
+Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel ficou "xoxo" e já existe demais no acervo; ele quer "tchan". Aprovou a sombra do celular e os prints reais. **Esses dois elementos ficam em todos os estilos.**
 
-### Template A — "foto"
-- Foto real (banco Pexels local em `agencia/designer/assets/fotos/`) cobrindo o card inteiro, escurecida (overlay escuro, mais forte atrás do texto).
-- Texto branco, Inter extrabold, centralizado. Título grande (2 linhas no máx.) + apoio menor.
-- Passos numerados: "2) Descreva a situação."
-- A foto precisa conversar com o texto do card (card sobre oficina = foto de oficina).
-- Um foco por card. Sem logo, sem cabeçalho repetido, sem moldura de gravação.
+### Estilo DARK premium (`"estilo": "dark"`)
+- Fundo quase preto (#05080f) com brilho azul nos cantos e grade sutil.
+- Título branco, Inter 900, alinhado à esquerda, com destaque em azul elétrico #3d8bff (`*palavra*`).
+- Kicker pequeno em caixa-alta azul acima do título ("CUSTO REAL", "O TRUQUE").
+- Números grandes em contorno azul (cards `numero` e `item`).
+- Celular com sombra profunda + halo azul; na capa ele entra inclinado e cortado embaixo.
 
-### Template B — "produto"
-- Fundo azul-claro metálico em degradê suave (base `#dce8f5` → `#eef4fb`).
-- Título editorial centralizado: parte em **navy `#16365c`**, parte em **azul `#2f6fe4`** (destaque só no que importa; na frase de apresentação, destacar só "MinhaMoto").
-- Apoio em cinza-azulado `#5b6b80`.
-- iPhone 15 (proporção real, base cortada intencionalmente quando o layout pedir) com **print real do app** (`agencia/designer/assets/prints/`). A captura prova o que o texto afirma.
-- Rodapé da capa: "Deslize para entender →" em azul.
-- Último card (CTA): título navy+azul, apoio citando **MinhaMoto** em azul, selos App Store + Google Play centralizados (`assets/selos-lojas.png`).
+### Estilo FOTO + tipografia gigante (`"estilo": "foto"`)
+- Foto real do banco cobrindo o card, com degradê escuro de baixo pra cima.
+- Título GIGANTE em caixa-alta, Inter 900, alinhado à esquerda no terço de baixo; destaque em azul #4b8dff.
+- Kicker em etiqueta azul sólida ("OUVIU ISSO?", "ÉPOCA DE CHUVA"). Itens numerados "01, 02…" em azul acima do título.
+- A foto tem que casar com o texto do card (consultar `assets/fotos-catalogo.md`).
 
-### Template C — "editorial"
-- Só tipografia sobre fundo azul metálico (variações: petróleo, reflexos verde-água). Pra capas de impacto e cards de texto puro. Mesmas regras de hierarquia do B.
+### Estilo CLARO editorial (`"estilo": "claro"`)
+- Fundo off-white quente (#f3f1ec), texto quase preto, régua preta no topo com marca/tema à esquerda e paginação "01/07" à direita.
+- Destaque em **marca-texto azul sólido** (#1f5fff com texto branco) — é o "tchan" do estilo.
+- Números gigantes azuis sólidos; pílula preta "ARRASTA →" na capa.
+- Celular com sombra forte, levemente inclinado.
+
+### Regras de composição (todos os estilos)
+- Um foco por card. Quebra manual com `\n` quando a frase tem duas partes (evita palavra solta tipo "O" no fim da linha).
+- Capa sempre com "Arrasta →". CTA final sempre com ícone do app + selos App Store/Google Play.
+- Misturar estilos na fila: nunca dois carrosséis seguidos do mesmo estilo.
+- O antigo "produto azul-claro" (render.py, Template B) foi **aposentado como padrão**: só eventual, quando o Léo pedir.
+
+### Templates antigos (render.py — só para manutenção do acervo)
+- A — "foto" (overlay escuro, texto central), B — "produto" (azul-claro + iPhone), C — "editorial". Não usar em produção nova sem pedido do Léo.
 
 ### Proibições (direção aprovada)
 - Não repetir cabeçalho, logo ou chamada de navegação nos cards.
@@ -98,6 +109,23 @@ Regras:
 - **TikTok:** manual pelo Léo via notificação + página `tiktok.html`.
 - Reels e stories: formato em definição com o Léo (não produzir ainda).
 - Repetição: depois de ~300 posts publicados, uma ideia antiga pode voltar com estética nova. Antes disso, não.
+
+## 6b. Vídeos (Reels/TikTok) — prioridade da operação
+- **2 vídeos por dia**: **12h40** e **20h30** (BRT), longe dos carrosséis (12h/15h/18h/21h). O Analista revisa os horários com dados após ~2 semanas.
+- Formato 1080×1920, 30 fps, H.264, 7–25 s, **sem música** (o Léo põe o som em alta na hora de postar no TikTok).
+- Gancho em texto grande já no **primeiro frame** (0–2 s). Texto na tela o tempo todo (a maioria assiste sem som). Cortes rápidos (~2–3 s por cena).
+- Final que emenda no começo (loop) quando possível.
+- Zonas seguras: nada importante nos ~150 px de cima, ~380 px de baixo e ~160 px da direita.
+- Tom de motoboy falando com motoboy; o app aparece como solução, não como anúncio.
+- Formatos em rodízio: texto animado, tela do app em ação, POV/meme, lista rápida/ranking, quiz ou mito × verdade, e edição de material bruto que o Léo/Davi mandarem.
+- Motor: `agencia/designer/video.py` (roteiros em `agencia/roteiros-video/`). Saída em `videos/VPnn/` + folha de frames em `revisao/`.
+- Legenda IG/FB e TikTok no mesmo padrão do §5 (CTA intocável).
+
+## 6c. Stories
+- 1080×1920. Zonas seguras: 250 px de cima (barra do perfil) e 340 px de baixo (barra de resposta).
+- Tipos em rodízio: enquete, você sabia, bastidor/tela do app, caixa de perguntas, CTA de download.
+- Stickers (enquete, perguntas, link) são colocados pelo Léo no app: deixar quadro tracejado marcando o lugar e descrever o uso em `stories/pendentes.json`.
+- Gerador: `agencia/designer/stories.py`.
 
 ## 7. Estoque
 
