@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url('file://%%ASSETS%%/fontes/inter-latin-600-normal.woff2');font-weight:600}
+@font-face{font-family:Inter;src:url('file://%%ASSETS%%/fontes/inter-latin-700-normal.woff2');font-weight:700}
+@font-face{font-family:Inter;src:url('file://%%ASSETS%%/fontes/inter-latin-800-normal.woff2');font-weight:800}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden;font-family:Inter,sans-serif;
+  background:linear-gradient(160deg,#d7e4f3 0%,#e7eff9 45%,#eef4fb 100%)}
+.wrap{position:absolute;inset:0;text-align:center;padding:96px 84px 0}
+h1{font-weight:800;font-size:%%TSIZE%%px;line-height:1.14;letter-spacing:-1.5px;color:#16365c}
+h1 .az{color:#2f6fe4}
+.apoio{font-weight:600;font-size:40px;line-height:1.35;color:#5b6b80;margin-top:30px}
+.apoio b{font-weight:800;color:#2f6fe4}
+.phone{width:%%PW%%px;margin:%%PM%%px auto 0;background:#0b0b0e;border-radius:58px;padding:11px;
+  box-shadow:0 36px 70px rgba(22,54,92,.28),0 10px 24px rgba(22,54,92,.18)}
+.phone img{display:block;width:100%;border-radius:47px}
+.rodape{position:absolute;left:0;right:0;bottom:50px;text-align:center;
+  font-weight:700;font-size:34px;color:#2f6fe4}
+.selos{position:absolute;left:0;right:0;bottom:56px;text-align:center}
+.selos img{width:520px}
+.fade{position:absolute;left:0;right:0;bottom:0;height:150px;
+  background:linear-gradient(rgba(238,244,251,0),#eef4fb 85%)}
+</style></head><body>
+<div class="wrap">
+  <h1>%%TITULO%%</h1>
+  %%APOIO%%
+  %%PHONE%%
+</div>
+%%FADE%%
+%%RODAPE%%
+%%SELOS%%
+</body></html>

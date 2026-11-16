@@ -1,0 +1,25 @@
+{
+  "id": "AG01",
+  "titulo": "Quanto sua moto custa por mês",
+  "linha": "Educacional",
+  "template": "produto",
+  "cards": [
+    {"tipo": "capa_produto", "titulo_navy": "Quanto sua moto custa", "titulo_azul": "por mês?",
+     "apoio": "A maioria chuta pra baixo. Quem anota se assusta — e gasta menos.",
+     "print": "plano-atual.png", "cortar_base": true, "rodape": "Deslize para descobrir"},
+    {"tipo": "card_produto", "titulo_navy": "Ninguém sabe o número", "titulo_azul": "porque ninguém soma.",
+     "apoio": "Óleo num mês, corrente no outro. Separado parece pouco. Somado, é outra história.",
+     "print": "historico-completo.png", "cortar_base": true},
+    {"tipo": "card_produto", "titulo_navy": "Anote cada serviço:", "titulo_azul": "data, km e valor.",
+     "apoio": "Leva 20 segundos no registro. É isso que transforma \"acho\" em número.",
+     "print": "registro-filtro-oleo.png", "cortar_base": true},
+    {"tipo": "card_produto", "titulo_navy": "Com o número na mão,", "titulo_azul": "você decide melhor.",
+     "apoio": "Prever o gasto do ano, negociar na revenda, saber se ela ainda compensa.",
+     "print": "combustivel-media.png", "cortar_base": true},
+    {"tipo": "cta", "titulo_navy": "Sua moto tem um custo.", "titulo_azul": "O MinhaMoto te mostra.",
+     "apoio": "Cada troca, cada real, tudo somado no MinhaMoto. Baixe o app.",
+     "print": "historico-completo.png", "phone_w": 300, "phone_m": 36, "cortar_base": true}
+  ],
+  "legenda_ig_fb": "Se eu te perguntar quanto sua moto custou nos últimos 3 meses, você sabe responder?\n\nA real: quase ninguém sabe. O gasto vem picado — um óleo aqui, uma corrente ali — e a conta nunca fecha porque ninguém soma. Anota data, km e valor de cada serviço que o número aparece. Com número na mão você prevê gasto, negocia revenda e para de decidir no chute.\n\n📌 Salva pra não esquecer e manda pra quem vive dizendo que moto não dá gasto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #mecanicademoto #custodemoto #cg160 #fan160 #biz110 #motosbrasil",
+  "legenda_tiktok": "Quanto sua moto custa por mês? Se você chutou, é porque nunca somou. 📌 Salva e manda pra quem acha que moto não dá gasto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #moto #motoboy #manutencaodemoto #custodemoto #motosbrasil #fyp #motostiktok"
+}
