@@ -1,0 +1,40 @@
+{
+ "id": "VP05",
+ "titulo": "Quiz: o que significa 10W-30",
+ "formato": "Quiz",
+ "capa_t": 1.2,
+ "cenas": [
+  {
+   "tipo": "quiz",
+   "dur": 9.0,
+   "pergunta": "O que significa *10W-30* no óleo?",
+   "opcoes": [
+    "Tipo de pneu",
+    "Viscosidade do óleo",
+    "Código da peça"
+   ],
+   "certa": 1,
+   "revela": 5.0,
+   "explica": "*10W*: como o óleo se comporta no frio. *30*: na temperatura de trabalho do motor."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 2.8,
+   "tam": 104,
+   "linhas": [
+    "Regra de ouro:",
+    "use o que o",
+    "*manual da sua moto*",
+    "indica."
+   ]
+  },
+  {
+   "tipo": "end",
+   "dur": 2.6,
+   "titulo": "Óleo certo,\n*na hora certa.*",
+   "sub": "O MinhaMoto guarda qual óleo você usou e mostra quando trocar."
+  }
+ ],
+ "legenda_ig_fb": "Você acertou? Responde nos comentários antes de ver a resposta.\n\n10W-30 é a viscosidade do óleo: o 10W fala do comportamento no frio e o 30 da temperatura de trabalho do motor. Na dúvida, use sempre o que o manual da sua moto indica.\n\n📌 Salva e manda pra quem acha que sabe tudo de moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #oleodemoto #quiz #10w30 #minhamoto",
+ "legenda_tiktok": "Você acertou? Responde nos comentários antes de ver a resposta. 📌 Manda pra quem acha que sabe tudo de moto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #oleodemoto #quiz #10w30 #moto #motociclista #fyp #motostiktok"
+}

@@ -1,0 +1,62 @@
+{
+ "id": "VP02",
+ "titulo": "O app em ação",
+ "formato": "Tela do app em ação",
+ "capa_t": 3.0,
+ "cenas": [
+  {
+   "tipo": "kinetic",
+   "dur": 2.0,
+   "tam": 120,
+   "passo": 0.35,
+   "linhas": [
+    "Onde você anota",
+    "a manutenção",
+    "da sua *moto?*"
+   ]
+  },
+  {
+   "tipo": "phone",
+   "dur": 2.6,
+   "print": "plano-atual.png",
+   "titulo": "O app mostra\n*o que vence.*",
+   "sub": "Pelo plano do seu modelo, por km."
+  },
+  {
+   "tipo": "phone",
+   "dur": 2.6,
+   "print": "registro-filtro-oleo.png",
+   "titulo": "Registra o serviço\n*em segundos.*",
+   "sub": "Data, km, valor e peça."
+  },
+  {
+   "tipo": "phone",
+   "dur": 2.6,
+   "print": "historico-completo.png",
+   "titulo": "Tudo vira\n*histórico.*",
+   "sub": "Com o quanto você pagou em cada serviço."
+  },
+  {
+   "tipo": "phone",
+   "dur": 2.6,
+   "print": "tempo-limites.png",
+   "titulo": "Controla\n*km e tempo.*",
+   "sub": "Vale o primeiro limite que chegar."
+  },
+  {
+   "tipo": "phone",
+   "dur": 2.4,
+   "print": "combustivel-media.png",
+   "titulo": "E o consumo\n*de verdade.*",
+   "sub": "Média calculada pelos abastecimentos."
+  },
+  {
+   "tipo": "end",
+   "dur": 2.6,
+   "titulo": "Sua moto\n*no controle.*",
+   "sub": "Baixe o MinhaMoto."
+  }
+ ],
+ "legenda_ig_fb": "Caderninho, nota fiscal na carteira ou memória? Tem jeito melhor de cuidar da moto.\n\nNo MinhaMoto você vê o que vence pelo plano do seu modelo, registra cada serviço em segundos, guarda o histórico com valores e acompanha o consumo real.\n\n📌 Salva e manda pra quem ainda anota manutenção no caderninho.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #appdemoto #organizacao #revisaodemoto #minhamoto",
+ "legenda_tiktok": "Caderninho, nota fiscal na carteira ou memória? Tem jeito melhor de cuidar da moto. 📌 Manda pra quem ainda anota manutenção no caderninho. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #appdemoto #organizacao #revisaodemoto #moto #motociclista #fyp #motostiktok"
+}

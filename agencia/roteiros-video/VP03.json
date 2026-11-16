@@ -1,0 +1,55 @@
+{
+ "id": "VP03",
+ "titulo": "POV: o mecânico pergunta",
+ "formato": "POV / meme",
+ "capa_t": 1.4,
+ "cenas": [
+  {
+   "tipo": "photo",
+   "dur": 3.4,
+   "foto": "3822784.jpg",
+   "pos": "center 30%",
+   "kicker": "POV",
+   "tam": 82,
+   "titulo": "O mecânico pergunta: *quando foi a última troca de óleo?*"
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 2.4,
+   "tam": 124,
+   "linhas": [
+    "Você:",
+    "“Uns 3 meses…",
+    "ou 6?",
+    "*Sei lá.*”"
+   ]
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 1.4,
+   "tam": 116,
+   "bg": "azul",
+   "passo": 0.25,
+   "linhas": [
+    "Quem usa o",
+    "*MinhaMoto:*"
+   ]
+  },
+  {
+   "tipo": "phone",
+   "dur": 3.2,
+   "print": "historico-completo.png",
+   "tam": 80,
+   "titulo": "“Dia 07/11, *18.400 km*, óleo 10W-30.”",
+   "sub": "Mecânico respeita."
+  },
+  {
+   "tipo": "end",
+   "dur": 2.4,
+   "titulo": "Seja o cliente\n*que sabe.*",
+   "sub": "Baixe o MinhaMoto."
+  }
+ ],
+ "legenda_ig_fb": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina.\n\nQuando o mecânico pergunta da última troca, quem tem o histórico responde na hora: data, km e qual óleo foi usado. É outra conversa.\n\n📌 Salva e manda pra quem nunca lembra quando trocou o óleo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #humor #oficinademoto #trocadeoleo #minhamoto",
+ "legenda_tiktok": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina. 📌 Manda pra quem nunca lembra quando trocou o óleo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #humor #oficinademoto #trocadeoleo #moto #motociclista #fyp #motostiktok"
+}
