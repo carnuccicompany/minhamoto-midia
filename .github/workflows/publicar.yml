@@ -11,6 +11,10 @@ on:
         description: "Só mostrar o próximo, sem publicar"
         type: boolean
         default: false
+      forcar:
+        description: "Publicar o próximo agora, fora do horário"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,7 +37,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           SIMULAR: ${{ inputs.simular && '1' || '0' }}
-          FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+          FORCAR: ${{ inputs.forcar && '1' || '0' }}
         run: python scripts/publicar.py
       - name: Salvar estado da fila
         if: always()
