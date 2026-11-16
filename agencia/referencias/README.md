@@ -1,3 +1,5 @@
+> ⚠️ 16/11 — Por ordem do Léo, os vídeos de referência (curtos, motions, prontos, hooks, CTAs) e as filmagens na moto foram REMOVIDOS: mostram o APP ANTIGO e a oferta antiga ("vitalício R$19,90"). Não usar nem como base. A gravação tela-cadastro também foi removida (expunha e-mail pessoal). As demais gravações de tela usam o layout ATUAL (conferido com os carrosséis do Davi) e podem ser usadas.
+
 # Referências e material de vídeo
 
 Vídeos do Léo convertidos a partir de `6 FIGURES/MinhaMoto` (originais intactos lá).
