@@ -62,13 +62,13 @@ function desenhar(){
  document.getElementById('sub').textContent=`${l.length} posts · ${l.filter(x=>feitosTT[x.p.id]).length} já no TikTok`;
  document.getElementById('lista').innerHTML=l.length?l.map((x,i)=>{const feito=feitosTT[x.p.id];const agora=diaSel===hojeBR()&&x.hora<=agoraH&&agoraH<x.hora+3&&!feito;
   return `<section class="post ${feito?'feito':''}"><div class="topo"><div class="hora">${x.hora}h<small>${x.p.titulo}</small></div><span class="tag ${agora?'agora':''}">${feito?'Postado ✓':agora?'Postar agora':'Na fila'}</span></div>
-  <div class="imgs">${x.p.cards.map(c=>`<img src="${c}" loading="lazy">`).join('')}</div>
+  <div class="imgs">${(x.p.cards_tiktok||x.p.cards).map(c=>`<img src="${c}" loading="lazy">`).join('')}</div>
   <div class="leg">${x.p.legenda_tiktok.replace(/</g,'&lt;')}</div>
-  <div class="acoes"><button class="pri" data-salvar="${i}">Salvar ${x.p.cards.length} imagens</button><button data-copiar="${i}">Copiar legenda</button><button class="ok" data-feito="${i}">${feito?'Desmarcar':'Marcar postado'}</button></div></section>`}).join(''):'<div class="msg">Nada programado pra esse dia.</div>';
+  <div class="acoes"><button class="pri" data-salvar="${i}">Salvar ${(x.p.cards_tiktok||x.p.cards).length} imagens</button><button data-copiar="${i}">Copiar legenda</button><button class="ok" data-feito="${i}">${feito?'Desmarcar':'Marcar postado'}</button></div></section>`}).join(''):'<div class="msg">Nada programado pra esse dia.</div>';
  document.querySelectorAll('[data-copiar]').forEach(b=>b.onclick=async()=>{const p=l[b.dataset.copiar].p;try{await navigator.clipboard.writeText(p.legenda_tiktok);b.textContent='Copiada ✓'}catch(e){b.textContent='Segure o texto pra copiar'}});
  document.querySelectorAll('[data-feito]').forEach(b=>b.onclick=()=>{const p=l[b.dataset.feito].p;const f=lsGet('tt_feitos')||{};f[p.id]?delete f[p.id]:f[p.id]=Date.now();lsSet('tt_feitos',f);desenhar()});
  document.querySelectorAll('[data-salvar]').forEach(b=>b.onclick=async()=>{const p=l[b.dataset.salvar].p;b.textContent='Preparando…';
-  try{const files=await Promise.all(p.cards.map(async(c,n)=>{const bl=await (await fetch(c)).blob();return new File([bl],`${p.id}-${String(n+1).padStart(2,'0')}.jpg`,{type:'image/jpeg'})}));
+  try{const files=await Promise.all((p.cards_tiktok||p.cards).map(async(c,n)=>{const bl=await (await fetch(c)).blob();return new File([bl],`${p.id}-${String(n+1).padStart(2,'0')}.jpg`,{type:'image/jpeg'})}));
    if(navigator.canShare&&navigator.canShare({files})){await navigator.share({files});b.textContent='Pronto ✓'}
    else{files.forEach(f=>{const a=document.createElement('a');a.href=URL.createObjectURL(f);a.download=f.name;a.click()});b.textContent='Baixadas ✓'}}
   catch(e){b.textContent='Segure cada imagem pra salvar'}});
