@@ -13,7 +13,7 @@ Como os 6 agentes trabalham juntos, sozinhos, todo dia.
 
 2. PAUTEIRO     → banco com menos de 30 pautas? Gera novas.
 3. ROTEIRISTA   → pega as pautas do topo, escreve os roteiros JSON.
-4. DESIGNER     → renderiza os carrosséis (render.py), confere card a card.
+4. DESIGNER     → renderiza os carrosséis (render2.py; vídeos video.py; stories stories.py), confere card a card.
 5. REVISOR      → agente SEPARADO julga tudo. Aprovou → entra na fila. Reprovou → volta (máx. 2 rodadas).
 6. PUBLICADOR   → confere saúde do sistema (workflow, slots de ontem, fila ordenada), commita e dá push no repo.
 7. RELATO       → push notification pro Léo: "Produzidos X carrosséis (IDs), fila com Y dias. Z precisa de atenção."
