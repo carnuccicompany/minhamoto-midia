@@ -275,12 +275,12 @@ function itemAprov(p,tipo){
  let midia='';
  if(tipo==='vid'){const mp4=p.video||p.arquivo||`videos/${p.id}/video.mp4`;const capa=p.capa||`videos/${p.id}/capa.jpg`;midia=`<video src="${esc(mp4)}" poster="${esc(capa)}" controls playsinline preload="none"></video>`}
  else{const imgs=p.cards||p.imagens||(p.imagem?[p.imagem]:(tipo==='sto'?[`stories/${p.id}.jpg`]:[]));midia=`<div class="cards">${imgs.map(c=>`<img class="${tipo==='sto'?'story':''}" src="${esc(c)}" loading="lazy" alt="">`).join('')}</div>`}
- const meta=[p.linha,p.estilo,p.formato,p.tipo].filter(Boolean).map(esc).join(' · ');
+ const meta=[p.linha,p.estilo,p.formato,tipo==='sto'?null:p.tipo].filter(Boolean).map(esc).join(' · ');
  const legs=[];
  if(p.legenda_ig_fb)legs.push(`<details><summary>Legenda Instagram / Facebook</summary><pre>${esc(p.legenda_ig_fb)}</pre></details>`);
  if(p.legenda_tiktok)legs.push(`<details><summary>Legenda TikTok</summary><pre>${esc(p.legenda_tiktok)}</pre></details>`);
- const uso=p.uso||p.texto||p.descricao;if(uso&&tipo==='sto')legs.push(`<details><summary>Como usar</summary><pre>${esc(uso)}</pre></details>`);
- return `<div class="card ap"><div class="ap-top"><div><div class="ap-id">${esc(p.id)}</div><div class="ap-t">${esc(p.titulo||p.nome||'')}</div>${meta?`<div class="ap-meta">${meta}</div>`:''}</div>${statusRev(p)}</div>${midia}${legs.join('')}
+ const uso=p.como_usar||p.uso||p.texto||p.descricao;if(uso&&tipo==='sto')legs.push(`<details><summary>Como usar</summary><pre>${esc(uso)}</pre></details>`);
+ return `<div class="card ap"><div class="ap-top"><div><div class="ap-id">${esc(p.id)}</div><div class="ap-t">${esc(p.titulo||p.nome||(tipo==='sto'?('Story · '+(p.tipo||'')):''))}</div>${meta?`<div class="ap-meta">${meta}</div>`:''}</div>${statusRev(p)}</div>${midia}${legs.join('')}
  <div class="btns"><button class="btn" data-copy="aprova ${esc(p.id)}">Copiar comando: aprova ${esc(p.id)}</button>${p.legenda_tiktok?`<button class="btn sec" data-copy="${esc(p.legenda_tiktok)}">Copiar legenda TikTok</button>`:''}</div></div>`;
 }
 async function relatorio(el,idx,base,vazio){
