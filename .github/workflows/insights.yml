@@ -1,0 +1,29 @@
+name: insights
+on:
+  schedule:
+    - cron: "41 2 * * 1"   # segunda 02:41 UTC = domingo 23:41 BRT
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: insights
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Coletar métricas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/insights.py
+      - name: Commit
+        run: |
+          git config user.name "minhamoto-bot"
+          git config user.email "bot@minhamoto.app"
+          git add dados/
+          git diff --cached --quiet || git commit -m "Insights da semana"
+          git push
