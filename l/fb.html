@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Baixe o MinhaMoto</title>
+<meta name="description" content="O jeito de cuidar da sua moto mudou. Baixe o MinhaMoto na App Store e no Google Play.">
+<meta property="og:title" content="Baixe o MinhaMoto">
+<meta property="og:description" content="O jeito de cuidar da sua moto mudou.">
+<meta property="og:image" content="https://carnuccicompany.github.io/minhamoto-midia/l/icon.png">
+<link rel="icon" href="icon.png">
+<style>
+@font-face{font-family:Inter;src:url('../agencia/designer/assets/fontes/inter-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url('../agencia/designer/assets/fontes/inter-latin-800-normal.woff2') format('woff2');font-weight:800;font-display:swap}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#f3f7fc;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:32px 20px;
+  background:radial-gradient(90% 60% at 50% 115%,rgba(59,130,246,.32),rgba(59,130,246,0) 62%),linear-gradient(170deg,#05080e 0%,#0a1424 55%,#0d1b31 100%)}
+main{width:100%;max-width:440px;text-align:center}
+.icone{width:104px;height:104px;border-radius:24px;box-shadow:0 18px 50px rgba(0,0,0,.55),0 0 60px rgba(59,130,246,.25)}
+h1{font-weight:800;font-size:34px;line-height:1.12;letter-spacing:-1px;margin-top:26px}
+h1 span{color:#4b8dff}
+p{font-weight:600;font-size:17px;line-height:1.45;color:#93a7c4;margin-top:14px}
+.lojas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.lojas a{display:block;border-radius:12px;transition:transform .15s ease}
+.lojas a:hover{transform:translateY(-2px)}
+.lojas img{display:block;height:56px;width:auto;filter:drop-shadow(0 0 1px rgba(255,255,255,.55)) drop-shadow(0 8px 20px rgba(0,0,0,.45))}
+.aviso{display:none;margin-top:26px;font-weight:600;font-size:15px;color:#93a7c4}
+.indo .aviso{display:block}
+.indo .aviso .lento{display:none}
+.demorou .aviso .lento{display:inline}
+.demorou .aviso .rapido{display:none}
+.rodape{margin-top:40px;font-size:13px;color:#5d7090}
+</style>
+<script>window.CANAL={ct:'facebook-pagina',src:'facebook',med:'bio'};</script>
+</head>
+<body>
+<main>
+  <img class="icone" src="icon.png" alt="Ícone do app MinhaMoto" width="104" height="104">
+  <h1>O jeito de cuidar da sua moto <span>mudou.</span></h1>
+  <p>Revisões, histórico, combustível e documentos da sua moto num lugar só.</p>
+  <div class="lojas">
+    <a id="btn-apple" href="https://apps.apple.com/app/apple-store/id6815447825?pt=129492564&amp;ct=facebook-pagina&amp;mt=8"><img src="selo-appstore.png" alt="Baixar na App Store"></a>
+    <a id="btn-play" href="https://play.google.com/store/apps/details?id=com.carnuccicompany.minhamoto"><img src="selo-googleplay.png" alt="Disponível no Google Play"></a>
+  </div>
+  <div class="aviso"><span class="rapido">Abrindo a loja…</span><span class="lento">Não abriu? Toque no botão da sua loja acima.</span></div>
+  <div class="rodape">MinhaMoto</div>
+</main>
+<script src="r.js"></script>
+</body>
+</html>
