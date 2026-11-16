@@ -111,6 +111,8 @@ Regras:
 - Repetição: depois de ~300 posts publicados, uma ideia antiga pode voltar com estética nova. Antes disso, não.
 
 ## 6b. Vídeos (Reels/TikTok) — prioridade da operação
+
+**Preço (regra do Léo, 16/11):** pode — e em parte dos vídeos é preferível — citar o preço no final, junto do CTA: "por R$19,90" (não precisa dizer "por mês"). Não precisa ser em todos. Nunca usar "vitalício" (oferta antiga). Vale também pro card de CTA dos carrosséis quando fizer sentido.
 - **2 vídeos por dia**: **12h40** e **20h30** (BRT), longe dos carrosséis (12h/15h/18h/21h). O Analista revisa os horários com dados após ~2 semanas.
 - Formato 1080×1920, 30 fps, H.264, 7–25 s, **sem música** (o Léo põe o som em alta na hora de postar no TikTok).
 - Gancho em texto grande já no **primeiro frame** (0–2 s). Texto na tela o tempo todo (a maioria assiste sem som). Cortes rápidos (~2–3 s por cena).
