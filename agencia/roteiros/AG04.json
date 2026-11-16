@@ -1,0 +1,41 @@
+{
+ "id": "AG04",
+ "titulo": "Moto com histórico vende melhor",
+ "linha": "Curtos AIDA",
+ "estilo": "dark",
+ "cards": [
+  {
+   "layout": "capa",
+   "kicker": "Revenda",
+   "titulo": "Duas motos iguais.\n*Só uma tem histórico.*",
+   "apoio": "Adivinha qual o comprador escolhe.",
+   "print": "historico-filtros.png"
+  },
+  {
+   "layout": "texto",
+   "kicker": "O medo dele",
+   "titulo": "Quem compra usada tem um medo: *levar problema pra casa.*",
+   "apoio": "Ele quer saber o que foi feito, quando e onde. “Sempre cuidei” não convence ninguém."
+  },
+  {
+   "layout": "numero",
+   "grande": "?",
+   "titulo": "“Quando trocou o óleo?”\n*Você sabe responder?*",
+   "apoio": "Sem registro, vira sua palavra contra a desconfiança dele. E desconfiança puxa o preço pra baixo."
+  },
+  {
+   "layout": "phone",
+   "kicker": "Com histórico",
+   "titulo": "Data, km, peça e valor.\n*Tudo na tela.*",
+   "apoio": "Cada serviço registrado vira argumento na hora de negociar.",
+   "print": "historico-detalhes.png"
+  },
+  {
+   "layout": "cta",
+   "titulo": "Começa hoje.\n*A venda de amanhã agradece.*",
+   "apoio": "Baixe o *MinhaMoto* e monte o histórico da sua moto."
+  }
+ ],
+ "legenda_ig_fb": "Duas motos iguais, mesmo ano, mesmo km. Só uma tem histórico. Qual você compraria?\n\nQuem compra usada tem medo de levar problema pra casa. “Sempre cuidei” não convence ninguém. Serviço registrado com data, km, peça e valor convence, e ajuda a segurar o preço na negociação.\n\n📌 Salva pra não esquecer e manda pra quem vai vender a moto esse ano.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #motousada #vendermoto #revenda #minhamoto",
+ "legenda_tiktok": "Duas motos iguais, mesmo ano, mesmo km. Só uma tem histórico. Qual você compraria? 📌 Salva e manda pra quem vai vender a moto esse ano. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #motousada #vendermoto #revenda #moto #motociclista #fyp #motostiktok"
+}

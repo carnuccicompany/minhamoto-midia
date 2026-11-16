@@ -1,0 +1,52 @@
+{
+ "id": "AG10",
+ "titulo": "Moto parada: checklist antes de ligar",
+ "linha": "Dicas e hacks",
+ "estilo": "dark",
+ "cards": [
+  {
+   "layout": "capa",
+   "kicker": "Moto parada",
+   "titulo": "Ficou parada?\n*Não sai ligando.*",
+   "apoio": "Faz esse checklist antes de girar a chave.",
+   "print": "tempo-visao.png"
+  },
+  {
+   "layout": "item",
+   "n": 1,
+   "titulo": "Calibra *os pneus.*",
+   "apoio": "Pneu perde pressão parado. Rodar murcho gasta o pneu e tira a estabilidade."
+  },
+  {
+   "layout": "item",
+   "n": 2,
+   "titulo": "Olha *a corrente.*",
+   "apoio": "Ressecada ou com ferrugem? Limpa e lubrifica antes de rodar."
+  },
+  {
+   "layout": "item",
+   "n": 3,
+   "titulo": "Testa *a bateria.*",
+   "apoio": "Bateria descarrega com o tempo. Partida fraca? Carrega antes de insistir."
+  },
+  {
+   "layout": "item",
+   "n": 4,
+   "titulo": "Confere *óleo e freio.*",
+   "apoio": "Nível do óleo certo e freio firme no manete e no pedal."
+  },
+  {
+   "layout": "item",
+   "n": 5,
+   "titulo": "Desconfia da *gasolina velha.*",
+   "apoio": "Combustível parado por muito tempo perde qualidade. Ficou meses? Vale avaliar."
+  },
+  {
+   "layout": "cta",
+   "titulo": "Parada também\n*tem prazo vencendo.*",
+   "apoio": "O *MinhaMoto* acompanha cada cuidado por km e por tempo. Baixe agora."
+  }
+ ],
+ "legenda_ig_fb": "Moto ficou parada? Girar a chave e sair andando é o erro mais comum.\n\nAntes de rodar: calibra os pneus, olha a corrente, testa a bateria, confere óleo e freio e desconfia da gasolina velha. E lembra que moto parada também tem cuidado vencendo pelo tempo.\n\n📌 Salva pra não esquecer e manda pra quem deixa a moto parada na garagem.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #motoparada #bateriademoto #cuidadoscomamoto #minhamoto",
+ "legenda_tiktok": "Moto ficou parada? Girar a chave e sair andando é o erro mais comum. 📌 Salva e manda pra quem deixa a moto parada na garagem. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #motoparada #bateriademoto #cuidadoscomamoto #moto #motociclista #fyp #motostiktok"
+}

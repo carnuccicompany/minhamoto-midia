@@ -1,0 +1,47 @@
+{
+ "id": "AG07",
+ "titulo": "Passou do prazo do óleo",
+ "linha": "Educacional",
+ "estilo": "dark",
+ "cards": [
+  {
+   "layout": "capa",
+   "kicker": "Óleo do motor",
+   "titulo": "Passou do prazo do óleo.\n*E daí?*",
+   "apoio": "O que acontece dentro do motor quando a troca atrasa.",
+   "print": "oleo.png"
+  },
+  {
+   "layout": "texto",
+   "kicker": "Por dentro",
+   "titulo": "Óleo velho *perde o poder de proteger.*",
+   "apoio": "Com o uso, ele se degrada e acumula resíduo. Lubrifica pior, protege pior."
+  },
+  {
+   "layout": "texto",
+   "kicker": "O resultado",
+   "titulo": "Mais atrito.\nMais calor.\n*Mais desgaste.*",
+   "apoio": "O motor não quebra no dia seguinte. Ele vai se gastando calado."
+  },
+  {
+   "layout": "numero",
+   "grande": "2",
+   "titulo": "O óleo vence de *dois jeitos.*",
+   "apoio": "Por quilometragem e por tempo. O que chegar primeiro manda. Moto parada também vence."
+  },
+  {
+   "layout": "phone",
+   "kicker": "Sem decorar nada",
+   "titulo": "O app acompanha *km e tempo* pra você.",
+   "apoio": "Você vê o que tá em dia e o que pede atenção.",
+   "print": "tempo-limites.png"
+  },
+  {
+   "layout": "cta",
+   "titulo": "Troca no prazo.\n*O motor agradece.*",
+   "apoio": "Baixe o *MinhaMoto* e nunca mais perca a data do óleo."
+  }
+ ],
+ "legenda_ig_fb": "Passou uns mil km da troca de óleo. Nada aconteceu. Ainda.\n\nÓleo velho perde o poder de proteger: mais atrito, mais calor, mais desgaste. O motor não quebra no dia seguinte, ele vai se gastando calado. E lembra: o óleo vence por km e por tempo, o que chegar primeiro.\n\n📌 Salva pra não esquecer e manda pra quem sempre passa do prazo do óleo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #trocadeoleo #oleodemoto #motordemoto #minhamoto",
+ "legenda_tiktok": "Passou uns mil km da troca de óleo. Nada aconteceu. Ainda. 📌 Salva e manda pra quem sempre passa do prazo do óleo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #trocadeoleo #oleodemoto #motordemoto #moto #motociclista #fyp #motostiktok"
+}

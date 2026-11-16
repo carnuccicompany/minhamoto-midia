@@ -1,0 +1,53 @@
+{
+ "id": "AG03",
+ "titulo": "Corrente: lubrificar, regular ou trocar",
+ "linha": "Educacional",
+ "estilo": "claro",
+ "cards": [
+  {
+   "layout": "capa",
+   "marca": "Corrente",
+   "titulo": "Lubrificar, regular ou trocar? *Não é a mesma coisa.*",
+   "apoio": "Muita gente confunde os três. E a corrente cobra.",
+   "print": "lubrificar.png"
+  },
+  {
+   "layout": "item",
+   "marca": "Corrente",
+   "n": 1,
+   "titulo": "*Lubrificar*: o cuidado de toda hora.",
+   "apoio": "Lubrificante próprio pra corrente, com ela limpa. Depois de chuva ou lavagem, de novo.",
+   "print": "lubrificar.png"
+  },
+  {
+   "layout": "item",
+   "marca": "Corrente",
+   "n": 2,
+   "titulo": "*Regular*: a folga certa.",
+   "apoio": "Nem esticada, nem frouxa. A medida certa está no manual da sua moto.",
+   "print": "ajuste.png"
+  },
+  {
+   "layout": "item",
+   "marca": "Corrente",
+   "n": 3,
+   "titulo": "*Trocar*: quando o kit gastou.",
+   "apoio": "Corrente, coroa e pinhão se gastam juntos. Por isso a troca costuma ser do kit inteiro.",
+   "print": "registro-relacao.png"
+  },
+  {
+   "layout": "texto",
+   "marca": "Corrente",
+   "titulo": "Sinal de troca: *dente da coroa pontudo.*",
+   "apoio": "Corrente que volta a ficar frouxa logo depois de regular também é aviso."
+  },
+  {
+   "layout": "cta",
+   "marca": "Corrente",
+   "titulo": "Cada cuidado registrado.\n*Cada prazo na mão.*",
+   "apoio": "No *MinhaMoto*, lubrificar, ajustar e trocar ficam registrados com data e km."
+  }
+ ],
+ "legenda_ig_fb": "Lubrificar, regular e trocar a corrente não são a mesma coisa. E confundir sai caro.\n\nLubrificar é o cuidado de toda hora, principalmente depois de chuva ou lavagem. Regular é deixar a folga na medida do manual. Trocar é quando o kit (corrente, coroa e pinhão) gastou. Dente da coroa pontudo é sinal claro de troca.\n\n📌 Salva pra não esquecer e manda pra quem vive com a corrente batendo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #corrente #relacaodemoto #kitrelacao #minhamoto",
+ "legenda_tiktok": "Lubrificar, regular e trocar a corrente não são a mesma coisa. E confundir sai caro. 📌 Salva e manda pra quem vive com a corrente batendo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #corrente #relacaodemoto #kitrelacao #moto #motociclista #fyp #motostiktok"
+}
