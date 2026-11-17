@@ -15,6 +15,7 @@ Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com b
 > - **Até o story que o revisor aprovou (ST04, caixa de perguntas, todo azul) não passou com o Léo:** a ideia é boa, mas o grifado não ficou legal, a fonte não agradou, e o azul tá ok mas dá pra ficar muito mais foda (sombra, profundidade, acabamento). Lição: o Revisor estava permissivo demais — a régua é o gosto do Léo, não "sem erro técnico".
 > - **TELAS DO APP = SÓ DO CÓDIGO MAIS NOVO.** Antes de qualquer carrossel, vídeo ou story: `git pull` no repo do app (carnuccicompany/minhamoto-midia não — o do app: carnuccicompany/minhamotooficial), ver se tem tela/estética/funcionalidade nova e usar as telas renderizadas desse código (`agencia/designer/assets/telas-app/`, regerar se o app mudou). Nunca gravação de tela antiga nem print velho. No repo do app: só ler e rodar local — nunca commit/push/deploy.
 > - **YouTube = canal só de Shorts.**
+> - **17/11 (tarde): sem caixa-alta, fonte Plus Jakarta Sans.** Léo achou a fonte das amostras v2 (Montserrat/Anton em caixa-alta) "horrível". Regra: textos em frase normal ("Tua moto tá em dia? Prova."), nunca tudo em maiúscula. Fonte única: **Plus Jakarta Sans** — 800 nos títulos (letter-spacing -0,035em, entrelinha ~1,05), 500/600 no apoio. Destaque só com cor (amarelo #FFD400 na A, azul #3D8BFF na B), sem contorno grosso, sem marca-texto. Celular reto e centralizado (nada "de lado"), margem mínima de 90px nas laterais. Arquivos em `agencia/direcao-v2/fontes/`.
 > - O painel da agência ele aprovou ("muito foda") — manter e aprimorar.
 
 ## 1. O negócio
@@ -54,6 +55,8 @@ Proporção alvo da fila: ~70% valor (dicas, educacional, marcas, temas) / ~30% 
 Nunca dois carrosséis da mesma linha em sequência na fila.
 
 ## 4. Sistemas visuais
+
+> **Atualização 17/11:** a direção v2 (`agencia/direcao-v2/`) substitui os estilos abaixo assim que o Léo escolher A ou B. Tipografia vigente: **Plus Jakarta Sans** (800 títulos / 500–600 apoio), sempre em frase normal, sem caixa-alta. Inter e caixa-alta abaixo ficam só como histórico.
 
 Formato: **1080×1350 (4:5)**, 5 a 7 cards, JPG q92. Fonte: **Inter** (400–900). Renderizador oficial: `agencia/designer/render2.py` (campo `"estilo"` no roteiro + `"layout"` em cada card: capa, texto, numero, item, phone, cta). Azul continua sendo a cor da marca.
 Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel ficou "xoxo" e já existe demais no acervo; ele quer "tchan". Aprovou a sombra do celular e os prints reais. **Esses dois elementos ficam em todos os estilos.**
@@ -107,15 +110,34 @@ Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel fi
 {8-12 hashtags do nicho}
 ```
 
-**TikTok (diferente, mais curta):**
+**TikTok (diferente, mais curta — gancho sozinho na 1ª linha):**
 ```
-{gancho} 📌 Salva e manda pra quem {pessoa}. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. {5 tags} #fyp #motostiktok
+{gancho forte e curto, até ~90 caracteres}
+
+📌 Salva e manda pra quem {pessoa}.
+📲 Baixe agora o MinhaMoto na App Store e no Google Play.
+
+{5 tags} #fyp #motostiktok
 ```
 
 Regras:
 - CTA **sempre imperativo**: "Baixe agora o MinhaMoto na App Store e no Google Play." Nunca variar essa frase.
 - Gancho tem que parar o dedo: dor real, pergunta incômoda ou número específico.
 - Hashtags: misturar grandes (#moto #motoboy #motociclista) com específicas do tema.
+
+## 5b. Formatos por rede (regra fixa — todos os agentes)
+
+| Rede / lugar | Formato | Tamanho |
+|---|---|---|
+| **TikTok** (carrossel de fotos, vídeo, motion) | **tudo 9:16** | 1080×1920 |
+| Instagram e Facebook — feed / carrossel | 4:5 | 1080×1350 |
+| Reels e Stories (IG/FB) | 9:16 | 1080×1920 (vídeo igual ao do TikTok) |
+| YouTube Shorts | 9:16 | 1080×1920 (vídeo igual ao do TikTok) |
+
+- **Zona segura 9:16 (TikTok, Reels, Shorts):** nada importante nos **150px de cima**, nos **420px de baixo** (legenda/botões) nem nos **140px da direita** (ícones). Na prática: texto entre x=140 e x=940 e entre y=150 e y=1500 (centralizado com 140px dos dois lados).
+- **Carrossel 4:5 nunca vai pro TikTok.** Usa a versão `carrosseis/<ID>/tiktok/` (gerada por `scripts/tiktok_916.py`; campo `cards_tiktok` em `fila/carrosseis.json` — os 113 da fila já têm). **Toda peça nova nasce com a versão TikTok.** Na direção v2: `agencia/direcao-v2/<A|B>/carrossel-tiktok/` (layout nativo 9:16, não é só faixa).
+- **Legenda do TikTok:** gancho forte e curto na **primeira linha** (até ~90 caracteres — é o que aparece antes do "mais"), depois linha em branco, `📌 ...` e `📲 Baixe agora o MinhaMoto na App Store e no Google Play.` em linhas separadas, linha em branco, hashtags. Nunca em bloco único.
+- **Revisor reprova:** peça de TikTok fora de 9:16, texto fora da zona segura, legenda de TikTok em bloco único.
 
 ## 6. Publicação
 

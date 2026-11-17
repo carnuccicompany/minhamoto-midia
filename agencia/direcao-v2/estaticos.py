@@ -20,20 +20,21 @@ html,body{width:%(w)dpx;height:%(h)dpx;overflow:hidden;background:#05070d}
 .fill{position:absolute;inset:0}
 .ph{position:absolute;left:50%%;width:0;height:0;perspective:2400px}
 .ph #phone{position:absolute}
-.capA{position:absolute;left:60px;right:60px;text-align:center;font-family:m900;text-transform:uppercase;color:#fff;
-  -webkit-text-stroke:9px #000;paint-order:stroke fill;text-shadow:0 9px 0 rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.7);line-height:1.05}
+.capA{position:absolute;left:90px;right:90px;text-align:center;font-family:j800;color:#fff;letter-spacing:-.035em;word-spacing:.1em;
+  text-shadow:0 3px 6px rgba(0,0,0,.55),0 8px 40px rgba(0,0,0,.85);line-height:1.06}
 .capA .y{color:#FFD400}
-.apoA{position:absolute;left:80px;right:80px;text-align:center;font-family:m800;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.8)}
-.titB{position:absolute;left:60px;right:60px;text-align:center;font-family:anton;text-transform:uppercase;color:#F4F7FC;line-height:1.02;letter-spacing:1px;
+.apoA{position:absolute;left:90px;right:90px;text-align:center;font-family:j600;color:#fff;letter-spacing:-.01em;line-height:1.3;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+.titB{position:absolute;left:90px;right:90px;text-align:center;font-family:j800;color:#F4F7FC;line-height:1.05;letter-spacing:-.035em;word-spacing:.1em;
   text-shadow:0 8px 30px rgba(0,0,0,.5)}
 .titB .b{color:#3D8BFF}
-.apoB{position:absolute;left:90px;right:90px;text-align:center;font-family:pop600;color:#b9c8e2;line-height:1.35}
+.apoB{position:absolute;left:90px;right:90px;text-align:center;font-family:j500;color:#b9c8e2;line-height:1.35;letter-spacing:-.01em}
+.tt .capA,.tt .titB,.tt .apoA,.tt .apoB{left:140px;right:140px}
 .pag{position:absolute;bottom:44px;left:0;right:0;text-align:center;}
-.pag.t{bottom:auto;top:40px;right:52px;left:auto;text-align:right;}
-.pag{font-family:m800;font-size:28px;letter-spacing:4px;color:rgba(255,255,255,.55)}
-.desliza{position:absolute;bottom:60px;left:0;right:0;text-align:center;font-family:m900;font-size:34px;color:#FFD400;letter-spacing:2px;text-shadow:0 3px 12px rgba(0,0,0,.8)}
-.preco{display:inline-block;padding:16px 44px;border-radius:24px;background:#FFD400;color:#0a0a0a;font-family:m900;font-size:60px;box-shadow:0 12px 0 #b38f00,0 24px 60px rgba(0,0,0,.45)}
-.precoB{display:inline-block;padding:16px 44px;border-radius:999px;background:linear-gradient(135deg,#3D8BFF,#1d5be0);color:#fff;font-family:anton;font-size:62px;letter-spacing:1px;
+.pag.t{bottom:auto;top:44px;right:90px;left:auto;text-align:right;}
+.pag{font-family:j700;font-size:28px;letter-spacing:.06em;color:rgba(255,255,255,.55)}
+.desliza{position:absolute;bottom:64px;left:0;right:0;text-align:center;font-family:j700;font-size:36px;color:#FFD400;letter-spacing:-.01em;text-shadow:0 3px 12px rgba(0,0,0,.8)}
+.preco{display:inline-block;padding:16px 44px;border-radius:24px;background:#FFD400;color:#0a0a0a;font-family:j800;font-size:60px;letter-spacing:-.02em;box-shadow:0 12px 0 #b38f00,0 24px 60px rgba(0,0,0,.45)}
+.precoB{display:inline-block;padding:16px 44px;border-radius:999px;background:linear-gradient(135deg,#3D8BFF,#1d5be0);color:#fff;font-family:j800;font-size:60px;letter-spacing:-.02em;
   box-shadow:0 0 0 3px rgba(255,255,255,.18) inset,0 20px 60px rgba(61,139,255,.45)}
 </style></head><body>%(corpo)s</body></html>"""
 
@@ -81,36 +82,36 @@ def render(html_corpo, w, h, saida):
     Image.open('/tmp/v2est@2x.png').convert('RGB').resize((w, h), Image.LANCZOS).save(saida, quality=93)
     print('ok', saida)
 
-def cta(estilo, titulo, sub, preco=True, top=260):
+def cta(estilo, titulo, sub, preco=True, top=260, pad=0):
     ic = f"<img src='file://{ICON}' style='width:220px;height:220px;border-radius:52px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 120px rgba(61,139,255,.55)'>"
     if estilo == 'A':
-        t = f"<div class=capA style='position:relative;left:0;right:0;font-size:104px;margin-top:50px'>{titulo}</div>"
+        t = f"<div class=capA style='position:relative;left:0;right:0;font-size:112px;margin-top:50px'>{titulo}</div>"
         s = f"<div class=apoA style='position:relative;left:0;right:0;font-size:44px;margin-top:22px'>{H.escape(sub)}</div>"
         pr = "<div style='margin-top:36px'><span class=preco>por R$19,90</span></div>" if preco else ''
     else:
-        t = f"<div class=titB style='position:relative;left:0;right:0;font-size:132px;margin-top:50px'>{titulo}</div>"
+        t = f"<div class=titB style='position:relative;left:0;right:0;font-size:112px;margin-top:50px'>{titulo}</div>"
         s = f"<div class=apoB style='position:relative;left:0;right:0;font-size:42px;margin-top:20px'>{H.escape(sub)}</div>"
         pr = "<div style='margin-top:36px'><span class=precoB>por R$19,90</span></div>" if preco else ''
     se = f"<div style='margin-top:44px'><img src='file://{SELOS}' style='width:600px'></div>"
-    return f"<div style='position:absolute;left:0;right:0;top:{top}px;text-align:center'>{ic}{t}{s}{pr}{se}</div>"
+    return f"<div style='position:absolute;left:{pad}px;right:{pad}px;top:{top}px;text-align:center'>{ic}{t}{s}{pr}{se}</div>"
 
 # ---------------- CARROSSEL A (Nativo/Rua) ----------------
 def carrossel_A():
     d = os.path.join(AQUI, 'A', 'carrossel'); W, Hc = 1080, 1350
     cards = [
         foto_bg('5195494.jpg', 0.55, pos='50% 40%') +
-        "<div class=capA style='top:330px;font-size:140px'>TUA MOTO<br>TÁ EM DIA?<br><span class=y>PROVA.</span></div>"
-        "<div class=desliza>DESLIZA PRA VER →</div>",
+        "<div class=capA style='top:400px;font-size:132px'>Tua moto<br>tá em dia?<br><span class=y>Prova.</span></div>"
+        "<div class=desliza>Desliza pra ver →</div>",
         foto_bg('3822836.jpg', 0.5) +
-        "<div class=capA style='top:300px;font-size:112px'>O MECÂNICO<br>PERGUNTA.<br><span class=y>VOCÊ CHUTA.</span></div>"
-        "<div class=apoA style='top:820px;font-size:52px'>“Uns 3 meses… ou 6? Sei lá.”</div><div class=pag>02 / 05</div>",
+        "<div class=capA style='top:380px;font-size:120px'>O mecânico<br>pergunta.<br><span class=y>Você chuta.</span></div>"
+        "<div class=apoA style='top:830px;font-size:50px'>“Uns 3 meses… ou 6? Sei lá.”</div><div class=pag>02 / 05</div>",
         foto_bg('3822836.jpg', 0.3, blur=14) +
-        "<div class=capA style='top:90px;font-size:84px'>O QUE <span class=y>NUNCA</span> FOI FEITO<br>APARECE NA HORA</div>" +
+        "<div class=capA style='top:96px;font-size:80px'>O que <span class=y>nunca</span> foi feito<br>aparece na hora</div>" +
         celular('rolagem/19-saude-atrasados', w=540, top=390, rola=4600) + "<div class='pag t'>03 / 05</div>",
         foto_bg('5195494.jpg', 0.3, blur=14) +
-        "<div class=capA style='top:90px;font-size:84px'>O QUE <span class=y>VENCEU</span><br>FICA EM VERMELHO</div>" +
+        "<div class=capA style='top:96px;font-size:80px'>O que <span class=y>venceu</span><br>fica em vermelho</div>" +
         celular('rolagem/19-saude-atrasados', w=540, top=390, rola=3480) + "<div class='pag t'>04 / 05</div>",
-        grad_bg('A', (50, 40)) + cta('A', 'NUNCA MAIS<br>“SEI LÁ”', 'Baixe agora o MinhaMoto', True, top=230),
+        grad_bg('A', (50, 40)) + cta('A', 'Nunca mais<br><span class=y>“sei lá”</span>', 'Baixe agora o MinhaMoto', True, top=230),
     ]
     for i, c in enumerate(cards, 1):
         render(c, W, Hc, os.path.join(d, f'{i:02d}.jpg'))
@@ -118,17 +119,17 @@ def carrossel_A():
 # ---------------- CARROSSEL B (Premium produto) ----------------
 def carrossel_B():
     d = os.path.join(AQUI, 'B', 'carrossel'); W, Hc = 1080, 1350
-    def card(l1, l2, tela, n, rot=-10, apoio=None, rola=None):
+    def card(l1, l2, tela, n, rot=0, apoio=None, rola=None):
         a = f"<div class=apoB style='top:{345}px;font-size:36px'>{H.escape(apoio)}</div>" if apoio else ''
         top = 430 if apoio else 380
-        return (grad_bg('B') + f"<div class=titB style='top:96px;font-size:{92 if max(len(l1),len(l2))>16 else 118}px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
-                + a + celular(tela, w=560, top=top, rot=rot, tilt=4, rola=rola) + f"<div class='pag t'>{n:02d} / 05</div>")
+        return (grad_bg('B') + f"<div class=titB style='top:96px;font-size:80px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
+                + a + celular(tela, w=560, top=top, rot=rot, tilt=0, rola=rola) + f"<div class='pag t'>{n:02d} / 05</div>")
     cards = [
-        card('ESQUECEU A TROCA?', 'A MOTO NÃO ESQUECE.', '21-item-atrasado', 1, rot=-12).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>DESLIZA →</div>"),
-        card('O QUE VENCEU', 'FICA EM VERMELHO', '19-saude-atrasados', 2, rot=10),
-        card('O QUE NUNCA FOI FEITO', 'APARECE PRA VOCÊ', 'rolagem/19-saude-atrasados', 3, rot=-10, rola=4600),
-        card('E O APP TE AVISA', 'NA HORA CERTA', '15-notificacoes', 4, rot=10),
-        grad_bg('B', (50, 38)) + cta('B', 'BAIXE O<br><span class=b>MINHAMOTO</span>', 'Teu plano de revisão na palma da mão.', True, top=220),
+        card('Esqueceu a troca?', 'A moto não esquece.', '21-item-atrasado', 1).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>Desliza →</div>"),
+        card('O que venceu', 'fica em vermelho', '19-saude-atrasados', 2),
+        card('O que nunca foi feito', 'aparece pra você', 'rolagem/19-saude-atrasados', 3, rola=4600),
+        card('E o app te avisa', 'na hora certa', '15-notificacoes', 4),
+        grad_bg('B', (50, 38)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Teu plano de revisão na palma da mão.', True, top=220),
     ]
     for i, c in enumerate(cards, 1):
         render(c, W, Hc, os.path.join(d, f'{i:02d}.jpg'))
@@ -136,26 +137,66 @@ def carrossel_B():
 # ---------------- STORIES (ST04 refeito: caixa de perguntas) ----------------
 CAIXA = ("<div style='position:absolute;left:150px;right:150px;top:{top}px;height:330px;border-radius:44px;"
          "border:4px dashed rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;"
-         "font-family:m800;font-size:30px;letter-spacing:3px;color:rgba(255,255,255,.45)'>STICKER DE PERGUNTAS AQUI</div>")
+         "font-family:j600;font-size:32px;color:rgba(255,255,255,.45)'>Sticker de perguntas aqui</div>")
 
 def story_A():
     c = (foto_bg('3822836.jpg', 0.42, pos='60% 50%') +
          f"<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><img src='file://{ICON}' style='width:130px;height:130px;border-radius:32px;box-shadow:0 18px 50px rgba(0,0,0,.6)'></div>"
-         "<div class=capA style='top:430px;font-size:100px'>TUA MOTO TÁ<br>FAZENDO UM<br><span class=y>BARULHO<br>ESTRANHO?</span></div>"
+         "<div class=capA style='top:440px;font-size:104px'>Tua moto tá<br>fazendo um<br><span class=y>barulho estranho?</span></div>"
          "<div class=apoA style='top:960px;font-size:46px'>Manda tua dúvida de manutenção.<br>A gente responde aqui nos stories.</div>"
-         + CAIXA.format(top=1190))
+         + CAIXA.format(top=1140))
     render(c, 1080, 1920, os.path.join(AQUI, 'A', 'story', 'story.jpg'))
 
 def story_B():
     c = (grad_bg('B', (50, 70)) +
          "<div class=fill style='background:radial-gradient(60% 30% at 50% 18%, rgba(61,139,255,.25), rgba(0,0,0,0) 70%)'></div>"
          f"<div style='position:absolute;left:0;right:0;top:240px;text-align:center'><img src='file://{ICON}' style='width:150px;height:150px;border-radius:36px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 90px rgba(61,139,255,.6)'></div>"
-         "<div class=titB style='top:450px;font-size:150px'>TIRA TUA<br><span class=b>DÚVIDA</span><br>DE MOTO</div>"
+         "<div class=titB style='top:460px;font-size:120px'>Tira tua<br><span class=b>dúvida</span><br>de moto</div>"
          "<div class=apoB style='top:1000px;font-size:44px'>Óleo, revisão, corrente, barulho estranho…<br>Pergunta que a gente responde.</div>"
-         + CAIXA.format(top=1200))
+         + CAIXA.format(top=1150))
     render(c, 1080, 1920, os.path.join(AQUI, 'B', 'story', 'story.jpg'))
+
+# ---------------- VERSÕES TIKTOK 9:16 (1080x1920, zona segura: 150px topo, 420px base, 140px direita) ----------------
+TTW, TTH = 1080, 1920
+
+def carrossel_A_tiktok():
+    d = os.path.join(AQUI, 'A', 'carrossel-tiktok')
+    cards = [
+        foto_bg('5195494.jpg', 0.55, pos='50% 40%') +
+        "<div class=capA style='top:600px;font-size:132px'>Tua moto<br>tá em dia?<br><span class=y>Prova.</span></div>"
+        "<div class=desliza style='bottom:auto;top:1400px'>Desliza pra ver →</div>",
+        foto_bg('3822836.jpg', 0.5) +
+        "<div class=capA style='top:560px;font-size:112px'>O mecânico<br>pergunta.<br><span class=y>Você chuta.</span></div>"
+        "<div class=apoA style='top:990px;font-size:48px'>“Uns 3 meses… ou 6? Sei lá.”</div>"
+        "<div class=pag style='bottom:auto;top:1420px'>02 / 05</div>",
+        foto_bg('3822836.jpg', 0.3, blur=14) +
+        "<div class=capA style='top:200px;font-size:70px'>O que <span class=y>nunca</span> foi feito<br>aparece na hora</div>" +
+        celular('rolagem/19-saude-atrasados', w=500, top=468, rola=4600),
+        foto_bg('5195494.jpg', 0.3, blur=14) +
+        "<div class=capA style='top:200px;font-size:70px'>O que <span class=y>venceu</span><br>fica em vermelho</div>" +
+        celular('rolagem/19-saude-atrasados', w=500, top=468, rola=3480),
+        grad_bg('A', (50, 36)) + cta('A', 'Nunca mais<br><span class=y>“sei lá”</span>', 'Baixe agora o MinhaMoto', True, top=360, pad=140),
+    ]
+    for i, c in enumerate(cards, 1):
+        render("<div class=tt>" + c + "</div>", TTW, TTH, os.path.join(d, f'{i:02d}.jpg'))
+
+def carrossel_B_tiktok():
+    d = os.path.join(AQUI, 'B', 'carrossel-tiktok')
+    def card(l1, l2, tela, rola=None):
+        return (grad_bg('B', (50, 55)) + f"<div class=titB style='top:200px;font-size:70px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
+                + celular(tela, w=500, top=468, rola=rola))
+    cards = [
+        card('Esqueceu a troca?', 'A moto não esquece.', '21-item-atrasado'),
+        card('O que venceu', 'fica em vermelho', '19-saude-atrasados'),
+        card('O que nunca foi feito', 'aparece pra você', 'rolagem/19-saude-atrasados', rola=4600),
+        card('E o app te avisa', 'na hora certa', '15-notificacoes'),
+        grad_bg('B', (50, 36)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Teu plano de revisão na palma da mão.', True, top=360, pad=140),
+    ]
+    for i, c in enumerate(cards, 1):
+        render("<div class=tt>" + c + "</div>", TTW, TTH, os.path.join(d, f'{i:02d}.jpg'))
 
 if __name__ == '__main__':
     q = sys.argv[1] if len(sys.argv) > 1 else 'todos'
-    if q in ('A', 'todos'): carrossel_A(); story_A()
-    if q in ('B', 'todos'): carrossel_B(); story_B()
+    if q in ('A', 'todos'): carrossel_A(); story_A(); carrossel_A_tiktok()
+    if q in ('B', 'todos'): carrossel_B(); story_B(); carrossel_B_tiktok()
+    if q == 'tiktok': carrossel_A_tiktok(); carrossel_B_tiktok()

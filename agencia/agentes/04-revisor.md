@@ -25,7 +25,7 @@ Extraia os frames (mínimo 1 a cada 0,25s nos trechos com movimento; TODOS os fr
 - [ ] Frame preto, branco, vazio ou "flash" em corte/transição
 - [ ] Elemento que pisca, some 1 frame, pula de posição ou "treme" sem intenção
 - [ ] Texto entrando cortado, sobreposto a outro texto, ou saindo antes de dar tempo de ler
-- [ ] Texto ou elemento fora da zona segura (topo ~150px, base ~380px, direita ~160px) — vai ficar embaixo da interface do TikTok/Reels
+- [ ] Texto ou elemento fora da zona segura (topo 150px, base 420px, direita 140px) — vai ficar embaixo da interface do TikTok/Reels
 - [ ] Animação travada, engasgada, com velocidade inconsistente ou easing quebrado
 - [ ] Corte no meio de movimento que "pula" de forma feia
 - [ ] Print/tela do app distorcido, esticado, pixelado, borrado ou com proporção errada
@@ -85,3 +85,10 @@ NOTA: 6/10
 - **REPROVADO** = qualquer item de erro. Volta pro produtor com a lista. Máx. 2 rodadas; na 3ª reprovação, descarta.
 - **APROVADO** só com zero erros E nota ≥ 8/10. Mesmo aprovado, liste melhorias.
 - Na dúvida entre aprovar e reprovar: **reprova.** Post ruim no ar custa muito mais que refazer.
+
+## 6. Formatos por rede (MANUAL §5b) — reprovação imediata
+- [ ] Peça de TikTok que não é 9:16 1080×1920 (carrossel 4:5 no TikTok = reprovado)
+- [ ] Texto ou elemento importante fora da zona segura 9:16: 150px topo, **420px base**, **140px direita** (texto tem que estar entre x=140 e x=940, y=150 a y=1500). Vale pra TikTok, Reels, Stories e Shorts.
+- [ ] Peça nova sem a versão TikTok 9:16
+- [ ] Legenda de TikTok em bloco único (tem que ser: gancho até ~90 caracteres sozinho na 1ª linha, linha em branco, `📌 ...` e `📲 Baixe agora...` em linhas separadas, linha em branco, hashtags)
+- [ ] Texto em caixa-alta ou fonte fora do padrão (Plus Jakarta Sans) — feedback do Léo 17/11

@@ -26,3 +26,8 @@ Na rotina diária e sempre que mexerem na fila.
 
 ## Futuro próximo (aguardando definição do Léo)
 - Reels (2/dia) e stories — o publicador vai ganhar os endpoints de reel/story da Graph API quando o formato for aprovado.
+
+## Formatos por rede (MANUAL §5b)
+- TikTok: só 9:16 1080×1920 — para carrossel, use sempre `cards_tiktok` (`carrosseis/<ID>/tiktok/`), nunca os cards 4:5. Vídeos: o mesmo 9:16 vai pra TikTok, Reels e YouTube Shorts.
+- IG/FB feed/carrossel: 4:5 1080×1350. Reels/Stories: 9:16.
+- Legenda do TikTok publicada com o gancho sozinho na 1ª linha (até ~90 caracteres), linha em branco, `📌`/`📲` em linhas separadas, linha em branco, hashtags. Se vier em bloco único, devolve pro Roteirista.

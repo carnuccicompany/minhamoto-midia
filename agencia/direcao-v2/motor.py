@@ -60,20 +60,24 @@ def altura_celular(w):
 
 ESTILOS = {
   # A — Nativo/Rua: legenda grossa estilo TikTok, tela cheia, foto em movimento
-  'A': dict(fonte='m900', titulo='m900', apoio='m800', destaque='#FFD400', branco='#FFFFFF',
+  'A': dict(fonte='j800', titulo='j800', apoio='j600', destaque='#FFD400', branco='#FFFFFF',
             bg='radial-gradient(120% 80% at 50% 0%, #1a5cff 0%, #0b2a8a 45%, #050c24 100%)'),
-  # B — Premium produto: Anton condensada, azul elétrico, celular 3D em fundo navy
-  'B': dict(fonte='anton', titulo='anton', apoio='pop600', destaque='#3D8BFF', branco='#F4F7FC',
+  # B — Premium produto: Plus Jakarta Sans 800, azul elétrico, celular 3D em fundo navy
+  'B': dict(fonte='j800', titulo='j800', apoio='j500', destaque='#3D8BFF', branco='#F4F7FC',
             bg='radial-gradient(90% 60% at 50% 38%, #12306b 0%, #08142e 55%, #03060f 100%)'),
 }
 
 CSS_FONTES = f"""
-@font-face{{font-family:m900;src:url('file://{FONTES}/montserrat-latin-900-normal.woff2')}}
-@font-face{{font-family:m800;src:url('file://{FONTES}/montserrat-latin-800-normal.woff2')}}
-@font-face{{font-family:m600;src:url('file://{FONTES}/montserrat-latin-600-normal.woff2')}}
-@font-face{{font-family:anton;src:url('file://{FONTES}/anton-latin-400-normal.woff2')}}
-@font-face{{font-family:pop600;src:url('file://{FONTES}/poppins-latin-600-normal.woff2')}}
-@font-face{{font-family:pop800;src:url('file://{FONTES}/poppins-latin-800-normal.woff2')}}
+@font-face{{font-family:j800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
+@font-face{{font-family:j700;src:url('file://{FONTES}/plus-jakarta-sans-latin-700-normal.woff2')}}
+@font-face{{font-family:j600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
+@font-face{{font-family:j500;src:url('file://{FONTES}/plus-jakarta-sans-latin-500-normal.woff2')}}
+@font-face{{font-family:m900;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
+@font-face{{font-family:m800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
+@font-face{{font-family:m600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
+@font-face{{font-family:anton;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
+@font-face{{font-family:pop600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
+@font-face{{font-family:pop800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
 """
 
 PAGINA = """<!doctype html><html><head><meta charset=utf-8><style>
@@ -101,23 +105,24 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .ring{position:absolute;border-radius:28px;border:5px solid #3D8BFF;box-shadow:0 0 0 6px rgba(61,139,255,.25),0 0 60px rgba(61,139,255,.6)}
 .tap{position:absolute;width:120px;height:120px;border-radius:50%%;border:6px solid rgba(255,255,255,.9);background:rgba(255,255,255,.18)}
 #txt{position:absolute;inset:0}
-.t{position:absolute;text-align:center;left:70px;right:70px}
-.cap{font-family:%(fonte)s;text-transform:uppercase;color:#fff;-webkit-text-stroke:10px #000;paint-order:stroke fill;
-  text-shadow:0 10px 0 rgba(0,0,0,.6),0 0 60px rgba(0,0,0,.7);line-height:1.04;letter-spacing:.5px}
-.cap .w{display:inline-block;margin:0 .14em;transform-origin:50%% 70%%}
+.t{position:absolute;text-align:center;left:140px;right:140px}
+.cap{font-family:%(fonte)s;color:#fff;
+  text-shadow:0 3px 6px rgba(0,0,0,.55),0 8px 40px rgba(0,0,0,.85);line-height:1.06;letter-spacing:-.035em}
+.cap .w{display:inline-block;margin:0 .11em;transform-origin:50%% 70%%}
 .cap .hl{color:%(destaque)s}
-.tit{font-family:%(titulo)s;text-transform:uppercase;color:%(branco)s;line-height:1.0;letter-spacing:1px}
+.tit{font-family:%(titulo)s;color:%(branco)s;line-height:1.05;letter-spacing:-.035em;word-spacing:.1em}
 .tit .hl{color:%(destaque)s}
-.apo{font-family:%(apoio)s;color:#c9d6ea;line-height:1.3}
+.apo{font-family:%(apoio)s;color:#c9d6ea;line-height:1.3;letter-spacing:-.01em;text-wrap:balance}
 .badge{position:absolute;display:flex;align-items:center;gap:18px;padding:16px 28px 16px 18px;border-radius:70px;
   background:linear-gradient(135deg,#2b6dff,#123fc4);box-shadow:0 14px 40px rgba(0,0,0,.45),0 0 0 3px rgba(255,255,255,.18) inset;
-  font-family:m900;font-size:40px;color:#fff;letter-spacing:1px}
+  font-family:j800;font-size:40px;color:#fff;letter-spacing:-.01em}
 .badge img{width:70px;height:70px;border-radius:18px}
 .cta{position:absolute;left:0;right:0;text-align:center}
 .cta img.ic{width:260px;height:260px;border-radius:62px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 120px rgba(61,139,255,.55)}
+.cta .hl{color:%(destaque)s}
 .cta .selos{margin-top:46px}
-.cta .selos img{width:640px}
-.preco{display:inline-block;margin-top:34px;padding:18px 46px;border-radius:24px;background:#FFD400;color:#0a0a0a;font-family:m900;font-size:64px;
+.cta .selos img{width:600px}
+.preco{display:inline-block;margin-top:34px;padding:18px 46px;border-radius:24px;background:#FFD400;color:#0a0a0a;font-family:j800;font-size:64px;letter-spacing:-.02em;
   box-shadow:0 14px 0 #b38f00,0 26px 60px rgba(0,0,0,.45)}
 </style></head><body>
 <div id=bg></div><div id=luz></div><div id=vignette></div>
@@ -163,11 +168,13 @@ def phone_html():
             "<div class=screen><img><img class=topo style='display:none'><div class=ring style='display:none'></div><div class=tap style='display:none'></div>"
             "<div class=island></div><div class=glare></div></div>")
 
-def caption_html(palavras, hl, n_vis, idade_ult, y, tam, estilo, centro=True, largura=940):
+def caption_html(palavras, hl, n_vis, idade_ult, y, tam, estilo, centro=True, largura=800):
     """Legenda palavra-por-palavra. palavras visíveis = n_vis; a última faz 'pop'."""
     out = []
     for i, p in enumerate(palavras):
         if i >= n_vis: break
+        if p == '/':
+            out.append('<br>'); continue
         cls = 'w hl' if i in hl else 'w'
         st = ''
         if i == n_vis - 1 and idade_ult is not None:
@@ -300,10 +307,11 @@ def celular(nome, dur, w=760, x=0, y=60, rot=(-14, 0), tilt=(6, 0), esc=(0.92, 1
         return s
     return g
 
-def T_cap(texto, hl_words=(), y=760, tam=96, ritmo=None, largura=940, inst=False):
+def T_cap(texto, hl_words=(), y=760, tam=96, ritmo=None, largura=800, inst=False):
     """Legenda palavra-por-palavra. ritmo = s por palavra (padrão garante leitura). inst=True mostra tudo no frame 1 (gancho)."""
     palavras = texto.split()
-    hl = {i for i, p in enumerate(palavras) if p.strip('.,!?…:"“”').upper() in {h.upper() for h in hl_words}}
+    lim = lambda x: x.strip('.,!?…:"“”').upper()
+    hl = {i for i, p in enumerate(palavras) if lim(p) in {lim(h) for h in hl_words}}
     rit = ritmo or 0.16
     def f(tl):
         if inst:
@@ -313,7 +321,7 @@ def T_cap(texto, hl_words=(), y=760, tam=96, ritmo=None, largura=940, inst=False
         return caption_html(palavras, hl, n, idade, y, tam, None, largura=largura)
     return f
 
-def T_tit(linhas, y=200, tam=130, hl_linhas=(), apoio=None, tam_apoio=44, entra=0.0, largura=940):
+def T_tit(linhas, y=200, tam=130, hl_linhas=(), apoio=None, tam_apoio=44, entra=0.0, largura=800):
     """Título editorial (estilo B) com revelação de baixo pra cima por linha."""
     def f(tl):
         out = []
@@ -341,15 +349,15 @@ def T_badge(texto='APP MINHAMOTO', y=170):
 
 def T_cta(titulo, sub=None, preco=None, y=330, estilo='A'):
     ic = os.path.join(ASSETS, 'icon.png'); selos = os.path.join(ASSETS, 'selos-lojas.png')
-    fam = 'm900' if estilo == 'A' else 'anton'
+    fam = 'j800'
     def f(tl):
         k1 = eback(min(1, tl/0.35)); k2 = eout((tl - 0.25)/0.35); k3 = eout((tl - 0.45)/0.35); k4 = eback(max(0, min(1, (tl - 0.6)/0.35)))
         s = (f"<div class=cta style='top:{y}px'>"
              f"<img class=ic src='file://{ic}' style='transform:scale({0.5+0.5*k1:.3f})'>"
-             f"<div style='font-family:{fam};font-size:{104 if estilo=='A' else 128}px;color:#fff;text-transform:uppercase;line-height:1.02;margin-top:56px;padding:0 60px;"
-             f"opacity:{k2:.2f};transform:translateY({(1-k2)*30:.0f}px);{'-webkit-text-stroke:8px #000;paint-order:stroke fill;' if estilo=='A' else ''}'>{titulo}</div>")
+             f"<div style='font-family:{fam};font-size:112px;color:#fff;line-height:1.05;letter-spacing:-.035em;word-spacing:.1em;margin-top:56px;padding:0 140px;text-wrap:balance;"
+             f"opacity:{k2:.2f};transform:translateY({(1-k2)*30:.0f}px)'>{titulo}</div>")
         if sub:
-            s += f"<div style='font-family:{'m800' if estilo=='A' else 'pop600'};font-size:46px;color:#dbe6ff;margin-top:22px;opacity:{k3:.2f}'>{H.escape(sub)}</div>"
+            s += f"<div style='font-family:j500;font-size:46px;color:#dbe6ff;margin-top:24px;letter-spacing:-.01em;padding:0 140px;text-wrap:balance;line-height:1.3;opacity:{k3:.2f}'>{H.escape(sub)}</div>"
         if preco:
             s += f"<div class=preco style='transform:scale({max(0.01,k4):.3f})'>{H.escape(preco)}</div>"
         s += f"<div class=selos style='opacity:{k3:.2f}'><img src='file://{selos}'></div></div>"

@@ -42,3 +42,9 @@ Na rotina diária, depois do Pauteiro. Pega as pautas do topo do `BANCO.md`.
 - [ ] Nenhuma palavra repetida demais na sequência?
 - [ ] Limites de caracteres respeitados?
 - [ ] As duas legendas são diferentes entre si?
+
+## Formatos por rede e legenda do TikTok (MANUAL §5b)
+- Todo roteiro prevê as duas versões: **4:5** (feed IG/FB) e **9:16** (TikTok, Reels, Stories, Shorts). TikTok é sempre 9:16 — carrossel 4:5 nunca vai pro TikTok.
+- No 9:16, escreva textos curtos o bastante pra caber entre x=140 e x=940 e acima de y=1500 (zona segura: 150px topo, 420px base, 140px direita).
+- Legenda do TikTok: gancho forte e curto sozinho na **1ª linha** (até ~90 caracteres), linha em branco, `📌 ...` e `📲 Baixe agora o MinhaMoto na App Store e no Google Play.` em linhas separadas, linha em branco, hashtags. Nunca em bloco único.
+- Texto das peças em frase normal (sem caixa-alta) — feedback do Léo 17/11.
