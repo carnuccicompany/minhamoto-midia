@@ -11,7 +11,7 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 - **Tamanho:** curto. 2 a 3 frases + assinatura. Google Play aceita no máximo 350 caracteres.
 - **Não pedir ideias/sugestões** para quem não deu sugestão.
 - **Personalize:** cite o que a pessoa escreveu (o recurso que elogiou, o problema que relatou). Nunca a mesma resposta para duas avaliações seguidas.
-- **Fechamento das positivas:** "Boas viagens!" / "Bons quilômetros!" / "Rode tranquilo!" (escolha uma conforme o Léo definir).
+- **Fechamento das positivas (4–5★):** "Conte com a gente em cada quilômetro!" (escolhido pelo Léo).
 - **Sugestão / "não tem tal recurso":** dizer que a sugestão foi encaminhada ao time e entrou na lista de melhorias. Se o recurso já existe no app, explicar onde está.
 
 ## Quem responde
@@ -20,10 +20,10 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 
 ## Modelos por situação
 **5★ elogio**
-> Obrigado pela avaliação! Ficamos muito felizes em saber que o MinhaMoto está ajudando você a cuidar da sua moto. Boas viagens! — Equipe MinhaMoto
+> Obrigado pela avaliação! Ficamos muito felizes em saber que o MinhaMoto está ajudando você a cuidar da sua moto. Conte com a gente em cada quilômetro! — Equipe MinhaMoto
 
 **4★ com sugestão / "falta X"**
-> Obrigado pela avaliação e pela sugestão! Ela já foi encaminhada para o nosso time e entrou na nossa lista de melhorias. Boas viagens! — Equipe MinhaMoto
+> Obrigado pela avaliação e pela sugestão! Ela já foi encaminhada para o nosso time e entrou na nossa lista de melhorias. Conte com a gente em cada quilômetro! — Equipe MinhaMoto
 
 **3★ dúvida / confusão**
 > Obrigado pelo retorno! Para registrar uma revisão, abra a sua moto, toque no item (por exemplo, óleo) e depois em "Registrar serviço". Se precisar de ajuda, nosso suporte está à disposição em [CONTATO]. — Equipe MinhaMoto
@@ -38,5 +38,4 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 > Sentimos muito pelo transtorno! A assinatura é gerenciada pela loja: no iPhone, em Ajustes > seu nome > Assinaturas; no Android, em Play Store > Pagamentos e assinaturas. Se precisar, nosso suporte ajuda em [CONTATO]. — Equipe MinhaMoto
 
 ## Pendente
-- [CONTATO] do suporte: definir com o Léo (e-mail / WhatsApp / Instagram).
-- Fechamento das positivas: Léo escolhe entre as opções.
+- Contatos do suporte: e-mail suporte@carnucci.com · WhatsApp (11) 91337-4664. Falta o Léo dizer qual vai nas respostas públicas.
