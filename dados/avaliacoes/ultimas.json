@@ -1,8 +1,64 @@
 {
- "coletado_em": "2026-11-17T16:48:20.711198Z",
+ "coletado_em": "2026-11-17T17:18:21.413085Z",
  "status": {
-  "google_play": "ERRO: Expecting value: line 1 column 1 (char 0)",
+  "google_play": "ok (5 avaliações)",
   "app_store": "ERRO: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. InvalidData(InvalidLength(113))"
  },
- "avaliacoes": []
+ "avaliacoes": [
+  {
+   "loja": "google_play",
+   "id": "c28f1858-a4fd-44ed-85c4-b73acf4c74dd",
+   "nota": 5,
+   "texto": "App sensacional! Muito funcional e útil! E os desenvolvedores são super atenciosos, dando sempre o suporte necessário. Vale muito à pena! Super recomendo!",
+   "data": "2026-11-17T15:47:29Z",
+   "versao_app": "1.0.1",
+   "aparelho": "M23HT (V Max Plus)",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "google_play",
+   "id": "8fdb9c98-de81-44a2-9978-bf60e1e3fc0d",
+   "nota": 5,
+   "texto": "Muito bom o app, estou acompanhando o desenvolvimento, tende a ser um dos melhores app para controle gastos e consumos da moto",
+   "data": "2026-11-16T15:35:39Z",
+   "versao_app": "1.0",
+   "aparelho": "redwood (POCO X5 Pro 5G)",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "google_play",
+   "id": "1e827411-c5a7-4973-8fbd-4646b8207677",
+   "nota": 5,
+   "texto": "estou usando des do modo de test, paguei por ele e valeu mto apena, mto bom, o modo beta estava funcionando mto bem",
+   "data": "2026-11-13T02:58:51Z",
+   "versao_app": null,
+   "aparelho": "HNLGN-QL (HONOR X7d)",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "google_play",
+   "id": "a99845f6-0581-4990-b19d-3a2d9b127bd7",
+   "nota": 1,
+   "texto": "não abre",
+   "data": "2026-11-13T01:57:22Z",
+   "versao_app": "1.0",
+   "aparelho": "b0q (Galaxy S22 Ultra)",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "google_play",
+   "id": "7a7fae0c-c50a-4e95-900f-d7d586396218",
+   "nota": 1,
+   "texto": "eu baixei mas n funciona!",
+   "data": "2026-11-12T17:09:09Z",
+   "versao_app": "1.0",
+   "aparelho": "r0q (Galaxy S22)",
+   "respondida": false,
+   "resposta_atual": null
+  }
+ ]
 }
