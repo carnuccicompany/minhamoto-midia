@@ -8,7 +8,9 @@ def token():
     if r.status_code != 200: print("ERRO token:", r.text[:300]); sys.exit(1)
     return r.json()["access_token"]
 if __name__ == "__main__":
-    h = {"Authorization": f"Bearer {token()}"}
+    tk = token(); h = {"Authorization": f"Bearer {tk}"}
+    ti = requests.get("https://oauth2.googleapis.com/tokeninfo", params={"access_token": tk}, timeout=30).json()
+    print("TOKEN OK · escopo:", ti.get("scope"), "· expira em", ti.get("expires_in"), "s")
     r = requests.get("https://www.googleapis.com/youtube/v3/channels", headers=h, params={"part": "snippet", "mine": "true"}, timeout=30)
     print("status", r.status_code)
     if r.ok:
