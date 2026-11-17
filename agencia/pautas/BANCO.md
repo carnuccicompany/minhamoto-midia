@@ -44,3 +44,11 @@
 - [ ] Curtos AIDA | "App de controle é tudo igual." Não é | ângulo: app genérico você configura na mão; o MinhaMoto já sabe o plano do seu modelo | prova no app: plano de revisão
 - [ ] Temas gerais | O custo que motoboy não coloca na conta | ângulo: depreciação, pneu, relação, freio — o que some do bolso sem perceber
 - [ ] Temas gerais | Moto alugada × moto própria: quem paga a manutenção? | ângulo: comparação honesta pro entregador decidir (sem citar marca de locadora)
+
+### Do radar (17/11)
+- [ ] Temas gerais | Sua moto é isenta de IPVA em SP? Só se isso estiver em dia | ângulo: até 180 cc de pessoa física é isenta em 2027, mas a isenção exige registro e licenciamento em dia (Lei 18.386/2025 — fonte Zul+ 16/11); acima de 180 cc paga 2% do venal
+- [ ] Educacional | IPVA 2027 SP: o dia exato que vence pela sua placa | ângulo: final 1 em 11/01 até final 0 em 22/01, 3% de desconto à vista em janeiro (Decreto 70.960/2026) — e o lembrete que evita a multa | prova no app: documentos/lembretes
+- [ ] Marcas | As 5 motos mais emplacadas de outubro (e a surpresa no 5º lugar) | ângulo: CG 160 47.527, Pop 110i 25.253 (melhor mês desde 2024), Biz 21.849, Bros 16.293, Mottu Sport 9.621 — moto de aluguel no top 5 (fonte Despachante Dok/Fenabrave 06/11)
+- [ ] Temas gerais | O dia que a moto vai pra oficina é o dia que você não ganha | ângulo: manutenção preventiva = menos dia parado; entregador de app cresceu 18,6% (274 mil → 325 mil, PNAD via Portal do Trânsito 06/11) e quase ninguém conta o dia parado no custo
+- [ ] Curtos AIDA | POV: sábado 19h, você ainda tá rodando — "eu também queria estar em casa" | ângulo: formato POV de entregador (identificação + humor seco); virada: a única coisa que não pode falhar é a moto | prova no app: Saúde da moto
+- [ ] Curtos AIDA | "Seu app grava viagem. Mas sabe quando a SUA CG troca o óleo?" | ângulo: app genérico investe em GPS; o MinhaMoto já vem com o plano do seu modelo (sem citar concorrente) | prova no app: plano de revisão do modelo
