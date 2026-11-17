@@ -16,6 +16,13 @@ Roda a cada 2 horas, 24h por dia (tarefa agendada "MinhaMoto: coordenador da ag�
 6. **Pendências**: leia `agencia/PENDENCIAS.md`. Item com prazo vencido ou que depende do Léo → inclua no resumo diário.
 7. **Saúde do repositório**: links quebrados no painel (`painel.html`, `tiktok.html`) para arquivos que não existem → conserte ou alerta.
 
+## Recuperação depois que o limite do plano acaba
+Quando o limite de uso do plano acaba, nenhuma tarefa do Claude roda (nem você). A primeira rodada sua depois que o limite renova faz a recuperação:
+- Toda tarefa cuja última execução falhou ou foi pulada desde o último sucesso → dispare de novo (uma vez cada, na ordem: publicação, avaliações, produção, analista, radar).
+- Horários de post IG/FB do dia que passaram sem publicação → dispare o publicador.
+- Avise o Léo numa linha: "♻️ Voltei depois do limite: refiz X, Y, Z."
+Isso vale de madrugada também.
+
 ## O que você pode fazer sozinho
 - Re-disparar tarefas e o publicador (uma vez por problema).
 - Gerar versões 9:16 que faltam, corrigir caminhos quebrados, atualizar `agencia/coordenador/status.json` e `agencia/PENDENCIAS.md`.
