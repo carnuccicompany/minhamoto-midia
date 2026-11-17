@@ -13,6 +13,8 @@ Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com b
 > - **Mockup do celular horrível.** App dentro do celular mal colocado, borrado, sem acabamento. A qualidade do app no mockup tem que ser PERFEITA — nítida, bem enquadrada, com sombra/profundidade bonitas, no nível (ou acima) dos vídeos que ele e o Davi já fizeram.
 > - **Grifos/marca-texto não ficaram legais.** Não usar esse recurso como muleta.
 > - **Até o story que o revisor aprovou (ST04, caixa de perguntas, todo azul) não passou com o Léo:** a ideia é boa, mas o grifado não ficou legal, a fonte não agradou, e o azul tá ok mas dá pra ficar muito mais foda (sombra, profundidade, acabamento). Lição: o Revisor estava permissivo demais — a régua é o gosto do Léo, não "sem erro técnico".
+> - **TELAS DO APP = SÓ DO CÓDIGO MAIS NOVO.** Antes de qualquer carrossel, vídeo ou story: `git pull` no repo do app (carnuccicompany/minhamoto-midia não — o do app: carnuccicompany/minhamotooficial), ver se tem tela/estética/funcionalidade nova e usar as telas renderizadas desse código (`agencia/designer/assets/telas-app/`, regerar se o app mudou). Nunca gravação de tela antiga nem print velho. No repo do app: só ler e rodar local — nunca commit/push/deploy.
+> - **YouTube = canal só de Shorts.**
 > - O painel da agência ele aprovou ("muito foda") — manter e aprimorar.
 
 ## 1. O negócio
