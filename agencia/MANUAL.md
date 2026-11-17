@@ -55,6 +55,13 @@ Temas cobertos: plano de revisão do modelo, histórico de serviços, cuidados f
 Proporção alvo da fila: ~70% valor (dicas, educacional, marcas, temas) / ~30% venda (AIDA, produto).
 Nunca dois carrosséis da mesma linha em sequência na fila.
 
+### Produção em LINHAS (regra do Léo, 17/11)
+- A direção de arte escolhida (A/B) é a **base da marca** (fonte, cores, logo, mockup), não um template único. Cada **linha** tem estrutura, ritmo, jeito de subir o gancho e estética próprios — igual aos 113 da fila hoje (30 Tutorial do Davi, 20+20 Dicas e hacks em dois estilos, 11 Marcas, 10 Educacional, 10 Junto com a chave, 7 Temas gerais, 5 Curtos AIDA).
+- Produzir em **lotes por linha**: definir a linha (tema + esqueleto de cards + estilo de capa + tipo de gancho), aprovar 1 peça-modelo e então gerar o lote inteiro (10, 20, 50) seguindo aquele esqueleto, com assunto diferente em cada peça.
+- Rodar várias linhas em paralelo e **alternar na fila** (nunca duas da mesma linha seguidas). Quando uma linha passar de ~25% da fila, abrir linha nova.
+- Toda linha nova nasce com: nome, objetivo (valor ou venda), esqueleto dos cards, estilo de capa, 1 peça-modelo e a lista de pautas do lote. Registrar em `agencia/pautas/linhas.md`.
+- Vale pra carrossel, motion (Reels/TikTok/Shorts) e stories.
+
 ## 4. Sistemas visuais
 
 > **Atualização 17/11:** a direção v2 (`agencia/direcao-v2/`) substitui os estilos abaixo assim que o Léo escolher A ou B. Tipografia vigente: **Plus Jakarta Sans** (800 títulos / 500–600 apoio), sempre em frase normal, sem caixa-alta. Inter e caixa-alta abaixo ficam só como histórico.

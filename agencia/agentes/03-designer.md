@@ -40,3 +40,6 @@ Depois do Roteirista, na rotina diária.
 - Toda peça nasce em **4:5 1080×1350** (feed IG/FB) **e** em **9:16 1080×1920** (TikTok, Reels, Stories, Shorts). TikTok é sempre 9:16; carrossel 4:5 nunca vai pro TikTok (use `scripts/tiktok_916.py` → `carrosseis/<ID>/tiktok/`, campo `cards_tiktok`, ou layout nativo 9:16 como em `direcao-v2/<A|B>/carrossel-tiktok/`).
 - **Zona segura 9:16:** nada importante nos 150px de cima, nos 420px de baixo e nos 140px da direita → texto entre x=140 e x=940, y=150 a y=1500, centralizado.
 - Tipografia vigente: Plus Jakarta Sans (800 títulos / 500–600 apoio), frase normal, sem caixa-alta; celular reto e centralizado.
+
+## Linhas (17/11)
+Siga MANUAL §3 "Produção em LINHAS": produza em lotes por linha (esqueleto + estética próprios), alterne linhas na fila e registre em agencia/pautas/linhas.md.

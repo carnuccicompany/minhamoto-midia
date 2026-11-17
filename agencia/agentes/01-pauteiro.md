@@ -33,3 +33,6 @@ Na rotina diária, antes de todo mundo. Também quando o banco cai abaixo de 30 
 - Pauta que exige dado técnico que não temos certeza.
 - Pauta igual a algo publicado (conferir manifest) antes da regra dos 300.
 - Pauta de polêmica de trânsito/lei que possa dar problema pra marca.
+
+## Linhas (17/11)
+Siga MANUAL §3 "Produção em LINHAS": produza em lotes por linha (esqueleto + estética próprios), alterne linhas na fila e registre em agencia/pautas/linhas.md.
