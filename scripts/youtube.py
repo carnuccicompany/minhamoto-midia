@@ -1,7 +1,12 @@
 """YouTube Shorts. Modo teste: confere se as credenciais funcionam (mostra o canal). Não envia nada.
 Segredos: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN."""
 import os, sys, json, requests
+def diag():
+    for n, ini in (("YT_CLIENT_ID", "644425422292-"), ("YT_CLIENT_SECRET", "GOCSPX-"), ("YT_REFRESH_TOKEN", "1//")):
+        v = os.environ.get(n, "").strip()
+        print(f"[diag] {n}: {len(v)} caracteres; começa certo={v.startswith(ini)}; tem espaço/aspas={any(c in v for c in ' \"\'')}")
 def token():
+    diag()
     r = requests.post("https://oauth2.googleapis.com/token", data={
         "client_id": os.environ["YT_CLIENT_ID"].strip(), "client_secret": os.environ["YT_CLIENT_SECRET"].strip(),
         "refresh_token": os.environ["YT_REFRESH_TOKEN"].strip(), "grant_type": "refresh_token"}, timeout=30)
