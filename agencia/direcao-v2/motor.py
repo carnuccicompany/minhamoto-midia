@@ -42,7 +42,17 @@ def extrair(src, ss, dur, speed=1.0):
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(ss), '-t', str(dur*speed), '-i', p,
                         '-vf', f'setpts=PTS/{speed},fps={FPS}', '-q:v', '2', os.path.join(d, '%05d.jpg')], check=True)
     fs = sorted(os.path.join(d, f) for f in os.listdir(d))
-    return fs
+    # proteção: frame preto/quase preto de transição da gravação nunca entra — repete o último frame bom
+    from PIL import Image, ImageStat
+    bons, ult = [], None
+    for f in fs:
+        m = ImageStat.Stat(Image.open(f).convert('L').resize((54, 117))).mean[0]
+        if m < 9 and ult is not None:
+            bons.append(ult)
+        else:
+            bons.append(f); ult = f if m >= 9 else ult
+    if ult is None: return fs
+    return [b if b is not None else ult for b in bons]
 
 def still(src, t):
     key = hashlib.md5(f'{src}{t}'.encode()).hexdigest()[:10]

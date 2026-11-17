@@ -34,7 +34,7 @@ def A2():
     v.cena(9.6, 13.0, celular('tela-manutencao.mp4', 43.5, 3.4, bgfn=FB(3.4), **PH))
     v.texto(9.6, 13.0, T_cap('QUANTOS KM FALTAM PRA PRÓXIMA REVISÃO', ['KM', 'FALTAM'], y=190, tam=90, ritmo=0.17))
     v.cena(13.0, 16.0, bg_grad('A'))
-    v.texto(13.0, 16.0, T_cta('TUA MOTO EM DIA.<br>SEM CHUTE.', sub='Baixe agora o MinhaMoto', estilo='A'))
+    v.texto(13.0, 16.0, T_cta('EM DIA.<br>SEM CHUTE.', sub='Baixe agora o MinhaMoto', estilo='A'))
     return v
 
 def B1():
@@ -55,9 +55,9 @@ def B1():
 def B2():
     v = Video('B2', 'B')
     PH = dict(w=700, y=340)
-    v.cena(0, 3.4, celular('tela-cadastro-moto.mp4', 2.4, 3.4, rot=(-16, -6), tilt=(8, 3), esc=(0.97, 1.0), **PH))
-    v.texto(0, 3.4, T_tit(['30 SEGUNDOS', 'PRA SABER SE TUA MOTO', 'TÁ EM DIA'], y=110, tam=96, largura=1000, hl_linhas=(0,), entra=-1))
-    v.cena(3.4, 7.0, celular('tela-cadastro-moto.mp4', 6, 3.6, speed=15, rot=(12, 4), tilt=(4, 2), **PH))
+    v.cena(0, 3.4, celular('tela-cadastro-moto.mp4', 1.0, 3.4, rot=(-16, -6), tilt=(8, 3), esc=(0.97, 1.0), **PH))
+    v.texto(0, 3.4, T_tit(['30 SEGUNDOS PRA SABER', 'SE TUA MOTO TÁ EM DIA'], y=120, tam=100, largura=1020, hl_linhas=(1,), entra=-1))
+    v.cena(3.4, 7.0, celular('tela-cadastro-moto.mp4', 6.6, 3.6, speed=15, rot=(12, 4), tilt=(4, 2), **PH))
     v.texto(3.4, 7.0, T_tit(['RESPONDE', 'O QUE VOCÊ LEMBRA'], y=170, tam=118, hl_linhas=(1,)))
     v.cena(7.0, 10.6, celular('tela-cadastro-moto.mp4', 113, 3.6, rot=(-12, -4), tilt=(4, 2), **PH))
     v.texto(7.0, 10.6, T_tit(['E VÊ O PLANO', 'DA TUA MOTO'], y=170, tam=124, hl_linhas=(1,)))
