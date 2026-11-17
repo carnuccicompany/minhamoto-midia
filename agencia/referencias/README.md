@@ -1,3 +1,5 @@
+> ⚠️ 17/11 — Ordem do Léo: TODAS as gravações de tela antigas e vídeos antigos foram removidos (inclusive do histórico). Telas do app agora vêm SÓ do código mais novo do app (repo minhamotooficial, sempre atualizado) — renderizadas em alta. Não usar mais nenhuma gravação.
+
 > ⚠️ 16/11 — Por ordem do Léo, os vídeos de referência (curtos, motions, prontos, hooks, CTAs) e as filmagens na moto foram REMOVIDOS: mostram o APP ANTIGO e a oferta antiga ("vitalício R$19,90"). Não usar nem como base. A gravação tela-cadastro também foi removida (expunha e-mail pessoal). As demais gravações de tela usam o layout ATUAL (conferido com os carrosséis do Davi) e podem ser usadas.
 
 # Referências e material de vídeo
