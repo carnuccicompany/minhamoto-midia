@@ -38,7 +38,7 @@
    "dur": 4.75,
    "video": "agencia/referencias/material/tela-saude-1.mp4",
    "ini": 7.0,
-   "vel": 2.0,
+   "vel": 1.4,
    "crop_topo": 118,
    "top": 560,
    "titulo": "Separa o urgente *do que tá em dia.*",
@@ -56,7 +56,7 @@
    "dur": 3.4,
    "video": "agencia/referencias/material/tela-saude-1.mp4",
    "ini": 16.0,
-   "vel": 0.6,
+   "vel": 0.5,
    "crop_topo": 118,
    "top": 560,
    "titulo": "Fez o serviço? *Um toque.*",
@@ -94,9 +94,9 @@
   },
   {
    "tipo": "end",
-   "dur": 6.1,
+   "dur": 5.2,
    "titulo": "Sua moto\n*no controle.*",
-   "sub": "Baixe o MinhaMoto por R$19,90."
+   "sub": "Baixe por R$19,90."
   },
   {
    "tipo": "kinetic",

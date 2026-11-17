@@ -31,6 +31,7 @@ REPO = os.path.abspath(os.path.join(BASE, '..', '..'))
 A = os.path.join(BASE, 'assets')
 FPS = 30
 W, H = 1080, 1920
+PARADO_MAX = 2.5
 ZONA = dict(top=150, bottom=1540, left=40, right=920)
 XF = 0.2  # dissolve entre cenas (s)
 
@@ -296,6 +297,24 @@ def luminancia(jpg):
     im = Image.open(io.BytesIO(jpg)).convert('L').resize((54, 96))
     return sum(im.tobytes()) / (54 * 96)
 
+def miniatura(jpg):
+    from PIL import Image
+    return Image.open(io.BytesIO(jpg)).convert('L').resize((36, 64)).tobytes()
+
+def checar_frames(lums, thumbs):
+    """Frame preto/vazio e tela parada > PARADO_MAX segundos."""
+    probs = []
+    for f, m in enumerate(lums):
+        if m < 6: probs.append(f'frame quase preto no frame {f} ({f / FPS:.2f}s): brilho {m:.1f}')
+    # tela parada: frame f quase idêntico ao de PARADO_MAX segundos atrás (movimento lento conta como movimento)
+    janela = int(PARADO_MAX * FPS); ultimo = -10**9
+    for f in range(janela, len(thumbs)):
+        a, b = thumbs[f - janela], thumbs[f]
+        diff = sum(abs(x - y) for x, y in zip(a, b)) / len(a)
+        if diff < 1.5 and f - ultimo > janela:
+            probs.append(f'tela parada por > {PARADO_MAX}s entre {(f - janela) / FPS:.2f}s e {f / FPS:.2f}s (dif {diff:.2f})'); ultimo = f
+    return probs
+
 def main(path, force=False):
     rot = json.load(open(path, encoding='utf-8'))
     rid = rot['id']; out = os.path.join(REPO, 'videos', rid); os.makedirs(out, exist_ok=True)
@@ -308,7 +327,7 @@ def main(path, force=False):
                           stdin=subprocess.PIPE)
     from playwright.sync_api import sync_playwright
     os.makedirs(os.path.join(REPO, 'revisao'), exist_ok=True)
-    frames_review, lums, problemas = [], [], []
+    frames_review, lums, thumbs, problemas = [], [], [], []
     # instantes de checagem da zona segura: 60% e fim de cada cena
     checks, acc = set(), 0.0
     for c in rot['cenas']:
@@ -325,11 +344,12 @@ def main(path, force=False):
             if f in checks:
                 for v in pg.evaluate('zona()'): problemas.append(f'zona segura @ {t:.2f}s: {v}')
             jpg = pg.screenshot(type='jpeg', quality=93)
-            ff.stdin.write(jpg); lums.append(luminancia(jpg))
+            ff.stdin.write(jpg); lums.append(luminancia(jpg)); thumbs.append(miniatura(jpg))
             if f % (FPS // 2) == 0: frames_review.append((t, jpg))
             if f == int(FPS * rot.get('capa_t', 1.2)): open(os.path.join(out, 'capa.jpg'), 'wb').write(jpg)
         b.close()
     ff.stdin.close(); ff.wait()
+    problemas += checar_frames(lums, thumbs)
     for f in range(1, len(lums) - 1):   # flash: frame isolado com salto de brilho
         a, m, c = lums[f - 1], lums[f], lums[f + 1]
         if abs(m - a) > 14 and abs(m - c) > 14 and (m - a) * (m - c) > 0:

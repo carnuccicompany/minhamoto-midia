@@ -48,22 +48,12 @@
    ]
   },
   {
-   "tipo": "kinetic",
-   "dur": 2.0,
-   "tam": 128,
-   "bg": "azul",
-   "passo": 0.25,
-   "linhas": [
-    "Quem usa o",
-    "*MinhaMoto:*"
-   ]
-  },
-  {
    "tipo": "phone",
    "dur": 3.0,
    "print": "rec-saude-emdia.png",
    "top": 620,
-   "titulo": "“Tá em dia. *Tá tudo aqui.*”",
+   "kicker": "Com o MinhaMoto",
+   "titulo": "“Tá tudo *aqui.*”",
    "tam": 96,
    "zoom": [
     1.0,

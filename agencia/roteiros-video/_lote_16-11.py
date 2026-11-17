@@ -26,7 +26,7 @@ V.append(dict(id="VP01", titulo="Sua moto não quebra do nada", formato="Texto a
     dict(tipo="kinetic", dur=2.9, tam=156, linhas=HOOK1),
     dict(tipo="kinetic", dur=1.9, tam=150, linhas=["Ela *avisa* antes."]),
     dict(tipo="photo", dur=2.0, foto="17024710.jpg", titulo="Barulho *novo.*", tam=128),
-    dict(tipo="photo", dur=2.0, foto="19949302.jpg", titulo="Freio *mais mole.*", tam=128),
+    dict(tipo="photo", dur=2.0, foto="19949302.jpg", pos="center 75%", titulo="Freio *mais mole.*", tam=128),
     dict(tipo="photo", dur=2.0, foto="37131862-corrente.jpg", pos="70% center", titulo="Corrente *batendo.*", tam=128),
     dict(tipo="kinetic", dur=2.4, tam=132, bg="azul", linhas=["Quem ignora,", "*paga o conserto.*"]),
     dict(tipo="kinetic", dur=2.4, tam=132, linhas=["Quem anota,", "*paga só a manutenção.*"]),
@@ -59,8 +59,7 @@ V.append(dict(id="VP03", titulo="POV: o mecânico pergunta", formato="POV / meme
     dict(tipo="kinetic", dur=1.8, tam=150, linhas=["Você:", "“Uns 3 meses…”"]),
     dict(tipo="kinetic", dur=1.6, tam=170, linhas=["“…ou 6?”"]),
     dict(tipo="kinetic", dur=1.7, tam=190, linhas=["“*Sei lá.*”"]),
-    dict(tipo="kinetic", dur=2.0, tam=128, bg="azul", passo=0.25, linhas=["Quem usa o", "*MinhaMoto:*"]),
-    dict(tipo="phone", dur=3.0, print="rec-saude-emdia.png", top=620, titulo="“Tá em dia. *Tá tudo aqui.*”", tam=96,
+    dict(tipo="phone", dur=3.0, print="rec-saude-emdia.png", top=620, kicker="Com o MinhaMoto", titulo="“Tá tudo *aqui.*”", tam=96,
          zoom=[1.0, 1.25], foco=[0.5, 0.15]),
     dict(tipo="end", dur=3.2, titulo="Seja o cliente\n*que sabe.*", sub="Baixe por R$19,90."),
     dict(tipo="kinetic", dur=0.9, tam=124, passo=0.07, eco=True, linhas=["O mecânico", "*pergunta:*"]),
@@ -68,15 +67,15 @@ V.append(dict(id="VP03", titulo="POV: o mecânico pergunta", formato="POV / meme
            "Quando o mecânico pergunta da última troca, quem tem o histórico responde na hora e mostra na tela o que tá em dia. É outra conversa.",
            "nunca lembra quando trocou o óleo", "#humor #oficinademoto #trocadeoleo")))
 
-HOOK4 = ["5 erros que", "*encurtam a vida*", "da sua moto"]
-V.append(dict(id="VP04", titulo="5 erros que encurtam a vida da moto", formato="Lista rápida", capa_t=1.4, cenas=[
+HOOK4 = ["5 erros", "*que matam*", "sua moto"]
+V.append(dict(id="VP04", titulo="5 erros que matam sua moto", formato="Lista rápida", capa_t=1.4, cenas=[
     dict(tipo="kinetic", dur=3.0, tam=128, passo=0.3, linhas=HOOK4),
     dict(tipo="photo", dur=2.6, n=5, foto="14700339.jpg", pos="center 55%", titulo="Rodar com\n*pneu murcho*"),
     dict(tipo="photo", dur=2.6, n=4, foto="37131862-corrente.jpg", pos="70% center", titulo="Esquecer\n*a corrente*"),
     dict(tipo="photo", dur=2.6, n=3, foto="17024710.jpg", titulo="Ignorar\n*barulho novo*"),
-    dict(tipo="photo", dur=2.6, n=2, foto="27704018.jpg", titulo="Passar do\n*prazo do óleo*"),
+    dict(tipo="photo", dur=2.6, n=2, foto="31664515.jpg", titulo="Passar do\n*prazo do óleo*"),
     dict(tipo="photo", dur=2.6, n=1, foto="6446251.jpg", titulo="Não anotar\n*nada*"),
-    dict(tipo="end", dur=3.4, titulo="Erro número 1?\n*O app resolve.*", sub="Baixe por R$19,90."),
+    dict(tipo="end", dur=3.4, titulo="Erro número 1?\n*O app resolve.*", sub="Baixe agora."),
     dict(tipo="kinetic", dur=0.9, tam=128, passo=0.07, eco=True, linhas=HOOK4),
 ], leg=leg("O erro número 1 é o que quase todo motociclista comete.",
            "Pneu murcho, corrente esquecida, barulho ignorado, óleo vencido e, o pior de todos, não anotar nada. Sem histórico, os outros erros sempre voltam.",

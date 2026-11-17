@@ -1,0 +1,91 @@
+{
+ "id": "VP03",
+ "titulo": "POV: o mecânico pergunta",
+ "formato": "POV / meme",
+ "capa_t": 1.6,
+ "cenas": [
+  {
+   "tipo": "photo",
+   "dur": 2.95,
+   "foto": "9607261.jpg",
+   "kicker": "POV",
+   "titulo": "O mecânico *pergunta:*",
+   "tam": 124
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 4.62,
+   "tam": 116,
+   "linhas": [
+    "“Quando foi",
+    "a última troca",
+    "*de óleo?*”"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 2.95,
+   "tam": 150,
+   "linhas": [
+    "Você:",
+    "“Uns 3 meses…”"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 1.73,
+   "tam": 170,
+   "linhas": [
+    "“…ou 6?”"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 1.7,
+   "tam": 190,
+   "linhas": [
+    "“*Sei lá.*”"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "phone",
+   "dur": 3.85,
+   "print": "rec-saude-emdia.png",
+   "top": 620,
+   "kicker": "Com o MinhaMoto",
+   "titulo": "“Tá tudo *aqui.*”",
+   "tam": 96,
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "foco": [
+    0.5,
+    0.15
+   ]
+  },
+  {
+   "tipo": "end",
+   "dur": 5.65,
+   "titulo": "Seja o cliente\n*que sabe.*",
+   "sub": "Baixe por R$19,90."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 0.9,
+   "tam": 124,
+   "passo": 0.07,
+   "eco": true,
+   "linhas": [
+    "O mecânico",
+    "*pergunta:*"
+   ]
+  }
+ ],
+ "legenda_ig_fb": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina.\n\nQuando o mecânico pergunta da última troca, quem tem o histórico responde na hora e mostra na tela o que tá em dia. É outra conversa.\n\n📌 Salva pra não esquecer e manda pra quem nunca lembra quando trocou o óleo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #humor #oficinademoto #trocadeoleo #minhamoto",
+ "legenda_tiktok": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina. 📌 Salva e manda pra quem nunca lembra quando trocou o óleo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #humor #oficinademoto #trocadeoleo #moto #motociclista #fyp #motostiktok"
+}

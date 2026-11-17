@@ -1,0 +1,76 @@
+{
+ "id": "VP04",
+ "titulo": "5 erros que matam sua moto",
+ "formato": "Lista rápida",
+ "capa_t": 1.4,
+ "cenas": [
+  {
+   "tipo": "kinetic",
+   "dur": 3.83,
+   "tam": 128,
+   "passo": 0.3,
+   "linhas": [
+    "5 erros",
+    "*que matam*",
+    "sua moto"
+   ]
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.95,
+   "n": 5,
+   "foto": "14700339.jpg",
+   "pos": "center 55%",
+   "titulo": "Rodar com\n*pneu murcho*"
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.6,
+   "n": 4,
+   "foto": "37131862-corrente.jpg",
+   "pos": "70% center",
+   "titulo": "Esquecer\n*a corrente*"
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.6,
+   "n": 3,
+   "foto": "17024710.jpg",
+   "titulo": "Ignorar\n*barulho novo*"
+  },
+  {
+   "tipo": "photo",
+   "dur": 3.4,
+   "n": 2,
+   "foto": "31664515.jpg",
+   "titulo": "Passar do\n*prazo do óleo*"
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.6,
+   "n": 1,
+   "foto": "6446251.jpg",
+   "titulo": "Não anotar\n*nada*"
+  },
+  {
+   "tipo": "end",
+   "dur": 4.75,
+   "titulo": "Erro número 1?\n*O app resolve.*",
+   "sub": "Baixe agora."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 0.9,
+   "tam": 128,
+   "passo": 0.07,
+   "eco": true,
+   "linhas": [
+    "5 erros",
+    "*que matam*",
+    "sua moto"
+   ]
+  }
+ ],
+ "legenda_ig_fb": "O erro número 1 é o que quase todo motociclista comete.\n\nPneu murcho, corrente esquecida, barulho ignorado, óleo vencido e, o pior de todos, não anotar nada. Sem histórico, os outros erros sempre voltam.\n\n📌 Salva pra não esquecer e manda pra quem vive esquecendo a manutenção da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #errosdemoto #dicasdemoto #cuidadoscomamoto #minhamoto",
+ "legenda_tiktok": "O erro número 1 é o que quase todo motociclista comete. 📌 Salva e manda pra quem vive esquecendo a manutenção da moto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #errosdemoto #dicasdemoto #cuidadoscomamoto #moto #motociclista #fyp #motostiktok"
+}
