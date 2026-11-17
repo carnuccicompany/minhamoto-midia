@@ -3,6 +3,17 @@
 Este é o cérebro compartilhado da agência. Todo agente lê este manual antes de trabalhar.
 Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com bom senso e anota a decisão.
 
+
+> ## 🚨 FEEDBACK DO LÉO — 17/11 (lote piloto inteiro reprovado). Todo agente lê isto antes de qualquer coisa.
+> - **"Não gostei de nada. Repensar tudo."** Os 10 carrosséis, 5 vídeos e 5 stories do lote piloto estão reprovados pelo dono.
+> - **LOGO:** o símbolo MinhaMoto tem o **guidão/frente da moto pra DIREITA**. Use SÓ `agencia/designer/assets/icon.png` / `simbolo-branco.svg` (gerados do SVG oficial do app). Logo espelhada é erro gravíssimo — nunca mais.
+> - **VÍDEO — o hook é tudo.** Nenhum vídeo prendeu. Se o gancho não segurar nos primeiros 1–2s, ninguém assiste. O hook tem que ser absurdo de bom (choque, curiosidade, dor real, contradição, número forte, POV que o motoboy se reconhece).
+> - **Fontes feias.** A escolha tipográfica não ficou bonita. Repensar a tipografia (display forte, estilo nativo de TikTok/legenda, hierarquia que chama atenção).
+> - **Vazio demais, sem imagem.** Peças só com texto sobre fundo liso não prestam. Precisa de imagem, movimento, elemento visual o tempo todo.
+> - **Mockup do celular horrível.** App dentro do celular mal colocado, borrado, sem acabamento. A qualidade do app no mockup tem que ser PERFEITA — nítida, bem enquadrada, com sombra/profundidade bonitas, no nível (ou acima) dos vídeos que ele e o Davi já fizeram.
+> - **Grifos/marca-texto não ficaram legais.** Não usar esse recurso como muleta.
+> - O painel da agência ele aprovou ("muito foda") — manter e aprimorar.
+
 ## 1. O negócio
 
 - **Produto:** MinhaMoto — app de assinatura pra motociclista cuidar da moto: revisões, histórico de manutenção, documentos, gastos, combustível, tudo num lugar só.
