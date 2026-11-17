@@ -123,6 +123,16 @@ Regras:
 - Motor: `agencia/designer/video.py` (roteiros em `agencia/roteiros-video/`). Saída em `videos/VPnn/` + folha de frames em `revisao/`.
 - Legenda IG/FB e TikTok no mesmo padrão do §5 (CTA intocável).
 
+### Todo carrossel aprovado vira vídeo (regra fixa do Léo, 16/11)
+Cada carrossel APROVADO pelo Léo gera também uma versão em vídeo 9:16 (motion dos próprios cards: texto entrando no ritmo, gancho do card 1 nos 2 primeiros segundos, transições entre cards, CTA final com "por R$19,90" quando fizer sentido). Esse vídeo entra na fila de vídeos com legenda própria. Vale também pros carrosséis antigos dele e do Davi que ele mandar pra converter.
+
+### Canais de vídeo
+- TikTok (manual, com aviso no celular), Instagram Reels e Facebook Reels (automático) e **YouTube Shorts (automático, canal orgânico extra)** — o mesmo vídeo sobe nos quatro, com título/descrição adaptados (Shorts: título curto com gancho + #shorts).
+
+### Fase 2 (mais pra frente, já decidido)
+- Teste de gancho com os vídeos/criativos vencedores (ver playbook do Analista).
+- Responder comentários no Instagram e Facebook (precisa de permissão extra na Meta).
+
 ## 6c. Stories
 - 1080×1920. Zonas seguras: 250 px de cima (barra do perfil) e 340 px de baixo (barra de resposta).
 - Tipos em rodízio: enquete, você sabia, bastidor/tela do app, caixa de perguntas, CTA de download.

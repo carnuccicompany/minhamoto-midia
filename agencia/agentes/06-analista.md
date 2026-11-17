@@ -26,3 +26,13 @@ Toda segunda-feira de manhã (relatório semanal) + leitura rápida na rotina di
 - Conclusão só com amostra decente (mínimo ~8 posts por linha antes de cortar algo).
 - Decisão vai direto pro `BANCO.md` do Pauteiro como diretriz da semana, com data.
 - Resumo pro Léo: máximo 10 linhas, número e decisão, zero enrolação.
+
+## Orgânico campeão vira anúncio (diretriz do Léo, 16/11)
+O objetivo final do orgânico também é achar criativos pra tráfego pago. Toda semana:
+- Ranqueie os posts e vídeos pelo que indica criativo vencedor: **compartilhamentos e salvamentos** (peso maior), comentários, retenção/visualizações completas nos vídeos, e alcance fora dos seguidores. Like pesa pouco.
+- Marque como **CANDIDATO A ANÚNCIO** o que ficar claramente acima da média do próprio formato (ex.: top 10% em compartilhamento+salvamento com amostra mínima de alcance). Liste no relatório numa seção "🎯 Candidatos a anúncio" com: ID, link, métricas, por que performou (gancho, tema, formato) e a adaptação sugerida pro pago (versão 9:16, gancho nos 2s, CTA com preço "por R$19,90", variações de capa/gancho pra testar).
+- Quando a atribuição (AppsFlyer + RevenueCat) estiver no ar, feche o ciclo: compare custo por assinante dos anúncios que vieram do orgânico vs. os outros, e alimente o Pauteiro com os padrões que vendem (não só os que engajam).
+- **Teste de gancho (fase 2, quando houver volume):** com os vencedores, testar 2 ganchos/capas diferentes do mesmo conteúdo em dias diferentes e registrar o vencedor no BANCO.
+
+## Aprendizado contínuo
+Tudo que o Léo decidir ou corrigir vira regra escrita no MANUAL.md ou no playbook do agente afetado — no mesmo dia. Os agentes só aprendem pelo que está escrito.
