@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-11-17T17:55:49.122771Z",
+ "coletado_em": "2026-11-17T20:14:40.653475Z",
  "status": {
   "google_play": "ok (5 avaliações)",
   "app_store": "ERRO: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. InvalidData(InvalidLength(113))"
@@ -13,8 +13,8 @@
    "data": "2026-11-17T15:47:29Z",
    "versao_app": "1.0.1",
    "aparelho": "M23HT (V Max Plus)",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o app está sendo útil e que o nosso suporte fez diferença para você. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "google_play",
@@ -24,8 +24,8 @@
    "data": "2026-11-16T15:35:39Z",
    "versao_app": "1.0",
    "aparelho": "redwood (POCO X5 Pro 5G)",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado por acompanhar o MinhaMoto desde o início! Seguimos evoluindo o app para deixar o controle de gastos e consumo da sua moto cada vez mais completo. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "google_play",
@@ -35,8 +35,8 @@
    "data": "2026-11-13T02:58:51Z",
    "versao_app": null,
    "aparelho": "HNLGN-QL (HONOR X7d)",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado por estar com a gente desde a fase de testes e pela confiança na assinatura! Ficamos felizes em saber que valeu a pena. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "google_play",
@@ -46,8 +46,8 @@
    "data": "2026-11-13T01:57:22Z",
    "versao_app": "1.0",
    "aparelho": "b0q (Galaxy S22 Ultra)",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Sentimos muito pelo transtorno! O app não deveria travar na abertura. Escreva para suporte@carnucci.com com o modelo do seu celular para resolvermos o quanto antes. — Equipe MinhaMoto"
   },
   {
    "loja": "google_play",
@@ -57,8 +57,8 @@
    "data": "2026-11-12T17:09:09Z",
    "versao_app": "1.0",
    "aparelho": "r0q (Galaxy S22)",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Sentimos muito pelo transtorno! Queremos entender o que aconteceu. Escreva para suporte@carnucci.com com o modelo do seu celular e o que aparece na tela, para resolvermos o quanto antes. — Equipe MinhaMoto"
   }
  ]
 }
