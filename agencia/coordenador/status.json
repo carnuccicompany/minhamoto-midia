@@ -1,8 +1,8 @@
-{"rodada": "2026-11-17T14:41:00-03:00", "ok": true,
- "tarefas": {"post do horário + aviso TikTok": "ok (12h SUCCEEDED; próx 15h02)", "radar semanal": "ok (SUCCEEDED 17/11)", "relatório Analista": "ok (ainda não rodou; 1ª em 23/11)", "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)", "coordenador": "rodando", "lembrete chave App Store": "agendado 17:30"},
- "publicacao_hoje": {"12h": "DV01 ig+fb 12:04", "15h": "aguardando", "18h": "aguardando", "21h": "aguardando"},
- "dias_de_fila": 27, "nao_publicados": 108,
+{"rodada": "2026-11-17T16:41:00-03:00", "ok": true,
+ "tarefas": {"post do horário + aviso TikTok": "ok (15h SUCCEEDED; próx 18h02)", "respostas às avaliações": "ok (criada 17/11; 1ª rodada 17h13)", "radar semanal": "ok (SUCCEEDED 17/11)", "relatório Analista": "ok (1ª em 23/11)", "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)", "coordenador": "rodando", "lembrete chave App Store": "agendado 17:30"},
+ "publicacao_hoje": {"12h": "DV01 ig+fb 12:04", "15h": "S01 ig+fb 15:04", "18h": "aguardando", "21h": "aguardando"},
+ "dias_de_fila": 26, "nao_publicados": 107,
  "pendentes_aprovacao": 10, "pendentes_obs": "AG01–AG10 = lote piloto reprovado pelo Léo em 17/11 (feedback no MANUAL); sem lembrete",
- "tiktok_916": "113/113 com cards_tiktok 1080x1920; 9 vídeos 1080x1920",
+ "tiktok_916": "113/113 com cards_tiktok 1080x1920",
  "painel_links": "ok (painel.html, tiktok.html sem links quebrados)",
  "acoes": [], "alertas": []}
