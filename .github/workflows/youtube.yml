@@ -1,0 +1,20 @@
+name: youtube
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "teste (só confere o acesso ao canal)"
+        default: teste
+permissions:
+  contents: write
+jobs:
+  rodar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/youtube.py ${{ inputs.modo }}
