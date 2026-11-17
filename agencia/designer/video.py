@@ -76,11 +76,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-seri
 .photo{position:absolute;left:-4%;top:-4%;width:108%;height:108%;object-fit:cover}
 .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,8,14,.97) 0%,rgba(4,8,14,.85) 36%,rgba(4,8,14,.35) 62%,rgba(4,8,14,.45) 100%)}
 .pwin{position:absolute;overflow:visible}
-.pbody{position:absolute;left:0;top:0;width:100%;background:#0a0a0c;border-radius:72px;padding:14px;border:1px solid rgba(255,255,255,.09);
- box-shadow:0 60px 130px rgba(0,0,0,.8),0 0 140px rgba(46,120,255,.38)}
+.pbody{position:absolute;left:0;top:0;width:100%;background:#0a0a0c;border-radius:72px;padding:14px;border:1px solid rgba(255,255,255,.09)}
+.glow{position:absolute;left:0;top:0;width:100%;border-radius:72px;box-shadow:0 60px 130px rgba(0,0,0,.8),0 0 140px rgba(46,120,255,.38)}
 .screen{position:relative;width:100%;border-radius:58px;overflow:hidden;background:#000}
 .media{position:absolute;left:0;top:0;width:100%;display:block;transform-origin:50% 0}
-.cut{position:absolute;left:-60px;right:-60px;height:220px;background:linear-gradient(rgba(5,8,15,0),#05080f 75%)}
 .tap{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;background:rgba(255,255,255,.35);
  border:5px solid rgba(255,255,255,.9);box-shadow:0 0 40px rgba(75,141,255,.8);opacity:0}
 .opt{display:flex;align-items:center;gap:28px;background:rgba(255,255,255,.06);border:3px solid rgba(255,255,255,.14);
@@ -106,12 +105,17 @@ def phone_html(c, kind, top, src, ratio):
     screen_h = sw * ratio - sw * crop / 1080.0
     body_h = screen_h + 28
     vis_h = min(body_h, ZONA['bottom'] - top)
-    cut = (f"<div class='cut' style='top:{vis_h - 200:.0f}px'></div>" if vis_h < body_h else '')
+    cortado = vis_h < body_h
+    # base cortada: máscara de transparência no próprio celular (sem caixa por cima do fundo animado)
+    mask = (f"-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 {vis_h - 220:.0f}px,transparent {vis_h - 10:.0f}px);"
+            f"mask-image:linear-gradient(to bottom,#000 0,#000 {vis_h - 220:.0f}px,transparent {vis_h - 10:.0f}px);" if cortado else '')
+    glow_h = (vis_h - 240) if cortado else body_h
     tag = (f"<video class='media' src='file://{src}' muted preload='auto' playsinline></video>" if kind == 'clip'
            else f"<img class='media' src='file://{src}'>")
     return (f"<div class='pwin' style='left:{left}px;top:{top}px;width:{w}px;height:{vis_h:.0f}px' data-crop='{crop}'>"
-            f"<div class='pbody'><div class='screen' style='height:{screen_h:.0f}px'>{tag}<div class='tap'></div></div></div>"
-            f"{cut}</div>")
+            f"<div class='glow' style='height:{glow_h:.0f}px'></div>"
+            f"<div class='pbody' style='{mask}'><div class='screen' style='height:{screen_h:.0f}px'>{tag}<div class='tap'></div></div></div>"
+            f"</div>")
 
 def head_html(c, top, size_t=96):
     k = f"<div class='k' style='margin-bottom:30px'>{fmt(c['kicker'])}</div>" if c.get('kicker') else ''
@@ -247,10 +251,14 @@ window.render = async function(t){
   document.querySelectorAll('.scene').forEach((e,i)=>{ e.style.visibility = 'hidden'; e.style.opacity = 1; e.style.zIndex = 0; });
   const cur = document.getElementById('s'+idx); cur.style.visibility='visible'; cur.style.zIndex=2;
   await drawScene(idx, lr);
-  if (idx>0 && lr < XF){  // dissolve: cena anterior por baixo, atual entrando por cima
+  const camadas = s => s.querySelectorAll('.box, .head, .pwin');
+  camadas(cur).forEach(e=>e.style.opacity=1);
+  if (idx>0 && lr < XF){  // dissolve só do fundo; o texto troca seco no meio (sem frame vazio e sem texto sobreposto)
     const prev = document.getElementById('s'+(idx-1)); prev.style.visibility='visible'; prev.style.zIndex=1;
     await drawScene(idx-1, S[idx-1].dur - 0.0001 + lr);
-    prev.querySelectorAll('.box, .head, .pwin').forEach(e=>e.style.opacity=0);  // só o fundo dissolve (sem texto fantasma)
+    const meio = lr >= XF*0.5;
+    camadas(prev).forEach(e=>e.style.opacity = meio ? 0 : 1);
+    camadas(cur).forEach(e=>e.style.opacity = meio ? 1 : 0);
     cur.style.opacity = Math.min(1, lr/XF);
   }
 };

@@ -36,9 +36,9 @@
   {
    "tipo": "kinetic",
    "dur": 1.73,
-   "tam": 170,
+   "tam": 150,
    "linhas": [
-    "“…ou 6?”"
+    "“Ou 6?”"
    ],
    "passo": 0.32
   },
@@ -81,8 +81,8 @@
    "passo": 0.07,
    "eco": true,
    "linhas": [
-    "O mecânico",
-    "*pergunta:*"
+    "O MECÂNICO",
+    "*PERGUNTA:*"
    ]
   }
  ],

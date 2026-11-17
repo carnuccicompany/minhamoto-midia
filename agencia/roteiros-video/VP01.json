@@ -58,10 +58,11 @@
   {
    "tipo": "kinetic",
    "dur": 2.4,
-   "tam": 132,
+   "tam": 104,
    "linhas": [
     "Quem anota,",
-    "*paga só a manutenção.*"
+    "*paga só*",
+    "*a manutenção.*"
    ]
   },
   {
