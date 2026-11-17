@@ -259,16 +259,16 @@ def bg_tela(src, ss, dur, speed=1.0, z0=1.0, z1=1.0, fy0=0.0, fy1=0.0, escurece=
     return g
 
 def celular(src, ss, dur, speed=1.0, w=760, x=0, y=60, rot=(-14, 0), tilt=(6, 0), esc=(0.92, 1.0), zoom=None,
-            ring=None, tap=None, still_t=None, fundo='B', push=0.06):
+            ring=None, tap=None, still_t=None, fundo='B', push=0.06, bgfn=None, entra=0.8):
     """Celular premium com a gravação real dentro. zoom=(z0,z1,fy0,fy1): zoom da TELA dentro do celular.
     rot/tilt/esc animam de -> pra (com ease) no início da cena (0.7s)."""
     h = int(w*2.164)
     fs = [still(src, still_t)] if still_t is not None else extrair(src, ss, dur, speed)
-    bgf = bg_grad(fundo)
+    bgf = bgfn or bg_grad(fundo)
     def g(tl, tg):
         s = bgf(tl, tg)
         i = min(len(fs) - 1, int(tl*FPS))
-        k = eout(tl/0.8)
+        k = eout(tl/entra) if entra else 1.0
         ry = lerp(rot[0], rot[1], k); rx = lerp(tilt[0], tilt[1], k); sc = lerp(esc[0], esc[1], k)
         flut = 6*math.sin(tg*1.4)
         sc *= 1 + push*ease(tl/dur)
@@ -321,7 +321,7 @@ def T_tit(linhas, y=200, tam=130, hl_linhas=(), apoio=None, tam_apoio=44, entra=
             k = eout((tl - entra - i*0.09)/0.35)
             if k <= 0: continue
             cls = "hl" if i in hl_linhas else ""
-            out.append(f"<div style='overflow:hidden'><div class='{cls}' style='transform:translateY({(1-k)*105:.1f}%);opacity:{min(1,k*1.4):.2f}'>{H.escape(ln)}</div></div>")
+            out.append(f"<div style='overflow:hidden;padding-top:.22em;margin-top:-.22em'><div class='{cls}' style='transform:translateY({(1-k)*105:.1f}%);opacity:{min(1,k*1.4):.2f}'>{H.escape(ln)}</div></div>")
         ap = ''
         if apoio:
             k = eout((tl - entra - len(linhas)*0.09 - 0.15)/0.35)
