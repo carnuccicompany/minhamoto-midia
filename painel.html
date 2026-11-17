@@ -4,7 +4,7 @@
 <title>Painel da Agência · MinhaMoto</title>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#05080e">
-<link rel="icon" href="agencia/designer/assets/icon.png">
+<link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
 <style>
 @font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
@@ -18,7 +18,7 @@ a{color:var(--blue2);text-decoration:none}
 .wrap{max-width:1180px;margin:0 auto;padding:0 16px 60px}
 header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 0 10px}
 .marca{display:flex;align-items:center;gap:10px}
-.marca img{width:38px;height:38px;border-radius:10px}
+.marca img{width:40px;height:40px;display:block;filter:drop-shadow(0 2px 6px rgba(0,40,160,.45))}
 h1{margin:0;font-size:20px;font-weight:800;letter-spacing:-.3px}h1 b{color:var(--blue2)}
 .sub{color:var(--mut);font-size:12.5px}
 .atual{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:999px;padding:8px 13px;font:600 13px Inter,sans-serif;cursor:pointer;white-space:nowrap}
@@ -117,7 +117,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;margin-top:36px}
 </style></head><body>
 <div class="wrap">
 <header>
- <div class="marca"><img src="agencia/designer/assets/icon.png" alt=""><div><h1>Painel da <b>Agência</b></h1><div class="sub" id="atualizado">Carregando…</div></div></div>
+ <div class="marca"><img src="agencia/designer/assets/icon-pequeno.png" alt=""><div><h1>Painel da <b>Agência</b></h1><div class="sub" id="atualizado">Carregando…</div></div></div>
  <button class="atual" id="recarregar">↻ Atualizar</button>
 </header>
 <nav id="nav">

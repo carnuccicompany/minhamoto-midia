@@ -14,6 +14,7 @@ def html(w,h,sym_w,radius=0,rim=False,cy=0.5):
  filter:drop-shadow(0 {w*0.012}px {w*0.02}px rgba(0,10,80,.55));">
 </div></body></html>'''
 VARS={
+ 'icone-pequeno-512.png': (512,512,int(512*0.74),int(512*0.2237),False),
  # nome: (w,h,largura do símbolo, raio, rim)
  'perfil-redes-1080.png': (1080,1080,int(1080*0.70),0,False),   # foto de perfil (corte em círculo): símbolo menor
  'icone-app-1080.png':    (1080,1080,int(1080*0.87),int(1080*0.2237),True),  # igual ao ícone da loja
