@@ -3,7 +3,7 @@
 
 Renderiza frame a frame no Chrome (Playwright) a partir de uma timeline em Python
 e codifica com ffmpeg. Camadas: fundo (tela do app em tela cheia, foto com Ken Burns,
-gradiente de marca), celular premium com a gravação real rodando dentro, textos
+gradiente de marca), celular premium com a tela do app dentro, textos
 (legenda palavra-por-palavra, títulos, selo, CTA final).
 
 Uso: from motor import Video; v=Video('A1', estilo='A'); v.add(...); v.render(saida)
@@ -14,10 +14,13 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(AQUI, '..', '..'))
 ASSETS = os.path.join(REPO, 'agencia', 'designer', 'assets')
 FONTES = os.path.join(AQUI, 'fontes')
-MATERIAL = os.path.join(REPO, 'agencia', 'referencias', 'material')
+# Telas geradas do código do app (ver agencia/designer/assets/telas-app/README.md).
+# Nada de gravação de tela antiga: só estas telas.
+TELAS = os.path.join(ASSETS, 'telas-app')
+TW, TH = 1179, 2556     # tela iPhone 15 @3x
+TOPO = 177              # barra de status (59pt) — as páginas de rolagem começam abaixo dela
 CACHE = '/tmp/v2cache'
 W, Hh, FPS = 1080, 1920, 30
-STATUS_H = 120          # barra de status gravada (com ponto vermelho) — sempre escondida/substituída
 
 def ease(x):            # easeInOutCubic
     x = max(0.0, min(1.0, x))
@@ -32,36 +35,28 @@ def eback(x):           # easeOutBack (pop)
 
 def lerp(a, b, x): return a + (b - a)*x
 
-def extrair(src, ss, dur, speed=1.0):
-    """Extrai frames da gravação (30fps já acelerados) e devolve lista de caminhos."""
-    key = hashlib.md5(f'{src}{ss}{dur}{speed}'.encode()).hexdigest()[:10]
-    d = os.path.join(CACHE, key)
-    if not os.path.isdir(d) or not os.listdir(d):
-        os.makedirs(d, exist_ok=True)
-        p = src if os.path.isabs(src) else os.path.join(MATERIAL, src)
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(ss), '-t', str(dur*speed), '-i', p,
-                        '-vf', f'setpts=PTS/{speed},fps={FPS}', '-q:v', '2', os.path.join(d, '%05d.jpg')], check=True)
-    fs = sorted(os.path.join(d, f) for f in os.listdir(d))
-    # proteção: frame preto/quase preto de transição da gravação nunca entra — repete o último frame bom
-    from PIL import Image, ImageStat
-    bons, ult = [], None
-    for f in fs:
-        m = ImageStat.Stat(Image.open(f).convert('L').resize((54, 117))).mean[0]
-        if m < 9 and ult is not None:
-            bons.append(ult)
-        else:
-            bons.append(f); ult = f if m >= 9 else ult
-    if ult is None: return fs
-    return [b if b is not None else ult for b in bons]
+def tela_app(nome):
+    """'02-saude' -> telas-app/02-saude.png; 'rolagem/02-saude' -> página inteira para rolar."""
+    p = nome if os.path.isabs(nome) else os.path.join(TELAS, nome if nome.endswith('.png') else nome + '.png')
+    if not os.path.exists(p): raise FileNotFoundError(p)
+    return p
 
-def still(src, t):
-    key = hashlib.md5(f'{src}{t}'.encode()).hexdigest()[:10]
-    out = os.path.join(CACHE, f'still_{key}.png')
+TOPO_FIXO = 360         # status + cabeçalho fixo do app (linha em y=357)
+
+def topo_fixo(nome):
+    """Recorte do topo (status + cabeçalho) da tela parada, para ficar fixo enquanto a página rola."""
+    base = os.path.basename(nome).replace('.png', '')
+    cand = tela_app(base) if os.path.exists(os.path.join(TELAS, base + '.png')) else tela_app(base.rsplit('-', 1)[0])
+    out = os.path.join(CACHE, f'topo_{base}.png')
     if not os.path.exists(out):
+        from PIL import Image
         os.makedirs(CACHE, exist_ok=True)
-        p = src if os.path.isabs(src) else os.path.join(MATERIAL, src)
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(t), '-i', p, '-frames:v', '1', out], check=True)
+        Image.open(cand).crop((0, 0, TW, TOPO_FIXO)).save(out)
     return out
+
+def altura_celular(w):
+    """Altura do celular para a tela 1179x2556 caber sem sobra (moldura de 22px)."""
+    return int(round((w - 44)*TH/TW)) + 44
 
 ESTILOS = {
   # A — Nativo/Rua: legenda grossa estilo TikTok, tela cheia, foto em movimento
@@ -101,7 +96,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .sbar{position:absolute;left:0;right:0;top:0;height:6.2%%;background:linear-gradient(#07090d 70%%,rgba(7,9,13,0))}
 .sbar .h{position:absolute;left:13%%;top:30%%;font:600 38px/1 -apple-system,'SF Pro',pop600,sans-serif;color:#fff;letter-spacing:.5px}
 .sbar .r{position:absolute;right:10%%;top:32%%;display:flex;gap:12px;align-items:center}
-.island{position:absolute;left:50%%;top:2.2%%;width:30%%;height:3.1%%;transform:translateX(-50%%);background:#000;border-radius:40px}
+.island{position:absolute;left:50%%;top:1.29%%;width:31.9%%;height:4.34%%;transform:translateX(-50%%);background:#000;border-radius:40px}
 .glare{position:absolute;inset:0;border-radius:98px;background:linear-gradient(115deg,rgba(255,255,255,.13) 0%%,rgba(255,255,255,0) 28%%,rgba(255,255,255,0) 70%%,rgba(255,255,255,.05) 100%%);pointer-events:none}
 .ring{position:absolute;border-radius:28px;border:5px solid #3D8BFF;box-shadow:0 0 0 6px rgba(61,139,255,.25),0 0 60px rgba(61,139,255,.6)}
 .tap{position:absolute;width:120px;height:120px;border-radius:50%%;border:6px solid rgba(255,255,255,.9);background:rgba(255,255,255,.18)}
@@ -148,6 +143,7 @@ window.R = async function(s){
     ph.style.left=(-s.phone.w/2)+'px'; ph.style.top=(-s.phone.h/2)+'px';
     ph.style.transform=s.phone.tr; ph.style.filter=s.phone.shadow;
     const im=ph.querySelector('.screen img'); await setImg(im,s.phone.src); im.style.transform=s.phone.scr||'none';
+    const tp=ph.querySelector('.screen img.topo'); if(tp){ if(s.phone.topo){ tp.style.display='block'; await setImg(tp,s.phone.topo); } else tp.style.display='none'; }
     const ring=ph.querySelector('.ring'); if(ring){ if(s.phone.ring){ring.style.display='block'; Object.assign(ring.style,s.phone.ring);} else ring.style.display='none'; }
     const tap=ph.querySelector('.tap'); if(tap){ if(s.phone.tap){tap.style.display='block'; Object.assign(tap.style,s.phone.tap);} else tap.style.display='none'; }
   } else { ph.style.display='none'; }
@@ -164,12 +160,8 @@ def phone_html():
             "<div class='btn' style='left:-7px;top:31%;width:9px;height:7%'></div>"
             "<div class='btn' style='left:-7px;top:15%;width:9px;height:4%'></div>"
             "<div class='btn' style='right:-7px;top:25%;width:9px;height:11%'></div>"
-            "<div class=screen><img><div class=ring style='display:none'></div><div class=tap style='display:none'></div>"
-            "<div class=sbar><div class=h>9:41</div><div class=r>"
-            "<svg width=52 height=32 viewBox='0 0 52 32'><rect x=0 y=20 width=9 height=12 rx=2 fill=#fff /><rect x=14 y=14 width=9 height=18 rx=2 fill=#fff /><rect x=28 y=7 width=9 height=25 rx=2 fill=#fff /><rect x=42 y=0 width=9 height=32 rx=2 fill=#fff /></svg>"
-            "<svg width=46 height=34 viewBox='0 0 46 34'><path d='M23 32l7-8a10 10 0 0 0-14 0z' fill=#fff /><path d='M9 17a20 20 0 0 1 28 0l-4 4a14 14 0 0 0-20 0z' fill=#fff /><path d='M2 10a30 30 0 0 1 42 0l-4 4a24 24 0 0 0-34 0z' fill=#fff /></svg>"
-            "<svg width=70 height=34 viewBox='0 0 70 34'><rect x=1 y=1 width=60 height=32 rx=9 fill=none stroke=#fff stroke-opacity=.5 stroke-width=2 /><rect x=5 y=5 width=46 height=24 rx=6 fill=#fff /><rect x=64 y=11 width=5 height=12 rx=2 fill=#fff fill-opacity=.5 /></svg>"
-            "</div></div><div class=island></div><div class=glare></div></div>")
+            "<div class=screen><img><img class=topo style='display:none'><div class=ring style='display:none'></div><div class=tap style='display:none'></div>"
+            "<div class=island></div><div class=glare></div></div>")
 
 def caption_html(palavras, hl, n_vis, idade_ult, y, tam, estilo, centro=True, largura=940):
     """Legenda palavra-por-palavra. palavras visíveis = n_vis; a última faz 'pop'."""
@@ -254,48 +246,46 @@ def bg_foto(arq, z0=1.08, z1=1.22, px=(0, 0), escurece=0.55, blur=0):
         return g
     return mk
 
-def bg_tela(src, ss, dur, speed=1.0, z0=1.0, z1=1.0, fy0=0.0, fy1=0.0, escurece=1.0, freeze_ult=0.0, still_t=None):
-    """Gravação do app em TELA CHEIA, nítida. fy = deslocamento vertical (px no espaço 1080x2338) pra focar."""
-    fs = [still(src, still_t)] if still_t is not None else extrair(src, ss, dur - freeze_ult, speed)
+def bg_tela(nome, dur, z0=1.0, z1=1.0, fy0=0.0, fy1=0.0, escurece=1.0):
+    """Tela do app em TELA CHEIA, nítida. fy = deslocamento vertical (px no espaço 1179 de largura)."""
+    src = tela_app(nome); esc = W/TW
     def g(tl, tg):
-        i = min(len(fs) - 1, int(tl*FPS))
         k = ease(tl/dur); z = lerp(z0, z1, k); fy = lerp(fy0, fy1, k)
-        # imagem 1080x2338; esconder barra de status: começa em -STATUS_H; centraliza a janela 1920
-        y = -STATUS_H - fy
-        tr = f"translate(0,{y:.1f}px) scale({z:.4f})"
-        return {'bgk': 'tela', 'bghtml': "<img class=full data-v=1>", 'bgsrc': 'file://' + fs[i], 'bgtr': tr,
+        tr = f"translate(0,{-fy*esc:.1f}px) scale({z:.4f})"
+        return {'bgk': 'tela', 'bghtml': "<img class=full data-v=1>", 'bgsrc': 'file://' + src, 'bgtr': tr,
                 'bgfilter': f'brightness({escurece})', 'vig': 'linear-gradient(rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 46%,rgba(0,0,0,.84) 56%,rgba(0,0,0,.84) 73%,rgba(0,0,0,.2) 85%,rgba(0,0,0,.45) 100%)',
                 'luz': 'none', 'phone': None}
     return g
 
-def celular(src, ss, dur, speed=1.0, w=760, x=0, y=60, rot=(-14, 0), tilt=(6, 0), esc=(0.92, 1.0), zoom=None,
-            ring=None, tap=None, still_t=None, fundo='B', push=0.06, bgfn=None, entra=0.8):
-    """Celular premium com a gravação real dentro. zoom=(z0,z1,fy0,fy1): zoom da TELA dentro do celular.
-    rot/tilt/esc animam de -> pra (com ease) no início da cena (0.7s)."""
-    h = int(w*2.164)
-    fs = [still(src, still_t)] if still_t is not None else extrair(src, ss, dur, speed)
+def celular(nome, dur, w=760, x=0, y=60, rot=(-14, 0), tilt=(6, 0), esc=(0.92, 1.0), zoom=None, rola=None,
+            ring=None, tap=None, fundo='B', push=0.06, bgfn=None, entra=0.8):
+    """Celular premium com a tela do app dentro (telas-app/<nome>.png).
+    rola=(y0,y1): usa uma página inteira ('rolagem/..') e rola de y0 a y1 (px no espaço 1179), com ease.
+    zoom=(z0,z1,fy0,fy1): zoom da TELA dentro do celular. rot/tilt/esc animam no início da cena."""
+    h = altura_celular(w)
+    src = tela_app(nome)
+    topo = topo_fixo(nome) if rola else None
     bgf = bgfn or bg_grad(fundo)
     def g(tl, tg):
         s = bgf(tl, tg)
-        i = min(len(fs) - 1, int(tl*FPS))
         k = eout(tl/entra) if entra else 1.0
         ry = lerp(rot[0], rot[1], k); rx = lerp(tilt[0], tilt[1], k); sc = lerp(esc[0], esc[1], k)
         flut = 6*math.sin(tg*1.4)
         sc *= 1 + push*ease(tl/dur)
         tr = f"translate({x}px,{y+flut:.1f}px) rotateY({ry:.2f}deg) rotateX({rx:.2f}deg) scale({sc:.4f})"
         shadow = "drop-shadow(0 60px 70px rgba(0,0,0,.6)) drop-shadow(0 20px 24px rgba(0,0,0,.45)) drop-shadow(0 0 90px rgba(61,139,255,.25))"
-        scr = 'none'
-        sw = w - 44
-        if zoom:
-            z0, z1, fy0, fy1 = zoom; kz = ease(max(0, (tl - 0.5))/max(0.01, dur - 0.9))
-            z = lerp(z0, z1, kz); fy = lerp(fy0, fy1, kz)
-            scr = f"translate(0,{-(fy*sw/1080):.1f}px) scale({z:.4f})"
-            # escala relativa ao topo; transform-origin topo-centro
-            scr = f"translate(0,{-(fy*sw/1080):.1f}px) scale({z:.4f})"
+        sw = w - 44; e = sw/TW
+        kz = ease(max(0, (tl - 0.5))/max(0.01, dur - 0.9))
+        if rola:
+            yy = lerp(rola[0], rola[1], kz)
+            scr = f"translate(0,{(TOPO - yy)*e:.1f}px)"
+        elif zoom:
+            z0, z1, fy0, fy1 = zoom
+            scr = f"translate(0,{-lerp(fy0, fy1, kz)*e:.1f}px) scale({lerp(z0, z1, kz):.4f})"
         else:
-            scr = f"translate(0,{-(STATUS_H*0)*(sw/1080):.1f}px)"
+            scr = 'none'
         st = {'k': 'ph', 'html': phone_html(), 'w': w, 'h': h, 'tr': tr, 'shadow': shadow,
-              'src': 'file://' + fs[i], 'scr': scr}
+              'src': 'file://' + src, 'scr': scr, 'topo': ('file://' + topo) if topo else None}
         if ring:
             r0, r1 = ring.get('t', (0.6, dur))
             if r0 <= tl <= r1:

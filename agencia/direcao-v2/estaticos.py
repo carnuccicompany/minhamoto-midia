@@ -5,7 +5,7 @@ Uso: python3 estaticos.py [A|B|todos]
 """
 import os, sys, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from motor import CSS_FONTES, ASSETS, phone_html, still, ESTILOS, PAGINA
+from motor import CSS_FONTES, ASSETS, phone_html, tela_app, topo_fixo, altura_celular, ESTILOS, PAGINA, TW, TOPO
 from PIL import Image
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -49,19 +49,23 @@ def grad_bg(estilo='B', luz=(50, 62)):
             f"<div class=fill style='background:radial-gradient(45% 28% at {luz[0]}% {luz[1]}%, rgba(61,139,255,.35), rgba(0,0,0,0) 70%)'></div>"
             "<div class=fill style='background:radial-gradient(130% 90% at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.5) 100%)'></div>")
 
-def celular(tela_png, w=600, top=500, rot=0, tilt=0, ring=None, scr_y=0, scr_z=1.0):
-    h = int(w*2.164)
+def celular(nome, w=600, top=500, rot=0, tilt=0, ring=None, rola=None):
+    """Celular com a tela do app (telas-app/<nome>.png). rola=y: página inteira ('rolagem/..') parada em y (px no espaço 1179),
+    com o topo fixo do app por cima."""
+    h = altura_celular(w); e = (w - 44)/TW
     tr = f"rotateY({rot}deg) rotateX({tilt}deg)"
     shadow = "drop-shadow(0 60px 70px rgba(0,0,0,.6)) drop-shadow(0 20px 24px rgba(0,0,0,.45)) drop-shadow(0 0 90px rgba(61,139,255,.28))"
-    inner = phone_html().replace('<img>', f"<img src='file://{tela_png}' style='transform:translate(0,{-scr_y}px) scale({scr_z})'>")
+    src = tela_app(nome)
+    if rola is not None:
+        inner = phone_html().replace('<img><img class=topo style=\'display:none\'>',
+            f"<img src='file://{src}' style='transform:translate(0,{(TOPO - rola)*e:.1f}px)'><img class=topo src='file://{topo_fixo(nome)}'>")
+    else:
+        inner = phone_html().replace('<img>', f"<img src='file://{src}'>", 1)
     if ring:
         inner = inner.replace("<div class=ring style='display:none'></div>",
                               f"<div class=ring style='left:{ring[0]}px;top:{ring[1]}px;width:{ring[2]}px;height:{ring[3]}px'></div>")
     return (f"<div class=ph style='top:{top + h//2}px'><div id=phone style='width:{w}px;height:{h}px;left:{-w//2}px;top:{-h//2}px;"
             f"transform:{tr};filter:{shadow}'>{inner}</div></div>")
-
-def tela(src, t):
-    return still(src, t)
 
 def render(html_corpo, w, h, saida):
     from playwright.sync_api import sync_playwright
@@ -93,7 +97,6 @@ def cta(estilo, titulo, sub, preco=True, top=260):
 # ---------------- CARROSSEL A (Nativo/Rua) ----------------
 def carrossel_A():
     d = os.path.join(AQUI, 'A', 'carrossel'); W, Hc = 1080, 1350
-    saude = tela('tela-saude-1.mp4', 13.0); manut = tela('tela-manutencao.mp4', 44.0); cad = tela('tela-cadastro-moto.mp4', 104)
     cards = [
         foto_bg('5195494.jpg', 0.55, pos='50% 40%') +
         "<div class=capA style='top:330px;font-size:140px'>TUA MOTO<br>TÁ EM DIA?<br><span class=y>PROVA.</span></div>"
@@ -103,10 +106,10 @@ def carrossel_A():
         "<div class=apoA style='top:820px;font-size:52px'>“Uns 3 meses… ou 6? Sei lá.”</div><div class=pag>02 / 05</div>",
         foto_bg('3822836.jpg', 0.3, blur=14) +
         "<div class=capA style='top:90px;font-size:84px'>O QUE <span class=y>NUNCA</span> FOI FEITO<br>APARECE NA HORA</div>" +
-        celular(cad, w=560, top=360) + "<div class='pag t'>03 / 05</div>",
+        celular('rolagem/19-saude-atrasados', w=540, top=390, rola=4600) + "<div class='pag t'>03 / 05</div>",
         foto_bg('5195494.jpg', 0.3, blur=14) +
         "<div class=capA style='top:90px;font-size:84px'>O QUE <span class=y>VENCEU</span><br>FICA EM VERMELHO</div>" +
-        celular(saude, w=560, top=360) + "<div class='pag t'>04 / 05</div>",
+        celular('rolagem/19-saude-atrasados', w=540, top=390, rola=3480) + "<div class='pag t'>04 / 05</div>",
         grad_bg('A', (50, 40)) + cta('A', 'NUNCA MAIS<br>“SEI LÁ”', 'Baixe agora o MinhaMoto', True, top=230),
     ]
     for i, c in enumerate(cards, 1):
@@ -115,18 +118,16 @@ def carrossel_A():
 # ---------------- CARROSSEL B (Premium produto) ----------------
 def carrossel_B():
     d = os.path.join(AQUI, 'B', 'carrossel'); W, Hc = 1080, 1350
-    saude0 = tela('tela-saude-1.mp4', 1.0); saude = tela('tela-saude-1.mp4', 13.0)
-    cad = tela('tela-cadastro-moto.mp4', 104); notif = tela('tela-notificacoes.mp4', 69.5); manut = tela('tela-manutencao.mp4', 44.0)
-    def card(l1, l2, png, n, rot=-10, apoio=None):
+    def card(l1, l2, tela, n, rot=-10, apoio=None, rola=None):
         a = f"<div class=apoB style='top:{345}px;font-size:36px'>{H.escape(apoio)}</div>" if apoio else ''
         top = 430 if apoio else 380
         return (grad_bg('B') + f"<div class=titB style='top:96px;font-size:{92 if max(len(l1),len(l2))>16 else 118}px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
-                + a + celular(png, w=560, top=top, rot=rot, tilt=4) + f"<div class='pag t'>{n:02d} / 05</div>")
+                + a + celular(tela, w=560, top=top, rot=rot, tilt=4, rola=rola) + f"<div class='pag t'>{n:02d} / 05</div>")
     cards = [
-        card('ESQUECEU A TROCA?', 'A MOTO NÃO ESQUECE.', saude0, 1, rot=-12).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>DESLIZA →</div>"),
-        card('O QUE VENCEU', 'FICA EM VERMELHO', saude, 2, rot=10),
-        card('O QUE NUNCA FOI FEITO', 'APARECE PRA VOCÊ', cad, 3, rot=-10),
-        card('E O APP TE AVISA', 'NA HORA CERTA', notif, 4, rot=10),
+        card('ESQUECEU A TROCA?', 'A MOTO NÃO ESQUECE.', '21-item-atrasado', 1, rot=-12).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>DESLIZA →</div>"),
+        card('O QUE VENCEU', 'FICA EM VERMELHO', '19-saude-atrasados', 2, rot=10),
+        card('O QUE NUNCA FOI FEITO', 'APARECE PRA VOCÊ', 'rolagem/19-saude-atrasados', 3, rot=-10, rola=4600),
+        card('E O APP TE AVISA', 'NA HORA CERTA', '15-notificacoes', 4, rot=10),
         grad_bg('B', (50, 38)) + cta('B', 'BAIXE O<br><span class=b>MINHAMOTO</span>', 'Teu plano de revisão na palma da mão.', True, top=220),
     ]
     for i, c in enumerate(cards, 1):

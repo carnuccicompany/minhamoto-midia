@@ -1,7 +1,7 @@
 # Direção criativa v2 — amostras pro Léo escolher (17/11)
 
 Feita depois do feedback de 17/11 (lote piloto reprovado). Poucas peças, pra acertar a direção antes de escalar.
-Logo sempre com o guidão pra DIREITA. Telas só do layout atual (gravações reais, barra de gravação substituída por status bar limpa 9:41). Sem filmagem antiga.
+Logo sempre com o guidão pra DIREITA. Telas só do layout atual, geradas do código do app (`agencia/designer/assets/telas-app/`, prévia visual com dados fictícios, status bar 9:41). Nada de gravação de tela antiga nem filmagem antiga.
 
 ## Direção A — "Nativo / Rua"
 - **Fonte:** Montserrat 900 em caixa-alta com contorno preto grosso e sombra (estilo legenda de TikTok), palavras-chave em amarelo #FFD400; apoio em Montserrat 800.
@@ -11,7 +11,7 @@ Logo sempre com o guidão pra DIREITA. Telas só do layout atual (gravações re
 ## Direção B — "Premium produto"
 - **Fonte:** Anton (condensada, display) em caixa-alta, segunda linha em azul elétrico #3D8BFF; apoio em Poppins 600.
 - **Cores / imagem:** fundo navy profundo com luz azul atrás do celular (sem foto); visual de anúncio de produto caro.
-- **Mockup / ritmo / hook:** celular em leve 3D (rotação/inclinação que assenta), flutuando, com a gravação real rolando dentro; títulos revelados linha a linha; hooks de perda/contradição ("Esqueceu a troca? A moto não esquece.").
+- **Mockup / ritmo / hook:** celular em leve 3D (rotação/inclinação que assenta), flutuando, com a tela do app dentro (parada ou rolando a página inteira de `telas-app/rolagem/`, com o cabeçalho fixo); títulos revelados linha a linha; hooks de perda/contradição ("Esqueceu a troca? A moto não esquece.").
 
 ## Arquivos
 | Direção | Vídeos (9:16) | Carrossel (4:5) | Story (9:16) |
