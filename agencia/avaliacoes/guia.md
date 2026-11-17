@@ -26,16 +26,16 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 > Obrigado pela avaliação e pela sugestão! Ela já foi encaminhada para o nosso time e entrou na nossa lista de melhorias. Conte com a gente em cada quilômetro! — Equipe MinhaMoto
 
 **3★ dúvida / confusão**
-> Obrigado pelo retorno! Para registrar uma revisão, abra a sua moto, toque no item (por exemplo, óleo) e depois em "Registrar serviço". Se precisar de ajuda, nosso suporte está à disposição em [CONTATO]. — Equipe MinhaMoto
+> Obrigado pelo retorno! Para registrar uma revisão, abra a sua moto, toque no item (por exemplo, óleo) e depois em "Registrar serviço". Se precisar de ajuda, nosso suporte está à disposição em suporte@carnucci.com. — Equipe MinhaMoto
 
 **1–2★ bug / erro**
-> Sentimos muito pelo transtorno! Isso não deveria acontecer. Fale com o nosso suporte em [CONTATO] informando o modelo do seu celular, para resolvermos o quanto antes. — Equipe MinhaMoto
+> Sentimos muito pelo transtorno! Isso não deveria acontecer. Fale com o nosso suporte em suporte@carnucci.com informando o modelo do seu celular, para resolvermos o quanto antes. — Equipe MinhaMoto
 
 **1★ preço**
-> Entendemos a sua opinião! O MinhaMoto tem teste grátis, e os planos trimestral, semestral e anual saem mais em conta que o mensal. Se precisar de ajuda para escolher, fale com o nosso suporte em [CONTATO]. — Equipe MinhaMoto
+> Entendemos a sua opinião! O MinhaMoto tem teste grátis, e os planos trimestral, semestral e anual saem mais em conta que o mensal. Se precisar de ajuda para escolher, fale com o nosso suporte em suporte@carnucci.com. — Equipe MinhaMoto
 
 **1★ cobrança / cancelamento**
-> Sentimos muito pelo transtorno! A assinatura é gerenciada pela loja: no iPhone, em Ajustes > seu nome > Assinaturas; no Android, em Play Store > Pagamentos e assinaturas. Se precisar, nosso suporte ajuda em [CONTATO]. — Equipe MinhaMoto
+> Sentimos muito pelo transtorno! A assinatura é gerenciada pela loja: no iPhone, em Ajustes > seu nome > Assinaturas; no Android, em Play Store > Pagamentos e assinaturas. Se precisar, nosso suporte ajuda em suporte@carnucci.com. — Equipe MinhaMoto
 
 ## Pendente
-- Contatos do suporte: e-mail suporte@carnucci.com · WhatsApp (11) 91337-4664. Falta o Léo dizer qual vai nas respostas públicas.
+- Contato nas respostas públicas: só o e-mail suporte@carnucci.com (decisão do Léo). O WhatsApp (11) 91337-4664 é passado por e-mail a quem precisar, nunca na loja.

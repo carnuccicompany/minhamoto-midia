@@ -1,0 +1,46 @@
+{
+ "_como_funciona": "status: rascunho (espera o Léo) | aprovada (o robô publica) | publicada | descartada. 4-5★ entram como aprovada depois que o Léo liberar o modo automático; até lá tudo é rascunho.",
+ "modo_automatico_4_5": false,
+ "respostas": [
+  {
+   "loja": "google_play",
+   "id": "c28f1858-a4fd-44ed-85c4-b73acf4c74dd",
+   "nota": 5,
+   "avaliacao": "App sensacional! Muito funcional e útil! E os desenvolvedores são super atenciosos, dando sempre o suporte necessário. Vale muito à pena! Super recomendo!",
+   "resposta": "Obrigado pela avaliação! Ficamos muito felizes em saber que o app está sendo útil e que o nosso suporte fez diferença para você. Conte com a gente em cada quilômetro! — Equipe MinhaMoto",
+   "status": "rascunho"
+  },
+  {
+   "loja": "google_play",
+   "id": "8fdb9c98-de81-44a2-9978-bf60e1e3fc0d",
+   "nota": 5,
+   "avaliacao": "Muito bom o app, estou acompanhando o desenvolvimento, tende a ser um dos melhores app para controle gastos e consumos da moto",
+   "resposta": "Obrigado por acompanhar o MinhaMoto desde o início! Seguimos evoluindo o app para deixar o controle de gastos e consumo da sua moto cada vez mais completo. Conte com a gente em cada quilômetro! — Equipe MinhaMoto",
+   "status": "rascunho"
+  },
+  {
+   "loja": "google_play",
+   "id": "1e827411-c5a7-4973-8fbd-4646b8207677",
+   "nota": 5,
+   "avaliacao": "estou usando des do modo de test, paguei por ele e valeu mto apena, mto bom, o modo beta estava funcionando mto bem",
+   "resposta": "Obrigado por estar com a gente desde a fase de testes e pela confiança na assinatura! Ficamos felizes em saber que valeu a pena. Conte com a gente em cada quilômetro! — Equipe MinhaMoto",
+   "status": "rascunho"
+  },
+  {
+   "loja": "google_play",
+   "id": "a99845f6-0581-4990-b19d-3a2d9b127bd7",
+   "nota": 1,
+   "avaliacao": "não abre",
+   "resposta": "Sentimos muito pelo transtorno! O app não deveria travar na abertura. Escreva para suporte@carnucci.com com o modelo do seu celular para resolvermos o quanto antes. — Equipe MinhaMoto",
+   "status": "rascunho"
+  },
+  {
+   "loja": "google_play",
+   "id": "7a7fae0c-c50a-4e95-900f-d7d586396218",
+   "nota": 1,
+   "avaliacao": "eu baixei mas n funciona!",
+   "resposta": "Sentimos muito pelo transtorno! Queremos entender o que aconteceu. Escreva para suporte@carnucci.com com o modelo do seu celular e o que aparece na tela, para resolvermos o quanto antes. — Equipe MinhaMoto",
+   "status": "rascunho"
+  }
+ ]
+}

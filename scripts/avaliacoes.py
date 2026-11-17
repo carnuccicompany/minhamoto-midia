@@ -75,6 +75,40 @@ def apple():
                     "respondida": bool(rr), "resposta_atual": rr["attributes"].get("responseBody") if rr else None})
     return out
 
+def play_creds():
+    raw = os.environ.get("GOOGLE_PLAY_SA_JSON", "").strip().lstrip("\ufeff")
+    info = json.loads(raw)
+    cred = service_account.Credentials.from_service_account_info(
+        info, scopes=["https://www.googleapis.com/auth/androidpublisher"])
+    cred.refresh(Request()); return cred.token
+
+def responder():
+    """Publica as respostas com status 'aprovada' em dados/avaliacoes/respostas.json."""
+    f = "dados/avaliacoes/respostas.json"
+    if not os.path.exists(f): print("sem respostas.json"); return
+    d = json.load(open(f)); n = 0
+    for r in d.get("respostas", []):
+        if r.get("status") != "aprovada": continue
+        txt = r["resposta"].strip()
+        try:
+            if r["loja"] == "google_play":
+                if len(txt) > 350: raise ValueError("resposta passa de 350 caracteres")
+                url = f"https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{PLAY_PKG}/reviews/{r['id']}:reply"
+                x = requests.post(url, headers={"Authorization": f"Bearer {play_creds()}"}, json={"replyText": txt}, timeout=30)
+            else:
+                url = "https://api.appstoreconnect.apple.com/v1/customerReviewResponses"
+                body = {"data": {"type": "customerReviewResponses", "attributes": {"responseBody": txt},
+                        "relationships": {"review": {"data": {"type": "customerReviews", "id": r["id"]}}}}}
+                x = requests.post(url, headers={"Authorization": f"Bearer {apple_token()}"}, json=body, timeout=30)
+            x.raise_for_status()
+            r["status"] = "publicada"; r["publicada_em"] = datetime.datetime.utcnow().isoformat() + "Z"; n += 1
+        except Exception as e:
+            msg = str(e)
+            if hasattr(e, "response") and e.response is not None: msg += " | " + e.response.text[:200]
+            r["erro"] = msg; print("ERRO", r["id"], msg)
+    json.dump(d, open(f, "w"), ensure_ascii=False, indent=1)
+    print(f"respostas publicadas: {n}")
+
 if __name__ == "__main__":
     res = {"coletado_em": datetime.datetime.utcnow().isoformat() + "Z", "status": {}, "avaliacoes": []}
     for nome, f in (("google_play", play), ("app_store", apple)):
@@ -87,3 +121,5 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(res, open(OUT, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(res["status"], ensure_ascii=False))
+    if len(sys.argv) > 1 and sys.argv[1] == "responder":
+        responder()
