@@ -6,8 +6,8 @@
  "cenas": [
   {
    "tipo": "kinetic",
-   "dur": 2.2,
-   "tam": 120,
+   "dur": 3.0,
+   "tam": 128,
    "passo": 0.3,
    "linhas": [
     "5 erros que",
@@ -17,52 +17,60 @@
   },
   {
    "tipo": "photo",
-   "dur": 2.1,
+   "dur": 2.6,
    "n": 5,
-   "foto": "25857998.jpg",
-   "titulo": "Rodar com\n*pneu murcho*",
-   "sub": "Gasta mais e tira a estabilidade."
+   "foto": "14700339.jpg",
+   "pos": "center 55%",
+   "titulo": "Rodar com\n*pneu murcho*"
   },
   {
    "tipo": "photo",
-   "dur": 2.1,
+   "dur": 2.6,
    "n": 4,
-   "foto": "37131862.jpg",
-   "pos": "right center",
-   "titulo": "Esquecer\n*a corrente*",
-   "sub": "Sem lubrificar, o kit gasta antes."
+   "foto": "37131862-corrente.jpg",
+   "pos": "70% center",
+   "titulo": "Esquecer\n*a corrente*"
   },
   {
    "tipo": "photo",
-   "dur": 2.1,
+   "dur": 2.6,
    "n": 3,
    "foto": "17024710.jpg",
-   "titulo": "Ignorar\n*barulho novo*",
-   "sub": "Barulho é aviso. Não é frescura."
+   "titulo": "Ignorar\n*barulho novo*"
   },
   {
    "tipo": "photo",
-   "dur": 2.1,
+   "dur": 2.6,
    "n": 2,
    "foto": "27704018.jpg",
-   "titulo": "Passar do\n*prazo do óleo*",
-   "sub": "O motor vai se gastando calado."
+   "titulo": "Passar do\n*prazo do óleo*"
   },
   {
    "tipo": "photo",
-   "dur": 2.1,
+   "dur": 2.6,
    "n": 1,
-   "foto": "4792285.jpg",
-   "titulo": "Não anotar\n*nada*",
-   "sub": "Sem histórico, os outros erros voltam."
+   "foto": "6446251.jpg",
+   "titulo": "Não anotar\n*nada*"
   },
   {
    "tipo": "end",
-   "dur": 2.6,
+   "dur": 3.4,
    "titulo": "Erro número 1?\n*O app resolve.*",
-   "sub": "Baixe o MinhaMoto."
+   "sub": "Baixe por R$19,90."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 0.9,
+   "tam": 128,
+   "passo": 0.07,
+   "eco": true,
+   "linhas": [
+    "5 erros que",
+    "*encurtam a vida*",
+    "da sua moto"
+   ]
   }
  ],
- "legenda_ig_fb": "O erro número 1 é o que quase todo motociclista comete.\n\nPneu murcho, corrente esquecida, barulho ignorado, óleo vencido e, o pior de todos, não anotar nada. Sem histórico, os outros erros sempre voltam.\n\n📌 Salva e manda pra quem precisa ver esse vídeo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #errosdemoto #dicasdemoto #cuidadoscomamoto #minhamoto",
- "legenda_tiktok": "O erro número 1 é o que quase todo motociclista comete. 📌 Manda pra quem precisa ver esse vídeo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #errosdemoto #dicasdemoto #cuidadoscomamoto #moto #motociclista #fyp #motostiktok"
+ "legenda_ig_fb": "O erro número 1 é o que quase todo motociclista comete.\n\nPneu murcho, corrente esquecida, barulho ignorado, óleo vencido e, o pior de todos, não anotar nada. Sem histórico, os outros erros sempre voltam.\n\n📌 Salva pra não esquecer e manda pra quem vive esquecendo a manutenção da moto.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #errosdemoto #dicasdemoto #cuidadoscomamoto #minhamoto",
+ "legenda_tiktok": "O erro número 1 é o que quase todo motociclista comete. 📌 Salva e manda pra quem vive esquecendo a manutenção da moto. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #errosdemoto #dicasdemoto #cuidadoscomamoto #moto #motociclista #fyp #motostiktok"
 }

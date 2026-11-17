@@ -1,0 +1,91 @@
+{
+ "id": "VP01",
+ "titulo": "Sua moto não quebra do nada",
+ "formato": "Texto animado + fotos",
+ "capa_t": 1.4,
+ "cenas": [
+  {
+   "tipo": "kinetic",
+   "dur": 3.87,
+   "tam": 156,
+   "linhas": [
+    "Sua moto",
+    "não quebra",
+    "*do nada.*"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 2.18,
+   "tam": 150,
+   "linhas": [
+    "Ela *avisa* antes."
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.0,
+   "foto": "17024710.jpg",
+   "titulo": "Barulho *novo.*",
+   "tam": 128
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.5,
+   "foto": "19949302.jpg",
+   "titulo": "Freio *mais mole.*",
+   "tam": 128
+  },
+  {
+   "tipo": "photo",
+   "dur": 2.0,
+   "foto": "37131862-corrente.jpg",
+   "pos": "70% center",
+   "titulo": "Corrente *batendo.*",
+   "tam": 128
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 3.4,
+   "tam": 132,
+   "bg": "azul",
+   "linhas": [
+    "Quem ignora,",
+    "*paga o conserto.*"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 3.85,
+   "tam": 132,
+   "linhas": [
+    "Quem anota,",
+    "*paga só a manutenção.*"
+   ],
+   "passo": 0.32
+  },
+  {
+   "tipo": "end",
+   "dur": 3.85,
+   "titulo": "Anota tudo no\n*MinhaMoto.*",
+   "sub": "Baixe agora."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 0.9,
+   "tam": 156,
+   "passo": 0.07,
+   "eco": true,
+   "linhas": [
+    "Sua moto",
+    "não quebra",
+    "*do nada.*"
+   ]
+  }
+ ],
+ "legenda_ig_fb": "Sua moto não quebra do nada. Ela avisa antes.\n\nBarulho novo, freio mais mole, corrente batendo: tudo isso é aviso. Quem ignora paga o conserto. Quem anota e cuida no prazo paga só a manutenção.\n\n📌 Salva pra não esquecer e manda pra quem acha que a moto quebrou do nada.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #manutencaopreventiva #mecanicademoto #dicasdemoto #minhamoto",
+ "legenda_tiktok": "Sua moto não quebra do nada. Ela avisa antes. 📌 Salva e manda pra quem acha que a moto quebrou do nada. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #manutencaopreventiva #mecanicademoto #dicasdemoto #moto #motociclista #fyp #motostiktok"
+}

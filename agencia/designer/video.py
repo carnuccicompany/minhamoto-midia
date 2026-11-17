@@ -70,7 +70,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-seri
 .s{font-weight:600;color:#b4c2d6;line-height:1.3;text-wrap:pretty}
 .s .ac{color:#fff;font-weight:800}
 .k{display:inline-block;font-weight:800;font-size:32px;letter-spacing:5px;text-transform:uppercase;color:#fff;background:#1f5fff;padding:12px 22px;border-radius:10px}
-.box{position:absolute;left:80px;right:170px}
+.box{position:absolute;left:80px;right:200px}
 .line{display:block;will-change:transform,opacity}
 .photo{position:absolute;left:-4%;top:-4%;width:108%;height:108%;object-fit:cover}
 .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,8,14,.97) 0%,rgba(4,8,14,.85) 36%,rgba(4,8,14,.35) 62%,rgba(4,8,14,.45) 100%)}
@@ -201,9 +201,9 @@ function pop(el, p){ const e=ease(p); el.style.opacity=Math.min(1,Math.max(0,p*1
 function lerp(a,b,x){ return a+(b-a)*x; }
 function sceneAt(t){ let acc=0; for(let i=0;i<S.length;i++){ if(t<acc+S[i].dur||i===S.length-1) return [i,acc]; acc+=S[i].dur; } }
 async function drawScene(idx, lr){
-  const sc=S[idx], root=document.getElementById('s'+idx); const lt = lr + (idx===0 ? 0.4 : 0.1); const prog = lr/sc.dur;
+  const sc=S[idx], root=document.getElementById('s'+idx); const lt = lr + ((idx===0||sc.eco) ? 0.4 : 0.1); const prog = lr/sc.dur;
   if (root.classList.contains('bg-dark')||root.classList.contains('bg-azul')){ root.style.backgroundSize='130% 130%'; root.style.backgroundPosition=`${50+18*Math.sin((lr+idx)*0.6)}% ${50+12*Math.cos((lr+idx)*0.5)}%`; }
-  const drift = root.querySelector('.drift'); if (drift){ drift.style.transformOrigin='0% 50%'; drift.style.transform=`scale(${1+0.035*prog})`; }
+  const drift = root.querySelector('.drift'); if (drift){ drift.style.transformOrigin='0% 50%'; drift.style.transform=`scale(${1+0.045*prog})`; }
   if (sc.tipo==='kinetic'){
     root.querySelectorAll('.line').forEach((l,i)=>{ const p=(lt - i*sc.passo + 0.25)/0.28; if(p<=0){l.style.opacity=0} else pop(l,p); });
   } else if (sc.tipo==='photo'){
@@ -232,7 +232,7 @@ async function drawScene(idx, lr){
     root.querySelectorAll('.box > .k, .box > .t').forEach((l,i)=>{ const p=(lt-i*0.1)/0.28; if(p<=0){l.style.opacity=0} else pop(l,p) });
     opts.forEach((o,i)=>{ const p=(lt-0.5-i*0.25)/0.28; if(p<=0){o.style.opacity=0} else pop(o,p);
       o.classList.toggle('ok', lr>=rv && i===sc.certa); if(lr>=rv && i!==sc.certa) o.style.opacity=.25;
-      if(lr>=rv && i===sc.certa){ const q=Math.min(1,(lr-rv)/0.3); o.style.transform=`scale(${1+0.04*Math.sin(q*Math.PI)})`; } });
+      if(lr>=rv && i===sc.certa){ const q=Math.min(1,(lr-rv)/0.3); o.style.transform=`scale(${1+0.04*Math.sin(q*Math.PI)})`; o.style.boxShadow=`0 0 ${40+30*Math.sin((lr-rv)*5)}px rgba(34,197,94,.55)`; } else { o.style.boxShadow='none'; } });
     const bar = root.querySelector('.bar'), bi = bar.querySelector('i');
     const p0 = 0.5 + opts.length*0.25 + 0.3; const bp = Math.min(1, Math.max(0, (lr - p0)/(rv - p0)));
     bi.style.width = (100 - bp*100) + '%'; bar.style.opacity = lr < rv ? 1 : Math.max(0, 1-(lr-rv)/0.3);
@@ -249,6 +249,7 @@ window.render = async function(t){
   if (idx>0 && lr < XF){  // dissolve: cena anterior por baixo, atual entrando por cima
     const prev = document.getElementById('s'+(idx-1)); prev.style.visibility='visible'; prev.style.zIndex=1;
     await drawScene(idx-1, S[idx-1].dur - 0.0001 + lr);
+    prev.querySelectorAll('.box, .head, .pwin').forEach(e=>e.style.opacity=0);  // só o fundo dissolve (sem texto fantasma)
     cur.style.opacity = Math.min(1, lr/XF);
   }
 };
@@ -268,6 +269,11 @@ window.preparar = async function(){
   await document.fonts.ready;
   await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));
   await Promise.all([...document.querySelectorAll('video')].map(v=> v.readyState>=2 ? 0 : new Promise(r=>{ v.addEventListener('loadeddata',r,{once:true}); setTimeout(r,8000); })));
+  document.querySelectorAll('.t, .s').forEach(el=>{  // texto nunca estoura a caixa: reduz a fonte até caber
+    let f=parseFloat(getComputedStyle(el).fontSize); const tr=el.style.transform; el.style.transform='none';
+    while(el.scrollWidth > el.clientWidth + 1 && f > 40){ f-=3; el.style.fontSize=f+'px'; }
+    el.style.transform=tr;
+  });
   document.querySelectorAll('.t').forEach(el=>{   // marca-texto por baixo do texto (nunca corta letra)
     const ac=el.querySelector(':scope > .ac'); if(!ac) return;
     const bg=getComputedStyle(ac).backgroundColor; if(!bg||bg==='rgba(0, 0, 0, 0)') return;
@@ -288,7 +294,7 @@ def build(rot):
 def luminancia(jpg):
     from PIL import Image
     im = Image.open(io.BytesIO(jpg)).convert('L').resize((54, 96))
-    return sum(im.getdata()) / (54 * 96)
+    return sum(im.tobytes()) / (54 * 96)
 
 def main(path, force=False):
     rot = json.load(open(path, encoding='utf-8'))

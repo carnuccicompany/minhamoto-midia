@@ -2,32 +2,55 @@
  "id": "VP03",
  "titulo": "POV: o mecânico pergunta",
  "formato": "POV / meme",
- "capa_t": 1.4,
+ "capa_t": 1.6,
  "cenas": [
   {
    "tipo": "photo",
-   "dur": 3.4,
-   "foto": "3822784.jpg",
-   "pos": "center 30%",
+   "dur": 2.4,
+   "foto": "9607261.jpg",
    "kicker": "POV",
-   "tam": 82,
-   "titulo": "O mecânico pergunta: *quando foi a última troca de óleo?*"
+   "titulo": "O mecânico *pergunta:*",
+   "tam": 124
   },
   {
    "tipo": "kinetic",
-   "dur": 2.4,
-   "tam": 124,
+   "dur": 3.2,
+   "tam": 116,
    "linhas": [
-    "Você:",
-    "“Uns 3 meses…",
-    "ou 6?",
-    "*Sei lá.*”"
+    "“Quando foi",
+    "a última troca",
+    "*de óleo?*”"
    ]
   },
   {
    "tipo": "kinetic",
-   "dur": 1.4,
-   "tam": 116,
+   "dur": 1.8,
+   "tam": 150,
+   "linhas": [
+    "Você:",
+    "“Uns 3 meses…”"
+   ]
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 1.6,
+   "tam": 170,
+   "linhas": [
+    "“…ou 6?”"
+   ]
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 1.7,
+   "tam": 190,
+   "linhas": [
+    "“*Sei lá.*”"
+   ]
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 2.0,
+   "tam": 128,
    "bg": "azul",
    "passo": 0.25,
    "linhas": [
@@ -37,19 +60,38 @@
   },
   {
    "tipo": "phone",
-   "dur": 3.2,
-   "print": "historico-completo.png",
-   "tam": 80,
-   "titulo": "“Dia 07/11, *18.400 km*, óleo 10W-30.”",
-   "sub": "Mecânico respeita."
+   "dur": 3.0,
+   "print": "rec-saude-emdia.png",
+   "top": 620,
+   "titulo": "“Tá em dia. *Tá tudo aqui.*”",
+   "tam": 96,
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "foco": [
+    0.5,
+    0.15
+   ]
   },
   {
    "tipo": "end",
-   "dur": 2.4,
+   "dur": 3.2,
    "titulo": "Seja o cliente\n*que sabe.*",
-   "sub": "Baixe o MinhaMoto."
+   "sub": "Baixe por R$19,90."
+  },
+  {
+   "tipo": "kinetic",
+   "dur": 0.9,
+   "tam": 124,
+   "passo": 0.07,
+   "eco": true,
+   "linhas": [
+    "O mecânico",
+    "*pergunta:*"
+   ]
   }
  ],
- "legenda_ig_fb": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina.\n\nQuando o mecânico pergunta da última troca, quem tem o histórico responde na hora: data, km e qual óleo foi usado. É outra conversa.\n\n📌 Salva e manda pra quem nunca lembra quando trocou o óleo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #humor #oficinademoto #trocadeoleo #minhamoto",
- "legenda_tiktok": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina. 📌 Manda pra quem nunca lembra quando trocou o óleo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #humor #oficinademoto #trocadeoleo #moto #motociclista #fyp #motostiktok"
+ "legenda_ig_fb": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina.\n\nQuando o mecânico pergunta da última troca, quem tem o histórico responde na hora e mostra na tela o que tá em dia. É outra conversa.\n\n📌 Salva pra não esquecer e manda pra quem nunca lembra quando trocou o óleo.\n\n📲 Baixe agora o MinhaMoto na App Store e no Google Play.\n\n#moto #motociclista #motoboy #manutencaodemoto #motosbrasil #humor #oficinademoto #trocadeoleo #minhamoto",
+ "legenda_tiktok": "Todo mundo já foi o “uns 3 meses… ou 6?” na oficina. 📌 Salva e manda pra quem nunca lembra quando trocou o óleo. 📲 Baixe agora o MinhaMoto na App Store e no Google Play. #humor #oficinademoto #trocadeoleo #moto #motociclista #fyp #motostiktok"
 }
