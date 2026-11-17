@@ -100,8 +100,8 @@ def carrossel_A():
     d = os.path.join(AQUI, 'A', 'carrossel'); W, Hc = 1080, 1350
     cards = [
         foto_bg('5195494.jpg', 0.55, pos='50% 40%') +
-        "<div class=capA style='top:400px;font-size:132px'>Tua moto<br>tá em dia?<br><span class=y>Prova.</span></div>"
-        "<div class=desliza>Desliza pra ver →</div>",
+        "<div class=capA style='top:400px;font-size:132px'>Sua moto<br>tá em dia?<br><span class=y>Prove.</span></div>"
+        "<div class=desliza>Deslize pra ver →</div>",
         foto_bg('3822836.jpg', 0.5) +
         "<div class=capA style='top:380px;font-size:120px'>O mecânico<br>pergunta.<br><span class=y>Você chuta.</span></div>"
         "<div class=apoA style='top:830px;font-size:50px'>“Uns 3 meses… ou 6? Sei lá.”</div><div class=pag>02 / 05</div>",
@@ -125,11 +125,11 @@ def carrossel_B():
         return (grad_bg('B') + f"<div class=titB style='top:96px;font-size:80px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
                 + a + celular(tela, w=560, top=top, rot=rot, tilt=0, rola=rola) + f"<div class='pag t'>{n:02d} / 05</div>")
     cards = [
-        card('Esqueceu a troca?', 'A moto não esquece.', '21-item-atrasado', 1).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>Desliza →</div>"),
+        card('Esqueceu a troca?', 'A moto não esquece.', '21-item-atrasado', 1).replace("<div class='pag t'>01 / 05</div>", "<div class='pag t' style='color:#3D8BFF'>Deslize →</div>"),
         card('O que venceu', 'fica em vermelho', '19-saude-atrasados', 2),
         card('O que nunca foi feito', 'aparece pra você', 'rolagem/19-saude-atrasados', 3, rola=4600),
         card('E o app te avisa', 'na hora certa', '15-notificacoes', 4),
-        grad_bg('B', (50, 38)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Teu plano de revisão na palma da mão.', True, top=220),
+        grad_bg('B', (50, 38)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Seu plano de revisão na palma da mão.', True, top=220),
     ]
     for i, c in enumerate(cards, 1):
         render(c, W, Hc, os.path.join(d, f'{i:02d}.jpg'))
@@ -142,8 +142,8 @@ CAIXA = ("<div style='position:absolute;left:150px;right:150px;top:{top}px;heigh
 def story_A():
     c = (foto_bg('3822836.jpg', 0.42, pos='60% 50%') +
          f"<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><img src='file://{ICON}' style='width:130px;height:130px;border-radius:32px;box-shadow:0 18px 50px rgba(0,0,0,.6)'></div>"
-         "<div class=capA style='top:440px;font-size:104px'>Tua moto tá<br>fazendo um<br><span class=y>barulho estranho?</span></div>"
-         "<div class=apoA style='top:960px;font-size:46px'>Manda tua dúvida de manutenção.<br>A gente responde aqui nos stories.</div>"
+         "<div class=capA style='top:440px;font-size:104px'>Sua moto tá<br>fazendo um<br><span class=y>barulho estranho?</span></div>"
+         "<div class=apoA style='top:960px;font-size:46px'>Mande sua dúvida de manutenção.<br>A gente responde aqui nos stories.</div>"
          + CAIXA.format(top=1140))
     render(c, 1080, 1920, os.path.join(AQUI, 'A', 'story', 'story.jpg'))
 
@@ -151,8 +151,8 @@ def story_B():
     c = (grad_bg('B', (50, 70)) +
          "<div class=fill style='background:radial-gradient(60% 30% at 50% 18%, rgba(61,139,255,.25), rgba(0,0,0,0) 70%)'></div>"
          f"<div style='position:absolute;left:0;right:0;top:240px;text-align:center'><img src='file://{ICON}' style='width:150px;height:150px;border-radius:36px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 90px rgba(61,139,255,.6)'></div>"
-         "<div class=titB style='top:460px;font-size:120px'>Tira tua<br><span class=b>dúvida</span><br>de moto</div>"
-         "<div class=apoB style='top:1000px;font-size:44px'>Óleo, revisão, corrente, barulho estranho…<br>Pergunta que a gente responde.</div>"
+         "<div class=titB style='top:460px;font-size:120px'>Tire sua<br><span class=b>dúvida</span><br>de moto</div>"
+         "<div class=apoB style='top:1000px;font-size:44px'>Óleo, revisão, corrente, barulho estranho…<br>Pergunte que a gente responde.</div>"
          + CAIXA.format(top=1150))
     render(c, 1080, 1920, os.path.join(AQUI, 'B', 'story', 'story.jpg'))
 
@@ -163,18 +163,18 @@ def carrossel_A_tiktok():
     d = os.path.join(AQUI, 'A', 'carrossel-tiktok')
     cards = [
         foto_bg('5195494.jpg', 0.55, pos='50% 40%') +
-        "<div class=capA style='top:600px;font-size:132px'>Tua moto<br>tá em dia?<br><span class=y>Prova.</span></div>"
-        "<div class=desliza style='bottom:auto;top:1400px'>Desliza pra ver →</div>",
+        "<div class=capA style='top:600px;font-size:132px'>Sua moto<br>tá em dia?<br><span class=y>Prove.</span></div>"
+        "<div class=desliza style='bottom:auto;top:1400px'>Deslize pra ver →</div>",
         foto_bg('3822836.jpg', 0.5) +
         "<div class=capA style='top:560px;font-size:112px'>O mecânico<br>pergunta.<br><span class=y>Você chuta.</span></div>"
         "<div class=apoA style='top:990px;font-size:48px'>“Uns 3 meses… ou 6? Sei lá.”</div>"
         "<div class=pag style='bottom:auto;top:1420px'>02 / 05</div>",
         foto_bg('3822836.jpg', 0.3, blur=14) +
-        "<div class=capA style='top:200px;font-size:70px'>O que <span class=y>nunca</span> foi feito<br>aparece na hora</div>" +
-        celular('rolagem/19-saude-atrasados', w=500, top=468, rola=4600),
+        "<div class=capA style='top:190px;font-size:76px'>O que <span class=y>nunca</span> foi feito<br>aparece na hora</div>" +
+        celular('rolagem/19-saude-atrasados', w=720, top=420, rola=4600),
         foto_bg('5195494.jpg', 0.3, blur=14) +
-        "<div class=capA style='top:200px;font-size:70px'>O que <span class=y>venceu</span><br>fica em vermelho</div>" +
-        celular('rolagem/19-saude-atrasados', w=500, top=468, rola=3480),
+        "<div class=capA style='top:190px;font-size:76px'>O que <span class=y>venceu</span><br>fica em vermelho</div>" +
+        celular('rolagem/19-saude-atrasados', w=720, top=420, rola=3480),
         grad_bg('A', (50, 36)) + cta('A', 'Nunca mais<br><span class=y>“sei lá”</span>', 'Baixe agora o MinhaMoto', True, top=360, pad=140),
     ]
     for i, c in enumerate(cards, 1):
@@ -183,14 +183,14 @@ def carrossel_A_tiktok():
 def carrossel_B_tiktok():
     d = os.path.join(AQUI, 'B', 'carrossel-tiktok')
     def card(l1, l2, tela, rola=None):
-        return (grad_bg('B', (50, 55)) + f"<div class=titB style='top:200px;font-size:70px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
-                + celular(tela, w=500, top=468, rola=rola))
+        return (grad_bg('B', (50, 55)) + f"<div class=titB style='top:190px;font-size:76px'>{H.escape(l1)}<br><span class=b>{H.escape(l2)}</span></div>"
+                + celular(tela, w=720, top=420, rola=rola))
     cards = [
         card('Esqueceu a troca?', 'A moto não esquece.', '21-item-atrasado'),
         card('O que venceu', 'fica em vermelho', '19-saude-atrasados'),
         card('O que nunca foi feito', 'aparece pra você', 'rolagem/19-saude-atrasados', rola=4600),
         card('E o app te avisa', 'na hora certa', '15-notificacoes'),
-        grad_bg('B', (50, 36)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Teu plano de revisão na palma da mão.', True, top=360, pad=140),
+        grad_bg('B', (50, 36)) + cta('B', 'Baixe o<br><span class=b>MinhaMoto</span>', 'Seu plano de revisão na palma da mão.', True, top=360, pad=140),
     ]
     for i, c in enumerate(cards, 1):
         render("<div class=tt>" + c + "</div>", TTW, TTH, os.path.join(d, f'{i:02d}.jpg'))

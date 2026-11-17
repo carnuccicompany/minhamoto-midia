@@ -92,3 +92,6 @@ NOTA: 6/10
 - [ ] Peça nova sem a versão TikTok 9:16
 - [ ] Legenda de TikTok em bloco único (tem que ser: gancho até ~90 caracteres sozinho na 1ª linha, linha em branco, `📌 ...` e `📲 Baixe agora...` em linhas separadas, linha em branco, hashtags)
 - [ ] Texto em caixa-alta ou fonte fora do padrão (Plus Jakarta Sans) — feedback do Léo 17/11
+
+## Nunca "tu" (regra do Léo, 17/11)
+**Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.

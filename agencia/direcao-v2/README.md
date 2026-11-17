@@ -6,7 +6,7 @@ Logo sempre com o guidão pra DIREITA. Telas só do layout atual, geradas do có
 ## Direção A — "Nativo / Rua"
 - **Fonte:** Plus Jakarta Sans 800 em frase normal (sem caixa-alta), sombra suave pra ler sobre a foto, palavras-chave em amarelo #FFD400; apoio em Plus Jakarta Sans 600.
 - **Cores / imagem:** foto real de moto/oficina em movimento (Ken Burns) no gancho; nas cenas de produto o celular fica sobre a mesma foto desfocada e escurecida. CTA em azul da marca com selo de preço amarelo.
-- **Mockup / ritmo / hook:** celular frontal premium (bordas metálicas, ilha, reflexo, sombra em camadas) entrando com zoom; legenda palavra por palavra com "pop"; hooks de identificação (POV) e pergunta que dói ("Tua moto tá em dia? Prova.").
+- **Mockup / ritmo / hook:** celular frontal premium (bordas metálicas, ilha, reflexo, sombra em camadas) entrando com zoom; legenda palavra por palavra com "pop"; hooks de identificação (POV) e pergunta que dói ("Sua moto tá em dia? Prove.").
 
 ## Direção B — "Premium produto"
 - **Fonte:** Plus Jakarta Sans 800 em frase normal, segunda linha em azul elétrico #3D8BFF; apoio em Plus Jakarta Sans 500.
@@ -16,8 +16,8 @@ Logo sempre com o guidão pra DIREITA. Telas só do layout atual, geradas do có
 ## Arquivos
 | Direção | Vídeos (9:16) | Carrossel (4:5) / TikTok (9:16) | Story (9:16) |
 |---|---|---|---|
-| A | A/A1/video.mp4 (POV mecânico, com "por R$19,90"), A/A2/video.mp4 (Tua moto tá em dia? Prova.) | A/carrossel/01–05.jpg · A/carrossel-tiktok/01–05.jpg | A/story/story.jpg (caixa de perguntas) |
-| B | B/B1/video.mp4 (Esqueceu a troca?, com "por R$19,90"), B/B2/video.mp4 (Tua moto tá em dia? Veja em 30 segundos) | B/carrossel/01–05.jpg · B/carrossel-tiktok/01–05.jpg | B/story/story.jpg (ST04 refeito) |
+| A | A/A1/video.mp4 (POV mecânico, com "por R$19,90"), A/A2/video.mp4 (Sua moto tá em dia? Prove.) | A/carrossel/01–05.jpg · A/carrossel-tiktok/01–05.jpg | A/story/story.jpg (caixa de perguntas) |
+| B | B/B1/video.mp4 (Esqueceu a troca?, com "por R$19,90"), B/B2/video.mp4 (Sua moto tá em dia? Veja em 30 segundos) | B/carrossel/01–05.jpg · B/carrossel-tiktok/01–05.jpg | B/story/story.jpg (ST04 refeito) |
 
 Folhas de revisão: `X/Xn/frames.jpg` (vídeos, 2 quadros/s) e `X/folha-carrossel-story.jpg` (linha 1: carrossel 4:5 + story; linha 2: carrossel TikTok 9:16).
 

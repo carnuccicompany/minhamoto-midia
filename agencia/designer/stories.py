@@ -42,8 +42,8 @@ ST = [
       + phone('plano-atual.png', 250, 820, 580) + "</div>"),
  dict(id="ST04", tipo="Caixa de perguntas", uso="Adicionar o sticker de PERGUNTAS no quadro tracejado com o texto “Sua dúvida de manutenção”. Responder as melhores nos stories dos dias seguintes.",
       html=lambda: "<div class='scene bg-azul' style='display:block'>"
-      "<div class='box' style='top:330px'><div class='k' style='margin-bottom:40px;background:#0c0f14'>Pergunta pra gente</div>"
-      f"<div class='t' style='font-size:116px'>{fmt('Dúvida de manutenção? *Manda aqui.*')}</div>"
+      "<div class='box' style='top:330px'><div class='k' style='margin-bottom:40px;background:#0c0f14'>Pergunte pra gente</div>"
+      f"<div class='t' style='font-size:116px'>{fmt('Dúvida de manutenção? *Mande aqui.*')}</div>"
       f"<div class='s' style='font-size:50px;margin-top:40px;color:#e3ebff'>{fmt('Óleo, corrente, pneu, revisão. A gente responde as melhores nos stories.')}</div></div>"
       "<div class='ph' style='left:140px;right:140px;top:1180px;height:300px'>Sticker de perguntas aqui</div></div>"),
  dict(id="ST05", tipo="CTA de download", uso="Adicionar o sticker de LINK apontando pro link da bio (minhamotopagina.online), em cima do quadro tracejado.",

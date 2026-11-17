@@ -24,11 +24,11 @@ def A1():
 def A2():
     v = Video('A2', 'A')
     v.cena(0, 2.8, bg_foto('5195494.jpg', 1.04, 1.16, (0, 0), escurece=0.6)(2.8))
-    v.texto(0, 2.8, T_cap('Tua moto / tá em dia? / Prova.', ['Prova.'], y=600, tam=124, inst=True))
+    v.texto(0, 2.8, T_cap('Sua moto / tá em dia? / Prove.', ['Prove.'], y=600, tam=124, inst=True))
     FB = lambda d: bg_foto('5195494.jpg', 1.2, 1.28, (0, 0), escurece=0.3, blur=16)(d)
     PH = dict(w=640, y=380, fundo='A', rot=(0, 0), tilt=(0, 0), esc=(0.86, 1.0), push=0.05)
     v.cena(2.8, 6.2, celular('02-saude', 3.4, bgfn=FB(3.4), **PH))
-    v.texto(2.8, 6.2, T_cap('O app mostra a / saúde da tua moto', ['saúde'], y=180, tam=76, ritmo=0.17))
+    v.texto(2.8, 6.2, T_cap('O app mostra a / saúde da sua moto', ['saúde'], y=180, tam=76, ritmo=0.17))
     v.cena(6.2, 9.6, celular('15-notificacoes', 3.4, bgfn=FB(3.4), **PH))
     v.texto(6.2, 9.6, T_cap('E te avisa / antes de vencer', ['avisa'], y=180, tam=76, ritmo=0.17))
     v.cena(9.6, 13.0, celular('rolagem/02-saude', 3.4, rola=(4300, 5250), bgfn=FB(3.4), **PH))
@@ -49,22 +49,22 @@ def B1():
     v.cena(10.4, 13.6, celular('15-notificacoes', 3.2, rot=(8, 0), tilt=(3, 0), **PH))
     v.texto(10.4, 13.6, T_tit(['E te avisa', 'na hora certa'], y=180, tam=76, hl_linhas=(1,)))
     v.cena(13.6, 16.6, bg_grad('B'))
-    v.texto(13.6, 16.6, T_cta('Baixe o<br><span class=hl>MinhaMoto</span>', sub='O app que cuida da tua moto.', preco='por R$19,90', estilo='B'))
+    v.texto(13.6, 16.6, T_cta('Baixe o<br><span class=hl>MinhaMoto</span>', sub='O app que cuida da sua moto.', preco='por R$19,90', estilo='B'))
     return v
 
 def B2():
     v = Video('B2', 'B')
     PH = dict(w=700, y=340)
     v.cena(0, 3.4, celular('01-garagem', 3.4, rot=(-10, 0), tilt=(5, 0), esc=(0.94, 1.0), **PH))
-    v.texto(0, 3.4, T_tit(['Tua moto tá em dia?', 'Veja em 30 segundos'], y=180, tam=76, hl_linhas=(1,), entra=-1))
+    v.texto(0, 3.4, T_tit(['Sua moto tá em dia?', 'Veja em 30 segundos'], y=180, tam=76, hl_linhas=(1,), entra=-1))
     v.cena(3.4, 7.0, celular('23-registrar-servico-itens', 3.6, rot=(8, 0), tilt=(3, 0), **PH))
-    v.texto(3.4, 7.0, T_tit(['Responde', 'o que você lembra'], y=180, tam=76, hl_linhas=(1,)))
+    v.texto(3.4, 7.0, T_tit(['Responda', 'o que você lembra'], y=180, tam=76, hl_linhas=(1,)))
     v.cena(7.0, 10.6, celular('rolagem/10-lista-revisao', 3.6, rola=(0, 1500), rot=(-8, 0), tilt=(3, 0), **PH))
-    v.texto(7.0, 10.6, T_tit(['E vê o plano', 'da tua moto'], y=180, tam=76, hl_linhas=(1,)))
+    v.texto(7.0, 10.6, T_tit(['E veja o plano', 'da sua moto'], y=180, tam=76, hl_linhas=(1,)))
     v.cena(10.6, 13.8, celular('03-manutencao', 3.2, rot=(8, 0), tilt=(3, 0), **PH))
-    v.texto(10.6, 13.8, T_tit(['No teu modelo.', 'No teu km.'], y=180, tam=76, hl_linhas=(1,)))
+    v.texto(10.6, 13.8, T_tit(['No seu modelo.', 'No seu km.'], y=180, tam=76, hl_linhas=(1,)))
     v.cena(13.8, 16.8, bg_grad('B'))
-    v.texto(13.8, 16.8, T_cta('Baixe o<br><span class=hl>MinhaMoto</span>', sub='Teu plano de revisão na palma da mão.', estilo='B'))
+    v.texto(13.8, 16.8, T_cta('Baixe o<br><span class=hl>MinhaMoto</span>', sub='Seu plano de revisão na palma da mão.', estilo='B'))
     return v
 
 VIDEOS = dict(A1=A1, A2=A2, B1=B1, B2=B2)

@@ -15,7 +15,8 @@ Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com b
 > - **Até o story que o revisor aprovou (ST04, caixa de perguntas, todo azul) não passou com o Léo:** a ideia é boa, mas o grifado não ficou legal, a fonte não agradou, e o azul tá ok mas dá pra ficar muito mais foda (sombra, profundidade, acabamento). Lição: o Revisor estava permissivo demais — a régua é o gosto do Léo, não "sem erro técnico".
 > - **TELAS DO APP = SÓ DO CÓDIGO MAIS NOVO.** Antes de qualquer carrossel, vídeo ou story: `git pull` no repo do app (carnuccicompany/minhamoto-midia não — o do app: carnuccicompany/minhamotooficial), ver se tem tela/estética/funcionalidade nova e usar as telas renderizadas desse código (`agencia/designer/assets/telas-app/`, regerar se o app mudou). Nunca gravação de tela antiga nem print velho. No repo do app: só ler e rodar local — nunca commit/push/deploy.
 > - **YouTube = canal só de Shorts.**
-> - **17/11 (tarde): sem caixa-alta, fonte Plus Jakarta Sans.** Léo achou a fonte das amostras v2 (Montserrat/Anton em caixa-alta) "horrível". Regra: textos em frase normal ("Tua moto tá em dia? Prova."), nunca tudo em maiúscula. Fonte única: **Plus Jakarta Sans** — 800 nos títulos (letter-spacing -0,035em, entrelinha ~1,05), 500/600 no apoio. Destaque só com cor (amarelo #FFD400 na A, azul #3D8BFF na B), sem contorno grosso, sem marca-texto. Celular reto e centralizado (nada "de lado"), margem mínima de 90px nas laterais. Arquivos em `agencia/direcao-v2/fontes/`.
+> - **17/11 (tarde): sem caixa-alta, fonte Plus Jakarta Sans.** Léo achou a fonte das amostras v2 (Montserrat/Anton em caixa-alta) "horrível". Regra: textos em frase normal ("Sua moto tá em dia? Prove."), nunca tudo em maiúscula. Fonte única: **Plus Jakarta Sans** — 800 nos títulos (letter-spacing -0,035em, entrelinha ~1,05), 500/600 no apoio. Destaque só com cor (amarelo #FFD400 na A, azul #3D8BFF na B), sem contorno grosso, sem marca-texto. Celular reto e centralizado (nada "de lado"), margem mínima de 90px nas laterais. Arquivos em `agencia/direcao-v2/fontes/`.
+> - **17/11 (15h): NUNCA "tu".** Léo: "Eu não quero tu em nenhum criativo." **Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.
 > - O painel da agência ele aprovou ("muito foda") — manter e aprimorar.
 
 ## 1. O negócio
@@ -30,8 +31,8 @@ Nada aqui é sugestão: é regra. O que não estiver aqui, o agente decide com b
 
 - Português brasileiro informal, direto, de motociclista pra motociclista.
 - Frases curtas. Uma ideia por frase.
-- Fala com "você". Nunca "motociclistas devem..."
-- Concreto sempre: "anota o km da troca" em vez de "mantenha registros".
+- Fala com "você". Nunca "motociclistas devem..." **Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.
+- Concreto sempre: "anote o km da troca" em vez de "mantenha registros".
 - Zero juridiquês, zero clichê de marketing ("não perca!", "imperdível"), zero tom de professor.
 - Pode usar gíria leve de moto (corrente, relação, baixa, ganha-pão — sem repetir a mesma expressão na sequência).
 - Nunca inventar número, estatística ou dado técnico. Dado técnico errado mata a confiança do público. Na dúvida, reescrever sem o dado.
@@ -82,7 +83,7 @@ Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel fi
 
 ### Regras de composição (todos os estilos)
 - Um foco por card. Quebra manual com `\n` quando a frase tem duas partes (evita palavra solta tipo "O" no fim da linha).
-- Capa sempre com "Arrasta →". CTA final sempre com ícone do app + selos App Store/Google Play.
+- Capa sempre com "Arraste →". CTA final sempre com ícone do app + selos App Store/Google Play.
 - Misturar estilos na fila: nunca dois carrosséis seguidos do mesmo estilo.
 - O antigo "produto azul-claro" (render.py, Template B) foi **aposentado como padrão**: só eventual, quando o Léo pedir.
 
@@ -103,7 +104,7 @@ Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel fi
 
 {valor: o resumo prático, 2-4 linhas}
 
-📌 Salva pra não esquecer e manda pra quem {pessoa específica}.
+📌 Salve pra não esquecer e mande pra quem {pessoa específica}.
 
 📲 Baixe agora o MinhaMoto na App Store e no Google Play.
 
@@ -114,7 +115,7 @@ Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel fi
 ```
 {gancho forte e curto, até ~90 caracteres}
 
-📌 Salva e manda pra quem {pessoa}.
+📌 Salve e mande pra quem {pessoa}.
 📲 Baixe agora o MinhaMoto na App Store e no Google Play.
 
 {5 tags} #fyp #motostiktok
@@ -123,6 +124,7 @@ Feedback do Léo (16/11) que originou esta versão: o fundo azul-claro pastel fi
 Regras:
 - CTA **sempre imperativo**: "Baixe agora o MinhaMoto na App Store e no Google Play." Nunca variar essa frase.
 - Gancho tem que parar o dedo: dor real, pergunta incômoda ou número específico.
+- Tratamento: **Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.
 - Hashtags: misturar grandes (#moto #motoboy #motociclista) com específicas do tema.
 
 ## 5b. Formatos por rede (regra fixa — todos os agentes)

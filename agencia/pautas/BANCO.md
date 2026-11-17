@@ -11,7 +11,7 @@
 ### Dicas e hacks
 - [ ] Dicas e hacks | Sua moto tá te avisando que a corrente vai estourar | ângulo: 5 sinais em ordem de gravidade, do estalo ao pulo de dente
 - [ ] Dicas e hacks | O jeito certo de lavar moto sem estragar nada | ângulo: 5 erros que todo mundo comete (jato no rolamento, silicone no pneu)
-- [ ] Dicas e hacks | Moto parada mais de 15 dias? Faz isso antes de ligar | ângulo: checklist de 5 passos pré-partida
+- [ ] Dicas e hacks | Moto parada mais de 15 dias? Faça isso antes de ligar | ângulo: checklist de 5 passos pré-partida
 - [ ] Dicas e hacks | Chuva chegando: 5 ajustes que salvam sua pele | ângulo: sazonal verão, foco em freio e pneu
 - [ ] Dicas e hacks | Como pegar estrada sem medo de ficar na mão | ângulo: checklist véspera de viagem (fim de ano)
 - [ ] Dicas e hacks | 5 barulhos que você NUNCA deve ignorar | ângulo: cada barulho → o que pode ser → quanto custa ignorar

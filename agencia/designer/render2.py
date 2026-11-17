@@ -4,7 +4,7 @@
 Uso: python3 agencia/designer/render2.py agencia/roteiros/AG02.json
 Roteiro: {"id","titulo","linha","estilo": "dark|foto|claro", "cards":[...], legendas}
 Card (campo "layout"):
-  capa   : kicker?, titulo, apoio?, print? | foto?  (mostra "Arrasta →")
+  capa   : kicker?, titulo, apoio?, print? | foto?  (mostra "Arraste →")
   texto  : kicker?, titulo, apoio?
   numero : grande (ex.: "R$ ?" / "5x" / "0"), titulo, apoio?
   item   : n, titulo, apoio?, foto? | print?
@@ -235,7 +235,7 @@ def flow(c, i, total, est):
             if c.get('grande'):
                 out += (f"<div class='big' style='position:absolute;right:56px;bottom:40px;font-size:{c.get('grande_tam', 440)}px;"
                         f"line-height:.8'>{fmt(c['grande'])}</div>")
-        out += (f"<div class='swipe' style='left:84px;bottom:96px'>Arrasta →</div>")
+        out += (f"<div class='swipe' style='left:84px;bottom:96px'>Arraste →</div>")
     elif L == 'texto':
         out += col(K(k) + T(c['titulo'], 104, 620) + AP(c.get('apoio'), 46), top, 120, 'center')
     elif L == 'numero':
@@ -285,7 +285,7 @@ def foto(c, i, total):
         if k: pre += f"<div class='k' style='margin-bottom:26px'>{fmt(k)}</div>"
         tsize = 118 if L == 'capa' else 96
         ap = f"<div class='a' style='font-size:42px;margin-top:26px;max-width:880px'>{fmt(c['apoio'])}</div>" if c.get('apoio') else ''
-        swipe = "<div class='swipe' style='position:static;margin-top:44px'>Arrasta →</div>" if L == 'capa' else ''
+        swipe = "<div class='swipe' style='position:static;margin-top:44px'>Arraste →</div>" if L == 'capa' else ''
         out += (f"<div style='position:absolute;left:76px;right:76px;bottom:{110 if L=='capa' else 120}px'>{pre}"
                 f"<div class='t fit' style='font-size:{tsize}px;max-height:560px'>{fmt(c['titulo'])}</div>{ap}{swipe}</div>")
     elif L == 'cta':

@@ -48,3 +48,6 @@ Na rotina diária, depois do Pauteiro. Pega as pautas do topo do `BANCO.md`.
 - No 9:16, escreva textos curtos o bastante pra caber entre x=140 e x=940 e acima de y=1500 (zona segura: 150px topo, 420px base, 140px direita).
 - Legenda do TikTok: gancho forte e curto sozinho na **1ª linha** (até ~90 caracteres), linha em branco, `📌 ...` e `📲 Baixe agora o MinhaMoto na App Store e no Google Play.` em linhas separadas, linha em branco, hashtags. Nunca em bloco único.
 - Texto das peças em frase normal (sem caixa-alta) — feedback do Léo 17/11.
+
+## Nunca "tu" (regra do Léo, 17/11)
+**Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.

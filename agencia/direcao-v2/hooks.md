@@ -1,11 +1,11 @@
 # Banco de ganchos — MinhaMoto (direção v2, 17/11)
 
 > O gancho é o vídeo. Se os primeiros 1–2 segundos não seguram, nada depois importa.
-> Regras: texto grande na tela no frame 1 (não espera animação), no máximo 8 palavras, fala com o motociclista na 2ª pessoa, uma ideia só.
+> Regras: texto grande na tela no frame 1 (não espera animação), no máximo 8 palavras, fala com o motociclista usando "você" (nunca "tu"), uma ideia só.
 > Nada de dado inventado. Preço só como "por R$19,90" (nunca "vitalício"). Fórmulas baseadas nos padrões que mais seguram 3s em TikTok/Reels (curiosidade, perda, identificação/POV, contradição, número específico, desafio direto).
 
 ## As 8 fórmulas que mais seguram (e por quê)
-1. **Perda / erro caro** — dor de perder dinheiro pesa mais que ganhar. "Esse erro come teu motor."
+1. **Perda / erro caro** — dor de perder dinheiro pesa mais que ganhar. "Esse erro come o motor da sua moto."
 2. **POV de identificação** — o motoboy se vê na cena antes de entender o assunto.
 3. **Contradição / "você faz errado"** — ataca uma certeza comum; o cérebro quer conferir.
 4. **Pergunta que dói** — pergunta que ele não sabe responder na hora.
@@ -17,7 +17,7 @@
 ## Ganchos prontos (texto de tela, frame 1)
 
 ### Perda / erro caro
-1. Esse erro tá comendo o motor da tua moto.
+1. Esse erro tá comendo o motor da sua moto.
 2. Você tá pagando duas vezes a mesma revisão.
 3. O item mais barato da moto é o que mais quebra ela.
 4. Óleo vencido não avisa. Ele só quebra.
@@ -40,15 +40,15 @@
 17. Não é o motor que te deixa na mão. É a falta de controle.
 18. "Tá andando bem" não significa que tá tudo certo.
 19. Memória não é plano de manutenção.
-20. Anotar no caderno não salva tua moto.
+20. Anotar no caderno não salva sua moto.
 
 ### Pergunta que dói
 21. Quando foi a última troca do filtro de ar? Sem chutar.
-22. Quanto tua moto te custou esse mês?
-23. Tua moto tá em dia? Prova.
-24. Qual o próximo item que vence na tua moto?
-25. Você sabe quantos km faltam pra tua próxima revisão?
-26. Qual óleo tua moto usa? Responde em 3 segundos.
+22. Quanto sua moto te custou esse mês?
+23. Sua moto tá em dia? Prove.
+24. Qual o próximo item que vence na sua moto?
+25. Você sabe quantos km faltam pra sua próxima revisão?
+26. Qual óleo sua moto usa? Responda em 3 segundos.
 
 ### Ninguém te conta
 27. Ninguém te conta isso quando você compra a moto.
@@ -57,24 +57,24 @@
 30. O item que todo mundo esquece até dar problema.
 
 ### Ordem direta
-31. Para de rodar sem saber o que tá vencido.
-32. Não sai pra viagem sem checar isso.
-33. Para de confiar na memória pra cuidar da moto.
-34. Antes de ligar a moto amanhã, vê isso.
+31. Pare de rodar sem saber o que tá vencido.
+32. Não saia pra viagem sem checar isso.
+33. Pare de confiar na memória pra cuidar da moto.
+34. Antes de ligar a moto amanhã, veja isso.
 
 ### Número específico
 35. 3 itens que vencem por tempo, mesmo com a moto parada.
-36. 1 tela que mostra tudo que tua moto precisa.
-37. 30 segundos pra saber se tua moto tá em dia.
+36. 1 tela que mostra tudo que sua moto precisa.
+37. 30 segundos pra saber se sua moto tá em dia.
 38. 5 sinais de que a corrente tá pedindo socorro.
 
 ### Teste / desafio / produto direto
-39. Se tua moto falasse, ela te mandava isso.
+39. Se sua moto falasse, ela te mandaria isso.
 40. Esse app me mostrou o que tava vencido na minha moto.
-41. Verde, amarelo ou vermelho: em que cor tá tua moto?
-42. Tua moto tem um plano de revisão. Você conhece?
+41. Verde, amarelo ou vermelho: em que cor tá sua moto?
+42. Sua moto tem um plano de revisão. Você conhece?
 43. O app que te avisa antes da moto quebrar.
-44. Cuidar da moto por R$19,90? Deixa eu te mostrar.
+44. Cuidar da moto por R$19,90? Deixa a gente te mostrar.
 
 ## Como usar
 - Frame 1 = gancho escrito + imagem forte (tela do app com item em vermelho, foto da moto, close de peça). Nunca fundo vazio.
