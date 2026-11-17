@@ -12,7 +12,13 @@ APPLE_APP_ID = "6815447825"
 OUT = "dados/avaliacoes/ultimas.json"
 
 def play():
-    info = json.loads(os.environ["GOOGLE_PLAY_SA_JSON"])
+    raw = os.environ.get("GOOGLE_PLAY_SA_JSON", "").strip().lstrip("\ufeff")
+    if not raw.startswith("{"):
+        import base64
+        try: raw = base64.b64decode(raw).decode()
+        except Exception: pass
+    diag("GOOGLE_PLAY_SA_JSON", raw, "{", "}")
+    info = json.loads(raw)
     cred = service_account.Credentials.from_service_account_info(
         info, scopes=["https://www.googleapis.com/auth/androidpublisher"])
     cred.refresh(Request())
@@ -32,10 +38,23 @@ def play():
                     "respondida": bool(d), "resposta_atual": d.get("text") if d else None})
     return out
 
+def diag(nome, v, ini, fim):
+    # diagnóstico sem revelar o segredo: só tamanho e se começa/termina como esperado
+    print(f"[diag] {nome}: {len(v)} caracteres; começa certo={v.startswith(ini)}; termina certo={v.endswith(fim)}")
+
+def pem():
+    import re, textwrap
+    v = os.environ.get("ASC_PRIVATE_KEY", "").strip().lstrip("\ufeff").replace("\\n", "\n")
+    diag("ASC_PRIVATE_KEY", v, "-----BEGIN PRIVATE KEY-----", "-----END PRIVATE KEY-----")
+    body = re.sub(r"-----(BEGIN|END) [A-Z ]*PRIVATE KEY-----", "", v)
+    body = re.sub(r"[^A-Za-z0-9+/=]", "", body)
+    print(f"[diag] corpo base64 da chave: {len(body)} caracteres (esperado ~200)")
+    return "-----BEGIN PRIVATE KEY-----\n" + "\n".join(textwrap.wrap(body, 64)) + "\n-----END PRIVATE KEY-----\n"
+
 def apple_token():
     now = int(time.time())
     return jwt.encode({"iss": os.environ["ASC_ISSUER_ID"], "iat": now, "exp": now + 1200, "aud": "appstoreconnect-v1"},
-                      os.environ["ASC_PRIVATE_KEY"].strip().replace("\\n", "\n"), algorithm="ES256",
+                      pem(), algorithm="ES256",
                       headers={"kid": os.environ["ASC_KEY_ID"].strip(), "typ": "JWT"})
 
 def apple():
