@@ -1,0 +1,32 @@
+name: avaliacoes
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "listar (só busca, não responde)"
+        default: listar
+permissions:
+  contents: write
+concurrency:
+  group: avaliacoes
+  cancel-in-progress: false
+jobs:
+  rodar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests pyjwt cryptography google-auth
+      - name: Buscar avaliações
+        env:
+          GOOGLE_PLAY_SA_JSON: ${{ secrets.GOOGLE_PLAY_SA_JSON }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: python3 scripts/avaliacoes.py
+      - name: Commit
+        run: |
+          git config user.name "minhamoto-bot"
+          git config user.email "bot@minhamoto.app"
+          git add dados/avaliacoes/
+          git diff --cached --quiet || git commit -m "Avaliações: coleta"
+          git pull --rebase -q && git push
