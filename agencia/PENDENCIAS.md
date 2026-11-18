@@ -25,3 +25,14 @@
 - [ ] Carrossel aprovado → vídeo automático
 - [ ] Religar produção diária (após aprovar direção)
 - [ ] Lembrar: pedido de avaliação dentro do app entra na atualização seguinte
+
+## Rastreamento (iniciado 18/11) — checklist sem ponta solta
+- [x] Diagnóstico: Pixel MinhaMoto antigo (4034047696896725) recebia 247 "Compras" do imobiliário via UTMify ("Produto: Qualquer"). Corrigido 18/11: Corretores = só produtos imobiliários; MinhaMoto = só produtos MinhaMoto. MedHub segue "Qualquer" (Léo: deixar pra lá).
+- [ ] Pixel NOVO do MinhaMoto na BM 01 - Matriz, conectado à conta de anúncios "CA - MinhaMoto" (1563907929088006)
+- [ ] Página de vendas no Lovable (minhamotopagina.online): trocar pixel antigo pelo novo (Meta) e conferir pixel do TikTok; validar no Gerenciador de Eventos (PageView/ViewContent chegando) — Claude revisa
+- [ ] UTMify: entrada "MinhaMoto" apontar pro pixel novo (ou nova entrada só com produtos MinhaMoto, nunca "Qualquer")
+- [ ] Conferir campanhas C1/C2 (10 conjuntos otimizando em Compra do pixel antigo): são do imobiliário? Migrar pro Pixel Corretores
+- [ ] App MinhaMoto na Meta (dataset de app 884075288066806) — usar na etapa 6 (eventos do app via AppsFlyer)
+- [ ] Etapa 2: padrão de UTMs · Etapa 3: AppsFlyer (plano Growth, 12 mil conversões grátis 1º ano) + OneLink · Etapa 4: SDK (Davi) · Etapa 5: RevenueCat↔AppsFlyer · Etapa 6: postbacks Meta/TikTok · Etapa 7: Painel MinhaMoto (schema analytics no Supabase do app — aguardando ok do Davi)
+- [ ] TikTok Ads: logar/criar conta e pixel
+- [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
