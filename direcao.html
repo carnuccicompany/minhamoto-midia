@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Direção visual · MinhaMoto</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#05080e">
+<link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
+<style>
+@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/plus-jakarta-sans-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/plus-jakarta-sans-latin-800-normal.woff2) format('woff2');font-weight:800}
+:root{--bg:#05080e;--card:#0d1a2e;--line:#1b2c4a;--blue:#3d8bff;--yel:#ffd400;--txt:#eef3fb;--mut:#8ea2c2}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(120% 50% at 50% -10%,rgba(47,111,228,.22),transparent 60%),var(--bg);color:var(--txt);font:15px/1.45 Jak,system-ui,sans-serif}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px 80px}
+header{padding:22px 0 6px}
+h1{margin:0;font-size:22px;font-weight:800;letter-spacing:-.4px}
+.sub{color:var(--mut);font-size:13.5px;margin-top:4px}
+.tabs{position:sticky;top:0;z-index:5;display:flex;gap:8px;padding:12px 0;background:rgba(5,8,14,.9);backdrop-filter:blur(10px)}
+.tabs button{flex:1;padding:12px 10px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--mut);font:800 15px Jak,sans-serif;cursor:pointer}
+.tabs button.on.a{background:var(--yel);color:#111;border-color:var(--yel)}
+.tabs button.on.b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.tabs button.on.c{background:#fff;color:#111}
+.desc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin:10px 0 4px;color:var(--mut);font-size:14px}
+.desc b{color:var(--txt)}
+h2{font-size:17px;font-weight:800;margin:26px 0 10px;letter-spacing:-.2px}
+h2 small{color:var(--mut);font-weight:600;font-size:12.5px;margin-left:6px}
+.row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.row::-webkit-scrollbar{height:6px}.row::-webkit-scrollbar-thumb{background:var(--line);border-radius:9px}
+.row>*{scroll-snap-align:start;flex:0 0 auto;border-radius:14px;border:1px solid var(--line);background:#000;display:block}
+.r45 img{height:min(62vh,520px);aspect-ratio:4/5;object-fit:cover}
+.r916 img,.r916 video{height:min(72vh,640px);aspect-ratio:9/16;object-fit:cover}
+.lado{display:none}
+.cmp .lado{display:block}
+.cmp .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmp .grid>div{min-width:0}
+.cmp .tag{font-weight:800;margin-bottom:6px}
+.cmp .tag.a{color:var(--yel)}.cmp .tag.b{color:var(--blue)}
+.cmp .r45 img{height:min(40vh,340px)}
+.cmp .r916 img,.cmp .r916 video{height:min(52vh,460px)}
+.voto{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:14.5px}
+.voto b{color:var(--txt)}
+@media(max-width:700px){.cmp .grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header>
+<a href="painel.html">← Painel</a>
+<h1>Direção visual: escolha A, B ou mistura</h1>
+<div class="sub">Amostras de 17/11 com fonte Plus Jakarta Sans, sem caixa alta e "você" em tudo. Arraste pro lado pra ver todos os cards. Os vídeos tocam com som.</div>
+</header>
+<div class="tabs"><button class="a on" data-v="A">A · Nativo/Rua</button><button class="b" data-v="B">B · Premium produto</button><button class="c" data-v="C">Lado a lado</button></div>
+<div id="main"></div>
+<div class="voto"><b>Como escolher:</b> responde no chat do Claude com <b>A</b>, <b>B</b> ou <b>mistura</b>. Mistura significa gancho e capa com foto real da A, telas do app no fundo premium da B e CTA azul com preço em amarelo.<br><br><b>Já anotado pra corrigir antes de escalar:</b> celular maior nos vídeos (hoje ocupa uns 50% da altura). O retângulo "Sticker de perguntas aqui" do story só marca onde vai a caixinha do Instagram.</div>
+</div>
+<script>
+const D={A:{nome:'A · Nativo/Rua',desc:'<b>Foto real escura</b> de moto ou oficina, com destaque em <b>amarelo</b>. Parece post de motociclista, nativo do feed. Ponto forte: para o dedo de quem rola, porque o público se vê na foto. Ponto fraco: depende de uma foto boa.',v:['A1','A2']},
+B:{nome:'B · Premium produto',desc:'<b>Fundo azul-marinho</b> com luz azul, só o app, destaque em <b>azul</b>. Parece anúncio de app caro. Ponto forte: mostra o app com clareza e passa confiança pra assinar. Ponto fraco: pode parecer anúncio e o pessoal rolar direto.',v:['B1','B2']}};
+const P='agencia/direcao-v2/';
+const cards=(x,p)=>[1,2,3,4,5].map(i=>`<img loading="lazy" src="${P}${x}/${p}/0${i}.jpg" alt="">`).join('');
+const vids=x=>D[x].v.map(v=>`<video src="${P}${x}/${v}/video.mp4" controls playsinline preload="metadata"></video>`).join('');
+const blocos=x=>({
+ v:`<div class="row r916">${vids(x)}</div>`,
+ c:`<div class="row r45">${cards(x,'carrossel')}</div>`,
+ t:`<div class="row r916">${cards(x,'carrossel-tiktok')}</div>`,
+ s:`<div class="row r916"><img loading="lazy" src="${P}${x}/story/story.jpg" alt=""></div>`});
+const tit={v:'Vídeos motion <small>Reels, TikTok e Shorts · 9:16</small>',c:'Carrossel Instagram/Facebook <small>4:5</small>',t:'Carrossel TikTok <small>9:16 · rodapé livre pra legenda</small>',s:'Story <small>9:16</small>'};
+function render(v){
+ const m=document.getElementById('main');document.body.classList.toggle('cmp',v==='C');
+ if(v!=='C'){const b=blocos(v);m.innerHTML=`<div class="desc">${D[v].desc}</div>`+Object.keys(tit).map(k=>`<h2>${tit[k]}</h2>${b[k]}`).join('');}
+ else{const a=blocos('A'),b=blocos('B');m.innerHTML=Object.keys(tit).map(k=>`<h2>${tit[k]}</h2><div class="grid"><div><div class="tag a">A · Nativo/Rua</div>${a[k]}</div><div><div class="tag b">B · Premium produto</div>${b[k]}</div></div>`).join('');}
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v===v));
+ history.replaceState(null,'','#'+v);}
+document.querySelectorAll('.tabs button').forEach(x=>x.onclick=()=>render(x.dataset.v));
+render((location.hash||'#A').slice(1).toUpperCase().replace(/[^ABC]/g,'')||'A');
+</script></body></html>
