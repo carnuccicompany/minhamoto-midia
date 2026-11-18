@@ -42,3 +42,7 @@ e acrescente uma linha em `agencia/coordenador/log.md` (mantenha só os últimos
 - Tudo certo e não é a rodada das 8h: uma linha só, `✅ Agência ok · fila {N} dias`.
 - Rodada das 8h (resumo do dia): até 8 linhas: o que saiu ontem, fila, pendentes de aprovação, pendências que dependem do Léo.
 - Problema: comece com `⚠️` e diga em até 5 linhas o que quebrou, o que você já fez e o que precisa dele.
+
+
+## Frequência (Léo, 18/11): a cada 30 minutos
+Duas tarefas agendadas ("MM: Coordenador 24h · :09" e "· :39") rodam de hora em hora, defasadas 30 min — juntas cobrem cada meia hora, 24h por dia. Cada rodada lê o status.json da anterior pra não repetir ação. Além do checklist, confira se algum agente/produção começou e parou sem terminar (ex.: sessão interrompida, commit de produção que não chegou) e re-dispare ou avise. "Parou e ninguém viu" não pode acontecer.
