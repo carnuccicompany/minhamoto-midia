@@ -43,4 +43,13 @@
 - [ ] Pixel Meta novo recebeu 2 Purchase via API de Conversões (~13h de 18/11) — confirmar com o Léo se foram testes ou vendas reais
 - [ ] CONTINGÊNCIA Meta (Léo escolheu adiar, opção B em 18/11): hoje as contas de anúncio são da própria BM Matriz → se a Meta restringir a BM, a Matriz cai junto. Solução: criar BM só de anúncios com as contas, pixel/página compartilhados como parceiro. Ideal fazer antes de escalar gasto
 - [ ] DEPOIS do MinhaMoto: revisar os infoprodutos (Corretores, TEA, Perfect Class etc.) — tracking, campanhas, melhorias
+### AppsFlyer (iniciado 18/11)
+- [x] Conta criada: login leonardo@carnucci.com (alias do usuário carnucci@carnucci.com no Workspace; e-mails caem na caixa do Workspace)
+- [x] Apps cadastrados: iOS id6815447825 + Android com.carnuccicompany.minhamoto — moeda BRL, fuso São Paulo
+- [x] OneLink: subdomínio minhamoto.onelink.me, template PL15 (iOS→App Store, Android→Google Play, computador→minhamotopagina.online)
+- [ ] Davi: SDK AppsFlyer no app (chave de dev em AppsFlyer → App Settings; NÃO colar em chat/repo)
+- [ ] ANTES de trocar os botões da página pelo OneLink: adicionar "onelink.me" na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (senão o IC para de disparar)
+- [ ] Trocar botões da página (Lovable) pelo OneLink levando as UTMs (Smart Script / parâmetros)
+- [ ] Integrações de parceiros no AppsFlyer: Meta Ads (app 884075288066806) e TikTok for Business
+- [ ] Encaminhamento automático do Workspace (carnucci@carnucci.com) → carnuccicompany@gmail.com, pra Claude acompanhar e-mails (Léo autorizou a ideia; confirmar)
 - [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
