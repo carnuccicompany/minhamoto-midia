@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-18T12:40:00-03:00",
+ "rodada": "2026-11-18T13:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (12h02 SUCCEEDED; próx 15h02)",
@@ -8,19 +8,13 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:39 esta rodada; :09 SUCCEEDED 12h12)"
+  "coordenador": "rodando (:09 esta rodada; :39 SUCCEEDED 12h39)"
  },
- "publicacao_hoje": {
-  "12h": "DV16 publicado IG+FB 12h04",
-  "15h": "aguardando",
-  "18h": "aguardando",
-  "21h": "aguardando"
- },
+ "publicacao_hoje": {"12h": "DV16 publicado IG+FB 12h04", "15h": "aguardando", "18h": "aguardando", "21h": "aguardando"},
  "publicacao_ontem": "4/4 (DV01, S01, E03, B10)",
  "dias_de_fila": 26,
  "nao_publicados": 104,
  "pendentes_aprovacao": 0,
- "pendentes_obs": "fila/pendentes.json vazio (AG01–AG10 descartados em 18/11 pra refazer no padrão novo).",
  "tiktok_916": "113/113 com cards_tiktok 1080x1920",
  "painel_links": "ok",
  "acoes": [],
