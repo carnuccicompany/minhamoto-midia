@@ -48,8 +48,9 @@
 - [x] Apps cadastrados: iOS id6815447825 + Android com.carnuccicompany.minhamoto — moeda BRL, fuso São Paulo
 - [x] OneLink: subdomínio minhamoto.onelink.me, template PL15 (iOS→App Store, Android→Google Play, computador→minhamotopagina.online)
 - [ ] Davi: SDK AppsFlyer no app (chave de dev em AppsFlyer → App Settings; NÃO colar em chat/repo)
-- [ ] ANTES de trocar os botões da página pelo OneLink: adicionar "onelink.me" na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (senão o IC para de disparar)
-- [ ] Trocar botões da página (Lovable) pelo OneLink levando as UTMs (Smart Script / parâmetros)
+- [x] "onelink.me" adicionado na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (18/11)
+- [x] Botões da página trocados pelo OneLink com UTMs mapeadas (pid=utm_source, c=utm_campaign, af_adset=utm_medium, af_ad=utm_content, af_sub1=utm_term, af_sub2=ios/android, af_sub3=fbclid, af_sub4=ttclid) — testado 18/11: links ok, IC dispara na Meta (fbq) e TikTok, OneLink leva pra App Store certa
+- [ ] Léo: ativar plano Growth do AppsFlyer cadastrando forma de pagamento (sem isso: allowlist de redirecionamento bloqueada → computador cai na App Store web em vez de minhamotopagina.online; e várias integrações podem exigir). Depois: adicionar minhamotopagina.online no Redirect allowlist (Security Center)
 - [ ] Integrações de parceiros no AppsFlyer: Meta Ads (app 884075288066806) e TikTok for Business
 - [ ] Encaminhamento automático do Workspace (carnucci@carnucci.com) → carnuccicompany@gmail.com, pra Claude acompanhar e-mails (Léo autorizou a ideia; confirmar)
 - [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
