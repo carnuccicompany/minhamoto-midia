@@ -47,7 +47,7 @@
 - [x] Conta criada: login leonardo@carnucci.com (alias do usuário carnucci@carnucci.com no Workspace; e-mails caem na caixa do Workspace)
 - [x] Apps cadastrados: iOS id6815447825 + Android com.carnuccicompany.minhamoto — moeda BRL, fuso São Paulo
 - [x] OneLink: subdomínio minhamoto.onelink.me, template PL15 (iOS→App Store, Android→Google Play, computador→minhamotopagina.online)
-- [ ] Davi: SDK AppsFlyer no app (chave de dev em AppsFlyer → App Settings; NÃO colar em chat/repo)
+- [ ] Davi: SDK AppsFlyer no app — PAUSADO (18/11): sai junto na próxima build, com a mudança estética. Davi já tem a dev key. Na build: .env + variável no Codemagic (VITE_APPSFLYER_DEV_KEY) — conferir os dois no resumo dele
 - [x] "onelink.me" adicionado na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (18/11)
 - [x] Botões da página trocados pelo OneLink com UTMs mapeadas (pid=utm_source, c=utm_campaign, af_adset=utm_medium, af_ad=utm_content, af_sub1=utm_term, af_sub2=ios/android, af_sub3=fbclid, af_sub4=ttclid) — testado 18/11: links ok, IC dispara na Meta (fbq) e TikTok, OneLink leva pra App Store certa
 - [x] Cartão cadastrado no AppsFlyer (18/11) — plano com atribuição móvel ativo, 12.000 unidades grátis até 17/11/2027
