@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-11-18T12:18:59.700469Z",
+ "coletado_em": "2026-11-18T16:15:44.351826Z",
  "status": {
   "google_play": "ok (5 avaliações)",
   "app_store": "ok (6 avaliações)"
@@ -68,8 +68,8 @@
    "texto": "Sou mulher tenho moto, mas não entendo muito, esse app tá me facilitando demais.",
    "data": "2026-11-12T16:00:10-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o MinhaMoto está facilitando o cuidado com a sua moto, mesmo sem você precisar entender de mecânica. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
@@ -79,8 +79,8 @@
    "texto": "Gostei bastante e já indiquei pros amigos. Tipo de app que vale cada centavo.",
    "data": "2026-11-11T04:48:09-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação e por indicar o MinhaMoto para os seus amigos! Ficamos felizes em saber que o app vale cada centavo para você. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
@@ -90,8 +90,8 @@
    "texto": "Rápido, fácil e prático. Parabéns a equipe",
    "data": "2026-11-10T13:09:16-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pelos parabéns! Trabalhamos para que o MinhaMoto seja rápido, fácil e prático no dia a dia, e é ótimo saber que você percebeu isso. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
@@ -101,8 +101,8 @@
    "texto": "O mais confiavel, finalmente algum app que eu consigo ver tudo que eu preciso! ❤️🏍️",
    "data": "2026-11-10T06:27:57-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela confiança! Ficamos muito felizes em saber que, no MinhaMoto, você consegue ver tudo o que precisa sobre a sua moto em um só lugar. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
@@ -112,8 +112,8 @@
    "texto": "Meu marido adorou !",
    "data": "2026-11-09T16:48:28-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o seu marido adorou o MinhaMoto. Desejamos muitos quilômetros tranquilos para vocês. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
@@ -123,8 +123,8 @@
    "texto": "Aplicativo totalmente custo benefício, pro que entrega ta barato, top demais, recomendo",
    "data": "2026-11-09T16:41:26-08:00",
    "pais": "BRA",
-   "respondida": false,
-   "resposta_atual": null
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação e pela recomendação! Ficamos felizes em saber que você considera o MinhaMoto um ótimo custo-benefício pelo que ele entrega. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   }
  ]
 }
