@@ -25,3 +25,4 @@
 - 2026-11-18 16:40 · ok · fila 25 dias (103) · 12h DV16 e 15h J06 publicados (IG+FB) · 18h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · painel ok · sem ações
 - 2026-11-18 17:10 · ok · fila 25 dias (103) · 12h DV16 e 15h J06 publicados (IG+FB) · 18h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · painel ok · sem ações
 - 2026-11-18 17:40 · ok · fila 25 dias (103) · 12h DV16 e 15h J06 publicados (IG+FB) · 18h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · painel ok · sem ações
+- 2026-11-18 18:10 · ok · fila 25 dias (102) · 12h DV16, 15h J06 e 18h A07 publicados (IG+FB) · 21h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · painel ok · sem ações
