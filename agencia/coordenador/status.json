@@ -1,9 +1,28 @@
-{"rodada": "2026-11-18T08:40:00-03:00", "ok": true,
- "tarefas": {"post do horário + aviso TikTok": "ok (21h SUCCEEDED; próx 12h02)", "respostas às avaliações": "ok (21h13 SUCCEEDED; próx 09h13)", "vigia do Gmail": "ok (18h47 SUCCEEDED; próx 08h47)", "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)", "relatório Analista": "ok (1ª em 23/11)", "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)", "coordenador": "rodando"},
- "publicacao_hoje": {"12h": "aguardando", "15h": "aguardando", "18h": "aguardando", "21h": "aguardando"},
+{
+ "rodada": "2026-11-18T10:14:00-03:00",
+ "ok": true,
+ "tarefas": {
+  "post do horário + aviso TikTok": "ok (21h SUCCEEDED; próx 12h02)",
+  "respostas às avaliações": "ok (09h13 SUCCEEDED; próx 13h13)",
+  "vigia do Gmail": "ok (08h47 SUCCEEDED; próx 13h47)",
+  "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
+  "relatório Analista": "ok (1ª em 23/11)",
+  "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
+  "coordenador": "rodando"
+ },
+ "publicacao_hoje": {
+  "12h": "aguardando",
+  "15h": "aguardando",
+  "18h": "aguardando",
+  "21h": "aguardando"
+ },
  "publicacao_ontem": "4/4 (DV01, S01, E03, B10)",
- "dias_de_fila": 26, "nao_publicados": 105,
- "pendentes_aprovacao": 10, "pendentes_obs": "AG01–AG10 em fila/pendentes.json desde 17/11 (<24h; lembrete a partir de 18/11 09:37).",
+ "dias_de_fila": 26,
+ "nao_publicados": 105,
+ "pendentes_aprovacao": 0,
+ "pendentes_obs": "fila/pendentes.json vazio (AG01–AG10 descartados em 18/11 pra refazer no padrão novo).",
  "tiktok_916": "113/113 com cards_tiktok 1080x1920",
  "painel_links": "ok",
- "acoes": ["resumo diário das 8h enviado"], "alertas": []}
+ "acoes": [],
+ "alertas": []
+}
