@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#05080e">
 <link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
 <style>
-@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/plus-jakarta-sans-latin-600-normal.woff2) format('woff2');font-weight:600}
-@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/plus-jakarta-sans-latin-800-normal.woff2) format('woff2');font-weight:800}
+@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/poppins-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:Jak;src:url(agencia/direcao-v2/fontes/poppins-latin-800-normal.woff2) format('woff2');font-weight:800}
 :root{--bg:#05080e;--card:#0d1a2e;--line:#1b2c4a;--blue:#3d8bff;--yel:#ffd400;--txt:#eef3fb;--mut:#8ea2c2}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(120% 50% at 50% -10%,rgba(47,111,228,.22),transparent 60%),var(--bg);color:var(--txt);font:15px/1.45 Jak,system-ui,sans-serif}
@@ -45,23 +45,23 @@ h2 small{color:var(--mut);font-weight:600;font-size:12.5px;margin-left:6px}
 <header>
 <a href="painel.html">← Painel</a>
 <h1>Direção visual: escolha A, B ou mistura</h1>
-<div class="sub">Amostras de 17/11 com fonte Plus Jakarta Sans, sem caixa alta e "você" em tudo. Arraste pro lado pra ver todos os cards. Os vídeos tocam com som.</div>
+<div class="sub">Amostras refeitas em 18/11 com o feedback do Léo: azuis oficiais + toque limão, Poppins, mockup único, telas cheias e copy premium. Arraste pro lado pra ver todos os cards. Os vídeos tocam com som.</div>
 </header>
 <div class="tabs"><button class="a on" data-v="A">A · Nativo/Rua</button><button class="b" data-v="B">B · Premium produto</button><button class="c" data-v="C">Lado a lado</button></div>
 <div id="main"></div>
-<div class="voto"><b>Como escolher:</b> responde no chat do Claude com <b>A</b>, <b>B</b> ou <b>mistura</b>. Mistura significa gancho e capa com foto real da A, telas do app no fundo premium da B e CTA azul com preço em amarelo.<br><br><b>Já anotado pra corrigir antes de escalar:</b> celular maior nos vídeos (hoje ocupa uns 50% da altura). O retângulo "Sticker de perguntas aqui" do story só marca onde vai a caixinha do Instagram.</div>
+<div class="voto"><b>Como escolher:</b> responde no chat do Claude com <b>A</b>, <b>B</b> ou <b>mistura</b>. A e B seguem as duas, alternando na fila.<br><br><b>O que mudou (18/11):</b> sem amarelo (azuis do app + detalhe limão), fonte Poppins, o mesmo celular em todas as cenas com entrada suave e rolagem, barra de status refeita, telas cheias com uma moto real (CG 160 Titan 2022) mostrando em dia, atenção, vencido e sem histórico, CTA novo com as lojas separadas embaixo. O retângulo tracejado do story só marca onde vai a caixinha de perguntas do Instagram.</div>
 </div>
 <script>
-const D={A:{nome:'A · Nativo/Rua',desc:'<b>Foto real escura</b> de moto ou oficina, com destaque em <b>amarelo</b>. Parece post de motociclista, nativo do feed. Ponto forte: para o dedo de quem rola, porque o público se vê na foto. Ponto fraco: depende de uma foto boa.',v:['A1','A2']},
+const D={A:{nome:'A · Nativo/Rua',desc:'<b>Foto real escura</b> de moto ou oficina, com destaque em <b>azul claro</b>. Parece post de motociclista, nativo do feed. Ponto forte: para o dedo de quem rola, porque o público se vê na foto. Ponto fraco: depende de uma foto boa.',v:['A1','A2']},
 B:{nome:'B · Premium produto',desc:'<b>Fundo azul-marinho</b> com luz azul, só o app, destaque em <b>azul</b>. Parece anúncio de app caro. Ponto forte: mostra o app com clareza e passa confiança pra assinar. Ponto fraco: pode parecer anúncio e o pessoal rolar direto.',v:['B1','B2']}};
-const P='agencia/direcao-v2/';
-const cards=(x,p)=>[1,2,3,4,5].map(i=>`<img loading="lazy" src="${P}${x}/${p}/0${i}.jpg" alt="">`).join('');
-const vids=x=>D[x].v.map(v=>`<video src="${P}${x}/${v}/video.mp4" controls playsinline preload="metadata"></video>`).join('');
+const P='agencia/direcao-v2/';const V='?v=20261118b';
+const cards=(x,p)=>[1,2,3,4,5].map(i=>`<img loading="lazy" src="${P}${x}/${p}/0${i}.jpg${V}" alt="">`).join('');
+const vids=x=>D[x].v.map(v=>`<video src="${P}${x}/${v}/video.mp4${V}" controls playsinline preload="metadata"></video>`).join('');
 const blocos=x=>({
  v:`<div class="row r916">${vids(x)}</div>`,
  c:`<div class="row r45">${cards(x,'carrossel')}</div>`,
  t:`<div class="row r916">${cards(x,'carrossel-tiktok')}</div>`,
- s:`<div class="row r916"><img loading="lazy" src="${P}${x}/story/story.jpg" alt=""></div>`});
+ s:`<div class="row r916"><img loading="lazy" src="${P}${x}/story/story.jpg${V}" alt=""></div>`});
 const tit={v:'Vídeos motion <small>Reels, TikTok e Shorts · 9:16</small>',c:'Carrossel Instagram/Facebook <small>4:5</small>',t:'Carrossel TikTok <small>9:16 · rodapé livre pra legenda</small>',s:'Story <small>9:16</small>'};
 function render(v){
  const m=document.getElementById('main');document.body.classList.toggle('cmp',v==='C');

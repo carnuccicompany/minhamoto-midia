@@ -27,6 +27,37 @@ async def cenario(pg, nome):
 async def nav(pg, path):
     await pg.evaluate("(p)=>{history.pushState({__TSR_index:(history.state?.__TSR_index||0)+1},'',p); dispatchEvent(new PopStateEvent('popstate',{state:history.state}));}", path)
     await pg.wait_for_timeout(2200); await pg.evaluate('window.scrollTo(0,0)')
+
+def barra_status(fg, bg, largura, alt=177, k=4):
+    """Barra de status estilo iOS, desenhada em 4x e reduzida (nítida, sem serrilhado).
+    Sem ilha: a ilha dinâmica é desenhada pelo mockup do celular (mesma em todas as cenas)."""
+    Wk, Hk = largura*k, alt*k
+    im = Image.new('RGB', (Wk, Hk), bg); d = ImageDraw.Draw(im)
+    f = None
+    for cand in ['/home/claude/minhamoto-midia/agencia/designer/assets/fontes/inter-latin-600-normal.woff2',
+                 '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']:
+        try: f = ImageFont.truetype(cand, 50*k); break
+        except Exception: pass
+    cy = 88*k   # linha central dos elementos (alinhada com o centro da ilha 33..144)
+    # hora
+    tb = d.textbbox((0, 0), '9:41', font=f); th = tb[3]-tb[1]
+    d.text((150*k, cy - th//2 - tb[1]), '9:41', fill=fg, font=f)
+    # sinal: 4 barras
+    x = largura*k - 300*k; base = cy + 17*k
+    for i, h in enumerate([12, 18, 25, 33]):
+        d.rounded_rectangle([x + i*17*k, base - h*k, x + i*17*k + 11*k, base], radius=3*k, fill=fg)
+    # wi-fi: 3 arcos concêntricos + ponto, abertura de 90° pra cima
+    cx = largura*k - 196*k; cyw = cy + 16*k
+    for r in (40, 27):
+        d.arc([cx - r*k, cyw - r*k, cx + r*k, cyw + r*k], 225, 315, fill=fg, width=8*k)
+    d.pieslice([cx - 14*k, cyw - 14*k, cx + 14*k, cyw + 14*k], 225, 315, fill=fg)
+    # bateria
+    xb = largura*k - 150*k; y0 = cy - 17*k; y1 = cy + 17*k
+    d.rounded_rectangle([xb, y0, xb + 72*k, y1], radius=10*k, outline=fg, width=4*k)
+    d.rounded_rectangle([xb + 7*k, y0 + 7*k, xb + 58*k, y1 - 7*k], radius=5*k, fill=fg)
+    d.rounded_rectangle([xb + 76*k, cy - 6*k, xb + 82*k, cy + 6*k], radius=3*k, fill=fg)
+    return im.resize((largura, alt), Image.LANCZOS)
+
 def compor(raw, dest, full=False):
     im = Image.open(raw).convert('RGB'); s=3
     if full:
@@ -35,23 +66,11 @@ def compor(raw, dest, full=False):
     can = Image.new('RGB', (W*s, H*s), bg); can.paste(im, (0, TOP*s))
     # faixa inferior com a cor do rodapé
     bb = im.getpixel((im.width//2, im.height-2)); ImageDraw.Draw(can).rectangle([0,(TOP+im.height//s)*s, W*s, H*s], fill=bb)
-    d = ImageDraw.Draw(can)
     lum = sum(bg)/3; fg = (255,255,255) if lum<128 else (0,0,0)
-    try: f = ImageFont.truetype('/home/claude/minhamoto-midia/agencia/direcao-v2/fontes/../fontes/sora-latin-800-normal.woff2', 51)
-    except Exception: f = None
-    try: f = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 50)
-    except Exception: f = ImageFont.load_default()
-    d.text((96*1.0+40, 58), '9:41', fill=fg, font=f)
-    # ilha dinâmica
-    d.rounded_rectangle([W*s//2-188, 33, W*s//2+188, 33+111], radius=56, fill=(0,0,0))
-    # ícones: sinal, wifi, bateria
-    x = W*s-250; y=66
-    for i,h in enumerate([14,20,27,34]): d.rounded_rectangle([x+i*16, y+34-h, x+i*16+10, y+34], radius=3, fill=fg)
-    x2 = x+84; d.pieslice([x2, y-6, x2+50, y+44], 225, 315, fill=fg)
-    d.pieslice([x2+12, y+8, x2+38, y+34], 225, 315, fill=bg); d.pieslice([x2+18, y+16, x2+32, y+30], 225, 315, fill=fg)
-    xb = x2+70; d.rounded_rectangle([xb, y+4, xb+66, y+34], radius=9, outline=fg, width=4); d.rounded_rectangle([xb+6, y+10, xb+56, y+28], radius=5, fill=fg); d.rounded_rectangle([xb+69, y+14, xb+74, y+24], radius=2, fill=fg)
-    # home indicator
-    d.rounded_rectangle([W*s//2-200, H*s-25, W*s//2+200, H*s-10], radius=8, fill=fg)
+    can.paste(barra_status(fg, bg, W*s), (0, 0))
+    # home indicator (supersample 4x)
+    hi = Image.new('RGBA', (W*s*4, 25*4), (0,0,0,0)); ImageDraw.Draw(hi).rounded_rectangle([ (W*s//2-200)*4, 0, (W*s//2+200)*4, 15*4], radius=8*4, fill=fg+(255,))
+    hi = hi.resize((W*s, 25), Image.LANCZOS); can.paste(hi, (0, H*s-25), hi)
     can.save(dest)
 async def main(plano):
     async with async_playwright() as p:

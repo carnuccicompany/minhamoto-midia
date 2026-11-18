@@ -4,10 +4,12 @@ Telas do MinhaMoto renderizadas direto do código mais novo do app — **não** 
 Use sempre estas telas nos criativos. As gravações antigas do celular saíram do repositório.
 
 - **Commit do app:** `bb2ad21` (minhamotooficial, main, 11/11/2026 — "Isola checkout Apple Sandbox do Codigo de amigo")
-- **Gerado em:** 17/11/2026
+- **Gerado em:** 18/11/2026 (recaptura com moto simulada nova e barra de status redesenhada)
 - **Como:** modo "Prévia visual" do próprio app (`/preview-visual`, só roda em localhost). Ele bloqueia a rede e usa dados fictícios em memória. Nenhum login, Supabase ou RevenueCat foi usado.
 - **Formato:** iPhone 15. Tela de 393×852 pt a 3x, ou seja 1179×2556 px. Barra de status limpa (9:41) e home indicator desenhados por cima. Os controles que só existem na prévia (botão DEV, selo "dados fictícios", chips de cenário, "Testar onboarding", "Só prévia", dicas do tutorial) foram escondidos.
-- **Dados:** moto fictícia "Moto de demonstração" (Honda CG 160 Fan 2022, 18.400 km). Também aparecem a "Segunda moto" (CB 300F Twister ABS 2024) e a conta "Conta de demonstração / usuario@exemplo.com", placa "EXEMPLO". Não há dado pessoal real.
+- **Dados (18/11):** moto simulada "Minha Titan" (Honda CG 160 Titan 2022, 29.800 km), histórico com 7 serviços, saúde 79%/95%, e as situações do app aparecendo: em dia (7 itens), precisa de atenção (corrente, bateria sem histórico), vencido (folga das válvulas), próximo marco 30.000 km (faltam 200). Dono fictício "Rafael Souza". Os dados foram trocados só numa cópia local do app (`src/lib/previa-fixtures.ts`), nunca no repositório do app. Nunca usar "Moto de demonstração".
+- **Barra de status:** desenhada em 4x e reduzida (`barra_status` em `_gerador/capturar.py`), sem ilha (a ilha é do mockup, igual em todas as cenas).
+- **Não usar nos criativos:** `03-manutencao` / `20-manutencao-atrasados` (card do marco mostra "pendentes") e `21`–`23` (pop-ups antigos, não recapturados).
 
 ## Telas (1179×2556)
 

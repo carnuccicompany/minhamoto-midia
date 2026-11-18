@@ -1,4 +1,9 @@
-# Direção criativa v2 — amostras pro Léo escolher (17/11)
+# Direção criativa v2: os dois estilos ativos (atualizado 18/11)
+
+> **Revisão 18/11** (feedback do Léo nas amostras): A e B seguem as duas, alternando na fila. Sem amarelo: azuis oficiais do app (#287AF5, #005FDE, #52A9FE, navy #051F43→#0F57A8, #010711) com toque de verde-limão #C6FF00 só em detalhe. Fonte Poppins. O mesmo mockup em todas as cenas (entra meio de lado, centraliza e dá zoom; rolagem suave; toques simulados), barra de status redesenhada em 4x, ilha só pelo mockup. Telas novas com a moto simulada CG 160 Titan 2022 "Minha Titan" (29.800 km): em dia, atenção, vencido e sem histórico. CTA: "Sua moto. Sob controle." (A1), "Sua moto em dia, sem esforço." (A2), "Controle total da sua moto." (B1), "Baixe o MinhaMoto / Seu plano de revisão na palma da mão." (B2), selo "por R$19,90" e lojas separadas embaixo. Copy premium. Régua: `agencia/DESIGN-MINHAMOTO.md`. Checagem automática: `python3 agencia/designer/revisar_video.py <arquivos>`.
+> Histórico abaixo (17/11) mantido só como referência; onde conflitar, vale o de cima.
+
+## Histórico (17/11)
 
 Feita depois do feedback de 17/11 (lote piloto reprovado). **Revisão 17/11 tarde:** Léo reprovou a fonte em caixa-alta → tudo em frase normal com Plus Jakarta Sans (800/600/500), letter-spacing -0,035em; celulares retos e centralizados; margens laterais de 90px. Poucas peças, pra acertar a direção antes de escalar.
 Logo sempre com o guidão pra DIREITA. Telas só do layout atual, geradas do código do app (`agencia/designer/assets/telas-app/`, prévia visual com dados fictícios, status bar 9:41). Nada de gravação de tela antiga nem filmagem antiga.

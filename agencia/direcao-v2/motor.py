@@ -58,26 +58,31 @@ def altura_celular(w):
     """Altura do celular para a tela 1179x2556 caber sem sobra (moldura de 22px)."""
     return int(round((w - 44)*TH/TW)) + 44
 
+# Cores oficiais do MinhaMoto (tema do app, src/styles.css, convertidas de OKLCH):
+AZUL = '#287AF5'        # --primary  oklch(0.6 0.2 259)
+AZUL_ESC = '#005FDE'    # --primary tema claro oklch(0.52 0.21 259)
+AZUL_CLARO = '#52A9FE'  # barras de progresso oklch(0.72 0.15 250)
+AZUL_SUAVE = '#A5D7FF'  # oklch(0.86 0.08 245)
+NAVY = '#051F43'; NAVY2 = '#0F57A8'; PRETO = '#010711'   # --opening-background do app
+LIMAO = '#C6FF00'       # toque de marca (o tema do app não tem verde-limão) — só em detalhe pequeno
+LUZ = 'rgba(82,169,254,'   # luz azul (AZUL_CLARO)
+
 ESTILOS = {
   # A — Nativo/Rua: legenda grossa estilo TikTok, tela cheia, foto em movimento
-  'A': dict(fonte='j800', titulo='j800', apoio='j600', destaque='#FFD400', branco='#FFFFFF',
-            bg='radial-gradient(120% 80% at 50% 0%, #1a5cff 0%, #0b2a8a 45%, #050c24 100%)'),
+  'A': dict(fonte='j800', titulo='j800', apoio='j500', destaque=AZUL_CLARO, branco='#FFFFFF', limao=LIMAO, azul=AZUL, azul_esc=AZUL_ESC,
+            bg=f'radial-gradient(110% 70% at 50% 18%, {NAVY2} 0%, {NAVY} 48%, {PRETO} 100%)'),
   # B — Premium produto: Plus Jakarta Sans 800, azul elétrico, celular 3D em fundo navy
-  'B': dict(fonte='j800', titulo='j800', apoio='j500', destaque='#3D8BFF', branco='#F4F7FC',
-            bg='radial-gradient(90% 60% at 50% 38%, #12306b 0%, #08142e 55%, #03060f 100%)'),
+  'B': dict(fonte='j800', titulo='j800', apoio='j500', destaque=AZUL_CLARO, branco='#F4F7FC', limao=LIMAO, azul=AZUL, azul_esc=AZUL_ESC,
+            bg=f'radial-gradient(90% 60% at 50% 38%, {NAVY2} 0%, {NAVY} 52%, {PRETO} 100%)'),
 }
 
 CSS_FONTES = f"""
-@font-face{{font-family:j800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
-@font-face{{font-family:j700;src:url('file://{FONTES}/plus-jakarta-sans-latin-700-normal.woff2')}}
-@font-face{{font-family:j600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
-@font-face{{font-family:j500;src:url('file://{FONTES}/plus-jakarta-sans-latin-500-normal.woff2')}}
-@font-face{{font-family:m900;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
-@font-face{{font-family:m800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
-@font-face{{font-family:m600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
-@font-face{{font-family:anton;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
-@font-face{{font-family:pop600;src:url('file://{FONTES}/plus-jakarta-sans-latin-600-normal.woff2')}}
-@font-face{{font-family:pop800;src:url('file://{FONTES}/plus-jakarta-sans-latin-800-normal.woff2')}}
+@font-face{{font-family:j800;src:url('file://{FONTES}/poppins-latin-800-normal.woff2')}}
+@font-face{{font-family:j700;src:url('file://{FONTES}/poppins-latin-700-normal.woff2')}}
+@font-face{{font-family:j600;src:url('file://{FONTES}/poppins-latin-600-normal.woff2')}}
+@font-face{{font-family:j500;src:url('file://{FONTES}/poppins-latin-500-normal.woff2')}}
+@font-face{{font-family:pop600;src:url('file://{FONTES}/poppins-latin-600-normal.woff2')}}
+@font-face{{font-family:pop800;src:url('file://{FONTES}/poppins-latin-800-normal.woff2')}}
 """
 
 PAGINA = """<!doctype html><html><head><meta charset=utf-8><style>
@@ -102,28 +107,30 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .sbar .r{position:absolute;right:10%%;top:32%%;display:flex;gap:12px;align-items:center}
 .island{position:absolute;left:50%%;top:1.29%%;width:31.9%%;height:4.34%%;transform:translateX(-50%%);background:#000;border-radius:40px}
 .glare{position:absolute;inset:0;border-radius:98px;background:linear-gradient(115deg,rgba(255,255,255,.13) 0%%,rgba(255,255,255,0) 28%%,rgba(255,255,255,0) 70%%,rgba(255,255,255,.05) 100%%);pointer-events:none}
-.ring{position:absolute;border-radius:28px;border:5px solid #3D8BFF;box-shadow:0 0 0 6px rgba(61,139,255,.25),0 0 60px rgba(61,139,255,.6)}
+.ring{position:absolute;border-radius:28px;border:5px solid %(destaque)s;box-shadow:0 0 0 6px rgba(82,169,254,.25),0 0 60px rgba(82,169,254,.6)}
 .tap{position:absolute;width:120px;height:120px;border-radius:50%%;border:6px solid rgba(255,255,255,.9);background:rgba(255,255,255,.18)}
 #txt{position:absolute;inset:0}
 .t{position:absolute;text-align:center;left:140px;right:140px}
 .cap{font-family:%(fonte)s;color:#fff;
-  text-shadow:0 3px 6px rgba(0,0,0,.55),0 8px 40px rgba(0,0,0,.85);line-height:1.06;letter-spacing:-.035em}
+  text-shadow:0 3px 6px rgba(0,0,0,.55),0 8px 40px rgba(0,0,0,.85);line-height:1.12;letter-spacing:-.02em}
 .cap .w{display:inline-block;margin:0 .11em;transform-origin:50%% 70%%}
 .cap .hl{color:%(destaque)s}
-.tit{font-family:%(titulo)s;color:%(branco)s;line-height:1.05;letter-spacing:-.035em;word-spacing:.1em}
+.tit{font-family:%(titulo)s;color:%(branco)s;line-height:1.12;letter-spacing:-.02em}
 .tit .hl{color:%(destaque)s}
+.lm{display:block;width:96px;height:8px;border-radius:8px;background:%(limao)s;margin:26px auto 0;box-shadow:0 0 24px rgba(198,255,0,.45)}
 .apo{font-family:%(apoio)s;color:#c9d6ea;line-height:1.3;letter-spacing:-.01em;text-wrap:balance}
 .badge{position:absolute;display:flex;align-items:center;gap:18px;padding:16px 28px 16px 18px;border-radius:70px;
   background:linear-gradient(135deg,#2b6dff,#123fc4);box-shadow:0 14px 40px rgba(0,0,0,.45),0 0 0 3px rgba(255,255,255,.18) inset;
   font-family:j800;font-size:40px;color:#fff;letter-spacing:-.01em}
 .badge img{width:70px;height:70px;border-radius:18px}
 .cta{position:absolute;left:0;right:0;text-align:center}
-.cta img.ic{width:260px;height:260px;border-radius:62px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 120px rgba(61,139,255,.55)}
+.cta img.ic{width:260px;height:260px;border-radius:62px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 120px rgba(82,169,254,.55)}
 .cta .hl{color:%(destaque)s}
-.cta .selos{margin-top:46px}
-.cta .selos img{width:600px}
-.preco{display:inline-block;margin-top:34px;padding:18px 46px;border-radius:24px;background:#FFD400;color:#0a0a0a;font-family:j800;font-size:64px;letter-spacing:-.02em;
-  box-shadow:0 14px 0 #b38f00,0 26px 60px rgba(0,0,0,.45)}
+.preco{display:inline-flex;align-items:center;gap:18px;margin-top:40px;padding:18px 44px 18px 34px;border-radius:999px;background:linear-gradient(135deg,%(azul)s,%(azul_esc)s);color:#fff;font-family:j700;font-size:58px;letter-spacing:-.01em;
+  box-shadow:0 0 0 3px rgba(255,255,255,.16) inset,0 20px 60px rgba(40,122,245,.45)}
+.preco i{width:20px;height:20px;border-radius:50%%;background:%(limao)s;box-shadow:0 0 18px rgba(198,255,0,.7)}
+.selosAbs{position:absolute;left:0;right:0;text-align:center}
+.selosAbs img{width:560px}
 </style></head><body>
 <div id=bg></div><div id=luz></div><div id=vignette></div>
 <div id=phonewrap><div id=phone></div></div>
@@ -230,7 +237,7 @@ class Video:
 def bg_grad(estilo):
     css = ESTILOS[estilo]['bg']
     def f(tl, tg):
-        luz = (f"radial-gradient(38% 22% at 50% 64%, rgba(61,139,255,.28), rgba(0,0,0,0) 70%), radial-gradient(40% 25% at {50+30*math.sin(tg*0.6):.1f}% {30+8*math.cos(tg*0.5):.1f}%, rgba(61,139,255,.22), rgba(0,0,0,0) 70%)")
+        luz = (f"radial-gradient(38% 22% at 50% 64%, rgba(82,169,254,.28), rgba(0,0,0,0) 70%), radial-gradient(40% 25% at {50+30*math.sin(tg*0.6):.1f}% {30+8*math.cos(tg*0.5):.1f}%, rgba(82,169,254,.22), rgba(0,0,0,0) 70%)")
         return {'bgk': 'grad'+estilo, 'bghtml': f"<div class=grad style=\"background:{css}\"></div>", 'luz': luz,
                 'vig': 'radial-gradient(130% 90% at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%)', 'phone': None}
     return f
@@ -280,7 +287,7 @@ def celular(nome, dur, w=760, x=0, y=60, rot=(-14, 0), tilt=(6, 0), esc=(0.92, 1
         flut = 6*math.sin(tg*1.4)
         sc *= 1 + push*ease(tl/dur)
         tr = f"translate({x}px,{y+flut:.1f}px) rotateY({ry:.2f}deg) rotateX({rx:.2f}deg) scale({sc:.4f})"
-        shadow = "drop-shadow(0 60px 70px rgba(0,0,0,.6)) drop-shadow(0 20px 24px rgba(0,0,0,.45)) drop-shadow(0 0 90px rgba(61,139,255,.25))"
+        shadow = "drop-shadow(0 60px 70px rgba(0,0,0,.6)) drop-shadow(0 20px 24px rgba(0,0,0,.45)) drop-shadow(0 0 90px rgba(82,169,254,.25))"
         sw = w - 44; e = sw/TW
         kz = ease(max(0, (tl - 0.5))/max(0.01, dur - 0.9))
         if rola:
@@ -347,19 +354,22 @@ def T_badge(texto='APP MINHAMOTO', y=170):
                 f"<img src='file://{ic}'>{H.escape(texto)}</div>")
     return f
 
-def T_cta(titulo, sub=None, preco=None, y=330, estilo='A'):
+def T_cta(titulo, sub=None, preco=None, y=330, estilo='A', y_selos=1340):
+    """CTA final: ícone, título, traço limão, apoio, selo de preço. Selos das lojas separados, mais abaixo (régua do Léo)."""
     ic = os.path.join(ASSETS, 'icon.png'); selos = os.path.join(ASSETS, 'selos-lojas.png')
-    fam = 'j800'
     def f(tl):
         k1 = eback(min(1, tl/0.35)); k2 = eout((tl - 0.25)/0.35); k3 = eout((tl - 0.45)/0.35); k4 = eback(max(0, min(1, (tl - 0.6)/0.35)))
+        k5 = eout((tl - 0.8)/0.4)
         s = (f"<div class=cta style='top:{y}px'>"
-             f"<img class=ic src='file://{ic}' style='transform:scale({0.5+0.5*k1:.3f})'>"
-             f"<div style='font-family:{fam};font-size:112px;color:#fff;line-height:1.05;letter-spacing:-.035em;word-spacing:.1em;margin-top:56px;padding:0 140px;text-wrap:balance;"
-             f"opacity:{k2:.2f};transform:translateY({(1-k2)*30:.0f}px)'>{titulo}</div>")
+             f"<img class=ic src='file://{ic}' style='width:220px;height:220px;border-radius:52px;transform:scale({0.5+0.5*k1:.3f})'>"
+             f"<div class=tit style='font-size:96px;margin-top:56px;padding:0 140px;text-wrap:balance;"
+             f"opacity:{k2:.2f};transform:translateY({(1-k2)*30:.0f}px)'>{titulo}</div>"
+             f"<span class=lm style='opacity:{k3:.2f};width:{96*k3:.0f}px'></span>")
         if sub:
-            s += f"<div style='font-family:j500;font-size:46px;color:#dbe6ff;margin-top:24px;letter-spacing:-.01em;padding:0 140px;text-wrap:balance;line-height:1.3;opacity:{k3:.2f}'>{H.escape(sub)}</div>"
+            s += f"<div class=apo style='font-size:46px;color:#dbe6ff;margin-top:26px;padding:0 140px;opacity:{k3:.2f}'>{H.escape(sub)}</div>"
         if preco:
-            s += f"<div class=preco style='transform:scale({max(0.01,k4):.3f})'>{H.escape(preco)}</div>"
-        s += f"<div class=selos style='opacity:{k3:.2f}'><img src='file://{selos}'></div></div>"
+            s += f"<div class=preco style='transform:scale({max(0.01,k4):.3f})'><i></i>{H.escape(preco)}</div>"
+        s += "</div>"
+        s += f"<div class=selosAbs style='top:{y_selos}px;opacity:{k5:.2f};transform:translateY({(1-k5)*24:.0f}px)'><img src='file://{selos}'></div>"
         return s
     return f
