@@ -1,8 +1,8 @@
 {
- "coletado_em": "2026-11-18T00:15:10.023726Z",
+ "coletado_em": "2026-11-18T11:45:59.944542Z",
  "status": {
   "google_play": "ok (5 avaliações)",
-  "app_store": "ERRO: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. InvalidData(InvalidLength(113))"
+  "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
   {
@@ -59,6 +59,72 @@
    "aparelho": "r0q (Galaxy S22)",
    "respondida": true,
    "resposta_atual": "Sentimos muito pelo transtorno! Queremos entender o que aconteceu. Escreva para suporte@carnucci.com com o modelo do seu celular e o que aparece na tela, para resolvermos o quanto antes. — Equipe MinhaMoto"
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-7127-8c2e00000000",
+   "nota": 4,
+   "titulo": "Recomendo",
+   "texto": "Sou mulher tenho moto, mas não entendo muito, esse app tá me facilitando demais.",
+   "data": "2026-11-12T16:00:10-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-70cb-781d00000000",
+   "nota": 5,
+   "titulo": "Todo motoqueiro deveria ter!",
+   "texto": "Gostei bastante e já indiquei pros amigos. Tipo de app que vale cada centavo.",
+   "data": "2026-11-11T04:48:09-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-70a7-7e6300000000",
+   "nota": 5,
+   "titulo": "Muito bom",
+   "texto": "Rápido, fácil e prático. Parabéns a equipe",
+   "data": "2026-11-10T13:09:16-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-7094-64a700000000",
+   "nota": 5,
+   "titulo": "Melhor app pra quem ama motos!",
+   "texto": "O mais confiavel, finalmente algum app que eu consigo ver tudo que eu preciso! ❤️🏍️",
+   "data": "2026-11-10T06:27:57-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-7075-067800000000",
+   "nota": 5,
+   "titulo": "Aplicativo fora da curva",
+   "texto": "Meu marido adorou !",
+   "data": "2026-11-09T16:48:28-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-7074-be2a00000000",
+   "nota": 5,
+   "titulo": "Extremamente útil",
+   "texto": "Aplicativo totalmente custo benefício, pro que entrega ta barato, top demais, recomendo",
+   "data": "2026-11-09T16:41:26-08:00",
+   "pais": "BRA",
+   "respondida": false,
+   "resposta_atual": null
   }
  ]
 }
