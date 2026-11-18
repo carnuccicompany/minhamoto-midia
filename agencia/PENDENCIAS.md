@@ -39,7 +39,7 @@
 - [x] Campanhas [ABO 121] {AP …} na CA 01 (BM Matriz) são dos Corretores — NÃO mexer (decisão do Léo 18/11)
 - [x] CA - MinhaMoto (1563907929088006, BM Matriz) conectada na UTMify (Integrações → Meta Ads) — 18/11. Pixel 1330… conectado só nela (CA 01 desconectada). Perfil anunciante: "Fernanda Soares" (acesso total)
 - [x] UTMify → TikTok Ads: perfil MinhaMoto + conta "MinhaMoto Ads Manager" ligados (18/11)
-- [ ] ATENÇÃO: o perfil TikTok "Perfect Class" SUMIU da UTMify (foi substituído pelo MinhaMoto) → gasto TikTok do Perfect Class parou de entrar. Religar com "Adicionar perfil" se ainda roda anúncio lá
+- [x] Perfil TikTok "Perfect Class" removido da UTMify DE PROPÓSITO pelo Léo (18/11) — não religar
 - [ ] Pixel Meta novo recebeu 2 Purchase via API de Conversões (~13h de 18/11) — confirmar com o Léo se foram testes ou vendas reais
 - [ ] CONTINGÊNCIA Meta (Léo escolheu adiar, opção B em 18/11): hoje as contas de anúncio são da própria BM Matriz → se a Meta restringir a BM, a Matriz cai junto. Solução: criar BM só de anúncios com as contas, pixel/página compartilhados como parceiro. Ideal fazer antes de escalar gasto
 - [ ] DEPOIS do MinhaMoto: revisar os infoprodutos (Corretores, TEA, Perfect Class etc.) — tracking, campanhas, melhorias
