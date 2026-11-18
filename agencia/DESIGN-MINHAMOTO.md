@@ -2,6 +2,8 @@
 
 > **Todo agente (pauteiro, roteirista, designer, revisor, publicador) lê este arquivo ANTES de trabalhar.** Aqui fica tudo que o Léo já aprovou ou reprovou em conteúdo audiovisual: vídeo, carrossel, story, legenda. Quem alimenta é o Claude, a cada feedback do Léo, sem ele precisar pedir. Em caso de conflito com o MANUAL, vale este arquivo (é mais recente e é o gosto do dono).
 >
+> **Regra de prioridade:** quando o Léo falou uma coisa num dia e depois outra sobre o mesmo assunto, vale SEMPRE a mais recente. As regras antigas que foram substituídas ficam marcadas com ~~riscado~~ e "→ substituída em DD/MM" só como histórico.
+>
 > Formato de cada regra: **REGRA** · ❌ errado (o que já aconteceu) · ✅ certo · data.
 
 ---
@@ -9,15 +11,18 @@
 
 ## 0. Antes de 17/11 (feedbacks de 15 e 16/11)
 - **Referência de estética do acervo dele:** carrosséis clean, minimalistas, "aparência Apple muito foda", tipo institucional. O novo tem que estar nesse nível ou acima. · 15/11
-- **Gosto geral:** fonte estilo Apple, tudo em azul, menos texto na tela, mais interativo, "as coisas popam". · 17/11 (pedido em outro projeto, mesmo gosto)
+- **Gosto geral:** fonte estilo Apple (→ hoje: Poppins, 18/11), tudo em azul (→ hoje: azuis oficiais + toque limão, 18/11), menos texto na tela, mais interativo, "as coisas popam". · 17/11 (pedido em outro projeto, mesmo gosto)
 - **AG01 (1º carrossel da agência, template "produto"):** ❌ copy ruim (headline e textos dos cards) · ❌ fundo azul-claro pastel "xoxo", essa estética já existe demais no acervo, não quer todos os posts assim; quer "tchan" · ✅ **sombra do celular aprovada** · ✅ **prints reais do app aprovados** — esses dois ficam em todos os estilos. · 16/11
 - **Variedade:** não quer todos os posts com a mesma cara; explorar dark premium, foto com tipografia gigante e fundos claros. · 16/11
 - **Preço:** pode (às vezes é melhor) citar no final do vídeo, junto do CTA: "por R$19,90", sem "por mês". Não em todos. Nunca "vitalício" (oferta antiga). · 16/11
 - **Material proibido:** filmagens antigas na moto e vídeos/telas antigos do app (app e oferta antigos). · 16/11
 - **Todo carrossel aprovado vira também vídeo.** · 16/11
+- **Narração (quando o vídeo tiver voz):** fluxo aprovado em 15/11 → (1) roteirista escreve o texto da fala por cena, 20–30s, com pausas/ênfases marcadas, pronto pra colar no ElevenLabs; (2) Léo gera o áudio no ElevenLabs e manda o MP3 (ou, se ele passar a chave da API, gera automático); (3) tratar o áudio: volume padrão Reels/TikTok, compressão, EQ pra voz presente, tirar "s" estourado, redução de ruído se precisar; (4) motion sincronizado com a voz (texto entra quando a palavra é falada, transição na pausa); (5) legenda palavra por palavra no tempo da voz; (6) música por baixo, abaixando sozinha quando a voz entra. · 15/11
+- **Música:** escolhida pelo clima do vídeo e do app, **sem direito autoral** (ex.: Pixabay Music); se for rodar muito tráfego pago, considerar biblioteca paga com licença. No TikTok o Léo posta com batida em alta sem letra. · 15–16/11
+- ~~Fonte SF Pro / Inter / Geist pra estética Apple~~ → substituída: Poppins (18/11). · 15/11
 - **TikTok:** carrossel/imagem tem que aparecer inteiro, sem corte pela legenda. · 17/11
 - **Legendas:** sempre pensando em viralizar, CTA imperativo "📲 Baixe agora o MinhaMoto na App Store e no Google Play."; IG = FB, TikTok diferente (gancho sozinho na 1ª linha). · 15–17/11
-- **Motion de carrossel:** recriar cada slide em camadas e animar cada elemento (texto entrando com blur, transição suave, zoom leve, estética Apple); legenda palavra por palavra; música sem direito autoral que combine com o app. · 15/11
+- **Motion de carrossel (conversa "MOTION DE CARROSSEL", 15/11):** recriar cada slide em camadas e animar cada elemento (texto entrando com blur, transição suave, zoom leve, estética Apple); legenda palavra por palavra; música sem direito autoral que combine com o app. · 15/11
 
 ## 1. Marca e cor
 - **Só os azuis oficiais do MinhaMoto** (tirados do tema do app: azul claro e azul escuro). Não inventar cor. · ❌ amarelo #FFD400 da direção A, "tom de amarelo não tá legal" · ✅ azul da marca · 18/11
