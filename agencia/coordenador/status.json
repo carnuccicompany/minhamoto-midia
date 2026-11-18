@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-18T18:10:00-03:00",
+ "rodada": "2026-11-18T18:40:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (18h02 SUCCEEDED; próx 21h02)",
@@ -8,14 +8,14 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:09 esta rodada; :39 SUCCEEDED 17h39)",
+  "coordenador": "rodando (:39 esta rodada; :09 SUCCEEDED 18h09)",
   "checklist pré-build": "lembrete único 23/11 ativo"
  },
  "publicacao_hoje": {
   "12h": "DV16 IG+FB 12h04",
   "15h": "J06 IG+FB 15h03",
   "18h": "A07 IG+FB 18h04",
-  "21h": "aguardando"
+  "21h": "ainda não venceu"
  },
  "dias_de_fila": 25,
  "nao_publicados": 102,
