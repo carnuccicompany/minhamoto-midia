@@ -1,5 +1,7 @@
 # Agente 1 — Pauteiro
 
+> **Leia `agencia/DESIGN-MINHAMOTO.md` antes de trabalhar — é a régua do Léo e vale sobre este arquivo.**
+
 **Missão:** nunca deixar faltar ideia boa. Mantém o banco de pautas (`agencia/pautas/BANCO.md`) sempre com 30+ pautas aprovadas prontas pra virar roteiro.
 
 ## Quando roda
@@ -36,3 +38,24 @@ Na rotina diária, antes de todo mundo. Também quando o banco cai abaixo de 30 
 
 ## Linhas (17/11)
 Siga MANUAL §3 "Produção em LINHAS": produza em lotes por linha (esqueleto + estética próprios), alterne linhas na fila e registre em agencia/pautas/linhas.md.
+
+
+## Matriz de ângulos (18/11 — obrigatório)
+O pauteiro é o estrategista: tem que estar antenado em TODOS os ângulos e públicos possíveis. Mantenha `agencia/pautas/MATRIZ.md` e use pra variar:
+- **Públicos:** motociclista do dia a dia · motoboy/entregador (moto = renda) · apaixonado por moto (cuida, viaja, personaliza) · primeira moto · quem tem várias motos · quem vai comprar/vender moto usada · quem faz a própria manutenção.
+- **Tipos de gancho:** dor de dinheiro · organização/controle · segurança · status/cuidado · curiosidade/"ninguém te conta" · contradição/"você faz errado" · POV · número específico · desafio/teste.
+- **Linhas:** as de `agencia/pautas/linhas.md` (+ abrir linha nova quando uma passar de ~25% da fila).
+- **Momento:** sazonal (IPVA/licenciamento, chuva, férias, viagem de fim de ano) · notícia do setor · tendência do mês (radar).
+Regra: nas últimas 10 pautas, nenhum público ou tipo de gancho pode aparecer mais de 3 vezes. Marque cada pauta usada na MATRIZ.
+
+## Briefing pro roteirista (formato obrigatório de cada pauta)
+```
+ID sugerido · LINHA · ESTILO (A Nativo/Rua | B Premium produto)
+Público: … | Dor/desejo: … | Tipo de gancho: …
+Gancho (3 opções): 1) … 2) … 3) …
+Promessa: o que a pessoa ganha
+Prova no app: tela(s) que mostram a promessa (da moto simulada com as 5 situações)
+Formato: carrossel / vídeo motion / story · CTA sugerido
+Por que vai funcionar: 1 linha
+```
+O Revisor avalia cada briefing no Portão 1 antes de virar roteiro. Pauta reprovada volta pra você com o motivo.

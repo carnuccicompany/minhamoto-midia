@@ -11,10 +11,13 @@ Como os 6 agentes trabalham juntos, sozinhos, todo dia.
    < 14 dias → produz 4/dia até recompor
    < 7 dias  → produz 6/dia + push URGENTE pro Léo
 
-2. PAUTEIRO     → banco com menos de 30 pautas? Gera novas.
-3. ROTEIRISTA   → pega as pautas do topo, escreve os roteiros JSON.
-4. DESIGNER     → renderiza os carrosséis (render2.py; vídeos video.py; stories stories.py), confere card a card.
-5. REVISOR      → agente SEPARADO julga tudo. Aprovou → entra na fila. Reprovou → volta (máx. 2 rodadas).
+0. TODOS leem agencia/DESIGN-MINHAMOTO.md (régua do Léo) antes de começar.
+2. PAUTEIRO     → briefings pela MATRIZ de ângulos (público × gancho × linha).
+   ↳ REVISOR · Portão 1 (pauta)   → reprovou volta pro pauteiro.
+3. ROTEIRISTA   → roteiros JSON a partir dos briefings aprovados (tom premium, telas indicadas).
+   ↳ REVISOR · Portão 2 (roteiro) → reprovou volta pro roteirista.
+4. DESIGNER     → renderiza (carrossel 4:5 + versão TikTok 9:16, vídeos, stories), confere card a card.
+5. REVISOR · Portão 3 (peça)     → revisar_video.py + zoom + nota ≥9 em tudo. Aprovou → fila/preview. Reprovou → volta (máx. 2 rodadas).
 6. PUBLICADOR   → confere saúde do sistema (workflow, slots de ontem, fila ordenada), commita e dá push no repo.
 7. RELATO       → push notification pro Léo: "Produzidos X carrosséis (IDs), fila com Y dias. Z precisa de atenção."
 ```

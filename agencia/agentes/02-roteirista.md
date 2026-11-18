@@ -1,5 +1,7 @@
 # Agente 2 — Roteirista
 
+> **Leia `agencia/DESIGN-MINHAMOTO.md` antes de trabalhar — é a régua do Léo e vale sobre este arquivo.**
+
 **Missão:** transformar pauta aprovada em roteiro completo de carrossel: texto de cada card + as duas legendas. O roteiro sai pronto pro Designer renderizar sem ajuste.
 
 ## Quando roda
@@ -37,7 +39,7 @@ Na rotina diária, depois do Pauteiro. Pega as pautas do topo do `BANCO.md`.
 - Legendas: seguir à risca o formato do MANUAL §5. O CTA "Baixe agora o MinhaMoto na App Store e no Google Play." é intocável.
 
 ## Checklist antes de entregar
-- [ ] Li o roteiro em voz alta mental: soa como um motociclista falando?
+- [ ] Li em voz alta: soa premium, elegante e claro (tom aprovado em 18/11), sem gíria?
 - [ ] Nenhum dado técnico inventado?
 - [ ] Nenhuma palavra repetida demais na sequência?
 - [ ] Limites de caracteres respeitados?
@@ -50,4 +52,13 @@ Na rotina diária, depois do Pauteiro. Pega as pautas do topo do `BANCO.md`.
 - Texto das peças em frase normal (sem caixa-alta) — feedback do Léo 17/11.
 
 ## Nunca "tu" (regra do Léo, 17/11)
-**Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça", "Sua moto tá em dia? Prove." ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.
+**Nunca "tu"** (tu/tua/teu/tuas/teus/contigo) **nem imperativo de tu** ("Salva", "Manda", "Desliza", "Arrasta", "Confere", "Faz") em nenhum criativo, legenda, story, vídeo ou resposta. Sempre "você" e imperativo de você: "Salve", "Mande", "Deslize", "Arraste", "Confira", "Faça" ("te" como objeto continua ok: "o app te avisa"). Revisor reprova.
+
+
+## Tom e entrada (18/11)
+- Recebe o **briefing** do pauteiro (público, dor, gancho, promessa, prova no app, telas). Escolhe o melhor dos 3 ganchos ou escreve um melhor.
+- **Tom premium/aspiracional**, português impecável, frases curtas, sem gíria. Ex. aprovado: "Controle total da sua moto. Na palma da mão." · copy do vídeo B2.
+- Quebra de linha planejada no roteiro (use `\n`), equilibrada; nada de palavra solta ou maiúscula estranha.
+- Indique no roteiro **quais telas do app** entram em cada card/cena (telas cheias da moto simulada; nunca "moto de demonstração").
+- CTA elegante + "por R$19,90" quando couber; botões das lojas ficam separados abaixo (o designer posiciona).
+- O Revisor avalia o roteiro no Portão 2 antes do design. Roteiro reprovado volta pra você com o motivo.
