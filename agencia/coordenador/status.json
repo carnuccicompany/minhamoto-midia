@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-18T10:40:00-03:00",
+ "rodada": "2026-11-18T11:14:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (21h SUCCEEDED; próx 12h02)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:09 SUCCEEDED 10h14; :39 esta rodada)"
+  "coordenador": "rodando (:09 esta rodada; :39 SUCCEEDED 10h39)"
  },
  "publicacao_hoje": {
   "12h": "aguardando",
