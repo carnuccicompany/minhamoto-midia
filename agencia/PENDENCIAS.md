@@ -37,6 +37,8 @@
 - [x] TikTok: pixel DBUT8L3C77UB463C7N5G (Pixel + Events API) + entrada "MinhaMoto TikTok" na UTMify + script no <head> do Lovable. Testado 18/11 como visitante novo: PageView/ViewContent e InitiateCheckout no clique da loja chegando no pixel novo, cópia via servidor da UTMify também; só 1 pixel TikTok na página (sem duplicado). Meta 1330… segue disparando InitiateCheckout.
 - [x] UTMify: "Tradutor da Oficina" removido da entrada Meta "MinhaMoto" (18/11)
 - [x] Campanhas [ABO 121] {AP …} na CA 01 (BM Matriz) são dos Corretores — NÃO mexer (decisão do Léo 18/11)
-- [ ] Conectar na UTMify a conta de anúncios da BM DE ANÚNCIOS que vai rodar o MinhaMoto (não a CA - MinhaMoto da Matriz) + confirmar que o pixel 1330… está compartilhado da Matriz com essa BM
+- [x] CA - MinhaMoto (1563907929088006, BM Matriz) conectada na UTMify (Integrações → Meta Ads) — 18/11. Pixel 1330… conectado só nela (CA 01 desconectada). Perfil anunciante: "Fernanda Soares" (acesso total)
+- [ ] UTMify → TikTok Ads: só o perfil "Perfect Class" está ligado; falta "Adicionar perfil" com o login TikTok dono da conta MinhaMoto (7274791877474385921) — Léo autoriza
+- [ ] CONTINGÊNCIA Meta (Léo escolheu adiar, opção B em 18/11): hoje as contas de anúncio são da própria BM Matriz → se a Meta restringir a BM, a Matriz cai junto. Solução: criar BM só de anúncios com as contas, pixel/página compartilhados como parceiro. Ideal fazer antes de escalar gasto
 - [ ] DEPOIS do MinhaMoto: revisar os infoprodutos (Corretores, TEA, Perfect Class etc.) — tracking, campanhas, melhorias
 - [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
