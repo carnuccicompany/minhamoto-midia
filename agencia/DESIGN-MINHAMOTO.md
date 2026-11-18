@@ -6,6 +6,19 @@
 
 ---
 
+
+## 0. Antes de 17/11 (feedbacks de 15 e 16/11)
+- **Referência de estética do acervo dele:** carrosséis clean, minimalistas, "aparência Apple muito foda", tipo institucional. O novo tem que estar nesse nível ou acima. · 15/11
+- **Gosto geral:** fonte estilo Apple, tudo em azul, menos texto na tela, mais interativo, "as coisas popam". · 17/11 (pedido em outro projeto, mesmo gosto)
+- **AG01 (1º carrossel da agência, template "produto"):** ❌ copy ruim (headline e textos dos cards) · ❌ fundo azul-claro pastel "xoxo", essa estética já existe demais no acervo, não quer todos os posts assim; quer "tchan" · ✅ **sombra do celular aprovada** · ✅ **prints reais do app aprovados** — esses dois ficam em todos os estilos. · 16/11
+- **Variedade:** não quer todos os posts com a mesma cara; explorar dark premium, foto com tipografia gigante e fundos claros. · 16/11
+- **Preço:** pode (às vezes é melhor) citar no final do vídeo, junto do CTA: "por R$19,90", sem "por mês". Não em todos. Nunca "vitalício" (oferta antiga). · 16/11
+- **Material proibido:** filmagens antigas na moto e vídeos/telas antigos do app (app e oferta antigos). · 16/11
+- **Todo carrossel aprovado vira também vídeo.** · 16/11
+- **TikTok:** carrossel/imagem tem que aparecer inteiro, sem corte pela legenda. · 17/11
+- **Legendas:** sempre pensando em viralizar, CTA imperativo "📲 Baixe agora o MinhaMoto na App Store e no Google Play."; IG = FB, TikTok diferente (gancho sozinho na 1ª linha). · 15–17/11
+- **Motion de carrossel:** recriar cada slide em camadas e animar cada elemento (texto entrando com blur, transição suave, zoom leve, estética Apple); legenda palavra por palavra; música sem direito autoral que combine com o app. · 15/11
+
 ## 1. Marca e cor
 - **Só os azuis oficiais do MinhaMoto** (tirados do tema do app: azul claro e azul escuro). Não inventar cor. · ❌ amarelo #FFD400 da direção A, "tom de amarelo não tá legal" · ✅ azul da marca · 18/11
 - **Verde-limão só em detalhe pequeno** (palavra-chave, selo, ícone, sublinhado) pra dar o toque de marca. Nunca fundo. · 18/11
