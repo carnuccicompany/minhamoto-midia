@@ -34,5 +34,8 @@
 - [ ] Conferir campanhas C1/C2 (10 conjuntos otimizando em Compra do pixel antigo): são do imobiliário? Migrar pro Pixel Corretores
 - [ ] App MinhaMoto na Meta (dataset de app 884075288066806) — usar na etapa 6 (eventos do app via AppsFlyer)
 - [ ] Etapa 2: padrão de UTMs · Etapa 3: AppsFlyer (plano Growth, 12 mil conversões grátis 1º ano) + OneLink · Etapa 4: SDK (Davi) · Etapa 5: RevenueCat↔AppsFlyer · Etapa 6: postbacks Meta/TikTok · Etapa 7: Painel MinhaMoto (schema analytics no Supabase do app — aguardando ok do Davi)
-- [ ] TikTok Ads: logar/criar conta e pixel
+- [x] TikTok: pixel DBUT8L3C77UB463C7N5G (Pixel + Events API) + entrada "MinhaMoto TikTok" na UTMify + script no <head> do Lovable. Testado 18/11 como visitante novo: PageView/ViewContent e InitiateCheckout no clique da loja chegando no pixel novo, cópia via servidor da UTMify também; só 1 pixel TikTok na página (sem duplicado). Meta 1330… segue disparando InitiateCheckout.
+- [ ] UTMify: tirar "Tradutor da Oficina" da entrada Meta "MinhaMoto"
+- [ ] Campanhas C1/C2 (otimizando no pixel antigo): confirmar se são imobiliário → migrar pro Pixel Corretores
+- [ ] Conectar "CA - MinhaMoto" na UTMify (Integrações → Anúncios)
 - [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
