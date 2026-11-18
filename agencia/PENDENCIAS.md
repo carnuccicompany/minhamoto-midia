@@ -13,7 +13,7 @@
 - [ ] AppsFlyer + dashboard Supabase (com o Davi)
 
 ## Com o Davi
-- [ ] SDK AppsFlyer + ligação com RevenueCat (etapas 4 e 5 do rastreamento)
+- [ ] SDK AppsFlyer: implementar agora SEM build (prompt + adendo enviados ao Léo 18/11); mandar resumo de volta pro Claude revisar
 - [ ] Pedido de avaliação dentro do app (atualização seguinte à de 16/11)
 - [ ] Investigar 2 avaliações 1★ no Google Play: "não abre" / "baixei mas não funciona"
 
@@ -47,7 +47,8 @@
 - [x] Conta criada: login leonardo@carnucci.com (alias do usuário carnucci@carnucci.com no Workspace; e-mails caem na caixa do Workspace)
 - [x] Apps cadastrados: iOS id6815447825 + Android com.carnuccicompany.minhamoto — moeda BRL, fuso São Paulo
 - [x] OneLink: subdomínio minhamoto.onelink.me, template PL15 (iOS→App Store, Android→Google Play, computador→minhamotopagina.online)
-- [ ] Davi: SDK AppsFlyer no app — PAUSADO (18/11): sai junto na próxima build, com a mudança estética. Davi já tem a dev key. Na build: .env + variável no Codemagic (VITE_APPSFLYER_DEV_KEY) — conferir os dois no resumo dele
+- [ ] Davi: SDK AppsFlyer no app — PAUSADO (18/11): código fica pronto agora, sai na próxima build (semana de 23/11, junto com a estética). Ver checklist PRÉ-BUILD abaixo
+- [x] Codemagic: VITE_APPSFLYER_DEV_KEY (secret) cadastrada pelo Léo nos grupos minhamoto_pro_comercial_ios_publico e minhamoto_pro_comercial_android_publico (18/11)
 - [x] "onelink.me" adicionado na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (18/11)
 - [x] Botões da página trocados pelo OneLink com UTMs mapeadas (pid=utm_source, c=utm_campaign, af_adset=utm_medium, af_ad=utm_content, af_sub1=utm_term, af_sub2=ios/android, af_sub3=fbclid, af_sub4=ttclid) — testado 18/11: links ok, IC dispara na Meta (fbq) e TikTok, OneLink leva pra App Store certa
 - [x] Cartão cadastrado no AppsFlyer (18/11) — plano com atribuição móvel ativo, 12.000 unidades grátis até 17/11/2027
@@ -55,3 +56,17 @@
 - [ ] Integrações de parceiros no AppsFlyer: Meta Ads (app 884075288066806) e TikTok for Business
 - [ ] Encaminhamento automático do Workspace (carnucci@carnucci.com) → carnuccicompany@gmail.com, pra Claude acompanhar e-mails (Léo autorizou a ideia; confirmar)
 - [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
+
+## ✅ CHECKLIST PRÉ-BUILD (próxima versão — estética + AppsFlyer, prevista semana de 23/11)
+Claude revisa item a item com o Léo ANTES de disparar a build. Nada sobe sem isso.
+- [ ] Resumo do Claude Code do Davi revisado pelo Claude (SDK: init com dev key via env, appID 6815447825, setCustomerUserId = mesmo ID do Purchases.logIn, AppsFlyer ID → RevenueCat antes de qualquer compra, af_complete_registration no cadastro, permissão AD_ID no Android)
+- [ ] .env fora do Git (.gitignore) e removido do repositório
+- [ ] Teste em debug feito: instalação aparece no AppsFlyer (SDK Integration Tests)
+- [ ] codemagic.yaml: workflows públicos (iOS e Android) usam os grupos minhamoto_pro_comercial_*_publico (onde está a VITE_APPSFLYER_DEV_KEY)
+- [ ] codemagic.yaml: REMOVER VITE_MM_AVISO_TESTE: "1" (botão "Testar aviso em 1 minuto" não pode ir pra versão pública)
+- [ ] Android: confirmar por onde sai a build do Android (Codemagic ou máquina do Davi) — se for local, a chave precisa estar no .env dele
+- [ ] RevenueCat ↔ AppsFlyer integrado (dev key colada pelo Léo no RevenueCat)
+- [ ] Integrações Meta Ads e TikTok ativas no AppsFlyer
+- [ ] Mudança estética revisada (prints de todas as telas) — padrão de zero erro
+- [ ] Número de versão/build incrementado nos dois apps
+- [ ] Depois de publicada: instalar pelo OneLink com UTM de teste e conferir instalação + assinatura atribuídas no AppsFlyer, RevenueCat e UTMify
