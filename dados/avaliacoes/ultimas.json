@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-11-17T20:14:40.653475Z",
+ "coletado_em": "2026-11-18T00:15:10.023726Z",
  "status": {
   "google_play": "ok (5 avaliações)",
   "app_store": "ERRO: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. InvalidData(InvalidLength(113))"
