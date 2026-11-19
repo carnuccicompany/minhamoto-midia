@@ -29,3 +29,39 @@ Dados/Rastreamento lê os resultados (posts, anúncios, usuários, receita) → 
 
 ## Ordem sugerida
 Fechar rastreamento (build + Painel) → Dados → Criativos de performance → Retenção e Relacionamento → Financeiro → resto.
+
+---
+
+## Conselho de diretores (19/11/2026, nomes provisórios a lapidar com Léo e Davi)
+Papel: ajudar Léo e Davi a decidir. Cada diretor acompanha seu setor ao vivo (números de posts, tráfego, assinaturas, mercado) e traz pra mesa. Coordenador = **Don Carnucci** (o brasão no centro da mesa).
+
+| Setor | Diretor | Idade | Apelido | Frase |
+|---|---|---|---|---|
+| Dados | Kenji Datamura | 41 | O Oráculo | Sem dado, é opinião. |
+| Marketing | Diesel Okafor | 34 | O Motor | Motor não desliga. |
+| Criativos | Frida Cortez | 31 | A Tesoura | Primeiro segundo ou nada. |
+| Tráfego | Pablo Escalante | 46 | El Patrón | Plata o pausa. |
+| Mercado | Salvatore Greco | 58 | A Sombra | Eu já sabia. |
+| Produto | Ada Rinaldi | 37 | A Arquiteta | Cada toque a mais é um assinante a menos. |
+| Comunidade | Gianni Costa | 52 | O Padrinho | Ninguém sai da família. |
+| Lojas | Stella Santoro | 33 | Cinco Estrelas | Cinco estrelas é o mínimo. |
+| Financeiro | Warren Cush | 61 | O Cofre | Lucro é o que sobra. |
+
+Pedidos do Léo/Davi atendidos: Diesel (Davi), Cush, Warren (Buffett), trocadilho de dados (Datamura), brincadeira de narcotraficante no Tráfego (Escalante + "El Patrón" + "Plata o pausa"), 3 mulheres, 2 pretos, 1 japonês.
+Fonte do 3D: `agencia/mesa-3d/` (data.js tem a identidade completa de cada um).
+
+## Sistema de Mérito Carnucci (proatividade)
+IA não quer dinheiro. O que muda o trabalho do agente: o que está escrito sobre ele (cargo, histórico, regras), ferramentas e liberdade. O "salário" vira isso.
+
+**Cotas:** +1 entrega no prazo sem refazer · +2 achou e corrigiu erro antes de chegar no Léo/Davi · +3 extra aprovado · +5 extra que virou resultado medido · −1 extra recusado como ruído · −2 refação por erro dele · inventou número / mexeu onde não podia / publicou sem OK = zera e cai de cargo.
+
+**O que compram:** promoção de cargo (escrita no prompt do agente), modelo mais forte, autonomia (menos aprovações), missões maiores, reputação (histórico salvo na memória dele e lido a cada execução), funcionário do mês.
+
+**Carreira:** Estagiário (0, tudo revisado) → Analista (15, até 3 extras por entrega) → Sênior (40, entrega direto pro diretor, modelo mais forte) → Braço-direito (90, executa coisas pequenas sozinho e treina estagiários).
+
+**Na prática:** toda entrega termina com a seção "Além do pedido" (até 3 extras) → Léo/Davi dão joinha ou X → diretor leva 20% das cotas da equipe → reunião de sexta: Coordenador fecha placar, promoções e quedas, salva histórico (placar em `agencia/merito/`, a criar).
+
+**Contra malandragem:** só vale extra aprovado; máximo 3 por entrega; extra que mexe em código do app, dinheiro ou publica sem OK nunca conta; número inventado zera.
+
+## Próximo passo do visual
+Versão realista (menos boneco): personagens humanos de verdade (ex.: Mixamo, grátis com conta Adobe, com animações de sentar, digitar e andar) no lugar dos bonecos montados em código.

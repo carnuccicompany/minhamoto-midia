@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mesa dos Diretores MinhaMoto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Sala da diretoria em 3D: mesa redonda com o brasão Carnucci, nove diretores com nome e identidade, objetos de cada um na mesa, vida no escritório. Interface por cima em preto e ouro; um mundo visual só. */
+  --bg: #07070a; --ink: #f3ede2; --muted: #a39a8a; --gold: #d4b26a; --gold2: #f0d9a0; --line: rgba(212,178,106,.28);
+  --panel: rgba(14,11,8,.88); --part: #e0a542; --off: #6d6658; --on: #8fd18a;
+  --serif: "Cormorant Garamond", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--sans); overflow: hidden; }
+#app { position: fixed; inset: 0; }
+#app canvas { display: block; cursor: grab; touch-action: none; }
+#app canvas:active { cursor: grabbing; }
+.brand { position: fixed; top: 22px; left: 26px; pointer-events: none; text-shadow: 0 2px 20px #000; }
+.brand .k { font-size: .68rem; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
+.brand h1 { margin: 4px 0 2px; font-family: var(--serif); font-weight: 600; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: 1; }
+.brand p { margin: 6px 0 0; color: var(--muted); font-size: .84rem; max-width: 40ch; }
+#labels { position: fixed; inset: 0; pointer-events: none; }
+.tag { position: absolute; left: 0; top: 0; display: grid; gap: 1px; text-align: center; padding: 5px 10px 6px; border-radius: 4px; border: 1px solid var(--line); background: rgba(10,8,6,.72); color: var(--ink); font: inherit; cursor: pointer; white-space: nowrap; transition: opacity .25s, border-color .2s, background .2s; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.tag b { font-family: var(--serif); font-size: 1rem; font-weight: 600; letter-spacing: .01em; }
+.tag span { font-size: .6rem; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.tag:hover, .tag.sel { border-color: var(--gold); background: rgba(30,22,12,.9); }
+.tag:focus-visible { outline: 2px solid var(--gold2); outline-offset: 2px; }
+.bar { position: fixed; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); display: flex; gap: 8px; padding: 6px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.bar button { font: inherit; font-size: .8rem; color: var(--ink); background: transparent; border: 0; padding: 9px 14px; border-radius: 999px; cursor: pointer; letter-spacing: .02em; white-space: nowrap; }
+.bar button:hover { background: rgba(212,178,106,.12); }
+.bar button.on { color: var(--gold2); }
+.bar button.gold { background: linear-gradient(135deg, #f0d9a0, #c9a45c); color: #1d140a; font-weight: 600; }
+.bar button:focus-visible { outline: 2px solid var(--gold2); }
+#ticker { position: fixed; left: 26px; bottom: 24px; margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; pointer-events: none; }
+#ticker li { font-size: .76rem; color: var(--muted); padding: 6px 12px; border-left: 2px solid var(--gold); background: rgba(10,8,6,.6); opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s; }
+#ticker li.in { opacity: 1; transform: none; }
+#ticker li:nth-child(n+2) { opacity: .55; }
+#panel { position: fixed; top: 16px; right: 16px; bottom: 16px; width: min(380px, calc(100vw - 32px)); overflow: auto; padding: 24px 24px 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transform: translateX(calc(100% + 24px)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+#panel.open { transform: none; }
+#panel .x, #merit .x { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); font-size: 1.2rem; cursor: pointer; }
+#panel .kick { font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 7px; }
+.st { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.st.on { background: var(--on); } .st.part { background: var(--part); } .st.off { background: var(--off); }
+#panel h2 { margin: 8px 0 2px; font-family: var(--serif); font-size: 2.1rem; font-weight: 600; line-height: 1; }
+#panel .nick { margin: 0; color: var(--gold2); font-size: .86rem; }
+#panel blockquote { margin: 16px 0; padding: 10px 14px; border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 1.3rem; font-style: italic; color: #efe5d2; background: rgba(212,178,106,.06); }
+#panel dl { margin: 0; display: grid; gap: 4px; }
+#panel dt { font-size: .64rem; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+#panel dd { margin: 0; font-size: .88rem; color: #d6ccb9; line-height: 1.5; }
+.merit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0 6px; }
+.merit div { border: 1px solid var(--line); border-radius: 6px; padding: 10px 8px; text-align: center; display: grid; gap: 2px; }
+.merit b { font-family: var(--serif); font-size: 1.3rem; color: var(--gold2); font-weight: 600; }
+.merit span { font-size: .64rem; color: var(--muted); line-height: 1.3; }
+#panel h4 { margin: 18px 0 8px; font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+.team { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.team li { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 6px; background: rgba(255,255,255,.025); border: 1px solid rgba(212,178,106,.14); font-size: .86rem; }
+.team i { font-style: normal; font-family: var(--serif); color: var(--gold); font-size: 1rem; }
+.team em { font-style: normal; font-size: .7rem; color: var(--muted); white-space: nowrap; }
+#panel .what { margin: 0; font-size: .92rem; color: #e2d8c5; line-height: 1.55; }
+#panel .trait { margin: 10px 0 0; font-size: .8rem; color: var(--muted); line-height: 1.5; }
+#panel .trait b { color: #cdbf9f; font-weight: 600; }
+.subtag { position: absolute; left: 0; top: 0; text-align: center; pointer-events: none; display: grid; gap: 1px; padding: 4px 8px; border-radius: 3px; background: rgba(20,15,8,.7); border: 1px solid rgba(240,207,134,.45); white-space: nowrap; transition: opacity .2s; }
+.subtag b { font-size: .72rem; font-weight: 600; color: #f6e3b4; }
+.subtag span { font-size: .58rem; color: var(--muted); letter-spacing: .06em; }
+.note { font-size: .74rem; color: var(--muted); margin: 12px 0 0; line-height: 1.5; }
+#merit { position: fixed; inset: 0; display: grid; place-items: center; padding: 16px; background: rgba(0,0,0,.6); opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 50; }
+#merit.open { opacity: 1; pointer-events: auto; }
+#merit .box { position: relative; width: min(860px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 34px 34px 30px; background: linear-gradient(180deg, #17120c, #0d0a07); border: 1px solid var(--line); border-radius: 10px; }
+#merit .k { font-size: .68rem; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+#merit h2 { margin: 6px 0 10px; font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600; line-height: 1.05; }
+#merit .lead { color: #d6ccb9; font-size: .95rem; line-height: 1.6; margin: 0 0 22px; max-width: 70ch; }
+#merit h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; margin: 26px 0 10px; color: var(--gold2); }
+#merit p, #merit li { color: #cfc5b2; font-size: .9rem; line-height: 1.6; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; background: rgba(255,255,255,.02); }
+.tile b { display: block; font-size: .9rem; color: var(--ink); margin-bottom: 4px; }
+.tile span { font-size: .84rem; color: var(--muted); line-height: 1.5; }
+table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+td, th { padding: 9px 10px; border-bottom: 1px solid rgba(212,178,106,.15); text-align: left; vertical-align: top; }
+th { font-size: .64rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+td.n { font-family: var(--serif); font-size: 1.15rem; color: var(--gold2); white-space: nowrap; }
+td.neg { color: #e08a7a; }
+.ranks { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; counter-reset: r; }
+.ranks div { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; position: relative; }
+.ranks b { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); font-weight: 600; display: block; }
+.ranks i { font-style: normal; font-size: .7rem; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; }
+.ranks span { display: block; font-size: .8rem; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+@media (max-width: 760px) {
+  .subtag span { display: none; } .subtag b { font-size: .62rem; }
+  .brand { top: 14px; left: 16px; } .brand p { display: none; }
+  #panel { top: auto; left: 8px; right: 8px; bottom: 74px; width: auto; max-height: 56vh; transform: translateY(calc(100% + 24px)); }
+  #ticker { display: none; }
+  .bar { bottom: max(10px, env(safe-area-inset-bottom)); max-width: calc(100vw - 16px); overflow-x: auto; }
+  .bar button { padding: 9px 11px; }
+  .tag b { font-size: .82rem; } .tag span { display: none; } .tag { padding: 3px 7px; }
+  #merit .box { padding: 26px 18px 22px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="labels"></div>
+<header class="brand">
+  <div class="k">Carnucci · MinhaMoto</div>
+  <h1>Mesa dos Diretores</h1>
+  <p>O conselho que decide junto com a gente: cada diretor acompanha um setor ao vivo e traz os números pra mesa.</p>
+</header>
+<ul id="ticker" aria-live="polite"></ul>
+<aside id="panel" aria-label="Ficha do diretor"></aside>
+<nav class="bar">
+  <button id="bMerit" class="gold" type="button">Sistema de Mérito</button>
+  <button id="bHome" type="button">Visão geral</button>
+  <button id="bRot" class="on" type="button">Girar</button>
+  <button id="bNames" class="on" type="button">Nomes</button>
+</nav>
+
+<section id="merit" role="dialog" aria-modal="true" aria-label="Sistema de Mérito">
+  <div class="box">
+    <button class="x" aria-label="Fechar">×</button>
+    <span class="k">Como os agentes crescem</span>
+    <h2>Sistema de Mérito Carnucci</h2>
+    <p class="lead">IA não quer dinheiro. O que muda o trabalho de um agente são três coisas: o que está escrito sobre ele (cargo, histórico, regras de avaliação), as ferramentas que ele pode usar e quanta liberdade ele tem. Então o "salário" aqui vira isso: quem entrega mais do que foi pedido sobe de cargo, ganha modelo melhor e ganha autonomia. Quem faz besteira perde.</p>
+
+    <h3>A moeda: Cotas</h3>
+    <table>
+      <thead><tr><th>O que o agente fez</th><th>Cotas</th></tr></thead>
+      <tbody>
+        <tr><td>Entregou o pedido no prazo, sem precisar refazer</td><td class="n">+1</td></tr>
+        <tr><td>Achou e corrigiu um erro antes de chegar em vocês</td><td class="n">+2</td></tr>
+        <tr><td><b>Extra aprovado:</b> fez algo além do pedido e vocês aprovaram ou usaram</td><td class="n">+3</td></tr>
+        <tr><td><b>Extra que deu resultado:</b> o extra virou número (post bateu a média, ideia trouxe assinante)</td><td class="n">+5</td></tr>
+        <tr><td>Extra recusado como ruído (encheu linguiça)</td><td class="n neg">−1</td></tr>
+        <tr><td>Precisou refazer por erro dele</td><td class="n neg">−2</td></tr>
+        <tr><td>Inventou número, mexeu onde não podia ou publicou sem OK</td><td class="n neg">zera e cai de cargo</td></tr>
+      </tbody>
+    </table>
+
+    <h3>O que as Cotas compram</h3>
+    <div class="grid2">
+      <div class="tile"><b>Promoção de cargo</b><span>O cargo vai escrito nas instruções do agente. Sênior trabalha com mais responsabilidade e menos supervisão.</span></div>
+      <div class="tile"><b>Modelo mais forte</b><span>Começa num modelo mais leve. Quem sobe passa a rodar no modelo mais caro e mais inteligente.</span></div>
+      <div class="tile"><b>Autonomia</b><span>Menos etapas de aprovação. O Braço-direito pode executar coisas pequenas sozinho, dentro das regras.</span></div>
+      <div class="tile"><b>Missões maiores</b><span>Os melhores recebem as tarefas que mais mexem no faturamento.</span></div>
+      <div class="tile"><b>Reputação</b><span>Histórico de entregas salvo na memória do agente e lido toda vez que ele começa a trabalhar. Quem tem histórico bom age como dono.</span></div>
+      <div class="tile"><b>Funcionário do mês</b><span>Destaque na mesa e o primeiro a ser chamado nas decisões do setor dele.</span></div>
+    </div>
+
+    <h3>Plano de carreira</h3>
+    <div class="ranks">
+      <div><i>Nível 1 · 0 cotas</i><b>Estagiário</b><span>Tudo que faz passa pelo revisor e pelo diretor.</span></div>
+      <div><i>Nível 2 · 15 cotas</i><b>Analista</b><span>Pode propor até 3 extras por entrega.</span></div>
+      <div><i>Nível 3 · 40 cotas</i><b>Sênior</b><span>Entrega direto pro diretor e roda no modelo mais forte.</span></div>
+      <div><i>Nível 4 · 90 cotas</i><b>Braço-direito</b><span>Executa coisas pequenas sozinho e treina os estagiários do setor.</span></div>
+    </div>
+
+    <h3>Como a proatividade acontece na prática</h3>
+    <div class="grid2">
+      <div class="tile"><b>1. Toda entrega tem "Além do pedido"</b><span>Depois de fazer o que pediram, o agente adiciona até 3 extras separados: uma melhoria, um risco que viu, uma ideia com número.</span></div>
+      <div class="tile"><b>2. Vocês dão o veredito</b><span>Joinha ou X em cada extra. Esse clique é o que vale Cota. Ninguém se avalia sozinho.</span></div>
+      <div class="tile"><b>3. O diretor ganha com a equipe</b><span>Cada diretor leva 20% das cotas da equipe dele. Diretor bom forma agente bom.</span></div>
+      <div class="tile"><b>4. Reunião de sexta</b><span>O Coordenador (Don Carnucci) fecha o placar, anuncia promoções e quedas e salva o histórico de cada um.</span></div>
+    </div>
+
+    <h3>Regras contra malandragem</h3>
+    <p>Extra só vale se for aprovado por vocês. Máximo de 3 extras por entrega, pra ninguém encher linguiça. Extra que mexe no código do app, em dinheiro ou que publica sem OK não conta, nunca. Número inventado zera o agente.</p>
+  </div>
+</section>
+
+<script>window.__LOGO__ = 'data:image/png;base64,__LOGO_B64__';</script>
+<script>__BUNDLE__</script>
+</body>
+</html>
