@@ -61,8 +61,9 @@
 - [x] App da Meta 884075288066806 publicado (Live) com ok do Léo (18/11)
 - [ ] Mapear postbacks Meta/TikTok (af_complete_registration + eventos do RevenueCat: rc_trial_started_event, rc_initial_purchase_event, rc_trial_converted_event, rc_renewal_event) quando os eventos existirem — item do pré-build
 - [x] TikTok no AppsFlyer (18/11): apps criados no Events Manager do TikTok via AppsFlyer — TikTok App ID iOS 7709598764285280308, Android 7709597827451256853; parceiro 'TikTok For Business - Advanced SRN' ativo nos 2 apps com postbacks ligados
-- [ ] Encaminhamento automático do Workspace (carnucci@carnucci.com) → carnuccicompany@gmail.com, pra Claude acompanhar e-mails (Léo autorizou a ideia; confirmar)
-- [ ] Ao terminar: funil visual explicando o rastreamento (o que cada peça faz) + Painel MinhaMoto
+- [ ] Encaminhamento Workspace → carnuccicompany@gmail.com: Léo aprovou 19/11; Gmail recusou ("endereço inválido") → Léo liberar no Admin (Gmail → Acesso do usuário final → Encaminhamento automático) → Claude refaz
+- [x] Funil visual do rastreamento publicado (19/11): claude.ai/artifact/Rbv2acafs4TdEj83MfQJPm — atualizar quando a build ligar o SDK
+- [ ] Painel MinhaMoto (aguarda ok do Davi pro schema analytics no Supabase)
 
 ## ✅ CHECKLIST PRÉ-BUILD (próxima versão — estética + AppsFlyer, prevista semana de 23/11)
 Claude revisa item a item com o Léo ANTES de disparar a build. Nada sobe sem isso.
