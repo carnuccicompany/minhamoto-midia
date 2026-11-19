@@ -2,6 +2,7 @@
 
 > Rascunho pra mostrar ao Davi. Léo e Davi = CEOs; Claude = braço direito que coordena os agentes.
 > Funil visual do rastreamento: https://claude.ai/artifact/Rbv2acafs4TdEj83MfQJPm (fixado na barra lateral do Claude)
+> Mesa dos Diretores (visual gamificado): https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z (fixada na barra lateral)
 
 ## Ideia do Léo
 Dados/Rastreamento lê os resultados (posts, anúncios, usuários, receita) → passa pro Marketing → produção faz variações do que converteu. Todos os agentes se conversam e a empresa se retroalimenta. Criativos de performance = esteira de ~3 agentes de vídeo, um corrigindo o outro até o resultado final.
