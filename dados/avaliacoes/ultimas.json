@@ -1,8 +1,8 @@
 {
- "coletado_em": "2026-11-19T12:15:52.709343Z",
+ "coletado_em": "2026-11-19T16:15:51.925368Z",
  "status": {
   "google_play": "ok (5 avaliações)",
-  "app_store": "ok (5 avaliações)"
+  "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
   {
@@ -59,6 +59,17 @@
    "aparelho": "r0q (Galaxy S22)",
    "respondida": true,
    "resposta_atual": "Sentimos muito pelo transtorno! Queremos entender o que aconteceu. Escreva para suporte@carnucci.com com o modelo do seu celular e o que aparece na tela, para resolvermos o quanto antes. — Equipe MinhaMoto"
+  },
+  {
+   "loja": "app_store",
+   "id": "00000196-3b7b-1103-726a-cc7300000000",
+   "nota": 5,
+   "titulo": "Recomendo",
+   "texto": "Sou mulher tenho moto, mas não entendo muito, esse app tá me facilitando demais.",
+   "data": "2026-11-18T03:51:52-08:00",
+   "pais": "BRA",
+   "respondida": true,
+   "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o MinhaMoto está facilitando o cuidado com a sua moto, mesmo sem você precisar entender de mecânica. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
