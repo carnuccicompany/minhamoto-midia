@@ -105,6 +105,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .sbar{position:absolute;left:0;right:0;top:0;height:6.2%%;background:linear-gradient(#07090d 70%%,rgba(7,9,13,0))}
 .sbar .h{position:absolute;left:13%%;top:30%%;font:600 38px/1 -apple-system,'SF Pro',pop600,sans-serif;color:#fff;letter-spacing:.5px}
 .sbar .r{position:absolute;right:10%%;top:32%%;display:flex;gap:12px;align-items:center}
+.foot{position:absolute;left:0;right:0;bottom:0;height:5.4%%;pointer-events:none;background:linear-gradient(rgba(11,11,13,0),rgb(11,11,13) 26%%)}
+.foot i{position:absolute;left:50%%;bottom:7.4%%;width:34%%;height:10.9%%;transform:translateX(-50%%);background:#fff;border-radius:99px}
 .island{position:absolute;left:50%%;top:1.29%%;width:31.9%%;height:4.34%%;transform:translateX(-50%%);background:#000;border-radius:40px}
 .glare{position:absolute;inset:0;border-radius:98px;background:linear-gradient(115deg,rgba(255,255,255,.13) 0%%,rgba(255,255,255,0) 28%%,rgba(255,255,255,0) 70%%,rgba(255,255,255,.05) 100%%);pointer-events:none}
 .ring{position:absolute;border-radius:28px;border:5px solid %(destaque)s;box-shadow:0 0 0 6px rgba(82,169,254,.25),0 0 60px rgba(82,169,254,.6)}
@@ -173,7 +175,7 @@ def phone_html():
             "<div class='btn' style='left:-7px;top:15%;width:9px;height:4%'></div>"
             "<div class='btn' style='right:-7px;top:25%;width:9px;height:11%'></div>"
             "<div class=screen><img><img class=topo style='display:none'><div class=ring style='display:none'></div><div class=tap style='display:none'></div>"
-            "<div class=island></div><div class=glare></div></div>")
+            "<div class=foot><i></i></div><div class=island></div><div class=glare></div></div>")
 
 def caption_html(palavras, hl, n_vis, idade_ult, y, tam, estilo, centro=True, largura=800):
     """Legenda palavra-por-palavra. palavras visíveis = n_vis; a última faz 'pop'."""
@@ -213,7 +215,10 @@ class Video:
     def render(self, saida, so_frames=None):
         from playwright.sync_api import sync_playwright
         n = int(round(self.duracao()*FPS))
-        fdir = os.path.join('/tmp/v2render', self.id); shutil.rmtree(fdir, ignore_errors=True); os.makedirs(fdir)
+        fdir = os.path.join('/tmp/v2render', self.id)
+        retomar = bool(os.environ.get('MM_RETOMAR')) and so_frames is None
+        if not retomar: shutil.rmtree(fdir, ignore_errors=True)
+        os.makedirs(fdir, exist_ok=True)
         pag = PAGINA % dict(fontes=CSS_FONTES, **self.est)
         hp = os.path.join(fdir, 'p.html'); open(hp, 'w').write(pag)
         with sync_playwright() as p:
@@ -222,6 +227,7 @@ class Video:
             pg.goto('file://' + hp); pg.wait_for_timeout(300)
             quadros = range(n) if so_frames is None else so_frames
             for i in quadros:
+                if retomar and os.path.exists(os.path.join(fdir, f'{i:05d}.jpg')): continue
                 t = i/FPS
                 pg.evaluate('s=>window.R(s)', self.estado(t))
                 pg.screenshot(path=os.path.join(fdir, f'{i:05d}.jpg'), type='jpeg', quality=95)
