@@ -7,7 +7,7 @@
 - [x] Banner do YouTube (versão gerada no ChatGPT, subida pelo Léo 17/11) — falta o arquivo final pra guardar na pasta
 - [x] Chave do Google Play no GitHub (`GOOGLE_PLAY_SA_JSON`) — testada 17/11, lendo avaliações ok
 - [x] App Store: chave HC6632UXVU com .p8 colado em ASC_PRIVATE_KEY (18/11); teste puxou 6 avaliações da App Store. Respostas automáticas 4–5★ ligadas nas duas lojas.
-- [x] UTM nos links da bio (19/11) → [x] Atalhos no ar (19/11): /instagram /tiktok /facebook /youtube /stories /whatsapp — arquivos próprios só de redirecionamento (sem pixel), testados: UTMs certas, fbclid preservado, OneLink recebe pid/c/af_adset → [x] Facebook e YouTube trocados pelos atalhos → [ ] Léo trocar TikTok para minhamotopagina.online/tiktok
+- [x] UTM nos links da bio (19/11) → [x] Atalhos no ar (19/11): /instagram /tiktok /facebook /youtube /stories /whatsapp — arquivos próprios só de redirecionamento (sem pixel), testados: UTMs certas, fbclid preservado, OneLink recebe pid/c/af_adset → [x] Facebook e YouTube trocados pelos atalhos → [x] TikTok trocado pelo Léo e conferido no perfil (19/11)
 - [x] Instagram SEM link (restrição da Meta, revisão pedida várias vezes, inclusive stories). Decisão 19/11: não criar conta nova agora e não escrever endereço na bio; reavaliar em ~30 dias com dados do AppsFlyer
 - [x] Histórico do GitHub limpo (gravação com e-mail removida)
 - [ ] Escolher direção visual A ou B (quando as amostras chegarem)
