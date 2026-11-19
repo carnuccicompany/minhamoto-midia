@@ -61,7 +61,7 @@
 - [x] App da Meta 884075288066806 publicado (Live) com ok do Léo (18/11)
 - [ ] Mapear postbacks Meta/TikTok (af_complete_registration + eventos do RevenueCat: rc_trial_started_event, rc_initial_purchase_event, rc_trial_converted_event, rc_renewal_event) quando os eventos existirem — item do pré-build
 - [x] TikTok no AppsFlyer (18/11): apps criados no Events Manager do TikTok via AppsFlyer — TikTok App ID iOS 7709598764285280308, Android 7709597827451256853; parceiro 'TikTok For Business - Advanced SRN' ativo nos 2 apps com postbacks ligados
-- [ ] Encaminhamento Workspace → carnuccicompany@gmail.com: Léo aprovou 19/11; Gmail recusou ("endereço inválido") → Léo liberar no Admin (Gmail → Acesso do usuário final → Encaminhamento automático) → Claude refaz
+- [x] Cópia dos e-mails do Workspace → carnuccicompany@gmail.com (19/11): o encaminhamento do Gmail recusava ("endereço inválido", sem e-mail de verificação), então foi feito por regra de Roteamento no Admin ("Copia para Gmail carnuccicompany": recebidas + internas recebidas, entregar também a carnuccicompany@gmail.com) → [ ] confirmar com e-mail de teste
 - [x] Funil visual do rastreamento publicado (19/11): claude.ai/artifact/Rbv2acafs4TdEj83MfQJPm — atualizar quando a build ligar o SDK
 - [ ] Painel MinhaMoto (aguarda ok do Davi pro schema analytics no Supabase)
 
