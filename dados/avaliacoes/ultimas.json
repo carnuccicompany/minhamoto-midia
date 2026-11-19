@@ -1,7 +1,7 @@
 {
- "coletado_em": "2026-11-19T16:15:51.925368Z",
+ "coletado_em": "2026-11-19T20:14:33.126917Z",
  "status": {
-  "google_play": "ok (5 avaliações)",
+  "google_play": "ok (4 avaliações)",
   "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
@@ -48,17 +48,6 @@
    "aparelho": "b0q (Galaxy S22 Ultra)",
    "respondida": true,
    "resposta_atual": "Sentimos muito pelo transtorno! O app não deveria travar na abertura. Escreva para suporte@carnucci.com com o modelo do seu celular para resolvermos o quanto antes. — Equipe MinhaMoto"
-  },
-  {
-   "loja": "google_play",
-   "id": "7a7fae0c-c50a-4e95-900f-d7d586396218",
-   "nota": 1,
-   "texto": "eu baixei mas n funciona!",
-   "data": "2026-11-12T17:09:09Z",
-   "versao_app": "1.0",
-   "aparelho": "r0q (Galaxy S22)",
-   "respondida": true,
-   "resposta_atual": "Sentimos muito pelo transtorno! Queremos entender o que aconteceu. Escreva para suporte@carnucci.com com o modelo do seu celular e o que aparece na tela, para resolvermos o quanto antes. — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
