@@ -13,6 +13,8 @@
 - [ ] Escolher direção visual A ou B (quando as amostras chegarem)
 - [ ] AppsFlyer + dashboard Supabase (com o Davi)
 
+- [ ] PRÓXIMO TEMA (pedido 19/11): desenhar o ecossistema de agentes "diretores" da empresa (Léo e Davi = CEOs; Claude = braço direito). Ponto de partida do Léo: agente de Dados/Rastreamento lê resultados (posts, anúncios, usuários, receita) → passa pro agente de Marketing/Direção criativa → produção faz variações do que converteu; todos conversando e se retroalimentando. Claude propõe quais agentes são cruciais pra automatizar a empresa
+
 ## Com o Davi
 - [ ] SDK AppsFlyer: implementar agora SEM build (prompt + adendo enviados ao Léo 18/11); mandar resumo de volta pro Claude revisar
 - [ ] Pedido de avaliação dentro do app (atualização seguinte à de 16/11)
