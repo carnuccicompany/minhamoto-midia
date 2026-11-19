@@ -32,3 +32,4 @@
 - 2026-11-18 20:11 · ok · fila 25 dias (102) · 12h DV16, 15h J06 e 18h A07 publicados (IG+FB) · 21h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · sem ações
 - 2026-11-18 20:41 · ok · fila 25 dias (102) · 12h DV16, 15h J06 e 18h A07 publicados (IG+FB) · 21h ainda não venceu · tarefas ok · pendentes 0 · 9:16 ok (113/113) · sem ações
 - 2026-11-18 21:12 · ok · fila 25 dias (101) · 12h DV16, 15h J06, 18h A07 e 21h DV05 publicados (IG+FB) · tarefas ok · pendentes 0 · 9:16 ok (113/113) · painel ok · sem ações
+- 2026-11-18 21:41 · ok · fila 25 dias (101) · 4 posts do dia publicados (IG+FB), próximo 12h · tarefas ok · pendentes 0 · 9:16 ok (113/113) · sem ações
