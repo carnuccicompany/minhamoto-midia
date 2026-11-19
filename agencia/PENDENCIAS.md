@@ -52,9 +52,9 @@
 - [x] "onelink.me" adicionado na regra de InitiateCheckout das entradas Meta e TikTok da UTMify (18/11)
 - [x] Botões da página trocados pelo OneLink com UTMs mapeadas (pid=utm_source, c=utm_campaign, af_adset=utm_medium, af_ad=utm_content, af_sub1=utm_term, af_sub2=ios/android, af_sub3=fbclid, af_sub4=ttclid) — testado 18/11: links ok, IC dispara na Meta (fbq) e TikTok, OneLink leva pra App Store certa
 - [x] Cartão cadastrado no AppsFlyer (18/11) — plano com atribuição móvel ativo, 12.000 unidades grátis até 17/11/2027
-- [ ] TikTok Events Manager: 3 alertas críticos no Pixel MinhaMoto (eventos sem value, sem currency, sem email/telefone) — descobrir origem (UTMify Events API?) e corrigir antes de escalar TikTok
+- [x] TikTok alertas (19/11): causa = 1 único Purchase vazio via Events API em 18/11 (provável evento de teste da conexão); sem venda real; alertas somem sozinhos — nada a corrigir. E-mail/telefone: a página não coleta, ignorar
 - [x] RevenueCat ↔ AppsFlyer (19/11): App configuration com dev key (colada pelo Léo) iOS+Android, App IDs id6815447825 / com.carnuccicompany.minhamoto, eventos padrão rc_*, receita bruta, sandbox em branco
-- [ ] Padrão de UTMs + links da bio por rede
+- [x] Padrão de UTMs + links da bio por rede: doc 'MinhaMoto — Padrão de UTMs e links da bio' (claude.ai/artifact/P94gKe28ravVi3ufbdxNKg), 19/11 → [ ] Léo colar os links nas bios (Instagram, TikTok, Facebook, YouTube) → [ ] confirmar padrão de nome de campanha
 - [x] minhamotopagina.online no Redirect allowlist (vale ~1h depois de 16:36 de 18/11) → [x] OneLink no computador retestado 19/11: redireciona para minhamotopagina.online ✅
 - [x] Meta Ads no AppsFlyer (18/11): app Meta 884075288066806 ganhou plataformas iOS (bundle com.carnuccicompany.minhamoto, loja 6815447825) e Android (pacote + MainActivity) + URLs de privacidade/termos (minhamoto.online); parceiro ativado nos 2 apps do AppsFlyer com App ID; Android com Install Referrer Decryption Key (colada pelo Léo); postbacks ligados (só af_app_opened por enquanto)
 - [x] App da Meta 884075288066806 publicado (Live) com ok do Léo (18/11)
