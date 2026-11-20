@@ -25,3 +25,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: o clone local estava divergente do origin; usei reset para origin/main. O `gh` daqui está com token inválido, então disparo o workflow pelo MCP do GitHub.
 - recebi: —
 - pendente: rascunho 1★ ec124592 segue aguardando OK do Léo (já avisado).
+
+## 2026-11-20 17:20
+- fiz: atualizei as avaliações (9: 3 Google Play, 6 App Store, coleta 20:14Z). Nenhuma nova e nenhuma sem resposta além do 1★ ec124592, que já tem rascunho; nada a publicar.
+- aprendi: o clone local está em main; `git pull --rebase` funciona. Workflow disparado pelo MCP do GitHub (gh com token inválido).
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado).
