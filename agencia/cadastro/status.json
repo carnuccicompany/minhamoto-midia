@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 20:35",
- "pct": 37.0,
+ "atualizado": "20/11/2026 20:49",
+ "pct": 39.8,
  "categorias": [
   {
    "id": "estrutura",
@@ -268,22 +268,16 @@
     {
      "id": "produto",
      "titulo": "Tony Stark — Diretor · Produto",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "produto:analista-do-paywall",
      "titulo": "Steve Jobs — Estagiário · Produto",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "lojas",
@@ -326,8 +320,8 @@
      ]
     }
    ],
-   "pct": 39.3,
-   "feitos": 2,
+   "pct": 48.7,
+   "feitos": 4,
    "total": 15
   },
   {
@@ -422,7 +416,7 @@
    "total": 9
   }
  ],
- "pendentes": 33,
+ "pendentes": 31,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -537,22 +531,6 @@
   },
   {
    "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Tony Stark — Diretor · Produto",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Steve Jobs — Estagiário · Produto",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Jeff Bezos — Diretor · Lojas e Clientes",
    "falta": [
     "modelo",
@@ -650,7 +628,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 37.0
+   "pct": 39.8
   }
  ]
 }
