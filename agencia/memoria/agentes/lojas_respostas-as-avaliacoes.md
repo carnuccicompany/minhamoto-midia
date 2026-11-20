@@ -13,3 +13,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: porquê do nome: Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta.
 - recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
+
+## 2026-11-20 09:30
+- fiz: atualizei as avaliações (9 no total, 3 Google Play e 6 App Store); todas já respondidas ou com rascunho. Nenhuma avaliação nova. Registrei 1 extra (risco do 1★ por falha ao sincronizar) em agencia/merito/extras/2026-11-20-lojas_respostas-as-avaliacoes.md.
+- aprendi: o rascunho do 1★ ec124592 (falha ao sincronizar) já existia desde 00:15 de hoje e já foi avisado ao Léo; não reavisar.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo.
