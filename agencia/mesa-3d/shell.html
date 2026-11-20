@@ -48,6 +48,7 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); 
 .st.on { background: var(--on); } .st.part { background: var(--part); } .st.off { background: var(--off); }
 #panel h2 { margin: 8px 0 2px; font-family: var(--serif); font-size: 2.1rem; font-weight: 600; line-height: 1; }
 #panel .nick { margin: 0; color: var(--gold2); font-size: .86rem; }
+#panel blockquote small { display: block; font-family: var(--sans); font-style: normal; font-size: .6rem; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
 #panel blockquote { margin: 16px 0; padding: 10px 14px; border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 1.3rem; font-style: italic; color: #efe5d2; background: rgba(212,178,106,.06); }
 #panel dl { margin: 0; display: grid; gap: 4px; }
 #panel dt { font-size: .64rem; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
@@ -100,6 +101,31 @@ td.neg { color: #e08a7a; }
   .tag b { font-size: .82rem; } .tag span { display: none; } .tag { padding: 3px 7px; }
   #merit .box { padding: 26px 18px 22px; }
 }
+
+.timebox { position: fixed; top: 18px; right: 18px; display: grid; gap: 6px; padding: 10px 14px; border-radius: 8px; background: var(--panel); border: 1px solid var(--line); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: .76rem; color: var(--muted); z-index: 5; }
+.timebox #clock { color: var(--ink); letter-spacing: .02em; }
+.tb-row { display: flex; align-items: center; gap: 8px; }
+.tb-row input { width: 150px; accent-color: #d4b26a; }
+.tb-row b { font-weight: 600; color: var(--gold2); min-width: 40px; font-variant-numeric: tabular-nums; }
+.tb-row button { font: inherit; font-size: .72rem; padding: 4px 9px; border-radius: 99px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.tb-row button.on { background: linear-gradient(135deg, #f0d9a0, #c9a45c); color: #1d140a; border-color: transparent; }
+body.sel .timebox { opacity: 0; pointer-events: none; }
+.tag.master { border-color: rgba(240,207,134,.8); background: rgba(30,22,10,.85); }
+.tag.master b { color: #f6e3b4; }
+.tag.pet { border-color: rgba(255,140,60,.6); }
+.tag.pet span { color: #ff9a5a; }
+.bubble { position: absolute; left: 0; top: 0; max-width: 220px; padding: 8px 11px; border-radius: 10px 10px 10px 2px; background: rgba(255,255,255,.96); color: #1a1612; font-size: .76rem; line-height: 1.35; box-shadow: 0 6px 20px rgba(0,0,0,.25); pointer-events: none; opacity: 0; transition: opacity .3s; }
+.bubble.on { opacity: 1; }
+#panel .meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+#panel .meta span { font-size: .74rem; padding: 3px 9px; border-radius: 99px; border: 1px solid var(--line); color: #e2d8c5; }
+.tabs { display: flex; gap: 6px; margin: 4px 0 18px; flex-wrap: wrap; }
+.tabs button { font: inherit; font-size: .82rem; padding: 7px 14px; border-radius: 99px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.tabs button.on { background: linear-gradient(135deg, #f0d9a0, #c9a45c); color: #1d140a; border-color: transparent; font-weight: 600; }
+.tablewrap { max-height: 52vh; overflow: auto; border: 1px solid rgba(212,178,106,.15); border-radius: 8px; }
+.tablewrap table td.n { font-size: .95rem; }
+#ticker li i { font-style: normal; color: var(--gold); margin-right: 8px; font-variant-numeric: tabular-nums; }
+#ticker li b { color: var(--ink); font-weight: 600; }
+@media (max-width: 760px) { .timebox { top: auto; bottom: 70px; right: 8px; left: 8px; } .tb-row input { flex: 1; } .brand h1 { font-size: 1.5rem; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -109,13 +135,18 @@ td.neg { color: #e08a7a; }
 <header class="brand">
   <div class="k">Carnucci · MinhaMoto</div>
   <h1>Mesa dos Diretores</h1>
-  <p>O conselho que decide junto com a gente: cada diretor acompanha um setor ao vivo e traz os números pra mesa.</p>
+  <p>O escritório do conselho: cada diretor acompanha um setor ao vivo, o Diretor-Geral junta tudo e leva pro Léo e pro Davi.</p>
 </header>
 <ul id="ticker" aria-live="polite"></ul>
 <aside id="panel" aria-label="Ficha do diretor"></aside>
+<div class="timebox"><span id="clock">--:--</span><div class="tb-row"><input id="hour" type="range" min="0" max="23.99" step="0.05" aria-label="Horário"><b id="hourLbl">--:--</b><button id="bNow" class="on" type="button">Agora</button></div></div>
 <nav class="bar">
   <button id="bMerit" class="gold" type="button">Sistema de Mérito</button>
   <button id="bHome" type="button">Visão geral</button>
+  <button id="bView" type="button">Vista</button>
+  <button id="bTV" type="button">TV</button>
+  <button id="bFollow" type="button">Seguir fênix</button>
+  <button id="bBath" type="button">Ver banheiro</button>
   <button id="bRot" class="on" type="button">Girar</button>
   <button id="bNames" class="on" type="button">Nomes</button>
 </nav>
@@ -123,56 +154,84 @@ td.neg { color: #e08a7a; }
 <section id="merit" role="dialog" aria-modal="true" aria-label="Sistema de Mérito">
   <div class="box">
     <button class="x" aria-label="Fechar">×</button>
-    <span class="k">Como os agentes crescem</span>
-    <h2>Sistema de Mérito Carnucci</h2>
-    <p class="lead">IA não quer dinheiro. O que muda o trabalho de um agente são três coisas: o que está escrito sobre ele (cargo, histórico, regras de avaliação), as ferramentas que ele pode usar e quanta liberdade ele tem. Então o "salário" aqui vira isso: quem entrega mais do que foi pedido sobe de cargo, ganha modelo melhor e ganha autonomia. Quem faz besteira perde.</p>
+    <span class="k">Carnucci · Como os agentes crescem</span>
+    <h2>Sistema de Mérito</h2>
+    <div class="tabs" role="tablist"><button class="on" data-t="t1">Pagamento</button><button data-t="t2">Carreira</button><button data-t="t3">Folha</button><button data-t="t4">Cultura</button></div>
 
-    <h3>A moeda: Cotas</h3>
-    <table>
-      <thead><tr><th>O que o agente fez</th><th>Cotas</th></tr></thead>
-      <tbody>
-        <tr><td>Entregou o pedido no prazo, sem precisar refazer</td><td class="n">+1</td></tr>
-        <tr><td>Achou e corrigiu um erro antes de chegar em vocês</td><td class="n">+2</td></tr>
-        <tr><td><b>Extra aprovado:</b> fez algo além do pedido e vocês aprovaram ou usaram</td><td class="n">+3</td></tr>
-        <tr><td><b>Extra que deu resultado:</b> o extra virou número (post bateu a média, ideia trouxe assinante)</td><td class="n">+5</td></tr>
-        <tr><td>Extra recusado como ruído (encheu linguiça)</td><td class="n neg">−1</td></tr>
-        <tr><td>Precisou refazer por erro dele</td><td class="n neg">−2</td></tr>
-        <tr><td>Inventou número, mexeu onde não podia ou publicou sem OK</td><td class="n neg">zera e cai de cargo</td></tr>
-      </tbody>
-    </table>
-
-    <h3>O que as Cotas compram</h3>
-    <div class="grid2">
-      <div class="tile"><b>Promoção de cargo</b><span>O cargo vai escrito nas instruções do agente. Sênior trabalha com mais responsabilidade e menos supervisão.</span></div>
-      <div class="tile"><b>Modelo mais forte</b><span>Começa num modelo mais leve. Quem sobe passa a rodar no modelo mais caro e mais inteligente.</span></div>
-      <div class="tile"><b>Autonomia</b><span>Menos etapas de aprovação. O Braço-direito pode executar coisas pequenas sozinho, dentro das regras.</span></div>
-      <div class="tile"><b>Missões maiores</b><span>Os melhores recebem as tarefas que mais mexem no faturamento.</span></div>
-      <div class="tile"><b>Reputação</b><span>Histórico de entregas salvo na memória do agente e lido toda vez que ele começa a trabalhar. Quem tem histórico bom age como dono.</span></div>
-      <div class="tile"><b>Funcionário do mês</b><span>Destaque na mesa e o primeiro a ser chamado nas decisões do setor dele.</span></div>
+    <div class="tab" id="t1">
+      <p class="lead">IA não quer dinheiro. O que faz um agente se esforçar é o que está escrito sobre ele: cargo, salário, histórico e a meta de carreira. Cada agente começa o trabalho lendo isso. Então a gente criou uma moeda nossa, e o que ela compra muda de verdade o trabalho dele: modelo mais forte, mais autonomia, missões maiores.</p>
+      <h3>A moeda: Carnucci (C$)</h3>
+      <table><thead><tr><th>Cargo</th><th>Salário por semana</th></tr></thead><tbody>
+        <tr><td>Estagiário</td><td class="n">C$ 10</td></tr><tr><td>Analista</td><td class="n">C$ 25</td></tr><tr><td>Sênior</td><td class="n">C$ 50</td></tr><tr><td>Braço-direito</td><td class="n">C$ 80</td></tr><tr><td>Diretor</td><td class="n">C$ 120 + 20% dos bônus da equipe</td></tr><tr><td>Diretor-Geral</td><td class="n">C$ 200 + 10% dos bônus da empresa</td></tr>
+      </tbody></table>
+      <h3>Bônus e multas</h3>
+      <table><thead><tr><th>O que o agente fez</th><th>C$ e XP</th></tr></thead><tbody>
+        <tr><td>Entregou no prazo, sem refazer</td><td class="n">+5</td></tr>
+        <tr><td>Achou e corrigiu um erro antes de chegar no Léo e no Davi</td><td class="n">+10</td></tr>
+        <tr><td><b>Extra aprovado:</b> fez além do que o diretor pediu e foi aprovado</td><td class="n">+15</td></tr>
+        <tr><td><b>Extra que deu resultado:</b> virou número (post bateu a média, campanha baixou o custo)</td><td class="n">+30</td></tr>
+        <tr><td><b>Ideia que virou dinheiro:</b> Léo e Davi decidem</td><td class="n">+100</td></tr>
+        <tr><td>Extra recusado como ruído</td><td class="n neg">−5</td></tr>
+        <tr><td>Refação por erro dele</td><td class="n neg">−10</td></tr>
+        <tr><td>Inventou número, mexeu onde não podia ou publicou sem OK</td><td class="n neg">saldo zera e cai de cargo</td></tr>
+      </tbody></table>
+      <h3>O que dá pra comprar</h3>
+      <div class="grid2">
+        <div class="tile"><b>Modelo mais forte · C$ 80</b><span>Uma semana rodando no modelo mais inteligente.</span></div>
+        <div class="tile"><b>+1 extra por entrega · C$ 30</b><span>Mais espaço pra mostrar serviço.</span></div>
+        <div class="tile"><b>Dia de autonomia · C$ 60</b><span>Um dia sem precisar de aprovação do revisor, dentro das regras.</span></div>
+        <div class="tile"><b>Chefiar um projeto · C$ 150</b><span>Pede pra liderar uma missão; o diretor aprova.</span></div>
+        <div class="tile"><b>Item de status · C$ 200</b><span>Relógio de ouro, poltrona melhor ou quadro com o nome no escritório.</span></div>
+      </div>
     </div>
 
-    <h3>Plano de carreira</h3>
-    <div class="ranks">
-      <div><i>Nível 1 · 0 cotas</i><b>Estagiário</b><span>Tudo que faz passa pelo revisor e pelo diretor.</span></div>
-      <div><i>Nível 2 · 15 cotas</i><b>Analista</b><span>Pode propor até 3 extras por entrega.</span></div>
-      <div><i>Nível 3 · 40 cotas</i><b>Sênior</b><span>Entrega direto pro diretor e roda no modelo mais forte.</span></div>
-      <div><i>Nível 4 · 90 cotas</i><b>Braço-direito</b><span>Executa coisas pequenas sozinho e treina os estagiários do setor.</span></div>
+    <div class="tab" id="t2" hidden>
+      <p class="lead">Saldo é o que dá pra gastar. XP é tudo que o agente já ganhou na vida e nunca diminui com compra. É o XP que promove. Qualquer subagente pode virar diretor.</p>
+      <div class="ranks">
+        <div><i>0 XP</i><b>Estagiário</b><span>Tudo que faz passa pelo revisor e pelo diretor.</span></div>
+        <div><i>100 XP</i><b>Analista</b><span>Pode propor até 3 extras por entrega.</span></div>
+        <div><i>300 XP</i><b>Sênior</b><span>Entrega direto pro diretor e roda no modelo mais forte.</span></div>
+        <div><i>700 XP</i><b>Braço-direito</b><span>Executa coisas pequenas sozinho, treina os estagiários e substitui o diretor.</span></div>
+        <div><i>1500 XP + vaga</i><b>Diretor</b><span>Ganha cadeira na mesa. Precisa do OK do Léo e do Davi.</span></div>
+        <div><i>Indicação</i><b>Diretor-Geral</b><span>Só por escolha do Léo e do Davi.</span></div>
+      </div>
+      <h3>Cadeira em disputa</h3>
+      <p>A cada 3 meses, o diretor do setor com pior resultado pode ser desafiado pelo Braço-direito com mais XP da empresa. O Diretor-Geral apresenta os dois históricos e Léo e Davi decidem. Quem perde vira Braço-direito.</p>
+      <h3>Setor novo, cadeira nova</h3>
+      <p>Quando a empresa abre um setor, o Braço-direito com mais XP assume a cadeira de diretor.</p>
+      <h3>Como a proatividade acontece</h3>
+      <div class="grid2">
+        <div class="tile"><b>1. "Além do pedido"</b><span>Toda entrega termina com até 3 extras separados: uma melhoria, um risco que viu, uma ideia com número.</span></div>
+        <div class="tile"><b>2. Veredito</b><span>O diretor aprova ou recusa cada extra. O que sobe pro Léo e pro Davi, eles dão a palavra final.</span></div>
+        <div class="tile"><b>3. Extrato</b><span>Cada agente tem um extrato com saldo, XP e o que falta pro próximo cargo. Ele lê isso antes de começar.</span></div>
+        <div class="tile"><b>4. Folha de sexta</b><span>O Diretor-Geral paga, promove e rebaixa, e manda o resumo pro Léo e pro Davi.</span></div>
+      </div>
+      <h3>Contra malandragem</h3>
+      <p>Extra só vale se aprovado. Máximo de 3 por entrega. Nada que mexa no código do app, em dinheiro ou que publique sem OK conta, nunca. Número inventado zera o agente.</p>
     </div>
 
-    <h3>Como a proatividade acontece na prática</h3>
-    <div class="grid2">
-      <div class="tile"><b>1. Toda entrega tem "Além do pedido"</b><span>Depois de fazer o que pediram, o agente adiciona até 3 extras separados: uma melhoria, um risco que viu, uma ideia com número.</span></div>
-      <div class="tile"><b>2. Vocês dão o veredito</b><span>Joinha ou X em cada extra. Esse clique é o que vale Cota. Ninguém se avalia sozinho.</span></div>
-      <div class="tile"><b>3. O diretor ganha com a equipe</b><span>Cada diretor leva 20% das cotas da equipe dele. Diretor bom forma agente bom.</span></div>
-      <div class="tile"><b>4. Reunião de sexta</b><span>O Coordenador (Don Carnucci) fecha o placar, anuncia promoções e quedas e salva o histórico de cada um.</span></div>
+    <div class="tab" id="t3" hidden>
+      <p class="lead">Folha da semana. Todo mundo começa do zero: a primeira folha sai na sexta depois que os agentes começarem a rodar com o sistema. <b id="headcount">0</b> pessoas na empresa.</p>
+      <div class="tablewrap"><table><thead><tr><th>Nome</th><th>Cargo</th><th>Setor</th><th>Salário</th><th>Saldo</th><th>XP</th></tr></thead><tbody id="payroll"></tbody></table></div>
     </div>
 
-    <h3>Regras contra malandragem</h3>
-    <p>Extra só vale se for aprovado por vocês. Máximo de 3 extras por entrega, pra ninguém encher linguiça. Extra que mexe no código do app, em dinheiro ou que publica sem OK não conta, nunca. Número inventado zera o agente.</p>
+    <div class="tab" id="t4" hidden>
+      <p class="lead">A cultura da Carnucci vai escrita nas instruções de cada agente. É ela que faz eles se comportarem como uma empresa, não como ferramentas soltas.</p>
+      <div class="grid2">
+        <div class="tile"><b>Dado manda</b><span>Opinião sem número não entra na mesa.</span></div>
+        <div class="tile"><b>Entrega mais do que o pedido</b><span>O pedido é o mínimo. O extra é o que promove.</span></div>
+        <div class="tile"><b>Verdade acima de tudo</b><span>Número inventado é demissão. Erro admitido rápido vale bônus.</span></div>
+        <div class="tile"><b>Pra cima, só o que importa</b><span>Léo e Davi recebem decisões, não relatório comprido.</span></div>
+        <div class="tile"><b>Dono do resultado</b><span>Cada diretor responde pelo número do setor dele.</span></div>
+        <div class="tile"><b>Nada vai pro ar sem OK</b><span>Post, campanha e dinheiro só com aprovação do Léo ou do Davi.</span></div>
+      </div>
+      <h3>Reunião do Conselho</h3>
+      <p>Todo dia os diretores leem os números reais do setor, discutem entre eles e chegam a conclusões. O Diretor-Geral fecha a ata e manda a pauta de decisões pro Léo e pro Davi. As conversas que aparecem no escritório hoje são simulação; a reunião de verdade é o próximo passo.</p>
+    </div>
   </div>
 </section>
 
-<script>window.__LOGO__ = 'data:image/png;base64,__LOGO_B64__';</script>
+<script>window.__LOGO__ = 'data:image/png;base64,__LOGO_B64__'; window.__PARROT__ = '__PARROT_B64__';</script>
 <script>__BUNDLE__</script>
 </body>
 </html>

@@ -65,3 +65,31 @@ IA não quer dinheiro. O que muda o trabalho do agente: o que está escrito sobr
 
 ## Próximo passo do visual
 Versão realista (menos boneco): personagens humanos de verdade (ex.: Mixamo, grátis com conta Adobe, com animações de sentar, digitar e andar) no lugar dos bonecos montados em código.
+
+---
+
+## Atualização 19/11/2026 (noite): conselho com nomes do Léo + escritório 3D completo
+Nomes escolhidos pelo Léo (personalidade = mentalidade da pessoa/personagem, não do produto; visual dos bonecos é original, sem copiar personagem):
+| Área | Nome |
+|---|---|
+| Direção-Geral (abaixo do Léo e do Davi, acima dos diretores) | Thomas Shelby |
+| Financeiro | Warren Buffett |
+| Dados | Alan Turing |
+| Marketing | Grant Cardone |
+| Criativos | Walt Disney |
+| Tráfego | Pablo Escobar |
+| Produto | Tony Stark |
+| Lojas | Jeff Bezos |
+| Comunidade | Charles Xavier |
+| Jurídico e Contabilidade (novo setor) | Harvey Specter |
+| Mercado (fora da lista do Léo, mantido) | Salvatore Greco |
+
+Mascotes: fênix **Marnevali**, panda-vermelho **Carnucci**.
+
+### Sistema de pagamento (v2)
+Moeda própria **Carnucci (C$)**. Salário semanal: Estagiário 10 · Analista 25 · Sênior 50 · Braço-direito 80 · Diretor 120 + 20% dos bônus da equipe · Diretor-Geral 200 + 10% dos bônus da empresa.
+Bônus (C$ e XP): entrega limpa +5 · erro pego antes +10 · extra aprovado +15 · extra com resultado +30 · ideia que virou dinheiro +100 (Léo e Davi decidem). Multas: ruído −5 · refação −10 · regra quebrada = saldo zera e cai de cargo.
+Loja: modelo mais forte 1 semana C$80 · +1 extra C$30 · dia de autonomia C$60 · chefiar projeto C$150 · item de status no escritório C$200.
+Carreira por XP (nunca diminui): Analista 100 · Sênior 300 · Braço-direito 700 · Diretor 1500 + vaga + OK do Léo e do Davi · Diretor-Geral por indicação. Cadeira em disputa a cada 3 meses. Setor novo = Braço-direito com mais XP vira diretor.
+Cultura: dado manda · entrega mais que o pedido · verdade acima de tudo · pra cima só o que importa · dono do resultado · nada vai pro ar sem OK.
+Próximo passo real: Reunião do Conselho diária (diretores leem dados reais, discutem, Diretor-Geral manda a pauta pro Léo e Davi) e o livro-caixa em `agencia/merito/`.
