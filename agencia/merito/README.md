@@ -89,6 +89,8 @@ A Marnevali (fênix) e o Carnucci (panda-vermelho) são os pets da empresa. A di
 - **`fraco`:** a Marnevali passa acuadinha, de cabeça baixa, e o Carnucci não vai. Sem multa em dinheiro, mas fica registrado na memória do diretor.
 - Gorjeta é paga uma vez por semana por pet, na Folha, fora do teto de bônus de C$ 100. Subagente que for 1º do setor também ganha o carinho do Carnucci.
 - Quem quer a gorjeta trabalha pra isso: o humor dos pets aparece na ficha de cada diretor no escritório.
+- **O Carnucci mora em cima da mesa** (decisão do Léo, 20/11): passa o dia andando por cima dela e deitando do lado dos diretores pra ganhar carinho. Desce de vez em quando e volta.
+- **A pantera negra** (decisão do Léo, 20/11; nome ainda a definir pelo Léo): ronda o tapete de veludo preto em volta da mesa, devagar, sem nunca sair dele. Para atrás de um diretor e encara: é a régua subindo. Com quem está `fraco`, a encarada dura mais. Ela não dá nem tira dinheiro; ela lembra que tem alguém olhando.
 
 ## Meta (decisão do Léo, 20/11/2026)
 

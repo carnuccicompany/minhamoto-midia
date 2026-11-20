@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO } from './data.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
@@ -9,6 +9,7 @@ import { buildEnv, SPOTS, TABLE_R, TOP_Y, ROOM } from './env.js';
 import { buildPerson, blendPose, sitLegs, standLegs, faceTick } from './people.js';
 import { macbook, glassOf, cigar, phone, newspaper, tableProps, chair, throne, plateTex, smokeTex } from './props.js';
 import { buildPhoenix } from './phoenix.js';
+import { buildPanther } from './panther.js';
 import { buildRedPanda } from './pets.js';
 
 const LOGO = window.__LOGO__;
@@ -42,6 +43,7 @@ const clock = new THREE.Clock();
 // ---------- assentos ----------
 const SEAT_R = 3.3, RING = 4.75;
 const deg = d => d * Math.PI / 180;
+const meritOf = d => Object.assign({}, d, { padrao: (MERITO.agentes[d.id] || {}).padrao || MERITO.padrao || 'ouro', broche: (MERITO.agentes[d.id] || {}).broche || 'nenhum' });
 const east = [-60, -30, 0, 30, 60].map(deg), west = [120, 150, 180, 210, 240].map(deg);
 const angles = [...east, ...west];
 const seats = [];
@@ -68,7 +70,7 @@ DIRETORES.forEach((d, i) => {
   const a = angles[i];
   const frame = frameAt(a);
   const ch = chair(plateTex(d.nome, d.setor)); frame.add(ch); blob(frame, 0, -0.05, 0.5, 0.55, 0.4);
-  const P = buildPerson(d); frame.add(P.root); sitLegs(P);
+  const P = buildPerson(meritOf(d)); frame.add(P.root); sitLegs(P);
   const mb = macbook(frame, 0, 0.7, 0, d.tela); mb.group.position.y = TOP_Y;
   const slots = [[-0.38, 0.68], [0.42, 0.88], [-0.44, 0.92]];
   let si = 0;
@@ -90,7 +92,7 @@ DIRETORES.forEach((d, i) => {
 seats.forEach((s, i) => { s.left = seats[(i + seats.length - 1) % seats.length]; s.right = seats[(i + 1) % seats.length]; });
 
 // Consigliere (diretor-geral) — anda pela sala
-const masterP = buildPerson(MASTER);
+const masterP = buildPerson(meritOf(MASTER));
 const master = { d: MASTER, P: masterP, pos: new THREE.Vector3(5.2, 0, -4.6), heading: -2.2, state: 'idle', t: 4, phase: 0, path: null, leg: 0, target: null, bubble: addBubble() };
 scene.add(masterP.root); blob(masterP.root, 0, 0, 0.32, 0.32); standLegs(masterP, 0, false); blendPose(masterP, 'armsCross', 'armsCross', 1);
 masterP.root.traverse(o => { if (o.isMesh) { o.userData.dirId = 'master'; pickables.push(o); } });
@@ -111,10 +113,29 @@ const FALA_PET = {
   ok: ['Tô de olho no número, Marnevali.', 'Calma que vem coisa boa aí.'],
   fraco: ['Desculpa, Marnevali. Semana que vem eu viro esse número.', 'Não fica assim, vou compensar.'],
   panda: ['Vem cá, Carnucci.', 'Esse é o melhor funcionário da empresa.', 'Carinho pro chefe peludo.'],
+  pandaMesa: ['Ô Carnucci, deita aqui do lado.', 'Esse panda não sai da mesa.', 'Carinho rapidinho e volto pro número.', 'Melhor colega de mesa que existe.'],
+  pantera: ['Tô no gás, tô no gás.', 'Relaxa, o relatório sai hoje.', 'Já tô refazendo esse número.', 'Ela não tira o olho de mim.', 'Ninguém dorme no ponto com ela aqui.'],
 };
 const pick = a => a[Math.floor(Math.random() * a.length)];
 let fenixT = 18, pandaT = 40, fenixIdx = 0;
 const panda = buildRedPanda(scene);
+{ const sa = [...angles, deg(90), deg(270)].sort((a, b) => a - b); const gaps = []; for (let i = 0; i < sa.length; i++) { const a = sa[i], b = i + 1 < sa.length ? sa[i + 1] : sa[0] + Math.PI * 2; gaps.push((a + b) / 2); } panda.setSeats(angles, gaps); }
+panda.onPetIdle = a => { const s = seats.find(x => Math.abs(Math.atan2(Math.sin(x.a - a), Math.cos(x.a - a))) < 0.05 && x.state === 'sit'); if (s) say(s, pick(FALA_PET.pandaMesa)); };
+const panther = buildPanther(scene, 5.0);
+let pantherT = 22;
+function pantherTick(dt) {
+  pantherT -= dt; if (pantherT > 0 || panther.busy()) return;
+  // para atrás de quem está mais perto dela; quem está "fraco" com os pets leva encarada mais longa
+  const a = panther.angle(); const sitting = seats.filter(s => s.state === 'sit');
+  const near = sitting.map(s => ({ s, d: Math.abs(Math.atan2(Math.sin(s.a - a - 0.18), Math.cos(s.a - a - 0.18))) })).sort((x, y) => x.d - y.d)[0];
+  if (!near || near.d > 0.16) { pantherT = 0.5; return; }
+  const s = near.s, fraco = humor(s.d.id) === 'fraco';
+  panther.stare(s.frame.getWorldPosition(new THREE.Vector3()).setY(1.2), fraco ? 6 : 3.5, () => {
+    say(s, pick(FALA_PET.pantera));
+    if (fraco || Math.random() < 0.35) log(`A <b>pantera</b> parou atrás do <b>${first(s)}</b> e ficou encarando até ver trabalho andar.`);
+  });
+  pantherT = 26 + Math.random() * 20;
+}
 function petTick(dt) {
   const sitting = seats.filter(s => s.state === 'sit');
   fenixT -= dt;
@@ -135,18 +156,21 @@ function petTick(dt) {
   }
 }
 panda.root.traverse(o => { if (o.isMesh) pickables.push(o); });
+panther.root.traverse(o => { if (o.isMesh) pickables.push(o); });
 const PETS = {
   fenix: { nome: 'Marnevali', tipo: 'Fênix · o pet da empresa', txt: 'A sala inteira ama ela e ninguém quer decepcionar a Marnevali. Ela passa voando por cada diretor: quando o trampo foi foda, solta fogo pro alto e o diretor ganha gorjeta (+10 XP e C$ 5). Quando o trampo foi fraco, passa acuadinha, de cabeça baixa. Renasce das cinzas, como a empresa que não para.' },
-  panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'Vai até a cadeira de quem mandou bem, sobe na mesa e pede carinho. Cada visita é gorjeta: +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
+  panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'A casa dele é a mesa dos diretores: passa o dia andando por cima dela e deitando do lado de alguém pra ganhar carinho. Desce de vez em quando, dá uma volta e sobe de novo. Quando um diretor manda bem, ele vai direto pra frente dele: é gorjeta de +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
+  pantera: { nome: 'Pantera negra', tipo: 'A vigia do tapete · ainda sem nome', txt: 'Ronda o tapete de veludo em volta da mesa, devagar, sem nunca sair dele. De vez em quando para atrás de um diretor e fica encarando. Não morde ninguém: ela sobe a régua. Com quem está devendo, a encarada dura mais.' },
 };
 const pandaTag = addTag('<b>Carnucci</b><span>Panda-vermelho</span>', 'pet'); pandaTag.addEventListener('click', e => { e.stopPropagation(); selectPet('panda'); });
+const pantherTag = addTag('<b>Pantera</b><span>A vigia do tapete</span>', 'pet'); pantherTag.addEventListener('click', e => { e.stopPropagation(); selectPet('pantera'); });
 const fenixTag = addTag('<b>Marnevali</b><span>Fênix</span>', 'pet'); fenixTag.addEventListener('click', e => { e.stopPropagation(); selectPet('fenix'); });
 function selectPet(k) {
   hideTeam(); const p = PETS[k]; selected = { pet: k }; controls.autoRotate = false;
   openPanel(`<button class="x" aria-label="Fechar">×</button><span class="kick">Mascote</span><h2>${p.nome}</h2><p class="nick">${p.tipo}</p><p class="what" style="margin-top:14px">${p.txt}</p>`);
   setOffset();
   if (k === 'fenix') { follow = 'phoenix'; document.getElementById('bFollow').classList.add('on'); }
-  else { const q = panda.root.position; camFly = { pos: q.clone().add(new THREE.Vector3(1.6, 1.3, 1.6)), tgt: q.clone().add(new THREE.Vector3(0, 0.3, 0)) }; selected.track = true; }
+  else { const q = (k === 'pantera' ? panther.root : panda.root).position; camFly = { pos: q.clone().add(new THREE.Vector3(1.6, 1.3, 1.6)), tgt: q.clone().add(new THREE.Vector3(0, 0.3, 0)) }; selected.track = true; }
 }
 
 // ---------- caminhos ----------
@@ -278,8 +302,8 @@ function updateSeat(s, dt, now) {
         headYaw = yaw * kk; headPitch = lerp(0.3, 0.02, kk); lean = -0.03; break;
       }
     }
-    P.head.rotation.y = ease(P.head.rotation.y, headYaw, 5, dt); P.head.rotation.x = ease(P.head.rotation.x, headPitch, 5, dt);
-    P.torso.rotation.x = ease(P.torso.rotation.x, lean, 3, dt);
+    P.head.rotation.y = ease(P.head.rotation.y, headYaw, 5, dt); P.head.rotation.x = ease(P.head.rotation.x, headPitch + P.slump * 0.16, 5, dt);
+    P.torso.rotation.x = ease(P.torso.rotation.x, lean + P.slump * 0.12, 3, dt);
     return;
   }
   if (s.state === 'standup' || s.state === 'sitdown') {
@@ -387,6 +411,7 @@ function updateLabels() {
   });
   const o = place(master.tag, master.P.head, 0.3, w, h); const mh = !namesOn || selected === master; master.tag.style.opacity = mh ? 0 : o; master.tag.style.pointerEvents = !mh && o ? 'auto' : 'none';
   const ob = place(master.bubble, master.P.head, !mh ? 0.62 : 0.32, w, h); master.bubble.style.visibility = ob ? 'visible' : 'hidden';
+  { const opp = place(pantherTag, panther.head, 0.32, w, h); pantherTag.style.opacity = namesOn ? opp : 0; pantherTag.style.pointerEvents = namesOn && opp ? 'auto' : 'none'; }
   const op = place(pandaTag, panda.head, 0.22, w, h); pandaTag.style.opacity = namesOn ? op : 0; pandaTag.style.pointerEvents = namesOn && op ? 'auto' : 'none';
   if (phoenix.ready) { const of = place(fenixTag, phoenix.root, 0.9, w, h); fenixTag.style.opacity = namesOn && follow !== 'phoenix' ? of : 0; fenixTag.style.pointerEvents = namesOn && of ? 'auto' : 'none'; } else fenixTag.style.opacity = 0;
 }
@@ -489,7 +514,7 @@ renderer.domElement.addEventListener('pointerup', e => {
   const hit = ray.intersectObjects(pickables, false).find(h => { let o = h.object; while (o) { if (!o.visible) return false; o = o.parent; } return true; });
   if (!hit) return;
   if (hit.object.userData.thr) return selectThrone(hit.object.userData.thr);
-  if (hit.object.userData.pet) return selectPet('panda');
+  if (hit.object.userData.pet) return selectPet(hit.object.userData.pet === 'pantera' ? 'pantera' : 'panda');
   if (hit.object.userData.decor) return selectDecor(hit.object.userData.decor);
   if (hit.object.userData.hall) return selectHall();
   if (hit.object.userData.stock) return openStock(hit.object.userData.stock);
@@ -549,8 +574,8 @@ function loop() {
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
   frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
-  phoenix.update(dt, now); panda.update(dt, now); petTick(dt);
-  if (selected && selected.pet === 'panda' && !camFly) controls.target.lerp(panda.root.position.clone().setY(0.3), 1 - Math.pow(0.05, dt));
+  phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt);
+  if (selected && (selected.pet === 'panda' || selected.pet === 'pantera') && !camFly) { const q = selected.pet === 'panda' ? panda.root.position : panther.root.position; controls.target.lerp(q.clone().setY(q.y + 0.4), 1 - Math.pow(0.05, dt)); }
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
   if (holo) {
     const w = app.clientWidth, h = app.clientHeight;
@@ -570,7 +595,7 @@ env.southItems.concat(env.westItems).forEach(g => { if (g.isGroup) { bakeStatic(
 env.bathDoor.userData.dyn = true; bakeStatic(env.bathDoor);
 decor.forEach(({ g }) => { bakeStatic(g); g.userData.dyn = true; }); bakeStatic(hall); hall.userData.dyn = true;
 [stock.fr, stock.ar].forEach(g => { bakeStatic(g); g.userData.dyn = true; });
-phoenix.root.userData.dyn = true; panda.root.userData.dyn = true; masterP.root.userData.dyn = true; seats.forEach(s => s.P.root.userData.dyn = true);
+phoenix.root.userData.dyn = true; panda.root.userData.dyn = true; panther.root.userData.dyn = true; masterP.root.userData.dyn = true; seats.forEach(s => s.P.root.userData.dyn = true);
 bakeStatic(scene);
 mergeChildren(scene);
 pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet || o.userData.decor || o.userData.hall || o.userData.stock) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
@@ -579,4 +604,4 @@ masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
 window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.__mesa = { panther, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };

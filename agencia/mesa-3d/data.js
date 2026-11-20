@@ -133,6 +133,19 @@ export const ESTOQUE = [
   { id: 'monte2', onde: 'armario', tipo: 'Charuto', nome: 'Montecristo Nº 2', det: 'Cubano, pirâmide, unidade', reais: 260, fonte: 'Carta do Fairmont Rio (2026)', url: 'https://fairmontrio.com/wp-content/uploads/2026/04/Menu-Relax-Garden-Bar-15x297cm-v7-Q12026-compactado-1.pdf', consome: true },
   { id: 'aventus', onde: 'armario', tipo: 'Perfume', nome: 'Creed Aventus', det: 'Eau de parfum, 100 ml', reais: 3519, fonte: 'Drogasil', url: 'https://www.drogasil.com.br/aventus-creed-eau-de-parfum-masculino-100-ml-1156389.html', consome: false },
   { id: 'rolex', onde: 'armario', tipo: 'Relógio', nome: 'Rolex Submariner Date', det: 'Aço Oystersteel, 41 mm (ref. 126610LN)', reais: 96000, fonte: 'Rolex Brasil (preço sugerido)', url: 'https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html', consome: false },
+  { id: 'chivas12', onde: 'adega', tipo: 'Uísque', nome: 'Chivas Regal 12 anos', det: 'Blended escocês, 1 L · bebida da casa no padrão Ouro', reais: 164.25, fonte: 'Magalu', url: 'https://m.magazineluiza.com.br/busca/chivas+12+anos/', consome: true },
+  { id: 'redlabel', onde: 'adega', tipo: 'Uísque', nome: 'Johnnie Walker Red Label', det: 'Blended escocês, 1 L · bebida da casa no padrão Prata', reais: 57.90, fonte: 'Buscapé (menor preço)', url: 'https://www.buscape.com.br/whisky/whisky-johnnie-walker-red-label-1l', consome: true },
+  { id: 'cachaca51', onde: 'adega', tipo: 'Cachaça', nome: 'Cachaça 51', det: '965 ml · bebida da casa no padrão Crise', reais: 21.90, fonte: 'Buscapé (menor preço)', url: 'https://www.buscape.com.br/cachaca-pinga/cachaca-51-ouro-965ml', consome: true },
+  { id: 'pilao', onde: 'frigobar', tipo: 'Café', nome: 'Café Pilão', det: '500 g · café da casa no Prata e no Crise', reais: 32.99, fonte: 'Pão de Açúcar', url: 'https://www.paodeacucar.com/produto/152052/cafe-pilao-torrado-e-moido-tradicional-almofada-500g', consome: true },
+  { id: 'dannemann', onde: 'armario', tipo: 'Charuto', nome: 'Dannemann Robusto Mata Fina', det: 'Charuto baiano · charuto da casa no padrão Prata', reais: 50, fonte: 'Brazil Journal (cerca de R$ 50)', url: 'https://braziljournal.com/viva-el-patron-a-volta-por-cima-dos-charutos-baianos', consome: true },
+  { id: 'casio', onde: 'armario', tipo: 'Relógio', nome: 'Casio Vintage A168', det: 'Digital, aço', reais: 252.71, fonte: 'Buscapé (menor preço)', url: 'https://www.buscape.com.br/relogio-pulso/relogio-unissex-digital-casio-vintage-a168wa-1wdf-prata', consome: false },
+  { id: 'tissot', onde: 'armario', tipo: 'Relógio', nome: 'Tissot PRX', det: 'Aço, quartzo suíço', reais: 4379, fonte: 'Amazon via Buscapé', url: 'https://www.buscape.com.br/busca/relogio+tissot+1853+t109410a', consome: false },
+  { id: 'daytona', onde: 'armario', tipo: 'Relógio', nome: 'Rolex Cosmograph Daytona', det: 'Aço Oystersteel, 40 mm', reais: 142800, fonte: 'Rolex Brasil (preço sugerido)', url: 'https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0', consome: false },
+  { id: 'daytonaouro', onde: 'armario', tipo: 'Relógio', nome: 'Rolex Cosmograph Daytona (ouro amarelo)', det: 'Ouro amarelo 18 ct, 40 mm', reais: 347900, fonte: 'Rolex Brasil (preço sugerido)', url: 'https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0', consome: false },
+  { id: 'terno_micro', onde: 'armario', tipo: 'Terno', nome: 'Terno microfibra', det: 'Loja popular · terno da casa no padrão Crise', reais: 214.91, fonte: 'Magalu', url: 'https://www.magazineluiza.com.br/busca/ternos/', consome: false },
+  { id: 'terno_pv', onde: 'armario', tipo: 'Terno', nome: 'Terno Slim Fit PV', det: 'Terno da casa no padrão Prata', reais: 1699.90, fonte: 'Magalu', url: 'https://www.magazineluiza.com.br/busca/terno+fit/', consome: false },
+  { id: 'terno_super120', onde: 'armario', tipo: 'Terno', nome: 'Terno lã Super 120 (Highstil)', det: 'Terno da casa no padrão Ouro', reais: 4229.90, fonte: 'Dafiti', url: 'https://www.dafiti.com.br/HIGHSTIL-Terno-Slim-Fit-La-Xadrez---Azul-Marinho-15137250.html', consome: false },
+  { id: 'zegna', onde: 'armario', tipo: 'Terno', nome: 'Ermenegildo Zegna sob medida', det: 'A partir de · terno da casa no padrão Elite', reais: 8000, fonte: 'IstoÉ Dinheiro (matéria antiga; a confirmar)', url: 'https://istoedinheiro.com.br/elegancia-tropical-3', consome: false },
 ];
 export const GOSTOS = {
   master: ['royal21', 'behike'],
@@ -359,3 +372,7 @@ export const SUBNOME = {
 // Humor dos pets com cada diretor: vem da Folha de sexta (agencia/merito/pets.json).
 // 'foda' = Marnevali solta fogo e o Carnucci sobe na mesa; 'ok' = passam de olho; 'fraco' = Marnevali passa acuada e o Carnucci não vai.
 export const PETS_HUMOR = { atualizado: null, humor: {} };
+
+// Mérito na Mesa: padrão da casa (elite/ouro/prata/crise) e broche de cada diretor.
+// Atualizado a partir de agencia/merito/livro.json e padrao.json depois de cada Folha de sexta.
+export const MERITO = { atualizado: '20/11/2026', padrao: 'ouro', agentes: {} };

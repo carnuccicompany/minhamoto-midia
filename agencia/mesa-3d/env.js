@@ -235,13 +235,39 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   const towel = mesh(rbox(0.5, 0.7, 0.06, 0.02), mat(0xece4d4, { roughness: 1 }), scene, [11.9, 1.2, 5.5], [0, -Math.PI / 2, 0]);
 
   // ---------- tapete e mesa ----------
-  const rugT = tex(1024, 1024, (g, w, h) => {
-    g.fillStyle = '#2a2826'; g.beginPath(); g.arc(w / 2, h / 2, w / 2, 0, 7); g.fill();
-    g.strokeStyle = 'rgba(212,178,106,.7)'; g.lineWidth = 7; g.beginPath(); g.arc(w / 2, h / 2, w / 2 - 26, 0, 7); g.stroke();
-    g.lineWidth = 2; g.beginPath(); g.arc(w / 2, h / 2, w / 2 - 44, 0, 7); g.stroke();
-    for (let i = 0; i < 6000; i++) { g.fillStyle = `rgba(255,255,255,${Math.random() * .025})`; g.fillRect(Math.random() * w, Math.random() * h, 2, 2); }
+  // tapete de veludo preto: pelo com brilho que muda com o ângulo (sheen), fio de ouro na borda
+  const rugT = tex(2048, 2048, (g, w, h) => {
+    const cx = w / 2, cy = h / 2, R = w / 2;
+    const base = g.createRadialGradient(cx, cy, 0, cx, cy, R);
+    base.addColorStop(0, '#141216'); base.addColorStop(0.55, '#0d0c0f'); base.addColorStop(0.93, '#09080a'); base.addColorStop(1, '#060507');
+    g.fillStyle = base; g.beginPath(); g.arc(cx, cy, R, 0, 7); g.fill();
+    // "escovado" do veludo: listras radiais finíssimas, como pelo penteado pra fora
+    g.save(); g.beginPath(); g.arc(cx, cy, R - 70, 0, 7); g.clip();
+    for (let i = 0; i < 2600; i++) { const a = Math.random() * 6.2832, r0 = Math.random() * R * 0.9, l = 30 + Math.random() * 160;
+      g.strokeStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '0,0,0'},${Math.random() * .045})`; g.lineWidth = 1 + Math.random() * 1.5;
+      g.beginPath(); g.moveTo(cx + Math.cos(a) * r0, cy + Math.sin(a) * r0); g.lineTo(cx + Math.cos(a) * (r0 + l), cy + Math.sin(a) * (r0 + l)); g.stroke(); }
+    // marcas suaves de quem pisou (veludo amassado)
+    for (let i = 0; i < 26; i++) { const x = cx + (Math.random() - .5) * R * 1.5, y = cy + (Math.random() - .5) * R * 1.5, rr = 60 + Math.random() * 160;
+      const gr = g.createRadialGradient(x, y, 0, x, y, rr); gr.addColorStop(0, `rgba(255,255,255,${.012 + Math.random() * .02})`); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(x - rr, y - rr, rr * 2, rr * 2); }
+    g.restore();
+    // pontinhos de fibra
+    for (let i = 0; i < 26000; i++) { g.fillStyle = `rgba(255,255,255,${Math.random() * .03})`; g.fillRect(Math.random() * w, Math.random() * h, 1.5, 1.5); }
+    // borda: debrum em cordão de ouro duplo + faixa de veludo mais escura
+    g.lineWidth = 46; g.strokeStyle = '#050405'; g.beginPath(); g.arc(cx, cy, R - 23, 0, 7); g.stroke();
+    const gold = (r, lw, a) => { g.lineWidth = lw; g.strokeStyle = `rgba(214,180,108,${a})`; g.beginPath(); g.arc(cx, cy, r, 0, 7); g.stroke(); };
+    gold(R - 50, 10, .85); gold(R - 50, 3, 1); gold(R - 78, 3, .7);
+    for (let i = 0; i < 360; i++) { const a = i / 360 * 6.2832; g.fillStyle = `rgba(240,210,140,${.35 + (i % 2) * .3})`; g.beginPath(); g.arc(cx + Math.cos(a) * (R - 50), cy + Math.sin(a) * (R - 50), 2.4, 0, 7); g.fill(); }
   });
-  mesh(new THREE.CircleGeometry(5.3, 96), mat(0xffffff, { map: rugT, transparent: true, roughness: 1 }), scene, [0, 0.006, 0], [-Math.PI / 2, 0, 0], false);
+  const rugBump = tex(1024, 1024, (g, w, h) => {
+    g.fillStyle = '#808080'; g.fillRect(0, 0, w, h);
+    for (let i = 0; i < 60000; i++) { const v = 100 + Math.random() * 60 | 0; g.fillStyle = `rgb(${v},${v},${v})`; g.fillRect(Math.random() * w, Math.random() * h, 1.2, 1.2); }
+    g.lineWidth = 22; g.strokeStyle = '#d0d0d0'; g.beginPath(); g.arc(w / 2, h / 2, w / 2 - 25, 0, 7); g.stroke();
+  });
+  rugBump.colorSpace = THREE.NoColorSpace;
+  const velvet = new THREE.MeshPhysicalMaterial({ map: rugT, color: 0xffffff, roughness: 0.92, metalness: 0, sheen: 1, sheenColor: new THREE.Color(0x4a3f52), sheenRoughness: 0.42, bumpMap: rugBump, bumpScale: 0.6, transparent: true });
+  const rug = mesh(new THREE.CircleGeometry(5.3, 128), velvet, scene, [0, 0.006, 0], [-Math.PI / 2, 0, 0], false); rug.userData.keep = true;
+  // borda com volume (o tapete tem espessura)
+  const rim = mesh(new THREE.TorusGeometry(5.29, 0.022, 8, 160), new THREE.MeshPhysicalMaterial({ color: 0x0a090b, roughness: 0.8, sheen: 1, sheenColor: new THREE.Color(0x5a4d63), sheenRoughness: 0.35 }), scene, [0, 0.012, 0], [Math.PI / 2, 0, 0], false); rim.scale.z = 0.6; rim.userData.keep = true;
   const table = new THREE.Group(); scene.add(table); blob(scene, 0, 0, 3.4, 3.4, 0.45);
   const woodT = tex(1024, 1024, (g, w, h) => {
     g.fillStyle = '#1b130e'; g.fillRect(0, 0, w, h);
