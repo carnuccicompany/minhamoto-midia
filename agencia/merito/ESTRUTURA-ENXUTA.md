@@ -25,3 +25,9 @@ Menos gente, mais motor. De 51 agentes, ficam **13 ativos**: 7 que pensam e deci
 
 ## Reserva
 Cardone, Buffett, Xavier, Specter e os subagentes sem tarefa real. Volta pra ativa: o diretor pede na Mesa de Demandas com o trabalho que falta e o número que ele vai mover; o Shelby aprova; o Léo pode vetar.
+
+
+## Atualização 20/11/2026 18h (decisões do Léo)
+- **Grant Cardone volta da reserva como Diretor de Infoprodutos (Corretores)** — playbook `agencia/diretoria/12-infoprodutos.md`. Diretoria agora tem 8 (Shelby + 7).
+- **Steve Jobs volta da reserva como designer de produto** debaixo do Stark: ideias de funcionalidade, UI/UX e mudanças em proposta pro Davi revisar.
+- Total ativo: 15 (8 diretores + 7 executores).

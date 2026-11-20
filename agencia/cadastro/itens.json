@@ -1,35 +1,143 @@
 {
-  "_leia": "Itens do cadastro 100% que não dá pra conferir sozinho. status: feito | pendente | parcial (0 a 1 em 'parcial'). O script scripts/cadastro.py junta isto com o que confere sozinho (agentes, base de conhecimento, meta) e grava status.json.",
-  "categorias": {
-    "estrutura": {"nome": "Estrutura e rotinas", "peso": 15, "itens": [
-      {"id": "enxuta", "titulo": "Empresa enxuta: 7 diretores + 6 executores", "status": "feito"},
-      {"id": "merito", "titulo": "Sistema de mérito, Carnutes, broches, padrão da casa", "status": "feito"},
-      {"id": "boletim", "titulo": "Boletim semanal no painel", "status": "feito"},
-      {"id": "mesa-demandas", "titulo": "Mesa de Demandas (criar, passar, cobrar)", "status": "feito"},
-      {"id": "conselho", "titulo": "Conselho diário com cada diretor como IA separada", "status": "feito"},
-      {"id": "folha", "titulo": "Folha de sexta", "status": "feito"},
-      {"id": "tarefa-mesa-demandas", "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)", "status": "pendente", "depende": "OK do Léo"},
-      {"id": "orcamento-uso", "titulo": "Orçamento de uso por agente", "status": "pendente"},
-      {"id": "placar-experimentos", "titulo": "Placar de experimentos (criativos e testes por semana)", "status": "pendente"}
-    ]},
-    "decisoes": {"nome": "Decisões do Léo e do Davi", "peso": 10, "itens": [
-      {"id": "meta", "titulo": "Número da meta semanal de assinantes pagos", "status": "auto"},
-      {"id": "carnucci-dados", "titulo": "OK pro repositório privado carnucci-dados", "status": "pendente"},
-      {"id": "conector-meta", "titulo": "Escolher conector da Meta Ads + Instagram", "status": "pendente"},
-      {"id": "infoprodutos", "titulo": "Diretor de infoprodutos/Corretores: sim ou não", "status": "pendente"},
-      {"id": "agente-app", "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não", "status": "pendente"}
-    ]},
-    "conexoes": {"nome": "Conexões (tudo linkado)", "peso": 25, "itens": [
-      {"id": "github", "titulo": "Repositório e painel no GitHub", "status": "feito"},
-      {"id": "gmail", "titulo": "Gmail e Drive", "status": "feito"},
-      {"id": "revenuecat", "titulo": "RevenueCat (assinantes e receita)", "status": "pendente"},
-      {"id": "appsflyer", "titulo": "AppsFlyer (origem das instalações)", "status": "pendente"},
-      {"id": "meta-ads", "titulo": "Meta Ads + Instagram", "status": "pendente"},
-      {"id": "tiktok", "titulo": "TikTok for Business", "status": "pendente"},
-      {"id": "asc", "titulo": "App Store Connect (chave só de dados)", "status": "pendente"},
-      {"id": "play", "titulo": "Google Play Console (relatórios)", "status": "pendente"},
-      {"id": "utmify", "titulo": "UTMify (leitura do painel)", "status": "pendente"},
-      {"id": "sdk-appsflyer", "titulo": "SDK do AppsFlyer dentro do app (Davi)", "status": "pendente"}
-    ]}
+ "_leia": "Itens do cadastro 100% que não dá pra conferir sozinho. status: feito | pendente | parcial (0 a 1 em 'parcial'). O script scripts/cadastro.py junta isto com o que confere sozinho (agentes, base de conhecimento, meta) e grava status.json.",
+ "categorias": {
+  "estrutura": {
+   "nome": "Estrutura e rotinas",
+   "peso": 15,
+   "itens": [
+    {
+     "id": "enxuta",
+     "titulo": "Empresa enxuta: 7 diretores + 6 executores",
+     "status": "feito"
+    },
+    {
+     "id": "merito",
+     "titulo": "Sistema de mérito, Carnutes, broches, padrão da casa",
+     "status": "feito"
+    },
+    {
+     "id": "boletim",
+     "titulo": "Boletim semanal no painel",
+     "status": "feito"
+    },
+    {
+     "id": "mesa-demandas",
+     "titulo": "Mesa de Demandas (criar, passar, cobrar)",
+     "status": "feito"
+    },
+    {
+     "id": "conselho",
+     "titulo": "Conselho diário com cada diretor como IA separada",
+     "status": "feito"
+    },
+    {
+     "id": "folha",
+     "titulo": "Folha de sexta",
+     "status": "feito"
+    },
+    {
+     "id": "tarefa-mesa-demandas",
+     "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)",
+     "status": "feito"
+    },
+    {
+     "id": "orcamento-uso",
+     "titulo": "Orçamento de uso por agente",
+     "status": "pendente"
+    },
+    {
+     "id": "placar-experimentos",
+     "titulo": "Placar de experimentos (criativos e testes por semana)",
+     "status": "pendente"
+    }
+   ]
+  },
+  "decisoes": {
+   "nome": "Decisões do Léo e do Davi",
+   "peso": 10,
+   "itens": [
+    {
+     "id": "meta",
+     "titulo": "Número da meta semanal de assinantes pagos",
+     "status": "auto"
+    },
+    {
+     "id": "carnucci-dados",
+     "titulo": "OK pro repositório privado carnucci-dados",
+     "status": "feito"
+    },
+    {
+     "id": "conector-meta",
+     "titulo": "Escolher conector da Meta Ads + Instagram",
+     "status": "pendente"
+    },
+    {
+     "id": "infoprodutos",
+     "titulo": "Diretor de infoprodutos/Corretores: sim ou não",
+     "status": "feito"
+    },
+    {
+     "id": "agente-app",
+     "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não",
+     "status": "feito"
+    }
+   ]
+  },
+  "conexoes": {
+   "nome": "Conexões (tudo linkado)",
+   "peso": 25,
+   "itens": [
+    {
+     "id": "github",
+     "titulo": "Repositório e painel no GitHub",
+     "status": "feito"
+    },
+    {
+     "id": "gmail",
+     "titulo": "Gmail e Drive",
+     "status": "feito"
+    },
+    {
+     "id": "revenuecat",
+     "titulo": "RevenueCat (assinantes e receita)",
+     "status": "pendente"
+    },
+    {
+     "id": "appsflyer",
+     "titulo": "AppsFlyer (origem das instalações)",
+     "status": "pendente"
+    },
+    {
+     "id": "meta-ads",
+     "titulo": "Meta Ads + Instagram",
+     "status": "pendente"
+    },
+    {
+     "id": "tiktok",
+     "titulo": "TikTok for Business",
+     "status": "pendente"
+    },
+    {
+     "id": "asc",
+     "titulo": "App Store Connect (chave só de dados)",
+     "status": "pendente"
+    },
+    {
+     "id": "play",
+     "titulo": "Google Play Console (relatórios)",
+     "status": "pendente"
+    },
+    {
+     "id": "utmify",
+     "titulo": "UTMify (leitura do painel)",
+     "status": "pendente"
+    },
+    {
+     "id": "sdk-appsflyer",
+     "titulo": "SDK do AppsFlyer dentro do app (Davi)",
+     "status": "pendente"
+    }
+   ]
   }
+ }
 }

@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 17:13",
- "pct": 24.0,
+ "atualizado": "20/11/2026 18:21",
+ "pct": 31.7,
  "categorias": [
   {
    "id": "estrutura",
@@ -46,9 +46,8 @@
     {
      "id": "tarefa-mesa-demandas",
      "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)",
-     "status": "pendente",
-     "depende": "OK do Léo",
-     "valor": 0.0
+     "status": "feito",
+     "valor": 1.0
     },
     {
      "id": "orcamento-uso",
@@ -63,8 +62,8 @@
      "valor": 0.0
     }
    ],
-   "pct": 66.7,
-   "feitos": 6,
+   "pct": 77.8,
+   "feitos": 7,
    "total": 9
   },
   {
@@ -81,8 +80,8 @@
     {
      "id": "carnucci-dados",
      "titulo": "OK pro repositório privado carnucci-dados",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "valor": 1.0
     },
     {
      "id": "conector-meta",
@@ -93,18 +92,18 @@
     {
      "id": "infoprodutos",
      "titulo": "Diretor de infoprodutos/Corretores: sim ou não",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "valor": 1.0
     },
     {
      "id": "agente-app",
      "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "valor": 1.0
     }
    ],
-   "pct": 0.0,
-   "feitos": 0,
+   "pct": 60.0,
+   "feitos": 3,
    "total": 5
   },
   {
@@ -233,6 +232,16 @@
      ]
     },
     {
+     "id": "mkt",
+     "titulo": "Grant Cardone — Diretor · Infoprodutos (Corretores)",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
      "id": "mkt:publicador",
      "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
      "valor": 0.3,
@@ -265,6 +274,16 @@
     {
      "id": "produto",
      "titulo": "Tony Stark — Diretor · Produto",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "produto:analista-do-paywall",
+     "titulo": "Steve Jobs — Estagiário · Produto",
      "valor": 0.3,
      "status": "parcial",
      "falta": [
@@ -315,7 +334,7 @@
    ],
    "pct": 30.0,
    "feitos": 0,
-   "total": 13
+   "total": 15
   },
   {
    "id": "conhecimento",
@@ -409,15 +428,8 @@
    "total": 9
   }
  ],
- "pendentes": 38,
+ "pendentes": 36,
  "lista_pendentes": [
-  {
-   "categoria": "Estrutura e rotinas",
-   "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)",
-   "falta": [
-    "OK do Léo"
-   ]
-  },
   {
    "categoria": "Estrutura e rotinas",
    "titulo": "Orçamento de uso por agente",
@@ -435,22 +447,7 @@
   },
   {
    "categoria": "Decisões do Léo e do Davi",
-   "titulo": "OK pro repositório privado carnucci-dados",
-   "falta": []
-  },
-  {
-   "categoria": "Decisões do Léo e do Davi",
    "titulo": "Escolher conector da Meta Ads + Instagram",
-   "falta": []
-  },
-  {
-   "categoria": "Decisões do Léo e do Davi",
-   "titulo": "Diretor de infoprodutos/Corretores: sim ou não",
-   "falta": []
-  },
-  {
-   "categoria": "Decisões do Léo e do Davi",
-   "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não",
    "falta": []
   },
   {
@@ -535,6 +532,14 @@
   },
   {
    "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Grant Cardone — Diretor · Infoprodutos (Corretores)",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
    "falta": [
     "modelo",
@@ -560,6 +565,14 @@
   {
    "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Tony Stark — Diretor · Produto",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Steve Jobs — Estagiário · Produto",
    "falta": [
     "modelo",
     "lapidar com o Léo"
@@ -664,7 +677,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 24.0
+   "pct": 31.7
   }
  ]
 }

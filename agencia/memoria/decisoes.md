@@ -48,3 +48,9 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Léo pediu "reduza o máximo que você conseguir". Ficam 7 diretores (Shelby, Turing, Greco, Disney, Escobar, Bezos, Stark) + 6 executores. O resto vai pra reserva (ver merito/ESTRUTURA-ENXUTA.md). Reserva não recebe salário, não entra no Conselho nem no boletim.
 - Criada agencia/conhecimento/ (9 dossiês). O Léo alimenta por áudio/texto no chat, o Claude organiza. Cada agente lê só a fatia dele.
 - Ordem combinada (o Claude guia, sem pular etapa): 1) dados (RevenueCat, AppsFlyer); 2) uma meta: novos assinantes pagos/semana; 3) 6–8 agentes reais por etapa do funil; 4) taxa de aceite por agente (<70% → lapidar ou cortar); 5) placar de experimentos; 6) estética congelada até a receita se mexer; 7) orçamento de uso por agente.
+
+## 20/11/2026 18h15 — Decisões do Léo
+- OK pro repositório privado `carnucci-dados` ("tem que ser muito completo"): robôs por fonte, resumo, funil, metas, passo a passo. Aguardando o Léo logar no GitHub no navegador do app pra criar.
+- Sim pro Diretor de Infoprodutos → Grant Cardone ativado (Corretores + fábrica de infoprodutos).
+- Sim pro agente que prepara mudanças no app, ideias de funcionalidades e UI/UX → Steve Jobs ativado sob o Stark (propostas pro Davi revisar; nunca mexe sozinho).
+- OK pra tarefa "MM: Mesa de Demandas" → criada (10h37 e 14h37, Sonnet).
