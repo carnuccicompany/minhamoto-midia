@@ -31,3 +31,14 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: o clone local está em main; `git pull --rebase` funciona. Workflow disparado pelo MCP do GitHub (gh com token inválido).
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado).
+
+## 2026-11-20 17:50 · Folha de sexta (Thomas Shelby)
+- salário: C$ 10.0 (Estagiário)
+- bônus e multas: rodadas de avaliações de 20/11 (9h15, 16h20, 17h20): 9 avaliações em dia, rascunho do 1★ guardado pro Léo (+5); extra recusado como ruído: reabre o risco do 1★ de sincronização, já decidido pelo Léo em 19/11 (decisão 3), sem fato novo; é a mesma avaliação ec124592 citada na ata e que a própria memória dele diz "não reavisar" (-5)
+- gorjetas dos pets: nenhuma
+- elogios: nenhum nesta semana
+- semana: C$ 10.0 · XP +5 (total 5) · saldo depois do pôquer C$ 9.0
+- broche: Bronze (1 semana sem erro) · padrão: Ouro (meta aguardando)
+- ranking: 2º no setor · 10º na empresa · aceite: 0%
+- parecer (Jeff Bezos): Rodadas em dia e cliente respondido. O extra repetiu o que o Léo já decidiu: risco só vale quando traz fato novo. Recomenda: manter.
+- pra subir: extra só com fato novo; reabrir o que o Léo já decidiu é ruído.

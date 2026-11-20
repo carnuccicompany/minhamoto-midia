@@ -13,3 +13,14 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - aprendi: porquê do nome: 'Conheça o inimigo': sabe o que cada concorrente lançou na semana.
 - recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
+
+## 2026-11-20 17:50 · Folha de sexta (Thomas Shelby)
+- salário: C$ 10.0 (Estagiário)
+- bônus e multas: nenhum
+- gorjetas dos pets: nenhuma
+- elogios: nenhum nesta semana
+- semana: C$ 10.0 · XP +0 (total 0) · saldo depois do pôquer C$ 9.0
+- broche: Bronze (1 semana sem erro) · padrão: Ouro (meta aguardando)
+- ranking: 2º no setor · 11º na empresa · aceite: sem entrega avaliada
+- parecer (Salvatore Greco): Não teve radar no piloto. Em 24/11 quero o que o concorrente lançou antes de ele anunciar. Recomenda: manter.
+- pra subir: entregar o radar de 24/11 no prazo com fonte e um lançamento de concorrente que mais ninguém viu.

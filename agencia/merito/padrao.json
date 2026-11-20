@@ -43,7 +43,15 @@
   }
  },
  "empresa": "ouro",
- "semana": null,
+ "semana": "2026-11-20",
  "setores_rebaixados": {},
- "historico": []
+ "historico": [
+  {
+   "semana": "2026-11-20",
+   "empresa": "ouro",
+   "meta": "aguardando",
+   "setores_rebaixados": {},
+   "nota": "Meta aguardando o número do Léo e o RevenueCat: ninguém sobe nem desce por meta. Sem autópsia."
+  }
+ ]
 }

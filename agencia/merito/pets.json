@@ -1,6 +1,42 @@
 {
  "regra": "ver README, seção Os pets",
- "semana": null,
- "humor": {},
- "historico": []
+ "semana": "2026-11-20",
+ "humor": {
+  "cria": "foda",
+  "lojas": "foda",
+  "mercado": "ok",
+  "produto": "ok",
+  "dados": "fraco",
+  "trafego": "fraco"
+ },
+ "historico": [
+  {
+   "semana": "2026-11-20",
+   "humor": {
+    "cria": "foda",
+    "lojas": "foda",
+    "mercado": "ok",
+    "produto": "ok",
+    "dados": "fraco",
+    "trafego": "fraco"
+   },
+   "gorjetas": {
+    "master:auditor-de-entregas": [
+     "Carinho do Carnucci"
+    ],
+    "mkt:publicador": [
+     "Carinho do Carnucci"
+    ],
+    "cria": [
+     "Fogo da Marnevali",
+     "Carinho do Carnucci"
+    ],
+    "lojas": [
+     "Fogo da Marnevali",
+     "Carinho do Carnucci"
+    ]
+   }
+  }
+ ],
+ "criterio": "Semana 1 sem histórico: entregas e extras com prova da semana. Ordem dos setores: Criativos, Lojas, Mercado, Produto, Dados, Tráfego (desempate: bônus líquido do setor → entregas com prova → fala no Conselho com número verificável)."
 }

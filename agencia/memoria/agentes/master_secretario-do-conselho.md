@@ -13,3 +13,14 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - aprendi: porquê do nome: A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo.
 - recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
+
+## 2026-11-20 17:50 · Folha de sexta (Thomas Shelby)
+- salário: C$ 10.0 (Estagiário)
+- bônus e multas: Vigia do Gmail rodou em 20/11 (e-mails vistos atualizados 2x) (+5)
+- gorjetas dos pets: nenhuma
+- elogios: nenhum nesta semana
+- semana: C$ 15.0 · XP +5 (total 5) · saldo depois do pôquer C$ 13.5
+- broche: Bronze (1 semana sem erro) · padrão: Ouro (meta aguardando)
+- ranking: 2º no setor · 2º na empresa · aceite: sem entrega avaliada
+- parecer (Thomas Shelby): Fez a vigia do Gmail. Só isso. Quero a lista de cobranças com prazo num arquivo, não na cabeça. Recomenda: manter.
+- pra subir: manter a lista de cobranças abertas com prazo em arquivo e trazer um extra com prova.

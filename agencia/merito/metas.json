@@ -7,5 +7,12 @@
   "inicio": null,
   "pct": null
  },
- "historico": []
+ "historico": [
+  {
+   "semana": "2026-11-20",
+   "status": "aguardando",
+   "pct": null,
+   "nota": "Folha de 20/11: sem número, sem subida nem descida de padrão por meta."
+  }
+ ]
 }

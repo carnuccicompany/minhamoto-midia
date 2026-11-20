@@ -1,1 +1,635 @@
-{"semana":null,"aviso":"O primeiro boletim sai na Folha de sexta, 20/11/2026, 17h47."}
+{
+ "semana": "2026-11-20",
+ "meta": {
+  "status": "aguardando",
+  "pct": null
+ },
+ "padrao_empresa": "ouro",
+ "autopsia": null,
+ "destaques": [
+  "mkt:publicador",
+  "cria"
+ ],
+ "em_risco": [],
+ "agentes": [
+  {
+   "id": "master",
+   "nome": "Thomas Shelby",
+   "cargo": "Diretor-Geral",
+   "setor": "Direção-Geral",
+   "chefe": "Léo e Davi",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 0,
+    "no_prazo": 0,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 7.0,
+    "xp_total": 7.0,
+    "cs_semana": 207.0,
+    "saldo": 234.8,
+    "moral": 50,
+    "pos_setor": null,
+    "pos_geral": null,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Conclusões e pauta de decisões do 1º Conselho do piloto",
+     "prova": "agencia/conselho/2026-11-19.md"
+    },
+    {
+     "o_que": "Primeira Folha de sexta do Sistema de Mérito",
+     "prova": "agencia/merito/folhas/2026-11-20.md"
+    }
+   ],
+   "a_desejar": [
+    "Recomendou preparar a Black Friday e o Léo recusou: a leitura de prioridade do dono precisa ser melhor",
+    "Empresa ainda sem meta em número: cobrar o Léo pelo alvo e o RevenueCat ligado"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Léo e Davi",
+    "texto": "Cabe ao Léo e ao Davi.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "master:secretario-do-conselho",
+   "nome": "Moneypenny",
+   "cargo": "Estagiário",
+   "setor": "Direção-Geral",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 15.0,
+    "saldo": 13.5,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Vigia do Gmail rodou em 20/11 e atualizou os e-mails vistos 2 vezes",
+     "prova": "agencia/coordenador/emails-vistos.json (commits 836a8e4, 96f3965)"
+    }
+   ],
+   "a_desejar": [
+    "Nenhum extra; a lista de cobranças abertas com prazo não existe em arquivo"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": "Analista",
+    "falta_xp": 95
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Fez a vigia do Gmail. Só isso. Quero a lista de cobranças com prazo num arquivo, não na cabeça.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "master:auditor-de-entregas",
+   "nome": "Eliot Ness",
+   "cargo": "Estagiário",
+   "setor": "Direção-Geral",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 10,
+    "xp_total": 10,
+    "cs_semana": 18.0,
+    "saldo": 16.2,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "36 rodadas do Coordenador em 20/11, fila, posts e tarefas conferidos, nenhuma falha",
+     "prova": "agencia/coordenador/log.md"
+    }
+   ],
+   "a_desejar": [
+    "Nenhum extra em 36 rodadas: vigiar não é só dizer \"ok\", é achar o problema antes",
+    "Log com linha colada (16h10 e 16h40 na mesma linha)"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": "Analista",
+    "falta_xp": 90
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Trinta e seis rondas sem falhar. Bom. Agora quero que você ache um problema antes dele virar problema: é isso que paga.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "dados",
+   "nome": "Alan Turing",
+   "cargo": "Diretor",
+   "setor": "Dados e Finanças",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 125.0,
+    "saldo": 112.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Mostrou no Conselho que não há insights nem relatório no repositório e cobrou o SDK AppsFlyer na build de 23/11",
+     "prova": "agencia/conselho/2026-11-19.md"
+    }
+   ],
+   "a_desejar": [
+    "Nenhum número de negócio na semana: zero insight coletado",
+    "Sem extra e sem demanda aberta pro coletor rodar"
+   ],
+   "potencial": {
+    "nota": 2,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Você disse o que falta, não trouxe o que tem. Sem número, Dados é opinião. Rode o coletor e me traga o primeiro padrão.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "dados:relatorio-semanal",
+   "nome": "Ernest Hemingway",
+   "cargo": "Estagiário",
+   "setor": "Dados",
+   "chefe": "Alan Turing",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 0,
+    "no_prazo": 0,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 0,
+    "xp_total": 0,
+    "cs_semana": 10.0,
+    "saldo": 9.0,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 11,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [],
+   "a_desejar": [
+    "Sem trabalho na semana: o 1º relatório só sai em 23/11",
+    "Stats zerados"
+   ],
+   "potencial": {
+    "nota": 2,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": "Analista",
+    "falta_xp": 100
+   },
+   "parecer": {
+    "por": "Alan Turing",
+    "texto": "Ainda não houve dado pra relatar. Em 23/11 quero um relatório que se lê em um minuto e prova cada número.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "cria",
+   "nome": "Walt Disney",
+   "cargo": "Diretor",
+   "setor": "Criativos e Marketing",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 24.0,
+    "xp_total": 24.0,
+    "cs_semana": 137.0,
+    "saldo": 123.3,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Mostrou no Conselho que os vídeos A1/A2/B1/B2 estão parados na revisão e travam a produção de vídeo",
+     "prova": "agencia/conselho/2026-11-19.md; agencia/PENDENCIAS.md"
+    }
+   ],
+   "a_desejar": [
+    "Ficou atrás do próprio subagente no setor",
+    "Fila de carrosséis acaba por volta de 13/12 e não há plano de reposição"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Seu setor foi o melhor da semana por causa do seu publicador, não de você. A fila acaba em dezembro: quero o plano de reposição antes de virar urgência.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "mkt:publicador",
+   "nome": "Phileas Fogg",
+   "cargo": "Estagiário",
+   "setor": "Criativos e Marketing",
+   "chefe": "Walt Disney",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 1,
+    "extras_total": 1,
+    "aceite_pct": 100,
+    "xp_semana": 25,
+    "xp_total": 25,
+    "cs_semana": 33.0,
+    "saldo": 29.7,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 1,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Posts das 12h (A03) e 15h (S03) de 20/11 no ar no Insta e no Face",
+     "prova": "fila/estado.json (commits cd91cd5, 95e15db)"
+    },
+    {
+     "o_que": "Extra aprovado: fila de carrosséis dura cerca de 23 dias (95 pendentes ÷ 4/dia), acaba por volta de 13/12",
+     "prova": "agencia/merito/extras/2026-11-20-mkt_publicador.md"
+    }
+   ],
+   "a_desejar": [
+    "Só um extra; pode trazer o desempenho dos posts junto da fila"
+   ],
+   "potencial": {
+    "nota": 4,
+    "rotulo": "Prodígio em ascensão",
+    "proximo_cargo": "Analista",
+    "falta_xp": 75
+   },
+   "parecer": {
+    "por": "Walt Disney",
+    "texto": "O Fogg postou na hora e ainda fez a conta que eu devia ter feito: a fila acaba por volta de 13/12. É o melhor da casa nesta semana.",
+    "recomenda": "aumento"
+   },
+   "elogio_sugerido": "Fogg, você fez a conta da fila (95 carrosséis ÷ 4 por dia, acaba por volta de 13/12) antes de alguém perguntar. É isso: ver o buraco com número antes de cair nele."
+  },
+  {
+   "id": "trafego",
+   "nome": "Pablo Escobar",
+   "cargo": "Diretor",
+   "setor": "Tráfego",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 125.0,
+    "saldo": 112.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Segurou verba sem rastreio fechado e pediu a BM de contingência antes de escalar",
+     "prova": "agencia/conselho/2026-11-19.md"
+    }
+   ],
+   "a_desejar": [
+    "Nenhum número de campanha",
+    "Sem extra"
+   ],
+   "potencial": {
+    "nota": 2,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Não queimar verba às cegas foi certo. Mas cadeira de Tráfego se paga com número de campanha, e não houve nenhum.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "produto",
+   "nome": "Tony Stark",
+   "cargo": "Diretor",
+   "setor": "Produto",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 125.0,
+    "saldo": 128.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Levou a falha ao sincronizar do Android (v1.0.1) pra pauta da build de 23/11",
+     "prova": "agencia/conselho/2026-11-19.md"
+    }
+   ],
+   "a_desejar": [
+    "Sem extra e sem proposta escrita pro Davi"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Pôs o bug certo na mesa. Falta a proposta escrita pro Davi com o que a build de 23/11 vai mover.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "lojas",
+   "nome": "Jeff Bezos",
+   "cargo": "Diretor",
+   "setor": "Lojas e Clientes",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 21.0,
+    "xp_total": 21.0,
+    "cs_semana": 134.0,
+    "saldo": 163.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Leu as lojas no Conselho: 11 avaliações, 40% de 1★ no Google Play, 11 de 12 respostas publicadas",
+     "prova": "agencia/conselho/2026-11-19.md; dados/avaliacoes/respostas.json"
+    }
+   ],
+   "a_desejar": [
+    "Sem extra próprio",
+    "Subagente levou multa por ruído: o diretor não filtrou"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Leitura de loja com número, isso eu quero. Mas seu estagiário mandou ruído e você não filtrou.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "lojas:respostas-as-avaliacoes",
+   "nome": "Ted Lasso",
+   "cargo": "Estagiário",
+   "setor": "Lojas",
+   "chefe": "Jeff Bezos",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 1,
+    "aceite_pct": 0,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 10.0,
+    "saldo": 9.0,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 10,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Rodadas de avaliações de 20/11 (9h15, 16h20, 17h20): 9 avaliações em dia, rascunho do 1★ guardado pro OK do Léo",
+     "prova": "agencia/memoria/agentes/lojas_respostas-as-avaliacoes.md (commits f6451e8, aa85579, c7c6837)"
+    }
+   ],
+   "a_desejar": [
+    "Extra recusado como ruído (risco já decidido pelo Léo, sem fato novo)",
+    "Taxa de aceite 0% na semana"
+   ],
+   "potencial": {
+    "nota": 2,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": "Analista",
+    "falta_xp": 95
+   },
+   "parecer": {
+    "por": "Jeff Bezos",
+    "texto": "Rodadas em dia e cliente respondido. O extra repetiu o que o Léo já decidiu: risco só vale quando traz fato novo.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "mercado",
+   "nome": "Salvatore Greco",
+   "cargo": "Diretor",
+   "setor": "Mercado e Concorrência",
+   "chefe": "Thomas Shelby",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 1,
+    "no_prazo": 1,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 5,
+    "xp_total": 5,
+    "cs_semana": 125.0,
+    "saldo": 112.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 2,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [
+    {
+     "o_que": "Trouxe ao Conselho que o Drivvo v14 foi pra GPS pago (espaço de plano por modelo segue livre) e os emplacamentos de outubro",
+     "prova": "agencia/conselho/2026-11-19.md; agencia/radar/2026-11-17.md"
+    }
+   ],
+   "a_desejar": [
+    "Sem extra",
+    "Radar do subagente não rodou na semana do piloto (o último é de 17/11)"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Viu o Drivvo antes. Bom. Mas o radar do seu homem não rodou no piloto, e isso conta contra você.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "mercado:radar-de-concorrentes",
+   "nome": "Sun Tzu",
+   "cargo": "Estagiário",
+   "setor": "Mercado",
+   "chefe": "Salvatore Greco",
+   "broche": "bronze",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 0,
+    "no_prazo": 0,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": null,
+    "xp_semana": 0,
+    "xp_total": 0,
+    "cs_semana": 10.0,
+    "saldo": 9.0,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 11,
+    "semanas_sem_erro": 1
+   },
+   "produziu": [],
+   "a_desejar": [
+    "Sem trabalho no piloto: o radar de 17/11 é anterior e o próximo sai em 24/11",
+    "Stats zerados"
+   ],
+   "potencial": {
+    "nota": 2,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": "Analista",
+    "falta_xp": 100
+   },
+   "parecer": {
+    "por": "Salvatore Greco",
+    "texto": "Não teve radar no piloto. Em 24/11 quero o que o concorrente lançou antes de ele anunciar.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  }
+ ]
+}

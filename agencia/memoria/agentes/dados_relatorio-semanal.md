@@ -13,3 +13,14 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - aprendi: porquê do nome: Mestre da frase curta e seca: relatório que se lê em um minuto.
 - recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
+
+## 2026-11-20 17:50 · Folha de sexta (Thomas Shelby)
+- salário: C$ 10.0 (Estagiário)
+- bônus e multas: nenhum
+- gorjetas dos pets: nenhuma
+- elogios: nenhum nesta semana
+- semana: C$ 10.0 · XP +0 (total 0) · saldo depois do pôquer C$ 9.0
+- broche: Bronze (1 semana sem erro) · padrão: Ouro (meta aguardando)
+- ranking: 2º no setor · 11º na empresa · aceite: sem entrega avaliada
+- parecer (Alan Turing): Ainda não houve dado pra relatar. Em 23/11 quero um relatório que se lê em um minuto e prova cada número. Recomenda: manter.
+- pra subir: entregar o relatório de 23/11 no prazo, curto, com cada número provado.

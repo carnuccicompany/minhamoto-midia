@@ -12,8 +12,8 @@
    "cargo": "Diretor-Geral",
    "chefe": "Léo e Davi",
    "salario": 200,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 234.8,
+   "xp": 7.0,
    "moral": 50,
    "regra": "Pra cima, só o que importa.",
    "jeito": "Frio, calculista, sempre três jogadas à frente. Fala pouco e é obedecido. Não perde a calma e não aceita desculpa.",
@@ -25,13 +25,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/01-direcao-geral.md",
    "memoria": "agencia/memoria/agentes/master.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "master:secretario-do-conselho",
@@ -41,8 +45,8 @@
    "cargo": "Estagiário",
    "chefe": "master",
    "salario": 10,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 13.5,
+   "xp": 5,
    "moral": 50,
    "jeito": "Anota tudo, resume em três linhas e nunca esquece um prazo.",
    "itens": [],
@@ -52,13 +56,17 @@
    "funcao": "Secretário do Conselho",
    "batizado": true,
    "batismo": "A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "master:auditor-de-entregas",
@@ -68,8 +76,8 @@
    "cargo": "Estagiário",
    "chefe": "master",
    "salario": 10,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 16.2,
+   "xp": 10,
    "moral": 50,
    "jeito": "Desconfiado por profissão. Confere número por número antes de deixar passar.",
    "itens": [],
@@ -79,13 +87,17 @@
    "funcao": "Auditor de entregas",
    "batizado": true,
    "batismo": "O Intocável que derrubou Capone conferindo livro por livro: não se compra e não deixa número passar.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "master:tesoureiro",
@@ -122,8 +134,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 112.5,
+   "xp": 5,
    "moral": 50,
    "regra": "Todo resultado tem um padrão. Ache.",
    "jeito": "Gênio lógico. Enxerga padrão onde os outros veem bagunça. Só acredita no que dá pra provar.",
@@ -134,13 +146,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/02-dados.md",
    "memoria": "agencia/memoria/agentes/dados.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "dados:coletor-de-metricas",
@@ -231,7 +247,7 @@
    "cargo": "Estagiário",
    "chefe": "dados",
    "salario": 10,
-   "saldo": 0,
+   "saldo": 9.0,
    "xp": 0,
    "moral": 50,
    "jeito": "Escreve curto e direto. Odeia relatório que ninguém lê.",
@@ -242,13 +258,17 @@
    "funcao": "Relatório semanal",
    "batizado": true,
    "batismo": "Mestre da frase curta e seca: relatório que se lê em um minuto.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "mkt",
@@ -422,8 +442,8 @@
    "cargo": "Estagiário",
    "chefe": "Walt Disney",
    "salario": 10,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 29.7,
+   "xp": 25,
    "moral": 50,
    "jeito": "Pontual. Posta na hora certa e confere se subiu do jeito certo.",
    "itens": [],
@@ -433,13 +453,17 @@
    "funcao": "Publicador",
    "batizado": true,
    "batismo": "Deu a volta ao mundo em 80 dias controlando cada minuto: posta na hora certa.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": 100,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "cria",
@@ -449,8 +473,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 123.3,
+   "xp": 24.0,
    "moral": 50,
    "regra": "Se dá pra imaginar, dá pra fazer.",
    "jeito": "Imaginação sem limite e obsessão por encantar. Transforma qualquer ideia simples numa história que as pessoas querem ver.",
@@ -462,13 +486,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/04-criativos.md",
    "memoria": "agencia/memoria/agentes/cria.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "cria:roteirista-de-gancho",
@@ -559,8 +587,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 112.5,
+   "xp": 5,
    "moral": 50,
    "regra": "Plata o pausa.",
    "jeito": "Ambição sem teto. Domina território, não aceita perder espaço pra concorrente e corta sem dó o que não dá retorno.",
@@ -572,13 +600,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/05-trafego.md",
    "memoria": "agencia/memoria/agentes/trafego.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "trafego:gestor-de-campanhas",
@@ -669,8 +701,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 128.5,
+   "xp": 5,
    "moral": 50,
    "regra": "Se funciona, dá pra fazer melhor.",
    "jeito": "Inventor genial, rápido e perfeccionista. Constrói, testa, quebra e reconstrói melhor no mesmo dia.",
@@ -682,13 +714,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/06-produto.md",
    "memoria": "agencia/memoria/agentes/produto.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "produto:analista-do-paywall",
@@ -915,8 +951,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 163.5,
+   "xp": 21.0,
    "moral": 50,
    "regra": "Comece pelo cliente e trabalhe pra trás.",
    "jeito": "Obsessão pelo cliente acima de tudo. Pensa em escala desde o primeiro dia e trata cada avaliação como prioridade.",
@@ -929,13 +965,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/08-lojas.md",
    "memoria": "agencia/memoria/agentes/lojas.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "lojas:aso",
@@ -972,8 +1012,8 @@
    "cargo": "Estagiário",
    "chefe": "lojas",
    "salario": 10,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 9.0,
+   "xp": 5,
    "moral": 50,
    "jeito": "Responde todo mundo com educação e transforma reclamação em nota alta.",
    "itens": [],
@@ -983,13 +1023,17 @@
    "funcao": "Respostas às avaliações",
    "batizado": true,
    "batismo": "Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": 0,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
@@ -1299,8 +1343,8 @@
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
-   "saldo": 0,
-   "xp": 0,
+   "saldo": 112.5,
+   "xp": 5,
    "moral": 50,
    "regra": "Quem vê primeiro, ganha.",
    "jeito": "Observador, fala pouco. Sabe o que o concorrente vai lançar antes do concorrente.",
@@ -1312,13 +1356,17 @@
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/11-mercado.md",
    "memoria": "agencia/memoria/agentes/mercado.md",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "mercado:radar-de-concorrentes",
@@ -1328,7 +1376,7 @@
    "cargo": "Estagiário",
    "chefe": "mercado",
    "salario": 10,
-   "saldo": 0,
+   "saldo": 9.0,
    "xp": 0,
    "moral": 50,
    "jeito": "Sabe o que cada concorrente lançou na semana.",
@@ -1339,13 +1387,17 @@
    "funcao": "Radar de concorrentes",
    "batizado": true,
    "batismo": "'Conheça o inimigo': sabe o que cada concorrente lançou na semana.",
-   "broche": "nenhum",
-   "semanas_sem_erro": 0,
+   "broche": "bronze",
+   "semanas_sem_erro": 1,
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
    "elogios_total": 0,
-   "status": "ativo"
+   "status": "ativo",
+   "stats": {
+    "aceite_pct": null,
+    "semana": "2026-11-20"
+   }
   },
   {
    "id": "mercado:cacador-de-tendencias",
