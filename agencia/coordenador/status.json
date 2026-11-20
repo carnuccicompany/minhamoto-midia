@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-20T16:40:00-03:00",
+ "rodada": "2026-11-20T17:10:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (15h02 SUCCEEDED; próx 18h02 BRT)",
@@ -7,24 +7,18 @@
   "vigia do Gmail": "ok (13h48 SUCCEEDED; próx 18h47)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
-  "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 16h10)",
+  "produção diária": "desativada — prevista em PENDENCIAS",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 16h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 20/11 02h31 UTC; próx 19h23 BRT)",
   "MM: Folha de sexta": "agendada (próx 17h47 BRT, ainda não era hora)",
-  "lembrete lapidar diretores": "agendado 20/11 14h13 BRT",
   "Atualizar Mesa 3D com a Folha": "agendada (próx 20/11 18h43 BRT)"
  },
- "publicacao_hoje": {
-  "12h": "A03 (15:05 UTC)",
-  "15h": "S03 (18:04 UTC)",
-  "proximo": "18h02 BRT 20/11"
- },
+ "publicacao_hoje": {"proximo": "18h02 BRT 20/11", "ultimo_ok": "15h S03"},
  "dias_de_fila": 23,
  "nao_publicados": 95,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113 com cards_tiktok",
- "painel_links": "ok (falsos positivos são templates JS)",
  "acoes": [],
  "alertas": []
 }
