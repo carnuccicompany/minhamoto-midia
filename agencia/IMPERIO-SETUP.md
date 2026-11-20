@@ -4,12 +4,12 @@ Para o Léo, este é o projeto mais importante: o começo de um império, com a 
 
 ## Decisões que só o Léo/Davi dão
 - [ ] Meta: quantos assinantes pagos novos por semana (número absoluto fica fora do repo público)
-- [ ] OK pra criar a tarefa "MM: Mesa de Demandas" (10h37 e 14h37); a criação foi bloqueada pela permissão desta conversa
-- [ ] OK pra criar o repositório privado `carnucci-dados` e os robôs de dados
+- [x] Tarefa "MM: Mesa de Demandas" criada (10h37 e 14h37, Sonnet)
+- [x] Repositório privado `carnucci-dados` criado (20/11) com robôs de todas as fontes; falta colar as chaves nos Secrets
 - [ ] Escolher conector pra Meta Ads + Instagram: Windsor.ai ou Supermetrics (pagos, de terceiros), ou robô próprio com a API da Meta
 - [ ] Se quiser economizar limite: réplicas do Conselho só 3x/semana; Coordenador de hora em hora
-- [ ] Adicionar diretor de infoprodutos/Corretores?
-- [ ] Permitir um agente que prepara mudanças no app pro Davi revisar?
+- [x] Diretor de Infoprodutos: Grant Cardone (20/11)
+- [x] Agente de produto e UI/UX: Steve Jobs, propostas pro Davi (20/11)
 
 ## Conexões (ver agencia/CONEXOES.md)
 - [ ] TikTok for Business (conector oficial): ligar no claude.ai
