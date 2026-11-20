@@ -12,6 +12,9 @@
 - [x] Histórico do GitHub limpo (gravação com e-mail removida)
 - [ ] Escolher direção visual A ou B (quando as amostras chegarem)
 - [ ] AppsFlyer + dashboard Supabase (com o Davi)
+- [x] Ecossistema de diretores + Sistema de Mérito: piloto começou 19/11 à noite (agencia/merito/README.md; tarefas MM: Reunião do Conselho, Folha de sexta, Fechamento do mês, Cadeira em disputa)
+- [ ] LAPIDAR cada diretor e cada subagente (pedido 19/11 23h29): função de cada um, o que cobra de quem e quando cobra outros agentes — "algo muito insano". Lembrete agendado pra 20/11 14h13
+- [ ] Revisar vídeos A1/A2/B1/B2 e posts (Léo deixou pra depois)
 
 - [ ] PRÓXIMO TEMA (pedido 19/11): desenhar o ecossistema de agentes "diretores" da empresa (Léo e Davi = CEOs; Claude = braço direito). Ponto de partida do Léo: agente de Dados/Rastreamento lê resultados (posts, anúncios, usuários, receita) → passa pro agente de Marketing/Direção criativa → produção faz variações do que converteu; todos conversando e se retroalimentando. Claude propõe quais agentes são cruciais pra automatizar a empresa
 
