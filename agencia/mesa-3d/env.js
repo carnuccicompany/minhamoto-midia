@@ -55,19 +55,26 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   const facade = (seed) => {
     const day = document.createElement('canvas'), em = document.createElement('canvas'); day.width = em.width = 256; day.height = em.height = 512;
     const g = day.getContext('2d'), e = em.getContext('2d');
-    const glass = [['#3d5368', '#7c93a8'], ['#2a3340', '#5a6878'], ['#5b6670', '#a9b4bd'], ['#1f2a36', '#46607a'], ['#6a6258', '#b8ad9c']][seed % 5];
+    const glass = [['#3a4652', '#8d9cab'], ['#2b3138', '#66727e'], ['#55606a', '#b3bcc4'], ['#232a31', '#56677a'], ['#5e5850', '#b9b0a2']][seed % 5];
     const frame = ['#1b1f24', '#2b2f35', '#d9d4ca', '#14181d', '#3a332c'][seed % 5];
     g.fillStyle = frame; g.fillRect(0, 0, 512, 1024); e.fillStyle = '#000'; e.fillRect(0, 0, 512, 1024);
     const cols = 8, rows = 24, cw = 256 / cols, rh = 512 / rows;
-    // blocos de andares acesos (escritórios inteiros acendem juntos)
     const litRows = new Set(); for (let r = 0; r < rows; r++) if (Math.random() < 0.28) litRows.add(r);
-    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-      const x = c * cw + 2, y = r * rh + 2, w = cw - 4, h = rh - 4;
-      const gr = g.createLinearGradient(x, y, x + w, y + h); gr.addColorStop(0, glass[1]); gr.addColorStop(0.55, glass[0]); gr.addColorStop(1, glass[0]);
-      g.fillStyle = gr; g.fillRect(x, y, w, h);
-      const lit = litRows.has(r) ? Math.random() < 0.8 : Math.random() < 0.06;
-      if (lit) { const warm = Math.random() < 0.75; const k = 0.55 + Math.random() * 0.45; e.fillStyle = warm ? `rgba(255,${190 + Math.random() * 40},${120 + Math.random() * 50},${k})` : `rgba(190,215,255,${k})`; e.fillRect(x, y, w, h); }
+    const sky = g.createLinearGradient(0, 0, 0, 512); sky.addColorStop(0, glass[1]); sky.addColorStop(1, glass[0]);
+    for (let r = 0; r < rows; r++) {
+      const y0 = r * rh, sp = Math.round(rh * 0.24);
+      g.fillStyle = frame; g.fillRect(0, y0, 256, sp);                       // faixa de laje entre andares
+      for (let c = 0; c < cols; c++) {
+        const x = c * cw + 1, y = y0 + sp, w = cw - 2, h = rh - sp - 1;
+        g.fillStyle = sky; g.fillRect(x, y, w, h);
+        const v = (Math.random() - 0.5) * 0.12; g.fillStyle = v > 0 ? `rgba(255,255,255,${v})` : `rgba(0,0,0,${-v})`; g.fillRect(x, y, w, h);
+        const gr = g.createLinearGradient(x, y, x + w, y + h); gr.addColorStop(0, 'rgba(255,255,255,.10)'); gr.addColorStop(0.5, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(x, y, w, h);
+        const lit = litRows.has(r) ? Math.random() < 0.8 : Math.random() < 0.06;
+        if (lit) { const warm = Math.random() < 0.75; const k = 0.55 + Math.random() * 0.45; e.fillStyle = warm ? `rgba(255,${190 + Math.random() * 40},${120 + Math.random() * 50},${k})` : `rgba(190,215,255,${k})`; e.fillRect(x, y, w, h); }
+      }
     }
+    const streak = g.createLinearGradient(0, 0, 256, 0); streak.addColorStop(0, 'rgba(255,255,255,0)'); streak.addColorStop(0.35, 'rgba(255,255,255,.08)'); streak.addColorStop(0.5, 'rgba(255,255,255,0)'); streak.addColorStop(0.8, 'rgba(255,255,255,.05)'); streak.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = streak; g.fillRect(0, 0, 256, 512);
     for (let r = 0; r <= rows; r += 6) { g.fillStyle = frame; g.fillRect(0, r * rh - 1, 256, 3); }
     const T = new THREE.CanvasTexture(day), E = new THREE.CanvasTexture(em); T.colorSpace = E.colorSpace = THREE.SRGBColorSpace;
     T.anisotropy = E.anisotropy = 4; T.wrapS = T.wrapT = E.wrapS = E.wrapT = THREE.RepeatWrapping; return [T, E];
@@ -141,7 +148,14 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   city.add(lamps); city.traverse(o => { o.renderOrder = 50; });
 
   // ---------- chão, paredes, vidro ----------
-  const floorT = marbleTex('#ddd7cd', 'rgba(96,90,82,A)', 34, 1024, [5, 4]);
+  const floorT = tex(2048, 2048, (g, w, h) => {
+    g.fillStyle = '#e9e4da'; g.fillRect(0, 0, w, h);
+    const cl = g.createRadialGradient(w * .3, h * .3, 0, w * .5, h * .5, w * .8); cl.addColorStop(0, 'rgba(255,253,248,.55)'); cl.addColorStop(1, 'rgba(210,202,190,.25)'); g.fillStyle = cl; g.fillRect(0, 0, w, h);
+    const vein = (blur, width, alpha, col, n) => { g.save(); g.filter = `blur(${blur}px)`; for (let i = 0; i < n; i++) { g.strokeStyle = col.replace('A', (alpha * (0.5 + Math.random())).toFixed(3)); g.lineWidth = width * (0.5 + Math.random()); g.beginPath(); let x = Math.random() * w, y = -40, ang = 0.9 + Math.random() * 0.6; g.moveTo(x, y); while (y < h + 40 && x > -60 && x < w + 60) { ang += (Math.random() - 0.5) * 0.5; x += Math.cos(ang) * 40; y += Math.sin(ang) * 40 + 14; g.lineTo(x, y); } g.stroke(); } g.restore(); };
+    vein(18, 34, 0.05, 'rgba(120,112,100,A)', 10); vein(4, 6, 0.12, 'rgba(105,98,88,A)', 18); vein(0.6, 1.4, 0.22, 'rgba(90,84,76,A)', 30); vein(0.5, 1.2, 0.18, 'rgba(176,138,72,A)', 6);
+    g.fillStyle = 'rgba(120,110,96,.28)'; for (let i = 1; i < 4; i++) { g.fillRect(i * w / 4 - 1, 0, 2, h); g.fillRect(0, i * h / 4 - 1, w, 2); }
+    g.fillStyle = 'rgba(255,255,255,.35)'; for (let i = 1; i < 4; i++) { g.fillRect(i * w / 4 + 1, 0, 1, h); g.fillRect(0, i * h / 4 + 1, w, 1); }
+  }, [5, 4]);
   // chão com o buraco do fosso de pôquer (plano em XY, depois deitado; o buraco fica em (PIT.x, -PIT.z) no plano)
   const holed = (W, H, cx, cy) => { const sh = new THREE.Shape(); sh.moveTo(-W / 2, -H / 2); sh.lineTo(W / 2, -H / 2); sh.lineTo(W / 2, H / 2); sh.lineTo(-W / 2, H / 2); sh.closePath();
     const hp = new THREE.Path(); hp.absarc(PIT.x - cx, -PIT.z - cy, PIT.R, 0, Math.PI * 2, true); sh.holes.push(hp);
@@ -180,11 +194,13 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   [[0, -7.88, 22.9, 0.03], [0, 7.88, 22.9, 0.03], [-10.88, 0, 0.03, 15.8], [10.88, 0, 0.03, 15.8]].forEach(([x, z, w, d]) => mesh(new THREE.PlaneGeometry(w, d), M.gold, scene, [x, 0.005, z], [-Math.PI / 2, 0, 0], false));
   // borda da laje (vista de fora)
   mesh(box(24.4, 0.4, 18.4), mat(0x1c1c1e, { roughness: 0.5 }), scene, [0, -0.215, 0], null, false);
-  const wallT = tex(512, 512, (g, w, h) => {
-    g.fillStyle = '#f2efe9'; g.fillRect(0, 0, w, h);
-    g.fillStyle = 'rgba(0,0,0,.03)'; for (let x = 0; x < w; x += 128) g.fillRect(x, 0, 2, h);
-    g.fillStyle = '#c9a45c'; g.fillRect(0, h - 26, w, 3);
-    g.fillStyle = '#e4e0d8'; g.fillRect(0, h - 23, w, 23);
+  const wallT = tex(1024, 1024, (g, w, h) => {
+    g.fillStyle = '#efebe4'; g.fillRect(0, 0, w, h);
+    for (let i = 0; i < 26000; i++) { g.fillStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '120,110,96'},${Math.random() * 0.035})`; g.fillRect(Math.random() * w, Math.random() * h, 2 + Math.random() * 6, 1 + Math.random() * 3); }
+    const panel = (x, y, pw, ph) => { g.strokeStyle = 'rgba(255,255,255,.75)'; g.lineWidth = 3; g.strokeRect(x + 2, y + 2, pw, ph); g.strokeStyle = 'rgba(110,98,82,.28)'; g.lineWidth = 3; g.strokeRect(x, y, pw, ph); g.strokeStyle = 'rgba(176,140,74,.35)'; g.lineWidth = 1; g.strokeRect(x + 12, y + 12, pw - 24, ph - 24); };
+    [0, 512].forEach(x => { panel(x + 54, 70, 404, 560); panel(x + 54, 690, 404, 200); });
+    g.fillStyle = '#d9d3c9'; g.fillRect(0, h - 70, w, 70); g.fillStyle = '#c9a45c'; g.fillRect(0, h - 74, w, 4); g.fillStyle = 'rgba(0,0,0,.08)'; g.fillRect(0, h - 70, w, 3);
+    g.fillStyle = 'rgba(255,255,255,.6)'; g.fillRect(0, 30, w, 3); g.fillStyle = 'rgba(110,98,82,.25)'; g.fillRect(0, 34, w, 3);
   }, [8, 1]);
   const wallM = mat(0xffffff, { map: wallT, roughness: 0.85 });
   function wall(x0, z0, x1, z1, keyName) {
@@ -217,7 +233,17 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   const bw = (x, z, w, d, h = ROOM.H) => { const m = mesh(box(w, h, d), bathWallM, scene, [x, h / 2, z], null, false); m.userData.keep = true; return m; };
   const bWest1 = bw(8.6, (3 + 5.3) / 2, 0.16, 2.3), bWest2 = bw(8.6, (6.5 + 9) / 2, 0.16, 2.5), bTop = bw(8.6, 5.9, 0.16, 1.2, 1.2); bTop.position.y = 3.6;
   const bNorth = bw(10.3, 3, 3.4, 0.16), bSouth = bw(10.3, 9, 3.4, 0.16), bEast = bw(12, 6, 0.16, 6);
-  const roof = mesh(box(3.6, 0.08, 6.2), phys(0x121212, { roughness: 0.3, clearcoat: 0.6, transparent: true }), scene, [10.3, ROOM.H, 6], null, false);
+  const roofT = tex(512, 896, (g, w, h) => {
+    g.fillStyle = '#e8e3da'; g.fillRect(0, 0, w, h);
+    for (let i = 0; i < 9000; i++) { g.fillStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '110,100,88'},${Math.random() * 0.05})`; g.fillRect(Math.random() * w, Math.random() * h, 3, 2); }
+    g.strokeStyle = '#c9a45c'; g.lineWidth = 6; g.strokeRect(14, 14, w - 28, h - 28); g.lineWidth = 2; g.strokeRect(34, 34, w - 68, h - 68);
+    const sk = g.createLinearGradient(0, 0, w, h); sk.addColorStop(0, '#2e3a44'); sk.addColorStop(0.5, '#56646f'); sk.addColorStop(1, '#2a333b');
+    g.fillStyle = sk; g.fillRect(140, 160, w - 280, h - 320); g.strokeStyle = '#1a1a1c'; g.lineWidth = 8; g.strokeRect(140, 160, w - 280, h - 320);
+    g.lineWidth = 4; for (let y = 160 + (h - 320) / 4; y < h - 160; y += (h - 320) / 4) { g.beginPath(); g.moveTo(140, y); g.lineTo(w - 140, y); g.stroke(); }
+    g.beginPath(); g.moveTo(w / 2, 160); g.lineTo(w / 2, h - 160); g.stroke();
+    g.fillStyle = 'rgba(255,255,255,.18)'; g.beginPath(); g.moveTo(150, 170); g.lineTo(230, 170); g.lineTo(150, 330); g.fill();
+  });
+  const roof = mesh(box(3.6, 0.08, 6.2), phys(0xffffff, { map: roofT, roughness: 0.5, transparent: true }), scene, [10.3, ROOM.H, 6], null, false);
   [[10.3, 2.98, 3.5], [10.3, 9.02, 3.5]].forEach(([x, z, w]) => mesh(box(w, 0.06, 0.06), M.gold, scene, [x, ROOM.H + 0.05, z], null, false)); mesh(box(0.06, 0.06, 6.1), M.gold, scene, [8.55, ROOM.H + 0.05, 6], null, false);
   out.bathWalls = [bSouth, bEast, roof]; out.bathAll = [bWest1, bWest2, bTop, bNorth, bSouth, bEast, roof];
   // porta do banheiro
@@ -282,7 +308,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     g.fillStyle = '#1b130e'; g.fillRect(0, 0, w, h);
     for (let i = 0; i < 220; i++) { g.strokeStyle = `rgba(${Math.random() < .5 ? '0,0,0' : '90,60,40'},${Math.random() * .22})`; g.lineWidth = Math.random() * 2.5; g.beginPath(); const y = Math.random() * h; g.moveTo(0, y); g.bezierCurveTo(w * .3, y + Math.random() * 30 - 15, w * .7, y + Math.random() * 30 - 15, w, y + Math.random() * 20 - 10); g.stroke(); }
   });
-  mesh(cyl(TABLE_R, TABLE_R, 0.06, 64), phys(0xffffff, { map: woodT, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.12 }), table, [0, TOP_Y - 0.03, 0]);
+  mesh(cyl(TABLE_R, TABLE_R, 0.06, 64), new THREE.MeshStandardMaterial({ map: woodT, roughness: 0.62, envMapIntensity: 0.3 }), table, [0, TOP_Y - 0.03, 0]).userData.keep = true;
   mesh(new THREE.TorusGeometry(TABLE_R, 0.03, 6, 96), M.gold, table, [0, TOP_Y - 0.03, 0], [Math.PI / 2, 0, 0]);
   mesh(new THREE.TorusGeometry(TABLE_R - 0.36, 0.006, 6, 160), M.gold, table, [0, TOP_Y + 0.001, 0], [Math.PI / 2, 0, 0], false);
   mesh(cyl(0.7, 1.05, TOP_Y - 0.12, 64), M.blackGloss, table, [0, (TOP_Y - 0.12) / 2 + 0.06, 0]);
@@ -560,7 +586,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     dusk: { top: C(0x1d2c5c), hor: C(0xff8a4c), sun: 1.2, hemi: 0.5, win: 0.6, inside: 0.8, exp: 0.88, fog: C(0x7a5a6a) },
     day: { top: C(0x2f6fd0), hor: C(0xd9e7f2), sun: 3.0, hemi: 0.7, win: 0.03, inside: 0.4, exp: 0.82, fog: C(0xc7dbeb) },
   };
-  scene.fog = new THREE.Fog(0x0d1228, 250, 1500); scene.background = new THREE.Color(0x0b0a09);
+  scene.fog = new THREE.Fog(0x0d1228, 110, 1150); scene.background = new THREE.Color(0x0b0a09);
   let hourOverride = null;
   out.setHour = h => { hourOverride = h; };
   out.hourNow = () => { const s = new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo', hour12: false, hour: '2-digit', minute: '2-digit' }); const [h, m] = s.split(':').map(Number); return (h % 24) + m / 60; };

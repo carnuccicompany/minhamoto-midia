@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO } from './data.js';
+import { buildGauge } from './gauge.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
@@ -572,6 +573,7 @@ renderer.domElement.addEventListener('pointerup', e => {
   if (hit.object.userData.decor) return selectDecor(hit.object.userData.decor);
   if (hit.object.userData.hall) return selectHall();
   if (hit.object.userData.stock) return openStock(hit.object.userData.stock);
+  if (hit.object.userData.cadastro) return openCadastro();
   if (hit.object.userData.dirId === 'master') return select(master);
   const s = seats.find(x => x.d.id === hit.object.userData.dirId); if (s) select(s);
 });
@@ -596,6 +598,18 @@ const LUGAR = { adega: 'Adega', frigobar: 'Frigobar', armario: 'Armário dos Dir
 const quem = id => Object.entries(GOSTOS).filter(([, l]) => l.includes(id)).map(([d]) => NOMES[d].split(' ').slice(-1)[0]).join(', ') || '—';
 $('stockDate').textContent = ESTOQUE_DATA; $('stockRate').textContent = CAMBIO;
 $('stockList').innerHTML = ['adega', 'frigobar', 'armario'].map(l => `<h3 id="sec-${l}">${LUGAR[l]}</h3><div class="tablewrap"><table><thead><tr><th>Item</th><th>Preço real</th><th>C$</th><th>Quem gosta</th></tr></thead><tbody>${ESTOQUE.filter(e => e.onde === l).map(e => `<tr><td><b>${e.nome}</b><br><small>${e.tipo} · ${e.det}${e.url ? ` · <a href="${e.url}" target="_blank" rel="noopener">${e.fonte}</a>` : ` · ${e.fonte}`}</small></td><td class="n">${brl(e.reais)}</td><td class="n">${e.reais ? 'C$ ' + cs(e).toLocaleString('pt-BR') : '—'}</td><td>${quem(e.id)}</td></tr>`).join('')}</tbody></table></div>`).join('');
+const gauge = buildGauge(scene, CADASTRO || { pct: 0, pendentes: 0, categorias: [], lista: [] });
+function openCadastro() {
+  const C = CADASTRO || { pct: 0, categorias: [], lista: [] }, cad = $('cad');
+  const ring = (p, s = 46) => { const r = s / 2 - 5, c = 2 * Math.PI * r; return `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}"><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="#2a241a" stroke-width="5"/><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="${p >= 100 ? '#3ccf7a' : '#d8b46a'}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${c * p / 100} ${c}" transform="rotate(-90 ${s / 2} ${s / 2})"/><text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" fill="#f2ead8" font-size="12" font-weight="700">${Math.round(p)}</text></svg>`; };
+  $('cadPct').textContent = Math.round(C.pct) + '%'; $('cadUpd').textContent = C.atualizado || '';
+  $('cadCats').innerHTML = C.categorias.map(c => `<div class="cc">${ring(c.pct)}<div><b>${c.nome}</b><span>${c.feitos}/${c.total} prontos</span></div></div>`).join('');
+  $('cadList').innerHTML = C.lista.map(([cat, t, f]) => `<li><b>${t}</b><span>${cat}${f ? ' · falta: ' + f : ''}</span></li>`).join('');
+  cad.classList.add('open');
+}
+{ const C = CADASTRO || { pct: 0, pendentes: 0 }, r = 12, c = 2 * Math.PI * r; $('cadChip').innerHTML = `<svg viewBox="0 0 30 30"><circle cx="15" cy="15" r="${r}" fill="none" stroke="#2a241a" stroke-width="3.5"/><circle cx="15" cy="15" r="${r}" fill="none" stroke="#d8b46a" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="${c * C.pct / 100} ${c}" transform="rotate(-90 15 15)"/></svg><span>Cadastro <b>${Math.round(C.pct)}%</b> · ${C.pendentes} pendências</span>`; $('cadChip').onclick = openCadastro; }
+$('cad').querySelector('.x').onclick = () => $('cad').classList.remove('open');
+$('cad').addEventListener('click', e => { if (e.target.id === 'cad') e.currentTarget.classList.remove('open'); });
 function openStock(lugar) {
   merit.classList.add('open'); merit.querySelector('.tabs button[data-t="t5"]').click();
   const el = lugar && $('sec-' + lugar); if (el) setTimeout(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }), 60);
@@ -628,7 +642,7 @@ function loop() {
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
   frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
-  phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt); pokerTick(dt, now);
+  gauge.update(dt); phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt); pokerTick(dt, now);
   if (selected && (selected.pet === 'panda' || selected.pet === 'pantera') && !camFly) { const q = selected.pet === 'panda' ? panda.root.position : panther.root.position; controls.target.lerp(q.clone().setY(q.y + 0.4), 1 - Math.pow(0.05, dt)); }
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
   if (holo) {
@@ -652,10 +666,10 @@ decor.forEach(({ g }) => { bakeStatic(g); g.userData.dyn = true; }); bakeStatic(
 phoenix.root.userData.dyn = true; panda.root.userData.dyn = true; panther.root.userData.dyn = true; masterP.root.userData.dyn = true; seats.forEach(s => s.P.root.userData.dyn = true);
 bakeStatic(scene);
 mergeChildren(scene);
-pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet || o.userData.decor || o.userData.hall || o.userData.stock) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
+pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet || o.userData.decor || o.userData.hall || o.userData.stock || o.userData.cadastro) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
 // hover: só raycast a cada 120 ms
 masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
 window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { panther, poker, pokerNow: () => { poker.t = 0; }, pit, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.__mesa = { THREE, panther, poker, pokerNow: () => { poker.t = 0; }, pit, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };

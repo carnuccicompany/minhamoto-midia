@@ -4,10 +4,14 @@ import { TOP_Y } from './env.js';
 
 // Panda-vermelho "Carnucci": mora em cima da mesa dos diretores; desce de vez em quando e volta
 export function buildRedPanda(scene) {
-  const fur = (c) => mat(c, { roughness: 0.85 });
+  const furBump = (() => { const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d'); g.fillStyle = '#808080'; g.fillRect(0, 0, 256, 256);
+    for (let i = 0; i < 7000; i++) { const x = Math.random() * 256, y = Math.random() * 256, l = 3 + Math.random() * 7; g.strokeStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '0,0,0'},${0.15 + Math.random() * 0.25})`; g.lineWidth = 1; g.beginPath(); g.moveTo(x, y); g.lineTo(x + (Math.random() - .5) * 2, y + l); g.stroke(); }
+    const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(3, 3); return t; })();
+  const FC = new Map();
+  const fur = (c) => { if (FC.has(c)) return FC.get(c); const col = new THREE.Color(c); const m = new THREE.MeshPhysicalMaterial({ color: col, roughness: 0.9, sheen: 1, sheenRoughness: 0.55, sheenColor: col.clone().lerp(new THREE.Color(0xffffff), 0.35), bumpMap: furBump, bumpScale: 1.2 }); FC.set(c, m); return m; };
   const rust = fur(0xb4441a), rustD = fur(0x8a2e10), dark = fur(0x24140d, 0.4), white = fur(0xf4eee4, 0.6), black = phys(0x080606, { roughness: 0.2, clearcoat: 1 });
   const root = new THREE.Group(); scene.add(root); blob(root, 0, 0, 0.35, 0.5);
-  const body = new THREE.Group(); body.position.y = 0.3; root.add(body);
+  const body = new THREE.Group(); body.position.y = 0.27; root.add(body);
   const torso = mesh(new THREE.CapsuleGeometry(0.13, 0.3, 8, 18), rust, body, [0, 0, 0], [Math.PI / 2, 0, 0]); torso.scale.set(1, 1, 0.95);
   mesh(new THREE.CapsuleGeometry(0.1, 0.24, 6, 14), dark, body, [0, -0.055, 0.0], [Math.PI / 2, 0, 0]).scale.set(0.95, 1, 0.8); // barriga escura
   mesh(sph(0.135, 20, 14), rust, body, [0, 0.03, -0.17]).scale.set(1, 0.95, 1.05); // quadril
@@ -15,12 +19,12 @@ export function buildRedPanda(scene) {
   const head = new THREE.Group(); head.position.set(0, 0.1, 0.27); body.add(head);
   mesh(sph(0.11, 28, 20), rust, head, [0, 0, 0]).scale.set(1.12, 0.95, 0.98);
   mesh(sph(0.06, 20, 14), white, head, [0, -0.03, 0.08]).scale.set(1.05, 0.8, 1); // focinho
-  mesh(sph(0.02, 12, 10), black, head, [0, -0.012, 0.135]).scale.set(1.3, 0.85, 0.9); // nariz
+  mesh(new THREE.SphereGeometry(0.015, 12, 10), black, head, [0, -0.014, 0.134]).scale.set(1.3, 0.85, 0.9); // nariz
   [-1, 1].forEach(s => {
     mesh(sph(0.045, 16, 12), white, head, [s * 0.055, 0.035, 0.07]).scale.set(0.9, 0.75, 0.6); // sobrancelha branca
     mesh(sph(0.04, 14, 10), white, head, [s * 0.075, -0.03, 0.065]).scale.set(0.8, 0.9, 0.7); // bochecha
     mesh(sph(0.03, 12, 10), rustD, head, [s * 0.045, -0.005, 0.088]).scale.set(0.5, 1.2, 0.5); // "lágrima"
-    mesh(sph(0.016, 14, 10), black, head, [s * 0.045, 0.012, 0.098]); // olho
+    mesh(new THREE.SphereGeometry(0.013, 14, 10), black, head, [s * 0.045, 0.012, 0.099]); // olho
     mesh(sph(0.004, 8, 6), phys(0xffffff, { roughness: 0.1 }), head, [s * 0.04, 0.018, 0.112], null, false); // brilho
     const ear = new THREE.Group(); ear.position.set(s * 0.075, 0.085, -0.01); ear.rotation.set(-0.2, 0, s * -0.35); head.add(ear);
     mesh(new THREE.SphereGeometry(0.042, 16, 12), white, ear, [0, 0.03, 0]).scale.set(1, 1.1, 0.42);
@@ -30,8 +34,9 @@ export function buildRedPanda(scene) {
   const legs = [];
   [[-0.08, 0.17], [0.08, 0.17], [-0.085, -0.17], [0.085, -0.17]].forEach(([x, z], i) => {
     const hip = new THREE.Group(); hip.position.set(x, -0.04, z); body.add(hip);
-    mesh(new THREE.CapsuleGeometry(0.042, 0.17, 6, 12), dark, hip, [0, -0.12, 0]);
-    mesh(sph(0.045, 12, 10), dark, hip, [0, -0.225, 0.02]).scale.set(1, 0.6, 1.3);
+    mesh(new THREE.SphereGeometry(0.075, 16, 12), i < 2 ? rust : rust, hip, [0, 0.0, 0]).scale.set(0.85, 1.1, 1);
+    const lg = mesh(new THREE.CylinderGeometry(0.05, 0.04, 0.17, 14), dark, hip, [0, -0.1, 0]);
+    mesh(new THREE.SphereGeometry(0.05, 14, 10), dark, hip, [0, -0.19, 0.02]).scale.set(1, 0.62, 1.35);
     legs.push(hip);
   });
   // cauda listrada e fofa
@@ -95,7 +100,7 @@ export function buildRedPanda(scene) {
   function pose(dt, mode) {
     const sitK = mode === 'sit' ? 1 : 0, lieK = mode === 'lie' ? 1 : 0, petK = mode === 'pet' ? 1 : 0;
     body.rotation.x = lerp(body.rotation.x, -0.55 * (sitK || petK), Math.min(1, dt * 3));
-    body.position.y = lerp(body.position.y, 0.3 - 0.12 * lieK + 0.06 * (sitK || petK), Math.min(1, dt * 3));
+    body.position.y = lerp(body.position.y, 0.27 - 0.12 * lieK + 0.06 * (sitK || petK), Math.min(1, dt * 3));
     legs.forEach((l, i) => { l.rotation.x = lerp(l.rotation.x, lieK ? (i < 2 ? -1.3 : 1.3) : (sitK || petK) && i >= 2 ? -1.1 : (sitK || petK) ? 0.55 : 0, Math.min(1, dt * 3)); });
   }
   function walkStep(dt, spd) {
@@ -106,7 +111,7 @@ export function buildRedPanda(scene) {
     else { st.pos.addScaledVector(tmp.normalize(), step); st.heading = angLerp(st.heading, Math.atan2(tmp.x, tmp.z), Math.min(1, dt * 6)); }
     st.phase += dt * 9;
     legs.forEach((l, i) => { l.rotation.x = Math.sin(st.phase + (i === 0 || i === 3 ? 0 : Math.PI)) * 0.5; });
-    body.position.y = 0.3 + Math.abs(Math.sin(st.phase)) * 0.015; body.rotation.x = 0;
+    body.position.y = 0.27 + Math.abs(Math.sin(st.phase)) * 0.015; body.rotation.x = 0;
     return arrived;
   }
   function faceSeat(a) { tmp.copy(at(a, 3.3)).sub(st.pos); st.heading = Math.atan2(tmp.x, tmp.z); }

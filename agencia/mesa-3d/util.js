@@ -164,9 +164,19 @@ const SKIN_MAT = new THREE.MeshStandardMaterial({ vertexColors: true, roughness:
 // cada parte do personagem guarda a própria rugosidade, metal e tipo (pele, tecido, cabelo) num atributo,
 // e o shader dá brilho de borda: pele quente (translúcida), tecido aveludado, cabelo com brilho. Tudo num draw só.
 SKIN_MAT.onBeforeCompile = sh => {
-  sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute vec3 aRM;\nvarying vec3 vRM;')
-    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvRM = aRM;');
-  sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vRM;')
+  sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute vec3 aRM;\nvarying vec3 vRM;\nvarying vec3 vObj;')
+    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvRM = aRM; vObj = position;');
+  sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vRM;\nvarying vec3 vObj;')
+    .replace('#include <color_fragment>', `#include <color_fragment>
+      if (vRM.z > 2.5) { // fios de cabelo: listras finas que descem a partir do topo, com variação
+        float az = atan(vObj.x, vObj.z - 0.01);
+        float st = sin(az * 140.0 + sin(vObj.y * 90.0) * 2.0) * 0.5 + 0.5;
+        float st2 = sin(az * 57.0 - vObj.y * 40.0) * 0.5 + 0.5;
+        diffuseColor.rgb *= 0.82 + 0.16 * st + 0.1 * st2;
+      } else if (vRM.z > 1.5) { // trama do tecido bem sutil
+        float w = sin(vObj.x * 1400.0) * sin(vObj.y * 1400.0);
+        diffuseColor.rgb *= 1.0 + 0.025 * w;
+      }`)
     .replace('#include <roughnessmap_fragment>', 'float roughnessFactor = vRM.x;')
     .replace('#include <metalnessmap_fragment>', 'float metalnessFactor = vRM.y;')
     .replace('#include <opaque_fragment>', `
@@ -189,15 +199,18 @@ export function bakeSkinned(root) {
     let b = o.parent; while (b && !b.isBone) b = b.parent; if (!b) return;
     const m = o.material; if (Array.isArray(m) || m.map || m.transparent) return;
     let g = o.geometry.index ? o.geometry.toNonIndexed() : o.geometry.clone();
-    for (const n of Object.keys(g.attributes)) if (n !== 'position' && n !== 'normal') g.deleteAttribute(n);
+    for (const n of Object.keys(g.attributes)) if (n !== 'position' && n !== 'normal' && n !== 'tint') g.deleteAttribute(n);
     g.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv, o.matrixWorld));
+    const tint = g.attributes.tint; if (tint) g.deleteAttribute('tint');
     const cnt = g.attributes.position.count, cols = new Float32Array(cnt * 3), si = new Uint16Array(cnt * 4), sw = new Float32Array(cnt * 4), bi = idx.get(b);
     const c = m.color.clone(); if (m.metalness >= 0.5) c.multiplyScalar(0.85);
+    if ((m.userData.k || 0) === 1) { c.r *= 0.95; c.g *= 0.87; c.b *= 0.8; } // pele um pouco mais quente e menos estourada
     const rm = new Float32Array(cnt * 3), kind = m.userData.k || 0, nrm = g.attributes.normal, pos = g.attributes.position;
     for (let i = 0; i < cnt; i++) {
       // oclusão falsa: embaixo e nas partes de baixo do corpo fica um pouco mais escuro (dá volume)
       const ao = 0.8 + 0.2 * (nrm.getY(i) * 0.5 + 0.5), lo = 0.88 + 0.12 * Math.min(1, Math.max(0, (pos.getY(i) + 1.0) / 1.9));
-      cols[i * 3] = c.r * ao * lo; cols[i * 3 + 1] = c.g * ao * lo; cols[i * 3 + 2] = c.b * ao * lo; si[i * 4] = bi; sw[i * 4] = 1;
+      const tr = tint ? tint.getX(i) : 1, tg = tint ? tint.getY(i) : 1, tb = tint ? tint.getZ(i) : 1;
+      cols[i * 3] = c.r * ao * lo * tr; cols[i * 3 + 1] = c.g * ao * lo * tg; cols[i * 3 + 2] = c.b * ao * lo * tb; si[i * 4] = bi; sw[i * 4] = 1;
       rm[i * 3] = m.roughness; rm[i * 3 + 1] = m.metalness; rm[i * 3 + 2] = kind;
     }
     g.setAttribute('color', new THREE.BufferAttribute(cols, 3)); g.setAttribute('aRM', new THREE.BufferAttribute(rm, 3)); g.setAttribute('skinIndex', new THREE.Uint16BufferAttribute(si, 4)); g.setAttribute('skinWeight', new THREE.Float32BufferAttribute(sw, 4));
