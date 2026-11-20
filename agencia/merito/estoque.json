@@ -1,0 +1,114 @@
+{
+ "consultado": "19/11/2026",
+ "cambio": "C$ 1 = R$ 20",
+ "itens": [
+  {
+   "id": "royal21",
+   "nome": "Royal Salute 21 anos",
+   "tipo": "Uísque",
+   "reais": 799,
+   "cs": 40,
+   "consome": true,
+   "fonte": "https://www.zoom.com.br/whisky/royal-salute-whisky-21-anos-escoces-700ml"
+  },
+  {
+   "id": "blue",
+   "nome": "Johnnie Walker Blue Label",
+   "tipo": "Uísque",
+   "reais": 1900,
+   "cs": 95,
+   "consome": true,
+   "fonte": "https://shopping.inter.co/Whisky-Johnnie-Walker-Blue/p/2592644"
+  },
+  {
+   "id": "macallan18",
+   "nome": "The Macallan 18 anos Sherry Oak",
+   "tipo": "Uísque",
+   "reais": 3500,
+   "cs": 175,
+   "consome": true,
+   "fonte": "https://www.bloomberglinea.com.br/estilo-de-vida/como-o-macallan-se-tornou-um-uisque-tao-caro-e-desejado-e-os-planos-para-o-brasil/"
+  },
+  {
+   "id": "hennessyxo",
+   "nome": "Hennessy X.O",
+   "tipo": "Conhaque",
+   "reais": 2166,
+   "cs": 108,
+   "consome": true,
+   "fonte": "https://m.magazineluiza.com.br/busca/conhaque+hennessy/"
+  },
+  {
+   "id": "donjulio",
+   "nome": "Don Julio 1942",
+   "tipo": "Tequila",
+   "reais": 1820,
+   "cs": 91,
+   "consome": true,
+   "fonte": "https://site.fastshop.com.br/tequila-don-julio-1942---750ml-158191/p"
+  },
+  {
+   "id": "dom",
+   "nome": "Dom Pérignon Vintage",
+   "tipo": "Champanhe",
+   "reais": 2533,
+   "cs": 127,
+   "consome": true,
+   "fonte": "https://www.casasbahia.com.br/champagne-dom-perignon-vintage-luminous-s-estojo-750ml/p/1572657989"
+  },
+  {
+   "id": "nespresso",
+   "nome": "Nespresso Ispirazione",
+   "tipo": "Café",
+   "reais": 483,
+   "cs": 24,
+   "consome": true,
+   "fonte": "https://www.magazineluiza.com.br/marcas/nespresso/"
+  },
+  {
+   "id": "agua",
+   "nome": "Água gelada",
+   "tipo": "Água",
+   "reais": 0,
+   "cs": 0,
+   "consome": true,
+   "fonte": "Da casa"
+  },
+  {
+   "id": "behike",
+   "nome": "Cohiba Behike 56",
+   "tipo": "Charuto",
+   "reais": 3125,
+   "cs": 156,
+   "consome": true,
+   "fonte": "https://renovainvest.com.br/?p=72669"
+  },
+  {
+   "id": "monte2",
+   "nome": "Montecristo Nº 2",
+   "tipo": "Charuto",
+   "reais": 260,
+   "cs": 13,
+   "consome": true,
+   "fonte": "https://fairmontrio.com/wp-content/uploads/2026/04/Menu-Relax-Garden-Bar-15x297cm-v7-Q12026-compactado-1.pdf"
+  },
+  {
+   "id": "aventus",
+   "nome": "Creed Aventus",
+   "tipo": "Perfume",
+   "reais": 3519,
+   "cs": 176,
+   "consome": false,
+   "fonte": "https://www.drogasil.com.br/aventus-creed-eau-de-parfum-masculino-100-ml-1156389.html"
+  },
+  {
+   "id": "rolex",
+   "nome": "Rolex Submariner Date",
+   "tipo": "Relógio",
+   "reais": 96000,
+   "cs": 4800,
+   "consome": false,
+   "fonte": "https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html"
+  }
+ ]
+}
