@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mesa de Demandas · Carnucci</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
+<style>
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--bg:#07070a;--card:#121217;--card2:#17171e;--line:#26262f;--gold:#d8b46a;--gold2:#f1d595;--txt:#f2efe8;--mut:#9a968c;--ok:#3ccf7a;--warn:#f0b33c;--bad:#ff5b5b}
+*{box-sizing:border-box}html{background:var(--bg)}
+body{margin:0;color:var(--txt);font:15px/1.45 Inter,-apple-system,Segoe UI,sans-serif;background:radial-gradient(110% 50% at 50% -10%,rgba(216,180,106,.14),transparent 60%),var(--bg);min-height:100vh}
+a{color:var(--gold2);text-decoration:none}
+.wrap{max-width:1400px;margin:0 auto;padding:0 16px 60px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:24px 0 8px;flex-wrap:wrap}
+h1{margin:0;font-size:22px;font-weight:800}h1 b{color:var(--gold)}
+.sub{color:var(--mut);font-size:13px}
+.back{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--card)}
+.top{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}@media(max-width:800px){.top{grid-template-columns:repeat(2,1fr)}}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:14px}
+.kpi{padding:12px}.kpi .rot{color:var(--mut);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}.kpi .val{font-size:26px;font-weight:800}
+.kpi.bad .val{color:var(--bad)}.kpi.warn .val{color:var(--warn)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 12px}
+.bar select,.bar input{font:600 13px Inter,sans-serif;color:var(--txt);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 13px}
+.bar input{flex:1;min-width:180px}
+.board{display:grid;grid-template-columns:repeat(5,minmax(240px,1fr));gap:10px;overflow-x:auto}
+.col h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut);margin:0 0 8px;display:flex;justify-content:space-between}
+.col h3 span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0 8px;color:var(--txt)}
+.d{padding:11px;margin-bottom:8px;cursor:pointer}
+.d.late{border-color:rgba(255,91,91,.6);box-shadow:0 0 0 1px rgba(255,91,91,.25) inset}
+.d .t{font-weight:700;font-size:14px;line-height:1.3}
+.d .w{color:var(--mut);font-size:12px;margin-top:4px}.d .w b{color:var(--txt)}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
+.tag{font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.tag.P1{color:var(--bad);border-color:rgba(255,91,91,.45)}.tag.P2{color:var(--warn);border-color:rgba(240,179,60,.45)}
+.tag.late{background:var(--bad);color:#160404;border-color:var(--bad)}.tag.lider{background:var(--gold);color:#120e05;border-color:var(--gold)}
+.det{display:none;margin-top:9px;border-top:1px solid var(--line);padding-top:8px;font-size:13px}
+.d.open .det{display:block}
+.det p{margin:4px 0}.det .h{color:var(--mut);font-size:12px}
+.vazio{color:var(--mut);font-size:13px;padding:14px}
+footer{margin-top:30px;color:var(--mut);font-size:12.5px;text-align:center}
+</style></head><body><div class="wrap">
+<header><div><h1>Mesa de Demandas · <b>Carnucci</b></h1><div class="sub" id="sub">carregando…</div></div><a class="back" href="painel.html">← Painel da agência</a></header>
+<div class="top">
+ <div class="card kpi"><div class="rot">Abertas</div><div class="val" id="kA">0</div></div>
+ <div class="card kpi bad"><div class="rot">Atrasadas</div><div class="val" id="kL">0</div></div>
+ <div class="card kpi"><div class="rot">Entregues (pra conferir)</div><div class="val" id="kE">0</div></div>
+ <div class="card kpi"><div class="rot">Aceitas</div><div class="val" id="kOk">0</div></div>
+ <div class="card kpi warn"><div class="rot">Precisam de você</div><div class="val" id="kB">0</div></div>
+</div>
+<div class="bar"><select id="ag"><option value="">Todos os agentes</option></select><input id="q" placeholder="Buscar título, motivo ou agente"></div>
+<div class="board" id="board"></div>
+<footer>Lê <code>agencia/demandas/quadro.json</code> em tempo real · regras em <a href="https://github.com/carnuccicompany/minhamoto-midia/blob/main/agencia/demandas/README.md">demandas/README.md</a></footer>
+</div>
+<script>
+const $=id=>document.getElementById(id), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const COLS=[['aberta','Abertas',d=>['aberta','devolvida'].includes(d.status)],['em_andamento','Em andamento',d=>d.status==='em_andamento'],['bloq','Bloqueadas',d=>d.status==='bloqueada'],['entregue','Entregues · conferir',d=>d.status==='entregue'],['fim','Fechadas',d=>['aceita','recusada','cancelada'].includes(d.status)]];
+const fmt=s=>{try{return new Date(s).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}catch(e){return s}};
+let Q=null;
+function render(){
+ const ag=$('ag').value, q=$('q').value.toLowerCase();
+ const L=(Q?.demandas||[]).filter(d=>(!ag||d.de===ag||d.para===ag||(d.copia||[]).includes(ag))&&(!q||(d.titulo+' '+d.por_que+' '+d._de_nome+' '+d._para_nome).toLowerCase().includes(q)));
+ $('board').innerHTML=COLS.map(([k,t,f])=>{const c=L.filter(f);return `<div class="col"><h3>${t}<span>${c.length}</span></h3>${c.map(d=>`<div class="card d ${d._atrasada?'late':''}">
+  <div class="t">${esc(d.titulo)}</div><div class="w"><b>${esc(d._de_nome)}</b> → <b>${esc(d._para_nome)}</b> · prazo ${fmt(d.prazo)}</div>
+  <div class="tags"><span class="tag ${esc(d.prioridade)}">${esc(d.prioridade)}</span>${d._atrasada?`<span class="tag late">atrasada · cobrança ${d.cobrancas}</span>`:''}${d.bloqueio==='lider'?'<span class="tag lider">precisa do Léo/Davi</span>':''}${d.fio?`<span class="tag">${esc(d.fio)}</span>`:''}${d.status==='devolvida'?'<span class="tag">devolvida</span>':''}</div>
+  <div class="det"><p><span class="h">Por quê:</span> ${esc(d.por_que)}</p><p><span class="h">Pronto quando:</span> ${esc(d.pronto_quando)}</p>${d.entrega?`<p><span class="h">Entrega:</span> ${esc(d.entrega.resumo||'')} ${d.entrega.arquivo?`· <a target="_blank" rel="noopener" href="https://github.com/carnuccicompany/minhamoto-midia/blob/main/${esc(d.entrega.arquivo)}">abrir</a>`:''}</p>`:''}${d.pergunta?`<p><span class="h">Pergunta pra você:</span> ${esc(d.pergunta)}</p>`:''}
+  ${(d.historico||[]).slice(-6).map(h=>`<p class="h">${fmt(h.quando)} · ${esc(h.quem)}: ${esc(h.o_que)}</p>`).join('')}</div></div>`).join('')||'<div class="vazio">—</div>'}</div>`}).join('');
+}
+document.addEventListener('click',e=>{const c=e.target.closest('.d');if(c&&!e.target.closest('a'))c.classList.toggle('open')});
+$('ag').onchange=render;$('q').oninput=render;
+(async()=>{
+ try{const r=await fetch('agencia/demandas/quadro.json?t='+Date.now(),{cache:'no-store'});Q=await r.json()}catch(e){Q={demandas:[],resumo:{}}}
+ const R=Q.resumo||{};$('kA').textContent=R.abertas||0;$('kL').textContent=R.atrasadas||0;$('kE').textContent=R.entregues||0;$('kOk').textContent=R.aceitas||0;$('kB').textContent=R.bloqueadas_lider||0;
+ $('sub').textContent=Q.atualizado?`Atualizado ${fmt(Q.atualizado)} · ${Q.demandas.length} demandas`:'As primeiras demandas nascem na Reunião do Conselho de hoje (19h23) e a Mesa roda logo depois.';
+ const ags=[...new Set(Q.demandas.flatMap(d=>[d.de,d.para]))];const nm={};Q.demandas.forEach(d=>{nm[d.de]=d._de_nome;nm[d.para]=d._para_nome});
+ $('ag').innerHTML+=ags.map(a=>`<option value="${esc(a)}">${esc(nm[a]||a)}</option>`).join('');
+ render();
+})();
+</script></body></html>
