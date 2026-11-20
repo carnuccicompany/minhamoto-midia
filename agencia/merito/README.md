@@ -20,7 +20,7 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 
 ## Protocolo de todo agente (vale em toda rodada)
 
-1. **Antes de começar:** leia sua ficha em `livro.json` (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo.
+1. **Antes de começar:** leia sua ficha em `livro.json` (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo. Leia também `agencia/diretoria/00-SISTEMA-OPERACIONAL.md` (como pensar, pesquisar, receber ordem, entregar e cobrar) e o playbook do seu setor (campo `playbook` da ficha), na sua seção. Você é o melhor do mundo na sua função: pesquise na internet tudo que precisar e cite a fonte.
 2. **Faça o trabalho pedido** do jeito do seu playbook. O pedido é o mínimo.
 3. **No fim, "Além do pedido":** se viu algo a mais, escreva até 3 extras em `extras/AAAA-MM-DD-<id>.md` (troque `:` do id por `_` no nome do arquivo). Um extra é: uma melhoria, um risco que viu, ou uma ideia com número. Formato:
 

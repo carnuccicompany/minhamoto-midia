@@ -22,7 +22,8 @@
     "behike"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/01-direcao-geral.md"
   },
   {
    "id": "master:secretario-do-conselho",
@@ -37,7 +38,8 @@
    "moral": 50,
    "jeito": "Anota tudo, resume em três linhas e nunca esquece um prazo.",
    "itens": [],
-   "tarefa_real": "MM: Vigia do Gmail"
+   "tarefa_real": "MM: Vigia do Gmail",
+   "playbook": "agencia/diretoria/01-direcao-geral.md"
   },
   {
    "id": "master:auditor-de-entregas",
@@ -52,7 +54,8 @@
    "moral": 50,
    "jeito": "Desconfiado por profissão. Confere número por número antes de deixar passar.",
    "itens": [],
-   "tarefa_real": "MM: Coordenador 24h (:09 e :39)"
+   "tarefa_real": "MM: Coordenador 24h (:09 e :39)",
+   "playbook": "agencia/diretoria/01-direcao-geral.md"
   },
   {
    "id": "master:tesoureiro",
@@ -67,7 +70,8 @@
    "moral": 50,
    "jeito": "Paga em dia e no centavo. Não aceita bônus sem prova.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/01-direcao-geral.md"
   },
   {
    "id": "dados",
@@ -86,7 +90,8 @@
     "nespresso"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/02-dados.md"
   },
   {
    "id": "dados:coletor-de-metricas",
@@ -101,7 +106,8 @@
    "moral": 50,
    "jeito": "Acorda antes de todo mundo pra puxar os números frescos.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/02-dados.md"
   },
   {
    "id": "dados:analista-de-funil",
@@ -116,7 +122,8 @@
    "moral": 50,
    "jeito": "Obcecado por onde o cliente desiste. Sempre volta com o ponto exato do vazamento.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/02-dados.md"
   },
   {
    "id": "dados:alerta-de-anomalias",
@@ -131,7 +138,8 @@
    "moral": 50,
    "jeito": "Nervoso no bom sentido: qualquer número fora do normal, ele grita.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/02-dados.md"
   },
   {
    "id": "dados:relatorio-semanal",
@@ -146,7 +154,8 @@
    "moral": 50,
    "jeito": "Escreve curto e direto. Odeia relatório que ninguém lê.",
    "itens": [],
-   "tarefa_real": "MM: Relatório semanal de resultados"
+   "tarefa_real": "MM: Relatório semanal de resultados",
+   "playbook": "agencia/diretoria/02-dados.md"
   },
   {
    "id": "mkt",
@@ -166,7 +175,8 @@
     "rolex"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:pauteiro",
@@ -181,7 +191,8 @@
    "moral": 50,
    "jeito": "Vive no que está bombando hoje e transforma em pauta antes do concorrente.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:roteirista",
@@ -196,7 +207,8 @@
    "moral": 50,
    "jeito": "Escreve gancho que prende nos 2 primeiros segundos. Corta palavra sobrando.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:designer",
@@ -211,7 +223,8 @@
    "moral": 50,
    "jeito": "Perfeccionista com alinhamento e cor. Não entrega nada torto.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:editor-de-video",
@@ -226,7 +239,8 @@
    "moral": 50,
    "jeito": "Corte seco, ritmo rápido, legenda sem erro.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:revisor",
@@ -241,7 +255,8 @@
    "moral": 50,
    "jeito": "Caçador de erro. Acha a vírgula errada que todo mundo deixou passar.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "mkt:publicador",
@@ -256,7 +271,8 @@
    "moral": 50,
    "jeito": "Pontual. Posta na hora certa e confere se subiu do jeito certo.",
    "itens": [],
-   "tarefa_real": "MM: Posts do horário (Insta/Face) + aviso TikTok"
+   "tarefa_real": "MM: Posts do horário (Insta/Face) + aviso TikTok",
+   "playbook": "agencia/diretoria/03-marketing.md"
   },
   {
    "id": "cria",
@@ -276,7 +292,8 @@
     "dom"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/04-criativos.md"
   },
   {
    "id": "cria:roteirista-de-gancho",
@@ -291,7 +308,8 @@
    "moral": 50,
    "jeito": "Testa 10 ganchos pra achar o que segura o dedo.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/04-criativos.md"
   },
   {
    "id": "cria:editor-de-motion",
@@ -306,7 +324,8 @@
    "moral": 50,
    "jeito": "Faz texto e tela se mexerem com propósito, sem enfeite.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/04-criativos.md"
   },
   {
    "id": "cria:revisor-de-performance",
@@ -321,7 +340,8 @@
    "moral": 50,
    "jeito": "Compara cada vídeo com os que já venderam e diz o que copiar.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/04-criativos.md"
   },
   {
    "id": "trafego",
@@ -341,7 +361,8 @@
     "behike"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/05-trafego.md"
   },
   {
    "id": "trafego:gestor-de-campanhas",
@@ -356,7 +377,8 @@
    "moral": 50,
    "jeito": "Frio com dinheiro: o que não converte, ele sugere cortar.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/05-trafego.md"
   },
   {
    "id": "trafego:testes-a-b",
@@ -371,7 +393,8 @@
    "moral": 50,
    "jeito": "Não acredita em achismo. Só no teste que terminou.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/05-trafego.md"
   },
   {
    "id": "trafego:controle-de-verba",
@@ -386,7 +409,8 @@
    "moral": 50,
    "jeito": "Vigia cada real gasto por dia e avisa antes de estourar.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/05-trafego.md"
   },
   {
    "id": "produto",
@@ -406,7 +430,8 @@
     "rolex"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/06-produto.md"
   },
   {
    "id": "produto:analista-do-paywall",
@@ -421,7 +446,8 @@
    "moral": 50,
    "jeito": "Estuda cada segundo da tela de assinatura.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/06-produto.md"
   },
   {
    "id": "produto:analista-de-cancelamentos",
@@ -436,7 +462,8 @@
    "moral": 50,
    "jeito": "Quer saber o motivo real de cada cancelamento.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/06-produto.md"
   },
   {
    "id": "produto:testes-de-preco",
@@ -451,7 +478,8 @@
    "moral": 50,
    "jeito": "Calcula o preço que vende mais sem deixar dinheiro na mesa.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/06-produto.md"
   },
   {
    "id": "produto:lista-pro-davi",
@@ -466,7 +494,8 @@
    "moral": 50,
    "jeito": "Organiza o que precisa mudar no app em ordem de impacto.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/06-produto.md"
   },
   {
    "id": "fin",
@@ -485,7 +514,8 @@
     "nespresso"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/07-financeiro.md"
   },
   {
    "id": "fin:receita",
@@ -500,7 +530,8 @@
    "moral": 50,
    "jeito": "Sabe a receita recorrente de cabeça, todo dia.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/07-financeiro.md"
   },
   {
    "id": "fin:custos-e-ferramentas",
@@ -515,7 +546,8 @@
    "moral": 50,
    "jeito": "Corta assinatura de ferramenta que ninguém usa.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/07-financeiro.md"
   },
   {
    "id": "fin:lucro-e-alertas",
@@ -530,7 +562,8 @@
    "moral": 50,
    "jeito": "Avisa quando a margem aperta, antes de virar problema.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/07-financeiro.md"
   },
   {
    "id": "lojas",
@@ -551,7 +584,8 @@
     "aventus"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/08-lojas.md"
   },
   {
    "id": "lojas:aso",
@@ -566,7 +600,8 @@
    "moral": 50,
    "jeito": "Briga por cada palavra-chave e por cada posição na loja.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/08-lojas.md"
   },
   {
    "id": "lojas:respostas-as-avaliacoes",
@@ -581,7 +616,8 @@
    "moral": 50,
    "jeito": "Responde todo mundo com educação e transforma reclamação em nota alta.",
    "itens": [],
-   "tarefa_real": "MM: Respostas às avaliações das lojas"
+   "tarefa_real": "MM: Respostas às avaliações das lojas",
+   "playbook": "agencia/diretoria/08-lojas.md"
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
@@ -596,7 +632,8 @@
    "moral": 50,
    "jeito": "Paciente e rápido. Cliente atendido é cliente que fica.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/08-lojas.md"
   },
   {
    "id": "rel",
@@ -615,7 +652,8 @@
     "hennessyxo"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/09-comunidade.md"
   },
   {
    "id": "rel:notificacoes-e-e-mails",
@@ -630,7 +668,8 @@
    "moral": 50,
    "jeito": "Manda a mensagem certa na hora certa, sem encher o saco.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/09-comunidade.md"
   },
   {
    "id": "rel:reconquista",
@@ -645,7 +684,8 @@
    "moral": 50,
    "jeito": "Não desiste de quem saiu. Sabe o que trazer de volta.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/09-comunidade.md"
   },
   {
    "id": "rel:indique-e-ganhe",
@@ -660,7 +700,8 @@
    "moral": 50,
    "jeito": "Transforma cliente feliz em vendedor.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/09-comunidade.md"
   },
   {
    "id": "rel:criadores-e-ugc",
@@ -675,7 +716,8 @@
    "moral": 50,
    "jeito": "Faro pra criador que combina com a marca e entrega.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/09-comunidade.md"
   },
   {
    "id": "juridico",
@@ -695,7 +737,8 @@
     "monte2"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/10-juridico.md"
   },
   {
    "id": "juridico:contratos-e-termos",
@@ -710,7 +753,8 @@
    "moral": 50,
    "jeito": "Lê as letras miúdas que ninguém lê.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/10-juridico.md"
   },
   {
    "id": "juridico:contabilidade-e-impostos",
@@ -725,7 +769,8 @@
    "moral": 50,
    "jeito": "Paga o imposto certo, nem um real a mais.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/10-juridico.md"
   },
   {
    "id": "juridico:regras-das-lojas",
@@ -740,7 +785,8 @@
    "moral": 50,
    "jeito": "Sabe de cor o que a Apple e o Google reprovam.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/10-juridico.md"
   },
   {
    "id": "juridico:protecao-de-marca",
@@ -755,7 +801,8 @@
    "moral": 50,
    "jeito": "Vigia quem tenta usar o nome da empresa.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/10-juridico.md"
   },
   {
    "id": "mercado",
@@ -775,7 +822,8 @@
     "monte2"
    ],
    "itens": [],
-   "tarefa_real": "MM: Reunião do Conselho"
+   "tarefa_real": "MM: Reunião do Conselho",
+   "playbook": "agencia/diretoria/11-mercado.md"
   },
   {
    "id": "mercado:radar-de-concorrentes",
@@ -790,7 +838,8 @@
    "moral": 50,
    "jeito": "Sabe o que cada concorrente lançou na semana.",
    "itens": [],
-   "tarefa_real": "MM: Radar de mercado semanal"
+   "tarefa_real": "MM: Radar de mercado semanal",
+   "playbook": "agencia/diretoria/11-mercado.md"
   },
   {
    "id": "mercado:cacador-de-tendencias",
@@ -805,7 +854,8 @@
    "moral": 50,
    "jeito": "Vê o assunto subindo antes de virar moda.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/11-mercado.md"
   },
   {
    "id": "mercado:leitor-de-avaliacoes",
@@ -820,7 +870,8 @@
    "moral": 50,
    "jeito": "Lê as avaliações dos concorrentes pra achar o que eles não resolvem.",
    "itens": [],
-   "tarefa_real": null
+   "tarefa_real": null,
+   "playbook": "agencia/diretoria/11-mercado.md"
   }
  ]
 }
