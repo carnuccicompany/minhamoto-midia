@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cadastro 100% · Carnucci</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
+<style>
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--bg:#07070a;--card:#111116;--card2:#16161d;--line:#24242c;--gold:#d8b46a;--gold2:#f3dca4;--txt:#f2efe8;--mut:#8f8b82;--ok:#3ccf7a}
+*{box-sizing:border-box}html{background:var(--bg)}
+body{margin:0;color:var(--txt);font:15px/1.45 Inter,-apple-system,Segoe UI,sans-serif;background:radial-gradient(90% 55% at 50% 0%,rgba(216,180,106,.13),transparent 62%),var(--bg);min-height:100vh}
+a{color:var(--gold2);text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px 70px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 0;flex-wrap:wrap}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:600;text-transform:uppercase}
+.back{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:var(--card);color:var(--mut)}
+.hero{display:grid;grid-template-columns:minmax(300px,440px) 1fr;gap:34px;align-items:center;margin-top:18px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.gauge{position:relative;width:100%;max-width:440px;aspect-ratio:1}
+.gauge svg{width:100%;height:100%;display:block;overflow:visible}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+.pct{font-size:clamp(56px,11vw,92px);font-weight:800;letter-spacing:-3px;line-height:1;background:linear-gradient(180deg,#fff6dc,#d8b46a 70%,#9c7a3a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pct small{font-size:.42em;letter-spacing:0;margin-left:2px}
+.lbl{margin-top:8px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mut);font-weight:600}
+.state{margin-top:10px;font-size:13px;font-weight:600;color:var(--gold2);display:flex;align-items:center;gap:7px}
+.state i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+h1{margin:6px 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.05;font-weight:800;letter-spacing:-.5px}
+.intro{color:var(--mut);max-width:520px;margin:0}
+.meta{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.chip b{display:block;font-size:22px;font-weight:800}.chip span{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:40px}
+@media(max-width:900px){.cats{grid-template-columns:repeat(2,1fr)}}
+.cat{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;transition:border-color .2s,transform .2s;text-align:left;color:inherit;font:inherit}
+.cat:hover{border-color:#3a3a46;transform:translateY(-2px)}.cat.on{border-color:var(--gold)}
+.cat svg{width:58px;height:58px;display:block}
+.cat .n{font-weight:700;font-size:13px;margin-top:10px;line-height:1.25}
+.cat .c{font-size:12px;color:var(--mut);margin-top:3px}
+h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--mut);margin:38px 0 12px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+h2 button{font:600 12px Inter,sans-serif;color:var(--mut);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;letter-spacing:0;text-transform:none}
+.list{display:grid;gap:8px}
+.it{display:grid;grid-template-columns:22px 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.it .dot{width:18px;height:18px;border-radius:50%;border:2px solid #3a3a44}
+.it.parcial .dot{border-color:var(--gold);background:conic-gradient(var(--gold) var(--v),transparent 0)}
+.it.feito .dot{border-color:var(--ok);background:var(--ok)}
+.it .t{font-weight:600;font-size:14px}.it .f{font-size:12px;color:var(--mut);margin-top:2px}
+.it .k{font-size:11px;color:var(--mut);white-space:nowrap}
+.prev{margin-top:38px;background:linear-gradient(135deg,rgba(216,180,106,.1),rgba(216,180,106,0) 60%),var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.prev h3{margin:0 0 6px;font-size:16px}.prev p{margin:6px 0;color:var(--mut);font-size:14px}.prev b{color:var(--txt)}
+footer{margin-top:30px;color:var(--mut);font-size:12px}
+</style></head><body><div class="wrap">
+<header><div class="eyebrow">Carnucci · Império</div><a class="back" href="painel.html">← Painel</a></header>
+<section class="hero">
+  <div class="gauge"><svg id="g" viewBox="-220 -220 440 440"></svg>
+    <div class="center"><div class="pct" id="pct">0<small>%</small></div><div class="lbl">cadastro</div><div class="state" id="state"><i></i>carregando</div></div></div>
+  <div><h1>Cadastro 100%: tudo setado, tudo linkado</h1>
+    <p class="intro">O anel enche conforme a empresa fica pronta: cada agente com função, cargo e cobrança definidos, cada conexão ligada, a base de conhecimento preenchida e as decisões tomadas. Em 100% o motor está montado; daí pra frente é lapidar.</p>
+    <div class="meta"><div class="chip"><b id="kPend">–</b><span>pendências</span></div><div class="chip"><b id="kFeitos">–</b><span>itens prontos</span></div><div class="chip"><b id="kUpd">–</b><span>atualizado</span></div></div></div>
+</section>
+<div class="cats" id="cats"></div>
+<h2><span id="lt">O que falta</span><button id="all" hidden>ver tudo</button></h2>
+<div class="list" id="list"></div>
+<div class="prev"><h3>Quanto tempo até 100%</h3>
+  <p><b>Ritmo forte (1 hora por dia com o Léo): 2 a 3 semanas.</b> Ritmo leve (2 a 3 vezes por semana): 4 a 6 semanas.</p>
+  <p>O que mais pesa: as conexões (cada uma é uma chave ou um clique seu) e lapidar os 13 agentes (2 a 3 por sessão). A base de conhecimento enche rápido se você mandar áudios.</p>
+  <p>Depois do 100%: 2 a 3 meses de lapidação até cada agente acertar mais de 70% sem refação.</p></div>
+<footer>Lê <code>agencia/cadastro/status.json</code> (gerado por <code>scripts/cadastro.py</code>). Itens manuais em <code>agencia/cadastro/itens.json</code>.</footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);const NS='http://www.w3.org/2000/svg';
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
+let S=null,filt=null;
+function gauge(pct){
+  const g=$('g');g.innerHTML='';
+  const d=el('defs',{},g);
+  const lg=el('linearGradient',{id:'gg',x1:0,y1:0,x2:1,y2:1},d);[['0','#fff3cf'],['.45','#e2bf73'],['1','#9b7636']].forEach(([o,c])=>el('stop',{offset:o,'stop-color':c},lg));
+  const f=el('filter',{id:'gl',x:'-50%',y:'-50%',width:'200%',height:'200%'},d);el('feGaussianBlur',{stdDeviation:'4',result:'b'},f);const m=el('feMerge',{},f);el('feMergeNode',{in:'b'},m);el('feMergeNode',{in:'SourceGraphic'},m);
+  el('circle',{r:208,fill:'none',stroke:'#1b1b22','stroke-width':1},g);
+  el('circle',{r:150,fill:'none',stroke:'#16161c','stroke-width':1},g);
+  const N=72,lit=Math.round(pct/100*N),segs=[];
+  for(let i=0;i<N;i++){const a=(i/N)*Math.PI*2-Math.PI/2,a2=a+(Math.PI*2/N)*0.62,r1=162,r2=198;
+    const p=[[Math.cos(a)*r1,Math.sin(a)*r1],[Math.cos(a)*r2,Math.sin(a)*r2],[Math.cos(a2)*r2,Math.sin(a2)*r2],[Math.cos(a2)*r1,Math.sin(a2)*r1]];
+    segs.push(el('path',{d:`M${p[0]}L${p[1]}A${r2},${r2} 0 0 1 ${p[2]}L${p[3]}A${r1},${r1} 0 0 0 ${p[0]}Z`,fill:'#1d1d24'},g));}
+  for(let i=0;i<60;i++){const a=i/60*Math.PI*2,r=i%5?211:207;el('line',{x1:Math.cos(a)*r,y1:Math.sin(a)*r,x2:Math.cos(a)*215,y2:Math.sin(a)*215,stroke:i%5?'#2a2a32':'#5a4c2c','stroke-width':i%5?1:2},g);}
+  [0,25,50,75].forEach(v=>{const a=v/100*Math.PI*2-Math.PI/2;const t=el('text',{x:Math.cos(a)*138,y:Math.sin(a)*138+4,fill:'#5d5a52','font-size':10,'font-weight':600,'text-anchor':'middle','font-family':'Inter'},g);t.textContent=v;});
+  let k=0;const t0=performance.now();
+  (function step(now){const e=Math.min(1,(now-t0)/1400),q=1-Math.pow(1-e,3),n=Math.round(lit*q);
+    for(;k<n;k++){segs[k].setAttribute('fill','url(#gg)');segs[k].setAttribute('filter','url(#gl)');}
+    $('pct').innerHTML=Math.round(pct*q)+'<small>%</small>';
+    if(e<1)requestAnimationFrame(step);else if(lit<N){const s=segs[lit];s.style.animation='blink 1.2s infinite';s.setAttribute('fill','#6b5528');}
+  })(t0);
+}
+function mini(pct){const s=el('svg',{viewBox:'-30 -30 60 60'});el('circle',{r:24,fill:'none',stroke:'#24242c','stroke-width':6},s);
+  const c=2*Math.PI*24;el('circle',{r:24,fill:'none',stroke:pct>=100?'#3ccf7a':'#d8b46a','stroke-width':6,'stroke-linecap':'round','stroke-dasharray':`${c*pct/100} ${c}`,transform:'rotate(-90)'},s);
+  const t=el('text',{y:4,'text-anchor':'middle',fill:'#f2efe8','font-size':13,'font-weight':800,'font-family':'Inter'},s);t.textContent=Math.round(pct);return s;}
+function render(){
+  const cats=$('cats');cats.innerHTML='';
+  S.categorias.forEach(c=>{const b=document.createElement('button');b.className='cat'+(filt===c.id?' on':'');b.appendChild(mini(c.pct));
+    b.insertAdjacentHTML('beforeend',`<div class="n">${c.nome}</div><div class="c">${c.feitos}/${c.total} prontos · peso ${c.peso}%</div>`);
+    b.onclick=()=>{filt=filt===c.id?null:c.id;render();};cats.appendChild(b);});
+  const L=$('list');L.innerHTML='';
+  const cs=S.categorias.filter(c=>!filt||c.id===filt);
+  $('lt').textContent=filt?cs[0].nome:'O que falta';$('all').hidden=!filt;
+  cs.forEach(c=>c.itens.filter(i=>filt||i.valor<1).sort((a,b)=>a.valor-b.valor).forEach(i=>{
+    const d=document.createElement('div');d.className='it '+(i.valor>=1?'feito':i.valor>0?'parcial':'pend');d.style.setProperty('--v',(i.valor*100)+'%');
+    const falta=(i.falta||[]).join(' · ')||(i.depende||'');
+    d.innerHTML=`<div class="dot"></div><div><div class="t">${i.titulo}</div>${falta?`<div class="f">Falta: ${falta}</div>`:''}</div><div class="k">${filt?Math.round(i.valor*100)+'%':c.nome}</div>`;L.appendChild(d);}));
+}
+$('all').onclick=()=>{filt=null;render();};
+fetch('agencia/cadastro/status.json?'+Date.now()).then(r=>r.json()).then(s=>{S=s;
+  gauge(s.pct);$('kPend').textContent=s.pendentes;$('kFeitos').textContent=s.categorias.reduce((a,c)=>a+c.feitos,0)+'/'+s.categorias.reduce((a,c)=>a+c.total,0);$('kUpd').textContent=s.atualizado.split(' ')[0].slice(0,5);
+  $('state').innerHTML=s.pct>=100?'<i style="background:#3ccf7a;box-shadow:0 0 10px #3ccf7a;animation:none"></i>motor montado':'<i></i>carregando';render();
+}).catch(()=>{$('state').textContent='não consegui ler o status.json';});
+</script></body></html>

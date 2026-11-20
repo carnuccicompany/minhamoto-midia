@@ -1,0 +1,670 @@
+{
+ "atualizado": "20/11/2026 17:13",
+ "pct": 24.0,
+ "categorias": [
+  {
+   "id": "estrutura",
+   "nome": "Estrutura e rotinas",
+   "peso": 15,
+   "itens": [
+    {
+     "id": "enxuta",
+     "titulo": "Empresa enxuta: 7 diretores + 6 executores",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "merito",
+     "titulo": "Sistema de mérito, Carnutes, broches, padrão da casa",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "boletim",
+     "titulo": "Boletim semanal no painel",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "mesa-demandas",
+     "titulo": "Mesa de Demandas (criar, passar, cobrar)",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "conselho",
+     "titulo": "Conselho diário com cada diretor como IA separada",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "folha",
+     "titulo": "Folha de sexta",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "tarefa-mesa-demandas",
+     "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)",
+     "status": "pendente",
+     "depende": "OK do Léo",
+     "valor": 0.0
+    },
+    {
+     "id": "orcamento-uso",
+     "titulo": "Orçamento de uso por agente",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "placar-experimentos",
+     "titulo": "Placar de experimentos (criativos e testes por semana)",
+     "status": "pendente",
+     "valor": 0.0
+    }
+   ],
+   "pct": 66.7,
+   "feitos": 6,
+   "total": 9
+  },
+  {
+   "id": "decisoes",
+   "nome": "Decisões do Léo e do Davi",
+   "peso": 10,
+   "itens": [
+    {
+     "id": "meta",
+     "titulo": "Número da meta semanal de assinantes pagos",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "carnucci-dados",
+     "titulo": "OK pro repositório privado carnucci-dados",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "conector-meta",
+     "titulo": "Escolher conector da Meta Ads + Instagram",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "infoprodutos",
+     "titulo": "Diretor de infoprodutos/Corretores: sim ou não",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "agente-app",
+     "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não",
+     "status": "pendente",
+     "valor": 0.0
+    }
+   ],
+   "pct": 0.0,
+   "feitos": 0,
+   "total": 5
+  },
+  {
+   "id": "conexoes",
+   "nome": "Conexões (tudo linkado)",
+   "peso": 25,
+   "itens": [
+    {
+     "id": "github",
+     "titulo": "Repositório e painel no GitHub",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "gmail",
+     "titulo": "Gmail e Drive",
+     "status": "feito",
+     "valor": 1.0
+    },
+    {
+     "id": "revenuecat",
+     "titulo": "RevenueCat (assinantes e receita)",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "appsflyer",
+     "titulo": "AppsFlyer (origem das instalações)",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "meta-ads",
+     "titulo": "Meta Ads + Instagram",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "tiktok",
+     "titulo": "TikTok for Business",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "asc",
+     "titulo": "App Store Connect (chave só de dados)",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "play",
+     "titulo": "Google Play Console (relatórios)",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "utmify",
+     "titulo": "UTMify (leitura do painel)",
+     "status": "pendente",
+     "valor": 0.0
+    },
+    {
+     "id": "sdk-appsflyer",
+     "titulo": "SDK do AppsFlyer dentro do app (Davi)",
+     "status": "pendente",
+     "valor": 0.0
+    }
+   ],
+   "pct": 20.0,
+   "feitos": 2,
+   "total": 10
+  },
+  {
+   "id": "agentes",
+   "nome": "Agentes com função, cargo e cobrança",
+   "peso": 30,
+   "itens": [
+    {
+     "id": "master",
+     "titulo": "Thomas Shelby — Diretor-Geral · Direção-Geral",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "master:secretario-do-conselho",
+     "titulo": "Moneypenny — Estagiário · Direção-Geral",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "master:auditor-de-entregas",
+     "titulo": "Eliot Ness — Estagiário · Direção-Geral",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "dados",
+     "titulo": "Alan Turing — Diretor · Dados e Finanças",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "dados:relatorio-semanal",
+     "titulo": "Ernest Hemingway — Estagiário · Dados",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "mkt:publicador",
+     "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "cria",
+     "titulo": "Walt Disney — Diretor · Criativos e Marketing",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "trafego",
+     "titulo": "Pablo Escobar — Diretor · Tráfego",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "produto",
+     "titulo": "Tony Stark — Diretor · Produto",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "lojas",
+     "titulo": "Jeff Bezos — Diretor · Lojas e Clientes",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "lojas:respostas-as-avaliacoes",
+     "titulo": "Ted Lasso — Estagiário · Lojas",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "mercado",
+     "titulo": "Salvatore Greco — Diretor · Mercado e Concorrência",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    },
+    {
+     "id": "mercado:radar-de-concorrentes",
+     "titulo": "Sun Tzu — Estagiário · Mercado",
+     "valor": 0.3,
+     "status": "parcial",
+     "falta": [
+      "modelo",
+      "lapidar com o Léo"
+     ]
+    }
+   ],
+   "pct": 30.0,
+   "feitos": 0,
+   "total": 13
+  },
+  {
+   "id": "conhecimento",
+   "nome": "Base de conhecimento",
+   "peso": 20,
+   "itens": [
+    {
+     "id": "01-empresa",
+     "titulo": "Carnucci, missão, sócios, como decidimos",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "4 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "02-produto",
+     "titulo": "MinhaMoto",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "5 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "03-cliente",
+     "titulo": "Cliente do MinhaMoto",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "5 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "04-concorrentes",
+     "titulo": "Concorrentes",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "4 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "05-marca",
+     "titulo": "Marca e tom",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "3 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "06-historico",
+     "titulo": "Histórico de testes",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "4 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "07-canais",
+     "titulo": "Canais",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "3 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "08-regras",
+     "titulo": "Regras e limites",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "3 perguntas pro Léo"
+     ]
+    },
+    {
+     "id": "09-numeros",
+     "titulo": "Números (só %)",
+     "valor": 0.0,
+     "status": "pendente",
+     "falta": [
+      "3 perguntas pro Léo"
+     ]
+    }
+   ],
+   "pct": 0.0,
+   "feitos": 0,
+   "total": 9
+  }
+ ],
+ "pendentes": 38,
+ "lista_pendentes": [
+  {
+   "categoria": "Estrutura e rotinas",
+   "titulo": "Tarefa própria da Mesa de Demandas (10h37 e 14h37)",
+   "falta": [
+    "OK do Léo"
+   ]
+  },
+  {
+   "categoria": "Estrutura e rotinas",
+   "titulo": "Orçamento de uso por agente",
+   "falta": []
+  },
+  {
+   "categoria": "Estrutura e rotinas",
+   "titulo": "Placar de experimentos (criativos e testes por semana)",
+   "falta": []
+  },
+  {
+   "categoria": "Decisões do Léo e do Davi",
+   "titulo": "Número da meta semanal de assinantes pagos",
+   "falta": []
+  },
+  {
+   "categoria": "Decisões do Léo e do Davi",
+   "titulo": "OK pro repositório privado carnucci-dados",
+   "falta": []
+  },
+  {
+   "categoria": "Decisões do Léo e do Davi",
+   "titulo": "Escolher conector da Meta Ads + Instagram",
+   "falta": []
+  },
+  {
+   "categoria": "Decisões do Léo e do Davi",
+   "titulo": "Diretor de infoprodutos/Corretores: sim ou não",
+   "falta": []
+  },
+  {
+   "categoria": "Decisões do Léo e do Davi",
+   "titulo": "Agente que prepara mudanças no app pro Davi revisar: sim ou não",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "RevenueCat (assinantes e receita)",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "AppsFlyer (origem das instalações)",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "Meta Ads + Instagram",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "TikTok for Business",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "App Store Connect (chave só de dados)",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "Google Play Console (relatórios)",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "UTMify (leitura do painel)",
+   "falta": []
+  },
+  {
+   "categoria": "Conexões (tudo linkado)",
+   "titulo": "SDK do AppsFlyer dentro do app (Davi)",
+   "falta": []
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Thomas Shelby — Diretor-Geral · Direção-Geral",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Moneypenny — Estagiário · Direção-Geral",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Eliot Ness — Estagiário · Direção-Geral",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Alan Turing — Diretor · Dados e Finanças",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Ernest Hemingway — Estagiário · Dados",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Walt Disney — Diretor · Criativos e Marketing",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Pablo Escobar — Diretor · Tráfego",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Tony Stark — Diretor · Produto",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Jeff Bezos — Diretor · Lojas e Clientes",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Ted Lasso — Estagiário · Lojas",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Salvatore Greco — Diretor · Mercado e Concorrência",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Agentes com função, cargo e cobrança",
+   "titulo": "Sun Tzu — Estagiário · Mercado",
+   "falta": [
+    "modelo",
+    "lapidar com o Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Carnucci, missão, sócios, como decidimos",
+   "falta": [
+    "4 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "MinhaMoto",
+   "falta": [
+    "5 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Cliente do MinhaMoto",
+   "falta": [
+    "5 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Concorrentes",
+   "falta": [
+    "4 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Marca e tom",
+   "falta": [
+    "3 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Histórico de testes",
+   "falta": [
+    "4 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Canais",
+   "falta": [
+    "3 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Regras e limites",
+   "falta": [
+    "3 perguntas pro Léo"
+   ]
+  },
+  {
+   "categoria": "Base de conhecimento",
+   "titulo": "Números (só %)",
+   "falta": [
+    "3 perguntas pro Léo"
+   ]
+  }
+ ],
+ "historico": [
+  {
+   "data": "20/11/2026",
+   "pct": 24.0
+  }
+ ]
+}
