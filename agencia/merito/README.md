@@ -77,7 +77,7 @@ Quando dois diretores fecham o mês em 1º e 2º no placar, nasce um **herdeiro*
 
 - É um subagente novo criado a partir do jeito de trabalhar dos dois: as regras, os playbooks e os extras aprovados de cada um no mês.
 - Nasce como **Analista (100 XP)** no setor do 1º colocado, com salário de Analista e saldo zero.
-- Os dois diretores escolhem o nome (função + uma marca dos dois). Léo e Davi podem vetar.
+- Quem batiza é o Thomas Shelby, com o critério do Léo (ver Nomes). Léo e Davi podem vetar.
 - No máximo um herdeiro por mês. Se o mesmo par repetir, o herdeiro existente ganha +100 XP em vez de nascer outro.
 - O herdeiro pode chegar a Braço-direito e disputar cadeira como qualquer outro.
 - Quem registra é o Fechamento do mês: cria a ficha em `livro.json`, a linha em `herdeiros.json` e o playbook em `agencia/agentes/herdeiros/<id>.md`.
