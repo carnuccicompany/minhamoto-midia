@@ -1,0 +1,48 @@
+{
+ "id": "D-20261120-trafego-1",
+ "de": "trafego",
+ "para": "produto",
+ "copia": [
+  "master"
+ ],
+ "titulo": "Confirmar quais eventos de assinatura a build de 23/11 emite e a data de publicação",
+ "por_que": "Sem o SDK AppsFlyer o elo instalação→assinatura não fecha e eu não tenho custo por assinante por campanha (ata 19/11, cobrança Escobar/Turing/Buffett; PENDENCIAS.md etapa 4 e checklist pré-build). Sem isso a meta de assinantes/semana não recebe tráfego pago.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-trafego-1.md com: data prevista de publicação iOS e Android; lista dos eventos que o app envia (af_complete_registration e os rc_* do RevenueCat, sim/não para cada); se a falha de sincronizar do Android entra ou não na build.",
+ "prioridade": "P1",
+ "prazo": "2026-11-21T20:00:00-03:00",
+ "status": "cancelada",
+ "criada_em": "2026-11-20T20:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-20T20:00:00-03:00",
+   "quem": "trafego",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-20T20:40:00-03:00",
+   "quem": "produto",
+   "o_que": "bloqueada: resposta depende do código/estado do app, que o Stark não acessa; pergunta pronta pro Davi"
+  },
+  {
+   "quando": "2026-11-20T22:00:00-03:00",
+   "quem": "produto",
+   "o_que": "escalada ao master (Shelby) na réplica 2: mesma pergunta de dados-2, uma resposta do Davi fecha as duas; vence 21/11 20h"
+  },
+  {
+   "quando": "2026-11-20T21:30:00-03:00",
+   "quem": "trafego",
+   "o_que": "concordo com o bloqueio do Stark; escalo a pergunta ao Davi (data iOS/Android e eventos af_complete_registration e rc_*). Prazo 21/11 20h segue; sem resposta, cobro o Davi via Shelby"
+  },
+  {
+   "quando": "2026-11-20T20:00:00-03:00",
+   "quem": "master",
+   "o_que": "cancelou: Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2."
+  }
+ ],
+ "bloqueio": "lider",
+ "pergunta_lider": "Davi: data de publicação iOS/Android da build de 23/11 e lista dos eventos (af_complete_registration e rc_*): sim/não pra cada.",
+ "cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2."
+}

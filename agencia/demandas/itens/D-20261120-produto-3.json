@@ -1,0 +1,25 @@
+{
+  "id": "D-20261120-produto-3",
+  "de": "produto",
+  "para": "lojas",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Reclamações das avaliações agrupadas por tema e versão (Android x iOS)",
+  "por_que": "Matriz de cobranças: Stark cobra Bezos semanal. Em dados/avaliacoes/ultimas.json (coletado 20/11) o único 1★ é Google Play v1.0.1 (falha ao sincronizar) contra 8 de 8 notas 5★ nas outras avaliações; preciso do agrupamento pra decidir o que entra na lista do Davi e quando pedir avaliação dentro do app.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-3.md com tabela tema x loja x versão do app x nota, contando só o que está em dados/avaliacoes/ultimas.json, com o tamanho da amostra dito (n) e a frase 'amostra pequena' se n<30; temas de elogio também (o que o usuário diz que vale a pena).",
+  "prioridade": "P3",
+  "prazo": "2026-11-27T20:40:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-20T20:40:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

@@ -19,3 +19,8 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - parecer (Thomas Shelby): Viu o Drivvo antes. Bom. Mas o radar do seu homem não rodou no piloto, e isso conta contra você. Recomenda: manter.
 - pets: humor ok — a Marnevali passou de olho; o Carnucci não parou.
 - pra subir: garantir o radar de 24/11 do Sun Tzu e trazer um extra com número.
+
+## 2026-11-20 · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-20/mercado-r1.md; criei D-20261120-mercado-1 (Sun Tzu, radar com reclamações do Drivvo), -2 (Stark, cobertura dos 4 modelos), -3 (Turing, % por modelo); criei mercado-agenda.md.
+- aprendi: conhecimento/04-concorrentes.md está vazio (Léo ainda não preencheu); nenhuma parcial de novembro de 2026 achada em fonte aberta (autopapo mostra nov/2025); Uber Moto lançou 5 novidades de segurança em 13/11/2026 (despachantedok, p=39447).
+- pendente: radar de 24/11; sem meta em número nem RevenueCat.

@@ -1,0 +1,36 @@
+{
+  "id": "D-20261120-produto-1",
+  "de": "produto",
+  "para": "produto:analista-do-paywall",
+  "copia": [],
+  "titulo": "Mockup e especificação do 'aha antes do paywall' (plano de revisão da moto em menos de 60 s)",
+  "por_que": "Meta é assinante pago novo/semana. RevenueCat State of Subscription Apps 2026: em teste de 3 dias 55,4% dos cancelamentos acontecem no dia 0 (https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026); quem não vê valor na 1ª sessão não vira pago. Nosso funil real ainda não existe (sem SDK), então a proposta nasce desenhada pra ser medida.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-1.md com: (1) fluxo antes/depois em passos, do abrir o app até o paywall; (2) tela desenhada (mockup/artefato) da escolha da moto (CG 160, Pop 110i, Biz, Bros em destaque) e do plano de revisão já pronto; (3) critérios de aceite que o Davi consiga implementar; (4) lista de eventos pra medir cada passo; (5) o que NÃO sei do app hoje (paywall/teste grátis atuais) marcado como pergunta. Nada mexe no app.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:40:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-20T20:40:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-produto-1.md",
+    "resumo": "Fluxo antes/depois em 7 passos, mockup em texto e HTML clicável (D-20261120-produto-1-mockup.html), 12 critérios de aceite, 12 eventos e 8 perguntas sobre o app atual. Sem número inventado; meta só depois de linha de base."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:00:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "entregou (md + mockup html); perguntas P1-P8 pro Davi dentro do arquivo"
+    },
+    {
+      "quando": "2026-11-20T21:30:00-03:00",
+      "quem": "produto",
+      "o_que": "aceitou: md cobre os 5 itens do pronto_quando (fluxo antes/depois em 7 passos, mockup texto + HTML clicável, 12 critérios, 12 eventos, P1-P8 como perguntas); sem R$ e sem número inventado; nada mexe no app"
+    }
+  ]
+}

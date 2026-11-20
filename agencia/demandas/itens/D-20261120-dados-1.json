@@ -1,0 +1,29 @@
+{
+ "id": "D-20261120-dados-1",
+ "de": "dados",
+ "para": "dados:relatorio-semanal",
+ "copia": [],
+ "titulo": "Tabela post -> linha editorial -> ID IG/FB -> data dos 19 posts publicados",
+ "por_que": "Sem cruzar post com linha editorial não há 'dobrar/cortar' no relatório de 23/11 e nenhum post chega a assinante na atribuição (fonte: fila/estado.json tem 19 posts publicados com ID; dados/relatorios/index.json está vazio). Meta é novos assinantes/semana: sem essa tabela, o ranking de criativo não existe.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-dados-1.md com uma linha por post publicado (código, linha editorial, formato, ID IG, ID FB, data/hora UTC), conferido contra fila/estado.json e fila/carrosseis.json, mais lista de posts sem linha identificável",
+ "prioridade": "P2",
+ "prazo": "2026-11-23T20:00:00-03:00",
+ "status": "cancelada",
+ "criada_em": "2026-11-20T20:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-20T20:00:00-03:00",
+   "quem": "dados",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-20T20:00:00-03:00",
+   "quem": "master",
+   "o_que": "cancelou: Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg."
+  }
+ ],
+ "cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg."
+}

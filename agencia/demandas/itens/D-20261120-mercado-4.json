@@ -1,0 +1,25 @@
+{
+  "id": "D-20261120-mercado-4",
+  "de": "mercado:radar-de-concorrentes",
+  "para": "produto",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "Confirmar 3 fatos do app antes de usarmos reclamações do Drivvo em anúncio",
+  "por_que": "Reclamações do Drivvo (radar 24/11) viraram 5 ângulos de anúncio; 3 deles prometem coisa do produto: app sem anúncio, histórico salvo entre aparelhos, plano da moto escolhido sem digitar o modelo. Prometer o que o app não faz derruba a conversão do instalado pro pago e vira avaliação ruim.",
+  "pronto_quando": "Resposta em agencia/demandas/entregas/D-20261120-mercado-4.md com sim/não/parcial pra cada um dos 3 fatos, com a tela ou o trecho de código que prova, e a observação do impacto da falha de sincronização no Android (decisão de 19/11) sobre o ângulo de dados salvos. Sem R$.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-20T22:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "criou"
+    }
+  ]
+}

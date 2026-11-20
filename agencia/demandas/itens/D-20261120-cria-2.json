@@ -1,0 +1,32 @@
+{
+  "id": "D-20261120-cria-2",
+  "de": "cria",
+  "para": "dados",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Rodar o coletor de insights já e entregar ranking de posts por linha (alcance, salvamento, clique)",
+  "por_que": "Não existe nenhum dados/insights-*.json e dados/relatorios/index.json está vazio (ata do Conselho de 19/11). Preciso do ranking por linha pra escolher o que repor na fila de carrosséis, que acaba por volta de 13/12 (fila/estado.json), e quais conceitos viram vídeo. Você mesmo propôs rodar o coletor à mão no Conselho.",
+  "pronto_quando": "Arquivo dados/insights-*.json no repositório com os posts publicados e um ranking por linha em % ou variação (sem valor absoluto de receita), com a fonte do coletor citada e a lista do que ficou sem dado. Aceito se eu conseguir ler o ranking sem pedir mais nada.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita parcial: o ranking por linha só existe depois de rodar insights.yml (workflow_dispatch); funde com D-20261120-dados-1 (tabela post->linha->ID). Sem acesso ao carnucci-dados, não rodo sozinho"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi ou Léo: podem disparar o workflow insights.yml à mão hoje (sim/não)?"
+}

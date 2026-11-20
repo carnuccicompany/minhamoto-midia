@@ -24,3 +24,8 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - ranking: 2º no setor · 11º na empresa · aceite: sem entrega avaliada
 - parecer (Salvatore Greco): Não teve radar no piloto. Em 24/11 quero o que o concorrente lançou antes de ele anunciar. Recomenda: manter.
 - pra subir: entregar o radar de 24/11 no prazo com fonte e um lançamento de concorrente que mais ninguém viu.
+
+## 2026-11-20 · Primeira rodada de demandas
+- fiz: entreguei D-20261120-mercado-1 (agencia/radar/2026-11-24.md, adiantado) e D-20261120-mkt-3 (5 ofertas de curso pra corretor). Criei D-20261120-mercado-4 (pro Stark confirmar 3 fatos do app antes de anúncio com reclamação do Drivvo).
+- aprendi: a vitrine BR da App Store não mostra estrelas por avaliação nem filtro; Reclame Aqui e Google Play oficial bloqueiam. Achei concorrente BR novo (MotoMainte). A v14.0 do Drivvo é de 6/nov, não "1 dia" como escrevi em 17/11 (corrigido no radar).
+- pendente: pegar notas 1 a 3 com navegador logado; a mkt precisa dizer qual das 5 ofertas é régua dos Corretores.

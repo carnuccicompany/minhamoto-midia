@@ -1,0 +1,38 @@
+{
+  "id": "D-20261120-mkt-3",
+  "de": "mkt",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "5 ofertas concorrentes de infoproduto pra corretor de imóveis: preço, promessa, garantia, bônus",
+  "por_que": "Preciso de benchmark de oferta antes de propor teste de headline, bônus, garantia ou preço dos Corretores; hoje 04-concorrentes.md está vazio e não tenho nenhuma referência com fonte.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-3.md com 5 ofertas (link da página de venda, data de acesso, preço, prazo de garantia, bônus, tipo de prova usada) e uma linha dizendo o que dá pra copiar com adaptação; sem número inventado.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T19:50:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-20T19:50:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-mkt-3.md",
+    "resumo": "5 ofertas de curso/marketing pra corretor com link, acesso em 20/11, preço, garantia (7 dias em todas), bônus e prova, mais o que copiar. Ressalva: são ofertas de formação e tráfego pra corretor; sem 04-concorrentes preenchido não sei qual é o concorrente direto dos Corretores."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T19:50:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:40:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "em_andamento"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou: 5 ofertas com fonte e ressalva de comparabilidade; nenhum número inventado, inconsistências das páginas anotadas"
+    }
+  ]
+}

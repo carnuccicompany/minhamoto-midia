@@ -1,0 +1,30 @@
+{
+  "id": "D-20261120-mkt-2",
+  "de": "mkt",
+  "para": "trafego",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Leitura (só leitura) das campanhas [ABO 121] {AP...} dos Corretores: onde o funil quebra",
+  "por_que": "Preciso saber se a perda está no anúncio (CTR/CPM), na página ou no checkout. Campanhas dos Corretores não podem ser tocadas sem OK do Léo (PENDENCIAS.md, 18/11), então o pedido é só leitura, sem criar, pausar ou renomear nada.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-2.md com, por campanha dos Corretores, variação % de CTR, frequência, custo por compra e ROAS nos últimos 7 dias contra os 7 anteriores, com fonte, e a campanha que mais cansou; nenhuma campanha alterada.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T19:50:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-20T19:50:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T19:50:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceita só como leitura, nada alterado; depende de acesso de leitura ao gerenciador, que esta sessão não tem. Sem acesso até 23/11, devolvo como bloqueada com a pergunta pro Léo; não invento CTR nem ROAS"
+    }
+  ]
+}

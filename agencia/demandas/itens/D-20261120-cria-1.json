@@ -1,0 +1,38 @@
+{
+  "id": "D-20261120-cria-1",
+  "de": "cria",
+  "para": "mkt:publicador",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Tabela dos posts no ar: id, linha e horário, pronta pro cruzamento com insights",
+  "por_que": "Boletim de 20/11 pediu o desempenho dos posts junto da fila; a fila acaba por volta de 13/12 (94 pendentes ÷ 4/dia, fila/estado.json e coordenador/status.json) e sem saber qual linha rende não dá pra decidir o que repor. O Turing cobra o ID de cada post (COBRANCAS.md).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-cria-1.md com os 19 posts publicados (id do carrossel, linha editorial, slot, id IG, id FB, data/hora), conferido contra fila/estado.json e fila/carrosseis.json; colunas de alcance, salvamento e clique vazias com a nota 'aguardando coletor' até haver dados/insights-*.json. Resumo de 2 linhas: quantos posts por linha.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-cria-1.md",
+    "resumo": "Tabela dos 19 posts no ar (16 a 20/11) com id, linha, slot, id IG, id FB e data/hora, conferida contra estado.json e carrosseis.json; alcance, salvamento e clique 'aguardando coletor'. Por linha: Davi Tutorial 4, Dicas e hacks 1 e 2 3 cada, Educacional 3, Marcas 3, Curtos AIDA 2, Junto com a chave 1."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:00:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "entregou a tabela dos 19 posts em agencia/demandas/entregas/D-20261120-cria-1.md"
+    },
+    {
+      "quando": "2026-11-20T21:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitou: 19 ids, linhas, IG/FB e horários conferem com estado.json e carrosseis.json; colunas de insights com 'aguardando coletor'; resumo por linha presente"
+    }
+  ]
+}

@@ -52,3 +52,9 @@
 - [ ] Temas gerais | O dia que a moto vai pra oficina é o dia que você não ganha | ângulo: manutenção preventiva = menos dia parado; entregador de app cresceu 18,6% (274 mil → 325 mil, PNAD via Portal do Trânsito 06/11) e quase ninguém conta o dia parado no custo
 - [ ] Curtos AIDA | POV: sábado 19h, você ainda tá rodando — "eu também queria estar em casa" | ângulo: formato POV de entregador (identificação + humor seco); virada: a única coisa que não pode falhar é a moto | prova no app: Saúde da moto
 - [ ] Curtos AIDA | "Seu app grava viagem. Mas sabe quando a SUA CG troca o óleo?" | ângulo: app genérico investe em GPS; o MinhaMoto já vem com o plano do seu modelo (sem citar concorrente) | prova no app: plano de revisão do modelo
+
+## Do radar (24/11)
+- "Seu app de carro pede pra digitar o modelo. O da sua moto já sabe." (ângulo 3 das reclamações do Drivvo; só depois do produto confirmar a seleção de modelo)
+- Mito: "app de manutenção é tudo igual" (plano por modelo x formulário em branco).
+- Uber Moto agora olha avaliação e segurança. E a sua moto, quem avalia antes de ela falhar? (Despachante Dok, 13/11/2026)
+- A conta do plano de frota que ninguém com uma moto só deveria pagar (sem citar marca).

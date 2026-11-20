@@ -19,3 +19,9 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - parecer (Thomas Shelby): Seu setor foi o melhor da semana por causa do seu publicador, não de você. A fila acaba em dezembro: quero o plano de reposição antes de virar urgência. Recomenda: manter.
 - pets: humor foda — a Marnevali soltou fogo pro alto na sua passada e o Carnucci subiu na sua mesa pra ganhar carinho.
 - pra subir: apresentar o plano de reposição da fila de carrosséis (acaba por volta de 13/12) e passar o próprio subagente no placar.
+
+## 2026-11-20 · Conselho rodada 1
+- fiz: li ficha, playbook, base (dossiês vazios), fila, radar e quadro; criei D-20261120-cria-1/2/3; entreguei D-20261120-trafego-3 (3 ganchos); escrevi agencia/conselho/rodadas/2026-11-20/cria-r1.md e a agenda (cria-agenda.md).
+- aprendi: sem insights nem dado de assinatura por post, não dá pra dizer o que vende; fila de 94 carrosséis dura cerca de 23 dias (acaba ~13/12). Diversificação criativa (Meta) pede variação realmente diferente (Jon Loomer citando a Meta, 20/11; página oficial não abriu).
+- recebi: demanda D-20261120-trafego-3 do Escobar (entregue).
+- pendente: direção A/B do Léo; ranking do Turing; telas do Stark; tabela do Fogg; plano de reposição da fila.

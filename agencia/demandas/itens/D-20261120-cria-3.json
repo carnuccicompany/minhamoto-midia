@@ -1,0 +1,37 @@
+{
+  "id": "D-20261120-cria-3",
+  "de": "cria",
+  "para": "produto",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "5 telas do app na estética nova, em gravação ou print, pra eu montar vídeo de venda por modelo",
+  "por_que": "Minha iniciativa é vídeo POV de tela do app por modelo (CG 160, Pop 110i, Biz, Bros: top 4 de outubro e nosso público, agencia/radar/2026-11-17.md). Hoje há 0 vídeos publicados e anúncio de app vende mostrando o app resolvendo. A build da semana de 23/11 troca a estética (PENDENCIAS.md); gravar antes dela é refazer depois.",
+  "pronto_quando": "Pasta com 5 telas ou gravações curtas 9:16 da versão nova (plano de revisão por modelo, histórico, saúde da moto, combustível, documentos), sem dado real de cliente, com o caminho informado em entrega.arquivo. Se precisar do Davi, marcar bloqueada com a pergunta pronta.",
+  "prioridade": "P3",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "bloqueada: resposta depende do código/estado do app, que o Stark não acessa; pergunta pronta pro Davi"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita: gravação só da versão nova, depois da build de 23/11; segue bloqueada pela liberação do Davi"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: pode liberar 5 prints/gravações 9:16 da versão nova (sem dado de cliente) até 27/11? Sim/não."
+}

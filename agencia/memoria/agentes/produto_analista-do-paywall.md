@@ -13,3 +13,11 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - aprendi: porquê do nome: Brigava por cada pixel e cada segundo da tela: a tela de assinatura é dele.
 - recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
+
+## 2026-11-20
+- recebi: D-20261120-produto-1 (mockup e especificação do aha antes do paywall), P2, prazo 23/11 20h40.
+
+## 2026-11-20 (entrega)
+- fiz: entreguei D-20261120-produto-1 (md + mockup HTML) em agencia/demandas/entregas/.
+- aprendi: 02-produto.md vazio; não sei fluxo, teste grátis nem planos atuais. Deixei como perguntas P1-P8.
+- pendente: conferência do Stark; respostas do Davi.

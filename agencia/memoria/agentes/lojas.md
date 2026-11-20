@@ -19,3 +19,8 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - parecer (Thomas Shelby): Leitura de loja com número, isso eu quero. Mas seu estagiário mandou ruído e você não filtrou. Recomenda: manter.
 - pets: humor foda — a Marnevali soltou fogo pro alto na sua passada e o Carnucci subiu na sua mesa pra ganhar carinho.
 - pra subir: extra próprio com número e filtrar os extras do Ted Lasso antes de virem pra Folha.
+
+## 2026-11-20 21:00 · Rodada 1 do Conselho
+- fiz: lojas-r1.md; criei D-20261120-lojas-1 (Ted), -2 (Stark), -3 (Turing); criei lojas-agenda.md.
+- aprendi: coleta de 20/11 tem 9 avaliações (GP 1 de 3 é 1★; App Store 6 de 6 5★); 1 rascunho 1★ parado; 03-cliente, 02-produto e 07-canais da base estão vazios.
+- pendente: OK do Léo no rascunho; limites oficiais da Apple (página bloqueada); linha de base de conversão.

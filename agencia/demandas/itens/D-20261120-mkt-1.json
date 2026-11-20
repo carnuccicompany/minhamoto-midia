@@ -1,0 +1,32 @@
+{
+  "id": "D-20261120-mkt-1",
+  "de": "mkt",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Placar dos Corretores da semana em % (vendas, reembolso, ticket, custo por venda, ROAS por campanha)",
+  "por_que": "Meu número da semana (vendas dos infoprodutos) está em branco: não há dado dos Corretores no repositório público nem acesso ao carnucci-dados nesta sessão. Sem placar não dá pra apontar a etapa do funil que mais quebra (playbook 12).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-1.md com variação % semana contra semana de vendas, reembolsos, ticket médio, custo por venda e ROAS por campanha dos Corretores (só % ou variação, sem valor absoluto), fonte de cada linha; o que faltar vem listado com quem precisa liberar.",
+  "prioridade": "P1",
+  "prazo": "2026-11-21T19:50:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T19:50:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T19:50:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita o placar, recuso o prazo de 21/11: não há export dos Corretores em lugar nenhum que eu leia. Entrego só o esqueleto das colunas em %; dado real depende do export semanal de vendas e reembolsos (pergunta 1 do Cardone ao Léo)"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: libera export semanal de vendas e reembolsos dos Corretores pro carnucci-dados (sim/não)? Plataforma de venda?"
+}

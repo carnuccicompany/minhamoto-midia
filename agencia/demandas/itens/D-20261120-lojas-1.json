@@ -1,0 +1,23 @@
+{
+  "id": "D-20261120-lojas-1",
+  "de": "lojas",
+  "para": "lojas:respostas-as-avaliacoes",
+  "copia": [],
+  "titulo": "Placar semanal de avaliações por tema, sem ruído",
+  "por_que": "Stark cobra reclamações agrupadas por tema; na Folha de 20/11 o extra do Ted veio como ruído e eu levei a multa. Base: dados/avaliacoes/ultimas.json (Google Play: 1 de 3 é 1★ por falha de sincronização, versão 1.0.1)",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: contagem por loja e nota, temas (sincronização/abrir, preço, elogio), 1 linha por tema com id da avaliação, e a lista de avaliações 1-3★ sem resposta. Máx 15 linhas, só o que muda decisão; nada de extra sem número.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-20T21:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T21:00:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "D-20261120-produto-2",
+  "de": "produto",
+  "para": "mercado",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "Paywall, teste grátis e primeira tela de Drivvo, Strox e KyroTune: o que cada um mostra antes de pedir dinheiro",
+  "por_que": "O radar de 17/11 traz o preço dos três, mas não o desenho do paywall nem a duração do teste (só o KyroTune cita trial de 14 dias no anual, https://apps.apple.com/gb/app/kyrotune/id6760946292). Preciso disso pra desenhar o teste de duração do teste grátis e o paywall; RevenueCat 2026 mostra teste longo (17 a 32 dias) convertendo 42,5% contra 25,5% nos de menos de 4 dias (https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026), e quero saber o que o mercado BR faz.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-2.md com, por app: duração do teste grátis, planos e ordem em que aparecem, o que a primeira tela e o paywall mostram, link da loja ou da fonte oficial; o que não abriu fica dito, sem chute.",
+  "prioridade": "P3",
+  "prazo": "2026-11-27T20:40:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-20T20:40:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

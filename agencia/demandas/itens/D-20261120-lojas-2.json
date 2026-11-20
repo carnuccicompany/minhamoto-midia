@@ -1,0 +1,37 @@
+{
+  "id": "D-20261120-lojas-2",
+  "de": "lojas",
+  "para": "produto",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Pedido de avaliação no app só depois de uma vitória do usuário",
+  "por_que": "Build de 23/11 traz pedido de avaliação (ata 19/11). Se disparar pra quem acabou de levar falha de sincronização, vira 1★ em massa: no Google Play 1 de 3 avaliações atuais é 1★ por sincronização (dados/avaliacoes/ultimas.json). Nota alta converte visita em download.",
+  "pronto_quando": "Resposta do Stark no arquivo de entrega dizendo: em que evento o prompt dispara (ex.: depois de 'Registrar serviço' concluído), que não dispara após erro de sincronização, e limite de 1 vez por usuário por versão. Sim/não se já está assim.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T12:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T21:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T21:00:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "bloqueada: resposta depende do código/estado do app, que o Stark não acessa; pergunta pronta pro Davi"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita como requisito: disparo só após Registrar serviço concluído, nunca após erro de sincronizar, 1x por usuário por versão; fica bloqueada só pelo sim/não do Davi sobre o estado atual"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: hoje o pedido de avaliação já dispara só após 'Registrar serviço' concluído, nunca após erro de sincronizar, no máximo 1x por usuário por versão? Sim/não."
+}

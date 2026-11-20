@@ -1,0 +1,38 @@
+{
+  "id": "D-20261120-trafego-3",
+  "de": "trafego",
+  "para": "cria",
+  "copia": [
+    "master"
+  ],
+  "titulo": "3 ganchos de texto pra anúncio de assinatura (sem produzir vídeo)",
+  "por_que": "Criativo é a alavanca principal do tráfego (playbook 05). Radar 17/11: Pop 110i, CG 160, Biz e Bros são os 4 mais emplacados em outubro e são o público; ângulo 'moto parada = renda parada' em alta na imprensa. Sem gancho pronto, a 1ª semana de teste pós-build começa sem hipótese. Respeita a decisão de 19/11: sem Black Friday, produção de vídeo parada.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-trafego-3.md com 3 ganchos de até 8 palavras, cada um com a referência que inspirou (link do radar ou do banco de pautas) e o público (modelo ou motoboy). Só texto, nada produzido nem publicado.",
+  "prioridade": "P3",
+  "prazo": "2026-11-27T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-trafego-3.md",
+    "resumo": "3 ganchos de até 8 palavras (CG 160, motoboy, Pop 110i) com referência do radar de 17/11 e público. Só texto."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T20:30:00-03:00",
+      "quem": "cria",
+      "o_que": "entregou"
+    },
+    {
+      "quando": "2026-11-20T21:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceita: 3 ganchos de texto com fonte do radar e público. Teste: 1 e 3 são o mesmo molde com modelo diferente, 2 é outro ângulo; só roda após build e rastreio fechado. Passa pelo Shelby antes de anúncio"
+    }
+  ]
+}

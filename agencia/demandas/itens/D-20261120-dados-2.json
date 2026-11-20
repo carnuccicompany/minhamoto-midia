@@ -1,0 +1,42 @@
+{
+  "id": "D-20261120-dados-2",
+  "de": "dados",
+  "para": "produto",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Confirmar SDK AppsFlyer + RevenueCat na build de 23/11 e lista de eventos do funil",
+  "por_que": "Sem o SDK não há elo instalação -> assinatura: Tráfego não calcula custo por assinante e eu não consigo dizer qual canal/post trouxe assinante (Conselho 19/11, cobrança aberta). Benchmark de comparação existe (RevenueCat: conversão teste->pago mediana 25,5% p/ testes <4 dias, https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026), mas só dá pra comparar quando o app mandar os eventos.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-dados-2.md dizendo sim/não se o SDK AppsFlyer entra na build de 23/11, a lista dos eventos que o app envia (abertura, visualização do paywall, início de teste, compra, cancelamento) e quem testou em sandbox; se algo ficar de fora, status bloqueada com a pergunta pro Davi",
+  "prioridade": "P1",
+  "prazo": "2026-11-21T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "bloqueada: resposta depende do código/estado do app, que o Stark não acessa; pergunta pronta pro Davi"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "produto",
+      "o_que": "escalada ao master (Shelby) na réplica 2: mesma pergunta de trafego-1, o Davi responde uma vez só e eu copio nas duas entregas; vence 21/11 20h"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "mantenho bloqueada, concordo com o Stark; sem Davi não sai. Peço ao Shelby levar a pergunta. Acrescento o evento/propriedade 'modelo da moto' (atende mercado-3) e eventos do aha (atende produto-1)"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: o SDK AppsFlyer e o RevenueCat entram na build de 23/11? Quais eventos o app já envia (abertura, paywall, início de teste, compra, cancelamento)? Responda sim/não + lista."
+}

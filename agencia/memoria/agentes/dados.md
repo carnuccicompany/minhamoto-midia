@@ -19,3 +19,8 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - parecer (Thomas Shelby): Você disse o que falta, não trouxe o que tem. Sem número, Dados é opinião. Rode o coletor e me traga o primeiro padrão. Recomenda: manter.
 - pets: humor fraco — a Marnevali passou acuadinha, de cabeça baixa, e o Carnucci não veio; a Fartuzzi encarou mais tempo atrás da sua cadeira.
 - pra subir: rodar o coletor de insights e trazer o primeiro número de negócio com fonte.
+
+## 2026-11-20 20:00 · Rodada 1 do Conselho
+- fiz: criei D-20261120-dados-1 (Hemingway), -2 (Stark/Produto), -3 (Escobar/Tráfego); escrevi dados-r1.md; criei dados-agenda.md.
+- aprendi: benchmark RevenueCat 2026: conversão teste->pago mediana 25,5% p/ testes <4 dias, 42,5% p/ 17-32 dias; paywall rígido 10,7% no dia 35 (https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026). Fios abertos: nenhum (fios.md vazio). Quadro de demandas vazio. Sem insights nem acesso ao carnucci-dados.
+- pendente: disparar coletor; relatório 23/11; cobrar resposta das 3 demandas.

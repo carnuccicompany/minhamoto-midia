@@ -1,0 +1,30 @@
+{
+  "id": "D-20261120-dados-3",
+  "de": "dados",
+  "para": "trafego",
+  "copia": [
+    "trafego"
+  ],
+  "titulo": "Padrão único de nome de campanha e UTM (utm_source/medium/campaign/content)",
+  "por_que": "Atribuição por campanha só fecha com nome padronizado; sem isso o custo por assinante não é calculável por criativo (Conselho 19/11: Tráfego sem número de campanha; cobrança da matriz COBRANCAS.md linha Turing->Escobar).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-dados-3.md com a regra de nomes (exemplos reais), onde o ID do post/criativo entra no utm_content e a confirmação de que bate com a UTMify e o OneLink",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceita: padrão de UTM é pré-requisito do custo por assinante; pedi que utm_content leve o ID do post/criativo e que o teste confirme OneLink e UTMify antes de qualquer verba"
+    }
+  ]
+}

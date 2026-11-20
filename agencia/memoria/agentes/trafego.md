@@ -19,3 +19,8 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - parecer (Thomas Shelby): Não queimar verba às cegas foi certo. Mas cadeira de Tráfego se paga com número de campanha, e não houve nenhum. Recomenda: manter.
 - pets: humor fraco — a Marnevali passou acuadinha, de cabeça baixa, e o Carnucci não veio; a Fartuzzi encarou mais tempo atrás da sua cadeira.
 - pra subir: trazer número de campanha (CPI, custo por instalação) assim que o rastreio fechar na build de 23/11.
+
+## 2026-11-20 20:00 · Rodada do Conselho (r1)
+- fiz: arquivo agencia/conselho/rodadas/2026-11-20/trafego-r1.md; criei D-20261120-trafego-1 (Stark), -2 (Turing), -3 (Disney); agenda própria criada.
+- aprendi: AppsFlyer (oficial) diz que a TikTok só otimiza por evento padrão mapeado e recomenda mandar receita; postbacks Meta/TikTok hoje só af_app_opened (PENDENCIAS). Subagentes de Tráfego estão todos em reserva: não recebem demanda.
+- pendente: sem número de campanha; esperar build de 23/11; 3 perguntas pro Léo (BM de anúncios, campanha rodando, custo máximo por assinante).

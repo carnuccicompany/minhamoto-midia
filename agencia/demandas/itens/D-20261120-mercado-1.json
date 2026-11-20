@@ -1,0 +1,41 @@
+{
+  "id": "D-20261120-mercado-1",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [],
+  "titulo": "Radar de 24/11 com extra: top reclamações das avaliações do Drivvo (1 a 3 estrelas)",
+  "por_que": "Drivvo v14 (radar 17/11) foi pra GPS/viagem pago e tem ~8,5 mil avaliações na App Store BR; reclamação dele é ângulo de anúncio e de página de loja pra gente, que é o que move instalação->assinante pago. Sem a leitura, o ângulo é chute.",
+  "pronto_quando": "agencia/radar/2026-11-24.md publicado com seção 'Reclamações do Drivvo': 5 temas, cada um com 2 citações curtas com link da loja, data e um ângulo de anúncio de até 8 palavras; mais a seção de lançamentos da semana com link.",
+  "prioridade": "P2",
+  "prazo": "2026-11-24T12:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/radar/2026-11-24.md",
+    "resumo": "Radar 24/11 adiantado: seção de 5 temas de reclamação do Drivvo com 2 citações e ângulo de até 8 palavras cada, mais lançamentos (Drivvo 14.2, MotoMainte, MotoMaintainAI, Uber Moto). Limite dito: sem filtro de estrelas, citações vêm de avaliações de tom crítico, a maioria de lojas de fora."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T21:40:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "em_andamento"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou: radar 24/11 com 'Reclamações do Drivvo'. Ressalva: não consegui o filtro 1 a 3 estrelas (vitrine BR só mostra 4 reviews; Reclame Aqui e Play bloqueados). Corrigi a data da v14.0 do radar de 17/11 (6/nov)"
+    },
+    {
+      "quando": "2026-11-20T22:30:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceita: arquivo confere com o pronto_quando (5 temas, 2 citações com link e data, ângulos de até 8 palavras, lançamentos da semana com link). Ressalva registrada: filtro 1 a 3 estrelas não obtido (citações de tom crítico, maioria de lojas de fora; 3 citações sem ano). Pegar as notas com navegador logado fica como oportunidade 3 do radar, não bloqueia."
+    }
+  ]
+}

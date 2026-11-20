@@ -1,0 +1,36 @@
+{
+ "id": "D-20261120-master-2",
+ "de": "master",
+ "para": "dados:relatorio-semanal",
+ "copia": [],
+ "titulo": "1o relatorio semanal de 23/11 so com o que existe, em %, e lista do que esta sem numero e quem destrava",
+ "por_que": "Hemingway tem 0 entregas; sem a demanda dados-1 ele precisa de um pedido claro ligado a meta (medir funil)",
+ "pronto_quando": "Arquivo com producao (posts, fila, avaliacoes por loja em %) e tabela 'sem numero / quem destrava / desde quando', sem R$ nem valor absoluto",
+ "prioridade": "P2",
+ "prazo": "2026-11-23T18:00:00-03:00",
+ "status": "aceita",
+ "criada_em": "2026-11-20T20:00:00-03:00",
+ "fio": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261120-master-2.md",
+  "resumo": "Rascunho do relatório de 23/11 só em % e variação: produção (19 posts, 100% da grade, 17% da fila usada, ~24 dias de estoque) e avaliações (89% nota 5, n=9, 1 nota 1 de Android sem resposta). Tabela 'sem número / quem destrava / desde quando' com 10 lacunas (insights Meta, AppsFlyer, RevenueCat, UTM, meta de assinantes)."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-20T20:00:00-03:00",
+   "quem": "master",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-20T21:00:00-03:00",
+   "quem": "dados:relatorio-semanal",
+   "o_que": "entregou: agencia/demandas/entregas/D-20261120-master-2.md"
+  },
+  {
+   "quando": "2026-11-21T00:10:00-03:00",
+   "quem": "master",
+   "o_que": "aceita: conferi o arquivo contra o pronto_quando. Producao (19 posts, mix por linha, fila 113/17%, 18 de 18 horarios) e avaliacoes por loja em % batem com fila/estado.json, fila/carrosseis.json e dados/avaliacoes; tabela 'sem numero / quem destrava / desde quando' presente (10 linhas); sem R$ nem valor absoluto financeiro; dados/insights-*.json realmente nao existe."
+  }
+ ]
+}

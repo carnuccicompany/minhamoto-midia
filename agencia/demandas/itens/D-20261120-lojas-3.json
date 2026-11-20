@@ -1,0 +1,32 @@
+{
+  "id": "D-20261120-lojas-3",
+  "de": "lojas",
+  "para": "dados",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Funil por loja: visita na página, download, teste grátis, assinatura",
+  "por_que": "A meta é assinante pago novo por semana, mas não tenho nenhum número de conversão da página da loja (meta.json está 'aguardando'; carnucci-dados fora do meu alcance). Sem isso não sei se ASO ou nota é o gargalo, e meu teste de página fica sem linha de base.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com, por loja (App Store e Google Play), últimas 4 semanas em % e variação: visualizações da página -> instalações -> início de teste -> assinatura paga. Se algum elo não é medido hoje, dizer qual e quem liga (bloqueada com motivo).",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T21:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T21:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T21:00:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita, mas só em %: visita->instalação exige App Store Connect e Play Console ligados ao coletor; teste e assinatura exigem RevenueCat. Entrego primeiro o que existe e a lista do que falta, com dono"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: libera acesso de leitura do App Store Connect e Play Console ao carnucci-dados (sim/não)?"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "D-20261120-mercado-2",
+  "de": "mercado",
+  "para": "produto",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Confirmar: o plano de revisão do app cobre CG 160, Pop 110i, Biz e Bros 160?",
+  "por_que": "Os 4 primeiros do emplacamento de outubro (CG 160 47.527, Pop 110i 25.253, Biz 21.849, Bros 160 16.293; fonte: Despachante Dok, radar 17/11) são o nosso público. Só posso pôr o nome do modelo em página de loja e anúncio se o app entrega o plano pra ele; promessa sem cobertura é risco de loja e de cancelamento.",
+  "pronto_quando": "Resposta em agencia/demandas/entregas/D-20261120-mercado-2.md com sim/não por modelo, a versão do app em que vale e, se não, o que falta e quem do time do Davi resolve.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T20:40:00-03:00",
+      "quem": "produto",
+      "o_que": "bloqueada: resposta depende do código/estado do app, que o Stark não acessa; pergunta pronta pro Davi"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "produto",
+      "o_que": "mantida bloqueada: sem confirmação do Davi, ninguém põe nome de modelo em loja ou anúncio (recomendado ao Mercado na réplica 2)"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: o plano de revisão do app cobre CG 160, Pop 110i, Biz e Bros 160? Sim/não por modelo e em qual versão."
+}

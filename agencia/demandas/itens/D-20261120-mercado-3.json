@@ -1,0 +1,30 @@
+{
+  "id": "D-20261120-mercado-3",
+  "de": "mercado",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Distribuição % de assinantes e instalações por modelo de moto, quando houver dado",
+  "por_que": "Minha hipótese é que CG/Pop/Biz/Bros concentram a base e que a conversão é maior em quem tem plano pronto pro modelo. Sem a % por modelo (RevenueCat/AppsFlyer ainda não ligados, ver metas.json) não dá pra apostar anúncio e ASO por modelo nem medir o resultado.",
+  "pronto_quando": "Tabela em % (nunca absoluto) por modelo: parcela das instalações, parcela dos assinantes pagos e conversão relativa, em agencia/demandas/entregas/D-20261120-mercado-3.md; se o dado não existe, status bloqueada dizendo o que liga primeiro.",
+  "prioridade": "P3",
+  "prazo": "2026-11-27T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceito, prazo 27/11 mantido como meta; funde com D-20261120-dados-2: o app precisa mandar o modelo da moto como propriedade do usuário, senão % por modelo não existe. Não inventei % de ninguém"
+    }
+  ]
+}

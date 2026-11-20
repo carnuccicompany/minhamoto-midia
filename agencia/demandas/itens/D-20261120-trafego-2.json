@@ -1,0 +1,30 @@
+{
+  "id": "D-20261120-trafego-2",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Planilha-modelo de custo por assinante por campanha e roteiro de teste de atribuição pós-build",
+  "por_que": "Cobrança Escobar→Turing em COBRANCAS.md (atribuição por campanha) e ata de 19/11: relatórios/index.json vazio e zero número de campanha. Preciso saber, no dia da build, se UTM→OneLink→AppsFlyer→RevenueCat→UTMify bate antes de qualquer verba.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-trafego-2.md com: colunas do relatório (campanha, conjunto, criativo, instalações, testes iniciados, assinaturas pagas, custo por assinante, sem valores em R$ absolutos no arquivo público, usar % e variação); passo a passo do teste (instalar por OneLink com UTM de teste e conferir nos 3 painéis); o que falta ligar, com dono.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: entrego modelo de planilha e roteiro de teste por OneLink antes de 23/11; não depende de dado, só do que liga (SDK) com dono"
+    }
+  ]
+}

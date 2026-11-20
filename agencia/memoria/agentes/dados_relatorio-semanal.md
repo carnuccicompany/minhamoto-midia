@@ -24,3 +24,9 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - ranking: 2º no setor · 11º na empresa · aceite: sem entrega avaliada
 - parecer (Alan Turing): Ainda não houve dado pra relatar. Em 23/11 quero um relatório que se lê em um minuto e prova cada número. Recomenda: manter.
 - pra subir: entregar o relatório de 23/11 no prazo, curto, com cada número provado.
+
+## 2026-11-20 21:00
+- fiz: entreguei D-20261120-master-2 (rascunho do relatório de 23/11 em % + tabela sem número / quem destrava). Arquivo: agencia/demandas/entregas/D-20261120-master-2.md.
+- aprendi: não existe nenhum dados/insights-*.json; insights.yml só roda domingo 23h41. Minha D-20261120-dados-1 (tabela post-linha-ID) está cancelada. Sem métrica por post, não dá pra escolher campeão.
+- recebi: pedido do Shelby (master).
+- pendente: em 23/11 reconferir estado.json, avaliações e se o insights rodou; refazer o pedido post-linha-ID.

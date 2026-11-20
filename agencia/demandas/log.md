@@ -1,0 +1,1 @@
+- 2026-11-20: Conselho com subagentes. Criadas 24, executadas 7, aceitas 5, 1 devolvida (master-1). Atrasadas 0.
