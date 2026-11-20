@@ -1,7 +1,7 @@
 {
- "coletado_em": "2026-11-20T00:14:16.975243Z",
+ "coletado_em": "2026-11-20T12:16:20.933150Z",
  "status": {
-  "google_play": "ok (5 avaliações)",
+  "google_play": "ok (3 avaliações)",
   "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
@@ -37,28 +37,6 @@
    "aparelho": "redwood (POCO X5 Pro 5G)",
    "respondida": true,
    "resposta_atual": "Obrigado por acompanhar o MinhaMoto desde o início! Seguimos evoluindo o app para deixar o controle de gastos e consumo da sua moto cada vez mais completo. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
-  },
-  {
-   "loja": "google_play",
-   "id": "1e827411-c5a7-4973-8fbd-4646b8207677",
-   "nota": 5,
-   "texto": "estou usando des do modo de test, paguei por ele e valeu mto apena, mto bom, o modo beta estava funcionando mto bem",
-   "data": "2026-11-13T02:58:51Z",
-   "versao_app": null,
-   "aparelho": "HNLGN-QL (HONOR X7d)",
-   "respondida": true,
-   "resposta_atual": "Obrigado por estar com a gente desde a fase de testes e pela confiança na assinatura! Ficamos felizes em saber que valeu a pena. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
-  },
-  {
-   "loja": "google_play",
-   "id": "a99845f6-0581-4990-b19d-3a2d9b127bd7",
-   "nota": 1,
-   "texto": "não abre",
-   "data": "2026-11-13T01:57:22Z",
-   "versao_app": "1.0",
-   "aparelho": "b0q (Galaxy S22 Ultra)",
-   "respondida": true,
-   "resposta_atual": "Sentimos muito pelo transtorno! O app não deveria travar na abertura. Escreva para suporte@carnucci.com com o modelo do seu celular para resolvermos o quanto antes. — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
