@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 20:49",
- "pct": 39.8,
+ "atualizado": "20/11/2026 20:53",
+ "pct": 42.6,
  "categorias": [
   {
    "id": "estrutura",
@@ -282,22 +282,16 @@
     {
      "id": "lojas",
      "titulo": "Jeff Bezos — Diretor · Lojas e Clientes",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "lojas:respostas-as-avaliacoes",
      "titulo": "Ted Lasso — Estagiário · Lojas",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "mercado",
@@ -320,8 +314,8 @@
      ]
     }
    ],
-   "pct": 48.7,
-   "feitos": 4,
+   "pct": 58.0,
+   "feitos": 6,
    "total": 15
   },
   {
@@ -416,7 +410,7 @@
    "total": 9
   }
  ],
- "pendentes": 31,
+ "pendentes": 29,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -531,22 +525,6 @@
   },
   {
    "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Jeff Bezos — Diretor · Lojas e Clientes",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Ted Lasso — Estagiário · Lojas",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Salvatore Greco — Diretor · Mercado e Concorrência",
    "falta": [
     "modelo",
@@ -628,7 +606,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 39.8
+   "pct": 42.6
   }
  ]
 }

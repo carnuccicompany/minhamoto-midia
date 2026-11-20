@@ -990,7 +990,10 @@
    "stats": {
     "aceite_pct": null,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "lojas:aso",
@@ -1048,7 +1051,10 @@
    "stats": {
     "aceite_pct": 0,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
