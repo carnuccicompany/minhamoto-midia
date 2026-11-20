@@ -7,6 +7,8 @@ export const TABLE_R = 2.75, TOP_Y = 0.76;
 
 // pontos de destino das rotinas (x, z, direção pra onde olha)
 export const PIT = { x: 8.3, z: 0.7, R: 2.1, D: 0.5 };
+// aquário embaixo do piso de vidro (faixa norte, entre o lounge, a mesa e o lounge do Shelby)
+export const AQ = { x0: -4.9, x1: 4.4, z0: -7.75, z1: -5.2, D: 1.7 };
 export const SPOTS = {
   pokerTop: new THREE.Vector3(8.3 - 2.55, 0, 0.7),
   banheiroPorta: new THREE.Vector3(7.9, 0, 5.9),
@@ -159,6 +161,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   // chão com o buraco do fosso de pôquer (plano em XY, depois deitado; o buraco fica em (PIT.x, -PIT.z) no plano)
   const holed = (W, H, cx, cy) => { const sh = new THREE.Shape(); sh.moveTo(-W / 2, -H / 2); sh.lineTo(W / 2, -H / 2); sh.lineTo(W / 2, H / 2); sh.lineTo(-W / 2, H / 2); sh.closePath();
     const hp = new THREE.Path(); hp.absarc(PIT.x - cx, -PIT.z - cy, PIT.R, 0, Math.PI * 2, true); sh.holes.push(hp);
+    const ah = new THREE.Path(); ah.moveTo(AQ.x0 - cx, -AQ.z0 - cy); ah.lineTo(AQ.x1 - cx, -AQ.z0 - cy); ah.lineTo(AQ.x1 - cx, -AQ.z1 - cy); ah.lineTo(AQ.x0 - cx, -AQ.z1 - cy); ah.closePath(); sh.holes.push(ah);
     const g = new THREE.ShapeGeometry(sh, 64); const p = g.attributes.position, uv = g.attributes.uv; for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + W / 2) / W, (p.getY(i) + H / 2) / H); return g; };
   const floor = mesh(holed(24, 18, 0, 0), phys(0xffffff, { map: floorT, roughness: 0.22, clearcoat: 0.6, clearcoatRoughness: 0.25 }), scene, [0, 0, 0], [-Math.PI / 2, 0, 0], false); floor.userData.keep = true;
   floor.receiveShadow = true;
@@ -184,6 +187,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
       blob(-2.3, 7.45, 0.9, .35);                    // Hall da Fama
       box2(-11.4, 8.4, 1.8, 9, .45);                 // parede da adega
       ring2(PIT.x, PIT.z, PIT.R, PIT.R + 0.9, .45);  // borda do fosso
+      c.save(); c.filter = `blur(${0.28 * k}px)`; c.strokeStyle = 'rgba(60,52,44,.42)'; c.lineWidth = 0.5 * k; c.strokeRect(sx(AQ.x0) - 0.18 * k, sz(AQ.z0) - 0.18 * k, sx(AQ.x1) - sx(AQ.x0) + 0.36 * k, sz(AQ.z1) - sz(AQ.z0) + 0.36 * k); c.restore(); // borda do aquário
     });
     const ao = mesh(holed(24, 18, 0, 0), new THREE.MeshBasicMaterial({ map: t, transparent: true, blending: THREE.MultiplyBlending, premultipliedAlpha: true, depthWrite: false, toneMapped: false }), scene, [0, 0.004, 0], [-Math.PI / 2, 0, 0], false);
     ao.renderOrder = 1; ao.userData.keep = true;
@@ -193,7 +197,13 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   [[0, -8.45, 24, 1.1], [0, 8.45, 24, 1.1], [-11.45, 0, 1.1, 18], [11.45, 0, 1.1, 18]].forEach(([x, z, w, d]) => mesh(new THREE.PlaneGeometry(w, d), bmM, scene, [x, 0.003, z], [-Math.PI / 2, 0, 0], false));
   [[0, -7.88, 22.9, 0.03], [0, 7.88, 22.9, 0.03], [-10.88, 0, 0.03, 15.8], [10.88, 0, 0.03, 15.8]].forEach(([x, z, w, d]) => mesh(new THREE.PlaneGeometry(w, d), M.gold, scene, [x, 0.005, z], [-Math.PI / 2, 0, 0], false));
   // borda da laje (vista de fora)
-  mesh(box(24.4, 0.4, 18.4), mat(0x1c1c1e, { roughness: 0.5 }), scene, [0, -0.215, 0], null, false);
+  { // laje com os buracos do fosso e do aquário (antes era um bloco que tampava os dois por baixo)
+    const s = new THREE.Shape(); s.moveTo(-12.2, -9.2); s.lineTo(12.2, -9.2); s.lineTo(12.2, 9.2); s.lineTo(-12.2, 9.2); s.closePath();
+    const hp = new THREE.Path(); hp.absarc(PIT.x, -PIT.z, PIT.R, 0, Math.PI * 2, true); s.holes.push(hp);
+    const ah = new THREE.Path(); ah.moveTo(AQ.x0, -AQ.z0); ah.lineTo(AQ.x1, -AQ.z0); ah.lineTo(AQ.x1, -AQ.z1); ah.lineTo(AQ.x0, -AQ.z1); ah.closePath(); s.holes.push(ah);
+    const sg = new THREE.ExtrudeGeometry(s, { depth: 0.4, bevelEnabled: false, curveSegments: 48 });
+    mesh(sg, mat(0x1c1c1e, { roughness: 0.5 }), scene, [0, -0.415, 0], [-Math.PI / 2, 0, 0], false).userData.keep = true;
+  }
   const wallT = tex(1024, 1024, (g, w, h) => {
     g.fillStyle = '#efebe4'; g.fillRect(0, 0, w, h);
     for (let i = 0; i < 26000; i++) { g.fillStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '120,110,96'},${Math.random() * 0.035})`; g.fillRect(Math.random() * w, Math.random() * h, 2 + Math.random() * 6, 1 + Math.random() * 3); }

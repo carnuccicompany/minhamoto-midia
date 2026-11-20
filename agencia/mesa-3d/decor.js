@@ -128,18 +128,21 @@ export function buildHall(scene, LOGO, HALL, nomeDe) {
   const bm = mat(0xffffff, { map: marbleTex('#0e0e0f', 'rgba(220,220,220,A)', 20, 512, [1, 1]), roughness: 0.15 });
   mesh(box(2.8, 2.5, 0.16), bm, g, [0, 1.25, 0]);
   mesh(box(2.86, 0.04, 0.2), M.gold, g, [0, 2.5, 0]); mesh(box(2.9, 0.08, 0.24), M.gold, g, [0, 0.04, 0]);
-  const draw = (titulo, quem, sub) => tex(640, 800, (c, w, h) => {
+  const paint = (c, w, h, titulo, quem, sub, foto) => {
     c.fillStyle = '#0c0a08'; c.fillRect(0, 0, w, h);
     c.strokeStyle = '#d4b26a'; c.lineWidth = 6; c.strokeRect(22, 22, w - 44, h - 44); c.lineWidth = 1.5; c.strokeRect(38, 38, w - 76, h - 76);
     c.fillStyle = '#d4b26a'; c.textAlign = 'center'; c.font = '600 30px Inter, Arial'; c.fillText(titulo, w / 2, 110);
     c.beginPath(); c.arc(w / 2, 330, 150, 0, 7); c.fillStyle = goldGrad(c, w, h); c.fill();
     c.beginPath(); c.arc(w / 2, 330, 138, 0, 7); c.fillStyle = '#14100c'; c.fill();
-    c.fillStyle = goldGrad(c, w, h); c.font = '700 120px "Cormorant Garamond", Georgia, serif';
-    const ini = quem ? quem.split(' ').map(x => x[0]).join('').slice(0, 2) : '?'; c.fillText(ini, w / 2, 372);
+    if (foto) { c.save(); c.beginPath(); c.arc(w / 2, 330, 138, 0, 7); c.clip(); c.drawImage(foto, w / 2 - 138, 330 - 138, 276, 276);
+      const vg = c.createRadialGradient(w / 2, 330, 90, w / 2, 330, 140); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.45)'); c.fillStyle = vg; c.fillRect(w / 2 - 140, 190, 280, 280); c.restore(); }
+    else { c.fillStyle = goldGrad(c, w, h); c.font = '700 120px "Cormorant Garamond", Georgia, serif';
+      const ini = quem ? quem.split(' ').map(x => x[0]).join('').slice(0, 2) : '?'; c.fillText(ini, w / 2, 372); }
     c.fillStyle = '#f3ede2'; c.font = '700 54px "Cormorant Garamond", Georgia, serif'; c.fillText(quem || 'Em disputa', w / 2, 560);
     c.fillStyle = '#a39a8a'; c.font = '500 26px Inter, Arial'; c.fillText(sub, w / 2, 610);
     c.fillStyle = '#d4b26a'; c.font = '600 22px Inter, Arial'; c.fillText('CARNUCCI', w / 2, 720);
-  });
+  };
+  const draw = (titulo, quem, sub) => { const t = tex(640, 800, (c, w, h) => paint(c, w, h, titulo, quem, sub)); t.userData = { titulo, quem, sub }; return t; };
   const fmt = iso => iso.split('-').reverse().slice(0, 2).join('/');
   const semana = HALL.semana ? nomeDe(HALL.semana) : null, mes = HALL.mes ? nomeDe(HALL.mes) : null;
   const tS = draw('DIRETOR DA SEMANA', semana, semana ? 'Mais desenrolou na semana' : `Primeira escolha na sexta, ${fmt(HALL.primeiraEscolha)}`);
@@ -152,5 +155,6 @@ export function buildHall(scene, LOGO, HALL, nomeDe) {
     });
   });
   g.traverse(o => { if (o.isMesh) o.userData.hall = true; });
+  g.setPortrait = (qual, foto) => { const t = qual === 'mes' ? tM : tS, u = t.userData, c = t.image; paint(c.getContext('2d'), c.width, c.height, u.titulo, u.quem, u.sub, foto); t.needsUpdate = true; };
   return g;
 }

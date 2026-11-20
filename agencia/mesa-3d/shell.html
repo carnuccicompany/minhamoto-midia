@@ -78,6 +78,13 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); 
 .subtag b { font-size: .72rem; font-weight: 600; color: #f6e3b4; }
 .subtag span { font-size: .58rem; color: var(--muted); letter-spacing: .06em; }
 .note { font-size: .74rem; color: var(--muted); margin: 12px 0 0; line-height: 1.5; }
+#povBar { position: fixed; top: 18px; left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 10px; padding: 7px 8px 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(24,19,13,.86), rgba(8,7,5,.86)); color: var(--ink); z-index: 40; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+#povBar span { display: grid; text-align: center; font-size: .82rem; } #povBar b { font-family: var(--serif); font-size: 1.05rem; color: var(--gold2); font-weight: 600; } #povBar small { font-size: .62rem; color: var(--muted); letter-spacing: .04em; }
+#povBar button { font: 600 .8rem var(--sans); color: var(--ink); background: rgba(212,178,106,.1); border: 1px solid var(--line); border-radius: 999px; padding: 7px 12px; cursor: pointer; }
+#povBar button#povExit { background: linear-gradient(135deg, #f6e2ad, #c9a45c); color: #1d140a; border: 0; }
+body.pov #povBar { display: flex; } body.pov #labels, body.pov .brand, body.pov #cadChip, body.pov #ticker, body.pov .timebox { display: none !important; }
+body.pov #app canvas { cursor: move; }
+.povbtn { margin-top: 14px; width: 100%; font: 600 .86rem var(--sans); color: #1d140a; background: linear-gradient(135deg, #f6e2ad, #c9a45c); border: 0; border-radius: 999px; padding: 11px 14px; cursor: pointer; box-shadow: 0 4px 14px rgba(201,164,92,.3); }
 #cad { position: fixed; inset: 0; display: grid; place-items: center; padding: 16px; background: rgba(0,0,0,.6); opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 50; }
 #cad.open { opacity: 1; pointer-events: auto; }
 #cad .box { position: relative; width: min(760px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 30px 30px 26px; background: linear-gradient(180deg, #17120c, #0d0a07); border: 1px solid var(--line); border-radius: 12px; }
@@ -171,6 +178,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
   <button id="bView" type="button">Vista</button>
   <button id="bTV" type="button">TV</button>
   <button id="bFollow" type="button">Seguir fênix</button>
+  <button id="bPov" type="button">POV</button>
   <button id="bBath" type="button">Ver banheiro</button>
   <button id="bRot" class="on" type="button">Girar</button>
   <button id="bNames" class="on" type="button">Nomes</button>
@@ -178,6 +186,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
 </nav>
 
 <button id="cadChip" type="button" aria-label="Cadastro 100%"></button>
+<div id="povBar" role="toolbar" aria-label="Ver pelos olhos"><button id="povPrev" type="button" aria-label="Anterior">‹</button><span>👁 <b id="povName"></b><small>arraste pra olhar em volta · Esc pra sair</small></span><button id="povNext" type="button" aria-label="Próximo">›</button><button id="povExit" type="button">Sair</button></div>
 <section id="cad" role="dialog" aria-modal="true" aria-label="Cadastro 100%"><div class="box"><button class="x" aria-label="Fechar">×</button><div class="k">Cadastro 100% · tudo setado, tudo linkado</div><h2>O império está <em id="cadPct">0%</em> montado</h2><p class="lead">Enche sozinho conforme agentes são lapidados, conexões ligadas, dossiês respondidos e decisões tomadas. Atualizado em <span id="cadUpd"></span>.</p><div class="cats" id="cadCats"></div><div class="k" style="margin-bottom:8px">O que falta</div><ul id="cadList"></ul></div></section>
 <section id="merit" role="dialog" aria-modal="true" aria-label="Sistema de Mérito">
   <div class="box">

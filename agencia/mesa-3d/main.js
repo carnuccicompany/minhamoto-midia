@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO, SOCIOS } from './data.js';
 import { buildGauge } from './gauge.js';
+import { buildAquarium } from './aquarium.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
@@ -127,6 +128,7 @@ const panda = buildRedPanda(scene);
 { const sa = [...angles, deg(90), deg(270)].sort((a, b) => a - b); const gaps = []; for (let i = 0; i < sa.length; i++) { const a = sa[i], b = i + 1 < sa.length ? sa[i + 1] : sa[0] + Math.PI * 2; gaps.push((a + b) / 2); } panda.setSeats(angles, gaps); }
 panda.onPetIdle = a => { const s = seats.find(x => Math.abs(Math.atan2(Math.sin(x.a - a), Math.cos(x.a - a))) < 0.05 && x.state === 'sit'); if (s) say(s, pick(FALA_PET.pandaMesa)); };
 const panther = buildPanther(scene);
+const aquarium = buildAquarium(scene);
 { const _v = []; panther.blockers = () => { let k = 0; const out = []; seats.forEach(x => { if (x.state !== 'sit') { _v[k] = _v[k] || new THREE.Vector3(); out.push(x.P.root.getWorldPosition(_v[k++])); } }); _v[k] = _v[k] || new THREE.Vector3(); out.push(masterP.root.getWorldPosition(_v[k])); return out; }; }
 let pantherT = 22;
 // ---------- pôquer no fosso: 3 diretores descem, jogam uma mão amistosa e voltam ----------
@@ -197,14 +199,17 @@ const PETS = {
   panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'A casa dele é a mesa dos diretores: passa o dia andando por cima dela e deitando do lado de alguém pra ganhar carinho. Desce de vez em quando, dá uma volta e sobe de novo. Quando um diretor manda bem, ele vai direto pra frente dele: é gorjeta de +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
   pantera: { nome: 'Fartuzzi', tipo: 'Pantera negra · a vigia do tapete', txt: 'Anda solta pelo tapete de veludo em volta da mesa: caminha, para, olha em volta, senta, muda de rumo, sem nunca sair dele. De vez em quando para atrás de um diretor e fica encarando. Não morde ninguém: ela sobe a régua. Com quem está devendo, a encarada dura mais.' },
 };
+PETS.tubarao = { nome: 'Tubarão Carnucci', tipo: 'Tubarão · o dono do aquário', txt: 'Mora no aquário gigante embaixo do piso de vidro, entre a mesa e as janelas. Nada em volta o dia inteiro, sem pressa e sem parar: quem anda por cima vê ele passando debaixo dos pés. Lembra todo mundo que aqui dentro quem para, afunda.' };
+const sharkTag = addTag('<b>Tubarão Carnucci</b><span>Tubarão</span>', 'pet'); sharkTag.addEventListener('click', e => { e.stopPropagation(); selectPet('tubarao'); });
 const pandaTag = addTag('<b>Carnucci</b><span>Panda-vermelho</span>', 'pet'); pandaTag.addEventListener('click', e => { e.stopPropagation(); selectPet('panda'); });
 const pantherTag = addTag('<b>Fartuzzi</b><span>Pantera negra</span>', 'pet'); pantherTag.addEventListener('click', e => { e.stopPropagation(); selectPet('pantera'); });
 const fenixTag = addTag('<b>Marnevali</b><span>Fênix</span>', 'pet'); fenixTag.addEventListener('click', e => { e.stopPropagation(); selectPet('fenix'); });
 function selectPet(k) {
   hideTeam(); const p = PETS[k]; selected = { pet: k }; controls.autoRotate = false;
-  openPanel(`<button class="x" aria-label="Fechar">×</button><span class="kick">Mascote</span><h2>${p.nome}</h2><p class="nick">${p.tipo}</p><p class="what" style="margin-top:14px">${p.txt}</p>`);
+  openPanel(`<button class="x" aria-label="Fechar">×</button><span class="kick">Mascote</span><h2>${p.nome}</h2><p class="nick">${p.tipo}</p><p class="what" style="margin-top:14px">${p.txt}</p><button class="povbtn" type="button" data-pov="pet:${k}">👁 Ver pelos olhos ${k === 'tubarao' ? 'dele' : 'dela'}</button>`);
   setOffset();
   if (k === 'fenix') { follow = 'phoenix'; document.getElementById('bFollow').classList.add('on'); }
+  else if (k === 'tubarao') { const q = aquarium.root.getWorldPosition(new THREE.Vector3()); camFly = { pos: new THREE.Vector3(q.x + 1.2, 2.4, q.z + 3.0), tgt: new THREE.Vector3(q.x, 0, q.z) }; }
   else { const q = (k === 'pantera' ? panther.root : panda.root).position; camFly = { pos: q.clone().add(new THREE.Vector3(1.6, 1.3, 1.6)), tgt: q.clone().add(new THREE.Vector3(0, 0.3, 0)) }; selected.track = true; }
 }
 
@@ -470,6 +475,7 @@ function updateLabels() {
   const o = place(master.tag, master.P.head, 0.3, w, h); const mh = !namesOn || selected === master; master.tag.style.opacity = mh ? 0 : o; master.tag.style.pointerEvents = !mh && o ? 'auto' : 'none';
   const ob = place(master.bubble, master.P.head, !mh ? 0.62 : 0.32, w, h); master.bubble.style.visibility = ob ? 'visible' : 'hidden';
   { const opp = place(pantherTag, panther.head, 0.32, w, h); pantherTag.style.opacity = namesOn ? opp : 0; pantherTag.style.pointerEvents = namesOn && opp ? 'auto' : 'none'; }
+  { const os = place(sharkTag, aquarium.head, 0.55, w, h); sharkTag.style.opacity = namesOn && !pov ? os : 0; sharkTag.style.pointerEvents = namesOn && os && !pov ? 'auto' : 'none'; }
   const op = place(pandaTag, panda.head, 0.22, w, h); pandaTag.style.opacity = namesOn ? op : 0; pandaTag.style.pointerEvents = namesOn && op ? 'auto' : 'none';
   if (phoenix.ready) { const of = place(fenixTag, phoenix.root, 0.9, w, h); fenixTag.style.opacity = namesOn && follow !== 'phoenix' ? of : 0; fenixTag.style.pointerEvents = namesOn && of ? 'auto' : 'none'; } else fenixTag.style.opacity = 0;
 }
@@ -529,13 +535,13 @@ function select(s) {
   if (selected === s) return deselect();
   selected = s; controls.autoRotate = false; follow = null;
   if (s === master) {
-    openPanel(cardHTML(MASTER, '<p class="trait"><b>Acima dele:</b> Léo e Davi. <b>Abaixo:</b> os 10 diretores e as equipes.</p>'));
+    openPanel(cardHTML(MASTER, '<p class="trait"><b>Acima dele:</b> Léo e Davi. <b>Abaixo:</b> os diretores e as equipes.</p><button class="povbtn" type="button" data-pov="dir:master">👁 Ver pelos olhos dele</button>'));
     showTeam(master.P.root, MASTER.subs, -1, 'master'); setOffset();
     const p = master.pos.clone(); const dir = new THREE.Vector3(Math.sin(master.heading), 0, Math.cos(master.heading));
     camFly = { pos: p.clone().addScaledVector(dir, 3.4).add(new THREE.Vector3(0, 2.0, 0)), tgt: p.clone().add(new THREE.Vector3(0, 1.2, 0)) };
     return;
   }
-  const d = s.d; openPanel(cardHTML(d, `<p class="trait"><b>Hoje:</b> ${s.stats.banheiro} ida(s) ao banheiro, ${s.stats.refil} refil(s) do copo.</p>`));
+  const d = s.d; openPanel(cardHTML(d, `<p class="trait"><b>Hoje:</b> ${s.stats.banheiro} ida(s) ao banheiro, ${s.stats.refil} refil(s) do copo.</p><button class="povbtn" type="button" data-pov="dir:${d.id}">👁 Ver pelos olhos dele</button>`));
   showTeam(s.frame, d.subs, 1, d.id); setOffset();
   const back = new THREE.Vector3(Math.cos(s.a), 0, Math.sin(s.a)), side = new THREE.Vector3(-Math.sin(s.a), 0, Math.cos(s.a));
   const seatW = new THREE.Vector3(Math.cos(s.a) * SEAT_R, 0, Math.sin(s.a) * SEAT_R);
@@ -572,7 +578,7 @@ renderer.domElement.addEventListener('pointerup', e => {
   const hit = ray.intersectObjects(pickables, false).find(h => { let o = h.object; while (o) { if (!o.visible) return false; o = o.parent; } return true; });
   if (!hit) return;
   if (hit.object.userData.thr) return selectThrone(hit.object.userData.thr);
-  if (hit.object.userData.pet) return selectPet(hit.object.userData.pet === 'pantera' ? 'pantera' : 'panda');
+  if (hit.object.userData.pet) { const k = hit.object.userData.pet; return selectPet(['pantera', 'tubarao', 'fenix'].includes(k) ? k : 'panda'); }
   if (hit.object.userData.decor) return selectDecor(hit.object.userData.decor);
   if (hit.object.userData.hall) return selectHall();
   if (hit.object.userData.stock) return openStock(hit.object.userData.stock);
@@ -621,7 +627,7 @@ $('bStock').onclick = () => openStock();
 merit.querySelector('.x').onclick = () => merit.classList.remove('open');
 merit.addEventListener('click', e => { if (e.target === merit) merit.classList.remove('open'); });
 merit.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { merit.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b)); merit.querySelectorAll('.tab').forEach(t => t.hidden = t.id !== b.dataset.t); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') { merit.classList.remove('open'); if (selected) deselect(); } });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !pov) { merit.classList.remove('open'); if (selected) deselect(); } });
 (function fillPayroll() {
   const rows = [[MASTER.nome, 'Diretor-Geral', MASTER.setor, 'C$ 200']].concat(DIRETORES.map(d => [d.nome, 'Diretor', d.setor, 'C$ 120']));
   const sn = (id, x) => SUBNOME[id + '|' + x] ? `${SUBNOME[id + '|' + x].nome} <small>(${x})</small>` : x;
@@ -631,13 +637,76 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { merit.clas
   $('headcount').textContent = rows.length;
 })();
 
+
+// ---------- POV: ver pelos olhos de um diretor ou de um bicho ----------
+let pov = null, povYaw = 0, povPitch = 0, povDrag = null; const povQ = new THREE.Quaternion(), povSaved = {};
+const povList = () => [master, ...seats].map(s => ({ id: 'dir:' + s.d.id, nome: s.d.nome, obj: s.P.head, off: new THREE.Vector3(0, 0.012, 0.16) }))
+  .concat([
+    { id: 'pet:fenix', nome: 'Marnevali', obj: phoenix.root, off: new THREE.Vector3(0, 0.25, 0.55), world: true, noRoll: true },
+    { id: 'pet:panda', nome: 'Carnucci', obj: panda.head, off: new THREE.Vector3(0, 0.03, 0.15), noRoll: true },
+    { id: 'pet:pantera', nome: 'Fartuzzi', obj: panther.head, off: new THREE.Vector3(0, 0.06, 0.2) },
+    { id: 'pet:tubarao', nome: 'Tubarão Carnucci', obj: aquarium.head, off: new THREE.Vector3(0, 0.07, 0.42) },
+  ]);
+const _pv = new THREE.Vector3(), _pq = new THREE.Quaternion(), _flip = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI), _e = new THREE.Euler(0, 0, 0, 'YXZ');
+function enterPov(id) {
+  const it = povList().find(x => x.id === id); if (!it) return;
+  if (!pov) { povSaved.near = camera.near; povSaved.pos = camera.position.clone(); povSaved.tgt = controls.target.clone(); }
+  pov = it; povYaw = 0; povPitch = 0; camFly = null; follow = null; controls.enabled = false; controls.autoRotate = false;
+  camera.near = 0.02; camera.updateProjectionMatrix(); panel.classList.remove('open'); document.body.classList.remove('sel'); document.body.classList.add('pov');
+  $('povName').textContent = it.nome; povStep(true);
+}
+function exitPov() {
+  if (!pov) return; pov = null; document.body.classList.remove('pov'); controls.enabled = true; camera.near = povSaved.near || 0.1; camera.updateProjectionMatrix();
+  camera.position.copy(povSaved.pos); controls.target.copy(povSaved.tgt); controls.update();
+}
+function povCycle(dir) { const L = povList(); const i = pov ? L.findIndex(x => x.id === pov.id) : -1; enterPov(L[(i + dir + L.length) % L.length].id); }
+function povStep(snap) {
+  const it = pov; it.obj.updateWorldMatrix(true, false);
+  if (it.world) { _pv.copy(it.off).applyQuaternion(it.obj.getWorldQuaternion(_pq)).add(it.obj.getWorldPosition(new THREE.Vector3())); }
+  else _pv.copy(it.off).applyMatrix4(it.obj.matrixWorld);
+  it.obj.getWorldQuaternion(_pq);
+  if (it.noRoll) { const f = new THREE.Vector3(0, 0, 1).applyQuaternion(_pq); _e.set(Math.asin(clamp(f.y, -0.6, 0.6)) * 0.5 + povPitch, Math.atan2(-f.x, -f.z) + Math.PI + povYaw, 0); _pq.setFromEuler(_e).multiply(_flip); }
+  else { _pq.multiply(_flip); _e.set(povPitch, povYaw, 0); _pq.multiply(new THREE.Quaternion().setFromEuler(_e)); }
+  if (snap) povQ.copy(_pq); else povQ.slerp(_pq, 0.25);
+  camera.position.copy(_pv); camera.quaternion.copy(povQ);
+}
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-pov]'); if (b) { e.stopPropagation(); enterPov(b.dataset.pov); } });
+renderer.domElement.addEventListener('pointerdown', e => { if (pov) povDrag = [e.clientX, e.clientY, povYaw, povPitch]; });
+window.addEventListener('pointermove', e => { if (pov && povDrag) { povYaw = clamp(povDrag[2] - (e.clientX - povDrag[0]) * 0.005, -2.6, 2.6); povPitch = clamp(povDrag[3] - (e.clientY - povDrag[1]) * 0.005, -1.2, 1.2); } });
+window.addEventListener('pointerup', () => { povDrag = null; });
+document.addEventListener('keydown', e => { if (!pov) return; if (e.key === 'Escape') exitPov(); if (e.key === 'ArrowRight') povCycle(1); if (e.key === 'ArrowLeft') povCycle(-1); });
+$('bPov').onclick = () => povCycle(1); $('povPrev').onclick = () => povCycle(-1); $('povNext').onclick = () => povCycle(1); $('povExit').onclick = exitPov;
+
+// ---------- retrato do Diretor da Semana/Mês: foto do próprio boneco 3D ----------
+function portraitOf(s) {
+  const S = 384, rt = new THREE.WebGLRenderTarget(S, S, { samples: 4 }); rt.texture.colorSpace = THREE.SRGBColorSpace;
+  const cam = new THREE.PerspectiveCamera(24, 1, 0.05, 10); cam.layers.set(1);
+  const head = s.P.head; head.updateWorldMatrix(true, false);
+  const h = new THREE.Vector3(0, -0.02, 0).applyMatrix4(head.matrixWorld), q = head.getWorldQuaternion(new THREE.Quaternion());
+  const fwd = new THREE.Vector3(0, 0, 1).applyQuaternion(q).setY(0).normalize();
+  cam.position.copy(h).addScaledVector(fwd, 0.85).add(new THREE.Vector3(0, 0.03, 0)).addScaledVector(new THREE.Vector3(-fwd.z, 0, fwd.x), 0.12); cam.lookAt(h.x, h.y - 0.03, h.z);
+  const on = []; s.P.root.traverse(o => { if (o.isMesh || o.isSkinnedMesh) { o.layers.enable(1); on.push(o); } });
+  const lights = []; scene.traverse(o => { if (o.isLight) { o.layers.enable(1); lights.push(o); } });
+  const bg = scene.background, fog = scene.fog; scene.background = new THREE.Color(0x1a140e); scene.fog = null;
+  renderer.setRenderTarget(rt); renderer.render(scene, cam); renderer.setRenderTarget(null);
+  scene.background = bg; scene.fog = fog; on.forEach(o => o.layers.disable(1)); lights.forEach(o => o.layers.disable(1));
+  const px = new Uint8Array(S * S * 4); renderer.readRenderTargetPixels(rt, 0, 0, S, S, px); rt.dispose();
+  const c = document.createElement('canvas'); c.width = c.height = S; const g = c.getContext('2d'), id = g.createImageData(S, S);
+  for (let y = 0; y < S; y++) id.data.set(px.subarray((S - 1 - y) * S * 4, (S - y) * S * 4), y * S * 4);
+  g.putImageData(id, 0, 0); return c;
+}
+setTimeout(() => { try {
+  const semana = HALL.semana && [master, ...seats].find(s => s.d.id === HALL.semana); if (semana) hall.setPortrait('semana', portraitOf(semana));
+  const mes = HALL.mes && [master, ...seats].find(s => s.d.id === HALL.mes); if (mes) hall.setPortrait('mes', portraitOf(mes));
+} catch (err) { console.warn('retrato', err); } }, 2200);
+
 function clampTarget() { const t = controls.target; t.x = clamp(t.x, -11, 11); t.z = clamp(t.z, -8.5, 8.5); t.y = clamp(t.y, 0, 3); }
 let frames = 0, lastClock = -9;
 function loop() {
   const dt = Math.min(clock.getDelta(), 0.05) * (window.__speed || 1), now = clock.elapsedTime;
-  if (camFly) { const k = 1 - Math.pow(0.03, dt); camera.position.lerp(camFly.pos, k); controls.target.lerp(camFly.tgt, k); if (camera.position.distanceTo(camFly.pos) < 0.02) camFly = null; }
+  if (camFly && !pov) { const k = 1 - Math.pow(0.03, dt); camera.position.lerp(camFly.pos, k); controls.target.lerp(camFly.tgt, k); if (camera.position.distanceTo(camFly.pos) < 0.02) camFly = null; }
   if (follow === 'phoenix' && phoenix.ready) { const p = phoenix.root.position; const back = new THREE.Vector3(0, 0, -1).applyQuaternion(phoenix.root.quaternion); controls.target.lerp(p, 1 - Math.pow(0.02, dt)); camera.position.lerp(p.clone().addScaledVector(back, 6.5).add(new THREE.Vector3(0, 2.2, 0)), 1 - Math.pow(0.1, dt)); }
-  controls.update(); if (!follow) clampTarget();
+  if (!pov) { controls.update(); if (!follow) clampTarget(); }
   env.updaters.forEach(f => f(dt, now)); env.updateWalls(camera);
   if (env.halo) env.halo.visible = camera.position.y < 4.6; // sem teto na visão de cima, o pendente só aparece de dentro da sala
   seats.forEach(s => updateSeat(s, dt, now)); updateMaster(dt, now);
@@ -645,7 +714,7 @@ function loop() {
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
   frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
-  gauge.update(dt); phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt); pokerTick(dt, now);
+  gauge.update(dt); aquarium.update(dt, now); phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt); pokerTick(dt, now);
   if (selected && (selected.pet === 'panda' || selected.pet === 'pantera') && !camFly) { const q = selected.pet === 'panda' ? panda.root.position : panther.root.position; controls.target.lerp(q.clone().setY(q.y + 0.4), 1 - Math.pow(0.05, dt)); }
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
   if (holo) {
@@ -654,6 +723,7 @@ function loop() {
     holoMat.uniforms.t.value = now;
   }
   scene.environmentIntensity = env.isNight ? 0.35 : 0.5;
+  if (pov) povStep(false);
   renderer.render(scene, camera);
   updateLabels();
   if (now - lastClock > 1) { lastClock = now; const h = env.getHour(); const live = $('bNow').classList.contains('on'); $('clock').textContent = `${hourText(h)} em Brasília · ${env.isNight ? 'noite' : 'dia'}${live ? '' : ' (simulado)'}`; if (live) { slider.value = h; hourLbl.textContent = hourText(h); } }
@@ -675,4 +745,4 @@ masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
 window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { THREE, panther, poker, pokerNow: () => { poker.t = 0; }, pit, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.__mesa = { THREE, aquarium, pov: id => enterPov(id), povExit: () => exitPov(), panther, poker, pokerNow: () => { poker.t = 0; }, pit, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
