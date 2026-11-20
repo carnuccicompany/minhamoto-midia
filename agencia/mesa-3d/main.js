@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO, SOCIOS } from './data.js';
 import { buildGauge } from './gauge.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
@@ -63,6 +63,9 @@ const thrones = [];
   macbook(f, 0, 0.7, 0, 'money').group.position.y = TOP_Y;
   const g = glassOf('whisky'); g.position.set(0.34, TOP_Y, 0.62); f.add(g);
   thrones.push({ nome, a, f });
+  // SÓCIOS: quando SOCIOS (data.js) tiver o Léo ou o Davi, a pessoa senta no próprio trono
+  const socio = (SOCIOS || []).find(x => x.nome && nome.toLowerCase().startsWith(x.nome.toLowerCase()));
+  if (socio) { const P = buildPerson(Object.assign({ id: 'socio-' + nome, terno: 0x0d0d10, gravata: 0x111111, pele: 0xd9a77f, cabelo: 0x161210, estilo: 'curto', padrao: 'elite', broche: 'imaculado', idade: 30 }, socio)); f.add(P.root); sitLegs(P); }
 });
 
 function addTag(html, cls = '') { const el = document.createElement('button'); el.type = 'button'; el.className = 'tag ' + cls; el.innerHTML = html; labelsEl.appendChild(el); return el; }

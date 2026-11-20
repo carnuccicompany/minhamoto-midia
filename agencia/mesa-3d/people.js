@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { M, mat, phys, mesh, box, rbox, cyl, sph, tex, lerp, clamp, smooth, bakeSkinned } from './util.js';
+import { M, mat, phys, mesh, box, rbox, cyl, sph, tex, lerp, clamp, smooth, bakeSkinned, allocFace } from './util.js';
 import { makeFace, headGeo, hairGeo, beardGeo, noseGeo, torsoGeo, onChest, frontZ, zAt } from './head.js';
 
 const pinTex = tex(256, 256, (g, w, h) => { g.fillStyle = '#fff'; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(0,0,0,.08)'; for (let x = 0; x < w; x += 24) g.fillRect(x, 0, 2, h); }, [5, 2]);
@@ -134,7 +134,7 @@ export function buildPerson(d) {
 
   // cabeça: uma esfera esculpida (mandíbula, maçãs, olhos fundos, arco da sobrancelha)
   const head = new THREE.Bone(); head.position.set(0, W ? 0.712 : 0.72, 0.016); torso.add(head); P.head = head;
-  const F = makeFace(d);
+  const F = makeFace(d); F.slot = allocFace();
   mesh(headGeo(F), skin, head, [0, 0, 0]);
   const Z = (x, y) => zAt(x, y, F);
   const darker = (hex, k) => new THREE.Color(hex).multiplyScalar(k).getHex();
@@ -150,6 +150,7 @@ export function buildPerson(d) {
     mesh(new THREE.SphereGeometry(0.0122, 14, 10), scl, e, null, null, false);
     const iris = mesh(new THREE.SphereGeometry(0.0072, 12, 8), phys(d.olhosCor || 0x2a1a10, { roughness: 0.12, clearcoat: 1 }), e, [0, 0, 0.0092], null, false); iris.scale.set(1, 1, 0.45);
     mesh(new THREE.SphereGeometry(0.0034, 8, 6), mat(0x050505, { roughness: 0.1 }), e, [0, 0, 0.0118], null, false).scale.set(1, 1, 0.3);
+    mesh(new THREE.SphereGeometry(0.0016, 6, 4), mat(0xffffff, { roughness: 0.05 }), e, [0.0035, 0.0035, 0.0124], null, false); // reflexo no olho
     const lid = new THREE.Bone(); e.add(lid); lid.rotation.x = -0.6;
     mesh(new THREE.SphereGeometry(0.0127, 14, 6, 0, Math.PI * 2, 0, Math.PI * 0.5), mat(darker(skinHex, 0.9), { roughness: 0.5 }), lid, null, null, false);
     mesh(new THREE.TorusGeometry(0.0127, W ? 0.0017 : 0.0013, 4, 16, Math.PI), lashM, lid, [0, 0, 0], [Math.PI / 2, 0, 0], false);
@@ -159,13 +160,8 @@ export function buildPerson(d) {
   if (pd.slump > 0.3) [-1, 1].forEach(s => mesh(sph(0.013, 10, 8), mat(darker(skinHex, 0.78), { roughness: 0.6 }), head, [s * 0.031, -0.008, Z(s * 0.031, -0.008) - 0.004], null, false).scale.set(1.4, 0.5, 0.45));
   // sobrancelhas afinadas
   const browM = phys(d.estilo === 'grisalho' && d.barbaCor ? d.barbaCor : darker(d.cabelo, 0.9), { roughness: 0.9 }); browM.userData.k = 3;
-  P.brows = [-1, 1].map(s => {
-    const g = new THREE.Group(); head.add(g);
-    const bx = s * 0.033, by = 0.039; g.position.set(bx, by, Z(bx, by) + 0.0036); g.rotation.set(-0.15, s * 0.3, s * (W ? -0.12 : 0.04));
-    const e1 = mesh(new THREE.SphereGeometry(1, 16, 8), browM, g, [-s * 0.004, -0.0006, 0], null, false); e1.scale.set(0.0125, W ? 0.0026 : 0.0034, 0.0035);
-    const e2 = mesh(new THREE.SphereGeometry(1, 16, 8), browM, g, [s * 0.0085, 0.0003, -0.0012], [0, 0, -s * (W ? 0.3 : 0.2)], false); e2.scale.set(0.009, W ? 0.0021 : 0.0028, 0.003);
-    return g;
-  });
+  P.brows = [-1, 1].map(() => { const g = new THREE.Group(); head.add(g); return g; }); // sobrancelhas agora são pintadas no rosto (head.js)
+
   // boca
   const lipC = W ? 0x9a3a40 : new THREE.Color(d.pele).lerp(new THREE.Color(0x9a4c44), 0.32).multiplyScalar(0.92).getHex();
   P.mouth = new THREE.Bone(); P.mouth.position.set(0, -0.062, Z(0, -0.062) + 0.001); head.add(P.mouth);

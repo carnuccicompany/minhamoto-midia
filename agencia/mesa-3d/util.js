@@ -160,7 +160,12 @@ export function bakeStatic(group) {
   }
 }
 // pessoa inteira vira 1 malha com esqueleto (cada articulação = 1 osso)
-const SKIN_MAT = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.6, metalness: 0 });
+// atlas de rostos: cada pessoa ganha um quadro 512x512 pintado (sobrancelha fio a fio, barba por fazer, poros, rubor).
+// O resto do corpo aponta pra um canto branco do atlas (multiplica por 1). Tudo continua num draw só.
+export const FACE_ATLAS = (() => { const c = document.createElement('canvas'); c.width = c.height = 2048; const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, 2048, 2048);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return { canvas: c, ctx: g, tex: t, next: 0, S: 512 }; })();
+export function allocFace() { const i = FACE_ATLAS.next++ % 16; return { x: (i % 4) * 512, y: Math.floor(i / 4) * 512, S: 512 }; }
+const SKIN_MAT = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.6, metalness: 0, map: FACE_ATLAS.tex });
 // cada parte do personagem guarda a própria rugosidade, metal e tipo (pele, tecido, cabelo) num atributo,
 // e o shader dá brilho de borda: pele quente (translúcida), tecido aveludado, cabelo com brilho. Tudo num draw só.
 SKIN_MAT.onBeforeCompile = sh => {
@@ -182,9 +187,9 @@ SKIN_MAT.onBeforeCompile = sh => {
     .replace('#include <opaque_fragment>', `
       float fres = pow(1.0 - saturate(dot(normal, normalize(vViewPosition))), 2.5);
       float k = vRM.z;
-      vec3 rim = k < 1.5 && k > 0.5 ? vec3(0.95, 0.42, 0.32) * 0.16 * fres * (0.55 + diffuseColor.r)   // pele: luz atravessando a borda
+      vec3 rim = k < 1.5 && k > 0.5 ? vec3(0.95, 0.42, 0.32) * 0.2 * fres * (0.55 + diffuseColor.r) + diffuseColor.rgb * vec3(0.06, 0.025, 0.015)   // pele: luz atravessando a borda + leve calor (subsurface barato)
                : k < 2.5 && k > 1.5 ? (diffuseColor.rgb * 0.9 + 0.08) * 0.32 * fres                       // tecido: brilho de lã/veludo
-               : k > 2.5 ? vec3(0.22) * fres * 0.5 : vec3(0.0);                                             // cabelo
+               : k > 2.5 ? vec3(0.22) * fres * 0.5 + (diffuseColor.rgb + 0.12) * 0.35 * pow(max(0.0, 1.0 - abs(dot(normalize(normal), normalize(vViewPosition)) - 0.55) * 2.6), 6.0) : vec3(0.0); // cabelo: faixa de brilho (anisotrópico barato)
       outgoingLight += rim;
       #include <opaque_fragment>`);
 };
@@ -199,9 +204,11 @@ export function bakeSkinned(root) {
     let b = o.parent; while (b && !b.isBone) b = b.parent; if (!b) return;
     const m = o.material; if (Array.isArray(m) || m.map || m.transparent) return;
     let g = o.geometry.index ? o.geometry.toNonIndexed() : o.geometry.clone();
-    for (const n of Object.keys(g.attributes)) if (n !== 'position' && n !== 'normal' && n !== 'tint') g.deleteAttribute(n);
+    for (const n of Object.keys(g.attributes)) if (n !== 'position' && n !== 'normal' && n !== 'tint' && n !== 'faceuv') g.deleteAttribute(n);
     g.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv, o.matrixWorld));
     const tint = g.attributes.tint; if (tint) g.deleteAttribute('tint');
+    if (g.attributes.faceuv) { g.setAttribute('uv', g.attributes.faceuv); g.deleteAttribute('faceuv'); }
+    else { const n0 = g.attributes.position.count, uvw = new Float32Array(n0 * 2).fill(0.002); g.setAttribute('uv', new THREE.BufferAttribute(uvw, 2)); }
     const cnt = g.attributes.position.count, cols = new Float32Array(cnt * 3), si = new Uint16Array(cnt * 4), sw = new Float32Array(cnt * 4), bi = idx.get(b);
     // articulação macia: perto do joelho/cotovelo/punho/tornozelo o vértice segue os dois ossos (sem "bola" aparecendo)
     const loc = o.geometry.index ? o.geometry.toNonIndexed().attributes.position : o.geometry.attributes.position;
@@ -222,6 +229,7 @@ export function bakeSkinned(root) {
       const ao = 0.8 + 0.2 * (nrm.getY(i) * 0.5 + 0.5), lo = 0.88 + 0.12 * Math.min(1, Math.max(0, (pos.getY(i) + 1.0) / 1.9));
       const tr = tint ? tint.getX(i) : 1, tg = tint ? tint.getY(i) : 1, tb = tint ? tint.getZ(i) : 1;
       cols[i * 3] = c.r * ao * lo * tr; cols[i * 3 + 1] = c.g * ao * lo * tg; cols[i * 3 + 2] = c.b * ao * lo * tb; si[i * 4] = bi; sw[i * 4] = 1;
+      if (kind === 2 && blendI[i] >= 0) { const cw = blendW[i], cr = 1 - 0.22 * Math.max(0, 1 - Math.abs(cw - 0.5) * 2.4) * (0.6 + 0.4 * Math.sin(i * 1.7)); cols[i * 3] *= cr; cols[i * 3 + 1] *= cr; cols[i * 3 + 2] *= cr; }
       if (blendI[i] >= 0 && blendW[i] > 0.001) { const w = Math.min(0.95, blendW[i]); si[i * 4 + 1] = blendI[i]; sw[i * 4] = 1 - w; sw[i * 4 + 1] = w; }
       rm[i * 3] = m.roughness; rm[i * 3 + 1] = m.metalness; rm[i * 3 + 2] = kind;
     }
@@ -231,6 +239,6 @@ export function bakeSkinned(root) {
   remove.forEach(o => o.parent.remove(o));
   const merged = mergeGeometries(geos, false); geos.forEach(g => g.dispose());
   const sk = new THREE.SkinnedMesh(merged, SKIN_MAT); sk.frustumCulled = false; if (ud) sk.userData = Object.assign({}, ud);
-  root.add(sk); root.updateMatrixWorld(true); sk.bind(new THREE.Skeleton(bones), sk.matrixWorld);
+  root.add(sk); root.updateMatrixWorld(true); sk.bind(new THREE.Skeleton(bones), sk.matrixWorld); FACE_ATLAS.tex.needsUpdate = true;
   return sk;
 }

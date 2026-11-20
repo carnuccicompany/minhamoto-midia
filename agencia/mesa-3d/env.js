@@ -149,7 +149,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
 
   // ---------- chão, paredes, vidro ----------
   const floorT = tex(2048, 2048, (g, w, h) => {
-    g.fillStyle = '#e9e4da'; g.fillRect(0, 0, w, h);
+    g.fillStyle = '#ddd6ca'; g.fillRect(0, 0, w, h);
     const cl = g.createRadialGradient(w * .3, h * .3, 0, w * .5, h * .5, w * .8); cl.addColorStop(0, 'rgba(255,253,248,.55)'); cl.addColorStop(1, 'rgba(210,202,190,.25)'); g.fillStyle = cl; g.fillRect(0, 0, w, h);
     const vein = (blur, width, alpha, col, n) => { g.save(); g.filter = `blur(${blur}px)`; for (let i = 0; i < n; i++) { g.strokeStyle = col.replace('A', (alpha * (0.5 + Math.random())).toFixed(3)); g.lineWidth = width * (0.5 + Math.random()); g.beginPath(); let x = Math.random() * w, y = -40, ang = 0.9 + Math.random() * 0.6; g.moveTo(x, y); while (y < h + 40 && x > -60 && x < w + 60) { ang += (Math.random() - 0.5) * 0.5; x += Math.cos(ang) * 40; y += Math.sin(ang) * 40 + 14; g.lineTo(x, y); } g.stroke(); } g.restore(); };
     vein(18, 34, 0.05, 'rgba(120,112,100,A)', 10); vein(4, 6, 0.12, 'rgba(105,98,88,A)', 18); vein(0.6, 1.4, 0.22, 'rgba(90,84,76,A)', 30); vein(0.5, 1.2, 0.18, 'rgba(176,138,72,A)', 6);
@@ -582,7 +582,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   // ---------- dia e noite (horário de Brasília) ----------
   const C = (h) => new THREE.Color(h);
   const P = {
-    night: { top: C(0x03060f), hor: C(0x111833), sun: 0, hemi: 0.45, win: 0.55, inside: 0.85, exp: 0.9, fog: C(0x0d1228) },
+    night: { top: C(0x03060f), hor: C(0x111833), sun: 0, hemi: 0.4, win: 0.55, inside: 0.85, exp: 0.82, fog: C(0x0d1228) },
     dusk: { top: C(0x1d2c5c), hor: C(0xff8a4c), sun: 1.2, hemi: 0.5, win: 0.6, inside: 0.8, exp: 0.88, fog: C(0x7a5a6a) },
     day: { top: C(0x2f6fd0), hor: C(0xd9e7f2), sun: 3.0, hemi: 0.7, win: 0.03, inside: 0.4, exp: 0.82, fog: C(0xc7dbeb) },
   };

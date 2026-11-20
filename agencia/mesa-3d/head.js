@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+import { FACE_ATLAS } from './util.js';
 
 // ---------- utilidades ----------
 const sstep = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
@@ -35,7 +36,7 @@ export function makeFace(d) {
   let s = 0; for (const ch of String(d.id || d.nome || 'x')) s = (s * 31 + ch.charCodeAt(0)) % 100003;
   const r = () => { s = (s * 16807) % 2147483647; return (s % 10000) / 10000; };
   const W = !!d.mulher;
-  return { W, id: (d.id || d.nome) + '', wide: 0.96 + r() * 0.08, jawK: (W ? 0.95 : 0.92) + r() * 0.18, chinK: 0.7 + r() * 0.7, cheekK: 0.7 + r() * 0.7, browK: W ? 0.6 : 0.8 + r() * 0.6, noseL: 0.9 + r() * 0.22, noseW: 0.88 + r() * 0.28, age: d.idade || 40 };
+  return { W, id: (d.id || d.nome) + '', wide: 0.96 + r() * 0.08, jawK: (W ? 0.95 : 0.92) + r() * 0.18, chinK: 0.7 + r() * 0.7, cheekK: 0.7 + r() * 0.7, browK: W ? 0.6 : 0.8 + r() * 0.6, noseL: 0.9 + r() * 0.22, noseW: 0.88 + r() * 0.28, age: d.idade || 40, stub: W ? 0 : 0.55 + r() * 0.45, style: d.estilo || 'curto', hairDark: (() => { const c = new THREE.Color(d.cabelo ?? 0x222222); return 1 - (c.r + c.g + c.b) / 3; })(), browW: W ? 0.7 : 1, skinHex: d.pele ?? 0xe0b090, hairHex: d.cabelo ?? 0x222222 };
 }
 export function headDims(W) { const F = face(W), k = F.wide; return F.W ? { rx: 0.075 * k, ry: 0.108, rz: 0.096, jaw: 0.62 * F.jawK } : { rx: 0.081 * k, ry: 0.112, rz: 0.1, jaw: 0.72 * F.jawK }; }
 // ponto da superfície da cabeça na direção u (unitário)
@@ -90,10 +91,71 @@ export function headGeo(W) {
       const bag = Math.hypot(p.x - Math.sign(p.x) * 0.031, (p.y + 0.012) * 1.8); if (bag < 0.016) w += age * 0.45 * (1 - bag / 0.016);
       const dk = Math.min(0.22, w * 0.12); r -= dk * 0.9; gg -= dk * 1.05; b -= dk;
     }
+    { // contorno de rosto e sombra de barba (estilo semirrealista)
+      const th = Math.abs(Math.atan2(u.x, u.z));
+      const hollow = Math.hypot(Math.abs(p.x) - 0.05, (p.y + 0.045) * 1.3); if (p.z > 0 && hollow < 0.03) { const k = (1 - hollow / 0.03) ** 2 * (Wb ? 0.04 : 0.07); r -= k; gg -= k * 1.1; b -= k; }
+      const jawE = sstep(0.04, 0.07, Math.abs(p.x)) * sstep(-0.03, -0.09, p.y) * (p.z > -0.02 ? 1 : 0.5); r -= jawE * 0.06; gg -= jawE * 0.07; b -= jawE * 0.06;
+      if (F.stub) {
+        const lips = Math.abs(p.x) < 0.022 && p.y < -0.05 && p.y > -0.077;
+        const zone = Math.max(sstep(-0.035, -0.06, p.y) * (1 - sstep(1.35, 1.6, th)), (p.y < -0.038 && p.y > -0.056 && Math.abs(p.x) < 0.03) ? 0.8 : 0, sstep(1.15, 1.3, th) * (1 - sstep(1.45, 1.55, th)) * sstep(0.1, -0.02, p.y));
+        const sk = lips ? 0 : zone * F.stub * (0.8 + 0.4 * noise3(p.x * 900, p.y * 900, p.z * 900));
+        r -= sk * 0.2; gg -= sk * 0.18; b -= sk * 0.12;
+      }
+      if (F.style && HL[F.style] && F.style !== 'raspado') {
+        const line = lineAt(HL[F.style], th), dd = line - u.y; if (dd > 0 && dd < 0.09) { const k = (1 - dd / 0.09) ** 1.5 * 0.35 * (0.3 + 0.7 * F.hairDark); r *= 1 - k; gg *= 1 - k * 1.03; b *= 1 - k * 1.05; }
+      }
+      const nb = Math.hypot(p.x, (p.y + 0.01) * 0.8); if (p.z > 0 && nb < 0.02) { const k = (1 - nb / 0.02) * 0.03; r += k; gg += k; b += k; } // brilho no dorso do nariz
+    }
     tint[i * 3] = r; tint[i * 3 + 1] = gg; tint[i * 3 + 2] = b;
   }
   g.setAttribute('tint', new THREE.BufferAttribute(tint, 3));
+  if (F.slot) { // coordenadas no quadro do atlas: frente projetada, costas indo pra margem branca
+    const s = F.slot, A = 2048, uv = new Float32Array(pos.count * 2);
+    for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), y = pos.getY(i), z = pos.getZ(i);
+      const fx = Math.abs(x) / 0.09 * 0.25 + (z < 0 ? -z / 0.1 * 0.24 : 0), uu = 0.5 + Math.sign(x) * Math.min(0.49, fx), vv = 0.5 - y / 0.26;
+      uv[i * 2] = (s.x + uu * s.S) / A; uv[i * 2 + 1] = 1 - (s.y + vv * s.S) / A; }
+    g.setAttribute('faceuv', new THREE.BufferAttribute(uv, 2)); paintFace(F);
+  }
   g.computeVertexNormals(); return g;
+}
+// pinta o rosto no atlas (multiplicador sobre a cor da pele: branco = sem mudança)
+function paintFace(F) {
+  const s = F.slot, g = FACE_ATLAS.ctx, S = s.S;
+  const X = x => s.x + (0.5 + x / 0.09 * 0.25) * S, Y = y => s.y + (0.5 - y / 0.26) * S, K = S * 0.25 / 0.09;
+  let seed = 7; for (const ch of F.id) seed = (seed * 31 + ch.charCodeAt(0)) % 99991; const R = () => { seed = (seed * 16807) % 2147483647; return (seed % 10000) / 10000; };
+  g.save(); g.beginPath(); g.rect(s.x, s.y, S, S); g.clip();
+  for (let i = 0; i < 2600; i++) { const x = s.x + S * (0.27 + R() * 0.46), y = s.y + S * (0.08 + R() * 0.84); g.fillStyle = R() < 0.5 ? `rgba(120,70,60,${R() * 0.07})` : `rgba(255,255,255,${R() * 0.05})`; g.fillRect(x, y, 1 + R() * 2, 1 + R() * 2); }
+  for (const sx of [-1, 1]) { const gr = g.createRadialGradient(X(sx * 0.046), Y(-0.03), 0, X(sx * 0.046), Y(-0.03), K * 0.03); gr.addColorStop(0, `rgba(200,90,80,${F.W ? 0.22 : 0.13})`); gr.addColorStop(1, 'rgba(200,90,80,0)'); g.fillStyle = gr; g.fillRect(X(sx * 0.046) - K * 0.03, Y(-0.03) - K * 0.03, K * 0.06, K * 0.06); }
+  for (const sx of [-1, 1]) { const gr = g.createRadialGradient(X(sx * 0.031), Y(0.004), K * 0.008, X(sx * 0.031), Y(0.004), K * 0.024); gr.addColorStop(0, 'rgba(90,60,70,0.16)'); gr.addColorStop(1, 'rgba(90,60,70,0)'); g.fillStyle = gr; g.fillRect(X(sx * 0.031) - K * 0.025, Y(0.004) - K * 0.025, K * 0.05, K * 0.05); }
+  if (F.stub) {
+    const n = Math.round(9000 * F.stub);
+    for (let i = 0; i < n; i++) { const x = (R() - 0.5) * 0.15, y = -0.03 - R() * 0.085;
+      if (Math.abs(x) < 0.024 && y < -0.05 && y > -0.077) continue;
+      const edge = Math.abs(x) / 0.075; if (edge > 1) continue; if (y > -0.04 && Math.abs(x) > 0.032) continue;
+      g.fillStyle = (F.hairDark ?? 0.7) > 0.5 ? `rgba(40,38,40,${(0.12 + R() * 0.24) * (1 - edge * edge * 0.6)})` : `rgba(150,140,135,${(0.1 + R() * 0.2) * (1 - edge * edge * 0.6)})`; g.fillRect(X(x), Y(y), 1.2, 1.2 + R()); }
+  }
+  const dark = 0.3 + 0.6 * (F.hairDark ?? 0.7), col = (F.hairDark ?? 0.7) > 0.5 ? [30, 22, 18] : [178, 172, 166];
+  // linha do cabelo pintada (esconde o degrau da malha): faixa da cor do cabelo que se desfaz na testa
+  if (F.style && HL[F.style] && F.style !== 'raspado') {
+    const sk = new THREE.Color(F.skinHex), hc = new THREE.Color(F.hairHex), m = [0, 1, 2].map(k => Math.min(1, (hc.toArray()[k] + 0.04) / Math.max(0.05, sk.toArray()[k])));
+    const D = headDims(F); g.globalAlpha = 1;
+    for (let px = 0; px < S; px += 2) {
+      const xm = ((px / S) - 0.5) / 0.25 * 0.09; if (Math.abs(xm) > D.rx * 0.98) continue;
+      const th = Math.asin(Math.min(1, Math.abs(xm) / D.rx)), line = lineAt(HL[F.style], th) * D.ry, top = Y(line + 0.002), fade = K * 0.006;
+      const gr = g.createLinearGradient(0, top - fade * 0.2, 0, top + fade); const c = `rgb(${Math.round(m[0] * 255)},${Math.round(m[1] * 255)},${Math.round(m[2] * 255)})`;
+      gr.addColorStop(0, c); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(s.x + px, top - fade * 0.2, 2, fade * 1.2);
+      g.fillStyle = c; g.fillRect(s.x + px, s.y, 2, Math.max(0, top - fade * 0.2 - s.y));
+    }
+  }
+  for (const sx of [-1, 1]) for (let i = 0; i < 420; i++) {
+    const t = R(), xx = 0.008 + t * 0.05, cy = 0.036 + 0.009 * Math.sin(t * Math.PI * 0.85) - 0.004 * t, th = (0.0055 - 0.0028 * t) * (F.browW || 1);
+    const y = cy + (R() - 0.5) * th * 1.6, ang = -0.5 + t * 0.9 + (R() - 0.5) * 0.4, L = K * (0.004 + R() * 0.003);
+    g.strokeStyle = `rgba(${col[0]},${col[1]},${col[2]},${dark * (0.35 + R() * 0.5)})`; g.lineWidth = 1.1; g.beginPath();
+    const px = X(sx * xx), py = Y(y); g.moveTo(px, py); g.lineTo(px + sx * Math.cos(ang) * L, py - Math.sin(ang) * L); g.stroke();
+  }
+  if ((F.age || 30) > 45) { const a = Math.min(1, ((F.age || 30) - 45) / 25); g.strokeStyle = `rgba(110,70,60,${0.12 * a})`; g.lineWidth = 1;
+    for (let i = 0; i < 3; i++) { g.beginPath(); g.moveTo(X(-0.035), Y(0.058 + i * 0.008)); g.quadraticCurveTo(X(0), Y(0.062 + i * 0.008), X(0.035), Y(0.058 + i * 0.008)); g.stroke(); } }
+  g.restore(); FACE_ATLAS.tex.needsUpdate = true;
 }
 
 // ---------- cabelo: casca que segue a cabeça, com linha de cabelo e volume por estilo ----------
@@ -117,10 +179,11 @@ function shellGeo(W, maskFn, thickFn, seed = 1, seg = [66, 48]) {
     const th = Math.abs(Math.atan2(u.x, u.z)), hp = headPoint(u, W);
     const m = maskFn(u, th, hp); keep[i] = m;
     const n = noise3(u.x * 6 + seed, u.y * 6, u.z * 6), fine = noise3(u.x * 22 + seed, u.y * 22, u.z * 22);
-    let t = thickFn(u, th) * (0.88 + 0.24 * n) + 0.0009 * (fine - 0.5);
+    const az = Math.atan2(u.x, u.z), ridge = Math.pow(0.5 + 0.5 * Math.sin(az * 34 + u.y * 9 + n * 4), 3);
+    let t = thickFn(u, th) * (0.86 + 0.22 * n) + 0.0009 * (fine - 0.5) + 0.0014 * ridge * Math.max(0, u.y + 0.3);
     t = mix(-0.005, t, sstep(0.15, 0.6, m));            // borda entra na pele: linha do cabelo lisa
     const nrm = u.clone().multiply(inv).normalize(), q = hp.addScaledVector(nrm, t + 0.0012);
-    P[i * 3] = q.x; P[i * 3 + 1] = q.y; P[i * 3 + 2] = q.z; T[i] = 0.8 + 0.32 * fine + 0.12 * n;
+    P[i * 3] = q.x; P[i * 3 + 1] = q.y; P[i * 3 + 2] = q.z; T[i] = 0.74 + 0.3 * fine + 0.1 * n + 0.14 * ridge;
   }
   for (let i = 0; i < pos.count; i += 3) {
     if (Math.max(keep[i], keep[i + 1], keep[i + 2]) < 0.06) continue;
