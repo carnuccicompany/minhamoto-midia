@@ -1,15 +1,19 @@
 import * as THREE from 'three';
 import { M, mat, phys, mesh, box, rbox, cyl, sph, tex, lerp, clamp, smooth, bakeSkinned } from './util.js';
-import { headGeo, hairGeo, beardGeo, noseGeo, torsoGeo, onChest, frontZ, zAt } from './head.js';
+import { makeFace, headGeo, hairGeo, beardGeo, noseGeo, torsoGeo, onChest, frontZ, zAt } from './head.js';
 
 const pinTex = tex(256, 256, (g, w, h) => { g.fillStyle = '#fff'; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(0,0,0,.08)'; for (let x = 0; x < w; x += 24) g.fillRect(x, 0, 2, h); }, [5, 2]);
 const fabricTex = tex(256, 256, (g, w, h) => { g.fillStyle = '#fff'; g.fillRect(0, 0, w, h); for (let i = 0; i < 9000; i++) { g.fillStyle = `rgba(0,0,0,${Math.random() * .06})`; g.fillRect(Math.random() * w, Math.random() * h, 1, 2); } }, [6, 6]);
 
 // membro afunilado com articulação arredondada no topo
-function limb(len, r0, r1, m, parent) {
+function limb(len, r0, r1, m, parent, bulge = 0.08, flat = 1) {
+  // tubo de tecido com tampa redonda em cima e embaixo, afinando e com leve volume no meio (sem cara de cano)
   const g = new THREE.Group(); parent.add(g);
-  mesh(cyl(r1, r0, len, 12), m, g, [0, -len / 2, 0]);
-  mesh(new THREE.SphereGeometry(r0, 12, 8), m, g, [0, 0, 0]);
+  const pts = [], N = 8;
+  for (let i = 0; i <= 3; i++) { const a = Math.PI / 2 * (i / 3); pts.push(new THREE.Vector2(Math.sin(a) * r0, r0 * 0.3 * Math.cos(a))); }
+  for (let i = 1; i < N; i++) { const t = i / N, r = r0 + (r1 - r0) * t + Math.sin(t * Math.PI) * bulge * r0 * (1 - t * 0.5); pts.push(new THREE.Vector2(r, -len * t)); }
+  for (let i = 0; i <= 3; i++) { const a = Math.PI / 2 * (i / 3); pts.push(new THREE.Vector2(Math.cos(a) * r1, -len - r1 * 0.3 * Math.sin(a))); }
+  const geo = new THREE.LatheGeometry(pts, 16); const o = mesh(geo, m, g, [0, 0, 0]); o.scale.z = flat;
   return g;
 }
 function lathe(points, m, parent, pos, scaleZ = 1, scaleX = 1) {
@@ -20,9 +24,25 @@ function lathe(points, m, parent, pos, scaleZ = 1, scaleX = 1) {
 // mão com dedos (palma pra baixo, dedos apontando pra -Y local do antebraço)
 function hand(parent, skin, side) {
   const h = new THREE.Group(); parent.add(h);
-  mesh(rbox(0.07, 0.13, 0.03, 0.013, 2), skin, h, [0, -0.06, 0]);
-  const th = mesh(new THREE.CapsuleGeometry(0.0095, 0.032, 4, 8), skin, h, [side * 0.036, -0.045, 0.012]); th.rotation.set(0.3, 0, side * 0.7);
-  [-0.024, -0.008, 0.008, 0.024].forEach((x, i) => { const f = mesh(new THREE.CapsuleGeometry(0.0072, 0.045 - Math.abs(i - 1.5) * 0.006, 2, 6), skin, h, [x, -0.14, 0.004], [0.18, 0, 0]); });
+  // palma esculpida (mais larga nos nós dos dedos, fina no punho)
+  const pg = new THREE.SphereGeometry(1, 18, 14), pp = pg.attributes.position;
+  for (let i = 0; i < pp.count; i++) { const x = pp.getX(i), y = pp.getY(i), z = pp.getZ(i), t = (1 - y) / 2; pp.setXYZ(i, x * (0.03 + 0.008 * t), y * 0.05, z * (0.014 + 0.003 * (1 - Math.abs(x))) + (z > 0 ? 0.002 * t : 0)); }
+  pg.computeVertexNormals(); mesh(pg, skin, h, [0, -0.05, 0], null, false);
+  // dedos: duas falanges, levemente dobrados
+  const L = [0.044, 0.05, 0.047, 0.038];
+  [-0.021, -0.007, 0.007, 0.021].forEach((x, i) => {
+    const r = 0.0074 - Math.abs(i - 1.5) * 0.0004, l1 = L[i] * 0.55, l2 = L[i] * 0.45;
+    const f = new THREE.Group(); f.position.set(x * 1.05, -0.096, 0.002); f.rotation.set(0.22, 0, (i - 1.5) * -0.04); h.add(f);
+    mesh(new THREE.CapsuleGeometry(r, l1, 3, 8), skin, f, [0, -l1 / 2, 0], null, false);
+    const f2 = new THREE.Group(); f2.position.y = -l1; f2.rotation.x = 0.32; f.add(f2);
+    mesh(new THREE.CapsuleGeometry(r * 0.92, l2, 3, 8), skin, f2, [0, -l2 / 2, 0], null, false);
+    mesh(new THREE.SphereGeometry(r * 0.85, 8, 6), skin, f2, [0, -l2 - r * 0.2, -r * 0.35], null, false).scale.set(1, 0.5, 0.25); // unha
+  });
+  // polegar
+  const th = new THREE.Group(); th.position.set(side * 0.03, -0.028, 0.008); th.rotation.set(0.35, 0, side * 0.75); h.add(th);
+  mesh(new THREE.CapsuleGeometry(0.0095, 0.022, 3, 8), skin, th, [0, -0.012, 0], null, false);
+  const th2 = new THREE.Group(); th2.position.y = -0.026; th2.rotation.x = 0.3; th.add(th2);
+  mesh(new THREE.CapsuleGeometry(0.0085, 0.018, 3, 8), skin, th2, [0, -0.01, 0], null, false);
   return h;
 }
 
@@ -46,10 +66,10 @@ export function buildPerson(d) {
   // pernas
   [-1, 1].forEach(s => {
     const hip = new THREE.Bone(); hip.position.set(s * (W ? 0.088 : 0.098), 0, 0); pelvis.add(hip);
-    limb(0.45, W ? 0.082 : 0.088, W ? 0.06 : 0.066, pants, hip);
-    const knee = new THREE.Bone(); knee.position.y = -0.45; hip.add(knee);
-    limb(0.44, W ? 0.06 : 0.066, 0.046, pants, knee);
-    const ankle = new THREE.Bone(); ankle.position.y = -0.44; knee.add(ankle);
+    limb(0.45, W ? 0.088 : 0.096, W ? 0.064 : 0.07, pants, hip, 0.06);
+    const knee = new THREE.Bone(); knee.position.y = -0.45; knee.userData.joint = true; hip.add(knee);
+    limb(0.44, W ? 0.064 : 0.07, W ? 0.05 : 0.06, pants, knee, 0.02);
+    const ankle = new THREE.Bone(); ankle.position.y = -0.44; ankle.userData.joint = true; knee.add(ankle);
     mesh(cyl(0.042, 0.042, 0.05, 12), M.sock, ankle, [0, 0.01, 0]);
     const shoe = mesh(new THREE.CapsuleGeometry(0.046, 0.17, 6, 14), M.shoe, ankle, [0, -0.03, 0.07], [Math.PI / 2, 0, 0]); shoe.scale.set(W ? 0.85 : 1, 1, 0.62);
     mesh(rbox(W ? 0.075 : 0.088, 0.014, 0.25, 0.006), mat(0x16100c, { roughness: 0.7 }), ankle, [0, -0.058, 0.07], null, false);
@@ -102,23 +122,24 @@ export function buildPerson(d) {
   // braços
   [-1, 1].forEach(s => {
     const sh = new THREE.Bone(); sh.position.set(s * (W ? 0.165 : 0.188), 0.455, -0.008); torso.add(sh);
-    limb(0.29, W ? 0.046 : 0.052, W ? 0.04 : 0.045, suit, sh);
-    const el = new THREE.Bone(); el.position.y = -0.29; sh.add(el);
-    limb(0.27, W ? 0.04 : 0.045, W ? 0.034 : 0.038, suit, el);
+    limb(0.29, W ? 0.05 : 0.057, W ? 0.042 : 0.047, suit, sh, 0.1);
+    const el = new THREE.Bone(); el.position.y = -0.29; el.userData.joint = true; sh.add(el);
+    limb(0.27, W ? 0.043 : 0.048, W ? 0.037 : 0.042, suit, el, 0.05);
     mesh(cyl(0.036, 0.036, 0.03, 14), shirtM, el, [0, -0.265, 0], null, false);
     if (s === 1) mesh(cyl(0.03, 0.03, 0.016, 18), M.gold, el, [0, -0.25, 0.012], [Math.PI / 2, 0, 0], false);
-    const wr = new THREE.Bone(); wr.position.y = -0.28; el.add(wr);
+    const wr = new THREE.Bone(); wr.position.y = -0.28; wr.userData.joint = true; el.add(wr);
     hand(wr, skin, -s);
     P.sh.push(sh); P.el.push(el); P.wr.push(wr);
   });
 
   // cabeça: uma esfera esculpida (mandíbula, maçãs, olhos fundos, arco da sobrancelha)
   const head = new THREE.Bone(); head.position.set(0, W ? 0.712 : 0.72, 0.016); torso.add(head); P.head = head;
-  mesh(headGeo(W), skin, head, [0, 0, 0]);
-  const Z = (x, y) => zAt(x, y, W);
+  const F = makeFace(d);
+  mesh(headGeo(F), skin, head, [0, 0, 0]);
+  const Z = (x, y) => zAt(x, y, F);
   const darker = (hex, k) => new THREE.Color(hex).multiplyScalar(k).getHex();
   // nariz: ponte, ponta e asas
-  mesh(noseGeo(W), skin, head, [0, 0, 0], null, false);
+  mesh(noseGeo(F), skin, head, [0, 0, 0], null, false);
   // olhos encaixados, pálpebra que pisca e linha de cílios
   const eyes = new THREE.Group(); head.add(eyes); P.eyes = [];
   const lashM = mat(darker(d.cabelo, 0.55), { roughness: 0.8 }); lashM.userData.k = 3;
@@ -160,13 +181,13 @@ export function buildPerson(d) {
 
   // cabelo: casca que segue a cabeça
   const st = d.estilo, seed = (d.idade || 3) * 1.37;
-  mesh(hairGeo(st, W, seed), st === 'raspado' ? mat(new THREE.Color(d.cabelo).lerp(new THREE.Color(skinHex), 0.45).getHex(), { roughness: 0.9 }) : hairM, head, [0, 0, 0]);
+  mesh(hairGeo(st, F, seed), st === 'raspado' ? mat(new THREE.Color(d.cabelo).lerp(new THREE.Color(skinHex), 0.45).getHex(), { roughness: 0.9 }) : hairM, head, [0, 0, 0]);
   if (st === 'longo') {
     const back = mesh(new THREE.CapsuleGeometry(0.075, 0.2, 6, 16), hairM, head, [0, -0.16, -0.058]); back.scale.set(1.25, 1, 0.5);
     [-1, 1].forEach(s => { const lk = mesh(new THREE.CapsuleGeometry(0.022, 0.18, 4, 10), hairM, head, [s * 0.078, -0.13, 0.012]); lk.rotation.z = s * 0.06; });
   }
   if (st === 'coque') mesh(new THREE.SphereGeometry(0.046, 18, 14), hairM, head, [0, 0.075, -0.098]);
-  if (d.barba) mesh(beardGeo(W, true, seed), phys(d.barbaCor || d.cabelo, { roughness: 0.95 }), head, [0, 0, 0]).material.userData.k = 3;
+  if (d.barba) mesh(beardGeo(F, true, seed), phys(d.barbaCor || d.cabelo, { roughness: 0.95 }), head, [0, 0, 0]).material.userData.k = 3;
   if (d.oculos) { const gm = phys(0x1a1a1a, { roughness: 0.3, clearcoat: 1 }), lz = Z(0.031, 0.011) + 0.012;
     [-1, 1].forEach(s => { mesh(new THREE.TorusGeometry(0.019, 0.0024, 8, 24), gm, head, [s * 0.031, 0.011, lz], null, false); mesh(cyl(0.0019, 0.0019, 0.085, 6), gm, head, [s * 0.069, 0.014, lz - 0.042], [Math.PI / 2, 0, 0], false); });
     mesh(cyl(0.0019, 0.0019, 0.024, 6), gm, head, [0, 0.014, lz + 0.001], [0, 0, Math.PI / 2], false); }

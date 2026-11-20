@@ -203,6 +203,17 @@ export function bakeSkinned(root) {
     g.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv, o.matrixWorld));
     const tint = g.attributes.tint; if (tint) g.deleteAttribute('tint');
     const cnt = g.attributes.position.count, cols = new Float32Array(cnt * 3), si = new Uint16Array(cnt * 4), sw = new Float32Array(cnt * 4), bi = idx.get(b);
+    // articulação macia: perto do joelho/cotovelo/punho/tornozelo o vértice segue os dois ossos (sem "bola" aparecendo)
+    const loc = o.geometry.index ? o.geometry.toNonIndexed().attributes.position : o.geometry.attributes.position;
+    const toB = new THREE.Matrix4().copy(b.matrixWorld).invert().multiply(o.matrixWorld), lp = new THREE.Vector3();
+    const own = b.userData.joint && b.parent && b.parent.isBone ? idx.get(b.parent) : -1;
+    const kid = b.children.find(c => c.isBone && c.userData.joint);
+    const blendW = new Float32Array(cnt), blendI = new Int32Array(cnt).fill(-1), BL = 0.085;
+    for (let i = 0; i < cnt; i++) {
+      lp.fromBufferAttribute(loc, i).applyMatrix4(toB);
+      if (own >= 0 && lp.y > -BL) { blendI[i] = own; blendW[i] = lp.y > 0 ? 0.5 + 0.5 * Math.min(1, lp.y / BL) : 0.5 * (1 + lp.y / BL); }
+      if (kid) { const dd = lp.y - kid.position.y; if (dd < BL) { const w = dd < 0 ? 0.5 + 0.5 * Math.min(1, -dd / BL) : 0.5 * (1 - dd / BL); if (w > blendW[i]) { blendW[i] = w; blendI[i] = idx.get(kid); } } }
+    }
     const c = m.color.clone(); if (m.metalness >= 0.5) c.multiplyScalar(0.85);
     if ((m.userData.k || 0) === 1) { c.r *= 0.95; c.g *= 0.87; c.b *= 0.8; } // pele um pouco mais quente e menos estourada
     const rm = new Float32Array(cnt * 3), kind = m.userData.k || 0, nrm = g.attributes.normal, pos = g.attributes.position;
@@ -211,6 +222,7 @@ export function bakeSkinned(root) {
       const ao = 0.8 + 0.2 * (nrm.getY(i) * 0.5 + 0.5), lo = 0.88 + 0.12 * Math.min(1, Math.max(0, (pos.getY(i) + 1.0) / 1.9));
       const tr = tint ? tint.getX(i) : 1, tg = tint ? tint.getY(i) : 1, tb = tint ? tint.getZ(i) : 1;
       cols[i * 3] = c.r * ao * lo * tr; cols[i * 3 + 1] = c.g * ao * lo * tg; cols[i * 3 + 2] = c.b * ao * lo * tb; si[i * 4] = bi; sw[i * 4] = 1;
+      if (blendI[i] >= 0 && blendW[i] > 0.001) { const w = Math.min(0.95, blendW[i]); si[i * 4 + 1] = blendI[i]; sw[i * 4] = 1 - w; sw[i * 4 + 1] = w; }
       rm[i * 3] = m.roughness; rm[i * 3 + 1] = m.metalness; rm[i * 3 + 2] = kind;
     }
     g.setAttribute('color', new THREE.BufferAttribute(cols, 3)); g.setAttribute('aRM', new THREE.BufferAttribute(rm, 3)); g.setAttribute('skinIndex', new THREE.Uint16BufferAttribute(si, 4)); g.setAttribute('skinWeight', new THREE.Float32BufferAttribute(sw, 4));

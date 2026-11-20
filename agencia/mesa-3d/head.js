@@ -29,14 +29,22 @@ export function subdivide(geo, n) {
 }
 
 // ---------- cabeça: uma esfera só, esculpida (sem bolinhas coladas) ----------
-export function headDims(W) { return W ? { rx: 0.075, ry: 0.108, rz: 0.096, jaw: 0.62 } : { rx: 0.081, ry: 0.112, rz: 0.1, jaw: 0.72 }; }
+// rosto de cada um: largura, mandíbula, queixo, maçãs, nariz e idade (rugas) variam por pessoa
+export const face = W => (W && typeof W === 'object') ? W : { W: !!W, id: W ? 'w' : 'm', wide: 1, jawK: 1, chinK: 1, cheekK: 1, browK: 1, noseL: 1, noseW: 1, age: 35 };
+export function makeFace(d) {
+  let s = 0; for (const ch of String(d.id || d.nome || 'x')) s = (s * 31 + ch.charCodeAt(0)) % 100003;
+  const r = () => { s = (s * 16807) % 2147483647; return (s % 10000) / 10000; };
+  const W = !!d.mulher;
+  return { W, id: (d.id || d.nome) + '', wide: 0.96 + r() * 0.08, jawK: (W ? 0.95 : 0.92) + r() * 0.18, chinK: 0.7 + r() * 0.7, cheekK: 0.7 + r() * 0.7, browK: W ? 0.6 : 0.8 + r() * 0.6, noseL: 0.9 + r() * 0.22, noseW: 0.88 + r() * 0.28, age: d.idade || 40 };
+}
+export function headDims(W) { const F = face(W), k = F.wide; return F.W ? { rx: 0.075 * k, ry: 0.108, rz: 0.096, jaw: 0.62 * F.jawK } : { rx: 0.081 * k, ry: 0.112, rz: 0.1, jaw: 0.72 * F.jawK }; }
 // ponto da superfície da cabeça na direção u (unitário)
 export function headPoint(u, W) {
-  const D = headDims(W);
+  const F = face(W), D = headDims(F);
   let x = u.x * D.rx, y = u.y * D.ry, z = u.z * D.rz;
   const low = sstep(0.0, 1.0, -u.y);                       // metade de baixo
   x *= mix(1, D.jaw, Math.pow(low, 1.35));                 // mandíbula afinando até o queixo
-  if (u.y < -0.2 && u.z > 0) z += 0.012 * sstep(0.55, 0.95, -u.y) * u.z;          // queixo pra frente
+  if (u.y < -0.2 && u.z > 0) z += 0.012 * F.chinK * sstep(0.55, 0.95, -u.y) * u.z;          // queixo pra frente
   if (u.z < 0) z *= mix(1.06, 0.78, sstep(-0.1, -0.85, u.y));                       // nuca arredondada, pescoço recolhido
   if (u.z > 0 && u.y > 0.25) z *= mix(1, 0.94, sstep(0.25, 0.9, u.y));              // testa
   x *= 1 - 0.035 * (1 - Math.abs(u.y));                                              // laterais achatadas
@@ -44,16 +52,16 @@ export function headPoint(u, W) {
   // olhos afundados
   for (const s of [-1, 1]) {
     const d = Math.hypot(x - s * 0.031, (y - 0.012) * 1.3); if (z > 0 && d < 0.03) p.z -= 0.0075 * Math.pow(1 - d / 0.03, 2);
-    const c = Math.hypot(x - s * 0.047, (y + 0.02) * 1.2); if (z > 0 && c < 0.03) p.z += 0.004 * Math.pow(1 - c / 0.03, 2); // maçã do rosto
+    const c = Math.hypot(x - s * 0.047, (y + 0.02) * 1.2); if (z > 0 && c < 0.03) p.z += 0.004 * F.cheekK * Math.pow(1 - c / 0.03, 2); // maçã do rosto
   }
-  if (z > 0 && Math.abs(x) < 0.058) p.z += 0.0045 * sstep(0.022, 0.035, y) * (1 - sstep(0.042, 0.06, y)) * (1 - Math.abs(x) / 0.058); // arco da sobrancelha
+  if (z > 0 && Math.abs(x) < 0.058) p.z += 0.0045 * F.browK * sstep(0.022, 0.035, y) * (1 - sstep(0.042, 0.06, y)) * (1 - Math.abs(x) / 0.058); // arco da sobrancelha
   if (z > 0 && Math.abs(x) < 0.03 && y < -0.035 && y > -0.075) p.z += 0.003 * (1 - Math.abs(x) / 0.03); // boca levemente saltada
   return p;
 }
 const ZC = new Map();
 export function zAt(x, y, W) { // profundidade da frente do rosto em (x,y)
   let best = 1e9, bz = 0;
-  const key = (W ? 'w' : 'm') + x.toFixed(3) + y.toFixed(3); if (ZC.has(key)) return ZC.get(key);
+  const key = face(W).id + x.toFixed(3) + y.toFixed(3); if (ZC.has(key)) return ZC.get(key);
   for (let a = -1; a <= 1; a += 0.02) for (let b = -1; b <= 1; b += 0.02) {
     const zz = 1 - a * a - b * b; if (zz <= 0) continue;
     const p = headPoint(new THREE.Vector3(a, b, Math.sqrt(zz)), W); const d = (p.x - x) ** 2 + (p.y - y) ** 2; if (d < best) { best = d; bz = p.z; }
@@ -61,15 +69,27 @@ export function zAt(x, y, W) { // profundidade da frente do rosto em (x,y)
   ZC.set(key, bz); return bz;
 }
 export function headGeo(W) {
-  const g = new THREE.SphereGeometry(1, 40, 30), pos = g.attributes.position, u = new THREE.Vector3();
+  const F = face(W), Wb = F.W, age = sstep(30, 70, F.age);
+  const g = new THREE.SphereGeometry(1, 48, 36), pos = g.attributes.position, u = new THREE.Vector3();
   const tint = new Float32Array(pos.count * 3);
   for (let i = 0; i < pos.count; i++) {
     u.fromBufferAttribute(pos, i).normalize(); const p = headPoint(u, W); pos.setXYZ(i, p.x, p.y, p.z);
     // cor: bochecha mais quente, olheira sutil, embaixo do queixo mais escuro
     let r = 1, gg = 1, b = 1;
-    for (const s of [-1, 1]) { const c = Math.hypot(p.x - s * 0.046, (p.y + 0.028) * 1.1); if (p.z > 0 && c < 0.035) { const k = (1 - c / 0.035) ** 2 * (W ? 0.9 : 0.55); r += 0.05 * k; gg -= 0.05 * k; b -= 0.05 * k; }
+    for (const s of [-1, 1]) { const c = Math.hypot(p.x - s * 0.046, (p.y + 0.028) * 1.1); if (p.z > 0 && c < 0.035) { const k = (1 - c / 0.035) ** 2 * (Wb ? 0.9 : 0.55); r += 0.05 * k; gg -= 0.05 * k; b -= 0.05 * k; }
       const e = Math.hypot(p.x - s * 0.031, p.y - 0.004); if (p.z > 0 && e < 0.024) { const k = (1 - e / 0.024) ** 2; r -= 0.06 * k; gg -= 0.07 * k; b -= 0.05 * k; } }
     const under = sstep(-0.3, -0.85, u.y) * (u.z < 0.5 ? 1 : 0.4); r -= 0.08 * under; gg -= 0.09 * under; b -= 0.08 * under;
+    if (p.z > 0) { // marcas de expressão: sulco nariz-boca, testa e pés de galinha crescem com a idade
+      let w = 0;
+      for (const s of [-1, 1]) {
+        const yy = p.y, xx = s * p.x; // sulco: curva que desce da asa do nariz até o canto da boca
+        if (yy < -0.02 && yy > -0.075) { const cx = 0.019 + (-0.02 - yy) * 0.28; const dd = Math.abs(xx - cx); w += (1 - sstep(0.0, 0.004, dd)) * (0.35 + 0.65 * age) * 0.9; }
+        const ce = Math.hypot(xx - 0.06, p.y - 0.008); if (ce < 0.016 && xx > 0.052) w += age * 0.5 * (0.5 + 0.5 * Math.sin(Math.atan2(p.y - 0.008, xx - 0.06) * 7)) * (1 - ce / 0.016);
+      }
+      if (p.y > 0.05 && p.y < 0.085 && Math.abs(p.x) < 0.045) w += age * 0.55 * (0.5 + 0.5 * Math.cos((p.y - 0.05) / 0.012 * Math.PI * 2)) * (1 - Math.abs(p.x) / 0.045);
+      const bag = Math.hypot(p.x - Math.sign(p.x) * 0.031, (p.y + 0.012) * 1.8); if (bag < 0.016) w += age * 0.45 * (1 - bag / 0.016);
+      const dk = Math.min(0.22, w * 0.12); r -= dk * 0.9; gg -= dk * 1.05; b -= dk;
+    }
     tint[i * 3] = r; tint[i * 3 + 1] = gg; tint[i * 3 + 2] = b;
   }
   g.setAttribute('tint', new THREE.BufferAttribute(tint, 3));
@@ -144,10 +164,10 @@ export function beardGeo(W, full = true, seed = 3) {
 
 // ---------- tronco do paletó: anéis em superelipse (ombro quadrado de alfaiataria) ----------
 const SECT_M = [ // y, meia-largura, meia-profundidade, deslocamento z, expoente
-  [0.0, 0.165, 0.104, 0.0, 2.3], [0.1, 0.158, 0.099, 0.004, 2.3], [0.2, 0.156, 0.103, 0.01, 2.4], [0.3, 0.172, 0.112, 0.012, 2.5],
+  [-0.13, 0.178, 0.112, -0.004, 2.4], [-0.06, 0.172, 0.108, -0.002, 2.35], [0.0, 0.165, 0.104, 0.0, 2.3], [0.1, 0.158, 0.099, 0.004, 2.3], [0.2, 0.156, 0.103, 0.01, 2.4], [0.3, 0.172, 0.112, 0.012, 2.5],
   [0.4, 0.192, 0.114, 0.006, 2.7], [0.455, 0.206, 0.106, -0.002, 3.1], [0.505, 0.192, 0.092, -0.008, 3.0], [0.545, 0.13, 0.074, -0.004, 2.6], [0.585, 0.072, 0.062, 0.004, 2.2], [0.6, 0.04, 0.04, 0.004, 2]];
 const SECT_W = [
-  [0.0, 0.16, 0.1, 0.0, 2.3], [0.1, 0.145, 0.094, 0.004, 2.3], [0.19, 0.132, 0.09, 0.008, 2.3], [0.3, 0.152, 0.116, 0.018, 2.4],
+  [-0.12, 0.172, 0.108, -0.004, 2.4], [-0.06, 0.166, 0.104, -0.002, 2.35], [0.0, 0.16, 0.1, 0.0, 2.3], [0.1, 0.145, 0.094, 0.004, 2.3], [0.19, 0.132, 0.09, 0.008, 2.3], [0.3, 0.152, 0.116, 0.018, 2.4],
   [0.4, 0.168, 0.11, 0.01, 2.6], [0.45, 0.176, 0.098, 0.0, 2.9], [0.5, 0.165, 0.086, -0.006, 2.8], [0.54, 0.115, 0.07, -0.003, 2.5], [0.575, 0.065, 0.058, 0.004, 2.2], [0.59, 0.035, 0.035, 0.004, 2]];
 export const sections = W => (W ? SECT_W : SECT_M);
 function sectAt(W, y) { const S = sections(W); for (let i = 1; i < S.length; i++) if (y <= S[i][0]) { const a = S[i - 1], b = S[i], t = (y - a[0]) / (b[0] - a[0]); return a.map((v, k) => mix(v, b[k], t)); } return S[S.length - 1]; }
@@ -183,13 +203,14 @@ export function onChest(shape, W, off, sub = 3) {
 
 // nariz numa peça só: ponte fina que alarga até a ponta e as asas, encaixado no rosto
 export function noseGeo(W) {
+  const F = face(W);
   const tab = []; for (let k = 0; k <= 40; k++) { const y = 0.02 - k * 0.002; tab.push(zAt(0, y, W)); }
   const zf = y => { const f = (0.02 - y) / 0.002, i = Math.max(0, Math.min(39, Math.floor(f))), t = Math.min(1, Math.max(0, f - i)); return mix(tab[i], tab[i + 1], t); };
   const g = new THREE.SphereGeometry(1, 24, 20), pos = g.attributes.position, tint = new Float32Array(pos.count * 3);
-  const S = W ? 0.88 : 1;
+  const S = (F.W ? 0.88 : 1) * F.noseW, L = F.noseL;
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i), y = pos.getY(i), z = pos.getZ(i), t = (1 - y) / 2;
-    const Y = 0.016 - 0.05 * t;
+    const Y = 0.016 - 0.05 * L * t;
     let w = mix(0.0042, 0.0125, Math.pow(t, 1.6)) * S + 0.0042 * S * Math.exp(-Math.pow((t - 0.86) / 0.07, 2)) * Math.max(0, -z + 0.4);
     const d = z > 0 ? mix(0.003, 0.0175, Math.pow(t, 1.35)) * S * (t > 0.9 ? mix(1, 0.55, (t - 0.9) / 0.1) : 1) : 0.004;
     const X = x * w, Z = zf(Y) - 0.0025 + z * d;
