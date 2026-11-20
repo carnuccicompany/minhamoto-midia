@@ -85,3 +85,13 @@ Claude revisa item a item com o Léo ANTES de disparar a build. Nada sobe sem is
 - [ ] Mudança estética revisada (prints de todas as telas) — padrão de zero erro
 - [ ] Número de versão/build incrementado nos dois apps
 - [ ] Depois de publicada: instalar pelo OneLink com UTM de teste e conferir instalação + assinatura atribuídas no AppsFlyer, RevenueCat e UTMify
+
+
+## Conectar tudo aos agentes (pedido do Léo, 20/11/2026)
+O Léo quer que os agentes tenham acesso a tudo, não só ao repositório. Hoje eles têm: repo, internet, Gmail, Drive e Claude Docs. Falta ligar, de preferência por conector oficial (leitura primeiro):
+- [ ] RevenueCat (assinantes e receita): destrava a meta e a autópsia do funil
+- [ ] AppsFlyer (instalações e origem)
+- [ ] Meta Ads e TikTok Ads (campanhas; agentes só leem e propõem, nada de gastar sem OK)
+- [ ] App Store Connect e Google Play Console (loja, avaliações, conversão da página)
+- [ ] UTMify (faturamento)
+- [ ] O que não tiver conector: tarefa presa ao computador do Léo usando o Chrome dele, só leitura
