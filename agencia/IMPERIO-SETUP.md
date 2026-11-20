@@ -14,7 +14,7 @@ Para o Léo, este é o projeto mais importante: o começo de um império, com a 
 ## Conexões (ver agencia/CONEXOES.md)
 - [ ] TikTok for Business (conector oficial): ligar no claude.ai
 - [ ] Meta Ads + Instagram
-- [ ] RevenueCat: chave v2 só leitura no GitHub Secret (destrava meta, boletim com número e autópsia)
+- [x] RevenueCat ligado (20/11) no carnucci-dados: 10 gráficos + visão geral, 4x por dia
 - [ ] AppsFlyer: token da Pull API
 - [ ] App Store Connect: chave nova só de dados (não mexer na "Codemagic MinhaMoto")
 - [ ] Google Play Console: conta de serviço só de relatórios
