@@ -144,21 +144,57 @@ export function chair(plateTexture) {
   return c;
 }
 // trono do Léo e do Davi
+// trono dos sócios: couro preto capitonê, abas laterais, coroa de ouro, base em degrau de mármore com friso de luz
+const tuftTex = tex(512, 512, (g, w, h) => {
+  g.fillStyle = '#121010'; g.fillRect(0, 0, w, h);
+  const n = 4, dx = w / n, dy = h / n;
+  for (let i = -1; i <= n; i++) for (let j = -1; j <= n; j++) {
+    const cx = (i + (j % 2 ? 0.5 : 0)) * dx, cy = j * dy;
+    const gr = g.createRadialGradient(cx, cy + dy / 2, 2, cx, cy + dy / 2, dx * 0.62); gr.addColorStop(0, '#2c2826'); gr.addColorStop(0.7, '#161313'); gr.addColorStop(1, '#070606'); g.fillStyle = gr;
+    g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + dx / 2, cy + dy / 2); g.lineTo(cx, cy + dy); g.lineTo(cx - dx / 2, cy + dy / 2); g.closePath(); g.fill();
+  }
+  g.strokeStyle = 'rgba(0,0,0,.9)'; g.lineWidth = 3;
+  for (let i = -n; i <= 2 * n; i++) { g.beginPath(); g.moveTo(i * dx / 2 * 2 - w, 0); g.lineTo(i * dx / 2 * 2, h); g.stroke(); g.beginPath(); g.moveTo(i * dx, 0); g.lineTo(i * dx - w, h); g.stroke(); }
+  for (let i = -1; i <= n; i++) for (let j = 0; j <= n; j++) { const cx = (i + (j % 2 ? 0.5 : 0)) * dx, cy = j * dy; const gb = g.createRadialGradient(cx - 2, cy - 2, 0, cx, cy, 7); gb.addColorStop(0, '#f6dfa0'); gb.addColorStop(1, '#6b4a18'); g.fillStyle = gb; g.beginPath(); g.arc(cx, cy, 6, 0, 7); g.fill(); }
+}, [1, 1]);
 export function throne(plateTexture) {
   const c = new THREE.Group();
-  const cream = mat(0x0f0c0a, { roughness: 0.35 });
-  mesh(rbox(0.82, 0.16, 0.72, 0.06, 4), cream, c, [0, 0.47, 0]);
-  const back = new THREE.Group(); back.position.set(0, 0.55, -0.36); back.rotation.x = -0.08; c.add(back);
-  mesh(rbox(0.86, 1.3, 0.14, 0.06, 4), cream, back, [0, 0.65, 0]);
-  for (let i = 0; i < 6; i++) for (let j = 0; j < 4; j++) mesh(sph(0.012, 8, 6), M.gold, back, [-0.27 + j * 0.18, 0.15 + i * 0.2, 0.072], null, false);
-  mesh(new THREE.TorusGeometry(0.44, 0.02, 10, 40, Math.PI), M.gold, back, [0, 1.28, 0], null, false);
-  mesh(rbox(0.9, 0.05, 0.16, 0.02), M.gold, back, [0, 1.3, 0]);
+  const leather = new THREE.MeshPhysicalMaterial({ map: tuftTex, roughness: 0.42, clearcoat: 0.5, clearcoatRoughness: 0.35, sheen: 0.4, sheenColor: new THREE.Color(0x3a3030) });
+  const plain = mat(0x0f0c0a, { roughness: 0.35 });
+  // base em degrau
+  const bm = phys(0x0c0c0c, { roughness: 0.12, clearcoat: 1 });
+  mesh(rbox(1.35, 0.08, 1.25, 0.02), bm, c, [0, 0.04, -0.05]); mesh(rbox(1.39, 0.012, 1.29, 0.004), M.gold, c, [0, 0.084, -0.05], null, false);
+  mesh(rbox(1.12, 0.07, 1.02, 0.02), bm, c, [0, 0.125, -0.08]); mesh(rbox(1.16, 0.012, 1.06, 0.004), M.gold, c, [0, 0.165, -0.08], null, false);
+  mesh(box(1.3, 0.008, 0.008), new THREE.MeshBasicMaterial({ color: 0xffd9a0, toneMapped: false }), c, [0, 0.02, 0.58], null, false);
+  // pés de ouro
+  [[-0.38, 0.25], [0.38, 0.25], [-0.38, -0.3], [0.38, -0.3]].forEach(([x, z]) => { mesh(cyl(0.03, 0.045, 0.2, 14), M.gold, c, [x, 0.26, z]); mesh(sph(0.05, 14, 10), M.gold, c, [x, 0.19, z]); });
+  // assento capitonê
+  const seat = mesh(rbox(0.9, 0.18, 0.78, 0.07, 4), leather, c, [0, 0.45, 0]);
+  mesh(rbox(0.92, 0.05, 0.8, 0.02), M.goldDim, c, [0, 0.355, 0]);
+  // encosto alto com abas
+  const back = new THREE.Group(); back.position.set(0, 0.55, -0.38); back.rotation.x = -0.08; c.add(back);
+  mesh(rbox(0.92, 1.55, 0.16, 0.07, 4), leather, back, [0, 0.78, 0]);
+  [-1, 1].forEach(s => { const wg = mesh(rbox(0.16, 1.05, 0.42, 0.06, 4), leather, back, [s * 0.5, 0.62, 0.17]); wg.rotation.y = s * -0.35; mesh(box(0.012, 1.05, 0.012), M.gold, wg, [s * 0.075, 0, 0.2], null, false); });
+  // moldura de ouro em volta do encosto e coroa no topo
+  mesh(new THREE.TorusGeometry(0.47, 0.022, 10, 48, Math.PI), M.gold, back, [0, 1.48, 0.02], null, false);
+  [-1, 1].forEach(s => mesh(cyl(0.02, 0.02, 1.0, 10), M.gold, back, [s * 0.47, 0.98, 0.02], null, false));
+  const crown = new THREE.Group(); crown.position.set(0, 1.98, 0.02); back.add(crown);
+  mesh(cyl(0.11, 0.12, 0.08, 24, 1, true), M.gold, crown, [0, 0, 0]);
+  for (let i = 0; i < 5; i++) { const a = (i / 5) * Math.PI * 2; mesh(new THREE.ConeGeometry(0.025, 0.09, 10), M.gold, crown, [Math.cos(a) * 0.11, 0.08, Math.sin(a) * 0.11]); mesh(sph(0.016, 10, 8), M.gold, crown, [Math.cos(a) * 0.11, 0.13, Math.sin(a) * 0.11]); }
+  mesh(sph(0.03, 12, 10), new THREE.MeshStandardMaterial({ color: 0x8a1020, roughness: 0.1, metalness: 0.2 }), crown, [0, 0.03, 0.12]);
   if (plateTexture) {
-    mesh(rbox(0.6, 0.18, 0.014, 0.005), M.gold, back, [0, 1.05, -0.075], null, false);
-    mesh(new THREE.PlaneGeometry(0.58, 0.16), new THREE.MeshBasicMaterial({ map: plateTexture }), back, [0, 1.05, -0.083], [0, Math.PI, 0], false);
+    mesh(rbox(0.6, 0.18, 0.014, 0.005), M.gold, back, [0, 1.15, -0.085], null, false);
+    mesh(new THREE.PlaneGeometry(0.58, 0.16), new THREE.MeshBasicMaterial({ map: plateTexture }), back, [0, 1.15, -0.093], [0, Math.PI, 0], false);
   }
-  [-1, 1].forEach(s => { mesh(rbox(0.12, 0.34, 0.7, 0.05, 4), cream, c, [s * 0.45, 0.62, 0]); mesh(rbox(0.13, 0.03, 0.72, 0.01), M.gold, c, [s * 0.45, 0.8, 0]); });
-  mesh(rbox(0.86, 0.36, 0.74, 0.04), M.goldDim, c, [0, 0.2, 0]);
+  // braços de couro com volutas de ouro
+  [-1, 1].forEach(s => {
+    mesh(rbox(0.13, 0.12, 0.72, 0.05, 4), leather, c, [s * 0.47, 0.76, 0.0]);
+    mesh(rbox(0.1, 0.26, 0.1, 0.03, 4), plain, c, [s * 0.47, 0.6, 0.28]);
+    mesh(new THREE.TorusGeometry(0.06, 0.016, 10, 24, Math.PI * 1.5), M.gold, c, [s * 0.47, 0.76, 0.37], [0, Math.PI / 2, 0], false);
+    mesh(rbox(0.14, 0.02, 0.74, 0.008), M.gold, c, [s * 0.47, 0.83, 0], null, false);
+  });
+  // manta de pele dobrada no braço
+  mesh(rbox(0.3, 0.06, 0.5, 0.025, 3), phys(0x2a2420, { roughness: 1, sheen: 1, sheenColor: new THREE.Color(0x8a7a6a) }), c, [-0.47, 0.86, -0.02], [0, 0, 0.15]);
   return c;
 }
 

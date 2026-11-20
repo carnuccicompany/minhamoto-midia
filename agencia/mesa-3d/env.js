@@ -6,12 +6,14 @@ export const BATH = { x0: 8.6, x1: 12, z0: 3, z1: 9, door: [5.3, 6.5] };
 export const TABLE_R = 2.75, TOP_Y = 0.76;
 
 // pontos de destino das rotinas (x, z, direção pra onde olha)
+export const PIT = { x: 8.3, z: 0.7, R: 2.1, D: 0.5 };
 export const SPOTS = {
+  pokerTop: new THREE.Vector3(8.3 - 2.55, 0, 0.7),
   banheiroPorta: new THREE.Vector3(7.9, 0, 5.9),
   banheiro: new THREE.Vector3(10.3, 0, 6.4),
-  uisque: new THREE.Vector3(-10.75, 0, 2.7),
-  agua: new THREE.Vector3(-7.4, 0, 7.25),
-  cafe: new THREE.Vector3(-10.8, 0, 7.25),
+  uisque: new THREE.Vector3(-4.3, 0, 7.9),
+  agua: new THREE.Vector3(-7.4, 0, 6.85),
+  cafe: new THREE.Vector3(-10.4, 0, 6.85),
   janelaN1: new THREE.Vector3(3.6, 0, -8.15),
   janelaN2: new THREE.Vector3(-2.6, 0, -8.15),
   janelaL: new THREE.Vector3(11.1, 0, -3.8),
@@ -140,7 +142,11 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
 
   // ---------- chão, paredes, vidro ----------
   const floorT = marbleTex('#ddd7cd', 'rgba(96,90,82,A)', 34, 1024, [5, 4]);
-  const floor = mesh(new THREE.PlaneGeometry(24, 18), phys(0xffffff, { map: floorT, roughness: 0.22, clearcoat: 0.6, clearcoatRoughness: 0.25 }), scene, [0, 0, 0], [-Math.PI / 2, 0, 0], false);
+  // chão com o buraco do fosso de pôquer (plano em XY, depois deitado; o buraco fica em (PIT.x, -PIT.z) no plano)
+  const holed = (W, H, cx, cy) => { const sh = new THREE.Shape(); sh.moveTo(-W / 2, -H / 2); sh.lineTo(W / 2, -H / 2); sh.lineTo(W / 2, H / 2); sh.lineTo(-W / 2, H / 2); sh.closePath();
+    const hp = new THREE.Path(); hp.absarc(PIT.x - cx, -PIT.z - cy, PIT.R, 0, Math.PI * 2, true); sh.holes.push(hp);
+    const g = new THREE.ShapeGeometry(sh, 64); const p = g.attributes.position, uv = g.attributes.uv; for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + W / 2) / W, (p.getY(i) + H / 2) / H); return g; };
+  const floor = mesh(holed(24, 18, 0, 0), phys(0xffffff, { map: floorT, roughness: 0.22, clearcoat: 0.6, clearcoatRoughness: 0.25 }), scene, [0, 0, 0], [-Math.PI / 2, 0, 0], false); floor.userData.keep = true;
   floor.receiveShadow = true;
   // sombra de contato assada (escurece cantos, pé dos móveis e o entorno da mesa) — 1 malha, sem luz extra
   {
@@ -154,6 +160,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
       c.fillStyle = edge(0, 0, e, 0, .7); c.fillRect(0, 0, e, H);
       c.fillStyle = edge(W, 0, W - e, 0, .7); c.fillRect(W - e, 0, e, H);
       const blob = (x, z, r, a) => { const g = c.createRadialGradient(sx(x), sz(z), 0, sx(x), sz(z), r * k); g.addColorStop(0, `rgba(60,52,44,${a})`); g.addColorStop(1, 'rgba(60,52,44,0)'); c.fillStyle = g; c.fillRect(sx(x) - r * k, sz(z) - r * k, 2 * r * k, 2 * r * k); };
+      const ring2 = (x, z, r0, r1, a) => { const g = c.createRadialGradient(sx(x), sz(z), r0 * k, sx(x), sz(z), r1 * k); g.addColorStop(0, `rgba(60,52,44,${a})`); g.addColorStop(1, 'rgba(60,52,44,0)'); c.fillStyle = g; c.fillRect(sx(x) - r1 * k, sz(z) - r1 * k, 2 * r1 * k, 2 * r1 * k); };
       const ring = (r0, r1, a) => { const g = c.createRadialGradient(sx(0), sz(0), r0 * k, sx(0), sz(0), r1 * k); g.addColorStop(0, 'rgba(60,52,44,0)'); g.addColorStop(.45, `rgba(60,52,44,${a})`); g.addColorStop(1, 'rgba(60,52,44,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H); };
       ring(TABLE_R - 0.4, TABLE_R + 1.8, .5);
       const box2 = (x0, z0, x1, z1, a) => { c.save(); c.filter = `blur(${0.35 * k}px)`; c.fillStyle = `rgba(60,52,44,${a})`; c.fillRect(sx(x0), sz(z0), sx(x1) - sx(x0), sz(z1) - sz(z0)); c.restore(); };
@@ -161,8 +168,10 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
       box2(-12, 6.3, -9.6, 8.2, .3);                 // bancada do café
       blob(8, -6.4, 2.2, .3); blob(-8.4, -3.6, 2.4, .25); // lounges
       blob(-2.3, 7.45, 0.9, .35);                    // Hall da Fama
+      box2(-11.4, 8.4, 1.8, 9, .45);                 // parede da adega
+      ring2(PIT.x, PIT.z, PIT.R, PIT.R + 0.9, .45);  // borda do fosso
     });
-    const ao = mesh(new THREE.PlaneGeometry(24, 18), new THREE.MeshBasicMaterial({ map: t, transparent: true, blending: THREE.MultiplyBlending, premultipliedAlpha: true, depthWrite: false, toneMapped: false }), scene, [0, 0.004, 0], [-Math.PI / 2, 0, 0], false);
+    const ao = mesh(holed(24, 18, 0, 0), new THREE.MeshBasicMaterial({ map: t, transparent: true, blending: THREE.MultiplyBlending, premultipliedAlpha: true, depthWrite: false, toneMapped: false }), scene, [0, 0.004, 0], [-Math.PI / 2, 0, 0], false);
     ao.renderOrder = 1; ao.userData.keep = true;
   }
   const blackMarble = marbleTex('#0e0e0f', 'rgba(220,220,220,A)', 22, 1024, [4, 1]);
@@ -299,28 +308,33 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   // ---------- lounge (oeste) com TV de faturamento ----------
   const lounge = new THREE.Group(); scene.add(lounge);
   const boucle = phys(0xe9e2d4, { roughness: 0.95, sheen: 1, sheenColor: new THREE.Color(0xffffff), sheenRoughness: 0.8 });
-  blob(scene, -7.4, -3.6, 0.8, 2.0); blob(scene, -9.3, -3.6, 0.95, 0.95);
-  const sofa = new THREE.Group(); sofa.position.set(-7.4, 0, -3.6); sofa.rotation.y = -Math.PI / 2; lounge.add(sofa);
-  mesh(rbox(3.4, 0.42, 1.0, 0.12, 4), boucle, sofa, [0, 0.21, 0]);
-  mesh(rbox(3.4, 0.5, 0.26, 0.12, 4), boucle, sofa, [0, 0.62, 0.38]);
-  [-1.58, 1.58].forEach(x => mesh(rbox(0.24, 0.6, 1.0, 0.1, 4), boucle, sofa, [x, 0.3, 0]));
-  [-1.05, 0, 1.05].forEach(x => mesh(rbox(1.0, 0.16, 0.8, 0.07, 4), boucle, sofa, [x, 0.5, -0.04]));
-  [-1.2, 1.2].forEach(x => mesh(rbox(0.42, 0.42, 0.14, 0.06, 4), phys(0xb08a45, { roughness: 0.6, sheen: 0.6 }), sofa, [x, 0.72, 0.18], [-0.2, 0, x > 0 ? -0.2 : 0.2]));
-  const cognac = phys(0x6b3a1c, { roughness: 0.38, clearcoat: 0.5, sheen: 0.3 });
-  [[-9.9, -6.4, 0.6], [-9.9, -0.8, -0.6 + Math.PI]].forEach(([x, z, r]) => {
-    const a = new THREE.Group(); a.position.set(x, 0, z); a.rotation.y = r; lounge.add(a);
-    mesh(rbox(0.85, 0.36, 0.8, 0.1, 4), cognac, a, [0, 0.38, 0]); mesh(rbox(0.85, 0.55, 0.2, 0.1, 4), cognac, a, [0, 0.72, -0.32], [-0.15, 0, 0]);
-    [-0.4, 0.4].forEach(s => mesh(rbox(0.12, 0.3, 0.75, 0.05, 4), cognac, a, [s, 0.55, 0]));
-    [[-0.35, -0.3], [0.35, -0.3], [-0.35, 0.3], [0.35, 0.3]].forEach(([lx, lz]) => mesh(cyl(0.02, 0.015, 0.22, 8), M.gold, a, [lx, 0.11, lz]));
-  });
-  const ct = new THREE.Group(); ct.position.set(-9.3, 0, -3.6); lounge.add(ct);
-  mesh(cyl(0.75, 0.75, 0.05, 64), phys(0xffffff, { map: marbleTex('#141414', 'rgba(230,230,230,A)', 14, 512, [1, 1]), roughness: 0.1, clearcoat: 1 }), ct, [0, 0.42, 0]);
-  mesh(cyl(0.3, 0.42, 0.4, 32), M.gold, ct, [0, 0.2, 0]);
-  [[0x1a1a1a, 0.06], [0xc9a45c, 0.05], [0xf0ece4, 0.045]].reduce((y, [c, h]) => { mesh(rbox(0.32, h, 0.24, 0.005), mat(c, { roughness: 0.6 }), ct, [0.25, y + h / 2, 0.15], [0, 0.3, 0]); return y + h; }, 0.445);
-  mesh(sph(0.09, 16, 12), M.gold, ct, [-0.2, 0.53, -0.1]);
-  const lrug = mesh(new THREE.PlaneGeometry(5, 7.6), mat(0xd8d0c2, { roughness: 1 }), lounge, [-9.4, 0.007, -3.6], [-Math.PI / 2, 0, 0], false);
+  // sofá em U enorme virado pra TV: encosto principal + dois braços longos, almofadas soltas, tapete grande de lã
+  blob(scene, -7.0, -3.6, 0.9, 2.9); blob(scene, -8.6, -6.7, 1.6, 0.7); blob(scene, -8.6, -0.5, 1.6, 0.7);
+  const sofaSeg = (cx, cz, len, rotY) => {
+    const sg = new THREE.Group(); sg.position.set(cx, 0, cz); sg.rotation.y = rotY; lounge.add(sg);
+    mesh(rbox(len, 0.4, 1.05, 0.12, 4), boucle, sg, [0, 0.2, 0]);
+    mesh(rbox(len, 0.55, 0.28, 0.13, 4), boucle, sg, [0, 0.62, 0.39]);
+    const n = Math.max(1, Math.round(len / 1.05));
+    for (let i = 0; i < n; i++) { const x = -len / 2 + (i + 0.5) * len / n; mesh(rbox(len / n - 0.03, 0.17, 0.82, 0.08, 4), boucle, sg, [x, 0.48, -0.05]); mesh(rbox(len / n - 0.06, 0.42, 0.18, 0.09, 4), boucle, sg, [x, 0.74, 0.2], [-0.18, 0, 0]); }
+    mesh(rbox(len, 0.06, 1.0, 0.03), M.goldDim, sg, [0, 0.03, 0]);
+    return sg;
+  };
+  sofaSeg(-6.75, -3.6, 5.6, Math.PI / 2);          // encosto principal (costas pra mesa)
+  sofaSeg(-8.75, -6.85, 3.0, Math.PI);                    // braço norte
+  sofaSeg(-8.75, -0.35, 3.0, 0);              // braço sul
+  [[-7.05, -6.25], [-7.05, -0.95]].forEach(([x, z]) => mesh(rbox(0.6, 0.55, 0.6, 0.12, 4), boucle, lounge, [x, 0.28, z])); // cantos
+  [[-6.95, -5.2, 0.2], [-6.95, -2.0, -0.2], [-8.0, -6.6, 0.1], [-9.6, -0.6, -0.1]].forEach(([x, z, r]) => mesh(rbox(0.46, 0.46, 0.14, 0.06, 4), phys(0xb08a45, { roughness: 0.6, sheen: 0.6 }), lounge, [x, 0.74, z], [-0.15, Math.PI / 2 + r, 0]));
+  // mesa de centro oval de mármore preto com base dourada
+  const ct = new THREE.Group(); ct.position.set(-8.75, 0, -3.6); lounge.add(ct);
+  const top = mesh(cyl(1.0, 1.0, 0.06, 64), phys(0xffffff, { map: marbleTex('#141414', 'rgba(230,230,230,A)', 14, 512, [1, 1]), roughness: 0.1, clearcoat: 1 }), ct, [0, 0.42, 0]); top.scale.set(0.85, 1, 1.6);
+  const base = mesh(cyl(0.42, 0.55, 0.39, 40), M.gold, ct, [0, 0.2, 0]); base.scale.set(0.85, 1, 1.5);
+  [[0x1a1a1a, 0.06], [0xc9a45c, 0.05], [0xf0ece4, 0.045]].reduce((y, [c, h]) => { mesh(rbox(0.32, h, 0.24, 0.005), mat(c, { roughness: 0.6 }), ct, [0.2, y + h / 2, 0.6], [0, 0.3, 0]); return y + h; }, 0.455);
+  mesh(sph(0.09, 16, 12), M.gold, ct, [-0.15, 0.54, -0.5]);
+  [-0.2, 0.1].forEach((z, i) => { mesh(cyl(0.04, 0.035, 0.09, 16), M.glass, ct, [0.25 - i * 0.1, 0.5, z]); });
+  const lrugT = tex(1024, 1024, (c, w, h) => { c.fillStyle = '#d9d1c3'; c.fillRect(0, 0, w, h); for (let i = 0; i < 40000; i++) { c.fillStyle = `rgba(${Math.random() < .5 ? '255,255,255' : '90,80,66'},${Math.random() * .06})`; c.fillRect(Math.random() * w, Math.random() * h, 2, 2); } c.strokeStyle = 'rgba(176,138,69,.6)'; c.lineWidth = 10; c.strokeRect(40, 40, w - 80, h - 80); c.lineWidth = 3; c.strokeRect(64, 64, w - 128, h - 128); });
+  const lrug = mesh(new THREE.PlaneGeometry(5.3, 7.7), mat(0xffffff, { map: lrugT, roughness: 1 }), lounge, [-8.75, 0.007, -3.6], [-Math.PI / 2, 0, 0], false);
   // luminária de arco
-  const arcLamp = new THREE.Group(); arcLamp.position.set(-7.0, 0, -6.2); lounge.add(arcLamp);
+  const arcLamp = new THREE.Group(); arcLamp.position.set(-6.3, 0, -7.6); arcLamp.rotation.y = -0.6; lounge.add(arcLamp);
   mesh(cyl(0.22, 0.24, 0.06, 32), phys(0x111111, { roughness: 0.2, clearcoat: 1 }), arcLamp, [0, 0.03, 0]);
   const arcC = new THREE.CatmullRomCurve3([new THREE.Vector3(0, 0.05, 0), new THREE.Vector3(0, 1.6, 0), new THREE.Vector3(-0.6, 2.35, 0.4), new THREE.Vector3(-1.5, 2.2, 1.0), new THREE.Vector3(-1.9, 1.85, 1.3)]);
   mesh(new THREE.TubeGeometry(arcC, 40, 0.018, 8), M.gold, arcLamp);
@@ -394,16 +408,12 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   });
 
   // ---------- bar e café (sul) ----------
-  const bar = new THREE.Group(); bar.position.set(-9, 0, 8.45); scene.add(bar); blob(bar, 0, -0.1, 2.8, 0.6);
+  const bar = new THREE.Group(); bar.position.set(-9, 0, 7.95); scene.add(bar); blob(bar, 0, -0.1, 2.8, 0.6);
   mesh(rbox(5, 1.02, 0.7, 0.03), mat(0x111111, { roughness: 0.4 }), bar, [0, 0.51, 0]);
   for (let i = -24; i <= 24; i++) mesh(cyl(0.035, 0.035, 0.95, 8), mat(0x1a1a1a, { roughness: 0.35 }), bar, [i * 0.1, 0.5, -0.36], null, false);
   mesh(rbox(5.1, 0.06, 0.78, 0.01), phys(0xffffff, { map: marbleTex('#f2f0ec', 'rgba(120,120,120,A)', 14, 512, [2, 1]), roughness: 0.12, clearcoat: 1 }), bar, [0, 1.05, 0]);
   mesh(box(5.0, 0.02, 0.02), new THREE.MeshBasicMaterial({ color: 0xffd9a0 }), bar, [0, 0.12, -0.36], null, false);
-  // prateleira de garrafas iluminada atrás
-  const shelfBack = new THREE.Group(); bar.add(shelfBack); out.southItems.push(shelfBack);
-  mesh(box(5, 1.6, 0.3), mat(0x0e0e0e, { roughness: 0.5 }), shelfBack, [0, 2.2, 0.38]);
-  mesh(box(4.8, 1.3, 0.02), new THREE.MeshBasicMaterial({ color: 0xffcf8a }), shelfBack, [0, 2.2, 0.225], null, false);
-  for (let i = 0; i < 16; i++) { const c = [0x6b3a12, 0x2f4a22, 0x8a5a1a, 0x5a1a14, 0x1a1a1a, 0xb8651a][i % 6]; const x = -2.2 + i * 0.29; const gm = phys(c, { roughness: 0.08, transparent: true, opacity: 0.85, clearcoat: 1 }); mesh(cyl(0.05, 0.055, 0.26, 16), gm, shelfBack, [x, 1.75, 0.3]); mesh(cyl(0.016, 0.02, 0.09, 12), gm, shelfBack, [x, 1.93, 0.3]); }
+  // (as garrafas agora ficam na parede da adega, atrás do bar)
   // máquina de espresso
   const esp = new THREE.Group(); esp.position.set(-1.8, 1.08, 0.05); bar.add(esp);
   mesh(rbox(0.55, 0.4, 0.42, 0.04), M.chrome, esp, [0, 0.2, 0]); mesh(rbox(0.5, 0.05, 0.3, 0.01), M.black, esp, [0, 0.42, 0]);
@@ -439,6 +449,29 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
       g.fillStyle = goldGrad(g, W, H); g.beginPath(); g.arc(W * .5, H * .55, Math.min(W, H) * .28, 0, 7); g.fill();
       g.fillStyle = '#0c0c0c'; g.fillRect(0, H * .7, W, H * .3);
       g.strokeStyle = 'rgba(212,178,106,.6)'; g.lineWidth = 3; g.beginPath(); g.moveTo(0, H * .7); g.lineTo(W, H * .7); g.stroke();
+    } else if (kind === 'pantera') {
+      // retrato da Fartuzzi: rosto saindo do escuro, olhos verdes, poeira de ouro
+      const bg = g.createRadialGradient(W * .5, H * .42, 0, W * .5, H * .45, H * .75); bg.addColorStop(0, '#1d1a17'); bg.addColorStop(1, '#050505'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+      for (let i = 0; i < 1400; i++) { g.fillStyle = `rgba(214,178,106,${Math.random() * .5})`; const r = Math.random() * 2.2; g.beginPath(); g.arc(Math.random() * W, H * (0.55 + Math.random() * .45), r, 0, 7); g.fill(); }
+      const cx = W * .5, cy = H * .45, s = W * .36;
+      g.save(); g.translate(cx, cy);
+      const face = g.createRadialGradient(0, -s * .1, s * .1, 0, 0, s * 1.05); face.addColorStop(0, '#2a2a30'); face.addColorStop(.6, '#121216'); face.addColorStop(1, 'rgba(5,5,5,0)');
+      g.fillStyle = face; g.beginPath(); g.moveTo(-s * .95, -s * .25); g.quadraticCurveTo(-s * 1.0, -s * .95, -s * .55, -s * .95); g.lineTo(-s * .38, -s * .62); g.quadraticCurveTo(0, -s * .8, s * .38, -s * .62); g.lineTo(s * .55, -s * .95); g.quadraticCurveTo(s * 1.0, -s * .95, s * .95, -s * .25);
+      g.quadraticCurveTo(s * .9, s * .5, s * .3, s * .85); g.quadraticCurveTo(0, s * .98, -s * .3, s * .85); g.quadraticCurveTo(-s * .9, s * .5, -s * .95, -s * .25); g.fill();
+      g.strokeStyle = 'rgba(120,130,160,.18)'; g.lineWidth = 2; for (let i = 0; i < 60; i++) { const a = Math.random() * 6.28, r0 = s * (.3 + Math.random() * .6); g.beginPath(); g.moveTo(Math.cos(a) * r0, Math.sin(a) * r0); g.lineTo(Math.cos(a) * (r0 + 14), Math.sin(a) * (r0 + 14)); g.stroke(); }
+      [-1, 1].forEach(k => { const ex = k * s * .34, ey = -s * .18; const eg = g.createRadialGradient(ex, ey, 0, ex, ey, s * .2); eg.addColorStop(0, 'rgba(160,230,80,.55)'); eg.addColorStop(1, 'rgba(160,230,80,0)'); g.fillStyle = eg; g.fillRect(ex - s * .2, ey - s * .2, s * .4, s * .4);
+        g.fillStyle = '#a8e04a'; g.beginPath(); g.ellipse(ex, ey, s * .13, s * .065, k * .25, 0, 7); g.fill(); g.fillStyle = '#0a0a0a'; g.beginPath(); g.ellipse(ex, ey, s * .025, s * .06, 0, 0, 7); g.fill(); g.fillStyle = 'rgba(255,255,255,.8)'; g.beginPath(); g.arc(ex - s * .03, ey - s * .02, s * .012, 0, 7); g.fill(); });
+      g.fillStyle = '#070707'; g.beginPath(); g.moveTo(-s * .12, s * .25); g.quadraticCurveTo(0, s * .2, s * .12, s * .25); g.quadraticCurveTo(0, s * .38, -s * .12, s * .25); g.fill();
+      g.strokeStyle = 'rgba(200,200,210,.25)'; g.lineWidth = 1.5; [-1, 1].forEach(k => { for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(k * s * .18, s * .36 + i * 6); g.quadraticCurveTo(k * s * .6, s * .3 + i * 12, k * s * .95, s * .28 + i * 22); g.stroke(); } });
+      g.restore();
+      g.fillStyle = goldGrad(g, W, H); g.font = `600 ${Math.round(H * .03)}px "Cormorant Garamond", Georgia, serif`; g.textAlign = 'center'; g.fillText('F A R T U Z Z I', W * .5, H * .95);
+    } else if (kind === 'kintsugi') {
+      const bg = g.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#121212'); bg.addColorStop(1, '#1e1b18'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+      for (let i = 0; i < 30000; i++) { g.fillStyle = `rgba(255,255,255,${Math.random() * .02})`; g.fillRect(Math.random() * W, Math.random() * H, 2, 2); }
+      const crack = (x, y, a, len, wdt) => { g.strokeStyle = goldGrad(g, W, H); g.lineWidth = wdt; g.lineCap = 'round'; g.beginPath(); g.moveTo(x, y); for (let t = 0; t < len; t += 14) { a += (Math.random() - .5) * .6; x += Math.cos(a) * 14; y += Math.sin(a) * 14; g.lineTo(x, y); if (Math.random() < .05 && wdt > 2) crack(x, y, a + (Math.random() < .5 ? .9 : -.9), len * .4, wdt * .55); } g.stroke(); };
+      for (let i = 0; i < 6; i++) crack(Math.random() * W, Math.random() < .5 ? 0 : H, Math.random() * 6.28, W * 1.2, 9);
+      for (let i = 0; i < 18; i++) { g.fillStyle = goldGrad(g, W, H); g.globalAlpha = .5 + Math.random() * .5; const x = Math.random() * W, y = Math.random() * H, r = 6 + Math.random() * 30; g.beginPath(); for (let k = 0; k < 7; k++) { const a = k / 7 * 6.28; g.lineTo(x + Math.cos(a) * r * (0.6 + Math.random() * .5), y + Math.sin(a) * r * (0.6 + Math.random() * .5)); } g.fill(); }
+      g.globalAlpha = 1;
     } else {
       g.fillStyle = '#e9e4da'; g.fillRect(0, 0, W, H);
       [['#111', .2, .2, .35, .5], ['#c9a45c', .5, .35, .3, .45], ['#5a3a22', .3, .62, .4, .22]].forEach(([c, x, y, w2, h2]) => { g.fillStyle = c; g.fillRect(x * W, y * H, w2 * W, h2 * H); });
@@ -446,48 +479,31 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   });
   function painting(x, y, z, rotY, w, h, kind) {
     const p = new THREE.Group(); p.position.set(x, y, z); p.rotation.y = rotY; scene.add(p);
-    mesh(box(w + 0.12, h + 0.12, 0.06), M.gold, p, [0, 0, 0], null, false);
-    mesh(box(w, h, 0.07), mat(0x111111), p, [0, 0, 0.002], null, false);
-    mesh(new THREE.PlaneGeometry(w, h), mat(0xffffff, { map: art(kind, w, h), roughness: 0.75 }), p, [0, 0, 0.04], null, false);
+    const fw = 0.1, fd = 0.09;
+    // moldura de galeria: preto laqueado com filete de ouro e passe-partout
+    [[0, h / 2 + fw / 2, w + 2 * fw, fw], [0, -h / 2 - fw / 2, w + 2 * fw, fw], [-w / 2 - fw / 2, 0, fw, h], [w / 2 + fw / 2, 0, fw, h]].forEach(([fx, fy, bw, bh]) => mesh(rbox(bw, bh, fd, 0.02, 2), phys(0x0b0b0b, { roughness: 0.18, clearcoat: 1 }), p, [fx, fy, 0], null, false));
+    [[0, h / 2 + 0.012, w + 0.04, 0.012], [0, -h / 2 - 0.012, w + 0.04, 0.012], [-w / 2 - 0.012, 0, 0.012, h + 0.04], [w / 2 + 0.012, 0, 0.012, h + 0.04]].forEach(([fx, fy, bw, bh]) => mesh(box(bw, bh, fd + 0.004), M.gold, p, [fx, fy, 0.002], null, false));
+    mesh(box(w, h, 0.02), mat(0xece6da, { roughness: 0.9 }), p, [0, 0, -0.01], null, false);
+    const m = 0.06;
+    mesh(new THREE.PlaneGeometry(w - 2 * m, h - 2 * m), mat(0xffffff, { map: art(kind, w - 2 * m, h - 2 * m), roughness: 0.55 }), p, [0, 0, 0.003], null, false);
+    // luz de quadro em latão com lavagem de luz quente (sem luz de verdade, só brilho)
+    const arm = new THREE.Group(); arm.position.set(0, h / 2 + fw + 0.03, 0.02); p.add(arm);
+    mesh(cyl(0.012, 0.012, 0.22, 10), M.gold, arm, [0, 0.02, 0.1], [Math.PI / 2 - 0.5, 0, 0], false);
+    mesh(cyl(0.035, 0.035, w * 0.6, 20), M.gold, arm, [0, 0.07, 0.2], [0, 0, Math.PI / 2], false);
+    mesh(box(w * 0.58, 0.008, 0.03), new THREE.MeshBasicMaterial({ color: 0xfff0cf, toneMapped: false }), arm, [0, 0.04, 0.2], null, false);
+    const washT = tex(256, 256, (c, W2, H2) => { const gr = c.createLinearGradient(0, 0, 0, H2); gr.addColorStop(0, 'rgba(255,225,170,.22)'); gr.addColorStop(.5, 'rgba(255,225,170,.08)'); gr.addColorStop(1, 'rgba(255,225,170,0)'); c.fillStyle = gr; c.fillRect(0, 0, W2, H2); const sx = c.createLinearGradient(0, 0, W2, 0); sx.addColorStop(0, 'rgba(0,0,0,1)'); sx.addColorStop(.2, 'rgba(0,0,0,0)'); sx.addColorStop(.8, 'rgba(0,0,0,0)'); sx.addColorStop(1, 'rgba(0,0,0,1)'); c.globalCompositeOperation = 'destination-out'; c.fillStyle = sx; c.fillRect(0, 0, W2, H2); });
+    const wash = mesh(new THREE.PlaneGeometry(w + 0.5, h * 0.9), new THREE.MeshBasicMaterial({ map: washT, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, toneMapped: false }), p, [0, h * 0.12, 0.012], null, false); wash.renderOrder = 2; wash.userData.keep = true;
     if (Math.abs(z - 8.9) < 0.2) out.southItems.push(p); if (x < -11.5) out.westItems.push(p);
     return p;
   }
-  painting(-4.6, 2.1, 8.9, Math.PI, 2.6, 1.7, 'ouro');
-  painting(-1.0, 2.1, 8.9, Math.PI, 1.5, 1.9, 'marmore');
-  painting(6.6, 2.1, 8.9, Math.PI, 1.6, 2.0, 'sol');
+  painting(6.6, 2.15, 8.9, Math.PI, 1.6, 2.0, 'sol');
   painting(-11.9, 2.15, 6.2, Math.PI / 2, 2.9, 1.7, 'shanshui');
+  painting(-11.9, 2.2, 2.7, Math.PI / 2, 1.7, 2.2, 'pantera');      // retrato da Fartuzzi, onde era a adega pequena
+  painting(8.5, 2.2, 4.15, -Math.PI / 2, 1.6, 1.15, 'kintsugi');   // parede do banheiro, de frente pro fosso de pôquer
   // brasão Carnucci acima da entrada (lado de dentro)
   goldLogo(LOGO, 512).then(t => out.southItems.push(mesh(new THREE.PlaneGeometry(0.9, 0.9), new THREE.MeshStandardMaterial({ map: t, transparent: true, metalness: 0.8, roughness: 0.3, emissive: 0x3a2a10, emissiveMap: t }), scene, [3.6, 3.6, 8.9], [0, Math.PI, 0], false)));
 
-  // ---------- adega (Royal Salute e Blue Label, sem rótulos) ----------
-  const adega = new THREE.Group(); adega.position.set(-11.6, 0, 2.7); adega.rotation.y = Math.PI / 2; scene.add(adega); out.westItems.push(adega);
-  const cabM = phys(0x0c0b0a, { roughness: 0.25, clearcoat: 1 });
-  mesh(box(1.9, 3.0, 0.04), cabM, adega, [0, 1.5, -0.3]); mesh(box(1.9, 0.08, 0.62), cabM, adega, [0, 0.04, 0]); mesh(box(1.9, 0.08, 0.62), cabM, adega, [0, 2.96, 0]);
-  [-0.93, 0.93].forEach(x => mesh(box(0.04, 3.0, 0.62), cabM, adega, [x, 1.5, 0]));
-  mesh(box(1.74, 2.7, 0.02), new THREE.MeshBasicMaterial({ color: 0x3a2a18 }), adega, [0, 1.55, -0.28], null, false);
-  [-0.88, 0.88].forEach(x => mesh(box(0.03, 3.0, 0.66), M.gold, adega, [x, 1.5, 0], null, false));
-  mesh(box(1.9, 0.03, 0.66), M.gold, adega, [0, 3.0, 0], null, false);
-  const rs = [0x1e2f6b, 0x7a1222, 0x10402a]; // flagons de cerâmica (azul, vermelho, verde)
-  for (let r = 0; r < 4; r++) {
-    const y = 0.35 + r * 0.66;
-    mesh(box(1.72, 0.02, 0.56), M.goldDim, adega, [0, y, 0], null, false);
-    mesh(box(1.7, 0.01, 0.01), new THREE.MeshBasicMaterial({ color: 0xffd9a0 }), adega, [0, y + 0.6, 0.27], null, false);
-    for (let i = 0; i < 5; i++) {
-      const x = -0.68 + i * 0.34;
-      if ((r + i) % 2 === 0) { // garrafa estilo flagon de cerâmica
-        const c = rs[(r + i) % 3]; const fm = phys(c, { roughness: 0.18, clearcoat: 1 });
-        const b = mesh(sph(0.1, 24, 18), fm, adega, [x, y + 0.13, 0.05]); b.scale.set(1, 1.1, 0.75);
-        mesh(cyl(0.03, 0.045, 0.12, 16), fm, adega, [x, y + 0.29, 0.05]); mesh(cyl(0.034, 0.034, 0.04, 16), M.gold, adega, [x, y + 0.36, 0.05]);
-        mesh(new THREE.TorusGeometry(0.075, 0.006, 6, 24), M.gold, adega, [x, y + 0.15, 0.05], [0, 0, 0], false);
-      } else { // garrafa retangular azul escura
-        const gm = phys(0x0e1a3a, { roughness: 0.05, transparent: true, opacity: 0.9, clearcoat: 1 });
-        mesh(rbox(0.13, 0.27, 0.08, 0.015), gm, adega, [x, y + 0.155, 0.05]); mesh(cyl(0.02, 0.025, 0.08, 12), gm, adega, [x, y + 0.33, 0.05]);
-        mesh(cyl(0.024, 0.024, 0.04, 12), M.gold, adega, [x, y + 0.385, 0.05]); mesh(box(0.131, 0.04, 0.081), M.gold, adega, [x, y + 0.1, 0.05], null, false);
-      }
-    }
-  }
-  mesh(new THREE.PlaneGeometry(1.76, 2.95), new THREE.MeshPhysicalMaterial({ color: 0xffffff, transparent: true, opacity: 0.12, roughness: 0.02, clearcoat: 1 }), adega, [0, 1.5, 0.315], null, false);
-  mesh(box(0.025, 0.6, 0.03), M.gold, adega, [0.75, 1.6, 0.34], null, false);
+  wineWall(scene, out);
 
   // ---------- segundo lounge: conversa perto da janela ----------
   const conv = new THREE.Group(); conv.position.set(8.0, 0, -6.4); scene.add(conv); blob(conv, 0, 0, 2.0, 1.4, 0.4);
@@ -603,4 +619,57 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     [bWest1, bWest2, bTop].forEach(m => { m.material.opacity = on ? 0.25 : 1; m.material.depthWrite = !on; });
   };
   return out;
+}
+
+// ---------- ADEGA: a parede sul inteira, do chão ao teto, atrás do bar ----------
+function wineWall(scene, out) {
+  const X0 = -11.4, X1 = 1.8, W = X1 - X0, H = ROOM.H, ZB = 8.88, D = 0.42, cx = (X0 + X1) / 2;
+  const g = new THREE.Group(); scene.add(g); out.southItems.push(g);
+  const walnut = phys(0x1a120c, { roughness: 0.35, clearcoat: 0.6 });
+  mesh(box(W, H, 0.04), walnut, g, [cx, H / 2, ZB], null, false);
+  // luz de fundo quente com faixas sob cada prateleira (1 malha, sem luz extra)
+  const ROWS = 11, Y0 = 0.32, DY = 0.31;
+  const glow = tex(2048, 512, (c, w, h) => {
+    const gr = c.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#1c1108'); gr.addColorStop(0.5, '#3a2410'); gr.addColorStop(1, '#140c06'); c.fillStyle = gr; c.fillRect(0, 0, w, h);
+    for (let r = 0; r <= ROWS; r++) { const y = h - (Y0 + r * DY) / H * h; const b = c.createLinearGradient(0, y - 22, 0, y + 4); b.addColorStop(0, 'rgba(255,214,150,0)'); b.addColorStop(0.85, 'rgba(255,190,110,.55)'); b.addColorStop(1, 'rgba(255,220,160,.9)'); c.fillStyle = b; c.fillRect(0, y - 22, w, 26); }
+  });
+  mesh(new THREE.PlaneGeometry(W - 0.1, H - 0.1), new THREE.MeshBasicMaterial({ map: glow, toneMapped: false }), g, [cx, H / 2, ZB - 0.025], [0, Math.PI, 0], false).name = 'wineGlow';
+  // prateleiras e montantes (ouro escovado + preto)
+  for (let r = 0; r <= ROWS; r++) mesh(box(W, 0.018, D), M.goldDim, g, [cx, Y0 + r * DY, ZB - D / 2], null, false);
+  const nCols = 13;
+  for (let i = 0; i <= nCols; i++) { const x = X0 + i * W / nCols; mesh(box(0.05, H, D + 0.02), M.black, g, [x, H / 2, ZB - D / 2], null, false); mesh(box(0.012, H, 0.012), M.gold, g, [x, H / 2, ZB - D - 0.005], null, false); }
+  mesh(box(W, 0.06, D + 0.04), M.gold, g, [cx, H - 0.03, ZB - D / 2], null, false); mesh(box(W, 0.12, D + 0.04), M.black, g, [cx, 0.06, ZB - D / 2], null, false);
+  // garrafas deitadas, gargalo pra frente (instanciadas: 2 draws pra mais de mil garrafas)
+  const per = 11, n = nCols * per * ROWS;
+  const body = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.037, 0.037, 0.22, 7, 1, false).rotateX(Math.PI / 2), new THREE.MeshStandardMaterial({ roughness: 0.32, metalness: 0.0, envMapIntensity: 0.35 }), n);
+  const neck = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.013, 0.02, 0.09, 6, 1, true).rotateX(Math.PI / 2), new THREE.MeshStandardMaterial({ roughness: 0.35, metalness: 0.5, envMapIntensity: 0.5 }), n);
+  const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), sc = new THREE.Vector3(1, 1, 1), col = new THREE.Color();
+  const glassC = [0x0a1f0e, 0x1a0f05, 0x070707, 0x240806, 0x0e1a0a], foilC = [0x8a1c1c, 0xc9a45c, 0x111111, 0xd8d0c0, 0x5a1020];
+  let k = 0;
+  for (let r = 0; r < ROWS; r++) for (let c2 = 0; c2 < nCols; c2++) for (let j = 0; j < per; j++) {
+    const x = X0 + c2 * W / nCols + 0.07 + j * ((W / nCols - 0.14) / (per - 1)), y = Y0 + r * DY + 0.05 + (j % 2) * 0.075, z = ZB - 0.17;
+    const hidden = x < -6.4 && y < 1.1; // escondida atrás do balcão
+    m4.compose(new THREE.Vector3(x, hidden ? -5 : y, z), q, sc); body.setMatrixAt(k, m4); body.setColorAt(k, col.setHex(glassC[(r * 7 + c2 * 3 + j) % glassC.length]));
+    m4.compose(new THREE.Vector3(x, hidden ? -5 : y, z - 0.155), q, sc); neck.setMatrixAt(k, m4); neck.setColorAt(k, col.setHex(foilC[(r * 5 + c2 + j * 3) % foilC.length])); k++;
+  }
+  [body, neck].forEach(m => { m.instanceMatrix.needsUpdate = true; m.instanceColor.needsUpdate = true; m.frustumCulled = false; m.userData.keep = true; g.add(m); });
+  // nicho dos destilados de luxo no meio (clique abre o estoque)
+  const niche = new THREE.Group(); niche.position.set(-2.95, 0, 0); g.add(niche);
+  const nW = W / nCols - 0.06;
+  mesh(box(nW, 1.3, 0.05), new THREE.MeshBasicMaterial({ color: 0xffdfa8, toneMapped: false }), niche, [0, 1.95, ZB - 0.06], null, false);
+  mesh(box(nW, 0.04, D), M.gold, niche, [0, 1.32, ZB - D / 2], null, false); mesh(box(nW, 0.04, D), M.gold, niche, [0, 2.62, ZB - D / 2], null, false);
+  const amber = phys(0x7a3e10, { roughness: 0.05, clearcoat: 1 }), dark = phys(0x10241a, { roughness: 0.05, clearcoat: 1 }), blue = phys(0x10204a, { roughness: 0.05, clearcoat: 1 });
+  [[-0.32, amber, 'dec'], [-0.1, blue, 'sq'], [0.12, amber, 'sq'], [0.33, dark, 'dec']].forEach(([x, m, kind]) => {
+    if (kind === 'dec') { const b = mesh(sph(0.09, 20, 16), m, niche, [x, 1.46, ZB - 0.22]); b.scale.set(1, 1.15, 0.8); mesh(cyl(0.025, 0.04, 0.1, 14), m, niche, [x, 1.62, ZB - 0.22]); mesh(sph(0.035, 12, 10), M.gold, niche, [x, 1.7, ZB - 0.22]); }
+    else { mesh(rbox(0.12, 0.26, 0.08, 0.015), m, niche, [x, 1.47, ZB - 0.22]); mesh(cyl(0.02, 0.025, 0.08, 12), m, niche, [x, 1.64, ZB - 0.22]); mesh(cyl(0.024, 0.024, 0.04, 12), M.gold, niche, [x, 1.7, ZB - 0.22]); }
+    mesh(cyl(0.07, 0.08, 0.02, 20), M.gold, niche, [x, 1.345, ZB - 0.22]);
+  });
+  niche.traverse(o => { if (o.isMesh) o.userData.stock = 'adega'; });
+  // portas de vidro com moldura dourada
+  const glassM = new THREE.MeshPhysicalMaterial({ color: 0xffffff, transparent: true, opacity: 0.08, roughness: 0.02, depthWrite: false });
+  // trilho de latão e escada de biblioteca
+  mesh(cyl(0.018, 0.018, W, 10), M.gold, g, [cx, 3.55, ZB - D - 0.12], [0, 0, Math.PI / 2], false);
+  const lad = new THREE.Group(); lad.position.set(-0.6, 0, ZB - D - 0.12); lad.rotation.x = 0.22; g.add(lad);
+  [-0.22, 0.22].forEach(x => mesh(box(0.04, 3.7, 0.05), walnut, lad, [x, 1.8, -0.4], null, false));
+  for (let i = 0; i < 11; i++) mesh(cyl(0.015, 0.015, 0.44, 8), M.gold, lad, [0, 0.25 + i * 0.32, -0.4], [0, 0, Math.PI / 2], false);
 }

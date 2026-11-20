@@ -5,7 +5,8 @@ import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, E
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
-import { buildEnv, SPOTS, TABLE_R, TOP_Y, ROOM } from './env.js';
+import { buildEnv, SPOTS, TABLE_R, TOP_Y, ROOM, PIT } from './env.js';
+import { buildPit } from './pit.js';
 import { buildPerson, blendPose, sitLegs, standLegs, faceTick } from './people.js';
 import { macbook, glassOf, cigar, phone, newspaper, tableProps, chair, throne, plateTex, smokeTex } from './props.js';
 import { buildPhoenix } from './phoenix.js';
@@ -121,8 +122,38 @@ let fenixT = 18, pandaT = 40, fenixIdx = 0;
 const panda = buildRedPanda(scene);
 { const sa = [...angles, deg(90), deg(270)].sort((a, b) => a - b); const gaps = []; for (let i = 0; i < sa.length; i++) { const a = sa[i], b = i + 1 < sa.length ? sa[i + 1] : sa[0] + Math.PI * 2; gaps.push((a + b) / 2); } panda.setSeats(angles, gaps); }
 panda.onPetIdle = a => { const s = seats.find(x => Math.abs(Math.atan2(Math.sin(x.a - a), Math.cos(x.a - a))) < 0.05 && x.state === 'sit'); if (s) say(s, pick(FALA_PET.pandaMesa)); };
-const panther = buildPanther(scene, 5.0);
+const panther = buildPanther(scene);
+{ const _v = []; panther.blockers = () => { let k = 0; const out = []; seats.forEach(x => { if (x.state !== 'sit') { _v[k] = _v[k] || new THREE.Vector3(); out.push(x.P.root.getWorldPosition(_v[k++])); } }); _v[k] = _v[k] || new THREE.Vector3(); out.push(masterP.root.getWorldPosition(_v[k])); return out; }; }
 let pantherT = 22;
+// ---------- pôquer no fosso: 3 diretores descem, jogam uma mão amistosa e voltam ----------
+const pit = buildPit(scene);
+const POKER_FALA = { mesa: ['Paga pra ver.', 'Mesa.', 'Aumento.', 'Tô fora dessa.', 'Blefe seu, conheço essa cara.', 'All-in.', 'Vai, abre o jogo.'],
+  win: ['Hoje é meu dia, rapaziada.', 'Obrigado pela doação, irmão.', 'Essa foi bonita, admite.'], lose: ['Revanche amanhã, parceiro.', 'Boa mão. Próxima é minha.', 'Leva, mas eu volto.'],
+  saida: ['Bora trampar que a meta não bate sozinha.', 'Valeu a mão, irmão.', 'Amanhã tem mais.'] };
+const poker = { t: 75, on: false, players: [], timer: 0, talkT: 0, toss: null, tossT: 0 };
+function pokerTick(dt, now) {
+  if (!poker.on) {
+    poker.t -= dt; if (poker.t > 0) return;
+    const free = seats.filter(s => s.state === 'sit' && selected !== s && s.act !== 'chat' && s.act !== 'listen');
+    if (free.length < 3) { poker.t = 20; return; }
+    const pl = []; while (pl.length < 3) { const c = pick(free); if (!pl.includes(c)) pl.push(c); }
+    const idx = [0, 1, 2, 3, 4].sort(() => Math.random() - 0.5);
+    pl.forEach((s, i) => { s.pokerSeat = idx[i]; goOut(s, 'poker', now); });
+    poker.on = true; poker.players = pl; poker.timer = 0; poker.talkT = 4;
+    return;
+  }
+  const seated = poker.players.filter(s => s.state === 'pokerSit');
+  if (seated.length < poker.players.length) return;
+  poker.timer += dt; poker.talkT -= dt;
+  if (poker.talkT <= 0) { const s = pick(poker.players); say(s, pick(POKER_FALA.mesa), 3); poker.toss = s; poker.tossT = now; poker.talkT = 4 + Math.random() * 4; }
+  if (poker.timer > 40) {
+    const [w, ...rest] = [...poker.players].sort(() => Math.random() - 0.5), pot = 3 + Math.floor(Math.random() * 6);
+    say(w, pick(POKER_FALA.win), 4); rest.forEach(s => say(s, pick(POKER_FALA.lose), 4));
+    log(`<b>Pôquer no fosso:</b> ${first(w)} levou C$ ${pot} de ${rest.map(first).join(' e ')}. Saíram rindo, abraço na escada.`);
+    poker.players.forEach((s, i) => setTimeout(() => { s.state = 'pokerOut'; s.ppath = pit.pathIn(s.pokerSeat).reverse(); s.pleg = 0; if (i === 0) say(s, pick(POKER_FALA.saida), 3); }, 2500 + i * 1200));
+    poker.on = false; poker.t = 150 + Math.random() * 120; poker.players = []; poker.toss = null;
+  }
+}
 function pantherTick(dt) {
   pantherT -= dt; if (pantherT > 0 || panther.busy()) return;
   // para atrás de quem está mais perto dela; quem está "fraco" com os pets leva encarada mais longa
@@ -132,7 +163,7 @@ function pantherTick(dt) {
   const s = near.s, fraco = humor(s.d.id) === 'fraco';
   panther.stare(s.frame.getWorldPosition(new THREE.Vector3()).setY(1.2), fraco ? 6 : 3.5, () => {
     say(s, pick(FALA_PET.pantera));
-    if (fraco || Math.random() < 0.35) log(`A <b>pantera</b> parou atrás do <b>${first(s)}</b> e ficou encarando até ver trabalho andar.`);
+    if (fraco || Math.random() < 0.35) log(`A <b>Fartuzzi</b> parou atrás do <b>${first(s)}</b> e ficou encarando até ver trabalho andar.`);
   });
   pantherT = 26 + Math.random() * 20;
 }
@@ -160,10 +191,10 @@ panther.root.traverse(o => { if (o.isMesh) pickables.push(o); });
 const PETS = {
   fenix: { nome: 'Marnevali', tipo: 'Fênix · o pet da empresa', txt: 'A sala inteira ama ela e ninguém quer decepcionar a Marnevali. Ela passa voando por cada diretor: quando o trampo foi foda, solta fogo pro alto e o diretor ganha gorjeta (+10 XP e C$ 5). Quando o trampo foi fraco, passa acuadinha, de cabeça baixa. Renasce das cinzas, como a empresa que não para.' },
   panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'A casa dele é a mesa dos diretores: passa o dia andando por cima dela e deitando do lado de alguém pra ganhar carinho. Desce de vez em quando, dá uma volta e sobe de novo. Quando um diretor manda bem, ele vai direto pra frente dele: é gorjeta de +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
-  pantera: { nome: 'Pantera negra', tipo: 'A vigia do tapete · ainda sem nome', txt: 'Ronda o tapete de veludo em volta da mesa, devagar, sem nunca sair dele. De vez em quando para atrás de um diretor e fica encarando. Não morde ninguém: ela sobe a régua. Com quem está devendo, a encarada dura mais.' },
+  pantera: { nome: 'Fartuzzi', tipo: 'Pantera negra · a vigia do tapete', txt: 'Anda solta pelo tapete de veludo em volta da mesa: caminha, para, olha em volta, senta, muda de rumo, sem nunca sair dele. De vez em quando para atrás de um diretor e fica encarando. Não morde ninguém: ela sobe a régua. Com quem está devendo, a encarada dura mais.' },
 };
 const pandaTag = addTag('<b>Carnucci</b><span>Panda-vermelho</span>', 'pet'); pandaTag.addEventListener('click', e => { e.stopPropagation(); selectPet('panda'); });
-const pantherTag = addTag('<b>Pantera</b><span>A vigia do tapete</span>', 'pet'); pantherTag.addEventListener('click', e => { e.stopPropagation(); selectPet('pantera'); });
+const pantherTag = addTag('<b>Fartuzzi</b><span>Pantera negra</span>', 'pet'); pantherTag.addEventListener('click', e => { e.stopPropagation(); selectPet('pantera'); });
 const fenixTag = addTag('<b>Marnevali</b><span>Fênix</span>', 'pet'); fenixTag.addEventListener('click', e => { e.stopPropagation(); selectPet('fenix'); });
 function selectPet(k) {
   hideTeam(); const p = PETS[k]; selected = { pet: k }; controls.autoRotate = false;
@@ -229,12 +260,12 @@ function pickAct(s) { const list = ACTS[s.d.comp]; const tot = list.reduce((a, [
 const DUR = { work: [6, 14], sip: [3, 3], smoke: [3.6, 3.6], phoneLook: [5, 10], phoneCall: [7, 10], read: [8, 14], think: [3, 5], count: [4, 7] };
 
 function goOut(s, kind, now) {
-  const dest = kind === 'refil' ? (s.drink === 'whisky' ? SPOTS.uisque : s.drink === 'cafe' ? SPOTS.cafe : SPOTS.agua) : kind === 'banheiro' ? SPOTS.banheiro : [SPOTS.janelaN1, SPOTS.janelaN2, SPOTS.janelaL][Math.floor(Math.random() * 3)];
+  const dest = kind === 'poker' ? SPOTS.pokerTop : kind === 'refil' ? (s.drink === 'whisky' ? SPOTS.uisque : s.drink === 'cafe' ? SPOTS.cafe : SPOTS.agua) : kind === 'banheiro' ? SPOTS.banheiro : [SPOTS.janelaN1, SPOTS.janelaN2, SPOTS.janelaL][Math.floor(Math.random() * 3)];
   s.state = 'standup'; s.t0 = now; s.kind = kind; s.path = pathTo(s, dest); s.leg = 0; s.dir = 1; s.act = 'work';
   s.bubble.classList.remove('on');
   Object.values(s.hand).forEach(h => h.visible = false);
   if (kind === 'refil') { s.tg.visible = false; s.hg.visible = true; } else { s.hg.visible = false; s.tg.visible = true; }
-  const txt = { banheiro: 'foi ao banheiro', refil: s.drink === 'whisky' ? 'foi na adega encher o copo' : s.drink === 'cafe' ? 'foi buscar mais um café' : 'foi encher o copo d’água', janela: 'foi olhar a vista' }[kind];
+  const txt = { banheiro: 'foi ao banheiro', refil: s.drink === 'whisky' ? 'foi na adega encher o copo' : s.drink === 'cafe' ? 'foi buscar mais um café' : 'foi encher o copo d’água', janela: 'foi olhar a vista', poker: 'desceu pro fosso do pôquer' }[kind];
   log(`<b>${first(s)}</b> ${txt}`);
 }
 
@@ -328,6 +359,29 @@ function updateSeat(s, dt, now) {
       else s.leg += s.dir;
     }
     if (s.kind === 'refil') { P.sh[1].rotation.set(-0.7, 0, -0.1); P.el[1].rotation.x = -1.4; }
+    return;
+  }
+  if (s.state === 'there' && s.kind === 'poker') { s.state = 'pokerIn'; s.ppath = pit.pathIn(s.pokerSeat); s.pleg = 0; return; }
+  if (s.state === 'pokerIn' || s.state === 'pokerOut') {
+    const tgt = s.ppath[s.pleg]; tmpV.subVectors(tgt, s.wpos); const d = tmpV.length(), spd = 0.95 * dt;
+    if (d < spd) { s.wpos.copy(tgt); if (s.pleg < s.ppath.length - 1) s.pleg++; else if (s.state === 'pokerIn') { s.state = 'pokerSit'; s.actK = 0; } else { s.state = 'walk'; s.dir = -1; s.leg = s.path.length - 2; s.wpos.y = 0; } }
+    else s.wpos.addScaledVector(tmpV.normalize(), spd);
+    s.phase += dt * 6.8; standLegs(P, s.phase, true);
+    const sw = Math.sin(s.phase) * 0.35; P.sh[0].rotation.set(-sw, 0, 0.07); P.sh[1].rotation.set(sw, 0, -0.07); P.el.forEach(e => e.rotation.x = -0.25); P.wr.forEach(w => w.rotation.x = 0); P.torso.rotation.x = 0.02; P.head.rotation.set(0, 0, 0);
+    const local = s.frame.worldToLocal(tmpW.copy(s.wpos)).clone(); P.root.position.copy(local);
+    if (d > 0.001) { const dl = s.frame.worldToLocal(tmpW.copy(s.wpos).add(tmpV)).sub(local); s.yaw = angLerp(s.yaw ?? 0, Math.atan2(dl.x, dl.z), Math.min(1, dt * 8)); } P.root.rotation.y = s.yaw;
+    return;
+  }
+  if (s.state === 'pokerSit') {
+    sitLegs(P); const st = pit.seat(s.pokerSeat);
+    const local = s.frame.worldToLocal(tmpW.copy(st.pos)).clone(); P.root.position.lerp(local, Math.min(1, dt * 4));
+    const lk = s.frame.worldToLocal(tmpW.copy(st.look)).sub(local); s.yaw = angLerp(s.yaw ?? 0, Math.atan2(lk.x, lk.z), Math.min(1, dt * 5)); P.root.rotation.y = s.yaw;
+    s.actK += dt; const k = smooth(clamp(s.actK / 0.8, 0, 1));
+    const toss = poker.toss === s ? Math.max(0, Math.sin((now - poker.tossT) * 6)) : 0;
+    blendPose(P, 'rest', toss > 0 ? 'gesture' : 'read', k * (toss > 0 ? toss : 0.75));
+    P.head.rotation.x = ease(P.head.rotation.x, 0.42 - toss * 0.3, 4, dt); P.head.rotation.y = ease(P.head.rotation.y, Math.sin(now * 0.3 + s.seed) * 0.35, 3, dt); P.torso.rotation.x = ease(P.torso.rotation.x, 0.12, 3, dt);
+    if (s.sayT > 0) { s.sayT -= dt; if (s.sayT <= 0) { s.bubble.classList.remove('on'); P.talk = 0; } }
+    faceTick(P, dt, now);
     return;
   }
   if (s.state === 'there') {
@@ -563,7 +617,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { merit.clas
 function clampTarget() { const t = controls.target; t.x = clamp(t.x, -11, 11); t.z = clamp(t.z, -8.5, 8.5); t.y = clamp(t.y, 0, 3); }
 let frames = 0, lastClock = -9;
 function loop() {
-  const dt = Math.min(clock.getDelta(), 0.05), now = clock.elapsedTime;
+  const dt = Math.min(clock.getDelta(), 0.05) * (window.__speed || 1), now = clock.elapsedTime;
   if (camFly) { const k = 1 - Math.pow(0.03, dt); camera.position.lerp(camFly.pos, k); controls.target.lerp(camFly.tgt, k); if (camera.position.distanceTo(camFly.pos) < 0.02) camFly = null; }
   if (follow === 'phoenix' && phoenix.ready) { const p = phoenix.root.position; const back = new THREE.Vector3(0, 0, -1).applyQuaternion(phoenix.root.quaternion); controls.target.lerp(p, 1 - Math.pow(0.02, dt)); camera.position.lerp(p.clone().addScaledVector(back, 6.5).add(new THREE.Vector3(0, 2.2, 0)), 1 - Math.pow(0.1, dt)); }
   controls.update(); if (!follow) clampTarget();
@@ -574,7 +628,7 @@ function loop() {
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
   frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
-  phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt);
+  phoenix.update(dt, now); panda.update(dt, now); panther.update(dt, now); petTick(dt); pantherTick(dt); pokerTick(dt, now);
   if (selected && (selected.pet === 'panda' || selected.pet === 'pantera') && !camFly) { const q = selected.pet === 'panda' ? panda.root.position : panther.root.position; controls.target.lerp(q.clone().setY(q.y + 0.4), 1 - Math.pow(0.05, dt)); }
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
   if (holo) {
@@ -604,4 +658,4 @@ masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
 window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { panther, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.__mesa = { panther, poker, pokerNow: () => { poker.t = 0; }, pit, petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
