@@ -1,6 +1,6 @@
 // Conselho da Carnucci (nomes escolhidos pelo Léo em 19/11/2026)
 // "regra" = a regra de trabalho do agente (não é citação da pessoa real ou do personagem)
-export const FATURAMENTO = { valor: 288000, fonte: 'Valor informado pelo Léo (UTMify). Gráficos de exemplo até ligar a UTMify.' };
+export const FATURAMENTO = { valor: 0, // valor real só no build local (repositório público) atualizado: '19/11/2026', fonte: 'Número da UTMify informado pelo Léo. Os gráficos são ilustrativos até a UTMify ser ligada.' };
 
 export const MASTER = {
   id: 'master', nome: 'Thomas Shelby', idade: 41, nacionalidade: 'Inglês', cidade: 'Birmingham', bandeira: '🇬🇧',

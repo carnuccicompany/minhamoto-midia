@@ -297,12 +297,12 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     g.fillStyle = '#d4b26a'; g.font = '600 22px Inter, Arial'; g.fillText('CARNUCCI · MINHAMOTO', 48, 56);
     g.fillStyle = '#8f8a80'; g.font = '500 20px Inter, Arial';
     const hora = new Date().toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit', second: '2-digit' });
-    g.textAlign = 'right'; g.fillText('AO VIVO  ' + hora, W - 48, 56); g.textAlign = 'left';
-    g.fillStyle = '#3ddc84'; g.beginPath(); g.arc(W - 48 - g.measureText('AO VIVO  ' + hora).width - 16, 49, 7 + Math.sin(now * 4) * 1.5, 0, 7); g.fill();
-    fatShown += (FAT.valor - fatShown) * 0.05;
+    const selo = 'UTMIFY · ATUALIZADO EM ' + FAT.atualizado; g.textAlign = 'right'; g.fillText(selo, W - 48, 56); g.textAlign = 'left';
+    g.fillStyle = '#d4b26a'; g.beginPath(); g.arc(W - 48 - g.measureText(selo).width - 16, 49, 7, 0, 7); g.fill();
+    fatShown = FAT.valor;
     g.fillStyle = '#9b958a'; g.font = '600 24px Inter, Arial'; g.fillText('FATURAMENTO TOTAL', 48, 130);
     g.fillStyle = '#f4efe4'; g.font = '700 108px Inter, Arial'; g.fillText('R$ ' + Math.round(fatShown).toLocaleString('pt-BR'), 44, 238);
-    g.fillStyle = '#3ddc84'; g.font = '600 26px Inter, Arial'; g.fillText('▲ desde o lançamento', 50, 284);
+    g.fillStyle = '#3ddc84'; g.font = '600 26px Inter, Arial'; g.fillText('▲ faturamento total na UTMify', 50, 284);
     // linha de crescimento (verde)
     const lx = 48, ly = 330, lw = 700, lh = 320;
     g.strokeStyle = 'rgba(255,255,255,.08)'; g.lineWidth = 1; for (let i = 0; i <= 4; i++) { g.beginPath(); g.moveTo(lx, ly + i * lh / 4); g.lineTo(lx + lw, ly + i * lh / 4); g.stroke(); }
@@ -322,7 +322,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     }
     // pizza por loja
     const px = 920, py = 610, pr = 82; const split = [['App Store', .58, '#3ddc84'], ['Google Play', .42, '#ff5a5f']];
-    let a0 = -Math.PI / 2 + now * 0.05;
+    let a0 = -Math.PI / 2;
     split.forEach(([n, f, c]) => { g.beginPath(); g.moveTo(px, py); g.arc(px, py, pr, a0, a0 + f * Math.PI * 2 * reveal); g.closePath(); g.fillStyle = c; g.fill(); a0 += f * Math.PI * 2; });
     g.fillStyle = '#07090b'; g.beginPath(); g.arc(px, py, pr * .55, 0, 7); g.fill();
     split.forEach(([n, f, c], i) => { g.fillStyle = c; g.fillRect(1030, 568 + i * 44, 16, 16); g.fillStyle = '#e8e2d6'; g.font = '500 20px Inter, Arial'; g.fillText(`${n}  ${Math.round(f * 100)}%`, 1056, 584 + i * 44); });
