@@ -28,7 +28,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     side: THREE.BackSide, depthWrite: false, uniforms: skyU,
     vertexShader: 'varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
     fragmentShader: `uniform vec3 top; uniform vec3 hor; uniform vec3 sunDir; uniform vec3 sunCol; uniform float sunAmt; varying vec3 vP;
-      void main(){ float h = clamp(vP.y, -0.2, 1.0); vec3 c = mix(hor, top, pow(max(h,0.0), 0.55)); if (h < 0.0) c = hor * (1.0 + h*1.5);
+      void main(){ float h = clamp(vP.y, -0.2, 1.0); vec3 c = mix(hor, top, pow(max(h,0.0), 0.55)); if (h < 0.0) c = mix(hor * 0.45, vec3(0.03, 0.032, 0.038), clamp(-h * 6.0, 0.0, 1.0));
       float d = max(dot(vP, normalize(sunDir)), 0.0); c += sunCol * (pow(d, 900.0) * 6.0 + pow(d, 12.0) * 0.35) * sunAmt; gl_FragColor = vec4(c, 1.0); }`
   }));
   sky.renderOrder = -10; OUT(sky.material); scene.add(sky);
@@ -264,6 +264,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
 
   // halo pendente sobre a mesa (luz de cima sem feixe)
   const halo = new THREE.Group(); halo.position.y = 3.25; scene.add(halo);
+  out.halo = halo; halo.userData.dyn = true; // não entra no bake: some inteiro na visão de cima
   const haloM = mat(0xfff0d8, { emissive: 0xffe2b0, emissiveIntensity: 2 });
   mesh(new THREE.TorusGeometry(2.2, 0.03, 6, 96), haloM, halo, null, [Math.PI / 2, 0, 0], false);
   mesh(new THREE.TorusGeometry(2.24, 0.012, 4, 96), M.gold, halo, [0, 0.03, 0], [Math.PI / 2, 0, 0], false);

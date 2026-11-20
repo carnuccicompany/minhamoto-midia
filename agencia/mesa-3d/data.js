@@ -1,6 +1,5 @@
 // Conselho da Carnucci (nomes escolhidos pelo Léo em 19/11/2026)
 // "regra" = a regra de trabalho do agente (não é citação da pessoa real ou do personagem)
-// valor real do faturamento só no build local (repositório público)
 export const FATURAMENTO = { valor: 0, atualizado: '19/11/2026', fonte: 'Número da UTMify informado pelo Léo. Os gráficos são ilustrativos até a UTMify ser ligada.' };
 
 export const MASTER = {
@@ -192,3 +191,171 @@ export const SUBJEITO = {
   'Caçador de tendências': 'Vê o assunto subindo antes de virar moda.',
   'Leitor de avaliações': 'Lê as avaliações dos concorrentes pra achar o que eles não resolvem.',
 };
+
+// Nomes dos subagentes, batizados pelo Thomas Shelby em 20/11/2026 (chave: diretor|função)
+export const SUBNOME = {
+ "master|Secretário do Conselho": {
+  "nome": "Moneypenny",
+  "por": "A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo."
+ },
+ "master|Auditor de entregas": {
+  "nome": "Eliot Ness",
+  "por": "O Intocável que derrubou Capone conferindo livro por livro: não se compra e não deixa número passar."
+ },
+ "master|Tesoureiro (folha)": {
+  "nome": "Alexander Hamilton",
+  "por": "Primeiro Secretário do Tesouro dos EUA: montou o sistema que paga em dia e no centavo."
+ },
+ "dados|Coletor de métricas": {
+  "nome": "Florence Nightingale",
+  "por": "Pioneira da estatística: coletava dado fresco todo dia antes de qualquer um e mudou decisões com ele."
+ },
+ "dados|Analista de funil": {
+  "nome": "Sherlock Holmes",
+  "por": "Acha o ponto exato onde o cliente some como Holmes acha o detalhe que ninguém viu."
+ },
+ "dados|Alerta de anomalias": {
+  "nome": "Paul Revere",
+  "por": "Cavalgou a noite gritando o alarme: qualquer número fora do normal, ele grita primeiro."
+ },
+ "dados|Relatório semanal": {
+  "nome": "Ernest Hemingway",
+  "por": "Mestre da frase curta e seca: relatório que se lê em um minuto."
+ },
+ "mkt|Pauteiro": {
+  "nome": "Oprah Winfrey",
+  "por": "Por décadas decidiu o assunto do dia nos EUA: pauta antes do concorrente."
+ },
+ "mkt|Roteirista": {
+  "nome": "Don Draper",
+  "por": "O publicitário de Mad Men: um gancho, duas frases, venda feita."
+ },
+ "mkt|Designer": {
+  "nome": "Wes Anderson",
+  "por": "Simetria e paleta de cor obsessivas: nada sai torto."
+ },
+ "mkt|Editor de vídeo": {
+  "nome": "Thelma Schoonmaker",
+  "por": "Montadora do Scorsese com três Oscars: corte seco e ritmo que não deixa respirar."
+ },
+ "mkt|Revisor": {
+  "nome": "Hermione Granger",
+  "por": "Corrige até o 'Leviôsa' dos outros: acha a vírgula errada que todo mundo deixou passar."
+ },
+ "mkt|Publicador": {
+  "nome": "Phileas Fogg",
+  "por": "Deu a volta ao mundo em 80 dias controlando cada minuto: posta na hora certa."
+ },
+ "cria|Roteirista de gancho": {
+  "nome": "Thomas Edison",
+  "por": "'Achei 10 mil jeitos que não funcionam': testa gancho até achar o que acende."
+ },
+ "cria|Editor de motion": {
+  "nome": "Saul Bass",
+  "por": "Criou as aberturas de Hitchcock: texto e tela se mexendo com propósito, sem enfeite."
+ },
+ "cria|Revisor de performance": {
+  "nome": "Billy Beane",
+  "por": "O Moneyball: compara com o que já ganhou e copia o que funciona, não o que parece bonito."
+ },
+ "trafego|Gestor de campanhas": {
+  "nome": "Napoleão Bonaparte",
+  "por": "Gênio das campanhas: concentra força onde vence e retira de onde perde, sem sentimento."
+ },
+ "trafego|Testes A/B": {
+  "nome": "Marie Curie",
+  "por": "Dois Nobel com experimento rigoroso: só acredita no teste que terminou."
+ },
+ "trafego|Controle de verba": {
+  "nome": "Tio Patinhas",
+  "por": "Conhece cada moeda da caixa-forte pelo nome: vigia cada real gasto."
+ },
+ "produto|Analista do paywall": {
+  "nome": "Steve Jobs",
+  "por": "Brigava por cada pixel e cada segundo da tela: a tela de assinatura é dele."
+ },
+ "produto|Analista de cancelamentos": {
+  "nome": "Gregory House",
+  "por": "'Todo mundo mente': ignora a desculpa e acha a causa real de cada cancelamento."
+ },
+ "produto|Testes de preço": {
+  "nome": "John Nash",
+  "por": "Nobel da teoria dos jogos: acha o ponto de equilíbrio onde o preço vende mais sem deixar dinheiro na mesa."
+ },
+ "produto|Lista pro Davi": {
+  "nome": "Dwight Eisenhower",
+  "por": "Pai da matriz urgente x importante: entrega a lista em ordem de impacto."
+ },
+ "fin|Receita (MRR)": {
+  "nome": "Shakuntala Devi",
+  "por": "A 'calculadora humana' da Índia: sabe a receita de cabeça, todo dia."
+ },
+ "fin|Custos e ferramentas": {
+  "nome": "Jorge Paulo Lemann",
+  "por": "O orçamento base zero mais famoso do Brasil: corta o que não se paga."
+ },
+ "fin|Lucro e alertas": {
+  "nome": "Michael Burry",
+  "por": "Viu a crise de 2008 antes de todo mundo: avisa da margem apertando antes de virar problema."
+ },
+ "lojas|ASO": {
+  "nome": "Ayrton Senna",
+  "por": "Brigava por cada posição como se fosse a última: cada palavra-chave é uma ultrapassagem."
+ },
+ "lojas|Respostas às avaliações": {
+  "nome": "Ted Lasso",
+  "por": "Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta."
+ },
+ "lojas|Suporte e-mail e WhatsApp": {
+  "nome": "Mary Poppins",
+  "por": "Paciente, rápida e sempre com a solução na bolsa: cliente atendido fica."
+ },
+ "rel|Notificações e e-mails": {
+  "nome": "Jane Austen",
+  "por": "Mestra da carta certa na hora certa: mensagem que se lê, sem encher o saco."
+ },
+ "rel|Reconquista": {
+  "nome": "Ernest Shackleton",
+  "por": "Preso no gelo da Antártida, não desistiu e trouxe todos de volta: não desiste de quem saiu."
+ },
+ "rel|Indique e Ganhe": {
+  "nome": "Mary Kay Ash",
+  "por": "Transformou cliente feliz em exército de vendedoras: indicação é com ela."
+ },
+ "rel|Criadores e UGC": {
+  "nome": "Quincy Jones",
+  "por": "Faro lendário pra talento: achou e lapidou quem combinava com o som certo."
+ },
+ "juridico|Contratos e termos": {
+  "nome": "Ruth Bader Ginsburg",
+  "por": "Lia cada linha e ganhava no detalhe: letras miúdas são dela."
+ },
+ "juridico|Contabilidade e impostos": {
+  "nome": "Luca Pacioli",
+  "por": "O pai da partida dobrada: imposto certo, nem um real a mais."
+ },
+ "juridico|Regras das lojas": {
+  "nome": "Mike Ross",
+  "por": "Memória fotográfica de Suits, braço do Harvey: sabe de cor o que Apple e Google reprovam."
+ },
+ "juridico|Proteção de marca": {
+  "nome": "Leônidas",
+  "por": "O rei dos 300 que segurou a passagem: ninguém entra usando o nome da empresa."
+ },
+ "mercado|Radar de concorrentes": {
+  "nome": "Sun Tzu",
+  "por": "'Conheça o inimigo': sabe o que cada concorrente lançou na semana."
+ },
+ "mercado|Caçador de tendências": {
+  "nome": "Coco Chanel",
+  "por": "Via a moda antes dela existir: pega o assunto subindo antes de virar tendência."
+ },
+ "mercado|Leitor de avaliações": {
+  "nome": "Mata Hari",
+  "por": "A espiã que lia o inimigo por dentro: acha nas avaliações deles o que eles não resolvem."
+ }
+};
+
+// Humor dos pets com cada diretor: vem da Folha de sexta (agencia/merito/pets.json).
+// 'foda' = Marnevali solta fogo e o Carnucci sobe na mesa; 'ok' = passam de olho; 'fraco' = Marnevali passa acuada e o Carnucci não vai.
+export const PETS_HUMOR = { atualizado: null, humor: {} };

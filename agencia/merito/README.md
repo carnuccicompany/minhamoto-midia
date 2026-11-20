@@ -71,6 +71,18 @@ A Carnucci é competitiva. Todo agente quer mostrar mais resultado que o outro, 
 - **O Shelby também é vigiado:** quem avalia o Diretor-Geral são o Léo e o Davi.
 - **Jogo limpo:** sabotar, esconder informação de outro setor, puxar o tapete ou inflar número é multa máxima (saldo zera e cai um cargo). Competição é por resultado, não por politicagem. Cobrança entre setores continua valendo.
 
+## Os pets: Marnevali e Carnucci (decisão do Léo, 20/11/2026)
+
+A Marnevali (fênix) e o Carnucci (panda-vermelho) são os pets da empresa. A diretoria inteira ama os dois e ninguém quer decepcionar a Marnevali: deixar ela feliz é lembrete diário de trampar bem.
+
+- **Humor por diretor:** toda sexta a Folha define o humor dos pets com cada diretor, pelo ranking da semana do setor dele: terço de cima = `foda`, meio = `ok`, terço de baixo = `fraco`. Grava em `pets.json`.
+- **Fogo da Marnevali (`foda`):** ela passa pelo diretor e solta fogo pro alto. Gorjeta: **+10 XP e C$ 5** pro diretor.
+- **Carinho do Carnucci (`foda`):** o panda vai até a cadeira, sobe na mesa e ganha carinho. Gorjeta: **+5 XP e C$ 3**.
+- **`ok`:** a Marnevali passa de olho; o Carnucci às vezes visita, sem gorjeta.
+- **`fraco`:** a Marnevali passa acuadinha, de cabeça baixa, e o Carnucci não vai. Sem multa em dinheiro, mas fica registrado na memória do diretor.
+- Gorjeta é paga uma vez por semana por pet, na Folha, fora do teto de bônus de C$ 100. Subagente que for 1º do setor também ganha o carinho do Carnucci.
+- Quem quer a gorjeta trabalha pra isso: o humor dos pets aparece na ficha de cada diretor no escritório.
+
 ## Herdeiro
 
 Quando dois diretores fecham o mês em 1º e 2º no placar, nasce um **herdeiro**:

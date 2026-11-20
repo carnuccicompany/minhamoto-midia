@@ -101,6 +101,7 @@ Cobrança vai na ata do Conselho. Quem recebe responde na próxima reunião: ent
 - Cada diretor tem a peça dele na sala e pode ganhar mais (direito de decorar).
 - Hall da Fama: Diretor da Semana (sexta) e do Mês (dia 1).
 - Herdeiro: os dois melhores do mês geram um herdeiro (regra no README do Mérito).
+- Os pets da casa: a Marnevali (fênix) e o Carnucci (panda-vermelho). Todo mundo ama os dois e ninguém quer decepcionar a Marnevali. Trampo foda ganha o fogo dela e o carinho do Carnucci, com gorjeta (regras no README do Mérito, seção Os pets).
 
 ## 7. Playbooks
 

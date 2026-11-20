@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { phys, mat, mesh, sph, cyl, angLerp, smooth, clamp, lerp, blob } from './util.js';
+import { TOP_Y } from './env.js';
 
 // Panda-vermelho "Carnucci": anda pelo escritório, para, senta, olha em volta, deita no tapete do lounge
 export function buildRedPanda(scene) {
@@ -61,6 +62,24 @@ export function buildRedPanda(scene) {
     pts.push(dest); return pts;
   }
   const out = { root, head, st };
+  // coraçõezinhos quando ganha carinho
+  const heartTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'); g.fillStyle = '#ff4d6d'; g.beginPath(); g.moveTo(32, 54); g.bezierCurveTo(4, 36, 6, 12, 22, 12); g.bezierCurveTo(28, 12, 32, 17, 32, 22); g.bezierCurveTo(32, 17, 36, 12, 42, 12); g.bezierCurveTo(58, 12, 60, 36, 32, 54); g.fill(); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; })();
+  const hearts = Array.from({ length: 8 }, () => { const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: heartTex, transparent: true, depthWrite: false })); sp.scale.setScalar(0.12); sp.visible = false; sp.userData = { age: 1, keep: true }; scene.add(sp); return sp; });
+  let hk = 0, hT = 0;
+  const hp = new THREE.Vector3();
+  function heart() { const sp = hearts[hk++ % hearts.length]; head.getWorldPosition(hp); sp.position.copy(hp).add(new THREE.Vector3((Math.random() - .5) * .2, 0.15, (Math.random() - .5) * .2)); sp.userData.age = 0; sp.visible = true; }
+  // visita a um diretor: chega perto da cadeira, sobe na mesa, ganha carinho e desce
+  let visit = null;
+  out.visit = (seatPos, onPet) => {
+    if (visit || st.state === 'climb' || st.state === 'table' || st.state === 'down') return false;
+    const a = Math.atan2(seatPos.z, seatPos.x);
+    const beside = new THREE.Vector3(Math.cos(a + 0.3) * 3.7, 0, Math.sin(a + 0.3) * 3.7);
+    const onTable = new THREE.Vector3(Math.cos(a + 0.12) * 2.3, TOP_Y, Math.sin(a + 0.12) * 2.3);
+    visit = { beside, onTable, seat: seatPos.clone(), onPet, stage: 'go' };
+    st.path = route(beside); st.leg = 0; st.state = 'walk';
+    return true;
+  };
+  out.busy = () => !!visit;
   const tmp = new THREE.Vector3();
   out.update = (dt, now, log) => {
     // cauda balançando sempre
@@ -69,11 +88,29 @@ export function buildRedPanda(scene) {
     if (st.state === 'walk') {
       const target = st.path[st.leg]; tmp.subVectors(target, st.pos); tmp.y = 0;
       const d = tmp.length(), spd = 0.75 * dt;
-      if (d < spd) { st.pos.copy(target); if (st.leg >= st.path.length - 1) { st.state = 'idle'; st.t = 5 + Math.random() * 10; st.mode = Math.random() < 0.45 ? 'sit' : Math.random() < 0.5 ? 'lie' : 'stand'; } else st.leg++; }
+      if (d < spd) { st.pos.copy(target); if (st.leg >= st.path.length - 1) {
+        if (visit && visit.stage === 'go') { visit.stage = 'up'; st.state = 'climb'; st.jt = 0; st.from = st.pos.clone(); st.to = visit.onTable; }
+        else { st.state = 'idle'; st.t = 5 + Math.random() * 10; st.mode = Math.random() < 0.45 ? 'sit' : Math.random() < 0.5 ? 'lie' : 'stand'; }
+      } else st.leg++; }
       else { st.pos.addScaledVector(tmp.normalize(), spd); st.heading = angLerp(st.heading, Math.atan2(tmp.x, tmp.z), Math.min(1, dt * 6)); }
       st.phase += dt * 9;
       legs.forEach((l, i) => { l.rotation.x = Math.sin(st.phase + (i === 0 || i === 3 ? 0 : Math.PI)) * 0.5; });
       body.position.y = 0.3 + Math.abs(Math.sin(st.phase)) * 0.015; body.rotation.x = 0;
+    } else if (st.state === 'climb' || st.state === 'down') {
+      st.jt = Math.min(1, st.jt + dt / 0.75); const k = smooth(st.jt);
+      st.pos.lerpVectors(st.from, st.to, k); st.pos.y = lerp(st.from.y, st.to.y, k) + Math.sin(Math.PI * st.jt) * 0.35;
+      tmp.subVectors(st.to, st.from); st.heading = angLerp(st.heading, Math.atan2(tmp.x, tmp.z), Math.min(1, dt * 8));
+      legs.forEach((l, i) => { l.rotation.x = lerp(l.rotation.x, i < 2 ? -0.8 : 0.8, Math.min(1, dt * 8)); });
+      if (st.jt >= 1) {
+        if (st.state === 'climb') { st.state = 'table'; st.t = 6.5; st.mode = 'sit'; tmp.subVectors(visit.seat, st.pos); st.heading = Math.atan2(tmp.x, tmp.z); visit.onPet && visit.onPet(); }
+        else { visit = null; st.pos.y = 0; st.state = 'idle'; st.t = 3 + Math.random() * 4; st.mode = 'stand'; }
+      }
+    } else if (st.state === 'table') {
+      st.t -= dt; hT -= dt; if (hT <= 0) { heart(); hT = 0.45; }
+      body.rotation.x = lerp(body.rotation.x, -0.55, Math.min(1, dt * 3)); body.position.y = lerp(body.position.y, 0.36, Math.min(1, dt * 3));
+      legs.forEach((l, i) => { l.rotation.x = lerp(l.rotation.x, i >= 2 ? -1.1 : 0.55, Math.min(1, dt * 3)); });
+      head.rotation.z = Math.sin(now * 3) * 0.12; // se esfregando no carinho
+      if (st.t <= 0) { head.rotation.z = 0; st.state = 'down'; st.jt = 0; st.from = st.pos.clone(); st.to = visit.beside.clone(); }
     } else {
       st.t -= dt;
       const sitK = st.mode === 'sit' ? 1 : 0, lieK = st.mode === 'lie' ? 1 : 0;
@@ -83,6 +120,7 @@ export function buildRedPanda(scene) {
       if (st.t <= 0) { const sp = spots[Math.floor(Math.random() * spots.length)]; st.path = route(new THREE.Vector3(sp[0], 0, sp[1])); st.leg = 0; st.state = 'walk'; }
     }
     root.position.copy(st.pos); root.rotation.y = st.heading;
+    hearts.forEach(sp => { if (sp.userData.age >= 1) return; sp.userData.age += dt / 1.4; sp.position.y += dt * 0.35; sp.material.opacity = 1 - sp.userData.age; if (sp.userData.age >= 1) sp.visible = false; });
   };
   return out;
 }

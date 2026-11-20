@@ -6,6 +6,10 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 ## 2026-11-20
 - **Batismo dos subagentes feito pelo Thomas Shelby:** os 40 subagentes do livro.json ganharam nome (critério do Léo, decisão de 19/11). Tabela com setor, função, nome e porquê em agencia/merito/batismo-2026-11.md. A função segue em `funcao`; memórias atualizadas com o nome novo.
 
+## 2026-11-20
+- **Pets com sistema de recompensa:** Marnevali (fênix) solta fogo pro diretor que fez trampo foda e passa acuada com quem fez trampo fraco; Carnucci (panda) sobe na mesa de quem mandou bem pra ganhar carinho. Gera gorjeta de XP e C$. Todo mundo ama os pets e não quer decepcionar a Marnevali. Fênix menor. Regras em agencia/merito/README.md, seção Os pets.
+- Subagentes batizados pelo Shelby (agencia/merito/batismo-2026-11.md).
+
 ## 2026-11-19
 - **Black Friday:** NÃO vamos preparar oferta de Black Friday. (Resposta à decisão 1 do Conselho de 19/11.)
 - **Direção visual A/B:** ainda NÃO liberada. O Léo vai verificar os vídeos A1/A2/B1/B2 antes. Produção diária e vídeos continuam parados até ele liberar. (Decisão 2.)

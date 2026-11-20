@@ -37,7 +37,23 @@ export function buildPhoenix(scene, glbBase64) {
   let u = 0, roll = 0;
   let mixer = null, model = null;
   const wingL = new THREE.Vector3(), wingR = new THREE.Vector3(), tail = new THREE.Vector3(), beak = new THREE.Vector3();
-  let breath = 0, nextBreath = 6;
+  let breath = 0;
+  let vis = null; // visita a um diretor: { c, len, t, mood, peak, uEnd }
+  const BASE = 0.72; let sc = BASE;
+  out.visit = (target, mood, onPeak) => {
+    if (!out.ready || vis) return false;
+    const pNow = root.position.clone();
+    const inward = new THREE.Vector3(target.x, 0, target.z).normalize();
+    const hy = mood === 'fraco' ? 1.75 : 2.45;
+    const a = target.clone().addScaledVector(inward, 1.4).setY(hy + 0.6);
+    const b = target.clone().addScaledVector(inward, -0.5).setY(hy);
+    const side = new THREE.Vector3(-inward.z, 0, inward.x);
+    const c2 = target.clone().addScaledVector(side, 2.2).addScaledVector(inward, 1.0).setY(hy + 0.5);
+    const uEnd = (u + 0.18) % 1, back = curve.getPointAt(uEnd);
+    const c = new THREE.CatmullRomCurve3([pNow, a, b, c2, back], false, 'centripetal');
+    vis = { c, len: c.getLength(), t: 0, mood, peak: false, onPeak, uEnd };
+    return true;
+  };
 
   // fitas da cauda
   const ribTex = (() => { const c = document.createElement('canvas'); c.width = 32; c.height = 256; const g = c.getContext('2d'); const gr = g.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, 'rgba(255,240,180,1)'); gr.addColorStop(0.3, 'rgba(255,150,40,.9)'); gr.addColorStop(0.75, 'rgba(220,40,10,.5)'); gr.addColorStop(1, 'rgba(120,10,0,0)'); g.fillStyle = gr; g.fillRect(0, 0, 32, 256); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; })();
@@ -76,31 +92,43 @@ export function buildPhoenix(scene, glbBase64) {
   out.update = (dt, now) => {
     if (!out.ready) return;
     mixer.update(dt);
-    u = (u + dt * 3.0 / LEN) % 1;
-    const p = curve.getPointAt(u), p2 = curve.getPointAt((u + 0.004) % 1), p3 = curve.getPointAt((u + 0.012) % 1);
+    let p, p2, p3;
+    if (vis) {
+      const spd = vis.mood === 'fraco' ? 1.6 : vis.mood === 'foda' ? 3.4 : 2.6;
+      vis.t = Math.min(1, vis.t + dt * spd / vis.len);
+      p = vis.c.getPointAt(vis.t); p2 = vis.c.getPointAt(Math.min(1, vis.t + 0.01)); p3 = vis.c.getPointAt(Math.min(1, vis.t + 0.03));
+      if (p2.distanceTo(p) < 1e-4) p2 = p.clone().add(curve.getTangentAt(vis.uEnd));
+      if (p3.distanceTo(p2) < 1e-4) p3 = p2.clone().add(curve.getTangentAt(vis.uEnd));
+      if (!vis.peak && vis.t > 0.52) { vis.peak = true; if (vis.mood === 'foda') breath = 1.8; vis.onPeak && vis.onPeak(); }
+      if (vis.t >= 1) { u = vis.uEnd; vis = null; }
+    } else {
+      u = (u + dt * 3.0 / LEN) % 1;
+      p = curve.getPointAt(u); p2 = curve.getPointAt((u + 0.004) % 1); p3 = curve.getPointAt((u + 0.012) % 1);
+    }
+    const acuada = vis && vis.mood === 'fraco' && vis.t > 0.3 && vis.t < 0.8;
+    sc += ((acuada ? BASE * 0.8 : BASE) - sc) * Math.min(1, dt * 2); root.scale.setScalar(sc);
     root.position.copy(p);
     fwd.subVectors(p2, p).normalize();
     const turn = new THREE.Vector3().subVectors(p3, p2).normalize().cross(fwd).y;
     roll += (THREE.MathUtils.clamp(turn * 18, -0.8, 0.8) - roll) * Math.min(1, dt * 2.5);
     root.lookAt(tmp.copy(p).add(fwd));
     root.rotateZ(-roll);
+    if (acuada) root.rotateX(0.35); // cabeça baixa, encolhida
     root.position.y += Math.sin(now * 2.2) * 0.08;
     // pontos de emissão (frame local: frente = +Z)
     const L = (x, y, z, v) => v.set(x, y, z).applyMatrix4(root.matrixWorld);
     root.updateMatrixWorld();
     const flap = Math.sin(now * 2.6);
     L(-1.33, flap * 0.5, -0.43, wingL); L(1.33, flap * 0.5, -0.43, wingR); L(0, 0.04, -2.1, tail); L(0, 0.15, 0.9, beak);
-    for (let k = 0; k < 1; k++) {
+    for (let k = 0; k < (acuada ? (Math.random() < 0.3 ? 1 : 0) : 1); k++) {
       [wingL, wingR].forEach(w => emit(w, new THREE.Vector3((Math.random() - .5) * .4, Math.random() * .5, (Math.random() - .5) * .4), 0.6 + Math.random() * 0.5, 0.18 + Math.random() * 0.2));
       emit(tail, new THREE.Vector3((Math.random() - .5) * .5, Math.random() * .3, (Math.random() - .5) * .5), 0.9 + Math.random() * 0.6, 0.28 + Math.random() * 0.25);
     }
     // sopro de fogo
-    nextBreath -= dt;
-    if (nextBreath <= 0 && breath <= 0) { breath = 1.8; nextBreath = 9 + Math.random() * 7; out.onBreath && out.onBreath(); }
     if (breath > 0) {
       breath -= dt;
       for (let k = 0; k < 10; k++) {
-        const dir = fwd.clone().add(new THREE.Vector3((Math.random() - .5) * .28, (Math.random() - .5) * .22 - 0.12, (Math.random() - .5) * .28)).normalize();
+        const dir = fwd.clone().add(new THREE.Vector3((Math.random() - .5) * .3, 0.55 + (Math.random() - .5) * .25, (Math.random() - .5) * .3)).normalize(); // fogo pro alto, comemorando
         emit(beak, dir.multiplyScalar(5 + Math.random() * 4), 0.45 + Math.random() * 0.4, 0.35 + Math.random() * 0.45);
       }
       breathLight.position.copy(beak).addScaledVector(fwd, 1.5); breathLight.intensity = 40 * Math.min(1, breath);

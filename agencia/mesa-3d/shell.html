@@ -41,7 +41,7 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); 
 #ticker li { font-size: .76rem; color: var(--muted); padding: 6px 12px; border-left: 2px solid var(--gold); background: rgba(10,8,6,.6); opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s; }
 #ticker li.in { opacity: 1; transform: none; }
 #ticker li:nth-child(n+2) { opacity: .55; }
-#panel { position: fixed; top: 16px; right: 16px; bottom: 16px; width: min(380px, calc(100vw - 32px)); overflow: auto; padding: 24px 24px 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transform: translateX(calc(100% + 24px)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+#panel { position: fixed; top: 16px; right: 16px; bottom: 84px; width: min(380px, calc(100vw - 32px)); overflow: auto; padding: 24px 24px 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transform: translateX(calc(100% + 24px)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
 #panel.open { transform: none; }
 #panel .x, #merit .x { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); font-size: 1.2rem; cursor: pointer; }
 #panel .kick { font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 7px; }
@@ -200,13 +200,15 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
         <div><i>100 XP</i><b>Analista</b><span>Pode propor até 3 extras por entrega.</span></div>
         <div><i>300 XP</i><b>Sênior</b><span>Entrega direto pro diretor e roda no modelo mais forte.</span></div>
         <div><i>700 XP</i><b>Braço-direito</b><span>Executa coisas pequenas sozinho, treina os estagiários e substitui o diretor.</span></div>
-        <div><i>1500 XP + vaga</i><b>Diretor</b><span>Ganha cadeira na mesa. Precisa do OK do Léo e do Davi.</span></div>
+        <div><i>Resultado</i><b>Diretor</b><span>Toma a cadeira de um diretor mostrando mais resultado que ele por 4 semanas seguidas, com prova. Léo e Davi podem vetar em 48h.</span></div>
         <div><i>Indicação</i><b>Diretor-Geral</b><span>Só por escolha do Léo e do Davi.</span></div>
       </div>
-      <h3>Cadeira em disputa</h3>
-      <p>A cada 3 meses, o diretor do setor com pior resultado pode ser desafiado pelo Braço-direito com mais XP da empresa. O Diretor-Geral apresenta os dois históricos e Léo e Davi decidem. Quem perde vira Braço-direito.</p>
+      <h3>Competição</h3>
+      <p>Toda sexta sai o ranking da semana dentro de cada setor e na empresa toda. O 1º do setor por 2 semanas seguidas ganha +20 XP. O último por 2 semanas leva aviso; na 3ª cai um cargo e o Shelby coloca um agente novo no lugar. Diretor vê tudo e diz na reunião, com prova, quem está trampando melhor e quem está devendo. Sabotar, esconder informação ou inflar número zera o saldo e derruba um cargo.</p>
+      <h3>Tomada de cadeira</h3>
+      <p>Toda sexta o Shelby compara cada diretor com o melhor agente da empresa. Quem mostrar mais resultado que um diretor por 4 semanas seguidas toma a cadeira dele; o diretor vira Braço-direito. Léo e Davi recebem o aviso e podem vetar em 48h. A cada 3 meses tem ainda a revisão formal da Cadeira em disputa.</p>
       <h3>Herdeiro</h3>
-      <p>Quando dois diretores fecham o mês em 1º e 2º no placar, nasce um herdeiro: um subagente novo criado a partir do jeito de trabalhar dos dois (regras, playbooks e os extras aprovados de cada um no mês). Ele nasce como Analista, com 100 XP, no setor do 1º colocado. Os dois escolhem o nome; Léo e Davi podem vetar. É no máximo um por mês; se o mesmo par repetir, o herdeiro que já existe ganha +100 XP. O herdeiro pode chegar a Braço-direito e disputar cadeira.</p>
+      <p>Quando dois diretores fecham o mês em 1º e 2º no placar, nasce um herdeiro: um subagente novo criado a partir do jeito de trabalhar dos dois (regras, playbooks e os extras aprovados de cada um no mês). Ele nasce como Analista, com 100 XP, no setor do 1º colocado. Quem batiza é o Thomas Shelby; Léo e Davi podem vetar. É no máximo um por mês; se o mesmo par repetir, o herdeiro que já existe ganha +100 XP. O herdeiro pode chegar a Braço-direito e disputar cadeira.</p>
       <h3>Setor novo, cadeira nova</h3>
       <p>Quando a empresa abre um setor, o Braço-direito com mais XP assume a cadeira de diretor.</p>
       <h3>Como a proatividade acontece</h3>
@@ -238,7 +240,11 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
         <div class="tile"><b>Léo e Davi são os maiores</b><span>Ninguém quer o lugar deles. Todo mundo trabalha pra eles ganharem e ficarem felizes. Lealdade é falar a verdade com número, mesmo quando ela não agrada.</span></div>
         <div class="tile"><b>Ambiente gangsta</b><span>Pode beber, comer e fumar na sala. Quem desenrola, curte: o Estoque está aí pra isso.</span></div>
         <div class="tile"><b>Missão</b><span>Vender muito, pra muita gente, e sempre vender mais. No curto, no médio e no longo prazo.</span></div>
+        <div class="tile"><b>Competição limpa</b><span>Qualquer cadeira pode ser tomada, inclusive a de diretor. Ganha quem mostra mais resultado, nunca quem puxa o tapete.</span></div>
+        <div class="tile"><b>Memória de tudo</b><span>Cada agente tem memória própria: lê as decisões do Léo e do Davi e o que já aconteceu antes de agir, e anota tudo no fim.</span></div>
       </div>
+      <h3>Os pets da casa</h3>
+      <p>A Marnevali (fênix) e o Carnucci (panda-vermelho) são os pets da empresa, e a diretoria inteira ama os dois. Ninguém quer decepcionar a Marnevali. Ela passa voando por cada diretor: trampo foda, ela solta fogo pro alto e o diretor ganha gorjeta de +10 XP e C$ 5; trampo fraco, ela passa acuadinha. O Carnucci vai até a cadeira de quem mandou bem, sobe na mesa e ganha carinho: +5 XP e C$ 3. Quem decide o humor dos pets é a Folha de sexta, pelo ranking da semana.</p>
       <h3>Direito de decorar</h3>
       <p>Diretor que manda bem no mês ganha o direito de colocar no escritório uma peça que combina com ele. O Claude gera a peça em 3D a partir da personalidade do diretor, sem precisar de aprovação. Os 11 primeiros já estão na sala: clique em qualquer um.</p>
       <h3>Hall da Fama</h3>

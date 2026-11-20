@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR } from './data.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
@@ -105,12 +105,39 @@ const ITEM = Object.fromEntries(ESTOQUE.map(e => [e.id, e]));
 const cs = e => Math.round(e.reais / CAMBIO);
 const brl = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : 'grátis';
 const phoenix = buildPhoenix(scene, window.__PARROT__);
-phoenix.onBreath = () => log('<b>Marnevali</b> soltou fogo');
+const humor = id => PETS_HUMOR.humor[id] || 'ok';
+const FALA_PET = {
+  foda: ['Essa foi pra você, Marnevali.', 'Ela soltou fogo pra mim. Semana boa.', 'Marnevali feliz, empresa feliz.'],
+  ok: ['Tô de olho no número, Marnevali.', 'Calma que vem coisa boa aí.'],
+  fraco: ['Desculpa, Marnevali. Semana que vem eu viro esse número.', 'Não fica assim, vou compensar.'],
+  panda: ['Vem cá, Carnucci.', 'Esse é o melhor funcionário da empresa.', 'Carinho pro chefe peludo.'],
+};
+const pick = a => a[Math.floor(Math.random() * a.length)];
+let fenixT = 18, pandaT = 40, fenixIdx = 0;
 const panda = buildRedPanda(scene);
+function petTick(dt) {
+  const sitting = seats.filter(s => s.state === 'sit');
+  fenixT -= dt;
+  if (fenixT <= 0 && phoenix.ready && sitting.length) {
+    const s = sitting[fenixIdx++ % sitting.length], m = humor(s.d.id), pos = s.frame.getWorldPosition(new THREE.Vector3());
+    if (phoenix.visit(pos, m, () => {
+      say(s, pick(FALA_PET[m]));
+      log(m === 'foda' ? `<b>Marnevali</b> soltou fogo pro <b>${first(s)}</b> · gorjeta: +10 XP e C$ 5` : m === 'fraco' ? `<b>Marnevali</b> passou acuada pelo <b>${first(s)}</b>` : `<b>Marnevali</b> passou de olho no <b>${first(s)}</b>`);
+    })) fenixT = 32 + Math.random() * 18; else fenixT = 3;
+  }
+  pandaT -= dt;
+  if (pandaT <= 0 && sitting.length) {
+    const good = sitting.filter(s => humor(s.d.id) === 'foda'), okk = sitting.filter(s => humor(s.d.id) === 'ok');
+    const pool = good.length ? good : okk;
+    if (!pool.length) { pandaT = 30; return; }
+    const s = pick(pool);
+    if (panda.visit(s.frame.getWorldPosition(new THREE.Vector3()), () => { say(s, pick(FALA_PET.panda)); log(humor(s.d.id) === 'foda' ? `<b>Carnucci</b> subiu na mesa pra ganhar carinho do <b>${first(s)}</b> · gorjeta: +5 XP e C$ 3` : `<b>Carnucci</b> subiu na mesa do <b>${first(s)}</b>`); })) pandaT = 70 + Math.random() * 40; else pandaT = 10;
+  }
+}
 panda.root.traverse(o => { if (o.isMesh) pickables.push(o); });
 const PETS = {
-  fenix: { nome: 'Marnevali', tipo: 'Fênix · mascote da Carnucci', txt: 'Voa pela sala o dia inteiro e, de vez em quando, solta fogo. Renasce das cinzas, como a empresa que não para.' },
-  panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · mascote da Carnucci', txt: 'Anda pelo escritório, senta pra olhar o movimento e tira cochilos no tapete do lounge.' },
+  fenix: { nome: 'Marnevali', tipo: 'Fênix · o pet da empresa', txt: 'A sala inteira ama ela e ninguém quer decepcionar a Marnevali. Ela passa voando por cada diretor: quando o trampo foi foda, solta fogo pro alto e o diretor ganha gorjeta (+10 XP e C$ 5). Quando o trampo foi fraco, passa acuadinha, de cabeça baixa. Renasce das cinzas, como a empresa que não para.' },
+  panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'Vai até a cadeira de quem mandou bem, sobe na mesa e pede carinho. Cada visita é gorjeta: +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
 };
 const pandaTag = addTag('<b>Carnucci</b><span>Panda-vermelho</span>', 'pet'); pandaTag.addEventListener('click', e => { e.stopPropagation(); selectPet('panda'); });
 const fenixTag = addTag('<b>Marnevali</b><span>Fênix</span>', 'pet'); fenixTag.addEventListener('click', e => { e.stopPropagation(); selectPet('fenix'); });
@@ -372,7 +399,7 @@ const holoMat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false,
   vertexShader: 'varying vec3 vN; varying vec3 vV; varying float vY; void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.0); vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz); vY = (modelMatrix * vec4(position, 1.0)).y; gl_Position = projectionMatrix * mv; }',
   fragmentShader: 'uniform float t; uniform vec3 c; varying vec3 vN; varying vec3 vV; varying float vY; void main(){ float f = pow(1.0 - abs(dot(vN, vV)), 2.0); float scan = 0.7 + 0.3 * sin(vY * 120.0 - t * 5.0); gl_FragColor = vec4(c * (0.10 + f * 1.25) * scan, 1.0); }' });
 const holoDisc = new THREE.MeshBasicMaterial({ color: 0xf0cf86, transparent: true, opacity: 0.14, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
-function showTeam(anchor, subs, back = 1) {
+function showTeam(anchor, subs, back = 1, did = '') {
   hideTeam();
   const g = new THREE.Group(); anchor.add(g); const n = subs.length, tags = [];
   subs.forEach((name, k) => {
@@ -385,7 +412,7 @@ function showTeam(anchor, subs, back = 1) {
     mesh(new THREE.CapsuleGeometry(0.09, 0.22, 4, 10), holoMat, body, [0, 0.55, 0], null, false).scale.set(1.25, 1, 0.75);
     mesh(sph(0.075, 14, 10), holoMat, body, [0, 0.85, 0], null, false);
     body.scale.set(1, 0.001, 1); body.userData.k = k;
-    const t = document.createElement('div'); t.className = 'subtag'; t.innerHTML = `<b>${name}</b><span>Estagiário · C$ 0</span>`; labelsEl.appendChild(t);
+    const t = document.createElement('div'); t.className = 'subtag'; t.innerHTML = `<b>${SUBNOME[did + '|' + name]?.nome || name}</b><span>${name}</span>`; labelsEl.appendChild(t);
     tags.push({ el: t, obj: body });
   });
   holo = { g, tags, t0: clock.elapsedTime };
@@ -406,9 +433,10 @@ function cardHTML(d, extra = '') {
     <blockquote><small>Regra de ouro</small>${d.regra}</blockquote>
     <h4>O que faz</h4><p class="what">${d.faz}</p>
     <h4>Equipe · ${d.subs.length} subagentes</h4>
-    <ol class="team">${d.subs.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${x}${SUBJEITO[x] ? `<small>${SUBJEITO[x]}</small>` : ''}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
+    <ol class="team">${d.subs.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${SUBNOME[d.id + '|' + x] ? `<b>${SUBNOME[d.id + '|' + x].nome}</b> · ${x}` : x}${SUBJEITO[x] ? `<small>${SUBJEITO[x]}</small>` : ''}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
     <div class="merit"><div><b>C$ 0</b><span>Saldo</span></div><div><b>0 XP</b><span>Carreira</span></div><div><b>${d.id === 'master' ? 'Geral' : 'Diretor'}</b><span>Cargo</span></div></div>
     ${extra}
+    ${d.id !== 'master' ? `<p class="trait"><b>Com os pets:</b> ${{ foda: 'a Marnevali solta fogo pra ele e o Carnucci sobe na mesa pra ganhar carinho', ok: 'a Marnevali passa de olho; o Carnucci às vezes visita', fraco: 'a Marnevali passa acuada e o Carnucci não vai até ele' }[humor(d.id)]}${PETS_HUMOR.atualizado ? '' : ' (o humor dos pets começa a valer com a primeira Folha de sexta)'}.</p>` : ''}
     ${GOSTOS[d.id] ? `<p class="trait"><b>Gosta de:</b> ${GOSTOS[d.id].map(k => ITEM[k].nome + (ITEM[k].reais ? ` (C$ ${cs(ITEM[k]).toLocaleString('pt-BR')})` : '')).join(' · ')}</p>` : ''}
     <p class="trait"><b>Jeito:</b> ${d.perfil}</p>
     <p class="trait"><b>Na mesa:</b> ${d.mesa}</p>`;
@@ -419,13 +447,13 @@ function select(s) {
   selected = s; controls.autoRotate = false; follow = null;
   if (s === master) {
     openPanel(cardHTML(MASTER, '<p class="trait"><b>Acima dele:</b> Léo e Davi. <b>Abaixo:</b> os 10 diretores e as equipes.</p>'));
-    showTeam(master.P.root, MASTER.subs, -1); setOffset();
+    showTeam(master.P.root, MASTER.subs, -1, 'master'); setOffset();
     const p = master.pos.clone(); const dir = new THREE.Vector3(Math.sin(master.heading), 0, Math.cos(master.heading));
     camFly = { pos: p.clone().addScaledVector(dir, 3.4).add(new THREE.Vector3(0, 2.0, 0)), tgt: p.clone().add(new THREE.Vector3(0, 1.2, 0)) };
     return;
   }
   const d = s.d; openPanel(cardHTML(d, `<p class="trait"><b>Hoje:</b> ${s.stats.banheiro} ida(s) ao banheiro, ${s.stats.refil} refil(s) do copo.</p>`));
-  showTeam(s.frame, d.subs); setOffset();
+  showTeam(s.frame, d.subs, 1, d.id); setOffset();
   const back = new THREE.Vector3(Math.cos(s.a), 0, Math.sin(s.a)), side = new THREE.Vector3(-Math.sin(s.a), 0, Math.cos(s.a));
   const seatW = new THREE.Vector3(Math.cos(s.a) * SEAT_R, 0, Math.sin(s.a) * SEAT_R);
   const pos = seatW.clone().addScaledVector(back, isMobile() ? -4.6 : -3.7).addScaledVector(side, 0.3); pos.y = isMobile() ? 3.1 : 2.6;
@@ -500,8 +528,9 @@ merit.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { merit.qu
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { merit.classList.remove('open'); if (selected) deselect(); } });
 (function fillPayroll() {
   const rows = [[MASTER.nome, 'Diretor-Geral', MASTER.setor, 'C$ 200']].concat(DIRETORES.map(d => [d.nome, 'Diretor', d.setor, 'C$ 120']));
-  DIRETORES.forEach(d => d.subs.forEach(x => rows.push([x, 'Estagiário', d.setor, 'C$ 10'])));
-  MASTER.subs.forEach(x => rows.push([x, 'Estagiário', MASTER.setor, 'C$ 10']));
+  const sn = (id, x) => SUBNOME[id + '|' + x] ? `${SUBNOME[id + '|' + x].nome} <small>(${x})</small>` : x;
+  DIRETORES.forEach(d => d.subs.forEach(x => rows.push([sn(d.id, x), 'Estagiário', d.setor, 'C$ 10'])));
+  MASTER.subs.forEach(x => rows.push([sn('master', x), 'Estagiário', MASTER.setor, 'C$ 10']));
   $('payroll').innerHTML = rows.map(([n, c, s, sal]) => `<tr><td>${n}</td><td>${c}</td><td>${s}</td><td class="n">${sal}</td><td class="n">C$ 0</td><td class="n">0</td></tr>`).join('');
   $('headcount').textContent = rows.length;
 })();
@@ -514,17 +543,18 @@ function loop() {
   if (follow === 'phoenix' && phoenix.ready) { const p = phoenix.root.position; const back = new THREE.Vector3(0, 0, -1).applyQuaternion(phoenix.root.quaternion); controls.target.lerp(p, 1 - Math.pow(0.02, dt)); camera.position.lerp(p.clone().addScaledVector(back, 6.5).add(new THREE.Vector3(0, 2.2, 0)), 1 - Math.pow(0.1, dt)); }
   controls.update(); if (!follow) clampTarget();
   env.updaters.forEach(f => f(dt, now)); env.updateWalls(camera);
+  if (env.halo) env.halo.visible = camera.position.y < 4.6; // sem teto na visão de cima, o pendente só aparece de dentro da sala
   seats.forEach(s => updateSeat(s, dt, now)); updateMaster(dt, now);
   nextChat -= dt; if (nextChat <= 0) { startChat(); nextChat = 14 + Math.random() * 16; }
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
   frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
-  phoenix.update(dt, now); panda.update(dt, now);
+  phoenix.update(dt, now); panda.update(dt, now); petTick(dt);
   if (selected && selected.pet === 'panda' && !camFly) controls.target.lerp(panda.root.position.clone().setY(0.3), 1 - Math.pow(0.05, dt));
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
   if (holo) {
     const w = app.clientWidth, h = app.clientHeight;
-    holo.tags.forEach(t => { const k = clamp((now - holo.t0 - t.obj.userData.k * 0.12) / 0.6, 0, 1); const e = 1 - Math.pow(1 - k, 3); t.obj.scale.y = Math.max(0.001, e); t.obj.position.y = Math.sin(now * 1.6 + t.obj.userData.k) * 0.02; t.el.style.opacity = e * place(t.el, t.obj, 1.02 + (t.obj.userData.k % 2) * 0.2, w, h); });
+    holo.tags.forEach(t => { const k = clamp((now - holo.t0 - t.obj.userData.k * 0.12) / 0.6, 0, 1); const e = 1 - Math.pow(1 - k, 3); t.obj.scale.y = Math.max(0.001, e); t.obj.position.y = Math.sin(now * 1.6 + t.obj.userData.k) * 0.02; t.el.style.opacity = e * place(t.el, t.obj, 1.0 + (t.obj.userData.k % 3) * 0.34, w, h); });
     holoMat.uniforms.t.value = now;
   }
   scene.environmentIntensity = env.isNight ? 0.35 : 0.5;
@@ -549,4 +579,4 @@ masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
 window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.__mesa = { petHumor: (id, m) => { PETS_HUMOR.humor[id] = m; }, petNow: () => { fenixT = 0; pandaT = 0; }, renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
