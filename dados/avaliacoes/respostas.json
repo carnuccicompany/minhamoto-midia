@@ -111,6 +111,14 @@
    "status": "publicada",
    "aprovada_por": "modo automático 4–5★ (rotina 18/11)",
    "publicada_em": "2026-11-18T12:19:04.384906Z"
+  },
+  {
+   "loja": "google_play",
+   "id": "ec124592-a2a3-4200-a44c-49852d1ef791",
+   "nota": 1,
+   "avaliacao": "app não funciona, baixei, consegui logar e da falha ao sincronizar.",
+   "resposta": "Sentimos muito pelo transtorno! Você conseguiu entrar, mas a sincronização falhou, e isso não deveria acontecer. Escreva para suporte@carnucci.com com o modelo do seu celular para resolvermos o quanto antes. — Equipe MinhaMoto",
+   "status": "rascunho"
   }
  ]
 }
