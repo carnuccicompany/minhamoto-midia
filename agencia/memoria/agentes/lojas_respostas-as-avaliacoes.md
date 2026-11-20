@@ -19,3 +19,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: o rascunho do 1★ ec124592 (falha ao sincronizar) já existia desde 00:15 de hoje e já foi avisado ao Léo; não reavisar.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo.
+
+## 2026-11-20 16:20
+- fiz: atualizei as avaliações (9: 3 Google Play, 6 App Store). Nenhuma sem resposta e nenhuma nova; nada a escrever nem publicar.
+- aprendi: o clone local estava divergente do origin; usei reset para origin/main. O `gh` daqui está com token inválido, então disparo o workflow pelo MCP do GitHub.
+- recebi: —
+- pendente: rascunho 1★ ec124592 segue aguardando OK do Léo (já avisado).
