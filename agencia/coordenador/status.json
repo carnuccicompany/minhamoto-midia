@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-20T12:41:00-03:00",
+ "rodada": "2026-11-20T13:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (12h02 SUCCEEDED 15:05 UTC; próx 15h02 BRT)",
@@ -8,11 +8,12 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 12h13)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 12h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 20/11 02h31 UTC; próx 19h23 BRT 20/11)",
-  "MM: Folha de sexta": "agendada (próx 20/11 17h47 BRT)",
-  "lembrete lapidar diretores": "agendado 20/11 14h13 BRT"
+  "MM: Reunião do Conselho": "ok (SUCCEEDED 20/11 02h31 UTC; próx 19h23 BRT)",
+  "MM: Folha de sexta": "agendada (próx 17h47 BRT)",
+  "lembrete lapidar diretores": "agendado 20/11 14h13 BRT",
+  "Atualizar Mesa 3D com a Folha": "agendada (próx 20/11 18h43 BRT)"
  },
  "publicacao_hoje": {
   "12h": "A03 (15:05 UTC)",
