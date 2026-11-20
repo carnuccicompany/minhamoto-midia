@@ -84,3 +84,9 @@
 | 17/11 | ST04 | grifo e fonte ruins, aprovado pelo revisor | sem grifo; régua = gosto do Léo |
 | 18/11 | Direção v2 A1/A2 | status bar bugada, amarelo, CTA fraco, telas 0%/6% | seções 1, 3, 4, 5 |
 | 18/11 | Direção v2 B2 | mockup com/sem Dynamic Island + barra no topo; "moto de demonstração" | seção 4 + check automático do topo do celular |
+
+## 20/11/2026: anúncios (decisões do Léo ao lapidar a Disney)
+- Criativo de anúncio se baseia sempre no que está vendendo de verdade (assinante/venda), no nosso app e no nosso infoproduto.
+- Formatos dos anúncios: vídeo nativo de TikTok, tela do app em ação e historinha com a dor do motoqueiro. Duração: testar menos de 15 s, 15 a 25 s e 30 a 60 s.
+- Sem UGC/criadores por enquanto.
+- Toda correção do Léo vira regra aqui e é relida antes de cada lote, pra não repetir erro.

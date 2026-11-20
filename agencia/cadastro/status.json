@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 20:17",
- "pct": 35.6,
+ "atualizado": "20/11/2026 20:35",
+ "pct": 37.0,
  "categorias": [
   {
    "id": "estrutura",
@@ -254,12 +254,9 @@
     {
      "id": "cria",
      "titulo": "Walt Disney — Diretor · Criativos e Marketing",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "trafego",
@@ -329,8 +326,8 @@
      ]
     }
    ],
-   "pct": 34.7,
-   "feitos": 1,
+   "pct": 39.3,
+   "feitos": 2,
    "total": 15
   },
   {
@@ -425,7 +422,7 @@
    "total": 9
   }
  ],
- "pendentes": 34,
+ "pendentes": 33,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -533,14 +530,6 @@
   {
    "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Walt Disney — Diretor · Criativos e Marketing",
    "falta": [
     "modelo",
     "lapidar com o Léo"
@@ -661,7 +650,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 35.6
+   "pct": 37.0
   }
  ]
 }

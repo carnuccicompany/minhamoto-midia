@@ -498,7 +498,10 @@
    "stats": {
     "aceite_pct": null,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "cria:roteirista-de-gancho",
