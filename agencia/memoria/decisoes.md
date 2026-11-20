@@ -31,3 +31,10 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - A moeda se chama Carnute (C$).
 - Recado do Léo: todo mundo trabalha pro Léo e pro Davi e quer o bem deles; meta é a empresa trazer usuário sozinha, donos só aprovam.
 - Pets: pantera negra que ronda o tapete preto do centro (intimida, sobe a régua). O Carnucci prefere ficar em cima da mesa, pra ganhar carinho.
+
+## 20/11/2026 (14h) — Fartuzzi, pôquer, fios de conversa, escritório
+- A pantera se chama **Fartuzzi**: maior, mais realista, anda solta no tapete (anda, para, senta), olho verde.
+- Fosso de pôquer rebaixado no chão. Os agentes jogam entre si valendo Carnutes, pra criar vínculo; ninguém se odeia por jogo.
+- Agentes lembram o que conversaram entre si e continuam a linha de raciocínio (fios de conversa, com ramificações).
+- Tronos do Léo e do Davi vazios e mais incrementados; lounge maior; adega numa parede inteira; quadros melhores.
+- Lembrete do Léo: ainda falta lapidar todos os agentes (diretores e subagentes) com ele.

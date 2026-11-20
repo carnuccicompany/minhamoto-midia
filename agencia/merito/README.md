@@ -90,7 +90,7 @@ A Marnevali (fênix) e o Carnucci (panda-vermelho) são os pets da empresa. A di
 - Gorjeta é paga uma vez por semana por pet, na Folha, fora do teto de bônus de C$ 100. Subagente que for 1º do setor também ganha o carinho do Carnucci.
 - Quem quer a gorjeta trabalha pra isso: o humor dos pets aparece na ficha de cada diretor no escritório.
 - **O Carnucci mora em cima da mesa** (decisão do Léo, 20/11): passa o dia andando por cima dela e deitando do lado dos diretores pra ganhar carinho. Desce de vez em quando e volta.
-- **A pantera negra** (decisão do Léo, 20/11; nome ainda a definir pelo Léo): ronda o tapete de veludo preto em volta da mesa, devagar, sem nunca sair dele. Para atrás de um diretor e encara: é a régua subindo. Com quem está `fraco`, a encarada dura mais. Ela não dá nem tira dinheiro; ela lembra que tem alguém olhando.
+- **A Fartuzzi, a pantera negra** (decisão do Léo, 20/11; nome dado por ele): ronda o tapete de veludo preto em volta da mesa, devagar, sem nunca sair dele. Para atrás de um diretor e encara: é a régua subindo. Com quem está `fraco`, a encarada dura mais. Ela não dá nem tira dinheiro; ela lembra que tem alguém olhando.
 
 ## Meta (decisão do Léo, 20/11/2026)
 
@@ -158,6 +158,17 @@ Cada boletim tem:
 - 2 seguidos com "punição" → −10% de salário (mínimo −30%) e aviso na ata.
 
 **Elogio do dono:** quando o Léo ou o Davi elogiam alguém no chat ("elogia <nome>: <texto>"), o Claude grava em `elogios.jsonl`. Na Folha seguinte o agente ganha **+20 XP, C$ 10 e +10 de moral** (fora do teto), o elogio entra na memória dele e o diretor lê em voz alta na próxima reunião. Elogio do dono é a moeda mais rara da empresa.
+
+## Pôquer no fosso (decisão do Léo, 20/11/2026)
+
+O escritório tem um fosso de pôquer rebaixado no chão. Pôquer entre os agentes existe pra criar **vínculo**: quem joga junto se conhece, se respeita e trabalha melhor junto. Ninguém se odeia por causa de mesa.
+
+- **Noite do Pôquer:** toda sexta, depois da Folha. Joga quem quiser (no máximo 6 por mesa; se tiver mais, abre outra mesa).
+- **Aposta:** em Carnutes, no máximo C$ 20 por agente por noite e nunca mais que 10% do saldo. Saldo zero não joga.
+- **Quem ganha:** a Folha sorteia as mãos com uma semente registrada no lançamento (`tipo: "poker"`), pra qualquer um conferir. É sorte com um pouco de leitura: o resultado não vale mérito e não entra no ranking nem no boletim.
+- **Vínculo:** cada noite gera uma linha em `agencia/memoria/vinculos.md` (quem jogou com quem, quem levou, a frase da mesa). Agentes que jogaram juntos se cobram com mais respeito e se ajudam primeiro.
+- **Regra de ouro:** o que acontece na mesa fica na mesa. Provocação de mesa é permitida; levar pra trabalho, cobrar dívida de pôquer em reunião ou boicotar colega por causa de jogo é multa máxima.
+- No escritório 3D, de tempos em tempos três diretores descem pro fosso, jogam uma mão amistosa e voltam pra mesa.
 
 ## Herdeiro
 

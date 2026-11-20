@@ -29,3 +29,14 @@ Quando o arquivo passar de ~300 linhas, resuma as entradas antigas numa seção 
 - Repositório público: nada de valores em R$ da empresa, segredo, e-mail ou dado de cliente.
 - Nunca apague decisão. Se mudou, escreva a nova em cima e diga o que mudou.
 - Memória é verdade: não escreva o que não aconteceu.
+
+
+## Fios de conversa (decisão do Léo, 20/11/2026)
+
+Os agentes lembram o que conversaram entre si e continuam a linha de raciocínio na reunião seguinte, em vez de começar do zero.
+
+- Arquivo: `agencia/memoria/fios.md`. Cada fio é um assunto aberto entre agentes, com id (`F-001`, `F-002`...), quem abriu, quem participa, o que cada um defendeu (1 linha por fala, com data), o que ficou combinado e o **próximo passo** (quem faz, até quando).
+- **Toda Reunião do Conselho abre pelos fios abertos:** quem tinha o próximo passo diz o que fez; os outros respondem ao que foi dito antes (citando o fio). Só depois entram assuntos novos.
+- Uma ideia que se divide em caminhos vira ramos do mesmo fio (`F-004a`, `F-004b`), cada um com dono. O fio só fecha quando vira decisão do Léo/Davi, entrega feita ou ideia descartada com motivo.
+- Fio sem andamento em 3 reuniões: o Shelby cobra o dono na ata.
+- Conversa de agente com agente fora da reunião (cobrança, pedido) também entra no fio do assunto.
