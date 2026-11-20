@@ -1,5 +1,5 @@
 {
- "consultado": "19/11/2026",
+ "consultado": "20/11/2026",
  "cambio": "C$ 1 = R$ 20",
  "itens": [
   {
@@ -109,6 +109,124 @@
    "cs": 4800,
    "consome": false,
    "fonte": "https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html"
+  },
+  {
+   "id": "cachaca51",
+   "nome": "Cachaça 51 (965 ml)",
+   "tipo": "Bebida da casa (Crise)",
+   "reais": 21.9,
+   "cs": 1,
+   "consome": true,
+   "fonte": "https://www.buscape.com.br/cachaca-pinga/cachaca-51-ouro-965ml"
+  },
+  {
+   "id": "redlabel",
+   "nome": "Johnnie Walker Red Label 1 L",
+   "tipo": "Uísque (Prata)",
+   "reais": 57.9,
+   "cs": 3,
+   "consome": true,
+   "fonte": "https://www.buscape.com.br/whisky/whisky-johnnie-walker-red-label-1l"
+  },
+  {
+   "id": "chivas12",
+   "nome": "Chivas Regal 12 anos 1 L",
+   "tipo": "Uísque (Ouro)",
+   "reais": 164.25,
+   "cs": 8,
+   "consome": true,
+   "fonte": "https://m.magazineluiza.com.br/busca/chivas+12+anos/"
+  },
+  {
+   "id": "dannemann",
+   "nome": "Dannemann Robusto Mata Fina",
+   "tipo": "Charuto (Prata)",
+   "reais": 50,
+   "cs": 2,
+   "consome": true,
+   "fonte": "https://braziljournal.com/viva-el-patron-a-volta-por-cima-dos-charutos-baianos"
+  },
+  {
+   "id": "pilao",
+   "nome": "Café Pilão 500 g",
+   "tipo": "Café (Prata/Crise)",
+   "reais": 32.99,
+   "cs": 2,
+   "consome": true,
+   "fonte": "https://www.paodeacucar.com/produto/152052/cafe-pilao-torrado-e-moido-tradicional-almofada-500g"
+  },
+  {
+   "id": "casio",
+   "nome": "Casio Vintage A168",
+   "tipo": "Relógio",
+   "reais": 252.71,
+   "cs": 13,
+   "consome": false,
+   "fonte": "https://www.buscape.com.br/relogio-pulso/relogio-unissex-digital-casio-vintage-a168wa-1wdf-prata"
+  },
+  {
+   "id": "tissot",
+   "nome": "Tissot PRX",
+   "tipo": "Relógio",
+   "reais": 4379,
+   "cs": 219,
+   "consome": false,
+   "fonte": "https://www.buscape.com.br/busca/relogio+tissot+1853+t109410a"
+  },
+  {
+   "id": "daytona",
+   "nome": "Rolex Cosmograph Daytona (aço)",
+   "tipo": "Relógio",
+   "reais": 142800,
+   "cs": 7140,
+   "consome": false,
+   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0"
+  },
+  {
+   "id": "daytonaouro",
+   "nome": "Rolex Cosmograph Daytona (ouro amarelo)",
+   "tipo": "Relógio",
+   "reais": 347900,
+   "cs": 17395,
+   "consome": false,
+   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0"
+  },
+  {
+   "id": "terno_micro",
+   "nome": "Terno microfibra (loja popular)",
+   "tipo": "Terno (Crise)",
+   "reais": 214.91,
+   "cs": 11,
+   "consome": false,
+   "fonte": "https://www.magazineluiza.com.br/busca/ternos/"
+  },
+  {
+   "id": "terno_pv",
+   "nome": "Terno Slim Fit PV",
+   "tipo": "Terno (Prata)",
+   "reais": 1699.9,
+   "cs": 85,
+   "consome": false,
+   "fonte": "https://www.magazineluiza.com.br/busca/terno+fit/"
+  },
+  {
+   "id": "terno_super120",
+   "nome": "Terno Highstil lã Super 120",
+   "tipo": "Terno (Ouro)",
+   "reais": 4229.9,
+   "cs": 211,
+   "consome": false,
+   "fonte": "https://www.dafiti.com.br/HIGHSTIL-Terno-Slim-Fit-La-Xadrez---Azul-Marinho-15137250.html"
+  },
+  {
+   "id": "zegna",
+   "nome": "Terno Ermenegildo Zegna sob medida (a partir de)",
+   "tipo": "Terno (Elite)",
+   "reais": 8000,
+   "cs": 400,
+   "consome": false,
+   "fonte": "https://istoedinheiro.com.br/elegancia-tropical-3"
   }
- ]
+ ],
+ "obs_zegna": "Preço do Zegna sob medida vem de matéria antiga da IstoÉ Dinheiro; o Fechamento do mês deve confirmar."
 }

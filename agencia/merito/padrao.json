@@ -1,0 +1,49 @@
+{
+ "regra": "Padrão da casa: o que a empresa serve e veste em cada agente. Depende da meta da semana. Itens comprados com Carnutes continuam do agente.",
+ "niveis": {
+  "elite": {
+   "nome": "Elite",
+   "quando": "meta ≥ 120%",
+   "bebida": "royal21",
+   "charuto": "behike",
+   "cafe": "nespresso",
+   "terno": "zegna",
+   "cara": "descansado, confiante, sorriso de canto",
+   "compras": "tudo liberado"
+  },
+  "ouro": {
+   "nome": "Ouro",
+   "quando": "meta 100–119% (e nível inicial enquanto não há meta)",
+   "bebida": "chivas12",
+   "charuto": "monte2",
+   "cafe": "nespresso",
+   "terno": "terno_super120",
+   "cara": "normal, alinhado",
+   "compras": "tudo liberado"
+  },
+  "prata": {
+   "nome": "Prata",
+   "quando": "meta 80–99%",
+   "bebida": "redlabel",
+   "charuto": "dannemann",
+   "cafe": "pilao",
+   "terno": "terno_pv",
+   "cara": "olheira, gravata frouxa",
+   "compras": "travado acima de C$ 500"
+  },
+  "crise": {
+   "nome": "Crise",
+   "quando": "meta < 80%",
+   "bebida": "cachaca51",
+   "charuto": null,
+   "cafe": "pilao",
+   "terno": "terno_micro",
+   "cara": "cansado, ombros caídos, barba por fazer",
+   "compras": "só itens de até C$ 100 (nada de luxo)"
+  }
+ },
+ "empresa": "ouro",
+ "semana": null,
+ "setores_rebaixados": {},
+ "historico": []
+}

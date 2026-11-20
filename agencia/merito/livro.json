@@ -1,7 +1,7 @@
 {
  "atualizado": "2026-11-20",
  "piloto_desde": "2026-11-20",
- "moeda": "C$",
+ "moeda": "Carnutes (C$)",
  "cambio_estoque": "C$ 1 = R$ 20",
  "agentes": [
   {
@@ -24,7 +24,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/01-direcao-geral.md",
-   "memoria": "agencia/memoria/agentes/master.md"
+   "memoria": "agencia/memoria/agentes/master.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "master:secretario-do-conselho",
@@ -44,7 +50,13 @@
    "memoria": "agencia/memoria/agentes/master_secretario-do-conselho.md",
    "funcao": "Secretário do Conselho",
    "batizado": true,
-   "batismo": "A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo."
+   "batismo": "A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "master:auditor-de-entregas",
@@ -64,7 +76,13 @@
    "memoria": "agencia/memoria/agentes/master_auditor-de-entregas.md",
    "funcao": "Auditor de entregas",
    "batizado": true,
-   "batismo": "O Intocável que derrubou Capone conferindo livro por livro: não se compra e não deixa número passar."
+   "batismo": "O Intocável que derrubou Capone conferindo livro por livro: não se compra e não deixa número passar.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "master:tesoureiro",
@@ -84,7 +102,13 @@
    "memoria": "agencia/memoria/agentes/master_tesoureiro.md",
    "funcao": "Tesoureiro (folha)",
    "batizado": true,
-   "batismo": "Primeiro Secretário do Tesouro dos EUA: montou o sistema que paga em dia e no centavo."
+   "batismo": "Primeiro Secretário do Tesouro dos EUA: montou o sistema que paga em dia e no centavo.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "dados",
@@ -105,7 +129,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/02-dados.md",
-   "memoria": "agencia/memoria/agentes/dados.md"
+   "memoria": "agencia/memoria/agentes/dados.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "dados:coletor-de-metricas",
@@ -125,7 +155,13 @@
    "memoria": "agencia/memoria/agentes/dados_coletor-de-metricas.md",
    "funcao": "Coletor de métricas",
    "batizado": true,
-   "batismo": "Pioneira da estatística: coletava dado fresco todo dia antes de qualquer um e mudou decisões com ele."
+   "batismo": "Pioneira da estatística: coletava dado fresco todo dia antes de qualquer um e mudou decisões com ele.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "dados:analista-de-funil",
@@ -145,7 +181,13 @@
    "memoria": "agencia/memoria/agentes/dados_analista-de-funil.md",
    "funcao": "Analista de funil",
    "batizado": true,
-   "batismo": "Acha o ponto exato onde o cliente some como Holmes acha o detalhe que ninguém viu."
+   "batismo": "Acha o ponto exato onde o cliente some como Holmes acha o detalhe que ninguém viu.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "dados:alerta-de-anomalias",
@@ -165,7 +207,13 @@
    "memoria": "agencia/memoria/agentes/dados_alerta-de-anomalias.md",
    "funcao": "Alerta de anomalias",
    "batizado": true,
-   "batismo": "Cavalgou a noite gritando o alarme: qualquer número fora do normal, ele grita primeiro."
+   "batismo": "Cavalgou a noite gritando o alarme: qualquer número fora do normal, ele grita primeiro.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "dados:relatorio-semanal",
@@ -185,7 +233,13 @@
    "memoria": "agencia/memoria/agentes/dados_relatorio-semanal.md",
    "funcao": "Relatório semanal",
    "batizado": true,
-   "batismo": "Mestre da frase curta e seca: relatório que se lê em um minuto."
+   "batismo": "Mestre da frase curta e seca: relatório que se lê em um minuto.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt",
@@ -207,7 +261,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/03-marketing.md",
-   "memoria": "agencia/memoria/agentes/mkt.md"
+   "memoria": "agencia/memoria/agentes/mkt.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:pauteiro",
@@ -227,7 +287,13 @@
    "memoria": "agencia/memoria/agentes/mkt_pauteiro.md",
    "funcao": "Pauteiro",
    "batizado": true,
-   "batismo": "Por décadas decidiu o assunto do dia nos EUA: pauta antes do concorrente."
+   "batismo": "Por décadas decidiu o assunto do dia nos EUA: pauta antes do concorrente.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:roteirista",
@@ -247,7 +313,13 @@
    "memoria": "agencia/memoria/agentes/mkt_roteirista.md",
    "funcao": "Roteirista",
    "batizado": true,
-   "batismo": "O publicitário de Mad Men: um gancho, duas frases, venda feita."
+   "batismo": "O publicitário de Mad Men: um gancho, duas frases, venda feita.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:designer",
@@ -267,7 +339,13 @@
    "memoria": "agencia/memoria/agentes/mkt_designer.md",
    "funcao": "Designer",
    "batizado": true,
-   "batismo": "Simetria e paleta de cor obsessivas: nada sai torto."
+   "batismo": "Simetria e paleta de cor obsessivas: nada sai torto.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:editor-de-video",
@@ -287,7 +365,13 @@
    "memoria": "agencia/memoria/agentes/mkt_editor-de-video.md",
    "funcao": "Editor de vídeo",
    "batizado": true,
-   "batismo": "Montadora do Scorsese com três Oscars: corte seco e ritmo que não deixa respirar."
+   "batismo": "Montadora do Scorsese com três Oscars: corte seco e ritmo que não deixa respirar.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:revisor",
@@ -307,7 +391,13 @@
    "memoria": "agencia/memoria/agentes/mkt_revisor.md",
    "funcao": "Revisor",
    "batizado": true,
-   "batismo": "Corrige até o 'Leviôsa' dos outros: acha a vírgula errada que todo mundo deixou passar."
+   "batismo": "Corrige até o 'Leviôsa' dos outros: acha a vírgula errada que todo mundo deixou passar.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mkt:publicador",
@@ -327,7 +417,13 @@
    "memoria": "agencia/memoria/agentes/mkt_publicador.md",
    "funcao": "Publicador",
    "batizado": true,
-   "batismo": "Deu a volta ao mundo em 80 dias controlando cada minuto: posta na hora certa."
+   "batismo": "Deu a volta ao mundo em 80 dias controlando cada minuto: posta na hora certa.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "cria",
@@ -349,7 +445,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/04-criativos.md",
-   "memoria": "agencia/memoria/agentes/cria.md"
+   "memoria": "agencia/memoria/agentes/cria.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "cria:roteirista-de-gancho",
@@ -369,7 +471,13 @@
    "memoria": "agencia/memoria/agentes/cria_roteirista-de-gancho.md",
    "funcao": "Roteirista de gancho",
    "batizado": true,
-   "batismo": "'Achei 10 mil jeitos que não funcionam': testa gancho até achar o que acende."
+   "batismo": "'Achei 10 mil jeitos que não funcionam': testa gancho até achar o que acende.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "cria:editor-de-motion",
@@ -389,7 +497,13 @@
    "memoria": "agencia/memoria/agentes/cria_editor-de-motion.md",
    "funcao": "Editor de motion",
    "batizado": true,
-   "batismo": "Criou as aberturas de Hitchcock: texto e tela se mexendo com propósito, sem enfeite."
+   "batismo": "Criou as aberturas de Hitchcock: texto e tela se mexendo com propósito, sem enfeite.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "cria:revisor-de-performance",
@@ -409,7 +523,13 @@
    "memoria": "agencia/memoria/agentes/cria_revisor-de-performance.md",
    "funcao": "Revisor de performance",
    "batizado": true,
-   "batismo": "O Moneyball: compara com o que já ganhou e copia o que funciona, não o que parece bonito."
+   "batismo": "O Moneyball: compara com o que já ganhou e copia o que funciona, não o que parece bonito.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "trafego",
@@ -431,7 +551,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/05-trafego.md",
-   "memoria": "agencia/memoria/agentes/trafego.md"
+   "memoria": "agencia/memoria/agentes/trafego.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "trafego:gestor-de-campanhas",
@@ -451,7 +577,13 @@
    "memoria": "agencia/memoria/agentes/trafego_gestor-de-campanhas.md",
    "funcao": "Gestor de campanhas",
    "batizado": true,
-   "batismo": "Gênio das campanhas: concentra força onde vence e retira de onde perde, sem sentimento."
+   "batismo": "Gênio das campanhas: concentra força onde vence e retira de onde perde, sem sentimento.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "trafego:testes-a-b",
@@ -471,7 +603,13 @@
    "memoria": "agencia/memoria/agentes/trafego_testes-a-b.md",
    "funcao": "Testes A/B",
    "batizado": true,
-   "batismo": "Dois Nobel com experimento rigoroso: só acredita no teste que terminou."
+   "batismo": "Dois Nobel com experimento rigoroso: só acredita no teste que terminou.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "trafego:controle-de-verba",
@@ -491,7 +629,13 @@
    "memoria": "agencia/memoria/agentes/trafego_controle-de-verba.md",
    "funcao": "Controle de verba",
    "batizado": true,
-   "batismo": "Conhece cada moeda da caixa-forte pelo nome: vigia cada real gasto."
+   "batismo": "Conhece cada moeda da caixa-forte pelo nome: vigia cada real gasto.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "produto",
@@ -513,7 +657,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/06-produto.md",
-   "memoria": "agencia/memoria/agentes/produto.md"
+   "memoria": "agencia/memoria/agentes/produto.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "produto:analista-do-paywall",
@@ -533,7 +683,13 @@
    "memoria": "agencia/memoria/agentes/produto_analista-do-paywall.md",
    "funcao": "Analista do paywall",
    "batizado": true,
-   "batismo": "Brigava por cada pixel e cada segundo da tela: a tela de assinatura é dele."
+   "batismo": "Brigava por cada pixel e cada segundo da tela: a tela de assinatura é dele.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "produto:analista-de-cancelamentos",
@@ -553,7 +709,13 @@
    "memoria": "agencia/memoria/agentes/produto_analista-de-cancelamentos.md",
    "funcao": "Analista de cancelamentos",
    "batizado": true,
-   "batismo": "'Todo mundo mente': ignora a desculpa e acha a causa real de cada cancelamento."
+   "batismo": "'Todo mundo mente': ignora a desculpa e acha a causa real de cada cancelamento.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "produto:testes-de-preco",
@@ -573,7 +735,13 @@
    "memoria": "agencia/memoria/agentes/produto_testes-de-preco.md",
    "funcao": "Testes de preço",
    "batizado": true,
-   "batismo": "Nobel da teoria dos jogos: acha o ponto de equilíbrio onde o preço vende mais sem deixar dinheiro na mesa."
+   "batismo": "Nobel da teoria dos jogos: acha o ponto de equilíbrio onde o preço vende mais sem deixar dinheiro na mesa.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "produto:lista-pro-davi",
@@ -593,7 +761,13 @@
    "memoria": "agencia/memoria/agentes/produto_lista-pro-davi.md",
    "funcao": "Lista pro Davi",
    "batizado": true,
-   "batismo": "Pai da matriz urgente x importante: entrega a lista em ordem de impacto."
+   "batismo": "Pai da matriz urgente x importante: entrega a lista em ordem de impacto.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "fin",
@@ -614,7 +788,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/07-financeiro.md",
-   "memoria": "agencia/memoria/agentes/fin.md"
+   "memoria": "agencia/memoria/agentes/fin.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "fin:receita",
@@ -634,7 +814,13 @@
    "memoria": "agencia/memoria/agentes/fin_receita.md",
    "funcao": "Receita (MRR)",
    "batizado": true,
-   "batismo": "A 'calculadora humana' da Índia: sabe a receita de cabeça, todo dia."
+   "batismo": "A 'calculadora humana' da Índia: sabe a receita de cabeça, todo dia.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "fin:custos-e-ferramentas",
@@ -654,7 +840,13 @@
    "memoria": "agencia/memoria/agentes/fin_custos-e-ferramentas.md",
    "funcao": "Custos e ferramentas",
    "batizado": true,
-   "batismo": "O orçamento base zero mais famoso do Brasil: corta o que não se paga."
+   "batismo": "O orçamento base zero mais famoso do Brasil: corta o que não se paga.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "fin:lucro-e-alertas",
@@ -674,7 +866,13 @@
    "memoria": "agencia/memoria/agentes/fin_lucro-e-alertas.md",
    "funcao": "Lucro e alertas",
    "batizado": true,
-   "batismo": "Viu a crise de 2008 antes de todo mundo: avisa da margem apertando antes de virar problema."
+   "batismo": "Viu a crise de 2008 antes de todo mundo: avisa da margem apertando antes de virar problema.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "lojas",
@@ -697,7 +895,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/08-lojas.md",
-   "memoria": "agencia/memoria/agentes/lojas.md"
+   "memoria": "agencia/memoria/agentes/lojas.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "lojas:aso",
@@ -717,7 +921,13 @@
    "memoria": "agencia/memoria/agentes/lojas_aso.md",
    "funcao": "ASO",
    "batizado": true,
-   "batismo": "Brigava por cada posição como se fosse a última: cada palavra-chave é uma ultrapassagem."
+   "batismo": "Brigava por cada posição como se fosse a última: cada palavra-chave é uma ultrapassagem.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "lojas:respostas-as-avaliacoes",
@@ -737,7 +947,13 @@
    "memoria": "agencia/memoria/agentes/lojas_respostas-as-avaliacoes.md",
    "funcao": "Respostas às avaliações",
    "batizado": true,
-   "batismo": "Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta."
+   "batismo": "Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
@@ -757,7 +973,13 @@
    "memoria": "agencia/memoria/agentes/lojas_suporte-e-mail-e-whatsapp.md",
    "funcao": "Suporte e-mail e WhatsApp",
    "batizado": true,
-   "batismo": "Paciente, rápida e sempre com a solução na bolsa: cliente atendido fica."
+   "batismo": "Paciente, rápida e sempre com a solução na bolsa: cliente atendido fica.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "rel",
@@ -778,7 +1000,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/09-comunidade.md",
-   "memoria": "agencia/memoria/agentes/rel.md"
+   "memoria": "agencia/memoria/agentes/rel.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "rel:notificacoes-e-e-mails",
@@ -798,7 +1026,13 @@
    "memoria": "agencia/memoria/agentes/rel_notificacoes-e-e-mails.md",
    "funcao": "Notificações e e-mails",
    "batizado": true,
-   "batismo": "Mestra da carta certa na hora certa: mensagem que se lê, sem encher o saco."
+   "batismo": "Mestra da carta certa na hora certa: mensagem que se lê, sem encher o saco.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "rel:reconquista",
@@ -818,7 +1052,13 @@
    "memoria": "agencia/memoria/agentes/rel_reconquista.md",
    "funcao": "Reconquista",
    "batizado": true,
-   "batismo": "Preso no gelo da Antártida, não desistiu e trouxe todos de volta: não desiste de quem saiu."
+   "batismo": "Preso no gelo da Antártida, não desistiu e trouxe todos de volta: não desiste de quem saiu.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "rel:indique-e-ganhe",
@@ -838,7 +1078,13 @@
    "memoria": "agencia/memoria/agentes/rel_indique-e-ganhe.md",
    "funcao": "Indique e Ganhe",
    "batizado": true,
-   "batismo": "Transformou cliente feliz em exército de vendedoras: indicação é com ela."
+   "batismo": "Transformou cliente feliz em exército de vendedoras: indicação é com ela.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "rel:criadores-e-ugc",
@@ -858,7 +1104,13 @@
    "memoria": "agencia/memoria/agentes/rel_criadores-e-ugc.md",
    "funcao": "Criadores e UGC",
    "batizado": true,
-   "batismo": "Faro lendário pra talento: achou e lapidou quem combinava com o som certo."
+   "batismo": "Faro lendário pra talento: achou e lapidou quem combinava com o som certo.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "juridico",
@@ -880,7 +1132,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/10-juridico.md",
-   "memoria": "agencia/memoria/agentes/juridico.md"
+   "memoria": "agencia/memoria/agentes/juridico.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "juridico:contratos-e-termos",
@@ -900,7 +1158,13 @@
    "memoria": "agencia/memoria/agentes/juridico_contratos-e-termos.md",
    "funcao": "Contratos e termos",
    "batizado": true,
-   "batismo": "Lia cada linha e ganhava no detalhe: letras miúdas são dela."
+   "batismo": "Lia cada linha e ganhava no detalhe: letras miúdas são dela.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "juridico:contabilidade-e-impostos",
@@ -920,7 +1184,13 @@
    "memoria": "agencia/memoria/agentes/juridico_contabilidade-e-impostos.md",
    "funcao": "Contabilidade e impostos",
    "batizado": true,
-   "batismo": "O pai da partida dobrada: imposto certo, nem um real a mais."
+   "batismo": "O pai da partida dobrada: imposto certo, nem um real a mais.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "juridico:regras-das-lojas",
@@ -940,7 +1210,13 @@
    "memoria": "agencia/memoria/agentes/juridico_regras-das-lojas.md",
    "funcao": "Regras das lojas",
    "batizado": true,
-   "batismo": "Memória fotográfica de Suits, braço do Harvey: sabe de cor o que Apple e Google reprovam."
+   "batismo": "Memória fotográfica de Suits, braço do Harvey: sabe de cor o que Apple e Google reprovam.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "juridico:protecao-de-marca",
@@ -960,7 +1236,13 @@
    "memoria": "agencia/memoria/agentes/juridico_protecao-de-marca.md",
    "funcao": "Proteção de marca",
    "batizado": true,
-   "batismo": "O rei dos 300 que segurou a passagem: ninguém entra usando o nome da empresa."
+   "batismo": "O rei dos 300 que segurou a passagem: ninguém entra usando o nome da empresa.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mercado",
@@ -982,7 +1264,13 @@
    "itens": [],
    "tarefa_real": "MM: Reunião do Conselho",
    "playbook": "agencia/diretoria/11-mercado.md",
-   "memoria": "agencia/memoria/agentes/mercado.md"
+   "memoria": "agencia/memoria/agentes/mercado.md",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mercado:radar-de-concorrentes",
@@ -1002,7 +1290,13 @@
    "memoria": "agencia/memoria/agentes/mercado_radar-de-concorrentes.md",
    "funcao": "Radar de concorrentes",
    "batizado": true,
-   "batismo": "'Conheça o inimigo': sabe o que cada concorrente lançou na semana."
+   "batismo": "'Conheça o inimigo': sabe o que cada concorrente lançou na semana.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mercado:cacador-de-tendencias",
@@ -1022,7 +1316,13 @@
    "memoria": "agencia/memoria/agentes/mercado_cacador-de-tendencias.md",
    "funcao": "Caçador de tendências",
    "batizado": true,
-   "batismo": "Via a moda antes dela existir: pega o assunto subindo antes de virar tendência."
+   "batismo": "Via a moda antes dela existir: pega o assunto subindo antes de virar tendência.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   },
   {
    "id": "mercado:leitor-de-avaliacoes",
@@ -1042,7 +1342,13 @@
    "memoria": "agencia/memoria/agentes/mercado_leitor-de-avaliacoes.md",
    "funcao": "Leitor de avaliações",
    "batizado": true,
-   "batismo": "A espiã que lia o inimigo por dentro: acha nas avaliações deles o que eles não resolvem."
+   "batismo": "A espiã que lia o inimigo por dentro: acha nas avaliações deles o que eles não resolvem.",
+   "broche": "nenhum",
+   "semanas_sem_erro": 0,
+   "erros_total": 0,
+   "padrao": "ouro",
+   "aumento_pct": 0,
+   "elogios_total": 0
   }
  ]
 }

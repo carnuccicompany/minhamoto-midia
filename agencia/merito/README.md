@@ -15,12 +15,16 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 | `folhas/AAAA-MM-DD.md` | Resumo da folha da semana | Folha de sexta |
 | `hall.json` | Diretor da Semana e do Mês | Folha de sexta / Fechamento do mês |
 | `herdeiros.json` | Herdeiros nascidos | Fechamento do mês |
+| `metas.json` | Meta da semana (só a %; o número absoluto fica no Drive privado) | Folha de sexta / Reunião do Conselho |
+| `padrao.json` | Padrão da casa (Elite, Ouro, Prata, Crise) da empresa e dos setores rebaixados | Folha de sexta |
+| `boletins/AAAA-MM-DD.json` + `boletins/ultimo.json` | Boletim semanal de cada agente | Folha de sexta |
+| `elogios.jsonl` | Elogios do Léo e do Davi | Claude, quando o Léo ou o Davi elogiam no chat |
 | `estoque.json` | Itens do estoque com preço real e preço em C$ | Fechamento do mês revisa os preços |
 | `../conselho/AAAA-MM-DD.md` | Ata da Reunião do Conselho | Reunião do Conselho |
 
 ## Protocolo de todo agente (vale em toda rodada)
 
-1. **Antes de começar:** leia sua ficha em `livro.json` (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo. Leia a memória (`agencia/memoria/README.md`: decisões do Léo e do Davi, sua memória pessoal, a do setor e a última ata). Leia também `agencia/diretoria/00-SISTEMA-OPERACIONAL.md` (como pensar, pesquisar, receber ordem, entregar e cobrar) e o playbook do seu setor (campo `playbook` da ficha), na sua seção. Você é o melhor do mundo na sua função: pesquise na internet tudo que precisar e cite a fonte.
+1. **Antes de começar:** leia sua ficha em `livro.json` e o seu boletim em `boletins/ultimo.json` (o que deixou a desejar é a primeira coisa a consertar) (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo. Leia a memória (`agencia/memoria/README.md`: decisões do Léo e do Davi, sua memória pessoal, a do setor e a última ata). Leia também `agencia/diretoria/00-SISTEMA-OPERACIONAL.md` (como pensar, pesquisar, receber ordem, entregar e cobrar) e o playbook do seu setor (campo `playbook` da ficha), na sua seção. Você é o melhor do mundo na sua função: pesquise na internet tudo que precisar e cite a fonte.
 2. **Faça o trabalho pedido** do jeito do seu playbook. O pedido é o mínimo.
 3. **No fim, "Além do pedido":** se viu algo a mais, escreva até 3 extras em `extras/AAAA-MM-DD-<id>.md` (troque `:` do id por `_` no nome do arquivo). Um extra é: uma melhoria, um risco que viu, ou uma ideia com número. Formato:
 
@@ -38,6 +42,8 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 7. **Notificação só se for importante:** a mensagem final vira notificação no celular do Léo. Se não tem decisão dele, ação que só ele faz ou problema grave, termine com uma única linha: "Sem novidade."
 
 ## Tabela (resumo)
+
+A moeda é o **Carnute (C$)**. C$ 1 = R$ 20 no estoque. É a moeda que mais paga no mercado: todo mundo quer ganhar Carnutes.
 
 Salário por semana: Estagiário C$ 10 · Analista 25 · Sênior 50 · Braço-direito 80 · Diretor 120 (+20% dos bônus da equipe) · Diretor-Geral 200 (+10% dos bônus da empresa).
 
@@ -57,6 +63,7 @@ XP pra cargo: Analista 100 · Sênior 300 · Braço-direito 700 · Diretor 1500 
 - Lealdade é falar a verdade com número, mesmo quando não agrada.
 - Ambiente gangsta: beber, comer e fumar liberado no escritório. Quem desenrola compra no estoque.
 - Nada vai pro ar, nada mexe em dinheiro e nada mexe no app sem OK do Léo ou do Davi.
+- **Recado do Léo (20/11/2026):** todo mundo aqui trabalha pro Léo e pro Davi. Ninguém quer o mal deles: todo mundo quer o progresso deles e da empresa. O objetivo é a empresa trazer usuário novo sozinha, no automático. Léo e Davi pensam em ideias novas e em crescer o negócio; os agentes tocam a operação; os donos só aprovam. Eles tratam todo mundo bem (boa tarde, elogio, "te amo") e esperam o mesmo de volta: trabalho de primeira.
 
 ## Competição (decisão do Léo, 19/11/2026)
 
@@ -82,6 +89,73 @@ A Marnevali (fênix) e o Carnucci (panda-vermelho) são os pets da empresa. A di
 - **`fraco`:** a Marnevali passa acuadinha, de cabeça baixa, e o Carnucci não vai. Sem multa em dinheiro, mas fica registrado na memória do diretor.
 - Gorjeta é paga uma vez por semana por pet, na Folha, fora do teto de bônus de C$ 100. Subagente que for 1º do setor também ganha o carinho do Carnucci.
 - Quem quer a gorjeta trabalha pra isso: o humor dos pets aparece na ficha de cada diretor no escritório.
+
+## Meta (decisão do Léo, 20/11/2026)
+
+A empresa tem uma meta: **assinantes pagos novos do MinhaMoto por semana**. O número vem do Léo e do Davi.
+
+- **Onde fica o número:** o alvo e o resultado absolutos ficam fora deste repositório (é público), no Drive privado. Em `metas.json` vai só a % da meta. Enquanto o Léo não der o número ou os dados do RevenueCat não estiverem ligados, a meta fica "aguardando" e ninguém sobe nem desce de padrão por meta.
+- **Toda reunião do Conselho** abre com a % da meta na semana até ali e quanto falta.
+- **Autópsia quando a meta não bate** (Folha de sexta): o Shelby segue o funil e acha onde quebrou, com número: pauta e roteiro (Criativos/pauteiro) → criativo (Criativos) → campanha (Tráfego) → página da loja (Lojas) → teste grátis e paywall (Produto) → medição (Dados). Compara cada etapa com a semana anterior e com benchmark pesquisado na internet (com fonte). O setor da etapa que mais quebrou é o responsável. **Sem número não tem culpado:** ninguém leva a culpa no achismo.
+- **Meta batida:** a etapa que mais cresceu é o setor herói (+C$ 20 pra cada agente do setor).
+
+## Padrão da casa: downgrade e bônus (decisão do Léo, 20/11/2026)
+
+O que a empresa serve e veste depende da meta (`padrao.json`):
+
+| Padrão | Quando | Bebida da casa | Charuto | Café | Terno | Cara | Compras |
+|---|---|---|---|---|---|---|---|
+| **Elite** | meta ≥ 120% | Royal Salute 21 | Cohiba Behike 56 | Nespresso | Zegna sob medida | descansado, confiante | tudo liberado |
+| **Ouro** | 100–119% (e o inicial) | Chivas 12 | Montecristo Nº2 | Nespresso | lã Super 120 | normal | tudo liberado |
+| **Prata** | 80–99% | Red Label | Dannemann Mata Fina | Pilão | terno PV | olheira, gravata frouxa | travado acima de C$ 500 |
+| **Crise** | < 80% | Cachaça 51 | nenhum | Pilão requentado | microfibra de loja popular | cansado, ombros caídos, barba por fazer | só até C$ 100 |
+
+- O padrão da empresa vale pra todo mundo. **O setor responsável da autópsia desce um nível a mais** (até Crise).
+- **Bônus de meta** (fora do teto de C$ 100): meta batida → todo agente ganha 1 salário extra da semana; Elite → 2 salários extras.
+- Itens comprados com Carnutes continuam do agente (o Rolex não some), mas no Prata e no Crise as compras de luxo travam.
+- Todo mundo vê o próprio padrão no escritório: terno, postura e cara mudam junto.
+
+## Broches: quem não erra (decisão do Léo, 20/11/2026)
+
+Cada agente usa na lapela o broche do seu histórico de erro:
+
+| Broche | Como ganha |
+|---|---|
+| **Imaculado** (negro com fio de ouro) | Nunca errou desde que entrou, com pelo menos 4 semanas de casa. **Status máximo da empresa.** Errou uma vez, perde pra sempre. |
+| **Ouro** | 4 semanas seguidas sem erro (teto de quem já errou alguma vez) |
+| **Prata** | 2 semanas seguidas sem erro |
+| **Bronze** | 1 semana sem erro |
+| sem broche | errou nesta semana |
+
+- **É erro:** refação por culpa dele, número errado ou sem fonte, fonte que não confere, prazo perdido, mexer onde não podia, erro que o Léo ou o Davi pegaram.
+- **Não é erro:** teste A/B que perdeu, ideia recusada, risco calculado que o diretor aprovou antes.
+- **Confessar o erro antes de alguém pegar:** conta como erro (o Imaculado vai embora), mas o broche cai só um degrau e não tem multa.
+- **Esconder erro:** multa máxima (saldo zera, cai um cargo) e fica 4 semanas sem broche. Esconder é muito pior que errar.
+- Imaculado ganha +10% de salário enquanto mantiver o broche e pega primeiro as tarefas grandes.
+
+## Boletim semanal (decisão do Léo, 20/11/2026)
+
+Toda sexta a Folha escreve um boletim de **cada** agente, do Diretor-Geral ao estagiário, em `boletins/AAAA-MM-DD.json` (e copia em `boletins/ultimo.json`). Painel: https://carnuccicompany.github.io/minhamoto-midia/boletim.html
+
+Cada boletim tem:
+- **Stats da semana:** entregas, no prazo, refações, erros, extras (aprovados/total), XP e Carnutes da semana e total, moral, posição no setor e na empresa, semanas sem erro, broche e padrão.
+- **O que produziu,** cada item com a prova (arquivo ou link).
+- **O que deixou a desejar.**
+- **Potencial (talento):** nota de 1 a 5 e um rótulo: Prodígio em ascensão · Sólido · Precisa provar · Em risco. Mais o próximo cargo e quanto falta.
+- **Parecer do chefe** com recomendação: aumento, manter ou punição.
+- **Elogio sugerido:** uma frase pronta pro Léo ou o Davi mandarem, quando o agente merece.
+
+**Quem vê o quê (a cadeia):**
+- Léo e Davi veem todos.
+- Cada diretor lê os boletins da equipe dele e assina o parecer de cada subagente (a Folha escreve o parecer na voz e com a memória do diretor).
+- O Thomas Shelby lê todos e assina o parecer dos diretores. O parecer do Shelby é dos donos.
+- Todo agente lê o próprio boletim no começo da rodada seguinte (passo 1 do protocolo).
+
+**Aumento e punição:**
+- 2 boletins seguidos com recomendação "aumento" (e o Shelby de acordo) → +10% de salário (máximo +30% sobre o cargo).
+- 2 seguidos com "punição" → −10% de salário (mínimo −30%) e aviso na ata.
+
+**Elogio do dono:** quando o Léo ou o Davi elogiam alguém no chat ("elogia <nome>: <texto>"), o Claude grava em `elogios.jsonl`. Na Folha seguinte o agente ganha **+20 XP, C$ 10 e +10 de moral** (fora do teto), o elogio entra na memória dele e o diretor lê em voz alta na próxima reunião. Elogio do dono é a moeda mais rara da empresa.
 
 ## Herdeiro
 

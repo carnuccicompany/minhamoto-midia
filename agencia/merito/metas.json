@@ -1,0 +1,11 @@
+{
+ "indicador": "Assinantes pagos novos do MinhaMoto",
+ "periodo": "semana (segunda a domingo)",
+ "status": "aguardando o número do Léo e os dados do RevenueCat",
+ "onde_fica_o_numero": "O alvo e o resultado em número absoluto ficam FORA deste repositório (público): no Drive privado da empresa. Aqui vai só a % da meta.",
+ "semana_atual": {
+  "inicio": null,
+  "pct": null
+ },
+ "historico": []
+}

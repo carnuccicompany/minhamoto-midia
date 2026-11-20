@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Boletim semanal · Carnucci</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="agencia/designer/assets/icon-pequeno.png">
+<style>
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Inter;src:url(agencia/designer/assets/fontes/inter-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--bg:#07070a;--card:#121217;--card2:#17171e;--line:#26262f;--gold:#d8b46a;--gold2:#f1d595;--txt:#f2efe8;--mut:#9a968c;--ok:#3ccf7a;--warn:#f0b33c;--bad:#ff5b5b}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--txt);font:15px/1.45 Inter,-apple-system,Segoe UI,sans-serif;background:radial-gradient(110% 50% at 50% -10%,rgba(216,180,106,.16),transparent 60%),var(--bg);min-height:100vh}
+a{color:var(--gold2);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px 70px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:24px 0 8px;flex-wrap:wrap}
+h1{margin:0;font-size:22px;font-weight:800;letter-spacing:-.3px}h1 b{color:var(--gold)}
+.sub{color:var(--mut);font-size:13px}
+.back{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--card)}
+.top{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+@media(max-width:760px){.top{grid-template-columns:repeat(2,1fr)}}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px}
+.kpi{padding:14px}.kpi .rot{color:var(--mut);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.kpi .val{font-size:26px;font-weight:800;margin-top:3px;letter-spacing:-.6px}.kpi .det{color:var(--mut);font-size:12.5px}
+.aviso{margin-top:14px;padding:12px 14px;color:var(--mut);font-size:13.5px}
+.aviso b{color:var(--txt)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 12px;position:sticky;top:0;z-index:4;padding:10px 0;background:rgba(7,7,10,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.bar button,.bar select,.bar input{font:600 13px Inter,sans-serif;color:var(--txt);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 13px}
+.bar button.on{background:var(--gold);color:#120e05;border-color:var(--gold)}
+.bar input{flex:1;min-width:160px}
+h2{font-size:16px;margin:26px 0 10px;font-weight:800;display:flex;gap:8px;align-items:baseline}
+h2 small{color:var(--mut);font-weight:600;font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:10px}
+.ag{padding:14px;cursor:pointer;transition:border-color .15s}
+.ag:hover{border-color:#3a3a46}
+.ag.dir{border-color:rgba(216,180,106,.45)}
+.hd{display:flex;gap:11px;align-items:center}
+.pin{width:30px;height:30px;border-radius:50%;flex:0 0 30px;display:grid;place-items:center;font-size:11px;font-weight:800;color:#111;box-shadow:inset 0 -3px 6px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.5)}
+.pin.imaculado{background:radial-gradient(circle at 35% 30%,#555,#0b0b0b 60%);border:2px solid var(--gold2);color:var(--gold2)}
+.pin.ouro{background:radial-gradient(circle at 35% 30%,#fff3c4,#c99a2e 70%)}
+.pin.prata{background:radial-gradient(circle at 35% 30%,#fff,#9ea3ab 70%)}
+.pin.bronze{background:radial-gradient(circle at 35% 30%,#f4c9a0,#9a5b2c 70%)}
+.pin.nenhum{background:#22222a;color:#555;border:1px dashed #3a3a46}
+.nm{font-weight:800;font-size:15.5px;line-height:1.2}
+.cg{color:var(--mut);font-size:12.5px}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+.tag{font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.tag.elite{color:#111;background:var(--gold2);border-color:var(--gold2)}.tag.ouro{color:var(--gold2);border-color:rgba(216,180,106,.5)}
+.tag.prata{color:#cfd3da}.tag.crise{color:var(--bad);border-color:rgba(255,91,91,.5)}
+.tag.up{color:var(--ok);border-color:rgba(60,207,122,.4)}.tag.down{color:var(--bad);border-color:rgba(255,91,91,.4)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:11px}
+.st{background:#0d0d11;border:1px solid var(--line);border-radius:10px;padding:7px 8px}
+.st b{display:block;white-space:nowrap;font-size:16px;font-weight:800}.st span{white-space:nowrap;color:var(--mut);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.3px}
+.stars{color:var(--gold);letter-spacing:1px;font-size:13px}
+.det2{display:none;margin-top:12px;border-top:1px solid var(--line);padding-top:10px;font-size:13.5px}
+.ag.open .det2{display:block}
+.det2 h4{margin:10px 0 4px;font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
+.det2 ul{margin:0;padding-left:18px}.det2 li{margin:2px 0}
+.par{background:#0d0d11;border-left:3px solid var(--gold);padding:8px 10px;border-radius:6px}
+.btn{margin-top:10px;display:inline-block;font:700 13px Inter,sans-serif;color:#120e05;background:var(--gold);border:0;border-radius:999px;padding:8px 14px;cursor:pointer}
+.btn.sec{background:transparent;color:var(--gold2);border:1px solid rgba(216,180,106,.5)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:12.5px;margin-top:10px}
+.legend span{display:flex;gap:6px;align-items:center}.legend .pin{width:16px;height:16px;flex-basis:16px;font-size:0}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--gold);color:#120e05;font-weight:700;padding:10px 16px;border-radius:999px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw;text-align:center}
+footer{margin-top:40px;color:var(--mut);font-size:12.5px;text-align:center}
+</style></head><body><div class="wrap">
+<header><div><h1>Boletim semanal · <b>Carnucci</b></h1><div class="sub" id="sub">carregando…</div></div><a class="back" href="painel.html">← Painel da agência</a></header>
+
+<div class="top">
+ <div class="card kpi"><div class="rot">Meta da semana</div><div class="val" id="kMeta">—</div><div class="det" id="kMetaD"></div></div>
+ <div class="card kpi"><div class="rot">Padrão da casa</div><div class="val" id="kPad">—</div><div class="det" id="kPadD"></div></div>
+ <div class="card kpi"><div class="rot">Imaculados</div><div class="val" id="kIma">—</div><div class="det">nunca erraram · status máximo</div></div>
+ <div class="card kpi"><div class="rot">Carnutes pagos na semana</div><div class="val" id="kCs">—</div><div class="det" id="kCsD"></div></div>
+</div>
+<div class="card aviso" id="aviso" style="display:none"></div>
+<div class="legend"><span><i class="pin imaculado"></i>Imaculado</span><span><i class="pin ouro"></i>Ouro · 4 semanas sem erro</span><span><i class="pin prata"></i>Prata · 2</span><span><i class="pin bronze"></i>Bronze · 1</span><span><i class="pin nenhum"></i>sem broche</span></div>
+
+<div class="bar">
+ <button data-v="hier" class="on">Por diretoria</button><button data-v="rank">Ranking geral</button><button data-v="dest">Pra elogiar</button><button data-v="risco">Em risco</button>
+ <input id="q" placeholder="Buscar nome, setor ou função">
+</div>
+<div id="out"></div>
+<footer>Lê <code>agencia/merito/boletins/ultimo.json</code> e <code>livro.json</code> em tempo real · regras em <a href="https://github.com/carnuccicompany/minhamoto-midia/blob/main/agencia/merito/README.md">merito/README.md</a></footer>
+</div><div id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function get(p,f){try{const r=await fetch(p+'?t='+Date.now(),{cache:'no-store'});return r.ok?await r.json():f}catch(e){return f}}
+const PAD={elite:'Elite',ouro:'Ouro',prata:'Prata',crise:'Crise'};
+const PADD={elite:'Royal Salute 21 · Behike · Zegna',ouro:'Chivas 12 · Montecristo · Super 120',prata:'Red Label · Dannemann · terno PV',crise:'Cachaça 51 · sem charuto · microfibra'};
+const BR={imaculado:'Imaculado',ouro:'Ouro',prata:'Prata',bronze:'Bronze',nenhum:'sem broche'};
+const ORD={imaculado:4,ouro:3,prata:2,bronze:1,nenhum:0};
+let B=null,L=null,view='hier',agents=[];
+function toast(t){const e=$('toast');e.textContent=t;e.style.opacity=1;clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.opacity=0,2400)}
+function copy(t,msg){navigator.clipboard?.writeText(t).then(()=>toast(msg),()=>prompt('Copie:',t))}
+function merge(){
+ const byB={};(B?.agentes||[]).forEach(a=>byB[a.id]=a);
+ agents=(L?.agentes||[]).map(f=>{const b=byB[f.id]||{};const s=b.stats||{};
+  return {id:f.id,nome:b.nome||f.nome,cargo:b.cargo||f.cargo,setor:b.setor||f.setor,chefe:b.chefe||f.chefe,tipo:f.tipo,funcao:f.funcao||'',
+   broche:b.broche||f.broche||'nenhum',padrao:b.padrao||f.padrao||'ouro',
+   s:{entregas:s.entregas??0,no_prazo:s.no_prazo??0,refacoes:s.refacoes??0,erros:s.erros??0,extras_aprovados:s.extras_aprovados??0,extras_total:s.extras_total??0,
+      xp_semana:s.xp_semana??0,xp_total:s.xp_total??f.xp??0,cs_semana:s.cs_semana??0,saldo:s.saldo??f.saldo??0,moral:s.moral??f.moral??50,
+      pos_setor:s.pos_setor,pos_geral:s.pos_geral,semanas_sem_erro:s.semanas_sem_erro??f.semanas_sem_erro??0},
+   produziu:b.produziu||[],a_desejar:b.a_desejar||[],potencial:b.potencial||null,parecer:b.parecer||null,elogio:b.elogio_sugerido||null,tem:!!b.id}});
+}
+function card(a){
+ const p=a.potencial,st=a.s,rec=a.parecer?.recomenda;
+ const recTag=rec==='aumento'?'<span class="tag up">▲ aumento</span>':rec==='punicao'?'<span class="tag down">▼ punição</span>':'';
+ return `<div class="card ag ${a.tipo==='diretor'?'dir':''}" data-id="${esc(a.id)}">
+ <div class="hd"><div class="pin ${a.broche}" title="${BR[a.broche]}">${a.broche==='imaculado'?'★':''}</div>
+  <div style="flex:1;min-width:0"><div class="nm">${esc(a.nome)}</div><div class="cg">${esc(a.cargo)} · ${esc(a.setor)}${a.funcao?' · '+esc(a.funcao):''}</div></div>
+  ${p?`<div class="stars" title="${esc(p.rotulo)}">${'★'.repeat(p.nota||0)}${'☆'.repeat(5-(p.nota||0))}</div>`:''}</div>
+ <div class="tags"><span class="tag ${a.padrao}">Padrão ${PAD[a.padrao]||a.padrao}</span>${p?`<span class="tag">${esc(p.rotulo)}</span>`:''}${st.pos_geral?`<span class="tag">#${st.pos_geral} geral</span>`:''}${recTag}</div>
+ <div class="stats"><div class="st"><b>${st.entregas}</b><span>entregas</span></div><div class="st"><b>${st.erros}</b><span>erros</span></div>
+ <div class="st"><b>${st.extras_aprovados}/${st.extras_total}</b><span>extras</span></div><div class="st"><b>+${st.xp_semana}</b><span>XP sem.</span></div>
+ <div class="st"><b>${st.xp_total}</b><span>XP total</span></div><div class="st"><b>${st.cs_semana}</b><span>C$ sem.</span></div>
+ <div class="st"><b>C$ ${Number(st.saldo).toLocaleString('pt-BR')}</b><span>saldo</span></div><div class="st"><b>${st.semanas_sem_erro}</b><span>s/ erro</span></div></div>
+ <div class="det2">
+  ${a.produziu.length?`<h4>O que produziu</h4><ul>${a.produziu.map(x=>`<li>${esc(x.o_que)}${x.prova?` · <a href="${/^https?:/.test(x.prova)?esc(x.prova):'https://github.com/carnuccicompany/minhamoto-midia/blob/main/'+esc(x.prova)}" target="_blank" rel="noopener">prova</a>`:''}</li>`).join('')}</ul>`:''}
+  ${a.a_desejar.length?`<h4>Deixou a desejar</h4><ul>${a.a_desejar.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+  ${p?`<h4>Potencial</h4><div>${esc(p.rotulo)} · nota ${p.nota}/5${p.proximo_cargo?` · próximo cargo: ${esc(p.proximo_cargo)}${p.falta_xp!=null?` (faltam ${p.falta_xp} XP)`:''}`:''}</div>`:''}
+  ${a.parecer?`<h4>Parecer de ${esc(a.parecer.por)}</h4><div class="par">${esc(a.parecer.texto)}</div>`:''}
+  ${!a.tem?'<div class="cg" style="margin-top:6px">Ainda sem boletim: o primeiro sai na Folha de sexta.</div>':''}
+  ${a.elogio?`<h4>Elogio sugerido</h4><div>“${esc(a.elogio)}”</div>`:''}
+  <button class="btn" data-elogio="${esc(a.nome)}" data-txt="${esc(a.elogio||'')}">Elogiar ${esc(a.nome.split(' ')[0])}</button>
+  <button class="btn sec" data-copiar="${esc(a.id)}">Copiar boletim</button>
+ </div></div>`;
+}
+function render(){
+ const q=$('q').value.trim().toLowerCase();
+ let list=agents.filter(a=>!q||(a.nome+' '+a.setor+' '+a.funcao+' '+a.cargo).toLowerCase().includes(q));
+ const score=a=>a.s.xp_semana*10+a.s.extras_aprovados*5-a.s.erros*20+(a.potencial?.nota||0);
+ let html='';
+ if(view==='hier'){
+  const dirs=list.filter(a=>a.tipo==='diretor'||a.id==='master');const seen=new Set();
+  const master=list.find(a=>a.id==='master');
+  if(master){html+=`<h2>Direção-Geral <small>avaliado pelo Léo e pelo Davi</small></h2><div class="grid">${card(master)}</div>`;seen.add('master')}
+  const setores=[...new Set(list.filter(a=>a.id!=='master').map(a=>a.setor))];
+  setores.forEach(se=>{const g=list.filter(a=>a.setor===se&&a.id!=='master').sort((x,y)=>(y.tipo==='diretor')-(x.tipo==='diretor')||score(y)-score(x));
+   const d=g.find(a=>a.tipo==='diretor');
+   html+=`<h2>${se==='Direção-Geral'?'Equipe do Shelby':esc(se)} <small>${d?esc(d.nome)+' avalia a equipe · Shelby avalia o diretor':''}</small></h2><div class="grid">${g.map(card).join('')}</div>`});
+ }else{
+  if(view==='dest')list=list.filter(a=>(B?.destaques||[]).includes(a.id)||a.elogio);
+  if(view==='risco')list=list.filter(a=>(B?.em_risco||[]).includes(a.id)||a.potencial?.rotulo==='Em risco'||a.parecer?.recomenda==='punicao');
+  list.sort((x,y)=>(x.s.pos_geral??999)-(y.s.pos_geral??999)||score(y)-score(x)||ORD[y.broche]-ORD[x.broche]);
+  html=list.length?`<div class="grid">${list.map(card).join('')}</div>`:`<div class="card aviso">${view==='dest'?'Ninguém pra elogiar ainda: a lista sai na Folha de sexta.':view==='risco'?'Ninguém em risco nesta semana.':'Nada encontrado.'}</div>`;
+ }
+ $('out').innerHTML=html;
+}
+document.addEventListener('click',e=>{
+ const el=e.target.closest('[data-elogio]');if(el){e.stopPropagation();const t=el.dataset.txt||'';copy(`elogia ${el.dataset.elogio}: ${t}`,'Copiado. Cole no chat do Claude (edite o texto se quiser).');return}
+ const cp=e.target.closest('[data-copiar]');if(cp){e.stopPropagation();const a=agents.find(x=>x.id===cp.dataset.copiar);
+  copy(`Boletim ${B?.semana||''} · ${a.nome} (${a.cargo}, ${a.setor})\nBroche: ${BR[a.broche]} · Padrão: ${PAD[a.padrao]}\nEntregas ${a.s.entregas} · erros ${a.s.erros} · extras ${a.s.extras_aprovados}/${a.s.extras_total} · XP +${a.s.xp_semana} (total ${a.s.xp_total}) · C$ ${a.s.cs_semana} (saldo ${a.s.saldo})\nProduziu: ${a.produziu.map(x=>x.o_que).join('; ')||'—'}\nDeixou a desejar: ${a.a_desejar.join('; ')||'—'}\nParecer: ${a.parecer?.texto||'—'}`,'Boletim copiado.');return}
+ if(e.target.closest('a'))return;
+ const c=e.target.closest('.ag');if(c)c.classList.toggle('open');
+ const b=e.target.closest('.bar button');if(b){document.querySelectorAll('.bar button').forEach(x=>x.classList.toggle('on',x===b));view=b.dataset.v;render()}
+});
+$('q').addEventListener('input',render);
+(async()=>{
+ [B,L]=await Promise.all([get('agencia/merito/boletins/ultimo.json',null),get('agencia/merito/livro.json',null)]);
+ if(!L){$('sub').textContent='Não consegui ler o livro.json.';return}
+ merge();
+ const sem=B?.semana;
+ $('sub').textContent=sem?`Semana fechada em ${sem.split('-').reverse().join('/')} · ${agents.length} agentes`:`${agents.length} agentes · primeiro boletim sai hoje na Folha de sexta (17h47)`;
+ const m=B?.meta;$('kMeta').textContent=m?.pct!=null?m.pct+'%':'—';$('kMetaD').textContent=m?.pct!=null?(m.pct>=100?'batida':'abaixo da meta'):'aguardando o número do Léo';
+ const pe=B?.padrao_empresa||'ouro';$('kPad').textContent=PAD[pe];$('kPadD').textContent=PADD[pe];
+ $('kIma').textContent=agents.filter(a=>a.broche==='imaculado').length;
+ const cs=agents.reduce((t,a)=>t+(+a.s.cs_semana||0),0);$('kCs').textContent='C$ '+cs.toLocaleString('pt-BR');$('kCsD').textContent='1 Carnute = R$ 20 no estoque';
+ if(!sem||B?.autopsia){$('aviso').style.display='block';$('aviso').innerHTML=sem?`<b>Autópsia da semana:</b> ${esc(B.autopsia)}`:'<b>Semana 1 do piloto.</b> Os cards mostram a ficha atual de cada agente. Na Folha de sexta (hoje, 17h47) o Shelby escreve o boletim de todo mundo: o que produziu, o que deixou a desejar, potencial, parecer do chefe e o elogio sugerido.'}
+ render();
+})();
+</script></body></html>

@@ -21,3 +21,13 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Piloto do Sistema de Mérito começa já (sem esperar 2 semanas). Teto: saldo sem teto; bônus até C$ 100/semana por agente.
 - Mecanismo do herdeiro aprovado.
 - Estoque com marcas e preços reais; ambiente liberado pra beber, comer e fumar.
+
+## 20/11/2026 (12h35) — Boletim, meta, padrão da casa e broches
+- Boletim semanal de cada agente (stats, o que produziu, o que deixou a desejar, potencial, parecer, elogio sugerido). Léo e Davi veem tudo; diretor vê a equipe; Shelby vê os diretores.
+- Meta de assinantes pagos novos por semana. O número vem do Léo (ainda não deu). Número absoluto fora do repo público.
+- Meta não batida: autópsia do funil com número acha o setor responsável. Sem número, sem culpado.
+- Padrão da casa (Elite/Ouro/Prata/Crise): bebida, charuto, café, terno e cara pioram quando a meta não bate; bônus gordo quando bate.
+- Broches por histórico de erro. Imaculado (nunca errou) é o status máximo. Esconder erro é pior que errar.
+- A moeda se chama Carnute (C$).
+- Recado do Léo: todo mundo trabalha pro Léo e pro Davi e quer o bem deles; meta é a empresa trazer usuário sozinha, donos só aprovam.
+- Pets: pantera negra que ronda o tapete preto do centro (intimida, sobe a régua). O Carnucci prefere ficar em cima da mesa, pra ganhar carinho.
