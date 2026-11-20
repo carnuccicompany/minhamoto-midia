@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 20:06",
- "pct": 34.2,
+ "atualizado": "20/11/2026 20:17",
+ "pct": 35.6,
  "categorias": [
   {
    "id": "estrutura",
@@ -264,12 +264,9 @@
     {
      "id": "trafego",
      "titulo": "Pablo Escobar — Diretor · Tráfego",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "produto",
@@ -332,8 +329,8 @@
      ]
     }
    ],
-   "pct": 30.0,
-   "feitos": 0,
+   "pct": 34.7,
+   "feitos": 1,
    "total": 15
   },
   {
@@ -428,7 +425,7 @@
    "total": 9
   }
  ],
- "pendentes": 35,
+ "pendentes": 34,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -551,14 +548,6 @@
   },
   {
    "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Pablo Escobar — Diretor · Tráfego",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Tony Stark — Diretor · Produto",
    "falta": [
     "modelo",
@@ -672,7 +661,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 34.2
+   "pct": 35.6
   }
  ]
 }
