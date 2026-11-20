@@ -38,3 +38,8 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Agentes lembram o que conversaram entre si e continuam a linha de raciocínio (fios de conversa, com ramificações).
 - Tronos do Léo e do Davi vazios e mais incrementados; lounge maior; adega numa parede inteira; quadros melhores.
 - Lembrete do Léo: ainda falta lapidar todos os agentes (diretores e subagentes) com ele.
+
+## 20/11/2026 (15h23) — Cada agente pensa com a própria cabeça
+- Nada de conversa simulada por uma IA só. Na Reunião do Conselho, cada diretor roda como subagente separado (contexto próprio), escreve a própria posição sem ver a dos outros, depois há réplica entre quem se chocou e o Shelby (também separado) fecha. O secretário só copia, não escreve fala de ninguém.
+- Cada diretor tem uma agenda própria (agencia/memoria/agentes/{id}-agenda.md): metas pessoais, apostas e o que quer provar, e traz toda reunião uma iniciativa que ele mesmo escolheu.
+- Reunião diária roda no Sonnet (modelo necessário, não o mais caro).
