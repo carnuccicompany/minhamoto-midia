@@ -45,7 +45,7 @@ export function buildRedPanda(scene) {
   root.traverse(o => { if (o.isMesh) o.userData.pet = 'panda'; });
 
   // passeio
-  const spots = [[6.5, 6.5], [-4.5, 6.6], [-8.2, -1.5], [5.5, -6.8], [9.6, -1.5], [-2.0, -7.0], [0, 6.7], [-8.6, -5.8]];
+  const spots = [[6.5, 6.2], [-3.4, 6.2], [-8.2, -1.5], [4.2, -6.6], [9.4, -0.2], [-2.0, -6.9], [0.6, 6.4], [-8.6, -5.8]];
   const RING = 5.35;
   const st = { pos: new THREE.Vector3(6.5, 0, 6.5), heading: 0, state: 'idle', t: 3, path: null, leg: 0, phase: 0, mode: 'stand' };
   root.position.copy(st.pos);

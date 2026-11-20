@@ -61,6 +61,8 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); 
 .team { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .team li { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 6px; background: rgba(255,255,255,.025); border: 1px solid rgba(212,178,106,.14); font-size: .86rem; }
 .team i { font-style: normal; font-family: var(--serif); color: var(--gold); font-size: 1rem; }
+.team span small { display: block; font-size: .74rem; color: var(--muted); line-height: 1.4; margin-top: 2px; }
+#stockList .tablewrap { max-height: none; } #stockList small { color: var(--muted); font-size: .76rem; } #stockList a { color: var(--gold); }
 .team em { font-style: normal; font-size: .7rem; color: var(--muted); white-space: nowrap; }
 #panel .what { margin: 0; font-size: .92rem; color: #e2d8c5; line-height: 1.55; }
 #panel .trait { margin: 10px 0 0; font-size: .8rem; color: var(--muted); line-height: 1.5; }
@@ -142,6 +144,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
 <div class="timebox"><span id="clock">--:--</span><div class="tb-row"><input id="hour" type="range" min="0" max="23.99" step="0.05" aria-label="Horário"><b id="hourLbl">--:--</b><button id="bNow" class="on" type="button">Agora</button></div></div>
 <nav class="bar">
   <button id="bMerit" class="gold" type="button">Sistema de Mérito</button>
+  <button id="bStock" type="button">Estoque</button>
   <button id="bHome" type="button">Visão geral</button>
   <button id="bView" type="button">Vista</button>
   <button id="bTV" type="button">TV</button>
@@ -157,7 +160,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
     <button class="x" aria-label="Fechar">×</button>
     <span class="k">Carnucci · Como os agentes crescem</span>
     <h2>Sistema de Mérito</h2>
-    <div class="tabs" role="tablist"><button class="on" data-t="t1">Pagamento</button><button data-t="t2">Carreira</button><button data-t="t3">Folha</button><button data-t="t4">Cultura</button></div>
+    <div class="tabs" role="tablist"><button class="on" data-t="t1">Pagamento</button><button data-t="t2">Carreira</button><button data-t="t3">Folha</button><button data-t="t4">Cultura</button><button data-t="t5">Estoque</button></div>
 
     <div class="tab" id="t1">
       <p class="lead">IA não quer dinheiro. O que faz um agente se esforçar é o que está escrito sobre ele: cargo, salário, histórico e a meta de carreira. Cada agente começa o trabalho lendo isso. Então a gente criou uma moeda nossa, e o que ela compra muda de verdade o trabalho dele: modelo mais forte, mais autonomia, missões maiores.</p>
@@ -225,9 +228,26 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
         <div class="tile"><b>Pra cima, só o que importa</b><span>Léo e Davi recebem decisões, não relatório comprido.</span></div>
         <div class="tile"><b>Dono do resultado</b><span>Cada diretor responde pelo número do setor dele.</span></div>
         <div class="tile"><b>Nada vai pro ar sem OK</b><span>Post, campanha e dinheiro só com aprovação do Léo ou do Davi.</span></div>
+        <div class="tile"><b>Os melhores do mundo no que fazem</b><span>Cada um sabe tudo da própria função e sabe que é bom. Confiança, não arrogância.</span></div>
+        <div class="tile"><b>Léo e Davi são os maiores</b><span>Ninguém quer o lugar deles. Todo mundo trabalha pra eles ganharem e ficarem felizes. Lealdade é falar a verdade com número, mesmo quando ela não agrada.</span></div>
+        <div class="tile"><b>Ambiente gangsta</b><span>Pode beber, comer e fumar na sala. Quem desenrola, curte: o Estoque está aí pra isso.</span></div>
+        <div class="tile"><b>Missão</b><span>Vender muito, pra muita gente, e sempre vender mais. No curto, no médio e no longo prazo.</span></div>
       </div>
+      <h3>Direito de decorar</h3>
+      <p>Diretor que manda bem no mês ganha o direito de colocar no escritório uma peça que combina com ele. O Claude gera a peça em 3D a partir da personalidade do diretor, sem precisar de aprovação. Os 11 primeiros já estão na sala: clique em qualquer um.</p>
+      <h3>Hall da Fama</h3>
+      <p>Toda sexta sai o Diretor da Semana e, no fim do mês, o Diretor do Mês: nome e símbolo no quadro dourado perto da entrada. Quem escolhe é o Diretor-Geral, pelo placar do Sistema de Mérito.</p>
       <h3>Reunião do Conselho</h3>
       <p>Todo dia os diretores leem os números reais do setor, discutem entre eles e chegam a conclusões. O Diretor-Geral fecha a ata e manda a pauta de decisões pro Léo e pro Davi. As conversas que aparecem no escritório hoje são simulação; a reunião de verdade é o próximo passo.</p>
+    </div>
+
+    <div class="tab" id="t5" hidden>
+      <p class="lead">O estoque da casa. Marcas que existem, com o preço real no varejo brasileiro (consultado em <b id="stockDate"></b>). Cada diretor compra com o próprio saldo em C$ e curte: bebida e charuto acabam quando consome, relógio e perfume ficam com ele e aparecem na ficha. Câmbio interno: <b>C$ 1 = R$ <span id="stockRate"></span></b>.</p>
+      <div class="grid2">
+        <div class="tile"><b>Como compra</b><span>O agente pede no fim da entrega. O Tesoureiro desconta do saldo na folha de sexta e o item entra na ficha dele.</span></div>
+        <div class="tile"><b>Salário x preço</b><span>Diretor ganha C$ 120 por semana. Uma dose de prazer sai em uma semana; um Rolex é meta de quase um ano de resultado.</span></div>
+      </div>
+      <div id="stockList"></div>
     </div>
   </div>
 </section>

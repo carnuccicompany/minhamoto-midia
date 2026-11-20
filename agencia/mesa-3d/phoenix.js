@@ -60,12 +60,12 @@ export function buildPhoenix(scene, glbBase64) {
       };
       o.material = m; o.castShadow = false;
     });
-    const S = 0.05; model.scale.setScalar(S);
+    const S = 0.036; model.scale.setScalar(S);
     root.add(model);
     mixer = new THREE.AnimationMixer(model);
     const act = mixer.clipAction(gltf.animations[0]); act.timeScale = 0.75; act.play();
     for (let i = 0; i < 3; i++) {
-      const g = new THREE.PlaneGeometry(0.24 - i * 0.02, 3.4 + i * 0.35, 1, 8);
+      const g = new THREE.PlaneGeometry(0.17 - i * 0.015, 2.4 + i * 0.25, 1, 8);
       const r = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: ribTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide }));
       r.userData = { base: g.attributes.position.array.slice(), i, keep: true }; ribbons.push(r); root.add(r);
     }
@@ -89,7 +89,7 @@ export function buildPhoenix(scene, glbBase64) {
     const L = (x, y, z, v) => v.set(x, y, z).applyMatrix4(root.matrixWorld);
     root.updateMatrixWorld();
     const flap = Math.sin(now * 2.6);
-    L(-1.85, flap * 0.7, -0.6, wingL); L(1.85, flap * 0.7, -0.6, wingR); L(0, 0.05, -2.9, tail); L(0, 0.2, 1.25, beak);
+    L(-1.33, flap * 0.5, -0.43, wingL); L(1.33, flap * 0.5, -0.43, wingR); L(0, 0.04, -2.1, tail); L(0, 0.15, 0.9, beak);
     for (let k = 0; k < 1; k++) {
       [wingL, wingR].forEach(w => emit(w, new THREE.Vector3((Math.random() - .5) * .4, Math.random() * .5, (Math.random() - .5) * .4), 0.6 + Math.random() * 0.5, 0.18 + Math.random() * 0.2));
       emit(tail, new THREE.Vector3((Math.random() - .5) * .5, Math.random() * .3, (Math.random() - .5) * .5), 0.9 + Math.random() * 0.6, 0.28 + Math.random() * 0.25);
@@ -111,7 +111,7 @@ export function buildPhoenix(scene, glbBase64) {
       const a = r.geometry.attributes.position.array, b = r.userData.base, i = r.userData.i;
       for (let v = 0; v < a.length; v += 3) { const y = b[v + 1]; const t = (y + 1.3) / 2.6; a[v] = b[v] + Math.sin(now * 5 + t * 6 + i) * 0.12 * (1 - t); a[v + 2] = b[v + 2] + Math.cos(now * 4 + t * 5 + i * 2) * 0.1 * (1 - t); }
       r.geometry.attributes.position.needsUpdate = true;
-      r.position.set((i - 2) * 0.12, 0.05, -3.2 - i * 0.15); r.rotation.set(Math.PI / 2 + 0.15 + Math.sin(now * 3 + i) * 0.08, 0, (i - 2) * 0.12);
+      r.position.set((i - 1) * 0.09, 0.04, -2.3 - i * 0.11); r.rotation.set(Math.PI / 2 + 0.15 + Math.sin(now * 3 + i) * 0.08, 0, (i - 2) * 0.12);
     });
     // atualiza partículas
     for (let i = 0; i < N; i++) {

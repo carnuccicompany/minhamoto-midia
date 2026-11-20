@@ -333,7 +333,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   out.updaters.push((dt, now) => { tvT -= dt; if (tvT <= 0) { tvT = now < 4 ? 0.15 : 1.0; drawTV(now); } });
 
   // estantes ao lado da TV
-  [[-7.6], [0.5]].forEach(([zc]) => {
+  [[-7.6]].forEach(([zc]) => {
     const sh = new THREE.Group(); sh.position.set(-11.75, 0, zc); sh.rotation.y = Math.PI / 2; scene.add(sh); out.westItems.push(sh);
     mesh(box(2.2, 3.4, 0.4), mat(0x121212, { roughness: 0.4 }), sh, [0, 1.7, 0]);
     for (let i = 0; i < 5; i++) {
@@ -405,7 +405,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   painting(-4.6, 2.1, 8.9, Math.PI, 2.6, 1.7, 'ouro');
   painting(-1.0, 2.1, 8.9, Math.PI, 1.5, 1.9, 'marmore');
   painting(6.6, 2.1, 8.9, Math.PI, 1.6, 2.0, 'sol');
-  painting(8.5, 2.0, 1.4, -Math.PI / 2, 1.2, 1.6, 'blocos');
   painting(-11.9, 2.15, 6.2, Math.PI / 2, 2.9, 1.7, 'shanshui');
   // brasão Carnucci acima da entrada (lado de dentro)
   goldLogo(LOGO, 512).then(t => out.southItems.push(mesh(new THREE.PlaneGeometry(0.9, 0.9), new THREE.MeshStandardMaterial({ map: t, transparent: true, metalness: 0.8, roughness: 0.3, emissive: 0x3a2a10, emissiveMap: t }), scene, [3.6, 3.6, 8.9], [0, Math.PI, 0], false)));
@@ -464,9 +463,11 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   // ---------- plantas ----------
   function plantPot(parent, x, z, s = 1) {
     const p = new THREE.Group(); p.position.set(x, 0, z); p.scale.setScalar(s); parent.add(p);
-    mesh(cyl(0.34, 0.26, 0.7, 32), phys(0xf2efe9, { roughness: 0.3, clearcoat: 0.4 }), p, [0, 0.35, 0]);
-    mesh(cyl(0.3, 0.3, 0.02, 24), mat(0x2a1d14), p, [0, 0.69, 0], null, false);
-    const trunkC = new THREE.CatmullRomCurve3([new THREE.Vector3(0, 0.68, 0), new THREE.Vector3(0.05, 1.4, 0.02), new THREE.Vector3(-0.03, 2.0, 0.05), new THREE.Vector3(0.04, 2.4, 0)]);
+    mesh(new THREE.CylinderGeometry(0.34, 0.26, 0.7, 24, 1, true), mat(0xf2efe9, { roughness: 0.3, side: THREE.DoubleSide }), p, [0, 0.35, 0]);
+    mesh(cyl(0.26, 0.26, 0.02, 20), mat(0xf2efe9, { roughness: 0.3 }), p, [0, 0.01, 0], null, false);
+    mesh(new THREE.TorusGeometry(0.34, 0.018, 6, 32), mat(0xf2efe9, { roughness: 0.3 }), p, [0, 0.7, 0], [Math.PI / 2, 0, 0], false);
+    mesh(cyl(0.325, 0.325, 0.03, 24), mat(0x3a2a1c, { roughness: 1 }), p, [0, 0.62, 0], null, false);
+    const trunkC = new THREE.CatmullRomCurve3([new THREE.Vector3(0, 0.62, 0), new THREE.Vector3(0.05, 1.4, 0.02), new THREE.Vector3(-0.03, 2.0, 0.05), new THREE.Vector3(0.04, 2.4, 0)]);
     mesh(new THREE.TubeGeometry(trunkC, 20, 0.035, 8), mat(0x5a4632, { roughness: 0.9 }), p);
     const leafM = phys(0x2f4a2a, { roughness: 0.6, sheen: 0.4, side: THREE.DoubleSide });
     const leaf = new THREE.SphereGeometry(0.11, 5, 3); leaf.scale(1, 0.22, 0.55);
@@ -479,7 +480,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     return p;
   }
   out.plantPot = plantPot;
-  [[-11.2, -8.3], [11.2, -8.3], [-6.2, 8.4], [1.7, 8.4], [-11.3, 4.2], [-4.6, -8.4], [11.2, 2.3]].forEach(([x, z]) => plantPot(scene, x, z, 0.85 + Math.random() * 0.35));
+  [[-11.2, -8.3], [11.2, -8.3], [-6.2, 8.4], [1.7, 8.4], [-4.6, -8.4], [11.2, 2.3]].forEach(([x, z]) => plantPot(scene, x, z, 0.85 + Math.random() * 0.35));
   // poltrona de leitura na janela
 
   // ---------- luzes (só 2: céu e sol/teto) ----------

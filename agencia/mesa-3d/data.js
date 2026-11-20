@@ -96,3 +96,98 @@ export const DIRETORES = [
     falas: ['O concorrente subiu o preço.', 'Reclamação nova em app parecido: lembrete que não chega.', 'Isso tá em alta lá fora.'],
     subs: ['Radar de concorrentes', 'Caçador de tendências', 'Leitor de avaliações'] }
 ];
+
+// Direito de decorar: cada diretor tem itens no escritório que combinam com ele.
+// Regra: diretor com moral >= 75 no mês, ou Diretor do Mês, ganha um item novo gerado pelo Claude, sem aprovação.
+export const DECOR = [
+  { dono: 'dados', item: 'enigma', nome: 'Máquina de cifras antiga', porque: 'Decifrar padrão é o que ele faz da vida.', desde: '2026-11-19', pos: [-0.4, -7.75], rot: 0 },
+  { dono: 'mkt', item: 'megafone', nome: 'Megafone de ouro', porque: 'Volume massivo: falar alto e pra todo mundo.', desde: '2026-11-19', pos: [1.5, -7.75], rot: 0 },
+  { dono: 'cria', item: 'camera', nome: 'Câmera de cinema clássica', porque: 'Toda venda boa começa com uma história.', desde: '2026-11-19', pos: [-6.0, -7.6], rot: 0.4 },
+  { dono: 'trafego', item: 'hipopotamo', nome: 'Hipopótamo de ouro', porque: 'Território grande, presença maior ainda.', desde: '2026-11-19', pos: [11.0, -1.3], rot: -Math.PI / 2 },
+  { dono: 'produto', item: 'braco', nome: 'Braço robótico de oficina', porque: 'Construir, testar, quebrar e reconstruir.', desde: '2026-11-19', pos: [11.0, 1.0], rot: -Math.PI / 2 },
+  { dono: 'fin', item: 'ticker', nome: 'Máquina de cotações antiga', porque: 'Décadas olhando número com paciência.', desde: '2026-11-19', pos: [5.6, 7.75], rot: Math.PI },
+  { dono: 'lojas', item: 'foguete', nome: 'Maquete de foguete', porque: 'Pensar em escala desde o primeiro dia.', desde: '2026-11-19', pos: [7.5, 7.7], rot: 0 },
+  { dono: 'rel', item: 'xadrez', nome: 'Mesa de xadrez', porque: 'Ler as pessoas e pensar o jogo inteiro.', desde: '2026-11-19', pos: [-5.0, 7.55], rot: 0 },
+  { dono: 'juridico', item: 'vinil', nome: 'Toca-discos e coleção de vinis', porque: 'Calma de quem nunca perde uma negociação.', desde: '2026-11-19', pos: [0.1, 8.15], rot: Math.PI },
+  { dono: 'mercado', item: 'globo', nome: 'Globo antigo', porque: 'Ele vê o mundo inteiro antes dos outros.', desde: '2026-11-19', pos: [-11.0, 5.6], rot: Math.PI / 2 },
+  { dono: 'master', item: 'cavalo', nome: 'Escultura de cavalo em bronze', porque: 'Força, estratégia e controle.', desde: '2026-11-19', pos: [5.2, -8.0], rot: 0 },
+];
+
+// Hall da Fama: quadro do Diretor da Semana e do Diretor do Mês (atualizado pela folha de sexta)
+export const HALL = { semana: null, mes: null, primeiraEscolha: '2026-11-20' };
+
+// Estoque da casa: marcas e preços reais (varejo no Brasil, consultado em 19/11/2026).
+// C$ = R$ / 20, arredondado. Bebida e charuto acabam no consumo; relógio e perfume ficam com o dono.
+export const CAMBIO = 20;
+export const ESTOQUE_DATA = '19/11/2026';
+export const ESTOQUE = [
+  { id: 'royal21', onde: 'adega', tipo: 'Uísque', nome: 'Royal Salute 21 anos', det: 'Blended escocês, 700 ml', reais: 799, fonte: 'Zoom (menor preço)', url: 'https://www.zoom.com.br/whisky/royal-salute-whisky-21-anos-escoces-700ml', consome: true },
+  { id: 'blue', onde: 'adega', tipo: 'Uísque', nome: 'Johnnie Walker Blue Label', det: 'Blended escocês, 750 ml', reais: 1900, fonte: 'Inter Shop', url: 'https://shopping.inter.co/Whisky-Johnnie-Walker-Blue/p/2592644', consome: true },
+  { id: 'macallan18', onde: 'adega', tipo: 'Uísque', nome: 'The Macallan 18 anos Sherry Oak', det: 'Single malt, 700 ml', reais: 3500, fonte: 'Loja Macallan SP (Bloomberg Línea)', url: 'https://www.bloomberglinea.com.br/estilo-de-vida/como-o-macallan-se-tornou-um-uisque-tao-caro-e-desejado-e-os-planos-para-o-brasil/', consome: true },
+  { id: 'hennessyxo', onde: 'adega', tipo: 'Conhaque', nome: 'Hennessy X.O', det: 'Cognac, 700 ml', reais: 2166, fonte: 'Magazine Luiza', url: 'https://m.magazineluiza.com.br/busca/conhaque+hennessy/', consome: true },
+  { id: 'donjulio', onde: 'frigobar', tipo: 'Tequila', nome: 'Don Julio 1942', det: 'Añejo, 750 ml', reais: 1820, fonte: 'Fast Shop (Diageo)', url: 'https://site.fastshop.com.br/tequila-don-julio-1942---750ml-158191/p', consome: true },
+  { id: 'dom', onde: 'frigobar', tipo: 'Champanhe', nome: 'Dom Pérignon Vintage', det: 'Brut, 750 ml', reais: 2533, fonte: 'Casas Bahia', url: 'https://www.casasbahia.com.br/champagne-dom-perignon-vintage-luminous-s-estojo-750ml/p/1572657989', consome: true },
+  { id: 'nespresso', onde: 'frigobar', tipo: 'Café', nome: 'Nespresso Ispirazione', det: 'Caixa com 50 cápsulas', reais: 483, fonte: 'Magazine Luiza', url: 'https://www.magazineluiza.com.br/marcas/nespresso/', consome: true },
+  { id: 'agua', onde: 'frigobar', tipo: 'Água', nome: 'Água gelada', det: 'Do bebedouro, à vontade', reais: 0, fonte: 'Da casa', consome: true },
+  { id: 'behike', onde: 'armario', tipo: 'Charuto', nome: 'Cohiba Behike 56', det: 'Cubano, unidade', reais: 3125, fonte: 'Renova Invest (guia 2026)', url: 'https://renovainvest.com.br/?p=72669', consome: true },
+  { id: 'monte2', onde: 'armario', tipo: 'Charuto', nome: 'Montecristo Nº 2', det: 'Cubano, pirâmide, unidade', reais: 260, fonte: 'Carta do Fairmont Rio (2026)', url: 'https://fairmontrio.com/wp-content/uploads/2026/04/Menu-Relax-Garden-Bar-15x297cm-v7-Q12026-compactado-1.pdf', consome: true },
+  { id: 'aventus', onde: 'armario', tipo: 'Perfume', nome: 'Creed Aventus', det: 'Eau de parfum, 100 ml', reais: 3519, fonte: 'Drogasil', url: 'https://www.drogasil.com.br/aventus-creed-eau-de-parfum-masculino-100-ml-1156389.html', consome: false },
+  { id: 'rolex', onde: 'armario', tipo: 'Relógio', nome: 'Rolex Submariner Date', det: 'Aço Oystersteel, 41 mm (ref. 126610LN)', reais: 96000, fonte: 'Rolex Brasil (preço sugerido)', url: 'https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html', consome: false },
+];
+export const GOSTOS = {
+  master: ['royal21', 'behike'],
+  dados: ['nespresso'],
+  mkt: ['agua', 'rolex'],
+  cria: ['nespresso', 'dom'],
+  trafego: ['donjulio', 'behike'],
+  produto: ['macallan18', 'rolex'],
+  fin: ['nespresso'],
+  lojas: ['agua', 'dom', 'aventus'],
+  rel: ['hennessyxo'],
+  juridico: ['macallan18', 'monte2'],
+  mercado: ['blue', 'monte2'],
+};
+
+// Jeito de cada subagente (vai nas instruções dele junto com o cargo e o extrato)
+export const SUBJEITO = {
+  'Secretário do Conselho': 'Anota tudo, resume em três linhas e nunca esquece um prazo.',
+  'Auditor de entregas': 'Desconfiado por profissão. Confere número por número antes de deixar passar.',
+  'Tesoureiro (folha)': 'Paga em dia e no centavo. Não aceita bônus sem prova.',
+  'Coletor de métricas': 'Acorda antes de todo mundo pra puxar os números frescos.',
+  'Analista de funil': 'Obcecado por onde o cliente desiste. Sempre volta com o ponto exato do vazamento.',
+  'Alerta de anomalias': 'Nervoso no bom sentido: qualquer número fora do normal, ele grita.',
+  'Relatório semanal': 'Escreve curto e direto. Odeia relatório que ninguém lê.',
+  'Pauteiro': 'Vive no que está bombando hoje e transforma em pauta antes do concorrente.',
+  'Roteirista': 'Escreve gancho que prende nos 2 primeiros segundos. Corta palavra sobrando.',
+  'Designer': 'Perfeccionista com alinhamento e cor. Não entrega nada torto.',
+  'Editor de vídeo': 'Corte seco, ritmo rápido, legenda sem erro.',
+  'Revisor': 'Caçador de erro. Acha a vírgula errada que todo mundo deixou passar.',
+  'Publicador': 'Pontual. Posta na hora certa e confere se subiu do jeito certo.',
+  'Roteirista de gancho': 'Testa 10 ganchos pra achar o que segura o dedo.',
+  'Editor de motion': 'Faz texto e tela se mexerem com propósito, sem enfeite.',
+  'Revisor de performance': 'Compara cada vídeo com os que já venderam e diz o que copiar.',
+  'Gestor de campanhas': 'Frio com dinheiro: o que não converte, ele sugere cortar.',
+  'Testes A/B': 'Não acredita em achismo. Só no teste que terminou.',
+  'Controle de verba': 'Vigia cada real gasto por dia e avisa antes de estourar.',
+  'Analista do paywall': 'Estuda cada segundo da tela de assinatura.',
+  'Analista de cancelamentos': 'Quer saber o motivo real de cada cancelamento.',
+  'Testes de preço': 'Calcula o preço que vende mais sem deixar dinheiro na mesa.',
+  'Lista pro Davi': 'Organiza o que precisa mudar no app em ordem de impacto.',
+  'Receita (MRR)': 'Sabe a receita recorrente de cabeça, todo dia.',
+  'Custos e ferramentas': 'Corta assinatura de ferramenta que ninguém usa.',
+  'Lucro e alertas': 'Avisa quando a margem aperta, antes de virar problema.',
+  'ASO': 'Briga por cada palavra-chave e por cada posição na loja.',
+  'Respostas às avaliações': 'Responde todo mundo com educação e transforma reclamação em nota alta.',
+  'Suporte e-mail e WhatsApp': 'Paciente e rápido. Cliente atendido é cliente que fica.',
+  'Notificações e e-mails': 'Manda a mensagem certa na hora certa, sem encher o saco.',
+  'Reconquista': 'Não desiste de quem saiu. Sabe o que trazer de volta.',
+  'Indique e Ganhe': 'Transforma cliente feliz em vendedor.',
+  'Criadores e UGC': 'Faro pra criador que combina com a marca e entrega.',
+  'Contratos e termos': 'Lê as letras miúdas que ninguém lê.',
+  'Contabilidade e impostos': 'Paga o imposto certo, nem um real a mais.',
+  'Regras das lojas': 'Sabe de cor o que a Apple e o Google reprovam.',
+  'Proteção de marca': 'Vigia quem tenta usar o nome da empresa.',
+  'Radar de concorrentes': 'Sabe o que cada concorrente lançou na semana.',
+  'Caçador de tendências': 'Vê o assunto subindo antes de virar moda.',
+  'Leitor de avaliações': 'Lê as avaliações dos concorrentes pra achar o que eles não resolvem.',
+};

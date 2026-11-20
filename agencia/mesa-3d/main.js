@@ -1,7 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO } from './data.js';
+import { buildDecor, buildHall } from './decor.js';
+import { buildStock } from './stock.js';
 import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
 import { buildEnv, SPOTS, TABLE_R, TOP_Y, ROOM } from './env.js';
 import { buildPerson, blendPose, sitLegs, standLegs, faceTick } from './people.js';
@@ -94,6 +96,14 @@ scene.add(masterP.root); blob(masterP.root, 0, 0, 0.32, 0.32); standLegs(masterP
 masterP.root.traverse(o => { if (o.isMesh) { o.userData.dirId = 'master'; pickables.push(o); } });
 master.tag = addTag(`<b>${MASTER.nome}</b><span>${MASTER.cargo}</span>`, 'master'); master.tag.addEventListener('click', e => { e.stopPropagation(); select(master); });
 
+// objetos pessoais de cada diretor + Hall da Fama
+const NOMES = Object.fromEntries([...DIRETORES, MASTER].map(d => [d.id, d.nome]));
+const decor = buildDecor(scene, DECOR, NOMES);
+const hall = buildHall(scene, LOGO, HALL, id => NOMES[id]);
+const stock = buildStock(scene);
+const ITEM = Object.fromEntries(ESTOQUE.map(e => [e.id, e]));
+const cs = e => Math.round(e.reais / CAMBIO);
+const brl = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : 'grátis';
 const phoenix = buildPhoenix(scene, window.__PARROT__);
 phoenix.onBreath = () => log('<b>Marnevali</b> soltou fogo');
 const panda = buildRedPanda(scene);
@@ -189,7 +199,7 @@ function walkStep(obj, P, frame, dt, speed = 1.2) {
   const sw = Math.sin(obj.phase) * 0.35;
   P.sh[0].rotation.set(-sw, 0, 0.07); P.sh[1].rotation.set(sw, 0, -0.07); P.el.forEach(e => e.rotation.x = -0.25); P.wr.forEach(w => w.rotation.x = 0);
   P.torso.rotation.x = 0.02; P.head.rotation.set(0, 0, 0);
-  if (frame) { const local = frame.worldToLocal(tmpW.copy(obj.wpos)); P.root.position.copy(local); if (dist > 0.001) { const dl = frame.worldToLocal(tmpW.copy(obj.wpos).add(tmpV)).sub(local); obj.yaw = angLerp(obj.yaw ?? 0, Math.atan2(dl.x, dl.z), Math.min(1, dt * 8)); } P.root.rotation.y = obj.yaw; }
+  if (frame) { const local = frame.worldToLocal(tmpW.copy(obj.wpos)).clone(); P.root.position.copy(local); if (dist > 0.001) { const dl = frame.worldToLocal(tmpW.copy(obj.wpos).add(tmpV)).sub(local); obj.yaw = angLerp(obj.yaw ?? 0, Math.atan2(dl.x, dl.z), Math.min(1, dt * 8)); } P.root.rotation.y = obj.yaw; }
   else { P.root.position.copy(obj.wpos); if (dist > 0.001) obj.heading = angLerp(obj.heading, Math.atan2(tmpV.x, tmpV.z), Math.min(1, dt * 8)); P.root.rotation.y = obj.heading; }
   return arrived;
 }
@@ -396,9 +406,10 @@ function cardHTML(d, extra = '') {
     <blockquote><small>Regra de ouro</small>${d.regra}</blockquote>
     <h4>O que faz</h4><p class="what">${d.faz}</p>
     <h4>Equipe · ${d.subs.length} subagentes</h4>
-    <ol class="team">${d.subs.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${x}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
+    <ol class="team">${d.subs.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${x}${SUBJEITO[x] ? `<small>${SUBJEITO[x]}</small>` : ''}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
     <div class="merit"><div><b>C$ 0</b><span>Saldo</span></div><div><b>0 XP</b><span>Carreira</span></div><div><b>${d.id === 'master' ? 'Geral' : 'Diretor'}</b><span>Cargo</span></div></div>
     ${extra}
+    ${GOSTOS[d.id] ? `<p class="trait"><b>Gosta de:</b> ${GOSTOS[d.id].map(k => ITEM[k].nome + (ITEM[k].reais ? ` (C$ ${cs(ITEM[k]).toLocaleString('pt-BR')})` : '')).join(' · ')}</p>` : ''}
     <p class="trait"><b>Jeito:</b> ${d.perfil}</p>
     <p class="trait"><b>Na mesa:</b> ${d.mesa}</p>`;
 }
@@ -428,6 +439,17 @@ function selectThrone(nome) {
   const t = thrones.find(x => x.nome === nome); const back = new THREE.Vector3(Math.cos(t.a), 0, Math.sin(t.a));
   camFly = { pos: back.clone().multiplyScalar(SEAT_R + 3.2).setY(3.0), tgt: back.clone().multiplyScalar(SEAT_R).setY(1.1) };
 }
+function selectDecor(d) {
+  hideTeam(); selected = { decor: d }; controls.autoRotate = false;
+  const fmt = iso => iso.split('-').reverse().join('/');
+  openPanel(`<button class="x" aria-label="Fechar">×</button><span class="kick">Conquista · Direito de decorar</span><h2>${d.nome}</h2><p class="nick">De ${NOMES[d.dono]} · desde ${fmt(d.desde)}</p><blockquote><small>Por quê</small>${d.porque}</blockquote><p class="what">Diretor que manda bem no mês ganha o direito de colocar no escritório algo que combina com ele. O Claude gera o item a partir da personalidade do diretor, sem precisar de aprovação.</p>`);
+  setOffset(); camFly = { pos: new THREE.Vector3(d.pos[0] * 0.78, 2.2, d.pos[1] * 0.78), tgt: new THREE.Vector3(d.pos[0], 0.8, d.pos[1]) };
+}
+function selectHall() {
+  hideTeam(); selected = { hall: true }; controls.autoRotate = false;
+  openPanel(`<button class="x" aria-label="Fechar">×</button><span class="kick">Hall da Fama</span><h2>Diretor da Semana e do Mês</h2><p class="what" style="margin-top:12px">Toda sexta, o diretor que mais desenrolou na semana ganha o quadro dele aqui. No fim do mês, sai o Diretor do Mês. A escolha vem do placar do Sistema de Mérito, feita pelo Diretor-Geral.</p><p class="trait"><b>Agora:</b> ${HALL.semana ? NOMES[HALL.semana] : 'em disputa, primeira escolha na sexta 20/11'}.</p>`);
+  setOffset(); camFly = { pos: new THREE.Vector3(-2.3, 2.6, 3.4), tgt: new THREE.Vector3(-2.3, 1.3, 7.45) };
+}
 function deselect() { if (viewMode) { viewMode = false; controls.maxPolarAngle = 1.45; controls.minDistance = 2.5; } document.body.classList.remove('sel'); selected = null; panel.classList.remove('open'); hideTeam(); setOffset(); camFly = { pos: HOME.pos.clone(), tgt: HOME.tgt.clone() }; setTimeout(() => { if (!selected && !follow) controls.autoRotate = rotOn; }, 1800); }
 
 const ray = new THREE.Raycaster(), mouse = new THREE.Vector2(); let downAt = null;
@@ -440,6 +462,9 @@ renderer.domElement.addEventListener('pointerup', e => {
   if (!hit) return;
   if (hit.object.userData.thr) return selectThrone(hit.object.userData.thr);
   if (hit.object.userData.pet) return selectPet('panda');
+  if (hit.object.userData.decor) return selectDecor(hit.object.userData.decor);
+  if (hit.object.userData.hall) return selectHall();
+  if (hit.object.userData.stock) return openStock(hit.object.userData.stock);
   if (hit.object.userData.dirId === 'master') return select(master);
   const s = seats.find(x => x.d.id === hit.object.userData.dirId); if (s) select(s);
 });
@@ -460,6 +485,15 @@ slider.oninput = () => { env.setHour(+slider.value); env.refreshSky(); hourLbl.t
 $('bNow').onclick = e => { env.setHour(null); env.refreshSky(); slider.value = env.hourNow(); e.currentTarget.classList.add('on'); };
 const merit = $('merit');
 $('bMerit').onclick = () => merit.classList.add('open');
+const LUGAR = { adega: 'Adega', frigobar: 'Frigobar', armario: 'Armário dos Diretores' };
+const quem = id => Object.entries(GOSTOS).filter(([, l]) => l.includes(id)).map(([d]) => NOMES[d].split(' ').slice(-1)[0]).join(', ') || '—';
+$('stockDate').textContent = ESTOQUE_DATA; $('stockRate').textContent = CAMBIO;
+$('stockList').innerHTML = ['adega', 'frigobar', 'armario'].map(l => `<h3 id="sec-${l}">${LUGAR[l]}</h3><div class="tablewrap"><table><thead><tr><th>Item</th><th>Preço real</th><th>C$</th><th>Quem gosta</th></tr></thead><tbody>${ESTOQUE.filter(e => e.onde === l).map(e => `<tr><td><b>${e.nome}</b><br><small>${e.tipo} · ${e.det}${e.url ? ` · <a href="${e.url}" target="_blank" rel="noopener">${e.fonte}</a>` : ` · ${e.fonte}`}</small></td><td class="n">${brl(e.reais)}</td><td class="n">${e.reais ? 'C$ ' + cs(e).toLocaleString('pt-BR') : '—'}</td><td>${quem(e.id)}</td></tr>`).join('')}</tbody></table></div>`).join('');
+function openStock(lugar) {
+  merit.classList.add('open'); merit.querySelector('.tabs button[data-t="t5"]').click();
+  const el = lugar && $('sec-' + lugar); if (el) setTimeout(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }), 60);
+}
+$('bStock').onclick = () => openStock();
 merit.querySelector('.x').onclick = () => merit.classList.remove('open');
 merit.addEventListener('click', e => { if (e.target === merit) merit.classList.remove('open'); });
 merit.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { merit.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b)); merit.querySelectorAll('.tab').forEach(t => t.hidden = t.id !== b.dataset.t); });
@@ -504,10 +538,12 @@ thrones.forEach(t => t.f.children.forEach(c => { if (c.isGroup) { bakeStatic(c);
 seats.forEach(s => { bakeStatic(s.chair); s.chair.userData.dyn = true; s.tg.userData.dyn = true; s.hg.userData.dyn = true; Object.values(s.hand).forEach(h => h.userData.dyn = true); });
 env.southItems.concat(env.westItems).forEach(g => { if (g.isGroup) { bakeStatic(g); g.userData.dyn = true; } else g.userData.dyn = true; });
 env.bathDoor.userData.dyn = true; bakeStatic(env.bathDoor);
+decor.forEach(({ g }) => { bakeStatic(g); g.userData.dyn = true; }); bakeStatic(hall); hall.userData.dyn = true;
+[stock.fr, stock.ar].forEach(g => { bakeStatic(g); g.userData.dyn = true; });
 phoenix.root.userData.dyn = true; panda.root.userData.dyn = true; masterP.root.userData.dyn = true; seats.forEach(s => s.P.root.userData.dyn = true);
 bakeStatic(scene);
 mergeChildren(scene);
-pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
+pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet || o.userData.decor || o.userData.hall || o.userData.stock) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
 // hover: só raycast a cada 120 ms
 masterNext();
 loop();
