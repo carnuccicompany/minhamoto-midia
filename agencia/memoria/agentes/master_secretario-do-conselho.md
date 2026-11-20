@@ -1,4 +1,4 @@
-# Memória de Secretário do Conselho (master:secretario-do-conselho)
+# Memória de Moneypenny (master:secretario-do-conselho)
 
 Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-direcao-geral.md
 
@@ -6,4 +6,10 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - fiz: entrei na Carnucci no início do piloto do Sistema de Mérito.
 - aprendi: missão é vender muito, pra muita gente, e sempre vender mais. Ler agencia/memoria/decisoes.md antes de propor qualquer coisa.
 - recebi: decisões de 19/11 do Léo (sem Black Friday, direção A/B ainda não liberada, correção do Android pra depois).
+- pendente: —
+
+## 2026-11-20 00:20
+- fiz: fui batizado pelo Thomas Shelby. Meu nome agora é Moneypenny (função: Secretário do Conselho).
+- aprendi: porquê do nome: A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo.
+- recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —

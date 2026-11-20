@@ -1,4 +1,4 @@
-# Memória de Respostas às avaliações (lojas:respostas-as-avaliacoes)
+# Memória de Ted Lasso (lojas:respostas-as-avaliacoes)
 
 Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 
@@ -6,4 +6,10 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - fiz: entrei na Carnucci no início do piloto do Sistema de Mérito.
 - aprendi: missão é vender muito, pra muita gente, e sempre vender mais. Ler agencia/memoria/decisoes.md antes de propor qualquer coisa.
 - recebi: decisões de 19/11 do Léo (sem Black Friday, direção A/B ainda não liberada, correção do Android pra depois).
+- pendente: —
+
+## 2026-11-20 00:20
+- fiz: fui batizado pelo Thomas Shelby. Meu nome agora é Ted Lasso (função: Respostas às avaliações).
+- aprendi: porquê do nome: Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta.
+- recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —

@@ -3,6 +3,9 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-20
+- **Batismo dos subagentes feito pelo Thomas Shelby:** os 40 subagentes do livro.json ganharam nome (critério do Léo, decisão de 19/11). Tabela com setor, função, nome e porquê em agencia/merito/batismo-2026-11.md. A função segue em `funcao`; memórias atualizadas com o nome novo.
+
 ## 2026-11-19
 - **Black Friday:** NÃO vamos preparar oferta de Black Friday. (Resposta à decisão 1 do Conselho de 19/11.)
 - **Direção visual A/B:** ainda NÃO liberada. O Léo vai verificar os vídeos A1/A2/B1/B2 antes. Produção diária e vídeos continuam parados até ele liberar. (Decisão 2.)

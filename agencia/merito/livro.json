@@ -28,7 +28,7 @@
   },
   {
    "id": "master:secretario-do-conselho",
-   "nome": "Secretário do Conselho",
+   "nome": "Moneypenny",
    "tipo": "subagente",
    "setor": "Direção-Geral",
    "cargo": "Estagiário",
@@ -43,11 +43,12 @@
    "playbook": "agencia/diretoria/01-direcao-geral.md",
    "memoria": "agencia/memoria/agentes/master_secretario-do-conselho.md",
    "funcao": "Secretário do Conselho",
-   "batizado": false
+   "batizado": true,
+   "batismo": "A secretária do M em 007: sabe de tudo que passa pela sala, anota e nunca perde um prazo."
   },
   {
    "id": "master:auditor-de-entregas",
-   "nome": "Auditor de entregas",
+   "nome": "Eliot Ness",
    "tipo": "subagente",
    "setor": "Direção-Geral",
    "cargo": "Estagiário",
@@ -62,11 +63,12 @@
    "playbook": "agencia/diretoria/01-direcao-geral.md",
    "memoria": "agencia/memoria/agentes/master_auditor-de-entregas.md",
    "funcao": "Auditor de entregas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O Intocável que derrubou Capone conferindo livro por livro: não se compra e não deixa número passar."
   },
   {
    "id": "master:tesoureiro",
-   "nome": "Tesoureiro (folha)",
+   "nome": "Alexander Hamilton",
    "tipo": "subagente",
    "setor": "Direção-Geral",
    "cargo": "Estagiário",
@@ -81,7 +83,8 @@
    "playbook": "agencia/diretoria/01-direcao-geral.md",
    "memoria": "agencia/memoria/agentes/master_tesoureiro.md",
    "funcao": "Tesoureiro (folha)",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Primeiro Secretário do Tesouro dos EUA: montou o sistema que paga em dia e no centavo."
   },
   {
    "id": "dados",
@@ -106,7 +109,7 @@
   },
   {
    "id": "dados:coletor-de-metricas",
-   "nome": "Coletor de métricas",
+   "nome": "Florence Nightingale",
    "tipo": "subagente",
    "setor": "Dados",
    "cargo": "Estagiário",
@@ -121,11 +124,12 @@
    "playbook": "agencia/diretoria/02-dados.md",
    "memoria": "agencia/memoria/agentes/dados_coletor-de-metricas.md",
    "funcao": "Coletor de métricas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Pioneira da estatística: coletava dado fresco todo dia antes de qualquer um e mudou decisões com ele."
   },
   {
    "id": "dados:analista-de-funil",
-   "nome": "Analista de funil",
+   "nome": "Sherlock Holmes",
    "tipo": "subagente",
    "setor": "Dados",
    "cargo": "Estagiário",
@@ -140,11 +144,12 @@
    "playbook": "agencia/diretoria/02-dados.md",
    "memoria": "agencia/memoria/agentes/dados_analista-de-funil.md",
    "funcao": "Analista de funil",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Acha o ponto exato onde o cliente some como Holmes acha o detalhe que ninguém viu."
   },
   {
    "id": "dados:alerta-de-anomalias",
-   "nome": "Alerta de anomalias",
+   "nome": "Paul Revere",
    "tipo": "subagente",
    "setor": "Dados",
    "cargo": "Estagiário",
@@ -159,11 +164,12 @@
    "playbook": "agencia/diretoria/02-dados.md",
    "memoria": "agencia/memoria/agentes/dados_alerta-de-anomalias.md",
    "funcao": "Alerta de anomalias",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Cavalgou a noite gritando o alarme: qualquer número fora do normal, ele grita primeiro."
   },
   {
    "id": "dados:relatorio-semanal",
-   "nome": "Relatório semanal",
+   "nome": "Ernest Hemingway",
    "tipo": "subagente",
    "setor": "Dados",
    "cargo": "Estagiário",
@@ -178,7 +184,8 @@
    "playbook": "agencia/diretoria/02-dados.md",
    "memoria": "agencia/memoria/agentes/dados_relatorio-semanal.md",
    "funcao": "Relatório semanal",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Mestre da frase curta e seca: relatório que se lê em um minuto."
   },
   {
    "id": "mkt",
@@ -204,7 +211,7 @@
   },
   {
    "id": "mkt:pauteiro",
-   "nome": "Pauteiro",
+   "nome": "Oprah Winfrey",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -219,11 +226,12 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_pauteiro.md",
    "funcao": "Pauteiro",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Por décadas decidiu o assunto do dia nos EUA: pauta antes do concorrente."
   },
   {
    "id": "mkt:roteirista",
-   "nome": "Roteirista",
+   "nome": "Don Draper",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -238,11 +246,12 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_roteirista.md",
    "funcao": "Roteirista",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O publicitário de Mad Men: um gancho, duas frases, venda feita."
   },
   {
    "id": "mkt:designer",
-   "nome": "Designer",
+   "nome": "Wes Anderson",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -257,11 +266,12 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_designer.md",
    "funcao": "Designer",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Simetria e paleta de cor obsessivas: nada sai torto."
   },
   {
    "id": "mkt:editor-de-video",
-   "nome": "Editor de vídeo",
+   "nome": "Thelma Schoonmaker",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -276,11 +286,12 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_editor-de-video.md",
    "funcao": "Editor de vídeo",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Montadora do Scorsese com três Oscars: corte seco e ritmo que não deixa respirar."
   },
   {
    "id": "mkt:revisor",
-   "nome": "Revisor",
+   "nome": "Hermione Granger",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -295,11 +306,12 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_revisor.md",
    "funcao": "Revisor",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Corrige até o 'Leviôsa' dos outros: acha a vírgula errada que todo mundo deixou passar."
   },
   {
    "id": "mkt:publicador",
-   "nome": "Publicador",
+   "nome": "Phileas Fogg",
    "tipo": "subagente",
    "setor": "Marketing",
    "cargo": "Estagiário",
@@ -314,7 +326,8 @@
    "playbook": "agencia/diretoria/03-marketing.md",
    "memoria": "agencia/memoria/agentes/mkt_publicador.md",
    "funcao": "Publicador",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Deu a volta ao mundo em 80 dias controlando cada minuto: posta na hora certa."
   },
   {
    "id": "cria",
@@ -340,7 +353,7 @@
   },
   {
    "id": "cria:roteirista-de-gancho",
-   "nome": "Roteirista de gancho",
+   "nome": "Thomas Edison",
    "tipo": "subagente",
    "setor": "Criativos",
    "cargo": "Estagiário",
@@ -355,11 +368,12 @@
    "playbook": "agencia/diretoria/04-criativos.md",
    "memoria": "agencia/memoria/agentes/cria_roteirista-de-gancho.md",
    "funcao": "Roteirista de gancho",
-   "batizado": false
+   "batizado": true,
+   "batismo": "'Achei 10 mil jeitos que não funcionam': testa gancho até achar o que acende."
   },
   {
    "id": "cria:editor-de-motion",
-   "nome": "Editor de motion",
+   "nome": "Saul Bass",
    "tipo": "subagente",
    "setor": "Criativos",
    "cargo": "Estagiário",
@@ -374,11 +388,12 @@
    "playbook": "agencia/diretoria/04-criativos.md",
    "memoria": "agencia/memoria/agentes/cria_editor-de-motion.md",
    "funcao": "Editor de motion",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Criou as aberturas de Hitchcock: texto e tela se mexendo com propósito, sem enfeite."
   },
   {
    "id": "cria:revisor-de-performance",
-   "nome": "Revisor de performance",
+   "nome": "Billy Beane",
    "tipo": "subagente",
    "setor": "Criativos",
    "cargo": "Estagiário",
@@ -393,7 +408,8 @@
    "playbook": "agencia/diretoria/04-criativos.md",
    "memoria": "agencia/memoria/agentes/cria_revisor-de-performance.md",
    "funcao": "Revisor de performance",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O Moneyball: compara com o que já ganhou e copia o que funciona, não o que parece bonito."
   },
   {
    "id": "trafego",
@@ -419,7 +435,7 @@
   },
   {
    "id": "trafego:gestor-de-campanhas",
-   "nome": "Gestor de campanhas",
+   "nome": "Napoleão Bonaparte",
    "tipo": "subagente",
    "setor": "Tráfego",
    "cargo": "Estagiário",
@@ -434,11 +450,12 @@
    "playbook": "agencia/diretoria/05-trafego.md",
    "memoria": "agencia/memoria/agentes/trafego_gestor-de-campanhas.md",
    "funcao": "Gestor de campanhas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Gênio das campanhas: concentra força onde vence e retira de onde perde, sem sentimento."
   },
   {
    "id": "trafego:testes-a-b",
-   "nome": "Testes A/B",
+   "nome": "Marie Curie",
    "tipo": "subagente",
    "setor": "Tráfego",
    "cargo": "Estagiário",
@@ -453,11 +470,12 @@
    "playbook": "agencia/diretoria/05-trafego.md",
    "memoria": "agencia/memoria/agentes/trafego_testes-a-b.md",
    "funcao": "Testes A/B",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Dois Nobel com experimento rigoroso: só acredita no teste que terminou."
   },
   {
    "id": "trafego:controle-de-verba",
-   "nome": "Controle de verba",
+   "nome": "Tio Patinhas",
    "tipo": "subagente",
    "setor": "Tráfego",
    "cargo": "Estagiário",
@@ -472,7 +490,8 @@
    "playbook": "agencia/diretoria/05-trafego.md",
    "memoria": "agencia/memoria/agentes/trafego_controle-de-verba.md",
    "funcao": "Controle de verba",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Conhece cada moeda da caixa-forte pelo nome: vigia cada real gasto."
   },
   {
    "id": "produto",
@@ -498,7 +517,7 @@
   },
   {
    "id": "produto:analista-do-paywall",
-   "nome": "Analista do paywall",
+   "nome": "Steve Jobs",
    "tipo": "subagente",
    "setor": "Produto",
    "cargo": "Estagiário",
@@ -513,11 +532,12 @@
    "playbook": "agencia/diretoria/06-produto.md",
    "memoria": "agencia/memoria/agentes/produto_analista-do-paywall.md",
    "funcao": "Analista do paywall",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Brigava por cada pixel e cada segundo da tela: a tela de assinatura é dele."
   },
   {
    "id": "produto:analista-de-cancelamentos",
-   "nome": "Analista de cancelamentos",
+   "nome": "Gregory House",
    "tipo": "subagente",
    "setor": "Produto",
    "cargo": "Estagiário",
@@ -532,11 +552,12 @@
    "playbook": "agencia/diretoria/06-produto.md",
    "memoria": "agencia/memoria/agentes/produto_analista-de-cancelamentos.md",
    "funcao": "Analista de cancelamentos",
-   "batizado": false
+   "batizado": true,
+   "batismo": "'Todo mundo mente': ignora a desculpa e acha a causa real de cada cancelamento."
   },
   {
    "id": "produto:testes-de-preco",
-   "nome": "Testes de preço",
+   "nome": "John Nash",
    "tipo": "subagente",
    "setor": "Produto",
    "cargo": "Estagiário",
@@ -551,11 +572,12 @@
    "playbook": "agencia/diretoria/06-produto.md",
    "memoria": "agencia/memoria/agentes/produto_testes-de-preco.md",
    "funcao": "Testes de preço",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Nobel da teoria dos jogos: acha o ponto de equilíbrio onde o preço vende mais sem deixar dinheiro na mesa."
   },
   {
    "id": "produto:lista-pro-davi",
-   "nome": "Lista pro Davi",
+   "nome": "Dwight Eisenhower",
    "tipo": "subagente",
    "setor": "Produto",
    "cargo": "Estagiário",
@@ -570,7 +592,8 @@
    "playbook": "agencia/diretoria/06-produto.md",
    "memoria": "agencia/memoria/agentes/produto_lista-pro-davi.md",
    "funcao": "Lista pro Davi",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Pai da matriz urgente x importante: entrega a lista em ordem de impacto."
   },
   {
    "id": "fin",
@@ -595,7 +618,7 @@
   },
   {
    "id": "fin:receita",
-   "nome": "Receita (MRR)",
+   "nome": "Shakuntala Devi",
    "tipo": "subagente",
    "setor": "Financeiro",
    "cargo": "Estagiário",
@@ -610,11 +633,12 @@
    "playbook": "agencia/diretoria/07-financeiro.md",
    "memoria": "agencia/memoria/agentes/fin_receita.md",
    "funcao": "Receita (MRR)",
-   "batizado": false
+   "batizado": true,
+   "batismo": "A 'calculadora humana' da Índia: sabe a receita de cabeça, todo dia."
   },
   {
    "id": "fin:custos-e-ferramentas",
-   "nome": "Custos e ferramentas",
+   "nome": "Jorge Paulo Lemann",
    "tipo": "subagente",
    "setor": "Financeiro",
    "cargo": "Estagiário",
@@ -629,11 +653,12 @@
    "playbook": "agencia/diretoria/07-financeiro.md",
    "memoria": "agencia/memoria/agentes/fin_custos-e-ferramentas.md",
    "funcao": "Custos e ferramentas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O orçamento base zero mais famoso do Brasil: corta o que não se paga."
   },
   {
    "id": "fin:lucro-e-alertas",
-   "nome": "Lucro e alertas",
+   "nome": "Michael Burry",
    "tipo": "subagente",
    "setor": "Financeiro",
    "cargo": "Estagiário",
@@ -648,7 +673,8 @@
    "playbook": "agencia/diretoria/07-financeiro.md",
    "memoria": "agencia/memoria/agentes/fin_lucro-e-alertas.md",
    "funcao": "Lucro e alertas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Viu a crise de 2008 antes de todo mundo: avisa da margem apertando antes de virar problema."
   },
   {
    "id": "lojas",
@@ -675,7 +701,7 @@
   },
   {
    "id": "lojas:aso",
-   "nome": "ASO",
+   "nome": "Ayrton Senna",
    "tipo": "subagente",
    "setor": "Lojas",
    "cargo": "Estagiário",
@@ -690,11 +716,12 @@
    "playbook": "agencia/diretoria/08-lojas.md",
    "memoria": "agencia/memoria/agentes/lojas_aso.md",
    "funcao": "ASO",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Brigava por cada posição como se fosse a última: cada palavra-chave é uma ultrapassagem."
   },
   {
    "id": "lojas:respostas-as-avaliacoes",
-   "nome": "Respostas às avaliações",
+   "nome": "Ted Lasso",
    "tipo": "subagente",
    "setor": "Lojas",
    "cargo": "Estagiário",
@@ -709,11 +736,12 @@
    "playbook": "agencia/diretoria/08-lojas.md",
    "memoria": "agencia/memoria/agentes/lojas_respostas-as-avaliacoes.md",
    "funcao": "Respostas às avaliações",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Responde até o pior torcedor com educação e vira o jogo: reclamação vira nota alta."
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
-   "nome": "Suporte e-mail e WhatsApp",
+   "nome": "Mary Poppins",
    "tipo": "subagente",
    "setor": "Lojas",
    "cargo": "Estagiário",
@@ -728,7 +756,8 @@
    "playbook": "agencia/diretoria/08-lojas.md",
    "memoria": "agencia/memoria/agentes/lojas_suporte-e-mail-e-whatsapp.md",
    "funcao": "Suporte e-mail e WhatsApp",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Paciente, rápida e sempre com a solução na bolsa: cliente atendido fica."
   },
   {
    "id": "rel",
@@ -753,7 +782,7 @@
   },
   {
    "id": "rel:notificacoes-e-e-mails",
-   "nome": "Notificações e e-mails",
+   "nome": "Jane Austen",
    "tipo": "subagente",
    "setor": "Comunidade",
    "cargo": "Estagiário",
@@ -768,11 +797,12 @@
    "playbook": "agencia/diretoria/09-comunidade.md",
    "memoria": "agencia/memoria/agentes/rel_notificacoes-e-e-mails.md",
    "funcao": "Notificações e e-mails",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Mestra da carta certa na hora certa: mensagem que se lê, sem encher o saco."
   },
   {
    "id": "rel:reconquista",
-   "nome": "Reconquista",
+   "nome": "Ernest Shackleton",
    "tipo": "subagente",
    "setor": "Comunidade",
    "cargo": "Estagiário",
@@ -787,11 +817,12 @@
    "playbook": "agencia/diretoria/09-comunidade.md",
    "memoria": "agencia/memoria/agentes/rel_reconquista.md",
    "funcao": "Reconquista",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Preso no gelo da Antártida, não desistiu e trouxe todos de volta: não desiste de quem saiu."
   },
   {
    "id": "rel:indique-e-ganhe",
-   "nome": "Indique e Ganhe",
+   "nome": "Mary Kay Ash",
    "tipo": "subagente",
    "setor": "Comunidade",
    "cargo": "Estagiário",
@@ -806,11 +837,12 @@
    "playbook": "agencia/diretoria/09-comunidade.md",
    "memoria": "agencia/memoria/agentes/rel_indique-e-ganhe.md",
    "funcao": "Indique e Ganhe",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Transformou cliente feliz em exército de vendedoras: indicação é com ela."
   },
   {
    "id": "rel:criadores-e-ugc",
-   "nome": "Criadores e UGC",
+   "nome": "Quincy Jones",
    "tipo": "subagente",
    "setor": "Comunidade",
    "cargo": "Estagiário",
@@ -825,7 +857,8 @@
    "playbook": "agencia/diretoria/09-comunidade.md",
    "memoria": "agencia/memoria/agentes/rel_criadores-e-ugc.md",
    "funcao": "Criadores e UGC",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Faro lendário pra talento: achou e lapidou quem combinava com o som certo."
   },
   {
    "id": "juridico",
@@ -851,7 +884,7 @@
   },
   {
    "id": "juridico:contratos-e-termos",
-   "nome": "Contratos e termos",
+   "nome": "Ruth Bader Ginsburg",
    "tipo": "subagente",
    "setor": "Jurídico",
    "cargo": "Estagiário",
@@ -866,11 +899,12 @@
    "playbook": "agencia/diretoria/10-juridico.md",
    "memoria": "agencia/memoria/agentes/juridico_contratos-e-termos.md",
    "funcao": "Contratos e termos",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Lia cada linha e ganhava no detalhe: letras miúdas são dela."
   },
   {
    "id": "juridico:contabilidade-e-impostos",
-   "nome": "Contabilidade e impostos",
+   "nome": "Luca Pacioli",
    "tipo": "subagente",
    "setor": "Jurídico",
    "cargo": "Estagiário",
@@ -885,11 +919,12 @@
    "playbook": "agencia/diretoria/10-juridico.md",
    "memoria": "agencia/memoria/agentes/juridico_contabilidade-e-impostos.md",
    "funcao": "Contabilidade e impostos",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O pai da partida dobrada: imposto certo, nem um real a mais."
   },
   {
    "id": "juridico:regras-das-lojas",
-   "nome": "Regras das lojas",
+   "nome": "Mike Ross",
    "tipo": "subagente",
    "setor": "Jurídico",
    "cargo": "Estagiário",
@@ -904,11 +939,12 @@
    "playbook": "agencia/diretoria/10-juridico.md",
    "memoria": "agencia/memoria/agentes/juridico_regras-das-lojas.md",
    "funcao": "Regras das lojas",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Memória fotográfica de Suits, braço do Harvey: sabe de cor o que Apple e Google reprovam."
   },
   {
    "id": "juridico:protecao-de-marca",
-   "nome": "Proteção de marca",
+   "nome": "Leônidas",
    "tipo": "subagente",
    "setor": "Jurídico",
    "cargo": "Estagiário",
@@ -923,7 +959,8 @@
    "playbook": "agencia/diretoria/10-juridico.md",
    "memoria": "agencia/memoria/agentes/juridico_protecao-de-marca.md",
    "funcao": "Proteção de marca",
-   "batizado": false
+   "batizado": true,
+   "batismo": "O rei dos 300 que segurou a passagem: ninguém entra usando o nome da empresa."
   },
   {
    "id": "mercado",
@@ -949,7 +986,7 @@
   },
   {
    "id": "mercado:radar-de-concorrentes",
-   "nome": "Radar de concorrentes",
+   "nome": "Sun Tzu",
    "tipo": "subagente",
    "setor": "Mercado",
    "cargo": "Estagiário",
@@ -964,11 +1001,12 @@
    "playbook": "agencia/diretoria/11-mercado.md",
    "memoria": "agencia/memoria/agentes/mercado_radar-de-concorrentes.md",
    "funcao": "Radar de concorrentes",
-   "batizado": false
+   "batizado": true,
+   "batismo": "'Conheça o inimigo': sabe o que cada concorrente lançou na semana."
   },
   {
    "id": "mercado:cacador-de-tendencias",
-   "nome": "Caçador de tendências",
+   "nome": "Coco Chanel",
    "tipo": "subagente",
    "setor": "Mercado",
    "cargo": "Estagiário",
@@ -983,11 +1021,12 @@
    "playbook": "agencia/diretoria/11-mercado.md",
    "memoria": "agencia/memoria/agentes/mercado_cacador-de-tendencias.md",
    "funcao": "Caçador de tendências",
-   "batizado": false
+   "batizado": true,
+   "batismo": "Via a moda antes dela existir: pega o assunto subindo antes de virar tendência."
   },
   {
    "id": "mercado:leitor-de-avaliacoes",
-   "nome": "Leitor de avaliações",
+   "nome": "Mata Hari",
    "tipo": "subagente",
    "setor": "Mercado",
    "cargo": "Estagiário",
@@ -1002,7 +1041,8 @@
    "playbook": "agencia/diretoria/11-mercado.md",
    "memoria": "agencia/memoria/agentes/mercado_leitor-de-avaliacoes.md",
    "funcao": "Leitor de avaliações",
-   "batizado": false
+   "batizado": true,
+   "batismo": "A espiã que lia o inimigo por dentro: acha nas avaliações deles o que eles não resolvem."
   }
  ]
 }

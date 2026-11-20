@@ -1,4 +1,4 @@
-# Memória de Receita (MRR) (fin:receita)
+# Memória de Shakuntala Devi (MRR) (fin:receita)
 
 Setor: Financeiro · Cargo: Estagiário · Playbook: agencia/diretoria/07-financeiro.md
 
@@ -6,4 +6,10 @@ Setor: Financeiro · Cargo: Estagiário · Playbook: agencia/diretoria/07-financ
 - fiz: entrei na Carnucci no início do piloto do Sistema de Mérito.
 - aprendi: missão é vender muito, pra muita gente, e sempre vender mais. Ler agencia/memoria/decisoes.md antes de propor qualquer coisa.
 - recebi: decisões de 19/11 do Léo (sem Black Friday, direção A/B ainda não liberada, correção do Android pra depois).
+- pendente: —
+
+## 2026-11-20 00:20
+- fiz: fui batizado pelo Thomas Shelby. Meu nome agora é Shakuntala Devi (função: Receita (MRR)).
+- aprendi: porquê do nome: A 'calculadora humana' da Índia: sabe a receita de cabeça, todo dia.
+- recebi: batismo da Direção-Geral, decisão do Léo de 19/11 (quem batiza é o Shelby).
 - pendente: —
