@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { M, mat, phys, tex, mesh, box, rbox, cyl, sph, marbleTex, goldGrad, goldLogo, GOLD, lerp, clamp, smooth } from './util.js';
+import { M, mat, phys, tex, mesh, box, rbox, cyl, sph, marbleTex, goldGrad, goldLogo, GOLD, lerp, clamp, smooth, blob } from './util.js';
 
 export const ROOM = { x0: -12, x1: 12, z0: -9, z1: 9, H: 4.2 };
 export const BATH = { x0: 8.6, x1: 12, z0: 3, z1: 9, door: [5.3, 6.5] };
@@ -17,14 +17,14 @@ export const SPOTS = {
   janelaL: new THREE.Vector3(11.1, 0, -3.8),
 };
 
-const OUT = m => { m.stencilWrite = true; m.stencilRef = 1; m.stencilFunc = THREE.EqualStencilFunc; m.stencilFail = m.stencilZFail = m.stencilZPass = THREE.KeepStencilOp; return m; };
+const OUT = m => { m = m.clone ? m.clone() : m; m.stencilWrite = true; m.stencilRef = 1; m.stencilFunc = THREE.EqualStencilFunc; m.stencilFail = m.stencilZFail = m.stencilZPass = THREE.KeepStencilOp; return m; };
 const MASK = new THREE.MeshBasicMaterial({ colorWrite: false, depthWrite: false, side: THREE.DoubleSide, stencilWrite: true, stencilRef: 1, stencilFunc: THREE.AlwaysStencilFunc, stencilZPass: THREE.ReplaceStencilOp });
 export function buildEnv(scene, renderer, LOGO, FAT) {
   const out = { solidWalls: [], bathWalls: [], updaters: [], southItems: [], westItems: [] };
 
   // ---------- céu ----------
   const skyU = { top: { value: new THREE.Color() }, hor: { value: new THREE.Color() }, sunDir: { value: new THREE.Vector3(0, 1, 0) }, sunCol: { value: new THREE.Color(1, .9, .7) }, sunAmt: { value: 1 } };
-  const sky = new THREE.Mesh(new THREE.SphereGeometry(900, 48, 24), new THREE.ShaderMaterial({
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(900, 24, 12), new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, uniforms: skyU,
     vertexShader: 'varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
     fragmentShader: `uniform vec3 top; uniform vec3 hor; uniform vec3 sunDir; uniform vec3 sunCol; uniform float sunAmt; varying vec3 vP;
@@ -33,7 +33,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   }));
   sky.renderOrder = -10; OUT(sky.material); scene.add(sky);
   const starG = new THREE.BufferGeometry(); const sp = [];
-  for (let i = 0; i < 1400; i++) { const u = Math.random(), v = Math.random() * 0.9 + 0.08; const th = u * Math.PI * 2, ph = Math.acos(v); sp.push(Math.sin(ph) * Math.cos(th) * 850, Math.cos(ph) * 850, Math.sin(ph) * Math.sin(th) * 850); }
+  for (let i = 0; i < 500; i++) { const u = Math.random(), v = Math.random() * 0.9 + 0.08; const th = u * Math.PI * 2, ph = Math.acos(v); sp.push(Math.sin(ph) * Math.cos(th) * 850, Math.cos(ph) * 850, Math.sin(ph) * Math.sin(th) * 850); }
   starG.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3));
   const stars = new THREE.Points(starG, OUT(new THREE.PointsMaterial({ color: 0xffffff, size: 1.6, sizeAttenuation: false, transparent: true, opacity: 0.8, depthWrite: false })));
   scene.add(stars);
@@ -51,33 +51,33 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   mesh(new THREE.PlaneGeometry(4000, 4000), groundM, city, [0, GROUND, 0], [-Math.PI / 2, 0, 0], false);
   // fachadas: vidro com caixilho, 8 colunas x 24 andares por ladrilho (≈12 m x 84 m)
   const facade = (seed) => {
-    const day = document.createElement('canvas'), em = document.createElement('canvas'); day.width = em.width = 512; day.height = em.height = 1024;
+    const day = document.createElement('canvas'), em = document.createElement('canvas'); day.width = em.width = 256; day.height = em.height = 512;
     const g = day.getContext('2d'), e = em.getContext('2d');
     const glass = [['#3d5368', '#7c93a8'], ['#2a3340', '#5a6878'], ['#5b6670', '#a9b4bd'], ['#1f2a36', '#46607a'], ['#6a6258', '#b8ad9c']][seed % 5];
     const frame = ['#1b1f24', '#2b2f35', '#d9d4ca', '#14181d', '#3a332c'][seed % 5];
     g.fillStyle = frame; g.fillRect(0, 0, 512, 1024); e.fillStyle = '#000'; e.fillRect(0, 0, 512, 1024);
-    const cols = 8, rows = 24, cw = 512 / cols, rh = 1024 / rows;
+    const cols = 8, rows = 24, cw = 256 / cols, rh = 512 / rows;
     // blocos de andares acesos (escritórios inteiros acendem juntos)
     const litRows = new Set(); for (let r = 0; r < rows; r++) if (Math.random() < 0.28) litRows.add(r);
     for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-      const x = c * cw + 3, y = r * rh + 4, w = cw - 6, h = rh - 7;
+      const x = c * cw + 2, y = r * rh + 2, w = cw - 4, h = rh - 4;
       const gr = g.createLinearGradient(x, y, x + w, y + h); gr.addColorStop(0, glass[1]); gr.addColorStop(0.55, glass[0]); gr.addColorStop(1, glass[0]);
       g.fillStyle = gr; g.fillRect(x, y, w, h);
       const lit = litRows.has(r) ? Math.random() < 0.8 : Math.random() < 0.06;
       if (lit) { const warm = Math.random() < 0.75; const k = 0.55 + Math.random() * 0.45; e.fillStyle = warm ? `rgba(255,${190 + Math.random() * 40},${120 + Math.random() * 50},${k})` : `rgba(190,215,255,${k})`; e.fillRect(x, y, w, h); }
     }
-    for (let r = 0; r <= rows; r += 6) { g.fillStyle = frame; g.fillRect(0, r * rh - 2, 512, 5); }
+    for (let r = 0; r <= rows; r += 6) { g.fillStyle = frame; g.fillRect(0, r * rh - 1, 256, 3); }
     const T = new THREE.CanvasTexture(day), E = new THREE.CanvasTexture(em); T.colorSpace = E.colorSpace = THREE.SRGBColorSpace;
-    T.anisotropy = E.anisotropy = 16; T.wrapS = T.wrapT = E.wrapS = E.wrapT = THREE.RepeatWrapping; return [T, E];
+    T.anisotropy = E.anisotropy = 4; T.wrapS = T.wrapT = E.wrapS = E.wrapT = THREE.RepeatWrapping; return [T, E];
   };
-  const faces = [0, 1, 2, 3, 4].map(facade);
+  const faces = [0, 1, 3].map(facade);
   const cityMats = [];
   const bGeo = new THREE.BoxGeometry(1, 1, 1); bGeo.translate(0, 0.5, 0);
   // tira as faces de cima/baixo do mapeamento de janelas (topo liso)
   const roofM = OUT(mat(0x23262b, { roughness: 0.8 }));
   const rnd = (a, b) => a + Math.random() * (b - a);
   const towers = []; // [x, z, w, d, h, rot]
-  for (let i = 0; i < 1100; i++) {
+  for (let i = 0; i < 520; i++) {
     const ang = Math.random() * Math.PI * 2, r = 160 + Math.pow(Math.random(), 0.8) * 800;
     const x = Math.cos(ang) * r, z = Math.sin(ang) * r;
     // perto: mais baixo (vista por cima); faixa média: arranha-céus; longe: mistura
@@ -88,13 +88,13 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     towers.push([x, z, w, d, h, Math.random() < 0.15 ? 0.35 : Math.round(Math.random() * 3) * Math.PI / 2]);
   }
   // classes de altura (cada uma com sua escala de textura, janelas sempre do mesmo tamanho)
-  const HCL = [45, 75, 105, 140, 180, 220, 270, 300];
+  const HCL = [50, 100, 160, 230, 300];
   HCL.forEach((hc, ci) => {
     faces.forEach(([T, E], fi) => {
-      const mine = towers.filter((t, k) => k % 5 === fi && HCL.reduce((best, h, j) => Math.abs(h - t[4]) < Math.abs(HCL[best] - t[4]) ? j : best, 0) === ci);
+      const mine = towers.filter((t, k) => k % 3 === fi && HCL.reduce((best, h, j) => Math.abs(h - t[4]) < Math.abs(HCL[best] - t[4]) ? j : best, 0) === ci);
       if (!mine.length) return;
       const t = T.clone(), e = E.clone(); t.needsUpdate = e.needsUpdate = true; t.repeat.set(2, hc / 84); e.repeat.set(2, hc / 84);
-      const m = OUT(new THREE.MeshStandardMaterial({ map: t, emissive: 0xffffff, emissiveMap: e, emissiveIntensity: 1, roughness: 0.18, metalness: 0.55, envMapIntensity: 1.2 }));
+      const m = OUT(new THREE.MeshLambertMaterial({ map: t, emissive: 0xffffff, emissiveMap: e, emissiveIntensity: 1 }));
       cityMats.push(m);
       const im = new THREE.InstancedMesh(bGeo, [m, m, roofM, roofM, m, m], mine.length);
       const dd = new THREE.Object3D();
@@ -124,7 +124,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   const reds = new THREE.Points(redG, redM); city.add(reds);
   out.updaters.push((dt, now) => { redM.opacity = (Math.sin(now * 3) > 0.2 ? 1 : 0.15) * (out.isNight ? 1 : 0.6); });
   // morros no horizonte
-  const hillG = new THREE.CylinderGeometry(1300, 1300, 1, 160, 1, true); const hp = hillG.attributes.position;
+  const hillG = new THREE.CylinderGeometry(1300, 1300, 1, 64, 1, true); const hp = hillG.attributes.position;
   for (let i = 0; i < hp.count; i++) { if (hp.getY(i) > 0) { const a = Math.atan2(hp.getZ(i), hp.getX(i)); hp.setY(i, 40 + Math.abs(Math.sin(a * 3) * 70 + Math.sin(a * 7.3) * 35 + Math.sin(a * 17) * 12)); } else hp.setY(i, -10); }
   hillG.computeVertexNormals();
   const hillM = OUT(new THREE.MeshBasicMaterial({ color: 0x1a2030, side: THREE.BackSide, fog: true }));
@@ -139,7 +139,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   city.add(lamps); city.traverse(o => { o.renderOrder = 50; });
 
   // ---------- chão, paredes, vidro ----------
-  const floorT = marbleTex('#e6e2db', 'rgba(110,106,100,A)', 34, 2048, [5, 4]);
+  const floorT = marbleTex('#e6e2db', 'rgba(110,106,100,A)', 30, 1024, [5, 4]);
   const floor = mesh(new THREE.PlaneGeometry(24, 18), phys(0xffffff, { map: floorT, roughness: 0.22, clearcoat: 0.6, clearcoatRoughness: 0.25 }), scene, [0, 0, 0], [-Math.PI / 2, 0, 0], false);
   floor.receiveShadow = true;
   const blackMarble = marbleTex('#0e0e0f', 'rgba(220,220,220,A)', 22, 1024, [4, 1]);
@@ -182,7 +182,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
 
   // ---------- banheiro (paredes próprias + teto; "ver banheiro" tira) ----------
   const bathWallM = phys(0xffffff, { map: marbleTex('#0e0e0f', 'rgba(220,220,220,A)', 18, 1024, [1, 1]), roughness: 0.15, clearcoat: 1, transparent: true, opacity: 1 });
-  const bw = (x, z, w, d, h = ROOM.H) => { const m = mesh(box(w, h, d), bathWallM, scene, [x, h / 2, z], null, false); return m; };
+  const bw = (x, z, w, d, h = ROOM.H) => { const m = mesh(box(w, h, d), bathWallM, scene, [x, h / 2, z], null, false); m.userData.keep = true; return m; };
   const bWest1 = bw(8.6, (3 + 5.3) / 2, 0.16, 2.3), bWest2 = bw(8.6, (6.5 + 9) / 2, 0.16, 2.5), bTop = bw(8.6, 5.9, 0.16, 1.2, 1.2); bTop.position.y = 3.6;
   const bNorth = bw(10.3, 3, 3.4, 0.16), bSouth = bw(10.3, 9, 3.4, 0.16), bEast = bw(12, 6, 0.16, 6);
   const roof = mesh(box(3.6, 0.08, 6.2), phys(0x121212, { roughness: 0.3, clearcoat: 0.6, transparent: true }), scene, [10.3, ROOM.H, 6], null, false);
@@ -210,7 +210,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   mesh(box(0.02, 1.9, 1.4), new THREE.MeshPhysicalMaterial({ color: 0xffffff, transparent: true, opacity: 0.25, roughness: 0.3 }), scene, [10.5, 0.95, 7.9], null, false);
   plantPot(scene, 11.5, 4.1, 0.6);
   const towel = mesh(rbox(0.5, 0.7, 0.06, 0.02), mat(0xece4d4, { roughness: 1 }), scene, [11.9, 1.2, 5.5], [0, -Math.PI / 2, 0]);
-  const bathLight = new THREE.PointLight(0xffe7c8, 3, 6, 1.6); bathLight.position.set(10.3, 3.2, 6); scene.add(bathLight);
 
   // ---------- tapete e mesa ----------
   const rugT = tex(1024, 1024, (g, w, h) => {
@@ -220,13 +219,13 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     for (let i = 0; i < 6000; i++) { g.fillStyle = `rgba(255,255,255,${Math.random() * .025})`; g.fillRect(Math.random() * w, Math.random() * h, 2, 2); }
   });
   mesh(new THREE.CircleGeometry(5.3, 96), mat(0xffffff, { map: rugT, transparent: true, roughness: 1 }), scene, [0, 0.006, 0], [-Math.PI / 2, 0, 0], false);
-  const table = new THREE.Group(); scene.add(table);
+  const table = new THREE.Group(); scene.add(table); blob(scene, 0, 0, 3.4, 3.4, 0.45);
   const woodT = tex(1024, 1024, (g, w, h) => {
     g.fillStyle = '#1b130e'; g.fillRect(0, 0, w, h);
     for (let i = 0; i < 220; i++) { g.strokeStyle = `rgba(${Math.random() < .5 ? '0,0,0' : '90,60,40'},${Math.random() * .22})`; g.lineWidth = Math.random() * 2.5; g.beginPath(); const y = Math.random() * h; g.moveTo(0, y); g.bezierCurveTo(w * .3, y + Math.random() * 30 - 15, w * .7, y + Math.random() * 30 - 15, w, y + Math.random() * 20 - 10); g.stroke(); }
   });
-  mesh(cyl(TABLE_R, TABLE_R, 0.06, 128), phys(0xffffff, { map: woodT, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.12 }), table, [0, TOP_Y - 0.03, 0]);
-  mesh(new THREE.TorusGeometry(TABLE_R, 0.03, 12, 160), M.gold, table, [0, TOP_Y - 0.03, 0], [Math.PI / 2, 0, 0]);
+  mesh(cyl(TABLE_R, TABLE_R, 0.06, 64), phys(0xffffff, { map: woodT, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.12 }), table, [0, TOP_Y - 0.03, 0]);
+  mesh(new THREE.TorusGeometry(TABLE_R, 0.03, 6, 96), M.gold, table, [0, TOP_Y - 0.03, 0], [Math.PI / 2, 0, 0]);
   mesh(new THREE.TorusGeometry(TABLE_R - 0.36, 0.006, 6, 160), M.gold, table, [0, TOP_Y + 0.001, 0], [Math.PI / 2, 0, 0], false);
   mesh(cyl(0.7, 1.05, TOP_Y - 0.12, 64), M.blackGloss, table, [0, (TOP_Y - 0.12) / 2 + 0.06, 0]);
   mesh(new THREE.TorusGeometry(0.71, 0.015, 8, 64), M.gold, table, [0, TOP_Y - 0.08, 0], [Math.PI / 2, 0, 0], false);
@@ -243,13 +242,14 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   // halo pendente sobre a mesa (luz de cima sem feixe)
   const halo = new THREE.Group(); halo.position.y = 3.25; scene.add(halo);
   const haloM = mat(0xfff0d8, { emissive: 0xffe2b0, emissiveIntensity: 2 });
-  mesh(new THREE.TorusGeometry(2.2, 0.03, 10, 140), haloM, halo, null, [Math.PI / 2, 0, 0], false);
-  mesh(new THREE.TorusGeometry(2.24, 0.012, 8, 140), M.gold, halo, [0, 0.03, 0], [Math.PI / 2, 0, 0], false);
+  mesh(new THREE.TorusGeometry(2.2, 0.03, 6, 96), haloM, halo, null, [Math.PI / 2, 0, 0], false);
+  mesh(new THREE.TorusGeometry(2.24, 0.012, 4, 96), M.gold, halo, [0, 0.03, 0], [Math.PI / 2, 0, 0], false);
   for (let i = 0; i < 3; i++) { const a = i * Math.PI * 2 / 3; mesh(cyl(0.004, 0.004, ROOM.H - 3.25, 6), M.black, halo, [Math.cos(a) * 2.2, (ROOM.H - 3.25) / 2, Math.sin(a) * 2.2], null, false); }
 
   // ---------- lounge (oeste) com TV de faturamento ----------
   const lounge = new THREE.Group(); scene.add(lounge);
   const boucle = phys(0xe9e2d4, { roughness: 0.95, sheen: 1, sheenColor: new THREE.Color(0xffffff), sheenRoughness: 0.8 });
+  blob(scene, -7.4, -3.6, 0.8, 2.0); blob(scene, -9.3, -3.6, 0.95, 0.95);
   const sofa = new THREE.Group(); sofa.position.set(-7.4, 0, -3.6); sofa.rotation.y = -Math.PI / 2; lounge.add(sofa);
   mesh(rbox(3.4, 0.42, 1.0, 0.12, 4), boucle, sofa, [0, 0.21, 0]);
   mesh(rbox(3.4, 0.5, 0.26, 0.12, 4), boucle, sofa, [0, 0.62, 0.38]);
@@ -275,7 +275,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   const arcC = new THREE.CatmullRomCurve3([new THREE.Vector3(0, 0.05, 0), new THREE.Vector3(0, 1.6, 0), new THREE.Vector3(-0.6, 2.35, 0.4), new THREE.Vector3(-1.5, 2.2, 1.0), new THREE.Vector3(-1.9, 1.85, 1.3)]);
   mesh(new THREE.TubeGeometry(arcC, 40, 0.018, 8), M.gold, arcLamp);
   mesh(new THREE.SphereGeometry(0.26, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2), M.gold, arcLamp, [-1.9, 1.85, 1.3]);
-  const lampLight = new THREE.PointLight(0xffd59a, 4, 6, 1.6); lampLight.position.set(-1.9, 1.65, 1.3); arcLamp.add(lampLight);
 
   // parede da TV: painel de mármore preto com moldura dourada
   const tvWall = new THREE.Group(); tvWall.position.set(-11.9, 0, -3.6); tvWall.rotation.y = Math.PI / 2; scene.add(tvWall);
@@ -285,12 +284,11 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   mesh(box(5.0, 0.12, 0.35), M.goldDim, tvWall, [0, 0.5, 0.2], null, false);
   mesh(box(5.0, 0.4, 0.4), phys(0x2a1a10, { roughness: 0.35, clearcoat: 0.6 }), tvWall, [0, 0.2, 0.2], null, false);
   // TV de faturamento na parede oeste
-  const tvCanvas = document.createElement('canvas'); tvCanvas.width = 1280; tvCanvas.height = 720;
+  const tvCanvas = document.createElement('canvas'); tvCanvas.width = 1280; tvCanvas.height = 720; tvCanvas.style.imageRendering = 'auto';
   const tvTex = new THREE.CanvasTexture(tvCanvas); tvTex.colorSpace = THREE.SRGBColorSpace; tvTex.anisotropy = 8;
   const tv = new THREE.Group(); tv.position.set(-11.88, 2.1, -3.6); tv.rotation.y = Math.PI / 2; scene.add(tv); out.westItems.push(tv);
   mesh(rbox(3.9, 2.25, 0.07, 0.02), M.black, tv, [0, 0, 0]);
   mesh(new THREE.PlaneGeometry(3.8, 2.14), new THREE.MeshBasicMaterial({ map: tvTex, toneMapped: false }), tv, [0, 0, 0.037], null, false);
-  const tvGlow = new THREE.PointLight(0x9fd8b0, 1.6, 5, 2); tvGlow.position.set(0.8, 0, 0); tv.add(tvGlow);
   let fatShown = 0;
   function drawTV(now) {
     const g = tvCanvas.getContext('2d'), W = 1280, H = 720;
@@ -332,7 +330,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     tvTex.needsUpdate = true;
   }
   let tvT = 0;
-  out.updaters.push((dt, now) => { tvT -= dt; if (tvT <= 0) { tvT = 0.25; drawTV(now); } });
+  out.updaters.push((dt, now) => { tvT -= dt; if (tvT <= 0) { tvT = now < 4 ? 0.15 : 1.0; drawTV(now); } });
 
   // estantes ao lado da TV
   [[-7.6], [0.5]].forEach(([zc]) => {
@@ -346,7 +344,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   });
 
   // ---------- bar e café (sul) ----------
-  const bar = new THREE.Group(); bar.position.set(-9, 0, 8.45); scene.add(bar);
+  const bar = new THREE.Group(); bar.position.set(-9, 0, 8.45); scene.add(bar); blob(bar, 0, -0.1, 2.8, 0.6);
   mesh(rbox(5, 1.02, 0.7, 0.03), mat(0x111111, { roughness: 0.4 }), bar, [0, 0.51, 0]);
   for (let i = -24; i <= 24; i++) mesh(cyl(0.035, 0.035, 0.95, 8), mat(0x1a1a1a, { roughness: 0.35 }), bar, [i * 0.1, 0.5, -0.36], null, false);
   mesh(rbox(5.1, 0.06, 0.78, 0.01), phys(0xffffff, { map: marbleTex('#f2f0ec', 'rgba(120,120,120,A)', 14, 512, [2, 1]), roughness: 0.12, clearcoat: 1 }), bar, [0, 1.05, 0]);
@@ -365,7 +363,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   mesh(cyl(0.08, 0.07, 0.28, 24), M.glass, bar, [1.6, 1.22, -0.05]); mesh(cyl(0.072, 0.065, 0.2, 24), M.water, bar, [1.6, 1.18, -0.05], null, false);
   for (let i = 0; i < 4; i++) mesh(cyl(0.035, 0.03, 0.1, 16), M.glass, bar, [1.9 + (i % 2) * 0.09, 1.13, -0.08 - Math.floor(i / 2) * 0.09], null, false);
   [-1, 0.3, 1.6].forEach(x => { const st = new THREE.Group(); st.position.set(x, 0, -0.75); bar.add(st); mesh(cyl(0.2, 0.2, 0.07, 24), M.leather, st, [0, 0.78, 0]); mesh(cyl(0.02, 0.02, 0.72, 8), M.gold, st, [0, 0.4, 0]); mesh(new THREE.TorusGeometry(0.15, 0.01, 6, 24), M.gold, st, [0, 0.3, 0], [Math.PI / 2, 0, 0]); mesh(cyl(0.18, 0.2, 0.02, 24), M.gold, st, [0, 0.01, 0]); });
-  const barLight = new THREE.PointLight(0xffc988, 4, 6, 1.6); barLight.position.set(-9, 2.6, 7.4); scene.add(barLight);
 
   // ---------- quadros ----------
   const art = (kind, w, h, seed) => tex(Math.round(w * 300), Math.round(h * 300), (g, W, H) => {
@@ -402,7 +399,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     mesh(box(w + 0.12, h + 0.12, 0.06), M.gold, p, [0, 0, 0], null, false);
     mesh(box(w, h, 0.07), mat(0x111111), p, [0, 0, 0.002], null, false);
     mesh(new THREE.PlaneGeometry(w, h), mat(0xffffff, { map: art(kind, w, h), roughness: 0.75 }), p, [0, 0, 0.04], null, false);
-    const l = new THREE.SpotLight(0xfff0d8, 8, 4, 0.6, 0.6, 1.5); l.position.set(0, h / 2 + 0.6, 0.9); l.target.position.set(0, 0, 0); p.add(l, l.target);
     if (Math.abs(z - 8.9) < 0.2) out.southItems.push(p); if (x < -11.5) out.westItems.push(p);
     return p;
   }
@@ -443,10 +439,9 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   }
   mesh(new THREE.PlaneGeometry(1.76, 2.95), new THREE.MeshPhysicalMaterial({ color: 0xffffff, transparent: true, opacity: 0.12, roughness: 0.02, clearcoat: 1 }), adega, [0, 1.5, 0.315], null, false);
   mesh(box(0.025, 0.6, 0.03), M.gold, adega, [0.75, 1.6, 0.34], null, false);
-  const adegaLight = new THREE.PointLight(0xffc988, 0.9, 2.5, 1.8); adegaLight.position.set(0, 2.4, 0.9); adega.add(adegaLight);
 
   // ---------- segundo lounge: conversa perto da janela ----------
-  const conv = new THREE.Group(); conv.position.set(8.0, 0, -6.4); scene.add(conv);
+  const conv = new THREE.Group(); conv.position.set(8.0, 0, -6.4); scene.add(conv); blob(conv, 0, 0, 2.0, 1.4, 0.4);
   mesh(new THREE.CircleGeometry(2.2, 64), mat(0x2a2624, { roughness: 1 }), conv, [0, 0.007, 0], [-Math.PI / 2, 0, 0], false);
   mesh(new THREE.RingGeometry(2.05, 2.1, 64), M.gold, conv, [0, 0.008, 0], [-Math.PI / 2, 0, 0], false);
   const blackLeather = phys(0x121010, { roughness: 0.4, clearcoat: 0.4, sheen: 0.3 });
@@ -465,7 +460,6 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   mesh(sph(0.11, 20, 14), M.glass, ctab, [-0.25, 0.53, 0.05]); mesh(cyl(0.09, 0.09, 0.05, 20), M.amber, ctab, [-0.25, 0.48, 0.05], null, false);
   [[0.15, -0.1], [0.3, 0.12]].forEach(([x, z]) => { mesh(cyl(0.04, 0.036, 0.09, 20), M.glass, ctab, [x, 0.47, z], null, false); mesh(cyl(0.035, 0.032, 0.035, 20), M.amber, ctab, [x, 0.445, z], null, false); });
   mesh(rbox(0.26, 0.04, 0.2, 0.004), mat(0x1a1a1a), ctab, [0.2, 0.445, -0.15], [0, 0.3, 0]);
-  const convLight = new THREE.PointLight(0xffd59a, 3, 5, 1.6); convLight.position.set(8.0, 2.6, -6.4); scene.add(convLight);
 
   // ---------- plantas ----------
   function plantPot(parent, x, z, s = 1) {
@@ -475,11 +469,12 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     const trunkC = new THREE.CatmullRomCurve3([new THREE.Vector3(0, 0.68, 0), new THREE.Vector3(0.05, 1.4, 0.02), new THREE.Vector3(-0.03, 2.0, 0.05), new THREE.Vector3(0.04, 2.4, 0)]);
     mesh(new THREE.TubeGeometry(trunkC, 20, 0.035, 8), mat(0x5a4632, { roughness: 0.9 }), p);
     const leafM = phys(0x2f4a2a, { roughness: 0.6, sheen: 0.4, side: THREE.DoubleSide });
-    const leaf = new THREE.SphereGeometry(0.11, 8, 6); leaf.scale(1, 0.22, 0.55);
-    for (let i = 0; i < 70; i++) {
+    const leaf = new THREE.SphereGeometry(0.11, 5, 3); leaf.scale(1, 0.22, 0.55);
+    blob(p, 0, 0, 0.55);
+    for (let i = 0; i < 40; i++) {
       const a = Math.random() * Math.PI * 2, r = Math.random() * 0.55, y = 1.4 + Math.random() * 1.25;
       const l = mesh(leaf, leafM, p, [Math.cos(a) * r, y, Math.sin(a) * r], [Math.random() * 1.5 - .75, a, Math.random() - .5]);
-      l.material = i % 3 ? leafM : phys(0x3d5c34, { roughness: 0.6, side: THREE.DoubleSide });
+      if (i % 3 === 0) l.material = phys(0x3d5c34, { roughness: 0.6, side: THREE.DoubleSide });
     }
     return p;
   }
@@ -487,19 +482,10 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   [[-11.2, -8.3], [11.2, -8.3], [-6.2, 8.4], [1.7, 8.4], [-11.3, 4.2], [-4.6, -8.4], [11.2, 2.3]].forEach(([x, z]) => plantPot(scene, x, z, 0.85 + Math.random() * 0.35));
   // poltrona de leitura na janela
 
-  // ---------- luzes ----------
-  const hemi = new THREE.HemisphereLight(0xf4f1ea, 0x8a8478, 0.9); scene.add(hemi);
-  const sun = new THREE.DirectionalLight(0xfff2df, 3); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
-  Object.assign(sun.shadow.camera, { left: -16, right: 16, top: 14, bottom: -14, near: 1, far: 80 }); sun.shadow.bias = -0.0005; sun.shadow.normalBias = 0.03;
-  scene.add(sun, sun.target);
-  const spot = new THREE.SpotLight(0xffeedd, 70, 12, 0.85, 0.6, 1.4); spot.position.set(0, 7, 0.5); spot.target.position.set(0, 0.6, 0);
-  spot.castShadow = true; spot.shadow.mapSize.set(2048, 2048); spot.shadow.bias = -0.0004; spot.shadow.normalBias = 0.02;
-  scene.add(spot, spot.target);
-  const haloLights = []; for (let i = 0; i < 4; i++) { const p = new THREE.PointLight(0xffe2bd, 5, 7, 1.7); const a = i * Math.PI / 2 + 0.4; p.position.set(Math.cos(a) * 2.2, 3.1, Math.sin(a) * 2.2); scene.add(p); haloLights.push(p); }
-  const fill = []; [[-8, 3.6, -3], [5, 3.6, 5], [5, 3.6, -5], [-5, 3.6, 5], [0, 3.6, -6.5], [-8.5, 3.6, 6]].forEach(([x, y, z]) => { const p = new THREE.PointLight(0xfff0dd, 9, 14, 1.4); p.position.set(x, y, z); scene.add(p); fill.push(p); });
-  const interior = [...haloLights, ...fill, lampLight, barLight, bathLight];
-  const interiorBase = interior.map(l => l.intensity);
-
+  // ---------- luzes (só 2: céu e sol/teto) ----------
+  const hemi = new THREE.HemisphereLight(0xf4f1ea, 0x6a645a, 1.0); scene.add(hemi);
+  const sun = new THREE.DirectionalLight(0xfff2df, 2); sun.position.set(4, 12, 6); scene.add(sun, sun.target);
+  const interior = []; const interiorBase = [];
   // ---------- dia e noite (horário de Brasília) ----------
   const C = (h) => new THREE.Color(h);
   const P = {
@@ -529,11 +515,13 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     skyU.top.value.copy(a.top).lerp(b.top, k); skyU.hor.value.copy(a.hor).lerp(b.hor, k);
     skyU.sunDir.value.copy(dir); skyU.sunAmt.value = clamp(el * 4 + 0.4, 0, 1);
     scene.fog.color.copy(a.fog).lerp(b.fog, k);
-    sun.intensity = mix(a.sun, b.sun) * clamp(el * 5, 0, 1);
-    sun.color.setHSL(0.09, 0.6, lerp(0.62, 0.93, clamp(el * 2.5, 0, 1)));
-    sun.position.copy(dir).multiplyScalar(40); sun.target.position.set(0, 0, 0);
-    sun.castShadow = sun.intensity > 0.2; spot.castShadow = !sun.castShadow;
-    hemi.intensity = mix(a.hemi, b.hemi);
+    const sunK = clamp(el * 5, 0, 1);
+    // de dia: sol entrando; de noite: luz de teto quente
+    const ins0 = mix(a.inside, b.inside);
+    sun.intensity = lerp(1.5 * ins0 + 0.6, mix(a.sun, b.sun) * 0.9, sunK);
+    sun.color.set(sunK > 0.5 ? 0xfff2df : 0xffe2bd);
+    if (sunK > 0.3) sun.position.copy(dir).multiplyScalar(40); else sun.position.set(3, 14, 5); sun.target.position.set(0, 0, 0);
+    hemi.intensity = mix(a.hemi, b.hemi) + 0.5;
     hemi.color.copy(skyU.top.value).lerp(tmpC.set(0xffffff), 0.6);
     const win = mix(a.win, b.win); cityMats.forEach(m => m.emissiveIntensity = win);
     cityMats.forEach(m => m.color.setScalar(lerp(0.22, 1, clamp(el * 3 + 0.3, 0, 1))));
@@ -542,7 +530,7 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
     lamps.material.opacity = clamp(win * 1.2, 0, 1);
     stars.material.opacity = clamp(1 - (el + 0.12) * 6, 0, 0.85);
     moon.visible = el < 0.05;
-    const ins = mix(a.inside, b.inside); interior.forEach((l, i) => l.intensity = interiorBase[i] * ins); spot.intensity = 70 * (0.5 + ins * 0.5);
+    const ins = mix(a.inside, b.inside);
     haloM.emissiveIntensity = 0.6 + ins * 1.6;
     renderer.toneMappingExposure = mix(a.exp, b.exp);
     out.isNight = el < 0;

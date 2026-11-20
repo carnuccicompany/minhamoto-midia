@@ -1,12 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
-import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { DIRETORES, MASTER, FATURAMENTO } from './data.js';
-import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp } from './util.js';
+import { M, mat, mesh, box, sph, lerp, clamp, smooth, ease, angLerp, mergeChildren, blob, bakeStatic } from './util.js';
 import { buildEnv, SPOTS, TABLE_R, TOP_Y, ROOM } from './env.js';
 import { buildPerson, blendPose, sitLegs, standLegs, faceTick } from './people.js';
 import { macbook, glassOf, cigar, phone, newspaper, tableProps, chair, throne, plateTex, smokeTex } from './props.js';
@@ -17,10 +13,11 @@ const LOGO = window.__LOGO__;
 const app = document.getElementById('app');
 const isMobile = () => window.innerWidth < 760;
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer: true });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance', stencil: true });
+let HD = false; const PR = () => HD ? Math.min(window.devicePixelRatio || 1, 2) : (isMobile() ? 1 : Math.min(window.devicePixelRatio || 1, 1.25));
+renderer.setPixelRatio(PR());
 renderer.setSize(app.clientWidth, app.clientHeight);
-renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.enabled = false;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
 app.appendChild(renderer.domElement);
 const scene = new THREE.Scene();
@@ -37,12 +34,6 @@ controls.addEventListener('end', () => { clearTimeout(autoTimer); autoTimer = se
 
 const pmrem = new THREE.PMREMGenerator(renderer);
 scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.3;
-const rt = new THREE.WebGLRenderTarget(app.clientWidth, app.clientHeight, { type: THREE.HalfFloatType, stencilBuffer: true, samples: isMobile() ? 2 : 4 });
-const composer = new EffectComposer(renderer, rt);
-composer.setPixelRatio(renderer.getPixelRatio()); composer.setSize(app.clientWidth, app.clientHeight);
-composer.addPass(new RenderPass(scene, camera));
-const bloom = new UnrealBloomPass(new THREE.Vector2(app.clientWidth / 2, app.clientHeight / 2), 0.35, 0.4, 2.6);
-composer.addPass(bloom); composer.addPass(new OutputPass());
 const env = buildEnv(scene, renderer, LOGO, FATURAMENTO);
 const clock = new THREE.Clock();
 
@@ -61,7 +52,7 @@ function frameAt(a, r = SEAT_R) { const f = new THREE.Group(); f.position.set(Ma
 const thrones = [];
 [['Léo', deg(90)], ['Davi', deg(270)]].forEach(([nome, a]) => {
   const f = frameAt(a, SEAT_R + 0.12);
-  const t = throne(plateTex(nome, 'Sócio · CEO')); f.add(t);
+  const t = throne(plateTex(nome, 'Sócio · CEO')); f.add(t); blob(f, 0, -0.05, 0.6, 0.65, 0.4);
   t.traverse(o => { if (o.isMesh) { o.userData.thr = nome; pickables.push(o); } });
   macbook(f, 0, 0.7, 0, 'money').group.position.y = TOP_Y;
   const g = glassOf('whisky'); g.position.set(0.34, TOP_Y, 0.62); f.add(g);
@@ -74,7 +65,7 @@ function addBubble() { const el = document.createElement('div'); el.className = 
 DIRETORES.forEach((d, i) => {
   const a = angles[i];
   const frame = frameAt(a);
-  const ch = chair(plateTex(d.nome, d.setor)); frame.add(ch);
+  const ch = chair(plateTex(d.nome, d.setor)); frame.add(ch); blob(frame, 0, -0.05, 0.5, 0.55, 0.4);
   const P = buildPerson(d); frame.add(P.root); sitLegs(P);
   const mb = macbook(frame, 0, 0.7, 0, d.tela); mb.group.position.y = TOP_Y;
   const slots = [[-0.38, 0.68], [0.42, 0.88], [-0.44, 0.92]];
@@ -99,7 +90,7 @@ seats.forEach((s, i) => { s.left = seats[(i + seats.length - 1) % seats.length];
 // Consigliere (diretor-geral) — anda pela sala
 const masterP = buildPerson(MASTER);
 const master = { d: MASTER, P: masterP, pos: new THREE.Vector3(5.2, 0, -4.6), heading: -2.2, state: 'idle', t: 4, phase: 0, path: null, leg: 0, target: null, bubble: addBubble() };
-scene.add(masterP.root); standLegs(masterP, 0, false); blendPose(masterP, 'armsCross', 'armsCross', 1);
+scene.add(masterP.root); blob(masterP.root, 0, 0, 0.32, 0.32); standLegs(masterP, 0, false); blendPose(masterP, 'armsCross', 'armsCross', 1);
 masterP.root.traverse(o => { if (o.isMesh) { o.userData.dirId = 'master'; pickables.push(o); } });
 master.tag = addTag(`<b>${MASTER.nome}</b><span>${MASTER.cargo}</span>`, 'master'); master.tag.addEventListener('click', e => { e.stopPropagation(); select(master); });
 
@@ -459,6 +450,7 @@ $('bNames').onclick = e => { namesOn = !namesOn; e.currentTarget.classList.toggl
 $('bHome').onclick = () => { if (viewMode) { viewMode = false; controls.maxPolarAngle = 1.45; controls.minDistance = 2.5; } follow = null; $('bFollow').classList.remove('on'); if (selected) deselect(); else camFly = { pos: HOME.pos.clone(), tgt: HOME.tgt.clone() }; };
 $('bBath').onclick = e => { env.bathView = !env.bathView; env.setBathView(env.bathView); e.currentTarget.classList.toggle('on', env.bathView); if (env.bathView) { controls.autoRotate = false; camFly = { pos: new THREE.Vector3(14.5, 7.5, 12.5), tgt: new THREE.Vector3(10.3, 0.8, 6) }; } };
 $('bFollow').onclick = e => { follow = follow ? null : 'phoenix'; e.currentTarget.classList.toggle('on', !!follow); controls.autoRotate = false; if (selected) { selected = null; panel.classList.remove('open'); hideTeam(); setOffset(); } };
+$('bHD').onclick = e => { HD = !HD; e.currentTarget.classList.toggle('on', HD); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); };
 $('bView').onclick = () => { follow = null; controls.autoRotate = false; controls.maxPolarAngle = 1.78; controls.minDistance = 1; viewMode = true; camFly = { pos: new THREE.Vector3(2.5, 1.55, -5.2), tgt: new THREE.Vector3(3.2, 2.15, -8.4) }; };
 $('bTV').onclick = () => { follow = null; controls.autoRotate = false; camFly = { pos: new THREE.Vector3(-6.0, 2.3, -3.6), tgt: new THREE.Vector3(-11.8, 2.1, -3.6) }; };
 const slider = $('hour'), hourLbl = $('hourLbl');
@@ -492,7 +484,7 @@ function loop() {
   nextChat -= dt; if (nextChat <= 0) { startChat(); nextChat = 14 + Math.random() * 16; }
   const near = seats.some(s => s.wpos && (s.state === 'walk' || s.state === 'there') && s.kind === 'banheiro' && s.wpos.distanceTo(SPOTS.banheiroPorta) < 1.8);
   env.bathDoor.rotation.y = ease(env.bathDoor.rotation.y, near ? 1.4 : 0, 4, dt);
-  frames++; seats[frames % seats.length].mb.draw(now);
+  frames++; if (frames % 12 === 0) seats[(frames / 12) % seats.length].mb.draw(now);
   phoenix.update(dt, now); panda.update(dt, now);
   if (selected && selected.pet === 'panda' && !camFly) controls.target.lerp(panda.root.position.clone().setY(0.3), 1 - Math.pow(0.05, dt));
   for (let i = puffs.length - 1; i >= 0; i--) { const p = puffs[i]; p.userData.t += dt; const t = p.userData.t - p.userData.d; if (t < 0) continue; p.position.addScaledVector(p.userData.v, dt); const sc = 0.05 + t * 0.35; p.scale.set(sc, sc, sc); p.material.opacity = Math.max(0, 0.45 * (1 - t / 2.2)); if (t > 2.2) { scene.remove(p); p.material.dispose(); puffs.splice(i, 1); } }
@@ -501,14 +493,24 @@ function loop() {
     holo.tags.forEach(t => { const k = clamp((now - holo.t0 - t.obj.userData.k * 0.12) / 0.6, 0, 1); const e = 1 - Math.pow(1 - k, 3); t.obj.scale.y = Math.max(0.001, e); t.obj.position.y = Math.sin(now * 1.6 + t.obj.userData.k) * 0.02; t.el.style.opacity = e * place(t.el, t.obj, 1.02 + (t.obj.userData.k % 2) * 0.2, w, h); });
     holoMat.uniforms.t.value = now;
   }
-  scene.environmentIntensity = env.isNight ? 0.25 : 0.45; bloom.strength = env.isNight ? 0.55 : 0.3;
-  composer.render();
+  scene.environmentIntensity = env.isNight ? 0.35 : 0.5;
+  renderer.render(scene, camera);
   updateLabels();
   if (now - lastClock > 1) { lastClock = now; const h = env.getHour(); const live = $('bNow').classList.contains('on'); $('clock').textContent = `${hourText(h)} em Brasília · ${env.isNight ? 'noite' : 'dia'}${live ? '' : ' (simulado)'}`; if (live) { slider.value = h; hourLbl.textContent = hourText(h); } }
   requestAnimationFrame(loop);
 }
+// cenário parado: assa em poucas malhas
+thrones.forEach(t => t.f.children.forEach(c => { if (c.isGroup) { bakeStatic(c); c.userData.dyn = true; } }));
+seats.forEach(s => { bakeStatic(s.chair); s.chair.userData.dyn = true; s.tg.userData.dyn = true; s.hg.userData.dyn = true; Object.values(s.hand).forEach(h => h.userData.dyn = true); });
+env.southItems.concat(env.westItems).forEach(g => { if (g.isGroup) { bakeStatic(g); g.userData.dyn = true; } else g.userData.dyn = true; });
+env.bathDoor.userData.dyn = true; bakeStatic(env.bathDoor);
+phoenix.root.userData.dyn = true; panda.root.userData.dyn = true; masterP.root.userData.dyn = true; seats.forEach(s => s.P.root.userData.dyn = true);
+bakeStatic(scene);
+mergeChildren(scene);
+pickables.length = 0; scene.traverse(o => { if (o.isMesh && !o.isSkinnedMesh && (o.userData.hit || o.userData.thr || o.userData.pet) && !(o.userData.dirId && !o.userData.hit)) pickables.push(o); });
+// hover: só raycast a cada 120 ms
 masterNext();
 loop();
 log('Expediente rolando: o conselho trabalha 24h');
-window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setSize(app.clientWidth, app.clientHeight); composer.setSize(app.clientWidth, app.clientHeight); });
-window.__mesa = { scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };
+window.addEventListener('resize', () => { camera.aspect = app.clientWidth / app.clientHeight; setOffset(); camera.updateProjectionMatrix(); renderer.setPixelRatio(PR()); renderer.setSize(app.clientWidth, app.clientHeight); });
+window.__mesa = { renderer, scene, panda, pet: k => selectPet(k), select: i => select(seats[i]), master: () => select(master), seats, camera, controls, env, goOut: (i, k) => goOut(seats[i], k, clock.elapsedTime), phoenix, setHour: h => { env.setHour(h); env.refreshSky(); }, view: () => $('bView').click(), fly: (p, t) => { camFly = { pos: new THREE.Vector3(...p), tgt: new THREE.Vector3(...t) }; controls.autoRotate = false; follow = null; }, bath: () => $('bBath').click(), snap: () => { if (camFly) { camera.position.copy(camFly.pos); controls.target.copy(camFly.tgt); camFly = null; } } };

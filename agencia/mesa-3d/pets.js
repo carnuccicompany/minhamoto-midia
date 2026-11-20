@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import { phys, mat, mesh, sph, cyl, angLerp, smooth, clamp, lerp } from './util.js';
+import { phys, mat, mesh, sph, cyl, angLerp, smooth, clamp, lerp, blob } from './util.js';
 
 // Panda-vermelho "Carnucci": anda pelo escritório, para, senta, olha em volta, deita no tapete do lounge
 export function buildRedPanda(scene) {
-  const fur = (c, sheen = 0.9) => phys(c, { roughness: 0.85, sheen, sheenRoughness: 0.5, sheenColor: new THREE.Color(0xffc49a) });
+  const fur = (c) => mat(c, { roughness: 0.85 });
   const rust = fur(0xb4441a), rustD = fur(0x8a2e10), dark = fur(0x24140d, 0.4), white = fur(0xf4eee4, 0.6), black = phys(0x080606, { roughness: 0.2, clearcoat: 1 });
-  const root = new THREE.Group(); scene.add(root);
+  const root = new THREE.Group(); scene.add(root); blob(root, 0, 0, 0.35, 0.5);
   const body = new THREE.Group(); body.position.y = 0.3; root.add(body);
   const torso = mesh(new THREE.CapsuleGeometry(0.13, 0.3, 8, 18), rust, body, [0, 0, 0], [Math.PI / 2, 0, 0]); torso.scale.set(1, 1, 0.95);
   mesh(new THREE.CapsuleGeometry(0.1, 0.24, 6, 14), dark, body, [0, -0.055, 0.0], [Math.PI / 2, 0, 0]).scale.set(0.95, 1, 0.8); // barriga escura
@@ -42,7 +42,7 @@ export function buildRedPanda(scene) {
     mesh(sph(r, 16, 12), i % 2 ? rustD : fur(0xd1915a), g, [0, 0, -0.03]).scale.set(1, 1, 1.15);
     segs.push(g); parent = g;
   }
-  root.traverse(o => { if (o.isMesh) { o.castShadow = true; o.userData.pet = 'panda'; } });
+  root.traverse(o => { if (o.isMesh) o.userData.pet = 'panda'; });
 
   // passeio
   const spots = [[6.5, 6.5], [-4.5, 6.6], [-8.2, -1.5], [5.5, -6.8], [9.6, -1.5], [-2.0, -7.0], [0, 6.7], [-8.6, -5.8]];

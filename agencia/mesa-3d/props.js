@@ -4,7 +4,7 @@ import { M, mat, phys, mesh, box, rbox, cyl, sph, tex, goldGrad } from './util.j
 export const smokeTex = tex(64, 64, (g) => { const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32); gr.addColorStop(0, 'rgba(225,225,225,.55)'); gr.addColorStop(1, 'rgba(225,225,225,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); });
 
 export function screenCanvas(kind) {
-  const c = document.createElement('canvas'); c.width = 512; c.height = 320; const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+  const c = document.createElement('canvas'); c.width = 512; c.height = 320; const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.generateMipmaps = false; t.minFilter = THREE.LinearFilter;
   const draw = (now) => {
     const g = c.getContext('2d'), w = 512, h = 320;
     g.fillStyle = '#0d1117'; g.fillRect(0, 0, w, h);
@@ -51,7 +51,6 @@ export function macbook(parent, x, z, rotY, kind) {
   mesh(rbox(0.31, 0.205, 0.006, 0.006), M.alu, hinge, [0, 0.1025, 0]);
   const scr = screenCanvas(kind);
   mesh(new THREE.PlaneGeometry(0.29, 0.18), new THREE.MeshBasicMaterial({ map: scr.tex, toneMapped: false }), hinge, [0, 0.105, -0.0035], [0, Math.PI, 0], false);
-  const glow = new THREE.PointLight(0x9cc0ff, 0.35, 1.0, 2); glow.position.set(0, 0.12, -0.12); hinge.add(glow);
   return { group: g, draw: scr.draw };
 }
 
@@ -59,14 +58,14 @@ export function glassOf(kind) {
   const g = new THREE.Group();
   if (kind === 'whisky') {
     mesh(cyl(0.04, 0.036, 0.09, 24), M.glass, g, [0, 0.045, 0], null, false);
-    g.userData.liquid = mesh(cyl(0.035, 0.032, 0.04, 24), M.amber, g, [0, 0.025, 0], null, false);
+    g.userData.liquid = mesh(cyl(0.035, 0.032, 0.04, 12), M.amber, g, [0, 0.025, 0], null, false); g.userData.liquid.userData.keep = true;
     mesh(box(0.03, 0.03, 0.03), M.ice, g, [0.005, 0.045, 0.004], [0.3, 0.5, 0.2], false);
   } else if (kind === 'agua') {
     mesh(cyl(0.035, 0.03, 0.12, 24), M.glass, g, [0, 0.06, 0], null, false);
-    g.userData.liquid = mesh(cyl(0.031, 0.028, 0.08, 24), M.water, g, [0, 0.042, 0], null, false);
+    g.userData.liquid = mesh(cyl(0.031, 0.028, 0.08, 12), M.water, g, [0, 0.042, 0], null, false); g.userData.liquid.userData.keep = true;
   } else {
     mesh(cyl(0.032, 0.026, 0.055, 20), M.porcelain, g, [0, 0.028, 0]);
-    g.userData.liquid = mesh(cyl(0.029, 0.029, 0.004, 20), M.coffee, g, [0, 0.052, 0], null, false);
+    g.userData.liquid = mesh(cyl(0.029, 0.029, 0.004, 12), M.coffee, g, [0, 0.052, 0], null, false); g.userData.liquid.userData.keep = true;
     mesh(new THREE.TorusGeometry(0.015, 0.005, 8, 16), M.porcelain, g, [0.037, 0.03, 0], [0, 0, Math.PI / 2]);
   }
   return g;
@@ -147,7 +146,7 @@ export function chair(plateTexture) {
 // trono do Léo e do Davi
 export function throne(plateTexture) {
   const c = new THREE.Group();
-  const cream = new THREE.MeshPhysicalMaterial({ color: 0x0f0c0a, roughness: 0.38, sheen: 0.5, sheenColor: new THREE.Color(0x5a4630), clearcoat: 0.35 });
+  const cream = mat(0x0f0c0a, { roughness: 0.35 });
   mesh(rbox(0.82, 0.16, 0.72, 0.06, 4), cream, c, [0, 0.47, 0]);
   const back = new THREE.Group(); back.position.set(0, 0.55, -0.36); back.rotation.x = -0.08; c.add(back);
   mesh(rbox(0.86, 1.3, 0.14, 0.06, 4), cream, back, [0, 0.65, 0]);

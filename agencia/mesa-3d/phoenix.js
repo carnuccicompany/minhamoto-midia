@@ -8,7 +8,7 @@ export function buildPhoenix(scene, glbBase64) {
   const fireCols = new THREE.Color();
 
   // partículas de fogo (rastro + sopro)
-  const N = 1400;
+  const N = 520;
   const pos = new Float32Array(N * 3), vel = new Float32Array(N * 3), age = new Float32Array(N), life = new Float32Array(N), size = new Float32Array(N);
   for (let i = 0; i < N; i++) { age[i] = 1; life[i] = 1; pos[i * 3 + 1] = -999; }
   const pg = new THREE.BufferGeometry();
@@ -28,8 +28,7 @@ export function buildPhoenix(scene, glbBase64) {
   let cursor = 0;
   function emit(p, v, l, s) { const i = cursor; cursor = (cursor + 1) % N; pos.set([p.x, p.y, p.z], i * 3); vel.set([v.x, v.y, v.z], i * 3); age[i] = 0; life[i] = l; size[i] = s; }
 
-  const light = new THREE.PointLight(0xff7a2a, 18, 14, 1.6); root.add(light);
-  const breathLight = new THREE.PointLight(0xffa040, 0, 10, 1.5); scene.add(breathLight);
+  const light = { intensity: 0 }, breathLight = { intensity: 0, position: new THREE.Vector3() };
 
   // caminho de voo pela sala
   const pts = [[-8, 4.6, -5.5], [-2, 4.2, -7.0], [5, 5.0, -6.3], [9.0, 4.4, -2], [6.5, 5.3, 3.5], [2, 4.2, 6.2], [-4, 4.9, 5.3], [-9, 4.4, 2.5], [-6, 5.4, -1], [0, 4.5, 0.5], [6, 5.0, -1.5], [3, 4.3, -4], [-3, 5.2, -3]];
@@ -59,16 +58,16 @@ export function buildPhoenix(scene, glbBase64) {
           diffuseColor.rgb = mix(vec3(1.0, 0.45, 0.08), vec3(0.55, 0.04, 0.0), kk);
           totalEmissiveRadiance = grad * (0.42 + 0.35 * kk);`);
       };
-      o.material = m; o.castShadow = true;
+      o.material = m; o.castShadow = false;
     });
     const S = 0.05; model.scale.setScalar(S);
     root.add(model);
     mixer = new THREE.AnimationMixer(model);
     const act = mixer.clipAction(gltf.animations[0]); act.timeScale = 0.75; act.play();
-    for (let i = 0; i < 5; i++) {
-      const g = new THREE.PlaneGeometry(0.24 - i * 0.02, 3.4 + i * 0.35, 1, 16);
+    for (let i = 0; i < 3; i++) {
+      const g = new THREE.PlaneGeometry(0.24 - i * 0.02, 3.4 + i * 0.35, 1, 8);
       const r = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: ribTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide }));
-      r.userData = { base: g.attributes.position.array.slice(), i }; ribbons.push(r); root.add(r);
+      r.userData = { base: g.attributes.position.array.slice(), i, keep: true }; ribbons.push(r); root.add(r);
     }
     out.ready = true;
   }, e => console.warn('fenix', e));
@@ -91,7 +90,7 @@ export function buildPhoenix(scene, glbBase64) {
     root.updateMatrixWorld();
     const flap = Math.sin(now * 2.6);
     L(-1.85, flap * 0.7, -0.6, wingL); L(1.85, flap * 0.7, -0.6, wingR); L(0, 0.05, -2.9, tail); L(0, 0.2, 1.25, beak);
-    for (let k = 0; k < 3; k++) {
+    for (let k = 0; k < 1; k++) {
       [wingL, wingR].forEach(w => emit(w, new THREE.Vector3((Math.random() - .5) * .4, Math.random() * .5, (Math.random() - .5) * .4), 0.6 + Math.random() * 0.5, 0.18 + Math.random() * 0.2));
       emit(tail, new THREE.Vector3((Math.random() - .5) * .5, Math.random() * .3, (Math.random() - .5) * .5), 0.9 + Math.random() * 0.6, 0.28 + Math.random() * 0.25);
     }
@@ -100,7 +99,7 @@ export function buildPhoenix(scene, glbBase64) {
     if (nextBreath <= 0 && breath <= 0) { breath = 1.8; nextBreath = 9 + Math.random() * 7; out.onBreath && out.onBreath(); }
     if (breath > 0) {
       breath -= dt;
-      for (let k = 0; k < 26; k++) {
+      for (let k = 0; k < 10; k++) {
         const dir = fwd.clone().add(new THREE.Vector3((Math.random() - .5) * .28, (Math.random() - .5) * .22 - 0.12, (Math.random() - .5) * .28)).normalize();
         emit(beak, dir.multiplyScalar(5 + Math.random() * 4), 0.45 + Math.random() * 0.4, 0.35 + Math.random() * 0.45);
       }
