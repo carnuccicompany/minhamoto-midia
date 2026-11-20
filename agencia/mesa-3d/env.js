@@ -139,9 +139,32 @@ export function buildEnv(scene, renderer, LOGO, FAT) {
   city.add(lamps); city.traverse(o => { o.renderOrder = 50; });
 
   // ---------- chão, paredes, vidro ----------
-  const floorT = marbleTex('#e6e2db', 'rgba(110,106,100,A)', 30, 1024, [5, 4]);
+  const floorT = marbleTex('#ddd7cd', 'rgba(96,90,82,A)', 34, 1024, [5, 4]);
   const floor = mesh(new THREE.PlaneGeometry(24, 18), phys(0xffffff, { map: floorT, roughness: 0.22, clearcoat: 0.6, clearcoatRoughness: 0.25 }), scene, [0, 0, 0], [-Math.PI / 2, 0, 0], false);
   floor.receiveShadow = true;
+  // sombra de contato assada (escurece cantos, pé dos móveis e o entorno da mesa) — 1 malha, sem luz extra
+  {
+    const W = 1536, H = 1152, sx = x => (x + 12) / 24 * W, sz = z => (z + 9) / 18 * H, k = W / 24;
+    const t = tex(W, H, (c) => {
+      c.fillStyle = '#fff'; c.fillRect(0, 0, W, H);
+      const edge = (x0, y0, x1, y1, a) => { const g = c.createLinearGradient(x0, y0, x1, y1); g.addColorStop(0, `rgba(70,62,54,${a})`); g.addColorStop(1, 'rgba(70,62,54,0)'); return g; };
+      const e = 1.3 * k;
+      c.fillStyle = edge(0, 0, 0, e, .7); c.fillRect(0, 0, W, e);
+      c.fillStyle = edge(0, H, 0, H - e, .7); c.fillRect(0, H - e, W, e);
+      c.fillStyle = edge(0, 0, e, 0, .7); c.fillRect(0, 0, e, H);
+      c.fillStyle = edge(W, 0, W - e, 0, .7); c.fillRect(W - e, 0, e, H);
+      const blob = (x, z, r, a) => { const g = c.createRadialGradient(sx(x), sz(z), 0, sx(x), sz(z), r * k); g.addColorStop(0, `rgba(60,52,44,${a})`); g.addColorStop(1, 'rgba(60,52,44,0)'); c.fillStyle = g; c.fillRect(sx(x) - r * k, sz(z) - r * k, 2 * r * k, 2 * r * k); };
+      const ring = (r0, r1, a) => { const g = c.createRadialGradient(sx(0), sz(0), r0 * k, sx(0), sz(0), r1 * k); g.addColorStop(0, 'rgba(60,52,44,0)'); g.addColorStop(.45, `rgba(60,52,44,${a})`); g.addColorStop(1, 'rgba(60,52,44,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H); };
+      ring(TABLE_R - 0.4, TABLE_R + 1.8, .5);
+      const box2 = (x0, z0, x1, z1, a) => { c.save(); c.filter = `blur(${0.35 * k}px)`; c.fillStyle = `rgba(60,52,44,${a})`; c.fillRect(sx(x0), sz(z0), sx(x1) - sx(x0), sz(z1) - sz(z0)); c.restore(); };
+      box2(-12, -7.6 - 1.2, -11.2, 5.0, .35);        // estantes, TV, adega, armário e frigobar (parede oeste)
+      box2(-12, 6.3, -9.6, 8.2, .3);                 // bancada do café
+      blob(8, -6.4, 2.2, .3); blob(-8.4, -3.6, 2.4, .25); // lounges
+      blob(-2.3, 7.45, 0.9, .35);                    // Hall da Fama
+    });
+    const ao = mesh(new THREE.PlaneGeometry(24, 18), new THREE.MeshBasicMaterial({ map: t, transparent: true, blending: THREE.MultiplyBlending, premultipliedAlpha: true, depthWrite: false, toneMapped: false }), scene, [0, 0.004, 0], [-Math.PI / 2, 0, 0], false);
+    ao.renderOrder = 1; ao.userData.keep = true;
+  }
   const blackMarble = marbleTex('#0e0e0f', 'rgba(220,220,220,A)', 22, 1024, [4, 1]);
   const bmM = phys(0xffffff, { map: blackMarble, roughness: 0.15, clearcoat: 1, clearcoatRoughness: 0.15 });
   [[0, -8.45, 24, 1.1], [0, 8.45, 24, 1.1], [-11.45, 0, 1.1, 18], [11.45, 0, 1.1, 18]].forEach(([x, z, w, d]) => mesh(new THREE.PlaneGeometry(w, d), bmM, scene, [x, 0.003, z], [-Math.PI / 2, 0, 0], false));

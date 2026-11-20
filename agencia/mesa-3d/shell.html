@@ -19,6 +19,7 @@
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--sans); overflow: hidden; }
 #app { position: fixed; inset: 0; }
 #app canvas { display: block; cursor: grab; touch-action: none; }
+#vig { position: fixed; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(ellipse 120% 95% at 50% 52%, rgba(0,0,0,0) 58%, rgba(0,0,0,.34) 100%), linear-gradient(to bottom, rgba(5,5,6,.55), rgba(5,5,6,0) 170px), linear-gradient(to top, rgba(5,5,6,.45), rgba(5,5,6,0) 130px); }
 #app canvas:active { cursor: grabbing; }
 .brand { position: fixed; top: 22px; left: 26px; pointer-events: none; text-shadow: 0 2px 20px #000; }
 .brand .k { font-size: .68rem; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
@@ -133,6 +134,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
 </head>
 <body>
 <div id="app"></div>
+<div id="vig" aria-hidden="true"></div>
 <div id="labels"></div>
 <header class="brand">
   <div class="k">Carnucci · MinhaMoto</div>
@@ -168,6 +170,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
       <table><thead><tr><th>Cargo</th><th>Salário por semana</th></tr></thead><tbody>
         <tr><td>Estagiário</td><td class="n">C$ 10</td></tr><tr><td>Analista</td><td class="n">C$ 25</td></tr><tr><td>Sênior</td><td class="n">C$ 50</td></tr><tr><td>Braço-direito</td><td class="n">C$ 80</td></tr><tr><td>Diretor</td><td class="n">C$ 120 + 20% dos bônus da equipe</td></tr><tr><td>Diretor-Geral</td><td class="n">C$ 200 + 10% dos bônus da empresa</td></tr>
       </tbody></table>
+      <p class="note">Saldo sem teto (dá pra juntar pro Rolex). Bônus limitado a C$ 100 por agente por semana; salário à parte.</p>
       <h3>Bônus e multas</h3>
       <table><thead><tr><th>O que o agente fez</th><th>C$ e XP</th></tr></thead><tbody>
         <tr><td>Entregou no prazo, sem refazer</td><td class="n">+5</td></tr>
@@ -176,6 +179,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
         <tr><td><b>Extra que deu resultado:</b> virou número (post bateu a média, campanha baixou o custo)</td><td class="n">+30</td></tr>
         <tr><td><b>Ideia que virou dinheiro:</b> Léo e Davi decidem</td><td class="n">+100</td></tr>
         <tr><td>Extra recusado como ruído</td><td class="n neg">−5</td></tr>
+        <tr><td>Puxa-saquismo: elogio sem número ou esconder problema</td><td class="n neg">−5</td></tr>
         <tr><td>Refação por erro dele</td><td class="n neg">−10</td></tr>
         <tr><td>Inventou número, mexeu onde não podia ou publicou sem OK</td><td class="n neg">saldo zera e cai de cargo</td></tr>
       </tbody></table>
@@ -201,6 +205,8 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
       </div>
       <h3>Cadeira em disputa</h3>
       <p>A cada 3 meses, o diretor do setor com pior resultado pode ser desafiado pelo Braço-direito com mais XP da empresa. O Diretor-Geral apresenta os dois históricos e Léo e Davi decidem. Quem perde vira Braço-direito.</p>
+      <h3>Herdeiro</h3>
+      <p>Quando dois diretores fecham o mês em 1º e 2º no placar, nasce um herdeiro: um subagente novo criado a partir do jeito de trabalhar dos dois (regras, playbooks e os extras aprovados de cada um no mês). Ele nasce como Analista, com 100 XP, no setor do 1º colocado. Os dois escolhem o nome; Léo e Davi podem vetar. É no máximo um por mês; se o mesmo par repetir, o herdeiro que já existe ganha +100 XP. O herdeiro pode chegar a Braço-direito e disputar cadeira.</p>
       <h3>Setor novo, cadeira nova</h3>
       <p>Quando a empresa abre um setor, o Braço-direito com mais XP assume a cadeira de diretor.</p>
       <h3>Como a proatividade acontece</h3>
@@ -215,7 +221,7 @@ body.sel .timebox { opacity: 0; pointer-events: none; }
     </div>
 
     <div class="tab" id="t3" hidden>
-      <p class="lead">Folha da semana. Todo mundo começa do zero: a primeira folha sai na sexta depois que os agentes começarem a rodar com o sistema. <b id="headcount">0</b> pessoas na empresa.</p>
+      <p class="lead">Folha da semana. O piloto começou em 19/11 à noite: todo mundo começa do zero e a primeira folha sai na sexta, 20/11, às 17h47. <b id="headcount">0</b> pessoas na empresa.</p>
       <div class="tablewrap"><table><thead><tr><th>Nome</th><th>Cargo</th><th>Setor</th><th>Salário</th><th>Saldo</th><th>XP</th></tr></thead><tbody id="payroll"></tbody></table></div>
     </div>
 
