@@ -1,28 +1,28 @@
 {
- "rodada": "2026-11-20T11:40:00-03:00",
+ "rodada": "2026-11-20T12:13:00-03:00",
  "ok": true,
  "tarefas": {
-  "post do horário + aviso TikTok": "ok (00:02 UTC SUCCEEDED; próx 12h02 BRT 20/11)",
+  "post do horário + aviso TikTok": "ok (12h02 SUCCEEDED 15:05 UTC; próx 15h02 BRT)",
   "respostas às avaliações": "ok (9h13 SUCCEEDED 12:15 UTC; próx 13h13)",
   "vigia do Gmail": "ok (08h47 SUCCEEDED; próx 13h47)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS (religar após aprovar direção v2)",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 11h12)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 11h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 20/11 02h31 UTC; próx 19h23 BRT 20/11)",
   "MM: Folha de sexta": "agendada (próx 20/11 17h47 BRT)",
-  "lembrete lapidar diretores": "agendado 20/11 14h13 BRT (17:13 UTC)"
+  "lembrete lapidar diretores": "agendado 20/11 14h13 BRT"
  },
  "publicacao_hoje": {
-  "12h": "M02",
+  "12h": "A03 (15:05 UTC)",
   "15h": "B02",
   "18h": "M06",
   "21h": "DV11 (00:04 UTC)",
-  "proximo": "12h02 BRT 20/11"
+  "proximo": "15h02 BRT 20/11"
  },
  "dias_de_fila": 24,
- "nao_publicados": 97,
+ "nao_publicados": 96,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113 com cards_tiktok",
  "painel_links": "ok (falsos positivos são templates JS)",
