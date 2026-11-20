@@ -1,10 +1,21 @@
 {
- "coletado_em": "2026-11-19T20:14:33.126917Z",
+ "coletado_em": "2026-11-20T00:14:16.975243Z",
  "status": {
-  "google_play": "ok (4 avaliações)",
+  "google_play": "ok (5 avaliações)",
   "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
+  {
+   "loja": "google_play",
+   "id": "ec124592-a2a3-4200-a44c-49852d1ef791",
+   "nota": 1,
+   "texto": "app não funciona, baixei, consegui logar e da falha ao sincronizar.",
+   "data": "2026-11-19T21:35:11Z",
+   "versao_app": "1.0.1",
+   "aparelho": "onyx (Poco F7)",
+   "respondida": false,
+   "resposta_atual": null
+  },
   {
    "loja": "google_play",
    "id": "c28f1858-a4fd-44ed-85c4-b73acf4c74dd",
