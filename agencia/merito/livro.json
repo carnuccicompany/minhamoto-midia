@@ -30,7 +30,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "master:secretario-do-conselho",
@@ -56,7 +57,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "master:auditor-de-entregas",
@@ -82,7 +84,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "master:tesoureiro",
@@ -108,13 +111,14 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "dados",
    "nome": "Alan Turing",
    "tipo": "diretor",
-   "setor": "Dados",
+   "setor": "Dados e Finanças",
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
@@ -135,7 +139,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "dados:coletor-de-metricas",
@@ -161,7 +166,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "dados:analista-de-funil",
@@ -187,7 +193,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "dados:alerta-de-anomalias",
@@ -213,7 +220,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "dados:relatorio-semanal",
@@ -239,7 +247,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "mkt",
@@ -267,7 +276,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:pauteiro",
@@ -293,7 +303,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:roteirista",
@@ -319,7 +330,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:designer",
@@ -345,7 +357,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:editor-de-video",
@@ -371,7 +384,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:revisor",
@@ -397,15 +411,16 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mkt:publicador",
    "nome": "Phileas Fogg",
    "tipo": "subagente",
-   "setor": "Marketing",
+   "setor": "Criativos e Marketing",
    "cargo": "Estagiário",
-   "chefe": "mkt",
+   "chefe": "Walt Disney",
    "salario": 10,
    "saldo": 0,
    "xp": 0,
@@ -423,13 +438,14 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "cria",
    "nome": "Walt Disney",
    "tipo": "diretor",
-   "setor": "Criativos",
+   "setor": "Criativos e Marketing",
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
@@ -451,7 +467,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "cria:roteirista-de-gancho",
@@ -477,7 +494,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "cria:editor-de-motion",
@@ -503,7 +521,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "cria:revisor-de-performance",
@@ -529,7 +548,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "trafego",
@@ -557,7 +577,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "trafego:gestor-de-campanhas",
@@ -583,7 +604,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "trafego:testes-a-b",
@@ -609,7 +631,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "trafego:controle-de-verba",
@@ -635,7 +658,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "produto",
@@ -663,7 +687,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "produto:analista-do-paywall",
@@ -689,7 +714,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "produto:analista-de-cancelamentos",
@@ -715,7 +741,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "produto:testes-de-preco",
@@ -741,7 +768,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "produto:lista-pro-davi",
@@ -767,7 +795,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "fin",
@@ -794,7 +823,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "fin:receita",
@@ -820,7 +850,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "fin:custos-e-ferramentas",
@@ -846,7 +877,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "fin:lucro-e-alertas",
@@ -872,13 +904,14 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "lojas",
    "nome": "Jeff Bezos",
    "tipo": "diretor",
-   "setor": "Lojas",
+   "setor": "Lojas e Clientes",
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
@@ -901,7 +934,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "lojas:aso",
@@ -927,7 +961,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "lojas:respostas-as-avaliacoes",
@@ -953,7 +988,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "lojas:suporte-e-mail-e-whatsapp",
@@ -979,7 +1015,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "rel",
@@ -1006,7 +1043,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "rel:notificacoes-e-e-mails",
@@ -1032,7 +1070,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "rel:reconquista",
@@ -1058,7 +1097,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "rel:indique-e-ganhe",
@@ -1084,7 +1124,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "rel:criadores-e-ugc",
@@ -1110,7 +1151,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "juridico",
@@ -1138,7 +1180,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "juridico:contratos-e-termos",
@@ -1164,7 +1207,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "juridico:contabilidade-e-impostos",
@@ -1190,7 +1234,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "juridico:regras-das-lojas",
@@ -1216,7 +1261,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "juridico:protecao-de-marca",
@@ -1242,13 +1288,14 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mercado",
    "nome": "Salvatore Greco",
    "tipo": "diretor",
-   "setor": "Mercado",
+   "setor": "Mercado e Concorrência",
    "cargo": "Diretor",
    "chefe": "master",
    "salario": 120,
@@ -1270,7 +1317,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "mercado:radar-de-concorrentes",
@@ -1296,7 +1344,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "ativo"
   },
   {
    "id": "mercado:cacador-de-tendencias",
@@ -1322,7 +1371,8 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   },
   {
    "id": "mercado:leitor-de-avaliacoes",
@@ -1348,7 +1398,9 @@
    "erros_total": 0,
    "padrao": "ouro",
    "aumento_pct": 0,
-   "elogios_total": 0
+   "elogios_total": 0,
+   "status": "reserva"
   }
- ]
+ ],
+ "enxuta_desde": "2026-11-20"
 }

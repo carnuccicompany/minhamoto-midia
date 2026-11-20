@@ -98,7 +98,7 @@ function toast(t){const e=$('toast');e.textContent=t;e.style.opacity=1;clearTime
 function copy(t,msg){navigator.clipboard?.writeText(t).then(()=>toast(msg),()=>prompt('Copie:',t))}
 function merge(){
  const byB={};(B?.agentes||[]).forEach(a=>byB[a.id]=a);
- agents=(L?.agentes||[]).map(f=>{const b=byB[f.id]||{};const s=b.stats||{};
+ agents=(L?.agentes||[]).filter(f=>(f.status||'ativo')==='ativo').map(f=>{const b=byB[f.id]||{};const s=b.stats||{};
   return {id:f.id,nome:b.nome||f.nome,cargo:b.cargo||f.cargo,setor:b.setor||f.setor,chefe:b.chefe||f.chefe,tipo:f.tipo,funcao:f.funcao||'',
    broche:b.broche||f.broche||'nenhum',padrao:b.padrao||f.padrao||'ouro',
    s:{entregas:s.entregas??0,no_prazo:s.no_prazo??0,refacoes:s.refacoes??0,erros:s.erros??0,extras_aprovados:s.extras_aprovados??0,extras_total:s.extras_total??0,

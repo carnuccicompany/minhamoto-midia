@@ -43,3 +43,8 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Nada de conversa simulada por uma IA só. Na Reunião do Conselho, cada diretor roda como subagente separado (contexto próprio), escreve a própria posição sem ver a dos outros, depois há réplica entre quem se chocou e o Shelby (também separado) fecha. O secretário só copia, não escreve fala de ninguém.
 - Cada diretor tem uma agenda própria (agencia/memoria/agentes/{id}-agenda.md): metas pessoais, apostas e o que quer provar, e traz toda reunião uma iniciativa que ele mesmo escolheu.
 - Reunião diária roda no Sonnet (modelo necessário, não o mais caro).
+
+## 20/11/2026 15h50 — Empresa enxuta + base de conhecimento + ordem do plano
+- Léo pediu "reduza o máximo que você conseguir". Ficam 7 diretores (Shelby, Turing, Greco, Disney, Escobar, Bezos, Stark) + 6 executores. O resto vai pra reserva (ver merito/ESTRUTURA-ENXUTA.md). Reserva não recebe salário, não entra no Conselho nem no boletim.
+- Criada agencia/conhecimento/ (9 dossiês). O Léo alimenta por áudio/texto no chat, o Claude organiza. Cada agente lê só a fatia dele.
+- Ordem combinada (o Claude guia, sem pular etapa): 1) dados (RevenueCat, AppsFlyer); 2) uma meta: novos assinantes pagos/semana; 3) 6–8 agentes reais por etapa do funil; 4) taxa de aceite por agente (<70% → lapidar ou cortar); 5) placar de experimentos; 6) estética congelada até a receita se mexer; 7) orçamento de uso por agente.
