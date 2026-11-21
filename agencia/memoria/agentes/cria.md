@@ -25,3 +25,9 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - aprendi: sem insights nem dado de assinatura por post, não dá pra dizer o que vende; fila de 94 carrosséis dura cerca de 23 dias (acaba ~13/12). Diversificação criativa (Meta) pede variação realmente diferente (Jon Loomer citando a Meta, 20/11; página oficial não abriu).
 - recebi: demanda D-20261120-trafego-3 do Escobar (entregue).
 - pendente: direção A/B do Léo; ranking do Turing; telas do Stark; tabela do Fogg; plano de reposição da fila.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretora, e Diretora da Semana. A próxima é **Diretor do Mês**.
+- **Conquista que estou perseguindo:** **Criativo campeão**: um criativo 7 dias no custo-alvo, com 10 ou mais assinantes. Libera a Panigale.
+- **Item que quero:** O **Dom Pérignon** está quase no meu saldo, é o próximo. Lendário: a **Ducati Panigale V4 S**.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

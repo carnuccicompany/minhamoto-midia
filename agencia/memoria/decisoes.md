@@ -54,3 +54,6 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Sim pro Diretor de Infoprodutos → Grant Cardone ativado (Corretores + fábrica de infoprodutos).
 - Sim pro agente que prepara mudanças no app, ideias de funcionalidades e UI/UX → Steve Jobs ativado sob o Stark (propostas pro Davi revisar; nunca mexe sozinho).
 - OK pra tarefa "MM: Mesa de Demandas" → criada (10h37 e 14h37, Sonnet).
+
+## 20/11/2026 20h40: Carreira e ambição (pedido do Léo)
+- O Léo pediu mais estrutura na meritocracia e no crescimento, e todos os agentes ambiciosos, querendo desbloquear coisas e ter mais. Criados `merito/CULTURA.md` (todo agente lê antes de trabalhar), `merito/CARREIRA.md` (trilha, desbloqueios por degrau, queda, Conselheiro), `merito/conquistas.json` (25 conquistas com prova; algumas liberam itens lendários) e o estoque subiu de 25 pra 60 itens com preço real e nível mínimo. Cada agente ativo ganhou a seção "Minha ambição" na memória.

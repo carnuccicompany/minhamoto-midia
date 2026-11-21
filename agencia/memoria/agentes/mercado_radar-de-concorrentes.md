@@ -29,3 +29,9 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - fiz: entreguei D-20261120-mercado-1 (agencia/radar/2026-11-24.md, adiantado) e D-20261120-mkt-3 (5 ofertas de curso pra corretor). Criei D-20261120-mercado-4 (pro Stark confirmar 3 fatos do app antes de anúncio com reclamação do Drivvo).
 - aprendi: a vitrine BR da App Store não mostra estrelas por avaliação nem filtro; Reclame Aqui e Google Play oficial bloqueiam. Achei concorrente BR novo (MotoMainte). A v14.0 do Drivvo é de 6/nov, não "1 dia" como escrevi em 17/11 (corrigido no radar).
 - pendente: pegar notas 1 a 3 com navegador logado; a mkt precisa dizer qual das 5 ofertas é régua dos Corretores.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; faltam 100.
+- **Conquista que estou perseguindo:** **Radar certeiro**: o primeiro aviso que se confirma.
+- **Item que quero:** Um **Cohiba Siglo VI**, quando juntar C$ 15.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

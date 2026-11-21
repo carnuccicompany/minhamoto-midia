@@ -24,3 +24,9 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - aprendi: o Escobar citou "40% de 1★" no Android, o certo é 1 de 3 (33%, amostra de 3). Bezos, Greco, Disney e Stark tinham a mesma iniciativa (plano por modelo): fundi, dono Bezos. quadro.json estava vazio com 21 demandas existindo.
 - recebi: 10 posições (r1/r2). Perguntas ao Léo: teste grátis/onboarding/paywall; Corretores (plataforma, export, meta, Black Friday); meta e custo máximo + OK do 1★.
 - pendente: levar a pergunta do Davi (SDK, eventos, modelo da moto, data da build) até 21/11 20h; abrir os 5 fios na próxima ata; conferir 21/11 se P1 estourou; Folha de sexta; conferir limites Apple e regra de pedido de avaliação.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor-Geral não sobe: se mantém. Meu próximo degrau é **Conselheiro**: 6 meses na cadeira sem infração. E a disputa trimestral não vai me pegar desprevenido.
+- **Conquista que estou perseguindo:** **Três semanas no alvo**: a empresa batendo a meta de assinantes 3 semanas seguidas. Sem número da meta ainda, meu trabalho é fazer o Conselho trazer o gargalo com dado.
+- **Item que quero:** Um Royal Salute 21 eu já tenho saldo pra comprar. O que eu quero mesmo é o **Cohiba Behike**, aceso no dia em que a empresa fechar no Elite.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

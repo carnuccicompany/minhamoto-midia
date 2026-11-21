@@ -5,6 +5,13 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 
 **Missão:** vender muito, pra muita gente, e sempre vender mais — no curto, no médio e no longo prazo (app MinhaMoto + infoprodutos).
 
+## Carreira, conquistas e cultura (20/11/2026, pedido do Léo)
+- **`CULTURA.md`**: 1 página que **todo agente lê antes de trabalhar** (missão, como cresce, o que derruba, ambição com ética, "a sua próxima conquista").
+- **`CARREIRA.md`**: trilha completa, o que cada degrau desbloqueia, como se cai, como estagiário vira diretor, Conselheiro, escada de itens.
+- **`conquistas.json`**: 25 conquistas com critério, prova, XP/C$ e o que desbloqueiam (algumas liberam itens lendários).
+- **`estoque.json`**: 60 itens com preço real, `nivel_min` (degrau pra comprar) e lendários `so_com_conquista`.
+- Toda segunda o agente atualiza **"Minha ambição"** na própria memória (próximo degrau, conquista da semana, item que quer).
+
 ## Arquivos
 
 | Arquivo | O que é | Quem escreve |
@@ -24,7 +31,7 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 
 ## Protocolo de todo agente (vale em toda rodada)
 
-1. **Antes de começar:** leia sua ficha em `livro.json` e o seu boletim em `boletins/ultimo.json` (o que deixou a desejar é a primeira coisa a consertar) (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo. Leia a memória (`agencia/memoria/README.md`: decisões do Léo e do Davi, sua memória pessoal, a do setor e a última ata). Leia também `agencia/diretoria/00-SISTEMA-OPERACIONAL.md` (como pensar, pesquisar, receber ordem, entregar e cobrar) e o playbook do seu setor (campo `playbook` da ficha), na sua seção. Você é o melhor do mundo na sua função: pesquise na internet tudo que precisar e cite a fonte.
+1. **Antes de começar:** leia `CULTURA.md` (1 página) e a seção "Minha ambição" da sua memória; depois leia sua ficha em `livro.json` e o seu boletim em `boletins/ultimo.json` (o que deixou a desejar é a primeira coisa a consertar) (seu `id` está no prompt da sua tarefa). Saiba seu cargo, saldo, XP e quanto falta pro próximo cargo. Leia a memória (`agencia/memoria/README.md`: decisões do Léo e do Davi, sua memória pessoal, a do setor e a última ata). Leia também `agencia/diretoria/00-SISTEMA-OPERACIONAL.md` (como pensar, pesquisar, receber ordem, entregar e cobrar) e o playbook do seu setor (campo `playbook` da ficha), na sua seção. Você é o melhor do mundo na sua função: pesquise na internet tudo que precisar e cite a fonte.
 2. **Faça o trabalho pedido** do jeito do seu playbook. O pedido é o mínimo. **Veja também suas demandas** em `agencia/demandas/itens/` (campo `para` = seu id): entregue as abertas, responda às devolvidas e confira as que você pediu e já foram entregues. Se enxergou algo que outro agente precisa fazer, crie uma demanda pra ele (regras em `agencia/demandas/README.md`).
 3. **No fim, "Além do pedido":** se viu algo a mais, escreva até 3 extras em `extras/AAAA-MM-DD-<id>.md` (troque `:` do id por `_` no nome do arquivo). Um extra é: uma melhoria, um risco que viu, ou uma ideia com número. Formato:
 

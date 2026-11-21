@@ -21,3 +21,9 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - fiz: entreguei D-20261120-produto-1 (md + mockup HTML) em agencia/demandas/entregas/.
 - aprendi: 02-produto.md vazio; não sei fluxo, teste grátis nem planos atuais. Deixei como perguntas P1-P8.
 - pendente: conferência do Stark; respostas do Davi.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; faltam 100.
+- **Conquista que estou perseguindo:** **Proposta lançada**: uma proposta minha aprovada pelo Davi e dentro de uma versão do app.
+- **Item que quero:** Começo do zero. O alvo é a **Montblanc Meisterstück**, quando chegar a Sênior.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

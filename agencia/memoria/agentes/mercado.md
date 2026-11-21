@@ -24,3 +24,9 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - fiz: escrevi conselho/rodadas/2026-11-20/mercado-r1.md; criei D-20261120-mercado-1 (Sun Tzu, radar com reclamações do Drivvo), -2 (Stark, cobertura dos 4 modelos), -3 (Turing, % por modelo); criei mercado-agenda.md.
 - aprendi: conhecimento/04-concorrentes.md está vazio (Léo ainda não preencheu); nenhuma parcial de novembro de 2026 achada em fonte aberta (autopapo mostra nov/2025); Uber Moto lançou 5 novidades de segurança em 13/11/2026 (despachantedok, p=39447).
 - pendente: radar de 24/11; sem meta em número nem RevenueCat.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor. Próximo: **Diretor do Mês**.
+- **Conquista que estou perseguindo:** **Radar certeiro**, junto com o Sun Tzu: avisar antes uma jogada de concorrente que depois se confirme.
+- **Item que quero:** Um **Johnnie Walker Blue Label**, que o saldo já cobre.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

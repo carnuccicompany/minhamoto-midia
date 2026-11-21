@@ -42,3 +42,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - ranking: 2º no setor · 10º na empresa · aceite: 0%
 - parecer (Jeff Bezos): Rodadas em dia e cliente respondido. O extra repetiu o que o Léo já decidiu: risco só vale quando traz fato novo. Recomenda: manter.
 - pra subir: extra só com fato novo; reabrir o que o Léo já decidiu é ruído.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Estou com 5 XP; faltam 95.
+- **Conquista que estou perseguindo:** **Dez aceitas seguidas**. E ajudar o Bezos no **Nota subiu**. Semana passada levei multa por repetir assunto já decidido, e não repito.
+- **Item que quero:** Um **café Jacu Bird**, quando juntar C$ 24.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

@@ -24,3 +24,9 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - fiz: lojas-r1.md; criei D-20261120-lojas-1 (Ted), -2 (Stark), -3 (Turing); criei lojas-agenda.md.
 - aprendi: coleta de 20/11 tem 9 avaliações (GP 1 de 3 é 1★; App Store 6 de 6 5★); 1 rascunho 1★ parado; 03-cliente, 02-produto e 07-canais da base estão vazios.
 - pendente: OK do Léo no rascunho; limites oficiais da Apple (página bloqueada); linha de base de conversão.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor. Próximo: **Diretor do Mês**.
+- **Conquista que estou perseguindo:** **Nota subiu**: a nota de uma loja subindo 0,2 em 30 dias, com as respostas em dia.
+- **Item que quero:** O **Creed Aventus** está a poucos Carnutes do meu saldo, é o próximo.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

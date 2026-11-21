@@ -26,3 +26,9 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 - aprendi: 02-produto.md e 03-cliente.md estão vazios: não sei planos, teste grátis nem onboarding atuais. Apple HIG e Google In-App Review não abriram (permissão).
 - recebi: Steve Jobs ativo sob mim (18h do dia 20); 4 demandas de outros setores esperando resposta minha.
 - pendente: respostas do Davi às perguntas bloqueadas; entrega do Jobs até 23/11.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor. Próximo: **Diretor do Mês**.
+- **Conquista que estou perseguindo:** **Pegou antes do cliente**: achar bug grave antes da primeira reclamação. E **Proposta lançada** junto com o Jobs.
+- **Item que quero:** **Macallan 18** quando passar de C$ 175 de saldo.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

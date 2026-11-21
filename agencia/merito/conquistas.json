@@ -1,0 +1,285 @@
+{
+ "regras": {
+  "quem_concede": "A Folha de sexta (Shelby) confere o critério e a prova e concede; o agente pode pedir a conquista no extra da semana, citando a prova.",
+  "pagamento": "XP e C$ das conquistas ficam fora do teto semanal de bônus, mas cada agente recebe no máximo 2 conquistas pagas por semana.",
+  "repete": "Conquista com repete=false só vale uma vez na vida do agente; com repete=true, no máximo uma vez por mês.",
+  "sem_prova": "Sem prova não existe conquista. Pedir conquista sem prova é multa de puxa-saquismo (−5)."
+ },
+ "conquistas": [
+  {
+   "id": "primeiro_assinante",
+   "nome": "Primeiro assinante atribuído",
+   "quem": "qualquer agente",
+   "criterio": "Ligou, com dado real, um assinante pago novo a um canal, campanha ou criativo específico (AppsFlyer + RevenueCat).",
+   "prova": "Arquivo com o cruzamento (id da campanha, data, evento de assinatura) no carnucci-dados",
+   "xp": 50,
+   "cs": 25,
+   "desbloqueia": "Título \"Rastreador\" na ficha",
+   "repete": false
+  },
+  {
+   "id": "criativo_campeao",
+   "nome": "Criativo campeão",
+   "quem": "quem criou + quem rodou",
+   "criterio": "Um criativo ficou 7 dias seguidos com custo por assinante pago no alvo ou abaixo, com pelo menos 10 assinantes.",
+   "prova": "Relatório diário do Tráfego (7 dias) + id do criativo",
+   "xp": 100,
+   "cs": 50,
+   "desbloqueia": "Item lendário: Ducati Panigale V4 S",
+   "repete": true
+  },
+  {
+   "id": "cpa_no_alvo",
+   "nome": "CPA no alvo",
+   "quem": "Tráfego (Escobar) e o setor que puxou",
+   "criterio": "A semana inteira fechou com custo por assinante pago no alvo ou abaixo, com verba acima do mínimo combinado.",
+   "prova": "Resumo semanal do carnucci-dados",
+   "xp": 100,
+   "cs": 50,
+   "desbloqueia": "Item lendário: Harley-Davidson Fat Boy",
+   "repete": true
+  },
+  {
+   "id": "previu_gargalo",
+   "nome": "Previu o gargalo",
+   "quem": "qualquer agente",
+   "criterio": "Apontou com número a etapa do funil que mais perde gente e, em até 30 dias, os dados confirmaram.",
+   "prova": "Ata ou demanda com a previsão + o dado que confirmou",
+   "xp": 80,
+   "cs": 40,
+   "desbloqueia": "Pode propor 1 missão própria por semana (vira demanda P2 aprovada pelo diretor)",
+   "repete": true
+  },
+  {
+   "id": "dez_aceitas",
+   "nome": "Dez aceitas seguidas",
+   "quem": "qualquer agente",
+   "criterio": "10 demandas entregues e aceitas seguidas, sem nenhuma devolução no meio.",
+   "prova": "Histórico em agencia/demandas/itens/",
+   "xp": 60,
+   "cs": 30,
+   "desbloqueia": "Mais 1 extra por rodada (até 4)",
+   "repete": false
+  },
+  {
+   "id": "cinquenta_aceitas",
+   "nome": "Cinquenta aceitas",
+   "quem": "qualquer agente",
+   "criterio": "50 demandas aceitas no total.",
+   "prova": "Histórico das demandas",
+   "xp": 150,
+   "cs": 75,
+   "desbloqueia": "Pode recusar 1 demanda por semana sem justificar ao diretor (só ao Shelby)",
+   "repete": false
+  },
+  {
+   "id": "caca_erro",
+   "nome": "Caçador de erro",
+   "quem": "qualquer agente",
+   "criterio": "Achou e corrigiu 5 erros antes do Léo ou do Davi verem.",
+   "prova": "Lançamentos +10 de \"erro achado antes\" (5)",
+   "xp": 50,
+   "cs": 25,
+   "desbloqueia": "Selo \"olho de águia\" no boletim",
+   "repete": false
+  },
+  {
+   "id": "mao_firme",
+   "nome": "Mão firme",
+   "quem": "qualquer agente",
+   "criterio": "4 semanas seguidas sem nenhuma refação, com pelo menos 3 entregas aceitas por semana.",
+   "prova": "Boletins das 4 semanas",
+   "xp": 60,
+   "cs": 30,
+   "desbloqueia": "Aceite automático do diretor nas entregas pequenas (P3) por 2 semanas",
+   "repete": true
+  },
+  {
+   "id": "imaculado_8",
+   "nome": "Imaculado de verdade",
+   "quem": "qualquer agente",
+   "criterio": "8 semanas seguidas com broche Imaculado.",
+   "prova": "Boletins",
+   "xp": 100,
+   "cs": 50,
+   "desbloqueia": "Item lendário: Os Sertões, 1ª edição",
+   "repete": false
+  },
+  {
+   "id": "fez_dinheiro",
+   "nome": "Fez dinheiro",
+   "quem": "qualquer agente",
+   "criterio": "Um extra ou demanda virou receita reconhecida pelo Léo ou pelo Davi.",
+   "prova": "Registro do Léo/Davi em elogios.jsonl ou decisoes.md",
+   "xp": 50,
+   "cs": 0,
+   "desbloqueia": "Nome na parede do Hall (\"quem fez dinheiro\")",
+   "repete": true
+  },
+  {
+   "id": "mentor",
+   "nome": "Mentor",
+   "quem": "Sênior ou acima",
+   "criterio": "O estagiário que você mentorou subiu de cargo.",
+   "prova": "Promoção na Folha + registro de mentoria na memória",
+   "xp": 80,
+   "cs": 40,
+   "desbloqueia": "Pode mentorar 2 ao mesmo tempo",
+   "repete": true
+  },
+  {
+   "id": "bug_grave",
+   "nome": "Pegou antes do cliente",
+   "quem": "Produto (Stark) e quem achou",
+   "criterio": "Achou um bug grave (travamento, pagamento, login) antes de aparecer reclamação de usuário.",
+   "prova": "Demanda P1 com data anterior à 1ª reclamação",
+   "xp": 60,
+   "cs": 30,
+   "desbloqueia": "—",
+   "repete": true
+  },
+  {
+   "id": "nota_subiu",
+   "nome": "Nota subiu",
+   "quem": "Lojas (Bezos, Ted Lasso)",
+   "criterio": "A nota média de uma loja subiu 0,2 ou mais em 30 dias, com respostas às avaliações em dia.",
+   "prova": "Print/registro da nota no início e no fim",
+   "xp": 60,
+   "cs": 30,
+   "desbloqueia": "—",
+   "repete": true
+  },
+  {
+   "id": "radar_certeiro",
+   "nome": "Radar certeiro",
+   "quem": "Mercado (Greco, Sun Tzu)",
+   "criterio": "Avisou com antecedência uma mudança de concorrente (preço, função, campanha) que depois se confirmou.",
+   "prova": "Radar com data + a confirmação",
+   "xp": 50,
+   "cs": 25,
+   "desbloqueia": "—",
+   "repete": true
+  },
+  {
+   "id": "relatorio_impecavel",
+   "nome": "Relatório impecável",
+   "quem": "Dados (Hemingway, Turing)",
+   "criterio": "4 relatórios semanais seguidos sem nenhuma correção do Léo, do Davi ou do Shelby.",
+   "prova": "Relatórios + ausência de refação",
+   "xp": 40,
+   "cs": 20,
+   "desbloqueia": "—",
+   "repete": false
+  },
+  {
+   "id": "pontual",
+   "nome": "Pontualidade britânica",
+   "quem": "Publicador (Fogg)",
+   "criterio": "30 publicações seguidas no horário, sem erro de legenda ou de mídia.",
+   "prova": "Fila/estado de publicação",
+   "xp": 40,
+   "cs": 20,
+   "desbloqueia": "—",
+   "repete": false
+  },
+  {
+   "id": "primeira_venda_info",
+   "nome": "Primeira venda atribuída",
+   "quem": "Infoprodutos (Cardone)",
+   "criterio": "Primeira venda de infoproduto ligada a uma campanha ou página que ele propôs.",
+   "prova": "Relatório de vendas + campanha",
+   "xp": 60,
+   "cs": 30,
+   "desbloqueia": "—",
+   "repete": false
+  },
+  {
+   "id": "proposta_lancada",
+   "nome": "Proposta lançada",
+   "quem": "Produto (Jobs, Stark)",
+   "criterio": "Uma proposta de produto foi aprovada pelo Davi e entrou numa versão do app.",
+   "prova": "Proposta em agencia/produto/propostas/ + versão do app",
+   "xp": 80,
+   "cs": 40,
+   "desbloqueia": "A 5ª proposta lançada dá +150 XP extra",
+   "repete": true
+  },
+  {
+   "id": "ata_perfeita",
+   "nome": "Ata perfeita",
+   "quem": "Secretário (Moneypenny)",
+   "criterio": "10 atas seguidas sem nenhuma correção.",
+   "prova": "Atas em agencia/conselho/",
+   "xp": 40,
+   "cs": 20,
+   "desbloqueia": "—",
+   "repete": false
+  },
+  {
+   "id": "auditor_implacavel",
+   "nome": "Auditor implacável",
+   "quem": "Auditor (Eliot Ness)",
+   "criterio": "Barrou 10 entregas fora do padrão antes de chegarem no Léo.",
+   "prova": "Log do coordenador",
+   "xp": 50,
+   "cs": 25,
+   "desbloqueia": "—",
+   "repete": false
+  },
+  {
+   "id": "meta_3_semanas",
+   "nome": "Três semanas no alvo",
+   "quem": "todos os ativos",
+   "criterio": "A empresa bateu a meta de assinantes 3 semanas seguidas.",
+   "prova": "metas.json / resumo do carnucci-dados (só a %)",
+   "xp": 50,
+   "cs": 20,
+   "desbloqueia": "—",
+   "repete": true
+  },
+  {
+   "id": "empresa_elite",
+   "nome": "Padrão Elite",
+   "quem": "todos os ativos",
+   "criterio": "A empresa fechou uma semana no padrão Elite (meta ≥ 120%).",
+   "prova": "padrao.json",
+   "xp": 100,
+   "cs": 0,
+   "desbloqueia": "Item lendário: Rolex Daytona de ouro (Diretores)",
+   "repete": true
+  },
+  {
+   "id": "diretor_do_mes",
+   "nome": "Diretor do Mês",
+   "quem": "diretores",
+   "criterio": "Escolhido Diretor do Mês no Fechamento.",
+   "prova": "hall.json",
+   "xp": 100,
+   "cs": 50,
+   "desbloqueia": "Direito de decorar o escritório (regra já existente)",
+   "repete": true
+  },
+  {
+   "id": "tomou_cadeira",
+   "nome": "Tomou a cadeira",
+   "quem": "qualquer agente",
+   "criterio": "Venceu uma tomada de cadeira de diretor (4 semanas com mais resultado comprovado).",
+   "prova": "Registro da troca em livro.json",
+   "xp": 200,
+   "cs": 100,
+   "desbloqueia": "Cadeira na mesa",
+   "repete": false
+  },
+  {
+   "id": "conselheiro",
+   "nome": "Conselheiro",
+   "quem": "diretores",
+   "criterio": "Foi Diretor do Mês 3 vezes OU ficou 6 meses seguidos sem perder a cadeira e sem infração.",
+   "prova": "hall.json + livro.json",
+   "xp": 300,
+   "cs": 150,
+   "desbloqueia": "Vira Conselheiro (cargo honorário) + item lendário: Porsche 911 Carrera",
+   "repete": false
+  }
+ ]
+}

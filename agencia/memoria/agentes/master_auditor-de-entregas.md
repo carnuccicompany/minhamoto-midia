@@ -24,3 +24,9 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - ranking: 1º no setor · 2º na empresa · aceite: sem entrega avaliada
 - parecer (Thomas Shelby): Trinta e seis rondas sem falhar. Bom. Agora quero que você ache um problema antes dele virar problema: é isso que paga. Recomenda: manter.
 - pra subir: achar e corrigir um problema antes do Léo/Davi (+10) e trazer extra com prova.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Depois, a Braço-direito do Shelby. Estou com 10 XP; faltam 90.
+- **Conquista que estou perseguindo:** **Auditor implacável**: barrar 10 entregas fora do padrão antes de chegarem no Léo.
+- **Item que quero:** Um **Casio Vintage** eu compro agora. Na Analista, quero o **Royal Salute 21**.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

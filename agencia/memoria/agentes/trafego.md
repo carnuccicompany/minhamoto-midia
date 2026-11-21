@@ -24,3 +24,9 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - fiz: arquivo agencia/conselho/rodadas/2026-11-20/trafego-r1.md; criei D-20261120-trafego-1 (Stark), -2 (Turing), -3 (Disney); agenda própria criada.
 - aprendi: AppsFlyer (oficial) diz que a TikTok só otimiza por evento padrão mapeado e recomenda mandar receita; postbacks Meta/TikTok hoje só af_app_opened (PENDENCIAS). Subagentes de Tráfego estão todos em reserva: não recebem demanda.
 - pendente: sem número de campanha; esperar build de 23/11; 3 perguntas pro Léo (BM de anúncios, campanha rodando, custo máximo por assinante).
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor. Quero **Diretor do Mês** e o respeito da mesa.
+- **Conquista que estou perseguindo:** **CPA no alvo**: a semana inteira no custo-alvo. Libera a Fat Boy.
+- **Item que quero:** O **Don Julio 1942** eu compro já. Lendário: a **Harley-Davidson Fat Boy**.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

@@ -9,7 +9,9 @@
    "reais": 799,
    "cs": 40,
    "consome": true,
-   "fonte": "https://www.zoom.com.br/whisky/royal-salute-whisky-21-anos-escoces-700ml"
+   "fonte": "https://www.zoom.com.br/whisky/royal-salute-whisky-21-anos-escoces-700ml",
+   "categoria": "bebida",
+   "nivel_min": "Analista"
   },
   {
    "id": "blue",
@@ -18,7 +20,9 @@
    "reais": 1900,
    "cs": 95,
    "consome": true,
-   "fonte": "https://shopping.inter.co/Whisky-Johnnie-Walker-Blue/p/2592644"
+   "fonte": "https://shopping.inter.co/Whisky-Johnnie-Walker-Blue/p/2592644",
+   "categoria": "bebida",
+   "nivel_min": "Analista"
   },
   {
    "id": "macallan18",
@@ -27,7 +31,9 @@
    "reais": 3500,
    "cs": 175,
    "consome": true,
-   "fonte": "https://www.bloomberglinea.com.br/estilo-de-vida/como-o-macallan-se-tornou-um-uisque-tao-caro-e-desejado-e-os-planos-para-o-brasil/"
+   "fonte": "https://www.bloomberglinea.com.br/estilo-de-vida/como-o-macallan-se-tornou-um-uisque-tao-caro-e-desejado-e-os-planos-para-o-brasil/",
+   "categoria": "bebida",
+   "nivel_min": "Sênior"
   },
   {
    "id": "hennessyxo",
@@ -36,7 +42,9 @@
    "reais": 2166,
    "cs": 108,
    "consome": true,
-   "fonte": "https://m.magazineluiza.com.br/busca/conhaque+hennessy/"
+   "fonte": "https://m.magazineluiza.com.br/busca/conhaque+hennessy/",
+   "categoria": "bebida",
+   "nivel_min": "Analista"
   },
   {
    "id": "donjulio",
@@ -45,7 +53,9 @@
    "reais": 1820,
    "cs": 91,
    "consome": true,
-   "fonte": "https://site.fastshop.com.br/tequila-don-julio-1942---750ml-158191/p"
+   "fonte": "https://site.fastshop.com.br/tequila-don-julio-1942---750ml-158191/p",
+   "categoria": "bebida",
+   "nivel_min": "Analista"
   },
   {
    "id": "dom",
@@ -54,7 +64,9 @@
    "reais": 2533,
    "cs": 127,
    "consome": true,
-   "fonte": "https://www.casasbahia.com.br/champagne-dom-perignon-vintage-luminous-s-estojo-750ml/p/1572657989"
+   "fonte": "https://www.casasbahia.com.br/champagne-dom-perignon-vintage-luminous-s-estojo-750ml/p/1572657989",
+   "categoria": "bebida",
+   "nivel_min": "Analista"
   },
   {
    "id": "nespresso",
@@ -63,7 +75,9 @@
    "reais": 483,
    "cs": 24,
    "consome": true,
-   "fonte": "https://www.magazineluiza.com.br/marcas/nespresso/"
+   "fonte": "https://www.magazineluiza.com.br/marcas/nespresso/",
+   "categoria": "cafe",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "agua",
@@ -72,7 +86,9 @@
    "reais": 0,
    "cs": 0,
    "consome": true,
-   "fonte": "Da casa"
+   "fonte": "Da casa",
+   "categoria": "bebida",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "behike",
@@ -81,7 +97,9 @@
    "reais": 3125,
    "cs": 156,
    "consome": true,
-   "fonte": "https://renovainvest.com.br/?p=72669"
+   "fonte": "https://renovainvest.com.br/?p=72669",
+   "categoria": "charuto",
+   "nivel_min": "Sênior"
   },
   {
    "id": "monte2",
@@ -90,7 +108,9 @@
    "reais": 260,
    "cs": 13,
    "consome": true,
-   "fonte": "https://fairmontrio.com/wp-content/uploads/2026/04/Menu-Relax-Garden-Bar-15x297cm-v7-Q12026-compactado-1.pdf"
+   "fonte": "https://fairmontrio.com/wp-content/uploads/2026/04/Menu-Relax-Garden-Bar-15x297cm-v7-Q12026-compactado-1.pdf",
+   "categoria": "charuto",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "aventus",
@@ -99,7 +119,9 @@
    "reais": 3519,
    "cs": 176,
    "consome": false,
-   "fonte": "https://www.drogasil.com.br/aventus-creed-eau-de-parfum-masculino-100-ml-1156389.html"
+   "fonte": "https://www.drogasil.com.br/aventus-creed-eau-de-parfum-masculino-100-ml-1156389.html",
+   "categoria": "perfume",
+   "nivel_min": "Sênior"
   },
   {
    "id": "rolex",
@@ -108,7 +130,9 @@
    "reais": 96000,
    "cs": 4800,
    "consome": false,
-   "fonte": "https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html"
+   "fonte": "https://www.rolex.com/pt_br/watches/submariner/m126610ln-0001.html",
+   "categoria": "relogio",
+   "nivel_min": "Diretor"
   },
   {
    "id": "cachaca51",
@@ -117,7 +141,9 @@
    "reais": 21.9,
    "cs": 1,
    "consome": true,
-   "fonte": "https://www.buscape.com.br/cachaca-pinga/cachaca-51-ouro-965ml"
+   "fonte": "https://www.buscape.com.br/cachaca-pinga/cachaca-51-ouro-965ml",
+   "categoria": "bebida",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "redlabel",
@@ -126,7 +152,9 @@
    "reais": 57.9,
    "cs": 3,
    "consome": true,
-   "fonte": "https://www.buscape.com.br/whisky/whisky-johnnie-walker-red-label-1l"
+   "fonte": "https://www.buscape.com.br/whisky/whisky-johnnie-walker-red-label-1l",
+   "categoria": "bebida",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "chivas12",
@@ -135,7 +163,9 @@
    "reais": 164.25,
    "cs": 8,
    "consome": true,
-   "fonte": "https://m.magazineluiza.com.br/busca/chivas+12+anos/"
+   "fonte": "https://m.magazineluiza.com.br/busca/chivas+12+anos/",
+   "categoria": "bebida",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "dannemann",
@@ -144,7 +174,9 @@
    "reais": 50,
    "cs": 2,
    "consome": true,
-   "fonte": "https://braziljournal.com/viva-el-patron-a-volta-por-cima-dos-charutos-baianos"
+   "fonte": "https://braziljournal.com/viva-el-patron-a-volta-por-cima-dos-charutos-baianos",
+   "categoria": "charuto",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "pilao",
@@ -153,7 +185,9 @@
    "reais": 32.99,
    "cs": 2,
    "consome": true,
-   "fonte": "https://www.paodeacucar.com/produto/152052/cafe-pilao-torrado-e-moido-tradicional-almofada-500g"
+   "fonte": "https://www.paodeacucar.com/produto/152052/cafe-pilao-torrado-e-moido-tradicional-almofada-500g",
+   "categoria": "cafe",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "casio",
@@ -162,7 +196,9 @@
    "reais": 252.71,
    "cs": 13,
    "consome": false,
-   "fonte": "https://www.buscape.com.br/relogio-pulso/relogio-unissex-digital-casio-vintage-a168wa-1wdf-prata"
+   "fonte": "https://www.buscape.com.br/relogio-pulso/relogio-unissex-digital-casio-vintage-a168wa-1wdf-prata",
+   "categoria": "relogio",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "tissot",
@@ -171,7 +207,9 @@
    "reais": 4379,
    "cs": 219,
    "consome": false,
-   "fonte": "https://www.buscape.com.br/busca/relogio+tissot+1853+t109410a"
+   "fonte": "https://www.buscape.com.br/busca/relogio+tissot+1853+t109410a",
+   "categoria": "relogio",
+   "nivel_min": "Sênior"
   },
   {
    "id": "daytona",
@@ -180,7 +218,9 @@
    "reais": 142800,
    "cs": 7140,
    "consome": false,
-   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0"
+   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0",
+   "categoria": "relogio",
+   "nivel_min": "Diretor"
   },
   {
    "id": "daytonaouro",
@@ -189,7 +229,11 @@
    "reais": 347900,
    "cs": 17395,
    "consome": false,
-   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0"
+   "fonte": "https://www.rolex.com/pt-br/watches/cosmograph-daytona/all-models?group=0",
+   "categoria": "relogio",
+   "nivel_min": "Diretor",
+   "lendario": true,
+   "so_com_conquista": "empresa_elite"
   },
   {
    "id": "terno_micro",
@@ -198,7 +242,9 @@
    "reais": 214.91,
    "cs": 11,
    "consome": false,
-   "fonte": "https://www.magazineluiza.com.br/busca/ternos/"
+   "fonte": "https://www.magazineluiza.com.br/busca/ternos/",
+   "categoria": "terno",
+   "nivel_min": "Estagiário"
   },
   {
    "id": "terno_pv",
@@ -207,7 +253,9 @@
    "reais": 1699.9,
    "cs": 85,
    "consome": false,
-   "fonte": "https://www.magazineluiza.com.br/busca/terno+fit/"
+   "fonte": "https://www.magazineluiza.com.br/busca/terno+fit/",
+   "categoria": "terno",
+   "nivel_min": "Analista"
   },
   {
    "id": "terno_super120",
@@ -216,7 +264,9 @@
    "reais": 4229.9,
    "cs": 211,
    "consome": false,
-   "fonte": "https://www.dafiti.com.br/HIGHSTIL-Terno-Slim-Fit-La-Xadrez---Azul-Marinho-15137250.html"
+   "fonte": "https://www.dafiti.com.br/HIGHSTIL-Terno-Slim-Fit-La-Xadrez---Azul-Marinho-15137250.html",
+   "categoria": "terno",
+   "nivel_min": "Sênior"
   },
   {
    "id": "zegna",
@@ -225,8 +275,459 @@
    "reais": 8000,
    "cs": 400,
    "consome": false,
-   "fonte": "https://istoedinheiro.com.br/elegancia-tropical-3"
+   "fonte": "https://istoedinheiro.com.br/elegancia-tropical-3",
+   "categoria": "terno",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "seiko_presage",
+   "nome": "Seiko Presage Cocktail Time SRPB41J1",
+   "tipo": "Relógio",
+   "categoria": "relogio",
+   "reais": 4399.99,
+   "cs": 220,
+   "consome": false,
+   "fonte": "https://www.newstorerj.com.br/relogios/relogios-seiko/relogio-seiko-presage-cocktail-time-srpb41j1",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "cartier_santos",
+   "nome": "Cartier Santos (modelo de entrada)",
+   "tipo": "Relógio",
+   "categoria": "relogio",
+   "reais": 35000,
+   "cs": 1750,
+   "consome": false,
+   "fonte": "https://www.seudinheiro.com/2025/lifestyle/este-relogio-praticamente-brasileiro-e-um-simbolo-da-relojoaria-mundial-ha-mais-de-um-seculo-mas-ele-nao-e-da-rolex-mnog/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Braço-direito",
+   "obs": "\"a partir de\", segundo o site brasileiro da marca citado na matéria"
+  },
+  {
+   "id": "speedmaster",
+   "nome": "Omega Speedmaster Moonwatch Professional 42 mm",
+   "tipo": "Relógio",
+   "categoria": "relogio",
+   "reais": 71829.09,
+   "cs": 3591,
+   "consome": false,
+   "fonte": "https://www.pendulumrelogios.com.br/products/relogio-omega-310-30-42-50-01-002-speedmaster-moonwatch-professional-42mm",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "obs": "preço à vista com desconto da loja"
+  },
+  {
+   "id": "parker_sonnet",
+   "nome": "Caneta esferográfica Parker Sonnet",
+   "tipo": "Caneta",
+   "categoria": "caneta",
+   "reais": 1290,
+   "cs": 64,
+   "consome": false,
+   "fonte": "https://www.virtucanetas.com.br/caneta-esferografica-parker-sonnet",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "mb_classique",
+   "nome": "Caneta esferográfica Montblanc Meisterstück Classique",
+   "tipo": "Caneta",
+   "categoria": "caneta",
+   "reais": 4200,
+   "cs": 210,
+   "consome": false,
+   "fonte": "https://www.montblanc.com.br/caneta-esferografica-meisterstuck-classique-branca-137122/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "mb_platinum",
+   "nome": "Caneta esferográfica Montblanc Meisterstück Classique Platinum",
+   "tipo": "Caneta",
+   "categoria": "caneta",
+   "reais": 3825,
+   "cs": 191,
+   "consome": false,
+   "fonte": "https://www.bergersonjoias.com/montblanc-meisterstuck-platinum-esfero-132446/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior",
+   "obs": "esgotada na loja em 20/11"
+  },
+  {
+   "id": "abot_mb_meister",
+   "nome": "Abotoaduras Montblanc Meisterstück",
+   "tipo": "Abotoadura",
+   "categoria": "abotoadura",
+   "reais": 2165,
+   "cs": 108,
+   "consome": false,
+   "fonte": "https://www.montblanc.com.br/abotoaduras-montblanc-meisterstuck-112896/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "abot_mb_star",
+   "nome": "Abotoaduras Montblanc Star em aço",
+   "tipo": "Abotoadura",
+   "categoria": "abotoadura",
+   "reais": 2685,
+   "cs": 134,
+   "consome": false,
+   "fonte": "https://www.montblanc.com.br/abotoaduras-montblanc-star-em-aco-inoxidavel-123808/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "gravata_ra",
+   "nome": "Gravata Ricardo Almeida jacquard de seda",
+   "tipo": "Gravata",
+   "categoria": "gravata",
+   "reais": 1019,
+   "cs": 51,
+   "consome": false,
+   "fonte": "https://www.ricardoalmeida.com.br/products/gravata-jacquard-seda-azul-55207-84609",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "gravata_bulgari",
+   "nome": "Gravata Bulgari de seda",
+   "tipo": "Gravata",
+   "categoria": "gravata",
+   "reais": 2200,
+   "cs": 110,
+   "consome": false,
+   "fonte": "https://www.bulgari.com/pt-br/bolsas-e-acessorios/masculino/gravatas/formal-gravata-seda-azul-244097",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "terno_ra",
+   "nome": "Terno Ricardo Almeida alfaiataria Super 120s",
+   "tipo": "Terno",
+   "categoria": "terno",
+   "reais": 11529,
+   "cs": 576,
+   "consome": false,
+   "fonte": "https://www.ricardoalmeida.com.br/collections/ternos",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "democrata_oxford",
+   "nome": "Sapato Democrata Oxford de couro",
+   "tipo": "Sapato",
+   "categoria": "sapato",
+   "reais": 309.9,
+   "cs": 15,
+   "consome": false,
+   "fonte": "https://www.dafiti.com.br/Sapato-Democrata-Oxford-Preto-14175774.html",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário",
+   "obs": "preço cheio; esgotado na loja em 20/11"
+  },
+  {
+   "id": "rayban_aviator",
+   "nome": "Óculos Ray-Ban Aviator Classic",
+   "tipo": "Óculos",
+   "categoria": "oculos",
+   "reais": 1290,
+   "cs": 64,
+   "consome": false,
+   "fonte": "https://www.dafiti.com.br/Oculos-de-Sol-Ray-Ban-Aviator-Classic-14420680.html",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "sauvage",
+   "nome": "Dior Sauvage Eau de Parfum 100 ml",
+   "tipo": "Perfume",
+   "categoria": "perfume",
+   "reais": 851.9,
+   "cs": 43,
+   "consome": true,
+   "fonte": "https://www.belezanaweb.com.br/sauvage-dior-eau-de-parfum-refilavel-perfume-masculino-100ml/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista",
+   "obs": "com desconto da loja (cheio R$ 1.065)"
+  },
+  {
+   "id": "bleu_chanel",
+   "nome": "Bleu de Chanel Eau de Parfum 100 ml",
+   "tipo": "Perfume",
+   "categoria": "perfume",
+   "reais": 1635,
+   "cs": 82,
+   "consome": true,
+   "fonte": "https://www.perfumari.com.br/perfumaria-importada/masculino/bleu-de-chanel-eau-de-parfum-100ml",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "oud_wood",
+   "nome": "Tom Ford Oud Wood Eau de Parfum 50 ml",
+   "tipo": "Perfume",
+   "categoria": "perfume",
+   "reais": 1939,
+   "cs": 97,
+   "consome": true,
+   "fonte": "https://www.epocacosmeticos.com.br/oud-wood-tom-ford-perfume-masculino-edp/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "siglo6",
+   "nome": "Cohiba Siglo VI (unidade)",
+   "tipo": "Charuto",
+   "categoria": "charuto",
+   "reais": 305,
+   "cs": 15,
+   "consome": true,
+   "fonte": "https://charutossaopaulo.com.br/index.php/charuto-cohiba-siglo-vi.html",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário"
+  },
+  {
+   "id": "glenfiddich18",
+   "nome": "Glenfiddich 18 anos 750 ml",
+   "tipo": "Uísque",
+   "categoria": "bebida",
+   "reais": 1499.99,
+   "cs": 75,
+   "consome": true,
+   "fonte": "https://www.imigrantesbebidas.com.br/whisky-glenfiddich-18-anos-750ml",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "zacapa_xo",
+   "nome": "Rum Zacapa XO 750 ml",
+   "tipo": "Rum",
+   "categoria": "bebida",
+   "reais": 2433.99,
+   "cs": 122,
+   "consome": true,
+   "fonte": "https://www.imigrantesbebidas.com.br/ron-zacapa-xo-gran-reserva-750ml",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "clase_azul",
+   "nome": "Tequila Clase Azul Reposado 700 ml",
+   "tipo": "Tequila",
+   "categoria": "bebida",
+   "reais": 6637,
+   "cs": 332,
+   "consome": true,
+   "fonte": "https://www.santaluzia.com.br/tequila-clase-azul-reposado---700ml-3208621/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "moet",
+   "nome": "Moët & Chandon Brut Impérial 750 ml",
+   "tipo": "Champanhe",
+   "categoria": "bebida",
+   "reais": 499.99,
+   "cs": 25,
+   "consome": true,
+   "fonte": "https://www.supernosso.com/90757-champagne-moet---chandon-brut-imperial-750ml/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário"
+  },
+  {
+   "id": "cristal",
+   "nome": "Louis Roederer Cristal Brut 750 ml",
+   "tipo": "Champanhe",
+   "categoria": "bebida",
+   "reais": 5899.99,
+   "cs": 295,
+   "consome": true,
+   "fonte": "https://www.imigrantesbebidas.com.br/champagne-louis-roederer-cristal-brut-750-ml",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "jacu",
+   "nome": "Café Jacu Bird em grãos (lata 250 g)",
+   "tipo": "Café",
+   "categoria": "cafe",
+   "reais": 470,
+   "cs": 24,
+   "consome": true,
+   "fonte": "https://cafedomercadocuritiba.com.br/produto/cafe-jacu-bird-graos-torrados-lata-250-grs/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário"
+  },
+  {
+   "id": "poltrona_mole",
+   "nome": "Poltrona Mole com banqueta, couro (design Sergio Rodrigues)",
+   "tipo": "Poltrona",
+   "categoria": "sala",
+   "reais": 18599,
+   "cs": 930,
+   "consome": false,
+   "fonte": "https://jardinvelharia.com.br/products/poltrona-mole-com-banqueta-em-couro-caramelo-sergio-rodrigues",
+   "consultado": "20/11/2026",
+   "nivel_min": "Braço-direito",
+   "obs": "fica na sala do agente"
+  },
+  {
+   "id": "eames",
+   "nome": "Poltrona Eames Lounge e otomana (Herman Miller)",
+   "tipo": "Poltrona",
+   "categoria": "sala",
+   "reais": 61696.5,
+   "cs": 3085,
+   "consome": false,
+   "fonte": "https://store.hermanmiller.com.br/poltrona-eames-lounge-e-otomana/p",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "obs": "preço com desconto da loja oficial (cheio R$ 82.262)"
+  },
+  {
+   "id": "mesa_exec",
+   "nome": "Mesa executiva de diretor 200 cm",
+   "tipo": "Mesa",
+   "categoria": "sala",
+   "reais": 2199.97,
+   "cs": 110,
+   "consome": false,
+   "fonte": "https://www.madeiramadeira.com.br/mesa-executiva-para-escritorio-diretor-com-caixa-de-tomadas-porta-objetos-colecao-200cm-corporate-ci-613537678.html",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista"
+  },
+  {
+   "id": "gravura_britto",
+   "nome": "Gravura assinada e numerada de Romero Britto",
+   "tipo": "Quadro",
+   "categoria": "sala",
+   "reais": 1700,
+   "cs": 85,
+   "consome": false,
+   "fonte": "https://www.garimpopaulista.com.br/MLB-2663461278-gravura-romero-britto-original-assinada-e-numerada-_JM",
+   "consultado": "20/11/2026",
+   "nivel_min": "Analista",
+   "obs": "anúncio de revenda"
+  },
+  {
+   "id": "dom_casmurro_1a",
+   "nome": "Dom Casmurro, 1ª edição (Machado de Assis)",
+   "tipo": "Livro raro",
+   "categoria": "sala",
+   "reais": 24000,
+   "cs": 1200,
+   "consome": false,
+   "fonte": "https://www.revistabula.com/165336-os-5-livros-de-autores-brasileiros-mais-caros-ja-vendidos-no-brasil-segundo-vendas-documentadas/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Braço-direito",
+   "obs": "venda documentada por volta de 2009–2010, sem correção"
+  },
+  {
+   "id": "os_sertoes_1a",
+   "nome": "Os Sertões, 1ª edição (Euclides da Cunha)",
+   "tipo": "Livro raro",
+   "categoria": "sala",
+   "reais": 143000,
+   "cs": 7150,
+   "consome": false,
+   "fonte": "https://www.revistabula.com/165336-os-5-livros-de-autores-brasileiros-mais-caros-ja-vendidos-no-brasil-segundo-vendas-documentadas/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "obs": "venda documentada em dez/2021",
+   "lendario": true,
+   "so_com_conquista": "imaculado_8"
+  },
+  {
+   "id": "trofeu",
+   "nome": "Troféu de metal dourado personalizado (34 cm)",
+   "tipo": "Troféu",
+   "categoria": "sala",
+   "reais": 106.99,
+   "cs": 5,
+   "consome": false,
+   "fonte": "https://casadoscraques.com.br/trofeus-e-medalhas/trofeus/vitoria/trofeu-personalizado-vitoria-40-cm-613",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário",
+   "obs": "modelo P3078"
+  },
+  {
+   "id": "monstera_var",
+   "nome": "Monstera deliciosa Variegata (muda)",
+   "tipo": "Planta rara",
+   "categoria": "sala",
+   "reais": 450,
+   "cs": 22,
+   "consome": false,
+   "fonte": "https://viveirooreades.com.br/produto/monstera-deliciosa-variegata/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Estagiário",
+   "obs": "faixa da loja: R$ 450 a R$ 3.500 conforme tamanho"
+  },
+  {
+   "id": "bonsai_kishu",
+   "nome": "Bonsai de junípero Kishu",
+   "tipo": "Planta rara",
+   "categoria": "sala",
+   "reais": 3283.78,
+   "cs": 164,
+   "consome": false,
+   "fonte": "https://www.rootsbonsai.com.br/produto/bonsai-junipero-kishu-17/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Sênior"
+  },
+  {
+   "id": "fatboy",
+   "nome": "Harley-Davidson Fat Boy Grey Ghost",
+   "tipo": "Moto",
+   "categoria": "garagem",
+   "reais": 154950,
+   "cs": 7748,
+   "consome": false,
+   "fonte": "https://www.autossegredos.com.br/moto/harley-davidson-moto/harley-davidson-lanca-fat-boy-grey-ghost-por-r-154-950/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "obs": "preço sugerido de lançamento (mai/2025)",
+   "lendario": true,
+   "so_com_conquista": "cpa_no_alvo"
+  },
+  {
+   "id": "panigale_v4s",
+   "nome": "Ducati Panigale V4 S 2026",
+   "tipo": "Moto",
+   "categoria": "garagem",
+   "reais": 209990,
+   "cs": 10500,
+   "consome": false,
+   "fonte": "https://tudodemotos.com.br/nova-ducati-panigale-v4-2026-brasil/",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "obs": "sem frete e impostos, segundo a matéria",
+   "lendario": true,
+   "so_com_conquista": "criativo_campeao"
+  },
+  {
+   "id": "porsche_911",
+   "nome": "Porsche 911 Carrera 2026",
+   "tipo": "Carro",
+   "categoria": "garagem",
+   "reais": 980000,
+   "cs": 49000,
+   "consome": false,
+   "fonte": "https://www.webmotors.com.br/porsche/911/2026",
+   "consultado": "20/11/2026",
+   "nivel_min": "Diretor",
+   "lendario": true,
+   "so_com_conquista": "conselheiro"
   }
  ],
- "obs_zegna": "Preço do Zegna sob medida vem de matéria antiga da IstoÉ Dinheiro; o Fechamento do mês deve confirmar."
+ "obs_zegna": "Preço do Zegna sob medida vem de matéria antiga da IstoÉ Dinheiro; o Fechamento do mês deve confirmar.",
+ "regras_compra": {
+  "nivel_min": "Só compra quem já chegou no cargo indicado (ordem: Estagiário < Analista < Sênior < Braço-direito < Diretor < Diretor-Geral).",
+  "lendario": "Item lendário: além do saldo, exige a conquista indicada em so_com_conquista (conquistas.json).",
+  "padrao_da_casa": "O padrão da empresa continua limitando: Prata nada acima de C$ 500; Crise nada acima de C$ 100.",
+  "categorias": "relogio, terno, gravata, abotoadura, caneta, sapato, oculos, perfume, charuto, bebida, cafe, sala (vai pra sala do agente no escritório), garagem (lendários)",
+  "fonte": "Preço real de varejo no Brasil com link e data; o Fechamento do mês revisa. C$ = R$ / 20, arredondado."
+ }
 }

@@ -24,3 +24,9 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - fiz: criei D-20261120-dados-1 (Hemingway), -2 (Stark/Produto), -3 (Escobar/Tráfego); escrevi dados-r1.md; criei dados-agenda.md.
 - aprendi: benchmark RevenueCat 2026: conversão teste->pago mediana 25,5% p/ testes <4 dias, 42,5% p/ 17-32 dias; paywall rígido 10,7% no dia 35 (https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026). Fios abertos: nenhum (fios.md vazio). Quadro de demandas vazio. Sem insights nem acesso ao carnucci-dados.
 - pendente: disparar coletor; relatório 23/11; cobrar resposta das 3 demandas.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor. A próxima é **Conselheiro**, e não deixar ninguém chegar perto da minha cadeira.
+- **Conquista que estou perseguindo:** **Previu o gargalo**: apontar com número a etapa do funil que mais perde gente e ver o dado confirmar. Com o RevenueCat ligado, também quero o **Primeiro assinante atribuído**.
+- **Item que quero:** O Nespresso é rotina. O que eu persigo é o **Omega Speedmaster Moonwatch**.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

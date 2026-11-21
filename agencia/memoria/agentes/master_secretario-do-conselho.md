@@ -24,3 +24,9 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - ranking: 2º no setor · 2º na empresa · aceite: sem entrega avaliada
 - parecer (Thomas Shelby): Fez a vigia do Gmail. Só isso. Quero a lista de cobranças com prazo num arquivo, não na cabeça. Recomenda: manter.
 - pra subir: manter a lista de cobranças abertas com prazo em arquivo e trazer um extra com prova.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Estou com 5 XP; faltam 95.
+- **Conquista que estou perseguindo:** **Ata perfeita**: 10 atas seguidas sem nenhuma correção.
+- **Item que quero:** **Moët & Chandon**, pra brindar a promoção, assim que juntar C$ 25.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

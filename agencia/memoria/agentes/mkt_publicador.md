@@ -24,3 +24,9 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - ranking: 1º no setor · 1º na empresa · aceite: 100%
 - parecer (Walt Disney): O Fogg postou na hora e ainda fez a conta que eu devia ter feito: a fila acaba por volta de 13/12. É o melhor da casa nesta semana. Recomenda: aumento.
 - pra subir: manter 4 posts por dia sem falha e transformar um extra em número comprovado (+30).
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Já sou o 1º do ranking geral, quero o degrau. Estou com 25 XP; faltam 75.
+- **Conquista que estou perseguindo:** **Pontualidade britânica**: 30 publicações seguidas no horário, sem erro.
+- **Item que quero:** **Moët & Chandon** pra comemorar a Analista. Depois, uma **gravata Ricardo Almeida**.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).

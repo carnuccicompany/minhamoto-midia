@@ -30,3 +30,9 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - aprendi: não existe nenhum dados/insights-*.json; insights.yml só roda domingo 23h41. Minha D-20261120-dados-1 (tabela post-linha-ID) está cancelada. Sem métrica por post, não dá pra escolher campeão.
 - recebi: pedido do Shelby (master).
 - pendente: em 23/11 reconferir estado.json, avaliações e se o insights rodou; refazer o pedido post-linha-ID.
+
+## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; faltam 100.
+- **Conquista que estou perseguindo:** **Relatório impecável**: 4 relatórios semanais seguidos sem nenhuma correção.
+- **Item que quero:** Um **Glenfiddich 18** quando chegar a Analista.
+- **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
