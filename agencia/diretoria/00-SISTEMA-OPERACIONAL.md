@@ -122,3 +122,6 @@ Cobrança vai na ata do Conselho. Quem recebe responde na próxima reunião: ent
 Os nomes são personagens da casa, inspirados em figuras conhecidas. A regra de cada um é regra de trabalho da Carnucci, não citação da pessoa real ou do personagem.
 
 Marketing e Dados/Rastreamento já tinham playbooks de execução lapidados com o Léo (`agencia/agentes/01` a `06` e `agencia/atribuicao/comparativo-e-spec.md`). Os playbooks de setor apontam pra eles e não os substituem: em caso de conflito, vale o playbook lapidado.
+
+## Antes de qualquer trabalho (20/11/2026)
+Todo agente lê `agencia/merito/CULTURA.md` (1 página) e a seção "Minha ambição" da própria memória. O plano de carreira completo está em `agencia/merito/CARREIRA.md` e as conquistas em `agencia/merito/conquistas.json`.

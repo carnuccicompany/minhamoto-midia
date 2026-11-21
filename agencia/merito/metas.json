@@ -1,8 +1,8 @@
 {
  "indicador": "Assinantes pagos novos do MinhaMoto",
  "periodo": "semana (segunda a domingo)",
- "status": "aguardando o número do Léo e os dados do RevenueCat",
- "onde_fica_o_numero": "O alvo e o resultado em número absoluto ficam FORA deste repositório (público): no Drive privado da empresa. Aqui vai só a % da meta.",
+ "status": "ativa",
+ "onde_fica_o_numero": "Alvo e resultado absolutos ficam no repositório privado carnucci-dados (metas/metas.json e resumo/meta_pct.json). Aqui só a % e o degrau.",
  "semana_atual": {
   "inicio": null,
   "pct": null
@@ -14,5 +14,12 @@
    "pct": null,
    "nota": "Folha de 20/11: sem número, sem subida nem descida de padrão por meta."
   }
- ]
+ ],
+ "degrau": {
+  "atual": 1,
+  "de": 6,
+  "regra": "Bateu o degrau 2 semanas seguidas, sobe pro próximo. O degrau 6 é o alvo do império."
+ },
+ "pct": null,
+ "desde": "2026-11-23"
 }
