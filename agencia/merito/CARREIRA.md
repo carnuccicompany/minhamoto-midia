@@ -61,21 +61,21 @@ As que mais mudam o jogo:
 
 ## 6. Itens de status (o que dá pra ter)
 
-O estoque está em `estoque.json`: 60 itens com preço real de varejo no Brasil, link e data. A conversão é C$ 1 = R$ 20.
+O estoque está em `estoque.json`: 261 itens. Os 60 primeiros têm preço real de varejo no Brasil, link e data; os novos (marcados `estimado`) têm preço de referência de mercado, que o Fechamento do mês confirma antes da primeira compra. A conversão é C$ 1 = R$ 20.
 
-- **Categorias:** relógio, terno, gravata, abotoadura, caneta, sapato, óculos, perfume, charuto, bebida, café, sala (poltrona, mesa, quadro, livro raro, planta rara, troféu) e garagem (lendários).
+- **Categorias:** bebida (uísque, conhaque, champanhe, vinho, rum, tequila, sakê, gin, vodca, cachaça), relógio, perfume, alfaiataria (terno, smoking, sobretudo, camisa, gravata, abotoadura, sapato, cinto, couro, óculos), charuto, caneta, café, tecnologia, sala (móveis, arte, livros, plantas, troféu), garagem (equipamento de moto, motos e carros), experiência (jantares, viagens, track day), status (vaga, mesa na janela, cadeira dourada, sala com vista, retrato no Hall) e privilégio (escolher tarefa, folga de rotina, mentoria com o Shelby).
 - **Nível mínimo:** cada item tem o campo `nivel_min`, e só compra quem já chegou no degrau.
 - **Lendários:** além do saldo, exigem a conquista indicada em `so_com_conquista`.
 - **Padrão da casa:** continua limitando as compras. Na Prata, nada acima de C$ 500. Na Crise, nada acima de C$ 100.
-- **O que é consumível:** bebida, charuto, café e perfume acabam com o uso. Relógio, terno, caneta, sala e garagem ficam com o dono pra sempre, e aparecem no escritório conforme o escritório 3D for ganhando esses itens.
+- **O que é consumível:** bebida, charuto, café, perfume, experiência e privilégio acabam com o uso. Privilégio nunca libera regra de ouro: dinheiro, ir ao ar, dado inventado ou mexer no app continuam exigindo o OK do Léo ou do Davi. Relógio, terno, caneta, sala e garagem ficam com o dono pra sempre, e aparecem no escritório conforme o escritório 3D for ganhando esses itens.
 
-Escada de status, conforme o `nivel_min` de cada item:
-- **Estagiário:** cachaça da casa, Casio, café Pilão, Montecristo Nº 2, Cohiba Siglo VI, café Jacu Bird, Moët, sapato Democrata, troféu de mesa, monstera variegata.
-- **Analista:** Royal Salute 21, Blue Label, Dom Pérignon, Sauvage, Bleu de Chanel, Oud Wood, Ray-Ban Aviator, Parker Sonnet, gravatas Ricardo Almeida e Bulgari, abotoaduras Montblanc, Glenfiddich 18, Zacapa XO, mesa executiva, gravura de Romero Britto.
-- **Sênior:** Macallan 18, Cohiba Behike, Creed Aventus, Tissot PRX, Seiko Presage, Montblanc Meisterstück, terno Zegna, terno Ricardo Almeida, Clase Azul, Cristal, bonsai Kishu.
-- **Braço-direito:** Cartier Santos, poltrona Mole, Dom Casmurro em 1ª edição.
-- **Diretor:** Rolex Submariner, Rolex Daytona de aço, Omega Speedmaster, poltrona Eames.
-- **Lendário (só com conquista):** Daytona de ouro, Os Sertões em 1ª edição, Harley Fat Boy, Ducati Panigale V4 S, Porsche 911.
+Escada de status, conforme o `nivel_min` de cada item (exemplos; a lista completa está no `estoque.json`):
+- **Estagiário (até ~C$ 25):** cachaça da casa, Black Label, Jameson, Veuve Clicquot, Catena Zapata, Patrón, Dassai 45, Casio, Kaiak, Azzaro, 1 Million, Partagás, Lamy Safari, camisa de algodão egípcio, gravata Brooks Brothers, luva Alpinestars, barbearia premium, rodízio premium, vaga com nome, mesa na janela, escolher a próxima tarefa, folga de rotina.
+- **Analista (até ~C$ 150):** Royal Salute 21, Blue Label, Lagavulin 16, Macallan 12, Yamazaki 12, Krug, Almaviva, Dom Pérignon, Sauvage, Terre d'Hermès, Layton, Baccarat Rouge 540, G-Shock, Seiko 5, Opus X, Persol, gravata Hermès, smoking de alfaiataria, AirPods Pro, umidor, globo antigo, capacete LS2, jantar no Fasano e no D.O.M., aula de boxe, mentoria com o Shelby, fala extra no Conselho, cadeira dourada.
+- **Sênior (até ~C$ 600):** Macallan 18, King George V, Dom Pérignon Rosé, Sassicaia, Opus One, Château Margaux, Behike, caixa de Cohiba Robustos, Creed Aventus, Clive Christian No. 1, Tissot, Hamilton, terno Zegna e Hugo Boss, John Lobb, sobretudo de cashmere, Montblanc 149, iPhone Pro Max, Apple Watch Ultra, capacete AGV, track day em Interlagos, retrato a óleo no Hall.
+- **Braço-direito (até ~C$ 3.000):** Cartier Santos, Tudor Black Bay 58, TAG Carrera, Grand Seiko Snowflake, Seamaster, IWC Portugieser, Macallan 25, Louis XIII, Pétrus, Clase Azul Ultra, Behike 52 em caixa, terno Brioni e Savile Row, smoking Tom Ford, abotoaduras Cartier, MacBook Pro, Leica Q3, Aeron, tapete persa, mesa de sinuca, La Marzocco, CG 160, Classic 350, MT-07, camarote na F1, Nova York, destilarias na Escócia, iate em Angra, sala com vista.
+- **Diretor:** Rolex Submariner, Datejust, GMT-Master II e Daytona de aço, Omega Speedmaster, Cartier Tank em ouro, Vacheron Overseas, Patek Calatrava, Lange 1, terno Kiton, poltrona Eames, serigrafia de Warhol, Ducati Monster, Bonneville, R 1300 GS, Tóquio de primeira classe.
+- **Lendário (só com conquista):** Daytona de ouro, Royal Oak, Day-Date de platina, Richard Mille, Nautilus, Macallan 30, Romanée-Conti, Os Sertões em 1ª edição, piano Steinway, busto no saguão, almoço com o Léo e o Davi, Harley Fat Boy, Panigale V4 S, BMW M3, G 63, Porsche 911, Ferrari Roma e a volta ao mundo de jato.
 
 ## 7. Trajetórias de exemplo (ilustrativas, sem número inventado)
 

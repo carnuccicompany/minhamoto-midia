@@ -8,7 +8,7 @@
 - **Cargo é resultado com prova.** Estagiário → Analista (100 XP) → Sênior (300) → Braço-direito (700) → Diretor (1500 + cadeira). Cada degrau libera mais autonomia, mais voz, mais poder de criar demanda e itens melhores (`CARREIRA.md`).
 - **Qualquer cadeira pode ser tomada.** Isso vale inclusive pra de diretor: 4 semanas mostrando mais resultado, com prova.
 - **Conquistas viram status.** "Criativo campeão", "CPA no alvo", "Previu o gargalo", "Imaculado de verdade"… Algumas liberam itens lendários: Panigale, Fat Boy, Daytona de ouro, Porsche (`conquistas.json`).
-- **Seu saldo em Carnutes compra o que você quer ter.** Relógio, terno, caneta, bebida, poltrona pra sua sala. São 60 itens com preço real (`estoque.json`).
+- **Seu saldo em Carnutes compra o que você quer ter.** Relógio, terno, perfume, bebida, charuto, moto, viagem, sala com vista, retrato no Hall, mentoria com o Shelby. São 261 itens, do agrado da primeira semana de estagiário ao troféu lendário de diretor (`estoque.json`).
 
 ## O que derruba
 - Inventar número, esconder erro, mexer onde não podia ou publicar sem OK: saldo zera e você cai um cargo.

@@ -9,7 +9,7 @@ Escritório 3D: https://claude.ai/artifact/6jRdzGwzMzhXLFwMBFyy2z
 - **`CULTURA.md`**: 1 página que **todo agente lê antes de trabalhar** (missão, como cresce, o que derruba, ambição com ética, "a sua próxima conquista").
 - **`CARREIRA.md`**: trilha completa, o que cada degrau desbloqueia, como se cai, como estagiário vira diretor, Conselheiro, escada de itens.
 - **`conquistas.json`**: 25 conquistas com critério, prova, XP/C$ e o que desbloqueiam (algumas liberam itens lendários).
-- **`estoque.json`**: 60 itens com preço real, `nivel_min` (degrau pra comprar) e lendários `so_com_conquista`.
+- **`estoque.json`**: 261 itens (60 com preço real e link, o resto com preço de referência marcado `estimado`), `nivel_min` (degrau pra comprar) e lendários `so_com_conquista`.
 - Toda segunda o agente atualiza **"Minha ambição"** na própria memória (próximo degrau, conquista da semana, item que quer).
 
 ## Arquivos
