@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-21T08:10:00-03:00",
+ "rodada": "2026-11-21T08:40:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (21h02 SUCCEEDED; próx 12h02 BRT 21/11)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 07h39)",
+  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 08h09)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 19h23 BRT 20/11; próx 21/11 19h23)",
   "MM: Folha de sexta": "ok (SUCCEEDED 17h47 BRT 20/11; próx 27/11)",
