@@ -111,7 +111,7 @@ const decor = buildDecor(scene, DECOR, NOMES);
 const hall = buildHall(scene, LOGO, HALL, id => NOMES[id]);
 const stock = buildStock(scene);
 const ITEM = Object.fromEntries(ESTOQUE.map(e => [e.id, e]));
-const cs = e => Math.round(e.reais / CAMBIO);
+const cs = e => e.cs ?? Math.round(e.reais / CAMBIO);
 const brl = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : 'grátis';
 const phoenix = buildPhoenix(scene, window.__PARROT__);
 const humor = id => PETS_HUMOR.humor[id] || 'ok';
@@ -532,7 +532,7 @@ function cardHTML(d, extra = '', topo = '') {
     <div class="merit"><div><b>C$ 0</b><span>Saldo</span></div><div><b>0 XP</b><span>Carreira</span></div><div><b>${d.id === 'master' ? 'Geral' : 'Diretor'}</b><span>Cargo</span></div></div>
     ${extra}
     ${d.id !== 'master' ? `<p class="trait"><b>Com os pets:</b> ${{ foda: 'a Marnevali solta fogo pra ele e o Carnucci sobe na mesa pra ganhar carinho', ok: 'a Marnevali passa de olho; o Carnucci às vezes visita', fraco: 'a Marnevali passa acuada e o Carnucci não vai até ele' }[humor(d.id)]}${PETS_HUMOR.atualizado ? '' : ' (o humor dos pets começa a valer com a primeira Folha de sexta)'}.</p>` : ''}
-    ${GOSTOS[d.id] ? `<p class="trait"><b>Gosta de:</b> ${GOSTOS[d.id].map(k => ITEM[k].nome + (ITEM[k].reais ? ` (C$ ${cs(ITEM[k]).toLocaleString('pt-BR')})` : '')).join(' · ')}</p>` : ''}
+    ${GOSTOS[d.id] ? `<p class="trait"><b>Gosta de:</b> ${GOSTOS[d.id].map(k => ITEM[k].nome + ((ITEM[k].reais || ITEM[k].cs) ? ` (C$ ${cs(ITEM[k]).toLocaleString('pt-BR')})` : '')).join(' · ')}</p>` : ''}
     <p class="trait"><b>Jeito:</b> ${d.perfil}</p>
     <p class="trait"><b>Na mesa:</b> ${d.mesa}</p>`;
 }
@@ -609,10 +609,10 @@ slider.oninput = () => { env.setHour(+slider.value); env.refreshSky(); hourLbl.t
 $('bNow').onclick = e => { env.setHour(null); env.refreshSky(); slider.value = env.hourNow(); e.currentTarget.classList.add('on'); };
 const merit = $('merit');
 $('bMerit').onclick = () => merit.classList.add('open');
-const LUGAR = { adega: 'Adega', frigobar: 'Frigobar', armario: 'Armário dos Diretores' };
+const LUGAR = { adega: 'Adega', frigobar: 'Frigobar', armario: 'Armário dos Diretores', tecnologia: 'Tecnologia', sala: 'Sala e escritório', garagem: 'Garagem', experiencia: 'Viagens e experiências', status: 'Status', privilegio: 'Privilégios' };
 const quem = id => Object.entries(GOSTOS).filter(([, l]) => l.includes(id)).map(([d]) => NOMES[d].split(' ').slice(-1)[0]).join(', ') || '—';
 $('stockDate').textContent = ESTOQUE_DATA; $('stockRate').textContent = CAMBIO;
-$('stockList').innerHTML = ['adega', 'frigobar', 'armario'].map(l => `<h3 id="sec-${l}">${LUGAR[l]}</h3><div class="tablewrap"><table><thead><tr><th>Item</th><th>Preço real</th><th>C$</th><th>Quem gosta</th></tr></thead><tbody>${ESTOQUE.filter(e => e.onde === l).map(e => `<tr><td><b>${e.nome}</b><br><small>${e.tipo} · ${e.det}${e.url ? ` · <a href="${e.url}" target="_blank" rel="noopener">${e.fonte}</a>` : ` · ${e.fonte}`}</small></td><td class="n">${brl(e.reais)}</td><td class="n">${e.reais ? 'C$ ' + cs(e).toLocaleString('pt-BR') : '—'}</td><td>${quem(e.id)}</td></tr>`).join('')}</tbody></table></div>`).join('');
+$('stockList').innerHTML = Object.keys(LUGAR).filter(l => ESTOQUE.some(e => e.onde === l)).map(l => `<h3 id="sec-${l}">${LUGAR[l]}</h3><div class="tablewrap"><table><thead><tr><th>Item</th><th>Preço real</th><th>C$</th><th>Quem gosta</th></tr></thead><tbody>${ESTOQUE.filter(e => e.onde === l).map(e => `<tr><td><b>${e.nome}</b><br><small>${e.tipo} · ${e.det}${e.url ? ` · <a href="${e.url}" target="_blank" rel="noopener">${e.fonte}</a>` : ` · ${e.fonte}`}</small></td><td class="n">${e.reais != null ? brl(e.reais) : 'referência'}</td><td class="n">${(e.reais || e.cs) ? 'C$ ' + cs(e).toLocaleString('pt-BR') : '—'}</td><td>${quem(e.id)}</td></tr>`).join('')}</tbody></table></div>`).join('');
 const gauge = buildGauge(scene, CADASTRO || { pct: 0, pendentes: 0, categorias: [], lista: [] });
 function openCadastro() {
   const C = CADASTRO || { pct: 0, categorias: [], lista: [] }, cad = $('cad');
