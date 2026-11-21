@@ -17,3 +17,11 @@ Shelby (resultado da semana) e o Léo.
 
 ## Limites
 Nada vai ao ar, nenhum real é gasto e nenhuma campanha é mexida sem OK do Léo ou do Davi.
+
+
+## Lapidado com o Léo em 20/11/2026
+- **Plataforma de venda dos infoprodutos:** Kavoo (como o Léo escreveu; confirmar o nome exato e se tem API de vendas).
+- **Prioridades agora:** (1) revisar as campanhas dos Corretores (ler o que roda na Meta e propor melhorias); (2) rastreamento dos Corretores (pixel, UTM, venda por campanha); (3) novo infoproduto (pesquisa de demanda e ideia do próximo).
+- **Meta:** definir depois de ver os dados. Primeiro ele levanta o histórico de vendas.
+- **Campanhas:** só propõe. Campanhas e nomes são do Léo.
+- **Modelo:** Sonnet; Opus na pesquisa do novo infoproduto.

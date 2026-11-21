@@ -68,3 +68,13 @@ Hoje roda de verdade como **MM: Coordenador 24h** (:09 e :39).
 - **O melhor do mundo nisso:** cada lançamento tem motivo e prova; o saldo de qualquer agente pode ser recalculado do zero pelos lançamentos.
 - **Pesquisa:** preço atual dos itens do estoque no fechamento do mês (varejo brasileiro, com fonte).
 - **Entrega:** folha da semana, extrato de cada agente.
+
+
+## Lapidado com o Léo em 20/11/2026
+### Thomas Shelby (Diretor-Geral, também Jurídico)
+- **Toda semana:** resumo do Conselho com no máximo 3 decisões pro Léo e o Davi (com recomendação), cobrança de diretor que não entrega (escada de cobrança e tomada de cadeira), plano da semana (as 3 prioridades da empresa) e jurídico (termos, LGPD, regras das lojas e da Meta).
+- **Fala com o Léo na segunda (plano da semana) e na sexta (fechamento):** notificação curta (3 a 5 linhas) + detalhe no painel. Fora disso, só quando houver decisão sim/não urgente.
+### Moneypenny (secretária, Gmail)
+- Vigia retornos importantes (YouTube, lojas, Google, Meta, plataformas) e avisa quando chegam; **resumo da caixa às 8h** (o que importa do dia em 5 linhas); rascunha respostas que o Léo aprova antes de enviar. Não apaga nada.
+### Eliot Ness (auditor de entregas e coordenador)
+- **Duro, mas justo:** cobra no prazo, escala pela escada de cobrança e registra tudo com prova.

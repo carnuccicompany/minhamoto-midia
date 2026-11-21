@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 21:01",
- "pct": 50.2,
+ "atualizado": "20/11/2026 21:07",
+ "pct": 57.2,
  "categorias": [
   {
    "id": "estrutura",
@@ -184,32 +184,23 @@
     {
      "id": "master",
      "titulo": "Thomas Shelby — Diretor-Geral · Direção-Geral",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "master:secretario-do-conselho",
      "titulo": "Moneypenny — Estagiário · Direção-Geral",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "master:auditor-de-entregas",
      "titulo": "Eliot Ness — Estagiário · Direção-Geral",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "dados",
@@ -228,22 +219,16 @@
     {
      "id": "mkt",
      "titulo": "Grant Cardone — Diretor · Infoprodutos (Corretores)",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "mkt:publicador",
      "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "cria",
@@ -302,8 +287,8 @@
      "falta": []
     }
    ],
-   "pct": 76.7,
-   "feitos": 10,
+   "pct": 100.0,
+   "feitos": 15,
    "total": 15
   },
   {
@@ -398,7 +383,7 @@
    "total": 9
   }
  ],
- "pendentes": 24,
+ "pendentes": 19,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -449,46 +434,6 @@
    "categoria": "Conexões (tudo linkado)",
    "titulo": "SDK do AppsFlyer dentro do app (Davi)",
    "falta": []
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Thomas Shelby — Diretor-Geral · Direção-Geral",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Moneypenny — Estagiário · Direção-Geral",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Eliot Ness — Estagiário · Direção-Geral",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Grant Cardone — Diretor · Infoprodutos (Corretores)",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
   },
   {
    "categoria": "Base de conhecimento",
@@ -557,7 +502,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 50.2
+   "pct": 57.2
   }
  ]
 }

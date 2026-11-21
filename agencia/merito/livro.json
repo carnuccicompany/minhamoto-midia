@@ -35,7 +35,10 @@
    "stats": {
     "aceite_pct": null,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-opus-5-5"
   },
   {
    "id": "master:secretario-do-conselho",
@@ -66,7 +69,10 @@
    "stats": {
     "aceite_pct": null,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "master:auditor-de-entregas",
@@ -97,7 +103,10 @@
    "stats": {
     "aceite_pct": null,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "master:tesoureiro",
@@ -305,7 +314,10 @@
    "elogios_total": 0,
    "status": "ativo",
    "funcao": "Diretor de Infoprodutos: cuida do negócio dos Corretores (produtos, oferta, página, funil, campanhas da Meta em modo proposta, vendas e reembolsos) e da fábrica de novos infoprodutos.",
-   "ativado_em": "2026-11-20"
+   "ativado_em": "2026-11-20",
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "mkt:pauteiro",
@@ -471,7 +483,10 @@
    "stats": {
     "aceite_pct": 100,
     "semana": "2026-11-20"
-   }
+   },
+   "lapidado": true,
+   "lapidado_em": "2026-11-20",
+   "modelo": "claude-sonnet-5-5"
   },
   {
    "id": "cria",

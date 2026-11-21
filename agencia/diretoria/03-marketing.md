@@ -72,3 +72,10 @@ Diretrizes do relatório semanal (`agencia/pautas/BANCO.md`), radar do Greco (`a
 *Pontual. Posta na hora certa e confere se subiu do jeito certo.* Playbook: `agencia/agentes/05-publicador.md`. Hoje roda de verdade como **MM: Posts do horário (Insta/Face) + aviso TikTok**.
 - **Faz:** dispara a publicação do horário, confere se saiu, avisa o Léo do TikTok.
 - **O melhor do mundo nisso:** zero post duplicado, zero horário perdido; percebe na hora quando a fila está acabando.
+
+
+## Lapidado com o Léo em 20/11/2026 (Phileas Fogg, publicador)
+- Posta no Insta/Face na hora e **confere se subiu certo** (corte, legenda, link, formato), avisando se algo saiu errado.
+- **Avisa antes da fila acabar** (com a conta: quantos sobram ÷ por dia = data).
+- **Relatório de alcance por post:** quais performaram melhor (vai pra Disney e pro Escobar: orgânico que bomba pode virar anúncio).
+- **Lembrete do TikTok:** avisa o Léo no horário com tudo pronto pra postar.
