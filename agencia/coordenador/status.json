@@ -1,27 +1,28 @@
 {
- "rodada": "2026-11-20T20:40:00-03:00",
+ "rodada": "2026-11-20T21:10:00-03:00",
  "ok": true,
  "tarefas": {
-  "post do horário + aviso TikTok": "ok (18h02 SUCCEEDED; próx 21h02 BRT)",
-  "respostas às avaliações": "ok (17h13 SUCCEEDED; próx 21h13)",
+  "post do horário + aviso TikTok": "ok (21h02 SUCCEEDED; próx 12h02 BRT 21/11)",
+  "respostas às avaliações": "ok (17h13 SUCCEEDED; 21h13 BRT disparando agora)",
   "vigia do Gmail": "ok (18h47 SUCCEEDED; próx 8h47 21/11)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 20h09)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 20h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 19h23 BRT 20/11; próx 21/11 19h23)",
   "MM: Folha de sexta": "ok (SUCCEEDED 17h47 BRT 20/11; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "criada 20/11, próx 21/11 10h37",
-  "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)"
+  "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
+  "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT"
  },
  "publicacao_hoje": {
-  "proximo": "21h02 BRT 20/11",
-  "ultimo_ok": "18h S03 (E05 saiu 18h04 BRT)"
+  "ultimo_ok": "21h DV08 (saiu 21h04 BRT)",
+  "proximo": "12h02 BRT 21/11"
  },
  "dias_de_fila": 23,
- "nao_publicados": 94,
+ "nao_publicados": 93,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113 com cards_tiktok",
  "acoes": [],

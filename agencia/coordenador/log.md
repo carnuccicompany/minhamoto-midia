@@ -133,3 +133,4 @@
 
 - 2026-11-20 20:10 BRT · rodada ok · fila 23 dias (94) · 18h E05 publicado, próximo 21h02 · tarefas ok (Conselho 19h23 e Folha sexta 17h47 SUCCEEDED) · pendentes 0 · 9:16 ok (113/113) · links painel ok · sem ações
 - 2026-11-20 20:40 BRT · rodada ok · fila 23 dias (94) · 18h E05 publicado, próximo 21h02 · tarefas ok (Conselho 19h23 e Folha sexta SUCCEEDED) · pendentes 0 · 9:16 ok (113/113) · links painel ok · sem ações
+- 2026-11-20 21:10 BRT · rodada ok · fila 23 dias (93) · 21h DV08 publicado, próximo 12h02 · tarefas ok (Conselho e Folha de sexta SUCCEEDED) · pendentes 0 · 9:16 ok (113/113) · links painel ok · sem ações
