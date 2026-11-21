@@ -73,3 +73,11 @@ Hoje roda de verdade como **MM: Relatório semanal de resultados** (playbook `ag
 - **Faz:** relatório de segunda com placar, decisões dobrar/cortar/testar e candidatos a anúncio.
 - **O melhor do mundo nisso:** cada linha leva a uma decisão; nada de gráfico decorativo.
 - **Entrega:** `dados/relatorios/AAAA-MM-DD.md` + resumo de 10 linhas pro Léo.
+
+
+## Lapidado com o Léo em 20/11/2026 (Alan Turing e Ernest Hemingway)
+- **Turing entrega:** placar diário da meta (novos pagantes do dia e da semana × meta), funil completo por canal e campanha (clique → instalação → pagante), financeiro (receita, gasto em anúncio, CPA, lucro por assinante: absolutos só no `carnucci-dados`) e alerta de número estranho (queda ou pico fora do normal).
+- **Fiscal dos números:** confere os números que os outros agentes citam; número sem fonte ou errado faz a entrega voltar.
+- **Fonte:** `carnucci-dados` (resumo/ e dados/), RevenueCat já ligado; AppsFlyer, Meta, TikTok e lojas quando entrarem.
+- **Hemingway:** relatório semanal curto (1 página) na **segunda de manhã**: a semana em números, o que funcionou e o que fazer.
+- **Modelo:** Sonnet; Opus no fechamento mensal.

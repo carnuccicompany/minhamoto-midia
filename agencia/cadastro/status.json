@@ -1,6 +1,6 @@
 {
- "atualizado": "20/11/2026 20:53",
- "pct": 42.6,
+ "atualizado": "20/11/2026 21:00",
+ "pct": 48.2,
  "categorias": [
   {
    "id": "estrutura",
@@ -214,22 +214,16 @@
     {
      "id": "dados",
      "titulo": "Alan Turing — Diretor · Dados e Finanças",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "dados:relatorio-semanal",
      "titulo": "Ernest Hemingway — Estagiário · Dados",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "mkt",
@@ -296,26 +290,20 @@
     {
      "id": "mercado",
      "titulo": "Salvatore Greco — Diretor · Mercado e Concorrência",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "mercado:radar-de-concorrentes",
      "titulo": "Sun Tzu — Estagiário · Mercado",
-     "valor": 0.3,
-     "status": "parcial",
-     "falta": [
-      "modelo",
-      "lapidar com o Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     }
    ],
-   "pct": 58.0,
-   "feitos": 6,
+   "pct": 76.7,
+   "feitos": 10,
    "total": 15
   },
   {
@@ -410,7 +398,7 @@
    "total": 9
   }
  ],
- "pendentes": 29,
+ "pendentes": 25,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -493,22 +481,6 @@
   },
   {
    "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Alan Turing — Diretor · Dados e Finanças",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Ernest Hemingway — Estagiário · Dados",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Grant Cardone — Diretor · Infoprodutos (Corretores)",
    "falta": [
     "modelo",
@@ -518,22 +490,6 @@
   {
    "categoria": "Agentes com função, cargo e cobrança",
    "titulo": "Phileas Fogg — Estagiário · Criativos e Marketing",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Salvatore Greco — Diretor · Mercado e Concorrência",
-   "falta": [
-    "modelo",
-    "lapidar com o Léo"
-   ]
-  },
-  {
-   "categoria": "Agentes com função, cargo e cobrança",
-   "titulo": "Sun Tzu — Estagiário · Mercado",
    "falta": [
     "modelo",
     "lapidar com o Léo"
@@ -606,7 +562,7 @@
  "historico": [
   {
    "data": "20/11/2026",
-   "pct": 42.6
+   "pct": 48.2
   }
  ]
 }
