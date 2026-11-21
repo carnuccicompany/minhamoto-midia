@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO, SOCIOS } from './data.js';
+import { DIRETORES, MASTER, FATURAMENTO, DECOR, HALL, ESTOQUE, GOSTOS, CAMBIO, ESTOQUE_DATA, SUBJEITO, SUBNOME, PETS_HUMOR, MERITO, CADASTRO, SOCIOS, AGENTES } from './data.js';
 import { buildGauge } from './gauge.js';
+import { comandoHTML, bindComando } from './comando.js';
 import { buildAquarium } from './aquarium.js';
 import { buildDecor, buildHall } from './decor.js';
 import { buildStock } from './stock.js';
@@ -199,8 +200,8 @@ const PETS = {
   panda: { nome: 'Carnucci', tipo: 'Panda-vermelho · o xodó da mesa', txt: 'A casa dele é a mesa dos diretores: passa o dia andando por cima dela e deitando do lado de alguém pra ganhar carinho. Desce de vez em quando, dá uma volta e sobe de novo. Quando um diretor manda bem, ele vai direto pra frente dele: é gorjeta de +5 XP e C$ 3. Com quem está devendo, ele não vai.' },
   pantera: { nome: 'Fartuzzi', tipo: 'Pantera negra · a vigia do tapete', txt: 'Anda solta pelo tapete de veludo em volta da mesa: caminha, para, olha em volta, senta, muda de rumo, sem nunca sair dele. De vez em quando para atrás de um diretor e fica encarando. Não morde ninguém: ela sobe a régua. Com quem está devendo, a encarada dura mais.' },
 };
-PETS.tubarao = { nome: 'Tubarão Carnucci', tipo: 'Tubarão · o dono do aquário', txt: 'Mora no aquário gigante embaixo do piso de vidro, entre a mesa e as janelas. Nada em volta o dia inteiro, sem pressa e sem parar: quem anda por cima vê ele passando debaixo dos pés. Lembra todo mundo que aqui dentro quem para, afunda.' };
-const sharkTag = addTag('<b>Tubarão Carnucci</b><span>Tubarão</span>', 'pet'); sharkTag.addEventListener('click', e => { e.stopPropagation(); selectPet('tubarao'); });
+PETS.tubarao = { nome: 'Barão', tipo: 'Tubarão · o dono do aquário', txt: 'Mora no aquário gigante embaixo do piso de vidro, entre a mesa e as janelas. Nada em volta o dia inteiro, sem pressa e sem parar: quem anda por cima vê ele passando debaixo dos pés. Lembra todo mundo que aqui dentro quem para, afunda.' };
+const sharkTag = addTag('<b>Barão</b><span>Tubarão</span>', 'pet'); sharkTag.addEventListener('click', e => { e.stopPropagation(); selectPet('tubarao'); });
 const pandaTag = addTag('<b>Carnucci</b><span>Panda-vermelho</span>', 'pet'); pandaTag.addEventListener('click', e => { e.stopPropagation(); selectPet('panda'); });
 const pantherTag = addTag('<b>Fartuzzi</b><span>Pantera negra</span>', 'pet'); pantherTag.addEventListener('click', e => { e.stopPropagation(); selectPet('pantera'); });
 const fenixTag = addTag('<b>Marnevali</b><span>Fênix</span>', 'pet'); fenixTag.addEventListener('click', e => { e.stopPropagation(); selectPet('fenix'); });
@@ -490,6 +491,8 @@ const holoMat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false,
 const holoDisc = new THREE.MeshBasicMaterial({ color: 0xf0cf86, transparent: true, opacity: 0.14, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
 function showTeam(anchor, subs, back = 1, did = '') {
   hideTeam();
+  subs = subs.filter(x => { const sn = SUBNOME[did + '|' + x]; return !sn || Object.values(AGENTES).some(a => a.nome === sn.nome && a.status === 'ativo'); });
+  if (!subs.length) return;
   const g = new THREE.Group(); anchor.add(g); const n = subs.length, tags = [];
   subs.forEach((name, k) => {
     const ang = (k - (n - 1) / 2) * (n > 4 ? 0.42 : 0.55);
@@ -513,16 +516,19 @@ function setOffset() {
   else if (selected && isMobile()) camera.setViewOffset(w, h, 0, h * 0.24, w, h);
   else camera.clearViewOffset();
 }
-function cardHTML(d, extra = '') {
+function cardHTML(d, extra = '', topo = '') {
+  const ativoNome = n => Object.values(AGENTES).some(a => a.nome === n && a.status === 'ativo');
+  const subsAtivos = d.subs.filter(x => !SUBNOME[d.id + '|' + x] || ativoNome(SUBNOME[d.id + '|' + x].nome));
   return `<button class="x" aria-label="Fechar">×</button>
     <span class="kick"><i class="st ${d.st}"></i>${d.setor} · ${ST[d.st]}</span>
     <h2>${d.nome}</h2>
     <p class="nick">“${d.apelido}” · ${d.cargo}</p>
+    ${topo}
     <p class="meta"><span>${d.bandeira} ${d.nacionalidade}</span><span>${d.cidade}</span><span>${d.idade} anos</span></p>
     <blockquote><small>Regra de ouro</small>${d.regra}</blockquote>
     <h4>O que faz</h4><p class="what">${d.faz}</p>
-    <h4>Equipe · ${d.subs.length} subagentes</h4>
-    <ol class="team">${d.subs.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${SUBNOME[d.id + '|' + x] ? `<b>${SUBNOME[d.id + '|' + x].nome}</b> · ${x}` : x}${SUBJEITO[x] ? `<small>${SUBJEITO[x]}</small>` : ''}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
+    <h4>Equipe ativa · ${subsAtivos.length}</h4>
+    <ol class="team">${subsAtivos.map((x, i) => `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${SUBNOME[d.id + '|' + x] ? `<b>${SUBNOME[d.id + '|' + x].nome}</b> · ${x}` : x}${SUBJEITO[x] ? `<small>${SUBJEITO[x]}</small>` : ''}</span><em>Estagiário · C$ 0</em></li>`).join('')}</ol>
     <div class="merit"><div><b>C$ 0</b><span>Saldo</span></div><div><b>0 XP</b><span>Carreira</span></div><div><b>${d.id === 'master' ? 'Geral' : 'Diretor'}</b><span>Cargo</span></div></div>
     ${extra}
     ${d.id !== 'master' ? `<p class="trait"><b>Com os pets:</b> ${{ foda: 'a Marnevali solta fogo pra ele e o Carnucci sobe na mesa pra ganhar carinho', ok: 'a Marnevali passa de olho; o Carnucci às vezes visita', fraco: 'a Marnevali passa acuada e o Carnucci não vai até ele' }[humor(d.id)]}${PETS_HUMOR.atualizado ? '' : ' (o humor dos pets começa a valer com a primeira Folha de sexta)'}.</p>` : ''}
@@ -535,13 +541,13 @@ function select(s) {
   if (selected === s) return deselect();
   selected = s; controls.autoRotate = false; follow = null;
   if (s === master) {
-    openPanel(cardHTML(MASTER, '<p class="trait"><b>Acima dele:</b> Léo e Davi. <b>Abaixo:</b> os diretores e as equipes.</p><button class="povbtn" type="button" data-pov="dir:master">👁 Ver pelos olhos dele</button>'));
+    openPanel(cardHTML(MASTER, '<p class="trait"><b>Acima dele:</b> Léo e Davi. <b>Abaixo:</b> os diretores e as equipes.</p><button class="povbtn" type="button" data-pov="dir:master">👁 Ver pelos olhos dele</button>', comandoHTML('master'))); bindComando(panel);
     showTeam(master.P.root, MASTER.subs, -1, 'master'); setOffset();
     const p = master.pos.clone(); const dir = new THREE.Vector3(Math.sin(master.heading), 0, Math.cos(master.heading));
     camFly = { pos: p.clone().addScaledVector(dir, 3.4).add(new THREE.Vector3(0, 2.0, 0)), tgt: p.clone().add(new THREE.Vector3(0, 1.2, 0)) };
     return;
   }
-  const d = s.d; openPanel(cardHTML(d, `<p class="trait"><b>Hoje:</b> ${s.stats.banheiro} ida(s) ao banheiro, ${s.stats.refil} refil(s) do copo.</p><button class="povbtn" type="button" data-pov="dir:${d.id}">👁 Ver pelos olhos dele</button>`));
+  const d = s.d; openPanel(cardHTML(d, `<p class="trait"><b>Hoje:</b> ${s.stats.banheiro} ida(s) ao banheiro, ${s.stats.refil} refil(s) do copo.</p><button class="povbtn" type="button" data-pov="dir:${d.id}">👁 Ver pelos olhos dele</button>`, comandoHTML(d.id))); bindComando(panel);
   showTeam(s.frame, d.subs, 1, d.id); setOffset();
   const back = new THREE.Vector3(Math.cos(s.a), 0, Math.sin(s.a)), side = new THREE.Vector3(-Math.sin(s.a), 0, Math.cos(s.a));
   const seatW = new THREE.Vector3(Math.cos(s.a) * SEAT_R, 0, Math.sin(s.a) * SEAT_R);
@@ -645,7 +651,7 @@ const povList = () => [master, ...seats].map(s => ({ id: 'dir:' + s.d.id, nome: 
     { id: 'pet:fenix', nome: 'Marnevali', obj: phoenix.root, off: new THREE.Vector3(0, 0.25, 0.55), world: true, noRoll: true },
     { id: 'pet:panda', nome: 'Carnucci', obj: panda.head, off: new THREE.Vector3(0, 0.03, 0.15), noRoll: true },
     { id: 'pet:pantera', nome: 'Fartuzzi', obj: panther.head, off: new THREE.Vector3(0, 0.06, 0.2) },
-    { id: 'pet:tubarao', nome: 'Tubarão Carnucci', obj: aquarium.head, off: new THREE.Vector3(0, 0.07, 0.42) },
+    { id: 'pet:tubarao', nome: 'Barão', obj: aquarium.head, off: new THREE.Vector3(0, 0.07, 0.42) },
   ]);
 const _pv = new THREE.Vector3(), _pq = new THREE.Quaternion(), _flip = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI), _e = new THREE.Euler(0, 0, 0, 'YXZ');
 function enterPov(id) {

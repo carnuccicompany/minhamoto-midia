@@ -57,3 +57,5 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 
 ## 20/11/2026 20h40: Carreira e ambição (pedido do Léo)
 - O Léo pediu mais estrutura na meritocracia e no crescimento, e todos os agentes ambiciosos, querendo desbloquear coisas e ter mais. Criados `merito/CULTURA.md` (todo agente lê antes de trabalhar), `merito/CARREIRA.md` (trilha, desbloqueios por degrau, queda, Conselheiro), `merito/conquistas.json` (25 conquistas com prova; algumas liberam itens lendários) e o estoque subiu de 25 pra 60 itens com preço real e nível mínimo. Cada agente ativo ganhou a seção "Minha ambição" na memória.
+
+- 20/11/2026 · Léo: o Diretor-Geral (Shelby) é o responsável por tudo. Correções pequenas, apontamentos e erros ele mesmo corrige, aciona o diretor e o agente responsável e cobra até fechar, sem levar pro Léo/Davi. Só sobe dinheiro, preço, campanha, publicação nova, app, chaves, troca de cadeira e o que não dá pra desfazer. Detalhe em agencia/diretoria/01-direcao-geral.md, seção "Dono da porra toda".

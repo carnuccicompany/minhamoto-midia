@@ -226,7 +226,7 @@ export function buildAquarium(scene) {
   };
   const st = { s: 0, v: 0.55, phase: 0, yaw: Math.PI * 1.5 };
   const m4 = new THREE.Object3D(), up = V(0, 1, 0);
-  const out = { group: g, shark: sh, root: sh.g, head: sh.bones[0], name: 'Tubarão Carnucci' };
+  const out = { group: g, shark: sh, root: sh.g, head: sh.bones[0], name: 'Barão' };
   out.update = (dt, now) => {
     U.uT.value = now;
     // tubarão

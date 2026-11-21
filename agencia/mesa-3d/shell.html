@@ -85,6 +85,24 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); 
 body.pov #povBar { display: flex; } body.pov #labels, body.pov .brand, body.pov #cadChip, body.pov #ticker, body.pov .timebox { display: none !important; }
 body.pov #app canvas { cursor: move; }
 .povbtn { margin-top: 14px; width: 100%; font: 600 .86rem var(--sans); color: #1d140a; background: linear-gradient(135deg, #f6e2ad, #c9a45c); border: 0; border-radius: 999px; padding: 11px 14px; cursor: pointer; box-shadow: 0 4px 14px rgba(201,164,92,.3); }
+#panel .cmd { margin: 14px 0 6px; padding: 14px; border: 1px solid rgba(212,178,106,.4); border-radius: 12px; background: linear-gradient(180deg, rgba(40,30,16,.55), rgba(14,11,8,.6)); }
+#panel .cmd-k { display: flex; justify-content: space-between; align-items: center; font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); }
+#panel .cmd-q { letter-spacing: 0; text-transform: none; font-size: .74rem; color: var(--muted); }
+#panel .cmd-who { font: 600 .74rem var(--sans); color: var(--gold2); background: rgba(212,178,106,.12); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; cursor: pointer; }
+#panel .cmd-team { display: block; margin-top: 10px; font-size: .78rem; color: var(--muted); }
+#panel .cmd-sel { width: 100%; margin-top: 4px; font: .82rem var(--sans); color: var(--ink); background: #120e09; border: 1px solid var(--line); border-radius: 8px; padding: 7px; }
+#panel .cmd-st { margin-top: 8px; font-size: .8rem; color: #d8cdb8; } #panel .cmd-st b { color: var(--gold2); }
+#panel .cmd-tabs { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+#panel .cmd-tabs button { font: 500 .78rem var(--sans); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 11px; cursor: pointer; }
+#panel .cmd-tabs button.on { background: linear-gradient(135deg, #f6e2ad, #c9a45c); color: #1d140a; border-color: transparent; font-weight: 600; }
+#panel .cmd-f { margin-top: 10px; display: grid; gap: 7px; }
+#panel .cmd-f[hidden] { display: none; }
+#panel .cmd-f textarea, #panel .cmd-f input[type=text] { width: 100%; font: .85rem/1.4 var(--sans); color: var(--ink); background: #0f0c08; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; resize: vertical; }
+#panel .cmd-pr { display: flex; gap: 10px; flex-wrap: wrap; font-size: .78rem; color: #d8cdb8; } #panel .cmd-pr input { accent-color: #d4b26a; }
+#panel .cmd-go { display: flex; gap: 8px; margin-top: 10px; }
+#panel .cmd-open { flex: 1; text-align: center; font: 600 .86rem var(--sans); color: #1d140a; background: linear-gradient(135deg, #f6e2ad, #c9a45c); border-radius: 10px; padding: 10px; text-decoration: none; box-shadow: 0 6px 18px rgba(201,164,92,.3); }
+#panel .cmd-copy { font: 500 .8rem var(--sans); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 10px; padding: 0 12px; cursor: pointer; }
+#panel .cmd-hint, #panel .cmd-off { margin: 8px 0 0; font-size: .74rem; color: var(--muted); line-height: 1.45; }
 #cad { position: fixed; inset: 0; display: grid; place-items: center; padding: 16px; background: rgba(0,0,0,.6); opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 50; }
 #cad.open { opacity: 1; pointer-events: auto; }
 #cad .box { position: relative; width: min(760px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 30px 30px 26px; background: linear-gradient(180deg, #17120c, #0d0a07); border: 1px solid var(--line); border-radius: 12px; }
