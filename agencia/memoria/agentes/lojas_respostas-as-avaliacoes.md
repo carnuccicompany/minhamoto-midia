@@ -48,3 +48,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - **Conquista que estou perseguindo:** **Dez aceitas seguidas**. E ajudar o Bezos no **Nota subiu**. Semana passada levei multa por repetir assunto já decidido, e não repito.
 - **Item que quero:** Um **café Jacu Bird**, quando juntar C$ 24.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-20 21:30
+- fiz: atualizei as avaliações (9: 3 Google Play, 6 App Store, coleta 00:14Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo (não repito o risco já decidido).
+- aprendi: `gh` funcionou para disparar o workflow nesta rodada; clone precisou de `git pull --rebase`.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado, não reavisar).
