@@ -41,3 +41,9 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 ## 2026-11-22 · Ronda do Shelby
 - recebi: demanda de correção D-20261122-master-2 (P2, 25/11): lote zero sem 'grátis' nem 'teste'; o app não tem teste grátis (Léo, 20/11), então a pergunta 3 da r1 cai. Iniciativa aprovada (10 roteiros em texto). Vídeo A/B vira Decisão 3 (27/11).
 - pendente: master-2 e a cria-2 junto do lote.
+
+## 2026-11-23 · Rodada de demandas
+- fiz: entreguei D-20261122-master-2 (lote zero, 10 roteiros em texto, 5 Meta + 5 TikTok, IDs CR-ângulo-nn; busca de texto sem "grátis", "gratuito" nem "teste": 0 ocorrências), D-20261122-lojas-2 (2 variações de 3 legendas de print) e D-20261122-mkt_publicador-2 (plano de reposição: +5 Curtos AIDA e +3 Educacional). Criei D-20261123-cria-1 (Shelby, bloqueada pra o Léo: religar a produção diária só pras 8 peças).
+- retirada: a pergunta 3 da r1 de 22/11 (anúncio na tela pra quem usa o teste) foi retirada. O app não tem teste grátis (Léo, 20/11); só existe o plano pago.
+- aprendi: (1) a fila sai na ordem estrita do arquivo (scripts/publicar.py), então reposição só funciona se a peça for inserida na posição, não no fim; (2) o insight da Meta segue sem permissão (dados/relatorios/2026-11-23.md), então a escolha de linha é por venda direta, não por desempenho; (3) não consegui abrir a página oficial da Apple sobre os prints (acesso negado), então a premissa dos 3 primeiros prints segue como pista.
+- pendente: Escobar (D-20261122-cria-2, 25/11); Greco (D-20261122-cria-3, 29/11); Léo (produção diária, A/B 27/11); Stark (3 fatos do app, mercado-4); Turing/Léo (insights).

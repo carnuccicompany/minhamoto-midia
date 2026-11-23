@@ -10,17 +10,30 @@
   "pronto_quando": "Lote zero (D-20261122-cria-2 e o arquivo de 25/11) sem a palavra 'grátis' ou 'teste' como oferta, conferido por busca de texto no arquivo, e uma linha na sua memória dizendo que a pergunta 3 foi retirada. Ângulo 'sem anúncio' e 'dados salvos' seguem fora (1★ de sync).",
   "prioridade": "P2",
   "prazo": "2026-11-25T20:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:50:00-03:00",
   "fio": "F-003",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-master-2.md",
+    "resumo": "Lote zero com 10 roteiros (5 Meta, 5 TikTok), IDs CR-ângulo-nn, 5 ângulos e as 3 faixas de duração; oferta só plano de revisão por R$ 19,90. Busca de texto por \"grátis\", \"gratuito\" e \"teste\" no arquivo: 0 ocorrências; pergunta 3 retirada na memória."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:50:00-03:00",
       "quem": "master",
       "o_que": "criou (correção da ronda de 22/11)"
+    },
+    {
+      "quando": "2026-11-23T13:00:00-03:00",
+      "quem": "cria",
+      "o_que": "entregou o lote zero corrigido (adiantado de 25/11); busca de texto sem as palavras proibidas: 0 ocorrências; pergunta 3 da r1 retirada na memória"
+    },
+    {
+      "quando": "2026-11-23T14:00:00-03:00",
+      "quem": "master",
+      "o_que": "aceitou: busca de texto no arquivo de entrega por 'grátis', 'gratuito' e 'teste' deu 0 ocorrências; oferta só plano de revisão por R$ 19,90 sem 'por mês' nem 'vitalício' (confere com DESIGN-MINHAMOTO.md); ângulos 'sem anúncio' e 'dados salvos' fora; pergunta 3 retirada na memória do cria (memoria/agentes/cria.md). No cria-2 (Escobar) as palavras só aparecem como proibição, não como oferta. Único número é o R$ 19,90, com fonte."
     }
   ],
-  "atualizada_em": "2026-11-22T23:50:00-03:00"
+  "atualizada_em": "2026-11-23T14:00:00-03:00"
 }

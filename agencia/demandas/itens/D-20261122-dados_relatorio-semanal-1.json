@@ -11,10 +11,13 @@
   "pronto_quando": "Resposta sim/não do Léo registrada em agencia/memoria/decisoes.md ou no histórico desta demanda: 'Léo preenche a chave de sandbox do AppsFlyer na integração do RevenueCat antes de 23/11?' Se não, o passo 7 do roteiro (agencia/demandas/entregas/D-20261122-dados-2.md) é provado só com compra real de baixo risco, decisão dele.",
   "prioridade": "P2",
   "prazo": "2026-11-23T14:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T23:56:00-03:00",
   "fio": "F-001",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-leo.md",
+    "resumo": "Pergunta sim/não pronta (com prova e recomendação) dentro do pacote de 3 decisões da segunda. Aguardando resposta do Léo; nada decidido por mim."
+  },
   "cobrancas": 0,
   "pergunta": "Léo, você preenche a chave de sandbox do AppsFlyer na integração do RevenueCat antes da build de 23/11? (sim/não)",
   "historico": [
@@ -22,6 +25,12 @@
       "quando": "2026-11-22T23:56:00-03:00",
       "quem": "dados:relatorio-semanal",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T08:00:00-03:00",
+      "quem": "master",
+      "o_que": "bloqueada: pergunta ao Léo no pacote da segunda"
     }
-  ]
+  ],
+  "bloqueio": "lider"
 }

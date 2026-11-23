@@ -36,3 +36,8 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - aprendi: o 00-SISTEMA-OPERACIONAL era meu pra corrigir desde 20/11 e demorei: todo mundo leu o texto velho e 5 diretores perguntaram a duração de um teste que não existe. Corrigir na hora, não esperar a pergunta chegar. Também: o pacote da dados-2 (P1, 21/11 20h) eu não levei ao Davi a tempo; erro meu, vai pra Folha.
 - recebi: 7 r1 e 3 r2. As tarefas agendadas dos executores não rodam desde 21/11 08h40 (F-006).
 - pendente: respostas do Léo/Davi a D1, D2, D3 e às 3 perguntas; conferir em 24/11 master-1 a master-5 e dados-3; F-002 morre em 27/11 sem sim do Davi; Folha de sexta: Ness, eu, Stark, Turing, Greco, elogio ao Sun Tzu.
+
+## 2026-11-23 · Demandas para o master
+- fiz: 3 perguntas ao Léo (posts/publicar.py, limite de uso, sandbox AppsFlyer) juntas em agencia/demandas/entregas/D-20261123-master-pacote-leo.md; mkt_publicador-1, auditor-2 e dados_relatorio-semanal-1 ficam bloqueadas (lider). lojas-3 bloqueada por lojas-2 (sem legendas).
+- aprendi: 3 pedidos P1/P2 chegaram para o mesmo fim (Léo); juntar em um pacote evita 3 notificações. Só vale como "entregue" quando o Léo responder; não decido por ele.
+- pendente: levar o pacote ao Léo hoje (prazos 14h, 20h, 23h55); cobrar lojas-2; conferir master-1 a master-5 e dados-3 em 24/11.

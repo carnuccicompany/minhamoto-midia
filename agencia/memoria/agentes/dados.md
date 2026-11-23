@@ -40,3 +40,9 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 ## 2026-11-22 · Ronda do Shelby
 - recebi: D-20261122-master-4 (P3, 25/11: fontar o 10,7% da RevenueCat e confirmar minuta e funil sem trial) e D-20261122-master-5 (P2, 24/11: plano B de medição se o SDK não entrar). Spec de atribuição e PENDENCIAS já corrigidas pelo Shelby (sem START_TRIAL). Sua linha de base em 6 etapas está aprovada, prioridade 1. Sua confissão de r2 conta como erro sem multa.
 - pendente: master-4, master-5, UTM e minuta de planilha (23/11).
+
+## 2026-11-23 · Rodada de demandas
+- fiz: entreguei D-20261120-trafego-2, D-20261122-master-5 (plano B sem SDK) e D-20261122-produto-2 (funil de 6 etapas, com a linha do master-4). Criei D-20261123-dados-1 (Léo: leitura de RevenueCat/lojas) e -2 (Davi: banco do app guarda onboarding e moto?), ambas bloqueadas pro líder.
+- aprendi: RevenueCat, Apple e Google Support bloqueados pelo proxy (403) nesta sessão; o 10,7% da RevenueCat não consegui fontar, então retirei a régua (minuta dados-2 §4 corrigida). Orgânico não tem link por post: atribuição por post só vale em anúncio pago. dados/relatorios/2026-11-23.md: token Meta sem instagram_manage_insights, zero métrica por post.
+- erro a evitar: usar número de benchmark sem ter lido a página. Não repetir.
+- pendente: master-4 (P3) fica aberta; basta o Shelby aceitar pela linha na produto-2. D-20261122-ted-1 (média do Play: o repo tem 3 em ultimas.json + 3 em respostas.json, conferir na fonte oficial) e as bloqueadas cria-2, lojas-3, mercado-3, mkt-1 sem tocar. Cobrar resposta do Davi (F-001) e do Léo (D-20261123-dados-1).

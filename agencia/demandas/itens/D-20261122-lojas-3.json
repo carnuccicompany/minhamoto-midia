@@ -10,7 +10,7 @@
   "pronto_quando": "Depois da entrega de D-20261122-lojas-2: parecer em agencia/demandas/entregas/D-20261122-lojas-3.md com 'passa' ou 'corta' por legenda, e o motivo de cada corte (promessa, preço, regra Apple/Google).",
   "prioridade": "P3",
   "prazo": "2026-11-28T18:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T22:40:00-03:00",
   "fio": "F-002",
   "entrega": null,
@@ -20,6 +20,12 @@
       "quando": "2026-11-22T22:40:00-03:00",
       "quem": "lojas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T08:00:00-03:00",
+      "quem": "master",
+      "o_que": "bloqueada: depende de D-20261122-lojas-2 (sem legendas entregues, nada a checar). Cobrar a Lojas; faço o parecer em até 24 h da entrega."
     }
-  ]
+  ],
+  "bloqueio": "lojas"
 }

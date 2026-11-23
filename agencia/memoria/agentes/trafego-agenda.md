@@ -24,3 +24,8 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Em curso: iniciativa "Proposta pronta no dia do teste". Demandas D-20261122-trafego-1 (Shelby, 3 sim/não pro Léo), -2 (Bezos, página da loja), -3 (Turing, volume mínimo). Acompanho dados-2 (bloqueada), dados-3 e trafego-2 (vencem 23/11 20h).
 - Devo: D-20261120-mkt-2 bloqueada por falta de acesso de leitura (pergunta ao Léo).
 - Perguntas abertas pro Léo: BM de anúncios, campanha rodando, teto e meta (sem resposta desde 20/11).
+
+## Atualização 23/11/2026
+- Entregues hoje: master-1 (correção), dados-3 (nomes/UTM), cria-2 (brief de 10 slots). "X dias grátis" e "teste iniciado" riscados daqui e dos fios.
+- Em curso: D-20261123-trafego-1 (Léo, nomes do pago, sim/não). Meta pessoal mantida: 1º número de campanha até 30/11, só se a build ligar o SDK.
+- Aposta: 4 testes de 2 a 3 versões, 1 variável; corte proposto 200% do custo-alvo sem compra pausa (plata o pausa). Sem baseline, é hipótese.

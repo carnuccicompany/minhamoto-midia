@@ -10,16 +10,30 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-produto-2.md com tabela das 6 etapas: fonte e nome do evento (AppsFlyer ou rc_*), 'mede hoje' / 'só depois da build' / 'não mede', e a data prevista da 1ª leitura em % (sem número absoluto) por plataforma iOS e Android. O que não souber diz que não sabe.",
   "prioridade": "P2",
   "prazo": "2026-11-25T23:20:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:20:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-produto-2.md",
+    "resumo": "Tabela das 6 etapas (sem teste) com evento/fonte e estado: hoje (instalação por contagem de loja, pagante e renovação no RevenueCat, sem origem), só depois da build (onboarding_complete, paywall_view, origem) e não mede (moto cadastrada, sem evento). 1ª leitura: 7 dias após publicação da versão com SDK, iOS e Android separados, condicional ao Davi; 30/11 só se confirmar. Inclui a linha do master-4: régua 10,7% da RevenueCat retirada por não conseguir fontar (403); minuta sem etapa de teste."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:20:00-03:00",
       "quem": "produto",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T12:40:00-03:00",
+      "quem": "dados",
+      "o_que": "entregue: agencia/demandas/entregas/D-20261122-produto-2.md"
+    },
+    {
+      "quando": "2026-11-23T14:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita: 6 etapas com evento/fonte e estado (hoje/só depois da build/não mede), datas de 1ª leitura em % por plataforma, 'não sei' declarado nas etapas 3 e 6; eventos conferidos na spec §2.5 de atribuicao/comparativo-e-spec.md"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T14:00:00-03:00"
 }

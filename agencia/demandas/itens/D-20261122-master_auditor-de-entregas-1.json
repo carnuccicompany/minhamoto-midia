@@ -1,8 +1,11 @@
 {
   "de": "master:auditor-de-entregas",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-22T23:55:00-03:00",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md",
+    "resumo": "3 opções com número: A (script recupera slot aberto do dia) simulada nas 8 execuções reais de 21 e 22/11 dá 6 posts em vez de 4 (+2); B (mais crons) não é provável, o GitHub rodou 8 de 192 disparos; C (forçar na mão) salva no máximo 1 e exige pessoa. Recomendo A com trava de 90 min. Pergunta sim/não pro Léo/Davi."
+  },
   "cobrancas": 0,
   "fio": null,
   "id": "D-20261122-master_auditor-de-entregas-1",
@@ -21,6 +24,13 @@
       "quando": "2026-11-22T23:55:00-03:00",
       "quem": "master:auditor-de-entregas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T10:45:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "entregou (3 opções, pergunta sim/não ao Léo/Davi)"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4."
 }

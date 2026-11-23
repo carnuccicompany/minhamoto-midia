@@ -10,10 +10,13 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-dados-3.md com a regra de nomes (exemplos reais), onde o ID do post/criativo entra no utm_content e a confirmação de que bate com a UTMify e o OneLink",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "em_andamento",
+  "status": "entregue",
   "criada_em": "2026-11-20T20:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-dados-3.md",
+    "resumo": "Regra de nomes: utm_source meta-ads/tiktok-ads (nunca o organico), utm_campaign mm_<rede>_<evento>_<so>_<aamm>, utm_medium = teste, utm_content = CR-<angulo>-<nn>. Bate por desenho com o mapeamento OneLink/UTMify; prova real fica no teste D+0 (verba zero ate la)."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,6 +28,12 @@
       "quando": "2026-11-20T21:30:00-03:00",
       "quem": "trafego",
       "o_que": "aceita: padrão de UTM é pré-requisito do custo por assinante; pedi que utm_content leve o ID do post/criativo e que o teste confirme OneLink e UTMify antes de qualquer verba"
+    },
+    {
+      "quando": "2026-11-23T11:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: agencia/demandas/entregas/D-20261120-dados-3.md"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T11:30:00-03:00"
 }

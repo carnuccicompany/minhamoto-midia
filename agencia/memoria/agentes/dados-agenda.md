@@ -21,3 +21,9 @@
 - Perguntas ao Leo: duracao do teste, alvo semanal e custo maximo por assinante, leitura RevenueCat/App Store Connect/Play Console.
 - Coletor de insights só roda domingo 23h41 BRT (workflow insights.yml); ainda sem execução manual (precisa do Léo/Davi disparar workflow_dispatch).
 - Sem acesso ao carnucci-dados nesta sessão.
+
+## Atualização 2026-11-23
+- Plano B de medição entregue (master-5). Se o SDK não entrar na build: leitura só de loja e RevenueCat, regra em % contra a oscilação da linha de base. Gatilho do Plano A: passos 3, 6 e 7 do D+0 passando em iOS e Android.
+- Próximo: D-20261122-ted-1 (média do Play), D-20261122-trafego-3 (volume mínimo por variante, P3 29/11), D-20261120-dados-3 (padrão UTM confirmado no D+0).
+- Esperando: Davi (F-001, SDK e eventos), Léo (D-20261123-dados-1 e sandbox RevenueCat), Davi (D-20261123-dados-2).
+- Meta: 1ª leitura em % por etapa 7 dias após a versão com SDK publicada, iOS e Android separados.

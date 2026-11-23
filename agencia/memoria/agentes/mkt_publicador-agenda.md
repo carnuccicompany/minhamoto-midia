@@ -18,5 +18,7 @@
 - Disney: plano de reposição por linha (D-20261122-mkt_publicador-2, 25/11).
 - Ness: log do coordenador parado desde 21/11 08h40 (D-20261122-dados-3); minha entrega cita as mesmas provas.
 
+- Léo/Davi: mesma pergunta, agora com 3 opções e números em entregas/D-20261122-master_auditor-de-entregas-1.md (recomendo A).
+
 ## Ideias guardadas
 - Se o script passar a recuperar slot, mostrar no tiktok.html o aviso só quando o post sair de fato.

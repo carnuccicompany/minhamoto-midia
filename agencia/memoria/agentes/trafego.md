@@ -40,3 +40,8 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 ## 2026-11-22 · Ronda do Shelby
 - recebi: demanda de correção D-20261122-master-1 (P2, 24/11): tirar 'teste iniciado' e 'X dias grátis' da r1, linha de base em 6 etapas sem teste, fila é 89 e não 93. O 40% de 1★ você mesmo corrigiu pra 33%, bom. Android fora da 1ª campanha vale pelo bug de sincronização, não pela %.
 - pendente: entregar a master-1; UTM (dados-3) e trafego-2 vencem 23/11 20h.
+
+## 2026-11-23 · Rodada de demandas
+- fiz: entreguei D-20261122-master-1 (correção: sem teste/grátis, fila 89 = 113 menos 24), D-20261120-dados-3 (padrão de UTM: meta-ads/tiktok-ads, mm_<rede>_<evento>_<so>_<aamm>, CR-<ângulo>-<nn> no utm_content) e D-20261122-cria-2 (10 slots, 4 testes, corte em % do custo-alvo). Criei D-20261123-trafego-1 (Léo, sim/não nos nomes; bloqueio lider).
+- aprendi: o orgânico (l/README.md) já usa utm_source instagram/tiktok/facebook e utm_campaign=organico; o pago tem que ficar separado. WebFetch dos docs da Meta e do TikTok não abriu hoje (permissão): citei só o que já estava em demanda/entrega, dizendo isso.
+- pendente: sem número de campanha; 200%/100% do custo-alvo são regra minha sem histórico, depende do teto do Léo; não consegui ler o doc de UTM do Léo; trafego-2 (minha, vence 23/11 20h) segue com a dados (minuta em D-20261122-dados-2).

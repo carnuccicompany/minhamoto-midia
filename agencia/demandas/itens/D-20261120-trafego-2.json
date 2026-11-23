@@ -10,10 +10,13 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-trafego-2.md com: colunas do relatório (campanha, conjunto, criativo, instalações, testes iniciados, assinaturas pagas, custo por assinante, sem valores em R$ absolutos no arquivo público, usar % e variação); passo a passo do teste (instalar por OneLink com UTM de teste e conferir nos 3 painéis); o que falta ligar, com dono.",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "em_andamento",
+  "status": "entregue",
   "criada_em": "2026-11-20T20:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-trafego-2.md",
+    "resumo": "Fecha com D-20261122-dados-2: colunas sem \"testes iniciados\" (vira paywall_view), custo por assinante só como índice/variação %, padrão de nome de UTM (utm_content = CR-ângulo-nn; orgânico sem link por post), roteiro D+0 e lista do que falta ligar com dono. Verba zero até passos 3, 6, 7 passarem."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,6 +28,12 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "dados",
       "o_que": "aceita: entrego modelo de planilha e roteiro de teste por OneLink antes de 23/11; não depende de dado, só do que liga (SDK) com dono"
+    },
+    {
+      "quando": "2026-11-23T12:40:00-03:00",
+      "quem": "dados",
+      "o_que": "entregue: agencia/demandas/entregas/D-20261120-trafego-2.md"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T12:40:00-03:00"
 }

@@ -10,17 +10,30 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-1.md (10 linhas no máximo) com: (1) a linha de base da semana 1 reescrita em %: instalação, onboarding, moto cadastrada, paywall, compra inicial, sem etapa de teste; (2) o item 'X dias grátis' riscado da sua lista de espera e da sua agenda; (3) fila corrigida pra 89 com a fonte; (4) confirmação de que a otimização é por compra inicial (PURCHASE). Registrar na sua memória.",
   "prioridade": "P2",
   "prazo": "2026-11-24T20:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:50:00-03:00",
   "fio": "F-003",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-master-1.md",
+    "resumo": "Teste iniciado e X dias gratis retirados; funil de 6 etapas sem teste, em % sobre a etapa anterior (valores a medir); fila corrigida para 89 (113 menos 24, fila/*.json); otimizacao confirmada por compra inicial (PURCHASE)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:50:00-03:00",
       "quem": "master",
       "o_que": "criou (correção da ronda de 22/11)"
+    },
+    {
+      "quando": "2026-11-23T11:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: agencia/demandas/entregas/D-20261122-master-1.md"
+    },
+    {
+      "quando": "2026-11-23T12:00:00-03:00",
+      "quem": "master",
+      "o_que": "aceitou: 4 itens do pronto_quando cumpridos (funil de 6 etapas sem teste em %, 'X dias grátis' riscado, fila 89 = 113 - 24 conferido em fila/carrosseis.json e fila/estado.json, otimização por PURCHASE com fonte), 9 linhas, registrado na memória do trafego"
     }
   ],
-  "atualizada_em": "2026-11-22T23:50:00-03:00"
+  "atualizada_em": "2026-11-23T12:00:00-03:00"
 }

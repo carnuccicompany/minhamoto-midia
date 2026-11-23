@@ -1,8 +1,11 @@
 {
   "de": "master:auditor-de-entregas",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T23:55:00-03:00",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-leo.md",
+    "resumo": "Pergunta sim/não pronta (com prova e recomendação) dentro do pacote de 3 decisões da segunda. Aguardando resposta do Léo; nada decidido por mim."
+  },
   "cobrancas": 0,
   "fio": null,
   "id": "D-20261122-master_auditor-de-entregas-2",
@@ -20,6 +23,13 @@
       "quando": "2026-11-22T23:55:00-03:00",
       "quem": "master:auditor-de-entregas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T08:00:00-03:00",
+      "quem": "master",
+      "o_que": "bloqueada: pergunta ao Léo no pacote da segunda (recomendo sim)"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite de uso não derrubar a publicação? (sim/não)"
 }

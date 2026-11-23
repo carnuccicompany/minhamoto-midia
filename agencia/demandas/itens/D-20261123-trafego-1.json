@@ -1,0 +1,28 @@
+{
+  "id": "D-20261123-trafego-1",
+  "de": "trafego",
+  "para": "master",
+  "copia": [
+    "trafego"
+  ],
+  "titulo": "Levar ao Leo 1 sim/nao: aprovar o padrao de nomes do pago (meta-ads/tiktok-ads e mm_<rede>_<evento>_<so>_<aamm>)",
+  "por_que": "Os nomes das campanhas sao do Leo (diretoria/05-trafego.md). Sem o OK, o utm_source e o utm_campaign do pago nao ficam travados e o custo por assinante por criativo nao fecha na 1a semana paga (D-20261120-dados-3, D-20261122-cria-2).",
+  "pronto_quando": "Resposta sim/nao do Leo registrada em agencia/demandas/entregas/D-20261123-trafego-1.md; se nao, o nome que ele preferir.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T20:00:00-03:00",
+  "status": "bloqueada",
+  "bloqueio": "lider",
+  "pergunta_lider": "Leo, sim/nao: o trafego pago usa utm_source meta-ads e tiktok-ads (separado do organico) e campanha com nome mm_meta_purchase_ios_2611 / mm_tiktok_purchase_ios_2611?",
+  "criada_em": "2026-11-23T11:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T11:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou, bloqueada pro lider (pergunta sim/nao)"
+    }
+  ],
+  "atualizada_em": "2026-11-23T11:30:00-03:00"
+}

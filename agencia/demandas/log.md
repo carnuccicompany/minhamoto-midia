@@ -1,2 +1,3 @@
 - 2026-11-20: Conselho com subagentes. Criadas 24, executadas 7, aceitas 5, 1 devolvida (master-1). Atrasadas 0.
 - 2026-11-22: Conselho com subagentes. Criadas 31, executadas 6, aceitas 6, devolvidas 0. Atrasadas 0.
+- 2026-11-23 10:49: Mesa com subagentes. Executadas 9 (master 0 entregues/4 bloqueadas, dados 3, trafego 3, cria 3, publicador 1), conferidas 5, aceitas 5, devolvidas 0. Atrasadas 0. Bloqueadas pelo líder: 20 (novas: D-20261123-trafego-1, D-20261123-dados-1, D-20261123-dados-2, D-20261123-cria-1).

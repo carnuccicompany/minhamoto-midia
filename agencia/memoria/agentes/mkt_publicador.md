@@ -37,3 +37,9 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - fila: 89 pendentes; a 4/dia acaba em 15/12, a 2/dia (ritmo real) em 06/01; Curtos AIDA seca primeiro (30/11 a 4/dia). "13/12" da folha de 20/11 não vale mais.
 - aviso: meu streak de pontualidade quebrou. Não posso esconder: slot perdido conta contra mim mesmo com causa fora do script.
 - pendente: D-20261122-mkt_publicador-1 (pergunta sim/não pro Léo/Davi sobre recuperar slot no publicar.py) e -2 (reposição da fila, com a Disney).
+
+## 2026-11-23 10:45 · D-20261122-master_auditor-de-entregas-1 (recuperar slot perdido)
+- fiz: entreguei agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md com 3 opções. A (script recupera slot aberto do dia) simulada nas execuções reais de 21 e 22/11: 6 posts em vez de 4. B (mais crons) sem prova: GitHub rodou 8 de 192 disparos. C (forçar) salva 1 e exige pessoa.
+- aprendi: o teto é o número de execuções; recuperar slot só ajuda quando há execução sobrando (22/11 sim, 21/11 não: ganho 0).
+- aguardando: sim/não do Léo/Davi (mesma pergunta de D-20261122-mkt_publicador-1). Rodada 23/11: cria-1 de 20/11 e 22/11 já estão aceitas.
+- pendente: conferir run das 12h de 23/11 e registrar run id.

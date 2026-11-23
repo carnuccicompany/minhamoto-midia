@@ -10,16 +10,25 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-cria-2.md com 10 linhas (5 Meta, 5 TikTok): ângulo (economia, segurança, organização, motoboy/trabalho ou escolha-a-moto), faixa de duração (menos de 15 s, 15 a 25 s ou 30 a 60 s), o que fica fixo e o que muda no teste, e o critério de corte em % do custo-alvo por assinante (sem R$). Diga também o ID de campanha esperado no utm_campaign (D-20261120-dados-3) pra eu casar com o ID CR-ângulo-nn do criativo. Nada roda nem gasta por causa desta demanda.",
   "prioridade": "P2",
   "prazo": "2026-11-25T20:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-22T23:20:00-03:00",
   "fio": "F-004",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-cria-2.md",
+    "resumo": "10 slots (5 Meta, 5 TikTok) em 4 testes de 2 a 3 versoes, 1 variavel por vez, com IDs CR-angulo-nn e utm_campaign. Corte em % do custo-alvo (200% sem compra pausa) como proposta ao Leo; vencedor so apos volume minimo da trafego-3."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:20:00-03:00",
       "quem": "cria",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T11:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: agencia/demandas/entregas/D-20261122-cria-2.md"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T11:30:00-03:00"
 }

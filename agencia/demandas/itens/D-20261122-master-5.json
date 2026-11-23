@@ -12,17 +12,30 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-5.md, uma página: (1) o que se mede sem SDK, por etapa do funil de 6 etapas, e com qual fonte; (2) o que NÃO se mede e quem destrava; (3) regra de decisão em % pro Escobar numa campanha de 1 semana só com instalação e compra inicial vistas nas lojas/RevenueCat; (4) a data em que o SDK vira Plano A de novo. Sem R$, sem absoluto.",
   "prioridade": "P2",
   "prazo": "2026-11-24T20:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:50:00-03:00",
   "fio": "F-001",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-master-5.md",
+    "resumo": "Plano B em 1 página: sem SDK só saem clique/visita (UTMify, Meta), instalação e compra inicial nas lojas/RevenueCat, sem origem por criativo. Regra pro Escobar em %: variação sobre a linha de base contra a maior oscilação semanal anterior (sem número inventado); anúncio com link direto pra loja com parâmetros a conferir no D+0. Data do Plano A depende da resposta do Davi (F-001). Fontes oficiais bloqueadas na sessão, itens marcados \"conferir no painel\"."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:50:00-03:00",
       "quem": "master",
       "o_que": "criou (correção da ronda de 22/11)"
+    },
+    {
+      "quando": "2026-11-23T12:40:00-03:00",
+      "quem": "dados",
+      "o_que": "entregue: agencia/demandas/entregas/D-20261122-master-5.md"
+    },
+    {
+      "quando": "2026-11-23T13:10:00-03:00",
+      "quem": "master",
+      "o_que": "aceita: 4 itens do pronto_quando presentes, sem R$ nem absoluto, regra em % ancorada na oscilação da base (sem número inventado), fontes do repo conferidas, limites marcados [conferir no painel]"
     }
   ],
-  "atualizada_em": "2026-11-22T23:50:00-03:00"
+  "atualizada_em": "2026-11-23T13:10:00-03:00"
 }

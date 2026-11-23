@@ -10,16 +10,30 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: quantas peças novas por linha, entregues até que data para nenhuma linha secar antes de 04/12, e o que depende de aprovação do Léo (reativar pauteiro/roteirista ou a produção diária). Usar a tabela de dias por linha de D-20261122-cria-1.md.",
   "prioridade": "P2",
   "prazo": "2026-11-25T20:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:45:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-mkt_publicador-2.md",
+    "resumo": "Plano: +5 Curtos AIDA (1ª até 29/11, seca 12/12) e +3 Educacional (até 03/12, seca 11/12) = 8 peças pra nenhuma linha secar antes de 04/12; depende do Léo religar a produção diária só pra elas e do Fogg inserir nas posições sugeridas. Sem insight por post, a escolha de linha é por venda direta, não por desempenho."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:45:00-03:00",
       "quem": "mkt:publicador",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T13:00:00-03:00",
+      "quem": "cria",
+      "o_que": "entregou o plano de reposição por linha com quantidade, data e dependências (usa a tabela de D-20261122-cria-1)"
+    },
+    {
+      "quando": "2026-11-23T14:00:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "aceitou: conferi contra fila/carrosseis.json e estado.json (89 pendentes; posições de Curtos AIDA 4/20/32 e Educacional 5/15/17/26/35/45 batem; datas 30/11, 04/12, 11/12 e 12/12 recalculadas a 4/dia); quantidade por linha (+5 e +3), datas de entrega e dependências do Léo (religar produção diária só pra 8 peças) estão no arquivo; pautas e Lote zero citados existem; o que não tem prova (ritmo real, desempenho por linha) está declarado"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T14:00:00-03:00"
 }
