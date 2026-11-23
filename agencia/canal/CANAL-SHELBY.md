@@ -9,7 +9,7 @@ O Léo é o dono. Problema pequeno se resolve entre o Shelby e os diretores e **
 2. **resultado da semana e do mês:** melhorou ou piorou, por quê, o que muda;
 3. **informação realmente relevante** (ex.: segurança, algo que custa dinheiro).
 
-Chega em **momentos fixos**, nunca em fluxo contínuo. Sempre no **mesmo lugar** (um link fixo) e com a **mesma estética** (dossiê do império, preto e ouro, carimbos). Só o conteúdo muda.
+Chega em **momentos fixos**, nunca em fluxo contínuo. Sempre no **mesmo lugar** (um link fixo) e com a **mesma estética** (ver seção 2a). Só o conteúdo muda.
 
 **Regra de ouro dos números:** este repositório é público. Aqui só entram %, variação e status. Número absoluto (R$, assinantes, verba, custo por assinante) só no privado `carnucci-dados` e no link privado do briefing.
 
@@ -24,21 +24,35 @@ Chega em **momentos fixos**, nunca em fluxo contínuo. Sempre no **mesmo lugar**
 
 Fora disso, o Shelby só fura a agenda por **alerta grave** (chave vazada, gasto fora do teto, app fora do ar). Nunca por "rodou ok".
 
-## 2. A edição de sexta (revista do império)
+## 2a. Estética (decidida pelo Léo em 23/11)
 
-Cada edição tem uma **ilustração de destaque** própria e visuais desenhados (gráficos, carimbos, cartões, retratos estilizados dos diretores em SVG, sem rosto real nem personagem de filme). Ordem fixa:
+~~Revista do império: preto e ouro, ilustração de capa, carimbos, retratos estilizados dos diretores.~~ Recusada: "muito visual, desenho nada a ver".
 
-1. **Decisões pendentes no topo**, cartões sim/não com recomendação, custo e o que destrava.
+**Relatório do conselho de uma holding aos sócios.** Carta de family office, extrato de private bank, board pack de banco. Sóbrio, caro, silencioso; o peso vem da tipografia, do espaço e do rigor.
+- Papel marfim, tinta quase preta, um único acento escuro (verde-garrafa); ouro só em fios finos e no monograma. Escuro: carvão com texto marfim.
+- Serifada clássica (EB Garamond) em pesos contidos, versaletes nos rótulos, algarismos tabulares.
+- Cabeçalho de documento: monograma "C" em traço fino, "CARNUCCI — Relatório ao Conselho", edição nº, data, destinatários, "Estritamente confidencial".
+- Seções em romano: I. Resoluções pendentes, II. Resultado da semana, III. Diretoria, IV. Ocorrências resolvidas pela diretoria, V. Próximos passos.
+- Números em tabela (atual × anterior × variação ▲▼), no máximo sparkline fina. Ranking como tabela, sem retrato.
+- Decisões viram **Resoluções do Conselho nº 2026-11-0XX** com linha de assinatura: Aprovar/Recusar põe o nome do sócio em manuscrito, com data e hora.
+- Fecha com o parecer do Diretor-Geral e a assinatura dele.
+- Proibido: ilustração, mascote, retrato, carimbo chamativo, cards coloridos, emoji.
+
+## 2. A edição de sexta
+
+Ordem fixa:
+
+1. **Resoluções pendentes no topo**, com recomendação, custo, o que destrava e prazo.
 2. **Resultado da semana vs. a anterior**, em %, com uma linha de "por quê" e "o que muda".
-3. **Destaques e quem caiu**: ranking com retratos, Diretor da Semana, folha (multas e elogios).
+3. **Diretoria**: ranking em tabela, Diretor da Semana, advertências e menções da folha.
 4. **O que o Shelby resolveu sozinho**: 1 linha por item, sem pedir nada.
 5. **Próximos passos** da semana seguinte.
 
-Abas fixas do link: **Semana** (edição atual), **Decisões** (tudo que espera o Léo ou o Davi), **Mês**.
+Abas fixas do link: **Semana** (edição atual), **Resoluções** (tudo que espera o Léo ou o Davi), **Mês**.
 
 ## 3. Respostas do Léo
 
-O Léo marca sim/não no link e copia a resposta gerada pra conversa com o Claude (ou responde no chat). O Claude:
+O sócio assina Aprovar/Recusar no link e copia o texto gerado ("Resolução nº X — APROVADA por Léo em ...") pra conversa com o Claude (ou responde no chat). O Claude:
 - grava uma linha em `agencia/memoria/decisoes.md` (data, decisão, quem decidiu);
 - fecha a demanda no `demandas/quadro.json` (status `decidida`);
 - a decisão sai da aba Decisões e aparece como "decidido" na edição seguinte.
@@ -74,4 +88,4 @@ O Léo marca sim/não no link e copia a resposta gerada pra conversa com o Claud
 2. **Aviso no celular (só pra decisão):** (a) push do Claude (b) e-mail (c) os dois
 3. **Link:** (a) um só pro Léo e o Davi (b) um de cada, o do Davi só com produto e app
 4. **O Davi recebe:** (a) a mesma edição (b) só as decisões dele + funil do app (c) nada, você repassa
-5. **Estética:** (a) Dossiê — preto e ouro, carimbos (protótipo) (b) Cartel — papel pardo, vermelho e fotos em halftone desenhadas
+5. ~~**Estética:** Dossiê ou Cartel~~ Decidido: relatório de holding (seção 2a). Nova pergunta: **acento:** (a) verde-garrafa (protótipo) (b) azul-marinho profundo
