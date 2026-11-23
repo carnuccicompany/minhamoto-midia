@@ -61,7 +61,7 @@ Americano, 65 anos. **Regra de trabalho:** Se dá pra imaginar, dá pra fazer.
 - **Ângulos:** testar vários ao mesmo tempo (economia, segurança, organização, motoboy/trabalho), um ângulo por criativo pra saber qual ganhou.
 - **Volume:** 10 criativos novos por semana pro Escobar (5 Meta + 5 TikTok).
 - **Duração dos vídeos:** testar as três faixas (menos de 15 s, 15 a 25 s, 30 a 60 s) e deixar o número decidir.
-- **Sem gente de verdade por enquanto** (nada de UGC/criadores contratados).
+- ~~**Sem gente de verdade por enquanto** (nada de UGC/criadores contratados).~~ → 23/11: UGC liberado quando o Léo pedir (ver `agencia/estudio/ESTUDIO.md`).
 - **Aprovação:** o Léo aprova todos. Lote no painel todo dia às **14h**, com aviso no celular, pra subir no dia seguinte.
 - **Reprovou:** dependendo, refaz ou descarta, mas o foco é aprender: cada correção vira regra no `agencia/DESIGN-MINHAMOTO.md` e ela relê as correções passadas antes de cada lote, pra não repetir erro.
 - **Orgânico ↔ anúncio:** um orgânico que performa pode virar criativo e um criativo pode virar orgânico, caso a caso.

@@ -88,5 +88,6 @@
 ## 20/11/2026: anúncios (decisões do Léo ao lapidar a Disney)
 - Criativo de anúncio se baseia sempre no que está vendendo de verdade (assinante/venda), no nosso app e no nosso infoproduto.
 - Formatos dos anúncios: vídeo nativo de TikTok, tela do app em ação e historinha com a dor do motoqueiro. Duração: testar menos de 15 s, 15 a 25 s e 30 a 60 s.
-- Sem UGC/criadores por enquanto.
+- ~~Sem UGC/criadores por enquanto.~~ → substituída em 23/11: UGC e estilo UGC liberados quando o Léo pedir (roteiro e direção pra ele, o Davi ou criador gravar, ou edição de material deles); nunca inventar depoimento nem usar pessoa real sem autorização.
+- **23/11: o Estúdio Audiovisual (`agencia/estudio/ESTUDIO.md`) produz todos os tipos de peça:** post único, carrossel, stories, Reels/TikTok/Shorts, motion, e criativo de venda com hook, body e CTA (motion, nativo TikTok, historinha da dor, UGC, estático, variações).
 - Toda correção do Léo vira regra aqui e é relida antes de cada lote, pra não repetir erro.
