@@ -1,7 +1,7 @@
 {
- "coletado_em": "2026-11-23T12:17:16.437940Z",
+ "coletado_em": "2026-11-23T16:15:43.415862Z",
  "status": {
-  "google_play": "ok (3 avaliações)",
+  "google_play": "ok (2 avaliações)",
   "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
@@ -26,17 +26,6 @@
    "aparelho": "M23HT (V Max Plus)",
    "respondida": true,
    "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o app está sendo útil e que o nosso suporte fez diferença para você. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
-  },
-  {
-   "loja": "google_play",
-   "id": "8fdb9c98-de81-44a2-9978-bf60e1e3fc0d",
-   "nota": 5,
-   "texto": "Muito bom o app, estou acompanhando o desenvolvimento, tende a ser um dos melhores app para controle gastos e consumos da moto",
-   "data": "2026-11-16T15:35:39Z",
-   "versao_app": "1.0",
-   "aparelho": "redwood (POCO X5 Pro 5G)",
-   "respondida": true,
-   "resposta_atual": "Obrigado por acompanhar o MinhaMoto desde o início! Seguimos evoluindo o app para deixar o controle de gastos e consumo da sua moto cada vez mais completo. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
