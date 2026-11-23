@@ -90,6 +90,6 @@ Base teórica do Léo (6 FIGURES/ÂNGULOS DE CRIATIVOS.docx): dor, desejo/transf
 
 ## 8. Recuperação de Pix (decisões do Léo, 23/11)
 - **Uma mensagem só**, 15 minutos depois do Pix gerado e não pago. Curta, simpática, tom de quem ajuda (nunca cobrar nem apontar que a pessoa não pagou). Não assina como Ana Paula nem como "suporte".
-- **Canal:** WhatsApp de um número novo só da operação (WhatsApp Business), não o pessoal dela. Exige telefone no checkout da Kavoo (hoje não pede; o Léo aceitou colocar).
+- **Canal:** WhatsApp Business que o Léo/Davi já têm (um número da operação), não o pessoal da Ana Paula. Exige telefone no checkout da Kavoo (hoje não pede; o Léo aceitou colocar).
 - **Ferramenta:** Reportana (integração aparece na Kavoo) ou PlugLead; decisão e assinatura do Léo.
-- **Mensagem aprovada:** "Oi, {nome}! Tudo certo por aí? 😊 Vi que o seu pedido do Mapa Visual do Fechamento Imobiliário ficou pela metade. Se o Pix expirou ou deu algum probleminha, o seu link continua aqui: {link}. Qualquer dúvida, é só me responder. 💙"
+- **Mensagem aprovada:** "Oi, {nome}! Tudo certo por aí? 😊 Vi que o seu pedido do Mapa Visual do Fechamento Imobiliário ficou pela metade. Se o Pix expirou ou deu algum probleminha, o seu link continua aqui: {link}. Qualquer dúvida, estou por aqui. 💙"
