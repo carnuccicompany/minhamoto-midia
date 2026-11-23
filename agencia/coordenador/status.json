@@ -1,8 +1,8 @@
 {
- "rodada": "2026-11-23T11:42:00-03:00",
- "ok": false,
+ "rodada": "2026-11-23T12:16:00-03:00",
+ "ok": true,
  "tarefas": {
-  "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02 (enabled)",
+  "post do horário + aviso TikTok": "ok (SUCCEEDED 23/11 12h03; próx 15h02)",
   "respostas às avaliações": "ok (SUCCEEDED 23/11 09h16; próx 13h13)",
   "vigia do Gmail": "ok (SUCCEEDED 08h47)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
@@ -10,7 +10,7 @@
   "produção diária": "desativada — prevista em PENDENCIAS",
   "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 11h15)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
+  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "ok (SUCCEEDED 23/11 10h38; próx 14h37)",
@@ -19,16 +19,15 @@
   "MM: Vigia do Gmail": "ok (SUCCEEDED 23/11 08h48)"
  },
  "publicacao_hoje": {
-  "ultimo_ok": "E08 (19h25 BRT 22/11)",
-  "falhas": "slots 12h, 15h e 21h de 22/11 sem post (limite de uso)",
-  "proximo": "12h02 BRT 23/11"
+  "ultimo_ok": "J03 (12h04 BRT 23/11)",
+  "proximo": "15h02 BRT"
  },
  "dias_de_fila": 22.25,
  "nao_publicados": 89,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova; todas as tarefas ativas SUCCEEDED (exceto post 21h02 de 22/11, limite, já registrado); 12h02 ainda não passou"
+  "nenhuma: todas as tarefas ativas SUCCEEDED; post 12h saiu (J03)"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
