@@ -8,6 +8,12 @@ V = 'v27.0'
 IG = os.environ.get('IG_ID', '17841478100957290')
 PAGE = os.environ.get('PAGE_ID', '1319425834577827')
 TOKEN = os.environ['META_TOKEN']
+try:  # token de usuário do sistema -> token da Página (não grava, não imprime)
+    import urllib.request as _u, json as _j
+    _r = _j.loads(_u.urlopen('https://graph.facebook.com/v21.0/' + (os.environ.get('FB_PAGE_ID') or '1319425834577827') + '?fields=access_token&access_token=' + TOKEN, timeout=60).read())
+    TOKEN = _r.get('access_token') or TOKEN
+except Exception:
+    pass
 
 def get(path, **params):
     params['access_token'] = TOKEN

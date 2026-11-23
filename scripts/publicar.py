@@ -1,7 +1,9 @@
 """Publica o próximo carrossel da fila no Instagram e no Facebook pela Graph API da Meta.
 
 Variáveis de ambiente (segredos do repositório):
-  META_TOKEN   token de página (longa duração) com instagram_content_publish e pages_manage_posts
+  META_TOKEN   token de página (longa duração) OU token de usuário do sistema (nunca expira) com
+               instagram_content_publish, pages_manage_posts, pages_show_list, pages_read_engagement.
+               Se for de usuário do sistema, o script troca sozinho pelo token da Página (sem gravar em lugar nenhum).
   IG_USER_ID   opcional (padrão: @minhamotoapp)
   FB_PAGE_ID   opcional (padrão: página MinhaMoto)
 Opcional: GRAPH_VERSION (padrão v27.0), REDES (padrão "ig,fb"), SIMULAR=1 (não publica)
@@ -72,6 +74,17 @@ def publicar_fb(post):
     return chamar("POST", f"{FB}/feed", dados)["id"]
 
 
+def token_da_pagina():
+    """Com token de usuário do sistema, pede à Meta o token da Página (não grava, não imprime)."""
+    global TOKEN
+    try:
+        r = chamar("GET", FB, {"fields": "access_token"})
+        if r.get("access_token"):
+            TOKEN = r["access_token"]
+    except Exception:
+        pass  # já é token de página: segue com ele
+
+
 def main():
     fila = json.load(open(os.path.join(RAIZ, "fila/carrosseis.json"), encoding="utf-8"))
     caminho_estado = os.path.join(RAIZ, "fila/estado.json")
@@ -105,6 +118,7 @@ def main():
     if not (TOKEN and IG and FB):
         print("Segredos META_TOKEN / IG_USER_ID / FB_PAGE_ID ainda não configurados.")
         return
+    token_da_pagina()
     reg = pub.setdefault(proximo["id"], {})
     falhas = []
     for rede, fn in (("ig", publicar_ig), ("fb", publicar_fb)):
