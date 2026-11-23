@@ -1,3 +1,5 @@
+> ⚠️ **23/11 · Léo:** estas telas vêm da rota de prévia (`/preview-visual`, dados fictícios) e **não servem mais pra peça nova**. Só entram telas capturadas do app real, logado. Ver DESIGN-MINHAMOTO.md (rodada 2 de 23/11).
+
 # Telas do app (geradas do código)
 
 Telas do MinhaMoto renderizadas direto do código mais novo do app — **não** são gravações de tela.

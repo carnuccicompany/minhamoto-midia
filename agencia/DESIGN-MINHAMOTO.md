@@ -96,10 +96,19 @@
 - **Ícone do app no card final:** ❌ CM01 card 07: brilho formando um quadrado de luz em volta da logo. ✅ Brilho redondo e suave atrás (ou nenhum), nunca halo quadrado. · 23/11
 - "Faça um bagulho foda": o padrão é peça de marca premium que para o dedo, não template. · 23/11
 
+### Rodada 2 (23/11, 14h54)
+- **TELAS DO APP SÓ REAIS.** ❌ CM01 r2: telas tiradas da rota de prévia (`/preview-visual`, dados fictícios do código) "não existem", "você tá gerando imagem". ✅ Abrir o app de verdade, logado, depois do cadastro, mexer nele e capturar as telas reais. ~~Telas geradas pela prévia visual com dados fictícios (telas-app/ de 18/11 e 23/11)~~ → substituída em 23/11. Até ter as capturas reais, as telas de `telas-app/` não entram em peça nova. · 23/11
+- **Celular torto só se for "torto legal".** ❌ CM01 r2 capa: celular girado pra esquerda ficou esquisito (dá pra ver que tá virado, mas parece errado). ✅ Reto, ou um ângulo 3D de verdade, bonito e natural; nunca meio girado sem intenção. · 23/11
+- **Não apagar parte do print do app.** ❌ CM01 r2 card 3: escurecer em cima e embaixo pra acender só o meio ficou ruim. ✅ Achar outro jeito de destacar (ex.: recortar só o trecho, ampliar, puxar pra fora). · 23/11
+- ❌ CM01 r2 card 2: tela escolhida fraca e título/texto ruins ("Luz do óleo acendeu? Encoste agora."). Card 4 também com tela ruim. · 23/11
+- ✅ Capa "4 luzes no painel. Duas mandam parar na hora. Você sabe quais?": **ok pra post** (pra vídeo de venda não serviria). · 23/11
+- ✅ **CTA final do CM01 r2 aprovado** ("Seu painel avisa. O MinhaMoto explica.", ícone com brilho redondo, preço, selos embaixo). · 23/11
+
 ### Placar (continuação)
 | Data | Peça | Erro que o Léo pegou | Regra/trava criada |
 |---|---|---|---|
 | 23/11 | CM01 (rodada 1) | copy fraca; 4 cards iguais com recorte do app; card sem destaque; halo quadrado na logo | regras acima + trava de layout (`agencia/estudio/motores/render_check.py`) |
+| 23/11 | CM01 (rodada 2) | telas da prévia (não reais); celular girado esquisito; print com partes apagadas; card 2 com tela e copy fracas | regras da rodada 2; telas só por captura do app logado |
 
 ## 20/11/2026: anúncios (decisões do Léo ao lapidar a Disney)
 - Criativo de anúncio se baseia sempre no que está vendendo de verdade (assinante/venda), no nosso app e no nosso infoproduto.
