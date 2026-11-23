@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T06:40:00-03:00",
+ "rodada": "2026-11-23T07:10:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 06h09)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 06h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
@@ -28,7 +28,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova desde 06h10; Posts 21h02 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada, sem re-disparo); Conselho/Gmail/Avaliações/:09 SUCCEEDED; próx Mesa 10h37, próx post 12h02"
+  "nenhuma: sem falha nova desde 06h40; Posts 21h02 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada, sem re-disparo); próx Mesa 10h37, próx post 12h02; 9:16 113/113; links painel ok"
  ],
  "alertas": []
 }
