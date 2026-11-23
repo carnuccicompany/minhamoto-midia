@@ -35,6 +35,13 @@
 - **Voz: só a da Ana Paula** (takes dos brutos e dos prontos; legenda pode ser refeita). Nunca voz ou rosto por IA. · 23/11
 - **Duração:** 15 a 30 s nos criativos novos (a copy longa foi a pior entre as que venderam; UTMify). · 23/11
 - **CTA:** "Clique em Saiba Mais" (padrão dos que venderam). · 23/11
+- **Ângulos: não é só "perdeu a venda depois do sim" (Léo, 23/11).** A dor da perda é um ângulo entre vários. Equilibrar com ângulos de GANHO, um por criativo:
+  - **Qualificação e destaque:** o corretor que domina o processo se destaca dos outros e vira referência.
+  - **Vender mais rápido:** sabendo os próximos passos, o cliente trava menos.
+  - **Responder qualquer pergunta do cliente** na hora, sem "vou ver com o pessoal".
+  - **Confiança:** a dele e a do cliente.
+  - **Economia e lucro:** a finalização depois do sim costuma ser um serviço cobrado nesse mercado; quem entende o processo depende menos de terceiros e fica com uma parte maior do ganho. (Cuidado na copy: não prometer que ele faz o trabalho técnico de correspondente/cartório; a promessa é entender e conduzir, pagando menos por fora.)
+  · 23/11
 
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).

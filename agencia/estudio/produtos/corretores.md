@@ -85,4 +85,5 @@ Base teórica do Léo (6 FIGURES/ÂNGULOS DE CRIATIVOS.docx): dor, desejo/transf
 - **Voz: só a dela.** Não há outras vozes. Pode recortar takes (com a voz) dos brutos e dos criativos prontos, e readaptar ou refazer a legenda. Nunca gerar voz nem rosto dela por IA.
 - **Pastas do Drive vazias:** provavelmente apagadas; a fonte é o PC do Léo (`6 FIGURES/Corretores`).
 - **Plano de teste:** os 6 estilos novos × 3 criativos cada = 18. Ordem: 1 peça-modelo por estilo → Léo aprova → 2 variações (troca hook/ângulo, mesmo molde). Verba: em duas ondas (recomendação do Claude; a confirmar), começando pelos estilos com a Ana Paula.
+- **Ângulos equilibrados:** perda (venda que morre depois do sim) + ganho (destaque/qualificação, vender mais rápido, responder tudo, confiança, economia: não pagar serviço externo de finalização e ficar com mais do lucro). Detalhe em `agencia/DESIGN-CORRETORES.md` §4b.
 - **Ainda a confirmar:** o erro do Acesso Essencial listando os mesmos itens do Completo; quais criativos venceram (ver `corretores-aprendizados.md`: a UTMify mostra AP - 1 e AP - 4 como os melhores).
