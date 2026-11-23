@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T19:42:00-03:00",
+ "rodada": "2026-11-23T20:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 18h02 BRT; DV12 publicado 18h04; próx 21h02)",
@@ -8,16 +8,16 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:09 SUCCEEDED 19h10; :39 rodando agora)",
+  "coordenador": "ok (:39 SUCCEEDED 19h39; :09 rodando agora)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11; rodada de 23/11 19h23 em andamento, normal)",
+  "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23-19h51)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "ok (SUCCEEDED 14h38; próx 24/11 10h37)",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único disparou 10h13",
   "MM: Vigia do Gmail": "ok (SUCCEEDED 23/11 08h48)",
-  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 15h02 BRT; próx 18h02)",
+  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 18h02 BRT; próx 21h02)",
   "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)"
  },
  "publicacao_hoje": {
