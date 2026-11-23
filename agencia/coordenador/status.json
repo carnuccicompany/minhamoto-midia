@@ -1,14 +1,14 @@
 {
- "rodada": "2026-11-23T08:45:00-03:00",
+ "rodada": "2026-11-23T09:12:00-03:00",
  "ok": false,
  "tarefas": {
   "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
-  "respostas às avaliações": "ok (SUCCEEDED 23h13)",
+  "respostas às avaliações": "ok (SUCCEEDED 23/11 ~23h13 do dia 22; próx 09h13)",
   "vigia do Gmail": "ok (SUCCEEDED 23h11)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
-  "relatório Analista": "ok (SUCCEEDED 23/11 08h26-08h34)",
+  "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 08h10)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 08h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
@@ -16,20 +16,19 @@
   "MM: Mesa de Demandas": "falhou 22/11 14h37 (limite); não re-disparada (negada antes, coberta pelo Conselho); próx 23/11 10h37",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT",
-  "MM: Vigia do Gmail": "falhou 22/11 18h47 (limite); re-disparado 23h10"
+  "MM: Vigia do Gmail": "ok (SUCCEEDED 23/11 08h48)"
  },
  "publicacao_hoje": {
   "ultimo_ok": "E08 (19h25 BRT 22/11)",
   "falhas": "slots 12h, 15h e 21h de 22/11 sem post (limite de uso)",
   "proximo": "12h02 BRT 23/11"
  },
- "dias_de_fila": 22,
+ "dias_de_fila": 22.25,
  "nao_publicados": 89,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma ação de re-disparo: Posts 21h02 de 22/11 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada); Conselho/Gmail/Avaliações/Folha ok; fila 89 (22 dias); 9:16 113/113; links painel ok",
-  "achado: commit 35f294d (insights 23/11) gravou access_token da Meta no repo PÚBLICO; removido do HEAD em 178b0ba, segue no histórico; revogação só o Léo faz"
+  "nenhuma: sem falha nova desde 08h45; Mesa 14h37 e Posts 21h02 de 22/11 seguem como registrado (limite, janela expirada, sem re-disparo); próx Mesa 10h37, próx post 12h02"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
