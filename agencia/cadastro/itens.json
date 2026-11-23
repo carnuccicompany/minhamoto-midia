@@ -112,9 +112,8 @@
     {
      "id": "meta-ads",
      "titulo": "Meta Ads + Instagram",
-     "status": "parcial",
-     "parcial": 0.7,
-     "nota": "Anúncios das duas contas ligados (23/11); falta o Instagram (2º caso de uso no app Carnucci Dados)"
+     "status": "feito",
+     "nota": "Anúncios das duas contas + os dois Instagram ligados (23/11)"
     },
     {
      "id": "tiktok",

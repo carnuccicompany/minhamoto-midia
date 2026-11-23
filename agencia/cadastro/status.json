@@ -1,6 +1,6 @@
 {
  "atualizado": "23/11/2026 17:46",
- "pct": 86.7,
+ "pct": 87.5,
  "categorias": [
   {
    "id": "estrutura",
@@ -140,10 +140,9 @@
     {
      "id": "meta-ads",
      "titulo": "Meta Ads + Instagram",
-     "status": "parcial",
-     "parcial": 0.7,
-     "nota": "Anúncios das duas contas ligados (23/11); falta o Instagram (2º caso de uso no app Carnucci Dados)",
-     "valor": 0.7
+     "status": "feito",
+     "nota": "Anúncios das duas contas + os dois Instagram ligados (23/11)",
+     "valor": 1.0
     },
     {
      "id": "tiktok",
@@ -179,8 +178,8 @@
      "valor": 0.0
     }
    ],
-   "pct": 65.0,
-   "feitos": 5,
+   "pct": 68.0,
+   "feitos": 6,
    "total": 10
   },
   {
@@ -376,7 +375,7 @@
    "total": 9
   }
  ],
- "pendentes": 9,
+ "pendentes": 8,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -386,11 +385,6 @@
   {
    "categoria": "Estrutura e rotinas",
    "titulo": "Placar de experimentos (criativos e testes por semana)",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "Meta Ads + Instagram",
    "falta": []
   },
   {
@@ -439,7 +433,7 @@
   },
   {
    "data": "23/11/2026",
-   "pct": 86.7
+   "pct": 87.5
   }
  ]
 }
