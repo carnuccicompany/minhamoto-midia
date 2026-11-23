@@ -69,3 +69,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: guia sem teste grátis (conferido); id/nota de 1 avaliação da App Store diverge entre respostas.json e ultimas.json. Não consegui rodar nova coleta; dados seguem de 20/11.
 - recebi: —
 - pendente: OK do Léo no rascunho ec124592; conferência do Turing; recoletar avaliações quando a rotina rodar.
+
+## 2026-11-23 09:20
+- fiz: atualizei as avaliações (9: 3 Google Play, 6 App Store, coleta 23/11 12:17Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: `gh api` dispara o workflow normalmente; coleta ficou pronta em ~100s.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
