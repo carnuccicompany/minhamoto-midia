@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T12:16:00-03:00",
+ "rodada": "2026-11-23T12:42:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 23/11 12h03; próx 15h02)",
@@ -27,7 +27,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: todas as tarefas ativas SUCCEEDED; post 12h saiu (J03)"
+  "nenhuma: tarefas ativas SUCCEEDED (:09 12h12, Conselho 22/11, Gmail, Avaliações, Analista, Mesa); post 12h J03 saiu 12h04; próx 15h02"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"

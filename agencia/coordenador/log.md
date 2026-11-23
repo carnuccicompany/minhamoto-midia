@@ -184,3 +184,4 @@
 - 2026-11-23 11:16 BRT: sem falha nova; fila 22,25 dias; TikTok 9:16 113/113; pendentes 0; próx post 12h02
 - 2026-11-23 11:42 BRT: sem falha nova (:09 11h15, Conselho, Gmail, Avaliações, Analista, Mesa SUCCEEDED; Folha ok 20/11; post 21h02 de 22/11 segue como registrado, limite); fila 22,25 dias; TikTok 9:16 113/113; pendentes 0; próx post 12h02; alerta já avisado: token Meta (35f294d)
 - 2026-11-23 12:16 BRT: sem falha nova (todas SUCCEEDED; post 12h J03 saiu 12h04); fila ~22 dias; 9:16 ok; pendentes 0; alerta já avisado: token Meta (35f294d)
+- 2026-11-23 12:42 BRT: sem falha nova (:09, Conselho, Gmail, Avaliações, Analista, Mesa SUCCEEDED; Folha ok 20/11); post 12h J03 ok; fila ~22 dias; 9:16 113/113; pendentes 0; alerta já avisado: token Meta (35f294d)
