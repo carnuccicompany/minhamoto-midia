@@ -1,0 +1,42 @@
+# Design Corretores: a régua do Léo (INICIAL, a lapidar com o Léo)
+
+> Mesmo formato do `agencia/DESIGN-MINHAMOTO.md`. **Todo agente e o Estúdio leem este arquivo antes de criar qualquer peça dos Corretores** (Mapa Visual Completo do Fechamento Imobiliário).
+> Versão inicial de 23/11/2026, inferida do material que já rodou (criativos da Ana Paula, lotes TESTES 1, estáticos, copies e ângulos do Léo). **Nada aqui foi aprovado pelo Léo ainda:** cada feedback dele vira regra aqui, na hora, e a regra antiga fica ~~riscada~~ com "→ substituída em DD/MM". Vale sempre o mais recente.
+> Formato de cada regra: **REGRA** · ❌ errado · ✅ certo · data.
+
+## 1. Pra quem e o que
+- **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)
+- O produto é o **Mapa Visual Completo do Fechamento Imobiliário** (125 páginas visuais, do aceite da proposta às chaves). Oferta principal: **Pacote Completo R$37,90** (Mapa + 5 complementares), acesso vitalício, garantia de 30 dias. ❌ "apenas R$27,90" dos lotes antigos (preço do Acesso Essencial). · 23/11 (inicial, confirmar)
+- Tese de todo criativo: **o corretor não perde venda na visita, perde depois do "sim"**; quem domina o processo passa segurança, perde menos venda e ganha indicação. · 23/11 (inicial)
+
+## 2. Copy
+- **Um ângulo por criativo** (banco em `agencia/estudio/produtos/corretores.md` §4). · 23/11 (inicial)
+- **Hook nos 3 primeiros segundos** chamando o corretor ("Corretor, …", "Ei, corretor: …") ou com a fala real do cliente ("E agora, qual é o próximo passo?", "Meu FGTS paga tudo?"). · 23/11 (inicial)
+- Ordem: **hook → dor concreta (as perguntas do cliente) → o material resolve (mostrar) → o que vem no pacote → CTA**. · 23/11 (inicial)
+- Body mais curto que os lotes antigos: as copies longas (80 a 105 s) estão no arquivo "COPYS LEO 1 - nao deu bom". ✅ Testar menos de 15 s, 15 a 30 s e 30 a 60 s. · 23/11 (inicial)
+- **Sempre "você"**, nunca "tu" nem imperativo de tu. · 23/11 (regra da casa)
+- Nada inventado: ❌ "9 em cada 10 corretores" como estatística (é percepção da Ana Paula); ❌ promessa de renda ou comissão garantida; ✅ "poucos corretores dominam", "uma dúvida mal respondida pode custar uma comissão". · 23/11 (inicial)
+- CTA: "Clique em Saiba Mais e conheça o Mapa Visual Completo do Fechamento Imobiliário" (ou "…e garanta o pacote completo por R$37,90"). · 23/11 (inicial)
+- Palavras-chave que puxam identificação: financiamento, FGTS, Minha Casa Minha Vida, consórcio, ITBI, escritura, registro, matrícula, cartório, avaliação do banco, entrega das chaves. · 23/11 (inicial)
+
+## 3. Visual
+- **Mostrar o material sempre** (prova): página real no iPad, no impresso em espiral ou em mockup animado. As páginas do Mapa são o melhor ativo visual: títulos fortes, ilustração, cards numerados. · 23/11 (inicial)
+- **Legenda palavra por palavra**, branca em caixa-alta, palavra falada em amarelo (padrão dos criativos que rodaram). · 23/11 (inicial)
+- Paleta do material: azul-marinho, verde-água/teal, laranja-terracota, fundo creme. Estáticos que rodaram: verde-escuro + off-white + botão verde "Conheça o material". · 23/11 (inicial)
+- 9:16 (1080×1920) para Reels, Stories e TikTok; 1:1 ou 4:5 para estático de feed. Zona segura 9:16: texto entre x 140–940 e y 150–1500. · 23/11 (regra da casa)
+- Sem logo de banco, Caixa ou programa do governo desenhado como marca. · 23/11 (regra da casa)
+
+## 4. A expert (Ana Paula Mello)
+- Corretora e advogada de Direito Imobiliário, tom de colega experiente, calma, sem cara de guru. Aparece no hook e no CTA; o meio mostra o material. · 23/11 (inicial)
+- Só usar rosto e voz dela nos cortes que ela gravou para isso; nunca recriar o rosto nem a voz dela por IA. · 23/11 (regra da casa)
+
+## 5. Formatos que já existem (pra variar e não repetir)
+- Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
+- Só material físico folheado + voz em off (lote TESTES 1).
+- Estático 1:1 com pergunta-headline + página real + botão.
+→ Formatos novos a testar: motion só com as páginas do Mapa, historinha da dor com banco de cenas, quiz "você sabe responder?", fala do cliente → resposta do material, split-screen corretor inseguro × corretor que domina, tela de WhatsApp com as mensagens prontas.
+
+## 6. Placar de erros
+| Data | Peça | Erro que o Léo pegou | Regra criada |
+|---|---|---|---|
+| — | — | (vazio: começa na primeira rodada de lapidação) | — |

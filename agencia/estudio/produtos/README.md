@@ -6,4 +6,4 @@ Produto novo: o Léo faz o briefing na conversa principal (QG); o QG cria `produ
 | Produto | Status | Arquivo |
 |---|---|---|
 | MinhaMoto (app de assinatura) | ativo | minhamoto.md |
-| Corretores (infoproduto) | em briefing 23/11 | — |
+| Corretores (infoproduto: Mapa Visual Completo do Fechamento Imobiliário) | briefing em andamento (23/11): ficha, acervo e régua inicial prontos; prioridade = criativos novos | corretores.md · corretores-acervo.md · ../../DESIGN-CORRETORES.md |
