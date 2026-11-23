@@ -66,13 +66,13 @@ def capa(tt):
         L, T, tam = 140, 230, 84
         c = grad_bg('B', (70, 70)) + titulo(['4 luzes no painel.', 'Duas mandam', 'parar na hora.'], L, T, tam, w=800)
         c += apoio(['Você sabe quais?'], L, T + 3*88 + 40, 42, w=800)
-        c += fone('12-sinais-problema', 620, 760, 760, rot=-14)
+        c += fone('12-sinais-problema', 620, 760, 760)
         c += f"<div class=desliza style='left:{L}px;right:auto;bottom:auto;top:1400px;text-align:left'>Deslize <b>→</b></div>"
         return c
     L, T, tam = 90, 104, 90
     c = grad_bg('B', (72, 72)) + titulo(['4 luzes no painel.', 'Duas mandam', 'parar na hora.'], L, T, tam)
     c += apoio(['Você sabe quais?'], L, T + 3*94 + 34, 42)
-    c += fone('12-sinais-problema', 600, 770, 560, rot=-14)
+    c += fone('12-sinais-problema', 600, 770, 560)
     c += f"<div class=desliza style='left:{L}px;right:auto;bottom:70px;text-align:left'>Deslize <b>→</b></div>"
     return c
 
@@ -93,13 +93,13 @@ def com_puxado(n, idx, kick, tit, apo, lado, tt):
     c += titulo(tit, L, T + 52, tam, w=w)
     c += apoio(apo, L, T + 52 + 2*round(tam*1.04) + 28, ta, w=w)
     # celular levemente apagado: o olho vai pro trecho puxado (Apple-style)
-    c += fone(SIN, ph_w, cx, ph_top, rot=(10 if lado == 'esq' else -10), rola=rola_em(idx, 480)).replace("<div class=ph style='", "<div class=ph style='filter:brightness(.55);", 1)
+    c += fone(SIN, ph_w, cx, ph_top, rola=rola_em(idx, 480)).replace("<div class=ph style='", "<div class=ph style='filter:brightness(.55);", 1)
     c += puxado(idx, call_w, call_left, call_top)
     return c + pag(n, tt)
 
 def card_grande(n, idx, kick, tit, apo, tt):
     """Card inteiro do app, grande, com o cabeçalho e o 'O que fazer' acesos e o resto apagado."""
-    arq, (sw, sh) = destaque(SIN, idx, foco=2, fator=0.38)
+    arq, (sw, sh) = trecho(SIN, idx, (0, 2))   # 23/11 r2: nada de apagar partes do print
     if tt:
         L, w, T, tam, ta, cw, fim = 140, 800, 200, 66, 30, 800, 1480
     else:
@@ -118,14 +118,14 @@ def lateral(n, idx, kick, tit, apo, tt):
     """Celular grande e girado à esquerda, saindo por baixo; texto em coluna à direita."""
     if tt:
         c = grad_bg('B', (28, 60))
-        c += fone(SIN, 600, 250, 330, rot=18, rola=rola_em(idx, 1100))
+        c += fone(SIN, 600, 250, 330, rola=rola_em(idx, 1100))
         x, w = 560, 380
         c += kicker(kick, x, 560, tam=28, w=w)
         c += titulo(tit, x, 610, 58, w=w, azul_de=2)
         c += apoio(apo, x, 610 + len(tit)*61 + 30, 29, w=w)
         return c + pag(n, tt)
     c = grad_bg('B', (28, 60))
-    c += fone(SIN, 620, 270, 150, rot=18, rola=rola_em(idx, 1100))
+    c += fone(SIN, 620, 270, 150, rola=rola_em(idx, 1100))
     x, w = 600, 420
     c += kicker(kick, x, 420, tam=28, w=w)
     c += titulo(tit, x, 470, 62, w=w, azul_de=2)
@@ -155,7 +155,7 @@ def final(tt):
     t = (f"<div class=titB style='position:relative;left:0;right:0;font-size:{tam}px;margin-top:52px;letter-spacing:-.035em;line-height:1.04'>"
          "Seu painel avisa.<br><span class=b>O MinhaMoto explica.</span></div><span class=lm></span>")
     s = f"<div class=apoB style='position:relative;left:0;right:0;font-size:{38 if tt else 42}px;margin-top:26px'>Baixe agora e entenda sua moto.</div>"
-    pr = "<div style='margin-top:44px'><span class=preco><i></i>por R$19,90</span></div>"
+    pr = "<div style='margin-top:44px'><span class=preco><i></i>R$19,90<small style='font-family:j500;font-size:.62em;opacity:.85'>/mês</small></span></div>"
     pad = 140 if tt else 60
     corpo = f"<div style='position:absolute;left:{pad}px;right:{pad}px;top:{top}px;text-align:center'>{ic}{t}{s}{pr}</div>"
     se = f"<div style='position:absolute;left:0;right:0;top:{selos}px;text-align:center'><img src='file://{SELOS}' style='width:540px'></div>"
@@ -164,14 +164,14 @@ def final(tt):
 def lista(tt=False):
     return [
         capa(tt),
-        com_puxado(2, OLEO, 'Pare agora', ['Luz do óleo acendeu?', 'Encoste agora.'],
-                   ['Sem pressão de óleo, cada quilômetro', 'desgasta o motor por dentro.'], 'esq', tt),
-        card_grande(3, TEMP, 'Pare agora', ['Luz de temperatura?', 'Mão longe do radiador.'],
-                    ['Quente, o sistema fica sob pressão.', 'Espere esfriar.'], tt),
-        com_puxado(4, INJ, 'Atenção', ['Luz da injeção?', 'Siga, mas sem forçar.'],
-                   ['Só o scanner diz o que falhou.', 'Agende a leitura.'], 'dir', tt),
-        lateral(5, BAT, 'Atenção', ['Luz da', 'bateria?', 'Não desligue', 'na rua.'],
-                ['Se ela não estiver', 'carregando, a moto', 'pode não ligar de novo.'], tt),
+        com_puxado(2, OLEO, 'Pare agora', ['Luz do óleo acesa', 'pode virar retífica.'],
+                   ['Encoste em local seguro', 'e desligue o motor na hora.'], 'esq', tt),
+        card_grande(3, TEMP, 'Pare agora', ['Motor quente', 'não se abre na pressa.'],
+                    ['Com o motor quente, o líquido sai sob pressão.', 'Espere esfriar antes de mexer.'], tt),
+        com_puxado(4, INJ, 'Atenção', ['Luz da injeção', 'não é sentença.'],
+                   ['Dá pra chegar, sem forçar.', 'Depois, scanner pra ler o código.'], 'dir', tt),
+        lateral(5, BAT, 'Atenção', ['Luz da', 'bateria acesa:', 'não desligue', 'na rua.'],
+                ['Ela pode não estar', 'carregando. Desligou,', 'pode não ligar mais.'], tt),
         prova(tt),
         final(tt),
     ]

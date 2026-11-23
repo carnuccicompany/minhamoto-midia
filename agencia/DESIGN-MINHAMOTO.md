@@ -98,6 +98,8 @@
 
 ### Rodada 2 (23/11, 14h54)
 - **TELAS DO APP SÓ REAIS.** ❌ CM01 r2: telas tiradas da rota de prévia (`/preview-visual`, dados fictícios do código) "não existem", "você tá gerando imagem". ✅ Abrir o app de verdade, logado, depois do cadastro, mexer nele e capturar as telas reais. ~~Telas geradas pela prévia visual com dados fictícios (telas-app/ de 18/11 e 23/11)~~ → substituída em 23/11. Até ter as capturas reais, as telas de `telas-app/` não entram em peça nova. · 23/11
+- **Quem pega as telas é o Estúdio, pelo código.** O Léo não manda print nem gravação: renderizar as rotas reais do app (logado, `_authenticated.*`) a partir do código do GitHub, com dados fictícios, e capturar. · 23/11
+- **A tela tem que ser sobre o que o card/vídeo está falando.** Falou de óleo → tela/trecho do óleo; falou de histórico → tela do histórico. Nunca tela genérica ou de outro assunto. · 23/11
 - **Celular torto só se for "torto legal".** ❌ CM01 r2 capa: celular girado pra esquerda ficou esquisito (dá pra ver que tá virado, mas parece errado). ✅ Reto, ou um ângulo 3D de verdade, bonito e natural; nunca meio girado sem intenção. · 23/11
 - **Não apagar parte do print do app.** ❌ CM01 r2 card 3: escurecer em cima e embaixo pra acender só o meio ficou ruim. ✅ Achar outro jeito de destacar (ex.: recortar só o trecho, ampliar, puxar pra fora). · 23/11
 - ❌ CM01 r2 card 2: tela escolhida fraca e título/texto ruins ("Luz do óleo acendeu? Encoste agora."). Card 4 também com tela ruim. · 23/11
