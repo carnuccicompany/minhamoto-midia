@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T13:41:00-03:00",
+ "rodada": "2026-11-23T14:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 12h03; próx 15h02)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 13h12)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 13h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 19h23)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
@@ -27,7 +27,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: tarefas ativas SUCCEEDED; post 12h J03 saiu 12h04; próx 15h02"
+  "nenhuma: sem falha; post 12h J03 ok; próx 15h02"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
