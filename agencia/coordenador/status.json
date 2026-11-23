@@ -1,21 +1,21 @@
 {
- "rodada": "2026-11-23T09:41:00-03:00",
+ "rodada": "2026-11-23T10:16:00-03:00",
  "ok": false,
  "tarefas": {
   "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
-  "respostas às avaliações": "ok (SUCCEEDED 23/11 ~23h13 do dia 22; próx 09h13)",
-  "vigia do Gmail": "ok (SUCCEEDED 23h11)",
+  "respostas às avaliações": "ok (SUCCEEDED 23/11 09h16; próx 13h13)",
+  "vigia do Gmail": "ok (SUCCEEDED 08h47)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 09h12)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 09h39)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "falhou 22/11 14h37 (limite); não re-disparada (coberta pelo Conselho); próx 23/11 10h37",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
-  "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT",
+  "Teste de fogo dos agentes com o Léo": "lembrete único disparou 10h13",
   "MM: Vigia do Gmail": "ok (SUCCEEDED 23/11 08h48)"
  },
  "publicacao_hoje": {
@@ -28,7 +28,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova desde 09h12; Mesa 14h37 e Posts 21h02 de 22/11 seguem como registrado (limite); próx Mesa 10h37, post 12h02"
+  "nenhuma: sem falha nova; Posts 21h02 de 22/11 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada, sem re-disparo); Mesa 10h37 e post 12h02 agendados"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
