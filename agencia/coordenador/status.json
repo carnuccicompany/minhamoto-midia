@@ -1,14 +1,14 @@
 {
- "rodada": "2026-11-23T11:16:00-03:00",
+ "rodada": "2026-11-23T11:42:00-03:00",
  "ok": false,
  "tarefas": {
-  "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
+  "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02 (enabled)",
   "respostas às avaliações": "ok (SUCCEEDED 23/11 09h16; próx 13h13)",
   "vigia do Gmail": "ok (SUCCEEDED 08h47)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 10h40)",
+  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 11h15)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
@@ -28,7 +28,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova; post 21h02 de 22/11 (limite) segue registrado, janela expirada; próx post 12h02 BRT"
+  "nenhuma: sem falha nova; todas as tarefas ativas SUCCEEDED (exceto post 21h02 de 22/11, limite, já registrado); 12h02 ainda não passou"
  ],
  "alertas": [
   "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
