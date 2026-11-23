@@ -10,17 +10,27 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-3.md com título, subtítulo e descrição das 2 páginas (copiados, com data do acesso) e a lista dos 3 primeiros prints (descrição, não imagem); o que não abrir, dito. Confirmar na sua memória e na do Ted que a resposta de 1★ de preço agora não cita teste grátis. Se a loja citar 'grátis' ou 'teste' no texto atual, apontar (é erro nosso).",
   "prioridade": "P2",
   "prazo": "2026-11-24T20:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T23:50:00-03:00",
   "fio": "F-003",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-master-3.md",
+    "resumo": "Parcial: guia e memórias sem teste grátis (0 ocorrências, conferido); páginas das lojas não abrem neste ambiente (proxy 403), nada copiado. Bloqueada pelo sim/não do Léo sobre domínios."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:50:00-03:00",
       "quem": "master",
       "o_que": "criou (correção da ronda de 22/11)"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "bloqueada: lojas fora do alcance do ambiente (apps.apple.com e play.google.com recusados pelo proxy); entrega parcial gravada"
     }
   ],
-  "atualizada_em": "2026-11-22T23:50:00-03:00"
+  "atualizada_em": "2026-11-23T20:30:00-03:00",
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: libera apps.apple.com, play.google.com, developer.apple.com e support.google.com na lista de domínios permitidos do ambiente dos agentes (ou cola título, subtítulo e lista dos 3 primeiros prints das duas lojas)? (sim/não)"
 }

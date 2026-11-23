@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-cria-2.md com 10 linhas (5 Meta, 5 TikTok): ângulo (economia, segurança, organização, motoboy/trabalho ou escolha-a-moto), faixa de duração (menos de 15 s, 15 a 25 s ou 30 a 60 s), o que fica fixo e o que muda no teste, e o critério de corte em % do custo-alvo por assinante (sem R$). Diga também o ID de campanha esperado no utm_campaign (D-20261120-dados-3) pra eu casar com o ID CR-ângulo-nn do criativo. Nada roda nem gasta por causa desta demanda.",
   "prioridade": "P2",
   "prazo": "2026-11-25T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-22T23:20:00-03:00",
   "fio": "F-004",
   "entrega": {
@@ -28,7 +28,12 @@
       "quando": "2026-11-23T11:30:00-03:00",
       "quem": "trafego",
       "o_que": "entregou: agencia/demandas/entregas/D-20261122-cria-2.md"
+    },
+    {
+      "quando": "2026-11-23T12:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitou: 10 slots (5 Meta, 5 TikTok) com angulo, duracao, fixo/muda, corte em % do custo-alvo e utm_campaign conforme dados-3; sem R$ nem numero inventado (200%/100% declarados como proposta ao Leo; volume minimo remetido a trafego-3). Ressalva: slot 8 cita 'pergunta 3 do pacote', que e a do sandbox AppsFlyer; confirmacao dos modelos de moto nao esta no pacote. Corrigir na proxima, nao devolvo."
     }
   ],
-  "atualizada_em": "2026-11-23T11:30:00-03:00"
+  "atualizada_em": "2026-11-23T12:30:00-03:00"
 }

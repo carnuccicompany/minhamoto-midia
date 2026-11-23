@@ -10,16 +10,25 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-3.md com tabela tema x loja x versão do app x nota, contando só o que está em dados/avaliacoes/ultimas.json, com o tamanho da amostra dito (n) e a frase 'amostra pequena' se n<30; temas de elogio também (o que o usuário diz que vale a pena).",
   "prioridade": "P3",
   "prazo": "2026-11-27T20:40:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-20T20:40:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-produto-3.md",
+    "resumo": "n=8 (Play 2, App Store 6; amostra pequena). Única reclamação: sincronização no Play v1.0.1 (1 de 2); App Store 6x5★ sem reclamação. Elogios: preço justo (2), simples (2), indicação (2). Sem versão na App Store."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-20T20:40:00-03:00",
       "quem": "produto",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "entregue"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
 }

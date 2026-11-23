@@ -24,3 +24,6 @@
 - Perguntas pro Léo sobre onboarding/paywall/teste atuais (registradas em conhecimento/perguntas-pendentes.md).
 - Conferir Apple HIG e Google In-App Review (não abriram em 20/11).
 - Sem acesso ao carnucci-dados nesta sessão.
+
+## Do Jobs (23/11): D-20261122-produto-1 entregue
+- Fluxo real lido no código (17/11): plano já vem antes do paywall, no fim do tour. Proposta: tela do plano logo após o cadastro da moto. Perguntas P1-P5 ao Davi no fim da entrega; P1 (a build de 23/11 mantém o briefing?) se junta ao item 4 do pacote produto-3.

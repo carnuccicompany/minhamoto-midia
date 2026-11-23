@@ -39,3 +39,8 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 ## 2026-11-22 · Ronda do Shelby
 - recebi: D-20261120-produto-2 cancelada (superada pela mercado-1) e D-20261122-mercado-1 reescrita por mim com o escopo da sua r2 (paywall pago direto ou com teste, sem duração). D-20261122-mkt-2 cancelada (você já tinha recusado). Plano do SEU modelo aprovado só CG 160, com data de morte 27/11. Sua retratação do teste grátis conta como erro sem multa.
 - pendente: mercado-1 e -2 até 25/11; confira a +12,15% de PIS/COFINS da Meta se o Cardone pedir.
+
+## 2026-11-23 · D-20261122-cria-3 (anúncios que rodam há mais tempo)
+- fiz: tentei Meta Ad Library (BR) e TikTok Creative Center; nenhuma abriu (sem permissão de leitura e curl sem conexão). Marquei bloqueada com bloqueio lider e pergunta sim/não pro Léo; entrega em entregas/D-20261122-cria-3.md. Não listei nenhum anúncio sem ver a fonte.
+- aprendi: a busca na web só traz guias de "como usar a biblioteca", não anúncios. Sem navegador logado do Léo, essa frente fica cega.
+- pendente: resposta do Léo; mercado-1 e -2 até 25/11; radar de 24/11.

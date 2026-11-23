@@ -1,26 +1,37 @@
 {
- "id": "D-20261122-trafego-2",
- "de": "trafego",
- "para": "lojas",
- "copia": [
-  "lojas",
-  "master"
- ],
- "titulo": "Conferir se a página da loja (iOS) está pronta pra receber tráfego pago e se dá pra ter página de produto própria por ângulo de anúncio",
- "por_que": "Gargalo primeiro (00-SISTEMA-OPERACIONAL, seção 5): se a página da loja converte mal, mais tráfego só queima verba. Radar 24/11 oportunidade 1: testar o ângulo 'escolher a moto, plano pronto' na página da loja. Funil por loja já foi pedido ao Turing (D-20261120-lojas-3, bloqueada): preciso da leitura qualitativa enquanto o número não chega.",
- "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-trafego-2.md com: 1) prints/descrição das 3 primeiras imagens e do texto da loja iOS hoje, com o que cada uma promete; 2) sim/não e link oficial da Apple sobre páginas de produto personalizadas por anúncio; 3) lista do que não pode ser dito no anúncio por não estar na loja. Só leitura e proposta, nada publicado.",
- "prioridade": "P3",
- "prazo": "2026-11-29T20:00:00-03:00",
- "status": "aberta",
- "criada_em": "2026-11-22T20:00:00-03:00",
- "fio": null,
- "entrega": null,
- "cobrancas": 0,
- "historico": [
-  {
-   "quando": "2026-11-22T20:00:00-03:00",
-   "quem": "trafego",
-   "o_que": "criou"
-  }
- ]
+  "id": "D-20261122-trafego-2",
+  "de": "trafego",
+  "para": "lojas",
+  "copia": [
+    "lojas",
+    "master"
+  ],
+  "titulo": "Conferir se a página da loja (iOS) está pronta pra receber tráfego pago e se dá pra ter página de produto própria por ângulo de anúncio",
+  "por_que": "Gargalo primeiro (00-SISTEMA-OPERACIONAL, seção 5): se a página da loja converte mal, mais tráfego só queima verba. Radar 24/11 oportunidade 1: testar o ângulo 'escolher a moto, plano pronto' na página da loja. Funil por loja já foi pedido ao Turing (D-20261120-lojas-3, bloqueada): preciso da leitura qualitativa enquanto o número não chega.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-trafego-2.md com: 1) prints/descrição das 3 primeiras imagens e do texto da loja iOS hoje, com o que cada uma promete; 2) sim/não e link oficial da Apple sobre páginas de produto personalizadas por anúncio; 3) lista do que não pode ser dito no anúncio por não estar na loja. Só leitura e proposta, nada publicado.",
+  "prioridade": "P3",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-22T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-trafego-2.md",
+    "resumo": "Bloqueada: sem leitura da ficha iOS nem da página da Apple; já com as restrições decididas e parecer de segurar verba até ler a página."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T20:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "bloqueada: lojas fora do alcance do ambiente (apps.apple.com e play.google.com recusados pelo proxy); entrega parcial gravada"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: libera apps.apple.com, play.google.com, developer.apple.com e support.google.com na lista de domínios permitidos do ambiente dos agentes (ou cola título, subtítulo e lista dos 3 primeiros prints das duas lojas)? (sim/não)",
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
 }

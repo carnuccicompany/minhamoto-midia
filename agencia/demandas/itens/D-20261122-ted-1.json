@@ -10,16 +10,27 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-ted-1.md com total de avaliações e média do Google Play na fonte oficial (Play Console, se alguém tiver acesso, ou página pública) com data da captura; se não abrir, dizer qual fonte falhou e se precisa do Léo.",
   "prioridade": "P2",
   "prazo": "2026-11-25T21:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T23:59:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-ted-1.md",
+    "resumo": "3,67 vem de janela móvel de 3 avaliações e 3,00 é o piso das 6 conhecidas com texto; nenhuma é a nota pública do Play (página pública bloqueada, Play Console sem acesso). Preciso da nota oficial do Léo."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:59:00-03:00",
       "quem": "lojas:respostas-as-avaliacoes",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada (lider): análise parcial entregue; falta total e média oficiais do Play (Léo)"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Léo, você abre o Play Console (ou a página pública do app no Google Play) e me passa total de avaliações e média de estrelas de hoje? Sim/não.",
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
 }

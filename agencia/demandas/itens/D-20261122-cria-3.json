@@ -10,16 +10,26 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-cria-3.md com 5 anúncios (Brasil de preferência; app de manutenção, moto, carro ou finanças pessoais): anunciante, link da biblioteca, data de início do anúncio, formato, duração, primeira frase ou cena (o gancho) e o ângulo. Sem copiar texto de terceiro nem nomear concorrente em anúncio nosso. Se a biblioteca não abrir de novo, marcar bloqueada com bloqueio lider e a pergunta pronta pro Léo (abrir no navegador logado, sim/não).",
   "prioridade": "P3",
   "prazo": "2026-11-29T20:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T23:20:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-cria-3.md",
+    "resumo": "Bloqueada: Meta Ad Library e TikTok Creative Center não abriram desta máquina (sem permissão e sem conexão); não listei anúncios sem ver a fonte. Falta o Léo abrir no navegador logado e passar os 5 mais antigos."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:20:00-03:00",
       "quem": "cria",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "bloqueada (bloqueio lider): bibliotecas Meta e TikTok inacessíveis; pergunta sim/não pro Léo; relato em entregas/D-20261122-cria-3.md"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Léo, você abre a Biblioteca de Anúncios da Meta (Brasil, ativos, \"manutenção moto\") e o TikTok Creative Center (Top Ads BR) no seu navegador logado e me passa os 5 anúncios mais antigos no ar? (sim/não)"
 }

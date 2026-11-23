@@ -10,17 +10,25 @@
   "pronto_quando": "Linha na sua entrega de D-20261122-produto-2 com o link da página da RevenueCat onde está o 10,7% (ou a régua tirada, se não achar), a data do acesso, e 'sem etapa de teste' confirmado nas duas entregas.",
   "prioridade": "P3",
   "prazo": "2026-11-25T23:20:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-22T23:50:00-03:00",
   "fio": "F-003",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-produto-2.md",
+    "resumo": "10,7% segue sem fonte lida (RevenueCat bloqueada de novo em 23/11: proxy 403, busca só trouxe título), régua retirada; \"sem etapa de teste\" conferido na produto-2 e na minuta dados-2 (seção D-20261122-master-4 da produto-2)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T23:50:00-03:00",
       "quem": "master",
       "o_que": "criou (correção da ronda de 22/11)"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "dados",
+      "o_que": "entregou: confirmação na produto-2; nova tentativa de abrir a RevenueCat em 23/11 também bloqueada"
     }
   ],
-  "atualizada_em": "2026-11-22T23:50:00-03:00"
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
 }

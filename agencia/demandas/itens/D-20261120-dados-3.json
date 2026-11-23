@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-dados-3.md com a regra de nomes (exemplos reais), onde o ID do post/criativo entra no utm_content e a confirmação de que bate com a UTMify e o OneLink",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-20T20:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -33,7 +33,17 @@
       "quando": "2026-11-23T11:30:00-03:00",
       "quem": "trafego",
       "o_que": "entregou: agencia/demandas/entregas/D-20261120-dados-3.md"
+    },
+    {
+      "quando": "2026-11-23T13:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "conferência não feita por mim: a entrega é minha (autor do arquivo), quem pediu é dados; segue 'entregue' para o Turing aceitar ou devolver. Ponto que ele deve checar: a seção 2 da trafego-2 usa outros valores de utm_source/medium/campaign; o D+0 é a prova de que af_ad chega ao AppsFlyer e ao RevenueCat."
+    },
+    {
+      "quando": "2026-11-23T14:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: regra completa (5 campos, ID CR-<angulo>-<nn> em utm_content, exemplo de link montado) e fontes conferidas (mapeamento pid/c/af_adset/af_ad em PENDENCIAS.md linha 60; orgânico em l/README.md). A confirmação com UTMify/OneLink é honesta: por desenho, prova real no D+0, verba zero até lá. Divergência da trafego-2 era minha: corrigi a seção 2 do arquivo trafego-2 para apontar este padrão. Pendente do Léo: OK em meta-ads/tiktok-ads e nome de campanha (D-20261123-trafego-1)."
     }
   ],
-  "atualizada_em": "2026-11-23T11:30:00-03:00"
+  "atualizada_em": "2026-11-23T14:00:00-03:00"
 }

@@ -46,3 +46,19 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - aprendi: RevenueCat, Apple e Google Support bloqueados pelo proxy (403) nesta sessão; o 10,7% da RevenueCat não consegui fontar, então retirei a régua (minuta dados-2 §4 corrigida). Orgânico não tem link por post: atribuição por post só vale em anúncio pago. dados/relatorios/2026-11-23.md: token Meta sem instagram_manage_insights, zero métrica por post.
 - erro a evitar: usar número de benchmark sem ter lido a página. Não repetir.
 - pendente: master-4 (P3) fica aberta; basta o Shelby aceitar pela linha na produto-2. D-20261122-ted-1 (média do Play: o repo tem 3 em ultimas.json + 3 em respostas.json, conferir na fonte oficial) e as bloqueadas cria-2, lojas-3, mercado-3, mkt-1 sem tocar. Cobrar resposta do Davi (F-001) e do Léo (D-20261123-dados-1).
+
+## 2026-11-23 (noite) · Rodada de demandas
+- fiz: entreguei D-20261122-trafego-3 (tabela de volume por variante, 4 cenários de taxa-base, sem benchmark; corrigi o pedido: sem teste grátis a unidade é paywall_view). D-20261122-master-4 entregue (10,7% segue sem fonte, RevenueCat bloqueada de novo; régua fora). D-20261122-ted-1 bloqueada pro Léo (pergunta sim/não: total e média do Play). Criei D-20261123-dados-3 (lojas: histórico de avaliações). D-20261120-dados-3 já estava entregue e aguarda conferência do Escobar.
+- aprendi: a média 3,67 do Play era janela móvel (ultimas.json: 3 avaliações em 20/11, 2 em 23/11); respostas.json tem 6 ids do Play = 3,00 piso, ainda não é a nota pública (Play conta estrelas sem texto). Fórmula n por variante: 2%->3.825 a 21.108; 10%->686 a 3.841; 20%->293 a 1.682.
+- erro a evitar: WebFetch e curl bloqueados (403) para RevenueCat, Play e Google Developers; não gastar tentativa de novo, pedir ao Léo.
+- pendente: resposta do Léo (Play, D-20261123-dados-1), do Davi (F-001, D-20261123-dados-2); 1ª leitura em % se SDK entrar.
+
+## Minha ambição (atualizada em 23/11/2026)
+- **Próximo degrau:** seguir Diretor e subir ao Conselheiro. XP 5 de 1500; foco em subir no ranking com número provado, sem opinião.
+- **Conquista da semana:** Previu o gargalo (precisa da 1ª leitura em % por etapa; hipótese: paywall->pagante).
+- **Item que quero:** Omega Speedmaster Moonwatch (o Nespresso é rotina).
+
+## 2026-11-23 (tarde) · Conferência
+- fiz: aceitei D-20261120-dados-3 (padrão de UTM do Escobar; fontes PENDENCIAS.md l.60 e l/README.md batem). A divergência que o Escobar notou estava na minha trafego-2 (seção 2): corrigi para apontar o padrão único da dados-3.
+- aprendi: ao entregar um padrão, reusar o que já está fechado em vez de propor tabela nova em outro arquivo.
+- pendente: OK do Léo em meta-ads/tiktok-ads e nome de campanha; prova real no D+0.

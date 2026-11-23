@@ -1,0 +1,26 @@
+{
+  "id": "D-20261123-lojas-1",
+  "de": "lojas",
+  "para": "dados",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Coletor de avaliações: por que o Google Play foi de 3 para 2 avaliações e dá pra trazer a versão do app na App Store?",
+  "por_que": "A média do Play depende de n: coleta de 20/11 trouxe 3 avaliações (3,67) e a de 23/11 trouxe 2 (3,00); sem saber se uma foi removida ou o coletor perde histórico, a meta de nota 4,7+ não tem base. A App Store não traz versão do app, e não separo reclamação por versão (produto-3, n=8).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo: (1) qual avaliação do Play sumiu entre 20/11 e 23/11 (id) e a causa provável (removida, filtrada ou limite do coletor), usando dados/avaliacoes/respostas.json; (2) se o coletor da App Store pode devolver a versão do app; se não, dizer o que falta. Só leitura; sem número absoluto do repo privado.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T20:30:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
+}

@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-trafego-2.md com: colunas do relatório (campanha, conjunto, criativo, instalações, testes iniciados, assinaturas pagas, custo por assinante, sem valores em R$ absolutos no arquivo público, usar % e variação); passo a passo do teste (instalar por OneLink com UTM de teste e conferir nos 3 painéis); o que falta ligar, com dono.",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-20T20:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -33,7 +33,12 @@
       "quando": "2026-11-23T12:40:00-03:00",
       "quem": "dados",
       "o_que": "entregue: agencia/demandas/entregas/D-20261120-trafego-2.md"
+    },
+    {
+      "quando": "2026-11-23T13:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceita: colunas (com troca justificada de 'testes iniciados' por paywall_view, o app não tem teste grátis), roteiro D+0 de 12 passos com dono e o que falta ligar estão em D-20261122-dados-2.md, sem R$ e com fonte (PENDENCIAS, spec de atribuição). Ressalva pra dados, não bloqueia: a tabela de UTM da seção 2 (utm_source meta, utm_medium cpc_conj01, mm_instalacao_202612) diverge do padrão da D-20261120-dados-3 (meta-ads, t01-angulo, mm_<rede>_<evento>_<so>_<aamm>); vale um padrão só, o da dados-3, até o Léo responder D-20261123-trafego-1. Verba segue zero até passos 3, 6 e 7 passarem."
     }
   ],
-  "atualizada_em": "2026-11-23T12:40:00-03:00"
+  "atualizada_em": "2026-11-23T13:30:00-03:00"
 }

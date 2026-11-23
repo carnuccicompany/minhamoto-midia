@@ -1,0 +1,25 @@
+{
+  "id": "D-20261123-produto_analista-do-paywall-1",
+  "de": "produto:analista-do-paywall",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Registrar em 02-produto.md o fluxo do app lido no código (onboarding > plano > paywall) pra ninguém tratar como incógnita",
+  "por_que": "02-produto.md está vazio e já custou uma entrega refeita (D-20261120-produto-1). Li o código em modo leitura: o briefing e 'Esse é o MinhaMoto' (itens reais do plano) já vêm antes do paywall; sem SDK AppsFlyer no package.json. Fonte: agencia/demandas/entregas/D-20261122-produto-1.md",
+  "pronto_quando": "02-produto.md com a seção 'Fluxo do app (código de 17/11)', marcada 'a confirmar com o Davi (build de 23/11)', sem R$ e sem número absoluto; ou recusa com motivo.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T23:20:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T14:50:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T14:50:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "criou"
+    }
+  ]
+}

@@ -17,3 +17,8 @@
 - Entregar D-20261120-produto-3 ao Stark (27/11) junto com a lojas-1 do Ted.
 - Conferir se o Ted rodou em 21 e 22/11 (memória dele para em 20/11 21:30).
 - Observação a verificar: a busca por "MinhaMoto" no Google devolve outros apps "Minha Moto" no Play (nome parecido, risco de busca confusa); não confirmei qual é o nosso.
+
+## Atualização 23/11
+- Pendências: sim/não do Léo para liberar domínios das lojas (ou colar título, subtítulo e 3 prints) destrava master-3 (P2, 24/11), mercado-3 e trafego-2 (29/11). Sem isso, prazo da master-3 estoura; já avisei com a pergunta pronta.
+- Dados: Play n=2 (3,00), App Store n=6 (5,0). Meta 4,7+ sem base com n tão pequeno.
+- Aguardo dados com D-20261123-lojas-1 (por que o Play caiu de 3 para 2).

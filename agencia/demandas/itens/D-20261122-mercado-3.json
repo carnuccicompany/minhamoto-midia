@@ -10,16 +10,27 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-mercado-3.md com, para App Store e Google Play: título, subtítulo/descrição curta atuais nossos (texto, sem dado de cliente) ao lado dos de MotoMainte e Drivvo, e 3 sugestões de ajuste de texto genérico, cada uma com a regra da loja que respeita. Proposta, nada publicado sem OK do Shelby.",
   "prioridade": "P3",
   "prazo": "2026-11-29T20:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-22T10:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-mercado-3.md",
+    "resumo": "Bloqueada: sem leitura da ficha e dos concorrentes (proxy 403); tabela vazia de propósito, nada de memória."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-22T10:00:00-03:00",
       "quem": "mercado",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "bloqueada: lojas fora do alcance do ambiente (apps.apple.com e play.google.com recusados pelo proxy); entrega parcial gravada"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: libera apps.apple.com, play.google.com, developer.apple.com e support.google.com na lista de domínios permitidos do ambiente dos agentes (ou cola título, subtítulo e lista dos 3 primeiros prints das duas lojas)? (sim/não)",
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
 }

@@ -27,3 +27,7 @@
 - Próximo: D-20261122-ted-1 (média do Play), D-20261122-trafego-3 (volume mínimo por variante, P3 29/11), D-20261120-dados-3 (padrão UTM confirmado no D+0).
 - Esperando: Davi (F-001, SDK e eventos), Léo (D-20261123-dados-1 e sandbox RevenueCat), Davi (D-20261123-dados-2).
 - Meta: 1ª leitura em % por etapa 7 dias após a versão com SDK publicada, iOS e Android separados.
+
+## Atualização 2026-11-23 (noite)
+- Entregues: trafego-3 (volume por variante), master-4 (régua 10,7% fora). Bloqueada pro Léo: ted-1 (nota oficial do Play). Criada: D-20261123-dados-3 (histórico de avaliações, lojas, P2 26/11).
+- Próximo: cobrar Léo (Play e RevenueCat), Davi (F-001); conferir se Escobar aceitou D-20261120-dados-3; trocar a tabela de volume pela taxa própria quando sair.

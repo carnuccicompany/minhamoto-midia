@@ -27,3 +27,13 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - **Conquista que estou perseguindo:** **Proposta lançada**: uma proposta minha aprovada pelo Davi e dentro de uma versão do app.
 - **Item que quero:** Começo do zero. O alvo é a **Montblanc Meisterstück**, quando chegar a Sênior.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-23 (entrega)
+- fiz: entreguei D-20261122-produto-1 (md + mockup). Li o código do app (só leitura): o plano da moto já aparece antes do paywall (briefing + "Esse é o MinhaMoto"), mas só depois de cadastro, configuração, diagnóstico e tour. Proposta virou "plano logo após o cadastro da moto". Criei D-20261123-produto_analista-do-paywall-1 (pra o Shelby registrar o fluxo em 02-produto.md).
+- aprendi: sem AppsFlyer no package.json do app (só RevenueCat); `moto_cadastrada` e `plano_visto` não existem. Código lido é de 17/11, não da build de 23/11. Página da RevenueCat sobre funis bloqueada (permissão); não citei benchmark.
+- pendente: conferência do Stark; respostas P1-P5 do Davi.
+
+## Minha ambição (atualizada em 23/11/2026)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; uma entrega aceita no prazo dá +5.
+- **Conquista:** Proposta lançada (aprovada pelo Davi e dentro de uma versão).
+- **Item que quero:** Montblanc Meisterstück, quando chegar a Sênior. Só vale o que tem prova.

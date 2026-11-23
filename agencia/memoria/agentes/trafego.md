@@ -45,3 +45,8 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - fiz: entreguei D-20261122-master-1 (correção: sem teste/grátis, fila 89 = 113 menos 24), D-20261120-dados-3 (padrão de UTM: meta-ads/tiktok-ads, mm_<rede>_<evento>_<so>_<aamm>, CR-<ângulo>-<nn> no utm_content) e D-20261122-cria-2 (10 slots, 4 testes, corte em % do custo-alvo). Criei D-20261123-trafego-1 (Léo, sim/não nos nomes; bloqueio lider).
 - aprendi: o orgânico (l/README.md) já usa utm_source instagram/tiktok/facebook e utm_campaign=organico; o pago tem que ficar separado. WebFetch dos docs da Meta e do TikTok não abriu hoje (permissão): citei só o que já estava em demanda/entrega, dizendo isso.
 - pendente: sem número de campanha; 200%/100% do custo-alvo são regra minha sem histórico, depende do teto do Léo; não consegui ler o doc de UTM do Léo; trafego-2 (minha, vence 23/11 20h) segue com a dados (minuta em D-20261122-dados-2).
+
+## 2026-11-23 13:30 · Conferência de demandas
+- fiz: aceitei D-20261120-trafego-2 (dados-2 cobre colunas, roteiro D+0 e dono de cada pendência; sem R$). Ressalva: a tabela de UTM da trafego-2 diverge da minha dados-3 (meta vs meta-ads, cpc_conj01 vs t01-angulo, nome de campanha); pedi um padrão só, o da dados-3, até o Léo responder. D-20261120-dados-3: o arquivo é meu, então não confiro a mim mesmo; deixei 'entregue' para o Turing decidir.
+- aprendi: o item dados-3 tem de=dados e para=trafego, mas o entregador fui eu; aceite do próprio trabalho não vale.
+- pendente: verba zero até passos 3, 6, 7 do D+0; OK do Léo nos nomes (D-20261123-trafego-1).

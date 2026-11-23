@@ -20,3 +20,7 @@
 - Frentes novas: paywall/teste grátis dos concorrentes (D-20261122-mercado-1, alimenta F-003), Drivvo 14.1/14.2 (D-20261122-mercado-2), ficha das lojas (D-20261122-mercado-3 pro Bezos).
 - Prova de que errei: % por modelo não concentrar nos 4 primeiros, ou página por modelo não subir a conversão.
 - Pendente: meta em número (Léo), RevenueCat; 04-concorrentes.md segue vazio.
+
+## Atualização 23/11/2026
+- Frente nova: anúncios de longa duração pro Cria (D-20261122-cria-3), bloqueada: bibliotecas Meta/TikTok inacessíveis, aguardando o Léo abrir no navegador logado. Quando vier, entrego os 5 em 15 min.
+- Prova de que errei: se os anúncios mais antigos do nicho não usarem ângulo de manutenção por modelo, minha aposta do "plano de revisão do SEU modelo" perde força.

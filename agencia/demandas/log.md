@@ -1,3 +1,4 @@
 - 2026-11-20: Conselho com subagentes. Criadas 24, executadas 7, aceitas 5, 1 devolvida (master-1). Atrasadas 0.
 - 2026-11-22: Conselho com subagentes. Criadas 31, executadas 6, aceitas 6, devolvidas 0. Atrasadas 0.
 - 2026-11-23 10:49: Mesa com subagentes. Executadas 9 (master 0 entregues/4 bloqueadas, dados 3, trafego 3, cria 3, publicador 1), conferidas 5, aceitas 5, devolvidas 0. Atrasadas 0. Bloqueadas pelo líder: 20 (novas: D-20261123-trafego-1, D-20261123-dados-1, D-20261123-dados-2, D-20261123-cria-1).
+- 2026-11-23 14:47: Mesa com subagentes. Executadas 9 em 7 agentes (lojas 4: 1 entregue/3 bloqueadas, dados 3: 2 entregues/1 bloqueada, produto 1, mercado radar 1 bloqueada, mercado 1 bloqueada), conferidas 4, aceitas 4 (trafego-2, cria-2, lojas-2, dados-3), devolvidas 0. Atrasadas 0. Bloqueadas pelo líder: 26 (novas: master-3, mercado-3, trafego-2 [lojas], lojas-1, ted-1, cria-3; causa comum: proxy 403 em lojas e Play).

@@ -47,3 +47,9 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - retirada: a pergunta 3 da r1 de 22/11 (anúncio na tela pra quem usa o teste) foi retirada. O app não tem teste grátis (Léo, 20/11); só existe o plano pago.
 - aprendi: (1) a fila sai na ordem estrita do arquivo (scripts/publicar.py), então reposição só funciona se a peça for inserida na posição, não no fim; (2) o insight da Meta segue sem permissão (dados/relatorios/2026-11-23.md), então a escolha de linha é por venda direta, não por desempenho; (3) não consegui abrir a página oficial da Apple sobre os prints (acesso negado), então a premissa dos 3 primeiros prints segue como pista.
 - pendente: Escobar (D-20261122-cria-2, 25/11); Greco (D-20261122-cria-3, 29/11); Léo (produção diária, A/B 27/11); Stark (3 fatos do app, mercado-4); Turing/Léo (insights).
+
+## 2026-11-23 · Conferência de D-20261122-cria-2 (Escobar)
+- fiz: aceitei. 10 slots batem o pronto_quando (5 Meta, 5 TikTok, ângulo, duração, fixo/muda, corte em % do alvo, utm_campaign mm_<rede>_purchase_ios_2611 igual a dados-3). Corte 200%/100% está declarado como proposta sem histórico; vencedor só após volume mínimo da trafego-3.
+- ressalva: slot 8 (CR-esc-01) cita "pergunta 3 do pacote", mas a 3 do pacote é a do sandbox AppsFlyer. Falta pedir ao Davi a lista de modelos; até lá, vale o plano B CR-org-02. Meus roteiros do lote zero seguem esse brief.
+- lojas-2: é conferida pelo Jeff, não mexi.
+- pendente: Greco (cria-3, 29/11); Léo (A/B 27/11, produção diária).

@@ -43,3 +43,8 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - fiz: entreguei D-20261122-mercado-1 (paywall dos 4 apps: todos grátis com compras; teste só KyroTune e Drivvo-frota; resposta "parcial") e -2 (Drivvo 14.2 é abastecimento/CarPlay, não toca moto; data exata e 14.1 não confirmadas).
 - aprendi: a loja só dá "há X dias"; o histórico do Drivvo não lista a 14.1. Vitrine BR do MotoMainte e a EUA do Drivvo pediram permissão e não abriram.
 - pendente: abrir paywall dentro do app e histórico de versões em navegador logado; atualizar radar de 24/11 com a seção do Drivvo se o Greco quiser.
+
+## 2026-11-23 · lojas-1 (bloqueada)
+- fiz: tentei abrir as páginas da App Store (Drivvo, MotoMainte): permissão de leitura sem resposta e proxy com 403 para apple.com/itunes. Entreguei parcial honesto (sem tabela) e marquei bloqueada, bloqueio lider, pergunta sim/não pro Léo.
+- aprendi: busca web só dá links/títulos; ordem do buscador web não é ordem da busca da App Store. Não inventar tabela.
+- pendente: acesso a apps.apple.com ou texto colado por alguém; atualizar ambição na segunda 30/11 (segue: Analista, 100 XP, Radar certeiro).

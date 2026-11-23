@@ -1,0 +1,27 @@
+{
+  "id": "D-20261123-dados-3",
+  "de": "dados",
+  "para": "lojas",
+  "copia": [
+    "dados",
+    "lojas:respostas-as-avaliacoes"
+  ],
+  "titulo": "Guardar o histórico de avaliações das lojas (id, nota, data) a cada coleta, sem perder as que saem da janela",
+  "por_que": "A coleta lê só uma janela móvel da API do Play: 3 avaliações em 20/11, 2 em 23/11 (ultimas.json). A média de 3,67 do Play era de uma foto e não do histórico; sem histórico, a meta de nota 4,7+ do setor (nota subiu) não tem base mensurável. Ver D-20261122-ted-1.",
+  "pronto_quando": "Proposta em agencia/demandas/entregas/D-20261123-dados-3.md de como acumular id, nota e data de toda avaliação nova (Play e App Store) num arquivo que só cresce, com a regra de deduplicar por id e de contar edição de nota; implementação em scripts/avaliacoes.py só depois do OK do Davi.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T20:30:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T20:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-23T20:30:00-03:00"
+}

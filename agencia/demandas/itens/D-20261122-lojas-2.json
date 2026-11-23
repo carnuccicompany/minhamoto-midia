@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-lojas-2.md com 2 variações (A e B) de 3 legendas, cada uma com até 6 palavras e a tela do app que ilustra. Pode usar 'plano de revisão feito pro modelo da sua moto' (fato do 00-SISTEMA-OPERACIONAL.md), mas SEM nome de modelo (CG, Pop, Biz, Bros) e SEM a palavra 'grátis' ou 'teste' (o app não tem teste grátis, Léo 20/11) e sem nome de modelo, que não está confirmado.",
   "prioridade": "P2",
   "prazo": "2026-11-25T21:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-22T22:40:00-03:00",
   "fio": "F-002",
   "entrega": {
@@ -33,7 +33,12 @@
       "quando": "2026-11-23T13:00:00-03:00",
       "quem": "cria",
       "o_que": "entregou 2 variações de 3 legendas de print, só texto, com a tela de cada uma"
+    },
+    {
+      "quando": "2026-11-23T21:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "aceita: 2 variações x 3 legendas, todas com até 6 palavras (contei: A 6/6/5, B 6/6/5), tela de cada uma, sem modelo, sem 'grátis' e sem 'teste' nas legendas; fatos batem com 00-SISTEMA-OPERACIONAL.md e o radar 24/11 existe. Ressalvas: print 3 de B depende das telas de combustível/documentos (cria-3, bloqueada pelo Davi); sem baseline de conversão; premissa 'primeiros 3 prints na busca' não confirmada. Segue pro parecer do Shelby (lojas-3); nada vai à loja sem OK do Léo."
     }
   ],
-  "atualizada_em": "2026-11-23T13:00:00-03:00"
+  "atualizada_em": "2026-11-23T21:30:00-03:00"
 }
