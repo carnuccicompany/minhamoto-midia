@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T19:12:00-03:00",
+ "rodada": "2026-11-23T19:42:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 18h02 BRT; DV12 publicado 18h04; próx 21h02)",
@@ -8,9 +8,9 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:39 SUCCEEDED 18h39; :09 rodando agora)",
+  "coordenador": "ok (:09 SUCCEEDED 19h10; :39 rodando agora)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
+  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11; rodada de 23/11 19h23 em andamento, normal)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "ok (SUCCEEDED 14h38; próx 24/11 10h37)",
@@ -29,7 +29,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha; vigia de segredos ok"
+  "nenhuma: sem falha; vigia de segredos ok; repo estava em HEAD solto, voltei pra main"
  ],
  "alertas": []
 }
