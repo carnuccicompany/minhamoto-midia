@@ -81,3 +81,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: a coleta do Play agora traz 2 avaliações (antes 3); `git pull --rebase` funciona; workflow disparado pelo MCP do GitHub (gh com token inválido).
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-23 17:30
+- fiz: atualizei as avaliações (8: 2 Google Play, 6 App Store, coleta 20:14Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: `gh api` disparou o workflow normalmente; coleta pronta em ~110s.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
