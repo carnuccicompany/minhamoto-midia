@@ -46,3 +46,13 @@ e acrescente uma linha em `agencia/coordenador/log.md` (mantenha só os últimos
 
 ## Frequência (Léo, 18/11): a cada 30 minutos
 Duas tarefas agendadas ("MM: Coordenador 24h · :09" e "· :39") rodam de hora em hora, defasadas 30 min — juntas cobrem cada meia hora, 24h por dia. Cada rodada lê o status.json da anterior pra não repetir ação. Além do checklist, confira se algum agente/produção começou e parou sem terminar (ex.: sessão interrompida, commit de produção que não chegou) e re-dispare ou avise. "Parou e ninguém viu" não pode acontecer.
+
+
+## 🚨 Segurança: vazamento de chave ou token (regra do Léo, 23/11/2026)
+- **Toda rodada:** rode `python3 scripts/vigia_segredos.py` e olhe se o workflow "Vigia de segredos" falhou no último push.
+- **Achou chave/token no repositório público (ou em histórico, log, JSON gerado):** é PRIORIDADE MÁXIMA, acima de tudo.
+  1. Tire o segredo do arquivo na hora (commit "URGENTE: remove segredo vazado"), sem mostrar o valor em lugar nenhum.
+  2. Corrija o script que vazou pra não repetir.
+  3. Mensagem final começando com "🚨 SEGURANÇA" (vira notificação no celular do Léo): qual chave, de qual plataforma, onde vazou e o passo a passo exato pra ele revogar e gerar outra. Avise de novo a cada rodada até o Léo confirmar a troca.
+  4. Registre em agencia/memoria/decisoes.md e avise o Shelby (demanda P1 pra quem gerou o arquivo).
+- Agente nenhum gera, troca ou revoga chave (isso é só do Léo/Davi). O trabalho do time é pegar na hora, tirar do ar e não deixar o Léo esquecer.
