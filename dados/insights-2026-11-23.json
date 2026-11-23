@@ -1,15 +1,33 @@
 {
- "coletado_em": "2026-11-23T11:31:18.176425Z",
+ "coletado_em": "2026-11-23T19:54:42.826561Z",
  "erros": {
-  "ig_alcance_28d": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Aq6bJujH0L98ADZ7LYNcZyj\"}}"
+  "ig_alcance_28d": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A_uO-Mhib3uQlQSBWCiTS9N\"}}"
  },
  "ig_conta": {
   "id": "17841478100957290",
-  "followers_count": 1583,
-  "media_count": 55,
+  "followers_count": 1584,
+  "media_count": 57,
   "username": "minhamotoapp"
  },
  "ig_midias": [
+  {
+   "id": "17874860331645998",
+   "caption": "Pegou chuva a semana inteira? Confira isso quando o sol voltar.\n\nEquipamento secando aberto, viseira olhada com boa luz ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-23T18:03:51+0000",
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOk5cOH-9vE0FHS-UNgmDml\"}}"
+  },
+  {
+   "id": "18095703194210064",
+   "caption": "Te pararam e pediram CRLV, CNH e nota. Você acha de primeira?\n\nArraste e veja como deixar os documentos da moto sempre à",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-23T15:04:39+0000",
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ASp_dUfA3rL62qp3t_IdNe3\"}}"
+  },
   {
    "id": "18168848740489894",
    "caption": "Sua moto rodou pouco. O óleo não sabe disso.\n\nAlguns cuidados vencem pelo calendário, não pelo km. Arraste e entenda por",
@@ -17,7 +35,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-22T22:25:00+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AB9QJnvtwjvLScdYnPZuoaA\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ADPFDN3MaOnWTULdOHPzZOG\"}}"
   },
   {
    "id": "18073348811786513",
@@ -26,7 +44,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-22T01:42:36+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ADooYoAmXHuTKQY1afiPPmw\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A1jpDWKEfZfmqz27YI9t9Cu\"}}"
   },
   {
    "id": "18104100647399352",
@@ -35,7 +53,7 @@
    "like_count": 1,
    "media_product_type": "FEED",
    "timestamp": "2026-11-21T21:50:30+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A8NkXjL4DJ_Z9aYT51QRcn-\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AwlvHpNF0jglpfAxkF5JoI5\"}}"
   },
   {
    "id": "18378881500241829",
@@ -44,7 +62,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-21T16:27:31+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AGqUbztuS4uyfp3wT81IxO8\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Agdv8a_CP1MqXiGoWtae55D\"}}"
   },
   {
    "id": "18063897887534168",
@@ -53,7 +71,7 @@
    "like_count": 1,
    "media_product_type": "FEED",
    "timestamp": "2026-11-21T00:04:07+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AhikTwCJ0FwknyH6JVS2Rdx\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ASlI71H2T2B-QG5dwpP3Z5U\"}}"
   },
   {
    "id": "18125525026980280",
@@ -62,7 +80,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-20T21:03:57+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AN40q7xRm3J4RQwGHBrtXbx\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOJgmuU16SkUdEaZYtRPI72\"}}"
   },
   {
    "id": "17957547801039713",
@@ -71,7 +89,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-20T18:04:22+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMSjN9ek4AZXHCqNgEzDsCU\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A8cWN81tI3pvs4K2Jmw_i4D\"}}"
   },
   {
    "id": "18163296364507286",
@@ -80,7 +98,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-20T15:05:09+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AsfNBTebECI6eMUulRSDtnU\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOrLgQdwA4IwaAWwIeuY60d\"}}"
   },
   {
    "id": "18179808436446656",
@@ -89,7 +107,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-20T00:03:57+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A5lgJZBYgHcHLLPYtug2emb\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AToOPwTmJrwfVHdw5jvOquW\"}}"
   },
   {
    "id": "18038334791903543",
@@ -98,7 +116,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-19T21:03:58+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A8Go5HtOPJZU3DOC27QQ23r\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AoP3hdL1kyenjnquMRPUfeS\"}}"
   },
   {
    "id": "18003444207031958",
@@ -107,7 +125,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-19T18:03:54+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AXhmyClNqQnISAz4Tm68Vtn\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AfEz-Xm9sCjQi7mINMt6Lrm\"}}"
   },
   {
    "id": "18092494376257117",
@@ -116,7 +134,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-19T15:04:38+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A5XytV71I_2wp5XyPu1i3WE\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AVfQOUb4bD5N6apVOrkzeya\"}}"
   },
   {
    "id": "18000363917832738",
@@ -125,7 +143,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-19T00:04:36+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AV6Wt7i4kxIQXjFlTiR8BKw\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AsAjuM-Lhrn86xqJRGrrV35\"}}"
   },
   {
    "id": "18154454611509148",
@@ -134,7 +152,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-18T21:03:59+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AyH4XW0oJtSZGG4XtqOkifa\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ay1jdcP6A-2W8auJ1sJ07Ig\"}}"
   },
   {
    "id": "17929166958431357",
@@ -143,7 +161,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-18T18:03:49+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ABr86b-kDiw2itnhQAZ6p5U\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AG4uixe5JGCeJ-FHXA5hqeW\"}}"
   },
   {
    "id": "18101349905655095",
@@ -152,7 +170,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-18T15:04:21+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ACZMeTWJswPXT6yfJUdv_qM\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AYfP0M9yNYx4Q7rwUK2_Hk-\"}}"
   },
   {
    "id": "18122573551756707",
@@ -161,7 +179,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-18T00:04:33+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AHzJl_VI6PtPIH4o_JMrjL4\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AaRZ4bUl5lkTacWEKuxc5ut\"}}"
   },
   {
    "id": "18118471265019602",
@@ -170,7 +188,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-17T21:04:01+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AZ8QloEl9o4Wmpbx8I1dLR1\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AHDw_GMFQO81UnOgkJeYN1h\"}}"
   },
   {
    "id": "18084644324357864",
@@ -179,7 +197,7 @@
    "like_count": 2,
    "media_product_type": "FEED",
    "timestamp": "2026-11-17T18:04:50+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ANKYeVAaVazw1CBQQGXZ-El\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ALlq7cjcCjFQYCkrvfRL5tr\"}}"
   },
   {
    "id": "17953486095056558",
@@ -188,7 +206,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-17T15:04:51+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AuuaNJn1HMehSwcIReBAKUQ\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"APBYJ5lxikssrdu16lTMi_O\"}}"
   },
   {
    "id": "18116301278099903",
@@ -197,7 +215,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-17T00:04:14+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ARwYPovUzfoCtxxoakotBsE\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ABNUx0uoWPKNr7Md4diMN5R\"}}"
   },
   {
    "id": "18121076581989278",
@@ -206,7 +224,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-16T21:04:27+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A70rXJIXE34_Q3YuQT3URWF\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"APKwr7f9zcRsVPV7pZPlrl5\"}}"
   },
   {
    "id": "18418477537085879",
@@ -215,7 +233,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-16T18:35:53+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AiBhcOo4FZNY_F2fEK7yxVM\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AcmF1jKzPBdgN_0cSJchm5G\"}}"
   },
   {
    "id": "18108636722568240",
@@ -224,7 +242,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-11-16T17:41:48+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AVWEMyITrzi3PChl6hwm8V9\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ATMFF_E8_iBOuE1r9qs0S4H\"}}"
   },
   {
    "id": "18132696464499578",
@@ -233,7 +251,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T18:22:14+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AsMlXXf_6fRHBzNCK1fZVYk\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A5Y3_6fd_7FeQZpeucaSMJB\"}}"
   },
   {
    "id": "18126520229488668",
@@ -242,7 +260,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T18:21:37+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AGaYwPaEPxt-PyIbs3ukWcJ\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOwjbAgoziDHu4W2aRDXHtq\"}}"
   },
   {
    "id": "18099831422399061",
@@ -251,7 +269,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T18:14:06+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AL6_qwBHY28Hzh-GvNZnS20\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AtLfnshdX5xTQYywUp3nUHD\"}}"
   },
   {
    "id": "17874912876638755",
@@ -260,7 +278,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T18:07:28+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AybLL1ke4eKiSDHFUEo1QKV\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A0-ODpN3MjeH78hpDQ0vSPE\"}}"
   },
   {
    "id": "18371701696215575",
@@ -269,7 +287,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T17:48:17+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A54dtVY_I2-6GbeUOpvRMq6\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AdajgYcIvq7dZYDxXaO1hO_\"}}"
   },
   {
    "id": "18101165465075054",
@@ -278,7 +296,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T17:40:53+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AjpjCjjgMbaVKcs7EQP9MbW\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AKOef_Uo9T_GzhLfQlUmEMa\"}}"
   },
   {
    "id": "18106457297250187",
@@ -287,7 +305,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T17:30:36+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A4CIr0whAEWfFKv6xAr6yk7\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AL7BzKHH6OFf3CoqtKBx60_\"}}"
   },
   {
    "id": "18395419048164082",
@@ -296,7 +314,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T17:24:43+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJKuQrrdIIXSxwa4kG3tW5Q\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AT-K_4VnxVLvFb7fCKxgBmv\"}}"
   },
   {
    "id": "17895053682614009",
@@ -305,7 +323,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T17:14:26+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AvgF3LAXKNldSHPg_IwIp6z\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AKz7J7udh6DmJt40pbTKNy5\"}}"
   },
   {
    "id": "18223390105339708",
@@ -314,7 +332,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:56:40+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ath09JgkRMUesxWb2ZLe02u\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AohLpwD_hTBa0gbnPhR_h3K\"}}"
   },
   {
    "id": "18147938446583366",
@@ -323,7 +341,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:49:12+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A3jGtPNPORqUiheuxTRRwOR\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AqDLNhDdNIeUUtt21vxmrL0\"}}"
   },
   {
    "id": "17945340447090154",
@@ -332,7 +350,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:44:05+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AmuvAl8UUMROSAeABrLc8dx\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AGLzJniSRPnYIbH49Ak7t2G\"}}"
   },
   {
    "id": "18114675568850108",
@@ -341,7 +359,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:40:04+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AzaTndp3v6xCRpTnSKyCttv\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A_xCoWVEgiMs6bAZpNVfNkR\"}}"
   },
   {
    "id": "17918024964265134",
@@ -350,7 +368,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:33:18+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMkJDtgK9DaHrFHO5kaFH4Q\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A5CKOkFxZnmvrtKFzJ63a_1\"}}"
   },
   {
    "id": "18129677674748907",
@@ -359,7 +377,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:20:33+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AvV1yJUpyIXblTudtmcGtIw\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AF-1zL8JY_77Fx5nFxzKmiW\"}}"
   },
   {
    "id": "17951461287056300",
@@ -368,7 +386,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:15:58+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"An-hw-kPm39EQottmxpMHR-\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AqRHZ5k2Lw_nI2GGO5LEGgP\"}}"
   },
   {
    "id": "18648467542038113",
@@ -377,7 +395,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T15:12:57+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOF3BQ3LuHDEA6QSaJds1wK\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Apqnw5mWmPTuxdQBE1WVSnX\"}}"
   },
   {
    "id": "18402312964206565",
@@ -386,7 +404,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:53:51+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AF3lsgBegve0UGJVRe7Tmvv\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AtlvsD0Lg8WdoVyN6JgYXXA\"}}"
   },
   {
    "id": "17946576429357491",
@@ -395,7 +413,7 @@
    "like_count": 1,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:44:48+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ATudwmKkoNh6iHxvNilW0xi\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ABtM19ou2IeJRl15hNoGc5W\"}}"
   },
   {
    "id": "18095967311166594",
@@ -404,7 +422,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:38:06+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AgPg89RyT8xygUhzLZFFmxy\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOS9A2yySeYcXMzmOP4UTPE\"}}"
   },
   {
    "id": "18378020482209440",
@@ -413,7 +431,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:33:58+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AAZVlOzwBfqUkPxb_WgVJUm\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A1bz-JySJIX2hfEtNG3FzSJ\"}}"
   },
   {
    "id": "18103145042039838",
@@ -422,7 +440,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:16:26+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A3-bx-p8MMy2sJjjGU9GUex\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AoN_x4TaugBGVq_NYm7-XyV\"}}"
   },
   {
    "id": "17875640811636358",
@@ -431,7 +449,7 @@
    "like_count": 1,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T14:00:24+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJ1rLaEJilOGeA-TcCJXgen\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AVZxSbRLSsl8mlgIuVWoJ6l\"}}"
   },
   {
    "id": "18353206765265436",
@@ -440,7 +458,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:29:57+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AZMmaqy_OFa93V-HvUz_Po3\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AYiueCKT6DIviEd8mDHYFDK\"}}"
   },
   {
    "id": "18128294173845641",
@@ -449,7 +467,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:29:09+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AT6BcahCb7RDwffNJHLtUtF\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMevnaHecbKyXj9iLj7FW6k\"}}"
   },
   {
    "id": "18421622707156432",
@@ -458,7 +476,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:28:19+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AwV46L-kdMOvDL3FJTEJFrE\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AlCpOMxETEsvo2G-fpzlvV-\"}}"
   },
   {
    "id": "18125014579810248",
@@ -467,7 +485,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:27:36+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A4O68c_NE8_1dMEdanG5apu\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AcXA1jTqW_wIrRVBGLMsbyo\"}}"
   },
   {
    "id": "18057993929568121",
@@ -476,7 +494,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:26:40+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A_E3PhGRP92GrgSZKX5xpdx\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AIgkacRTh7LSC7xbSttjDIs\"}}"
   },
   {
    "id": "18133292506780740",
@@ -485,7 +503,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:25:44+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AT4XH412Qa52dDA9ZdAtf87\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AKdyDdD1qJWzKrF3RXNOfCc\"}}"
   },
   {
    "id": "18436686763194136",
@@ -494,7 +512,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T13:24:30+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A_apS0IuRcdVpPeRWeVYxhq\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"A65q7PJMArJ901h6ZgjpWV6\"}}"
   },
   {
    "id": "18042708197637179",
@@ -503,7 +521,7 @@
    "like_count": 0,
    "media_product_type": "FEED",
    "timestamp": "2026-10-27T12:58:46+0000",
-   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ABYGWoBdXoumK-mHraBS8cg\"}}"
+   "insights_erro": "HTTP Error 400: Bad Request | {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AVawMkisbJyuvmSPu_nFjlw\"}}"
   }
  ],
  "fb_pagina": {
