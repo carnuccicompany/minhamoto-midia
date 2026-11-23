@@ -54,3 +54,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh` funcionou para disparar o workflow nesta rodada; clone precisou de `git pull --rebase`.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado, não reavisar).
+
+## 2026-11-22 23:20
+- fiz: atualizei as avaliações (9: 3 Google Play, 6 App Store, coleta 23/11 02:11Z). Nenhuma sem resposta além do 1★ ec124592, que já tem rascunho; nada a escrever nem publicar.
+- aprendi: `gh api` dispara o workflow normalmente nesta rodada; `git pull` precisa de `pull.rebase true`.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
