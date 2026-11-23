@@ -1,0 +1,25 @@
+{
+  "id": "D-20261123-trafego-3",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Quantos eventos por semana cada etapa do funil gera, em % de 50, pra escolher o evento de otimização da 1ª campanha",
+  "por_que": "TikTok diz que 50 conversões é o principal indicador de sair da fase de aprendizado (ads.tiktok.com/resources/help/article/learning-phase-faq, consultada 23/11). A Meta não publica mínimo na página de otimização de apps (developers.facebook.com/docs/app-ads/optimizing-your-app-ad). Se a compra paga não chegar perto de 50 por semana por campanha, otimizar por compra trava o aprendizado e queima verba; aí o evento tem que ser um degrau acima (paywall_view). Isso decide custo por assinante, a meta do Tráfego. Complementa D-20261122-trafego-3 (volume por variante).",
+  "pronto_quando": "Na 1ª leitura depois da build com SDK (Turing prevê 30/11), arquivo em agencia/demandas/entregas/D-20261123-trafego-3.md com, para onboarding_complete, paywall_view e compra inicial (RevenueCat): eventos da semana como % de 50 e a % de eventos com origem identificada; recomendação de qual é o evento mais perto da compra que passa de 50 por semana. Se o SDK não entrou na build, status 'bloqueada' dizendo isso e usando o Plano B de D-20261122-master-5. Só % e variação, nenhum absoluto.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T19:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    }
+  ]
+}

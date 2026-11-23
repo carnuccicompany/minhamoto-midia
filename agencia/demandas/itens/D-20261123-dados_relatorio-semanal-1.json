@@ -1,0 +1,26 @@
+{
+  "id": "D-20261123-dados_relatorio-semanal-1",
+  "de": "dados:relatorio-semanal",
+  "para": "dados:coletor-de-metricas",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
+  "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T23:35:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T23:35:00-03:00",
+      "quem": "dados:relatorio-semanal",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-23T23:35:00-03:00"
+}

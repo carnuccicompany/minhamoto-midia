@@ -38,4 +38,4 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 > Sentimos muito pelo transtorno! A assinatura é gerenciada pela loja: no iPhone, em Ajustes > seu nome > Assinaturas; no Android, em Play Store > Pagamentos e assinaturas. Se precisar, nosso suporte ajuda em suporte@carnucci.com. — Equipe MinhaMoto
 
 ## Pendente
-- Contato nas respostas públicas: só o e-mail suporte@carnucci.com (decisão do Léo). O WhatsApp (11) 91337-4664 é passado por e-mail a quem precisar, nunca na loja.
+- Contato nas respostas públicas: só o e-mail suporte@carnucci.com (decisão do Léo). O WhatsApp da empresa é passado por e-mail a quem precisar, nunca na loja (o número fica fora do repositório público; o Léo informa na hora).

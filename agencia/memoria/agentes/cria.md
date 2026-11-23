@@ -53,3 +53,10 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - ressalva: slot 8 (CR-esc-01) cita "pergunta 3 do pacote", mas a 3 do pacote é a do sandbox AppsFlyer. Falta pedir ao Davi a lista de modelos; até lá, vale o plano B CR-org-02. Meus roteiros do lote zero seguem esse brief.
 - lojas-2: é conferida pelo Jeff, não mexi.
 - pendente: Greco (cria-3, 29/11); Léo (A/B 27/11, produção diária).
+
+## 2026-11-23 · Conselho rodada 1 (noite)
+- fiz: li ficha, playbooks 04 e 03, base, quadro, fios, insights, fila e frames de A1/B1; criei D-20261123-cria-2 (Shelby, Léo sim/não), -3 (Stark, telas), -4 (Escobar, utm_content); cancelei D-20261120-cria-2; escrevi conselho/rodadas/2026-11-23/cria-r1.md e atualizei a agenda.
+- aprendi: (1) insights voltaram: mediana ~10 alcançados por post (~0,7% dos seguidores), 0 salvamentos em 26 posts (dados/insights-2026-11-23.json); o relatório de 8h26 já estava velho (Turing refaz em dados-4); (2) A1 e B1 já têm anatomia de anúncio (frames.jpg); (3) as telas dos vídeos são de 18/11, antes da build de 23/11: precisam de conferência antes de virar anúncio; (4) Meta e TikTok oficiais não abriram (permissão negada), só o guia do TikTok de 22/11 vale como fonte.
+- recebi: nada novo do Léo.
+- pendente: Léo (A1/B1, A/B 27/11); Stark (telas e 3 fatos); Escobar (cria-2 aceito, cria-4 novo); Greco (cria-3, 29/11); resposta do Fogg ao run de 12h.
+- sugestão de memória pro main: o Léo pode ter interesse em UGC dele/Davi (Corretores: expert falando vende), pergunta 2 da r1.

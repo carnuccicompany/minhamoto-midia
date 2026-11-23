@@ -24,3 +24,10 @@
 ## Atualização 23/11/2026
 - Frente nova: anúncios de longa duração pro Cria (D-20261122-cria-3), bloqueada: bibliotecas Meta/TikTok inacessíveis, aguardando o Léo abrir no navegador logado. Quando vier, entrego os 5 em 15 min.
 - Prova de que errei: se os anúncios mais antigos do nicho não usarem ângulo de manutenção por modelo, minha aposta do "plano de revisão do SEU modelo" perde força.
+
+## Atualização 23/11/2026 (noite, rodada 1)
+- Iniciativa nova que eu escolhi: **janela do IPVA 2027**. SP vence 11 a 22/01 com 3% à vista (Agência SP, 09/11); a fila de carrosséis seca por volta de 14/12 e nenhum dos 113 é o calendário do IPVA. Demandas: D-20261123-mercado-2 (Disney, 4 pautas, 30/11) e -3 (Stark, o app avisa vencimento? 26/11).
+- F-002 (SEU modelo) segue em paralelo; morre em 27/11 sem sim do Davi.
+- Dossiê de Concorrentes: D-20261123-mercado-1 (Sun Tzu, 25/11 12h) alimenta D-20261123-master-dossie-2 (25/11 18h). Fato novo: MotorManage grátis pra 2 motos, sem anúncio, catálogo de 42.000 modelos.
+- Prova de que errei: as 4 pautas de IPVA não passarem da mediana de salvamento+compartilhamento/alcance da linha Dicas e hacks, quando o insight por post voltar (D-20261123-dados-4).
+- Pendente: meta em número, RevenueCat/SDK, resposta do Léo às 3 perguntas da r1 de 23/11.

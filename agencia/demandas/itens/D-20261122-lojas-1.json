@@ -1,35 +1,42 @@
 {
-  "id": "D-20261122-lojas-1",
-  "de": "lojas",
-  "para": "mercado:radar-de-concorrentes",
-  "copia": [
-    "mercado"
-  ],
-  "titulo": "Página de loja dos concorrentes: título, subtítulo e 3 primeiros prints",
-  "por_que": "Minha iniciativa é reordenar título/subtítulo e os 3 primeiros prints da página (visita→download→assinante). Sem ver o que Drivvo, MotoMainte e os 3 primeiros da busca 'manutenção moto' mostram, proponho no escuro. O radar de 24/11 (agencia/radar/2026-11-24.md) trouxe preço e reclamação, mas não a página de loja deles.",
-  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-lojas-1.md com tabela por app (Drivvo, MotoMainte e os 3 primeiros resultados da busca 'manutenção moto' na App Store BR): título, subtítulo, legenda de cada um dos 3 primeiros prints, nota e nº de avaliações, link da página, data da captura. O que não abrir, dito; sem número inventado.",
-  "prioridade": "P3",
-  "prazo": "2026-11-29T18:00:00-03:00",
-  "status": "bloqueada",
-  "criada_em": "2026-11-22T22:40:00-03:00",
-  "fio": "F-002",
-  "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261122-lojas-1.md",
-    "resumo": "Parcial: App Store bloqueada (proxy 403 e permissão não respondida), nenhuma captura de loja feita; só lista de apps da busca web e links. Tabela não preenchida por não ter número visto."
+ "id": "D-20261122-lojas-1",
+ "de": "lojas",
+ "para": "mercado:radar-de-concorrentes",
+ "copia": [
+  "mercado"
+ ],
+ "titulo": "Página de loja dos concorrentes: título, subtítulo e 3 primeiros prints",
+ "por_que": "Minha iniciativa é reordenar título/subtítulo e os 3 primeiros prints da página (visita→download→assinante). Sem ver o que Drivvo, MotoMainte e os 3 primeiros da busca 'manutenção moto' mostram, proponho no escuro. O radar de 24/11 (agencia/radar/2026-11-24.md) trouxe preço e reclamação, mas não a página de loja deles.",
+ "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-lojas-1.md com tabela por app (Drivvo, MotoMainte e os 3 primeiros resultados da busca 'manutenção moto' na App Store BR): título, subtítulo, legenda de cada um dos 3 primeiros prints, nota e nº de avaliações, link da página, data da captura. O que não abrir, dito; sem número inventado.",
+ "prioridade": "P3",
+ "prazo": "2026-11-29T18:00:00-03:00",
+ "status": "bloqueada",
+ "criada_em": "2026-11-22T22:40:00-03:00",
+ "fio": "F-002",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261122-lojas-1.md",
+  "resumo": "Parcial: App Store bloqueada (proxy 403 e permissão não respondida), nenhuma captura de loja feita; só lista de apps da busca web e links. Tabela não preenchida por não ter número visto."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-22T22:40:00-03:00",
+   "quem": "lojas",
+   "o_que": "criou"
   },
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-22T22:40:00-03:00",
-      "quem": "lojas",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-23T14:50:00-03:00",
-      "quem": "mercado:radar-de-concorrentes",
-      "o_que": "bloqueou: sem acesso à App Store; entrega parcial com pergunta pro Léo"
-    }
-  ],
-  "bloqueio": "lider",
-  "pergunta": "Léo, sim ou não: libero o acesso do radar a apps.apple.com (hoje o proxy bloqueia), ou prefere que alguém cole o texto e os 3 primeiros prints das 5 páginas?"
+  {
+   "quando": "2026-11-23T14:50:00-03:00",
+   "quem": "mercado:radar-de-concorrentes",
+   "o_que": "bloqueou: sem acesso à App Store; entrega parcial com pergunta pro Léo"
+  },
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "master",
+   "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
+  }
+ ],
+ "bloqueio": "lider",
+ "pergunta": "Léo, sim ou não: libero o acesso do radar a apps.apple.com (hoje o proxy bloqueia), ou prefere que alguém cole o texto e os 3 primeiros prints das 5 páginas?",
+ "pergunta_lider": "Léo: libera apps.apple.com e play.google.com pro ambiente dos agentes (ou cola título, subtítulo e os 3 primeiros prints dos concorrentes)? Sim/não.",
+ "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

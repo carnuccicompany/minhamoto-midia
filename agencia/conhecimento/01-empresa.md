@@ -9,7 +9,7 @@ _Status: pré-preenchido pelo Claude em 23/11/2026 com o que o Léo já disse; f
 - Negócios ativos: o app de assinatura **MinhaMoto** (App Store e Google Play) e o infoproduto dos **Corretores** ("Mapa Visual Completo do Fechamento Imobiliário"). (Léo, 23/11)
 - Os Corretores são a oferta que **segura o lucro da empresa hoje**, em paralelo ao MinhaMoto. (Léo, 23/11)
 - Existem outros infoprodutos da casa (Perfect Class, Perfect Nails, MedHub e outros), mas o foco atual é MinhaMoto + Corretores; a revisão dos demais fica pra depois. (Léo, 18/11)
-- O Davi cuida do código do app; os dois mexem no app com o Claude. A expert dos Corretores é a Ana Paula Mello, mãe do Davi, corretora e advogada. (Léo, 17/11 e 23/11)
+- O Davi cuida do código do app; os dois mexem no app com o Claude. A expert dos Corretores é a Ana Paula Mello, corretora e advogada. (Léo, 17/11 e 23/11)
 
 ### Missão e meta
 - Missão: **vender muito, pra muita gente, e sempre vender mais**, pensando em curto, médio e longo prazo. Todo agente trabalha com isso como objetivo. (Léo, 19/11)

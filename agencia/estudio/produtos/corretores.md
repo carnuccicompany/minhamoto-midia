@@ -37,7 +37,7 @@
 - **Objeções a quebrar:** "já sei isso" (repertório: aparece FGTS + MCMV + consórcio na mesma semana?), "não é meu trabalho, é do correspondente" (não é fazer o trabalho dele, é entender pra conduzir), "não tenho tempo pra estudar" (é consulta, não curso), "é caro" (R$37,90 contra uma comissão de milhares), "é material genérico de internet" (feito por corretora e advogada, com fontes oficiais: Caixa, Banco Central, Ministério das Cidades, Código Civil).
 
 ## 3. A expert
-- **Ana Paula Rodrigues de Mello (Ana Paula Mello)**, mãe do Davi, corretora de imóveis e advogada de Direito Imobiliário no ABC Paulista (CRECI e OAB). Instagram @paullamello_corretora (perfil pequeno, ~1,7 mil seguidores; bio: especialista em imóveis do ABC, compra, venda e avaliação).
+- **Ana Paula Rodrigues de Mello (Ana Paula Mello)**, corretora de imóveis e advogada de Direito Imobiliário no ABC Paulista (CRECI e OAB). Instagram @paullamello_corretora (perfil pequeno, ~1,7 mil seguidores; bio: especialista em imóveis do ABC, compra, venda e avaliação).
 - **História:** começou como telefonista, empreendeu com vidros/têmpera, se formou em Direito e recomeçou do zero como corretora. Percebeu que a maioria dos corretores sabe apresentar o imóvel, mas domina pouco o que vem depois do "sim" (é percepção dela, não estatística: nunca usar como número).
 - **Nos vídeos:** fala direto pra câmera em casa (sala com escada, área com churrasqueira de tijolo e placa "Amigos, Família, Cerveja, Vida", poltrona com quadro de flores), segura o material impresso. Tom calmo, de colega mais experiente, sem gritaria de guru. Dá pra usar ela em criativos novos (o Davi grava mais nesta semana).
 

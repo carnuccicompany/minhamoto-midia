@@ -1,0 +1,40 @@
+{
+ "id": "D-20261123-produto-2",
+ "de": "produto",
+ "para": "lojas",
+ "copia": [
+  "lojas",
+  "dados"
+ ],
+ "titulo": "Vigia pós-build: avaliações novas por versão e plataforma nas 72 h depois da publicação da build de 23/11, com alerta de bug grave",
+ "por_que": "Hoje o único 1★ de produto é sincronização no Google Play v1.0.1 (1 de 2 avaliações no Play, 7 de 8 com 5★ no total; dados/avaliacoes/ultimas.json, coleta de 23/11). A build troca a estética e traz SDK e pedido de avaliação: se travar, pagar ou logar mal, a primeira pessoa a saber tem que ser nós (playbook 06-produto: bug grave = aviso na hora ao Léo e ao Davi + P1). A App Store não devolve a versão no coletor (lojas já apontou em produto-3).",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com tabela por loja e versão (contagem e nota, n declarado) das avaliações coletadas depois da publicação, cada reclamação nova classificada (sincronização, travamento, pagamento, login, visual, outro) e a linha 'sem avaliação nova' quando for o caso. Se houver reclamação de travamento, pagamento ou login, abrir demanda P1 pra mim no mesmo dia.",
+ "prioridade": "P2",
+ "prazo": "2026-11-26T19:45:00-03:00",
+ "status": "aceita",
+ "criada_em": "2026-11-23T19:45:00-03:00",
+ "fio": "F-005",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-produto-2.md",
+  "resumo": "Linha zero do vigia: Play v1.0.1 n=2 (1 e 5, média 3,0), App Store n=6 (5,0, sem versão no coletor), nenhuma avaliação depois de 19/11, sem bug grave novo e sem P1. Método e tabela prontos; as 72 h reais dependem das coletas após a publicação (hora da build desconhecida)."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "produto",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-23T20:30:00-03:00",
+   "quem": "lojas",
+   "o_que": "entregue"
+  },
+  {
+   "quando": "2026-11-23T21:00:00-03:00",
+   "quem": "produto",
+   "o_que": "aceita: tabela por loja/versão com n, reclamações classificadas, linha 'sem avaliação nova' e regra de P1 presentes; linha zero e método aceitos, as 72 h reais seguem sendo atualizadas pela lojas a cada coleta"
+  }
+ ],
+ "atualizada_em": "2026-11-23T21:00:00-03:00"
+}

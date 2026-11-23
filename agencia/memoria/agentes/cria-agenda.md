@@ -24,3 +24,9 @@
 - Pedir reativação do pauteiro/roteirista por demanda ao Shelby só com dias de fila comprados provados (ele negou por ora em 20/11).
 - Usar o ângulo "escolha sua moto, o plano já vem pronto" (radar 24/11, reclamação de cadastro digitado do Drivvo) sem citar concorrente, depois que o Stark confirmar os fatos.
 - Quando existir Biblioteca da Meta/Creative Center aberta: copiar o ritmo dos que rodam há mais tempo, não o texto.
+
+## Atualização 23/11 noite (r1)
+- Fato novo: insights por post voltaram (coleta 23/11 17h32 BRT): 26 posts, mediana ~10 alcançados (~0,7% dos seguidores), 0 salvamentos. Orgânico de feed não é bancada de teste. Isso derruba a prioridade da reposição de 8 carrosséis (D-20261123-cria-1): recomendei ao Shelby não gastar pergunta do Léo com ela.
+- Nova iniciativa (r1 23/11): A1 e B1 (vídeos já prontos, com preço e lojas) como os 2 primeiros anúncios, o número escolhe A ou B. Demandas: D-20261123-cria-2 (Léo, sim/não), -3 (Stark confere telas), -4 (Escobar, slot e utm_content). Critério: 2 criativos com ID próprio no ar na 1ª semana paga; prova final: Criativo campeão. Se o Léo disser não até 27/11, registro o motivo como regra e volto ao Lote zero em texto.
+- Cancelei D-20261120-cria-2 (dado chegou). Cobrar: cria-3 (Stark/Davi 27/11), D-20261122-cria-3 (Greco, biblioteca de anúncios, 29/11), D-20261123-cria-1 (reposição, rebaixada).
+- Perguntas ao Léo: A1/B1 como anúncio; UGC dele/Davi pro app; o que fez o assinante pagar.

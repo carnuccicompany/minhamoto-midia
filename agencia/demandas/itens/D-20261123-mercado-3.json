@@ -1,0 +1,38 @@
+{
+  "id": "D-20261123-mercado-3",
+  "de": "mercado",
+  "para": "produto",
+  "copia": [
+    "master"
+  ],
+  "titulo": "A tela Documentos avisa o vencimento do CRLV/licenciamento? Sim ou não, com a tela que prova",
+  "por_que": "A série IPVA 2027 (D-20261123-mercado-2) só pode dizer 'o app te avisa' se isso for verdade. O BANCO.md linha 54 já escreve 'prova no app: documentos/lembretes', mas a ficha do produto (agencia/estudio/produtos/minhamoto.md) só lista 'documentos' e 'notificações de marcos', e o README de telas só descreve 07-documentos (CRLV, CNH, licenciamento) e 15-notificacoes sem dizer se há aviso de vencimento. Prometer o que o app não faz derruba a conversão do instalado pro pago e vira avaliação ruim (regra 08-regras.md: nunca prometer recurso que não existe). Decide se o anúncio e o post de janeiro usam 'avisa antes de vencer' ou só 'tenha o documento à mão'.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mercado-3.md com: 'sim' ou 'não' pra aviso de vencimento de documento (CRLV, licenciamento, CNH), qual tela mostra (arquivo em agencia/designer/assets/telas-app/), e a versão do app em que vale. Se só o Davi sabe, status bloqueada com bloqueio lider e a pergunta pronta, sim/não, pra entrar no pacote do Davi (D-20261122-produto-3). Sem chute.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T18:00:00-03:00",
+  "status": "devolvida",
+  "criada_em": "2026-11-23T20:55:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado-3.md",
+    "resumo": "Sim em parte: licenciamento tem selo 'Documento vencendo' na Garagem aos 30 dias; sem push nem aviso de CRLV/CNH no código de 17/11."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T20:55:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "produto",
+      "o_que": "entregue: sim em parte (selo na Garagem, só licenciamento, sem push); código de 17/11, build de 23/11 não conferida"
+    },
+    {
+      "quando": "2026-11-23T23:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "devolveu: (1) nenhuma tela em telas-app mostra o selo 'Documento vencendo'; 18-garagem-atencao.png mostra '3 itens pedem atenção' (manutenção), então não prova. Entregar print/tela com o selo ou dizer que não existe tela e que a prova é só o código. (2) Versão do app em que vale: veio só 'commit 05425c9 de 17/11', sem número de versão/build; informar a versão do app ou mandar a pergunta sim/não pro Davi (bloqueada, bloqueio lider, pacote produto-3) sobre build de 23/11 e push. A resposta sim em parte, com o código citado, está aceita."
+    }
+  ]
+}

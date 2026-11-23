@@ -1,0 +1,40 @@
+{
+ "id": "D-20261123-master-1",
+ "de": "master",
+ "para": "trafego",
+ "copia": [
+  "dados",
+  "master"
+ ],
+ "titulo": "Antes de qualquer verba: o link de destino do anúncio não pode ser o que o Instagram bloqueou",
+ "por_que": "O Léo registrou em 23/11 que o Instagram do MinhaMoto está com link bloqueado (bio e stories) (conhecimento/07-canais.md). Nenhum diretor citou isso na rodada. Se o destino do anúncio (OneLink ou página) for o domínio marcado, a Meta pode reprovar o anúncio e a verba do D+0 trava ou queima sem entrega. Meta: assinante pago novo/semana; sem destino aceito não há campanha.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261123-master-1.md com: (1) os destinos que o brief usa (domínio do OneLink, página, link direto da loja); (2) qual deles o Léo disse estar bloqueado, ou 'não sei' com a pergunta pronta (já está na Pergunta 2 do master.md de 23/11); (3) o destino alternativo seguro (link direto da loja com parâmetros) e como o D+0 testa que o anúncio abre. Sem R$ e sem número absoluto.",
+ "prioridade": "P2",
+ "prazo": "2026-11-26T20:00:00-03:00",
+ "status": "aceita",
+ "criada_em": "2026-11-23T19:50:00-03:00",
+ "fio": "F-001",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-master-1.md",
+  "resumo": "Lista os 4 destinos do brief e diz que o endereço bloqueado é \"não sei\" (pergunta pronta ao Léo, inclusive qual perfil assina o anúncio). Alternativa segura: campanha de app com destino na loja (link direto com ct) e teste D+0 4.0 a 4.3 antes de qualquer verba acima do mínimo."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-23T19:50:00-03:00",
+   "quem": "master",
+   "o_que": "criou (correção de ronda 23/11: fato do 07-canais que ninguém tinha ligado à verba)"
+  },
+  {
+   "quando": "2026-11-23T23:00:00-03:00",
+   "quem": "trafego",
+   "o_que": "entreguei: destinos, pergunta ao Léo e passos de teste D+0; sem execução, sem verba; leitura da Meta não feita hoje"
+  },
+  {
+   "quando": "2026-11-24T08:00:00-03:00",
+   "quem": "master",
+   "o_que": "aceita: conferi: 4 destinos, bloqueado='não sei' com pergunta pronta, alternativa D4 e teste D+0 4.0-4.3; sem R$ nem absoluto"
+  }
+ ],
+ "atualizada_em": "2026-11-24T08:00:00-03:00"
+}

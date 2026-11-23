@@ -13,6 +13,8 @@ _Status: pré-preenchido pelo Claude em 23/11/2026; inclui também o produto dos
 - Próxima build (semana de 23/11): estética nova + SDK do AppsFlyer. (Léo, 18/11)
 - Falha de sincronização no Android: o Davi corrige depois da build de 23/11. (Léo, 19/11)
 - Diferencial a explorar: plano por modelo, sem digitar a moto (concorrente Drivvo recebe reclamação de modelo digitado). [rascunho do Claude — confirmar que o app escolhe a moto numa lista]
+- **Fluxo do app (código de 17/11, a confirmar com o Davi na build de 23/11):** boas-vindas, cadastro da moto (marca, modelo, versão), configuração (km, respostas, cuidados, ritmo), diagnóstico (briefing de 4 telas), tour, "Esse é o MinhaMoto" (itens reais do plano da moto, até 6) e paywall pago direto. O plano da moto já aparece antes do paywall, só que no fim do caminho. O código lido não tem SDK do AppsFlyer nem eventos de funil. Moto sem plano disponível: a tela do plano não aparece. (Jobs, leitura do código, D-20261122-produto-1; registrado pelo Shelby em 23/11)
+- **Documentos e avisos (código de 17/11):** o app guarda o vencimento do licenciamento e mostra o selo "Documento vencendo" na Garagem aos 30 dias. Não achei push de documento nem aviso de CRLV ou CNH. Texto de anúncio pode dizer "o app avisa na Garagem", não "te notifica". (Stark, D-20261123-mercado-3)
 
 ### Corretores (infoproduto)
 - **Mapa Visual Completo do Fechamento Imobiliário**: 125 mapas visuais sobre tudo que vem depois do "sim" do cliente (formas de aquisição, crédito, FGTS, documentação, contrato, cartório, vistoria e chaves). Material de consulta, não curso. Digital, acesso vitalício, garantia de 30 dias, venda pela Kavoo. (página de vendas, 23/11)

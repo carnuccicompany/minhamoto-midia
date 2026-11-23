@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-1.md com variação % semana contra semana de vendas, reembolsos, ticket médio, custo por venda e ROAS por campanha dos Corretores (só % ou variação, sem valor absoluto), fonte de cada linha; o que faltar vem listado com quem precisa liberar.",
   "prioridade": "P1",
   "prazo": "2026-11-21T19:50:00-03:00",
-  "status": "bloqueada",
+  "status": "cancelada",
   "criada_em": "2026-11-20T19:50:00-03:00",
   "fio": null,
   "entrega": null,
@@ -25,8 +25,14 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "dados",
       "o_que": "aceita o placar, recuso o prazo de 21/11: não há export dos Corretores em lugar nenhum que eu leia. Entrego só o esqueleto das colunas em %; dado real depende do export semanal de vendas e reembolsos (pergunta 1 do Cardone ao Léo)"
+    },
+    {
+      "quando": "2026-11-23T19:40:00-03:00",
+      "quem": "mkt",
+      "o_que": "cancelada por mim, substituída por D-20261123-mkt-1 (fonte UTMify)"
     }
   ],
-  "bloqueio": "lider",
-  "pergunta_lider": "Léo: libera export semanal de vendas e reembolsos dos Corretores pro carnucci-dados (sim/não)? Plataforma de venda?"
+  "bloqueio": null,
+  "pergunta_lider": "Léo: libera export semanal de vendas e reembolsos dos Corretores pro carnucci-dados (sim/não)? Plataforma de venda?",
+  "motivo_cancelamento": "Substituída por D-20261123-mkt-1: a UTMify já traz o dado dos Corretores (09-numeros.md, 23/11), então o export do Kavoo deixou de ser o bloqueio."
 }

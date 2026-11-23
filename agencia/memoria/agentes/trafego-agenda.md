@@ -29,3 +29,10 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Entregues hoje: master-1 (correção), dados-3 (nomes/UTM), cria-2 (brief de 10 slots). "X dias grátis" e "teste iniciado" riscados daqui e dos fios.
 - Em curso: D-20261123-trafego-1 (Léo, nomes do pago, sim/não). Meta pessoal mantida: 1º número de campanha até 30/11, só se a build ligar o SDK.
 - Aposta: 4 testes de 2 a 3 versões, 1 variável; corte proposto 200% do custo-alvo sem compra pausa (plata o pausa). Sem baseline, é hipótese.
+
+## Atualização 23/11/2026 (noite)
+- Meta pessoal: 1º número de campanha até 30/11 mantida; sem SDK na build não existe, e eu aviso na hora.
+- Aposta nova: "Escada de evento". Começar no evento mais perto da compra que passe de 50/semana (TikTok diz 50 conversões pra sair do aprendizado; Meta não publica mínimo) e subir pra compra quando o volume deixar. Hipótese, sem CPA.
+- Em curso: D-20261123-trafego-2 (Turing, linha de base "MM - Curtos" em índice, 26/11), -3 (Turing, eventos por semana em % de 50, 30/11), -1 (Léo, nomes, bloqueada). Aceita: D-20261122-trafego-3.
+- Devo: D-20261120-mkt-2 (bloqueada, leitura do gerenciador). Esperando: dados-1 e chave de sandbox (dados_relatorio-semanal-1), vencidas hoje.
+- Perguntas pro Léo: campanha MM - Curtos ainda ativa? leitura do gerenciador? teto registrado no privado vale pra semana 1? (BM e "campanha rodando" já respondidos em 07-canais e 06-historico.)

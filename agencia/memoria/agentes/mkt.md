@@ -29,3 +29,9 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoproduto
 ## 2026-11-22 · Ronda do Shelby
 - recebi: D-20261122-mkt-2 cancelada (prematura: sem export nem meta dos Corretores, e o Sun Tzu está lotado); reabre depois do radar de 01/12 se trouxer o placar em %. Teste de garantia adiado. Suas 3 perguntas viraram a Pergunta 3 da pauta; Black Friday: vale o não de 19/11. Confira a +12,15% na Central de Ajuda da Meta antes de usar.
 - pendente: mkt-1 (bloqueada), mkt-2 (Escobar, 23/11).
+
+## 2026-11-23 (Conselho, rodada 1)
+- fiz: li ficha, estrutura enxuta, playbook 12, base de conhecimento (agora com dado dos Corretores), decisoes, fios, quadro, placar de experimentos, ficha do produto. Escrevi agencia/conselho/rodadas/2026-11-23/mkt-r1.md; criei D-20261123-mkt-1 (Turing, placar UTMify em %), -2 (Disney, garantia de 30 dias no CTA), -3 (Escobar, regra do teste); cancelei D-20261120-mkt-1 (substituída). Atualizei mkt-agenda.md.
+- aprendi: (1) UTMify já mostra os Corretores: novembro contra outubro vendas/dia -43%, gasto/dia -32%, custo por venda +19%, ROAS 1,88 -> 1,61 (09-numeros.md, dados 23/11). (2) A página dos Corretores diz garantia de 30 dias (corretores.md §1), contra 7 dias dos 5 concorrentes: minha iniciativa de "garantia maior" caiu, virou "garantia à vista". (3) UTMify aceita status refunded com data (https://docs.utmify.com.br/envio-de-vendas). (4) Léo decidiu 23/11: 3 estilos novos hoje, 3 amanhã, preço R$27,90 nos criativos, voz só da Ana Paula, recuperação de Pix adiada. (5) +12,15% de tributo da Meta continua só em fonte secundária.
+- recebi: Escobar devolveu mkt-2 antiga bloqueada no prazo (acesso ao gerenciador); Shelby levou as perguntas ao Léo sem resposta ainda.
+- pendente: mkt-1/-2/-3 de 23/11; respostas do Léo (garantia, reembolso na UTMify, meta semanal); D-20261122-mkt-1 bloqueada.

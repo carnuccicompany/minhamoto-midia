@@ -1,0 +1,36 @@
+{
+  "id": "D-20261123-mercado-1",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [],
+  "titulo": "Tabela de preço e 'o que fazem melhor' dos concorrentes, com MotorManage incluído (fecha o dossiê D-20261123-master-dossie-2)",
+  "por_que": "O Shelby cobra o dossiê de Concorrentes até 25/11 18h (D-20261123-master-dossie-2) e 04-concorrentes.md ainda tem 'Preço' e 'O que fazem melhor' em aberto. Já temos preço de Drivvo, MotoMainte, Strox e KyroTune nas entregas D-20261122-mercado-1 e no radar 24/11. Fato novo: o MotorManage (motormanage.app) é grátis pra 2 motos, sem anúncio e sem prazo, com plano pago de 2,99 EUR/mês ou 19,99 EUR/ano e teste de 14 dias, e diz ter catálogo de 600 marcas e 42.000 modelos; é o concorrente gringo mais próximo do nosso plano por modelo. Saber o que cada um faz melhor decide o que a loja e o anúncio do MinhaMoto podem dizer pra converter instalação em assinante pago.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mercado-1.md com tabela de 5 apps (Drivvo, MotoMainte, MotorManage, Strox, KyroTune): preço de vitrine na moeda da loja, link oficial da loja ou do site, data do acesso, e 1 linha 'faz melhor que a gente' e 1 linha 'a gente faz melhor' com a fonte de cada. O que não abriu fica escrito, sem chute. Sem R$ nosso e sem a palavra 'grátis' como oferta nossa. Greco confere e marca as duas perguntas em 04-concorrentes.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T12:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-23T20:55:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado-1.md",
+    "resumo": "Tabela de preço dos 5 apps com link e data: MotorManage lido hoje no site oficial (livre pra 2 motos; King EUR 2,99/mês ou 19,99/ano; teste 14 dias). Os outros 4 vêm de leituras de 22/11 e 24/11 porque a App Store não abriu hoje. Inclui 'faz melhor' e 'a gente faz melhor' por app e o que não abriu."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T20:55:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T21:30:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou (App Store bloqueada hoje: 4 apps com leitura de 22/11 e 24/11, datada)"
+    },
+    {
+      "quando": "2026-11-23T23:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceitou: tabela de 5 apps com link, data, 'faz melhor' e 'a gente faz melhor'; 4 de 5 preços vêm de 22/11 e 24/11 e isso está dito; marquei as duas perguntas em 04-concorrentes.md"
+    }
+  ]
+}

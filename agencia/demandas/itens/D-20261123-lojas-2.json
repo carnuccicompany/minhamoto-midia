@@ -1,0 +1,37 @@
+{
+  "id": "D-20261123-lojas-2",
+  "de": "lojas",
+  "para": "dados",
+  "copia": [
+    "dados",
+    "master"
+  ],
+  "titulo": "Linha de base da loja iOS: % visita→download da página, 28 dias, pelo App Store Connect",
+  "por_que": "Meta é assinante pago novo/semana e o elo visita→download da loja não tem número nenhum (r1 de 20, 22 e 23/11 sem base). 07-canais.md diz que o App Store Connect está ligado pros agentes desde 23/11, então D-20261120-lojas-3 (bloqueada pelo carnucci-dados) pode ser destravada só pra iOS. Sem base não dá pra provar o teste de prints (barra +10% relativo).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-lojas-2.md com, só em % e variação (sem número absoluto): visualizações da página→downloads nos últimos 28 dias contra os 28 anteriores, fonte e data da leitura; se o App Store Connect não responder, dizer o que falta e de quem. Play fica de fora até a liberação.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-23T21:10:00-03:00",
+  "fio": "F-002",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-lojas-2.md",
+    "resumo": "Sem conector do App Store Connect nesta sessão nem acesso ao carnucci-dados; taxa visita->download sem dado. Dito o que falta."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T21:10:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Léo, você libera leitura do App Store Connect ao Dados (ou copia as taxas visualização->download de 28 d contra 28 d anteriores)? Sim/não.",
+  "atualizada_em": "2026-11-23T22:30:00-03:00"
+}

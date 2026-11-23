@@ -1,6 +1,6 @@
 {
- "atualizado": "23/11/2026 18:33",
- "pct": 90.8,
+ "atualizado": "23/11/2026 19:50",
+ "pct": 92.0,
  "categorias": [
   {
    "id": "estrutura",
@@ -321,20 +321,16 @@
     {
      "id": "03-cliente",
      "titulo": "Cliente do MinhaMoto",
-     "valor": 0.76,
-     "status": "parcial",
-     "falta": [
-      "2 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "04-concorrentes",
      "titulo": "Concorrentes",
-     "valor": 0.7,
-     "status": "parcial",
-     "falta": [
-      "2 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "05-marca",
@@ -372,12 +368,12 @@
      "falta": []
     }
    ],
-   "pct": 94.0,
-   "feitos": 7,
+   "pct": 100.0,
+   "feitos": 9,
    "total": 9
   }
  ],
- "pendentes": 6,
+ "pendentes": 4,
  "lista_pendentes": [
   {
    "categoria": "Conexões (tudo linkado)",
@@ -398,20 +394,6 @@
    "categoria": "Conexões (tudo linkado)",
    "titulo": "SDK do AppsFlyer dentro do app (Davi)",
    "falta": []
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Cliente do MinhaMoto",
-   "falta": [
-    "2 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Concorrentes",
-   "falta": [
-    "2 perguntas pro Léo"
-   ]
   }
  ],
  "historico": [
@@ -425,7 +407,7 @@
   },
   {
    "data": "23/11/2026",
-   "pct": 90.8
+   "pct": 92.0
   }
  ]
 }

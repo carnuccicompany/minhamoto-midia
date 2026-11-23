@@ -1,36 +1,42 @@
 {
-  "de": "master:auditor-de-entregas",
-  "status": "entregue",
-  "criada_em": "2026-11-22T23:55:00-03:00",
-  "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md",
-    "resumo": "3 opções com número: A (script recupera slot aberto do dia) simulada nas 8 execuções reais de 21 e 22/11 dá 6 posts em vez de 4 (+2); B (mais crons) não é provável, o GitHub rodou 8 de 192 disparos; C (forçar na mão) salva no máximo 1 e exige pessoa. Recomendo A com trava de 90 min. Pergunta sim/não pro Léo/Davi."
+ "de": "master:auditor-de-entregas",
+ "status": "entregue",
+ "criada_em": "2026-11-22T23:55:00-03:00",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md",
+  "resumo": "3 opções com número: A (script recupera slot aberto do dia) simulada nas 8 execuções reais de 21 e 22/11 dá 6 posts em vez de 4 (+2); B (mais crons) não é provável, o GitHub rodou 8 de 192 disparos; C (forçar na mão) salva no máximo 1 e exige pessoa. Recomendo A com trava de 90 min. Pergunta sim/não pro Léo/Davi."
+ },
+ "cobrancas": 0,
+ "fio": null,
+ "id": "D-20261122-master_auditor-de-entregas-1",
+ "para": "mkt:publicador",
+ "copia": [
+  "mkt",
+  "master"
+ ],
+ "titulo": "Proposta de recuperacao de slot perdido no publicador (hoje 4 de 8 slots em 21-22/11)",
+ "por_que": "fila/estado.json: 4 de 8 slots em 21-22/11 contra 19 de 19 em 16-20/11. O publicar.yml teve 0 execucoes dentro da janela dos 4 slots perdidos (7 agendadas em 48 h) e a recuperacao do Coordenador, sem 'forcar' e depois da janela de 2 h, nao publica (disparo de 23h10 de 22/11 nao postou). Prova: agencia/demandas/entregas/D-20261122-dados-3.md.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com 2 ou 3 opcoes (ex.: janela maior so para recuperar o ultimo slot perdido; disparo extra as xx:32 de cada slot; backfill com 'forcar' limitado a 1 post por slot perdido), cada uma com o numero de posts que teria salvo em 21-22/11 e o risco (posts juntos, ritmo). Nada e alterado em scripts/; termina com 1 pergunta sim/nao para o Leo/Davi.",
+ "prioridade": "P1",
+ "prazo": "2026-11-23T23:55:00-03:00",
+ "historico": [
+  {
+   "quando": "2026-11-22T23:55:00-03:00",
+   "quem": "master:auditor-de-entregas",
+   "o_que": "criou"
   },
-  "cobrancas": 0,
-  "fio": null,
-  "id": "D-20261122-master_auditor-de-entregas-1",
-  "para": "mkt:publicador",
-  "copia": [
-    "mkt",
-    "master"
-  ],
-  "titulo": "Proposta de recuperacao de slot perdido no publicador (hoje 4 de 8 slots em 21-22/11)",
-  "por_que": "fila/estado.json: 4 de 8 slots em 21-22/11 contra 19 de 19 em 16-20/11. O publicar.yml teve 0 execucoes dentro da janela dos 4 slots perdidos (7 agendadas em 48 h) e a recuperacao do Coordenador, sem 'forcar' e depois da janela de 2 h, nao publica (disparo de 23h10 de 22/11 nao postou). Prova: agencia/demandas/entregas/D-20261122-dados-3.md.",
-  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com 2 ou 3 opcoes (ex.: janela maior so para recuperar o ultimo slot perdido; disparo extra as xx:32 de cada slot; backfill com 'forcar' limitado a 1 post por slot perdido), cada uma com o numero de posts que teria salvo em 21-22/11 e o risco (posts juntos, ritmo). Nada e alterado em scripts/; termina com 1 pergunta sim/nao para o Leo/Davi.",
-  "prioridade": "P1",
-  "prazo": "2026-11-23T23:55:00-03:00",
-  "historico": [
-    {
-      "quando": "2026-11-22T23:55:00-03:00",
-      "quem": "master:auditor-de-entregas",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-23T10:45:00-03:00",
-      "quem": "mkt:publicador",
-      "o_que": "entregou (3 opções, pergunta sim/não ao Léo/Davi)"
-    }
-  ],
-  "bloqueio": "lider",
-  "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4."
+  {
+   "quando": "2026-11-23T10:45:00-03:00",
+   "quem": "mkt:publicador",
+   "o_que": "entregou (3 opções, pergunta sim/não ao Léo/Davi)"
+  },
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "master",
+   "o_que": "ronda do Shelby: tirei o bloqueio 'lider' de demanda entregue; a pergunta ao Léo é o item 1 de entregas/D-20261123-master-pacote-leo.md. Falta o Ness conferir e aceitar"
+  }
+ ],
+ "bloqueio": null,
+ "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4.",
+ "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

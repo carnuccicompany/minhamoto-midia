@@ -52,7 +52,7 @@
 - [ ] CONTINGÊNCIA Meta (Léo escolheu adiar, opção B em 18/11): hoje as contas de anúncio são da própria BM Matriz → se a Meta restringir a BM, a Matriz cai junto. Solução: criar BM só de anúncios com as contas, pixel/página compartilhados como parceiro. Ideal fazer antes de escalar gasto
 - [ ] DEPOIS do MinhaMoto: revisar os infoprodutos (Corretores, TEA, Perfect Class etc.) — tracking, campanhas, melhorias
 ### AppsFlyer (iniciado 18/11)
-- [x] Conta criada: login leonardo@carnucci.com (alias do usuário carnucci@carnucci.com no Workspace; e-mails caem na caixa do Workspace)
+- [x] Conta criada: login com o e-mail do Léo no Workspace (endereço fora do repositório público; e-mails caem na caixa do Workspace)
 - [x] Apps cadastrados: iOS id6815447825 + Android com.carnuccicompany.minhamoto — moeda BRL, fuso São Paulo
 - [x] OneLink: subdomínio minhamoto.onelink.me, template PL15 (iOS→App Store, Android→Google Play, computador→minhamotopagina.online)
 - [ ] Davi: SDK AppsFlyer no app — PAUSADO (18/11): código fica pronto agora, sai na próxima build (semana de 23/11, junto com a estética). Ver checklist PRÉ-BUILD abaixo
@@ -68,7 +68,7 @@
 - [x] App da Meta 884075288066806 publicado (Live) com ok do Léo (18/11)
 - [ ] Mapear postbacks Meta/TikTok (af_complete_registration + eventos do RevenueCat: rc_initial_purchase_event, rc_renewal_event; sem eventos de trial, o app não tem teste grátis) quando os eventos existirem — item do pré-build
 - [x] TikTok no AppsFlyer (18/11): apps criados no Events Manager do TikTok via AppsFlyer — TikTok App ID iOS 7709598764285280308, Android 7709597827451256853; parceiro 'TikTok For Business - Advanced SRN' ativo nos 2 apps com postbacks ligados
-- [x] Cópia dos e-mails do Workspace → carnuccicompany@gmail.com (19/11): o encaminhamento do Gmail recusava ("endereço inválido", sem e-mail de verificação), então foi feito por regra de Roteamento no Admin ("Copia para Gmail carnuccicompany": recebidas + internas recebidas, entregar também a carnuccicompany@gmail.com) → [x] testado 19/11: e-mail enviado pra suporte@ chegou no carnuccicompany@gmail.com
+- [x] Cópia dos e-mails do Workspace → Gmail da empresa (19/11): o encaminhamento do Gmail recusava ("endereço inválido", sem e-mail de verificação), então foi feito por regra de Roteamento no Admin ("Copia para Gmail carnuccicompany": recebidas + internas recebidas, entregar também ao Gmail da empresa) → [x] testado 19/11: e-mail enviado pra suporte@ chegou no carnuccicompany@gmail.com
 - [x] Funil visual do rastreamento publicado (19/11): claude.ai/artifact/Rbv2acafs4TdEj83MfQJPm — atualizar quando a build ligar o SDK
 - [ ] Painel MinhaMoto (aguarda ok do Davi pro schema analytics no Supabase)
 

@@ -40,9 +40,16 @@
    "quando": "2026-11-20T20:00:00-03:00",
    "quem": "master",
    "o_que": "cancelou: Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2."
+  },
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "master",
+   "o_que": "ronda do Shelby: tirei o bloqueio 'lider' que sobrou da demanda cancelada; a pergunta segue viva na dados-2"
   }
  ],
- "bloqueio": "lider",
+ "bloqueio": null,
  "pergunta_lider": "Davi: data de publicação iOS/Android da build de 23/11 e lista dos eventos (af_complete_registration e rc_*): sim/não pra cada.",
- "cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2."
+ "cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2.",
+ "motivo_cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2.",
+ "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

@@ -1,0 +1,32 @@
+{
+  "id": "D-20261123-dados-6",
+  "de": "dados",
+  "para": "trafego",
+  "copia": [
+    "trafego",
+    "dados"
+  ],
+  "titulo": "Proposta de teste pago mínimo (modo proposta, sem gastar) com o volume por variante da tabela do Dados",
+  "por_que": "O orgânico de feed não é o motor: mediana de alcance de 10 pessoas por post (0,7% dos 1.584 seguidores) e 0 salvamentos em 26 posts (dados/insights-2026-11-23.json). Se a meta de novos pagantes por semana vai ser puxada por canal, o único com volume controlável é o pago. A tabela D-20261122-trafego-3 já diz quantas pessoas por variante um teste precisa; falta a proposta casando isso com UTM e nome de campanha padronizados (D-20261120-dados-3).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-dados-6.md com 1 teste, 2 variantes, a unidade (paywall_view), o n mínimo por variante da trafego-3, o nome de campanha e UTM no padrão fechado, e a pergunta sim/não pro Léo sobre verba; nenhuma campanha criada nem dinheiro gasto.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T21:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T21:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T21:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitei (entrego até 26/11 21h): 1 teste, 2 variantes, unidade paywall_view, n da trafego-3 com a linha de taxa ainda em aberto, padrão dados-3, sim/não de verba pro Léo; sem campanha, sem gasto"
+    }
+  ],
+  "atualizada_em": "2026-11-23T22:00:00-03:00"
+}

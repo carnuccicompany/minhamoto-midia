@@ -8,7 +8,7 @@ _Status: pré-preenchido pelo Claude em 23/11/2026; inclui o cliente dos Correto
 - Público: motociclista brasileiro do dia a dia: trabalha de moto (motoboy, entregador, motorista de app), usa pra se locomover, cuida da própria moto. Fala simples, odeia enrolação. (MANUAL §1, 17/11)
 - Dores usadas nos ganchos: dinheiro (gasto que some), organização/controle, segurança, status/cuidado com a moto. (Léo, 17/11 e 18/11)
 - Fala com "você", português impecável, tom premium/aspiracional no criativo. (Léo, 17/11 e 18/11)
-- Quem assina, por que assina e por que cancela: **sem dado ainda** (chega com AppsFlyer + RevenueCat cruzados). (Stark/Jobs, 20/11)
+- Por que assina (voz das avaliações, amostra de 12): ver tudo num lugar, vale o que custa, facilita pra quem não entende de moto. Quem assina e por que cancela: **sem dado ainda** (chega com AppsFlyer + RevenueCat cruzados). (Stark/Jobs, 20/11)
 - Hipótese de perfil principal: motoboy/entregador com moto de baixa cilindrada (CG 160, Biz, Pop, Bros). [rascunho do Claude — confirmar]
 
 ### Corretores
@@ -20,7 +20,7 @@ _Status: pré-preenchido pelo Claude em 23/11/2026; inclui o cliente dos Correto
 
 ## Perguntas pro Léo
 - [x] Quem é o assinante típico (idade, moto, uso, cidade)? → Não dá pra saber ainda: por enquanto todos os tipos compraram (Léo, 23/11).
-- [ ] Por que ele assina? Qual dor resolve?
-- [ ] Que palavras ele usa pra falar da moto e do problema?
+- [x] Por que ele assina? Qual dor resolve? → Pelas 12 avaliações das lojas (amostra pequena, fala quem avalia, não prova de quem assina): "ver tudo que preciso" num lugar só/controle (3), "vale o que custa" (3), facilita pra quem não entende de moto (1), rápido e fácil (1), indica pros amigos (4). Plano de revisão por modelo não aparece em nenhuma. Detalhe: `agencia/demandas/entregas/D-20261123-master-dossie-1.md` (Bezos, 23/11).
+- [x] Que palavras ele usa pra falar da moto e do problema? → Diz "moto" e "motoqueiro" (nunca "motociclista" ou "motoboy"); "app", "facilitando", "prático", "custo benefício", "vale cada centavo", "recomendo"; reclama com "baixei, não funciona", "não abre", "falha ao sincronizar". Frases curtas, informais ("mto", "n"). Fonte: avaliações das lojas, `dados/avaliacoes/`; comentários públicos sem acesso (Bezos, 23/11).
 - [x] Quais objeções antes de pagar? → MinhaMoto: sem dado. Corretores: não dá pra saber, é tráfego direto (quem não compra some) (Léo, 23/11).
 - [x] Por que cancela? → Ainda não sabemos (Léo, 23/11).

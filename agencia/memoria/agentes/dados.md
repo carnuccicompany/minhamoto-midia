@@ -62,3 +62,9 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - fiz: aceitei D-20261120-dados-3 (padrão de UTM do Escobar; fontes PENDENCIAS.md l.60 e l/README.md batem). A divergência que o Escobar notou estava na minha trafego-2 (seção 2): corrigi para apontar o padrão único da dados-3.
 - aprendi: ao entregar um padrão, reusar o que já está fechado em vez de propor tabela nova em outro arquivo.
 - pendente: OK do Léo em meta-ads/tiktok-ads e nome de campanha; prova real no D+0.
+
+## 2026-11-23 (noite) · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-23/dados-r1.md; criei D-20261123-dados-4 (Hemingway, P1 24/11 21h), -5 (Shelby, coleta diária, P2) e -6 (Escobar, proposta de teste pago, P2).
+- aprendi: insights por post voltaram (dados/insights-2026-11-23.json, erros vazio): 26 posts, mediana de alcance 0,7% dos seguidores, 0 salvamentos, 1 compartilhamento. Alcance da conta 28d muito maior que a soma dos posts; doc da Meta (developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights) diz que conta anúncio, story e reel e aceita breakdown media_product_type. Esse link abriu; RevenueCat/AppsFlyer seguem bloqueados.
+- erro a evitar: o relatório das 8h26 ficou velho em horas; conferir a hora da coleta antes de citar "zero".
+- pendente: Davi (F-001, dados-2), Léo (dados-1, ted-1); dados-4/5/6; D-20261123-lojas-1 (30/11).

@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-trafego-3.md com tabela de testes iniciados por variante pra detectar diferença relativa de 20%, 30% e 50% na conversão teste->pago (poder 80%, confiança 95%), a fórmula usada e a regra de parada. Marcado como estimativa por benchmark, a ser trocada pela taxa própria quando existir.",
   "prioridade": "P3",
   "prazo": "2026-11-29T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-22T20:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -29,7 +29,12 @@
       "quando": "2026-11-23T20:30:00-03:00",
       "quem": "dados",
       "o_que": "entregou: agencia/demandas/entregas/D-20261122-trafego-3.md"
+    },
+    {
+      "quando": "2026-11-23T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitou: tabela por cenario de taxa, unidade paywall_view, regra de parada de 7 pontos e correcao do pedido (sem teste gratis). Falta so trocar pela taxa propria apos a build."
     }
   ],
-  "atualizada_em": "2026-11-23T20:30:00-03:00"
+  "atualizada_em": "2026-11-23T19:30:00-03:00"
 }

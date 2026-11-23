@@ -1,0 +1,31 @@
+{
+  "id": "D-20261123-mkt-3",
+  "de": "mkt",
+  "para": "trafego",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Proposta (só proposta) de regra de decisão do teste dos 3 estilos dos Corretores: um CBO por estilo, quando cortar, quando dobrar, em % do custo por venda de outubro",
+  "por_que": "O teste EXP-20261123-1 está 'planejado' sem início e sem critério de corte (agencia/experimentos/placar.json). Sem regra escrita antes, o teste vira opinião. Contexto: custo por venda +19% e vendas/dia -43% em novembro (agencia/conhecimento/09-numeros.md); melhores horários 7h-9h, 13h e 20h-21h, madrugada dá prejuízo (agencia/estudio/produtos/corretores-aprendizados.md). Escobar já pediu regra de parada ao Turing no app (D-20261122-trafego-3); o mesmo raciocínio vale aqui.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-3.md com: quantas vendas por estilo antes de declarar vencedor (pode usar a conta do Turing em D-20261122-trafego-3 adaptada pra compra, com a fórmula), corte e dobra em % do custo por venda de outubro, janela de horário, e a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou renomeada; nomes são do Léo.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T19:40:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T19:40:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:40:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitei só como proposta (entrego até 26/11 19h40): Corretores não são minhas campanhas, nome e execução são do Léo; regra de corte/dobra em % do custo por venda de outubro, se o Turing me der o índice; sem ele escrevo a regra e deixo a base em aberto"
+    }
+  ],
+  "atualizada_em": "2026-11-23T22:00:00-03:00"
+}

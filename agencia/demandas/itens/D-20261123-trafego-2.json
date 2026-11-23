@@ -1,0 +1,36 @@
+{
+  "id": "D-20261123-trafego-2",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Linha de base da campanha 'MM - Curtos' (Meta, novembro): CTR, CPM, cliques e instalações em índice e variação, sem R$",
+  "por_que": "Não tenho nenhum número de campanha do MinhaMoto. A campanha 'MM - Curtos' rodou em novembro com CTR de 2% a 3,5% e a venda do app não aparece na UTMify (agencia/conhecimento/06-historico.md, dados 23/11). A Meta (anúncios) está ligada pros agentes desde 23/11 (07-canais.md). Sem essa linha de base eu não consigo dizer se o 1º teste pago melhora ou piora, e o ranking do Tráfego fica em branco.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261123-trafego-2.md com, por semana de novembro e só em % ou índice (semana mais antiga = 100): CTR, CPM, custo por clique, cliques e instalações atribuídas, mais a % de cliques que viram instalação; diz quantas semanas e quantos dias de dado existem e se a campanha ainda está ativa. Sem acesso à Meta ou ao carnucci-dados, entregar 'bloqueada' dizendo o que falta e de quem. Nenhum R$ nem número absoluto no arquivo.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-23T19:30:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-trafego-2.md",
+    "resumo": "Sem acesso à Meta anúncios nem ao carnucci-dados; só se sabe CTR de 2% a 3,5%. Tabela em índice sem dado."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Léo, você exporta o Gerenciador de Anúncios (CA - MinhaMoto, MM - Curtos, por semana de novembro) ou libera leitura da Meta ao Dados? Sim/não.",
+  "atualizada_em": "2026-11-23T22:30:00-03:00"
+}

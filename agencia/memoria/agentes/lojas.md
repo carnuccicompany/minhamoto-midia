@@ -56,3 +56,9 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - fiz: aceitei D-20261122-lojas-2 (Disney): 2 variações x 3 legendas, até 6 palavras (contei), sem modelo/"grátis"/"teste", telas e fatos conferidos no 00-SISTEMA-OPERACIONAL.md e no radar 24/11.
 - aprendi: B3 (combustível e documentos) depende de telas que ainda não existem na build (cria-3 bloqueada pelo Davi); sem baseline visita→download; "3 primeiros prints aparecem na busca" segue sem fonte, confirmar na doc Apple/Google.
 - pendente: parecer do Shelby (lojas-3); OK do Léo antes de qualquer coisa ir à loja; teste de página (Apple PPO testa prints).
+
+## 2026-11-23 22:00 · Rodada 1 do Conselho
+- fiz: lojas-r1.md (2026-11-23); criei D-20261123-lojas-2 (Turing) e -3 (Disney); atualizei lojas-agenda.md.
+- aprendi: Play Console permite 1 experimento de gráficos por app (ícone, feature graphic, screenshots) ([fonte](https://support.google.com/googleplay/android-developer/answer/12053285)). Coleta de 23/11 20h14: n=8, média 4,5 (Play 3,0 com n=2; App Store 5,0). apps.apple.com não abriu (WebFetch sem permissão); developer.apple.com idem hoje.
+- recebi: D-20261123-master-dossie-1 (25/11) e D-20261123-dados-3 (26/11).
+- pendente: dossiê do cliente (25/11); OK do Léo no 1★ ec124592; domínios das lojas; nota oficial do Play.

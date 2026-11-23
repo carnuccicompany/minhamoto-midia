@@ -1,48 +1,13 @@
 {
- "atualizado": "2026-11-23T17:46-03:00",
+ "atualizado": "2026-11-23T19:50-03:00",
  "resumo": {
-  "abertas": 5,
+  "abertas": 14,
   "atrasadas": 0,
-  "entregues": 5,
-  "aceitas": 22,
+  "entregues": 4,
+  "aceitas": 32,
   "bloqueadas_lider": 26
  },
  "demandas": [
-  {
-   "id": "D-20261120-mkt-1",
-   "de": "mkt",
-   "para": "dados",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Placar dos Corretores da semana em % (vendas, reembolso, ticket, custo por venda, ROAS por campanha)",
-   "por_que": "Meu número da semana (vendas dos infoprodutos) está em branco: não há dado dos Corretores no repositório público nem acesso ao carnucci-dados nesta sessão. Sem placar não dá pra apontar a etapa do funil que mais quebra (playbook 12).",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-1.md com variação % semana contra semana de vendas, reembolsos, ticket médio, custo por venda e ROAS por campanha dos Corretores (só % ou variação, sem valor absoluto), fonte de cada linha; o que faltar vem listado com quem precisa liberar.",
-   "prioridade": "P1",
-   "prazo": "2026-11-21T19:50:00-03:00",
-   "status": "bloqueada",
-   "criada_em": "2026-11-20T19:50:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-20T19:50:00-03:00",
-     "quem": "mkt",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-20T22:00:00-03:00",
-     "quem": "dados",
-     "o_que": "aceita o placar, recuso o prazo de 21/11: não há export dos Corretores em lugar nenhum que eu leia. Entrego só o esqueleto das colunas em %; dado real depende do export semanal de vendas e reembolsos (pergunta 1 do Cardone ao Léo)"
-    }
-   ],
-   "bloqueio": "lider",
-   "pergunta_lider": "Léo: libera export semanal de vendas e reembolsos dos Corretores pro carnucci-dados (sim/não)? Plataforma de venda?",
-   "_atrasada": false,
-   "_de_nome": "Grant Cardone",
-   "_para_nome": "Alan Turing"
-  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
@@ -151,8 +116,8 @@
    "criada_em": "2026-11-22T23:20:00-03:00",
    "fio": null,
    "entrega": {
-    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
-    "resumo": "perguntas de dados-2, lojas-2, mercado-2, mercado-4 e cria-3 juntadas numa só (Pergunta 1 do master.md de 22/11), mais a lista de itens da Lista pro Davi no master.md; sem resposta registrada, fica bloqueada."
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
+    "resumo": "Pacote de 10 sim/não ao Davi pronto (sem o que o código de 17/11 já respondeu). Vai no bilhete de decisões; aguardando resposta. Prazo de 23/11 12h estourado por mim: vai pra Folha."
    },
    "cobrancas": 0,
    "historico": [
@@ -165,52 +130,18 @@
      "quando": "2026-11-22T23:55:00-03:00",
      "quem": "master",
      "o_que": "perguntas de dados-2, lojas-2, mercado-2, mercado-4 e cria-3 juntadas numa só (Pergunta 1 do master.md de 22/11), mais a lista de itens da Lista pro Davi no master.md; sem resposta registrada, fica bloqueada."
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "pacote ao Davi escrito; fica bloqueada até a resposta dele"
     }
    ],
    "bloqueio": "lider",
    "pergunta_lider": "Davi, sim/não em 7 itens sobre o app hoje: (1) tem anúncio na tela? (2) a conta guarda o histórico entre aparelhos? (3) a moto é escolhida numa lista, sem digitar o modelo? (4) o usuário vê o plano de revisão da moto antes do paywall? (5) já existe pedido de avaliação, e dispara só depois de 'Registrar serviço' e nunca após erro de sync? (6) o plano cobre CG 160, Pop 110i, Biz e Bros 160? (7) libera 5 prints/gravações 9:16 da versão nova, sem dado de cliente, até 27/11?",
-   "atualizada_em": "2026-11-22T23:55:00-03:00",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Tony Stark",
-   "_para_nome": "Thomas Shelby"
-  },
-  {
-   "id": "D-20261122-mkt-1",
-   "de": "mkt",
-   "para": "master",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "Levar ao Léo as 3 perguntas dos Corretores que travam o meu número (export de vendas, meta semanal, garantia atual)",
-   "por_que": "D-20261120-mkt-1 (P1) venceu em 21/11 19:50 bloqueada com bloqueio 'lider' e cobrancas 0: o Léo nunca respondeu a pergunta do export (decisoes.md não tem resposta até 22/11). Sem export de vendas e reembolso não existe número de infoproduto na semana (metas.json cobre só assinantes do MinhaMoto; nenhuma linha de meta pros infoprodutos). Fonte: agencia/demandas/itens/D-20261120-mkt-1.json e agencia/conhecimento/perguntas-pendentes.md.",
-   "pronto_quando": "O Shelby põe as 3 perguntas (sim/não ou resposta curta) na pauta do Léo e registra a resposta, ou 'sem resposta até <data>', em agencia/memoria/decisoes.md ou em agencia/conhecimento/perguntas-pendentes.md com a data. Perguntas: (1) a plataforma é a Kavoo e ela exporta CSV de vendas/reembolsos ou tem webhook? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (número fica no Drive privado)? (3) a garantia atual dos Corretores é só os 7 dias do CDC ou maior?",
-   "prioridade": "P1",
-   "prazo": "2026-11-23T20:00:00-03:00",
-   "status": "bloqueada",
-   "criada_em": "2026-11-22T20:00:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
-    "resumo": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-22T20:00:00-03:00",
-     "quem": "mkt",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-22T23:55:00-03:00",
-     "quem": "master",
-     "o_que": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
-    }
-   ],
-   "bloqueio": "lider",
-   "pergunta_lider": "Léo, 3 itens dos Corretores: (1) a plataforma é a Kavoo e ela exporta vendas e reembolsos (CSV ou webhook)? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (valor só no privado)? (3) a garantia atual é só os 7 dias do CDC ou maior? (Black Friday: a decisão de 19/11 vale, não.)",
-   "atualizada_em": "2026-11-22T23:55:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Grant Cardone",
    "_para_nome": "Thomas Shelby"
   },
   {
@@ -248,10 +179,17 @@
      "quando": "2026-11-23T10:45:00-03:00",
      "quem": "mkt:publicador",
      "o_que": "opções com número em agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md; A simulada dá +2 posts em 21 e 22/11"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
    "pergunta": "Posso mudar o publicar.py para o GitHub recuperar sozinho o post do horário perdido (1 por rodada, máximo 4 por dia, sem mexer no conteúdo)? sim/não. Recomendação: sim, é o único jeito de não depender da tarefa que caiu por limite de uso.",
+   "pergunta_lider": "Léo/Davi: pode mudar o publicar.py pro GitHub recuperar sozinho o post do horário perdido (1 por rodada, máximo 4 por dia, até 23h59)? Sim/não (item 1 de entregas/D-20261123-master-pacote-leo.md).",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Phileas Fogg",
    "_para_nome": "Thomas Shelby"
@@ -286,41 +224,64 @@
      "quando": "2026-11-23T08:00:00-03:00",
      "quem": "master",
      "o_que": "bloqueada: pergunta ao Léo no pacote da segunda (recomendo sim)"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
    "pergunta": "Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite de uso não derrubar a publicação? (sim/não)",
+   "pergunta_lider": "Léo: pode reduzir o Coordenador de 2 rodadas por hora para 1, mantendo o disparo dos posts? Sim/não (item 2 de entregas/D-20261123-master-pacote-leo.md).",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Eliot Ness",
    "_para_nome": "Thomas Shelby"
   },
   {
-   "id": "D-20261123-master-dossie-1",
-   "de": "master",
-   "para": "lojas",
+   "id": "D-20261123-mkt-1",
+   "de": "mkt",
+   "para": "dados",
    "copia": [
-    "mercado"
+    "master"
    ],
-   "titulo": "Fechar o dossiê do Cliente: por que assina e que palavras usa",
-   "por_que": "Últimas 2 perguntas abertas do dossiê 03-cliente (cadastro do escritório); sem a voz real do cliente os criativos chutam o gancho",
-   "pronto_quando": "Em agencia/conhecimento/03-cliente.md, as perguntas 'Por que ele assina?' e 'Que palavras ele usa?' marcadas [x] com respostas tiradas das avaliações das lojas (dados/avaliacoes/) e comentários públicos, citando a fonte; nada inventado",
-   "prioridade": "P2",
-   "prazo": "2026-11-25T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-23T17:45:00-03:00",
+   "titulo": "Placar semanal dos Corretores em % direto da UTMify (vendas/dia, custo por venda, ROAS, % Pix pago, % order bump, reembolso), 4 semanas",
+   "por_que": "Meu número da semana está em branco desde 20/11. Mas a base de conhecimento já traz leitura da UTMify (agencia/conhecimento/09-numeros.md, 23/11: vendas/dia -43%, custo por venda +19% de out pra nov), então o Kavoo não precisa exportar nada pra eu ter placar: a UTMify aceita pedido com status refunded e data de reembolso (https://docs.utmify.com.br/envio-de-vendas). Falta a quebra semana a semana e o reembolso. Substitui a D-20261120-mkt-1, que esperava export do Kavoo.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-1.md com, para as 4 últimas semanas fechadas (seg a dom), variação % semana contra semana de vendas/dia, custo por venda, ROAS, % de Pix gerado que foi pago, % de pedidos com order bump e % de reembolso sobre vendas, cada linha com a fonte (arquivo em carnucci-dados ou tela da UTMify); sem valor absoluto nem R$. Se a UTMify não receber o reembolso do Kavoo, a linha vem 'sem dado' e diz quem libera. Além do placar, dizer qual etapa mais perdeu desde 1/11 (clique, página vista, checkout, Pix gerado, Pix pago), em % sobre a etapa anterior; ordem pedida pelo Shelby na ronda de 23/11 (a visualização de página por clique caiu de ~92% pra ~75% e a recuperação de Pix está adiada pelo Léo).",
+   "prioridade": "P1",
+   "prazo": "2026-11-24T19:40:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-23T19:40:00-03:00",
    "fio": null,
-   "entrega": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-1.md",
+    "resumo": "Placar semanal não saiu: sem acesso à UTMify/carnucci-dados. Entreguei o que há (mensal -43% vendas/dia, +19% custo/venda) e a etapa clique->página vista (~92%->~75%, -18% relativo) como única candidata; reembolso sem dado."
+   },
    "cobrancas": 0,
    "historico": [
     {
-     "quando": "2026-11-23T17:45:00-03:00",
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T19:50:00-03:00",
      "quem": "master",
-     "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+     "o_que": "escopo ampliado na ronda: etapa que mais perdeu desde 1/11. Prazo e prioridade mantidos"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
     }
    ],
+   "atualizada_em": "2026-11-23T22:30:00-03:00",
+   "bloqueio": "lider",
+   "pergunta": "Léo, você exporta (ou libera leitura ao Dados da) UTMify por semana de 26/10 a 22/11, com cliques, páginas vistas, checkouts, Pix gerado/pago, bump e reembolso? Sim/não.",
    "_atrasada": false,
-   "_de_nome": "Thomas Shelby",
-   "_para_nome": "Jeff Bezos"
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261123-master-dossie-2",
@@ -349,6 +310,174 @@
    "_atrasada": false,
    "_de_nome": "Thomas Shelby",
    "_para_nome": "Salvatore Greco"
+  },
+  {
+   "id": "D-20261123-mercado-3",
+   "de": "mercado",
+   "para": "produto",
+   "copia": [
+    "master"
+   ],
+   "titulo": "A tela Documentos avisa o vencimento do CRLV/licenciamento? Sim ou não, com a tela que prova",
+   "por_que": "A série IPVA 2027 (D-20261123-mercado-2) só pode dizer 'o app te avisa' se isso for verdade. O BANCO.md linha 54 já escreve 'prova no app: documentos/lembretes', mas a ficha do produto (agencia/estudio/produtos/minhamoto.md) só lista 'documentos' e 'notificações de marcos', e o README de telas só descreve 07-documentos (CRLV, CNH, licenciamento) e 15-notificacoes sem dizer se há aviso de vencimento. Prometer o que o app não faz derruba a conversão do instalado pro pago e vira avaliação ruim (regra 08-regras.md: nunca prometer recurso que não existe). Decide se o anúncio e o post de janeiro usam 'avisa antes de vencer' ou só 'tenha o documento à mão'.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mercado-3.md com: 'sim' ou 'não' pra aviso de vencimento de documento (CRLV, licenciamento, CNH), qual tela mostra (arquivo em agencia/designer/assets/telas-app/), e a versão do app em que vale. Se só o Davi sabe, status bloqueada com bloqueio lider e a pergunta pronta, sim/não, pra entrar no pacote do Davi (D-20261122-produto-3). Sem chute.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T18:00:00-03:00",
+   "status": "devolvida",
+   "criada_em": "2026-11-23T20:55:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado-3.md",
+    "resumo": "Sim em parte: licenciamento tem selo 'Documento vencendo' na Garagem aos 30 dias; sem push nem aviso de CRLV/CNH no código de 17/11."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T20:55:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "produto",
+     "o_que": "entregue: sim em parte (selo na Garagem, só licenciamento, sem push); código de 17/11, build de 23/11 não conferida"
+    },
+    {
+     "quando": "2026-11-23T23:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "devolveu: (1) nenhuma tela em telas-app mostra o selo 'Documento vencendo'; 18-garagem-atencao.png mostra '3 itens pedem atenção' (manutenção), então não prova. Entregar print/tela com o selo ou dizer que não existe tela e que a prova é só o código. (2) Versão do app em que vale: veio só 'commit 05425c9 de 17/11', sem número de versão/build; informar a versão do app ou mandar a pergunta sim/não pro Davi (bloqueada, bloqueio lider, pacote produto-3) sobre build de 23/11 e push. A resposta sim em parte, com o código citado, está aceita."
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Tony Stark"
+  },
+  {
+   "id": "D-20261123-mkt-2",
+   "de": "mkt",
+   "para": "cria",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
+   "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:40:00-03:00",
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T19:40:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261123-mkt-3",
+   "de": "mkt",
+   "para": "trafego",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Proposta (só proposta) de regra de decisão do teste dos 3 estilos dos Corretores: um CBO por estilo, quando cortar, quando dobrar, em % do custo por venda de outubro",
+   "por_que": "O teste EXP-20261123-1 está 'planejado' sem início e sem critério de corte (agencia/experimentos/placar.json). Sem regra escrita antes, o teste vira opinião. Contexto: custo por venda +19% e vendas/dia -43% em novembro (agencia/conhecimento/09-numeros.md); melhores horários 7h-9h, 13h e 20h-21h, madrugada dá prejuízo (agencia/estudio/produtos/corretores-aprendizados.md). Escobar já pediu regra de parada ao Turing no app (D-20261122-trafego-3); o mesmo raciocínio vale aqui.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-3.md com: quantas vendas por estilo antes de declarar vencedor (pode usar a conta do Turing em D-20261122-trafego-3 adaptada pra compra, com a fórmula), corte e dobra em % do custo por venda de outubro, janela de horário, e a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou renomeada; nomes são do Léo.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:40:00-03:00",
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T19:40:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "aceitei só como proposta (entrego até 26/11 19h40): Corretores não são minhas campanhas, nome e execução são do Léo; regra de corte/dobra em % do custo por venda de outubro, se o Turing me der o índice; sem ele escrevo a regra e deixo a base em aberto"
+    }
+   ],
+   "atualizada_em": "2026-11-23T22:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-produto-1",
+   "de": "produto",
+   "para": "produto:analista-do-paywall",
+   "copia": [],
+   "titulo": "Página de decisão pro Davi: tela 'Plano da sua moto' após o cadastro, em sim/não, com aceite e medição",
+   "por_que": "Meta é assinante pago novo por semana; número do produto é % instalação>pagante (06-produto.md, lapidado 20/11). A entrega D-20261122-produto-1 está aceita, mas agencia/produto/propostas/ está vazia e o Davi não tem onde aprovar ou recusar (Folha de 20/11: falta proposta escrita). Sem proposta aprovada o teste não entra na janela pós-build.",
+   "pronto_quando": "Arquivo em agencia/produto/propostas/ (e página do painel, se já existir o modelo) com: antes/depois da tela, 1 única mudança, critérios de aceite, eventos moto_cadastrada e plano_visto, o que mede (% instalação>pagante por plataforma, iOS e Android separados) e no máximo 3 perguntas sim/não pro Davi (P1 'a build de 23/11 mantém o briefing?' em primeiro). Sem R$, sem número absoluto, paywall/preço/planos intocados. Nada mexe no app.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:45:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-23T19:45:00-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Steve Jobs"
+  },
+  {
+   "copia": [
+    "cria",
+    "produto:analista-do-paywall"
+   ],
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T20:10:00-03:00",
+   "fio": "F-004",
+   "entrega": null,
+   "cobrancas": 0,
+   "id": "D-20261123-cria-3",
+   "de": "cria",
+   "para": "produto",
+   "titulo": "Conferir cada cena de A1 e B1 contra o app da build de 23/11: tela existe, aviso 'antes do prazo' existe?",
+   "por_que": "A1 e B1 prometem: histórico com data e km, saúde da moto em um só lugar, aviso antes do prazo (agencia/direcao-v2/A/A1/frames.jpg, B/B1/frames.jpg). Foram feitos em 18/11 com telas do código anterior à build de 23/11 (PENDENCIAS.md). Anúncio com tela que o app não tem é promessa falsa e risco de reprovação na Meta/loja; confirmar custa uma leitura de código.",
+   "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261123-cria-3.md com 1 linha por cena (tela, texto na tela, frase de voz): 'existe igual', 'existe diferente (o que mudou)' ou 'não existe', com o arquivo do código lido. Se faltar acesso, marcar bloqueada com a pergunta pro Davi.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "historico": [
+    {
+     "quando": "2026-11-23T20:10:00-03:00",
+     "quem": "cria",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita; leio o código de 17/11 contra os frames de A1/B1 e entrego a tabela até 26/11 20h; cena que depender da build de 23/11 vai marcada como 'não conferida'"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Tony Stark"
   },
   {
    "id": "D-20261123-dados-3",
@@ -381,6 +510,131 @@
    "_para_nome": "Jeff Bezos"
   },
   {
+   "id": "D-20261123-dados-6",
+   "de": "dados",
+   "para": "trafego",
+   "copia": [
+    "trafego",
+    "dados"
+   ],
+   "titulo": "Proposta de teste pago mínimo (modo proposta, sem gastar) com o volume por variante da tabela do Dados",
+   "por_que": "O orgânico de feed não é o motor: mediana de alcance de 10 pessoas por post (0,7% dos 1.584 seguidores) e 0 salvamentos em 26 posts (dados/insights-2026-11-23.json). Se a meta de novos pagantes por semana vai ser puxada por canal, o único com volume controlável é o pago. A tabela D-20261122-trafego-3 já diz quantas pessoas por variante um teste precisa; falta a proposta casando isso com UTM e nome de campanha padronizados (D-20261120-dados-3).",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-dados-6.md com 1 teste, 2 variantes, a unidade (paywall_view), o n mínimo por variante da trafego-3, o nome de campanha e UTM no padrão fechado, e a pergunta sim/não pro Léo sobre verba; nenhuma campanha criada nem dinheiro gasto.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T21:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "aceitei (entrego até 26/11 21h): 1 teste, 2 variantes, unidade paywall_view, n da trafego-3 com a linha de taxa ainda em aberto, padrão dados-3, sim/não de verba pro Léo; sem campanha, sem gasto"
+    }
+   ],
+   "atualizada_em": "2026-11-23T22:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-dados_relatorio-semanal-1",
+   "de": "dados:relatorio-semanal",
+   "para": "dados:coletor-de-metricas",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
+   "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-23T23:35:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T23:35:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-23T23:35:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Ernest Hemingway",
+   "_para_nome": "Florence Nightingale"
+  },
+  {
+   "id": "D-20261123-mercado-2",
+   "de": "mercado",
+   "para": "cria",
+   "copia": [
+    "master"
+   ],
+   "titulo": "4 pautas fechadas da série IPVA 2027 pro BANCO, com fonte oficial, antes que a fila acabe (~14/12)",
+   "por_que": "O IPVA de SP vence de 11/01 (final 1) a 22/01 (final 0), 3% de desconto à vista em janeiro (Agência SP, 09/11/2026: https://www.agenciasp.sp.gov.br/desenvolvimento/ipva-2027-sp-divulga-calendario-com-desconto-de-3-em-janeiro-e-pagamento-em-ate-cinco-parcelas/). Na fila de 113 carrosséis (fila/carrosseis.json) só DV08 (já no ar) e B18 tocam documentos/licenciamento e nenhum é o calendário do IPVA; a fila seca por volta de 14/12 (relatório de 23/11). O radar de 17/11 e o BANCO já trazem 2 ideias (linhas 53 e 54), mas sem pauta fechada. É a janela de busca de dezembro a janeiro, e a tela Documentos é a prova no app. Sem série pronta até 14/12, a janela passa sem post. Meta: assinante pago novo por semana, pelo post que leva a instalação.",
+   "pronto_quando": "Seção 'IPVA 2027 (janeiro)' em agencia/pautas/BANCO.md com 4 pautas: gancho de até 8 palavras, ângulo, link da fonte oficial (Agência SP ou Decreto 70.960/2026) e dia sugerido de postagem entre 14/12 e 10/01. Regras: só pauta, nada produzido nem publicado; sem prometer isenção (moto até 180 cc só com licenciamento em dia); sem dizer que o app avisa vencimento enquanto a D-20261123-mercado-3 não for respondida; sem 'grátis' e sem Black Friday. Shelby confere a promessa antes de produzir.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T20:55:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T20:55:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei: só pauta no BANCO (texto, sem produzir); não é reposição de carrossel, é a janela de busca do IPVA. Fonte oficial e sem prometer aviso de vencimento até a mercado-3."
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261123-mercado_radar-de-concorrentes-1",
+   "de": "mercado:radar-de-concorrentes",
+   "para": "produto",
+   "copia": [
+    "mercado"
+   ],
+   "titulo": "Confirmar se o app escolhe a moto numa lista (marca, modelo, versão) e se o plano de revisão sai por modelo e km",
+   "por_que": "O ângulo 'sem digitar a moto' contra o Drivvo (reclamação de modelo digitado, out/2025) e contra o MotorManage (catálogo de 42.000 modelos) só vale se o app faz isso; 02-produto.md marca como rascunho. Sem confirmação o anúncio não pode usar a frase.",
+   "pronto_quando": "Resposta de 2 linhas em agencia/demandas/entregas/ dizendo: (1) a escolha de marca/modelo/versão é lista ou texto livre; (2) quantos modelos tem plano de revisão hoje (faixa, sem número de assinantes). Fonte: código ou ficha do produto.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-23T21:30:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:30:00-03:00",
+     "quem": "mercado:radar-de-concorrentes",
+     "o_que": "criou"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Sun Tzu",
+   "_para_nome": "Tony Stark"
+  },
+  {
    "id": "D-20261123-lojas-1",
    "de": "lojas",
    "para": "dados",
@@ -410,32 +664,106 @@
    "_para_nome": "Alan Turing"
   },
   {
-   "id": "D-20261123-produto_analista-do-paywall-1",
-   "de": "produto:analista-do-paywall",
-   "para": "master",
+   "id": "D-20261123-trafego-3",
+   "de": "trafego",
+   "para": "dados",
    "copia": [
-    "produto"
+    "master"
    ],
-   "titulo": "Registrar em 02-produto.md o fluxo do app lido no código (onboarding > plano > paywall) pra ninguém tratar como incógnita",
-   "por_que": "02-produto.md está vazio e já custou uma entrega refeita (D-20261120-produto-1). Li o código em modo leitura: o briefing e 'Esse é o MinhaMoto' (itens reais do plano) já vêm antes do paywall; sem SDK AppsFlyer no package.json. Fonte: agencia/demandas/entregas/D-20261122-produto-1.md",
-   "pronto_quando": "02-produto.md com a seção 'Fluxo do app (código de 17/11)', marcada 'a confirmar com o Davi (build de 23/11)', sem R$ e sem número absoluto; ou recusa com motivo.",
+   "titulo": "Quantos eventos por semana cada etapa do funil gera, em % de 50, pra escolher o evento de otimização da 1ª campanha",
+   "por_que": "TikTok diz que 50 conversões é o principal indicador de sair da fase de aprendizado (ads.tiktok.com/resources/help/article/learning-phase-faq, consultada 23/11). A Meta não publica mínimo na página de otimização de apps (developers.facebook.com/docs/app-ads/optimizing-your-app-ad). Se a compra paga não chegar perto de 50 por semana por campanha, otimizar por compra trava o aprendizado e queima verba; aí o evento tem que ser um degrau acima (paywall_view). Isso decide custo por assinante, a meta do Tráfego. Complementa D-20261122-trafego-3 (volume por variante).",
+   "pronto_quando": "Na 1ª leitura depois da build com SDK (Turing prevê 30/11), arquivo em agencia/demandas/entregas/D-20261123-trafego-3.md com, para onboarding_complete, paywall_view e compra inicial (RevenueCat): eventos da semana como % de 50 e a % de eventos com origem identificada; recomendação de qual é o evento mais perto da compra que passa de 50 por semana. Se o SDK não entrou na build, status 'bloqueada' dizendo isso e usando o Plano B de D-20261122-master-5. Só % e variação, nenhum absoluto.",
    "prioridade": "P3",
-   "prazo": "2026-11-30T23:20:00-03:00",
+   "prazo": "2026-11-30T20:00:00-03:00",
    "status": "aberta",
-   "criada_em": "2026-11-23T14:50:00-03:00",
+   "criada_em": "2026-11-23T19:30:00-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261123-lojas-3",
+   "de": "lojas",
+   "para": "cria",
+   "copia": [
+    "cria"
+   ],
+   "titulo": "Rascunho dos 3 prints da variação A (legendas aceitas) com telas reais, estética atual",
+   "por_que": "D-20261122-lojas-2 foi aceita: variação A (Revisão feita para o seu modelo / Saúde da moto em um olhar / Todo serviço da moto registrado) usa só telas que o app já tem (plano, saúde, histórico). Prints são o elo visita→download, e o experimento oficial de gráficos do Google Play aceita screenshots e a Apple testa prints (fontes no meu r1 de 23/11); sem arte pronta o teste não sai quando o Léo der OK.",
+   "pronto_quando": "3 imagens-rascunho (png) em agencia/demandas/entregas/ com o id da demanda no nome, usando prints reais da versão nova, moto simulada, sem modelo, sem 'grátis'/'teste', sem estética nova (direção A/B não liberada); lista dos tamanhos exigidos por cada loja só se confirmada em fonte oficial, senão dito. Nada publicado nem subido em loja.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T21:00:00-03:00",
+   "status": "em_andamento",
+   "criada_em": "2026-11-23T21:10:00-03:00",
+   "fio": "F-002",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:10:00-03:00",
+     "quem": "lojas",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei com ressalva: rascunho só com telas conferidas contra a build de 23/11 (D-20261123-cria-3, Stark); sem essa conferência entrego o rascunho marcado como provisório."
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Jeff Bezos",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261120-mkt-1",
+   "de": "mkt",
+   "para": "dados",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Placar dos Corretores da semana em % (vendas, reembolso, ticket, custo por venda, ROAS por campanha)",
+   "por_que": "Meu número da semana (vendas dos infoprodutos) está em branco: não há dado dos Corretores no repositório público nem acesso ao carnucci-dados nesta sessão. Sem placar não dá pra apontar a etapa do funil que mais quebra (playbook 12).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-1.md com variação % semana contra semana de vendas, reembolsos, ticket médio, custo por venda e ROAS por campanha dos Corretores (só % ou variação, sem valor absoluto), fonte de cada linha; o que faltar vem listado com quem precisa liberar.",
+   "prioridade": "P1",
+   "prazo": "2026-11-21T19:50:00-03:00",
+   "status": "cancelada",
+   "criada_em": "2026-11-20T19:50:00-03:00",
    "fio": null,
    "entrega": null,
    "cobrancas": 0,
    "historico": [
     {
-     "quando": "2026-11-23T14:50:00-03:00",
-     "quem": "produto:analista-do-paywall",
+     "quando": "2026-11-20T19:50:00-03:00",
+     "quem": "mkt",
      "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-20T22:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceita o placar, recuso o prazo de 21/11: não há export dos Corretores em lugar nenhum que eu leia. Entrego só o esqueleto das colunas em %; dado real depende do export semanal de vendas e reembolsos (pergunta 1 do Cardone ao Léo)"
+    },
+    {
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "cancelada por mim, substituída por D-20261123-mkt-1 (fonte UTMify)"
     }
    ],
+   "bloqueio": null,
+   "pergunta_lider": "Léo: libera export semanal de vendas e reembolsos dos Corretores pro carnucci-dados (sim/não)? Plataforma de venda?",
+   "motivo_cancelamento": "Substituída por D-20261123-mkt-1: a UTMify já traz o dado dos Corretores (09-numeros.md, 23/11), então o export do Kavoo deixou de ser o bloqueio.",
    "_atrasada": false,
-   "_de_nome": "Steve Jobs",
-   "_para_nome": "Thomas Shelby"
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261120-trafego-1",
@@ -479,11 +807,18 @@
      "quando": "2026-11-20T20:00:00-03:00",
      "quem": "master",
      "o_que": "cancelou: Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2."
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: tirei o bloqueio 'lider' que sobrou da demanda cancelada; a pergunta segue viva na dados-2"
     }
    ],
-   "bloqueio": "lider",
+   "bloqueio": null,
    "pergunta_lider": "Davi: data de publicação iOS/Android da build de 23/11 e lista dos eventos (af_complete_registration e rc_*): sim/não pra cada.",
    "cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2.",
+   "motivo_cancelamento": "Duplicada de D-20261120-dados-2: mesma pergunta ao Davi (eventos e data da build de 23/11). Uma resposta fecha as duas; Escobar passa a acompanhar dados-2.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Tony Stark"
@@ -528,6 +863,51 @@
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Phileas Fogg"
+  },
+  {
+   "id": "D-20261122-mkt-1",
+   "de": "mkt",
+   "para": "master",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Levar ao Léo as 3 perguntas dos Corretores que travam o meu número (export de vendas, meta semanal, garantia atual)",
+   "por_que": "D-20261120-mkt-1 (P1) venceu em 21/11 19:50 bloqueada com bloqueio 'lider' e cobrancas 0: o Léo nunca respondeu a pergunta do export (decisoes.md não tem resposta até 22/11). Sem export de vendas e reembolso não existe número de infoproduto na semana (metas.json cobre só assinantes do MinhaMoto; nenhuma linha de meta pros infoprodutos). Fonte: agencia/demandas/itens/D-20261120-mkt-1.json e agencia/conhecimento/perguntas-pendentes.md.",
+   "pronto_quando": "O Shelby põe as 3 perguntas (sim/não ou resposta curta) na pauta do Léo e registra a resposta, ou 'sem resposta até <data>', em agencia/memoria/decisoes.md ou em agencia/conhecimento/perguntas-pendentes.md com a data. Perguntas: (1) a plataforma é a Kavoo e ela exporta CSV de vendas/reembolsos ou tem webhook? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (número fica no Drive privado)? (3) a garantia atual dos Corretores é só os 7 dias do CDC ou maior?",
+   "prioridade": "P1",
+   "prazo": "2026-11-23T20:00:00-03:00",
+   "status": "cancelada",
+   "criada_em": "2026-11-22T20:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
+    "resumo": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-22T20:00:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-22T23:55:00-03:00",
+     "quem": "master",
+     "o_que": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "cancelada: Cancelada pelo Shelby: 2 das 3 perguntas já têm resposta em conhecimento/ (plataforma é a Kavoo, 07-canais; garantia de 30 dias na página, 02-produto) e a meta semanal em valor não é necessária pro placar em % (D-20261123-mkt-1). Se o Cardone quiser meta de vendas dos Corretores, entra em perguntas-pendentes sem notificar o Léo."
+    }
+   ],
+   "bloqueio": null,
+   "pergunta_lider": "Léo, 3 itens dos Corretores: (1) a plataforma é a Kavoo e ela exporta vendas e reembolsos (CSV ou webhook)? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (valor só no privado)? (3) a garantia atual é só os 7 dias do CDC ou maior? (Black Friday: a decisão de 19/11 vale, não.)",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "motivo_cancelamento": "Cancelada pelo Shelby: 2 das 3 perguntas já têm resposta em conhecimento/ (plataforma é a Kavoo, 07-canais; garantia de 30 dias na página, 02-produto) e a meta semanal em valor não é necessária pro placar em % (D-20261123-mkt-1). Se o Cardone quiser meta de vendas dos Corretores, entra em perguntas-pendentes sem notificar o Léo.",
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Thomas Shelby"
   },
   {
    "id": "D-20261122-dados-3",
@@ -601,13 +981,61 @@
      "quando": "2026-11-23T10:45:00-03:00",
      "quem": "mkt:publicador",
      "o_que": "entregou (3 opções, pergunta sim/não ao Léo/Davi)"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: tirei o bloqueio 'lider' de demanda entregue; a pergunta ao Léo é o item 1 de entregas/D-20261123-master-pacote-leo.md. Falta o Ness conferir e aceitar"
     }
    ],
-   "bloqueio": "lider",
+   "bloqueio": null,
    "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Eliot Ness",
    "_para_nome": "Phileas Fogg"
+  },
+  {
+   "id": "D-20261123-dados-4",
+   "de": "dados",
+   "para": "dados:relatorio-semanal",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Refazer o placar de 16 a 23/11 com os insights por post que voltaram e abrir o alcance de 28 dias por formato",
+   "por_que": "O relatório de 23/11 8h26 diz zero métrica por post, mas a coleta de 23/11 20h32 UTC veio sem erro com reach, saved e shares nos 57 posts (dados/insights-2026-11-23.json). Nos 26 posts de 16 a 23/11 a mediana de alcance é 0,7% dos seguidores e há 0 salvamentos. O alcance da conta em 28 dias é ordem de grandeza maior que a soma dos posts de feed; a doc da Meta diz que o alcance da conta inclui anúncio, story e reel e aceita breakdown media_product_type (https://developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights, lida em 23/11). Sem saber de onde vem esse alcance, Tráfego e Criativos votam no escuro e a meta de novos pagantes por semana não tem canal provado.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-dados-4.md com: (1) placar em % e mediana por linha editorial e por horário (12h, 15h, 18h, 21h), com a regra de amostra e o n de cada célula, sem declarar vencedor com n<8; (2) proposta de alteração em scripts/insights.py para gravar o alcance 28d com breakdown media_product_type (AD, FEED, REELS, STORY), só leitura, sem token no JSON; (3) dizer em uma linha qual formato explica o alcance da conta, ou que ainda não dá pra saber.",
+   "prioridade": "P1",
+   "prazo": "2026-11-24T21:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T21:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados-4.md",
+    "resumo": "Placar dos 26 posts (mediana 0,66% dos seguidores, 0 salvamentos, 1 compartilhamento) por linha e por slot: nenhum n>=8, sem vencedor. Proposta de chamada reach com breakdown media_product_type em insights.py (não aplicada; testar antes). Formato que explica o alcance: ainda não dá pra saber (posts de feed somam no máximo 9,6% do alcance de 28d)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T23:30:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "entregou: placar com insights por post + proposta de breakdown por formato"
+    },
+    {
+     "quando": "2026-11-24T08:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceitou: conferi 26 posts, mediana 0,66%, 0 salvamentos, 1 compartilhamento e soma 964 contra 10046 (9,6%) no JSON; nenhuma linha ou slot com n>=8, sem vencedor; proposta do breakdown media_product_type segue sem token no JSON, ainda não aplicada nem testada; formato do alcance: ainda não dá pra saber"
+    }
+   ],
+   "atualizada_em": "2026-11-24T08:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Ernest Hemingway"
   },
   {
    "id": "D-20261120-master-1",
@@ -779,9 +1207,16 @@
      "quando": "2026-11-23T08:00:00-03:00",
      "quem": "master",
      "o_que": "bloqueada: pergunta ao Léo no pacote da segunda"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
+   "pergunta_lider": "Léo: você preenche a chave de sandbox do AppsFlyer na integração do RevenueCat antes do teste D+0? Sim/não (item 3 de entregas/D-20261123-master-pacote-leo.md).",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Ernest Hemingway",
    "_para_nome": "Thomas Shelby"
@@ -964,7 +1399,7 @@
    "pronto_quando": "Arquivo dados/insights-*.json no repositório com os posts publicados e um ranking por linha em % ou variação (sem valor absoluto de receita), com a fonte do coletor citada e a lista do que ficou sem dado. Aceito se eu conseguir ler o ranking sem pedir mais nada.",
    "prioridade": "P2",
    "prazo": "2026-11-23T20:00:00-03:00",
-   "status": "bloqueada",
+   "status": "cancelada",
    "criada_em": "2026-11-20T20:00:00-03:00",
    "fio": null,
    "entrega": null,
@@ -979,10 +1414,22 @@
      "quando": "2026-11-20T22:00:00-03:00",
      "quem": "dados",
      "o_que": "aceita parcial: o ranking por linha só existe depois de rodar insights.yml (workflow_dispatch); funde com D-20261120-dados-1 (tabela post->linha->ID). Sem acesso ao carnucci-dados, não rodo sozinho"
+    },
+    {
+     "quando": "2026-11-23T20:10:00-03:00",
+     "quem": "cria",
+     "o_que": "cancelou: dado chegou sem o bloqueio; cobrir via D-20261123-dados-4"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: cancelamento da Cria conferido, motivo válido (o dado chegou e o Dados refaz em dados-4); tirei o bloqueio 'lider' que sobrou"
     }
    ],
-   "bloqueio": "lider",
+   "bloqueio": null,
    "pergunta_lider": "Davi ou Léo: podem disparar o workflow insights.yml à mão hoje (sim/não)?",
+   "motivo_cancelamento": "Os insights por post voltaram na coleta de 23/11 17h32 BRT (erros vazio). Ranking por linha refeito pelo Dados em D-20261123-dados-4; minha leitura: nenhuma linha se separa (0 salvamentos em 26 posts).",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Alan Turing"
@@ -1012,9 +1459,16 @@
      "quando": "2026-11-20T20:00:00-03:00",
      "quem": "master",
      "o_que": "cancelou: Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg."
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo motivo_cancelamento padronizado"
     }
    ],
    "cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg.",
+   "motivo_cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Ernest Hemingway"
@@ -1522,6 +1976,87 @@
    "_para_nome": "Sun Tzu"
   },
   {
+   "id": "D-20261123-mercado-1",
+   "de": "mercado",
+   "para": "mercado:radar-de-concorrentes",
+   "copia": [],
+   "titulo": "Tabela de preço e 'o que fazem melhor' dos concorrentes, com MotorManage incluído (fecha o dossiê D-20261123-master-dossie-2)",
+   "por_que": "O Shelby cobra o dossiê de Concorrentes até 25/11 18h (D-20261123-master-dossie-2) e 04-concorrentes.md ainda tem 'Preço' e 'O que fazem melhor' em aberto. Já temos preço de Drivvo, MotoMainte, Strox e KyroTune nas entregas D-20261122-mercado-1 e no radar 24/11. Fato novo: o MotorManage (motormanage.app) é grátis pra 2 motos, sem anúncio e sem prazo, com plano pago de 2,99 EUR/mês ou 19,99 EUR/ano e teste de 14 dias, e diz ter catálogo de 600 marcas e 42.000 modelos; é o concorrente gringo mais próximo do nosso plano por modelo. Saber o que cada um faz melhor decide o que a loja e o anúncio do MinhaMoto podem dizer pra converter instalação em assinante pago.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mercado-1.md com tabela de 5 apps (Drivvo, MotoMainte, MotorManage, Strox, KyroTune): preço de vitrine na moeda da loja, link oficial da loja ou do site, data do acesso, e 1 linha 'faz melhor que a gente' e 1 linha 'a gente faz melhor' com a fonte de cada. O que não abriu fica escrito, sem chute. Sem R$ nosso e sem a palavra 'grátis' como oferta nossa. Greco confere e marca as duas perguntas em 04-concorrentes.md.",
+   "prioridade": "P2",
+   "prazo": "2026-11-25T12:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T20:55:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado-1.md",
+    "resumo": "Tabela de preço dos 5 apps com link e data: MotorManage lido hoje no site oficial (livre pra 2 motos; King EUR 2,99/mês ou 19,99/ano; teste 14 dias). Os outros 4 vêm de leituras de 22/11 e 24/11 porque a App Store não abriu hoje. Inclui 'faz melhor' e 'a gente faz melhor' por app e o que não abriu."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T20:55:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T21:30:00-03:00",
+     "quem": "mercado:radar-de-concorrentes",
+     "o_que": "entregou (App Store bloqueada hoje: 4 apps com leitura de 22/11 e 24/11, datada)"
+    },
+    {
+     "quando": "2026-11-23T23:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "aceitou: tabela de 5 apps com link, data, 'faz melhor' e 'a gente faz melhor'; 4 de 5 preços vêm de 22/11 e 24/11 e isso está dito; marquei as duas perguntas em 04-concorrentes.md"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Sun Tzu"
+  },
+  {
+   "id": "D-20261123-master-dossie-1",
+   "de": "master",
+   "para": "lojas",
+   "copia": [
+    "mercado"
+   ],
+   "titulo": "Fechar o dossiê do Cliente: por que assina e que palavras usa",
+   "por_que": "Últimas 2 perguntas abertas do dossiê 03-cliente (cadastro do escritório); sem a voz real do cliente os criativos chutam o gancho",
+   "pronto_quando": "Em agencia/conhecimento/03-cliente.md, as perguntas 'Por que ele assina?' e 'Que palavras ele usa?' marcadas [x] com respostas tiradas das avaliações das lojas (dados/avaliacoes/) e comentários públicos, citando a fonte; nada inventado",
+   "prioridade": "P2",
+   "prazo": "2026-11-25T18:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T17:45:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-dossie-1.md",
+    "resumo": "As 2 perguntas do 03-cliente fechadas com 12 avaliações das lojas (amostra pequena, fala quem avalia): assina por ver tudo num lugar, vale o que custa e facilita pra leigo; diz \"moto\"/\"motoqueiro\", \"app\", \"recomendo\". Sem comentário público (sem acesso); nada sobre cancelamento."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T17:45:00-03:00",
+     "quem": "master",
+     "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+    },
+    {
+     "quando": "2026-11-23T20:30:00-03:00",
+     "quem": "lojas",
+     "o_que": "entregue"
+    },
+    {
+     "quando": "2026-11-24T08:00:00-03:00",
+     "quem": "master",
+     "o_que": "aceita: conferi: 2 perguntas do 03-cliente [x] com fonte (dados/avaliacoes, citações batem), limites declarados, sem comentário público inventado, sem dado de cliente nem número de assinantes"
+    }
+   ],
+   "atualizada_em": "2026-11-24T08:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Jeff Bezos"
+  },
+  {
    "id": "D-20261122-cria-2",
    "de": "cria",
    "para": "trafego",
@@ -1753,11 +2288,16 @@
      "quando": "2026-11-23T12:45:00-03:00",
      "quem": "dados",
      "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: 07-canais.md (23/11) registra RevenueCat, Meta, AppsFlyer e App Store Connect como ligados; a pergunta agora é só se a sessão do Dados lê o resumo em % do carnucci-dados e o Play"
     }
    ],
    "bloqueio": "lider",
-   "pergunta_lider": "Léo: você libera leitura (só leitura) de RevenueCat, App Store Connect e Play Console para as sessões do Dados, ou exporta toda segunda os % de instalação e pagante por plataforma? Sim/não.",
-   "atualizada_em": "2026-11-23T12:45:00-03:00",
+   "pergunta_lider": "Léo: o Dados pode ler (só leitura) o resumo em % do carnucci-dados, que o robô alimenta com RevenueCat, App Store Connect, AppsFlyer e Meta (07-canais diz 'ligados em 23/11'), e liberar o Google Play que ainda aguarda? Sim/não.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Thomas Shelby"
@@ -1870,11 +2410,17 @@
      "quando": "2026-11-23T20:30:00-03:00",
      "quem": "dados",
      "o_que": "bloqueada (lider): análise parcial entregue; falta total e média oficiais do Play (Léo)"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
    "pergunta": "Léo, você abre o Play Console (ou a página pública do app no Google Play) e me passa total de avaliações e média de estrelas de hoje? Sim/não.",
-   "atualizada_em": "2026-11-23T20:30:00-03:00",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "pergunta_lider": "Léo: qual a nota e o total de avaliações que a página do app mostra hoje no Google Play? (resposta curta)",
    "_atrasada": false,
    "_de_nome": "Ted Lasso",
    "_para_nome": "Alan Turing"
@@ -1889,7 +2435,7 @@
    "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-produto-1.md com: (1) fluxo atual (do 06-produto.md) e fluxo proposto lado a lado, com a única mudança 'mostrar o plano de revisão da moto logo após o cadastro dela, antes do paywall' (paywall, preço e planos intocados); (2) tela do plano desenhada (pode reaproveitar o mockup HTML); (3) eventos reescritos sem teste grátis, medindo instalação > onboarding concluído > moto cadastrada > plano visto > paywall visto > pagante; (4) critérios de aceite sem teste A/B de duração; (5) o que continua sendo pergunta pro Davi. Sem R$, sem número inventado.",
    "prioridade": "P2",
    "prazo": "2026-11-25T23:20:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-22T23:20:00-03:00",
    "fio": null,
    "entrega": {
@@ -1907,9 +2453,14 @@
      "quando": "2026-11-23T14:50:00-03:00",
      "quem": "produto:analista-do-paywall",
      "o_que": "entregue: agencia/demandas/entregas/D-20261122-produto-1.md"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: fluxo real lido no código (17/11), 1 mudança só (plano logo após cadastro da moto), eventos sem teste grátis e perguntas P1-P5 ao Davi; falta virar página de decisão (produto-1 de 23/11)"
     }
    ],
-   "atualizada_em": "2026-11-23T14:50:00-03:00",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Tony Stark",
    "_para_nome": "Steve Jobs"
@@ -1957,6 +2508,49 @@
    "_para_nome": "Alan Turing"
   },
   {
+   "id": "D-20261123-produto-2",
+   "de": "produto",
+   "para": "lojas",
+   "copia": [
+    "lojas",
+    "dados"
+   ],
+   "titulo": "Vigia pós-build: avaliações novas por versão e plataforma nas 72 h depois da publicação da build de 23/11, com alerta de bug grave",
+   "por_que": "Hoje o único 1★ de produto é sincronização no Google Play v1.0.1 (1 de 2 avaliações no Play, 7 de 8 com 5★ no total; dados/avaliacoes/ultimas.json, coleta de 23/11). A build troca a estética e traz SDK e pedido de avaliação: se travar, pagar ou logar mal, a primeira pessoa a saber tem que ser nós (playbook 06-produto: bug grave = aviso na hora ao Léo e ao Davi + P1). A App Store não devolve a versão no coletor (lojas já apontou em produto-3).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com tabela por loja e versão (contagem e nota, n declarado) das avaliações coletadas depois da publicação, cada reclamação nova classificada (sincronização, travamento, pagamento, login, visual, outro) e a linha 'sem avaliação nova' quando for o caso. Se houver reclamação de travamento, pagamento ou login, abrir demanda P1 pra mim no mesmo dia.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:45:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T19:45:00-03:00",
+   "fio": "F-005",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-produto-2.md",
+    "resumo": "Linha zero do vigia: Play v1.0.1 n=2 (1 e 5, média 3,0), App Store n=6 (5,0, sem versão no coletor), nenhuma avaliação depois de 19/11, sem bug grave novo e sem P1. Método e tabela prontos; as 72 h reais dependem das coletas após a publicação (hora da build desconhecida)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T20:30:00-03:00",
+     "quem": "lojas",
+     "o_que": "entregue"
+    },
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: tabela por loja/versão com n, reclamações classificadas, linha 'sem avaliação nova' e regra de P1 presentes; linha zero e método aceitos, as 72 h reais seguem sendo atualizadas pela lojas a cada coleta"
+    }
+   ],
+   "atualizada_em": "2026-11-23T21:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Jeff Bezos"
+  },
+  {
    "id": "D-20261123-cria-1",
    "de": "cria",
    "para": "master",
@@ -1968,7 +2562,7 @@
    "pronto_quando": "Resposta sim/não do Léo registrada em decisoes.md. Se sim: tarefa roda só pras 8 peças do plano (agencia/demandas/entregas/D-20261122-mkt_publicador-2.md), a 1ª de Curtos AIDA na fila até 29/11, e o Fogg insere nas posições sugeridas. Nada vai ao ar sem o check do Shelby.",
    "prioridade": "P2",
    "prazo": "2026-11-26T20:00:00-03:00",
-   "status": "bloqueada",
+   "status": "cancelada",
    "criada_em": "2026-11-23T13:00:00-03:00",
    "fio": "F-004",
    "entrega": null,
@@ -1978,12 +2572,257 @@
      "quando": "2026-11-23T13:00:00-03:00",
      "quem": "cria",
      "o_que": "criou e bloqueou: depende do Léo"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "cancelada: Cancelada pelo Shelby: a própria Cria disse na r1 que, com mediana de 10 pessoas de alcance por post e 0 salvamentos em 26, 8 carrosséis de reposição não são alavanca de assinante e não valem pergunta ao Léo. A reposição entra na decisão de direção de vídeo (F-004). Reabre só com número do dados-4 mostrando alguma linha acima da mediana."
+    }
+   ],
+   "bloqueio": null,
+   "pergunta_lider": "Léo: pode religar a tarefa Produção diária de conteúdo só pra montar 8 carrosséis de reposição (5 Curtos AIDA e 3 Educacional, estética A/B já aprovada em 18/11), sem reativar pauteiro nem roteirista? Sim/não.",
+   "motivo_cancelamento": "Cancelada pelo Shelby: a própria Cria disse na r1 que, com mediana de 10 pessoas de alcance por post e 0 salvamentos em 26, 8 carrosséis de reposição não são alavanca de assinante e não valem pergunta ao Léo. A reposição entra na decisão de direção de vídeo (F-004). Reabre só com número do dados-4 mostrando alguma linha acima da mediana.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "copia": [
+    "cria",
+    "trafego"
+   ],
+   "status": "bloqueada",
+   "criada_em": "2026-11-23T20:10:00-03:00",
+   "fio": "F-004",
+   "entrega": null,
+   "cobrancas": 0,
+   "id": "D-20261123-cria-2",
+   "de": "cria",
+   "para": "master",
+   "titulo": "Levar ao Léo 1 sim/não: os vídeos A1 e B1 (já com preço e lojas) viram os 2 primeiros anúncios do teste",
+   "por_que": "Produção de vídeo parada há 4 dias de espera (F-004) e 0 vídeo de venda no ar. A1 e B1 já cumprem a anatomia de anúncio (gancho no 1º segundo, app na tela, selo 'por R$19,90', botões das lojas; agencia/direcao-v2/A/A1/frames.jpg e B/B1/frames.jpg). O orgânico não serve de bancada: mediana de 10 pessoas alcançadas por post e 0 salvamentos em 26 posts (dados/insights-2026-11-23.json). Só o pago mede custo por assinante, então o teste A contra B com número pode substituir a escolha por gosto.",
+   "pronto_quando": "Resposta sim/não do Léo registrada em decisoes.md. Se sim: A1 e B1 entram como candidatos ao teste do Escobar (sem gasto até ele propor e o Léo aprovar a verba). Se não: o Léo diz em uma frase o que reprovou e eu registro a regra no DESIGN-MINHAMOTO.md.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "bloqueio": "lider",
+   "pergunta_lider": "Léo: os vídeos A1 e B1 (já com 'por R$19,90' e lojas) podem ser usados como os 2 primeiros anúncios de teste, com o Escobar propondo a verba depois e você aprovando? Sim/não.",
+   "historico": [
+    {
+     "quando": "2026-11-23T20:10:00-03:00",
+     "quem": "cria",
+     "o_que": "criou e bloqueou: depende do Léo"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "copia": [
+    "cria",
+    "dados"
+   ],
+   "status": "aceita",
+   "criada_em": "2026-11-23T20:10:00-03:00",
+   "fio": "F-004",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-cria-4.md",
+    "resumo": "A1 e B1 entram como slots 11 e 12 no teste t05-direcao (Meta, 9:16), utm_content CR-org-11 e CR-org-12, sem veredito de ângulo e sem aumentar teto (sai CR-org-01 se faltar espaço). Travas: OK do Léo, conferência do Stark, parecer lojas-3 e destino."
+   },
+   "cobrancas": 0,
+   "id": "D-20261123-cria-4",
+   "de": "cria",
+   "para": "trafego",
+   "titulo": "Dizer em qual dos 10 slots do brief entram A1 e B1 e com qual utm_content (sem aumentar verba)",
+   "por_que": "D-20261122-cria-2 (aceita) tem 10 slots só de roteiro. Dois vídeos já prontos encurtam a 1ª semana paga, mas só viram número por criativo se cada um sair com ID próprio no utm_content (o OneLink mapeia af_ad=utm_content, D-20261122-dados-2). Propus CR-organizacao-a1 e CR-organizacao-b1.",
+   "pronto_quando": "Nota de 5 a 10 linhas em agencia/demandas/entregas/D-20261123-cria-4.md: slot de cada um (ou slot novo), plataforma (9:16 serve TikTok e Reels), o que fica fixo entre os dois, corte em % do alvo do brief e utm_content final. Sem gasto nem campanha criada.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "historico": [
+    {
+     "quando": "2026-11-23T20:10:00-03:00",
+     "quem": "cria",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "aceitei com ressalva: A1 e B1 diferem em mais de uma coisa (admitido pela Cria), então entram como 'direção', sem veredito de ângulo; slot e utm_content (CR-organizacao-a1/b1 ou o padrão do brief) saem na nota até 26/11 20h; sem gasto"
+    },
+    {
+     "quando": "2026-11-23T23:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entreguei a nota: slots, utm_content, corte e travas; sem gasto"
+    },
+    {
+     "quando": "2026-11-23T23:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei: slots 11 e 12 (t05-direcao), Meta 9:16, utm_content CR-org-11/CR-org-12, fixo, corte em % do alvo e travas; sem gasto e sem número novo (corte e 200%/100% herdados do cria-2)"
+    }
+   ],
+   "atualizada_em": "2026-11-23T23:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-lojas-2",
+   "de": "lojas",
+   "para": "dados",
+   "copia": [
+    "dados",
+    "master"
+   ],
+   "titulo": "Linha de base da loja iOS: % visita→download da página, 28 dias, pelo App Store Connect",
+   "por_que": "Meta é assinante pago novo/semana e o elo visita→download da loja não tem número nenhum (r1 de 20, 22 e 23/11 sem base). 07-canais.md diz que o App Store Connect está ligado pros agentes desde 23/11, então D-20261120-lojas-3 (bloqueada pelo carnucci-dados) pode ser destravada só pra iOS. Sem base não dá pra provar o teste de prints (barra +10% relativo).",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-lojas-2.md com, só em % e variação (sem número absoluto): visualizações da página→downloads nos últimos 28 dias contra os 28 anteriores, fonte e data da leitura; se o App Store Connect não responder, dizer o que falta e de quem. Play fica de fora até a liberação.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-23T21:10:00-03:00",
+   "fio": "F-002",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-lojas-2.md",
+    "resumo": "Sem conector do App Store Connect nesta sessão nem acesso ao carnucci-dados; taxa visita->download sem dado. Dito o que falta."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:10:00-03:00",
+     "quem": "lojas",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
     }
    ],
    "bloqueio": "lider",
-   "pergunta_lider": "Léo: pode religar a tarefa Produção diária de conteúdo só pra montar 8 carrosséis de reposição (5 Curtos AIDA e 3 Educacional, estética A/B já aprovada em 18/11), sem reativar pauteiro nem roteirista? Sim/não.",
+   "pergunta": "Léo, você libera leitura do App Store Connect ao Dados (ou copia as taxas visualização->download de 28 d contra 28 d anteriores)? Sim/não.",
+   "atualizada_em": "2026-11-23T22:30:00-03:00",
    "_atrasada": false,
-   "_de_nome": "Walt Disney",
+   "_de_nome": "Jeff Bezos",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261123-master-1",
+   "de": "master",
+   "para": "trafego",
+   "copia": [
+    "dados",
+    "master"
+   ],
+   "titulo": "Antes de qualquer verba: o link de destino do anúncio não pode ser o que o Instagram bloqueou",
+   "por_que": "O Léo registrou em 23/11 que o Instagram do MinhaMoto está com link bloqueado (bio e stories) (conhecimento/07-canais.md). Nenhum diretor citou isso na rodada. Se o destino do anúncio (OneLink ou página) for o domínio marcado, a Meta pode reprovar o anúncio e a verba do D+0 trava ou queima sem entrega. Meta: assinante pago novo/semana; sem destino aceito não há campanha.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261123-master-1.md com: (1) os destinos que o brief usa (domínio do OneLink, página, link direto da loja); (2) qual deles o Léo disse estar bloqueado, ou 'não sei' com a pergunta pronta (já está na Pergunta 2 do master.md de 23/11); (3) o destino alternativo seguro (link direto da loja com parâmetros) e como o D+0 testa que o anúncio abre. Sem R$ e sem número absoluto.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T19:50:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-1.md",
+    "resumo": "Lista os 4 destinos do brief e diz que o endereço bloqueado é \"não sei\" (pergunta pronta ao Léo, inclusive qual perfil assina o anúncio). Alternativa segura: campanha de app com destino na loja (link direto com ct) e teste D+0 4.0 a 4.3 antes de qualquer verba acima do mínimo."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:50:00-03:00",
+     "quem": "master",
+     "o_que": "criou (correção de ronda 23/11: fato do 07-canais que ninguém tinha ligado à verba)"
+    },
+    {
+     "quando": "2026-11-23T23:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entreguei: destinos, pergunta ao Léo e passos de teste D+0; sem execução, sem verba; leitura da Meta não feita hoje"
+    },
+    {
+     "quando": "2026-11-24T08:00:00-03:00",
+     "quem": "master",
+     "o_que": "aceita: conferi: 4 destinos, bloqueado='não sei' com pergunta pronta, alternativa D4 e teste D+0 4.0-4.3; sem R$ nem absoluto"
+    }
+   ],
+   "atualizada_em": "2026-11-24T08:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-trafego-2",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Linha de base da campanha 'MM - Curtos' (Meta, novembro): CTR, CPM, cliques e instalações em índice e variação, sem R$",
+   "por_que": "Não tenho nenhum número de campanha do MinhaMoto. A campanha 'MM - Curtos' rodou em novembro com CTR de 2% a 3,5% e a venda do app não aparece na UTMify (agencia/conhecimento/06-historico.md, dados 23/11). A Meta (anúncios) está ligada pros agentes desde 23/11 (07-canais.md). Sem essa linha de base eu não consigo dizer se o 1º teste pago melhora ou piora, e o ranking do Tráfego fica em branco.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261123-trafego-2.md com, por semana de novembro e só em % ou índice (semana mais antiga = 100): CTR, CPM, custo por clique, cliques e instalações atribuídas, mais a % de cliques que viram instalação; diz quantas semanas e quantos dias de dado existem e se a campanha ainda está ativa. Sem acesso à Meta ou ao carnucci-dados, entregar 'bloqueada' dizendo o que falta e de quem. Nenhum R$ nem número absoluto no arquivo.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-23T19:30:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-trafego-2.md",
+    "resumo": "Sem acesso à Meta anúncios nem ao carnucci-dados; só se sabe CTR de 2% a 3,5%. Tabela em índice sem dado."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
+    }
+   ],
+   "bloqueio": "lider",
+   "pergunta": "Léo, você exporta o Gerenciador de Anúncios (CA - MinhaMoto, MM - Curtos, por semana de novembro) ou libera leitura da Meta ao Dados? Sim/não.",
+   "atualizada_em": "2026-11-23T22:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261123-dados-5",
+   "de": "dados",
+   "para": "master",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Aprovar rodar o workflow insights.yml todo dia (hoje só domingo 23h41 BRT) e fixar o horário da coleta",
+   "por_que": "A coleta funcionando só uma vez por semana (cron 41 2 * * 1 UTC, .github/workflows/insights.yml) deixa o alcance e os salvamentos de cada post com até 7 dias de atraso, e post publicado às 12h, 15h, 18h e 21h só vira dado na segunda seguinte. Sem leitura diária o alerta de anomalia e o placar diário da meta não existem. Correção pequena e reversível, dona é o Shelby (decisoes.md, 20/11).",
+   "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-23T21:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": ".github/workflows/insights.yml",
+    "resumo": "Aprovado pelo Shelby (correção pequena, reversível, sem chave nova): cron do insights.yml passou de semanal para diário, 02:41 UTC (23:41 BRT, depois do slot das 21h). O arquivo do dia leva a data UTC (dados/insights-AAAA-MM-DD.json, um dia à frente). Hemingway confere a coleta do dia seguinte sem erro; se o GitHub não disparar, usar workflow_dispatch."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
+    }
+   ],
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
    "_para_nome": "Thomas Shelby"
   },
   {
@@ -1998,7 +2837,7 @@
    "pronto_quando": "Linha na sua entrega de D-20261122-produto-2 com o link da página da RevenueCat onde está o 10,7% (ou a régua tirada, se não achar), a data do acesso, e 'sem etapa de teste' confirmado nas duas entregas.",
    "prioridade": "P3",
    "prazo": "2026-11-25T23:20:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-22T23:50:00-03:00",
    "fio": "F-003",
    "entrega": {
@@ -2016,9 +2855,14 @@
      "quando": "2026-11-23T20:30:00-03:00",
      "quem": "dados",
      "o_que": "entregou: confirmação na produto-2; nova tentativa de abrir a RevenueCat em 23/11 também bloqueada"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "aceita: o 10,7% ficou sem fonte lida, Turing retirou a régua em vez de manter número sem link; 'sem etapa de teste' conferido na produto-2 e na minuta dados-2. Erro de número sem fonte registrado, corrigido por ele antes da multa"
     }
    ],
-   "atualizada_em": "2026-11-23T20:30:00-03:00",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Thomas Shelby",
    "_para_nome": "Alan Turing"
@@ -2090,8 +2934,15 @@
      "quando": "2026-11-20T22:00:00-03:00",
      "quem": "dados",
      "o_que": "aceito, prazo 27/11 mantido como meta; funde com D-20261120-dados-2: o app precisa mandar o modelo da moto como propriedade do usuário, senão % por modelo não existe. Não inventei % de ninguém"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: bloqueada sem campo 'bloqueio'; é por falta de leitura do RevenueCat e do modelo da moto no app (dados-1 e dados-2 de 23/11)"
     }
    ],
+   "bloqueio": "dados",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Salvatore Greco",
    "_para_nome": "Alan Turing"
@@ -2184,7 +3035,7 @@
    "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-3.md com tabela tema x loja x versão do app x nota, contando só o que está em dados/avaliacoes/ultimas.json, com o tamanho da amostra dito (n) e a frase 'amostra pequena' se n<30; temas de elogio também (o que o usuário diz que vale a pena).",
    "prioridade": "P3",
    "prazo": "2026-11-27T20:40:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-20T20:40:00-03:00",
    "fio": null,
    "entrega": {
@@ -2202,9 +3053,14 @@
      "quando": "2026-11-23T20:30:00-03:00",
      "quem": "lojas",
      "o_que": "entregue"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: tabela tema x loja x versão com n declarado (8), 1 reclamação (sync Play 1.0.1); pendência declarada: App Store sem versão no coletor"
     }
    ],
-   "atualizada_em": "2026-11-23T20:30:00-03:00",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Tony Stark",
    "_para_nome": "Jeff Bezos"
@@ -2221,10 +3077,13 @@
    "pronto_quando": "Depois da entrega de D-20261122-lojas-2: parecer em agencia/demandas/entregas/D-20261122-lojas-3.md com 'passa' ou 'corta' por legenda, e o motivo de cada corte (promessa, preço, regra Apple/Google).",
    "prioridade": "P3",
    "prazo": "2026-11-28T18:00:00-03:00",
-   "status": "bloqueada",
+   "status": "entregue",
    "criada_em": "2026-11-22T22:40:00-03:00",
    "fio": "F-002",
-   "entrega": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-lojas-3.md",
+    "resumo": "Parecer por legenda: A1 e B1 cortadas até o Davi confirmar cobertura de modelo (troca sem \"modelo\" proposta); A2, A3 (ajuste), B2 e B3 (condição de telas) passam. Sem grátis, teste, preço ou nome de modelo."
+   },
    "cobrancas": 0,
    "historico": [
     {
@@ -2236,9 +3095,15 @@
      "quando": "2026-11-23T08:00:00-03:00",
      "quem": "master",
      "o_que": "bloqueada: depende de D-20261122-lojas-2 (sem legendas entregues, nada a checar). Cobrar a Lojas; faço o parecer em até 24 h da entrega."
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "parecer entregue (era meu e eu tinha deixado bloqueado depois de a lojas-2 ser aceita)"
     }
    ],
-   "bloqueio": "lojas",
+   "bloqueio": null,
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Jeff Bezos",
    "_para_nome": "Thomas Shelby"
@@ -2273,10 +3138,17 @@
      "quando": "2026-11-23T14:50:00-03:00",
      "quem": "mercado:radar-de-concorrentes",
      "o_que": "bloqueou: sem acesso à App Store; entrega parcial com pergunta pro Léo"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
    "pergunta": "Léo, sim ou não: libero o acesso do radar a apps.apple.com (hoje o proxy bloqueia), ou prefere que alguém cole o texto e os 3 primeiros prints das 5 páginas?",
+   "pergunta_lider": "Léo: libera apps.apple.com e play.google.com pro ambiente dos agentes (ou cola título, subtítulo e os 3 primeiros prints dos concorrentes)? Sim/não.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Jeff Bezos",
    "_para_nome": "Sun Tzu"
@@ -2311,10 +3183,17 @@
      "quando": "2026-11-23T10:00:00-03:00",
      "quem": "mercado",
      "o_que": "bloqueada (bloqueio lider): bibliotecas Meta e TikTok inacessíveis; pergunta sim/não pro Léo; relato em entregas/D-20261122-cria-3.md"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
     }
    ],
    "bloqueio": "lider",
    "pergunta": "Léo, você abre a Biblioteca de Anúncios da Meta (Brasil, ativos, \"manutenção moto\") e o TikTok Creative Center (Top Ads BR) no seu navegador logado e me passa os 5 anúncios mais antigos no ar? (sim/não)",
+   "pergunta_lider": "Léo: abre a Biblioteca de Anúncios da Meta e o TikTok Creative Center no navegador logado e cola os 5 anúncios mais antigos de app de moto ou veículo (ou libera esses domínios pro ambiente dos agentes)? Sim/não.",
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Salvatore Greco"
@@ -2446,7 +3325,7 @@
    "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-trafego-3.md com tabela de testes iniciados por variante pra detectar diferença relativa de 20%, 30% e 50% na conversão teste->pago (poder 80%, confiança 95%), a fórmula usada e a regra de parada. Marcado como estimativa por benchmark, a ser trocada pela taxa própria quando existir.",
    "prioridade": "P3",
    "prazo": "2026-11-29T20:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-22T20:00:00-03:00",
    "fio": null,
    "entrega": {
@@ -2464,9 +3343,14 @@
      "quando": "2026-11-23T20:30:00-03:00",
      "quem": "dados",
      "o_que": "entregou: agencia/demandas/entregas/D-20261122-trafego-3.md"
+    },
+    {
+     "quando": "2026-11-23T19:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "aceitou: tabela por cenario de taxa, unidade paywall_view, regra de parada de 7 pontos e correcao do pedido (sem teste gratis). Falta so trocar pela taxa propria apos a build."
     }
    ],
-   "atualizada_em": "2026-11-23T20:30:00-03:00",
+   "atualizada_em": "2026-11-23T19:30:00-03:00",
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Alan Turing"
@@ -2500,6 +3384,43 @@
    "atualizada_em": "2026-11-23T11:30:00-03:00",
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261123-produto_analista-do-paywall-1",
+   "de": "produto:analista-do-paywall",
+   "para": "master",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Registrar em 02-produto.md o fluxo do app lido no código (onboarding > plano > paywall) pra ninguém tratar como incógnita",
+   "por_que": "02-produto.md está vazio e já custou uma entrega refeita (D-20261120-produto-1). Li o código em modo leitura: o briefing e 'Esse é o MinhaMoto' (itens reais do plano) já vêm antes do paywall; sem SDK AppsFlyer no package.json. Fonte: agencia/demandas/entregas/D-20261122-produto-1.md",
+   "pronto_quando": "02-produto.md com a seção 'Fluxo do app (código de 17/11)', marcada 'a confirmar com o Davi (build de 23/11)', sem R$ e sem número absoluto; ou recusa com motivo.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T23:20:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-23T14:50:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/conhecimento/02-produto.md",
+    "resumo": "Seção \"Fluxo do app (código de 17/11, a confirmar com o Davi)\" e \"Documentos e avisos\" registradas no 02-produto.md, sem R$ e sem número absoluto."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T14:50:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "entregue pelo Shelby: fluxo registrado em conhecimento/02-produto.md; Jobs confere"
+    }
+   ],
+   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Steve Jobs",
    "_para_nome": "Thomas Shelby"
   }
  ]

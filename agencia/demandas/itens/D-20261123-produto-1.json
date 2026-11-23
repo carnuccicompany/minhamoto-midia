@@ -1,0 +1,23 @@
+{
+  "id": "D-20261123-produto-1",
+  "de": "produto",
+  "para": "produto:analista-do-paywall",
+  "copia": [],
+  "titulo": "Página de decisão pro Davi: tela 'Plano da sua moto' após o cadastro, em sim/não, com aceite e medição",
+  "por_que": "Meta é assinante pago novo por semana; número do produto é % instalação>pagante (06-produto.md, lapidado 20/11). A entrega D-20261122-produto-1 está aceita, mas agencia/produto/propostas/ está vazia e o Davi não tem onde aprovar ou recusar (Folha de 20/11: falta proposta escrita). Sem proposta aprovada o teste não entra na janela pós-build.",
+  "pronto_quando": "Arquivo em agencia/produto/propostas/ (e página do painel, se já existir o modelo) com: antes/depois da tela, 1 única mudança, critérios de aceite, eventos moto_cadastrada e plano_visto, o que mede (% instalação>pagante por plataforma, iOS e Android separados) e no máximo 3 perguntas sim/não pro Davi (P1 'a build de 23/11 mantém o briefing?' em primeiro). Sem R$, sem número absoluto, paywall/preço/planos intocados. Nada mexe no app.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T19:45:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T19:45:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:45:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

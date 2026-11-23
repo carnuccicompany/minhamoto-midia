@@ -1,0 +1,39 @@
+{
+  "id": "D-20261123-dados-4",
+  "de": "dados",
+  "para": "dados:relatorio-semanal",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Refazer o placar de 16 a 23/11 com os insights por post que voltaram e abrir o alcance de 28 dias por formato",
+  "por_que": "O relatório de 23/11 8h26 diz zero métrica por post, mas a coleta de 23/11 20h32 UTC veio sem erro com reach, saved e shares nos 57 posts (dados/insights-2026-11-23.json). Nos 26 posts de 16 a 23/11 a mediana de alcance é 0,7% dos seguidores e há 0 salvamentos. O alcance da conta em 28 dias é ordem de grandeza maior que a soma dos posts de feed; a doc da Meta diz que o alcance da conta inclui anúncio, story e reel e aceita breakdown media_product_type (https://developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights, lida em 23/11). Sem saber de onde vem esse alcance, Tráfego e Criativos votam no escuro e a meta de novos pagantes por semana não tem canal provado.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-dados-4.md com: (1) placar em % e mediana por linha editorial e por horário (12h, 15h, 18h, 21h), com a regra de amostra e o n de cada célula, sem declarar vencedor com n<8; (2) proposta de alteração em scripts/insights.py para gravar o alcance 28d com breakdown media_product_type (AD, FEED, REELS, STORY), só leitura, sem token no JSON; (3) dizer em uma linha qual formato explica o alcance da conta, ou que ainda não dá pra saber.",
+  "prioridade": "P1",
+  "prazo": "2026-11-24T21:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-23T21:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados-4.md",
+    "resumo": "Placar dos 26 posts (mediana 0,66% dos seguidores, 0 salvamentos, 1 compartilhamento) por linha e por slot: nenhum n>=8, sem vencedor. Proposta de chamada reach com breakdown media_product_type em insights.py (não aplicada; testar antes). Formato que explica o alcance: ainda não dá pra saber (posts de feed somam no máximo 9,6% do alcance de 28d)."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T21:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T23:30:00-03:00",
+      "quem": "dados:relatorio-semanal",
+      "o_que": "entregou: placar com insights por post + proposta de breakdown por formato"
+    },
+    {
+      "quando": "2026-11-24T08:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceitou: conferi 26 posts, mediana 0,66%, 0 salvamentos, 1 compartilhamento e soma 964 contra 10046 (9,6%) no JSON; nenhuma linha ou slot com n>=8, sem vencedor; proposta do breakdown media_product_type segue sem token no JSON, ainda não aplicada nem testada; formato do alcance: ainda não dá pra saber"
+    }
+  ],
+  "atualizada_em": "2026-11-24T08:00:00-03:00"
+}

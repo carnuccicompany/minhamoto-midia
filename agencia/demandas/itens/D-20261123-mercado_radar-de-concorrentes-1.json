@@ -1,0 +1,25 @@
+{
+  "id": "D-20261123-mercado_radar-de-concorrentes-1",
+  "de": "mercado:radar-de-concorrentes",
+  "para": "produto",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "Confirmar se o app escolhe a moto numa lista (marca, modelo, versão) e se o plano de revisão sai por modelo e km",
+  "por_que": "O ângulo 'sem digitar a moto' contra o Drivvo (reclamação de modelo digitado, out/2025) e contra o MotorManage (catálogo de 42.000 modelos) só vale se o app faz isso; 02-produto.md marca como rascunho. Sem confirmação o anúncio não pode usar a frase.",
+  "pronto_quando": "Resposta de 2 linhas em agencia/demandas/entregas/ dizendo: (1) a escolha de marca/modelo/versão é lista ou texto livre; (2) quantos modelos tem plano de revisão hoje (faixa, sem número de assinantes). Fonte: código ou ficha do produto.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-23T21:30:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T21:30:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "criou"
+    }
+  ]
+}

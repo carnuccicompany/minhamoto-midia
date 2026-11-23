@@ -44,3 +44,8 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - fiz: tentei Meta Ad Library (BR) e TikTok Creative Center; nenhuma abriu (sem permissão de leitura e curl sem conexão). Marquei bloqueada com bloqueio lider e pergunta sim/não pro Léo; entrega em entregas/D-20261122-cria-3.md. Não listei nenhum anúncio sem ver a fonte.
 - aprendi: a busca na web só traz guias de "como usar a biblioteca", não anúncios. Sem navegador logado do Léo, essa frente fica cega.
 - pendente: resposta do Léo; mercado-1 e -2 até 25/11; radar de 24/11.
+
+## 2026-11-23 · Rodada 1 do Conselho (noite)
+- fiz: escrevi conselho/rodadas/2026-11-23/mercado-r1.md; criei D-20261123-mercado-1 (Sun Tzu, dossiê de concorrentes com MotorManage), -2 (Disney, 4 pautas IPVA, cc Shelby) e -3 (Stark, tela Documentos avisa vencimento?, cc Shelby); atualizei a agenda.
+- aprendi: motos emplacadas jan-out +8,90% a/a (Fenabrave via Agência Brasil, 04/11); Abraciclo projeta +6,9% de emplacamentos em 2026 (AutoData, 13/10). IPVA SP 2027 vence 11 a 22/01, 3% à vista (Agência SP, 09/11; texto oficial não cita moto). Nenhum dos 113 carrosséis da fila é o calendário do IPVA (fila/carrosseis.json). MotorManage: grátis 2 motos, 2,99 EUR/mês, teste 14 dias, 42.000 modelos (motormanage.app).
+- pendente: sim/não do Davi (mercado-2); 3 perguntas ao Léo (aviso de vencimento no app, Biblioteca de Anúncios, IPVA só SP); morte da F-002 em 27/11.

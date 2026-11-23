@@ -1,7 +1,7 @@
 name: insights
 on:
   schedule:
-    - cron: "41 2 * * 1"   # segunda 02:41 UTC = domingo 23:41 BRT
+    - cron: "41 2 * * *"   # todo dia 02:41 UTC = 23:41 BRT do dia anterior (depois do slot das 21h); aprovado pelo Shelby em 23/11 (D-20261123-dados-5)
   workflow_dispatch: {}
 
 permissions:

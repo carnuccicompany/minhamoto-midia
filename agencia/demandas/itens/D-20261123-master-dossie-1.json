@@ -10,16 +10,30 @@
  "pronto_quando": "Em agencia/conhecimento/03-cliente.md, as perguntas 'Por que ele assina?' e 'Que palavras ele usa?' marcadas [x] com respostas tiradas das avaliações das lojas (dados/avaliacoes/) e comentários públicos, citando a fonte; nada inventado",
  "prioridade": "P2",
  "prazo": "2026-11-25T18:00:00-03:00",
- "status": "aberta",
+ "status": "aceita",
  "criada_em": "2026-11-23T17:45:00-03:00",
  "fio": null,
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-master-dossie-1.md",
+  "resumo": "As 2 perguntas do 03-cliente fechadas com 12 avaliações das lojas (amostra pequena, fala quem avalia): assina por ver tudo num lugar, vale o que custa e facilita pra leigo; diz \"moto\"/\"motoqueiro\", \"app\", \"recomendo\". Sem comentário público (sem acesso); nada sobre cancelamento."
+ },
  "cobrancas": 0,
  "historico": [
   {
    "quando": "2026-11-23T17:45:00-03:00",
    "quem": "master",
    "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+  },
+  {
+   "quando": "2026-11-23T20:30:00-03:00",
+   "quem": "lojas",
+   "o_que": "entregue"
+  },
+  {
+   "quando": "2026-11-24T08:00:00-03:00",
+   "quem": "master",
+   "o_que": "aceita: conferi: 2 perguntas do 03-cliente [x] com fonte (dados/avaliacoes, citações batem), limites declarados, sem comentário público inventado, sem dado de cliente nem número de assinantes"
   }
- ]
+ ],
+ "atualizada_em": "2026-11-24T08:00:00-03:00"
 }

@@ -1,0 +1,30 @@
+{
+  "id": "D-20261123-mkt-2",
+  "de": "mkt",
+  "para": "cria",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
+  "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T19:40:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T19:40:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:40:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
+    }
+  ]
+}

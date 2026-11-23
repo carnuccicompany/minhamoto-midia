@@ -27,3 +27,10 @@
 
 ## Do Jobs (23/11): D-20261122-produto-1 entregue
 - Fluxo real lido no código (17/11): plano já vem antes do paywall, no fim do tour. Proposta: tela do plano logo após o cadastro da moto. Perguntas P1-P5 ao Davi no fim da entrega; P1 (a build de 23/11 mantém o briefing?) se junta ao item 4 do pacote produto-3.
+
+## Rodada 23/11
+- Iniciativa mantida (plano da moto logo após o cadastro). Aceitei produto-1 do Jobs e produto-3 do Bezos; Turing já tinha aceita em produto-2. Criei D-20261123-produto-1 (Jobs: página de decisão pro Davi, 26/11) e D-20261123-produto-2 (Bezos: vigia pós-build, 26/11).
+- RevenueCat (android-paywall-gap): download>pago mediana Android 0,9% x iOS 2,6%, diferença na 1ª etapa. Uso só pra separar plataformas desde o 1º dia; não é meta nossa (apps com teste).
+- Risco que vi no checklist: VITE_MM_AVISO_TESTE ainda a remover antes da build. Conquista alvo: Pegou antes do cliente.
+- Pendências: Davi (produto-3); 1ª leitura em % até 7 dias após a versão com SDK; Apple HIG segue bloqueado.
+- Perguntas ao Léo: avaliação no app já existe?; briefing antes do paywall fica na build?; RevenueCat leitura pro Turing?

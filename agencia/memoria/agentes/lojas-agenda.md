@@ -22,3 +22,10 @@
 - Pendências: sim/não do Léo para liberar domínios das lojas (ou colar título, subtítulo e 3 prints) destrava master-3 (P2, 24/11), mercado-3 e trafego-2 (29/11). Sem isso, prazo da master-3 estoura; já avisei com a pergunta pronta.
 - Dados: Play n=2 (3,00), App Store n=6 (5,0). Meta 4,7+ sem base com n tão pequeno.
 - Aguardo dados com D-20261123-lojas-1 (por que o Play caiu de 3 para 2).
+
+## Atualização 23/11 noite (r1)
+- Fato novo (fonte oficial, [Play Console](https://support.google.com/googleplay/android-developer/answer/12053285)): Play testa ícone, feature graphic e screenshots (1 experimento de gráficos por app; descrição só em experimento localizado). Apple testa ícone, prints e vídeo. Teste de prints cabe nas duas lojas.
+- Aposta mantida: prints com legenda de benefício (variação A da Disney). Barra +10% relativo visita→download. Prazo de morte: sem linha de base iOS até 30/11, encerro.
+- Novas demandas: D-20261123-lojas-2 (Turing, base iOS, 26/11) e D-20261123-lojas-3 (Disney, arte rascunho, 30/11).
+- Devo: D-20261123-master-dossie-1 (voz do cliente, 25/11).
+- Pendências do Léo: domínios das lojas, nota oficial do Play, OK do 1★ ec124592.

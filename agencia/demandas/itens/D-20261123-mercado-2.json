@@ -1,0 +1,30 @@
+{
+  "id": "D-20261123-mercado-2",
+  "de": "mercado",
+  "para": "cria",
+  "copia": [
+    "master"
+  ],
+  "titulo": "4 pautas fechadas da série IPVA 2027 pro BANCO, com fonte oficial, antes que a fila acabe (~14/12)",
+  "por_que": "O IPVA de SP vence de 11/01 (final 1) a 22/01 (final 0), 3% de desconto à vista em janeiro (Agência SP, 09/11/2026: https://www.agenciasp.sp.gov.br/desenvolvimento/ipva-2027-sp-divulga-calendario-com-desconto-de-3-em-janeiro-e-pagamento-em-ate-cinco-parcelas/). Na fila de 113 carrosséis (fila/carrosseis.json) só DV08 (já no ar) e B18 tocam documentos/licenciamento e nenhum é o calendário do IPVA; a fila seca por volta de 14/12 (relatório de 23/11). O radar de 17/11 e o BANCO já trazem 2 ideias (linhas 53 e 54), mas sem pauta fechada. É a janela de busca de dezembro a janeiro, e a tela Documentos é a prova no app. Sem série pronta até 14/12, a janela passa sem post. Meta: assinante pago novo por semana, pelo post que leva a instalação.",
+  "pronto_quando": "Seção 'IPVA 2027 (janeiro)' em agencia/pautas/BANCO.md com 4 pautas: gancho de até 8 palavras, ângulo, link da fonte oficial (Agência SP ou Decreto 70.960/2026) e dia sugerido de postagem entre 14/12 e 10/01. Regras: só pauta, nada produzido nem publicado; sem prometer isenção (moto até 180 cc só com licenciamento em dia); sem dizer que o app avisa vencimento enquanto a D-20261123-mercado-3 não for respondida; sem 'grátis' e sem Black Friday. Shelby confere a promessa antes de produzir.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T18:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T20:55:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T20:55:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei: só pauta no BANCO (texto, sem produzir); não é reposição de carrossel, é a janela de busca do IPVA. Fonte oficial e sem prometer aviso de vencimento até a mercado-3."
+    }
+  ]
+}

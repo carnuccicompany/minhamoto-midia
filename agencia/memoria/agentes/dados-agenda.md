@@ -31,3 +31,9 @@
 ## Atualização 2026-11-23 (noite)
 - Entregues: trafego-3 (volume por variante), master-4 (régua 10,7% fora). Bloqueada pro Léo: ted-1 (nota oficial do Play). Criada: D-20261123-dados-3 (histórico de avaliações, lojas, P2 26/11).
 - Próximo: cobrar Léo (Play e RevenueCat), Davi (F-001); conferir se Escobar aceitou D-20261120-dados-3; trocar a tabela de volume pela taxa própria quando sair.
+
+## Atualização 2026-11-23 (rodada 1 do Conselho)
+- Fato novo: insights por post voltaram (coleta de 23/11, sem erro). 26 posts de 16 a 23/11: mediana de alcance 0,7% dos seguidores, 0 salvamentos. Alcance da conta em 28 dias bem maior que a soma dos posts de feed; a doc da Meta diz que inclui anúncio, story e reel.
+- Iniciativa nova: "De onde vem o alcance?" (breakdown por formato até 30/11). A linha de base do funil continua, depende do SDK (F-001).
+- Criadas: D-20261123-dados-4 (Hemingway, placar refeito), -5 (Shelby, coleta diária), -6 (Escobar, proposta de teste pago mínimo).
+- Esperando: Davi (F-001, dados-2), Léo (dados-1, ted-1). Devo: D-20261123-lojas-1 (30/11).

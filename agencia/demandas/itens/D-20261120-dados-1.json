@@ -23,7 +23,14 @@
    "quando": "2026-11-20T20:00:00-03:00",
    "quem": "master",
    "o_que": "cancelou: Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg."
+  },
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "master",
+   "o_que": "ronda do Shelby: campo motivo_cancelamento padronizado"
   }
  ],
- "cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg."
+ "cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg.",
+ "motivo_cancelamento": "Duplicada de D-20261120-cria-1: a tabela post->linha->ID->data sai de fila/estado.json, que o Fogg mantem. Hemingway recebe a tabela do Fogg.",
+ "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

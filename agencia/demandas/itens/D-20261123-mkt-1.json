@@ -1,0 +1,41 @@
+{
+  "id": "D-20261123-mkt-1",
+  "de": "mkt",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Placar semanal dos Corretores em % direto da UTMify (vendas/dia, custo por venda, ROAS, % Pix pago, % order bump, reembolso), 4 semanas",
+  "por_que": "Meu número da semana está em branco desde 20/11. Mas a base de conhecimento já traz leitura da UTMify (agencia/conhecimento/09-numeros.md, 23/11: vendas/dia -43%, custo por venda +19% de out pra nov), então o Kavoo não precisa exportar nada pra eu ter placar: a UTMify aceita pedido com status refunded e data de reembolso (https://docs.utmify.com.br/envio-de-vendas). Falta a quebra semana a semana e o reembolso. Substitui a D-20261120-mkt-1, que esperava export do Kavoo.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-1.md com, para as 4 últimas semanas fechadas (seg a dom), variação % semana contra semana de vendas/dia, custo por venda, ROAS, % de Pix gerado que foi pago, % de pedidos com order bump e % de reembolso sobre vendas, cada linha com a fonte (arquivo em carnucci-dados ou tela da UTMify); sem valor absoluto nem R$. Se a UTMify não receber o reembolso do Kavoo, a linha vem 'sem dado' e diz quem libera. Além do placar, dizer qual etapa mais perdeu desde 1/11 (clique, página vista, checkout, Pix gerado, Pix pago), em % sobre a etapa anterior; ordem pedida pelo Shelby na ronda de 23/11 (a visualização de página por clique caiu de ~92% pra ~75% e a recuperação de Pix está adiada pelo Léo).",
+  "prioridade": "P1",
+  "prazo": "2026-11-24T19:40:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-23T19:40:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-1.md",
+    "resumo": "Placar semanal não saiu: sem acesso à UTMify/carnucci-dados. Entreguei o que há (mensal -43% vendas/dia, +19% custo/venda) e a etapa clique->página vista (~92%->~75%, -18% relativo) como única candidata; reembolso sem dado."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T19:40:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T19:50:00-03:00",
+      "quem": "master",
+      "o_que": "escopo ampliado na ronda: etapa que mais perdeu desde 1/11. Prazo e prioridade mantidos"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
+    }
+  ],
+  "atualizada_em": "2026-11-23T22:30:00-03:00",
+  "bloqueio": "lider",
+  "pergunta": "Léo, você exporta (ou libera leitura ao Dados da) UTMify por semana de 26/10 a 22/11, com cliques, páginas vistas, checkouts, Pix gerado/pago, bump e reembolso? Sim/não."
+}

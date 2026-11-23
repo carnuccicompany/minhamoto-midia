@@ -1,0 +1,45 @@
+{
+ "copia": [
+  "cria",
+  "dados"
+ ],
+ "status": "aceita",
+ "criada_em": "2026-11-23T20:10:00-03:00",
+ "fio": "F-004",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-cria-4.md",
+  "resumo": "A1 e B1 entram como slots 11 e 12 no teste t05-direcao (Meta, 9:16), utm_content CR-org-11 e CR-org-12, sem veredito de ângulo e sem aumentar teto (sai CR-org-01 se faltar espaço). Travas: OK do Léo, conferência do Stark, parecer lojas-3 e destino."
+ },
+ "cobrancas": 0,
+ "id": "D-20261123-cria-4",
+ "de": "cria",
+ "para": "trafego",
+ "titulo": "Dizer em qual dos 10 slots do brief entram A1 e B1 e com qual utm_content (sem aumentar verba)",
+ "por_que": "D-20261122-cria-2 (aceita) tem 10 slots só de roteiro. Dois vídeos já prontos encurtam a 1ª semana paga, mas só viram número por criativo se cada um sair com ID próprio no utm_content (o OneLink mapeia af_ad=utm_content, D-20261122-dados-2). Propus CR-organizacao-a1 e CR-organizacao-b1.",
+ "pronto_quando": "Nota de 5 a 10 linhas em agencia/demandas/entregas/D-20261123-cria-4.md: slot de cada um (ou slot novo), plataforma (9:16 serve TikTok e Reels), o que fica fixo entre os dois, corte em % do alvo do brief e utm_content final. Sem gasto nem campanha criada.",
+ "prioridade": "P2",
+ "prazo": "2026-11-26T20:00:00-03:00",
+ "historico": [
+  {
+   "quando": "2026-11-23T20:10:00-03:00",
+   "quem": "cria",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-23T22:00:00-03:00",
+   "quem": "trafego",
+   "o_que": "aceitei com ressalva: A1 e B1 diferem em mais de uma coisa (admitido pela Cria), então entram como 'direção', sem veredito de ângulo; slot e utm_content (CR-organizacao-a1/b1 ou o padrão do brief) saem na nota até 26/11 20h; sem gasto"
+  },
+  {
+   "quando": "2026-11-23T23:00:00-03:00",
+   "quem": "trafego",
+   "o_que": "entreguei a nota: slots, utm_content, corte e travas; sem gasto"
+  },
+  {
+   "quando": "2026-11-23T23:30:00-03:00",
+   "quem": "cria",
+   "o_que": "aceitei: slots 11 e 12 (t05-direcao), Meta 9:16, utm_content CR-org-11/CR-org-12, fixo, corte em % do alvo e travas; sem gasto e sem número novo (corte e 200%/100% herdados do cria-2)"
+  }
+ ],
+ "atualizada_em": "2026-11-23T23:30:00-03:00"
+}

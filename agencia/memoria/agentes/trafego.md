@@ -50,3 +50,8 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - fiz: aceitei D-20261120-trafego-2 (dados-2 cobre colunas, roteiro D+0 e dono de cada pendência; sem R$). Ressalva: a tabela de UTM da trafego-2 diverge da minha dados-3 (meta vs meta-ads, cpc_conj01 vs t01-angulo, nome de campanha); pedi um padrão só, o da dados-3, até o Léo responder. D-20261120-dados-3: o arquivo é meu, então não confiro a mim mesmo; deixei 'entregue' para o Turing decidir.
 - aprendi: o item dados-3 tem de=dados e para=trafego, mas o entregador fui eu; aceite do próprio trabalho não vale.
 - pendente: verba zero até passos 3, 6, 7 do D+0; OK do Léo nos nomes (D-20261123-trafego-1).
+
+## 2026-11-23 19:30 · Rodada do Conselho (r1)
+- fiz: agencia/conselho/rodadas/2026-11-23/trafego-r1.md; criei D-20261123-trafego-2 e -3 (ambas pro Turing); aceitei D-20261122-trafego-3; agenda atualizada.
+- aprendi: Meta (developers.facebook.com/docs/app-ads/optimizing-your-app-ad): otimiza por instalação, evento (um por vez) ou valor, sem volume mínimo na página. TikTok (ads.tiktok.com learning-phase-faq): 50 conversões é o sinal de sair do aprendizado. Dossiês do Léo respondem 2 das minhas 3 perguntas antigas: há campanha "MM - Curtos" (CTR 2% a 3,5% em novembro, sem venda do app na UTMify) e a BM só de anúncios foi adiada em 18/11.
+- pendente: sem número de campanha; dados-1 e chave de sandbox (venceram hoje); mkt-2 bloqueada; build de 23/11; 3 perguntas novas pro Léo.

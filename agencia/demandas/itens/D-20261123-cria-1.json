@@ -1,27 +1,34 @@
 {
-  "id": "D-20261123-cria-1",
-  "de": "cria",
-  "para": "master",
-  "copia": [
-    "cria"
-  ],
-  "titulo": "Religar a Produção diária só pra 8 peças de reposição (5 Curtos AIDA e 3 Educacional)",
-  "por_que": "Curtos AIDA, única linha de venda direta, seca em 30/11 a 4 por dia; Educacional em 04/12 (D-20261122-cria-1, fila/estado.json). A produção diária está desativada desde 18/11 e o estoque só diminui. Texto das 8 eu escrevo; sem montar os cards, nada entra na fila e a linha de venda some do feed.",
-  "pronto_quando": "Resposta sim/não do Léo registrada em decisoes.md. Se sim: tarefa roda só pras 8 peças do plano (agencia/demandas/entregas/D-20261122-mkt_publicador-2.md), a 1ª de Curtos AIDA na fila até 29/11, e o Fogg insere nas posições sugeridas. Nada vai ao ar sem o check do Shelby.",
-  "prioridade": "P2",
-  "prazo": "2026-11-26T20:00:00-03:00",
-  "status": "bloqueada",
-  "criada_em": "2026-11-23T13:00:00-03:00",
-  "fio": "F-004",
-  "entrega": null,
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-23T13:00:00-03:00",
-      "quem": "cria",
-      "o_que": "criou e bloqueou: depende do Léo"
-    }
-  ],
-  "bloqueio": "lider",
-  "pergunta_lider": "Léo: pode religar a tarefa Produção diária de conteúdo só pra montar 8 carrosséis de reposição (5 Curtos AIDA e 3 Educacional, estética A/B já aprovada em 18/11), sem reativar pauteiro nem roteirista? Sim/não."
+ "id": "D-20261123-cria-1",
+ "de": "cria",
+ "para": "master",
+ "copia": [
+  "cria"
+ ],
+ "titulo": "Religar a Produção diária só pra 8 peças de reposição (5 Curtos AIDA e 3 Educacional)",
+ "por_que": "Curtos AIDA, única linha de venda direta, seca em 30/11 a 4 por dia; Educacional em 04/12 (D-20261122-cria-1, fila/estado.json). A produção diária está desativada desde 18/11 e o estoque só diminui. Texto das 8 eu escrevo; sem montar os cards, nada entra na fila e a linha de venda some do feed.",
+ "pronto_quando": "Resposta sim/não do Léo registrada em decisoes.md. Se sim: tarefa roda só pras 8 peças do plano (agencia/demandas/entregas/D-20261122-mkt_publicador-2.md), a 1ª de Curtos AIDA na fila até 29/11, e o Fogg insere nas posições sugeridas. Nada vai ao ar sem o check do Shelby.",
+ "prioridade": "P2",
+ "prazo": "2026-11-26T20:00:00-03:00",
+ "status": "cancelada",
+ "criada_em": "2026-11-23T13:00:00-03:00",
+ "fio": "F-004",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-23T13:00:00-03:00",
+   "quem": "cria",
+   "o_que": "criou e bloqueou: depende do Léo"
+  },
+  {
+   "quando": "2026-11-23T19:45:00-03:00",
+   "quem": "master",
+   "o_que": "cancelada: Cancelada pelo Shelby: a própria Cria disse na r1 que, com mediana de 10 pessoas de alcance por post e 0 salvamentos em 26, 8 carrosséis de reposição não são alavanca de assinante e não valem pergunta ao Léo. A reposição entra na decisão de direção de vídeo (F-004). Reabre só com número do dados-4 mostrando alguma linha acima da mediana."
+  }
+ ],
+ "bloqueio": null,
+ "pergunta_lider": "Léo: pode religar a tarefa Produção diária de conteúdo só pra montar 8 carrosséis de reposição (5 Curtos AIDA e 3 Educacional, estética A/B já aprovada em 18/11), sem reativar pauteiro nem roteirista? Sim/não.",
+ "motivo_cancelamento": "Cancelada pelo Shelby: a própria Cria disse na r1 que, com mediana de 10 pessoas de alcance por post e 0 salvamentos em 26, 8 carrosséis de reposição não são alavanca de assinante e não valem pergunta ao Léo. A reposição entra na decisão de direção de vídeo (F-004). Reabre só com número do dados-4 mostrando alguma linha acima da mediana.",
+ "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

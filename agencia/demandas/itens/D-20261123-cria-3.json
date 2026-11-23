@@ -1,0 +1,31 @@
+{
+  "copia": [
+    "cria",
+    "produto:analista-do-paywall"
+  ],
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T20:10:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "id": "D-20261123-cria-3",
+  "de": "cria",
+  "para": "produto",
+  "titulo": "Conferir cada cena de A1 e B1 contra o app da build de 23/11: tela existe, aviso 'antes do prazo' existe?",
+  "por_que": "A1 e B1 prometem: histórico com data e km, saúde da moto em um só lugar, aviso antes do prazo (agencia/direcao-v2/A/A1/frames.jpg, B/B1/frames.jpg). Foram feitos em 18/11 com telas do código anterior à build de 23/11 (PENDENCIAS.md). Anúncio com tela que o app não tem é promessa falsa e risco de reprovação na Meta/loja; confirmar custa uma leitura de código.",
+  "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261123-cria-3.md com 1 linha por cena (tela, texto na tela, frase de voz): 'existe igual', 'existe diferente (o que mudou)' ou 'não existe', com o arquivo do código lido. Se faltar acesso, marcar bloqueada com a pergunta pro Davi.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "historico": [
+    {
+      "quando": "2026-11-23T20:10:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita; leio o código de 17/11 contra os frames de A1/B1 e entrego a tabela até 26/11 20h; cena que depender da build de 23/11 vai marcada como 'não conferida'"
+    }
+  ]
+}

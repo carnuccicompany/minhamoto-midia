@@ -3,6 +3,13 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-23 (registro do Shelby, ronda do Conselho)
+- **Já respondido pelo Léo em 23/11 (conhecimento/):** a venda dos Corretores é pela Kavoo, tracking pela UTMify; a garantia da página é de 30 dias; a meta de assinantes é em degraus (alvo do império = degrau 4), números só no privado; o custo máximo por assinante já está definido no privado; a BM só de anúncios (contingência) foi adiada em 18/11. Diretor não repete essas perguntas ao Léo.
+- **Corretores (Léo, 23/11):** teste de 6 estilos novos × 3 criativos, começando por Historinha, Quiz e Split-screen; recuperação de Pix adiada. Sem Black Friday (19/11) segue valendo.
+- **Instagram do MinhaMoto (@minhamotoapp) está com link bloqueado (bio e stories)** (Léo, 23/11, 07-canais). Antes de verba, o destino do anúncio é conferido (D-20261123-master-1).
+- **Coleta de insights agora diária** (Shelby, 23/11, correção pequena e reversível): `insights.yml` roda todo dia às 23h41 BRT, depois do slot das 21h. Nenhuma chave nova.
+- **Repositório público limpo (Shelby, 23/11):** saíram do texto e-mails pessoais do Léo e da empresa, o número do WhatsApp (que o guia manda passar só por e-mail) e a relação familiar da expert dos Corretores. O histórico do git ainda guarda os e-mails e o telefone; reescrever histórico é do Léo (decisão na pauta só se ele quiser).
+
 ## 2026-11-22 (registro do Shelby, ronda do Conselho)
 - **O app MinhaMoto NÃO tem teste grátis** (decisão do Léo em 20/11, antes só em `diretoria/06-produto.md`; agora registrada aqui pra todo agente ler). Fluxo real: onboarding, cadastro da moto, paywall pago direto. Paywall não se mexe agora. Ninguém escreve "grátis" ou "X dias" em loja, anúncio, roteiro ou resposta de avaliação. O benchmark teste->pago da RevenueCat não vale pra nós.
 - **Black Friday:** a decisão de 19/11 ("não preparar oferta") vale também pros Corretores até o Léo dizer o contrário.

@@ -1,0 +1,28 @@
+{
+  "copia": [
+    "cria",
+    "trafego"
+  ],
+  "status": "bloqueada",
+  "criada_em": "2026-11-23T20:10:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "id": "D-20261123-cria-2",
+  "de": "cria",
+  "para": "master",
+  "titulo": "Levar ao Léo 1 sim/não: os vídeos A1 e B1 (já com preço e lojas) viram os 2 primeiros anúncios do teste",
+  "por_que": "Produção de vídeo parada há 4 dias de espera (F-004) e 0 vídeo de venda no ar. A1 e B1 já cumprem a anatomia de anúncio (gancho no 1º segundo, app na tela, selo 'por R$19,90', botões das lojas; agencia/direcao-v2/A/A1/frames.jpg e B/B1/frames.jpg). O orgânico não serve de bancada: mediana de 10 pessoas alcançadas por post e 0 salvamentos em 26 posts (dados/insights-2026-11-23.json). Só o pago mede custo por assinante, então o teste A contra B com número pode substituir a escolha por gosto.",
+  "pronto_quando": "Resposta sim/não do Léo registrada em decisoes.md. Se sim: A1 e B1 entram como candidatos ao teste do Escobar (sem gasto até ele propor e o Léo aprovar a verba). Se não: o Léo diz em uma frase o que reprovou e eu registro a regra no DESIGN-MINHAMOTO.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: os vídeos A1 e B1 (já com 'por R$19,90' e lojas) podem ser usados como os 2 primeiros anúncios de teste, com o Escobar propondo a verba depois e você aprovando? Sim/não.",
+  "historico": [
+    {
+      "quando": "2026-11-23T20:10:00-03:00",
+      "quem": "cria",
+      "o_que": "criou e bloqueou: depende do Léo"
+    }
+  ]
+}

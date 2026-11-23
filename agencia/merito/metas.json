@@ -18,7 +18,7 @@
  "degrau": {
   "atual": 1,
   "de": 4,
-  "regra": "Bateu o degrau 2 semanas seguidas, sobe pro próximo. O degrau 6 é o alvo do império."
+  "regra": "Bateu o degrau 2 semanas seguidas, sobe pro próximo. O degrau 4 é o alvo do império."
  },
  "pct": null,
  "desde": "2026-11-23"

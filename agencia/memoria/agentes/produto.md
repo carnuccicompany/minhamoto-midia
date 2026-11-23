@@ -46,3 +46,8 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 ## 2026-11-22 · Ronda do Shelby
 - recebi: o 00-SISTEMA-OPERACIONAL e 06-produto já corrigidos pelo Shelby (sem teste grátis, o conflito que você levantou). Lista pro Davi: item 5 (duração do teste) descartado; item 3 sem o benchmark de teste. D-20261120-produto-2 cancelada. Pergunta única ao Léo virou fato registrado em decisoes.md: sem teste grátis. Suas 5 perguntas viram a Pergunta 1 (Davi, 7 itens) na pauta. Confissão de premissa conta como erro sem multa.
 - pendente: produto-1 (Jobs) e produto-2 (Turing) até 25/11.
+
+## 2026-11-23 (Conselho, rodada 1)
+- fiz: produto-r1.md; criei D-20261123-produto-1 (Jobs, página de decisão pro Davi) e -2 (Bezos, vigia de avaliações pós-build); aceitei D-20261122-produto-1, D-20261120-produto-3 (e a produto-2 do Turing já estava aceita); atualizei produto-agenda.md.
+- aprendi: RevenueCat android-paywall-gap (https://www.revenuecat.com/blog/engineering/android-paywall-gap): download>pago em 35 dias, mediana Android 0,9% x iOS 2,6%; a diferença está na entrada do funil; média de apps com teste, não é nosso dado. Avaliações 23/11: 7 de 8 com 5★, 1 de 8 1★ (sync Play 1.0.1). Checklist pré-build ainda lista remover VITE_MM_AVISO_TESTE.
+- pendente: resposta do Davi (produto-3); proposta escrita pro Davi (Jobs até 26/11); 1ª leitura em % após a build com SDK; Apple HIG bloqueado.

@@ -1,0 +1,30 @@
+{
+  "id": "D-20261123-lojas-3",
+  "de": "lojas",
+  "para": "cria",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Rascunho dos 3 prints da variação A (legendas aceitas) com telas reais, estética atual",
+  "por_que": "D-20261122-lojas-2 foi aceita: variação A (Revisão feita para o seu modelo / Saúde da moto em um olhar / Todo serviço da moto registrado) usa só telas que o app já tem (plano, saúde, histórico). Prints são o elo visita→download, e o experimento oficial de gráficos do Google Play aceita screenshots e a Apple testa prints (fontes no meu r1 de 23/11); sem arte pronta o teste não sai quando o Léo der OK.",
+  "pronto_quando": "3 imagens-rascunho (png) em agencia/demandas/entregas/ com o id da demanda no nome, usando prints reais da versão nova, moto simulada, sem modelo, sem 'grátis'/'teste', sem estética nova (direção A/B não liberada); lista dos tamanhos exigidos por cada loja só se confirmada em fonte oficial, senão dito. Nada publicado nem subido em loja.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T21:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-23T21:10:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T21:10:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T22:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei com ressalva: rascunho só com telas conferidas contra a build de 23/11 (D-20261123-cria-3, Stark); sem essa conferência entrego o rascunho marcado como provisório."
+    }
+  ]
+}
