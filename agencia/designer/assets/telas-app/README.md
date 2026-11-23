@@ -1,3 +1,8 @@
+> 📱 **23/11 (noite) · VERSÕES DAS LOJAS.** iPhone = **1.0 build 33** (commit `7e17ed5`, aprovado 06/11). Android = **1.0.1** (no ar desde 17/11, ≈ main de 16/11). A 1.0.1 do iOS ainda não foi enviada (TestFlight build 40).
+> - Telas desta pasta (raiz) = main 17/11 ≈ Android 1.0.1. Telas do iPhone 1.0 em `ios-1.0/`.
+> - **Iguais nas duas versões (pode usar sem medo):** 03 manutenção, 04 uso, 05 combustível, 07 documentos, 09 resumo, 10 lista, 11 cuidados, 12 sinais, 13 conheça, 14 carteirinha, 16 perfil, 25 fontes, 22, 23, 26, 29, 30.
+> - **Diferentes:** 01 garagem (card de transferência só no main), 02 saúde (89% main × 75% iPhone), 06 histórico (Exportar PDF só no main), 08 moto (botão Transferir só no main), 15 notificações (textos diferentes; a do iPhone tem erro de texto, não usar), 28 corrente (prioridade média × alta). Card de transferência, botão Transferir e Exportar PDF **não estão em nenhuma loja**: nunca mostrar.
+
 > ✅ **23/11 (tarde) · TELAS REAIS.** Os PNGs desta pasta agora são capturas das **rotas reais do app logado** (`_authenticated.*`, componentes `GaragemHome`, `SaudeOficial`, `SinaisOficial`, `ManutencaoOficial` etc.), código `05425c9` (17/11), com Supabase/assinatura simulados em memória e moto fictícia Minha Titan. Nada de prévia. Como refazer: `_gerador-real/LEIAME.md` (patch numa cópia do app; nunca no repo do app; nenhuma rede externa).
 > Telas: 01–16, 21–30 (sem 17–20, que eram cenários só da prévia). Rolagem: 01–16, 25, 27.
 > ~~Telas da rota `/preview-visual`~~ → substituídas em 23/11. O texto abaixo é histórico do gerador antigo.
