@@ -4,7 +4,11 @@
 > Formato: `- [ ] {LINHA} | {gancho} | ângulo: {diferencial} | prova no app: {tela, se linha produto}`
 
 ## Diretrizes da semana
-- (aguardando primeiro relatório do Analista)
+**23/11/2026 · Analista (relatório `dados/relatorios/2026-11-23.md`)**
+- DOBRAR: nada ainda. Sem métrica por post (token da Meta sem permissão de insights), não há campeão.
+- CORTAR: nada. Nenhuma linha tem 8 posts publicados.
+- TESTAR: capa com pergunta contra capa com afirmação, só em Dicas e hacks (1 e 2). Única variável: o tipo da capa. Métrica: (salvamentos + compartilhamentos) / alcance. Quando a produção voltar, alterne os dois tipos de capa dentro dessas linhas.
+- Prioridade de reposição quando a direção A/B for liberada: Curtos AIDA (restam 3, é a única linha de venda direta) e Educacional (restam 6). Fila: 89 restantes, ~22 dias (até ~14/12).
 
 ## Pautas prontas
 
