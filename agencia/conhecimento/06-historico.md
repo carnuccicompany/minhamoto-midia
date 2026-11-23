@@ -23,5 +23,5 @@ _Status: pré-preenchido pelo Claude em 23/11/2026. Números absolutos no reposi
 ## Perguntas pro Léo
 - [x] Quais criativos bombaram e por quê? (Corretores: AP - 1, AP - 4, DD 10, LC 9; expert falando, curto)
 - [x] Quais floparam? (estáticos, AP - 2/3/5, copies longas; lote piloto do MinhaMoto)
-- [ ] Campanhas que deram certo/errado?
-- [ ] Ideias que já descartamos e o motivo?
+- [x] Campanhas que deram certo/errado? → Corretores (UTMify, out–nov/26): deram certo os criativos da Ana Paula falando pra câmera (AP - 1, AP - 4, LC 9, DD 10, DD 5), curtos e diretos; deram errado os estáticos (0 venda), AP - 2/3/5 e a copy longa. Queda em novembro: criativos cansados, testes parados, verba menor (dados, UTMify; números no repo privado).
+- [x] Ideias que já descartamos e o motivo? → Oferta vitalícia (oferta antiga), teste grátis (app sem trial) e estilo pastel azul-claro ("xoxo", já existe demais no acervo) (Léo, 23/11).

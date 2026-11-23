@@ -22,5 +22,5 @@ _Status: pré-preenchido pelo Claude em 23/11/2026. Última atualização: 23/11
 
 ## Perguntas pro Léo
 - [x] O que sempre precisa do seu OK? (ver acima)
-- [ ] Regras de loja/Meta que já nos pegaram?
-- [ ] Promessas proibidas no criativo?
+- [x] Regras de loja/Meta que já nos pegaram? → Quando rodavam o Perfect Class, a BM caiu por erro da IA da Meta e perderam tudo (Léo, 23/11). Por isso a estrutura de contingência (BM Matriz guarda pixel e páginas).
+- [x] Promessas proibidas no criativo? → Nada de "vitalício", dado/número inventado, depoimento inventado, prometer recurso que não existe; nos Corretores, não prometer que o corretor faz o trabalho técnico de correspondente/cartório (DESIGN-MINHAMOTO e DESIGN-CORRETORES).

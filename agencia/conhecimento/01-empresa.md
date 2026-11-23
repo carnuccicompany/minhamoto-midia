@@ -29,7 +29,7 @@ _Status: pré-preenchido pelo Claude em 23/11/2026 com o que o Léo já disse; f
 - Black Friday: não vamos preparar oferta (vale pros Corretores também, até o Léo dizer o contrário). (Léo, 19/11)
 
 ## Perguntas pro Léo
-- [ ] Qual a história da Carnucci em 5 linhas?
+- [x] Qual a história da Carnucci em 5 linhas? → Começou com infoprodutos (Perfect Class e outros) e depois veio o app MinhaMoto (Léo, 23/11).
 - [x] Como você e o Davi dividem as decisões? (decidem juntos; agentes só propõem; Shelby cuida das pequenas)
 - [x] O que a empresa nunca faz (linhas vermelhas)? (ver "O que nunca fazemos")
-- [ ] Qual é o sonho de 3 anos em número?
+- [x] Qual é o sonho de 3 anos em número? → MinhaMoto como app nº 1; meta de faturamento acumulado com vários negócios (valor no repo privado carnucci-dados/metas); vendendo em vários países; empresa estável e saudável; vários nichos e vários apps rodando juntos, foco em app pela recorrência; tudo o mais automatizado possível pra sobrar tempo pra criar coisa nova. "Pra isso precisamos ficar MUITO bons" (Léo, 23/11).

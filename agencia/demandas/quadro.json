@@ -1,7 +1,7 @@
 {
- "atualizado": "2026-11-23T14:47-03:00",
+ "atualizado": "2026-11-23T17:46-03:00",
  "resumo": {
-  "abertas": 3,
+  "abertas": 5,
   "atrasadas": 0,
   "entregues": 5,
   "aceitas": 22,
@@ -293,6 +293,62 @@
    "_atrasada": false,
    "_de_nome": "Eliot Ness",
    "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261123-master-dossie-1",
+   "de": "master",
+   "para": "lojas",
+   "copia": [
+    "mercado"
+   ],
+   "titulo": "Fechar o dossiê do Cliente: por que assina e que palavras usa",
+   "por_que": "Últimas 2 perguntas abertas do dossiê 03-cliente (cadastro do escritório); sem a voz real do cliente os criativos chutam o gancho",
+   "pronto_quando": "Em agencia/conhecimento/03-cliente.md, as perguntas 'Por que ele assina?' e 'Que palavras ele usa?' marcadas [x] com respostas tiradas das avaliações das lojas (dados/avaliacoes/) e comentários públicos, citando a fonte; nada inventado",
+   "prioridade": "P2",
+   "prazo": "2026-11-25T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-23T17:45:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T17:45:00-03:00",
+     "quem": "master",
+     "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Jeff Bezos"
+  },
+  {
+   "id": "D-20261123-master-dossie-2",
+   "de": "master",
+   "para": "mercado",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Fechar o dossiê de Concorrentes: preço de cada um e o que fazem melhor",
+   "por_que": "Últimas 2 perguntas abertas do dossiê 04-concorrentes; preço e ponto forte do concorrente mudam oferta e ângulo de criativo",
+   "pronto_quando": "Em agencia/conhecimento/04-concorrentes.md, 'Preço de cada um?' e 'O que eles fazem melhor que a gente?' marcadas [x], com link oficial (lojas/sites) e data da consulta, pros principais concorrentes do MinhaMoto (Drivvo e apps de moto/veículo)",
+   "prioridade": "P2",
+   "prazo": "2026-11-25T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-23T17:45:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T17:45:00-03:00",
+     "quem": "master",
+     "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Salvatore Greco"
   },
   {
    "id": "D-20261123-dados-3",

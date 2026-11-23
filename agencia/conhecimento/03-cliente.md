@@ -19,8 +19,8 @@ _Status: pré-preenchido pelo Claude em 23/11/2026; inclui o cliente dos Correto
 - Objeções: "já sei isso", "não é meu trabalho, é do correspondente", "não tenho tempo pra estudar", "é caro", "material genérico". (ficha corretores.md, 23/11) [rascunho do Claude — confirmar quais o Léo mais escuta]
 
 ## Perguntas pro Léo
-- [ ] Quem é o assinante típico (idade, moto, uso, cidade)?
+- [x] Quem é o assinante típico (idade, moto, uso, cidade)? → Não dá pra saber ainda: por enquanto todos os tipos compraram (Léo, 23/11).
 - [ ] Por que ele assina? Qual dor resolve?
 - [ ] Que palavras ele usa pra falar da moto e do problema?
-- [ ] Quais objeções antes de pagar?
-- [ ] Por que cancela?
+- [x] Quais objeções antes de pagar? → MinhaMoto: sem dado. Corretores: não dá pra saber, é tráfego direto (quem não compra some) (Léo, 23/11).
+- [x] Por que cancela? → Ainda não sabemos (Léo, 23/11).

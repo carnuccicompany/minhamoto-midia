@@ -1,6 +1,6 @@
 {
- "atualizado": "23/11/2026 16:28",
- "pct": 81.0,
+ "atualizado": "23/11/2026 17:46",
+ "pct": 86.7,
  "categorias": [
   {
    "id": "estrutura",
@@ -306,51 +306,29 @@
     {
      "id": "01-empresa",
      "titulo": "Carnucci, missão, sócios, como decidimos",
-     "valor": 0.7,
-     "status": "parcial",
-     "falta": [
-      "2 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "02-produto",
      "titulo": "MinhaMoto",
-     "valor": 0.52,
-     "status": "parcial",
-     "falta": [
-      "4 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "03-cliente",
      "titulo": "Cliente do MinhaMoto",
-     "valor": 0.4,
+     "valor": 0.76,
      "status": "parcial",
      "falta": [
-      "5 perguntas pro Léo"
+      "2 perguntas pro Léo"
      ]
     },
     {
      "id": "04-concorrentes",
      "titulo": "Concorrentes",
-     "valor": 0.55,
-     "status": "parcial",
-     "falta": [
-      "3 perguntas pro Léo"
-     ]
-    },
-    {
-     "id": "05-marca",
-     "titulo": "Marca e tom",
-     "valor": 0.8,
-     "status": "parcial",
-     "falta": [
-      "1 perguntas pro Léo"
-     ]
-    },
-    {
-     "id": "06-historico",
-     "titulo": "Histórico de testes",
      "valor": 0.7,
      "status": "parcial",
      "falta": [
@@ -358,22 +336,32 @@
      ]
     },
     {
+     "id": "05-marca",
+     "titulo": "Marca e tom",
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
+    },
+    {
+     "id": "06-historico",
+     "titulo": "Histórico de testes",
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
+    },
+    {
      "id": "07-canais",
      "titulo": "Canais",
-     "valor": 0.6,
-     "status": "parcial",
-     "falta": [
-      "2 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "08-regras",
      "titulo": "Regras e limites",
-     "valor": 0.6,
-     "status": "parcial",
-     "falta": [
-      "2 perguntas pro Léo"
-     ]
+     "valor": 1.0,
+     "status": "feito",
+     "falta": []
     },
     {
      "id": "09-numeros",
@@ -383,12 +371,12 @@
      "falta": []
     }
    ],
-   "pct": 65.2,
-   "feitos": 1,
+   "pct": 94.0,
+   "feitos": 7,
    "total": 9
   }
  ],
- "pendentes": 15,
+ "pendentes": 9,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -427,56 +415,14 @@
   },
   {
    "categoria": "Base de conhecimento",
-   "titulo": "Carnucci, missão, sócios, como decidimos",
-   "falta": [
-    "2 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "MinhaMoto",
-   "falta": [
-    "4 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
    "titulo": "Cliente do MinhaMoto",
    "falta": [
-    "5 perguntas pro Léo"
+    "2 perguntas pro Léo"
    ]
   },
   {
    "categoria": "Base de conhecimento",
    "titulo": "Concorrentes",
-   "falta": [
-    "3 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Marca e tom",
-   "falta": [
-    "1 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Histórico de testes",
-   "falta": [
-    "2 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Canais",
-   "falta": [
-    "2 perguntas pro Léo"
-   ]
-  },
-  {
-   "categoria": "Base de conhecimento",
-   "titulo": "Regras e limites",
    "falta": [
     "2 perguntas pro Léo"
    ]
@@ -493,7 +439,7 @@
   },
   {
    "data": "23/11/2026",
-   "pct": 81.0
+   "pct": 86.7
   }
  ]
 }

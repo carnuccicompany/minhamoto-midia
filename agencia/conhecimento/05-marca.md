@@ -17,6 +17,6 @@ _Status: pré-preenchido pelo Claude em 23/11/2026. O detalhe visual fica em `ag
 - Preço no criativo: "R$27,90", sem parcelamento; CTA "Clique em Saiba Mais". (Léo, 23/11)
 
 ## Perguntas pro Léo
-- [ ] Como a marca fala (3 adjetivos)?
+- [x] Como a marca fala (3 adjetivos)? → Revolucionária, confiável, premium (Léo, 23/11).
 - [x] O que a marca nunca fala? (ver listas acima)
 - [x] Referências de marca que você admira? (estética Apple; persona Batman/Homem de Ferro como inspiração pessoal)

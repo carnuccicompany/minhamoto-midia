@@ -1,0 +1,25 @@
+{
+ "id": "D-20261123-master-dossie-2",
+ "de": "master",
+ "para": "mercado",
+ "copia": [
+  "produto"
+ ],
+ "titulo": "Fechar o dossiê de Concorrentes: preço de cada um e o que fazem melhor",
+ "por_que": "Últimas 2 perguntas abertas do dossiê 04-concorrentes; preço e ponto forte do concorrente mudam oferta e ângulo de criativo",
+ "pronto_quando": "Em agencia/conhecimento/04-concorrentes.md, 'Preço de cada um?' e 'O que eles fazem melhor que a gente?' marcadas [x], com link oficial (lojas/sites) e data da consulta, pros principais concorrentes do MinhaMoto (Drivvo e apps de moto/veículo)",
+ "prioridade": "P2",
+ "prazo": "2026-11-25T18:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-23T17:45:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-23T17:45:00-03:00",
+   "quem": "master",
+   "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+  }
+ ]
+}

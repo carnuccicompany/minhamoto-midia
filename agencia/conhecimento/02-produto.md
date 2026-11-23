@@ -21,8 +21,8 @@ _Status: pré-preenchido pelo Claude em 23/11/2026; inclui também o produto dos
 - O Léo garante: o material é muito bom, preenche um gap real do mercado e entrega o que promete. (Léo, 23/11)
 
 ## Perguntas pro Léo
-- [ ] O que o app faz, em uma frase que um motoqueiro entende?
-- [ ] Quais as 5 funções que mais seguram o assinante?
+- [x] O que o app faz, em uma frase que um motoqueiro entende? → "Tudo da sua moto num lugar só" (Léo, 23/11).
+- [x] Quais as 5 funções que mais seguram o assinante? → Ainda sem dado; a aposta é plano de revisão, lembretes, histórico e documentos (Léo, 23/11). Turing confirma quando o RevenueCat/AppsFlyer tiverem uso por função.
 - [x] Planos e preços hoje? (teste grátis: NÃO existe, fato do Léo de 20/11/2026) (vitrine "por R$19,90", trimestral/semestral/anual com desconto)
-- [ ] O que vem nas próximas versões?
-- [ ] Qual a maior reclamação do produto hoje?
+- [x] O que vem nas próximas versões? → Depois da build desta semana (estética + AppsFlyer): foco máximo em VENDER (Léo, 23/11).
+- [x] Qual a maior reclamação do produto hoje? → Ainda não sabemos (pouca avaliação) (Léo, 23/11).

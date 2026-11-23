@@ -1,0 +1,25 @@
+{
+ "id": "D-20261123-master-dossie-1",
+ "de": "master",
+ "para": "lojas",
+ "copia": [
+  "mercado"
+ ],
+ "titulo": "Fechar o dossiê do Cliente: por que assina e que palavras usa",
+ "por_que": "Últimas 2 perguntas abertas do dossiê 03-cliente (cadastro do escritório); sem a voz real do cliente os criativos chutam o gancho",
+ "pronto_quando": "Em agencia/conhecimento/03-cliente.md, as perguntas 'Por que ele assina?' e 'Que palavras ele usa?' marcadas [x] com respostas tiradas das avaliações das lojas (dados/avaliacoes/) e comentários públicos, citando a fonte; nada inventado",
+ "prioridade": "P2",
+ "prazo": "2026-11-25T18:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-23T17:45:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-23T17:45:00-03:00",
+   "quem": "master",
+   "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+  }
+ ]
+}

@@ -13,6 +13,6 @@ _Status: pré-preenchido pelo Claude em 23/11/2026. Última atualização: 23/11
 - Restrição ativa: o token da Meta do robô de posts não tem permissão de insights (sem alcance por post). (dados, relatório 23/11)
 
 ## Perguntas pro Léo
-- [ ] Quais contas existem e em qual estado (crescendo, parada, restrita)?
+- [x] Quais contas existem e em qual estado (crescendo, parada, restrita)? → Tudo ativo, exceto o Instagram do MinhaMoto (@minhamotoapp) com link bloqueado (bio e stories) (Léo, 23/11).
 - [x] O que roda em cada canal? (ver acima)
-- [ ] Alguma restrição ativa?
+- [x] Alguma restrição ativa? → Sim: @minhamotoapp não deixa adicionar/editar link e o link não aparece pros outros; revisão pedida várias vezes sem sucesso; decisão de manter a conta (Léo, 19/11 e 23/11).

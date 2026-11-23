@@ -18,4 +18,4 @@ _Status: pré-preenchido pelo Claude em 23/11/2026 com o radar do Greco. Última
 - [x] Quem são os 5 concorrentes diretos e indiretos? (MinhaMoto: Drivvo, MotoMainte, apps gringos com IA, apps de montadora, Uber Moto; Corretores: falta)
 - [ ] Preço de cada um?
 - [ ] O que eles fazem melhor que a gente?
-- [ ] Onde a gente ganha?
+- [x] Onde a gente ganha? → MinhaMoto x Drivvo e apps de veículo: na combinação de tudo (plano por modelo, só moto, visual/experiência, preço) (Léo, 23/11). Corretores: sem concorrente direto (Léo, 23/11).
