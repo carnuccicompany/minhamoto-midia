@@ -30,6 +30,12 @@
 - Corretora e advogada de Direito Imobiliário, tom de colega experiente, calma, sem cara de guru. Aparece no hook e no CTA; o meio mostra o material. · 23/11 (inicial)
 - Só usar rosto e voz dela nos cortes que ela gravou para isso; nunca recriar o rosto nem a voz dela por IA. · 23/11 (regra da casa)
 
+## 4b. Decisões do Léo (23/11)
+- **Preço no criativo: "R$27,90".** Sem parcelamento. · 23/11
+- **Voz: só a da Ana Paula** (takes dos brutos e dos prontos; legenda pode ser refeita). Nunca voz ou rosto por IA. · 23/11
+- **Duração:** 15 a 30 s nos criativos novos (a copy longa foi a pior entre as que venderam; UTMify). · 23/11
+- **CTA:** "Clique em Saiba Mais" (padrão dos que venderam). · 23/11
+
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
 - Só material físico folheado + voz em off (lote TESTES 1).

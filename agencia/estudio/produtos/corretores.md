@@ -15,7 +15,7 @@
   3. Guia de Reunião Após Aceite de Proposta (6 páginas: 12 perguntas em 20 minutos, fecha com uma síntese).
   4. Planilha de Controle de Fechamento.
   5. Planilha de Controle Financeiro de Clientes.
-- **Order bumps (checkout, aparecem ao escolher a forma de pagamento; todos "de R$19,90 por"):**
+- **Order bumps (aparecem nos DOIS checkouts, Essencial e Completo, ao escolher a forma de pagamento; cada bump riscado "de R$19,90" e vendido a R$12,90 ou R$14,90):**
   | Bump | Preço | O que é |
   |---|---|---|
   | Dicionário Visual do Imóvel | R$14,90 | 65 páginas, 21 módulos: veja, reconheça e nomeie (tipos de planta, estilos de arquitetura, brises, cozinha, esquadrias, aquecimento, telhado, lazer, pet). Pro corretor descrever o imóvel com precisão. |
@@ -79,9 +79,10 @@ Base teórica do Léo (6 FIGURES/ÂNGULOS DE CRIATIVOS.docx): dor, desejo/transf
 - **Nos estáticos:** verde-escuro (#0B4F3A aprox.), verde-água, fundo off-white, botão verde arredondado.
 - **Nos vídeos:** legenda branca em caixa-alta com a palavra falada em amarelo, sem logo de marca.
 
-## 7. A confirmar com o Léo
-- [A CONFIRMAR COM O LÉO] Quais criativos venderam (e o "ROI 10" do DD 10).
-- [A CONFIRMAR COM O LÉO] O erro do Acesso Essencial listando os mesmos itens do Completo.
-- [A CONFIRMAR COM O LÉO] Se o preço a usar nos criativos novos é R$37,90 (Completo) e se pode citar o parcelamento (9x de R$5,22).
-- [A CONFIRMAR COM O LÉO] Se a voz em off dos lotes TESTES 1 é do Léo ou do Davi (há "Body - Leo.m4a" e "Body - Davi.m4a").
-- [A CONFIRMAR COM O LÉO] Se pode usar o rosto e a voz da Ana Paula em criativos novos montados pelo Estúdio com os brutos (autorização dela).
+## 7. Decisões do Léo (23/11)
+- **Preço nos criativos novos: R$27,90.** Não citar parcelamento (nada de 9x de R$5,22).
+- **A Ana Paula autoriza** criativos novos montados pelo Estúdio com os brutos e os prontos dela.
+- **Voz: só a dela.** Não há outras vozes. Pode recortar takes (com a voz) dos brutos e dos criativos prontos, e readaptar ou refazer a legenda. Nunca gerar voz nem rosto dela por IA.
+- **Pastas do Drive vazias:** provavelmente apagadas; a fonte é o PC do Léo (`6 FIGURES/Corretores`).
+- **Plano de teste:** os 6 estilos novos × 3 criativos cada = 18. Ordem: 1 peça-modelo por estilo → Léo aprova → 2 variações (troca hook/ângulo, mesmo molde). Verba: em duas ondas (recomendação do Claude; a confirmar), começando pelos estilos com a Ana Paula.
+- **Ainda a confirmar:** o erro do Acesso Essencial listando os mesmos itens do Completo; quais criativos venceram (ver `corretores-aprendizados.md`: a UTMify mostra AP - 1 e AP - 4 como os melhores).
