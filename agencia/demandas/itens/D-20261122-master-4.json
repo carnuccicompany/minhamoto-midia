@@ -1,0 +1,26 @@
+{
+  "id": "D-20261122-master-4",
+  "de": "master",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Fontar o 10,7% da RevenueCat e conferir que a minuta e o funil de 6 etapas estão sem trial",
+  "por_que": "Sua r2 usa 'dado de paywall rígido da RevenueCat (10,7% no dia 35)' como régua sem link; número sem fonte é multa e a régua vai pro Escobar e pro Stark. Também prometeu corrigir 'trial e START_TRIAL' na minuta: eu já corrigi a spec comparativo-e-spec.md e o PENDENCIAS.md; confira que sua minuta (D-20261122-dados-2) e o funil de D-20261122-produto-2 não citam teste em lugar nenhum.",
+  "pronto_quando": "Linha na sua entrega de D-20261122-produto-2 com o link da página da RevenueCat onde está o 10,7% (ou a régua tirada, se não achar), a data do acesso, e 'sem etapa de teste' confirmado nas duas entregas.",
+  "prioridade": "P3",
+  "prazo": "2026-11-25T23:20:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:50:00-03:00",
+  "fio": "F-003",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:50:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correção da ronda de 22/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:50:00-03:00"
+}

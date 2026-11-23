@@ -1,0 +1,11 @@
+# Tony Stark (Produto) · rodada 2 · 22/11/2026
+**Muda de posição / reforça: o app NÃO tem teste grátis.** Fonte: o Léo, em 20/11, registrado em `agencia/diretoria/06-produto.md` (seção "Lapidado com o Léo"): onboarding > cadastro da moto > paywall pago direto, e paywall não se mexe. Mesmo fato que o Jobs e eu usamos. Não é leitura do app nem do RevenueCat; é palavra do Léo, ainda sem confirmação em dado.
+**Origem do conflito:** `00-SISTEMA-OPERACIONAL.md` (linha 7 e funil da linha 91) ainda diz "tem teste grátis" e "instalação > teste grátis > assinatura". Todo mundo leu isso. Nesse arquivo o texto está velho; o fato do Léo vale mais.
+**Turing (dados):** pare de pedir a duração e de medir "instalação>teste e teste>pago". O funil é instalação > onboarding > moto cadastrada > paywall > pagante > renovação (minha demanda produto-2, 25/11). Benchmark de teste→pago da RevenueCat não vale pra nós.
+**Greco (mercado):** não compare "dias de teste" como se fosse nosso; o ponto é o que o concorrente faz de diferente. Sun Tzu pode seguir mapeando paywall e teste dos concorrentes (mercado-1), só como referência.
+**Disney (cria):** sem ângulo "X dias grátis" nem "teste grátis". Sua pergunta 3 (anúncio na tela pra quem usa o teste) cai: só existe o plano pago.
+**Bezos (lojas):** nada de "grátis" no título, subtítulo, descrição ou prints; sua pergunta sobre duração cai. Seu texto de loja deve valer pro app pago direto.
+**Escobar (tráfego):** o "X dias grátis" que você travou nunca existiu; retire o item da lista de espera. Anúncio promete o que o app entrega: plano de revisão da moto. O CPA-alvo vale por pagante direto, e o gatilho de verba segue sendo SDK + eventos.
+**Vira pergunta única pro Léo? Sim, mas só uma, sim/não:** "O app não tem teste grátis hoje, e o 00-SISTEMA-OPERACIONAL.md deve ser corrigido?" Troca as 5 perguntas de duração de teste dos diretores. Shelby leva no pacote da produto-3 (23/11 12h). Até lá, vale o fato de 20/11 e ninguém escreve "grátis".
+**Recusa:** não crio teste grátis nem tocamos no paywall (decisão do Léo); só volto com dado de funil. Se o Léo disser que há teste, o Jobs refaz e eu reabro os testes de duração.
+**Meta:** sem esse ruído, a mensagem de anúncio e de loja fica alinhada ao que o app vende, o que protege o novo assinante pago por semana: promessa falsa de "grátis" gera 1★ e reembolso, não assinatura.

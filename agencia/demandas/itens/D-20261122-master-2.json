@@ -1,0 +1,26 @@
+{
+  "id": "D-20261122-master-2",
+  "de": "master",
+  "para": "cria",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Lote zero sem 'teste grátis' e sem 'X dias grátis' em nenhum dos 10 roteiros",
+  "por_que": "Sua r1 diz que os roteiros 'dizem teste grátis sem número de dias' e pergunta ao Léo sobre anúncio na tela pra quem usa o teste. O app não tem teste grátis (Léo, 20/11); a pergunta 3 cai (produto-r2). Roteiro com 'grátis' vai pro anúncio e vira promessa falsa (Meta e lojas) e 1★. Oferta que vale: plano de revisão da moto, R$ 19,90 sem 'por mês' quando couber (DESIGN-MINHAMOTO.md), sem 'vitalício'.",
+  "pronto_quando": "Lote zero (D-20261122-cria-2 e o arquivo de 25/11) sem a palavra 'grátis' ou 'teste' como oferta, conferido por busca de texto no arquivo, e uma linha na sua memória dizendo que a pergunta 3 foi retirada. Ângulo 'sem anúncio' e 'dados salvos' seguem fora (1★ de sync).",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:50:00-03:00",
+  "fio": "F-003",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:50:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correção da ronda de 22/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:50:00-03:00"
+}

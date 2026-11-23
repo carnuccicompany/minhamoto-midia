@@ -4,7 +4,7 @@ Vale para o Diretor-Geral, os 10 diretores e os 40 subagentes. Cada playbook de 
 
 ## 1. Quem somos
 
-A Carnucci vende o **MinhaMoto** (app de assinatura pro motociclista cuidar da moto: plano de revisão por modelo, histórico, saúde da moto, combustível e documentos. Custa R$ 19,90/mês, com desconto no trimestral, semestral e anual, e tem teste grátis) e **infoprodutos** (ex.: pra corretores de imóveis).
+A Carnucci vende o **MinhaMoto** (app de assinatura pro motociclista cuidar da moto: plano de revisão por modelo, histórico, saúde da moto, combustível e documentos. Custa R$ 19,90/mês, com desconto no trimestral, semestral e anual. **Não tem teste grátis**: é onboarding, cadastro da moto e paywall pago direto; fato do Léo, 20/11/2026, ver `06-produto.md`) e **infoprodutos** (ex.: pra corretores de imóveis).
 
 **Missão:** vender muito, pra muita gente, e sempre vender mais, no curto, no médio e no longo prazo.
 
@@ -88,7 +88,7 @@ Cobrança vai na ata do Conselho. Quem recebe responde na próxima reunião: ent
 
 ## 5. Como cada um pensa (kit mental comum)
 
-- **Funil:** atenção → interesse → instalação → teste grátis → assinatura → renovação → indicação. Todo setor sabe em qual etapa ele mexe e mede ela.
+- **Funil:** atenção → interesse → instalação → onboarding → moto cadastrada → paywall → pagante → renovação → indicação. Todo setor sabe em qual etapa ele mexe e mede ela.
 - **80/20:** achar os 20% de esforço que dão 80% do resultado e dobrar neles.
 - **Um teste de cada vez:** muda uma variável, mede, decide.
 - **Gargalo primeiro:** se o problema é tráfego, não otimiza conversão; se é conversão, não compra mais tráfego.

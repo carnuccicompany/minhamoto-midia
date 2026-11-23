@@ -52,7 +52,9 @@ for f in sorted(glob.glob(f"{ITENS}/*.json")):
     itens.append(d)
 
 ordem = {"P1": 0, "P2": 1, "P3": 2}
-itens.sort(key=lambda d: (not d["_atrasada"], d.get("status") not in ABERTOS, ordem.get(d.get("prioridade"), 3), d.get("prazo", "")))
+VIVOS = ABERTOS | {"bloqueada"}
+# atrasadas primeiro; depois P1 vivas (inclusive bloqueadas pro líder, pra não sumirem do painel); depois o resto
+itens.sort(key=lambda d: (not d["_atrasada"], not (d.get("prioridade") == "P1" and d.get("status") in VIVOS), d.get("status") not in ABERTOS, ordem.get(d.get("prioridade"), 3), d.get("prazo", "")))
 res = {
     "abertas": sum(d.get("status") in ABERTOS for d in itens),
     "atrasadas": sum(d["_atrasada"] for d in itens),

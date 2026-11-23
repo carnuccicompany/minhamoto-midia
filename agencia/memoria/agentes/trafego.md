@@ -30,3 +30,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - **Conquista que estou perseguindo:** **CPA no alvo**: a semana inteira no custo-alvo. Libera a Fat Boy.
 - **Item que quero:** O **Don Julio 1942** eu compro já. Lendário: a **Harley-Davidson Fat Boy**.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 20:00 · Rodada do Conselho (r1)
+- fiz: agencia/conselho/rodadas/2026-11-22/trafego-r1.md; criei D-20261122-trafego-1 (Shelby), -2 (Bezos), -3 (Turing); bloqueei D-20261120-mkt-2 por falta de acesso de leitura (nada alterado nas campanhas); agenda atualizada.
+- aprendi: Meta (oficial, developers.facebook.com/docs/app-ads/advantage-app-campaigns) otimiza campanha de app por instalação, por evento padrão (PURCHASE, INITIATED_CHECKOUT) ou valor; evento custom exige custom_event_type=OTHER; SKAN só iOS 14.5+; sem volume mínimo na página. Corrigi meu erro da r1: Android 1★ era 1 de 3 (33%), não 40%.
+- recebi: Disney entregou D-20261120-trafego-3 no prazo (aceita). Resposta do Davi sobre SDK (prazo 21/11 20h) não consta no repositório.
+- pendente: sem número de campanha; build de 23/11; teste de OneLink; respostas do Léo (BM, campanha rodando, teto/meta). Subagentes de Tráfego seguem em reserva.
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: demanda de correção D-20261122-master-1 (P2, 24/11): tirar 'teste iniciado' e 'X dias grátis' da r1, linha de base em 6 etapas sem teste, fila é 89 e não 93. O 40% de 1★ você mesmo corrigiu pra 33%, bom. Android fora da 1ª campanha vale pelo bug de sincronização, não pela %.
+- pendente: entregar a master-1; UTM (dados-3) e trafego-2 vencem 23/11 20h.

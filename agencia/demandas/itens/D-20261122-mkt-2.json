@@ -1,0 +1,32 @@
+{
+  "id": "D-20261122-mkt-2",
+  "de": "mkt",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "Sinal de demanda pro próximo infoproduto: 5 nichos de profissional autônomo vizinhos dos corretores, com oferta existente e fonte",
+  "por_que": "A fábrica de infoprodutos (playbook 12, prioridade 3) não começa sem pesquisa de demanda. D-20261120-mkt-3 mostrou que as 5 ofertas pra corretor têm garantia de 7 dias e só 1 de 5 mostra prova de resultado: mercado de infoproduto profissional é concorrido e mal provado; preciso saber onde há demanda antes de propor ideia. Fonte: agencia/demandas/entregas/D-20261120-mkt-3.md.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-mkt-2.md com 5 nichos (ex.: outros profissionais de venda ou serviço autônomo), cada um com o sinal de demanda que existe com link e data (Google Trends, busca, comunidade, anúncio ativo na Biblioteca de Anúncios da Meta), 2 ofertas já vendidas com link, e uma linha do que falta saber; nenhum número inventado, nada do que a Carnucci vende ou fatura.",
+  "prioridade": "P3",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "cancelada",
+  "criada_em": "2026-11-22T20:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T20:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:52:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby: Prematura: não há export nem meta dos Corretores, nenhuma decisão do Léo de lançar infoproduto novo (publicação nova é dele) e o Sun Tzu é 1 subagente com 5 pedidos; o Greco já recusou em r2. Reabre depois do radar de 01/12 se o Cardone trouxer o placar de vendas dos Corretores em %."
+    }
+  ],
+  "motivo_cancelamento": "Prematura: não há export nem meta dos Corretores, nenhuma decisão do Léo de lançar infoproduto novo (publicação nova é dele) e o Sun Tzu é 1 subagente com 5 pedidos; o Greco já recusou em r2. Reabre depois do radar de 01/12 se o Cardone trouxer o placar de vendas dos Corretores em %.",
+  "atualizada_em": "2026-11-22T23:52:00-03:00"
+}

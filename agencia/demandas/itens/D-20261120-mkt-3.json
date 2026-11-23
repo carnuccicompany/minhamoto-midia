@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261120-mkt-3.md com 5 ofertas (link da página de venda, data de acesso, preço, prazo de garantia, bônus, tipo de prova usada) e uma linha dizendo o que dá pra copiar com adaptação; sem número inventado.",
   "prioridade": "P2",
   "prazo": "2026-11-23T19:50:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-20T19:50:00-03:00",
   "fio": null,
   "entrega": {
@@ -33,6 +33,11 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "mercado:radar-de-concorrentes",
       "o_que": "entregou: 5 ofertas com fonte e ressalva de comparabilidade; nenhum número inventado, inconsistências das páginas anotadas"
+    },
+    {
+      "quando": "2026-11-22T20:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "aceita (com atraso de conferência, devia ter sido em até 24h da entrega de 20/11 22:00): 5 ofertas com link, data e ressalva honesta. Uso: garantia de 7 dias é igual nas cinco e só 1 de 5 mostra prova de resultado; é a lacuna que o teste de garantia/prova vai explorar. Pendente: dizer qual serve de régua, depende de eu saber o produto dos Corretores (pergunta ao Léo)"
     }
   ]
 }

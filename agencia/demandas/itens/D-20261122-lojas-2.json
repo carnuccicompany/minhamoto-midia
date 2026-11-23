@@ -1,0 +1,31 @@
+{
+  "id": "D-20261122-lojas-2",
+  "de": "lojas",
+  "para": "cria",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "3 legendas de print pra página da loja (só texto, estética atual)",
+  "por_que": "Os 3 primeiros prints são o que vende o app na loja e hoje não sei o texto de cada um (campo sem fonte). Meta: assinante pago novo/semana; o print é o elo visita→download. Direção A/B segue não liberada (decisões.md 19/11), então peço só texto e ordem de telas, nada de vídeo nem estética nova.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-lojas-2.md com 2 variações (A e B) de 3 legendas, cada uma com até 6 palavras e a tela do app que ilustra. Pode usar 'plano de revisão feito pro modelo da sua moto' (fato do 00-SISTEMA-OPERACIONAL.md), mas SEM nome de modelo (CG, Pop, Biz, Bros) e SEM a palavra 'grátis' ou 'teste' (o app não tem teste grátis, Léo 20/11) e sem nome de modelo, que não está confirmado.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T22:40:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T22:40:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:40:00-03:00",
+      "quem": "master",
+      "o_que": "pronto_quando corrigido pelo Shelby: retirada a ressalva 'dias de teste grátis'; o app não tem teste"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:40:00-03:00"
+}

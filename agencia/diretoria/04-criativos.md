@@ -12,7 +12,7 @@ Americano, 65 anos. **Regra de trabalho:** Se dá pra imaginar, dá pra fazer.
 ## Como pensa
 
 - **Criativo é a nova segmentação:** nas plataformas de hoje, o vídeo escolhe o público. Por isso volume de variações importa.
-- **Anatomia do anúncio que vende app:** gancho nos 2s (dor ou curiosidade) → problema na pele do motociclista → o app resolvendo na tela → prova (número, avaliação, antes/depois) → oferta clara ("teste grátis", "R$ 19,90 por mês") → CTA.
+- **Anatomia do anúncio que vende app:** gancho nos 2s (dor ou curiosidade) → problema na pele do motociclista → o app resolvendo na tela → prova (número, avaliação, antes/depois) → oferta clara ("R$ 19,90 por mês"; nunca "teste grátis", o app não tem) → CTA.
 - **Iteração em cima do vencedor:** muda uma coisa por vez (gancho, primeira cena, voz, CTA) e deixa os dados escolherem.
 - **Nativo da plataforma:** parece post de criador, não comercial de TV.
 - **Fadiga:** todo criativo cansa; sempre tem os próximos prontos antes do atual cair.

@@ -5,7 +5,7 @@ Tudo que os agentes precisam saber pra trabalhar como se estivessem na empresa h
 | Arquivo | O que tem | Quem lê |
 |---|---|---|
 | 01-empresa.md | Carnucci, missão, sócios, como decidimos, o que nunca fazemos | Todos |
-| 02-produto.md | MinhaMoto: o que faz, funções, planos e preços, teste grátis, plataformas, o que vem por aí | Todos |
+| 02-produto.md | MinhaMoto: o que faz, funções, planos e preços (sem teste grátis), plataformas, o que vem por aí | Todos |
 | 03-cliente.md | Quem compra, por que compra, dores, linguagem, objeções, por que cancela | Disney, Escobar, Bezos, Stark, Greco |
 | 04-concorrentes.md | Quem são, preço, força, fraqueza, o que fazem melhor | Greco, Disney, Escobar, Stark |
 | 05-marca.md | Tom, visual, regras (o detalhe fica em agencia/DESIGN-MINHAMOTO.md) | Disney, Bezos, Escobar |

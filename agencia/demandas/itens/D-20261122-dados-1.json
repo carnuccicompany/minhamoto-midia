@@ -1,0 +1,36 @@
+{
+  "id": "D-20261122-dados-1",
+  "de": "dados",
+  "copia": [
+    "produto"
+  ],
+  "status": "bloqueada",
+  "criada_em": "2026-11-22T23:30:00-03:00",
+  "entrega": {
+    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
+    "resumo": "pergunta levada na pauta do Léo e do Davi de 22/11 como Decisão 1 (master.md); sem resposta registrada, a demanda fica bloqueada com a pergunta pronta. Fio F-001 atualizado."
+  },
+  "cobrancas": 0,
+  "para": "master",
+  "fio": "F-001",
+  "titulo": "Levar ao Davi a pergunta do SDK AppsFlyer (sim/não) e registrar a resposta antes da build de 23/11",
+  "por_que": "D-20261120-dados-2 (P1) venceu em 21/11 20h bloqueada pro líder e nenhuma resposta está registrada em fios.md nem em decisoes.md. Sem SDK AppsFlyer + RevenueCat na build, não existe elo instalação -> assinatura paga: custo por assinante e % de assinaturas com fonte ficam sem número (meta: novos assinantes pagos por semana).",
+  "pronto_quando": "Resposta do Davi (sim/não, e data de publicação) escrita no fio F-001 em agencia/memoria/fios.md e copiada em D-20261120-dados-2; se ele ainda não respondeu, a demanda volta com a hora em que a pergunta foi feita. Pergunta pronta: 'A build de 23/11 inclui o SDK do AppsFlyer, o appsflyerID enviado ao RevenueCat e a propriedade modelo da moto no usuário? sim/não'.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T12:00:00-03:00",
+  "historico": [
+    {
+      "quando": "2026-11-22T23:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master",
+      "o_que": "pergunta levada na pauta do Léo e do Davi de 22/11 como Decisão 1 (master.md); sem resposta registrada, a demanda fica bloqueada com a pergunta pronta. Fio F-001 atualizado."
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi, antes da build de 23/11: a build inclui (a) SDK AppsFlyer com o appsflyerID enviado ao RevenueCat, (b) os eventos onboarding_complete e paywall_view (e 'moto cadastrada', novo) e (c) o modelo da moto como propriedade do usuário? Sim/não por letra, e a data da build.",
+  "atualizada_em": "2026-11-22T23:55:00-03:00"
+}

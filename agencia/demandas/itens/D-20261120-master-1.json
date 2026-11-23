@@ -1,36 +1,49 @@
 {
- "id": "D-20261120-master-1",
- "de": "master",
- "para": "master:auditor-de-entregas",
- "copia": [],
- "titulo": "Regenerar quadro.json com as 21 demandas de 20/11 (hoje mostra 0) e listar as P1 que vencem 21/11 20h",
- "por_que": "Quadro vazio esconde bloqueio: 4 demandas P1/P2 dependem do Davi e ninguem enxerga no painel",
- "pronto_quando": "quadro.json com todas as demandas, status e prazo; P1 vencendo em 21/11 no topo",
- "prioridade": "P2",
- "prazo": "2026-11-21T12:00:00-03:00",
- "status": "devolvida",
- "criada_em": "2026-11-20T20:00:00-03:00",
- "fio": null,
- "entrega": {
-  "arquivo": "agencia/demandas/entregas/D-20261120-master-1.md",
-  "resumo": "Quadro regenerado e conferido: todas as demandas dos arquivos estão no quadro (nenhuma faltando, nenhuma atrasada). P1 de 21/11 ~20h: mkt-1 e dados-2, ambas bloqueadas pro líder; trafego-1 cancelada como duplicata. Achado: o script não põe P1 bloqueada no topo e faltam as perguntas sim/não nas bloqueadas."
- },
- "cobrancas": 0,
- "historico": [
-  {
-   "quando": "2026-11-20T20:00:00-03:00",
-   "quem": "master",
-   "o_que": "criou"
+  "id": "D-20261120-master-1",
+  "de": "master",
+  "para": "master:auditor-de-entregas",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Regenerar quadro.json com as 21 demandas de 20/11 (hoje mostra 0) e listar as P1 que vencem 21/11 20h",
+  "por_que": "Quadro vazio esconde bloqueio: 4 demandas P1/P2 dependem do Davi e ninguem enxerga no painel",
+  "pronto_quando": "quadro.json com todas as demandas, status e prazo; P1 vencendo em 21/11 no topo",
+  "prioridade": "P2",
+  "prazo": "2026-11-21T12:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-20T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-master-1.md",
+    "resumo": "Quadro regenerado e conferido: todas as demandas dos arquivos estão no quadro (nenhuma faltando, nenhuma atrasada). P1 de 21/11 ~20h: mkt-1 e dados-2, ambas bloqueadas pro líder; trafego-1 cancelada como duplicata. Achado: o script não põe P1 bloqueada no topo e faltam as perguntas sim/não nas bloqueadas."
   },
-  {
-   "quando": "2026-11-20T23:00:00-03:00",
-   "quem": "master:auditor-de-entregas",
-   "o_que": "entregou: quadro regenerado e conferido, P1 de 21/11 listadas em agencia/demandas/entregas/D-20261120-master-1.md"
-  },
-  {
-   "quando": "2026-11-21T00:10:00-03:00",
-   "quem": "master",
-   "o_que": "devolvida: o quadro.json em disco nao cumpre o pronto_quando. (1) Faltam demandas: itens/ tem 24 demandas e o quadro 23, sem D-20261120-mercado-4; a entrega afirma 23 arquivos e esta errada. (2) quadro.json esta velho (atualizado 19:35, master-2 aparece como aberta embora esteja entregue, resumo diz 1 entregue/11 abertas): regenerar de novo com scripts/quadro_demandas.py. (3) P1 vencendo em 21/11 (mkt-1, dados-2) estao nas posicoes 11 e 12 de 23, nao no topo: ajustar a ordenacao do script (atrasadas, depois P1 com prazo em 21/11 mesmo bloqueadas, depois o resto) e regenerar, ou justificar no arquivo. Reentregar com o quadro conferido id a id contra itens/."
-  }
- ]
+  "cobrancas": 2,
+  "historico": [
+    {
+      "quando": "2026-11-20T20:00:00-03:00",
+      "quem": "master",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-20T23:00:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "entregou: quadro regenerado e conferido, P1 de 21/11 listadas em agencia/demandas/entregas/D-20261120-master-1.md"
+    },
+    {
+      "quando": "2026-11-21T00:10:00-03:00",
+      "quem": "master",
+      "o_que": "devolvida: o quadro.json em disco nao cumpre o pronto_quando. (1) Faltam demandas: itens/ tem 24 demandas e o quadro 23, sem D-20261120-mercado-4; a entrega afirma 23 arquivos e esta errada. (2) quadro.json esta velho (atualizado 19:35, master-2 aparece como aberta embora esteja entregue, resumo diz 1 entregue/11 abertas): regenerar de novo com scripts/quadro_demandas.py. (3) P1 vencendo em 21/11 (mkt-1, dados-2) estao nas posicoes 11 e 12 de 23, nao no topo: ajustar a ordenacao do script (atrasadas, depois P1 com prazo em 21/11 mesmo bloqueadas, depois o resto) e regenerar, ou justificar no arquivo. Reentregar com o quadro conferido id a id contra itens/."
+    },
+    {
+      "quando": "2026-11-22T23:11-03:00",
+      "quem": "mesa-de-demandas",
+      "o_que": "cobrança 2: prazo vencido há 35 h; cobrado Thomas Shelby"
+    },
+    {
+      "quando": "2026-11-22T23:45:00-03:00",
+      "quem": "master",
+      "o_que": "fechada pelo Shelby na ronda de 22/11: o Auditor não reentregou em 35 h; ajustei eu mesmo scripts/quadro_demandas.py (atrasadas, depois P1 vivas inclusive bloqueadas, depois o resto) e regenerei o quadro, conferido contra itens/. A refação (devolvida por entrega com contagem errada: 23 arquivos afirmados, havia 24) vai pra Folha de sexta como refação do Auditor; o log do coordenador parado desde 21/11 08h40 segue em D-20261122-dados-3."
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:45:00-03:00"
 }

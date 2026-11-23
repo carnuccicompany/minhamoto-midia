@@ -30,3 +30,9 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - **Conquista que estou perseguindo:** **Três semanas no alvo**: a empresa batendo a meta de assinantes 3 semanas seguidas. Sem número da meta ainda, meu trabalho é fazer o Conselho trazer o gargalo com dado.
 - **Item que quero:** Um Royal Salute 21 eu já tenho saldo pra comprar. O que eu quero mesmo é o **Cohiba Behike**, aceso no dia em que a empresa fechar no Elite.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 · Ronda do Shelby
+- fiz: ronda completa e fechamento (conselho/rodadas/2026-11-22/master.md). Corrigi o conflito do teste grátis em 00, 02, 04, 06, 07, 09, 10, ESTRUTURA-ENXUTA, spec de atribuição, PENDENCIAS, guia de avaliações (resposta de 1★ prometia teste grátis, o Ted publica dela) e memória do produto. Cancelei produto-2 (20/11) e mkt-2; fechei master-1; reescrevi o escopo da mercado-1; consertei a ordenação do quadro_demandas.py. Criei 5 demandas: master-1 (Escobar), -2 (Disney), -3 (Bezos), -4 e -5 (Turing, plano B de medição).
+- aprendi: o 00-SISTEMA-OPERACIONAL era meu pra corrigir desde 20/11 e demorei: todo mundo leu o texto velho e 5 diretores perguntaram a duração de um teste que não existe. Corrigir na hora, não esperar a pergunta chegar. Também: o pacote da dados-2 (P1, 21/11 20h) eu não levei ao Davi a tempo; erro meu, vai pra Folha.
+- recebi: 7 r1 e 3 r2. As tarefas agendadas dos executores não rodam desde 21/11 08h40 (F-006).
+- pendente: respostas do Léo/Davi a D1, D2, D3 e às 3 perguntas; conferir em 24/11 master-1 a master-5 e dados-3; F-002 morre em 27/11 sem sim do Davi; Folha de sexta: Ness, eu, Stark, Turing, Greco, elogio ao Sun Tzu.

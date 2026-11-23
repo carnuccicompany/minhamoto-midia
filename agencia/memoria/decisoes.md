@@ -3,6 +3,11 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-22 (registro do Shelby, ronda do Conselho)
+- **O app MinhaMoto NÃO tem teste grátis** (decisão do Léo em 20/11, antes só em `diretoria/06-produto.md`; agora registrada aqui pra todo agente ler). Fluxo real: onboarding, cadastro da moto, paywall pago direto. Paywall não se mexe agora. Ninguém escreve "grátis" ou "X dias" em loja, anúncio, roteiro ou resposta de avaliação. O benchmark teste->pago da RevenueCat não vale pra nós.
+- **Black Friday:** a decisão de 19/11 ("não preparar oferta") vale também pros Corretores até o Léo dizer o contrário.
+- **Dono da porra toda** (20/11) segue valendo: correção pequena é do Shelby, que corrige e cobra sem perguntar. Ver `diretoria/01-direcao-geral.md`.
+
 ## 2026-11-20
 - **Batismo dos subagentes feito pelo Thomas Shelby:** os 40 subagentes do livro.json ganharam nome (critério do Léo, decisão de 19/11). Tabela com setor, função, nome e porquê em agencia/merito/batismo-2026-11.md. A função segue em `funcao`; memórias atualizadas com o nome novo.
 

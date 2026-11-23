@@ -12,7 +12,7 @@
 |---|---|---|---|
 | Plano grátis / inicial | **Zero**: grátis, com pacote de 12.000 conversões grátis no 1º ano; depois, Growth a US$0,07 por conversão¹ | Basics com teste grátis; preços não são públicos (só por demo)² | **Base**: até 1.500 atribuições por mês por até 12 meses (até 18.000 por ano)³ |
 | SDK pra Capacitor | **Plugin oficial** `appsflyer-capacitor-plugin` (marca AppsFlyer, ~9,6 mil downloads/semana, suporta Capacitor 3–6)⁴ | `capacitor-branch-deep-links`, documentado no Help Center da Branch⁵ | **Sem plugin oficial.** Só plugins de comunidade (`@joinflux/capacitor-adjust` etc.)⁶ |
-| Integração com RevenueCat | Nativa. Envia `setAppsflyerID` + `collectDeviceIdentifiers`; o RevenueCat manda pro AppsFlyer, pelo servidor, conversões de trial, renovações e receita⁷ | Nativa. Usa `setIdentity` com o mesmo ID do RevenueCat; o RevenueCat manda START_TRIAL, PURCHASE (inicial, conversão, renovação) e cancelamentos⁸ | Nativa. Envia `setAdjustID` + `collectDeviceIdentifiers`; o RevenueCat manda eventos do ciclo de assinatura (tokens opacos)⁹ |
+| Integração com RevenueCat | Nativa. Envia `setAppsflyerID` + `collectDeviceIdentifiers`; o RevenueCat manda pro AppsFlyer, pelo servidor, compras, renovações e receita (eventos de trial existem na ferramenta, mas o MinhaMoto não tem teste grátis)⁷ | Nativa. Usa `setIdentity` com o mesmo ID do RevenueCat; o RevenueCat manda PURCHASE (inicial, renovação) e cancelamentos; START_TRIAL não se aplica, o MinhaMoto não tem teste grátis⁸ | Nativa. Envia `setAdjustID` + `collectDeviceIdentifiers`; o RevenueCat manda eventos do ciclo de assinatura (tokens opacos)⁹ |
 | Métodos no SDK Capacitor do RevenueCat (`@revenuecat/purchases-capacitor` 13.x) | `setAppsflyerID({appsflyerID})` ✅ | via `setAttributes({$branchId})` | `setAdjustID({adjustID})` ✅ |
 | Página de vendas → app | OneLink + **Smart Script** (lê os parâmetros da URL da página e gera os links das lojas automaticamente)¹⁰ | Branch links; deferred deep link no iOS só via NativeLink (pacote Engagement)⁵ | Links Adjust; deep link e deferred deep link listados³ |
 | Meta Ads / TikTok Ads | Parceiros integrados (padrão de mercado) | Parceiros integrados | Parceiros integrados |
@@ -111,7 +111,7 @@ await Purchases.collectDeviceIdentifiers();
 | `onboarding_complete` | fim do onboarding |
 | `paywall_view` | paywall aparece |
 | `att_answered` (param `status`) | resposta do ATT |
-Trial, assinatura, renovação e cancelamento chegam pelo **RevenueCat → AppsFlyer** (lado servidor). Não duplicar.
+Assinatura (compra inicial), renovação e cancelamento chegam pelo **RevenueCat → AppsFlyer** (lado servidor). Não duplicar.
 ```ts
 await AppsFlyer.logEvent({ eventName: 'paywall_view', eventValues: {} });
 ```
@@ -141,8 +141,8 @@ Project settings → Integrations → **AppsFlyer**: chave (iOS/Android ou geral
 ## 3. Plano do dashboard interno (PWA)
 
 ### Fontes
-1. **Webhook do RevenueCat** → cada evento (TRIAL_STARTED, INITIAL_PURCHASE, RENEWAL, CANCELLATION, EXPIRATION, PRODUCT_CHANGE, REFUND…) chega com os **subscriber attributes** (`$mediaSource`, `$campaign`, `$ad`…). É o que liga **origem → assinatura → receita, por pessoa**, sem depender de API paga do AppsFlyer.
-2. **RevenueCat Charts & Metrics API v2** (`/metrics/overview`, `/charts/{mrr|revenue|actives|trials|trial_conversion_rate…}`, com `start_date`/`end_date`/`resolution`; limite de 25 req/min; permissões `charts_metrics:*:read`)¹¹: números oficiais de MRR, receita, ativos e trials pra conferir os totais.
+1. **Webhook do RevenueCat** → cada evento (INITIAL_PURCHASE, RENEWAL, CANCELLATION, EXPIRATION, PRODUCT_CHANGE, REFUND…) chega com os **subscriber attributes** (`$mediaSource`, `$campaign`, `$ad`…). É o que liga **origem → assinatura → receita, por pessoa**, sem depender de API paga do AppsFlyer.
+2. **RevenueCat Charts & Metrics API v2** (`/metrics/overview`, `/charts/{mrr|revenue|actives…}`, com `start_date`/`end_date`/`resolution`; limite de 25 req/min; permissões `charts_metrics:*:read`)¹¹: números oficiais de MRR, receita e ativos pra conferir os totais.
 3. **Instalações por origem:** um evento `app_first_open` gravado pelo próprio app (com `media_source`/`campaign` do callback do AppsFlyer) numa tabela do Supabase de analytics. Opcional: API ou exportação do AppsFlyer, se o plano incluir.
 4. **Custo de mídia** (pra CAC/ROAS): Marketing API do Meta (gasto por campanha/dia), quando tiver token de leitura de anúncios.
 
@@ -151,8 +151,8 @@ Project settings → Integrations → **AppsFlyer**: chave (iOS/Android ou geral
 ### Métricas e cortes
 - **Períodos:** hoje, ontem, 7d, 30d, mês, ou intervalo personalizado; visão diária, semanal ou mensal.
 - **Cortes:** canal (Meta pago, Insta orgânico, TikTok, Face, busca na loja/orgânico, site), campanha, criativo, plataforma (iOS/Android).
-- **Funil:** instalações → onboarding concluído → viu paywall → trial → pago (taxa de cada etapa).
-- **Receita:** novos assinantes, conversão trial→pago, assinantes ativos, MRR, receita bruta e líquida, churn, reembolsos, mix de planos (mensal, trimestral, semestral, anual).
+- **Funil:** instalações → onboarding concluído → (moto cadastrada, só se o Davi criar o evento) → viu paywall → pagante (compra inicial) → renovação (taxa de cada etapa; sem etapa de teste, o app não tem teste grátis, 20/11/2026).
+- **Receita:** novos assinantes, conversão paywall→pagante, assinantes ativos, MRR, receita bruta e líquida, churn, reembolsos, mix de planos (mensal, trimestral, semestral, anual).
 - **Unit economics:** custo por instalação, CAC, LTV e ROAS por campanha, assim que o custo do Meta entrar.
 
 ### Hospedagem segura (o repo minhamoto-midia é PÚBLICO)

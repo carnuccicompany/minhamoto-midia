@@ -1,0 +1,38 @@
+{
+  "id": "D-20261122-cria-1",
+  "de": "cria",
+  "para": "mkt:publicador",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Por que 3 de 7 slots ficaram sem post (21 e 22/11) e a fila por linha no ritmo real",
+  "por_que": "fila/estado.json mostra 4 posts em 21 e 22/11 (M05, A01, DV21, E08) contra 7 slots até as 18h de 22/11; os 4 saíram de 50 a 102 min depois do horário (13:27, 18:50, 22:42, 19:25) e não há registro do 15h de 21/11 nem do 12h e 15h de 22/11. Fila: 89 pendentes (carrosseis.json menos estado.json) = ~22 dias a 4 por dia, mas só vale se o ritmo voltar a 4. Sem ritmo real não existe data de reposição confiável (pedido do Shelby no boletim de 20/11).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-cria-1.md com: (1) por slot de 21 e 22/11, saiu ou não, horário real e a causa com prova (log da tarefa, commit ou mensagem do script; se for atraso da tarefa agendada e não do publicador, dizer isso); (2) pendentes por linha e dias de fila por linha a 4 por dia e ao ritmo real dos últimos 2 dias, com a data em que cada linha seca (Curtos AIDA e Davi Tutorial primeiro); (3) o que você muda pra não repetir. Conferido por mim contra estado.json.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-22T23:20:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-cria-1.md",
+    "resumo": "Dos 8 slots de 21/11 12h a 22/11 21h saíram 4, todos com 50 a 102 min de atraso; as 8 execuções do workflow deram sucesso, então a falha foi falta de disparo no horário (só o cron do GitHub rodou, 8 vezes em 48 h) e a tarefa 'Posts do horário' consta falha por limite de uso na última execução. Fila de 89: acaba 15/12 a 4/dia e 06/01 a 2/dia; Curtos AIDA seca primeiro (30/11 a 4/dia)."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:45:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "entregou: tabela por slot com run id, causa com prova (e o que não está provado), fila por linha a 4/dia e 2/dia, mudanças; criou D-20261122-mkt_publicador-1 e -2"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitou: horários, 89 pendentes e posições por linha conferem com estado.json e carrosseis.json; causa separa prova (8 runs success, sem dispatch desde 21/11 00:04 UTC, last_run FAILED por limite de uso) de hipótese (21/11 a 22/11 18h)"
+    }
+  ]
+}

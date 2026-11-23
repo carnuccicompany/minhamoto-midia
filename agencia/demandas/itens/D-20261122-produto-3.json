@@ -1,0 +1,38 @@
+{
+  "id": "D-20261122-produto-3",
+  "de": "produto",
+  "para": "master",
+  "copia": [
+    "dados",
+    "lojas",
+    "mercado"
+  ],
+  "titulo": "Levar ao Davi, numa mensagem só e antes da build de 23/11, as perguntas sim/não que travam 5 demandas + a Lista pro Davi",
+  "por_que": "5 demandas dependem de resposta do Davi sobre o estado do app e estão paradas: dados-2 (P1 venceu 21/11 20h), lojas-2 (vence 23/11 12h), mercado-2 e mercado-4 (vencem 23/11 20h), cria-3 (27/11). O checklist pré-build do PENDENCIAS.md tem 9 itens abertos (SDK AppsFlyer, teste em debug, postbacks) a poucas horas da build. Build sem SDK = sem custo por assinante por campanha. Folha de 20/11 também cobrou de mim a proposta escrita pro Davi: segue em agencia/diretoria/memoria/produto.md, seção Lista pro Davi.",
+  "pronto_quando": "Mensagem ao Davi (ou registro de que foi enviada) com as perguntas sim/não de D-20261120-dados-2, lojas-2, mercado-2, mercado-4 e cria-3 (texto de cada uma está no campo pergunta_lider do item) mais os 3 primeiros itens da Lista pro Davi, e o caminho do registro em agencia/demandas/entregas/D-20261122-produto-3.md. Se o Shelby não puder enviar, dizer por quê.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T12:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-22T23:20:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
+    "resumo": "perguntas de dados-2, lojas-2, mercado-2, mercado-4 e cria-3 juntadas numa só (Pergunta 1 do master.md de 22/11), mais a lista de itens da Lista pro Davi no master.md; sem resposta registrada, fica bloqueada."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master",
+      "o_que": "perguntas de dados-2, lojas-2, mercado-2, mercado-4 e cria-3 juntadas numa só (Pergunta 1 do master.md de 22/11), mais a lista de itens da Lista pro Davi no master.md; sem resposta registrada, fica bloqueada."
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi, sim/não em 7 itens sobre o app hoje: (1) tem anúncio na tela? (2) a conta guarda o histórico entre aparelhos? (3) a moto é escolhida numa lista, sem digitar o modelo? (4) o usuário vê o plano de revisão da moto antes do paywall? (5) já existe pedido de avaliação, e dispara só depois de 'Registrar serviço' e nunca após erro de sync? (6) o plano cobre CG 160, Pop 110i, Biz e Bros 160? (7) libera 5 prints/gravações 9:16 da versão nova, sem dado de cliente, até 27/11?",
+  "atualizada_em": "2026-11-22T23:55:00-03:00"
+}

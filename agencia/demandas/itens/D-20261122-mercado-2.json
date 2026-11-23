@@ -1,0 +1,37 @@
+{
+  "id": "D-20261122-mercado-2",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [],
+  "titulo": "Notas das versões 14.1 e 14.2 do Drivvo com data exata e o que mudou pra moto",
+  "por_que": "Drivvo 14.2 trouxe scanner de odômetro/bomba/nota grátis, CarPlay e parcelamento (App Store BR, 22/11); tudo carro e abastecimento, nada de plano por modelo. Se um lançamento dele tocar manutenção de moto, o espaço do 'plano do SEU modelo' fecha. Preciso da data exata (a loja só mostra 'há 6 dias', já errei isso uma vez no radar de 17/11) e do histórico 14.1/14.2.",
+  "pronto_quando": "Seção curta no radar de 24/11 (agencia/radar/2026-11-24.md) ou arquivo em agencia/demandas/entregas/D-20261122-mercado-2.md: data de cada versão com fonte (loja, histórico de versões ou changelog oficial), 3 linhas por versão do que mudou, e veredito de 1 linha: toca manutenção de moto, sim ou não. O que não abrir, dito.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T12:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-22T10:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-mercado-2.md",
+    "resumo": "Drivvo 14.2: 'há 6 dias' na loja (cerca de 16/nov), sem data exata; 14.1 não aparece no histórico. 14.2 é scanner de odômetro/bomba/nota, CarPlay, Onde Abastecer e frete parcelado. Veredito: não toca manutenção de moto. Data exata e 14.1 ficam como não confirmados."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou: Drivvo 14.1/14.2 entregue; veredito não, datas não confirmadas"
+    },
+    {
+      "quando": "2026-11-22T23:59:30-03:00",
+      "quem": "mercado",
+      "o_que": "aceita: veredito 'não toca manutenção de moto' com fonte (App Store BR); data exata da 14.2 e a 14.1 não existem na página (só 'há 6 dias', sem histórico) e a vitrine EUA foi negada, dito sem chute; segue vigiar semanal."
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:59:30-03:00"
+}

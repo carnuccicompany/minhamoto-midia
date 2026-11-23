@@ -1,0 +1,26 @@
+{
+  "de": "master:auditor-de-entregas",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:55:00-03:00",
+  "entrega": null,
+  "cobrancas": 0,
+  "fio": null,
+  "id": "D-20261122-master_auditor-de-entregas-1",
+  "para": "mkt:publicador",
+  "copia": [
+    "mkt",
+    "master"
+  ],
+  "titulo": "Proposta de recuperacao de slot perdido no publicador (hoje 4 de 8 slots em 21-22/11)",
+  "por_que": "fila/estado.json: 4 de 8 slots em 21-22/11 contra 19 de 19 em 16-20/11. O publicar.yml teve 0 execucoes dentro da janela dos 4 slots perdidos (7 agendadas em 48 h) e a recuperacao do Coordenador, sem 'forcar' e depois da janela de 2 h, nao publica (disparo de 23h10 de 22/11 nao postou). Prova: agencia/demandas/entregas/D-20261122-dados-3.md.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com 2 ou 3 opcoes (ex.: janela maior so para recuperar o ultimo slot perdido; disparo extra as xx:32 de cada slot; backfill com 'forcar' limitado a 1 post por slot perdido), cada uma com o numero de posts que teria salvo em 21-22/11 e o risco (posts juntos, ritmo). Nada e alterado em scripts/; termina com 1 pergunta sim/nao para o Leo/Davi.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T23:55:00-03:00",
+  "historico": [
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "criou"
+    }
+  ]
+}

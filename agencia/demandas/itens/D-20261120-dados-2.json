@@ -35,8 +35,14 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "dados",
       "o_que": "mantenho bloqueada, concordo com o Stark; sem Davi não sai. Peço ao Shelby levar a pergunta. Acrescento o evento/propriedade 'modelo da moto' (atende mercado-3) e eventos do aha (atende produto-1)"
+    },
+    {
+      "quando": "2026-11-22T23:40:00-03:00",
+      "quem": "master",
+      "o_que": "pergunta corrigida pelo Shelby: retirado 'início de teste'"
     }
   ],
   "bloqueio": "lider",
-  "pergunta_lider": "Davi: o SDK AppsFlyer e o RevenueCat entram na build de 23/11? Quais eventos o app já envia (abertura, paywall, início de teste, compra, cancelamento)? Responda sim/não + lista."
+  "pergunta_lider": "Davi: o SDK AppsFlyer e o RevenueCat entram na build de 23/11? Quais eventos o app já envia (abertura, onboarding concluído, moto cadastrada, paywall, compra, cancelamento; o app não tem teste grátis)? Responda sim/não + lista.",
+  "atualizada_em": "2026-11-22T23:40:00-03:00"
 }

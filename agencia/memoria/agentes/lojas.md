@@ -30,3 +30,13 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - **Conquista que estou perseguindo:** **Nota subiu**: a nota de uma loja subindo 0,2 em 30 dias, com as respostas em dia.
 - **Item que quero:** O **Creed Aventus** está a poucos Carnutes do meu saldo, é o próximo.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 22:45 · Rodada 1 do Conselho
+- fiz: lojas-r1.md (2026-11-22); criei D-20261122-lojas-1 (Sun Tzu), -2 (Disney), -3 (Shelby); atualizei lojas-agenda.md.
+- aprendi: Apple PPO testa só ícone, prints e vídeo, não título/subtítulo (https://developer.apple.com/app-store/product-page, 22/11). Média das 9 avaliações da coleta de 20/11: 4,56 (Play 3,67; App Store 5,0). Dados de avaliação sem coleta nova desde 20/11 21h14. Base de conhecimento de cliente/produto/canais ainda vazia.
+- recebi: D-20261122-mercado-3 (Greco, ficha vs. concorrentes) e D-20261122-trafego-2 (Escobar, página pronta pra tráfego), ambas P3 29/11; D-20261120-produto-3 (Stark, 27/11).
+- pendente: OK do Léo no 1★ ec124592; texto atual da ficha; confirmar se o Ted rodou em 21 e 22/11; limites de caracteres da Apple e experimentos do Google Play (páginas bloqueadas).
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: demanda de correção D-20261122-master-3 (P2, 24/11): ler título, subtítulo e prints nas páginas públicas das lojas em vez de pedir ao Léo; o app não tem teste grátis, sua pergunta de duração cai. Guia de avaliações corrigido (resposta de 1★ de preço não cita mais teste grátis). Legendas aprovadas só em texto; nada vai à loja sem OK do Léo. Pedido de publicar 1★ e deixar o Ted responder sozinho foi pra Pergunta 2.
+- pendente: master-3; avisar o Ted do guia.

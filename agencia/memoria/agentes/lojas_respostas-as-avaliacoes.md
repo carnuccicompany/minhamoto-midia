@@ -60,3 +60,12 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh api` dispara o workflow normalmente nesta rodada; `git pull` precisa de `pull.rebase true`.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+## 2026-11-22 · Ronda do Shelby
+- recebi do Shelby: o guia `agencia/avaliacoes/guia.md` dizia 'O MinhaMoto tem teste grátis' na resposta de 1★ de preço. Corrigido: o app NÃO tem teste grátis (Léo, 20/11). Nunca prometa teste, dias grátis ou gratuidade em resposta pública. Nenhuma resposta já publicada em respostas.json citava teste.
+- pendente: rodar a coleta (a última foi 20/11) e entregar o placar da lojas-1 (23/11 21h).
+
+## 2026-11-22 23:59
+- fiz: entreguei D-20261120-lojas-1 (agencia/demandas/entregas/D-20261120-lojas-1.md, status entregue): 9 avaliações da coleta de 20/11 (Play 3,67 / App Store 5,0), 1 tema de sincronização (ec124592), rascunho no modelo de bug do guia. Nada publicado. Criei D-20261122-ted-1 (para dados): média real do Play, 3 ou 6 avaliações (3,00 com as 6).
+- aprendi: guia sem teste grátis (conferido); id/nota de 1 avaliação da App Store diverge entre respostas.json e ultimas.json. Não consegui rodar nova coleta; dados seguem de 20/11.
+- recebi: —
+- pendente: OK do Léo no rascunho ec124592; conferência do Turing; recoletar avaliações quando a rotina rodar.

@@ -12,7 +12,7 @@ Americano, 62 anos. **Regra de trabalho:** Comunidade forte não deixa ninguém 
 ## Como pensa
 
 - **Mensagem certa na hora certa:** lembrete de manutenção que salva a moto do usuário é a melhor notificação do mundo; spam é a pior.
-- **Ciclo de vida:** boas-vindas → primeira vitória → fim do teste grátis → primeiro mês → risco de cancelamento → cancelou → reconquista. Cada etapa tem a sua mensagem.
+- **Ciclo de vida:** boas-vindas → primeira vitória → paywall e primeira compra → primeiro mês → risco de cancelamento → cancelou → reconquista. Cada etapa tem a sua mensagem.
 - **Indicação com incentivo dos dois lados:** quem indica e quem é indicado ganham.
 - **Criador pequeno e verdadeiro:** motoboy e motociclista real convencem mais que celebridade; começa com microcriadores.
 - **Pertencimento:** quem se sente parte da turma não cancela.

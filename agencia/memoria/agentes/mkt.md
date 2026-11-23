@@ -1,6 +1,6 @@
 # Memória de Grant Cardone (mkt)
 
-Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/03-marketing.md
+Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoprodutos.md
 
 ## 2026-11-19 23:45
 - fiz: entrei na Carnucci no início do piloto do Sistema de Mérito.
@@ -14,8 +14,18 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/03-marketing.m
 - recebi: nada de outros agentes ainda. Não tenho subagente próprio ativo (Phileas Fogg responde ao Disney).
 - pendente: respostas do Léo (plataforma/export, Black Friday nos Corretores, meta semanal); entregas das 3 demandas.
 
+## 2026-11-22 (Conselho, rodada 1)
+- fiz: li ficha, estrutura enxuta, playbook 12, decisões, fios, quadro, boletim, base (todos os dossiês vazios). Escrevi agencia/conselho/rodadas/2026-11-22/mkt-r1.md; criei D-20261122-mkt-1 (Shelby, perguntas ao Léo) e -2 (Sun Tzu, demanda de nichos); aceitei D-20261120-mkt-3 (com atraso de conferência, meu erro).
+- aprendi: Kavoo se descreve como plataforma de vendas (kavoo.com.br) mas a página não confirma pixel/API/webhook. Meta ads: fonte secundária fala em +12,15% de custo por tributos desde 01/01/2026 (confirmar na Meta). Black Friday cai em 27/11; mantenho não.
+- recebi: Sun Tzu entregou mkt-3 no prazo; Turing recusou o prazo de mkt-1 por falta de export; Escobar aceitou mkt-2 sem acesso.
+- pendente: respostas do Léo (export, meta, garantia); mkt-1 e mkt-2.
+
 ## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
 - **Próximo degrau:** Diretor, recém-chegado na cadeira de Infoprodutos. A próxima é **Diretor do Mês**, e depois **Conselheiro**.
 - **Conquista que estou perseguindo:** **Primeira venda atribuída**: a primeira venda de infoproduto ligada a uma campanha que eu propus.
 - **Item que quero:** Água sempre. Mas o meu alvo é o **Rolex Submariner**: pense 10 vezes maior.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: D-20261122-mkt-2 cancelada (prematura: sem export nem meta dos Corretores, e o Sun Tzu está lotado); reabre depois do radar de 01/12 se trouxer o placar em %. Teste de garantia adiado. Suas 3 perguntas viraram a Pergunta 3 da pauta; Black Friday: vale o não de 19/11. Confira a +12,15% na Central de Ajuda da Meta antes de usar.
+- pendente: mkt-1 (bloqueada), mkt-2 (Escobar, 23/11).

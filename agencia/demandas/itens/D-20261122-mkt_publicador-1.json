@@ -1,0 +1,27 @@
+{
+  "id": "D-20261122-mkt_publicador-1",
+  "de": "mkt:publicador",
+  "para": "master",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Levar ao Léo/Davi a pergunta que garante os 4 posts por dia (limite de uso derrubou a tarefa do horário)",
+  "por_que": "4 de 8 slots saíram em 21 e 22/11 (50 a 102 min de atraso); sem nenhum disparo no horário desde 21/11 00:04 UTC, só o cron do GitHub (8 execuções em 48 h). 'MM: Posts do horário' consta FAILED por USAGE_LIMIT_REACHED na última execução (provas em agencia/demandas/entregas/D-20261122-cria-1.md). A 2 posts/dia a fila de 89 dura 44 dias em vez de 22; cada slot perdido é um carrossel a menos no ar.",
+  "pronto_quando": "Resposta do Léo/Davi (sim/não) registrada nesta demanda: autorizar mudar scripts/publicar.py para recuperar slot perdido (ao rodar, se existe slot aberto do dia sem post, publica o mais antigo; máx. 1 por execução e 4 por dia; janela até 23h59; sem mudar conteúdo ou ordem da fila) e dizer se o limite de uso das tarefas agendadas será tratado. Se sim, o Fogg faz a mudança e valida com SIMULAR=1.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:45:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:45:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "criou"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Posso mudar o publicar.py para o GitHub recuperar sozinho o post do horário perdido (1 por rodada, máximo 4 por dia, sem mexer no conteúdo)? sim/não. Recomendação: sim, é o único jeito de não depender da tarefa que caiu por limite de uso."
+}

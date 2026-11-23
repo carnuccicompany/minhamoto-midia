@@ -11,7 +11,7 @@ Menos gente, mais motor. De 51 agentes, ficam **13 ativos**: 7 que pensam e deci
 | Walt Disney | Criativos e Marketing: pauta, roteiro, posts, vídeos, carrosséis, calendário | Marketing (Cardone) |
 | Pablo Escobar | Tráfego: campanhas em modo proposta, testes, verba | — |
 | Jeff Bezos | Lojas e Clientes: página da loja, avaliações, comunidade, suporte | Comunidade (Xavier) |
-| Tony Stark | Produto: onboarding, paywall, teste grátis, retenção; propostas pro Davi | — |
+| Tony Stark | Produto: onboarding, paywall (pago direto, sem teste grátis), retenção; propostas pro Davi | — |
 
 ## Executores (6), cada um com tarefa agendada real
 | Executor | Função | Responde a |

@@ -1,0 +1,26 @@
+{
+ "id": "D-20261122-trafego-3",
+ "de": "trafego",
+ "para": "dados",
+ "copia": [
+  "dados",
+  "master"
+ ],
+ "titulo": "Volume mínimo por variante pra teste de gancho declarar vencedor (conta pronta antes do 1º teste)",
+ "por_que": "Playbook 05: nunca declarar vencedor cedo. Benchmark citado pelo Turing em D-20261120-dados-2: conversão teste->pago mediana de 25,5% p/ testes <4 dias (https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026). Com ele dá pra calcular quantos testes iniciados por variante preciso, sem dado nosso, e decidir antes do gasto quantos dias o teste dura.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-trafego-3.md com tabela de testes iniciados por variante pra detectar diferença relativa de 20%, 30% e 50% na conversão teste->pago (poder 80%, confiança 95%), a fórmula usada e a regra de parada. Marcado como estimativa por benchmark, a ser trocada pela taxa própria quando existir.",
+ "prioridade": "P3",
+ "prazo": "2026-11-29T20:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-22T20:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-22T20:00:00-03:00",
+   "quem": "trafego",
+   "o_que": "criou"
+  }
+ ]
+}

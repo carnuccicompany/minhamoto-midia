@@ -9,10 +9,17 @@
 - O gargalo do assinante pago está no começo do app (tempo até ver o plano da moto), não no volume de posts. Hipótese, sem dado nosso ainda.
 - Preço e duração do teste grátis são decisão do Léo e do Davi: eu levo o teste desenhado e o risco.
 
-## Iniciativa em curso (2026-11-20)
-- "Aha antes do paywall": plano de revisão da moto em menos de 60 s, paywall depois. Desenho com o Jobs (D-20261120-produto-1). Mede-se início de teste e teste→pago antes/depois; sem baseline até o SDK entrar.
+## Iniciativa em curso (atualizada 2026-11-22)
+- "Plano da moto visível antes do paywall", refeita pro fluxo real (onboarding > cadastro da moto > paywall pago direto, SEM teste grátis; fonte: lapidado com o Léo 20/11 em 06-produto.md). Mede-se % instalação>pagante por etapa. Sem baseline até o SDK entrar; 1ª leitura até 7 dias após a build; teste 50/50 de 14 dias; se não subir, eu mato. Desenho refeito pelo Jobs em D-20261122-produto-1.
+- Erro meu a não repetir: na rodada de 20/11 não li a seção lapidada e tratei teste grátis como incógnita. Ler 06-produto.md inteiro antes de cada rodada.
 
-## Pendências
+## Pendências (22/11)
+- Pacote único de perguntas ao Davi via Shelby: D-20261122-produto-3 (dados-2, lojas-2, mercado-2, mercado-4, cria-3).
+- Funil em 6 etapas com o Turing: D-20261122-produto-2.
+- Perguntas ao Léo: plano visto antes do paywall?; confirmar que não há teste grátis; pedido de avaliação já existe?
+- Apple HIG e Google In-App Review bloqueados de novo em 22/11.
+
+## Pendências antigas
 - Devo 5 respostas bloqueadas no Davi (D-20261120-dados-2, -trafego-1, -lojas-2, -mercado-2, -cria-3): pergunta pronta em cada uma.
 - Perguntas pro Léo sobre onboarding/paywall/teste atuais (registradas em conhecimento/perguntas-pendentes.md).
 - Conferir Apple HIG e Google In-App Review (não abriram em 20/11).

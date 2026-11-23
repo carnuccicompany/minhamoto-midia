@@ -1,0 +1,26 @@
+{
+  "id": "D-20261122-master-1",
+  "de": "master",
+  "para": "trafego",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Corrigir a r1: retirar 'teste iniciado' e 'X dias grátis' e trocar o 93 da fila pelo número de hoje",
+  "por_que": "O app não tem teste grátis (Léo, 20/11, 06-produto.md; corrigido no 00-SISTEMA-OPERACIONAL.md hoje). Sua iniciativa (c) mede 'custo por instalação, teste iniciado e assinatura paga' e F-002/F-003 seguram anúncio por 'X dias grátis': promessa que não existe vira 1★ e reembolso (produto-r2). Também citou '93 não publicados' do coordenador/status.json, parado desde 21/11 08h40; hoje são 89 (113 na fila menos 24 publicados, fila/carrosseis.json e fila/estado.json).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-1.md (10 linhas no máximo) com: (1) a linha de base da semana 1 reescrita em %: instalação, onboarding, moto cadastrada, paywall, compra inicial, sem etapa de teste; (2) o item 'X dias grátis' riscado da sua lista de espera e da sua agenda; (3) fila corrigida pra 89 com a fonte; (4) confirmação de que a otimização é por compra inicial (PURCHASE). Registrar na sua memória.",
+  "prioridade": "P2",
+  "prazo": "2026-11-24T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:50:00-03:00",
+  "fio": "F-003",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:50:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correção da ronda de 22/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:50:00-03:00"
+}

@@ -10,7 +10,7 @@
   "pronto_quando": "Resposta em agencia/demandas/entregas/D-20261120-mercado-4.md com sim/não/parcial pra cada um dos 3 fatos, com a tela ou o trecho de código que prova, e a observação do impacto da falha de sincronização no Android (decisão de 19/11) sobre o ângulo de dados salvos. Sem R$.",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-20T22:00:00-03:00",
   "fio": null,
   "entrega": null,
@@ -20,6 +20,13 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "mercado:radar-de-concorrentes",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "produto",
+      "o_que": "bloqueada: não leio o app nem acesso o código nesta sessão, então não dou sim/não sem prova. Recomendo ao Mercado não usar os ângulos 1 (sem anúncio) e 2 (dados salvos) até o Davi responder: há 1★ de 19/11 'falha ao sincronizar' (v1.0.1, Play). Pergunta incluída em D-20261122-produto-3"
     }
-  ]
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: hoje (a) o app tem anúncio, (b) a conta guarda o histórico entre aparelhos, (c) o plano da moto é escolhido numa lista, sem digitar o modelo? Sim/não/parcial pra cada."
 }

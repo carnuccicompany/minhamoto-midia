@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-mercado-3",
+  "de": "mercado",
+  "para": "lojas",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Conferir se a nossa ficha nas lojas usa 'moto', 'revisão' e 'manutenção' e comparar com MotoMainte e Drivvo",
+  "por_que": "MotoMainte (nota 5,0 com 1 avaliação, tração zero) e Drivvo disputam 'manutenção' sem plano por modelo (radar 24/11). Ficha com a palavra certa no título/subtítulo é o canal de instalação que não custa verba; sem baseline não sei se estamos atrás. Não inclui nome de modelo: isso só depois da resposta do Davi (D-20261120-mercado-2).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-mercado-3.md com, para App Store e Google Play: título, subtítulo/descrição curta atuais nossos (texto, sem dado de cliente) ao lado dos de MotoMainte e Drivvo, e 3 sugestões de ajuste de texto genérico, cada uma com a regra da loja que respeita. Proposta, nada publicado sem OK do Shelby.",
+  "prioridade": "P3",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T10:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    }
+  ]
+}

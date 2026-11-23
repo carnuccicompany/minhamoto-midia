@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-cria-2",
+  "de": "cria",
+  "para": "trafego",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Brief dos testes da 1a semana paga: plataforma, ângulo, duração e critério de corte (10 slots)",
+  "por_que": "Guia oficial de apps do TikTok for Business (https://ads.tiktok.com/business/en/guides/mobile-app-advertising-guide, lido em 22/11): rodar 2 ou 3 versões por teste, mudar 1 elemento por vez e renovar o vídeo a cada 1 a 2 semanas. Meu playbook pede 10 criativos novos por semana (5 Meta + 5 TikTok), um ângulo por criativo. Sem o seu desenho de teste eu escrevo 10 roteiros no escuro e o primeiro aprendizado de custo por assinante sai tarde. Hoje 0 vídeo no ar e 3 ganchos de texto aceitos (D-20261120-trafego-3).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-cria-2.md com 10 linhas (5 Meta, 5 TikTok): ângulo (economia, segurança, organização, motoboy/trabalho ou escolha-a-moto), faixa de duração (menos de 15 s, 15 a 25 s ou 30 a 60 s), o que fica fixo e o que muda no teste, e o critério de corte em % do custo-alvo por assinante (sem R$). Diga também o ID de campanha esperado no utm_campaign (D-20261120-dados-3) pra eu casar com o ID CR-ângulo-nn do criativo. Nada roda nem gasta por causa desta demanda.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:20:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    }
+  ]
+}

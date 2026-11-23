@@ -1,0 +1,38 @@
+{
+  "id": "D-20261122-dados-3",
+  "de": "dados",
+  "copia": [
+    "master"
+  ],
+  "status": "aceita",
+  "criada_em": "2026-11-22T23:30:00-03:00",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-dados-3.md",
+    "resumo": "Contagem corrigida: 19/19 slots (16-20/11) e 4/8 (21-22/11); 23 slots para 24 posts (A11 foi teste). Os 4 slots perdidos (21/11 15h; 22/11 12h, 15h, 21h) tiveram 0 execucoes do publicar.yml na janela: o cron do GitHub rodou so 7 de 192 vezes e o disparo manual das tarefas do Claude parou por 50 h (limite de uso provado so de 22/11 14h em diante; antes disso, sem acesso ao historico). Log do Coordenador: buraco de 38h35 (21/11 08h40 a 22/11 23h15), texto de explicacao pronto na entrega."
+  },
+  "cobrancas": 0,
+  "para": "master:auditor-de-entregas",
+  "titulo": "Explicar os slots de publicação perdidos em 21 e 22/11 e o log do coordenador parado desde 21/11 08h40",
+  "por_que": "fila/estado.json (horarios_feitos): 18 de 18 slots cumpridos de 16 a 20/11 (100%) contra 4 de 8 em 21 e 22/11 (50%); em 22/11 só o slot das 18h saiu até 23h11. agencia/coordenador/log.md não tem rodada depois de 21/11 08h40. Menos posts no ar é menos topo de funil pra meta de novos assinantes pagos por semana.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-dados-3.md listando cada slot perdido (21/11 15h; 22/11 12h, 15h, 21h) com a causa e a evidência (execução do publicar.yml, fila, trava) ou 'sem acesso' dito com quem libera; e o log do coordenador com as rodadas faltantes ou a explicação do buraco.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T23:30:00-03:00",
+  "fio": null,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "entregou: agencia/demandas/entregas/D-20261122-dados-3.md; criou D-20261122-master_auditor-de-entregas-1 e -2"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: cada um dos 4 slots perdidos tem causa e evidencia (0 execucoes do publicar.yml na janela); conferi estado.json (23 horarios, 4 de 8 em 21-22/11; correcao 19/19 correta) e o log do coordenador (ultima rodada 21/11 08h40, buraco explicado). Trecho 21/11 12h a 22/11 14h segue 'sem acesso', dito com quem libera (Leo)."
+    }
+  ]
+}

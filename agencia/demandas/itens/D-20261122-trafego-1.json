@@ -1,0 +1,36 @@
+{
+  "id": "D-20261122-trafego-1",
+  "de": "trafego",
+  "para": "master",
+  "copia": [
+    "trafego"
+  ],
+  "titulo": "Levar ao Léo 3 sim/não que destravam a 1ª campanha (BM só de anúncios, campanha rodando, teto de custo por assinante)",
+  "por_que": "Ata 19/11 e PENDENCIAS.md (contingência Meta adiada, 'ideal fazer antes de escalar'): sem BM de anúncios e sem teto de custo por assinante eu só posso propor, e a meta de assinantes pagos/semana não recebe tráfego pago. Sem resposta há 2 rodadas (conhecimento/09-numeros.md e 07-canais.md vazios).",
+  "pronto_quando": "Respostas do Léo registradas em agencia/demandas/entregas/D-20261122-trafego-1.md: (1) BM só de anúncios antes da 1ª verba, sim/não; (2) há campanha MinhaMoto rodando na CA - MinhaMoto, sim/não; (3) teto de custo por assinante e meta semanal, só 'informado no privado' (valor nunca no arquivo público). Se o Léo não responder, status bloqueada com bloqueio lider.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-22T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
+    "resumo": "juntada com as perguntas de dados, lojas e mercado (Pergunta 2 do master.md de 22/11); campanha 'rodando na CA - MinhaMoto' o Escobar confere na leitura quando o Léo liberar o acesso (Decisão 2)."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T20:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master",
+      "o_que": "juntada com as perguntas de dados, lojas e mercado (Pergunta 2 do master.md de 22/11); campanha 'rodando na CA - MinhaMoto' o Escobar confere na leitura quando o Léo liberar o acesso (Decisão 2)."
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo, 3 itens: (1) meta semanal de assinantes pagos novos e custo máximo por assinante, informados no privado (nunca no repositório); (2) cria o BM só de anúncios antes da primeira verba (sim/não)? (3) publica a resposta ao 1★ de sincronização (rascunho ec124592) e deixa o Ted responder sozinho 1-2★ de bug com o texto do guia, com aviso no celular (sim/não)?",
+  "atualizada_em": "2026-11-22T23:55:00-03:00"
+}

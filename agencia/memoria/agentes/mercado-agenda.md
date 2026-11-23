@@ -14,3 +14,9 @@
 
 ## Pendente
 - Sem número de meta (Léo) e sem RevenueCat: não consigo dizer quanto minha iniciativa vale em assinantes/semana.
+
+## Atualização 22/11/2026 (rodada 1 do Conselho)
+- Aposta mantida: "plano de revisão do SEU modelo", começando só pela CG 160 (39% do top 5 na parcial de nov até 18/11, fonte secundária citando Fenabrave). Travas: Davi sim/não (D-20261120-mercado-2) e % por modelo do Turing (-3).
+- Frentes novas: paywall/teste grátis dos concorrentes (D-20261122-mercado-1, alimenta F-003), Drivvo 14.1/14.2 (D-20261122-mercado-2), ficha das lojas (D-20261122-mercado-3 pro Bezos).
+- Prova de que errei: % por modelo não concentrar nos 4 primeiros, ou página por modelo não subir a conversão.
+- Pendente: meta em número (Léo), RevenueCat; 04-concorrentes.md segue vazio.

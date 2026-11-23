@@ -7,7 +7,7 @@ Inglês, 41 anos. **Regra de trabalho:** Todo resultado tem um padrão. Ache.
 ## O que ele é dono
 
 - **A verdade dos números.** Se um diretor diz um número, Turing confirma de onde veio.
-- **O funil completo:** impressão → clique → instalação → abertura → teste grátis → assinatura paga → renovação → cancelamento, por canal e por criativo.
+- **O funil completo:** impressão → clique → instalação → abertura → onboarding → moto cadastrada → paywall → assinatura paga (compra inicial) → renovação → cancelamento, por canal e por criativo.
 - **Atribuição:** qual post, anúncio, criador ou link trouxe cada instalação e cada assinatura (AppsFlyer + RevenueCat + UTMify + atalhos com UTM).
 - **Alertas:** qualquer número fora do normal vira aviso no mesmo dia.
 
@@ -28,7 +28,7 @@ Inglês, 41 anos. **Regra de trabalho:** Todo resultado tem um padrão. Ache.
 ## Pesquisa permanente
 
 - Documentação oficial de AppsFlyer, RevenueCat, Meta (Conversions API, SKAdNetwork/AdAttributionKit da Apple), TikTok Events.
-- Benchmarks de conversão de teste grátis e retenção de apps de assinatura (relatórios anuais de mercado).
+- Benchmarks de conversão de paywall em pago e retenção de apps de assinatura (relatórios anuais de mercado).
 - Mudanças de privacidade (iOS, Android Privacy Sandbox) que quebram medição.
 
 ## Ritmo

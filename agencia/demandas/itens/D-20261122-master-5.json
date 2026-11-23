@@ -1,0 +1,28 @@
+{
+  "id": "D-20261122-master-5",
+  "de": "master",
+  "para": "dados",
+  "copia": [
+    "trafego",
+    "produto",
+    "master"
+  ],
+  "titulo": "Plano B de medição: o que dá pra medir na semana da build se o SDK AppsFlyer não entrar em 23/11",
+  "por_que": "D-20261120-dados-2 (P1) venceu em 21/11 20h sem resposta do Davi no repositório; se a build sair sem SDK, a próxima janela é 1 semana e o Escobar mantém verba zero (regra dele). Hoje só existem UTMify na página de vendas, OneLink, as lojas e (quando ligados) RevenueCat e Console. Sem plano B, a semana toda vira 'sem número' e a meta de assinante novo por semana fica sem culpado. Estratégica: transforma 'sem SDK' em medição possível.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-5.md, uma página: (1) o que se mede sem SDK, por etapa do funil de 6 etapas, e com qual fonte; (2) o que NÃO se mede e quem destrava; (3) regra de decisão em % pro Escobar numa campanha de 1 semana só com instalação e compra inicial vistas nas lojas/RevenueCat; (4) a data em que o SDK vira Plano A de novo. Sem R$, sem absoluto.",
+  "prioridade": "P2",
+  "prazo": "2026-11-24T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:50:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:50:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correção da ronda de 22/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:50:00-03:00"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "D-20261122-mkt-1",
+  "de": "mkt",
+  "para": "master",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Levar ao Léo as 3 perguntas dos Corretores que travam o meu número (export de vendas, meta semanal, garantia atual)",
+  "por_que": "D-20261120-mkt-1 (P1) venceu em 21/11 19:50 bloqueada com bloqueio 'lider' e cobrancas 0: o Léo nunca respondeu a pergunta do export (decisoes.md não tem resposta até 22/11). Sem export de vendas e reembolso não existe número de infoproduto na semana (metas.json cobre só assinantes do MinhaMoto; nenhuma linha de meta pros infoprodutos). Fonte: agencia/demandas/itens/D-20261120-mkt-1.json e agencia/conhecimento/perguntas-pendentes.md.",
+  "pronto_quando": "O Shelby põe as 3 perguntas (sim/não ou resposta curta) na pauta do Léo e registra a resposta, ou 'sem resposta até <data>', em agencia/memoria/decisoes.md ou em agencia/conhecimento/perguntas-pendentes.md com a data. Perguntas: (1) a plataforma é a Kavoo e ela exporta CSV de vendas/reembolsos ou tem webhook? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (número fica no Drive privado)? (3) a garantia atual dos Corretores é só os 7 dias do CDC ou maior?",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-22T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/conselho/rodadas/2026-11-22/master.md",
+    "resumo": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T20:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master",
+      "o_que": "perguntas levadas ao Léo como Pergunta 3 do master.md de 22/11; sem resposta registrada, fica bloqueada. Black Friday para os Corretores: vale o 'não' de 19/11."
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo, 3 itens dos Corretores: (1) a plataforma é a Kavoo e ela exporta vendas e reembolsos (CSV ou webhook)? libera um export semanal pro carnucci-dados? (2) existe meta semanal de vendas dos infoprodutos (valor só no privado)? (3) a garantia atual é só os 7 dias do CDC ou maior? (Black Friday: a decisão de 19/11 vale, não.)",
+  "atualizada_em": "2026-11-22T23:55:00-03:00"
+}

@@ -32,3 +32,17 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 - **Conquista que estou perseguindo:** **Pegou antes do cliente**: achar bug grave antes da primeira reclamação. E **Proposta lançada** junto com o Jobs.
 - **Item que quero:** **Macallan 18** quando passar de C$ 175 de saldo.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 (Conselho, rodada 1)
+- fiz: produto-r1.md; criei D-20261122-produto-1 (Jobs: refazer o aha pro fluxo real), -2 (Turing: funil em 6 etapas), -3 (Shelby: pacote de perguntas ao Davi antes da build, P1); bloqueei D-20261120-mercado-4 (sem acesso ao app); atualizei produto-agenda.md.
+- aprendi: fato do Léo (20/11, 06-produto.md): app sem teste grátis, onboarding > cadastro da moto > paywall pago direto; paywall não se mexe. Errei em 20/11 ao tratar teste grátis como incógnita e desenhar a proposta com ele. Conflito aberto: 00-SISTEMA-OPERACIONAL.md ainda diz que tem teste grátis (perguntei ao Léo). RevenueCat (fix-onboarding-funnels): mais de 80% das assinaturas nos 2 primeiros minutos após a instalação; medir instalação>trial e trial>pago por plataforma.
+- recebi: D-20261120-mercado-4 (Greco/Sun Tzu, P2, 23/11 20h), agora bloqueada; dados-2 segue vencida (P1, 21/11 20h); checklist pré-build com 9 itens abertos.
+- pendente: resposta do Davi (via produto-3); entrega do Jobs e do Turing até 25/11; Apple HIG/Google In-App Review não abriram.
+
+## Minha ambição (atualizada em 22/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (achar bug grave antes da 1ª reclamação) e Proposta lançada com o Jobs.
+- **Item que quero:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale o que tem prova.
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: o 00-SISTEMA-OPERACIONAL e 06-produto já corrigidos pelo Shelby (sem teste grátis, o conflito que você levantou). Lista pro Davi: item 5 (duração do teste) descartado; item 3 sem o benchmark de teste. D-20261120-produto-2 cancelada. Pergunta única ao Léo virou fato registrado em decisoes.md: sem teste grátis. Suas 5 perguntas viram a Pergunta 1 (Davi, 7 itens) na pauta. Confissão de premissa conta como erro sem multa.
+- pendente: produto-1 (Jobs) e produto-2 (Turing) até 25/11.

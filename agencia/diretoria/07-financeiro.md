@@ -43,7 +43,7 @@ Americano, 96 anos. **Regra de trabalho:** Primeiro: não perca dinheiro.
 ### Receita (MRR)
 *Sabe a receita recorrente de cabeça, todo dia.*
 - **Faz:** acompanha MRR, novas assinaturas, cancelamentos, upgrades, receita líquida por loja.
-- **O melhor do mundo nisso:** separa receita bruta de líquida e de reconhecida; nunca mistura teste grátis com pago.
+- **O melhor do mundo nisso:** separa receita bruta de líquida e de reconhecida; nunca mistura receita bruta, líquida e reconhecida (o app não tem teste grátis).
 
 ### Custos e ferramentas
 *Corta assinatura de ferramenta que ninguém usa.*

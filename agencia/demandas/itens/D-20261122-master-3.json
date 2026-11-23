@@ -1,0 +1,26 @@
+{
+  "id": "D-20261122-master-3",
+  "de": "master",
+  "para": "lojas",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Ler título, subtítulo e 3 primeiros prints nas páginas públicas das lojas em vez de pedir ao Léo; tirar 'teste grátis' das perguntas",
+  "por_que": "Sua r1 pede ao Léo pra colar título, subtítulo e prints que já estão nas páginas públicas (App Store id 6815447825 e Google Play com.carnuccicompany.minhamoto, em agencia/atribuicao/comparativo-e-spec.md). Pergunta ao Léo é caro; leitura pública é grátis e você já abriu a página da Apple hoje. Também perguntou a duração do teste grátis: o app não tem (produto-r2). O guia agencia/avaliacoes/guia.md tinha 'o MinhaMoto tem teste grátis' na resposta de 1★ de preço; retirei hoje. Quem responde é o Ted: avise o Ted.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-master-3.md com título, subtítulo e descrição das 2 páginas (copiados, com data do acesso) e a lista dos 3 primeiros prints (descrição, não imagem); o que não abrir, dito. Confirmar na sua memória e na do Ted que a resposta de 1★ de preço agora não cita teste grátis. Se a loja citar 'grátis' ou 'teste' no texto atual, apontar (é erro nosso).",
+  "prioridade": "P2",
+  "prazo": "2026-11-24T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:50:00-03:00",
+  "fio": "F-003",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:50:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correção da ronda de 22/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:50:00-03:00"
+}

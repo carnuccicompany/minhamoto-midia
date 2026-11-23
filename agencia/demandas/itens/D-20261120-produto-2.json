@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261120-produto-2.md com, por app: duração do teste grátis, planos e ordem em que aparecem, o que a primeira tela e o paywall mostram, link da loja ou da fonte oficial; o que não abriu fica dito, sem chute.",
   "prioridade": "P3",
   "prazo": "2026-11-27T20:40:00-03:00",
-  "status": "aberta",
+  "status": "cancelada",
   "criada_em": "2026-11-20T20:40:00-03:00",
   "fio": null,
   "entrega": null,
@@ -20,6 +20,13 @@
       "quando": "2026-11-20T20:40:00-03:00",
       "quem": "produto",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:40:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby na ronda de 22/11: Premissa errada: o app não tem teste grátis (Léo, 20/11, 06-produto.md), então não há teste de duração a desenhar. O que ainda vale (mapa de paywall e planos dos concorrentes) está em D-20261122-mercado-1, com escopo corrigido e prazo 25/11."
     }
-  ]
+  ],
+  "motivo_cancelamento": "Premissa errada: o app não tem teste grátis (Léo, 20/11, 06-produto.md), então não há teste de duração a desenhar. O que ainda vale (mapa de paywall e planos dos concorrentes) está em D-20261122-mercado-1, com escopo corrigido e prazo 25/11.",
+  "atualizada_em": "2026-11-22T23:40:00-03:00"
 }

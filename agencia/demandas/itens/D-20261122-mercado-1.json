@@ -1,0 +1,42 @@
+{
+  "id": "D-20261122-mercado-1",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [],
+  "titulo": "Paywall e 1ª tela de Drivvo, MotoMainte, Strox e KyroTune: pago direto ou com teste? (substitui D-20261120-produto-2)",
+  "por_que": "O app MinhaMoto não tem teste grátis (Léo, 20/11); o Stark precisa saber o que os concorrentes mostram antes de cobrar e se algum deles dá teste ou gratuito que nós não damos, como referência pro paywall (que hoje não se mexe) e achado pro Stark e o Jobs. Meta: assinante pago novo por semana. O benchmark de teste->pago da RevenueCat (42,5% x 25,5%) NÃO vale pra nós e saiu desta demanda. Hoje só sei que o KyroTune cita 14 dias no anual (radar 17/11).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261122-mercado-1.md com, por app: se o paywall é pago direto ou tem teste/gratuito, planos e ordem em que aparecem, o que a 1ª tela e o paywall mostram antes de cobrar, link da loja ou fonte oficial e data do acesso; o que não abriu fica escrito, sem chute. Fecha com 1 linha: 'o concorrente dá teste e nós não?' (sim/não/parcial). Sem R$ nosso. Greco repassa ao Stark; D-20261120-produto-2 já foi cancelada.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-22T10:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-mercado-1.md",
+    "resumo": "Tabela dos 4 concorrentes (Drivvo, MotoMainte, Strox, KyroTune): todos são app grátis com compras; só KyroTune (7 ou 14 dias, página se contradiz) e Drivvo (15 dias, só frota) citam teste. 'Dão teste e nós não?': parcial. Paywall interno não abriu (nenhum app instalado), Google Play bloqueado, vitrine BR do MotoMainte negada nesta rodada."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:40:00-03:00",
+      "quem": "master",
+      "o_que": "escopo corrigido pelo Shelby: texto ainda pedia duração de teste grátis, contra o r2 do Greco e o fato do Léo de 20/11"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou: paywall dos 4 concorrentes entregue; resposta parcial"
+    },
+    {
+      "quando": "2026-11-22T23:59:30-03:00",
+      "quem": "mercado",
+      "o_que": "aceita: cobre os 4 apps (tipo de entrada, planos na ordem da página, o que a página mostra, link e data); paywall interno, Google Play e vitrine BR do MotoMainte ficam como não abertos (bloqueio de página/acesso, escrito, sem chute); resposta final 'parcial' presente; sem R$ nosso. Repasso ao Stark."
+    }
+  ],
+  "atualizada_em": "2026-11-22T23:59:30-03:00"
+}

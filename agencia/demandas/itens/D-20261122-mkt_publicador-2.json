@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-mkt_publicador-2",
+  "de": "mkt:publicador",
+  "para": "cria",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Plano de reposição da fila por linha: Curtos AIDA e Educacional secam primeiro",
+  "por_que": "Com 89 pendentes (fila/estado.json x carrosseis.json): Curtos AIDA tem 3 e seca em 30/11 a 4/dia (08/12 a 2/dia); Educacional seca em 04/12 (15/12 a 2/dia). A produção diária (MM: Produção diária de conteúdo) está desativada desde 18/11 e nada entrou na fila depois disso; sem reposição o total acaba em 15/12 a 4/dia.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: quantas peças novas por linha, entregues até que data para nenhuma linha secar antes de 04/12, e o que depende de aprovação do Léo (reativar pauteiro/roteirista ou a produção diária). Usar a tabela de dias por linha de D-20261122-cria-1.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:45:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:45:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "criou"
+    }
+  ]
+}

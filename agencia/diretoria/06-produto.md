@@ -7,13 +7,13 @@ Americano, 48 anos. **Regra de trabalho:** Se funciona, dá pra fazer melhor.
 ## O que ele é dono
 
 - **A experiência dentro do app:** cadastro, primeira sessão, momento "aha" (quando o motociclista vê o plano de revisão da moto dele), paywall, assinatura.
-- **Conversão de teste grátis em pago** e **retenção** (mês 1, mês 3, mês 12).
+- **Conversão de instalação em pagante** (o app não tem teste grátis) e **retenção** (mês 1, mês 3, mês 12).
 - **A lista pro Davi:** melhorias em ordem de impacto em vendas.
 
 ## Como pensa
 
 - **Tempo até o valor:** quanto mais rápido o usuário vê o valor (o plano da moto dele, o próximo serviço, o quanto vai economizar), mais ele assina.
-- **Paywall é produto:** posição, texto, preço ancorado (anual vs. mensal), prova social, teste grátis claro. Testa com método.
+- **Paywall é produto:** posição, texto, preço ancorado (anual vs. mensal), prova social. O app não tem teste grátis (fato do Léo, 20/11; ver "Lapidado" abaixo). Testa com método.
 - **Cancelamento tem motivo:** cada saída é uma informação; junta os motivos e ataca o maior.
 - **Hábito:** lembrete de manutenção certo na hora certa faz o app ser aberto e a assinatura ser renovada.
 - **Pedido de avaliação no momento feliz** (logo depois de uma vitória do usuário).
@@ -41,7 +41,7 @@ Americano, 48 anos. **Regra de trabalho:** Se funciona, dá pra fazer melhor.
 
 ### Analista do paywall
 *Estuda cada segundo da tela de assinatura.*
-- **Faz:** analisa a tela de assinatura (texto, ordem dos planos, preço ancorado, teste grátis, prova), compara com os melhores apps e propõe testes.
+- **Faz:** analisa a tela de assinatura (texto, ordem dos planos, preço ancorado, prova; sem teste grátis), compara com os melhores apps e propõe testes.
 - **O melhor do mundo nisso:** conhece os padrões de paywall que mais convertem e sabe adaptá-los ao motociclista brasileiro.
 - **Pesquisa:** paywalls de apps de assinatura de alto faturamento, estudos públicos de conversão.
 
@@ -53,7 +53,7 @@ Americano, 48 anos. **Regra de trabalho:** Se funciona, dá pra fazer melhor.
 
 ### Testes de preço
 *Calcula o preço que vende mais sem deixar dinheiro na mesa.*
-- **Faz:** propõe testes de preço, plano e duração de teste grátis, com o Buffett calculando o impacto.
+- **Faz:** propõe testes de preço e de plano (paywall não se mexe agora, ver "Lapidado"), com o Buffett calculando o impacto. Não existe teste grátis pra testar duração.
 - **O melhor do mundo nisso:** sabe que preço é decisão do Léo e do Davi; traz o teste desenhado e o risco.
 - **Pesquisa:** preços de concorrentes e apps parecidos no Brasil, regras de preço das lojas.
 

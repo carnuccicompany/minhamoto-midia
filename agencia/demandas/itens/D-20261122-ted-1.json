@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-ted-1",
+  "de": "lojas:respostas-as-avaliacoes",
+  "para": "dados",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Conferir a média real do Google Play: 3 avaliações (3,67) ou 6 (3,00)?",
+  "por_que": "A meta do setor é nota 4,7+ e a nossa linha de base do Play está em 3,67 (ultimas.json, 3 avaliações, coleta 20/11). dados/avaliacoes/respostas.json guarda mais 3 do Play (1e827411 5★, a99845f6 1★, 7a7fae0c 1★); com as 6, 5+5+5+1+1+1 dá 3,00. Sem a base certa, a meta 'Nota subiu' é medida errado.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-ted-1.md com total de avaliações e média do Google Play na fonte oficial (Play Console, se alguém tiver acesso, ou página pública) com data da captura; se não abrir, dizer qual fonte falhou e se precisa do Léo.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:59:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "lojas:respostas-as-avaliacoes",
+      "o_que": "criou"
+    }
+  ]
+}

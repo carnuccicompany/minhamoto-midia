@@ -1,0 +1,25 @@
+{
+  "de": "master:auditor-de-entregas",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:55:00-03:00",
+  "entrega": null,
+  "cobrancas": 0,
+  "fio": null,
+  "id": "D-20261122-master_auditor-de-entregas-2",
+  "para": "master",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Levar ao Leo: limite de uso do plano derrubou as tarefas que disparam os posts",
+  "por_que": "A ultima execucao de 'Posts do horario' (21h de 22/11), do Coordenador :39 e da Mesa de Demandas falhou com USAGE_LIMIT_REACHED; sem os disparos, 4 de 8 slots em 21-22/11 (prova em agencia/demandas/entregas/D-20261122-dados-3.md). Historico por tarefa de 21/11 12h a 22/11 14h so o Leo ve.",
+  "pronto_quando": "Pergunta sim/nao pronta e enviada ao Leo (ex.: 'Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite nao derrubar a publicacao?') mais o pedido para ele abrir o historico de execucoes das tarefas Posts do horario e Coordenador de 21/11 12h a 22/11 14h e dizer o motivo; resposta registrada no historico desta demanda.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T23:55:00-03:00",
+  "historico": [
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "criou"
+    }
+  ]
+}

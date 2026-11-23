@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-produto-2",
+  "de": "produto",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Funil do app em 6 etapas: o que já se mede, o que só mede depois da build de 23/11 e quando sai a 1ª leitura em %",
+  "por_que": "Matriz de cobranças: Stark cobra Turing funil do app com número, semanal. Hoje não tenho % de nada (metas.json em 'aguardando', pct nulo; carnucci-dados fora desta sessão). RevenueCat recomenda medir instalação>trial e trial>pago separados e por plataforma (https://www.revenuecat.com/blog/growth/fix-onboarding-funnels.md); aqui, sem teste, as etapas são instalação > onboarding > moto cadastrada > paywall > pagante > renovação.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-produto-2.md com tabela das 6 etapas: fonte e nome do evento (AppsFlyer ou rc_*), 'mede hoje' / 'só depois da build' / 'não mede', e a data prevista da 1ª leitura em % (sem número absoluto) por plataforma iOS e Android. O que não souber diz que não sabe.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T23:20:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:20:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

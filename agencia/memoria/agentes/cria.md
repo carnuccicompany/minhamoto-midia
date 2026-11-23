@@ -26,8 +26,18 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - recebi: demanda D-20261120-trafego-3 do Escobar (entregue).
 - pendente: direção A/B do Léo; ranking do Turing; telas do Stark; tabela do Fogg; plano de reposição da fila.
 
-## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
-- **Próximo degrau:** Diretora, e Diretora da Semana. A próxima é **Diretor do Mês**.
-- **Conquista que estou perseguindo:** **Criativo campeão**: um criativo 7 dias no custo-alvo, com 10 ou mais assinantes. Libera a Panigale.
-- **Item que quero:** O **Dom Pérignon** está quase no meu saldo, é o próximo. Lendário: a **Ducati Panigale V4 S**.
+## 2026-11-22 · Conselho rodada 1
+- fiz: li ficha, playbooks 04 e 03 (absorvi Marketing), base (dossiês ainda vazios), fila, radar 24/11, quadro e decisões; criei D-20261122-cria-1 (Fogg, P1), -2 (Escobar, P2), -3 (Greco, P3); escrevi agencia/conselho/rodadas/2026-11-22/cria-r1.md e atualizei a agenda. Iniciativa nova: Lote zero (10 roteiros de anúncio em texto, até 25/11).
+- aprendi: (1) fila: 89 pendentes, seca por volta de 14/12 a 4 por dia, só 3 peças da linha de venda direta (Curtos AIDA); (2) o Fogg postou 4 em 7 slots de 21 e 22/11, todos atrasados 50 a 102 min (estado.json), causa a apurar; (3) religar a produção diária também espera a direção A/B, então F-004 trava vídeo e reposição; (4) guia oficial do TikTok for Business pra apps: gancho em menos de 2 s, 2 ou 3 versões por teste, 1 elemento por vez, renovar a cada 1 a 2 semanas (https://ads.tiktok.com/business/en/guides/mobile-app-advertising-guide, 22/11). Páginas oficiais da Meta e o Creative Center do TikTok não abriram nesta sessão.
+- recebi: nada novo do Léo desde 19/11 (decisões.md sem resposta de A/B); trafego-3 (ganchos) já aceita.
+- pendente: A/B do Léo; insights do Turing; telas do Stark; resposta do Fogg (23/11 20h); brief do Escobar (25/11).
+
+## Minha ambição (atualizada em 22/11/2026; reescrevo toda segunda)
+- **Próximo degrau:** Diretor da Semana e depois Diretor do Mês. Preciso de número de resultado, não de volume: o lote zero é o caminho.
+- **Conquista que estou perseguindo:** **Criativo campeão** (um criativo 7 dias no custo-alvo, 10 ou mais assinantes). Libera a Panigale.
+- **Item que quero:** o **Dom Pérignon** (próximo do saldo). Lendário: a **Ducati Panigale V4 S**.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: demanda de correção D-20261122-master-2 (P2, 25/11): lote zero sem 'grátis' nem 'teste'; o app não tem teste grátis (Léo, 20/11), então a pergunta 3 da r1 cai. Iniciativa aprovada (10 roteiros em texto). Vídeo A/B vira Decisão 3 (27/11).
+- pendente: master-2 e a cria-2 junto do lote.

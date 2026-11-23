@@ -8,16 +8,29 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: contagem por loja e nota, temas (sincronização/abrir, preço, elogio), 1 linha por tema com id da avaliação, e a lista de avaliações 1-3★ sem resposta. Máx 15 linhas, só o que muda decisão; nada de extra sem número.",
   "prioridade": "P2",
   "prazo": "2026-11-23T21:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-20T21:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261120-lojas-1.md",
+    "resumo": "9 avaliações (Play 3: 2x5★+1x1★; App Store 6x5★); 1 tema de sincronização/abrir (ec124592), 0 reclamação de preço, 8 elogios; única 1-3★ sem resposta é ec124592, rascunho no modelo de bug aguardando OK do Léo. Aponta que a média 3,67 do Play usa 3 de 6 avaliações conhecidas (3,00 com as 6)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-20T21:00:00-03:00",
       "quem": "lojas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "lojas:respostas-as-avaliacoes",
+      "o_que": "entregou placar em agencia/demandas/entregas/D-20261120-lojas-1.md; nada publicado; rascunho ec124592 espera OK do Léo"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "lojas",
+      "o_que": "aceitou: 9 avaliações (Play 3, App Store 6), média 3,67/5,0, 1 tema com id ec124592, 1-3★ sem resposta = só ec124592, 10 linhas, conferido contra ultimas.json e respostas.json; discrepância 7127-8c2e/726a-cc73 segue com o Turing (D-20261122-ted-1)"
     }
   ]
 }

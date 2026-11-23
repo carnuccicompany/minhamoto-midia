@@ -1,0 +1,23 @@
+{
+  "id": "D-20261122-produto-1",
+  "de": "produto",
+  "para": "produto:analista-do-paywall",
+  "copia": [],
+  "titulo": "Refazer o 'aha antes do paywall' pro fluxo real do app (sem teste grátis, paywall pago direto)",
+  "por_que": "Meta é assinante pago novo/semana; número principal do produto é % de instalação que vira pagante (agencia/diretoria/06-produto.md, seção Lapidado 20/11). D-20261120-produto-1 foi aceita, mas desenhou o fluxo com teste grátis e eventos teste_iniciado/teste→pago, e o Léo disse que o app hoje é onboarding > cadastro da moto > paywall pago direto, sem teste. Proposta com premissa errada o Davi não implementa.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-produto-1.md com: (1) fluxo atual (do 06-produto.md) e fluxo proposto lado a lado, com a única mudança 'mostrar o plano de revisão da moto logo após o cadastro dela, antes do paywall' (paywall, preço e planos intocados); (2) tela do plano desenhada (pode reaproveitar o mockup HTML); (3) eventos reescritos sem teste grátis, medindo instalação > onboarding concluído > moto cadastrada > plano visto > paywall visto > pagante; (4) critérios de aceite sem teste A/B de duração; (5) o que continua sendo pergunta pro Davi. Sem R$, sem número inventado.",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T23:20:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:20:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:20:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

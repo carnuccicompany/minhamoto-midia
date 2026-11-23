@@ -32,7 +32,7 @@ Aprovado pelo Léo em 17/11/2026. Vale para o robô de respostas e para qualquer
 > Sentimos muito pelo transtorno! Isso não deveria acontecer. Fale com o nosso suporte em suporte@carnucci.com informando o modelo do seu celular, para resolvermos o quanto antes. — Equipe MinhaMoto
 
 **1★ preço**
-> Entendemos a sua opinião! O MinhaMoto tem teste grátis, e os planos trimestral, semestral e anual saem mais em conta que o mensal. Se precisar de ajuda para escolher, fale com o nosso suporte em suporte@carnucci.com. — Equipe MinhaMoto
+> Entendemos a sua opinião! Os planos trimestral, semestral e anual saem mais em conta que o mensal. Se precisar de ajuda para escolher, fale com o nosso suporte em suporte@carnucci.com. — Equipe MinhaMoto
 
 **1★ cobrança / cancelamento**
 > Sentimos muito pelo transtorno! A assinatura é gerenciada pela loja: no iPhone, em Ajustes > seu nome > Assinaturas; no Android, em Play Store > Pagamentos e assinaturas. Se precisar, nosso suporte ajuda em suporte@carnucci.com. — Equipe MinhaMoto

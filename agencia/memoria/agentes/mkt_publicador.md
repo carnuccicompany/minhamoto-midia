@@ -30,3 +30,10 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - **Conquista que estou perseguindo:** **Pontualidade britânica**: 30 publicações seguidas no horário, sem erro.
 - **Item que quero:** **Moët & Chandon** pra comemorar a Analista. Depois, uma **gravata Ricardo Almeida**.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 23:45 · D-20261122-cria-1 (slots perdidos 21 e 22/11)
+- fiz: entreguei agencia/demandas/entregas/D-20261122-cria-1.md. 4 de 8 slots saíram (21/11 12h, 18h, 21h e 22/11 18h), todos com 50 a 102 min de atraso; 21/11 15h, 22/11 12h, 15h e 21h ficaram sem post.
+- aprendi: o script e o token estão bem (8 de 8 execuções com sucesso). O que quebrou foi o disparo no horário: nenhum workflow_dispatch desde 21/11 00:04 UTC, e o cron do GitHub rodou só 8 vezes em 48 h (intervalos de até 8 h; a janela do script é de 2 h). A tarefa "Posts do horário" consta FAILED por USAGE_LIMIT_REACHED na última execução. Não provei as execuções anteriores (a API só mostra a última).
+- fila: 89 pendentes; a 4/dia acaba em 15/12, a 2/dia (ritmo real) em 06/01; Curtos AIDA seca primeiro (30/11 a 4/dia). "13/12" da folha de 20/11 não vale mais.
+- aviso: meu streak de pontualidade quebrou. Não posso esconder: slot perdido conta contra mim mesmo com causa fora do script.
+- pendente: D-20261122-mkt_publicador-1 (pergunta sim/não pro Léo/Davi sobre recuperar slot no publicar.py) e -2 (reposição da fila, com a Disney).

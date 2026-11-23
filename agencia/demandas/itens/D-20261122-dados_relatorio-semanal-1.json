@@ -1,0 +1,27 @@
+{
+  "id": "D-20261122-dados_relatorio-semanal-1",
+  "de": "dados:relatorio-semanal",
+  "para": "master",
+  "copia": [
+    "dados",
+    "trafego"
+  ],
+  "titulo": "Levar ao Léo a pergunta da chave de sandbox do RevenueCat->AppsFlyer (em branco) antes do teste D+0",
+  "por_que": "PENDENCIAS.md (19/11) registra 'sandbox em branco' na integração RevenueCat->AppsFlyer. Sem ela, a compra sandbox do passo 5 do roteiro D+0 pode não chegar ao AppsFlyer e o passo 7 falha sem o app estar errado; sem passo 7 provado, verba de tráfego segue zero e o custo por assinante fica sem número (meta: novos assinantes pagos por semana).",
+  "pronto_quando": "Resposta sim/não do Léo registrada em agencia/memoria/decisoes.md ou no histórico desta demanda: 'Léo preenche a chave de sandbox do AppsFlyer na integração do RevenueCat antes de 23/11?' Se não, o passo 7 do roteiro (agencia/demandas/entregas/D-20261122-dados-2.md) é provado só com compra real de baixo risco, decisão dele.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T14:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T23:56:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "pergunta": "Léo, você preenche a chave de sandbox do AppsFlyer na integração do RevenueCat antes da build de 23/11? (sim/não)",
+  "historico": [
+    {
+      "quando": "2026-11-22T23:56:00-03:00",
+      "quem": "dados:relatorio-semanal",
+      "o_que": "criou"
+    }
+  ]
+}

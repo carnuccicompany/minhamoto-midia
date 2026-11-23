@@ -35,3 +35,11 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - **Conquista que estou perseguindo:** **Radar certeiro**: o primeiro aviso que se confirma.
 - **Item que quero:** Um **Cohiba Siglo VI**, quando juntar C$ 15.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 · Ronda do Shelby
+- recebi do Shelby: elogio na Folha de sexta pelo radar adiantado e pela mkt-3 com ressalva. Prioridade da semana: mercado-1 e mercado-2 (25/11) antes de lojas-1 e cria-3 (29/11). mkt-2 cancelada, um pedido a menos.
+
+## 2026-11-22 · Entregas mercado-1 e mercado-2
+- fiz: entreguei D-20261122-mercado-1 (paywall dos 4 apps: todos grátis com compras; teste só KyroTune e Drivvo-frota; resposta "parcial") e -2 (Drivvo 14.2 é abastecimento/CarPlay, não toca moto; data exata e 14.1 não confirmadas).
+- aprendi: a loja só dá "há X dias"; o histórico do Drivvo não lista a 14.1. Vitrine BR do MotoMainte e a EUA do Drivvo pediram permissão e não abriram.
+- pendente: abrir paywall dentro do app e histórico de versões em navegador logado; atualizar radar de 24/11 com a seção do Drivvo se o Greco quiser.

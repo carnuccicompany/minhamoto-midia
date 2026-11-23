@@ -1,0 +1,25 @@
+{
+  "id": "D-20261122-lojas-3",
+  "de": "lojas",
+  "para": "master",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Checar promessa e regra de loja nas legendas de print antes de irem ao Léo",
+  "por_que": "Você absorveu o Jurídico: nome de modelo sem cobertura confirmada e promessa em loja foram os alertas da ata de 20/11. Quero que as legendas de D-20261122-lojas-2 cheguem ao Léo já checadas, pra ele só dar sim/não e eu não gastar uma rodada.",
+  "pronto_quando": "Depois da entrega de D-20261122-lojas-2: parecer em agencia/demandas/entregas/D-20261122-lojas-3.md com 'passa' ou 'corta' por legenda, e o motivo de cada corte (promessa, preço, regra Apple/Google).",
+  "prioridade": "P3",
+  "prazo": "2026-11-28T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-22T22:40:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-22T22:40:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    }
+  ]
+}

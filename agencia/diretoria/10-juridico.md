@@ -7,7 +7,7 @@ Americano, 42 anos. **Regra de trabalho:** Não se joga a sorte. Se joga o homem
 ## O que ele é dono
 
 - **Termos de uso e política de privacidade** do app (LGPD).
-- **Regras das lojas:** o que a Apple e o Google aprovam ou reprovam (assinatura, teste grátis, preço, metadados).
+- **Regras das lojas:** o que a Apple e o Google aprovam ou reprovam (assinatura, preço, metadados).
 - **Publicidade:** nada de promessa enganosa (Código de Defesa do Consumidor, autorregulamentação publicitária), direitos de imagem e música.
 - **Contratos:** criadores, parceiros, ferramentas.
 - **Contabilidade e impostos:** obrigações da empresa sobre receita de app e infoproduto, com o Buffett.
@@ -22,7 +22,7 @@ Americano, 42 anos. **Regra de trabalho:** Não se joga a sorte. Se joga o homem
 
 ## Pesquisa permanente
 
-- Diretrizes de revisão da App Store e políticas do Google Play (assinaturas, teste grátis, cancelamento).
+- Diretrizes de revisão da App Store e políticas do Google Play (assinaturas, cancelamento).
 - LGPD e orientações da ANPD; Código de Defesa do Consumidor sobre assinatura e cancelamento.
 - Regras do CONAR pra publicidade e publicidade com criadores.
 - Mudanças tributárias que afetam receita digital no Brasil.

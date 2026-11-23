@@ -1,0 +1,43 @@
+{
+  "id": "D-20261122-dados-2",
+  "de": "dados",
+  "copia": [
+    "trafego"
+  ],
+  "status": "aceita",
+  "criada_em": "2026-11-22T23:30:00-03:00",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261122-dados-2.md",
+    "resumo": "Planilha (criativo, instalação, onboarding, moto, paywall, pagante, índice de custo em % sem R$), cobertura de atribuição (corte 80% do Turing) e roteiro D+0 de 12 passos iOS/Android com dono e campo passou/falhou. Sem teste grátis: coluna 'testes iniciados' trocada por paywall_view e o benchmark 25,5%/42,5% fica de fora (teste->pago não se aplica); chave de sandbox do RevenueCat->AppsFlyer em branco é o risco no passo 7."
+  },
+  "cobrancas": 0,
+  "para": "dados:relatorio-semanal",
+  "titulo": "Minuta da planilha de custo por assinante e do roteiro de teste de atribuição (insumo de trafego-2)",
+  "por_que": "D-20261120-trafego-2 (Escobar) vence 23/11 20h e eu devo a entrega; sem as colunas e o teste D+0 prontos no dia da build, a primeira semana de dado se perde. Falhas comuns reportadas na comunidade RevenueCat: AppsFlyer ID nulo e eventos de início de teste/conversão não enviados ao AppsFlyer (https://www.revenuecat.com/docs/integrations/attribution/appsflyer e fios da comunidade); o roteiro precisa checar esses dois pontos.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261122-dados-2.md com: (1) colunas (campanha, conjunto, criativo, instalações, testes iniciados, assinaturas pagas, custo por assinante) com fórmula das conversões em %, só % e variação, sem R$ absoluto; (2) cobertura de atribuição = assinaturas novas com fonte identificada / assinaturas novas; (3) passo a passo do teste: instalar por OneLink em iOS e Android, conferir o evento no AppsFlyer, no RevenueCat e na UTMify, com o campo 'passou/falhou' e quem libera cada acesso; (4) o benchmark RevenueCat 25,5% (teste < 4 dias) e 42,5% (17 a 32 dias) ao lado da coluna teste->pago, marcado 'só vale com a duração do nosso teste'.",
+  "prioridade": "P2",
+  "prazo": "2026-11-23T14:00:00-03:00",
+  "fio": null,
+  "historico": [
+    {
+      "quando": "2026-11-22T23:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-22T23:40:00-03:00",
+      "quem": "dados:relatorio-semanal",
+      "o_que": "em andamento"
+    },
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "dados:relatorio-semanal",
+      "o_que": "entregue: minuta em agencia/demandas/entregas/D-20261122-dados-2.md; corrigi 2 premissas do pedido (sem teste grátis; benchmark de teste não vale)"
+    },
+    {
+      "quando": "2026-11-22T23:59:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: itens 1-3 completos; itens 1 e 4 (coluna 'testes iniciados' e benchmark 25,5%/42,5%) trocados com razao, pois o app nao tem teste gratis e eu mesmo retirei o benchmark em dados-r2. Pendencias com dono listadas (sandbox RevenueCat->AppsFlyer, eventos do Davi)."
+    }
+  ]
+}

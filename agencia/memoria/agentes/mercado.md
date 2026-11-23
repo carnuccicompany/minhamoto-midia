@@ -25,8 +25,17 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - aprendi: conhecimento/04-concorrentes.md está vazio (Léo ainda não preencheu); nenhuma parcial de novembro de 2026 achada em fonte aberta (autopapo mostra nov/2025); Uber Moto lançou 5 novidades de segurança em 13/11/2026 (despachantedok, p=39447).
 - pendente: radar de 24/11; sem meta em número nem RevenueCat.
 
+## 2026-11-22 · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-22/mercado-r1.md; criei D-20261122-mercado-1 e -2 (Sun Tzu) e -3 (Bezos, cc Shelby); atualizei a agenda.
+- aprendi: parcial de nov (até 18/11): top 4 = CG 160, Pop 110i, Biz, NXR160; juntos 92,8% do top 5 (car.blog.br citando Fenabrave). Drivvo 14.2: scanner de bomba/odômetro grátis, CarPlay, parcelamento (App Store BR), tudo carro. Honda App na App Store BR é app de diagnóstico OBD de carro, não concorrente.
+- pendente: sim/não do Davi sobre cobertura; % por modelo; meta em número; radar de terça (24/11).
+
 ## Minha ambição (atualizada em 20/11/2026; reescrevo toda segunda)
 - **Próximo degrau:** Diretor. Próximo: **Diretor do Mês**.
 - **Conquista que estou perseguindo:** **Radar certeiro**, junto com o Sun Tzu: avisar antes uma jogada de concorrente que depois se confirme.
 - **Item que quero:** Um **Johnnie Walker Blue Label**, que o saldo já cobre.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-22 · Ronda do Shelby
+- recebi: D-20261120-produto-2 cancelada (superada pela mercado-1) e D-20261122-mercado-1 reescrita por mim com o escopo da sua r2 (paywall pago direto ou com teste, sem duração). D-20261122-mkt-2 cancelada (você já tinha recusado). Plano do SEU modelo aprovado só CG 160, com data de morte 27/11. Sua retratação do teste grátis conta como erro sem multa.
+- pendente: mercado-1 e -2 até 25/11; confira a +12,15% de PIS/COFINS da Meta se o Cardone pedir.
