@@ -1,14 +1,14 @@
 {
- "rodada": "2026-11-23T08:10:00-03:00",
- "ok": true,
+ "rodada": "2026-11-23T08:45:00-03:00",
+ "ok": false,
  "tarefas": {
   "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
   "respostas às avaliações": "ok (SUCCEEDED 23h13)",
   "vigia do Gmail": "ok (SUCCEEDED 23h11)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
-  "relatório Analista": "ok (1ª em 23/11)",
+  "relatório Analista": "ok (SUCCEEDED 23/11 08h26-08h34)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 07h39)",
+  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 08h10)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
@@ -28,7 +28,10 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova; Posts 21h02 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada, sem re-disparo; Mesa roda de novo 10h37); Conselho SUCCEEDED 22/11 23h10; Folha ok 20/11; fila 89 (22 dias); 9:16 113/113; links painel ok"
+  "nenhuma ação de re-disparo: Posts 21h02 de 22/11 e Mesa 14h37 de 22/11 seguem como registrado (limite, janela expirada); Conselho/Gmail/Avaliações/Folha ok; fila 89 (22 dias); 9:16 113/113; links painel ok",
+  "achado: commit 35f294d (insights 23/11) gravou access_token da Meta no repo PÚBLICO; removido do HEAD em 178b0ba, segue no histórico; revogação só o Léo faz"
  ],
- "alertas": []
+ "alertas": [
+  "Token da Meta vazado no histórico git público (35f294d): Léo precisa revogar/trocar o token"
+ ]
 }
