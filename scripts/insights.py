@@ -17,11 +17,22 @@ def get(path, **params):
 
 out = {'coletado_em': datetime.datetime.utcnow().isoformat() + 'Z', 'erros': {}}
 
+def erro_txt(e, n=300):
+    # Inclui a mensagem da Meta (corpo do HTTP 400) para saber a causa real
+    # (permissão do token, métrica inválida etc.). O corpo não contém o token.
+    txt = str(e)
+    if hasattr(e, 'read'):
+        try:
+            txt += ' | ' + e.read().decode('utf-8', 'replace')
+        except Exception:
+            pass
+    return txt[:n]
+
 def tenta(nome, fn):
     try:
         out[nome] = fn()
     except Exception as e:
-        out['erros'][nome] = str(e)[:300]
+        out['erros'][nome] = erro_txt(e)
 
 tenta('ig_conta', lambda: get(IG, fields='followers_count,media_count,username'))
 tenta('ig_alcance_28d', lambda: get(f'{IG}/insights', metric='reach', period='days_28'))
@@ -34,7 +45,7 @@ def ig_midias():
             ins = get(f"{m['id']}/insights", metric='reach,saved,shares,total_interactions')
             m['insights'] = {d['name']: d['values'][0]['value'] for d in ins.get('data', [])}
         except Exception as e:
-            m['insights_erro'] = str(e)[:150]
+            m['insights_erro'] = erro_txt(e, 400)
         if m.get('caption'):
             m['caption'] = m['caption'][:120]
     return midias
