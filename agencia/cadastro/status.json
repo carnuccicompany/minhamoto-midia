@@ -1,6 +1,6 @@
 {
- "atualizado": "23/11/2026 17:46",
- "pct": 87.5,
+ "atualizado": "23/11/2026 18:33",
+ "pct": 90.8,
  "categorias": [
   {
    "id": "estrutura",
@@ -52,18 +52,20 @@
     {
      "id": "orcamento-uso",
      "titulo": "Orçamento de uso por agente",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "agencia/merito/ORCAMENTO-USO.md (23/11): tarefas, rodadas/semana, modelos, ordem de corte e como medir",
+     "valor": 1.0
     },
     {
      "id": "placar-experimentos",
      "titulo": "Placar de experimentos (criativos e testes por semana)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "agencia/experimentos/placar.json + README.md (23/11), com 3 experimentos dos Corretores",
+     "valor": 1.0
     }
    ],
-   "pct": 77.8,
-   "feitos": 7,
+   "pct": 100.0,
+   "feitos": 9,
    "total": 9
   },
   {
@@ -375,18 +377,8 @@
    "total": 9
   }
  ],
- "pendentes": 8,
+ "pendentes": 6,
  "lista_pendentes": [
-  {
-   "categoria": "Estrutura e rotinas",
-   "titulo": "Orçamento de uso por agente",
-   "falta": []
-  },
-  {
-   "categoria": "Estrutura e rotinas",
-   "titulo": "Placar de experimentos (criativos e testes por semana)",
-   "falta": []
-  },
   {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "TikTok for Business",
@@ -433,7 +425,7 @@
   },
   {
    "data": "23/11/2026",
-   "pct": 87.5
+   "pct": 90.8
   }
  ]
 }

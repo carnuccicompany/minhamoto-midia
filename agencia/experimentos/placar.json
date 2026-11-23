@@ -1,0 +1,53 @@
+[
+ {
+  "id": "EXP-20261123-1",
+  "produto": "corretores",
+  "tipo": "criativo",
+  "hipotese": "Formatos novos com a Ana Paula (historinha, quiz, split-screen), curtos (15–30 s), recuperam o CPA que subiu com os criativos cansados de outubro",
+  "variavel": "estilo do criativo (3 estilos × 3 criativos, mesmo preço e CTA)",
+  "metrica": "CPA e ROAS por estilo (um CBO por estilo)",
+  "base": "CPA dos 6 anúncios no ar subiu 15–50% de out para nov (UTMify, 23/11)",
+  "inicio": null,
+  "fim": null,
+  "status": "planejado",
+  "resultado_pct": null,
+  "vencedor": null,
+  "aprendizado": null,
+  "proximo_passo": "Estúdio entrega EST5 Historinha, EST2 Quiz e EST4 Split-screen (piloto + 2 variações cada); subir um CBO por estilo",
+  "dono": "cria + trafego"
+ },
+ {
+  "id": "EXP-20261123-2",
+  "produto": "corretores",
+  "tipo": "página",
+  "hipotese": "A página pesava ~25 MB e carregava devagar no 4G; deixando ela leve, mais gente que clica chega a ver a página",
+  "variavel": "peso da página (~25 MB → ~1 MB ao abrir, imagens em WebP e lazy load)",
+  "metrica": "% de visualização de página por clique (UTMify)",
+  "base": "92% em outubro, 75% em novembro (UTMify, 23/11)",
+  "inicio": "2026-11-23",
+  "fim": null,
+  "status": "rodando",
+  "resultado_pct": null,
+  "vencedor": null,
+  "aprendizado": null,
+  "proximo_passo": "Medir na UTMify depois de 7 dias de anúncio rodando (30/11)",
+  "dono": "dados"
+ },
+ {
+  "id": "EXP-20261123-3",
+  "produto": "corretores",
+  "tipo": "oferta",
+  "hipotese": "O Acesso Essencial listava os mesmos 6 itens do Completo; listando só o Mapa, o motivo de subir pro Completo fica claro",
+  "variavel": "lista de itens do Acesso Essencial (só o Mapa)",
+  "metrica": "% do Pacote Completo nos pedidos",
+  "base": "~85% dos pedidos eram do Completo (UTMify, out–nov)",
+  "inicio": "2026-11-23",
+  "fim": null,
+  "status": "rodando",
+  "resultado_pct": null,
+  "vencedor": null,
+  "aprendizado": null,
+  "proximo_passo": "Comparar a % do Completo em 7 dias (30/11)",
+  "dono": "dados"
+ }
+]

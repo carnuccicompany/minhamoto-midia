@@ -43,12 +43,14 @@
     {
      "id": "orcamento-uso",
      "titulo": "Orçamento de uso por agente",
-     "status": "pendente"
+     "status": "feito",
+     "nota": "agencia/merito/ORCAMENTO-USO.md (23/11): tarefas, rodadas/semana, modelos, ordem de corte e como medir"
     },
     {
      "id": "placar-experimentos",
      "titulo": "Placar de experimentos (criativos e testes por semana)",
-     "status": "pendente"
+     "status": "feito",
+     "nota": "agencia/experimentos/placar.json + README.md (23/11), com 3 experimentos dos Corretores"
     }
    ]
   },
