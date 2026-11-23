@@ -74,3 +74,9 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 
 - 23/11/2026 · Léo: vazamento de chave/token é prioridade máxima pra todo mundo. Quem achar tira do arquivo na hora, corrige a causa e avisa o Léo no celular ("🚨 SEGURANÇA") com o passo a passo pra revogar, repetindo até ele confirmar. Vigia automática: scripts/vigia_segredos.py + workflow "Vigia de segredos" a cada push. Caso que motivou: token de página do robô de posts gravado em dados/insights (commit 35f294d), trocado em 23/11.
 - 23/11/2026 17h31 · CASO ENCERRADO: o token antigo do robô de posts (vazado no commit 35f294d) foi invalidado pelo Léo (MinhaMoto Publicador removido das Integrações comerciais do perfil dele). O robô usa agora o token do usuário do sistema 'minhamoto-publicador' (só Página e Instagram do MinhaMoto). Coleta testada sem erro depois da revogação.
+
+## Revisão da ata do Conselho de 23/11 (QG, 20h06)
+- Ata boa no geral: números com fonte, sem "teste grátis", Shelby corrigiu sozinho o que era dele e se multou pelo pacote do Davi.
+- **D3 já estava resolvida:** o Léo ligou o carnucci-dados hoje (RevenueCat via AppsFlyer, App Store Connect, Meta Ads + IG, AppsFlyer; Google Play convidado, propagando, checagem 24/11 9h07). Não vira pergunta. Falta só a ponte: o robô privado publicar um resumo **só em %** que as sessões do minhamoto-midia leiam (pendência do QG).
+- **Pacote ao Davi (10 sim/não) não pode esperar o bilhete:** a build é hoje à noite. O QG leva ao Léo/Davi hoje; os itens 1–4 já estão no checklist de 9 itens da build.
+- Regra nova no playbook do Shelby: conferir o que já foi resolvido no dia antes de perguntar; pergunta com relógio vai no mesmo dia pelo QG.

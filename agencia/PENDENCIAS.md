@@ -97,3 +97,5 @@ O Léo quer que os agentes tenham acesso a tudo, não só ao repositório. Hoje 
 - [ ] App Store Connect e Google Play Console (loja, avaliações, conversão da página)
 - [ ] UTMify (faturamento)
 - [ ] O que não tiver conector: tarefa presa ao computador do Léo usando o Chrome dele, só leitura
+
+- **QG: ponte de % do carnucci-dados (23/11):** o robô privado gravar um resumo só em % (funil, % da meta, sem número absoluto) num lugar que as sessões do minhamoto-midia leiam. Sem isso Turing/Stark/Escobar seguem dizendo "sem leitura do RevenueCat".

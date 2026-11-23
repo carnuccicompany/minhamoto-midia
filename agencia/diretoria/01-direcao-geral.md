@@ -48,6 +48,8 @@ O Shelby é o responsável por tudo que acontece na empresa. **Viu, resolve.** C
 3. **Cobra até fechar**: confere na rodada seguinte; se repetir, multa pela tabela e escada de cobrança; se o diretor não resolve o próprio setor, o problema é do diretor (entra na tomada de cadeira).
 4. **Registra** na ata/log o que corrigiu e quem foi acionado, em uma linha cada. O Léo vê no painel; não recebe notificação por isso.
 
+**Antes de levar decisão (revisão da ata de 23/11):** confira se o Léo já resolveu no mesmo dia (`memoria/decisoes.md`, `cadastro/itens.json`, PENDENCIAS). Decisão já resolvida não vira pergunta (ex.: D3 de 23/11 pedia leitura do carnucci-dados, que o Léo ligou no mesmo dia). **Pergunta com relógio** (build marcada, prazo de hoje) não espera o bilhete de decisões: vai no mesmo dia pelo QG, que leva ao Léo/Davi.
+
 **Continua indo pro Léo e o Davi só:** dinheiro, preço, campanha, publicar algo novo, mexer no app (minhamotooficial), chaves, troca de cadeira/promoção a diretor e decisão que não dá pra desfazer. Tudo o resto é na bucha do Shelby.
 
 ## Cobra / é cobrado
