@@ -1,8 +1,8 @@
 {
- "rodada": "2026-11-22T23:40:00-03:00",
+ "rodada": "2026-11-23T00:10:00-03:00",
  "ok": true,
  "tarefas": {
-  "post do horário + aviso TikTok": "falhou 21h02 (limite); janela expirada; próx 23/11 12h02",
+  "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
   "respostas às avaliações": "ok (SUCCEEDED 23h13)",
   "vigia do Gmail": "ok (SUCCEEDED 23h11)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
@@ -10,15 +10,15 @@
   "produção diária": "desativada — prevista em PENDENCIAS",
   "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 08h09)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10 após re-disparo; ata em main; Mesa de Demandas rodou dentro dela)",
+  "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
-  "MM: Mesa de Demandas": "falhou 22/11 14h37 (limite); re-disparo negado antes, não repetido; coberta pela Mesa dentro do Conselho; próx 23/11 10h37",
+  "MM: Mesa de Demandas": "falhou 22/11 14h37 (limite); não re-disparada (negada antes, coberta pelo Conselho); próx 23/11 10h37",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT",
   "MM: Vigia do Gmail": "falhou 22/11 18h47 (limite); re-disparado 23h10",
-  "coordenador :39": "falhou 22/11 22h39 (limite); este :09 rodou ok",
-  "coordenador :09": "ok (SUCCEEDED 23h13)"
+  "coordenador :39": "ok (SUCCEEDED 23/11 23h39 BRT)",
+  "coordenador :09": "rodando (esta rodada)"
  },
  "publicacao_hoje": {
   "ultimo_ok": "E08 (19h25 BRT 22/11)",
@@ -30,7 +30,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhum re-disparo novo: Conselho/Gmail/Avaliações já SUCCEEDED; Mesa não re-disparada (negada antes e coberta pelo Conselho)"
+  "nenhuma: sem falha nova desde 23h40; Mesa e Posts já tratadas nas rodadas anteriores"
  ],
  "alertas": []
 }
