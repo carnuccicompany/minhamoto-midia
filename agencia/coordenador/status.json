@@ -1,30 +1,36 @@
 {
- "rodada": "2026-11-21T08:40:00-03:00",
- "ok": true,
+ "rodada": "2026-11-22T23:15:00-03:00",
+ "ok": false,
  "tarefas": {
-  "post do horário + aviso TikTok": "ok (21h02 SUCCEEDED; próx 12h02 BRT 21/11)",
-  "respostas às avaliações": "ok (00h13 BRT SUCCEEDED; próx 9h13 BRT 21/11)",
+  "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); publicador disparado 23h12, sem post (janela 21h–23h expirada); próx 12h02 23/11",
+  "respostas às avaliações": "falhou 22/11 21h13 (limite); re-disparado 23h10",
   "vigia do Gmail": "ok (18h47 SUCCEEDED; próx 8h47 21/11)",
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS",
   "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 08h09)",
   "checklist pré-build": "lembrete único 23/11 ativo",
-  "MM: Reunião do Conselho": "ok (SUCCEEDED 19h23 BRT 20/11; próx 21/11 19h23)",
-  "MM: Folha de sexta": "ok (SUCCEEDED 17h47 BRT 20/11; próx 27/11)",
+  "MM: Reunião do Conselho": "falhou 22/11 19h23 (limite de uso); re-disparado 23h10 BRT",
+  "MM: Folha de sexta": "ok (20/11; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
-  "MM: Mesa de Demandas": "ok (próx 21/11 10h37)",
+  "MM: Mesa de Demandas": "falhou 22/11 14h37 (limite de uso); re-disparo NEGADO pelo classificador — não contornado; próx 23/11 10h37",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
-  "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT"
+  "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT",
+  "MM: Vigia do Gmail": "falhou 22/11 18h47 (limite); re-disparado 23h10",
+  "coordenador :39": "falhou 22/11 22h39 (limite); este :09 rodou ok"
  },
  "publicacao_hoje": {
-  "ultimo_ok": "21h DV08 (saiu 21h04 BRT 20/11)",
-  "proximo": "12h02 BRT 21/11"
+  "ultimo_ok": "E08 (19h25 BRT 22/11)",
+  "falhas": "slots 12h, 15h e 21h de 22/11 sem post",
+  "proximo": "12h02 BRT 23/11"
  },
- "dias_de_fila": 23,
- "nao_publicados": 93,
+ "dias_de_fila": 22,
+ "nao_publicados": 89,
  "pendentes_aprovacao": 0,
- "tiktok_916": "113/113 com cards_tiktok",
- "acoes": [],
+ "tiktok_916": "113/113",
+ "acoes": [
+  "re-disparadas 4 tarefas (Conselho, Vigia Gmail, Avaliações, e publicador via workflow)",
+  "Mesa de Demandas: re-disparo negado, não contornado"
+ ],
  "alertas": []
 }
