@@ -86,6 +86,21 @@
 | 18/11 | Direção v2 A1/A2 | status bar bugada, amarelo, CTA fraco, telas 0%/6% | seções 1, 3, 4, 5 |
 | 18/11 | Direção v2 B2 | mockup com/sem Dynamic Island + barra no topo; "moto de demonstração" | seção 4 + check automático do topo do celular |
 
+## 23/11/2026: lapidação do carrossel orgânico (CM01 "luzes do painel", rodada 1)
+- ✅ **Aprovado:** cores (navy + luz azul), verde-limão na quantidade certa (traço e "Deslize →"), selos das lojas embaixo do CTA. Fonte Poppins "um pouco melhor", mas **dá pra ficar mais foda**: buscar hierarquia mais forte (tamanho, peso, alinhamento), não só centralizar tudo. · 23/11
+- **Copy é o ponto mais fraco.** ❌ CM01: "texto muito ruim, tem que melhorar muito". Título tem que ter gancho e ritmo de anúncio caro; nada de frase óbvia/genérica ("Não dá pra esperar.", "Espere antes de mexer."). · 23/11
+- **Não encher o carrossel de recorte de card do app** (o quadrado com "O que significa / O que fazer"). ❌ CM01: 4 cards seguidos iguais, com card do app grandão. ✅ Usar mais **o celular no mockup**, e **variar**: às vezes o card do app grande, às vezes o mockup, em posições diferentes. · 23/11
+- **Celular não precisa aparecer inteiro e centralizado.** ✅ Pode ficar maior, mais pra esquerda (ou direita), saindo do quadro, com o texto do outro lado. Variar a posição do mockup e do texto de card pra card. (Isto atualiza o "celular reto e centralizado" de 17/11 e o "celular inteiro" do estaticos.py.) · 23/11
+- **Card do app tem que dar vontade de ler.** ❌ CM01: rótulo e texto no mesmo tom, nada salta. ✅ Mostrar só o trecho que importa, maior, com destaque claro do que é o principal (ex.: puxar o trecho pra fora do celular, ampliado). · 23/11
+- **Tela do app no mockup: perfeita, sempre.** "Não quero ter que reclamar e pedir pra refazer." Nítida, encaixada, sem corte errado, sem nada colidindo. · 23/11
+- **Ícone do app no card final:** ❌ CM01 card 07: brilho formando um quadrado de luz em volta da logo. ✅ Brilho redondo e suave atrás (ou nenhum), nunca halo quadrado. · 23/11
+- "Faça um bagulho foda": o padrão é peça de marca premium que para o dedo, não template. · 23/11
+
+### Placar (continuação)
+| Data | Peça | Erro que o Léo pegou | Regra/trava criada |
+|---|---|---|---|
+| 23/11 | CM01 (rodada 1) | copy fraca; 4 cards iguais com recorte do app; card sem destaque; halo quadrado na logo | regras acima + trava de layout (`agencia/estudio/motores/render_check.py`) |
+
 ## 20/11/2026: anúncios (decisões do Léo ao lapidar a Disney)
 - Criativo de anúncio se baseia sempre no que está vendendo de verdade (assinante/venda), no nosso app e no nosso infoproduto.
 - Formatos dos anúncios: vídeo nativo de TikTok, tela do app em ação e historinha com a dor do motoqueiro. Duração: testar menos de 15 s, 15 a 25 s e 30 a 60 s.

@@ -1,11 +1,11 @@
-# CM01 · "Acendeu no painel. Parar ou seguir?"
+# CM01 · "4 luzes no painel. Duas mandam parar na hora."
 
-Linha proposta: **Manual de bolso** (valor/educacional). Fonte do conteúdo: tela "Sinais de problema" do próprio app (src/data/content.ts).
+Linha proposta: **Manual de bolso** (valor/educacional, prova no app). Conteúdo: tela "Sinais de problema" do próprio app (src/data/content.ts).
 
 ## Instagram / Facebook
-Acendeu uma luz no painel. Você para ou segue?
+4 luzes no painel. Duas mandam parar na hora. Você sabe quais?
 
-Óleo e temperatura pedem parada na hora. Injeção e bateria pedem atenção, sem pânico. Saber a diferença evita estrago caro no motor e volta pra casa empurrando a moto. Os símbolos mudam de uma moto pra outra: na dúvida, confira o manual.
+Óleo e temperatura: encoste e desligue. Injeção e bateria: dá pra chegar, com cuidado. Errar essa conta é o que transforma uma luz acesa num motor aberto na oficina. Os símbolos mudam de moto pra moto: na dúvida, confira o manual.
 
 📌 Salve pra não esquecer e mande pra quem roda todo dia sem olhar o painel.
 
@@ -14,7 +14,7 @@ Acendeu uma luz no painel. Você para ou segue?
 #moto #motociclista #motoboy #manutencaodemoto #paineldamoto #luzdepainel #dicasdemoto #motosbrasil #mecanicademoto #minhamoto
 
 ## TikTok
-Acendeu no painel: você para ou segue?
+4 luzes no painel. Duas mandam parar na hora. Quais?
 
 📌 Salve e mande pra quem ignora a luz do painel.
 📲 Baixe agora o MinhaMoto na App Store e no Google Play.

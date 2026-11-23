@@ -22,8 +22,12 @@ JS = r"""
   for (const el of txt) {
     const pedidas = (el.innerHTML.match(/<br\s*\/?>/gi) || []).length + 1;
     const range = document.createRange(); range.selectNodeContents(el);
-    const tops = new Set([...range.getClientRects()].filter(r => r.width > 1).map(r => Math.round(r.top / 4)));
-    if (tops.size > pedidas) out.problemas.push('quebra de linha extra em ' + nome(el) + ` (${tops.size} linhas, pedido ${pedidas})`);
+    // agrupa as caixas por linha: nova linha só quando o topo desce mais que 60% do corpo da fonte
+    const fs = parseFloat(getComputedStyle(el).fontSize);
+    const ts = [...range.getClientRects()].filter(r => r.width > 1 && r.height > fs * 0.5).map(r => r.top).sort((a, b) => a - b);
+    let linhas = 0, ult = -1e9;
+    for (const t of ts) { if (t - ult > fs * 0.6) { linhas++; ult = t; } }
+    if (linhas > pedidas) out.problemas.push('quebra de linha extra em ' + nome(el) + ` (${linhas} linhas, pedido ${pedidas})`);
     const r = R(el);
     if (r.x0 < 0 || r.x1 > innerWidth || r.y0 < 0 || r.y1 > innerHeight) out.problemas.push('fora do quadro: ' + nome(el));
     if (innerHeight === 1920 && !el.classList.contains('pag')) {

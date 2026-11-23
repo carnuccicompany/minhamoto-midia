@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 URL='http://localhost:5173'
 TOP, BOT = 59, 34     # safe areas iPhone 15 (pt)
 W, H = 393, 852
-OUT='/tmp/telas/out'; os.makedirs(OUT, exist_ok=True)
+OUT='/tmp/telas-novas'; RAW='/tmp/telas-work'; os.makedirs(OUT+'/rolagem', exist_ok=True); os.makedirs(RAW, exist_ok=True)
 HIDE_JS = r'''
 () => {
   const kill = (pred) => { for (const el of document.querySelectorAll('body *')) { try { if (pred(el)) el.style.setProperty('display','none','important'); } catch(e){} } };
@@ -23,7 +23,14 @@ HIDE_JS = r'''
 }
 '''
 async def cenario(pg, nome):
-    await pg.evaluate("async (c)=>{const m=await import('/src/lib/previa-visual.ts'); m.restaurarPrevia(c);}", nome); await pg.wait_for_timeout(1200)
+    # Importa previa-visual pela MESMA URL que o app carregou (no vite dev ela
+    # pode vir com ?t=... depois de uma edição; importar "/src/lib/previa-visual.ts"
+    # sem o sufixo cria outra instância do módulo e o cenário não muda).
+    ok = await pg.evaluate("""async (c)=>{
+      const u=performance.getEntriesByType('resource').map(e=>e.name).filter(n=>n.includes('/src/lib/previa-visual.ts')).pop();
+      if(!u) return false; const m=await import(u); m.restaurarPrevia(c); return true;}""", nome)
+    if not ok: raise RuntimeError('módulo previa-visual não encontrado para trocar o cenário')
+    await pg.wait_for_timeout(1200)
 async def nav(pg, path):
     await pg.evaluate("(p)=>{history.pushState({__TSR_index:(history.state?.__TSR_index||0)+1},'',p); dispatchEvent(new PopStateEvent('popstate',{state:history.state}));}", path)
     await pg.wait_for_timeout(2200); await pg.evaluate('window.scrollTo(0,0)')
@@ -34,7 +41,7 @@ def barra_status(fg, bg, largura, alt=177, k=4):
     Wk, Hk = largura*k, alt*k
     im = Image.new('RGB', (Wk, Hk), bg); d = ImageDraw.Draw(im)
     f = None
-    for cand in ['/home/claude/minhamoto-midia/agencia/designer/assets/fontes/inter-latin-600-normal.woff2',
+    for cand in ['/home/claude/carnuccicompany/minhamoto-midia/agencia/designer/assets/fontes/inter-latin-600-normal.woff2',
                  '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']:
         try: f = ImageFont.truetype(cand, 50*k); break
         except Exception: pass
@@ -74,9 +81,11 @@ def compor(raw, dest, full=False):
     can.save(dest)
 async def main(plano):
     async with async_playwright() as p:
-        b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox','--force-color-profile=srgb'])
+        b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox','--force-color-profile=srgb','--lang=pt-BR'],
+            env={**os.environ, 'LANG': 'pt_BR.UTF-8', 'LANGUAGE': 'pt_BR:pt'})  # campo de data nativo em dd/mm/aaaa
         ctx=await b.new_context(viewport={'width':W,'height':H-TOP-BOT},device_scale_factor=3,is_mobile=True,has_touch=True,locale='pt-BR',timezone_id='America/Sao_Paulo',
             user_agent='Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1')
+        await ctx.add_init_script('performance.setResourceTimingBufferSize(10000)')
         pg=await ctx.new_page(); erros=[]
         pg.on('pageerror', lambda e: erros.append(str(e)[:150]))
         await pg.goto(URL+'/preview-visual', wait_until='networkidle'); await pg.wait_for_timeout(2000)
@@ -95,7 +104,11 @@ async def main(plano):
                         pul = pg.get_by_role('button', name='Pular por enquanto')
                         if await pul.count() and await pul.first.is_visible(): await pul.first.click(); await pg.wait_for_timeout(700)
                         else: break
-                elif acao=='fill': await pg.locator(passo[1]).first.fill(passo[2]); await pg.wait_for_timeout(400)
+                elif acao=='fill':
+                    val = passo[2]
+                    if val.startswith('@dias:'):  # data relativa (dias atrás), igual à prévia
+                        import datetime; val = (datetime.date.today() - datetime.timedelta(days=int(val[6:]))).isoformat()
+                    await pg.locator(passo[1]).first.fill(val); await pg.wait_for_timeout(400)
                 elif acao=='js': await pg.evaluate(passo[1]); await pg.wait_for_timeout(1800)
                 elif acao=='foto':
                     for _ in range(6):
@@ -104,12 +117,13 @@ async def main(plano):
                         else: break
                     await pg.wait_for_timeout(500)
                     await pg.evaluate(HIDE_JS); await pg.wait_for_timeout(300)
-                    raw=f'{OUT}/_raw.png'
+                    raw=f'{RAW}/_raw.png'
                     full = len(passo)>2 and passo[2]=='full'
                     if full: await pg.evaluate("()=>{document.getElementById('__hide').textContent+='nav[aria-label=\"Seções da moto\"]{display:none!important}'}")
                     await pg.screenshot(path=raw, full_page=full)
                     await pg.evaluate("()=>{const s=document.getElementById('__hide'); if(s) s.textContent='';}")
-                    compor(raw, f'{OUT}/{passo[1]}.png', full=full); print('ok', passo[1], pg.url)
+                    dest = f"{OUT}/rolagem/{passo[1][:-5]}.png" if full and passo[1].endswith('-full') else f'{OUT}/{passo[1]}.png'
+                    compor(raw, dest, full=full); print('ok', passo[1], pg.url)
             except Exception as e:
                 print('FALHA', passo, str(e)[:200])
         print('erros js', erros[:5]); await b.close()

@@ -340,7 +340,7 @@
 [
 "fill",
 "[role=dialog] input[type=date]",
-"2026-11-10"
+"@dias:2"
 ],
 [
 "fill",
@@ -365,7 +365,11 @@
 ],
 [
 "js",
-"()=>{const els=[...document.querySelectorAll('a,button')].filter(b=>b.innerText.includes('Kit relação')&&b.innerText.includes('Ver')); (els.pop()||{click(){}}).click();}"
+"()=>{const els=[...document.querySelectorAll('a,button')].filter(b=>b.innerText.includes('Kit relação')); (els.pop()||{click(){}}).click();}"
+],
+[
+"js",
+"()=>{window.scrollTo(0,0); document.scrollingElement.scrollTop=0;}"
 ],
 [
 "js",
@@ -377,14 +381,14 @@
 ],
 [
 "nav",
-"/preview-visual/moto/honda-cg-160__titan__2022/combustivel?cenario=boa"
+"/preview-visual/moto/honda-cg-160__titan__2022/combustivel"
 ],
 [
 "pular"
 ],
 [
 "js",
-"()=>{const h=[...document.querySelectorAll('h2,h3,p,span,div')].find(e=>e.innerText&&e.innerText.trim()==='Comparação de postos'); if(h){const y=h.getBoundingClientRect().top+scrollY-110; scrollTo(0,y);}}"
+"()=>{const h=[...document.querySelectorAll('h2,h3,p,span,div')].find(e=>e.innerText&&e.innerText.trim()==='Comparação de postos'); if(h){const y=h.getBoundingClientRect().top+scrollY-175; scrollTo(0,y);}}"
 ],
 [
 "foto",
