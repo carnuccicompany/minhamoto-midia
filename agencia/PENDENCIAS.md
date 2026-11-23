@@ -10,6 +10,7 @@
 - [x] UTM nos links da bio (19/11) → [x] Atalhos no ar (19/11): /instagram /tiktok /facebook /youtube /stories /whatsapp — arquivos próprios só de redirecionamento (sem pixel), testados: UTMs certas, fbclid preservado, OneLink recebe pid/c/af_adset → [x] Facebook e YouTube trocados pelos atalhos → [x] TikTok trocado pelo Léo e conferido no perfil (19/11)
 - [x] Instagram SEM link (restrição da Meta, revisão pedida várias vezes, inclusive stories). Decisão 19/11: não criar conta nova agora e não escrever endereço na bio; reavaliar em ~30 dias com dados do AppsFlyer
 - [x] Histórico do GitHub limpo (gravação com e-mail removida)
+- [ ] PROJETO (Léo, 23/11): desenhar com o Léo como as informações do Shelby e dos diretores chegam pra ele e pro Davi (diário/semanal: leitura pela manhã, decisões escritas pra tomar, demandas e apontamentos), automático, funcional e com estética "gangsta", muito foda. Não é pra agora; puxar no teste de fogo de sexta 27/11 ou quando ele chamar
 - [ ] FUTURO (Léo adiou em 23/11): recuperação de Pix dos Corretores. Plano pronto em agencia/estudio/produtos/corretores.md §8: telefone obrigatório no checkout Kavoo, Reportana (Essentials, a partir de R$199/mês) ou PlugLead, WhatsApp Business da operação, 1 mensagem 15 min após o Pix não pago
 - [ ] Escolher direção visual A ou B (quando as amostras chegarem)
 - [ ] AppsFlyer + dashboard Supabase (com o Davi)
