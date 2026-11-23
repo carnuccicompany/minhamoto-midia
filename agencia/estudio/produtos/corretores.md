@@ -87,3 +87,9 @@ Base teórica do Léo (6 FIGURES/ÂNGULOS DE CRIATIVOS.docx): dor, desejo/transf
 - **Plano de teste (Léo, 23/11 13h18):** HOJE 3 estilos × 3 = 9 criativos: **EST5 Historinha da venda que morreu**, **EST2 Quiz "você saberia responder?"** e **EST4 Split-screen corretor inseguro × seguro**. Piloto de cada estilo → Léo aprova → 2 variações (troca hook/ângulo, misturando ângulos de perda e de ganho). AMANHÃ os outros 3 (EST1 Pergunta → Mapa responde, EST3 Linha do tempo, EST6 Volume e prova). Verba não é limite: o Léo investe o que o teste pedir (um CBO por estilo).
 - **Ângulos equilibrados:** perda (venda que morre depois do sim) + ganho (destaque/qualificação, vender mais rápido, responder tudo, confiança, economia: não pagar serviço externo de finalização e ficar com mais do lucro). Detalhe em `agencia/DESIGN-CORRETORES.md` §4b.
 - **Ainda a confirmar:** o erro do Acesso Essencial listando os mesmos itens do Completo; quais criativos venceram (ver `corretores-aprendizados.md`: a UTMify mostra AP - 1 e AP - 4 como os melhores).
+
+## 8. Recuperação de Pix (decisões do Léo, 23/11)
+- **Uma mensagem só**, 15 minutos depois do Pix gerado e não pago. Curta, simpática, tom de quem ajuda (nunca cobrar nem apontar que a pessoa não pagou). Não assina como Ana Paula nem como "suporte".
+- **Canal:** WhatsApp de um número novo só da operação (WhatsApp Business), não o pessoal dela. Exige telefone no checkout da Kavoo (hoje não pede; o Léo aceitou colocar).
+- **Ferramenta:** Reportana (integração aparece na Kavoo) ou PlugLead; decisão e assinatura do Léo.
+- **Mensagem aprovada:** "Oi, {nome}! Tudo certo por aí? 😊 Vi que o seu pedido do Mapa Visual do Fechamento Imobiliário ficou pela metade. Se o Pix expirou ou deu algum probleminha, o seu link continua aqui: {link}. Qualquer dúvida, é só me responder. 💙"
