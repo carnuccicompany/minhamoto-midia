@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T01:40:00-03:00",
+ "rodada": "2026-11-23T02:10:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "falhou 22/11 21h02 (limite); janela expirada; próx 23/11 12h02",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (1ª em 23/11)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "rodando (:39 desta rodada; :09 SUCCEEDED 01h10)",
+  "coordenador": "rodando (:09 desta rodada; :39 SUCCEEDED 01h40)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 22/11 23h10; próx 23/11 19h23)",
   "MM: Folha de sexta": "ok (20/11; próx 27/11)",
@@ -17,7 +17,7 @@
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único agendado 23/11 10h13 BRT",
   "MM: Vigia do Gmail": "falhou 22/11 18h47 (limite); re-disparado 23h10",
-  "coordenador :09": "ok (SUCCEEDED 01h10)"
+  "coordenador :09": "rodando"
  },
  "publicacao_hoje": {
   "ultimo_ok": "E08 (19h25 BRT 22/11)",
@@ -29,7 +29,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha nova desde 01h10; Mesa 14h37 e Posts 21h02 de 22/11 seguem como registrado (limite, sem re-disparo); próximo slot 12h02"
+  "nenhuma: sem falha nova desde 01h40; Mesa 14h37 e Posts 21h02 de 22/11 seguem como registrado (limite, janela expirada/coberta, sem re-disparo); próx post 12h02, próx Mesa 10h37"
  ],
  "alertas": []
 }
