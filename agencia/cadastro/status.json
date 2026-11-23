@@ -1,6 +1,6 @@
 {
- "atualizado": "23/11/2026 14:47",
- "pct": 57.2,
+ "atualizado": "23/11/2026 16:24",
+ "pct": 67.9,
  "categorias": [
   {
    "id": "estrutura",
@@ -86,8 +86,9 @@
     {
      "id": "conector-meta",
      "titulo": "Escolher conector da Meta Ads + Instagram",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "Opção A: robô próprio com usuário do sistema só leitura (23/11)",
+     "valor": 1.0
     },
     {
      "id": "infoprodutos",
@@ -102,8 +103,8 @@
      "valor": 1.0
     }
    ],
-   "pct": 80.0,
-   "feitos": 4,
+   "pct": 100.0,
+   "feitos": 5,
    "total": 5
   },
   {
@@ -132,14 +133,17 @@
     {
      "id": "appsflyer",
      "titulo": "AppsFlyer (origem das instalações)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "Token ligado (23/11); dados chegam com a build do SDK",
+     "valor": 1.0
     },
     {
      "id": "meta-ads",
      "titulo": "Meta Ads + Instagram",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "parcial",
+     "parcial": 0.7,
+     "nota": "Anúncios das duas contas ligados (23/11); falta o Instagram (2º caso de uso no app Carnucci Dados)",
+     "valor": 0.7
     },
     {
      "id": "tiktok",
@@ -150,14 +154,17 @@
     {
      "id": "asc",
      "titulo": "App Store Connect (chave só de dados)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "Chave só de relatórios ligada (23/11)",
+     "valor": 1.0
     },
     {
      "id": "play",
      "titulo": "Google Play Console (relatórios)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "parcial",
+     "parcial": 0.8,
+     "nota": "Chaves e convite feitos (23/11); aguardando o Google liberar o acesso (até 24h)",
+     "valor": 0.8
     },
     {
      "id": "utmify",
@@ -172,8 +179,8 @@
      "valor": 0.0
     }
    ],
-   "pct": 30.0,
-   "feitos": 3,
+   "pct": 65.0,
+   "feitos": 5,
    "total": 10
   },
   {
@@ -383,7 +390,7 @@
    "total": 9
   }
  ],
- "pendentes": 19,
+ "pendentes": 16,
  "lista_pendentes": [
   {
    "categoria": "Estrutura e rotinas",
@@ -396,16 +403,6 @@
    "falta": []
   },
   {
-   "categoria": "Decisões do Léo e do Davi",
-   "titulo": "Escolher conector da Meta Ads + Instagram",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "AppsFlyer (origem das instalações)",
-   "falta": []
-  },
-  {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "Meta Ads + Instagram",
    "falta": []
@@ -413,11 +410,6 @@
   {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "TikTok for Business",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "App Store Connect (chave só de dados)",
    "falta": []
   },
   {
@@ -510,7 +502,7 @@
   },
   {
    "data": "23/11/2026",
-   "pct": 57.2
+   "pct": 67.9
   }
  ]
 }

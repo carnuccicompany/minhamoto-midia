@@ -69,7 +69,8 @@
     {
      "id": "conector-meta",
      "titulo": "Escolher conector da Meta Ads + Instagram",
-     "status": "pendente"
+     "status": "feito",
+     "nota": "Opção A: robô próprio com usuário do sistema só leitura (23/11)"
     },
     {
      "id": "infoprodutos",
@@ -105,12 +106,15 @@
     {
      "id": "appsflyer",
      "titulo": "AppsFlyer (origem das instalações)",
-     "status": "pendente"
+     "status": "feito",
+     "nota": "Token ligado (23/11); dados chegam com a build do SDK"
     },
     {
      "id": "meta-ads",
      "titulo": "Meta Ads + Instagram",
-     "status": "pendente"
+     "status": "parcial",
+     "parcial": 0.7,
+     "nota": "Anúncios das duas contas ligados (23/11); falta o Instagram (2º caso de uso no app Carnucci Dados)"
     },
     {
      "id": "tiktok",
@@ -120,12 +124,15 @@
     {
      "id": "asc",
      "titulo": "App Store Connect (chave só de dados)",
-     "status": "pendente"
+     "status": "feito",
+     "nota": "Chave só de relatórios ligada (23/11)"
     },
     {
      "id": "play",
      "titulo": "Google Play Console (relatórios)",
-     "status": "pendente"
+     "status": "parcial",
+     "parcial": 0.8,
+     "nota": "Chaves e convite feitos (23/11); aguardando o Google liberar o acesso (até 24h)"
     },
     {
      "id": "utmify",
