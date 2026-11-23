@@ -55,6 +55,22 @@ tenta('fb_pagina', lambda: get(PAGE, fields='fan_count,followers_count,name'))
 # page_impressions foi descontinuada pela Meta (blog dev 15/08/2025): usa page_media_view
 tenta('fb_impressoes', lambda: get(f'{PAGE}/insights', metric='page_media_view,page_post_engagements', period='week'))
 
+def sem_paging(o):
+    # NUNCA gravar 'paging': as URLs de paginação da Meta trazem o access_token
+    # e este repositório é público (vazamento em 23/11/2026).
+    if isinstance(o, dict):
+        o.pop('paging', None)
+        for v in o.values():
+            sem_paging(v)
+    elif isinstance(o, list):
+        for v in o:
+            sem_paging(v)
+    return o
+
+sem_paging(out)
+texto = json.dumps(out, ensure_ascii=False)
+assert 'access_token' not in texto and TOKEN not in texto, 'token no JSON: abortado'
+
 hoje = datetime.date.today().isoformat()
 os.makedirs('dados', exist_ok=True)
 with open(f'dados/insights-{hoje}.json', 'w', encoding='utf-8') as f:

@@ -513,10 +513,6 @@
   "id": "1319425834577827"
  },
  "fb_impressoes": {
-  "data": [],
-  "paging": {
-   "previous": "https://graph.facebook.com/v27.0/1319425834577827/insights?access_token=EAAWGDUWMa74BTF2defb13tFV2aW8L50LgdEWaUq9D5VN0IwQce4bwla5eDrfXp3DaHL0dobpbLHjjcfpAXchguyB2gg6iGZAcziuChsldqZAAhZAAfZAZBZAOj1yGIxLKHzAOqwSJZAcd2Uk3UOYd37pc78hLt2YmviGTznb3Yf7FuiU8qZB3ZALFmZBLYCdr71l6pncNPzDYY7XoE4jiuZALrjPYBL&metric=page_media_view%2Cpage_post_engagements&period=week&since=1794988800&until=1795161600",
-   "next": "https://graph.facebook.com/v27.0/1319425834577827/insights?access_token=EAAWGDUWMa74BTF2defb13tFV2aW8L50LgdEWaUq9D5VN0IwQce4bwla5eDrfXp3DaHL0dobpbLHjjcfpAXchguyB2gg6iGZAcziuChsldqZAAhZAAfZAZBZAOj1yGIxLKHzAOqwSJZAcd2Uk3UOYd37pc78hLt2YmviGTznb3Yf7FuiU8qZB3ZALFmZBLYCdr71l6pncNPzDYY7XoE4jiuZALrjPYBL&metric=page_media_view%2Cpage_post_engagements&period=week&since=1795334400&until=1795507200"
-  }
+  "data": []
  }
 }
