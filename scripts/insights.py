@@ -52,7 +52,8 @@ def ig_midias():
 
 tenta('ig_midias', ig_midias)
 tenta('fb_pagina', lambda: get(PAGE, fields='fan_count,followers_count,name'))
-tenta('fb_impressoes', lambda: get(f'{PAGE}/insights', metric='page_impressions,page_post_engagements', period='week'))
+# page_impressions foi descontinuada pela Meta (blog dev 15/08/2025): usa page_media_view
+tenta('fb_impressoes', lambda: get(f'{PAGE}/insights', metric='page_media_view,page_post_engagements', period='week'))
 
 hoje = datetime.date.today().isoformat()
 os.makedirs('dados', exist_ok=True)
