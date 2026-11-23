@@ -1,0 +1,162 @@
+[
+ [
+  "21-item-atrasado",
+  "/moto/honda-cg-160__titan__2022",
+  [
+   [
+    "clique",
+    "Ver",
+    true
+   ]
+  ],
+  false
+ ],
+ [
+  "22-registrar-servico",
+  "/moto/honda-cg-160__titan__2022/historico",
+  [
+   [
+    "clique",
+    "Registrar serviço",
+    true
+   ]
+  ],
+  false
+ ],
+ [
+  "23-registrar-servico-itens",
+  "/moto/honda-cg-160__titan__2022/historico",
+  [
+   [
+    "clique",
+    "Registrar serviço",
+    true
+   ],
+   [
+    "clique",
+    "Vela de ignição",
+    true
+   ],
+   [
+    "preencher",
+    "[role=dialog] input[placeholder^='Ex.: óleo']",
+    "Vela NGK CPR8EA-9"
+   ],
+   [
+    "preencher",
+    "[role=dialog] input[placeholder='0,00']",
+    "45,00"
+   ],
+   [
+    "js",
+    "(()=>{const d=[...document.querySelectorAll('[role=dialog] *')].filter(e=>e.scrollHeight>e.clientHeight+40&&/(auto|scroll)/.test(getComputedStyle(e).overflowY)); const c=d.sort((a,b)=>b.clientHeight-a.clientHeight)[0]; if(c) {c.scrollTop=0; c.scrollBy(0,250);} document.activeElement&&document.activeElement.blur();})()"
+   ]
+  ],
+  false
+ ],
+ [
+  "24-comparacao-postos",
+  "/moto/honda-cg-160__titan__2022/combustivel",
+  [
+   [
+    "rolarate",
+    "Comparação de postos",
+    -150
+   ]
+  ],
+  false
+ ],
+ [
+  "26-registrar-abastecimento",
+  "/moto/honda-cg-160__titan__2022/combustivel",
+  [
+   [
+    "clique",
+    "Registrar abastecimento",
+    true
+   ],
+   [
+    "preencher",
+    "[role=dialog] input[type=datetime-local]",
+    "@hojeT09:40"
+   ]
+  ],
+  false
+ ],
+ [
+  "27-marco-30000",
+  "/moto/honda-cg-160__titan__2022/manutencao",
+  [
+   [
+    "seletor",
+    "button.mp-alca[aria-expanded=false]"
+   ],
+   [
+    "rolarate",
+    "Trocas e serviços",
+    -330
+   ]
+  ],
+  true
+ ],
+ [
+  "28-item-proximo",
+  "/moto/honda-cg-160__titan__2022",
+  [
+   [
+    "clique",
+    "Lubrificar e ajustar a corrente",
+    true
+   ]
+  ],
+  false
+ ],
+ [
+  "29-manutencao-tempo",
+  "/moto/honda-cg-160__titan__2022/manutencao",
+  [
+   [
+    "clique",
+    "Tempo",
+    true
+   ],
+   [
+    "rolar",
+    300
+   ]
+  ],
+  false
+ ],
+ [
+  "30-item-ja-fiz-antes",
+  "/moto/honda-cg-160__titan__2022",
+  [
+   [
+    "clique",
+    "Ver",
+    true
+   ],
+   [
+    "clique",
+    "Já fiz antes",
+    true
+   ],
+   [
+    "preencher",
+    "[role=dialog] input[type=date]",
+    "@dias:2"
+   ],
+   [
+    "rotulo",
+    "Produto ou peças",
+    "Vela NGK CPR8EA-9"
+   ],
+   [
+    "rotulo",
+    "Valor",
+    "45,00"
+   ]
+  ],
+  false
+ ]
+]

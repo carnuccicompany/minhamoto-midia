@@ -98,20 +98,20 @@ def com_puxado(n, idx, kick, tit, apo, lado, tt):
     return c + pag(n, tt)
 
 def card_grande(n, idx, kick, tit, apo, tt):
-    """Card inteiro do app, grande, com o cabeçalho e o 'O que fazer' acesos e o resto apagado."""
+    """Trecho do card do app (cabeçalho + 'O que fazer') grande, saindo de cima do celular que aparece por baixo (apagado)."""
     arq, (sw, sh) = trecho(SIN, idx, (0, 2))   # 23/11 r2: nada de apagar partes do print
     if tt:
-        L, w, T, tam, ta, cw, fim = 140, 800, 200, 66, 30, 800, 1480
+        L, w, T, tam, ta, cw, ph_w, ph_top = 140, 800, 200, 66, 30, 800, 640, 900
     else:
-        L, w, T, tam, ta, cw, fim = 90, 900, 96, 74, 32, 880, 1300
-    c = grad_bg('B', (50, 66))
+        L, w, T, tam, ta, cw, ph_w, ph_top = 90, 900, 96, 74, 32, 900, 640, 700
+    c = grad_bg('B', (50, 70))
     c += kicker(kick, L, T, w=w)
     c += titulo(tit, L, T + 52, tam, w=w)
     y_apo = T + 52 + 2*round(tam*1.04) + 28
     c += apoio(apo, L, y_apo, ta, w=w)
-    ini = y_apo + 90
-    h = round(sh * cw / sw)
-    bloco, _ = imagem_card(arq, sw, sh, cw, (1080 - cw)//2, ini + (fim - ini - h)//2)
+    c += fone(SIN, ph_w, 540, ph_top, rola=rola_em(idx, 600)).replace("<div class=ph style='", "<div class=ph style='filter:brightness(.55);", 1)
+    top_card = ph_top - 150 if not tt else ph_top - 170
+    bloco, _ = imagem_card(arq, sw, sh, cw, (1080 - cw)//2, top_card)
     return c + bloco + pag(n, tt)
 
 def lateral(n, idx, kick, tit, apo, tt):
@@ -155,7 +155,7 @@ def final(tt):
     t = (f"<div class=titB style='position:relative;left:0;right:0;font-size:{tam}px;margin-top:52px;letter-spacing:-.035em;line-height:1.04'>"
          "Seu painel avisa.<br><span class=b>O MinhaMoto explica.</span></div><span class=lm></span>")
     s = f"<div class=apoB style='position:relative;left:0;right:0;font-size:{38 if tt else 42}px;margin-top:26px'>Baixe agora e entenda sua moto.</div>"
-    pr = "<div style='margin-top:44px'><span class=preco><i></i>R$19,90<small style='font-family:j500;font-size:.62em;opacity:.85'>/mês</small></span></div>"
+    pr = "<div style='margin-top:44px'><span class=preco><i></i>R$19,90<small style='font-family:j500;font-size:.62em;opacity:.85;margin-left:-.35em'>/mês</small></span></div>"
     pad = 140 if tt else 60
     corpo = f"<div style='position:absolute;left:{pad}px;right:{pad}px;top:{top}px;text-align:center'>{ic}{t}{s}{pr}</div>"
     se = f"<div style='position:absolute;left:0;right:0;top:{selos}px;text-align:center'><img src='file://{SELOS}' style='width:540px'></div>"
@@ -170,7 +170,7 @@ def lista(tt=False):
                     ['Com o motor quente, o líquido sai sob pressão.', 'Espere esfriar antes de mexer.'], tt),
         com_puxado(4, INJ, 'Atenção', ['Luz da injeção', 'não é sentença.'],
                    ['Dá pra chegar, sem forçar.', 'Depois, scanner pra ler o código.'], 'dir', tt),
-        lateral(5, BAT, 'Atenção', ['Luz da', 'bateria acesa:', 'não desligue', 'na rua.'],
+        lateral(5, BAT, 'Atenção', ['Luz da', 'bateria?', 'Não desligue', 'na rua.'],
                 ['Ela pode não estar', 'carregando. Desligou,', 'pode não ligar mais.'], tt),
         prova(tt),
         final(tt),

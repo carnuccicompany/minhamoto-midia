@@ -1,4 +1,6 @@
-> ⚠️ **23/11 · Léo:** estas telas vêm da rota de prévia (`/preview-visual`, dados fictícios) e **não servem mais pra peça nova**. Só entram telas capturadas do app real, logado. Ver DESIGN-MINHAMOTO.md (rodada 2 de 23/11).
+> ✅ **23/11 (tarde) · TELAS REAIS.** Os PNGs desta pasta agora são capturas das **rotas reais do app logado** (`_authenticated.*`, componentes `GaragemHome`, `SaudeOficial`, `SinaisOficial`, `ManutencaoOficial` etc.), código `05425c9` (17/11), com Supabase/assinatura simulados em memória e moto fictícia Minha Titan. Nada de prévia. Como refazer: `_gerador-real/LEIAME.md` (patch numa cópia do app; nunca no repo do app; nenhuma rede externa).
+> Telas: 01–16, 21–30 (sem 17–20, que eram cenários só da prévia). Rolagem: 01–16, 25, 27.
+> ~~Telas da rota `/preview-visual`~~ → substituídas em 23/11. O texto abaixo é histórico do gerador antigo.
 
 # Telas do app (geradas do código)
 

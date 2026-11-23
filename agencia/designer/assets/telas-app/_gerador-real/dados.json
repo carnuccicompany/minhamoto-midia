@@ -1,0 +1,460 @@
+{
+ "hist:honda-cg-160__titan__2022": [
+  {
+   "id": "srv-1",
+   "data": "2025-10-19",
+   "km": 17500,
+   "servico": "Troca da vela e do filtro de ar",
+   "pecas": "Vela de ignição + filtro de ar",
+   "valor": "110,00",
+   "obs": "",
+   "proxima": "",
+   "acao": "trocar"
+  },
+  {
+   "id": "srv-2",
+   "data": "2026-01-02",
+   "km": 19800,
+   "servico": "Troca do kit relação",
+   "pecas": "Corrente, coroa e pinhão",
+   "valor": "260,00",
+   "obs": "",
+   "proxima": "",
+   "itemChave": "kit-relacao",
+   "acao": "trocar"
+  },
+  {
+   "id": "srv-3",
+   "data": "2026-02-26",
+   "km": 21500,
+   "servico": "Troca dos pneus",
+   "pecas": "Pneu dianteiro e traseiro",
+   "valor": "480,00",
+   "obs": "",
+   "proxima": "",
+   "itemChave": "pneus",
+   "acao": "trocar"
+  },
+  {
+   "id": "srv-4",
+   "data": "2026-05-17",
+   "km": 24000,
+   "servico": "Revisão dos 24.000 km",
+   "pecas": "Checklist do manual e folga das válvulas",
+   "valor": "150,00",
+   "obs": "",
+   "proxima": "",
+   "itemChave": "valvulas",
+   "acao": "inspecionar"
+  },
+  {
+   "id": "srv-5",
+   "data": "2026-07-06",
+   "km": 25600,
+   "servico": "Pastilhas dianteiras e fluido de freio",
+   "pecas": "Pastilhas dianteiras + fluido DOT 4",
+   "valor": "150,00",
+   "obs": "",
+   "proxima": "",
+   "acao": "trocar"
+  },
+  {
+   "id": "srv-6",
+   "data": "2026-08-25",
+   "km": 27100,
+   "servico": "Troca de óleo e filtro",
+   "pecas": "Óleo 10W-30 + filtro",
+   "valor": "120,00",
+   "obs": "",
+   "proxima": "",
+   "itemChave": "oleo",
+   "acao": "trocar"
+  },
+  {
+   "id": "srv-7",
+   "data": "2026-10-21",
+   "km": 28900,
+   "servico": "Lubrificar e ajustar a corrente",
+   "pecas": "Lubrificante de corrente",
+   "valor": "35,00",
+   "obs": "",
+   "proxima": "",
+   "itemChave": "relacao-lubrificacao",
+   "acao": "lubrificar"
+  },
+  {
+   "id": "srv-8",
+   "data": "2026-11-17",
+   "km": 29620,
+   "servico": "Lavagem completa",
+   "pecas": "",
+   "valor": "45,00",
+   "obs": "",
+   "proxima": "",
+   "acao": "limpar"
+  }
+ ],
+ "fuel:honda-cg-160__titan__2022": [
+  {
+   "id": "ab-1",
+   "quando": "2026-09-11T18:20",
+   "km": 27570,
+   "litros": 7.6,
+   "valor": 45.52,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-central",
+   "posto": "Posto Central"
+  },
+  {
+   "id": "ab-2",
+   "quando": "2026-09-20T07:45",
+   "km": 27860,
+   "litros": 7.9,
+   "valor": 47.32,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-central",
+   "posto": "Posto Central"
+  },
+  {
+   "id": "ab-3",
+   "quando": "2026-09-29T12:10",
+   "km": 28150,
+   "litros": 7.9,
+   "valor": 47.32,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-central",
+   "posto": "Posto Central"
+  },
+  {
+   "id": "ab-4",
+   "quando": "2026-10-08T19:05",
+   "km": 28430,
+   "litros": 7.6,
+   "valor": 45.52,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-central",
+   "posto": "Posto Central"
+  },
+  {
+   "id": "ab-5",
+   "quando": "2026-10-17T08:30",
+   "km": 28700,
+   "litros": 7.3,
+   "valor": 45.19,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-avenida",
+   "posto": "Posto Avenida"
+  },
+  {
+   "id": "ab-6",
+   "quando": "2026-10-26T17:50",
+   "km": 28975,
+   "litros": 7.3,
+   "valor": 45.19,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-avenida",
+   "posto": "Posto Avenida"
+  },
+  {
+   "id": "ab-7",
+   "quando": "2026-11-04T13:15",
+   "km": 29250,
+   "litros": 7.2,
+   "valor": 44.57,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-avenida",
+   "posto": "Posto Avenida"
+  },
+  {
+   "id": "ab-8",
+   "quando": "2026-11-14T18:40",
+   "km": 29530,
+   "litros": 7.4,
+   "valor": 45.81,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-avenida",
+   "posto": "Posto Avenida"
+  },
+  {
+   "id": "ab-9",
+   "quando": "2026-11-23T07:40",
+   "km": 29800,
+   "litros": 7.1,
+   "valor": 43.95,
+   "tipo": "Gasolina comum",
+   "tanque": "cheio",
+   "postoId": "posto-avenida",
+   "posto": "Posto Avenida"
+  }
+ ],
+ "docs:honda-cg-160__titan__2022": [],
+ "docsinfo:honda-cg-160__titan__2022": {
+  "renavam": "01234567890",
+  "chassi": "9c2kc2200nr000123",
+  "cor": "Vermelha",
+  "proprietario": "Rafael Souza",
+  "vencimentoLicenciamento": "2027-04-12",
+  "seguradora": "Rota Segura Seguros",
+  "apolice": "RS-2026-004812",
+  "telefoneSeguro": "(11) 3333-4812",
+  "contatoEmergencia": "(11) 98765-4321"
+ },
+ "marcos:honda-cg-160__titan__2022": {
+  "24000|Linha de combustível": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Filtro de combustível (unidade)": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Acelerador": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Tubo de dreno do filtro de ar": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Vela de ignição": {
+   "km": 17500,
+   "data": "2025-10-19"
+  },
+  "24000|Folga das válvulas": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Óleo do motor": {
+   "km": 27100,
+   "data": "2026-08-25"
+  },
+  "24000|Tela do filtro de óleo": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Filtro centrífugo de óleo": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Marcha lenta": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Sistema de escapamento": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Nível do fluido de freio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Pastilhas/sapatas de freio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Sistema de freio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Interruptor da luz de freio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Facho do farol": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Embreagem": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Cavalete lateral": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Suspensões dianteira e traseira": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Porcas, parafusos e fixações": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Rodas": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Alinhamento, rolamentos e cubos das rodas": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Folga da coluna de direção": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Fluido da suspensão dianteira": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Buchas, rolamentos e eixo da suspensão traseira": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Articulações do manete e pedal de freio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Conjunto de travas": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Guia da corrente de transmissão": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Parafusos do suporte do motor e pedal de apoio": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Amortecedores e coxins": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Eixos das rodas": {
+   "km": 24000,
+   "data": "2026-05-17"
+  },
+  "24000|Alavancas de freio e embreagem": {
+   "km": 24000,
+   "data": "2026-05-17"
+  }
+ },
+ "garagem": [
+  "honda-cg-160__titan__2022"
+ ],
+ "bike:honda-cg-160__titan__2022": {
+  "km": 29800,
+  "itens": {
+   "oleo": {
+    "estado": "feito",
+    "ultimoKm": 27100,
+    "ultimaData": "2026-08-25"
+   },
+   "filtro-ar": {
+    "estado": "feito",
+    "ultimoKm": 17500,
+    "ultimaData": "2025-10-19"
+   },
+   "vela": {
+    "estado": "feito",
+    "ultimoKm": 17500,
+    "ultimaData": "2025-10-19"
+   },
+   "valvulas": {
+    "estado": "feito",
+    "ultimoKm": 24000,
+    "ultimaData": "2026-05-17"
+   },
+   "pneus": {
+    "estado": "feito",
+    "ultimoKm": 21500,
+    "ultimaData": "2026-02-26"
+   },
+   "pastilhas": {
+    "estado": "feito",
+    "ultimoKm": 25600,
+    "ultimaData": "2026-07-06"
+   },
+   "fluido-freio": {
+    "estado": "feito",
+    "ultimoKm": 25600,
+    "ultimaData": "2026-07-06"
+   },
+   "bateria": {
+    "estado": "naoSei"
+   },
+   "relacao-lubrificacao": {
+    "estado": "feito",
+    "ultimoKm": 28900,
+    "ultimaData": "2026-10-21"
+   },
+   "kit-relacao": {
+    "estado": "feito",
+    "ultimoKm": 19800,
+    "ultimaData": "2026-01-02"
+   }
+  },
+  "configurado": true,
+  "ultimaRevisaoKm": 27100,
+  "ultimaRevisaoData": "2026-08-25",
+  "observacoes": "",
+  "apelido": "Minha Titan",
+  "placa": "BRA2E19",
+  "fotoPath": "",
+  "leiturasKm": [
+   {
+    "data": "2025-10-19",
+    "km": 17500,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-01-02",
+    "km": 19800,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-02-26",
+    "km": 21500,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-05-17",
+    "km": 24000,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-07-06",
+    "km": 25600,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-08-25",
+    "km": 27100,
+    "origem": "manutencao"
+   },
+   {
+    "data": "2026-09-29",
+    "km": 28150,
+    "origem": "abastecimento"
+   },
+   {
+    "data": "2026-10-26",
+    "km": 28975,
+    "origem": "abastecimento"
+   },
+   {
+    "data": "2026-11-14",
+    "km": 29530,
+    "origem": "abastecimento"
+   },
+   {
+    "data": "2026-11-23",
+    "km": 29800,
+    "origem": "abastecimento"
+   }
+  ],
+  "mediaKmDiaInformada": 30,
+  "frequenciaLembrete": "semanal",
+  "ultimaVisita": "",
+  "kmUltimaVisita": 0,
+  "ultimoResumoVisto": ""
+ }
+}
