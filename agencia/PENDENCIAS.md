@@ -103,3 +103,4 @@ O Léo quer que os agentes tenham acesso a tudo, não só ao repositório. Hoje 
 - **Atenção do QG (24/11):** `scripts/insights.py` ganhou a chamada de alcance 28d por formato (só leitura); a coleta de 25/11 mostra `ig_alcance_28d_formato` em `dados/insights-2026-11-25.json` (ou o erro exato da Meta).
 
 - [ ] (26/11, Léo: "mais pra frente") Teste A/B MinhaMoto: landing → loja vs. campanha de app direto pra loja. Antes: OneLink AppsFlyer (pid=landing_meta) nos botões da landing, senão venda da landing aparece como orgânica. Critério: custo por teste iniciado / por compra no AppsFlyer, 7 dias, mesmo orçamento e criativos.
+- [24/11] Bug visual no app (iOS 1.0, achado pelo revisor do estúdio): quebra de linha separando número e unidade ("30.000 ⏎ km", "29.900 ⏎ km", "data · ⏎ km" no histórico). Pra o time do app avaliar (não mexer no código sem OK).
