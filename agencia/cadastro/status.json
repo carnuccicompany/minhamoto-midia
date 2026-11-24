@@ -1,6 +1,6 @@
 {
- "atualizado": "24/11/2026 14:10",
- "pct": 92.0,
+ "atualizado": "24/11/2026 14:16",
+ "pct": 93.8,
  "categorias": [
   {
    "id": "estrutura",
@@ -176,11 +176,13 @@
     {
      "id": "sdk-appsflyer",
      "titulo": "SDK do AppsFlyer dentro do app (Davi)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "parcial",
+     "parcial": 0.7,
+     "nota": "24/11: SDK no ramo fix/codigo-amigo (cadastro, ID pro RevenueCat, ATT, política nova). Falta: entrar na build, chave no Codemagic, integração RevenueCat→AppsFlyer, eventos onboarding/paywall/moto.",
+     "valor": 0.7
     }
    ],
-   "pct": 68.0,
+   "pct": 75.0,
    "feitos": 6,
    "total": 10
   },
@@ -411,7 +413,7 @@
   },
   {
    "data": "24/11/2026",
-   "pct": 92.0
+   "pct": 93.8
   }
  ]
 }
