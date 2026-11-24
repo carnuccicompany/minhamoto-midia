@@ -64,6 +64,12 @@
 - **Cena tem que mostrar o que o texto diz** (ex.: "o corretor travou" com corretor confiante ❌). Não repetir a mesma cena de banco (corretor olhando pro teto, casal no sofá) em muitas peças da mesma rodada. · 24/11
 - **Páginas do Mapa inteiras na largura, sem cortar nas laterais; nada de páginas fantasmas sobrepostas.** · 24/11
 - **Áudio final 48 kHz em todas.** · 24/11
+- **Página impressa: zoom no máximo 1,0, as duas margens visíveis do primeiro ao último frame.** ❌ "Consórcio não é financiamento" e "Na planta" cortadas em 6 peças (rodada 2). · 24/11
+- **EQ da Gravação Dia 2 se confere por faixa (graves/médios a no máximo 3 dB do take do CTA), não só pelo brilho geral.** · 24/11
+- **Nada de frame congelado com a voz andando.** · 24/11
+- **Bolha/chip a pelo menos 120 px do queixo.** · 24/11
+- **Não usar o mesmo clipe com o mesmo texto em duas peças do mesmo lote.** · 24/11
+- **Cena de assinatura de contrato = venda fechada:** nunca embaixo de texto de dúvida/insegurança. · 24/11
 
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
