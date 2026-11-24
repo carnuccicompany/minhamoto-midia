@@ -66,3 +66,6 @@ APRESENTANDO IMOVEL (3 versões), CONVERSANDO COM CLIENTE (2), CONVERSANDO, DOC 
 - Drive: doc "angulos// material corretores" (15 ângulos com hook).
 - PC `6 FIGURES\`: `ÂNGULOS DE CRIATIVOS.docx` (9 tipos de ângulo), `CRIATIVOS ESTATICOS – ESTRUTURA CHAT.docx` (roteiro de briefing pra gerar estáticos), `ANOTAÇÕES TRAFEGO PAGO.docx` (estrutura de teste e escala).
 - PC: `CÓDIGOS IMPORTANTES CORRETORES.docx` contém token da API da Meta, código do Pixel da Meta e script do pixel da UTMify. **Nunca copiar o conteúdo para nenhum repositório nem para o chat.**
+
+## Achado 24/11
+- No Drive, pasta de brutos do Dia 2: "Gravação AP Dia 2.m4a" (47 s) = narração limpa do corpo do Dia 2, sem trilha (os prontos do Dia 2 têm música por baixo). Voz dela confirmada pelo tom. Usada nos corpos do EST7, EST8 e EST10. Os 20 clipes de vídeo do Dia 2 estão só no Drive.
