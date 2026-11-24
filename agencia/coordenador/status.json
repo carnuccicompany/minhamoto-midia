@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T03:40:00-03:00",
+ "rodada": "2026-11-24T04:10:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:09 SUCCEEDED 03h10; :39 rodando agora)",
+  "coordenador": "ok (:39 SUCCEEDED 03h39; :09 rodando agora)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23; próx 19h23 24/11)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
@@ -21,8 +21,8 @@
   "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)",
   "MM: Radar de mercado semanal": "ok (próx 24/11 09h37)",
   "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 00h13 BRT; próx 9h13)",
-  "MM: Coordenador 24h · :39": "ok (SUCCEEDED 02h39 BRT)",
-  "MM: Coordenador 24h · :09": "ok (SUCCEEDED 03h10 BRT)"
+  "MM: Coordenador 24h · :39": "ok (SUCCEEDED 03h39 BRT)",
+  "MM: Coordenador 24h · :09": "rodando (04h10)"
  },
  "publicacao_hoje": {
   "ultimo_ok": "S04 (21h03 BRT 23/11)",
@@ -33,7 +33,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha; vigia de segredos ok; Conselho 23/11 e Folha 20/11 ok"
+  "nenhuma: sem falha; vigia de segredos ok; Conselho 23/11 19h23 e Folha 20/11 ok; extras sem novidade"
  ],
  "alertas": []
 }
