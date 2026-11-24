@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T11:45:00-03:00",
+ "rodada": "2026-11-24T12:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,16 +8,16 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:09 SUCCEEDED 10h15; :39 rodando agora, esta rodada)",
+  "coordenador": "ok (:39 SUCCEEDED 11h39; :09 rodando agora, esta rodada)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23; próx 19h23 24/11)",
-  "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11 17h47)",
+  "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
   "MM: Mesa de Demandas": "ok (SUCCEEDED 10h37 BRT; próx 14h37)",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único disparou 10h13",
   "MM: Vigia do Gmail": "ok (SUCCEEDED 08h48 BRT; próx 13h47)",
-  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 21h02 BRT 23/11; próx 12h02 24/11)",
+  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 12h02 BRT 24/11; próx 15h02)",
   "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)",
   "MM: Radar de mercado semanal": "ok (SUCCEEDED 09h37 BRT 24/11)",
   "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 09h15 BRT; próx 13h13)",
@@ -28,15 +28,15 @@
   "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)"
  },
  "publicacao_hoje": {
-  "ultimo_ok": "S04 (21h03 BRT 23/11)",
-  "proximo": "12h02 BRT 24/11 (ainda não venceu)"
+  "ultimo_ok": "E01 (12h04 BRT 24/11)",
+  "proximo": "15h02 BRT 24/11 (ainda não venceu)"
  },
- "dias_de_fila": 21.25,
- "nao_publicados": 85,
+ "dias_de_fila": 21.0,
+ "nao_publicados": 84,
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: todas SUCCEEDED/agendadas; produção diária desativada como previsto; vigia de segredos ok; fila 85/4=21.25 dias; 9:16 113/113; links painel/tiktok ok; próximo post 12h02 BRT"
+  "nenhuma: todas SUCCEEDED/agendadas; produção diária desativada como previsto; vigia de segredos ok; fila 84/4=21 dias; 9:16 113/113; pendentes 0"
  ],
  "alertas": []
 }
