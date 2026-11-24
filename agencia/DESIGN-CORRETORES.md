@@ -50,6 +50,21 @@
 - **Rodada de teste:** 6 criativos por produto. · 24/11
 - **Entrega:** ~~salvar direto em ESTUDIO 23-11 no PC~~ → substituída em 24/11: só vai pro PC o que o Léo aprovou e mandou salvar; antes disso, mostrar no chat. Peça aprovada não vai pra pasta de documentos dele: vai pra outro lugar (perguntar onde na 1ª aprovação). Cortes de trabalho: liberados SÓ em `ESTUDIO 23-11\_trabalho\`. Os 3 pilotos já salvos ficam lá. · 24/11
 
+
+## 4d. Revisão independente (24/11): regras novas pra não repetir
+- **Áudio: nunca emendar trechos com silêncio zerado.** Entre takes, usar o som ambiente do próprio take + crossfade de 30 a 60 ms. ❌ buracos de 100–160 ms nas 10 peças de 24/11 (`pc.silencio()` do motor_novo). · 24/11
+- **Gravação limpa do Dia 2 tem timbre mais escuro:** equalizar pra casar com os takes de câmera antes de emendar. · 24/11
+- **Split-screen: a legenda nunca passa na divisória (y 900–1010).** Parece texto riscado. ❌ EST4-A/B/C. · 24/11
+- **CTA: usar o 4de4 ("clique em Saiba Mais e tenha acesso vitalício…").** O 2de2 tem "e tem acesso" (concordância). E "Saiba Mais" nunca quebra entre dois grupos de legenda. · 24/11
+- **Um ângulo só, também entre texto e voz:** o texto na tela (história, quiz) tem que contar a mesma coisa que ela está falando. ❌ EST5-A/B, EST2-C. · 24/11
+- **Chips sem imperativo que soe "tu":** "Você responde na hora", "Você conduz…". · 24/11
+- **Correspondente:** não opor "vou ver com o correspondente" × "conduz a própria venda" (sugere dispensar o correspondente). A promessa é entender o processo, não substituir ninguém. · 24/11
+- **Primeiro frame forte:** rosto inteiro, de frente, com texto de gancho já na tela. ❌ EST9-A torta, EST2-B careta, EST8-A sem texto. · 24/11
+- **Gancho nos 3 primeiros segundos chama o corretor ou traz a dor/ganho.** Contador sozinho não é gancho. ❌ EST10-A. · 24/11
+- **Cena tem que mostrar o que o texto diz** (ex.: "o corretor travou" com corretor confiante ❌). Não repetir a mesma cena de banco (corretor olhando pro teto, casal no sofá) em muitas peças da mesma rodada. · 24/11
+- **Páginas do Mapa inteiras na largura, sem cortar nas laterais; nada de páginas fantasmas sobrepostas.** · 24/11
+- **Áudio final 48 kHz em todas.** · 24/11
+
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
 - Só material físico folheado + voz em off (lote TESTES 1).
