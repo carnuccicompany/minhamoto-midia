@@ -1,0 +1,26 @@
+{
+  "id": "D-20261124-lojas-1",
+  "de": "lojas",
+  "para": "dados",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Alerta quando a coleta de avaliações passar de 48 h sem rodar",
+  "por_que": "A API do Play parece mostrar só ~1 semana de avaliações (4 das 6 já vistas sumiram; ver entregas/D-20261123-dados-3.md); coleta parada 7 dias perde avaliação (e 1★) pra sempre. As tarefas pararam por limite de uso em 21-23/11 (D-20261122-dados-3). Sem avaliação o 1★ não é respondido e a nota 4,7+ não sobe.",
+  "pronto_quando": "Regra escrita em agencia/demandas/entregas/D-20261124-lojas-1.md: de onde ler a hora da última coleta (coletado_em de dados/avaliacoes/ultimas.json), limite de 48 h, quem é avisado e como; sem mexer em script antes do OK do Davi.",
+  "prioridade": "P3",
+  "prazo": "2026-12-01T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T10:35:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T10:35:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-24T10:35:00-03:00"
+}

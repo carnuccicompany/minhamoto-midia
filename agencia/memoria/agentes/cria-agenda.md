@@ -30,3 +30,8 @@
 - Nova iniciativa (r1 23/11): A1 e B1 (vídeos já prontos, com preço e lojas) como os 2 primeiros anúncios, o número escolhe A ou B. Demandas: D-20261123-cria-2 (Léo, sim/não), -3 (Stark confere telas), -4 (Escobar, slot e utm_content). Critério: 2 criativos com ID próprio no ar na 1ª semana paga; prova final: Criativo campeão. Se o Léo disser não até 27/11, registro o motivo como regra e volto ao Lote zero em texto.
 - Cancelei D-20261120-cria-2 (dado chegou). Cobrar: cria-3 (Stark/Davi 27/11), D-20261122-cria-3 (Greco, biblioteca de anúncios, 29/11), D-20261123-cria-1 (reposição, rebaixada).
 - Perguntas ao Léo: A1/B1 como anúncio; UGC dele/Davi pro app; o que fez o assinante pagar.
+
+## Atualização 24/11
+- Entregues (aguardam aceite): D-20261123-mkt-2 (Cardone), D-20261123-lojas-3 (Jeff), D-20261123-mercado-2 (Sun Tzu).
+- Apostas novas: (a) garantia de 30 dias no CTA reduz o CPA dos Corretores; critério: V2 contra piloto e V1 por estilo, lida pelo Turing em %, só depois de volume mínimo da trafego; se o Léo aceitar o piloto gêmeo, a leitura vira causal. (b) série IPVA 2027 antes de 14/12 cobre a janela de busca de janeiro.
+- Aguardando: Léo (sim/não: V2 = piloto com garantia); Shelby (promessa e termos da garantia); Davi (build 23/11); Stark (D-20261123-cria-3 e D-20261124-cria-1); Turing (D-20261124-cria-2).

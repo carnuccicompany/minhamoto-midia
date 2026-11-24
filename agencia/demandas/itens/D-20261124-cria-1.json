@@ -1,0 +1,25 @@
+{
+  "id": "D-20261124-cria-1",
+  "de": "cria",
+  "para": "produto",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Conferir 3 telas dos prints da loja (Lista para revisão, Saúde, Histórico) contra a build de 23/11",
+  "por_que": "Os 3 prints de D-20261123-lojas-3 usam telas de 18/11 (commit bb2ad21). Prints são o elo visita→download (assinante pago novo); tela desatualizada na loja é risco de reprovação e de avaliação ruim. A D-20261123-cria-3 só cobre A1/B1.",
+  "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261124-cria-1.md, 1 linha por tela (10, 02 e 06): existe igual, existe diferente (o que mudou) ou não existe, com o arquivo do código lido; dizer também se há tela do plano de revisão por km e tempo que sirva pro print 1. Nada mexe no app.",
+  "prioridade": "P3",
+  "prazo": "2026-12-01T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T10:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    }
+  ]
+}

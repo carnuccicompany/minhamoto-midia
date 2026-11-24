@@ -1,7 +1,7 @@
 {
   "id": "D-20261123-dados_relatorio-semanal-1",
   "de": "dados:relatorio-semanal",
-  "para": "dados:coletor-de-metricas",
+  "para": "dados",
   "copia": [
     "dados"
   ],
@@ -20,6 +20,11 @@
       "quando": "2026-11-23T23:35:00-03:00",
       "quem": "dados:relatorio-semanal",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T10:30:00-03:00",
+      "quem": "coordenador",
+      "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
     }
   ],
   "atualizada_em": "2026-11-23T23:35:00-03:00"

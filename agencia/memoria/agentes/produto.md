@@ -51,3 +51,13 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 - fiz: produto-r1.md; criei D-20261123-produto-1 (Jobs, página de decisão pro Davi) e -2 (Bezos, vigia de avaliações pós-build); aceitei D-20261122-produto-1, D-20261120-produto-3 (e a produto-2 do Turing já estava aceita); atualizei produto-agenda.md.
 - aprendi: RevenueCat android-paywall-gap (https://www.revenuecat.com/blog/engineering/android-paywall-gap): download>pago em 35 dias, mediana Android 0,9% x iOS 2,6%; a diferença está na entrada do funil; média de apps com teste, não é nosso dado. Avaliações 23/11: 7 de 8 com 5★, 1 de 8 1★ (sync Play 1.0.1). Checklist pré-build ainda lista remover VITE_MM_AVISO_TESTE.
 - pendente: resposta do Davi (produto-3); proposta escrita pro Davi (Jobs até 26/11); 1ª leitura em % após a build com SDK; Apple HIG bloqueado.
+
+## 2026-11-24 (rodada solo)
+- fiz: reentreguei D-20261123-mercado-3 (devolvida: sem tela do selo, prova é o código; versão 1.0.1 no código de 17/11) e entreguei D-20261123-cria-3 (tabela A1/B1: 6 de 8 cenas com tela existem iguais; aviso "antes do prazo"/"na hora certa" é promessa maior que o app). Criei D-20261124-produto-1 (Shelby: 2 perguntas sim/não da build de 23/11 no pacote do Davi) e -2 (Disney: trocar a frase do aviso).
+- aprendi: o aviso de previsão (planejador.ts) dispara no dia projetado em que o km do marco chega, pela média, não com antecedência; o lembrete dispara na data/km que o usuário marcou. Telas de telas-app são do commit bb2ad21 (11/11), o código lido é 05425c9 (17/11), e o clone local só tem histórico desde 15/11. Testes de notificação usam plugin simulado.
+- erro a não repetir: o mercado devolveu por faltar prova visual e número de versão; entregar prova e versão logo na 1ª vez.
+- pendente: Davi (build de 23/11 não conferida, repositório sem ela); produto-1 do Jobs até 26/11; Apple HIG bloqueado.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente: a frase "antes do prazo" foi achada antes de ir ao ar. Proposta lançada segue com o Jobs.
+- **Item que quero:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale o que tem prova.

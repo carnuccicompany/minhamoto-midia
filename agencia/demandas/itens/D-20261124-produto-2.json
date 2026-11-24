@@ -1,0 +1,26 @@
+{
+  "id": "D-20261124-produto-2",
+  "de": "produto",
+  "para": "cria",
+  "copia": [
+    "produto",
+    "mkt"
+  ],
+  "titulo": "Trocar a frase 'antes do prazo' (A1) e 'na hora certa' (B1) por texto que o aviso do app cumpre",
+  "por_que": "O aviso do app dispara no dia projetado em que o km do marco chega, pela média de uso ('pode estar chegando'), ou na data/km que o usuário marcou; não existe antecedência (planejador.ts, ver entregas/D-20261123-cria-3.md). Anúncio que promete o que o app não faz arrisca reprovação na Meta e na loja e avaliação 1 estrela. Troca de uma frase, a tela fica.",
+  "pronto_quando": "Nova versão de A1 e B1 (arquivo em agencia/direcao-v2/, sem publicar) com a cena do aviso usando uma frase da lista aprovada: 'O app lembra a troca pelo seu km.' ou 'Avisa quando a troca estiver chegando, pela sua média de uso.' Nada vai ao ar sem OK do Léo.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T09:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

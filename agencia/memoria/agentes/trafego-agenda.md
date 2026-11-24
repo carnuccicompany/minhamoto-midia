@@ -36,3 +36,8 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Em curso: D-20261123-trafego-2 (Turing, linha de base "MM - Curtos" em índice, 26/11), -3 (Turing, eventos por semana em % de 50, 30/11), -1 (Léo, nomes, bloqueada). Aceita: D-20261122-trafego-3.
 - Devo: D-20261120-mkt-2 (bloqueada, leitura do gerenciador). Esperando: dados-1 e chave de sandbox (dados_relatorio-semanal-1), vencidas hoje.
 - Perguntas pro Léo: campanha MM - Curtos ainda ativa? leitura do gerenciador? teto registrado no privado vale pra semana 1? (BM e "campanha rodando" já respondidos em 07-canais e 06-historico.)
+
+## Atualização 24/11/2026
+- Entregues: D-20261123-dados-6 (proposta de teste pago mínimo, sim/não de verba pro Léo no arquivo) e D-20261123-mkt-3 (regra dos 3 estilos em % do custo de outubro). Criada D-20261124-trafego-1 (Turing: vendas/dia e custo por hora dos Corretores em índice).
+- Meta pessoal mantida: 1º número de campanha até 30/11, só com SDK e paywall_view na build. Aposta: teste de 2 ângulos só iOS, n 1.470 por variante a 50% de diferença (cenário 5%), troco pela taxa própria na 1ª leitura.
+- Em curso: trafego-1 (Léo, nomes, bloqueada), trafego-3 (Turing, eventos/semana em % de 50, 30/11), trafego-1 de 24/11 (Turing). Devo: D-20261120-mkt-2 (bloqueada).

@@ -1,0 +1,27 @@
+{
+  "id": "D-20261124-trafego-1",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "trafego",
+    "master"
+  ],
+  "titulo": "Vendas por dia e custo por venda por hora dos Corretores em indice (outubro=100), pra converter o n do teste dos 3 estilos em dias",
+  "por_que": "A regra de D-20261123-mkt-3 pede ~100 vendas por estilo (~300 no teste) e eu nao consigo dizer quantos dias isso leva nem se o teste cabe: so tenho -43% de vendas/dia em novembro (agencia/conhecimento/09-numeros.md), sem base. Sem esse numero o EXP-20261123-1 comeca sem saber se termina.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-1.md com (1) vendas por dia dos ultimos 14 dias em indice (primeiro dia=100) e a media, (2) custo por venda por faixa de horario (madrugada, 7h-9h, 13h, 20h-21h, resto) em indice sobre outubro=100, (3) dias que ~300 vendas levariam nesse ritmo, dito em dias e nao em R$. Fonte UTMify (dados/utmify) citada; nenhum R$ nem absoluto.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T10:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-24T10:00:00-03:00"
+}

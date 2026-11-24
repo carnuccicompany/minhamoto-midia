@@ -31,3 +31,7 @@
 - Dossiê de Concorrentes: D-20261123-mercado-1 (Sun Tzu, 25/11 12h) alimenta D-20261123-master-dossie-2 (25/11 18h). Fato novo: MotorManage grátis pra 2 motos, sem anúncio, catálogo de 42.000 modelos.
 - Prova de que errei: as 4 pautas de IPVA não passarem da mediana de salvamento+compartilhamento/alcance da linha Dicas e hacks, quando o insight por post voltar (D-20261123-dados-4).
 - Pendente: meta em número, RevenueCat/SDK, resposta do Léo às 3 perguntas da r1 de 23/11.
+
+## Atualização 24/11/2026
+- Dossiê de Concorrentes entregue ao Shelby (prazo 25/11 18h). Risco: 4 de 5 preços datados de 22/11 e 24/11; reconferir quando a App Store abrir.
+- Prova de que errei: se a reconferência mostrar mudança de preço do Drivvo ou MotorManage, a tabela vira desatualizada.

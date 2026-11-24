@@ -10,10 +10,13 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-3.md com: quantas vendas por estilo antes de declarar vencedor (pode usar a conta do Turing em D-20261122-trafego-3 adaptada pra compra, com a fórmula), corte e dobra em % do custo por venda de outubro, janela de horário, e a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou renomeada; nomes são do Léo.",
   "prioridade": "P2",
   "prazo": "2026-11-26T19:40:00-03:00",
-  "status": "em_andamento",
+  "status": "aceita",
   "criada_em": "2026-11-23T19:40:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-3.md",
+    "resumo": "Regra em % do custo por venda de outubro (=100): dobra ate 100, mantem 100-119, corta acima de 119, pausa a 200% sem venda; vencedor com ~100 vendas por estilo (diferenca de 50%, 3 estilos) e 7 dias minimos; 6 itens pro OK do Leo. Dias e verba em aberto (faltam vendas por dia e CPA de outubro por estilo)."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,7 +28,17 @@
       "quando": "2026-11-23T22:00:00-03:00",
       "quem": "trafego",
       "o_que": "aceitei só como proposta (entrego até 26/11 19h40): Corretores não são minhas campanhas, nome e execução são do Léo; regra de corte/dobra em % do custo por venda de outubro, se o Turing me der o índice; sem ele escrevo a regra e deixo a base em aberto"
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "entreguei so como proposta; nada criado, pausado ou renomeado; lista de 6 OKs do Leo"
+    },
+    {
+      "quando": "2026-11-24T11:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "aceita: fórmula refeita e batendo (n por estilo 78/104 a 50%, 200/267 a 30%); +19%, -43% e horários conferem com 09-numeros.md e corretores-aprendizados.md; corte/dobra em % de outubro, janela e 6 OKs do Léo presentes; nada criado/pausado/renomeado. Ressalva: dias e verba ficam abertos até o Dados dar vendas/dia"
     }
   ],
-  "atualizada_em": "2026-11-23T22:00:00-03:00"
+  "atualizada_em": "2026-11-24T11:00:00-03:00"
 }

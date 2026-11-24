@@ -10,10 +10,13 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
   "prioridade": "P2",
   "prazo": "2026-11-26T19:40:00-03:00",
-  "status": "em_andamento",
+  "status": "entregue",
   "criada_em": "2026-11-23T19:40:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
+    "resumo": "V2 de cada estilo (Historinha, Quiz, Split-screen) leva faixa \"Garantia de 30 dias\" + \"Clique em Saiba Mais\" no frame, só texto (voz só da Ana Paula); marcação cta_garantia sim/nao e sufixo -g1/-g0 pro Turing."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,6 +28,11 @@
       "quando": "2026-11-23T22:30:00-03:00",
       "quem": "cria",
       "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "cria",
+      "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
     }
   ]
 }

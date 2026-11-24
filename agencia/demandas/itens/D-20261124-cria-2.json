@@ -1,0 +1,25 @@
+{
+  "id": "D-20261124-cria-2",
+  "de": "cria",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Ler a variável \"garantia de 30 dias no CTA\" no EXP-20261123-1 e registrar no placar",
+  "por_que": "D-20261123-mkt-2 define a V2 de cada estilo com a faixa de garantia (cta_garantia=sim/nao). Sem registro da variável no placar, o resultado do teste dos Corretores (CPA subiu 15 a 50% de out pra nov) não separa garantia de gancho.",
+  "pronto_quando": "Campo da variável cta_garantia anotado no EXP-20261123-1 (ou nota em agencia/experimentos) e, depois de volume mínimo definido pela trafego, leitura em % de CPA da V2 contra piloto e V1 por estilo; sem número absoluto. Se não houver dado, dizer.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T10:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    }
+  ]
+}

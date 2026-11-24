@@ -10,16 +10,29 @@
  "pronto_quando": "Em agencia/conhecimento/04-concorrentes.md, 'Preço de cada um?' e 'O que eles fazem melhor que a gente?' marcadas [x], com link oficial (lojas/sites) e data da consulta, pros principais concorrentes do MinhaMoto (Drivvo e apps de moto/veículo)",
  "prioridade": "P2",
  "prazo": "2026-11-25T18:00:00-03:00",
- "status": "aberta",
+ "status": "aceita",
  "criada_em": "2026-11-23T17:45:00-03:00",
  "fio": null,
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-master-dossie-2.md",
+  "resumo": "As 2 perguntas de 04-concorrentes.md estão [x] com link e data dos 5 apps (Drivvo, MotoMainte, MotorManage, Strox, KyroTune). 4 de 5 preços são leituras de 22/11 e 24/11 porque a App Store não abriu; está dito."
+ },
  "cobrancas": 0,
  "historico": [
   {
    "quando": "2026-11-23T17:45:00-03:00",
    "quem": "master",
    "o_que": "criou (dossiês: perguntas que os agentes respondem com fonte)"
+  },
+  {
+   "quando": "2026-11-24T09:00:00-03:00",
+   "quem": "mercado",
+   "o_que": "entregou: dossiê fechado com links e datas; App Store bloqueada de novo, sem preço novo e sem chute"
+  },
+  {
+   "quando": "2026-11-24T10:00:00-03:00",
+   "quem": "master",
+   "o_que": "aceitou: as 2 perguntas estao [x] com link oficial e data pros 5 apps; 4 de 5 precos sao leituras de 22/11 e 24/11 (App Store bloqueada), ditas como tal, sem chute. Pendencia fora do pronto_quando: Sun Tzu reconferir os 4 precos quando a App Store abrir"
   }
  ]
 }

@@ -10,10 +10,13 @@
   "pronto_quando": "3 imagens-rascunho (png) em agencia/demandas/entregas/ com o id da demanda no nome, usando prints reais da versão nova, moto simulada, sem modelo, sem 'grátis'/'teste', sem estética nova (direção A/B não liberada); lista dos tamanhos exigidos por cada loja só se confirmada em fonte oficial, senão dito. Nada publicado nem subido em loja.",
   "prioridade": "P3",
   "prazo": "2026-11-30T21:00:00-03:00",
-  "status": "em_andamento",
+  "status": "entregue",
   "criada_em": "2026-11-23T21:10:00-03:00",
   "fio": "F-002",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-lojas-3-print1.png",
+    "resumo": "3 rascunhos png (1290x2796) da variação A com telas 10, 02 e 06 do app; PROVISÓRIOS: telas de 18/11, anteriores à build de 23/11."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,6 +28,11 @@
       "quando": "2026-11-23T22:30:00-03:00",
       "quem": "cria",
       "o_que": "aceitei com ressalva: rascunho só com telas conferidas contra a build de 23/11 (D-20261123-cria-3, Stark); sem essa conferência entrego o rascunho marcado como provisório."
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "cria",
+      "o_que": "entregue como rascunho provisório: telas conferidas só contra o repositório de telas, não contra a build de 23/11; tamanhos oficiais das lojas não confirmados (sem acesso); nada subido."
     }
   ]
 }

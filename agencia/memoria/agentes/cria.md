@@ -60,3 +60,15 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - recebi: nada novo do Léo.
 - pendente: Léo (A1/B1, A/B 27/11); Stark (telas e 3 fatos); Escobar (cria-2 aceito, cria-4 novo); Greco (cria-3, 29/11); resposta do Fogg ao run de 12h.
 - sugestão de memória pro main: o Léo pode ter interesse em UGC dele/Davi (Corretores: expert falando vende), pergunta 2 da r1.
+
+## 2026-11-24 · Rodada de demandas
+- fiz: entreguei D-20261123-mkt-2 (garantia de 30 dias no CTA da V2 de cada estilo; só texto no frame, voz só da Ana Paula; marcação cta_garantia e sufixo -g1/-g0), D-20261123-lojas-3 (3 pngs provisórios da variação A, telas 10, 02, 06) e D-20261123-mercado-2 (4 pautas IPVA 2027 SP no BANCO.md, 18/12 a 09/01). Criei D-20261124-cria-1 (produto, conferir 3 telas dos prints na build de 23/11) e -2 (dados, registrar a variável da garantia no placar).
+- aprendi: (1) o teste de 9 criativos com ganchos diferentes mistura garantia e gancho: leitura só direcional; isolar custa trocar um gancho por estilo (pergunta sim/não ao Léo no texto da mkt-2, não bloqueia); (2) a tela 10 mostra consumíveis do modelo, não o plano por km: risco de legenda prometer mais que a tela; (3) proxy bloqueou Agência SP, páginas das lojas e a página dos Corretores: datas do IPVA além de final 1 (11/01) e final 0 (22/01) não existem no repositório e não inventei.
+- pendente: Shelby (check de promessa e termos da garantia na Kavoo); Léo (isolar garantia, sim/não); Davi (build 23/11, pacote produto-3); Stark (cria-3 e cria-1 de 24/11); Turing (cria-2 de 24/11).
+- sugestão pro main: confirmar com o Léo os termos da garantia de 30 dias dos Corretores (reembolso total?).
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor da Semana e depois Diretor do Mês; aceite alto nas 3 entregas desta rodada.
+- **Conquista que estou perseguindo:** **Criativo campeão** (1 criativo 7 dias no custo-alvo, 10+ assinantes). A garantia no CTA é mais uma variável pra chegar lá nos Corretores.
+- **Item que quero:** o **Dom Pérignon**. Lendário: a **Ducati Panigale V4 S**.
+- **Regra que eu sigo:** só vale o que tem prova.

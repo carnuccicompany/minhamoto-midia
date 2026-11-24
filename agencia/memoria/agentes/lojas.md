@@ -62,3 +62,14 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: Play Console permite 1 experimento de gráficos por app (ícone, feature graphic, screenshots) ([fonte](https://support.google.com/googleplay/android-developer/answer/12053285)). Coleta de 23/11 20h14: n=8, média 4,5 (Play 3,0 com n=2; App Store 5,0). apps.apple.com não abriu (WebFetch sem permissão); developer.apple.com idem hoje.
 - recebi: D-20261123-master-dossie-1 (25/11) e D-20261123-dados-3 (26/11).
 - pendente: dossiê do cliente (25/11); OK do Léo no 1★ ec124592; domínios das lojas; nota oficial do Play.
+
+## 2026-11-24 10:40 · Rodada de demandas
+- fiz: entreguei D-20261123-dados-3 (proposta de historico.jsonl + estado.json, chave loja+id, eventos nova/nota_mudou/editada, sem texto nem autor, semeado com respostas.json). Criei D-20261124-lojas-1 (dados: alerta de coleta parada >48 h).
+- aprendi: respostas.json guarda 6 avaliações do Play já vistas; a coleta de 24/11 só devolve 2: 4 saíram da janela (explica o "3 para 2"). Das 6, 3 eram 1★. developers.google.com e developer.apple.com seguem bloqueados (proxy/WebFetch): a janela de 7 dias do reviews.list ficou como "a conferir", não afirmei como fato. Média da loja inclui estrelas sem texto; a da API não: preciso da nota oficial do Console.
+- pendente: sim/não do Davi pra implementar o histórico; nota oficial do Play/App Store; OK do Léo no 1★ ec124592 e nos domínios das lojas.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor do Mês.
+- **Conquista:** Nota subiu; agora com caminho: histórico acumulado + nota oficial como base.
+- **Item:** Creed Aventus.
+- **Regra:** só vale o que tem prova; fonte bloqueada vira "a conferir", nunca fato.

@@ -29,3 +29,8 @@
 - Novas demandas: D-20261123-lojas-2 (Turing, base iOS, 26/11) e D-20261123-lojas-3 (Disney, arte rascunho, 30/11).
 - Devo: D-20261123-master-dossie-1 (voz do cliente, 25/11).
 - Pendências do Léo: domínios das lojas, nota oficial do Play, OK do 1★ ec124592.
+
+## Atualização 24/11
+- Entregue D-20261123-dados-3 (histórico de avaliações); aguarda sim/não do Davi pra implementar. Criada D-20261124-lojas-1 (alerta de coleta parada, Turing, 01/12).
+- Achado: o Play já perdeu 4 de 6 avaliações conhecidas por saírem da janela; "nota subiu" só se prova com histórico acumulado + nota oficial do Console (pendente com o Léo).
+- Pendências do Léo: domínios das lojas, nota oficial, OK do 1★ ec124592. Do Davi: histórico de avaliações.

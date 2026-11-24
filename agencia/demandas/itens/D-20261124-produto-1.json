@@ -1,0 +1,25 @@
+{
+  "id": "D-20261124-produto-1",
+  "de": "produto",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Pacote do Davi: somar 2 perguntas sim/não sobre a build de 23/11 (documento vencendo e telas dos vídeos A1/B1)",
+  "por_que": "As séries de IPVA (D-20261123-mercado-2) e os vídeos A1/B1 só podem prometer 'avisa na Garagem' e mostrar histórico, saúde e notificações se a build de 23/11 não mudou isso. O código lido é de 17/11 (versão 1.0.1) e o pacote atual (D-20261123-master-pacote-davi) não pergunta isso. Promessa que o app não cumpre derruba conversão do instalado ao pago e vira avaliação ruim (08-regras.md).",
+  "pronto_quando": "Pacote do Davi com 2 itens sim/não: (1) A build de 23/11 mantém igual o selo 'Documento vencendo' da Garagem (licenciamento, 30 dias) e continua sem notificação push de documento? (2) A build de 23/11 mantém igual as telas Histórico, Saúde e Notificações usadas em A1 e B1? Em cada item, 'não' vira pedido de descrição do que mudou. Detalhe em entregas/D-20261123-mercado-3.md e D-20261123-cria-3.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T09:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    }
+  ]
+}

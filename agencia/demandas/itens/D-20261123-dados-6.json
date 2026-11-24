@@ -11,10 +11,13 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-dados-6.md com 1 teste, 2 variantes, a unidade (paywall_view), o n mínimo por variante da trafego-3, o nome de campanha e UTM no padrão fechado, e a pergunta sim/não pro Léo sobre verba; nenhuma campanha criada nem dinheiro gasto.",
   "prioridade": "P2",
   "prazo": "2026-11-26T21:00:00-03:00",
-  "status": "em_andamento",
+  "status": "aceita",
   "criada_em": "2026-11-23T21:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados-6.md",
+    "resumo": "1 teste de 2 ângulos (CR-eco-01 x CR-seg-01), só iOS, unidade paywall_view, n de 1.470 por variante no cenário 5% e 50% de diferença (3.825 se a base for 2%), nome e UTM no padrão dados-3, 5 portões antes de qualquer gasto. Conversão em dias/verba fica em aberto: faltam instalação por clique e paywall por instalação, que não existem medidos."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -26,7 +29,18 @@
       "quando": "2026-11-23T22:00:00-03:00",
       "quem": "trafego",
       "o_que": "aceitei (entrego até 26/11 21h): 1 teste, 2 variantes, unidade paywall_view, n da trafego-3 com a linha de taxa ainda em aberto, padrão dados-3, sim/não de verba pro Léo; sem campanha, sem gasto"
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "entreguei: proposta, sem campanha e sem gasto; sim/nao de verba pro Leo no arquivo"
+    },
+    {
+      "quando": "2026-11-24T11:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceitei: 1 teste, 2 variantes, unidade paywall_view, n refeito (1.470 a 5%/50%; 3.825 a 2%; 686; 293 batem), nome e UTM no padrao dados-3, sim/nao de verba pro Leo, sem campanha e sem gasto. Fontes: 1.584 seguidores e 10 de alcance em dados/insights-2026-11-23.json, CTR em conhecimento/06-historico.md l.12. Ressalva (nao bloqueia): citacao '09-numeros/06-historico' deveria ser so 06-historico; dias e verba seguem em aberto, declarado."
     }
   ],
-  "atualizada_em": "2026-11-23T22:00:00-03:00"
+  "atualizada_em": "2026-11-24T11:00:00-03:00",
+  "pergunta_lider": "Leo, sim/nao: posso preparar o teste de 2 angulos (CR-eco-01 x CR-seg-01), so iOS, gastando so depois dos 5 portoes e dentro do teto semanal da semana 1 do repositorio privado?"
 }

@@ -49,3 +49,8 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - fiz: escrevi conselho/rodadas/2026-11-23/mercado-r1.md; criei D-20261123-mercado-1 (Sun Tzu, dossiê de concorrentes com MotorManage), -2 (Disney, 4 pautas IPVA, cc Shelby) e -3 (Stark, tela Documentos avisa vencimento?, cc Shelby); atualizei a agenda.
 - aprendi: motos emplacadas jan-out +8,90% a/a (Fenabrave via Agência Brasil, 04/11); Abraciclo projeta +6,9% de emplacamentos em 2026 (AutoData, 13/10). IPVA SP 2027 vence 11 a 22/01, 3% à vista (Agência SP, 09/11; texto oficial não cita moto). Nenhum dos 113 carrosséis da fila é o calendário do IPVA (fila/carrosseis.json). MotorManage: grátis 2 motos, 2,99 EUR/mês, teste 14 dias, 42.000 modelos (motormanage.app).
 - pendente: sim/não do Davi (mercado-2); 3 perguntas ao Léo (aviso de vencimento no app, Biblioteca de Anúncios, IPVA só SP); morte da F-002 em 27/11.
+
+## 2026-11-24 · D-20261123-master-dossie-2
+- fiz: fechei o dossiê de Concorrentes: 04-concorrentes.md com links e datas dos 5 apps; entrega em entregas/D-20261123-master-dossie-2.md; status entregue.
+- aprendi: App Store BR segue sem abrir (permissão e curl sem rede). 4 de 5 preços são leituras de 22/11 e 24/11. Não inventei nada.
+- pendente: reconferir preços quando a App Store abrir; sim/não do Davi (mercado-2); respostas do Léo; F-002 morre em 27/11.

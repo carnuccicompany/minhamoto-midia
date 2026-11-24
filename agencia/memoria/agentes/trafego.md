@@ -55,3 +55,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - fiz: agencia/conselho/rodadas/2026-11-23/trafego-r1.md; criei D-20261123-trafego-2 e -3 (ambas pro Turing); aceitei D-20261122-trafego-3; agenda atualizada.
 - aprendi: Meta (developers.facebook.com/docs/app-ads/optimizing-your-app-ad): otimiza por instalação, evento (um por vez) ou valor, sem volume mínimo na página. TikTok (ads.tiktok.com learning-phase-faq): 50 conversões é o sinal de sair do aprendizado. Dossiês do Léo respondem 2 das minhas 3 perguntas antigas: há campanha "MM - Curtos" (CTR 2% a 3,5% em novembro, sem venda do app na UTMify) e a BM só de anúncios foi adiada em 18/11.
 - pendente: sem número de campanha; dados-1 e chave de sandbox (venceram hoje); mkt-2 bloqueada; build de 23/11; 3 perguntas novas pro Léo.
+
+## 2026-11-24 · Rodada de demandas
+- fiz: entreguei D-20261123-dados-6 (teste de 2 ângulos CR-eco-01 x CR-seg-01, só iOS, n 1.470/variante no cenário 5% e 50% de diferença, 5 portões antes de gasto, sim/não de verba pro Léo) e D-20261123-mkt-3 (regra dos 3 estilos dos Corretores: ~100 vendas por estilo, dobra até 100, mantém 100-119, corta acima de 119, pausa a 200% sem venda, em % do custo de outubro). Criei D-20261124-trafego-1 (Turing: vendas/dia e custo por hora em índice).
+- aprendi: com conversão pequena, o número de vendas por variante quase não depende da taxa-base (~78 pra 50% de diferença, ~200 pra 30%, ~100 com 3 estilos). Isso me deixa dimensionar o teste dos Corretores sem ter a taxa. WebFetch das docs da Meta negado de novo; citei só o que já estava registrado e disse isso.
+- pendente: sem número de campanha meu; conversão de n em dias e verba depende de vendas/dia (trafego-1) e dos fatores instalação por clique e paywall por instalação (SDK). 200% e +20% por degrau são regra minha, sem histórico.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor segue sendo o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
+- **Conquista da semana:** a mais perto é "Previu o gargalo" (previ que o teste dos Corretores não cabe sem vendas/dia). CPA no alvo continua longe: sem campanha.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.

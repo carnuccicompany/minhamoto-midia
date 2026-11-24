@@ -10,12 +10,12 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mercado-3.md com: 'sim' ou 'não' pra aviso de vencimento de documento (CRLV, licenciamento, CNH), qual tela mostra (arquivo em agencia/designer/assets/telas-app/), e a versão do app em que vale. Se só o Davi sabe, status bloqueada com bloqueio lider e a pergunta pronta, sim/não, pra entrar no pacote do Davi (D-20261122-produto-3). Sem chute.",
   "prioridade": "P2",
   "prazo": "2026-11-26T18:00:00-03:00",
-  "status": "devolvida",
+  "status": "aceita",
   "criada_em": "2026-11-23T20:55:00-03:00",
   "fio": null,
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261123-mercado-3.md",
-    "resumo": "Sim em parte: licenciamento tem selo 'Documento vencendo' na Garagem aos 30 dias; sem push nem aviso de CRLV/CNH no código de 17/11."
+    "resumo": "Sem tela do selo 'Documento vencendo' em telas-app: a prova é o código (garagem-home.tsx). Vale na versão 1.0.1 (código de 17/11); build de 23/11 sem número no repositório, pergunta sim/não ao Davi em D-20261124-produto-1."
   },
   "cobrancas": 0,
   "historico": [
@@ -33,6 +33,16 @@
       "quando": "2026-11-23T23:00:00-03:00",
       "quem": "mercado",
       "o_que": "devolveu: (1) nenhuma tela em telas-app mostra o selo 'Documento vencendo'; 18-garagem-atencao.png mostra '3 itens pedem atenção' (manutenção), então não prova. Entregar print/tela com o selo ou dizer que não existe tela e que a prova é só o código. (2) Versão do app em que vale: veio só 'commit 05425c9 de 17/11', sem número de versão/build; informar a versão do app ou mandar a pergunta sim/não pro Davi (bloqueada, bloqueio lider, pacote produto-3) sobre build de 23/11 e push. A resposta sim em parte, com o código citado, está aceita."
+    },
+    {
+      "quando": "2026-11-24T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "reentregue: (1) não existe tela do selo, a prova é o código; (2) versão 1.0.1 (Android e iOS, commit de 17/11); build de 23/11 vai como pergunta sim/não no pacote do Davi"
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceitou: (1) entrega diz que não existe tela do selo e que a prova é o código (garagem-home.tsx, linhas citadas); 07-documentos.png e 18-garagem-atencao.png não provam, e ficou dito; (2) versão 1.0.1 (commit de 17/11) declarada, build de 23/11 virou pergunta sim/não em D-20261124-produto-1 (pacote do Davi). Sim/não por documento, tela e versão presentes. Uso na série IPVA limitado a: anote o vencimento do licenciamento e o app avisa na Garagem com 30 dias; sem push, sem CRLV/CNH."
     }
   ]
 }

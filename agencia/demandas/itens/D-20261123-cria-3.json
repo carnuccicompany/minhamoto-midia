@@ -3,10 +3,13 @@
     "cria",
     "produto:analista-do-paywall"
   ],
-  "status": "em_andamento",
+  "status": "aceita",
   "criada_em": "2026-11-23T20:10:00-03:00",
   "fio": "F-004",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-cria-3.md",
+    "resumo": "Tabela de A1 e B1 (código de 17/11): 6 de 8 cenas com tela existem iguais; as 2 do aviso existem diferente (dispara no dia projetado, 'pode estar chegando'), então 'antes do prazo' e 'na hora certa' precisam de ajuste. Build de 23/11 não conferida."
+  },
   "cobrancas": 0,
   "id": "D-20261123-cria-3",
   "de": "cria",
@@ -26,6 +29,16 @@
       "quando": "2026-11-23T22:30:00-03:00",
       "quem": "produto",
       "o_que": "aceita; leio o código de 17/11 contra os frames de A1/B1 e entrego a tabela até 26/11 20h; cena que depender da build de 23/11 vai marcada como 'não conferida'"
+    },
+    {
+      "quando": "2026-11-24T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "entregue: tabela por cena; frase 'antes do prazo' é promessa maior que o app; ajuste pedido à Cria em D-20261124-produto-2"
+    },
+    {
+      "quando": "2026-11-24T10:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceita: tabela com 1 linha por cena de A1 e B1 (tela, texto/voz, veredito, arquivo lido), 6 de 8 cenas com tela batem, 2 do aviso diferem; limite da build de 23/11 declarado e pergunta ao Davi aberta em D-20261124-produto-1; ajuste de frase seguiu em D-20261124-produto-2"
     }
   ]
 }
