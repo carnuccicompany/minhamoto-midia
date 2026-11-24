@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-23T22:45:00-03:00",
+ "rodada": "2026-11-23T23:10:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:09 SUCCEEDED 22h09; :39 rodando agora)",
+  "coordenador": "ok (:39 SUCCEEDED 22h39; :09 rodando agora)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23-19h51; próx 19h23 24/11)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
@@ -17,8 +17,10 @@
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único disparou 10h13",
   "MM: Vigia do Gmail": "ok (SUCCEEDED 23/11 08h48)",
-  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 18h02 BRT; próx 21h02)",
-  "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)"
+  "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 21h02 BRT; próx 12h02 24/11)",
+  "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)",
+  "MM: Radar de mercado semanal": "ok (próx 24/11 09h37)",
+  "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h13 BRT; próx 9h13)"
  },
  "publicacao_hoje": {
   "ultimo_ok": "S04 (21h03 BRT 23/11)",
@@ -29,7 +31,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: sem falha; vigia de segredos ok"
+  "nenhuma: sem falha; vigia de segredos ok; links do painel ok"
  ],
  "alertas": []
 }
