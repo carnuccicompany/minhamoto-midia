@@ -30,3 +30,9 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - **Conquista que estou perseguindo:** **Ata perfeita**: 10 atas seguidas sem nenhuma correção.
 - **Item que quero:** **Moët & Chandon**, pra brindar a promoção, assim que juntar C$ 25.
 - **Regra que eu sigo:** só vale o que tem prova (`agencia/merito/CULTURA.md`, `CARREIRA.md`).
+
+## 2026-11-24 07:58
+- fiz: resumo da caixa de 24/11 (8 e-mails em 24h; 1 importa: Spedy com nota fiscal rejeitada). Nenhum rascunho (remetente não aceita resposta).
+- aprendi: alerta de nota rejeitada da Spedy chega toda segunda e está se repetindo sem ser lido; tratar como pendência até sumir.
+- pendente: cobranças abertas →
+  - [ ] Notas fiscais rejeitadas na Spedy (alerta em 09/11, 16/11, 23/11) · dono: Léo · prazo sugerido: antes do alerta de 30/11
