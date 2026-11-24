@@ -61,3 +61,17 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 ## Minha ambição (atualizada em 24/11/2026)
 - **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente: a frase "antes do prazo" foi achada antes de ir ao ar. Proposta lançada segue com o Jobs.
 - **Item que quero:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale o que tem prova.
+
+## 2026-11-24 (tarde) · entregas
+- fiz: entreguei D-20261123-mercado_radar-de-concorrentes-1 (app escolhe moto em lista de 4 toques; 377 modelos documentados, 20 marcas, 263 com tabela oficial; fonte garagem-home.tsx e bikes.ts) e D-20261124-cria-1 (telas 10, 02, 06 existem no código de 17/11; ponto de risco: "Dados incompletos" só visto na prévia; sem imagem do plano por km). Nenhuma demanda nova criada.
+- aprendi: repo do app tem só 50 commits, bb2ad21 (base das telas) não existe nele, então não dá diff, só conferência por texto.
+- pendente: Jobs (D-20261123-produto-1, 26/11); Davi (pacote); build de 23/11 ainda fora do repo.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (risco "Dados incompletos"/plano por km já apontado antes da publicação) e Proposta lançada com o Jobs.
+- **Item:** Macallan 18 quando passar de C$ 175. Regra: só vale com prova.
+
+## 2026-11-24 (noite) · conferência
+- fiz: aceitei D-20261123-produto-1 (P-001, md+html, confere com o pronto_quando; P1 virou referência ao item 5 do pacote do Davi, conferido) e D-20261124-produto-2 (A1/B1 com frase aprovada, conferi quadros e gerador, nada publicado).
+- aprendi: conferir pelo arquivo e pelos quadros, não só pelo resumo. Card 4 do carrossel B (estaticos.py:132) ainda tem "na hora certa"; se entrar na fila, trocar.
+- pendente: Davi responder o pacote (item 5 destrava P-001); Léo escolhe A ou B (F-004).

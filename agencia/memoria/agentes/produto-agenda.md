@@ -38,3 +38,6 @@
 ## Rodada 24/11
 - Entregues: mercado-3 (reentrega) e cria-3. Criadas produto-1 (Shelby, pacote do Davi) e produto-2 (Disney, frase do aviso), prazo 27/11.
 - Pendências: D-20261123-produto-1 (Jobs, página de decisão, 26/11) e D-20261123-mercado_radar-de-concorrentes-1 (modelo por lista e planos por modelo, 30/11, não toquei: ainda aberta). Build de 23/11 não está no repositório do app: tudo que digo vale pro código de 17/11 (1.0.1).
+
+## 24/11 tarde
+- Entregues mercado_radar-de-concorrentes-1 e cria-1 (aguardam aceite). Próximo: acompanhar Jobs (produto-1, 26/11) e reconferir as 3 telas e o catálogo quando a build de 23/11 entrar no repo.

@@ -72,3 +72,13 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - **Conquista que estou perseguindo:** **Criativo campeão** (1 criativo 7 dias no custo-alvo, 10+ assinantes). A garantia no CTA é mais uma variável pra chegar lá nos Corretores.
 - **Item que quero:** o **Dom Pérignon**. Lendário: a **Ducati Panigale V4 S**.
 - **Regra que eu sigo:** só vale o que tem prova.
+
+## 2026-11-24 · Rodada de demandas (tarde)
+- fiz: entreguei D-20261124-produto-2 (Stark/Produto): A1 e B1 re-renderizados com a frase que o aviso cumpre ("O app lembra a troca pelo seu km." no A1; "Avisa quando a troca estiver chegando, pela sua média de uso." no B1), arquivos video-aviso.mp4 + frames-aviso.jpg ao lado dos originais, gerador agencia/direcao-v2/videos_aviso.py (videos.py intacto). Revisor automático PASSA. Nada publicado. Outras demandas minhas abertas (mkt-2, lojas-3, mercado-2, cria-2 do dados) estão entregues aguardando aceite; não criei demanda nova.
+- aprendi: (1) render completo de um vídeo leva ~6,5 min (600 quadros); usar MM_RETOMAR=1 e rodar em segundo plano pra não estourar o timeout; (2) o card 4 do carrossel B (estaticos.py) repete "na hora certa"; (3) produto-1 recomenda manter o aviso "dentro do app" até o Davi confirmar push no celular real.
+- pendente: Léo libera A/B (F-004) e a troca dos vídeos; Davi (build 23/11 e push real); aceite de produto-2.
+
+## Minha ambição (atualizada em 24/11/2026, tarde)
+- **Próximo degrau:** Diretor da Semana; 4 entregas desta rodada esperando aceite (aceite alto é o que falta na ficha: ainda sem taxa).
+- **Conquista:** Criativo campeão (1 criativo 7 dias no custo-alvo, 10+ assinantes); a frase honesta tira o risco de reprovação que travaria o criativo.
+- **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.

@@ -35,3 +35,8 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoproduto
 - aprendi: (1) UTMify já mostra os Corretores: novembro contra outubro vendas/dia -43%, gasto/dia -32%, custo por venda +19%, ROAS 1,88 -> 1,61 (09-numeros.md, dados 23/11). (2) A página dos Corretores diz garantia de 30 dias (corretores.md §1), contra 7 dias dos 5 concorrentes: minha iniciativa de "garantia maior" caiu, virou "garantia à vista". (3) UTMify aceita status refunded com data (https://docs.utmify.com.br/envio-de-vendas). (4) Léo decidiu 23/11: 3 estilos novos hoje, 3 amanhã, preço R$27,90 nos criativos, voz só da Ana Paula, recuperação de Pix adiada. (5) +12,15% de tributo da Meta continua só em fonte secundária.
 - recebi: Escobar devolveu mkt-2 antiga bloqueada no prazo (acesso ao gerenciador); Shelby levou as perguntas ao Léo sem resposta ainda.
 - pendente: mkt-1/-2/-3 de 23/11; respostas do Léo (garantia, reembolso na UTMify, meta semanal); D-20261122-mkt-1 bloqueada.
+
+## 2026-11-24 · Conferencia D-20261123-mkt-2
+- fiz: conferi a entrega do Disney contra o pronto_quando. Conteudo ok e com fonte (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3). DEVOLVI: falta o parecer oficial do Shelby no check de promessa (so ha autoverificacao) e a conferencia dos termos da garantia na Kavoo.
+- aprendi: pronto_quando com checagem de terceiro so fecha com o registro da checagem no arquivo; vale lembrar de pedir ao Shelby ja na criacao.
+- pendente: reentrega do Disney com parecer do Shelby; resposta do Leo sobre V2 = piloto com garantia; reabrir conferencia em ate 24h da reentrega.

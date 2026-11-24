@@ -1,13 +1,42 @@
 {
- "atualizado": "2026-11-24T10:47-03:00",
+ "atualizado": "2026-11-24T14:57-03:00",
  "resumo": {
-  "abertas": 11,
+  "abertas": 6,
   "atrasadas": 0,
-  "entregues": 8,
-  "aceitas": 37,
-  "bloqueadas_lider": 26
+  "entregues": 10,
+  "aceitas": 41,
+  "bloqueadas_lider": 27
  },
  "demandas": [
+  {
+   "id": "D-20261124-dados-2",
+   "de": "dados",
+   "para": "master",
+   "copia": [
+    "lojas"
+   ],
+   "titulo": "Levar ao Léo hoje: aprovar a resposta do rascunho ao 1★ do Play (ec124592) antes de 26/11 18h35",
+   "por_que": "É o único 1★ do Play sem resposta e a janela da API (~7 dias, provável) o tira da coleta a partir de 26/11 21h35 UTC (18h35 BRT); sem resposta publicada a nota 4,7+ perde a chance de reverter a avaliação (agencia/demandas/entregas/D-20261123-lojas-1.md, seção Alerta).",
+   "pronto_quando": "Resposta do Léo (aprovar ou editar o rascunho em dados/avaliacoes/respostas.json, id ec124592); o robô publica só o que ele aprovar. Sem aprovação até 26/11 12h, registrar no Conselho que o 1★ saiu sem resposta.",
+   "prioridade": "P1",
+   "prazo": "2026-11-25T15:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-24T15:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T15:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-24T15:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Thomas Shelby"
+  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
@@ -284,236 +313,151 @@
    "_para_nome": "Alan Turing"
   },
   {
-   "id": "D-20261123-produto-1",
-   "de": "produto",
-   "para": "produto:analista-do-paywall",
-   "copia": [],
-   "titulo": "Página de decisão pro Davi: tela 'Plano da sua moto' após o cadastro, em sim/não, com aceite e medição",
-   "por_que": "Meta é assinante pago novo por semana; número do produto é % instalação>pagante (06-produto.md, lapidado 20/11). A entrega D-20261122-produto-1 está aceita, mas agencia/produto/propostas/ está vazia e o Davi não tem onde aprovar ou recusar (Folha de 20/11: falta proposta escrita). Sem proposta aprovada o teste não entra na janela pós-build.",
-   "pronto_quando": "Arquivo em agencia/produto/propostas/ (e página do painel, se já existir o modelo) com: antes/depois da tela, 1 única mudança, critérios de aceite, eventos moto_cadastrada e plano_visto, o que mede (% instalação>pagante por plataforma, iOS e Android separados) e no máximo 3 perguntas sim/não pro Davi (P1 'a build de 23/11 mantém o briefing?' em primeiro). Sem R$, sem número absoluto, paywall/preço/planos intocados. Nada mexe no app.",
+   "id": "D-20261123-mkt-2",
+   "de": "mkt",
+   "para": "cria",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
+   "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
    "prioridade": "P2",
-   "prazo": "2026-11-26T19:45:00-03:00",
+   "prazo": "2026-11-26T19:40:00-03:00",
+   "status": "devolvida",
+   "criada_em": "2026-11-23T19:40:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
+    "resumo": "V2 de cada estilo (Historinha, Quiz, Split-screen) leva faixa \"Garantia de 30 dias\" + \"Clique em Saiba Mais\" no frame, só texto (voz só da Ana Paula); marcação cta_garantia sim/nao e sufixo -g1/-g0 pro Turing."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
+    },
+    {
+     "quando": "2026-11-24T10:00:00-03:00",
+     "quem": "cria",
+     "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
+    },
+    {
+     "quando": "2026-11-24T11:00:00-03:00",
+     "quem": "mkt",
+     "o_que": "devolvida: tabela, texto exato do CTA, marcacao sim/nao e fontes (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3) conferem. Falta 1 item do pronto_quando: 'passado pelo check de promessa do Shelby'. A entrega traz so autoverificacao ('o Shelby faz o oficial'). Para aceitar: (1) pedir ao Shelby o check oficial de 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e da variante com R$27,90), registrar no arquivo o parecer do Shelby com data e id/caminho; (2) registrar tambem a conferencia dos termos da garantia na Kavoo (Shelby ou Leo), ja que o texto so e seguro se a politica for 30 dias mesmo. A pergunta sim/nao ao Leo (V2 = piloto com garantia) nao bloqueia."
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261123-dados-5",
+   "de": "dados",
+   "para": "master",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Aprovar rodar o workflow insights.yml todo dia (hoje só domingo 23h41 BRT) e fixar o horário da coleta",
+   "por_que": "A coleta funcionando só uma vez por semana (cron 41 2 * * 1 UTC, .github/workflows/insights.yml) deixa o alcance e os salvamentos de cada post com até 7 dias de atraso, e post publicado às 12h, 15h, 18h e 21h só vira dado na segunda seguinte. Sem leitura diária o alerta de anomalia e o placar diário da meta não existem. Correção pequena e reversível, dona é o Shelby (decisoes.md, 20/11).",
+   "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "devolvida",
+   "criada_em": "2026-11-23T21:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": ".github/workflows/insights.yml",
+    "resumo": "Aprovado pelo Shelby (correção pequena, reversível, sem chave nova): cron do insights.yml passou de semanal para diário, 02:41 UTC (23:41 BRT, depois do slot das 21h). O arquivo do dia leva a data UTC (dados/insights-AAAA-MM-DD.json, um dia à frente). Hemingway confere a coleta do dia seguinte sem erro; se o GitHub não disparar, usar workflow_dispatch."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "master",
+     "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
+    },
+    {
+     "quando": "2026-11-24T14:40:00-03:00",
+     "quem": "dados",
+     "o_que": "devolvida (faltam provas, não é erro de decisão): o sim do Shelby e o cron diário 41 2 * * * no insights.yml conferem. Falta o 3º item do pronto_quando, a coleta do dia seguinte sem erro: o 1º disparo agendado é 25/11 02:41 UTC e ainda não existe dados/insights-2026-11-25.json (o de 24/11, coletado_em 12:56Z, é manual, não do cron). Reentregar com: nome e coletado_em do arquivo gerado pelo cron e erros vazio. Se não disparar, workflow_dispatch e registrar. Corrigir também o historico: a linha do master está com hora 19:45, antes da criação (21:00). Aceito assim que a prova entrar."
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:40:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261124-dados-1",
+   "de": "dados",
+   "para": "cria",
+   "copia": [
+    "trafego",
+    "master"
+   ],
+   "titulo": "Confirmar se a V2 de cada estilo é a V1 com a faixa de garantia e mais nada",
+   "por_que": "Sem isso o teste de garantia (D-20261123-mkt-2, D-20261124-cria-2) mistura garantia e gancho e a leitura de CPA não vale; o EXP-20261123-1 só começa depois (agencia/demandas/entregas/D-20261124-cria-2.md, seção 2).",
+   "pronto_quando": "Resposta em uma linha na própria demanda: 'V2 = V1 + faixa' (sim) ou, se não, qual outra diferença existe entre V2 e V1 em cada estilo (EST5, EST2, EST4). Nada é produzido nem publicado.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
    "status": "aberta",
-   "criada_em": "2026-11-23T19:45:00-03:00",
+   "criada_em": "2026-11-24T15:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T15:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-24T15:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261124-produto_analista-do-paywall-1",
+   "de": "produto:analista-do-paywall",
+   "para": "master",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
+   "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
+   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-24T11:00:00-03:00",
    "fio": "F-001",
    "entrega": null,
    "cobrancas": 0,
    "historico": [
     {
-     "quando": "2026-11-23T19:45:00-03:00",
-     "quem": "produto",
+     "quando": "2026-11-24T11:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
      "o_que": "criou"
     }
    ],
+   "atualizada_em": "2026-11-24T11:00:00-03:00",
    "_atrasada": false,
-   "_de_nome": "Tony Stark",
-   "_para_nome": "Steve Jobs"
-  },
-  {
-   "id": "D-20261123-dados_relatorio-semanal-1",
-   "de": "dados:relatorio-semanal",
-   "para": "dados",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
-   "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-23T23:35:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T23:35:00-03:00",
-     "quem": "dados:relatorio-semanal",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T10:30:00-03:00",
-     "quem": "coordenador",
-     "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
-    }
-   ],
-   "atualizada_em": "2026-11-23T23:35:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Ernest Hemingway",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261124-produto-1",
-   "de": "produto",
-   "para": "master",
-   "copia": [
-    "produto"
-   ],
-   "titulo": "Pacote do Davi: somar 2 perguntas sim/não sobre a build de 23/11 (documento vencendo e telas dos vídeos A1/B1)",
-   "por_que": "As séries de IPVA (D-20261123-mercado-2) e os vídeos A1/B1 só podem prometer 'avisa na Garagem' e mostrar histórico, saúde e notificações se a build de 23/11 não mudou isso. O código lido é de 17/11 (versão 1.0.1) e o pacote atual (D-20261123-master-pacote-davi) não pergunta isso. Promessa que o app não cumpre derruba conversão do instalado ao pago e vira avaliação ruim (08-regras.md).",
-   "pronto_quando": "Pacote do Davi com 2 itens sim/não: (1) A build de 23/11 mantém igual o selo 'Documento vencendo' da Garagem (licenciamento, 30 dias) e continua sem notificação push de documento? (2) A build de 23/11 mantém igual as telas Histórico, Saúde e Notificações usadas em A1 e B1? Em cada item, 'não' vira pedido de descrição do que mudou. Detalhe em entregas/D-20261123-mercado-3.md e D-20261123-cria-3.md.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T09:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T09:00:00-03:00",
-     "quem": "produto",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Tony Stark",
+   "_de_nome": "Steve Jobs",
    "_para_nome": "Thomas Shelby"
-  },
-  {
-   "id": "D-20261124-produto-2",
-   "de": "produto",
-   "para": "cria",
-   "copia": [
-    "produto",
-    "mkt"
-   ],
-   "titulo": "Trocar a frase 'antes do prazo' (A1) e 'na hora certa' (B1) por texto que o aviso do app cumpre",
-   "por_que": "O aviso do app dispara no dia projetado em que o km do marco chega, pela média de uso ('pode estar chegando'), ou na data/km que o usuário marcou; não existe antecedência (planejador.ts, ver entregas/D-20261123-cria-3.md). Anúncio que promete o que o app não faz arrisca reprovação na Meta e na loja e avaliação 1 estrela. Troca de uma frase, a tela fica.",
-   "pronto_quando": "Nova versão de A1 e B1 (arquivo em agencia/direcao-v2/, sem publicar) com a cena do aviso usando uma frase da lista aprovada: 'O app lembra a troca pelo seu km.' ou 'Avisa quando a troca estiver chegando, pela sua média de uso.' Nada vai ao ar sem OK do Léo.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T09:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T09:00:00-03:00",
-     "quem": "produto",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Tony Stark",
-   "_para_nome": "Walt Disney"
-  },
-  {
-   "id": "D-20261124-trafego-1",
-   "de": "trafego",
-   "para": "dados",
-   "copia": [
-    "trafego",
-    "master"
-   ],
-   "titulo": "Vendas por dia e custo por venda por hora dos Corretores em indice (outubro=100), pra converter o n do teste dos 3 estilos em dias",
-   "por_que": "A regra de D-20261123-mkt-3 pede ~100 vendas por estilo (~300 no teste) e eu nao consigo dizer quantos dias isso leva nem se o teste cabe: so tenho -43% de vendas/dia em novembro (agencia/conhecimento/09-numeros.md), sem base. Sem esse numero o EXP-20261123-1 comeca sem saber se termina.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-1.md com (1) vendas por dia dos ultimos 14 dias em indice (primeiro dia=100) e a media, (2) custo por venda por faixa de horario (madrugada, 7h-9h, 13h, 20h-21h, resto) em indice sobre outubro=100, (3) dias que ~300 vendas levariam nesse ritmo, dito em dias e nao em R$. Fonte UTMify (dados/utmify) citada; nenhum R$ nem absoluto.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T10:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T10:00:00-03:00",
-     "quem": "trafego",
-     "o_que": "criou"
-    }
-   ],
-   "atualizada_em": "2026-11-24T10:00:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Pablo Escobar",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261123-mercado_radar-de-concorrentes-1",
-   "de": "mercado:radar-de-concorrentes",
-   "para": "produto",
-   "copia": [
-    "mercado"
-   ],
-   "titulo": "Confirmar se o app escolhe a moto numa lista (marca, modelo, versão) e se o plano de revisão sai por modelo e km",
-   "por_que": "O ângulo 'sem digitar a moto' contra o Drivvo (reclamação de modelo digitado, out/2025) e contra o MotorManage (catálogo de 42.000 modelos) só vale se o app faz isso; 02-produto.md marca como rascunho. Sem confirmação o anúncio não pode usar a frase.",
-   "pronto_quando": "Resposta de 2 linhas em agencia/demandas/entregas/ dizendo: (1) a escolha de marca/modelo/versão é lista ou texto livre; (2) quantos modelos tem plano de revisão hoje (faixa, sem número de assinantes). Fonte: código ou ficha do produto.",
-   "prioridade": "P3",
-   "prazo": "2026-11-30T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-23T21:30:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T21:30:00-03:00",
-     "quem": "mercado:radar-de-concorrentes",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Sun Tzu",
-   "_para_nome": "Tony Stark"
-  },
-  {
-   "id": "D-20261124-cria-2",
-   "de": "cria",
-   "para": "dados",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Ler a variável \"garantia de 30 dias no CTA\" no EXP-20261123-1 e registrar no placar",
-   "por_que": "D-20261123-mkt-2 define a V2 de cada estilo com a faixa de garantia (cta_garantia=sim/nao). Sem registro da variável no placar, o resultado do teste dos Corretores (CPA subiu 15 a 50% de out pra nov) não separa garantia de gancho.",
-   "pronto_quando": "Campo da variável cta_garantia anotado no EXP-20261123-1 (ou nota em agencia/experimentos) e, depois de volume mínimo definido pela trafego, leitura em % de CPA da V2 contra piloto e V1 por estilo; sem número absoluto. Se não houver dado, dizer.",
-   "prioridade": "P3",
-   "prazo": "2026-11-30T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T10:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T10:00:00-03:00",
-     "quem": "cria",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Walt Disney",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261123-lojas-1",
-   "de": "lojas",
-   "para": "dados",
-   "copia": [
-    "lojas"
-   ],
-   "titulo": "Coletor de avaliações: por que o Google Play foi de 3 para 2 avaliações e dá pra trazer a versão do app na App Store?",
-   "por_que": "A média do Play depende de n: coleta de 20/11 trouxe 3 avaliações (3,67) e a de 23/11 trouxe 2 (3,00); sem saber se uma foi removida ou o coletor perde histórico, a meta de nota 4,7+ não tem base. A App Store não traz versão do app, e não separo reclamação por versão (produto-3, n=8).",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo: (1) qual avaliação do Play sumiu entre 20/11 e 23/11 (id) e a causa provável (removida, filtrada ou limite do coletor), usando dados/avaliacoes/respostas.json; (2) se o coletor da App Store pode devolver a versão do app; se não, dizer o que falta. Só leitura; sem número absoluto do repo privado.",
-   "prioridade": "P3",
-   "prazo": "2026-11-30T20:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-23T20:30:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T20:30:00-03:00",
-     "quem": "lojas",
-     "o_que": "criou"
-    }
-   ],
-   "atualizada_em": "2026-11-23T20:30:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Jeff Bezos",
-   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261123-trafego-3",
@@ -541,63 +485,6 @@
    ],
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261124-cria-1",
-   "de": "cria",
-   "para": "produto",
-   "copia": [
-    "cria"
-   ],
-   "titulo": "Conferir 3 telas dos prints da loja (Lista para revisão, Saúde, Histórico) contra a build de 23/11",
-   "por_que": "Os 3 prints de D-20261123-lojas-3 usam telas de 18/11 (commit bb2ad21). Prints são o elo visita→download (assinante pago novo); tela desatualizada na loja é risco de reprovação e de avaliação ruim. A D-20261123-cria-3 só cobre A1/B1.",
-   "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261124-cria-1.md, 1 linha por tela (10, 02 e 06): existe igual, existe diferente (o que mudou) ou não existe, com o arquivo do código lido; dizer também se há tela do plano de revisão por km e tempo que sirva pro print 1. Nada mexe no app.",
-   "prioridade": "P3",
-   "prazo": "2026-12-01T20:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T10:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T10:00:00-03:00",
-     "quem": "cria",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Walt Disney",
-   "_para_nome": "Tony Stark"
-  },
-  {
-   "id": "D-20261124-lojas-1",
-   "de": "lojas",
-   "para": "dados",
-   "copia": [
-    "lojas"
-   ],
-   "titulo": "Alerta quando a coleta de avaliações passar de 48 h sem rodar",
-   "por_que": "A API do Play parece mostrar só ~1 semana de avaliações (4 das 6 já vistas sumiram; ver entregas/D-20261123-dados-3.md); coleta parada 7 dias perde avaliação (e 1★) pra sempre. As tarefas pararam por limite de uso em 21-23/11 (D-20261122-dados-3). Sem avaliação o 1★ não é respondido e a nota 4,7+ não sobe.",
-   "pronto_quando": "Regra escrita em agencia/demandas/entregas/D-20261124-lojas-1.md: de onde ler a hora da última coleta (coletado_em de dados/avaliacoes/ultimas.json), limite de 48 h, quem é avisado e como; sem mexer em script antes do OK do Davi.",
-   "prioridade": "P3",
-   "prazo": "2026-12-01T20:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T10:35:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T10:35:00-03:00",
-     "quem": "lojas",
-     "o_que": "criou"
-    }
-   ],
-   "atualizada_em": "2026-11-24T10:35:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Jeff Bezos",
    "_para_nome": "Alan Turing"
   },
   {
@@ -828,7 +715,7 @@
   },
   {
    "de": "master:auditor-de-entregas",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-22T23:55:00-03:00",
    "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md",
@@ -862,11 +749,17 @@
      "quando": "2026-11-23T19:45:00-03:00",
      "quem": "master",
      "o_que": "ronda do Shelby: tirei o bloqueio 'lider' de demanda entregue; a pergunta ao Léo é o item 1 de entregas/D-20261123-master-pacote-leo.md. Falta o Ness conferir e aceitar"
+    },
+    {
+     "quando": "2026-11-24T09:00:00-03:00",
+     "quem": "master:auditor-de-entregas",
+     "o_que": "aceitei: 3 opcoes cada uma com numero de posts salvos e risco, nada alterado em scripts/, termina com pergunta sim/nao. Conferi contra fila/estado.json (horarios_feitos e 'em' dos posts, convertidos UTC->BRT): 21/11 12h,18h,21h = 3 posts; 22/11 18h = 1; total 4 de 8; simulacao A refeita: 21/11 3 (0), 22/11 3 (+2) = 6. Ressalva menor: das 8 execucoes da tabela, 1 (22/11 23h10) foi manual, entao o cron rodou 7 e nao 8 (dados-3 diz 7); nao muda a conclusao. Decisao da pergunta segue com o Leo (item 1 de D-20261123-master-pacote-leo.md)"
     }
    ],
    "bloqueio": null,
    "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4.",
-   "atualizada_em": "2026-11-23T19:45:00-03:00",
+   "atualizada_em": "2026-11-24T09:00:00-03:00",
+   "aceita_em": "2026-11-24T09:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Eliot Ness",
    "_para_nome": "Phileas Fogg"
@@ -2476,47 +2369,6 @@
    "_para_nome": "Tony Stark"
   },
   {
-   "id": "D-20261123-mkt-2",
-   "de": "mkt",
-   "para": "cria",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
-   "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T19:40:00-03:00",
-   "status": "entregue",
-   "criada_em": "2026-11-23T19:40:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
-    "resumo": "V2 de cada estilo (Historinha, Quiz, Split-screen) leva faixa \"Garantia de 30 dias\" + \"Clique em Saiba Mais\" no frame, só texto (voz só da Ana Paula); marcação cta_garantia sim/nao e sufixo -g1/-g0 pro Turing."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T19:40:00-03:00",
-     "quem": "mkt",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-23T22:30:00-03:00",
-     "quem": "cria",
-     "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
-    },
-    {
-     "quando": "2026-11-24T10:00:00-03:00",
-     "quem": "cria",
-     "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Grant Cardone",
-   "_para_nome": "Walt Disney"
-  },
-  {
    "id": "D-20261123-mkt-3",
    "de": "mkt",
    "para": "trafego",
@@ -2562,6 +2414,46 @@
    "_atrasada": false,
    "_de_nome": "Grant Cardone",
    "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-produto-1",
+   "de": "produto",
+   "para": "produto:analista-do-paywall",
+   "copia": [],
+   "titulo": "Página de decisão pro Davi: tela 'Plano da sua moto' após o cadastro, em sim/não, com aceite e medição",
+   "por_que": "Meta é assinante pago novo por semana; número do produto é % instalação>pagante (06-produto.md, lapidado 20/11). A entrega D-20261122-produto-1 está aceita, mas agencia/produto/propostas/ está vazia e o Davi não tem onde aprovar ou recusar (Folha de 20/11: falta proposta escrita). Sem proposta aprovada o teste não entra na janela pós-build.",
+   "pronto_quando": "Arquivo em agencia/produto/propostas/ (e página do painel, se já existir o modelo) com: antes/depois da tela, 1 única mudança, critérios de aceite, eventos moto_cadastrada e plano_visto, o que mede (% instalação>pagante por plataforma, iOS e Android separados) e no máximo 3 perguntas sim/não pro Davi (P1 'a build de 23/11 mantém o briefing?' em primeiro). Sem R$, sem número absoluto, paywall/preço/planos intocados. Nada mexe no app.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:45:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T19:45:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md",
+    "resumo": "Proposta P-001 (md + página HTML pro Davi em agencia/produto/propostas/): plano da moto logo após o cadastro, 1 mudança, 8 critérios de aceite, eventos moto_cadastrada e plano_visto, medição de % instalação>pagante por plataforma com teste 50/50. 3 perguntas sim/não novas (a P1 'briefing fica na build?' é o item 5 do pacote do Davi, não repeti)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:45:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T11:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "entregue: P-001 (md + html) em agencia/produto/propostas/; Apple HIG lido (onboarding rápido, adiar setup; contraponto sobre compra); sem R$, sem número absoluto, nada mexe no app"
+    },
+    {
+     "quando": "2026-11-24T17:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: P-001 (md+html) confere com o pronto_quando: antes/depois, 1 mudança, 8 critérios, eventos moto_cadastrada e plano_visto, medição % instalação>pagante iOS/Android separados, 3 perguntas sim/não; P1 vira referência ao item 5 do pacote do Davi (conferido em entregas/D-20261123-master-pacote-davi.md, linha 5), sem repetir; sem R$ nem número absoluto; paywall intocado; fonte Apple HIG com link. Ressalva pro Davi: código lido é de 17/11, não da build de 23/11"
+    }
+   ],
+   "atualizada_em": "2026-11-24T17:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Steve Jobs"
   },
   {
    "id": "D-20261123-produto-2",
@@ -2904,7 +2796,7 @@
    "pronto_quando": "Proposta em agencia/demandas/entregas/D-20261123-dados-3.md de como acumular id, nota e data de toda avaliação nova (Play e App Store) num arquivo que só cresce, com a regra de deduplicar por id e de contar edição de nota; implementação em scripts/avaliacoes.py só depois do OK do Davi.",
    "prioridade": "P2",
    "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-23T20:30:00-03:00",
    "fio": null,
    "entrega": {
@@ -2922,50 +2814,18 @@
      "quando": "2026-11-24T10:30:00-03:00",
      "quem": "lojas",
      "o_que": "entregue: proposta gravada; implementação aguarda OK do Davi (pergunta no campo pergunta)"
+    },
+    {
+     "quando": "2026-11-24T14:40:00-03:00",
+     "quem": "dados",
+     "o_que": "aceita: proposta cobre id, nota e data (Play e App Store), arquivo só-acrescentar, dedupe por loja+id, eventos nota_mudou/editada, implementação não feita. Conferido contra respostas.json (6 Play: 3x5★ e 3x1★ = 3,00; 6 App Store) e scripts/avaliacoes.py (maxResults=100, limit=200 sem paginação). Ressalvas pra implementação, não bloqueiam: (1) semente de respostas.json não tem data da avaliação, só publicada_em; (2) '2 de 6 na coleta de 12h16Z' não é reconferível, ultimas.json foi regravado (hoje 1 do Play, coleta 16h15Z): a prova é o sumiço dos ids; (3) janela de 7 dias do Play segue hipótese, doc oficial bloqueada. Implementação aguarda OK do Davi."
     }
    ],
-   "atualizada_em": "2026-11-24T10:30:00-03:00",
+   "atualizada_em": "2026-11-24T14:40:00-03:00",
    "pergunta": "Davi: posso mandar o Turing implementar o histórico de avaliações (historico.jsonl + estado.json, sem texto nem nome do autor) em scripts/avaliacoes.py? Sim/não.",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Jeff Bezos"
-  },
-  {
-   "id": "D-20261123-dados-5",
-   "de": "dados",
-   "para": "master",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "Aprovar rodar o workflow insights.yml todo dia (hoje só domingo 23h41 BRT) e fixar o horário da coleta",
-   "por_que": "A coleta funcionando só uma vez por semana (cron 41 2 * * 1 UTC, .github/workflows/insights.yml) deixa o alcance e os salvamentos de cada post com até 7 dias de atraso, e post publicado às 12h, 15h, 18h e 21h só vira dado na segunda seguinte. Sem leitura diária o alerta de anomalia e o placar diário da meta não existem. Correção pequena e reversível, dona é o Shelby (decisoes.md, 20/11).",
-   "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "entregue",
-   "criada_em": "2026-11-23T21:00:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": ".github/workflows/insights.yml",
-    "resumo": "Aprovado pelo Shelby (correção pequena, reversível, sem chave nova): cron do insights.yml passou de semanal para diário, 02:41 UTC (23:41 BRT, depois do slot das 21h). O arquivo do dia leva a data UTC (dados/insights-AAAA-MM-DD.json, um dia à frente). Hemingway confere a coleta do dia seguinte sem erro; se o GitHub não disparar, usar workflow_dispatch."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T21:00:00-03:00",
-     "quem": "dados",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-23T19:45:00-03:00",
-     "quem": "master",
-     "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
-    }
-   ],
-   "atualizada_em": "2026-11-23T19:45:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Alan Turing",
-   "_para_nome": "Thomas Shelby"
   },
   {
    "id": "D-20261123-dados-6",
@@ -3015,6 +2875,169 @@
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261123-dados_relatorio-semanal-1",
+   "de": "dados:relatorio-semanal",
+   "para": "dados",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
+   "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-23T23:35:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados_relatorio-semanal-1.md",
+    "resumo": "Sem META_TOKEN nesta sessao nao testei a chamada. Doc oficial da Meta conferida (breakdown media_product_type so com metric_type=total_value; valores AD/FEED/REELS/STORY; janela maxima nao declarada). Proposta do Hemingway aceita com 5 ajustes, patch pronto e teste de 1 comando sem gravar. Dado de 24/11: 59 posts, todos FEED, explicam no maximo 9,9% do alcance 28d."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T23:35:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T10:30:00-03:00",
+     "quem": "coordenador",
+     "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada (lider): nao consegui testar sem token; entregue doc oficial, revisao da proposta, patch e teste; pergunta sim/nao ao Davi para aplicar o patch e a coleta das 23h41 trazer por_formato ou o erro exato"
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:55:00-03:00",
+   "bloqueio": "lider",
+   "pergunta": "Davi (ou Leo): posso aplicar em scripts/insights.py o patch da secao 2 de D-20261123-dados_relatorio-semanal-1.md, para a coleta das 23h41 de hoje trazer o alcance por formato (ou o erro exato da Meta)? So leitura, dentro de tenta(), nao grava token nem derruba a coleta. Recomendo: sim.",
+   "_atrasada": false,
+   "_de_nome": "Ernest Hemingway",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261124-produto-1",
+   "de": "produto",
+   "para": "master",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Pacote do Davi: somar 2 perguntas sim/não sobre a build de 23/11 (documento vencendo e telas dos vídeos A1/B1)",
+   "por_que": "As séries de IPVA (D-20261123-mercado-2) e os vídeos A1/B1 só podem prometer 'avisa na Garagem' e mostrar histórico, saúde e notificações se a build de 23/11 não mudou isso. O código lido é de 17/11 (versão 1.0.1) e o pacote atual (D-20261123-master-pacote-davi) não pergunta isso. Promessa que o app não cumpre derruba conversão do instalado ao pago e vira avaliação ruim (08-regras.md).",
+   "pronto_quando": "Pacote do Davi com 2 itens sim/não: (1) A build de 23/11 mantém igual o selo 'Documento vencendo' da Garagem (licenciamento, 30 dias) e continua sem notificação push de documento? (2) A build de 23/11 mantém igual as telas Histórico, Saúde e Notificações usadas em A1 e B1? Em cada item, 'não' vira pedido de descrição do que mudou. Detalhe em entregas/D-20261123-mercado-3.md e D-20261123-cria-3.md.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T09:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto-1.md",
+    "resumo": "Itens 11 e 12 (selo Documento vencendo/sem push; telas Histórico, Saúde, Notificações) somados ao pacote do Davi, sem duplicar os 10 anteriores. Recomendação: sim, igual; até a resposta, A1/B1 só dizem 'avisa na Garagem, dentro do app'."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T09:00:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T10:30:00-03:00",
+     "quem": "master",
+     "o_que": "entregou: 2 itens somados ao pacote do Davi (entregas/D-20261124-produto-1.md); resposta só do Davi, prazo útil 27/11"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261124-produto-2",
+   "de": "produto",
+   "para": "cria",
+   "copia": [
+    "produto",
+    "mkt"
+   ],
+   "titulo": "Trocar a frase 'antes do prazo' (A1) e 'na hora certa' (B1) por texto que o aviso do app cumpre",
+   "por_que": "O aviso do app dispara no dia projetado em que o km do marco chega, pela média de uso ('pode estar chegando'), ou na data/km que o usuário marcou; não existe antecedência (planejador.ts, ver entregas/D-20261123-cria-3.md). Anúncio que promete o que o app não faz arrisca reprovação na Meta e na loja e avaliação 1 estrela. Troca de uma frase, a tela fica.",
+   "pronto_quando": "Nova versão de A1 e B1 (arquivo em agencia/direcao-v2/, sem publicar) com a cena do aviso usando uma frase da lista aprovada: 'O app lembra a troca pelo seu km.' ou 'Avisa quando a troca estiver chegando, pela sua média de uso.' Nada vai ao ar sem OK do Léo.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-24T09:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto-2.md",
+    "resumo": "A1 (\"O app lembra a troca pelo seu km.\") e B1 (\"Avisa quando a troca estiver chegando, pela sua média de uso.\") re-renderizados em agencia/direcao-v2/{A/A1,B/B1}/video-aviso.mp4, só a frase mudou, originais intocados, nada publicado. Telas seguem de 11/11 (build de 23/11 não conferida); card 4 do carrossel B tem a frase antiga, fora da fila."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T09:00:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T15:30:00-03:00",
+     "quem": "cria",
+     "o_que": "entreguei A1 e B1 com a frase aprovada (video-aviso.mp4), sem publicar"
+    },
+    {
+     "quando": "2026-11-24T17:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: A1 e B1 em direcao-v2/{A/A1,B/B1}/video-aviso.mp4; conferi os quadros (frames-aviso.jpg) e o videos_aviso.py: A1 'O app lembra a troca pelo seu km.' e B1 'Avisa quando a troca estiver chegando, pela sua média de uso.' (frases da lista aprovada), originais intocados, nada publicado. Pendências já ditas pela cria: card 4 do carrossel B com frase antiga (fora da fila) e telas de 11/11"
+    }
+   ],
+   "atualizada_em": "2026-11-24T17:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261124-trafego-1",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "trafego",
+    "master"
+   ],
+   "titulo": "Vendas por dia e custo por venda por hora dos Corretores em indice (outubro=100), pra converter o n do teste dos 3 estilos em dias",
+   "por_que": "A regra de D-20261123-mkt-3 pede ~100 vendas por estilo (~300 no teste) e eu nao consigo dizer quantos dias isso leva nem se o teste cabe: so tenho -43% de vendas/dia em novembro (agencia/conhecimento/09-numeros.md), sem base. Sem esse numero o EXP-20261123-1 comeca sem saber se termina.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-1.md com (1) vendas por dia dos ultimos 14 dias em indice (primeiro dia=100) e a media, (2) custo por venda por faixa de horario (madrugada, 7h-9h, 13h, 20h-21h, resto) em indice sobre outubro=100, (3) dias que ~300 vendas levariam nesse ritmo, dito em dias e nao em R$. Fonte UTMify (dados/utmify) citada; nenhum R$ nem absoluto.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-24T10:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-1.md",
+    "resumo": "Sem UTMify nesta sessao (carnucci-dados; ponte de % pendente no QG) nao estimei vendas/dia nem custo por faixa. Entrego o que independe disso: dias = 300/V (tabela), cenarios 526/V_out (ritmo de nov), 357/V_out e 300/V_out, poder do teste (100 vendas/estilo so enxerga ~49% a 58%; 30% custa 3,1x os dias) e a receita de extracao dos 3 pedidos."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T10:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada: falta UTMify (carnucci-dados, ponte de % pendente do QG, nao e pergunta nova); entregue o que independe de dado (tabela de dias, cenarios, poder do teste, receita de extracao); preencho os 3 pedidos no dia em que a leitura em % existir"
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:55:00-03:00",
+   "bloqueio": "dados",
+   "motivo_bloqueio": "Leitura em % da UTMify (vendas pagas/dia 14d e custo por venda por faixa, indice out=100). Falta a ponte de resumo em % do carnucci-dados para as sessoes do minhamoto-midia (PENDENCIAS.md l.101; decisoes.md, ata de 23/11). Ja decidido pelo Leo: nao vira pergunta.",
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261122-master-4",
@@ -3588,6 +3611,116 @@
    "_para_nome": "Walt Disney"
   },
   {
+   "id": "D-20261123-mercado_radar-de-concorrentes-1",
+   "de": "mercado:radar-de-concorrentes",
+   "para": "produto",
+   "copia": [
+    "mercado"
+   ],
+   "titulo": "Confirmar se o app escolhe a moto numa lista (marca, modelo, versão) e se o plano de revisão sai por modelo e km",
+   "por_que": "O ângulo 'sem digitar a moto' contra o Drivvo (reclamação de modelo digitado, out/2025) e contra o MotorManage (catálogo de 42.000 modelos) só vale se o app faz isso; 02-produto.md marca como rascunho. Sem confirmação o anúncio não pode usar a frase.",
+   "pronto_quando": "Resposta de 2 linhas em agencia/demandas/entregas/ dizendo: (1) a escolha de marca/modelo/versão é lista ou texto livre; (2) quantos modelos tem plano de revisão hoje (faixa, sem número de assinantes). Fonte: código ou ficha do produto.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-23T21:30:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado_radar-de-concorrentes-1.md",
+    "resumo": "(1) Escolha da moto é lista em 4 toques (marca, modelo, versão, ano), sem texto livre; há pedido de modelo faltante. (2) 377 modelos documentados em 20 marcas, 263 com tabela oficial de revisão e o resto com plano pelos intervalos do documento. Código de 17/11 (1.0.1)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:30:00-03:00",
+     "quem": "mercado:radar-de-concorrentes",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:00:00-03:00",
+     "quem": "produto",
+     "o_que": "entregou: (1) Escolha da moto é lista em 4 toques (marca, modelo, versão, ano), sem texto "
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Sun Tzu",
+   "_para_nome": "Tony Stark"
+  },
+  {
+   "id": "D-20261124-cria-2",
+   "de": "cria",
+   "para": "dados",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Ler a variável \"garantia de 30 dias no CTA\" no EXP-20261123-1 e registrar no placar",
+   "por_que": "D-20261123-mkt-2 define a V2 de cada estilo com a faixa de garantia (cta_garantia=sim/nao). Sem registro da variável no placar, o resultado do teste dos Corretores (CPA subiu 15 a 50% de out pra nov) não separa garantia de gancho.",
+   "pronto_quando": "Campo da variável cta_garantia anotado no EXP-20261123-1 (ou nota em agencia/experimentos) e, depois de volume mínimo definido pela trafego, leitura em % de CPA da V2 contra piloto e V1 por estilo; sem número absoluto. Se não houver dado, dizer.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T10:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-cria-2.md",
+    "resumo": "Registrei cta_garantia como variavel_secundaria do EXP-20261123-1 no placar.json (V2=sim/-g1, piloto e V1=nao/-g0). Sem dado: teste ainda planejado. Aviso: com ~100 vendas por estilo o teste so enxerga garantia se a diferenca passar de ~49% (3 estilos juntos, V2 x V1); lido uma vez, nunca por estilo; precisa a Disney confirmar que V2 = V1 + faixa."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T10:00:00-03:00",
+     "quem": "cria",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "entreguei o registro no placar e a regra de leitura; sem leitura em % pois o experimento nao comecou"
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:55:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261123-lojas-1",
+   "de": "lojas",
+   "para": "dados",
+   "copia": [
+    "lojas"
+   ],
+   "titulo": "Coletor de avaliações: por que o Google Play foi de 3 para 2 avaliações e dá pra trazer a versão do app na App Store?",
+   "por_que": "A média do Play depende de n: coleta de 20/11 trouxe 3 avaliações (3,67) e a de 23/11 trouxe 2 (3,00); sem saber se uma foi removida ou o coletor perde histórico, a meta de nota 4,7+ não tem base. A App Store não traz versão do app, e não separo reclamação por versão (produto-3, n=8).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo: (1) qual avaliação do Play sumiu entre 20/11 e 23/11 (id) e a causa provável (removida, filtrada ou limite do coletor), usando dados/avaliacoes/respostas.json; (2) se o coletor da App Store pode devolver a versão do app; se não, dizer o que falta. Só leitura; sem número absoluto do repo privado.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T20:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-23T20:30:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-lojas-1.md",
+    "resumo": "Sumiu 8fdb9c98 (5*): coletas de 20/11 (3), 23/11 (2) e 24/11 (1) mostram janela movel de ~7 dias da API do Play (provavel; doc oficial bloqueada; previsao falsificavel: ec124592 sai a partir de 26/11 21h35 UTC). App Store: coletor nao le versao e nao confirmei se a API tem o campo; teste de 1 comando e plano B por data de versao. Alerta: o 1* sem resposta ec124592 some da API em 26/11."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T20:30:00-03:00",
+     "quem": "lojas",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "entreguei: id que sumiu, causa provavel (janela de 7 dias, a confirmar na doc), previsao que a confirma, e o caminho para a versao na App Store"
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:55:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Jeff Bezos",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261123-trafego-1",
    "de": "trafego",
    "para": "master",
@@ -3695,6 +3828,79 @@
    "_atrasada": false,
    "_de_nome": "Steve Jobs",
    "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261124-cria-1",
+   "de": "cria",
+   "para": "produto",
+   "copia": [
+    "cria"
+   ],
+   "titulo": "Conferir 3 telas dos prints da loja (Lista para revisão, Saúde, Histórico) contra a build de 23/11",
+   "por_que": "Os 3 prints de D-20261123-lojas-3 usam telas de 18/11 (commit bb2ad21). Prints são o elo visita→download (assinante pago novo); tela desatualizada na loja é risco de reprovação e de avaliação ruim. A D-20261123-cria-3 só cobre A1/B1.",
+   "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261124-cria-1.md, 1 linha por tela (10, 02 e 06): existe igual, existe diferente (o que mudou) ou não existe, com o arquivo do código lido; dizer também se há tela do plano de revisão por km e tempo que sirva pro print 1. Nada mexe no app.",
+   "prioridade": "P3",
+   "prazo": "2026-12-01T20:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T10:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-cria-1.md",
+    "resumo": "Telas 10, 02 e 06 existem no código de 17/11 com os mesmos textos. Risco: rótulo \"Dados incompletos\" só confirmado na prévia, e não há imagem do plano por km (03 proibida). Build de 23/11 não está no repo."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T10:00:00-03:00",
+     "quem": "cria",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:00:00-03:00",
+     "quem": "produto",
+     "o_que": "entregou: Telas 10, 02 e 06 existem no código de 17/11 com os mesmos textos. Risco: rótulo"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Walt Disney",
+   "_para_nome": "Tony Stark"
+  },
+  {
+   "id": "D-20261124-lojas-1",
+   "de": "lojas",
+   "para": "dados",
+   "copia": [
+    "lojas"
+   ],
+   "titulo": "Alerta quando a coleta de avaliações passar de 48 h sem rodar",
+   "por_que": "A API do Play parece mostrar só ~1 semana de avaliações (4 das 6 já vistas sumiram; ver entregas/D-20261123-dados-3.md); coleta parada 7 dias perde avaliação (e 1★) pra sempre. As tarefas pararam por limite de uso em 21-23/11 (D-20261122-dados-3). Sem avaliação o 1★ não é respondido e a nota 4,7+ não sobe.",
+   "pronto_quando": "Regra escrita em agencia/demandas/entregas/D-20261124-lojas-1.md: de onde ler a hora da última coleta (coletado_em de dados/avaliacoes/ultimas.json), limite de 48 h, quem é avisado e como; sem mexer em script antes do OK do Davi.",
+   "prioridade": "P3",
+   "prazo": "2026-12-01T20:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T10:35:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-lojas-1.md",
+    "resumo": "Regra: coleta so conta se status da loja comeca com 'ok' E coletado_em tem ate 48 h; aviso a Bezos/Turing acima de 48 h, push ao Leo acima de 120 h. Achado: avaliacoes.py regrava ultimas.json mesmo com erro de loja (coletado_em novo, avaliacoes dela somem), e avaliacoes.yml so tem workflow_dispatch (sem horario). Checagem de 6 linhas testada hoje: nivel ok. Pergunta ao Davi sobre disparo diario."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T10:35:00-03:00",
+     "quem": "lojas",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "entreguei a regra de 48 h com a checagem testada; nenhum script mexido; pergunta ao Davi sobre disparo diario recomendada como sim"
+    }
+   ],
+   "atualizada_em": "2026-11-24T14:55:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Jeff Bezos",
+   "_para_nome": "Alan Turing"
   }
  ]
 }

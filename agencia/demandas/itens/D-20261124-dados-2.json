@@ -1,0 +1,26 @@
+{
+  "id": "D-20261124-dados-2",
+  "de": "dados",
+  "para": "master",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Levar ao Léo hoje: aprovar a resposta do rascunho ao 1★ do Play (ec124592) antes de 26/11 18h35",
+  "por_que": "É o único 1★ do Play sem resposta e a janela da API (~7 dias, provável) o tira da coleta a partir de 26/11 21h35 UTC (18h35 BRT); sem resposta publicada a nota 4,7+ perde a chance de reverter a avaliação (agencia/demandas/entregas/D-20261123-lojas-1.md, seção Alerta).",
+  "pronto_quando": "Resposta do Léo (aprovar ou editar o rascunho em dados/avaliacoes/respostas.json, id ec124592); o robô publica só o que ele aprovar. Sem aprovação até 26/11 12h, registrar no Conselho que o 1★ saiu sem resposta.",
+  "prioridade": "P1",
+  "prazo": "2026-11-25T15:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T15:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T15:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-24T15:00:00-03:00"
+}

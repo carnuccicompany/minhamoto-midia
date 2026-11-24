@@ -35,3 +35,8 @@
 - Entregues (aguardam aceite): D-20261123-mkt-2 (Cardone), D-20261123-lojas-3 (Jeff), D-20261123-mercado-2 (Sun Tzu).
 - Apostas novas: (a) garantia de 30 dias no CTA reduz o CPA dos Corretores; critério: V2 contra piloto e V1 por estilo, lida pelo Turing em %, só depois de volume mínimo da trafego; se o Léo aceitar o piloto gêmeo, a leitura vira causal. (b) série IPVA 2027 antes de 14/12 cobre a janela de busca de janeiro.
 - Aguardando: Léo (sim/não: V2 = piloto com garantia); Shelby (promessa e termos da garantia); Davi (build 23/11); Stark (D-20261123-cria-3 e D-20261124-cria-1); Turing (D-20261124-cria-2).
+
+## Atualização 24/11 (tarde)
+- Entregue: D-20261124-produto-2 (A1/B1 com frase do aviso que o app cumpre). Aguardando aceite do Stark/Produto junto de mkt-2, lojas-3, mercado-2 e dados (cria-2).
+- Se o Léo escolher A ou B, o par novo (video-aviso.mp4) é o que sobe; o antigo vira histórico. Se usar o carrossel B, trocar o card 4.
+- Aguardando: Léo (A/B 27/11, isolar garantia); Davi (build 23/11, push real); Shelby (termos da garantia).

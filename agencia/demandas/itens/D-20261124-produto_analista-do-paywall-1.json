@@ -1,0 +1,26 @@
+{
+ "id": "D-20261124-produto_analista-do-paywall-1",
+ "de": "produto:analista-do-paywall",
+ "para": "master",
+ "copia": [
+  "produto"
+ ],
+ "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
+ "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
+ "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
+ "prioridade": "P2",
+ "prazo": "2026-11-27T18:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-24T11:00:00-03:00",
+ "fio": "F-001",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-24T11:00:00-03:00",
+   "quem": "produto:analista-do-paywall",
+   "o_que": "criou"
+  }
+ ],
+ "atualizada_em": "2026-11-24T11:00:00-03:00"
+}

@@ -10,16 +10,25 @@
   "pronto_quando": "Campo da variável cta_garantia anotado no EXP-20261123-1 (ou nota em agencia/experimentos) e, depois de volume mínimo definido pela trafego, leitura em % de CPA da V2 contra piloto e V1 por estilo; sem número absoluto. Se não houver dado, dizer.",
   "prioridade": "P3",
   "prazo": "2026-11-30T18:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T10:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-cria-2.md",
+    "resumo": "Registrei cta_garantia como variavel_secundaria do EXP-20261123-1 no placar.json (V2=sim/-g1, piloto e V1=nao/-g0). Sem dado: teste ainda planejado. Aviso: com ~100 vendas por estilo o teste so enxerga garantia se a diferenca passar de ~49% (3 estilos juntos, V2 x V1); lido uma vez, nunca por estilo; precisa a Disney confirmar que V2 = V1 + faixa."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T10:00:00-03:00",
       "quem": "cria",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:55:00-03:00",
+      "quem": "dados",
+      "o_que": "entreguei o registro no placar e a regra de leitura; sem leitura em % pois o experimento nao comecou"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-24T14:55:00-03:00"
 }

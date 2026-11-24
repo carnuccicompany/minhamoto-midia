@@ -68,3 +68,19 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - aprendi: insights por post voltaram (dados/insights-2026-11-23.json, erros vazio): 26 posts, mediana de alcance 0,7% dos seguidores, 0 salvamentos, 1 compartilhamento. Alcance da conta 28d muito maior que a soma dos posts; doc da Meta (developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights) diz que conta anúncio, story e reel e aceita breakdown media_product_type. Esse link abriu; RevenueCat/AppsFlyer seguem bloqueados.
 - erro a evitar: o relatório das 8h26 ficou velho em horas; conferir a hora da coleta antes de citar "zero".
 - pendente: Davi (F-001, dados-2), Léo (dados-1, ted-1); dados-4/5/6; D-20261123-lojas-1 (30/11).
+
+## 2026-11-24 · Rodada de demandas
+- fiz: D-20261123-lojas-1 e D-20261124-lojas-1 e D-20261124-cria-2 entregues; D-20261124-trafego-1 bloqueada (sem UTMify; ponte de % do QG pendente; entreguei tabela de dias, cenários 526/V_out e poder do teste); D-20261123-dados_relatorio-semanal-1 bloqueada pro líder (sem token, não testei; doc da Meta lida, patch e teste prontos). Criei D-20261124-dados-1 (Disney: V2 = V1 + faixa?) e -2 (Shelby: Léo aprovar a resposta ao 1★ ec124592 até 26/11 12h). D-20261123-trafego-3 segue aberta (depende do SDK, prazo 30/11).
+- aprendi: o 8fdb9c98 foi o id que sumiu do Play (coletas 20/11=3, 23/11=2, 24/11=1): janela móvel de ~7 dias (provável; doc do Google bloqueada). Previsão falsificável: ec124592 sai da API a partir de 26/11 21h35 UTC. avaliacoes.py regrava ultimas.json mesmo com erro de loja (coletado_em novo, avaliações dela somem) e avaliacoes.yml não tem horário. Meta: breakdown media_product_type só com metric_type=total_value; janela máxima não declarada. 59 posts do IG, todos FEED, explicam no máximo 9,9% do alcance 28d. Teste de 100 vendas por estilo só enxerga diferença de custo por venda de ~49% (2 estilos) a ~58% (3); 30% custa 3,1x os dias; garantia no CTA não é legível nesse volume.
+- erro a evitar: nada novo; developers.google.com, developer.apple.com e itunes.apple.com seguem 403 (não gastar tentativa). Developers.facebook.com abre.
+- pendente: UTMify em % (ponte QG) para fechar trafego-1; resposta do Davi (patch insights.py, disparo diário avaliacoes.yml, F-001, dados-2); Léo (dados-1, ted-1, ec124592); conferir 27/11 se ec124592 saiu da coleta; 30/11 trafego-3.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor, rumo ao Conselheiro. XP 5 de 1500; só sobe com entrega aceita e número comprovado.
+- **Conquista da semana:** Previu o gargalo. Já tenho uma previsão com data para provar: ec124592 sai do Play em 26/11 21h35 UTC; e a hipótese paywall->pagante para a 1ª leitura em %.
+- **Item que quero:** Omega Speedmaster Moonwatch.
+
+## 2026-11-24 (tarde) · Conferência
+- fiz: D-20261123-dados-3 aceita (Bezos; bate com respostas.json 6 Play 3x5★/3x1★ e avaliacoes.py sem paginação; implementação só com OK do Davi). D-20261123-dados-5 devolvida: sim do Shelby e cron diário conferem, falta a prova do 1º arquivo gerado pelo cron (insights-2026-11-25.json, erros vazio); o de 24/11 (12:56Z) foi manual. Hora do histórico do master (19:45) anterior à criação (21:00).
+- aprendi: conferir contra pronto_quando item por item; item que depende de data futura não se aceita no escuro. Ultimas.json hoje tem 1 avaliação do Play (coleta 24/11 16h15Z), então c28f1858 também saiu da janela.
+- pendente: 25/11 conferir insights-2026-11-25.json e aceitar dados-5; OK do Davi pra implementar historico.jsonl; 27/11 ec124592.

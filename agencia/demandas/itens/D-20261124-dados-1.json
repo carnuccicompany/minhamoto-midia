@@ -1,0 +1,27 @@
+{
+  "id": "D-20261124-dados-1",
+  "de": "dados",
+  "para": "cria",
+  "copia": [
+    "trafego",
+    "master"
+  ],
+  "titulo": "Confirmar se a V2 de cada estilo é a V1 com a faixa de garantia e mais nada",
+  "por_que": "Sem isso o teste de garantia (D-20261123-mkt-2, D-20261124-cria-2) mistura garantia e gancho e a leitura de CPA não vale; o EXP-20261123-1 só começa depois (agencia/demandas/entregas/D-20261124-cria-2.md, seção 2).",
+  "pronto_quando": "Resposta em uma linha na própria demanda: 'V2 = V1 + faixa' (sim) ou, se não, qual outra diferença existe entre V2 e V1 em cada estilo (EST5, EST2, EST4). Nada é produzido nem publicado.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T15:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T15:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-24T15:00:00-03:00"
+}

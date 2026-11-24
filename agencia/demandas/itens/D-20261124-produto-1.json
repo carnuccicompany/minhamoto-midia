@@ -10,16 +10,24 @@
   "pronto_quando": "Pacote do Davi com 2 itens sim/não: (1) A build de 23/11 mantém igual o selo 'Documento vencendo' da Garagem (licenciamento, 30 dias) e continua sem notificação push de documento? (2) A build de 23/11 mantém igual as telas Histórico, Saúde e Notificações usadas em A1 e B1? Em cada item, 'não' vira pedido de descrição do que mudou. Detalhe em entregas/D-20261123-mercado-3.md e D-20261123-cria-3.md.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T09:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto-1.md",
+    "resumo": "Itens 11 e 12 (selo Documento vencendo/sem push; telas Histórico, Saúde, Notificações) somados ao pacote do Davi, sem duplicar os 10 anteriores. Recomendação: sim, igual; até a resposta, A1/B1 só dizem 'avisa na Garagem, dentro do app'."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T09:00:00-03:00",
       "quem": "produto",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T10:30:00-03:00",
+      "quem": "master",
+      "o_que": "entregou: 2 itens somados ao pacote do Davi (entregas/D-20261124-produto-1.md); resposta só do Davi, prazo útil 27/11"
     }
   ]
 }

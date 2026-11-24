@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
   "prioridade": "P2",
   "prazo": "2026-11-26T19:40:00-03:00",
-  "status": "entregue",
+  "status": "devolvida",
   "criada_em": "2026-11-23T19:40:00-03:00",
   "fio": null,
   "entrega": {
@@ -33,6 +33,11 @@
       "quando": "2026-11-24T10:00:00-03:00",
       "quem": "cria",
       "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
+    },
+    {
+      "quando": "2026-11-24T11:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "devolvida: tabela, texto exato do CTA, marcacao sim/nao e fontes (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3) conferem. Falta 1 item do pronto_quando: 'passado pelo check de promessa do Shelby'. A entrega traz so autoverificacao ('o Shelby faz o oficial'). Para aceitar: (1) pedir ao Shelby o check oficial de 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e da variante com R$27,90), registrar no arquivo o parecer do Shelby com data e id/caminho; (2) registrar tambem a conferencia dos termos da garantia na Kavoo (Shelby ou Leo), ja que o texto so e seguro se a politica for 30 dias mesmo. A pergunta sim/nao ao Leo (V2 = piloto com garantia) nao bloqueia."
     }
   ]
 }

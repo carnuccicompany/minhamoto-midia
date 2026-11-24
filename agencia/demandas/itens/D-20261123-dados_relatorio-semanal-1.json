@@ -10,10 +10,13 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
   "prioridade": "P2",
   "prazo": "2026-11-26T21:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-23T23:35:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados_relatorio-semanal-1.md",
+    "resumo": "Sem META_TOKEN nesta sessao nao testei a chamada. Doc oficial da Meta conferida (breakdown media_product_type so com metric_type=total_value; valores AD/FEED/REELS/STORY; janela maxima nao declarada). Proposta do Hemingway aceita com 5 ajustes, patch pronto e teste de 1 comando sem gravar. Dado de 24/11: 59 posts, todos FEED, explicam no maximo 9,9% do alcance 28d."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -25,7 +28,14 @@
       "quando": "2026-11-24T10:30:00-03:00",
       "quem": "coordenador",
       "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
+    },
+    {
+      "quando": "2026-11-24T14:55:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada (lider): nao consegui testar sem token; entregue doc oficial, revisao da proposta, patch e teste; pergunta sim/nao ao Davi para aplicar o patch e a coleta das 23h41 trazer por_formato ou o erro exato"
     }
   ],
-  "atualizada_em": "2026-11-23T23:35:00-03:00"
+  "atualizada_em": "2026-11-24T14:55:00-03:00",
+  "bloqueio": "lider",
+  "pergunta": "Davi (ou Leo): posso aplicar em scripts/insights.py o patch da secao 2 de D-20261123-dados_relatorio-semanal-1.md, para a coleta das 23h41 de hoje trazer o alcance por formato (ou o erro exato da Meta)? So leitura, dentro de tenta(), nao grava token nem derruba a coleta. Recomendo: sim."
 }

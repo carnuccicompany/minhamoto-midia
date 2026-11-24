@@ -10,17 +10,25 @@
   "pronto_quando": "Regra escrita em agencia/demandas/entregas/D-20261124-lojas-1.md: de onde ler a hora da última coleta (coletado_em de dados/avaliacoes/ultimas.json), limite de 48 h, quem é avisado e como; sem mexer em script antes do OK do Davi.",
   "prioridade": "P3",
   "prazo": "2026-12-01T20:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T10:35:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-lojas-1.md",
+    "resumo": "Regra: coleta so conta se status da loja comeca com 'ok' E coletado_em tem ate 48 h; aviso a Bezos/Turing acima de 48 h, push ao Leo acima de 120 h. Achado: avaliacoes.py regrava ultimas.json mesmo com erro de loja (coletado_em novo, avaliacoes dela somem), e avaliacoes.yml so tem workflow_dispatch (sem horario). Checagem de 6 linhas testada hoje: nivel ok. Pergunta ao Davi sobre disparo diario."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T10:35:00-03:00",
       "quem": "lojas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:55:00-03:00",
+      "quem": "dados",
+      "o_que": "entreguei a regra de 48 h com a checagem testada; nenhum script mexido; pergunta ao Davi sobre disparo diario recomendada como sim"
     }
   ],
-  "atualizada_em": "2026-11-24T10:35:00-03:00"
+  "atualizada_em": "2026-11-24T14:55:00-03:00"
 }

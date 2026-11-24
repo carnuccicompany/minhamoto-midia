@@ -1,6 +1,6 @@
 {
  "de": "master:auditor-de-entregas",
- "status": "entregue",
+ "status": "aceita",
  "criada_em": "2026-11-22T23:55:00-03:00",
  "entrega": {
   "arquivo": "agencia/demandas/entregas/D-20261122-master_auditor-de-entregas-1.md",
@@ -34,9 +34,15 @@
    "quando": "2026-11-23T19:45:00-03:00",
    "quem": "master",
    "o_que": "ronda do Shelby: tirei o bloqueio 'lider' de demanda entregue; a pergunta ao Léo é o item 1 de entregas/D-20261123-master-pacote-leo.md. Falta o Ness conferir e aceitar"
+  },
+  {
+   "quando": "2026-11-24T09:00:00-03:00",
+   "quem": "master:auditor-de-entregas",
+   "o_que": "aceitei: 3 opcoes cada uma com numero de posts salvos e risco, nada alterado em scripts/, termina com pergunta sim/nao. Conferi contra fila/estado.json (horarios_feitos e 'em' dos posts, convertidos UTC->BRT): 21/11 12h,18h,21h = 3 posts; 22/11 18h = 1; total 4 de 8; simulacao A refeita: 21/11 3 (0), 22/11 3 (+2) = 6. Ressalva menor: das 8 execucoes da tabela, 1 (22/11 23h10) foi manual, entao o cron rodou 7 e nao 8 (dados-3 diz 7); nao muda a conclusao. Decisao da pergunta segue com o Leo (item 1 de D-20261123-master-pacote-leo.md)"
   }
  ],
  "bloqueio": null,
  "pergunta": "Posso mudar o publicar.py para recuperar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, trava de 90 min, até 23h59, sem mexer no conteúdo)? sim/não. Recomendo sim: simulado nas execuções reais de 21 e 22/11, dá 6 posts em vez de 4.",
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+ "atualizada_em": "2026-11-24T09:00:00-03:00",
+ "aceita_em": "2026-11-24T09:00:00-03:00"
 }

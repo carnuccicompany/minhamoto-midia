@@ -11,7 +11,7 @@
   "pronto_quando": "Proposta em agencia/demandas/entregas/D-20261123-dados-3.md de como acumular id, nota e data de toda avaliação nova (Play e App Store) num arquivo que só cresce, com a regra de deduplicar por id e de contar edição de nota; implementação em scripts/avaliacoes.py só depois do OK do Davi.",
   "prioridade": "P2",
   "prazo": "2026-11-26T21:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-23T20:30:00-03:00",
   "fio": null,
   "entrega": {
@@ -29,8 +29,13 @@
       "quando": "2026-11-24T10:30:00-03:00",
       "quem": "lojas",
       "o_que": "entregue: proposta gravada; implementação aguarda OK do Davi (pergunta no campo pergunta)"
+    },
+    {
+      "quando": "2026-11-24T14:40:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: proposta cobre id, nota e data (Play e App Store), arquivo só-acrescentar, dedupe por loja+id, eventos nota_mudou/editada, implementação não feita. Conferido contra respostas.json (6 Play: 3x5★ e 3x1★ = 3,00; 6 App Store) e scripts/avaliacoes.py (maxResults=100, limit=200 sem paginação). Ressalvas pra implementação, não bloqueiam: (1) semente de respostas.json não tem data da avaliação, só publicada_em; (2) '2 de 6 na coleta de 12h16Z' não é reconferível, ultimas.json foi regravado (hoje 1 do Play, coleta 16h15Z): a prova é o sumiço dos ids; (3) janela de 7 dias do Play segue hipótese, doc oficial bloqueada. Implementação aguarda OK do Davi."
     }
   ],
-  "atualizada_em": "2026-11-24T10:30:00-03:00",
+  "atualizada_em": "2026-11-24T14:40:00-03:00",
   "pergunta": "Davi: posso mandar o Turing implementar o histórico de avaliações (historico.jsonl + estado.json, sem texto nem nome do autor) em scripts/avaliacoes.py? Sim/não."
 }

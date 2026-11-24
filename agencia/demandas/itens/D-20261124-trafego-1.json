@@ -11,17 +11,27 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-1.md com (1) vendas por dia dos ultimos 14 dias em indice (primeiro dia=100) e a media, (2) custo por venda por faixa de horario (madrugada, 7h-9h, 13h, 20h-21h, resto) em indice sobre outubro=100, (3) dias que ~300 vendas levariam nesse ritmo, dito em dias e nao em R$. Fonte UTMify (dados/utmify) citada; nenhum R$ nem absoluto.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-24T10:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-1.md",
+    "resumo": "Sem UTMify nesta sessao (carnucci-dados; ponte de % pendente no QG) nao estimei vendas/dia nem custo por faixa. Entrego o que independe disso: dias = 300/V (tabela), cenarios 526/V_out (ritmo de nov), 357/V_out e 300/V_out, poder do teste (100 vendas/estilo so enxerga ~49% a 58%; 30% custa 3,1x os dias) e a receita de extracao dos 3 pedidos."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T10:00:00-03:00",
       "quem": "trafego",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:55:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: falta UTMify (carnucci-dados, ponte de % pendente do QG, nao e pergunta nova); entregue o que independe de dado (tabela de dias, cenarios, poder do teste, receita de extracao); preencho os 3 pedidos no dia em que a leitura em % existir"
     }
   ],
-  "atualizada_em": "2026-11-24T10:00:00-03:00"
+  "atualizada_em": "2026-11-24T14:55:00-03:00",
+  "bloqueio": "dados",
+  "motivo_bloqueio": "Leitura em % da UTMify (vendas pagas/dia 14d e custo por venda por faixa, indice out=100). Falta a ponte de resumo em % do carnucci-dados para as sessoes do minhamoto-midia (PENDENCIAS.md l.101; decisoes.md, ata de 23/11). Ja decidido pelo Leo: nao vira pergunta."
 }

@@ -10,16 +10,24 @@
   "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261124-cria-1.md, 1 linha por tela (10, 02 e 06): existe igual, existe diferente (o que mudou) ou não existe, com o arquivo do código lido; dizer também se há tela do plano de revisão por km e tempo que sirva pro print 1. Nada mexe no app.",
   "prioridade": "P3",
   "prazo": "2026-12-01T20:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T10:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-cria-1.md",
+    "resumo": "Telas 10, 02 e 06 existem no código de 17/11 com os mesmos textos. Risco: rótulo \"Dados incompletos\" só confirmado na prévia, e não há imagem do plano por km (03 proibida). Build de 23/11 não está no repo."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T10:00:00-03:00",
       "quem": "cria",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:00:00-03:00",
+      "quem": "produto",
+      "o_que": "entregou: Telas 10, 02 e 06 existem no código de 17/11 com os mesmos textos. Risco: rótulo"
     }
   ]
 }

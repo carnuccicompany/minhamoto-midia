@@ -41,3 +41,8 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - erro meu a evitar: nenhum. Mas a contagem do Turing (18/18) estava errada por 1; conferi arquivo por arquivo antes de aceitar.
 - criei: D-20261122-master_auditor-de-entregas-1 (Phileas, recuperacao de slot) e -2 (Shelby, limite de uso, pergunta sim/nao ao Leo).
 - pendente: log.md sem as rodadas de 21/11 09h10 a 22/11 22h39 (texto de explicacao pronto na entrega; nao editei o log por conflito com o GitHub).
+
+## 2026-11-24 09:00 · Conferência de D-20261122-master_auditor-de-entregas-1
+- fiz: aceitei a entrega do Phileas. Refiz a conta no fila/estado.json (horarios_feitos + campo "em" convertido de UTC para BRT): 4 de 8 slots (21/11: 12h, 18h, 21h; 22/11: 18h) e simulação da opção A = 6 posts (+2). Bate. Opção B sem número é declarada como "não provado", certo; C = +1 bate.
+- aprendi: entrega boa separa o que é provado do que é aposta. Ressalva mínima: a tabela chama de "cron" 8 execuções, mas 1 foi manual (23h10 de 22/11); o cron foi 7, igual à dados-3. Não devolvi porque não muda a decisão.
+- pendente: a pergunta sim/não ainda é do Léo (item 1 de D-20261123-master-pacote-leo.md); se vier sim, conferir a alteração do publicar.py com SIMULAR=1 antes de aceitar. Demanda -2 (Shelby) ainda a conferir. Pedir pra Mesa lançar +5 XP/C$ 5 (aceite no prazo, se couber a ela; eu não editei livro nem lançamentos).

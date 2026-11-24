@@ -10,17 +10,25 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo: (1) qual avaliação do Play sumiu entre 20/11 e 23/11 (id) e a causa provável (removida, filtrada ou limite do coletor), usando dados/avaliacoes/respostas.json; (2) se o coletor da App Store pode devolver a versão do app; se não, dizer o que falta. Só leitura; sem número absoluto do repo privado.",
   "prioridade": "P3",
   "prazo": "2026-11-30T20:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-23T20:30:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-lojas-1.md",
+    "resumo": "Sumiu 8fdb9c98 (5*): coletas de 20/11 (3), 23/11 (2) e 24/11 (1) mostram janela movel de ~7 dias da API do Play (provavel; doc oficial bloqueada; previsao falsificavel: ec124592 sai a partir de 26/11 21h35 UTC). App Store: coletor nao le versao e nao confirmei se a API tem o campo; teste de 1 comando e plano B por data de versao. Alerta: o 1* sem resposta ec124592 some da API em 26/11."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-23T20:30:00-03:00",
       "quem": "lojas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:55:00-03:00",
+      "quem": "dados",
+      "o_que": "entreguei: id que sumiu, causa provavel (janela de 7 dias, a confirmar na doc), previsao que a confirma, e o caminho para a versao na App Store"
     }
   ],
-  "atualizada_em": "2026-11-23T20:30:00-03:00"
+  "atualizada_em": "2026-11-24T14:55:00-03:00"
 }

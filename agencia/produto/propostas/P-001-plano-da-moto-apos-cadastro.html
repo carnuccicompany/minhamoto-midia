@@ -1,0 +1,53 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>P-001 Plano da moto após o cadastro</title>
+<style>
+:root{--bg:#07070a;--card:#121217;--line:#26262f;--gold:#d8b46a;--txt:#f2efe8;--mut:#9a968c;--az:#5b8cff;--ok:#3ccf7a;--bad:#ff5b5b}
+@media(prefers-color-scheme:light){:root{--bg:#f4f6fb;--card:#fff;--line:#d9e0ef;--gold:#8a6a1f;--txt:#0b1b3a;--mut:#5b6784;--az:#1456f0;--ok:#157a45;--bad:#c0392b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 Poppins,Inter,system-ui,sans-serif;padding:16px}
+.w{max-width:980px;margin:0 auto}h1{font-size:21px;margin:8px 0}h2{font-size:15px;color:var(--gold);margin:22px 0 8px;text-transform:uppercase;letter-spacing:.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}.mut{color:var(--mut);font-size:13px}
+.row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}.ph{width:240px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:16px;min-height:360px}
+.ph.n{border-color:var(--az)}.ph small{color:var(--mut)}.ph h3{font-size:16px;margin:6px 0}
+.l{border:1px solid var(--line);border-radius:12px;padding:9px;margin:7px 0;font-size:13px}.l.f{border-color:var(--az)}
+.b{display:block;width:100%;background:var(--az);color:#fff;border:0;border-radius:14px;padding:12px;font:inherit;font-weight:600;margin-top:10px}
+.tag{font-size:11px;color:var(--az);font-weight:600}
+.q{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}.q span{flex:1;min-width:240px}
+button.s,button.nao{font:600 14px inherit;border-radius:999px;padding:9px 18px;border:1px solid var(--line);background:var(--card);color:var(--txt);cursor:pointer;min-height:44px}
+button.on.s{background:var(--ok);color:#06140c;border-color:var(--ok)}button.on.nao{background:var(--bad);color:#fff;border-color:var(--bad)}
+ul{padding-left:20px}a{color:var(--az)}
+</style></head><body><div class="w">
+<div class="mut">Proposta P-001 · Steve Jobs · 24/11/2026 · aguardando o Davi · nada mexe no app</div>
+<h1>Mostrar o plano da moto logo depois do cadastro</h1>
+<p>Hoje o motoqueiro só vê o plano da moto no fim do tour. A proposta move o plano pra logo depois do cadastro da moto. Só isso. Paywall, preço e planos não mudam. É hipótese, sem funil ainda: o teste diz se vende.</p>
+
+<h2>Antes e depois</h2>
+<div class="row">
+<div class="ph"><small>Antes</small><h3>Cadastro da moto</h3><div class="l">Configuração (km, respostas, ritmo)</div><div class="l">Diagnóstico e tour</div><div class="l f">"Esse é o MinhaMoto" (plano)</div><div class="l">Paywall pago direto</div></div>
+<div class="ph n"><small>Depois · tela nova</small><h3>Plano da sua moto</h3><div class="tag">Próxima revisão</div><div class="l f">Item do manual · em X km</div><div class="l">Item · X km</div><div class="l">Item · X km</div><small>Sem pedir km agora.</small><button class="b" type="button">Continuar</button></div>
+<div class="ph"><small>Depois · o resto</small><h3>Configuração, diagnóstico, tour, "Esse é o MinhaMoto"</h3><div class="l">Sem alteração</div><div class="l">Paywall: intocado</div></div>
+</div><p class="mut">Mockup, não é o app. "X" é dado que o app já calcula pro briefing.</p>
+
+<h2>Aceite</h2><div class="card"><ul>
+<li>Abre após cadastrar a moto, antes da configuração; usa só dados que o app já tem; não pede km nem permissão.</li>
+<li>Moto sem plano: a tela não aparece, nada inventado. Conta Pro ou pós-onboarding: não vê.</li>
+<li>Paywall, planos, preço, ordem e "Restaurar compra" idênticos. Nenhum "grátis" ou "X dias".</li>
+<li>Eventos <code>moto_cadastrada</code> e <code>plano_visto</code> uma vez cada, com <code>variante</code>. Fora do ar até o seu OK e o do Léo.</li></ul></div>
+
+<h2>O que mede</h2><div class="card">% instalação > pagante, iOS e Android separados desde o dia 1. Teste 50/50 de usuários ao mesmo tempo (antes e depois por data mistura com a build estética de 23/11). Guarda-corpo: nota e reclamações por versão. Se o novo não ficar acima do atual no período combinado, volta ao atual. Sem baseline hoje.</div>
+
+<h2>3 perguntas pro Davi</h2>
+<div class="card q"><span>1. Logo após o cadastro o app já tem os dados pra montar o plano daquela moto, sem o km da configuração? <em class="mut">(recomendo: sim, é o mesmo cálculo do briefing)</em></span><span><button class="s" data-q="1" type="button">Sim</button> <button class="nao" data-q="1" type="button">Não</button></span></div>
+<div class="card q"><span>2. Dá pra dividir 50/50 por flag remota, sem build nova?</span><span><button class="s" data-q="2" type="button">Sim</button> <button class="nao" data-q="2" type="button">Não</button></span></div>
+<div class="card q"><span>3. Depois do seu OK, posso preparar rascunho de código num branch separado, sem merge? <em class="mut">(recomendo: sim, só depois do OK)</em></span><span><button class="s" data-q="3" type="button">Sim</button> <button class="nao" data-q="3" type="button">Não</button></span></div>
+<p class="mut">As respostas ficam só neste aparelho. Diga ao Léo ou ao Shelby o que marcou. Já perguntado no pacote do Davi: item 5 (tela "Esse é o MinhaMoto" fica na build de 23/11?), item 6 (cobertura de modelos) e item 1 (SDK e eventos).</p>
+<p class="mut">Detalhe e fontes: <code>agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md</code> · <a href="https://developer.apple.com/design/human-interface-guidelines/onboarding">Apple HIG, Onboarding</a>.</p>
+</div>
+<script>
+document.querySelectorAll('button[data-q]').forEach(function(b){
+  var k='p001-q'+b.dataset.q,v=b.classList.contains('s')?'s':'n';
+  try{if(localStorage.getItem(k)===v)b.classList.add('on')}catch(e){}
+  b.addEventListener('click',function(){
+    document.querySelectorAll('button[data-q="'+b.dataset.q+'"]').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');try{localStorage.setItem(k,v)}catch(e){}
+  });
+});
+</script></body></html>

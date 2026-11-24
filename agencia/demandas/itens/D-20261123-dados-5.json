@@ -10,7 +10,7 @@
  "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
  "prioridade": "P2",
  "prazo": "2026-11-26T21:00:00-03:00",
- "status": "entregue",
+ "status": "devolvida",
  "criada_em": "2026-11-23T21:00:00-03:00",
  "fio": null,
  "entrega": {
@@ -28,7 +28,12 @@
    "quando": "2026-11-23T19:45:00-03:00",
    "quem": "master",
    "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
+  },
+  {
+   "quando": "2026-11-24T14:40:00-03:00",
+   "quem": "dados",
+   "o_que": "devolvida (faltam provas, não é erro de decisão): o sim do Shelby e o cron diário 41 2 * * * no insights.yml conferem. Falta o 3º item do pronto_quando, a coleta do dia seguinte sem erro: o 1º disparo agendado é 25/11 02:41 UTC e ainda não existe dados/insights-2026-11-25.json (o de 24/11, coletado_em 12:56Z, é manual, não do cron). Reentregar com: nome e coletado_em do arquivo gerado pelo cron e erros vazio. Se não disparar, workflow_dispatch e registrar. Corrigir também o historico: a linha do master está com hora 19:45, antes da criação (21:00). Aceito assim que a prova entrar."
   }
  ],
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+ "atualizada_em": "2026-11-24T14:40:00-03:00"
 }

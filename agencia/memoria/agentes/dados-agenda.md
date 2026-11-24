@@ -37,3 +37,9 @@
 - Iniciativa nova: "De onde vem o alcance?" (breakdown por formato até 30/11). A linha de base do funil continua, depende do SDK (F-001).
 - Criadas: D-20261123-dados-4 (Hemingway, placar refeito), -5 (Shelby, coleta diária), -6 (Escobar, proposta de teste pago mínimo).
 - Esperando: Davi (F-001, dados-2), Léo (dados-1, ted-1). Devo: D-20261123-lojas-1 (30/11).
+
+## Atualização 2026-11-24
+- Prazos: 26/11 conferir resposta do Davi sobre o patch do alcance por formato e, se sim, ler por_formato na coleta de 27/11 (23h41 BRT de 26/11); 26/11 21h35 UTC checar se ec124592 sai do Play; 27/11 trafego-1 (preencher com UTMify em % quando a ponte existir); 30/11 trafego-3, cria-2 (leitura só quando o n existir), dados-5 e 1ª linha de base do funil.
+- Iniciativa que trago: "De onde vem o alcance?" continua; agora com 59 posts FEED = <=9,9% do alcance e hipótese AD primeiro.
+- Aposta: provar a janela de 7 dias do Play com a previsão de 26/11 (conta como "Previu o gargalo" se confirmar).
+- Cobrar: Davi (patch insights.py, disparo diário de avaliacoes.yml), Léo (ec124592), Disney (dados-1: V2 = V1 + faixa), Shelby (dados-2).

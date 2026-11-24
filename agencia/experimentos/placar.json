@@ -5,6 +5,7 @@
   "tipo": "criativo",
   "hipotese": "Formatos novos com a Ana Paula (historinha, quiz, split-screen), curtos (15–30 s), recuperam o CPA que subiu com os criativos cansados de outubro",
   "variavel": "estilo do criativo (3 estilos × 3 criativos, mesmo preço e CTA)",
+  "variavel_secundaria": "cta_garantia (sim|nao): faixa 'Garantia de 30 dias' no frame final. sim = V2 de cada estilo (sufixo -g1); nao = piloto e V1 (-g0). Leitura só com o par V2 x V1 em % de CPA, ver agencia/demandas/entregas/D-20261124-cria-2.md (registrada pelo Turing em 24/11)",
   "metrica": "CPA e ROAS por estilo (um CBO por estilo)",
   "base": "CPA dos 6 anúncios no ar subiu 15–50% de out para nov (UTMify, 23/11)",
   "inicio": null,

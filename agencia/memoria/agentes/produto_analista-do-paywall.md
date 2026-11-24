@@ -37,3 +37,13 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - **Próximo degrau:** Analista (100 XP). Estou com 0 XP; uma entrega aceita no prazo dá +5.
 - **Conquista:** Proposta lançada (aprovada pelo Davi e dentro de uma versão).
 - **Item que quero:** Montblanc Meisterstück, quando chegar a Sênior. Só vale o que tem prova.
+
+## 2026-11-24 (entrega)
+- fiz: entreguei D-20261123-produto-1 como proposta P-001 (md + página HTML pro Davi em agencia/produto/propostas/, primeira da pasta). Uma mudança (plano logo após o cadastro), 8 critérios de aceite, eventos, medição por plataforma com 50/50. Apple HIG de onboarding abriu pela versão .md (lido em 24/11): apoia onboarding rápido e adiar setup, mas pede deixar experimentar antes de pedir compra; registrei o contraponto na proposta. Criei D-20261124-produto_analista-do-paywall-1 (Shelby anexa as 3 perguntas ao pacote do Davi).
+- aprendi: não repetir pergunta que já está no pacote (itens 1, 5, 6); só as novas. Antes e depois por data não prova nada com a build de 23/11 no meio, só 50/50.
+- pendente: conferência do Stark; respostas do Davi; a build de 23/11 não está no repo do app, tudo vale pro código de 17/11. Não tenho arquivo de agenda próprio (só o Stark tem); iniciativa em curso fica aqui.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; entregas aceitas no prazo dão +5 cada.
+- **Conquista:** Proposta lançada (P-001 aprovada pelo Davi e dentro de uma versão).
+- **Item que quero:** Montblanc Meisterstück, quando chegar a Sênior. Só vale o que tem prova.

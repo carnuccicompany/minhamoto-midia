@@ -10,16 +10,24 @@
   "pronto_quando": "Resposta de 2 linhas em agencia/demandas/entregas/ dizendo: (1) a escolha de marca/modelo/versão é lista ou texto livre; (2) quantos modelos tem plano de revisão hoje (faixa, sem número de assinantes). Fonte: código ou ficha do produto.",
   "prioridade": "P3",
   "prazo": "2026-11-30T18:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-23T21:30:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mercado_radar-de-concorrentes-1.md",
+    "resumo": "(1) Escolha da moto é lista em 4 toques (marca, modelo, versão, ano), sem texto livre; há pedido de modelo faltante. (2) 377 modelos documentados em 20 marcas, 263 com tabela oficial de revisão e o resto com plano pelos intervalos do documento. Código de 17/11 (1.0.1)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-23T21:30:00-03:00",
       "quem": "mercado:radar-de-concorrentes",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T14:00:00-03:00",
+      "quem": "produto",
+      "o_que": "entregou: (1) Escolha da moto é lista em 4 toques (marca, modelo, versão, ano), sem texto "
     }
   ]
 }
