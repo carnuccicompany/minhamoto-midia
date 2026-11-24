@@ -16,3 +16,5 @@ Janela: 26/08/2026 a 24/11/2026. Pesquisado em 24/11/2026. Mais novo em cima.
 - Novo cabeçalho de página, assets nos resultados de busca e biblioteca de assets no App Store Connect.
 - **O que muda pra nós:** a Disney pode propor peças pra esses espaços (respeitando a 2.3.14).
 - Fonte: https://developer.apple.com/news/
+
+> Escopo da 2.3.14 (Léo, 24/11): vale SÓ para os assets promocionais dentro da App Store. Em anúncio (Meta/TikTok), post e vídeo segue a regra da casa: pode "R$19,90", nunca "por mês" (agencia/DESIGN-MINHAMOTO.md).

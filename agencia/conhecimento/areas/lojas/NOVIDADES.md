@@ -33,3 +33,5 @@ Janela: 26/08/2026 a 24/11/2026. Pesquisado em 24/11/2026. Mais novo em cima.
 - Apps novos e atualizações precisam ter `targetSdk` 36; apps existentes precisam de API 35 pra continuar visíveis a novos usuários em versões novas do Android. Havia extensão até 01/11/2026 para quem pediu.
 - **O que muda pra nós:** conferir o `targetSdkVersion` da build Android antes do envio (Davi). Confirmar o prazo na página oficial.
 - Fontes: https://developer.android.com/google/play/requirements/target-sdk · https://support.google.com/googleplay/android-developer/answer/11926878
+
+> Escopo da 2.3.14 (Léo, 24/11): vale SÓ para os assets promocionais dentro da App Store. Em anúncio (Meta/TikTok), post e vídeo segue a regra da casa: pode "R$19,90", nunca "por mês" (agencia/DESIGN-MINHAMOTO.md).
