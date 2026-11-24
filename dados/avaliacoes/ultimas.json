@@ -1,7 +1,7 @@
 {
- "coletado_em": "2026-11-24T12:16:05.370976Z",
+ "coletado_em": "2026-11-24T16:15:44.528942Z",
  "status": {
-  "google_play": "ok (2 avaliações)",
+  "google_play": "ok (1 avaliações)",
   "app_store": "ok (6 avaliações)"
  },
  "avaliacoes": [
@@ -15,17 +15,6 @@
    "aparelho": "onyx (Poco F7)",
    "respondida": false,
    "resposta_atual": null
-  },
-  {
-   "loja": "google_play",
-   "id": "c28f1858-a4fd-44ed-85c4-b73acf4c74dd",
-   "nota": 5,
-   "texto": "App sensacional! Muito funcional e útil! E os desenvolvedores são super atenciosos, dando sempre o suporte necessário. Vale muito à pena! Super recomendo!",
-   "data": "2026-11-17T15:47:29Z",
-   "versao_app": "1.0.1",
-   "aparelho": "M23HT (V Max Plus)",
-   "respondida": true,
-   "resposta_atual": "Obrigado pela avaliação! Ficamos muito felizes em saber que o app está sendo útil e que o nosso suporte fez diferença para você. Conte com a gente em cada quilômetro! — Equipe MinhaMoto"
   },
   {
    "loja": "app_store",
