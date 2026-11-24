@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T16:42:00-03:00",
+ "rodada": "2026-11-24T17:12:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:39 SUCCEEDED 15h39 BRT; :09 rodando, esta rodada 16h09)",
+  "coordenador": "ok (:39 SUCCEEDED 16h39 BRT; :09 esta rodada 17h09)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23 BRT; próx 19h23 24/11)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
@@ -25,7 +25,8 @@
   "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h09 BRT)",
   "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 14h39 BRT)",
   "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (esta rodada, 15h09 BRT)",
-  "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)"
+  "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
+  "MM: Leitura da UTMify": "ok (SUCCEEDED 16h00 BRT; próx 07h41 25/11)"
  },
  "publicacao_hoje": {
   "ultimo_ok": "B09 (15h04 BRT 24/11)",
@@ -36,7 +37,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: tarefas listadas SUCCEEDED/agendadas; vigia de segredos ok; 9:16 113/113; pendentes 0"
+  "nenhuma: tarefas SUCCEEDED/agendadas; vigia de segredos ok; 9:16 113/113; pendentes 0"
  ],
  "alertas": []
 }
