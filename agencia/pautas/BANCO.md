@@ -57,8 +57,11 @@
 - [ ] Curtos AIDA | POV: sábado 19h, você ainda tá rodando — "eu também queria estar em casa" | ângulo: formato POV de entregador (identificação + humor seco); virada: a única coisa que não pode falhar é a moto | prova no app: Saúde da moto
 - [ ] Curtos AIDA | "Seu app grava viagem. Mas sabe quando a SUA CG troca o óleo?" | ângulo: app genérico investe em GPS; o MinhaMoto já vem com o plano do seu modelo (sem citar concorrente) | prova no app: plano de revisão do modelo
 
-## Do radar (24/11)
-- "Seu app de carro pede pra digitar o modelo. O da sua moto já sabe." (ângulo 3 das reclamações do Drivvo; só depois do produto confirmar a seleção de modelo)
-- Mito: "app de manutenção é tudo igual" (plano por modelo x formulário em branco).
-- Uber Moto agora olha avaliação e segurança. E a sua moto, quem avalia antes de ela falhar? (Despachante Dok, 13/11/2026)
-- A conta do plano de frota que ninguém com uma moto só deveria pagar (sem citar marca).
+### Do radar (24/11)
+- [ ] Curtos AIDA | "Seu app de carro pede pra digitar o modelo. O da sua moto já sabe." | ângulo: reclamação de cadastro manual no Drivvo (out/2025), sem citar marca; só depois do produto confirmar a seleção de modelo | prova no app: plano de revisão do modelo
+- [ ] Temas gerais | Uber Moto agora olha avaliação e segurança. E a sua moto, quem avalia antes de ela falhar? | ângulo: 5 novidades de segurança da Uber Moto (Despachante Dok, 13/11/2026) | prova no app: Saúde da moto
+- [ ] Temas gerais | A conta do plano de frota que ninguém com uma moto só deveria pagar | ângulo: app genérico cobra por vagas de frota; sem citar marca
+- [ ] Educacional | Sua moto é Honda? Nenhum app da marca te lembra da revisão | ângulo: Honda não trouxe conectividade pras populares (AutoPapo 03/06/2026); CG, Pop, Biz e Bros sem app de manutenção da marca | prova no app: plano do modelo
+- [ ] Temas gerais | Comprou moto em 2026? A primeira revisão chega antes do que você pensa | ângulo: 1.783.972 motos emplacadas até setembro, recorde (Abraciclo via AutoData 13/10/2026) | prova no app: plano de revisão
+- [ ] Dicas e hacks | Gasolina a R$ 6,47, etanol a R$ 4,15: na sua moto, qual compensa? | ângulo: etanol a 64% da gasolina na média nacional (ANP, semana 01–07/11/2026); regra dos 70% + conferir a média real | prova no app: combustível/média
+- [ ] Educacional | Licenciamento 2027: o calendário do seu estado e o lembrete que evita a multa | ângulo: Detrans soltam o calendário entre novembro e dezembro; publicar quando sair o do estado | prova no app: documentos/lembretes

@@ -48,3 +48,8 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - fiz: tentei abrir as páginas da App Store (Drivvo, MotoMainte): permissão de leitura sem resposta e proxy com 403 para apple.com/itunes. Entreguei parcial honesto (sem tabela) e marquei bloqueada, bloqueio lider, pergunta sim/não pro Léo.
 - aprendi: busca web só dá links/títulos; ordem do buscador web não é ordem da busca da App Store. Não inventar tabela.
 - pendente: acesso a apps.apple.com ou texto colado por alguém; atualizar ambição na segunda 30/11 (segue: Analista, 100 XP, Radar certeiro).
+
+## 2026-11-24 · Radar de terça (agendado)
+- fiz: rodada de 24/11 no topo de radar/2026-11-24.md (Fenabrave parcial de nov, ANP sem. 45, IPVA de app PB/PI, licenciamento 2027, Yamaha Motor On, Honda sem conectividade, MotorManage); 7 pautas no BANCO (seção reformatada); 3 extras.
+- aprendi: AutoPapo tem URL "novembro-2026" com conteúdo de nov/2025 (conferir sempre a data no corpo). Motoo, Garagem360 e Gazeta SP não abrem pelo meu acesso. ANP: a síntese mais nova que achei foi a nº 45.
+- pendente: lojas-1 segue bloqueada (App Store); pegar o calendário de licenciamento 2027 quando os Detrans soltarem; Stark dizer quantos modelos o app cobre.
