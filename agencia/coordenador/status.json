@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T09:42:00-03:00",
+ "rodada": "2026-11-24T10:17:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,7 +8,7 @@
   "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
   "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
   "produção diária": "desativada — prevista em PENDENCIAS",
-  "coordenador": "ok (:09 SUCCEEDED 07h09; :39 rodando agora)",
+  "coordenador": "ok (:39 SUCCEEDED 09h39; :09 rodando agora, esta rodada)",
   "checklist pré-build": "lembrete único 23/11 ativo",
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23; próx 19h23 24/11)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
@@ -19,12 +19,12 @@
   "MM: Vigia do Gmail": "ok (SUCCEEDED 08h48 BRT; próx 13h47)",
   "MM: Posts do horário (Insta/Face)": "ok (SUCCEEDED 00h02 BRT; próx 12h02 24/11)",
   "MM: Relatório semanal de resultados": "ok (SUCCEEDED 23/11 08h26)",
-  "MM: Radar de mercado semanal": "rodando (disparou 09h37 BRT, terça, normal)",
+  "MM: Radar de mercado semanal": "ok (SUCCEEDED 09h37 BRT 24/11)",
   "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 09h15 BRT; próx 13h13)",
   "MM: Coordenador 24h · :39": "rodando (06h40)",
   "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h09 BRT)",
-  "MM: Coordenador 24h · :39 (vigia os agentes)": "rodando (09h40, esta rodada)",
-  "MM: Coordenador 24h · :09 (vigia os agentes)": "ok (SUCCEEDED 09h12 BRT)",
+  "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 09h39 BRT)",
+  "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (10h15, esta rodada)",
   "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)"
  },
  "publicacao_hoje": {
