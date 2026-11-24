@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T10:45:00-03:00",
+ "rodada": "2026-11-24T11:15:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -13,7 +13,7 @@
   "MM: Reunião do Conselho": "ok (SUCCEEDED 23/11 19h23; próx 19h23 24/11)",
   "MM: Folha de sexta": "ok (SUCCEEDED 20/11 17h47; próx 27/11)",
   "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
-  "MM: Mesa de Demandas": "rodando (10h37 BRT)",
+  "MM: Mesa de Demandas": "ok (SUCCEEDED 10h37 BRT; próx 14h37)",
   "Mesa de Demandas": "ok (criada 20/11, próx 21/11 10h37)",
   "Teste de fogo dos agentes com o Léo": "lembrete único disparou 10h13",
   "MM: Vigia do Gmail": "ok (SUCCEEDED 08h48 BRT; próx 13h47)",
@@ -23,8 +23,8 @@
   "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 09h15 BRT; próx 13h13)",
   "MM: Coordenador 24h · :39": "rodando (06h40)",
   "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h09 BRT)",
-  "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 09h39 BRT)",
-  "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (10h15, esta rodada)",
+  "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 10h40 BRT; próx 11h39)",
+  "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (11h09, esta rodada)",
   "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)"
  },
  "publicacao_hoje": {
@@ -36,7 +36,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: todas SUCCEEDED/agendadas/rodando; produção diária desativada como previsto; vigia de segredos ok; fila 85/4=21.25 dias; 9:16 113/113; links do painel ok"
+  "nenhuma: tarefas vistas SUCCEEDED/agendadas; produção diária desativada como previsto; vigia de segredos ok; fila 85/4=21.25 dias; 9:16 113/113; links do painel ok; próximo post 12h02 BRT"
  ],
  "alertas": []
 }
