@@ -105,3 +105,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh api` disparou o workflow normalmente; o `git pull --rebase` precisa de `origin main`.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-24 17:20
+- fiz: atualizei as avaliações (7: 1 Google Play, 6 App Store, coleta 24/11 20:14Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: `gh` clonou e disparou o workflow normalmente; coleta pronta em ~2 min. O Play agora traz só 1 avaliação (antes 2 e 3): vale o Turing conferir se a coleta está perdendo avaliações.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
