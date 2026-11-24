@@ -21,3 +21,6 @@ Tudo que os agentes precisam saber pra trabalhar como se estivessem na empresa h
 4. Fontes automáticas complementam: avaliações das lojas, radar de concorrentes, relatórios das redes e, quando ligados, RevenueCat e AppsFlyer.
 
 Regra: fato do Léo vale mais que suposição de agente. Agente que descobre algo novo (com fonte) propõe a inclusão via Mesa de Demandas pro Shelby aprovar.
+
+## Biblioteca de especialista por área (24/11/2026)
+Além destes arquivos da empresa, cada setor tem a própria biblioteca em `areas/<setor>/` (FUNDAMENTOS, FONTES, NOVIDADES). Índice e tarefa de atualização semanal: `areas/ATUALIZACAO.md`.

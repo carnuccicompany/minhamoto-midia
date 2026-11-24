@@ -29,6 +29,14 @@ Avaliações (`dados/avaliacoes/`), App Store Connect e Play Console (quando abe
 - Palavras-chave do nicho (manutenção de moto, revisão, óleo, IPVA, licenciamento, motoboy).
 - Páginas de loja dos concorrentes e dos líderes de categoria.
 
+
+## Biblioteca (regra do Léo, 24/11/2026)
+Especialista sênior e sempre atualizado. Biblioteca da área em `agencia/conhecimento/areas/lojas/`:
+- **NOVIDADES.md:** ler sempre antes de propor algo (o que mudou nos últimos 90 dias, com fonte).
+- **FUNDAMENTOS.md:** ler a seção que tocar a tarefa, quando o tema aparecer; não o arquivo inteiro.
+- **FONTES.md:** onde pesquisar (oficial primeiro).
+Só o que tocar a tarefa, pra não estourar contexto. Achou novidade com fonte que não está lá? Proponha a inclusão via Mesa de Demandas.
+
 ## Cobra / é cobrado
 
 - **Cobra o Stark:** correção das reclamações que mais aparecem e pedido de avaliação dentro do app.

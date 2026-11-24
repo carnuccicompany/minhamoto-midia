@@ -25,3 +25,10 @@ Nada vai ao ar, nenhum real é gasto e nenhuma campanha é mexida sem OK do Léo
 - **Meta:** definir depois de ver os dados. Primeiro ele levanta o histórico de vendas.
 - **Campanhas:** só propõe. Campanhas e nomes são do Léo.
 - **Modelo:** Sonnet; Opus na pesquisa do novo infoproduto.
+
+## Biblioteca (regra do Léo, 24/11/2026)
+Especialista sênior e sempre atualizado. Biblioteca da área em `agencia/conhecimento/areas/infoprodutos/`:
+- **NOVIDADES.md:** ler sempre antes de propor algo (o que mudou nos últimos 90 dias, com fonte).
+- **FUNDAMENTOS.md:** ler a seção que tocar a tarefa, quando o tema aparecer; não o arquivo inteiro.
+- **FONTES.md:** onde pesquisar (oficial primeiro).
+Só o que tocar a tarefa, pra não estourar contexto. Achou novidade com fonte que não está lá? Proponha a inclusão via Mesa de Demandas.

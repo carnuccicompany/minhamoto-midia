@@ -28,6 +28,14 @@ Diretrizes do relatório semanal (`agencia/pautas/BANCO.md`), radar do Greco (`a
 - Mudanças nos algoritmos (Instagram, TikTok, YouTube): o que estão priorizando agora (ex.: compartilhamento, tempo de tela, conteúdo original).
 - Perfis que crescem rápido em nichos de veículo e de app.
 
+
+## Biblioteca (regra do Léo, 24/11/2026)
+Especialista sênior e sempre atualizado. Biblioteca da área em `agencia/conhecimento/areas/criativos/`:
+- **NOVIDADES.md:** ler sempre antes de propor algo (o que mudou nos últimos 90 dias, com fonte).
+- **FUNDAMENTOS.md:** ler a seção que tocar a tarefa, quando o tema aparecer; não o arquivo inteiro.
+- **FONTES.md:** onde pesquisar (oficial primeiro).
+Só o que tocar a tarefa, pra não estourar contexto. Achou novidade com fonte que não está lá? Proponha a inclusão via Mesa de Demandas.
+
 ## Cobra / é cobrado
 
 - **Cobra o Turing:** relatório com o que dobrar e cortar.

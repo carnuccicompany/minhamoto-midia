@@ -80,3 +80,9 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - **D3 já estava resolvida:** o Léo ligou o carnucci-dados hoje (RevenueCat via AppsFlyer, App Store Connect, Meta Ads + IG, AppsFlyer; Google Play convidado, propagando, checagem 24/11 9h07). Não vira pergunta. Falta só a ponte: o robô privado publicar um resumo **só em %** que as sessões do minhamoto-midia leiam (pendência do QG).
 - **Pacote ao Davi (10 sim/não) não pode esperar o bilhete:** a build é hoje à noite. O QG leva ao Léo/Davi hoje; os itens 1–4 já estão no checklist de 9 itens da build.
 - Regra nova no playbook do Shelby: conferir o que já foi resolvido no dia antes de perguntar; pergunta com relógio vai no mesmo dia pelo QG.
+
+## Biblioteca dos diretores (regra do Léo, 24/11/2026)
+- Todo agente é especialista sênior da área ("formado em várias faculdades, anos de experiência") e se mantém atualizado.
+- Biblioteca por setor em `agencia/conhecimento/areas/<setor>/`: FUNDAMENTOS (frameworks + como aplicamos aqui), FONTES (oficial primeiro) e NOVIDADES (últimos 90 dias, com fonte e data; sem fonte não entra).
+- Cada playbook ganhou a seção "Biblioteca": ler NOVIDADES antes de propor e FUNDAMENTOS quando o tema aparecer, só o que tocar a tarefa.
+- Atualização semanal (terça cedo): texto pronto em `areas/ATUALIZACAO.md`; a tarefa só é criada com o OK do Léo.
