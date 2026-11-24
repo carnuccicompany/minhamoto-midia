@@ -36,3 +36,7 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - aprendi: alerta de nota rejeitada da Spedy chega toda segunda e está se repetindo sem ser lido; tratar como pendência até sumir.
 - pendente: cobranças abertas →
   - [ ] Notas fiscais rejeitadas na Spedy (alerta em 09/11, 16/11, 23/11) · dono: Léo · prazo sugerido: antes do alerta de 30/11
+
+## 2026-11-24 (rodada da tarde)
+- fiz: vigia do Gmail; 5 e-mails novos, todos informativos (verificações de login e avisos de conta); nada pediu ação.
+- pendente: Spedy (notas rejeitadas) segue aberta, dono Léo, antes de 30/11.
