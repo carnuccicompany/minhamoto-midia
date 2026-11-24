@@ -38,7 +38,20 @@
 - **Legenda:** média. **Hashtags:** 3 a 5. · 24/11
 - **Volume:** 2 ou mais posts por dia no feed. · 24/11
 - **Aprovação:** em lote de 5 de uma vez; ele marca os que passam. · 24/11
-- (Vermelho/laranja pra alerta: sem resposta ainda; até lá, só azul + limão.) · 24/11
+- **Vermelho/laranja: pode, SÓ em alerta/perigo** (luz de aviso, risco, prejuízo). Fora disso, azul + limão. · 24/11
+
+**Bloco 3 · vídeo, Reels, stories e motion**
+- **Voz:** dois tipos valem: sem voz (texto + música) e narração ElevenLabs (fluxo de 15/11). Voz gravada por eles: não. · 24/11
+- **Duração orgânica:** testar as três faixas (7–15 s, 15–30 s, 30–60 s). · 24/11
+- **Ritmo de corte:** médio (3 de 5). Nem lento estilo Apple, nem frenético. · 24/11
+- **Primeiro segundo:** revezar (texto gancho gigante, movimento de impacto, imagem forte de moto). · 24/11
+- **Música:** entregar sempre DUAS versões de cada vídeo: com trilha sem direito autoral e sem música (pra ele pôr a em alta). · 24/11
+- **Efeitos sonoros (whoosh, clique, notificação):** sim. · 24/11
+- **Texto animado:** branco com a palavra-chave em limão. (O amarelo palavra-por-palavra fica só nos Corretores.) · 24/11
+- **Vídeo do carrossel aprovado:** o mesmo conteúdo animado card a card. · 24/11
+- **Vídeo de moto (B-roll):** IA pode, se não parecer IA. · 24/11
+- **TikTok = Instagram:** o mesmo vídeo nos dois. · 24/11
+- **Stories:** enquete/quiz, repost do post do dia, dica rápida e meme; 5 a 8 por dia. · 24/11
 
 ---
 
