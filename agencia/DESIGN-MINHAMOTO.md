@@ -45,7 +45,7 @@
 - **Duração orgânica:** testar as três faixas (7–15 s, 15–30 s, 30–60 s). · 24/11
 - **Ritmo de corte:** médio (3 de 5). Nem lento estilo Apple, nem frenético. · 24/11
 - **Primeiro segundo:** revezar (texto gancho gigante, movimento de impacto, imagem forte de moto). · 24/11
-- **Música:** entregar sempre DUAS versões de cada vídeo: com trilha sem direito autoral e sem música (pra ele pôr a em alta). · 24/11
+- ~~Música: entregar sempre DUAS versões (com trilha e sem música)~~ → substituída em 24/11 (tarde): **entregar só SEM música**; o Léo põe a música na hora de postar/anunciar. Efeitos sonoros continuam. · 24/11
 - **Efeitos sonoros (whoosh, clique, notificação):** sim. · 24/11
 - **Texto animado:** branco com a palavra-chave em limão. (O amarelo palavra-por-palavra fica só nos Corretores.) · 24/11
 - **Vídeo do carrossel aprovado:** o mesmo conteúdo animado card a card. · 24/11
@@ -77,8 +77,12 @@
 10. **Ganchos e CTAs proibidos (clichê):** "Ninguém te conta…", "vale mais que…", "como ela merece", "em boas mãos". Não misturar "te" com "você".
 11. **Causa crível para motociclista:** a história técnica tem que fazer sentido para quem entende de moto (vela 300 km vencida não apaga moto).
 12. **CTA de anúncio:** 3,5–4 s, sem trecho parado > 1,5 s; nenhum quadro vazio em transição (próximo elemento entra antes do anterior sumir).
-13. **Duas versões de áudio sempre** (com trilha e sem música). Sem trilha disponível = perguntar ao Léo de onde tirar, não entregar só uma. SFX: banco real em vez de sintetizado; ouvir com fone antes de entregar.
+13. ~~Duas versões de áudio sempre~~ → substituída em 24/11: só sem música (decisão do Léo). SFX: banco real em vez de sintetizado; ouvir com fone antes de entregar.
 14. **Quebra de linha:** nunca terminar linha em preposição ("com /") nem partir nome de peça ("vela / de ignição").
+
+- **Ângulo reprovado: "quanto custa a revisão" (CM03, R$166 → R$1.418).** O Léo não gostou do ângulo de valor de revisão; criativo cancelado. Não repetir esse ângulo. · 24/11
+- **Número em R$ de consequência (ex.: peça que estraga):** usar o preço base da PEÇA NOVA de fonte séria (loja/fabricante/concessionária), não "retífica" de blog. · 24/11
+- **Copy sugerida pelo revisor passa pela mesma régua** (grep de imperativo de tu, título até 6 palavras + 1 linha de apoio). ❌ "Adivinha em qual km…" sugerido pelo revisor. · 24/11
 
 **Regras de equipe (texto do Léo, 24/11): valem pra todo agente de marketing**
 - **O Léo ODEIA repetir orientação que já deu.** Antes de criar, todo agente lê esta constituição + o arquivo de design do produto inteiro; antes de entregar, o revisor confere a peça linha a linha contra as regras (preço, telas, termos proibidos, placar de erros). Peça que repete erro já registrado não sai. · 24/11
