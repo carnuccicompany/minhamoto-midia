@@ -93,3 +93,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh api` disparou o workflow normalmente; coleta pronta em ~110s.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-24 09:15
+- fiz: atualizei as avaliações (8: 2 Google Play, 6 App Store, coleta 12:16Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: `gh` com token inválido; workflow disparado pelo MCP do GitHub; coleta pronta em ~100s.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
