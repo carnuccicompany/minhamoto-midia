@@ -16,7 +16,7 @@ from recortes_app import trecho, destaque, cards
 from render_check import render
 
 SAIDA = os.path.join(REPO, 'agencia', 'estudio', 'pecas', 'CM01')
-SIN = 'rolagem/12-sinais-problema.png'
+SIN = 'ios-1.0/rolagem/12-sinais-problema.png'   # telas do iPhone (iOS 1.0 build 33), regra 24/11
 OLEO, TEMP, INJ, BAT = 9, 10, 11, 13          # índices dos cards na tela Sinais de problema
 N = 7
 _, RUNS = cards(SIN)
@@ -155,7 +155,7 @@ def final(tt):
     t = (f"<div class=titB style='position:relative;left:0;right:0;font-size:{tam}px;margin-top:52px;letter-spacing:-.035em;line-height:1.04'>"
          "Seu painel avisa.<br><span class=b>O MinhaMoto explica.</span></div><span class=lm></span>")
     s = f"<div class=apoB style='position:relative;left:0;right:0;font-size:{38 if tt else 42}px;margin-top:26px'>Baixe agora e entenda sua moto.</div>"
-    pr = "<div style='margin-top:44px'><span class=preco><i></i>R$19,90<small style='font-family:j500;font-size:.62em;opacity:.85;margin-left:-.35em'>/mês</small></span></div>"
+    pr = "<div style='margin-top:44px'><span class=preco><i></i>por R$19,90</span></div>"
     pad = 140 if tt else 60
     corpo = f"<div style='position:absolute;left:{pad}px;right:{pad}px;top:{top}px;text-align:center'>{ic}{t}{s}{pr}</div>"
     se = f"<div style='position:absolute;left:0;right:0;top:{selos}px;text-align:center'><img src='file://{SELOS}' style='width:540px'></div>"

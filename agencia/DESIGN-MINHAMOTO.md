@@ -9,6 +9,25 @@
 ---
 
 
+## ★ CONSTITUIÇÃO DO ESTÚDIO (questionário do Léo, 24/11) — vale acima de tudo abaixo, menos regra mais nova
+**Bloco 1 · voz, público e gosto**
+- **Público:** os 4 ao mesmo tempo: motoboy/entregador, quem vai trabalhar de moto, motociclista de hobby/fim de semana e iniciante. Cada peça escolhe UM deles e fala com ele (não misturar públicos na mesma peça). · 24/11
+- **Tom:** todos valem e são bem-vindos pra criar e testar (mecânico parceiro, especialista, zoeira, premium). Variar entre peças; cada peça com um tom só. · 24/11
+- **Gíria de motociclista:** à vontade. · 24/11
+- **Humor:** sim. **Palavrão: nunca.** · 24/11
+- **Ângulo de venda:** revezar tudo (medo de prejuízo, economia, controle, orgulho da moto). Um ângulo por peça. · 24/11
+- **Texto por card:** pouco (nível 2 de 5): a frase de impacto + no máximo uma linha de apoio. · 24/11
+- **Estética:** escuro premium (atual), claro limpo e foto real de moto em destaque. ❌ Não usar o "gritante estilo TikTok". · 24/11
+- **Foto de moto:** pode gerar com IA desde que NÃO pareça IA (revisar mão, roda, raio, guidão, placa, reflexo; na dúvida, não usa). · 24/11
+- **Pessoa em cena:** por enquanto ninguém; ator UGC só mais pra frente, com OK dele. · 24/11
+- **Objetivo do orgânico:** alcance / viralizar. A peça é julgada por "isso para o dedo e faz compartilhar?". · 24/11
+- **Preço: NUNCA dizer que é por mês.** Nada de "/mês", "mensal", "por mês". ✅ "por R$19,90". · ❌ CM01 r3 saiu com "R$19,90/mês" mesmo com a regra de 16/11 (erro repetido) · 24/11
+- **O que mais irrita o Léo (prioridade da revisão):** visual sem graça, copy fraca, demora e REPETIR ERRO JÁ CORRIGIDO. Antes de entregar, o revisor roda `grep` deste arquivo contra a peça (preço, telas, termos proibidos). · 24/11
+- **Dúvida entre dois caminhos:** perguntar pro Léo antes (múltipla escolha, rápido), sem parar o resto do trabalho. · 24/11
+- **Telas do app = as do iPhone (iOS 1.0, build 33).** Usar só `agencia/designer/assets/telas-app/ios-1.0/` e o que já está guardado no repo. Não gerar tela, não recortar tela de vídeo. · 24/11
+
+---
+
 ## 0. Antes de 17/11 (feedbacks de 15 e 16/11)
 - **Referência de estética do acervo dele:** carrosséis clean, minimalistas, "aparência Apple muito foda", tipo institucional. O novo tem que estar nesse nível ou acima. · 15/11
 - **Gosto geral:** fonte estilo Apple (→ hoje: Poppins, 18/11), tudo em azul (→ hoje: azuis oficiais + toque limão, 18/11), menos texto na tela, mais interativo, "as coisas popam". · 17/11 (pedido em outro projeto, mesmo gosto)
