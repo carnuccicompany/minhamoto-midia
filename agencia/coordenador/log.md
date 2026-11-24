@@ -227,3 +227,4 @@
 - 2026-11-24 08:40 BRT: sem falha (todas SUCCEEDED/agendadas; Conselho 23/11 e Folha 20/11 ok; produção diária desativada como previsto); 4/4 posts de 23/11 publicados, próx 12h02 24/11; fila 21.25 dias (85); 9:16 113/113; pendentes 0; vigia de segredos ok
 
 - 2026-11-24 09:12 BRT: sem falha (todas SUCCEEDED/agendadas; Conselho 23/11 e Folha 20/11 ok; produção diária desativada como previsto); 4/4 posts de 23/11 publicados, próx 12h02 24/11; fila 21.25 dias (85); 9:16 113/113; pendentes 0; vigia de segredos ok
+- 2026-11-24 09:42 BRT: sem falha (todas SUCCEEDED/agendadas; radar de terça rodando; Conselho 23/11 e Folha 20/11 ok; produção diária desativada como previsto); último post S04 23/11 21h, próx 12h02; fila 21.25 dias (85); 9:16 113/113; pendentes 0; vigia de segredos ok
