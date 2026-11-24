@@ -1,6 +1,6 @@
-# Canal do Shelby — versão 1 (23/11)
+# Canal do Shelby — versão 2 (24/11, cadência fechada com o Léo)
 
-Como o Léo e o Davi recebem as informações do Shelby e dos diretores. Rascunho pra refinar entre 23 e 24/11.
+Como o Léo e o Davi recebem as informações do Shelby e dos diretores.
 
 ## Princípio: o dono não recebe o dia todo
 
@@ -13,16 +13,19 @@ Chega em **momentos fixos**, nunca em fluxo contínuo. Sempre no **mesmo lugar**
 
 **Regra de ouro dos números:** este repositório é público. Aqui só entram %, variação e status. Número absoluto (R$, assinantes, verba, custo por assinante) só no privado `carnucci-dados` e no link privado do briefing.
 
-## 1. A agenda (só isso chega)
+## 1. A agenda (decidida pelo Léo em 24/11, só isso chega)
 
-| Quando | O quê | Chega no celular? |
-|---|---|---|
-| Dia útil, 7h, **só se houver decisão nova** | Bilhete curto: as decisões em cartões sim/não com a recomendação do Shelby. Sem decisão, **nada chega** | Sim, só nesse caso |
-| Segunda, 8h41 | **Plano da semana** (tarefa existente "MM: Plano da semana"): meta em %, 3 prioridades, experimentos | Não |
-| Sexta, 19h17 | **Fechamento da semana** (tarefa existente "MM: Fechamento da semana"): a edição principal | Só se tiver decisão |
-| Último dia útil do mês, 19h17 | **Fechamento do mês**: tendência do mês, Diretor do Mês, o que muda no mês seguinte | Só se tiver decisão |
+| Quando | O quê | Tarefa | Chega no celular? |
+|---|---|---|---|
+| Dia útil, **9h**, só se houver decisão nova | Bilhete: as decisões novas, 1 linha cada com a recomendação, e o link | **MM: Bilhete das decisões** (08h47, `trig_0122EGBzmgMepY3TxPMA8m4R`) | Sim, só nesse caso |
+| Segunda, 8h41 | Plano da semana (aba Semana) | MM: Plano da semana | Sim (resumo de 3–5 linhas) |
+| Sexta, 19h17 | Fechamento da semana: a edição principal | MM: Fechamento da semana | Sim |
+| Dia 1, 9h17 | Fechamento do mês (aba Mês) | MM: Fechamento do mês | Só se houver decisão ou herdeiro |
+| Toda manhã, 7h53 | E-mails importantes → seção Correspondência (rascunho no Gmail, diretor da área) | MM: Resumo da caixa (Moneypenny) | Sim, só se houver e-mail que importa |
 
-Fora disso, o Shelby só fura a agenda por **alerta grave** (chave vazada, gasto fora do teto, app fora do ar). Nunca por "rodou ok".
+- O Conselho (19h23) **não avisa mais decisões**: grava as resoluções na edição e o bilhete das 9h do dia útil seguinte avisa. Ele só fura a agenda por alerta grave.
+- Canal: **WhatsApp** vai ser o principal (pendente: API oficial da Meta no chip novo, os dois números de Léo e Davi). Até lá, notificação no celular das tarefas.
+- Fora disso, só alerta grave (chave vazada, gasto fora do teto, conta derrubada, app fora do ar).
 
 ## 2a. Estética (decidida pelo Léo em 23 e 24/11)
 
@@ -80,22 +83,28 @@ Os dois sócios assinam Aprovar/Recusar no link (seção 2b) e um deles copia o 
 | Venda, assinantes, meta | — | `resumo/diario.json`, `resumo/meta_pct.json`, `resumo/funil.json` |
 | Anúncios | — | `dados/meta_ads/`, `dados/utmify/` |
 
-## 5. Onde mora
+## 5. Onde mora e como atualiza (caminho técnico, testado em 24/11)
 
-**Artifact privado com link fixo** ("Briefing do Shelby"), republicado no mesmo endereço a cada edição. Só o Léo vê até compartilhar com o Davi. O `painel.html` do GitHub Pages não serve: é público.
+- **Página:** artifact privado "Briefing do Shelby" (link fixo https://claude.ai/artifact/HuXpNAJarHxeyaWtELD2aw). Assinaturas no banco do próprio artifact (coleção `assinaturas`, documento = número da resolução, ex. `2026-11-001`).
+- **Conteúdo:** a página é montada a partir de `briefing/edicao.json` no repositório PRIVADO `carnucci-dados` (`briefing/template.html` + `python3 briefing/montar.py` → `briefing/saida/index.html`). Formato em `carnucci-dados/briefing/README.md`. Números absolutos só lá.
+- **Limitação:** as tarefas agendadas rodam em sessões que **não têm o conector de artifacts** (teste de 24/11: nenhuma ferramenta de artifact disponível, escrita no banco não aconteceu). Então as tarefas **escrevem o edicao.json e avisam com o texto das decisões na própria notificação**; quem **publica a página** é a conversa principal do Claude (QG), quando o Léo abre o chat. Até lá a página mostra a edição anterior — por isso a notificação sempre traz as decisões por extenso.
+- Caminhos descartados: o Google Drive (as tarefas têm o conector, mas criar o arquivo de dados foi barrado pela política) e o banco do artifact direto pelas tarefas (sem conector).
 
 ## 6. Quem escreve
 
-- **MM: Fechamento da semana (sex 19h17):** monta a edição de sexta e republica o link. No último dia útil do mês, monta também a aba Mês.
-- **MM: Plano da semana (seg 8h41):** atualiza a aba Semana com o plano.
-- **MM: Reunião do Conselho (19h23):** grava cada decisão no formato de cartão (pergunta, recomendação, custo, destrava) e marca se é **nova**.
-- **Nova tarefa "MM: Bilhete das decisões" (dia útil 6h47):** se houver decisão nova desde o último aviso, republica a aba Decisões e manda **um** aviso no celular. Se não houver, termina sem fazer nada.
-- **Coordenador (:09/:39):** registra falha e auto-correção no `status.json`; não avisa o Léo.
+- **MM: Bilhete das decisões (dia útil 08h47):** decisões novas de dono → resoluções em `edicao.json` + aviso. Sem decisão nova, "Sem novidade." (sem notificar).
+- **MM: Reunião do Conselho (19h23):** decisões do Shelby viram resoluções (`nova: true`); não notifica decisão.
+- **MM: Plano da semana (seg 8h41):** edição "Plano da semana" (lede = plano, próximos = 3 prioridades).
+- **MM: Fechamento da semana (sex 19h17):** edição "Fechamento da semana" completa (KPIs, ranking, ocorrências, correspondência, parecer); aba Mês no último dia útil.
+- **MM: Fechamento do mês (dia 1):** seção Mês.
+- **MM: Resumo da caixa / Moneypenny (7h53):** `briefing/correspondencia.json` + seção Correspondência, cada e-mail com o diretor da área (cobrança → Turing; lojas → Bezos; Meta/anúncio → Escobar; app → Stark; Corretores → Cardone; resto → Shelby) e rascunho no Gmail. Nunca envia.
+- **Coordenador (:09/:39):** registra falha e auto-correção; não avisa o Léo.
+- **QG (conversa principal):** roda `montar.py` e republica a página; registra as resoluções assinadas pelos dois em `decisoes.md`.
 
 ## 7. Perguntas pro Léo (múltipla escolha)
 
-1. **Bilhete de decisões:** (a) 7h, só quando houver decisão (b) junto do plano de segunda e do fechamento de sexta, nunca em outro dia (c) 12h
-2. **Aviso no celular (só pra decisão):** (a) push do Claude (b) e-mail (c) os dois
+1. ~~**Bilhete de decisões**~~ Decidido (24/11): **dias úteis às 9h, só quando houver decisão nova**.
+2. ~~**Aviso**~~ Decidido (24/11): **WhatsApp** como principal (a montar, mesmo aviso nos números do Léo e do Davi); até lá, notificação no celular.
 3. ~~**Link:** (a) um só (b) um de cada~~ Decidido (24/11): **um link só pros dois**.
 4. ~~**O Davi recebe:** ...~~ Decidido (24/11): **a mesma edição, com dupla assinatura** (seção 2b).
 5. ~~**Estética / acento**~~ Decidido (24/11): preto, branco, dourado e verde-água (seção 2a).
