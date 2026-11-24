@@ -24,19 +24,29 @@ Chega em **momentos fixos**, nunca em fluxo contínuo. Sempre no **mesmo lugar**
 
 Fora disso, o Shelby só fura a agenda por **alerta grave** (chave vazada, gasto fora do teto, app fora do ar). Nunca por "rodou ok".
 
-## 2a. Estética (decidida pelo Léo em 23/11)
+## 2a. Estética (decidida pelo Léo em 23 e 24/11)
 
-~~Revista do império: preto e ouro, ilustração de capa, carimbos, retratos estilizados dos diretores.~~ Recusada: "muito visual, desenho nada a ver".
+~~Revista do império: preto e ouro, ilustração de capa, carimbos, retratos estilizados dos diretores.~~ Recusada (23/11): "muito visual, desenho nada a ver".
 
-**Relatório do conselho de uma holding aos sócios.** Carta de family office, extrato de private bank, board pack de banco. Sóbrio, caro, silencioso; o peso vem da tipografia, do espaço e do rigor.
-- Papel marfim, tinta quase preta, um único acento escuro (verde-garrafa); ouro só em fios finos e no monograma. Escuro: carvão com texto marfim.
-- Serifada clássica (EB Garamond) em pesos contidos, versaletes nos rótulos, algarismos tabulares.
-- Cabeçalho de documento: monograma "C" em traço fino, "CARNUCCI — Relatório ao Conselho", edição nº, data, destinatários, "Estritamente confidencial".
+~~v2: papel marfim, tinta preta, verde-garrafa, monograma "C".~~ Recusada em parte (24/11): estrutura e medições aprovadas; marrom/marfim "xoxo".
+
+**Relatório do conselho de uma holding aos sócios (v3, 24/11).** Minimalista, premium, luxuoso, moderno, corporativo. O peso vem da tipografia, do espaço e do rigor.
+- **Paleta:** preto (fundo ~#070708, papel ~#0E0F10), branco/marfim claro no texto, dourado champanhe (~#C9A55C) em fios, logo e rótulos, verde-água (~#3CBFAE) como acento e cor do positivo, vermelho discreto (~#CF5A4E) no negativo. Tema escuro é o padrão; o claro é papel branco limpo (nunca bege).
+- **Logo real da Carnucci** (3 arcos) em dourado no topo, com fio dourado fino. Nunca o monograma genérico.
+- Serifada clássica (EB Garamond) em pesos contidos, versaletes nos rótulos, algarismos tabulares. (O Léo gostou da fonte: manter.)
 - Seções em romano: I. Resoluções pendentes, II. Resultado da semana, III. Diretoria, IV. Ocorrências resolvidas pela diretoria, V. Próximos passos.
 - Números em tabela (atual × anterior × variação ▲▼), no máximo sparkline fina. Ranking como tabela, sem retrato.
-- Decisões viram **Resoluções do Conselho nº 2026-11-0XX** com linha de assinatura: Aprovar/Recusar põe o nome do sócio em manuscrito, com data e hora.
+- **Resoluções como missões** (gamificado, mas elegante): insígnia P1/P2/P3, contagem regressiva do prazo, "o que destrava", barra de impacto; placar no topo com "N resoluções pendentes", barra que enche a cada assinatura e sequência de dias decidindo; lacre que carimba ao fechar; "Mesa limpa" quando zera.
+- **Assinaturas animadas:** Léo, Davi e Thomas Shelby aparecem sendo escritos (traço vetorial, ~1,6 s). Hoje são desenhadas a partir de fonte manuscrita. **Se o Léo e o Davi mandarem foto da assinatura real, a gente vetoriza e troca.**
 - Fecha com o parecer do Diretor-Geral e a assinatura dele.
-- Proibido: ilustração, mascote, retrato, carimbo chamativo, cards coloridos, emoji.
+- Proibido: ilustração, mascote, retrato, cards coloridos, emoji.
+
+## 2b. Dupla assinatura (regra do Léo, 24/11)
+
+- **Um briefing só pros dois** (mesmo link, mesma edição) — respostas 3 (a) e 4 (a).
+- Toda resolução precisa das **duas** assinaturas. Léo assina → "Assinada por Léo · aguardando Davi" (lacre "1 de 2", meia barra). Só com os dois aprovando vira **APROVADA**; os dois recusando, **RECUSADA**; um aprova e o outro recusa → **DIVERGÊNCIA — conversar**.
+- **Onde fica gravado:** no banco de dados do próprio artifact (capacidade `db`, coleção `assinaturas`, um documento por resolução com `leo` e `davi` = decisão + hora). Os dois veem o mesmo estado em qualquer aparelho. Como o Léo e o Davi usam a mesma conta do Claude, a página não sabe quem está olhando: quem assina escolhe "Assinando como Léo/Davi" (botão no topo).
+- **Limitação:** se o banco não responder (sem rede, conta deslogada), a página guarda as assinaturas só naquele aparelho e avisa; aí vale o texto copiado pro Claude.
 
 ## 2. A edição de sexta
 
@@ -52,7 +62,7 @@ Abas fixas do link: **Semana** (edição atual), **Resoluções** (tudo que espe
 
 ## 3. Respostas do Léo
 
-O sócio assina Aprovar/Recusar no link e copia o texto gerado ("Resolução nº X — APROVADA por Léo em ...") pra conversa com o Claude (ou responde no chat). O Claude:
+Os dois sócios assinam Aprovar/Recusar no link (seção 2b) e um deles copia o texto gerado ("Resolução nº X — APROVADA — Léo aprovou em ...; Davi aprovou em ...") pra conversa com o Claude (ou responde no chat). O Claude também pode ler direto as assinaturas gravadas no banco do artifact. Só entram em decisoes.md as resoluções APROVADAS ou RECUSADAS pelos dois. O Claude:
 - grava uma linha em `agencia/memoria/decisoes.md` (data, decisão, quem decidiu);
 - fecha a demanda no `demandas/quadro.json` (status `decidida`);
 - a decisão sai da aba Decisões e aparece como "decidido" na edição seguinte.
@@ -86,6 +96,6 @@ O sócio assina Aprovar/Recusar no link e copia o texto gerado ("Resolução nº
 
 1. **Bilhete de decisões:** (a) 7h, só quando houver decisão (b) junto do plano de segunda e do fechamento de sexta, nunca em outro dia (c) 12h
 2. **Aviso no celular (só pra decisão):** (a) push do Claude (b) e-mail (c) os dois
-3. **Link:** (a) um só pro Léo e o Davi (b) um de cada, o do Davi só com produto e app
-4. **O Davi recebe:** (a) a mesma edição (b) só as decisões dele + funil do app (c) nada, você repassa
-5. ~~**Estética:** Dossiê ou Cartel~~ Decidido: relatório de holding (seção 2a). Nova pergunta: **acento:** (a) verde-garrafa (protótipo) (b) azul-marinho profundo
+3. ~~**Link:** (a) um só (b) um de cada~~ Decidido (24/11): **um link só pros dois**.
+4. ~~**O Davi recebe:** ...~~ Decidido (24/11): **a mesma edição, com dupla assinatura** (seção 2b).
+5. ~~**Estética / acento**~~ Decidido (24/11): preto, branco, dourado e verde-água (seção 2a).
