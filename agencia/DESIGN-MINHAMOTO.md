@@ -26,6 +26,20 @@
 - **Dúvida entre dois caminhos:** perguntar pro Léo antes (múltipla escolha, rápido), sem parar o resto do trabalho. · 24/11
 - **Telas do app = as do iPhone (iOS 1.0, build 33).** Usar só `agencia/designer/assets/telas-app/ios-1.0/` e o que já está guardado no repo. Não gerar tela, não recortar tela de vídeo. · 24/11
 
+**Bloco 2 · carrossel e post**
+- **Capa:** pergunta/teste, número/lista, opinião forte e custo/dinheiro. ("Erro comum" ele não marcou: usar pouco.) · 24/11
+- **Tipos de carrossel:** testar todos (dica, mito x verdade, lista, caso real, meme/humor, comparação de custo, tutorial do app e o que mais funcionar). · 24/11
+- **Quantidade de cards:** o que o assunto pedir (sem encher). · 24/11
+- **Tela do app: só em 1 ou 2 cards, perto do fim.** O resto do carrossel é conteúdo (texto, foto, grafismo). · 24/11
+- **Como a tela entra:** misturar celular (mockup) e card solto flutuando. · 24/11
+- **Último card:** alternar entre CTA do app e "salva e manda pro amigo". · 24/11
+- **Título da capa:** grande (nível 4 de 5): quase ocupa a tela, sem virar o "gritante TikTok". · 24/11
+- **Números de mercado (preço de peça, retífica etc.):** pode, só com fonte checada (guardar o link na folha de revisão). · 24/11
+- **Legenda:** média. **Hashtags:** 3 a 5. · 24/11
+- **Volume:** 2 ou mais posts por dia no feed. · 24/11
+- **Aprovação:** em lote de 5 de uma vez; ele marca os que passam. · 24/11
+- (Vermelho/laranja pra alerta: sem resposta ainda; até lá, só azul + limão.) · 24/11
+
 ---
 
 ## 0. Antes de 17/11 (feedbacks de 15 e 16/11)
