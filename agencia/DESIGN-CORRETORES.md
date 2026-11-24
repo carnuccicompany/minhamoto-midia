@@ -4,6 +4,8 @@
 > Versão inicial de 23/11/2026, inferida do material que já rodou (criativos da Ana Paula, lotes TESTES 1, estáticos, copies e ângulos do Léo). **Nada aqui foi aprovado pelo Léo ainda:** cada feedback dele vira regra aqui, na hora, e a regra antiga fica ~~riscada~~ com "→ substituída em DD/MM". Vale sempre o mais recente.
 > Formato de cada regra: **REGRA** · ❌ errado · ✅ certo · data.
 
+> **Regras de equipe e jeito de trabalhar do Léo:** ver "★ CONSTITUIÇÃO DO ESTÚDIO" no topo do `DESIGN-MINHAMOTO.md` (vale pros dois produtos: não repetir erro já corrigido, toda alteração vira regra na hora e a equipe toda lê, pesquisa de mercado constante, autonomia e avisos).
+
 ## 1. Pra quem e o que
 - **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)
 - O produto é o **Mapa Visual Completo do Fechamento Imobiliário** (125 páginas visuais, do aceite da proposta às chaves). Ofertas da página: Acesso Essencial R$27,90 e Pacote Completo R$37,90 (Mapa + 5 complementares), acesso vitalício, garantia de 30 dias. **Preço citado no criativo: só "R$27,90", sem parcelamento (decisão do Léo, 23/11, `conhecimento/05-marca.md` e seção 5 abaixo).** ~~"Pacote Completo R$37,90" como preço do criativo~~ → substituída em 23/11 pela decisão do Léo; corrigido pelo Shelby em 24/11 (a linha contradizia a seção de preço). · 23/11
@@ -42,6 +44,10 @@
   - **Confiança:** a dele e a do cliente.
   - **Economia e lucro:** a finalização depois do sim costuma ser um serviço cobrado nesse mercado; quem entende o processo depende menos de terceiros e fica com uma parte maior do ganho. (Cuidado na copy: não prometer que ele faz o trabalho técnico de correspondente/cartório; a promessa é entender e conduzir, pagando menos por fora.)
   · 23/11
+
+## 4c. Questionário do Léo (24/11)
+- **Próximos estilos (fazer HOJE também, 24/11):** (1) folheando o Mapa com a Ana Paula narrando; (2) antes × depois do corretor; (3) mistura de motion com vídeo real; (4) só motion (sem rosto, com a voz dela). · 24/11
+- **Rodada de teste:** 6 criativos por produto. · 24/11
 
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).

@@ -53,6 +53,22 @@
 - **TikTok = Instagram:** o mesmo vídeo nos dois. · 24/11
 - **Stories:** enquete/quiz, repost do post do dia, dica rápida e meme; 5 a 8 por dia. · 24/11
 
+**Bloco 4 · criativo de venda e autonomia**
+- **Criativo de venda MinhaMoto, formatos da 1ª rodada:** demonstração do app (motion das telas reais do iPhone), historinha da dor (quebrou na rua → o app teria avisado) e nativo TikTok/POV (parece post, não anúncio). · 24/11
+- **Teste grátis: o app NÃO tem; nunca citar.** · 24/11
+- **Duração do criativo de venda:** testar 15–30 s e 30–45 s. · 24/11
+- **Economia em reais:** pode prometer, só com base checada (fonte guardada na folha). · 24/11
+- **Comparação:** pode comparar com caderninho, planilha, "lembrar de cabeça"; **nunca citar outro app**. · 24/11
+- **Rodada de teste:** 6 criativos por produto. · 24/11
+- **Autonomia (sem perguntar):** escolher ângulo, copy e visual; fazer variações de peça aprovada; entregar direto na pasta do PC; gerar foto/vídeo de moto com IA (se não parecer IA); escrever as legendas finais. Continua precisando de OK: publicar, agendar, subir anúncio, gastar, pessoa real, código do app. · 24/11
+- **Aviso no celular:** quando um lote fica pronto pra aprovar E quando precisa de decisão dele. Rotina não notifica. · 24/11
+
+**Regras de equipe (texto do Léo, 24/11): valem pra todo agente de marketing**
+- **O Léo ODEIA repetir orientação que já deu.** Antes de criar, todo agente lê esta constituição + o arquivo de design do produto inteiro; antes de entregar, o revisor confere a peça linha a linha contra as regras (preço, telas, termos proibidos, placar de erros). Peça que repete erro já registrado não sai. · 24/11
+- **O Léo ODEIA quando buga e o Claude repete o que ele já disse que está errado.** Se uma correção dele não "pegou", parar, achar a causa (código, asset, regra mal escrita) e consertar na origem antes de reentregar. Nunca reentregar a mesma coisa com outra cara. · 24/11
+- **Toda alteração, a equipe inteira fica sabendo.** Toda correção vira regra aqui (ou no DESIGN-CORRETORES.md) na hora, com data; todo briefing de agente (estúdio, roteirista, designer, revisor, publicador, diretores) começa com "leia DESIGN-MINHAMOTO.md (constituição) e DESIGN-CORRETORES.md". Os agentes têm que estar a par de tudo e agir com inteligência, não no automático. · 24/11
+- **Pesquisa de mercado constante:** antes de cada lote de pautas, rodar o radar (skill radar-30-dias: o que está viralizando no nicho moto e no geral, memes do momento, concorrentes, reclamações) e usar isso nas ideias. A pauta cita de onde veio a ideia. · 24/11
+
 ---
 
 ## 0. Antes de 17/11 (feedbacks de 15 e 16/11)
