@@ -60,7 +60,8 @@
 - **Economia em reais:** pode prometer, só com base checada (fonte guardada na folha). · 24/11
 - **Comparação:** pode comparar com caderninho, planilha, "lembrar de cabeça"; **nunca citar outro app**. · 24/11
 - **Rodada de teste:** 6 criativos por produto. · 24/11
-- **Autonomia (sem perguntar):** escolher ângulo, copy e visual; fazer variações de peça aprovada; entregar direto na pasta do PC; gerar foto/vídeo de moto com IA (se não parecer IA); escrever as legendas finais. Continua precisando de OK: publicar, agendar, subir anúncio, gastar, pessoa real, código do app. · 24/11
+- **Autonomia (sem perguntar):** escolher ângulo, copy e visual; fazer variações de peça aprovada; gerar foto/vídeo de moto com IA (se não parecer IA); escrever as legendas finais. Continua precisando de OK: publicar, agendar, subir anúncio, gastar, pessoa real, código do app. · 24/11
+- ~~Entregar direto na pasta do PC sem perguntar~~ → substituída em 24/11 (14h11): **NADA vai pra pasta do PC do Léo sem ele aprovar a peça E dizer que pode salvar.** Peça pronta é mostrada no chat (arquivo + folha); só depois do "aprovado, pode salvar" vai pro PC. Vale também pra arquivos de trabalho (cortes, proxies): perguntar antes de criar qualquer coisa no PC. · 24/11
 - **Aviso no celular:** quando um lote fica pronto pra aprovar E quando precisa de decisão dele. Rotina não notifica. · 24/11
 
 **Regras de equipe (texto do Léo, 24/11): valem pra todo agente de marketing**

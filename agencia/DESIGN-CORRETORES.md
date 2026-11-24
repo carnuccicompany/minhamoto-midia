@@ -48,6 +48,7 @@
 ## 4c. Questionário do Léo (24/11)
 - **Próximos estilos (fazer HOJE também, 24/11):** (1) folheando o Mapa com a Ana Paula narrando; (2) antes × depois do corretor; (3) mistura de motion com vídeo real; (4) só motion (sem rosto, com a voz dela). · 24/11
 - **Rodada de teste:** 6 criativos por produto. · 24/11
+- **Entrega:** ~~salvar direto em ESTUDIO 23-11 no PC~~ → substituída em 24/11: só vai pro PC o que o Léo aprovou e mandou salvar; antes disso, mostrar no chat. Nada de criar arquivo no PC (nem corte de trabalho) sem perguntar. · 24/11
 
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
