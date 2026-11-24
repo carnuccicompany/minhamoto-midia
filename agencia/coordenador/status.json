@@ -1,5 +1,5 @@
 {
- "rodada": "2026-11-24T16:12:00-03:00",
+ "rodada": "2026-11-24T16:42:00-03:00",
  "ok": true,
  "tarefas": {
   "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -36,7 +36,7 @@
  "pendentes_aprovacao": 0,
  "tiktok_916": "113/113",
  "acoes": [
-  "nenhuma: tudo SUCCEEDED/agendado; produção diária desativada como previsto; vigia de segredos ok; 9:16 113/113; pendentes 0"
+  "nenhuma: tarefas listadas SUCCEEDED/agendadas; vigia de segredos ok; 9:16 113/113; pendentes 0"
  ],
  "alertas": []
 }
