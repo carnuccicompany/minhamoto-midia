@@ -64,6 +64,22 @@
 - ~~Entregar direto na pasta do PC sem perguntar~~ → substituída em 24/11 (14h11): **NADA vai pra pasta do PC do Léo sem ele aprovar a peça E dizer que pode salvar.** Peça pronta é mostrada no chat (arquivo + folha); só depois do "aprovado, pode salvar" vai pro PC. **Nunca salvar peça na pasta de documentos dele (6 FIGURES etc.): peça aprovada vai pra outro lugar** (onde: perguntar ao Léo na 1ª aprovação; até lá, entrega pelo chat). Exceção: cortes de trabalho podem ser criados SÓ em `Corretores\Criativos prontos\ESTUDIO 23-11\_trabalho\`. O que já estava salvo antes da regra (pilotos EST5-A/EST2-A/EST4-A e _trabalho) fica lá. · 24/11
 - **Aviso no celular:** quando um lote fica pronto pra aprovar E quando precisa de decisão dele. Rotina não notifica. · 24/11
 
+**Criativo de venda: regras da revisão independente (24/11, VENDA-MM-R1)**
+1. **Saída do destaque sem fantasma:** o card ampliado volta para a escala e posição da linha real antes de sumir (ou corte seco). Nunca esmaecer por cima da tela rolada. Trava no `render_check.py`. · ❌ VENDA-MM-R1: texto duplicado em V1, V2 (3×), V3, V4, V6.
+2. **Lote de venda = 6 visuais diferentes:** no máximo 2 peças no mesmo template de fundo; nenhum recorte de tela repetido em mais de 2 peças; cada peça usa pelo menos uma tela que as outras não usam.
+3. **Historinha da dor tem moto na tela:** cena de dor com foto ou vídeo real de moto (IA que não pareça IA). Proibido contar a dor só com ícone de linha em fundo liso.
+4. **Ícone tem que ser o objeto certo** (guincho ≠ caminhão-baú; partida de moto ≠ botão power de eletrônico; gota de óleo não começa azul).
+5. **Foto de fundo:** nítida, clara (luminância média da área da moto > 90/255), em 9:16 de verdade, sem desfoque que a deixe ilegível, e coerente com o texto (domingo de sol ≠ garagem subterrânea escura).
+6. **A tela prova a frase:** se o texto diz "vence/avisa", a tela mostra o vencido ou o aviso, não "sem histórico". Peça de orgulho não destaca pendência ("itens em atenção", "item(ns) vencido(s)").
+7. **Número em R$:** fonte de veículo sério ou cotação própria com print; o valor tem que ser do serviço que a frase cita (troca = óleo + filtro + mão de obra); rodapé descreve o número exatamente ("até", "faixa"; nunca "média" para um teto); nenhum número pode contradizer o que o próprio app mostra em outra peça (óleo R$ 60 × Histórico R$ 120).
+8. **Telas do app com a barra de abas do iPhone**, também na rolagem (colar a barra flutuante do PNG estático da mesma rota).
+9. **1º segundo de anúncio:** movimento + o elemento mais forte da peça. Proibido abrir com o celular já parado e pergunta genérica.
+10. **Ganchos e CTAs proibidos (clichê):** "Ninguém te conta…", "vale mais que…", "como ela merece", "em boas mãos". Não misturar "te" com "você".
+11. **Causa crível para motociclista:** a história técnica tem que fazer sentido para quem entende de moto (vela 300 km vencida não apaga moto).
+12. **CTA de anúncio:** 3,5–4 s, sem trecho parado > 1,5 s; nenhum quadro vazio em transição (próximo elemento entra antes do anterior sumir).
+13. **Duas versões de áudio sempre** (com trilha e sem música). Sem trilha disponível = perguntar ao Léo de onde tirar, não entregar só uma. SFX: banco real em vez de sintetizado; ouvir com fone antes de entregar.
+14. **Quebra de linha:** nunca terminar linha em preposição ("com /") nem partir nome de peça ("vela / de ignição").
+
 **Regras de equipe (texto do Léo, 24/11): valem pra todo agente de marketing**
 - **O Léo ODEIA repetir orientação que já deu.** Antes de criar, todo agente lê esta constituição + o arquivo de design do produto inteiro; antes de entregar, o revisor confere a peça linha a linha contra as regras (preço, telas, termos proibidos, placar de erros). Peça que repete erro já registrado não sai. · 24/11
 - **O Léo ODEIA quando buga e o Claude repete o que ele já disse que está errado.** Se uma correção dele não "pegou", parar, achar a causa (código, asset, regra mal escrita) e consertar na origem antes de reentregar. Nunca reentregar a mesma coisa com outra cara. · 24/11
