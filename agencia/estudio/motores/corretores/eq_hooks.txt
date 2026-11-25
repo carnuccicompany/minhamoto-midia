@@ -1,0 +1,2 @@
+firequalizer=gain_entry='entry(113,-5.2);entry(226,-1.0);entry(453,-6.8);entry(894,2.5);entry(1768,-3.0);entry(3536,11.7);entry(7071,0.9);entry(12649,1.0)'
+firequalizer=gain_entry='entry(113,-22.0);entry(226,-1.2);entry(453,-2.3);entry(894,2.9);entry(1768,-3.4);entry(3536,9.9);entry(7071,8.5);entry(12649,8.2)'

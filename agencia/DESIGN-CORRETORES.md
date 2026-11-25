@@ -12,7 +12,7 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - **Nunca texto de gancho e legenda ao mesmo tempo na tela** (o início com manchete em cima e legenda embaixo ficou ridículo). · 25/11
 - **Cores: nada de fundo azul o vídeo inteiro.** Azul (+ limão/laranja) é do MinhaMoto. Corretores usam as cores do próprio Mapa Visual (capa e páginas do material). · 25/11
 - **Preço no CTA: o selo verde-escuro "R$27,90" é feio e amador.** O card de preço tem que ter cara de motion profissional. · 25/11
-- **NÃO gerar/emendar áudio de voz** (nada de voz recortada de vários takes, EQ, gravação abafada). · 25/11
+- **NÃO gerar/emendar áudio de voz** (nada de voz recortada de vários takes, ~~EQ~~, gravação abafada). · 25/11 (EQ agora só pra igualar o gancho abafado ao body do mesmo pronto, ver 16h39)
 - **ESTRUTURA A · só motion, sem voz nenhuma:** prender a pessoa com efeito sonoro, trilha, transição de texto, efeitos. · 25/11
 - **ESTRUTURA B · motion + body real:** hook em motion → body = trecho de um criativo que JÁ deu certo (ex.: do s10 ao s20), usado como está (voz, legenda e música originais, intactos), com transição forte na entrada e na saída → CTA em motion. Legenda só nos trechos de motion, se precisar. · 25/11
 - **Um de cada vez, parte por parte, com o Léo aprovando cada parte** (regra geral no topo do DESIGN-MINHAMOTO.md). Não fazer 13 de uma vez. Primeiro 1 piloto por estrutura, aprovação, depois escala. Crédito gasto em peça ruim é prejuízo. · 25/11
@@ -28,6 +28,11 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - **Preço: tirar de tudo** (volta só se a gente decidir ir por preço, aí em tudo de novo). Body escolhido sem o trecho em que ela fala o preço. · 25/11
 - **Áudio do jeito que veio:** sem abafar, sem mexer na voz. · 25/11
 - **Parâmetro de qualidade:** "parece que nunca fez motion na vida" → o nível é motion profissional de anúncio (referência: criativos que já rodam no nicho), não template. · 25/11
+- **(16h39) Nome de arquivo normal:** nada de "EST5-A v3". Entregável sai com nome descritivo em português: "Corretores - Historinha cliente seguro.mp4", "Corretores - Perguntas fora do basico.mp4" etc. Código EST só dentro dos scripts, se precisar. · 25/11
+- **(16h39) Áudio do gancho dos prontos vem abafado** (DD 4 e DD 10: a 1ª parte, até a pausa antes do "São +120", tem menos agudo e mais grave que o body). Tem que ficar padrão com o resto do vídeo: EQ só nesse trecho, casada por faixa de oitava com o body do MESMO pronto (`eqmatch.py`, resto ≤ ±1 dB), costura na pausa, e volume da fala igualado ao body (ganho +1,5 a +2 dB). Isso não é "mexer na voz": é deixar igual ao resto. Continua proibido emendar takes ou gerar voz. · 25/11
+- **(16h39) Variar os elementos entre os vídeos:** cada criativo com um conjunto próprio de elementos (não repetir faixa de ícones + contador + "?"→✓ em todos). Conjuntos prontos: 1 = `elem.py` (faixa de ícones, contador em cartão, "?"→✓) · 2 = `elem2.py` (anel de contagem, pílulas-adesivo inclinadas, palavra que troca na pílula navy, "Dúvida" riscada → "Certeza", cartões navy que viram) · 3 = `elem3.py` (+120 grande com contorno, checklist em 2 colunas, marca-texto, chave "Na dúvida → Seguro", pílulas navy deslizando dos lados). · 25/11
+- **Correção do "CURSOS" no DD 10 estava 1 quadro adiantada** (pegava 1 quadro de "PRAZOS" e deixava 1 de "CURSOS" no fim) → janela certa = quadros 757–778. Toda correção de legenda: conferir no vídeo FINAL, quadro a quadro, do quadro antes ao quadro depois da palavra. · 25/11
+- **(16h39) CTA da Ana Paula sentada ("Clique em Saiba Mais", DD 10 68,33→73,70 s) + botão com toque: aprovado pra usar em vários vídeos.** · 25/11
 
 ## 0b. PADRÃO APROVADO PELO LÉO (25/11) — base pros próximos criativos, sem ele ter que guiar
 **Aprovado (manter):**
