@@ -254,3 +254,4 @@
 - 2026-11-25 00:10 BRT: sem falha (todas SUCCEEDED/agendadas; Conselho e Folha ok; produção diária desativada como previsto); último post DV10 21h04, próx 12h02; fila 20,5 dias (82); 9:16 113/113; pendentes 0; vigia de segredos ok; insights: arquivo de 25/11 ainda não saiu (vigia só alerta após 06h BRT)
 - 2026-11-25 00:40 BRT: sem falha (todas SUCCEEDED/agendadas; Conselho e Folha ok; produção diária desativada como previsto); último post DV10 21h04, próx 12h02; fila 20,5 dias (82); 9:16 113/113; pendentes 0; links do painel ok; vigia de segredos ok; insights: arquivo de 25/11 ainda não saiu (alerta só após 06h BRT)
 - 25/11 01h10 BRT · sem falha: todas as tarefas ok, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, links ok.
+- 25/11 01h40 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, links ok, insights aguardando cron.
