@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T05:40:00-03:00",
+  "rodada": "2026-11-25T06:10:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -23,28 +23,30 @@
     "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h14 BRT 24/11; próx 09h13 25/11)",
     "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
     "MM: Leitura da UTMify": "ATENÇÃO: 2 tarefas duplicadas com o mesmo nome e horário 7h41 (extra registrado; não mexi)",
-    "MM: Coordenador 24h · :09": "rodando (esta rodada, 05h10 BRT)",
-    "MM: Coordenador 24h · :39": "ok (SUCCEEDED 04h39 BRT)",
-    "MM: Treino diário dos diretores": "ok (agendada 05h47 BRT 25/11)"
+    "MM: Coordenador 24h · :09": "rodando (esta rodada, 06h09 BRT)",
+    "MM: Coordenador 24h · :39": "ok (SUCCEEDED 05h39 BRT)",
+    "MM: Treino diário dos diretores": "disparou 05h47 BRT 25/11 (PENDING)"
   },
   "publicacao_hoje": {
     "ultimo_ok": "DV10 (21h04 BRT 24/11)",
-    "proximo": "12h02 BRT 25/11"
+    "proximo": "12h02 BRT 25/11",
+    "obs": "18h de 24/11 não saiu"
   },
   "dias_de_fila": 20.5,
   "nao_publicados": 82,
   "pendentes_aprovacao": 0,
   "tiktok_916": "113/113",
   "acoes": [
-    "nenhuma ação necessária"
+    "insights do dia faltava (cron 23h41 BRT não rodou): disparei insights.yml; 1ª execução coletou mas o push foi rejeitado (corrida de commits); 2ª passou — dados/insights-2026-11-25.json no ar",
+    "slot 18h de 24/11 sem publicação (horarios_feitos: 12,15,21); fora da janela, não recuperável; registrado"
   ],
   "alertas": [],
   "insights_diario": {
     "data_utc_hoje": "2026-11-25",
     "alerta": false,
-    "ultimo_arquivo": "dados/insights-2026-11-24.json",
-    "coletado_em_brt": "2026-11-24T09:56-03:00",
+    "ultimo_arquivo": "dados/insights-2026-11-25.json",
+    "coletado_em_brt": "2026-11-25T06:13-03:00",
     "erros": [],
-    "linha": "último insights-2026-11-24.json coletado 2026-11-24T09:56-03:00 BRT · aguardando o cron das 23h41 BRT (arquivo de 2026-11-25 ainda não saiu; último: 2026-11-24) · erros vazio"
+    "linha": "último insights-2026-11-25.json coletado 2026-11-25T06:13-03:00 BRT · arquivo de hoje (2026-11-25) existe · erros vazio"
   }
 }

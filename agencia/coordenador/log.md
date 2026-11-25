@@ -270,3 +270,5 @@
 - 25/11 05h10 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron. UTMify segue com 2 tarefas duplicadas (7h41), não mexi.
 
 - 25/11 05h40 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron. UTMify segue com 2 tarefas duplicadas (7h41), não mexi.
+
+- 25/11 06h10 BRT · tudo ok nas tarefas (Conselho e Folha incluídos), fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo. Insights de 25/11 não tinha saído (cron 23h41 não rodou): disparei o insights.yml, 1º run perdeu o push por corrida, 2º passou. Slot 18h de 24/11 não publicado (não recuperável). UTMify segue com 2 tarefas duplicadas (7h41), não mexi.
