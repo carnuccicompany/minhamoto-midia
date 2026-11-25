@@ -1,33 +1,38 @@
 {
- "id": "D-20261123-dados-1",
- "de": "dados",
- "para": "master",
- "copia": [
-  "dados"
- ],
- "titulo": "Levar ao Léo: leitura de RevenueCat, App Store Connect e Play Console para o Dados (ou % semanal exportada)",
- "por_que": "Sem leitura, o Dados não entrega nenhum % de funil: pagante, instalação por loja e renovação existem hoje no RevenueCat e nas lojas, mas nenhuma sessão lê (D-20261122-produto-2). É a diferença entre ter a 1ª leitura em % na semana da build ou só depois. Meta: novos assinantes pagos por semana.",
- "pronto_quando": "Resposta sim/não registrada no histórico desta demanda e copiada no fio F-001",
- "prioridade": "P2",
- "prazo": "2026-11-25T20:00:00-03:00",
- "status": "bloqueada",
- "criada_em": "2026-11-23T12:45:00-03:00",
- "fio": "F-001",
- "entrega": null,
- "cobrancas": 0,
- "historico": [
-  {
-   "quando": "2026-11-23T12:45:00-03:00",
-   "quem": "dados",
-   "o_que": "criou"
-  },
-  {
-   "quando": "2026-11-23T19:45:00-03:00",
-   "quem": "master",
-   "o_que": "ronda do Shelby: 07-canais.md (23/11) registra RevenueCat, Meta, AppsFlyer e App Store Connect como ligados; a pergunta agora é só se a sessão do Dados lê o resumo em % do carnucci-dados e o Play"
-  }
- ],
- "bloqueio": "lider",
- "pergunta_lider": "Léo: o Dados pode ler (só leitura) o resumo em % do carnucci-dados, que o robô alimenta com RevenueCat, App Store Connect, AppsFlyer e Meta (07-canais diz 'ligados em 23/11'), e liberar o Google Play que ainda aguarda? Sim/não.",
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+  "id": "D-20261123-dados-1",
+  "de": "dados",
+  "para": "master",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Levar ao Léo: leitura de RevenueCat, App Store Connect e Play Console para o Dados (ou % semanal exportada)",
+  "por_que": "Sem leitura, o Dados não entrega nenhum % de funil: pagante, instalação por loja e renovação existem hoje no RevenueCat e nas lojas, mas nenhuma sessão lê (D-20261122-produto-2). É a diferença entre ter a 1ª leitura em % na semana da build ou só depois. Meta: novos assinantes pagos por semana.",
+  "pronto_quando": "Resposta sim/não registrada no histórico desta demanda e copiada no fio F-001",
+  "prioridade": "P2",
+  "prazo": "2026-11-25T20:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-23T12:45:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T12:45:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T19:45:00-03:00",
+      "quem": "master",
+      "o_que": "ronda do Shelby: 07-canais.md (23/11) registra RevenueCat, Meta, AppsFlyer e App Store Connect como ligados; a pergunta agora é só se a sessão do Dados lê o resumo em % do carnucci-dados e o Play"
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "master",
+      "o_que": "Shelby: reclassificada de lider para qg. RevenueCat, AppsFlyer, Meta Ads e App Store Connect ja ligados pelo Leo em 23/11 (cadastro/itens.json); Google Play parcial (convite feito). Falta so a ponte de resumo em % do carnucci-dados (pendencia do QG, PENDENCIAS.md)."
+    }
+  ],
+  "bloqueio": "qg",
+  "atualizada_em": "2026-11-24T19:40:00-03:00",
+  "motivo_bloqueio": "RevenueCat, AppsFlyer, Meta Ads e App Store Connect ja ligados pelo Leo em 23/11 (cadastro/itens.json); Google Play parcial (convite feito). Falta so a ponte de resumo em % do carnucci-dados (pendencia do QG, PENDENCIAS.md). Nao e pergunta pro Leo (decisoes.md, revisao da ata de 23/11)."
 }

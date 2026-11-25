@@ -1,42 +1,45 @@
 {
- "de": "master:auditor-de-entregas",
- "status": "bloqueada",
- "criada_em": "2026-11-22T23:55:00-03:00",
- "entrega": {
-  "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-leo.md",
-  "resumo": "Pergunta sim/não pronta (com prova e recomendação) dentro do pacote de 3 decisões da segunda. Aguardando resposta do Léo; nada decidido por mim."
- },
- "cobrancas": 0,
- "fio": null,
- "id": "D-20261122-master_auditor-de-entregas-2",
- "para": "master",
- "copia": [
-  "dados"
- ],
- "titulo": "Levar ao Leo: limite de uso do plano derrubou as tarefas que disparam os posts",
- "por_que": "A ultima execucao de 'Posts do horario' (21h de 22/11), do Coordenador :39 e da Mesa de Demandas falhou com USAGE_LIMIT_REACHED; sem os disparos, 4 de 8 slots em 21-22/11 (prova em agencia/demandas/entregas/D-20261122-dados-3.md). Historico por tarefa de 21/11 12h a 22/11 14h so o Leo ve.",
- "pronto_quando": "Pergunta sim/nao pronta e enviada ao Leo (ex.: 'Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite nao derrubar a publicacao?') mais o pedido para ele abrir o historico de execucoes das tarefas Posts do horario e Coordenador de 21/11 12h a 22/11 14h e dizer o motivo; resposta registrada no historico desta demanda.",
- "prioridade": "P1",
- "prazo": "2026-11-23T23:55:00-03:00",
- "historico": [
-  {
-   "quando": "2026-11-22T23:55:00-03:00",
-   "quem": "master:auditor-de-entregas",
-   "o_que": "criou"
+  "de": "master:auditor-de-entregas",
+  "status": "cancelada",
+  "criada_em": "2026-11-22T23:55:00-03:00",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-leo.md",
+    "resumo": "Pergunta sim/não pronta (com prova e recomendação) dentro do pacote de 3 decisões da segunda. Aguardando resposta do Léo; nada decidido por mim."
   },
-  {
-   "quando": "2026-11-23T08:00:00-03:00",
-   "quem": "master",
-   "o_que": "bloqueada: pergunta ao Léo no pacote da segunda (recomendo sim)"
-  },
-  {
-   "quando": "2026-11-23T19:45:00-03:00",
-   "quem": "master",
-   "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
-  }
- ],
- "bloqueio": "lider",
- "pergunta": "Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite de uso não derrubar a publicação? (sim/não)",
- "pergunta_lider": "Léo: pode reduzir o Coordenador de 2 rodadas por hora para 1, mantendo o disparo dos posts? Sim/não (item 2 de entregas/D-20261123-master-pacote-leo.md).",
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+  "cobrancas": 0,
+  "fio": null,
+  "id": "D-20261122-master_auditor-de-entregas-2",
+  "para": "master",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Levar ao Leo: limite de uso do plano derrubou as tarefas que disparam os posts",
+  "por_que": "A ultima execucao de 'Posts do horario' (21h de 22/11), do Coordenador :39 e da Mesa de Demandas falhou com USAGE_LIMIT_REACHED; sem os disparos, 4 de 8 slots em 21-22/11 (prova em agencia/demandas/entregas/D-20261122-dados-3.md). Historico por tarefa de 21/11 12h a 22/11 14h so o Leo ve.",
+  "pronto_quando": "Pergunta sim/nao pronta e enviada ao Leo (ex.: 'Posso reduzir o Coordenador de 2 rodadas por hora para 1 e manter o disparo dos posts, para o limite nao derrubar a publicacao?') mais o pedido para ele abrir o historico de execucoes das tarefas Posts do horario e Coordenador de 21/11 12h a 22/11 14h e dizer o motivo; resposta registrada no historico desta demanda.",
+  "prioridade": "P1",
+  "prazo": "2026-11-23T23:55:00-03:00",
+  "historico": [
+    {
+      "quando": "2026-11-22T23:55:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T08:00:00-03:00",
+      "quem": "master",
+      "o_que": "bloqueada: pergunta ao Léo no pacote da segunda (recomendo sim)"
+    },
+    {
+      "quando": "2026-11-23T19:45:00-03:00",
+      "quem": "master",
+      "o_que": "ronda do Shelby: campo pergunta_lider preenchido (estava vazio)"
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby: Causa (limite de uso) nao se repetiu em 2 dias e o Coordenador rodando :09/:39 sem falhas; o Leo fixou a cadencia em 24/11 (CANAL-SHELBY.md, tarefas ligadas). Reduzir de 2 para 1 rodada/h nao e necessario agora. Reabrir se o limite derrubar tarefa de novo."
+    }
+  ],
+  "atualizada_em": "2026-11-24T19:40:00-03:00",
+  "motivo_cancelamento": "Causa (limite de uso) nao se repetiu em 2 dias e o Coordenador rodando :09/:39 sem falhas; o Leo fixou a cadencia em 24/11 (CANAL-SHELBY.md, tarefas ligadas). Reduzir de 2 para 1 rodada/h nao e necessario agora. Reabrir se o limite derrubar tarefa de novo."
 }

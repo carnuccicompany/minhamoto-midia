@@ -1,27 +1,40 @@
 {
-  "id": "D-20261124-dados-1",
-  "de": "dados",
-  "para": "cria",
-  "copia": [
-    "trafego",
-    "master"
-  ],
-  "titulo": "Confirmar se a V2 de cada estilo é a V1 com a faixa de garantia e mais nada",
-  "por_que": "Sem isso o teste de garantia (D-20261123-mkt-2, D-20261124-cria-2) mistura garantia e gancho e a leitura de CPA não vale; o EXP-20261123-1 só começa depois (agencia/demandas/entregas/D-20261124-cria-2.md, seção 2).",
-  "pronto_quando": "Resposta em uma linha na própria demanda: 'V2 = V1 + faixa' (sim) ou, se não, qual outra diferença existe entre V2 e V1 em cada estilo (EST5, EST2, EST4). Nada é produzido nem publicado.",
-  "prioridade": "P2",
-  "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
-  "criada_em": "2026-11-24T15:00:00-03:00",
-  "fio": null,
-  "entrega": null,
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-24T15:00:00-03:00",
-      "quem": "dados",
-      "o_que": "criou"
-    }
-  ],
-  "atualizada_em": "2026-11-24T15:00:00-03:00"
+ "id": "D-20261124-dados-1",
+ "de": "dados",
+ "para": "cria",
+ "copia": [
+  "trafego",
+  "master"
+ ],
+ "titulo": "Confirmar se a V2 de cada estilo é a V1 com a faixa de garantia e mais nada",
+ "por_que": "Sem isso o teste de garantia (D-20261123-mkt-2, D-20261124-cria-2) mistura garantia e gancho e a leitura de CPA não vale; o EXP-20261123-1 só começa depois (agencia/demandas/entregas/D-20261124-cria-2.md, seção 2).",
+ "pronto_quando": "Resposta em uma linha na própria demanda: 'V2 = V1 + faixa' (sim) ou, se não, qual outra diferença existe entre V2 e V1 em cada estilo (EST5, EST2, EST4). Nada é produzido nem publicado.",
+ "prioridade": "P2",
+ "prazo": "2026-11-27T18:00:00-03:00",
+ "status": "aceita",
+ "criada_em": "2026-11-24T15:00:00-03:00",
+ "fio": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
+  "resumo": "Não: V2 não é V1 + faixa. Em cada estilo (EST5, EST2, EST4) a V2 tem gancho próprio, só o frame do CTA leva a garantia. Só vira V1 + faixa se o Léo disser sim à pergunta de isolar (r1 de 24/11, item g). Até lá a leitura é direcional, e o Turing deve ler uma vez, sem separar por estilo."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-24T15:00:00-03:00",
+   "quem": "dados",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-24T21:30:00-03:00",
+   "quem": "cria",
+   "o_que": "entreguei a resposta: V2 tem gancho diferente do piloto e da V1; só o CTA leva a garantia; isolar depende de sim do Léo"
+  },
+  {
+   "quando": "2026-11-24T22:00:00-03:00",
+   "quem": "dados",
+   "o_que": "aceitei: a resposta e objetiva (V2 nao e V1 + faixa; em EST5, EST2 e EST4 o gancho da V2 difere do piloto e da V1, so o CTA leva garantia), tem a fonte (D-20261123-mkt-2, secao 'Limite honesto') e diz que so vira V1 + faixa com sim do Leo. Conferi o texto de mkt-2 e a pergunta 2 na r1 de 24/11. Consequencia anotada: o teste le direcional, uma vez, sem separar por estilo."
+  }
+ ],
+ "atualizada_em": "2026-11-24T15:00:00-03:00"
 }

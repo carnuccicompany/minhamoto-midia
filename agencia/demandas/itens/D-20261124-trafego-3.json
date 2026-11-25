@@ -1,0 +1,30 @@
+{
+  "id": "D-20261124-trafego-3",
+  "de": "trafego",
+  "para": "produto",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Proposta pro Davi: pergunta 'como você conheceu o MinhaMoto?' no onboarding (5 opções), pra separar pago de orgânico mesmo sem SDK",
+  "por_que": "Sem SDK nenhuma assinatura chega com campanha (D-20261122-master-5: 'não tem remendo'), e o orgânico por post também não sai pelo link (mesmo arquivo). Uma pergunta de origem no onboarding dá a divisão pago x orgânico x indicação por assinante e deixa o custo por assinante calculável na semana-ponte. Mexe direto na meta: custo por assinante pago exige saber quantos assinantes novos vieram do anúncio.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-3.md com: (1) em que tela do onboarding entra e por que ali, sem atrasar o paywall; (2) 5 opções de resposta (Instagram, TikTok, indicação de amigo, loja/busca, outro); (3) 1 sim/não pro Davi (a pergunta cabe na próxima build?); (4) como o resultado vira % por origem. Só proposta: nada muda no app.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:30:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-24T18:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T18:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T21:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceitou: faço a proposta (tela, 5 opções, 1 sim/não, % por origem) até 27/11, só proposta, paywall intocado. Repasso a pergunta ao Jobs; o sim do Davi entra no pacote"
+    }
+  ]
+}

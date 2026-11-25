@@ -34,3 +34,9 @@
 - Entregue D-20261123-dados-3 (histórico de avaliações); aguarda sim/não do Davi pra implementar. Criada D-20261124-lojas-1 (alerta de coleta parada, Turing, 01/12).
 - Achado: o Play já perdeu 4 de 6 avaliações conhecidas por saírem da janela; "nota subiu" só se prova com histórico acumulado + nota oficial do Console (pendente com o Léo).
 - Pendências do Léo: domínios das lojas, nota oficial, OK do 1★ ec124592. Do Davi: histórico de avaliações.
+
+## Atualização 24/11 noite (r1)
+- Fato novo (Apple, [asset best practices](https://developer.apple.com/app-store/asset-best-practices/)): até 3 prints aparecem na busca; sem preço, URL ou logo nos prints. Play: até 50 fichas personalizadas por URL/Google Ads ([fonte](https://support.google.com/googleplay/android-developer/answer/9156429)). Fichas personalizadas não são teste; teste é o experimento.
+- Aposta mantida: prints de benefício, barra +10% relativo; morre em 30/11 sem base iOS.
+- Novas: D-20261124-lojas-2 (Ted, vigia pós-build, 27/11) e -3 (Escobar, ficha personalizada Android, 01/12).
+- Risco: 1★ ec124592 sai da janela da API por volta de 26/11 21h35Z. Pendências do Léo: OK do 1★, nota oficial do Play, domínios das lojas (master-3 vence 24/11 20h).

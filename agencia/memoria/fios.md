@@ -1,6 +1,6 @@
 # Fios de conversa abertos
 
-Reuniões do Conselho até hoje: 20/11, 22/11 e 23/11. Fio que não se mexeu em 3 reuniões é apontado no master.md (23/11: F-001, F-002, F-004 e F-005 chegaram a 3).
+Reuniões do Conselho até hoje: 20/11, 22/11, 23/11 e 24/11. Fio que não se mexeu em 3 reuniões é apontado no master.md (23/11: F-001, F-002, F-004 e F-005 chegaram a 3; 24/11: chegaram a 4 sem resposta).
 
 ## F-001 · Medição: SDK AppsFlyer e eventos rc_* na build de 23/11 (aberto, 20/11; atualizado 22/11)
 - Turing: cobertura de atribuição é prioridade 1. Escobar: sem `rc_*` mapeados e sem teste de OneLink, verba zero. Stark escalou ao Davi (dados-2, P1 venceu 21/11 20h); Cardone, Bezos e Disney dependem da mesma resposta.
@@ -41,3 +41,16 @@ Reuniões do Conselho até hoje: 20/11, 22/11 e 23/11. Fio que não se mexeu em 
 
 ## Mesa 23/11 (noite)
 - Aceitas: cria-4, dados-4, master-1, master-dossie-1, mercado-1, produto-2. Devolvida: mercado-3 (Stark: mandar a tela com o selo e a versão). Turing sem leitura de UTMify/Meta/ASC: mkt-1, lojas-2, trafego-2 bloqueadas pro Léo.
+
+## Registro do Conselho 24/11 (1 linha por fala)
+- Turing: alcance 28d -0,4% de 23 pra 24/11; no máximo 9,9% vem de post de feed (59 posts, todos FEED); iniciativa "De onde vem o alcance" (patch do insights.py aplicado pelo Shelby, 1ª leitura na coleta de 25/11). Disney: ângulo catálogo "mais de 370 modelos, escolha na lista" só depois do Shelby revisar. Stark: 4 líderes no catálogo (mercado-1), F-002 não depende mais do "sim" do Davi pra esses 4 modelos. Greco: MotorManage 42.000 ou 45.000 (mercado-2). Cardone: parecer de garantia dado pelo Shelby (mkt-1). Escobar: semana-ponte iOS (só proposta). Bezos: legendas de benefício nos 3 primeiros prints; 1★ ec124592 sai da janela do Play ~26/11.
+- Mudanças de posição: Disney (r2) adotou a mediana do Turing (0,57%) e aceitou o ângulo catálogo; Stark passou a dar "sim" de cobertura aos 4 líderes; Turing não usa o 0,9%/2,6% da RevenueCat sem leitura própria.
+- Correção do Shelby: "Honda sem app nas populares" (radar de 24/11 e r1 do Greco) generaliza além da fonte; pauta bloqueada, D-20261124-master-1 e cria-4.
+
+## Estado dos fios em 24/11 (4 reuniões)
+- **F-001** medição (SDK): 4 reuniões sem o Davi. Pacote agora com 16 itens; o item 16 (build saiu?) vai primeiro. Vira D1. Plano B (master-5) pronto.
+- **F-002** SEU modelo: andou. Stark provou os 4 líderes no catálogo (código 1.0.1, 17/11). O que falta ao Davi é só confirmar que a build de 23/11 não mudou o catálogo. Não morre em 27/11 pelo critério original: a base do fio foi atendida. Greco/Bezos seguem sem nome de modelo em loja até o item 6 do pacote.
+- **F-004** vídeos A/B: 4 reuniões, Léo sem resposta; vira D2 (A1/B1 como anúncios), prazo 26/11 20h.
+- **F-005** 1★ de sync: 4 reuniões; relógio real em 26/11 (sai da coleta do Play). Pergunta com relógio ao Léo hoje.
+- **F-006** executores: 4 de 4 em 23/11 e 12h/15h de 24/11; fecha se 25/11 também fechar.
+- **F-007** alcance: andou (por formato na coleta de 25/11).

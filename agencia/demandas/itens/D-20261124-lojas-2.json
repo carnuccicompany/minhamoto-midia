@@ -1,0 +1,25 @@
+{
+  "id": "D-20261124-lojas-2",
+  "de": "lojas",
+  "para": "lojas:respostas-as-avaliacoes",
+  "copia": [
+    "lojas"
+  ],
+  "titulo": "Vigia pós-build: avaliações novas por versão e plataforma nas 72 h depois da build nova",
+  "por_que": "D-20261123-produto-2 (Stark, 26/11) pede esse vigia; o único 1★ do Play é de sincronização na v1.0.1 (dados/avaliacoes/ultimas.json, coleta 24/11 20h14Z). Se a build nova piorar a nota, o assinante da loja cai antes de o funil mostrar. Reclamação por versão é o que o Stark usa pra priorizar correção.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-lojas-2.md com tabela data | loja | versão (campo versao_app do Play; iOS 'sem campo', não inventar) | nota | tema em 3 palavras, sem texto nem autor do cliente, cobrindo 72 h a partir da primeira avaliação de versão nova; 1-2★ de bug ou pagamento sinalizados pra mim na hora. Sem avaliação nova, dizer 'nenhuma' com a hora da coleta.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T21:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T21:30:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    }
+  ]
+}

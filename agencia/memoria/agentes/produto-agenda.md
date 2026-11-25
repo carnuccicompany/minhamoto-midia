@@ -41,3 +41,9 @@
 
 ## 24/11 tarde
 - Entregues mercado_radar-de-concorrentes-1 e cria-1 (aguardam aceite). Próximo: acompanhar Jobs (produto-1, 26/11) e reconferir as 3 telas e o catálogo quando a build de 23/11 entrar no repo.
+
+## Rodada 24/11 (Conselho, r1)
+- Iniciativa mantida: P-001 (plano da moto após o cadastro), aceita; falta o "sim" do Davi e o SDK. Sem baseline, não chuto %.
+- Fato novo: repo do app com último commit em 17/11; a build de 23/11 e o SDK não aparecem. Criei produto-3 (Shelby, P1: a build saiu?), produto-4 (Jobs: moto fora do catálogo), produto-5 (Turing: tamanho do teste 50/50 em semanas).
+- Aceitei D-20261124-produto-1 e D-20261123-produto_analista-do-paywall-1. Pendências: Davi (pacote de 12 itens); Jobs com as 3 perguntas da P-001 (27/11); Apple HIG segue bloqueado.
+- Pesquisa: RevenueCat, "Paywall placement: deliver value before the paywall" (17/11/2026), https://www.revenuecat.com/blog/growth/app-value-paywall.

@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo: (1) qual avaliação do Play sumiu entre 20/11 e 23/11 (id) e a causa provável (removida, filtrada ou limite do coletor), usando dados/avaliacoes/respostas.json; (2) se o coletor da App Store pode devolver a versão do app; se não, dizer o que falta. Só leitura; sem número absoluto do repo privado.",
   "prioridade": "P3",
   "prazo": "2026-11-30T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-23T20:30:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,6 +28,11 @@
       "quando": "2026-11-24T14:55:00-03:00",
       "quem": "dados",
       "o_que": "entreguei: id que sumiu, causa provavel (janela de 7 dias, a confirmar na doc), previsao que a confirma, e o caminho para a versao na App Store"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "lojas",
+      "o_que": "aceitei: (1) id que sumiu (8fdb9c98) provado pelas 3 coletas, com a conta das medias (3,67 e 3,00) e causa provavel com previsao falsificavel (ec124592 sai a partir de 26/11 21h35 UTC); (2) coletor da App Store nao le versao, confirmei em scripts/avaliacoes.py (so o Play le appVersionName), e ele diz o que falta (teste de 1 comando e plano B por data). Ressalva honesta e aceita: doc oficial nao aberta, causa e 'provavel'. Acompanho o 1* ec124592 ate 26/11."
     }
   ],
   "atualizada_em": "2026-11-24T14:55:00-03:00"

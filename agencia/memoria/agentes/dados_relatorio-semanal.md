@@ -49,3 +49,8 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - aprendi: resposta da Graph API traz URLs com o token em `paging`. Nunca gravar resposta crua da Meta em repo público. Testar mudança de coletor num caminho que não comita antes de disparar o workflow.
 - recebi: tarefa agendada de segunda (relatório).
 - pendente: quando o Léo trocar o token (com `instagram_manage_insights`), disparar `insights.yml` e refazer o placar com alcance, salvamentos e compartilhamentos. FB `page_media_view` veio vazio com period=week: testar `period=day`. Conferir se o Turing aceitou a D-20261122-dados-2.
+
+## 2026-11-24 21:00
+- fiz: entreguei D-20261124-dados-3 (bloco de medição: série 23-24/11 real, 25-27 pendentes; funil 0 de 6 com dado). D-20261123-dados_relatorio-semanal-1 segue em andamento: o insights de 25/11 ainda não existe.
+- aprendi: soma de alcance dos posts é teto (9,6% em 23/11, 9,9% em 24/11); mediana por post 0,88% dos seguidores nos dois dias.
+- pendente: em 25/11 ler `ig_alcance_28d_formato` em dados/insights-2026-11-25.json e fechar a relatorio-semanal-1; preencher 25-27/11 na tabela.

@@ -53,3 +53,8 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - fiz: rodada de 24/11 no topo de radar/2026-11-24.md (Fenabrave parcial de nov, ANP sem. 45, IPVA de app PB/PI, licenciamento 2027, Yamaha Motor On, Honda sem conectividade, MotorManage); 7 pautas no BANCO (seção reformatada); 3 extras.
 - aprendi: AutoPapo tem URL "novembro-2026" com conteúdo de nov/2025 (conferir sempre a data no corpo). Motoo, Garagem360 e Gazeta SP não abrem pelo meu acesso. ANP: a síntese mais nova que achei foi a nº 45.
 - pendente: lojas-1 segue bloqueada (App Store); pegar o calendário de licenciamento 2027 quando os Detrans soltarem; Stark dizer quantos modelos o app cobre.
+
+## 2026-11-24 · Correção do Shelby (ronda do Conselho)
+- fiz/recebi: o radar de 24/11, item 5, concluía que quem anda de CG, Pop, Biz e Bros não tem app da Honda; a fonte (AutoPapo, 03/06) cita só NX500, CB 500 Hornet, CB 1000R e X-ADV. Marquei a correção no radar e bloqueei a pauta em BANCO.md. Demanda D-20261124-master-1 (P2, 26/11, cc Greco).
+- aprendi: não generalizar além do escopo da fonte ("nenhum", "todos", "não tem"). Afirmação sem prova que vira pauta e anúncio é erro que o Léo reprova; conta como erro pro broche se repetir.
+- pendente: entregar a master-1; a confirmação oficial da Honda é da cria-4 (Greco).

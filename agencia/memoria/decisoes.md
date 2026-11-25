@@ -3,6 +3,14 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-24 (registro do Shelby, ronda do Conselho)
+- **Preço (Léo, 24/11):** em anúncio, post e vídeo PODE "R$19,90"; NÃO pode "por mês". Exceção da Apple (diretriz 2.3.14): imagens e vídeos promocionais dentro da App Store não levam preço. Está em DESIGN-MINHAMOTO.md.
+- **Canal do Shelby v2 (Léo, 24/11):** bilhete de decisões em dia útil às 9h só se houver decisão nova; plano da semana na segunda 8h41; fechamento na sexta 19h17; fechamento do mês no dia 1; WhatsApp como canal principal (a montar); um briefing só pros dois, com dupla assinatura. Texto em `canal/CANAL-SHELBY.md`.
+- **Biblioteca dos diretores (Léo, 24/11):** já registrada abaixo.
+- **Conectado em 23/11 (cadastro/itens.json):** RevenueCat, AppsFlyer, Meta Ads (duas contas) e App Store Connect ligados; Play parcial; UTMify e TikTok pendentes no cadastro. Fonte que falta é a **ponte de resumo em %** do carnucci-dados, pendência do QG (PENDENCIAS.md), não decisão do Léo.
+- **Correção pequena do Shelby (24/11):** `scripts/insights.py` ganhou o alcance 28d por formato (só leitura, sem chave nova, reversível); coleta diária das 23h41 já aprovada em 23/11.
+- **Texto de garantia dos Corretores (Shelby, 24/11):** "Garantia de 30 dias" aprovada sem a palavra "reembolso" até o Léo confirmar os termos da Kavoo. Parecer no fim de `demandas/entregas/D-20261123-mkt-2.md`.
+
 ## 2026-11-23 (registro do Shelby, ronda do Conselho)
 - **Já respondido pelo Léo em 23/11 (conhecimento/):** a venda dos Corretores é pela Kavoo, tracking pela UTMify; a garantia da página é de 30 dias; a meta de assinantes é em degraus (alvo do império = degrau 4), números só no privado; o custo máximo por assinante já está definido no privado; a BM só de anúncios (contingência) foi adiada em 18/11. Diretor não repete essas perguntas ao Léo.
 - **Corretores (Léo, 23/11):** teste de 6 estilos novos × 3 criativos, começando por Historinha, Quiz e Split-screen; recuperação de Pix adiada. Sem Black Friday (19/11) segue valendo.

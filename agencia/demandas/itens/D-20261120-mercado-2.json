@@ -30,6 +30,11 @@
       "quando": "2026-11-20T22:00:00-03:00",
       "quem": "produto",
       "o_que": "mantida bloqueada: sem confirmação do Davi, ninguém põe nome de modelo em loja ou anúncio (recomendado ao Mercado na réplica 2)"
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "mercado",
+      "o_que": "nota: o Stark provou pelo código (1.0.1, 17/11) 377 modelos e 263 com tabela oficial. Falta só saber se os 4 líderes estão lá: D-20261124-mercado-1. Continua bloqueada (build de 23/11 é com o Davi)."
     }
   ],
   "bloqueio": "lider",

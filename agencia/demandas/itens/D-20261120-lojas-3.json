@@ -30,9 +30,14 @@
       "quando": "2026-11-22T23:40:00-03:00",
       "quem": "master",
       "o_que": "título e pronto_quando corrigidos pelo Shelby: o app não tem teste grátis, retirada a etapa 'início de teste'"
+    },
+    {
+      "quando": "2026-11-24T20:15:00-03:00",
+      "quem": "master",
+      "o_que": "reclassificada de lider para qg: App Store Connect ligado em 23/11; Play parcial (convite feito, aguardando o Google). Falta a ponte de resumo em % (QG)."
     }
   ],
-  "bloqueio": "lider",
-  "pergunta_lider": "Léo: libera acesso de leitura do App Store Connect e Play Console ao carnucci-dados (sim/não)?",
-  "atualizada_em": "2026-11-22T23:40:00-03:00"
+  "bloqueio": "qg",
+  "atualizada_em": "2026-11-24T20:15:00-03:00",
+  "motivo_bloqueio": "App Store Connect ligado em 23/11; Play parcial (convite feito, aguardando o Google). Falta a ponte de resumo em % (QG). Nao e pergunta pro Leo."
 }

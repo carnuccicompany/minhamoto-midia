@@ -1,0 +1,36 @@
+{
+  "id": "D-20261124-produto-3",
+  "de": "produto",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Levar ao Davi hoje 1 sim/não: a build de 23/11 foi publicada nas lojas? Qual versão e que dia?",
+  "por_que": "O repositório do app (minhamotooficial) tem o último commit de 17/11 (git log, 24/11); a build de 23/11 não aparece lá. Sem a data real da versão, o vigia de avaliações pós-build (D-20261123-produto-2, janela de 72 h), a 1ª leitura do funil (até 7 dias após o SDK) e a proposta P-001 ficam com relógio errado. O pacote do Davi (D-20261123-master-pacote-davi) tem 12 itens sobre o conteúdo da build, mas nenhum pergunta se ela já saiu.",
+  "pronto_quando": "Resposta do Davi (sim/não + número da versão + dia) registrada em agencia/demandas/entregas/D-20261124-produto-3.md e avisada ao Bezos e ao Turing; ou registro de que a pergunta foi enviada, com data e hora, se o Davi não respondeu até o prazo.",
+  "prioridade": "P1",
+  "prazo": "2026-11-25T18:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-24T21:30:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
+    "resumo": "Pergunta somada como item 16 do pacote do Davi (vai primeiro). Sem resposta do Davi nao fecho."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T20:05:00-03:00",
+      "quem": "master",
+      "o_que": "somada ao pacote (item 16); vai ao Davi pelo QG hoje (D1 do master)"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Davi: a build de 23/11 já está nas lojas? Sim/não, versão e dia.",
+  "atualizada_em": "2026-11-24T20:05:00-03:00"
+}

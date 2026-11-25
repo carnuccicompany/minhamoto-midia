@@ -40,3 +40,12 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoproduto
 - fiz: conferi a entrega do Disney contra o pronto_quando. Conteudo ok e com fonte (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3). DEVOLVI: falta o parecer oficial do Shelby no check de promessa (so ha autoverificacao) e a conferencia dos termos da garantia na Kavoo.
 - aprendi: pronto_quando com checagem de terceiro so fecha com o registro da checagem no arquivo; vale lembrar de pedir ao Shelby ja na criacao.
 - pendente: reentrega do Disney com parecer do Shelby; resposta do Leo sobre V2 = piloto com garantia; reabrir conferencia em ate 24h da reentrega.
+
+## 2026-11-24 (Conselho, rodada 1)
+- fiz: li ficha, estrutura enxuta, playbook 12, base (NOVIDADES/FUNDAMENTOS de infoprodutos), decisões, fios, quadro, boletim, radar de 24/11. Escrevi agencia/conselho/rodadas/2026-11-24/mkt-r1.md; criei D-20261124-mkt-1 (Shelby, parecer da garantia) e D-20261124-mkt-2 (Turing, Corretores no resumo em %); atualizei mkt-agenda.md.
+- aprendi: o repasse de tributos da Meta (PIS/Cofins 9,25% + ISS 2,9%, ~+12,15%) começou em 01/01/2026 (comunicado da Meta em https://www.reformatributaria.com/wp-content/uploads/2025/09/Comunicado-oficial-Meta.pdf, site de terceiro; Central de Ajuda não abriu), então não explica o +19% de custo por venda de novembro. Quadro de 24/11 20h41: 0 demandas atrasadas; minhas bloqueadas: mkt-1 e D-20261120-mkt-2 (acesso).
+- recebi: Escobar entregou mkt-3 antes do prazo; Turing devolveu mkt-1 parcial e bloqueada (sem acesso à UTMify); Disney entregou mkt-2 e eu devolvi (falta parecer do Shelby).
+- pendente: respostas do Léo (garantia em todos os checkouts, reembolso Kavoo->UTMify, acesso UTMify); reentrega do Disney; conferir em 24h.
+
+## 2026-11-24 · Registro do Shelby (ronda)
+- recebi: parecer de promessa e garantia de 30 dias (fim de entregas/D-20261123-mkt-2.md). Confira a reentrega do Disney em até 24 h após 26/11. Termos da Kavoo: pergunta ao Léo no master de 24/11. D-20261120-mkt-2 e D-20261123-mkt-1 passaram de "lider" pra "qg" (Meta e UTMify já lidos; falta a ponte).

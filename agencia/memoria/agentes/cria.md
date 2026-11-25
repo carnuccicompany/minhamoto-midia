@@ -82,3 +82,17 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - **Próximo degrau:** Diretor da Semana; 4 entregas desta rodada esperando aceite (aceite alto é o que falta na ficha: ainda sem taxa).
 - **Conquista:** Criativo campeão (1 criativo 7 dias no custo-alvo, 10+ assinantes); a frase honesta tira o risco de reprovação que travaria o criativo.
 - **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.
+
+## 2026-11-24 · Conselho rodada 1 (noite)
+- fiz: li ficha, playbooks 04 e 03, base, quadro, fios, insights de 24/11, fila e radar de 24/11; criei D-20261124-cria-3 (Shelby, parecer da garantia) e -4 (Greco, Honda); respondi D-20261124-dados-1; escrevi conselho/rodadas/2026-11-24/cria-r1.md e atualizei a agenda. Iniciativa: ângulo catálogo "a sua moto já está aqui".
+- aprendi: (1) mkt-2 voltou do Cardone porque faltava o parecer real do Shelby: autoverificação não vale; (2) orgânico em 24/11: mediana ~0,9% dos seguidores por post em 59 posts, 2 salvamentos no total; (3) Fogg fechou 4 de 4 em 23/11; (4) a Meta (via Social Media Today, 17/12/2025) recomenda portfólio criativo diverso e gancho nos primeiros segundos; páginas oficiais da Meta e TikTok seguem sem abrir; (5) o radar afirma "Honda sem app nas populares" com fonte que só cita NX500/CB: não usar sem confirmar.
+- pendente: Léo (A1/B1, garantia, isolar, UGC); Davi (cobertura de modelo, build 23/11); Shelby (cria-3); Greco (cria-4).
+- sugestão pro main: guardar que a garantia dos Corretores (30 dias) ainda não tem termos confirmados (reembolso total?) e que o Léo deve responder (fonte: r1 de 24/11, item g).
+
+## Minha ambição (atualizada em 24/11/2026, noite)
+- **Próximo degrau:** Diretor da Semana; aceite alto (5 aceitas, 1 devolvida por erro meu).
+- **Conquista:** Criativo campeão; o ângulo catálogo é a aposta nova do MinhaMoto.
+- **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.
+
+## 2026-11-24 · Registro do Shelby (ronda)
+- recebi: parecer da cria-3/mkt-1 no fim de entregas/D-20261123-mkt-2.md (textos aprovados pra produzir, sem a palavra "reembolso"; termos da Kavoo não confirmados, vai ao Léo). Reentregue a mkt-2 até 26/11 19h40. Pauta "Honda sem app" bloqueada em BANCO.md até a cria-4.

@@ -1,0 +1,35 @@
+{
+  "id": "D-20261124-master-1",
+  "de": "master",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [
+    "mercado",
+    "master"
+  ],
+  "titulo": "Radar de 24/11: item 5 generaliza além da fonte (Honda sem app nas populares); refazer a leitura e conferir os outros itens",
+  "por_que": "O item 5 e a linha 2 da tabela afirmam que quem anda de CG, Pop, Biz e Bros nao tem app da marca, mas a fonte (AutoPapo, 03/06) so cita NX500, CB 500 Hornet, CB 1000R e X-ADV. A afirmacao ja foi parar em pauta (BANCO.md), na iniciativa do Greco e do Disney. Promessa/dado nao provado em anuncio e o que o Leo reprova (08-regras.md); o angulo catalogo e a aposta de venda da semana.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-1.md com: (1) cada afirmacao do radar de 24/11 que generaliza (marca, \"nenhum\", \"todos\", \"nao tem\") listada com o escopo real da fonte e o veredito fato/hipotese; (2) item 5 reescrito dentro do que a fonte diz; (3) o que ja foi corrigido por mim (BANCO.md, radar) conferido. A confirmacao oficial da Honda e da D-20261124-cria-4 (Greco), nao duplicar.",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-24T20:15:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-master-1.md",
+    "resumo": "13 afirmacoes do radar de 24/11 auditadas com escopo da fonte e veredito fato/hipotese; item 5 reescrito dentro do escopo (so NX500, CB 500 Hornet, CB 1000R, X-ADV; e so conectividade, nao app de manutencao). Alem da correcao do Shelby, corrigi titulo do item 5, linha 2 da tabela, 'Lander' sem fonte, 'maioria dos Detrans', e 2 pautas do BANCO."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T20:15:00-03:00",
+      "quem": "master",
+      "o_que": "criou (correcao da ronda de 24/11; ja corrigi o texto no radar e no BANCO.md)"
+    },
+    {
+      "quando": "2026-11-24T22:10:00-03:00",
+      "quem": "mercado:radar-de-concorrentes",
+      "o_que": "entregou a auditoria (agencia/demandas/entregas/D-20261124-master-1.md); limite: paginas-fonte nao reabertas hoje"
+    }
+  ],
+  "atualizada_em": "2026-11-24T22:10:00-03:00"
+}

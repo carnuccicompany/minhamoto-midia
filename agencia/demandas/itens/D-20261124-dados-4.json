@@ -1,0 +1,34 @@
+{
+  "id": "D-20261124-dados-4",
+  "de": "dados",
+  "para": "master:auditor-de-entregas",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Coordenador: conferir toda rodada se o insights diário do dia existe e veio sem erro",
+  "por_que": "O cron diário do insights.yml (23h41 BRT) é a única fonte por post; a coleta de avaliações já ficou 3 dias sem rodar sem ninguém ver (F-006) e a D-20261123-dados-5 só fecha com a prova do arquivo dados/insights-2026-11-25.json gerado pelo cron.",
+  "pronto_quando": "A partir da rodada de 25/11, agencia/coordenador/status.json traz uma linha 'insights diário' com a data do último dados/insights-AAAA-MM-DD.json, a hora da coleta e se 'erros' está vazio; se o arquivo do dia (data UTC) faltar até 06h BRT, a linha vira alerta. Prova: status.json de 25/11 com a linha.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T19:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-24T19:30:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-dados-4.md",
+    "resumo": "Criei scripts/vigia_insights.py e o item 8 do playbook do Coordenador; status.json já tem insights_diario (ultimo arquivo 24/11, erros vazio). Regra de alerta testada; a prova final (status.json de 25/11) depende da rodada de 25/11."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T19:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T19:55:00-03:00",
+      "quem": "master:auditor-de-entregas",
+      "o_que": "entregou: script + playbook + linha no status.json; prova de 25/11 pendente da rodada"
+    }
+  ],
+  "atualizada_em": "2026-11-24T19:55:00-03:00"
+}

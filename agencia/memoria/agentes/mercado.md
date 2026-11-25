@@ -54,3 +54,16 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - fiz: fechei o dossiê de Concorrentes: 04-concorrentes.md com links e datas dos 5 apps; entrega em entregas/D-20261123-master-dossie-2.md; status entregue.
 - aprendi: App Store BR segue sem abrir (permissão e curl sem rede). 4 de 5 preços são leituras de 22/11 e 24/11. Não inventei nada.
 - pendente: reconferir preços quando a App Store abrir; sim/não do Davi (mercado-2); respostas do Léo; F-002 morre em 27/11.
+
+## 2026-11-24 · Rodada 1 do Conselho (noite)
+- fiz: escrevi conselho/rodadas/2026-11-24/mercado-r1.md; criei D-20261124-mercado-1 (Stark, 4 líderes no catálogo, P1) e -2 (Sun Tzu, MotorManage 42.000 ou 45.000 e PT-BR); aceitei D-20261123-mercado-2 (Disney) e anotei no histórico de D-20261120-mercado-2; atualizei a agenda.
+- aprendi: o app tem 377 modelos, 263 com tabela oficial de revisão, escolha por lista de 4 toques (Stark, código 1.0.1 de 17/11, entrega radar-de-concorrentes-1). Honda atualiza 2027 sem conectividade nas populares (AutoPapo, 03/06). Mottu −14,0% em novembro até 18/11 (car.blog.br, 19/11). Busca web de hoje não trouxe fonte nova de licenciamento 2027 nem de Fenabrave depois de 18/11 (páginas não abriram); nada inventado.
+- pendente: cobertura dos 4 líderes; Biblioteca de Anúncios (Léo); pacote do Davi (produto-3); F-002 morre em 27/11.
+
+## 2026-11-24 · Correção do Shelby (cópia)
+- recebi: a afirmação "Honda sem app nas populares" que o Sun Tzu pôs no radar e você repetiu na r1 não está provada (a fonte cobre só 4 modelos de maior porte). Corrigi radar e pauta; D-20261124-master-1 com o Sun Tzu (cc você); a confirmação oficial é a D-20261124-cria-4 (sua, P2, 27/11). Até lá, fora de loja, anúncio e roteiro.
+
+## 2026-11-24 · D-20261124-cria-4 (Honda tem app?)
+- fiz: pesquisei honda.com.br; entrega em entregas/D-20261124-cria-4.md; status entregue. Criei D-20261124-mercado-3 (sim/não pro Léo/Davi, bloqueada lider) e -4 (Sun Tzu corrige o radar).
+- aprendi: a Honda tem app oficial que aceita moto (myHonda Connect; cadastro na garagem e Assistência 24h; "motos conectadas: atualmente não"). Lembrete/revisão pra moto não achei, texto oficial cortado: não afirmo ausência. "Sua Honda não tem app" é falso.
+- pendente: teste no app (Léo/Davi); radar corrigido; honda.com.br/motos não abriu (permissão).

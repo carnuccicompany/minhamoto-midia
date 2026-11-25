@@ -10,7 +10,7 @@
   "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261124-cria-1.md, 1 linha por tela (10, 02 e 06): existe igual, existe diferente (o que mudou) ou não existe, com o arquivo do código lido; dizer também se há tela do plano de revisão por km e tempo que sirva pro print 1. Nada mexe no app.",
   "prioridade": "P3",
   "prazo": "2026-12-01T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T10:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,6 +28,11 @@
       "quando": "2026-11-24T14:00:00-03:00",
       "quem": "produto",
       "o_que": "entregou: Telas 10, 02 e 06 existem no código de 17/11 com os mesmos textos. Risco: rótulo"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei: tabela com as 3 telas (10, 02, 06), veredito e arquivo lido por linha, mais a resposta sobre o plano por km (existe em codigo, sem imagem utilizavel porque 03/20 sao proibidas). Conferi no repo do app: os textos citados existem nos arquivos apontados (lista-previa, saude-tela, historico-previa). Limite assumido na entrega: so ate o commit de 17/11, a build de 23/11 nao esta no repo; a conferencia visual contra o app instalado continua pendente antes de subir print."
     }
   ]
 }

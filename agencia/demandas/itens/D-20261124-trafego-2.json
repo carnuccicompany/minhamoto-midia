@@ -1,0 +1,31 @@
+{
+  "id": "D-20261124-trafego-2",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Linha de base semanal de instalações iOS e compras iniciais iOS (variação %), com a oscilação da base, pra regra da semana-ponte sem SDK",
+  "por_que": "A regra do Plano B (D-20261122-master-5, aceita) só dá veredito com a maior variação semana contra semana das 2 semanas anteriores; com 1 semana de histórico não há veredito. Sem essa base pronta antes do 1º gasto, a semana-ponte vira medição de ruído. Meta de assinantes pagos novos/semana depende de eu saber se a campanha move a compra inicial acima do ruído (agencia/merito/metas.json: sem número da semana).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-2.md com, para iOS e Android separados, as últimas 3 semanas fechadas de (a) instalações (App Store Connect/Play) e (b) compras iniciais (RevenueCat) em índice (1ª semana=100) e variação % semana contra semana, mais a oscilação_base em %. Nenhum R$ nem absoluto. Sem acesso à fonte: status bloqueada dizendo qual leitura falta (D-20261123-dados-1).",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:30:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-24T18:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T18:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T23:00:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: iOS/Android por semana em % precisa de App Store Connect, Play e RevenueCat; sem acesso (mesma ponte de % do QG da D-20261123-dados-1 e do Leo). Nao invento base. Com 1 semana de historico nao ha veredito, e a semana-ponte so le acima da oscilacao medida; entrego no dia em que a leitura existir"
+    }
+  ],
+  "bloqueio": "dados"
+}

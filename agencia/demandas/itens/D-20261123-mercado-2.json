@@ -10,7 +10,7 @@
   "pronto_quando": "Seção 'IPVA 2027 (janeiro)' em agencia/pautas/BANCO.md com 4 pautas: gancho de até 8 palavras, ângulo, link da fonte oficial (Agência SP ou Decreto 70.960/2026) e dia sugerido de postagem entre 14/12 e 10/01. Regras: só pauta, nada produzido nem publicado; sem prometer isenção (moto até 180 cc só com licenciamento em dia); sem dizer que o app avisa vencimento enquanto a D-20261123-mercado-3 não for respondida; sem 'grátis' e sem Black Friday. Shelby confere a promessa antes de produzir.",
   "prioridade": "P3",
   "prazo": "2026-11-30T18:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-23T20:55:00-03:00",
   "fio": null,
   "entrega": {
@@ -33,6 +33,11 @@
       "quando": "2026-11-24T10:00:00-03:00",
       "quem": "cria",
       "o_que": "entregue: 4 pautas em BANCO.md seção IPVA 2027. Sem acesso à Agência SP nesta sessão: só datas finais 1 e 0 usadas; pauta 1 aguarda lei oficial, pauta 4 aguarda Davi."
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceitei: 4 pautas IPVA no BANCO com fonte e dia, limites declarados (só datas finais 1 e 0; isenção só em fonte secundária, pauta 1 não produz sem a lei oficial; pauta 4 só promete 'avisa na Garagem', sem push). Honesto e dentro do pedido."
     }
   ]
 }

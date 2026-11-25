@@ -1,0 +1,30 @@
+{
+  "id": "D-20261124-produto-5",
+  "de": "produto",
+  "para": "dados",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Tabela de tamanho de teste 50/50 pra P-001: quantas semanas de leitura por plataforma",
+  "por_que": "A P-001 (plano da moto após o cadastro) só dá pra decidir e medir com divisão 50/50 simultânea; a duração e a amostra ficaram com o Turing (agencia/produto/propostas/P-001, seção 3). A base de apps da RevenueCat tem download>pago mediano de 0,9% no Android e 2,6% no iOS (https://www.revenuecat.com/blog/engineering/android-paywall-gap; média de apps com teste, não é nosso número): conversão de 1 dígito exige volume pra enxergar efeito. Sem a conta feita antes, o Davi aprova um teste que pode nunca fechar leitura e eu não consigo prometer data.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com uma tabela de instalações por braço pra 3 linhas de base hipotéticas (rotuladas 'não é nosso dado') e 3 ganhos relativos (+20%, +30%, +50%), e a leitura em SEMANAS por plataforma com o volume real do carnucci-dados. Só semanas e %, nenhum número absoluto de instalação ou assinante no arquivo público. Se faltar acesso ao volume, diz o que falta.",
+  "prioridade": "P3",
+  "prazo": "2026-12-01T18:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-24T21:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T23:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita (P3, 01/12): tabela por braco para 3 bases hipoteticas x +20/+30/+50%, em semanas; reuso a formula da trafego-3. Nao uso o 0,9%/2,6% da RevenueCat: pagina bloqueada na minha sessao, sem leitura propria. Semanas reais so com o volume do carnucci-dados"
+    }
+  ]
+}

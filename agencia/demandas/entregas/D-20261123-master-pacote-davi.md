@@ -1,4 +1,4 @@
-# Pacote ao Davi (Shelby, 23/11/2026; itens 11 e 12 somados em 24/11) · cobre D-20261122-produto-3, D-20261122-dados-1 e as perguntas bloqueadas dele
+# Pacote ao Davi (Shelby, 23/11/2026; itens 11 e 12 somados em 24/11 de manhã; 13 a 16 somados em 24/11 à noite) · cobre D-20261122-produto-3, D-20261122-dados-1 e as perguntas bloqueadas dele
 
 Só o Davi responde. Uma mensagem, sim/não em cada item. O que o código de 17/11 já respondeu (Jobs e Stark leram, só leitura) saiu da lista.
 
@@ -14,6 +14,11 @@ Só o Davi responde. Uma mensagem, sim/não em cada item. O que o código de 17/
 10. Libera 5 prints ou gravações 9:16 da versão nova, sem dado de cliente, até 27/11?
 11. **A build de 23/11 mantém igual o selo "Documento vencendo" da Garagem** (licenciamento, 30 dias ou menos) **e continua sem notificação push de documento?** Hoje (código de 17/11, versão 1.0.1) o selo existe só dentro do app e o planejador não trata documento. Se "não", descreve o que mudou. (D-20261124-produto-1; fonte: entregas/D-20261123-mercado-3.md)
 12. **A build de 23/11 mantém igual as telas Histórico, Saúde e Notificações** usadas nos vídeos A1 e B1? Se "não", descreve o que mudou, que a cena é refeita antes de ir ao ar. (D-20261124-produto-1; fonte: entregas/D-20261123-cria-3.md)
+
+13. **Logo após o cadastro da moto, o app já tem os dados pra montar o plano daquela moto (sem o km da configuração)?** (P-001, seção 4; D-20261124-produto_analista-do-paywall-1). Recomendo: sim, é o mesmo cálculo do briefing. Se "não", a proposta vira "plano em km médio do modelo".
+14. **Dá pra dividir 50/50 por flag remota, sem build nova?** (P-001). Se "não", o teste só entra numa build futura e a leitura espera.
+15. **Posso preparar um rascunho de código num branch separado, sem merge, depois do seu OK na P-001?** (P-001). Recomendo: sim, só depois do OK; nada é escrito antes.
+16. **A build de 23/11 já está nas lojas? Qual versão e que dia?** (D-20261124-produto-3, P1). Sem a data, o vigia de 72 h, a 1ª leitura do funil e a P-001 ficam com o relógio errado. É a pergunta que vai primeiro.
 
 Recomendação do Shelby nos itens 11 e 12: responder "sim, igual" é o caminho mais barato. Enquanto o Davi não responde, A1/B1 e as séries de IPVA só podem dizer "avisa na Garagem, dentro do app" e nunca "te avisa por notificação do CRLV/CNH" (08-regras.md: promessa que o app não cumpre vira reprovação e 1 estrela). O item 5 acima (tela "Esse é o MinhaMoto") é outro assunto, não duplica.
 

@@ -47,3 +47,8 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - **Próximo degrau:** Analista (100 XP). Estou com 0 XP; entregas aceitas no prazo dão +5 cada.
 - **Conquista:** Proposta lançada (P-001 aprovada pelo Davi e dentro de uma versão).
 - **Item que quero:** Montblanc Meisterstück, quando chegar a Sênior. Só vale o que tem prova.
+
+## 2026-11-24 (entrega 2)
+- fiz: entreguei D-20261124-produto-4 (moto fora do catálogo). Li o código de 17/11: o paywall só abre no fim do tour (tour-onboarding.tsx:119) ou no "assinar" do borrão pós-onboarding (funil-sem-pro.tsx:63,97); quem não cadastra moto fica em em_andamento, app livre e vazio, nunca vê paywall. Premissa da demanda corrigida. Pedido de modelo hoje = mailto em branco (app-ui.tsx:446) na marca vazia e no pé da Garagem; nada na busca vazia nem em versão/ano. Proposta: cartão de pedido pré-preenchido onde trava, sem prazo. Criei D-20261124-produto_analista-do-paywall-2 (3 perguntas pro pacote do Davi).
+- aprendi: estado do onboarding é só local (lib/onboarding.ts:46), servidor não vê quem parou; não há evento de funil. Checar a premissa no código antes de aceitar a da demanda.
+- pendente: conferência do Stark; respostas do Davi; build de 23/11 fora do repo.

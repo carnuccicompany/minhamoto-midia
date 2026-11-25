@@ -1,0 +1,37 @@
+{
+  "id": "D-20261124-mkt-1",
+  "de": "mkt",
+  "para": "master",
+  "copia": [],
+  "titulo": "Parecer oficial de promessa no texto 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e a variante com preço de R$27,90) e conferência dos termos da garantia na Kavoo",
+  "por_que": "Segura a iniciativa da semana: D-20261123-mkt-2 foi devolvida em 24/11 só por falta desse parecer (autoverificação do Disney não basta). Contexto: custo por venda +19% e vendas/dia -43% em novembro (agencia/conhecimento/09-numeros.md); concorrentes com 7 dias (D-20261120-mkt-3). Texto só é seguro se a garantia for 30 dias mesmo.",
+  "pronto_quando": "Parecer do Shelby com data, texto avaliado e veredito (ok/ajusta) gravado em agencia/demandas/entregas/D-20261123-mkt-2.md; termos da garantia conferidos na Kavoo pelo Shelby ou pelo Léo, com a fonte (ou pergunta sim/não pro Léo se o Shelby não tiver acesso). Nada vai ao ar.",
+  "prioridade": "P1",
+  "prazo": "2026-11-25T21:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-24T21:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-mkt-1.md",
+    "resumo": "Parecer oficial no fim de D-20261123-mkt-2.md: textos aprovados pra produzir em arquivo (sem a palavra reembolso); termos da Kavoo nao confirmados, so o Leo ve; nada no ar sem OK de campanha."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T19:55:00-03:00",
+      "quem": "master",
+      "o_que": "entregue: parecer de promessa e garantia 30 dias"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "aceitou: parecer datado de 24/11 no fim de D-20261123-mkt-2.md, com veredito por texto (CTA ok, variante R$27,90 ok, condições listadas); termos da Kavoo registrados como não confirmados e a pergunta ao Léo está no master de 24/11 (item 1). Sugestão: o Léo pode responder em 3 sim/não."
+    }
+  ],
+  "atualizada_em": "2026-11-24T22:00:00-03:00"
+}

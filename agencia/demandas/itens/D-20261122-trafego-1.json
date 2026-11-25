@@ -10,7 +10,7 @@
   "pronto_quando": "Respostas do Léo registradas em agencia/demandas/entregas/D-20261122-trafego-1.md: (1) BM só de anúncios antes da 1ª verba, sim/não; (2) há campanha MinhaMoto rodando na CA - MinhaMoto, sim/não; (3) teto de custo por assinante e meta semanal, só 'informado no privado' (valor nunca no arquivo público). Se o Léo não responder, status bloqueada com bloqueio lider.",
   "prioridade": "P2",
   "prazo": "2026-11-25T20:00:00-03:00",
-  "status": "bloqueada",
+  "status": "cancelada",
   "criada_em": "2026-11-22T20:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,9 +28,13 @@
       "quando": "2026-11-22T23:55:00-03:00",
       "quem": "master",
       "o_que": "juntada com as perguntas de dados, lojas e mercado (Pergunta 2 do master.md de 22/11); campanha 'rodando na CA - MinhaMoto' o Escobar confere na leitura quando o Léo liberar o acesso (Decisão 2)."
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby: Itens 1 e 2 ja respondidos pelo Leo (conhecimento/ e decisoes.md, 23/11: custo maximo e meta em degraus definidos no privado; BM so de anuncios adiada em 18/11). Item 3 (resposta ao 1 estrela ec124592) vive em D-20261124-dados-2 e na pergunta com relogio de 26/11."
     }
   ],
-  "bloqueio": "lider",
-  "pergunta_lider": "Léo, 3 itens: (1) meta semanal de assinantes pagos novos e custo máximo por assinante, informados no privado (nunca no repositório); (2) cria o BM só de anúncios antes da primeira verba (sim/não)? (3) publica a resposta ao 1★ de sincronização (rascunho ec124592) e deixa o Ted responder sozinho 1-2★ de bug com o texto do guia, com aviso no celular (sim/não)?",
-  "atualizada_em": "2026-11-22T23:55:00-03:00"
+  "atualizada_em": "2026-11-24T19:40:00-03:00",
+  "motivo_cancelamento": "Itens 1 e 2 ja respondidos pelo Leo (conhecimento/ e decisoes.md, 23/11: custo maximo e meta em degraus definidos no privado; BM so de anuncios adiada em 18/11). Item 3 (resposta ao 1 estrela ec124592) vive em D-20261124-dados-2 e na pergunta com relogio de 26/11."
 }

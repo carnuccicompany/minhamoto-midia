@@ -1,0 +1,32 @@
+{
+  "id": "D-20261124-produto-4",
+  "de": "produto",
+  "para": "produto:analista-do-paywall",
+  "copia": [],
+  "titulo": "Moto fora do catálogo: o que o motoqueiro vê do cadastro ao paywall e uma proposta de 1 mudança",
+  "por_que": "A tese da iniciativa é mostrar o plano da moto antes do paywall (% instalação>pagante). Pelo código de 17/11, moto sem plano disponível não vê a tela do plano (02-produto.md, seção Fluxo do app) e o catálogo tem 377 modelos, com 263 de tabela oficial (D-20261123-mercado_radar-de-concorrentes-1). Quem tem moto fora da lista chega ao paywall sem ver valor: é o pior caso do funil e ninguém o descreveu. O tamanho desse grupo é desconhecido (D-20261120-mercado-3, distribuição por modelo, está bloqueada); descrever o caminho dele custa só leitura de código.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) passo a passo das telas que esse usuário atravessa, com arquivo e linha do código de 17/11 (versão 1.0.1 dita); (2) o que existe hoje pra pedir modelo faltante; (3) UMA mudança proposta, antes/depois, sem prometer modelo nem data, sem R$, sem 'grátis'; (4) evento a medir pra saber o tamanho do grupo. Marcado 'proposta pro Davi, nada mexe no app'.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-24T21:30:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto-4.md",
+    "resumo": "Pelo código de 17/11 quem tem moto fora do catálogo não chega ao paywall (fica sem moto, onboarding parado, app vazio); pedido de modelo é só e-mail em branco e não existe dentro da lista nem na versão/ano. Proposta pro Davi: cartão de pedido pré-preenchido onde trava, sem prazo; 5 eventos pra medir o grupo."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T22:10:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "entregue: passo a passo com arquivo e linha, pedido de modelo hoje, 1 mudança antes/depois, eventos; corrige a premissa (não chega ao paywall)"
+    }
+  ],
+  "atualizada_em": "2026-11-24T22:10:00-03:00"
+}

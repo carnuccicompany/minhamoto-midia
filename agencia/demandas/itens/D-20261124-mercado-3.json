@@ -1,0 +1,28 @@
+{
+ "id": "D-20261124-mercado-3",
+ "de": "mercado",
+ "para": "master",
+ "copia": [
+  "cria",
+  "mercado"
+ ],
+ "titulo": "Léo/Davi: abrir o myHonda Connect com uma CG 160 cadastrada e dizer se aparece revisão ou lembrete (sim/não)",
+ "por_que": "A Honda tem app oficial que aceita moto (honda.com.br, 24/11), mas o texto oficial não diz se ele lembra revisão de moto. O roteiro 'o plano da sua moto já vem pronto' (cria-4) só pode comparar com o app da Honda se isso for visto na tela; hoje é não provado. Os 4 modelos são o topo das vendas de novembro.",
+ "pronto_quando": "Resposta sim/não do Léo ou do Davi: depois de cadastrar uma CG 160 (ou outra Honda) no myHonda Connect, o app mostra revisão ou lembrete de manutenção pra moto? Print opcional, sem dado pessoal.",
+ "prioridade": "P2",
+ "prazo": "2026-11-27T21:00:00-03:00",
+ "status": "bloqueada",
+ "criada_em": "2026-11-24T22:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-24T22:00:00-03:00",
+   "quem": "mercado",
+   "o_que": "criou"
+  }
+ ],
+ "bloqueio": "lider",
+ "pergunta": "No myHonda Connect, com uma moto Honda cadastrada na garagem, aparece revisão ou lembrete de manutenção? (sim/não)"
+}

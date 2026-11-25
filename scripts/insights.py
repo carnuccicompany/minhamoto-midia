@@ -61,6 +61,22 @@ tenta('fb_pagina', lambda: get(PAGE, fields='fan_count,followers_count,name'))
 # page_impressions foi descontinuada pela Meta (blog dev 15/08/2025): usa page_media_view
 tenta('fb_impressoes', lambda: get(f'{PAGE}/insights', metric='page_media_view,page_post_engagements', period='week'))
 
+def ig_alcance_formato():
+    # Meta: breakdown só com metric_type=total_value (doc oficial). 28 dias fechados, UTC.
+    # Grava só total e por_formato (nunca a resposta crua). Aprovado pelo Shelby em 24/11
+    # (D-20261123-dados_relatorio-semanal-1); só leitura, dentro de tenta().
+    fim = int(datetime.datetime.combine(datetime.date.today(), datetime.time.min,
+                                        tzinfo=datetime.timezone.utc).timestamp())
+    ini = fim - 28 * 86400
+    r = get(f'{IG}/insights', metric='reach', period='day', metric_type='total_value',
+            breakdown='media_product_type', since=str(ini), until=str(fim))
+    tv = r['data'][0]['total_value']
+    res = (tv.get('breakdowns') or [{}])[0].get('results', [])
+    return {'janela_dias': 28, 'total': tv.get('value'),
+            'por_formato': {x['dimension_values'][0]: x['value'] for x in res}}
+
+tenta('ig_alcance_28d_formato', ig_alcance_formato)
+
 def sem_paging(o):
     # NUNCA gravar 'paging': as URLs de paginação da Meta trazem o access_token
     # e este repositório é público (vazamento em 23/11/2026).

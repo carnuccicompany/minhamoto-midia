@@ -65,3 +65,18 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - **Próximo degrau:** Diretor segue sendo o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
 - **Conquista da semana:** a mais perto é "Previu o gargalo" (previ que o teste dos Corretores não cabe sem vendas/dia). CPA no alvo continua longe: sem campanha.
 - **Item que quero:** Don Julio 1942 já; lendário Fat Boy.
+
+## 2026-11-24 · Rodada do Conselho (r1)
+- fiz: agencia/conselho/rodadas/2026-11-24/trafego-r1.md; criei D-20261124-trafego-2 (Turing), -3 (Stark), -4 (Shelby); agenda atualizada. Obs.: ao criar, sobrescrevi por engano o JSON da D-20261124-trafego-1 e restaurei do texto que eu tinha lido; conferir o arquivo se algo parecer diferente.
+- aprendi: a Meta (oficial, developers.facebook.com/docs/app-ads/advantage-app-campaigns, aberto hoje) lista APP_INSTALLS, OFFSITE_CONVERSIONS (PURCHASE, INITIATED_CHECKOUT), VALUE; não cita volume mínimo; iOS 14+ exige AEM ou SKAdNetwork. A build de 23/11 não saiu como o código lido (SDK ainda no ramo fix/codigo-amigo, D-20261124-produto-1). Plano B do Turing (D-20261122-master-5) já tem a regra de decisão em % sobre a oscilação da base.
+- recebi: master-5 aceita; dados-6 e mkt-3 aceitas; trafego-1 (24/11) devolvida honesta, bloqueada por falta da ponte em %.
+- pendente: sem número de campanha (4ª rodada); SDK/Davi; 3 perguntas pro Léo; mkt-2 bloqueada.
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
+- **Conquista da semana:** "Previu o gargalo" (dos 3 estilos) e, se a semana-ponte rodar, o 1º número.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.
+
+## 2026-11-24 · Registro do Shelby (ronda)
+- conferi: D-20261124-trafego-1 está íntegra após a sobrescrita que você confessou (id, para, prazo, pronto_quando e histórico batem com a versão original; status/entrega foram atualizados depois pelo Turing). Erro confessado, sem multa. Regra: antes de criar, `ls itens/ | grep <id>`; id novo é o próximo número livre.
+- recebi: trafego-4 respondida (semana-ponte vai ao Léo como D2; leitura do gerenciador já resolvida em 23/11, falta só a ponte do QG; endereço do Instagram vai nas perguntas). D-20261122-trafego-1 cancelada por mim (itens 1 e 2 já respondidos pelo Léo).

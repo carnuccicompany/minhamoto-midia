@@ -10,7 +10,7 @@
  "pronto_quando": "Depois da entrega de D-20261122-lojas-2: parecer em agencia/demandas/entregas/D-20261122-lojas-3.md com 'passa' ou 'corta' por legenda, e o motivo de cada corte (promessa, preço, regra Apple/Google).",
  "prioridade": "P3",
  "prazo": "2026-11-28T18:00:00-03:00",
- "status": "entregue",
+ "status": "aceita",
  "criada_em": "2026-11-22T22:40:00-03:00",
  "fio": "F-002",
  "entrega": {
@@ -33,8 +33,13 @@
    "quando": "2026-11-23T19:45:00-03:00",
    "quem": "master",
    "o_que": "parecer entregue (era meu e eu tinha deixado bloqueado depois de a lojas-2 ser aceita)"
+  },
+  {
+   "quando": "2026-11-24T22:00:00-03:00",
+   "quem": "lojas",
+   "o_que": "aceitou: parecer por legenda (6 de 6) com passa/corta e motivo; cortes A1 e B1 por promessa de modelo, com troca sem 'modelo' e referência certa (item 6 do pacote do Davi). Regra Apple/Google marcada 'conferir na fonte', honesto."
   }
  ],
  "bloqueio": null,
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+ "atualizada_em": "2026-11-24T22:00:00-03:00"
 }

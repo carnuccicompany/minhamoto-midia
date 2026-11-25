@@ -41,3 +41,10 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Entregues: D-20261123-dados-6 (proposta de teste pago mínimo, sim/não de verba pro Léo no arquivo) e D-20261123-mkt-3 (regra dos 3 estilos em % do custo de outubro). Criada D-20261124-trafego-1 (Turing: vendas/dia e custo por hora dos Corretores em índice).
 - Meta pessoal mantida: 1º número de campanha até 30/11, só com SDK e paywall_view na build. Aposta: teste de 2 ângulos só iOS, n 1.470 por variante a 50% de diferença (cenário 5%), troco pela taxa própria na 1ª leitura.
 - Em curso: trafego-1 (Léo, nomes, bloqueada), trafego-3 (Turing, eventos/semana em % de 50, 30/11), trafego-1 de 24/11 (Turing). Devo: D-20261120-mkt-2 (bloqueada).
+
+## Atualização 24/11/2026 (noite)
+- Meta pessoal mantida: 1º número de campanha até 30/11 se o SDK entrar; senão, até 14/12 pela semana-ponte (Plano B do Turing). Aviso na hora se escorregar.
+- Aposta nova: "Semana-ponte": 1 campanha iOS, link direto da loja, otimização por instalação (APP_INSTALLS), 7 dias, custo por assinante aparente contra a base do Turing. Só depois dos portões e do OK do Léo.
+- Em curso: D-20261124-trafego-2 (Turing, base em %), -3 (Stark, pergunta de origem no onboarding), -4 (Shelby, 3 sim/não pro Léo), todas 27/11 18h30. Mantidas: trafego-1 (24/11, bloqueada), trafego-3 (23/11, 30/11), trafego-1/-2 (23/11 e 22/11, bloqueadas).
+- Devo: D-20261120-mkt-2 (bloqueada, leitura do gerenciador).
+- Perguntas pro Léo: leitura de painéis, semana-ponte sim/não, endereço recusado pelo Instagram.

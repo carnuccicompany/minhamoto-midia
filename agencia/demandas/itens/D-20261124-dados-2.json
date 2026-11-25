@@ -10,7 +10,7 @@
   "pronto_quando": "Resposta do Léo (aprovar ou editar o rascunho em dados/avaliacoes/respostas.json, id ec124592); o robô publica só o que ele aprovar. Sem aprovação até 26/11 12h, registrar no Conselho que o 1★ saiu sem resposta.",
   "prioridade": "P1",
   "prazo": "2026-11-25T15:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-24T15:00:00-03:00",
   "fio": null,
   "entrega": null,
@@ -20,7 +20,14 @@
       "quando": "2026-11-24T15:00:00-03:00",
       "quem": "dados",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T20:05:00-03:00",
+      "quem": "master",
+      "o_que": "vai ao Leo hoje pelo QG como pergunta com relogio (master 24/11, pergunta 2). Resposta de 1-3 estrelas so com OK dele (08-regras.md)."
     }
   ],
-  "atualizada_em": "2026-11-24T15:00:00-03:00"
+  "atualizada_em": "2026-11-24T20:05:00-03:00",
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: posso publicar a resposta ao 1★ do Play (rascunho ec124592, dados/avaliacoes/respostas.json) e deixar o Ted responder 1-2★ de bug com o texto do guia? Recomendo: sim. Relógio: 26/11 12h."
 }

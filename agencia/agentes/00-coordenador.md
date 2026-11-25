@@ -15,6 +15,7 @@ Roda a cada 2 horas, 24h por dia (tarefa agendada "MinhaMoto: coordenador da ag�
 5. **Aprovação pendente**: itens em `fila/pendentes.json` esperando o Léo há mais de 24h → lembrete (uma vez por dia, no máximo).
 6. **Pendências**: leia `agencia/PENDENCIAS.md`. Item com prazo vencido ou que depende do Léo → inclua no resumo diário.
 7. **Saúde do repositório**: links quebrados no painel (`painel.html`, `tiktok.html`) para arquivos que não existem → conserte ou alerta.
+8. **Insights diário** (D-20261124-dados-4): rode `python3 scripts/vigia_insights.py` e copie o JSON impresso para a chave `insights_diario` do status.json. Se `alerta` for true (arquivo `dados/insights-<data UTC>.json` ausente depois das 06h BRT, ou `erros` não vazio), ponha a `linha` também em `alertas` e avise o Turing (dados) por demanda. Não rode o `insights.yml` à mão sem necessidade: o cron das 23h41 BRT é a fonte.
 
 ## Recuperação depois que o limite do plano acaba
 Quando o limite de uso do plano acaba, nenhuma tarefa do Claude roda (nem você). A primeira rodada sua depois que o limite renova faz a recuperação:

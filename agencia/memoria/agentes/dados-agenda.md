@@ -43,3 +43,9 @@
 - Iniciativa que trago: "De onde vem o alcance?" continua; agora com 59 posts FEED = <=9,9% do alcance e hipótese AD primeiro.
 - Aposta: provar a janela de 7 dias do Play com a previsão de 26/11 (conta como "Previu o gargalo" se confirmar).
 - Cobrar: Davi (patch insights.py, disparo diário de avaliacoes.yml), Léo (ec124592), Disney (dados-1: V2 = V1 + faixa), Shelby (dados-2).
+
+## Atualização 2026-11-24 (rodada 1 do Conselho, noite)
+- Iniciativa: "De onde vem o alcance?" continua. Hipótese: >=90% do alcance 28d vem de AD, REELS ou STORY, não de feed (feed <=9,9%). Prazo 30/11; depende do patch do insights.py e de token.
+- Criadas: D-20261124-dados-3 (Hemingway, minuta 30/11), -4 (Ness, linha de insights diário no status), -5 (Escobar, portão Meta-AppsFlyer). Prazo 27/11 19h.
+- Conferir 25/11: insights-2026-11-25.json (cron) para aceitar dados-5. 26/11 21h35 UTC: ec124592 sai do Play? 27/11: dados-1 (Disney) e as três de hoje.
+- Aposta nova: sem integração SKAN Meta-AppsFlyer, o anúncio aparece como orgânico; vira portão antes da verba.

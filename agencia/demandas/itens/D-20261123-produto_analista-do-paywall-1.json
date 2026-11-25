@@ -1,34 +1,39 @@
 {
- "id": "D-20261123-produto_analista-do-paywall-1",
- "de": "produto:analista-do-paywall",
- "para": "master",
- "copia": [
-  "produto"
- ],
- "titulo": "Registrar em 02-produto.md o fluxo do app lido no código (onboarding > plano > paywall) pra ninguém tratar como incógnita",
- "por_que": "02-produto.md está vazio e já custou uma entrega refeita (D-20261120-produto-1). Li o código em modo leitura: o briefing e 'Esse é o MinhaMoto' (itens reais do plano) já vêm antes do paywall; sem SDK AppsFlyer no package.json. Fonte: agencia/demandas/entregas/D-20261122-produto-1.md",
- "pronto_quando": "02-produto.md com a seção 'Fluxo do app (código de 17/11)', marcada 'a confirmar com o Davi (build de 23/11)', sem R$ e sem número absoluto; ou recusa com motivo.",
- "prioridade": "P3",
- "prazo": "2026-11-30T23:20:00-03:00",
- "status": "entregue",
- "criada_em": "2026-11-23T14:50:00-03:00",
- "fio": null,
- "entrega": {
-  "arquivo": "agencia/conhecimento/02-produto.md",
-  "resumo": "Seção \"Fluxo do app (código de 17/11, a confirmar com o Davi)\" e \"Documentos e avisos\" registradas no 02-produto.md, sem R$ e sem número absoluto."
- },
- "cobrancas": 0,
- "historico": [
-  {
-   "quando": "2026-11-23T14:50:00-03:00",
-   "quem": "produto:analista-do-paywall",
-   "o_que": "criou"
+  "id": "D-20261123-produto_analista-do-paywall-1",
+  "de": "produto:analista-do-paywall",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Registrar em 02-produto.md o fluxo do app lido no código (onboarding > plano > paywall) pra ninguém tratar como incógnita",
+  "por_que": "02-produto.md está vazio e já custou uma entrega refeita (D-20261120-produto-1). Li o código em modo leitura: o briefing e 'Esse é o MinhaMoto' (itens reais do plano) já vêm antes do paywall; sem SDK AppsFlyer no package.json. Fonte: agencia/demandas/entregas/D-20261122-produto-1.md",
+  "pronto_quando": "02-produto.md com a seção 'Fluxo do app (código de 17/11)', marcada 'a confirmar com o Davi (build de 23/11)', sem R$ e sem número absoluto; ou recusa com motivo.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T23:20:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-23T14:50:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/conhecimento/02-produto.md",
+    "resumo": "Seção \"Fluxo do app (código de 17/11, a confirmar com o Davi)\" e \"Documentos e avisos\" registradas no 02-produto.md, sem R$ e sem número absoluto."
   },
-  {
-   "quando": "2026-11-23T19:45:00-03:00",
-   "quem": "master",
-   "o_que": "entregue pelo Shelby: fluxo registrado em conhecimento/02-produto.md; Jobs confere"
-  }
- ],
- "atualizada_em": "2026-11-23T19:45:00-03:00"
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-23T14:50:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-23T19:45:00-03:00",
+      "quem": "master",
+      "o_que": "entregue pelo Shelby: fluxo registrado em conhecimento/02-produto.md; Jobs confere"
+    },
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita: 02-produto.md tem a seção Fluxo do app (código de 17/11), marcada 'a confirmar com o Davi na build de 23/11', e a de Documentos e avisos; sem número absoluto nem receita (o R$ 19,90 do arquivo é o preço público de vitrine, de outro trecho)"
+    }
+  ],
+  "atualizada_em": "2026-11-23T19:45:00-03:00"
 }

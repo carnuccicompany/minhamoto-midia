@@ -75,3 +75,13 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 - fiz: aceitei D-20261123-produto-1 (P-001, md+html, confere com o pronto_quando; P1 virou referência ao item 5 do pacote do Davi, conferido) e D-20261124-produto-2 (A1/B1 com frase aprovada, conferi quadros e gerador, nada publicado).
 - aprendi: conferir pelo arquivo e pelos quadros, não só pelo resumo. Card 4 do carrossel B (estaticos.py:132) ainda tem "na hora certa"; se entrar na fila, trocar.
 - pendente: Davi responder o pacote (item 5 destrava P-001); Léo escolhe A ou B (F-004).
+
+## 2026-11-24 (Conselho, rodada 1)
+- fiz: produto-r1.md; criei D-20261124-produto-3 (Shelby: build saiu?, P1), -4 (Jobs: moto fora do catálogo, P2) e -5 (Turing: tamanho do teste 50/50, P3); aceitei D-20261124-produto-1 e D-20261123-produto_analista-do-paywall-1; atualizei produto-agenda.md.
+- aprendi: git log do app mostra último commit em 17/11, sem build de 23/11 nem SDK. Avaliações de 24/11: 6 de 7 com 5★, 1 de 7 com 1★ (Play, sync, sem resposta há 5 dias). RevenueCat (17/11/2026, app-value-paywall): valor antes do paywall depende do contexto; tráfego pago pede sinal de conversão rápido; o artigo não traz % de teste. Apple HIG de avaliações não abriu.
+- recebi: nada novo do Davi; D-20261122-produto-3 e dados-2 seguem bloqueadas.
+- pendente: resposta do Davi (pacote de 12 itens + produto-3 nova); Jobs (produto-4, 27/11); Turing (produto-5, 01/12).
+
+## Minha ambição (atualizada em 24/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (botão de teste de aviso e frase "antes do prazo" apontados antes da publicação) e Proposta lançada (P-001 pronta pro Davi).
+- **Item:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale com prova.

@@ -73,3 +73,9 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - **Conquista:** Nota subiu; agora com caminho: histórico acumulado + nota oficial como base.
 - **Item:** Creed Aventus.
 - **Regra:** só vale o que tem prova; fonte bloqueada vira "a conferir", nunca fato.
+
+## 2026-11-24 21:30 · Rodada 1 do Conselho
+- fiz: lojas-r1.md (2026-11-24); criei D-20261124-lojas-2 (Ted) e -3 (Escobar); atualizei lojas-agenda.md.
+- aprendi: developer.apple.com e support.google.com abriram hoje (WebFetch); apps.apple.com e play.google.com seguem bloqueados. Apple: até 3 prints na busca, sem preço/URL/logo. Play: até 50 fichas personalizadas, não é teste. Coleta 24/11 20h14Z: n=7, Play n=1 (1★), App Store 6x5★.
+- recebi: D-20261124-dados-2 (Turing, 1★, P1 25/11).
+- pendente: OK do Léo no 1★ (janela da API fecha ~26/11); nota oficial do Play; domínios das lojas (master-3 vence hoje); limites de caracteres da Apple (página de metadados não abri).

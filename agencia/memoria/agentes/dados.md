@@ -84,3 +84,12 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - fiz: D-20261123-dados-3 aceita (Bezos; bate com respostas.json 6 Play 3x5★/3x1★ e avaliacoes.py sem paginação; implementação só com OK do Davi). D-20261123-dados-5 devolvida: sim do Shelby e cron diário conferem, falta a prova do 1º arquivo gerado pelo cron (insights-2026-11-25.json, erros vazio); o de 24/11 (12:56Z) foi manual. Hora do histórico do master (19:45) anterior à criação (21:00).
 - aprendi: conferir contra pronto_quando item por item; item que depende de data futura não se aceita no escuro. Ultimas.json hoje tem 1 avaliação do Play (coleta 24/11 16h15Z), então c28f1858 também saiu da janela.
 - pendente: 25/11 conferir insights-2026-11-25.json e aceitar dados-5; OK do Davi pra implementar historico.jsonl; 27/11 ec124592.
+
+## 2026-11-24 (noite) · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-24/dados-r1.md; criei D-20261124-dados-3 (Hemingway), -4 (Ness), -5 (Escobar, portão Meta-AppsFlyer).
+- aprendi: alcance 28d da conta -0,4% de 23 para 24/11 (insights-2026-11-23/24.json); posts de feed <=9,9% dele; mediana 0,57% dos seguidores nos posts de 17 a 24/11. AppsFlyer: sem integração SKAN com a Meta, instalação do anúncio aparece como orgânica; coleta 01:00 UTC, retroativo 7 dias (https://support.appsflyer.com/hc/en-us/articles/360017095198, sem data de revisão na página). Busca por novidade de SKAN/AdAttributionKit de nov/2026: nada confirmado.
+- erro a evitar: nenhum novo; sem carnucci-dados, sem número de pagante.
+- pendente: 25/11 insights-2026-11-25.json (dados-5); 26/11 ec124592; Davi (F-001, dados-2, patch); Léo (dados-1, ted-1, ec124592).
+
+## 2026-11-24 · Registro do Shelby (ronda)
+- recebi: aprovei e apliquei o patch de alcance por formato em scripts/insights.py (correção pequena, só leitura). Conferir em 25/11 dados/insights-2026-11-25.json e fechar a D-20261123-dados_relatorio-semanal-1. Nova: D-20261124-master-2 (formato do resumo em %, P2, 26/11 20h). lojas-2, trafego-2 e dados-1 de 23/11 passaram de "lider" pra "qg": o Léo já ligou as fontes, falta a ponte.

@@ -1,0 +1,30 @@
+{
+  "id": "D-20261124-mercado-2",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [],
+  "titulo": "MotorManage: número de modelos (42.000 ou 45.000?), idiomas e se existe PT-BR, direto do site oficial",
+  "por_que": "Nossa fala 'mais de 370 modelos, em português, só moto' só vale contra o MotorManage se a gente souber o que ele diz. O radar de 24/11 cita 45.000 modelos e sem português (Fazier, terceiro); a demanda D-20261123-mercado-1 citou 42.000 (motormanage.app). Dois números pro mesmo concorrente: se chegar em PT-BR, ele briga de frente com o plano por modelo, que é onde a gente ganha (Léo, 23/11, 04-concorrentes.md). Sem isso o dossiê D-20261123-master-dossie-2 fica com número dividido.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-mercado-2.md com: o número de modelos e de marcas lido na página oficial (link e data de acesso), lista de idiomas do app (App Store ou site), se tem português sim/não, e uma linha dizendo qual dos dois números (42.000 ou 45.000) está certo. O que não abrir fica escrito. Se mudar algo, corrijo 04-concorrentes.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T19:40:00-03:00",
+  "status": "cancelada",
+  "criada_em": "2026-11-24T19:40:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T20:30:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby: O numero de modelos do MotorManage (42.000 ou 45.000) nao entra em nenhuma peca nossa: o argumento do catalogo usa so o nosso (mais de 370, escolha na lista, aprovado pelo Stark). Reabrir se virar comparativo."
+    }
+  ],
+  "motivo_cancelamento": "O numero de modelos do MotorManage (42.000 ou 45.000) nao entra em nenhuma peca nossa: o argumento do catalogo usa so o nosso (mais de 370, escolha na lista, aprovado pelo Stark). Reabrir se virar comparativo.",
+  "atualizada_em": "2026-11-24T20:30:00-03:00"
+}

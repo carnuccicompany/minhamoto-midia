@@ -10,7 +10,7 @@
   "pronto_quando": "Regra escrita em agencia/demandas/entregas/D-20261124-lojas-1.md: de onde ler a hora da última coleta (coletado_em de dados/avaliacoes/ultimas.json), limite de 48 h, quem é avisado e como; sem mexer em script antes do OK do Davi.",
   "prioridade": "P3",
   "prazo": "2026-12-01T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T10:35:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,6 +28,11 @@
       "quando": "2026-11-24T14:55:00-03:00",
       "quem": "dados",
       "o_que": "entreguei a regra de 48 h com a checagem testada; nenhum script mexido; pergunta ao Davi sobre disparo diario recomendada como sim"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "lojas",
+      "o_que": "aceitei: regra escrita com a fonte (coletado_em e status de dados/avaliacoes/ultimas.json), limite de 48 h, quem recebe aviso e como (Bezos/Turing; push ao Leo acima de 120 h) e nenhum script mexido. Conferi o achado no codigo: avaliacoes.py regrava ultimas.json mesmo com erro de loja e avaliacoes.yml so tem workflow_dispatch. A pergunta ao Davi sobre disparo diario fica com o master."
     }
   ],
   "atualizada_em": "2026-11-24T14:55:00-03:00"

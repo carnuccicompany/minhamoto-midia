@@ -1,0 +1,25 @@
+{
+  "id": "D-20261124-produto_analista-do-paywall-2",
+  "de": "produto:analista-do-paywall",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Somar ao pacote do Davi 3 perguntas sim/não sobre moto fora do catálogo (D-20261124-produto-4)",
+  "por_que": "O grupo com moto fora da lista fica parado antes do paywall pelo código de 17/11 (agencia/demandas/entregas/D-20261124-produto-4.md) e a meta é % instalação>pagante; sem as 3 respostas não dá pra decidir a mudança nem saber se a build de 23/11 mudou isso.",
+  "pronto_quando": "As 3 perguntas da seção 'Perguntas pro Davi' da entrega anexadas ao pacote do Davi sem mudar o sentido, ou recusa com motivo; resposta registrada na entrega.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T22:10:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T22:10:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "criou"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "D-20261124-master-2",
+  "de": "master",
+  "para": "dados",
+  "copia": [
+    "master",
+    "trafego",
+    "mkt"
+  ],
+  "titulo": "Especificação do resumo em % (dados/resumo-pct.json) que o QG vai gerar a partir do carnucci-dados",
+  "por_que": "Sao 9 demandas de 5 diretores paradas so porque as sessoes do minhamoto-midia nao leem o carnucci-dados (trafego-1/-2, mkt-1/-2, lojas-2, dados-1, produto-5, mercado-3, relatorio). O Leo ja ligou RevenueCat, Meta, AppsFlyer e App Store Connect em 23/11; falta a ponte (PENDENCIAS.md, pendencia do QG). O QG constroi mais rapido com um formato fechado e sem risco de vazar absoluto.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-2.md com o JSON de exemplo (so %, indices e dias; zero R$, zero absoluto, zero dado de cliente) cobrindo: % da meta e degrau; funil por etapa e por plataforma (instalacao, onboarding, cadastro de moto, paywall, pagante) em % da semana anterior; visita->download da loja iOS; Corretores (6 metricas da D-20261124-mkt-2 em indice outubro=100); alcance por formato; frescor (coletado_em e fonte de cada bloco, com \"sem dado\" explicito). Dizer qual bloco depende de qual conexao (Play e UTMify ainda parciais).",
+  "prioridade": "P2",
+  "prazo": "2026-11-26T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-24T20:20:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T20:20:00-03:00",
+      "quem": "master",
+      "o_que": "criou (demanda estrategica; o QG implementa a ponte, o formato e do Turing)"
+    }
+  ],
+  "atualizada_em": "2026-11-24T20:20:00-03:00"
+}

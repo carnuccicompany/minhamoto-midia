@@ -1,0 +1,32 @@
+{
+  "id": "D-20261124-lojas-3",
+  "de": "lojas",
+  "para": "trafego",
+  "copia": [
+    "trafego"
+  ],
+  "titulo": "Destino do anúncio de Android: ficha padrão ou ficha personalizada do Google Play por URL",
+  "por_que": "Fonte oficial: o Play permite até 50 fichas personalizadas por app, com nome, ícone, descrição e screenshots próprios, mostradas a quem chega por URL personalizada ou campanha do Google Ads (https://support.google.com/googleplay/android-developer/answer/9156429). Hoje a ficha do Play tem 1 avaliação (1★ de sincronização); tráfego pago caindo nela converte menos. Ficha com os 3 prints de benefício pode subir visita→instalação do pago sem mexer na ficha pública. Só proposta: nada de verba nem de mudança na loja sem OK do Léo.",
+  "pronto_quando": "Parágrafo em agencia/demandas/entregas/D-20261124-lojas-3.md dizendo: (1) pro Android, o anúncio vai pra ficha padrão ou pra personalizada (sim/não + motivo); (2) se sim, qual URL/UTM e qual dado do Turing prova que subiu; (3) o que precisa do Léo. Sem verba e sem ficha criada.",
+  "prioridade": "P3",
+  "prazo": "2026-12-01T20:00:00-03:00",
+  "status": "cancelada",
+  "criada_em": "2026-11-24T21:30:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T21:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T20:30:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada pelo Shelby: Android esta fora da 1a campanha (Escobar, r1 de 24/11) e sem SDK nao ha verba; ficha personalizada do Play e otimizacao prematura. Reabrir quando houver campanha Android."
+    }
+  ],
+  "motivo_cancelamento": "Android esta fora da 1a campanha (Escobar, r1 de 24/11) e sem SDK nao ha verba; ficha personalizada do Play e otimizacao prematura. Reabrir quando houver campanha Android.",
+  "atualizada_em": "2026-11-24T20:30:00-03:00"
+}

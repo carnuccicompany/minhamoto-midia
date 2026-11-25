@@ -10,7 +10,7 @@
   "pronto_quando": "Campo da variável cta_garantia anotado no EXP-20261123-1 (ou nota em agencia/experimentos) e, depois de volume mínimo definido pela trafego, leitura em % de CPA da V2 contra piloto e V1 por estilo; sem número absoluto. Se não houver dado, dizer.",
   "prioridade": "P3",
   "prazo": "2026-11-30T18:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T10:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,6 +28,11 @@
       "quando": "2026-11-24T14:55:00-03:00",
       "quem": "dados",
       "o_que": "entreguei o registro no placar e a regra de leitura; sem leitura em % pois o experimento nao comecou"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei: cta_garantia esta no EXP-20261123-1 do placar.json (variavel_secundaria, V2=sim/-g1, piloto e V1=nao/-g0), conferi no arquivo. Sem dado porque o teste esta 'planejado' (inicio null): disse isso em vez de inventar, como o pronto_quando permite. Regra de leitura (uma vez, 3 estilos juntos, so acima de ~49%) fica como a regra do teste; confirmacao de V2 = V1 + faixa veio em D-20261124-dados-1: nao."
     }
   ],
   "atualizada_em": "2026-11-24T14:55:00-03:00"

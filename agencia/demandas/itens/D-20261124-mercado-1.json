@@ -1,0 +1,39 @@
+{
+  "id": "D-20261124-mercado-1",
+  "de": "mercado",
+  "para": "produto",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Os 4 modelos líderes (CG 160, Pop 110i, Biz, NXR 160 Bros) estão no catálogo do app com tabela oficial de revisão? Sim/não por modelo, com o arquivo e a linha",
+  "por_que": "A F-002 (plano de revisão do SEU modelo) morre em 27/11 sem prova de cobertura. Em 24/11 o Stark provou pelo código (D-20261123-mercado_radar-de-concorrentes-1) que o app tem 377 modelos, 263 com tabela oficial, mas não diz se os 4 líderes estão entre eles. Esses 4 são o topo da parcial de novembro até 18/11 (CG 160, Pop 110i, Biz, NXR160; juntos 92,8% do top 5, car.blog.br citando Fenabrave, 19/11). Se estiverem, a prova de cobertura sai do código e não precisa esperar o Davi (D-20261120-mercado-2); se faltar algum, a loja e o anúncio ficam sem o nome dele. Mexe na meta porque decide se o texto da ficha e do anúncio pode dizer 'o plano da sua CG, Pop, Biz, Bros' pra converter instalação em assinatura paga.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-mercado-1.md com 4 linhas (CG 160, Pop 110i, Biz, NXR 160 Bros): existe no catálogo sim/não, qual versão e ano cobrem, se tem cronogramaOficial (sim/não), com caminho e linha em src/data/bikes.ts, mais a versão do app (1.0.1, commit de 17/11). Sem chute; o que só o Davi sabe (build de 23/11) fica escrito como sim/não pro pacote do Davi.",
+  "prioridade": "P1",
+  "prazo": "2026-11-25T19:40:00-03:00",
+  "status": "devolvida",
+  "criada_em": "2026-11-24T19:40:00-03:00",
+  "fio": "F-002",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-mercado-1.md",
+    "resumo": "CG 160, Pop 110i, Biz (110i e 125) e NXR 160 Bros: sim no catálogo, todos com cronogramaOficial, código 1.0.1 de 17/11 (indice.gen.ts e honda-*.ts, linhas no arquivo). Intervalo de anos da Biz 110i não conferido; build de 23/11 fica no pacote do Davi."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T21:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceitou e entregou: 4 de 4 no catálogo com tabela oficial (código de 17/11); prova com arquivo e linha na entrega"
+    },
+    {
+      "quando": "2026-11-24T22:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "devolveu: prova de 4 de 4 no catálogo com cronogramaOficial confere no código (linhas batem). Falta, pelo pronto_quando: (a) o intervalo de anos da Biz 110i (está no código, não é do Davi); (b) a versão coberta por modelo (só há anos); (c) corrigir a referência: a pergunta de cobertura no pacote do Davi é o item 6, não o 7."
+    }
+  ],
+  "atualizada_em": "2026-11-24T22:00:00-03:00"
+}

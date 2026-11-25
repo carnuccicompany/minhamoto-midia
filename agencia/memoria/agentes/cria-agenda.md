@@ -40,3 +40,9 @@
 - Entregue: D-20261124-produto-2 (A1/B1 com frase do aviso que o app cumpre). Aguardando aceite do Stark/Produto junto de mkt-2, lojas-3, mercado-2 e dados (cria-2).
 - Se o Léo escolher A ou B, o par novo (video-aviso.mp4) é o que sobe; o antigo vira histórico. Se usar o carrossel B, trocar o card 4.
 - Aguardando: Léo (A/B 27/11, isolar garantia); Davi (build 23/11, push real); Shelby (termos da garantia).
+
+## Atualização 24/11 (noite, r1)
+- Iniciativa nova: "A sua moto já está aqui" (ângulo catálogo por modelo). 3 roteiros em texto até 27/11 (1 Meta, 2 TikTok). Só escrevo a afirmação "Honda não tem app" depois de D-20261124-cria-4 (Greco). Se o Davi não confirmar cobertura/lista, o roteiro não cita modelo. A1/B1 com aviso (video-aviso.mp4) seguem como par de direção, sujeitos ao sim do Léo (D-20261123-cria-2).
+- Criadas: D-20261124-cria-3 (Shelby, parecer da garantia, 26/11 12h), D-20261124-cria-4 (Greco, Honda, 27/11 21h). Respondida: D-20261124-dados-1 (V2 não é V1 + faixa).
+- Erro meu a corrigir: mkt-2 foi devolvida porque chamei autoverificação de check do Shelby; próxima vez peço o parecer antes de entregar.
+- Aguardando: Léo (A1/B1; garantia; isolar; UGC); Davi (cobertura, lista de modelos, build 23/11); Shelby (cria-3); Greco (cria-4, e biblioteca cria-3 de 22/11).

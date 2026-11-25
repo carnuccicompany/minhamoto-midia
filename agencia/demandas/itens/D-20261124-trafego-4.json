@@ -1,0 +1,37 @@
+{
+  "id": "D-20261124-trafego-4",
+  "de": "trafego",
+  "para": "master",
+  "copia": [
+    "dados",
+    "trafego"
+  ],
+  "titulo": "Levar ao Léo 3 sim/não da semana-ponte: preparar o teste mínimo iOS, leitura só-leitura de gerenciador e painéis, endereço que o Instagram recusou",
+  "por_que": "Tráfego está há 4 reuniões sem número de campanha (boletim 20/11: 'Nenhum número de campanha') e a build de 23/11 não saiu como o código lido: o SDK ainda está no ramo fix/codigo-amigo (D-20261124-produto-1). Se o SDK não entrar até 30/11, o Plano B (D-20261122-master-5) é o único caminho pro 1º custo por assinante. Consolida a pergunta de verba de D-20261123-dados-6 §7 e a de endereço de D-20261123-master-1 §2.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-4.md ou linha na pauta do Léo com: (1) sim/não: Escobar prepara a semana-ponte iOS (link direto da loja, otimização por instalação, só depois dos portões, dentro do teto da semana 1 no privado); (2) sim/não: leitura só-leitura do gerenciador de anúncios e dos painéis, via resumo em % no carnucci-dados; (3) resposta curta: qual endereço o Instagram recusou. Cada uma com a recomendação do Shelby.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:30:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-24T18:30:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-4.md",
+    "resumo": "Item 2 (leitura do gerenciador) ja resolvido pelo Leo em 23/11, falta so a ponte do QG; item 3 entra na pergunta ao Leo; item 1 vira D2 do master de 24/11."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-24T18:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-24T20:05:00-03:00",
+      "quem": "master",
+      "o_que": "respondida: itens 1 e 3 vao ao Leo no master de 24/11, item 2 ja resolvido"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta_lider": "Léo: o Escobar pode preparar a semana-ponte iOS (só preparar; gasto só depois dos portões e com sua aprovação da verba)? Recomendo: sim.",
+  "atualizada_em": "2026-11-24T20:05:00-03:00"
+}

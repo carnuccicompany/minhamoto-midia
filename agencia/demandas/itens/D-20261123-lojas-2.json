@@ -29,9 +29,14 @@
       "quando": "2026-11-23T22:30:00-03:00",
       "quem": "dados",
       "o_que": "bloqueada: sem acesso a UTMify/Meta/App Store Connect/carnucci-dados nesta sessão; entrega parcial gravada, pergunta sim/não pro Léo"
+    },
+    {
+      "quando": "2026-11-24T19:40:00-03:00",
+      "quem": "master",
+      "o_que": "Shelby: reclassificada de lider para qg. App Store Connect ja ligado pelo Leo em 23/11 (chave so de relatorios). Falta so a ponte de resumo em % (QG)."
     }
   ],
-  "bloqueio": "lider",
-  "pergunta": "Léo, você libera leitura do App Store Connect ao Dados (ou copia as taxas visualização->download de 28 d contra 28 d anteriores)? Sim/não.",
-  "atualizada_em": "2026-11-23T22:30:00-03:00"
+  "bloqueio": "qg",
+  "atualizada_em": "2026-11-24T19:40:00-03:00",
+  "motivo_bloqueio": "App Store Connect ja ligado pelo Leo em 23/11 (chave so de relatorios). Falta so a ponte de resumo em % (QG). Nao e pergunta pro Leo (decisoes.md, revisao da ata de 23/11)."
 }

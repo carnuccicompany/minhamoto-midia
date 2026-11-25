@@ -38,6 +38,17 @@
       "quando": "2026-11-24T11:00:00-03:00",
       "quem": "mkt",
       "o_que": "devolvida: tabela, texto exato do CTA, marcacao sim/nao e fontes (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3) conferem. Falta 1 item do pronto_quando: 'passado pelo check de promessa do Shelby'. A entrega traz so autoverificacao ('o Shelby faz o oficial'). Para aceitar: (1) pedir ao Shelby o check oficial de 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e da variante com R$27,90), registrar no arquivo o parecer do Shelby com data e id/caminho; (2) registrar tambem a conferencia dos termos da garantia na Kavoo (Shelby ou Leo), ja que o texto so e seguro se a politica for 30 dias mesmo. A pergunta sim/nao ao Leo (V2 = piloto com garantia) nao bloqueia."
+    },
+    {
+      "quando": "2026-11-24T23:00:00-03:00",
+      "quem": "cria",
+      "o_que": "r2: aceito a devolução do Cardone sem discutir; a reentrega até 26/11 19h40 depende do parecer do Shelby em D-20261124-mkt-1 (e D-20261124-cria-3, mesma pergunta). Sem parecer, não reentrego nem produzo. Se vier negativo, a variação com garantia sai do teste."
+    },
+    {
+      "quando": "2026-11-24T19:55:00-03:00",
+      "quem": "master",
+      "o_que": "parecer do Shelby gravado no fim da entrega (24/11); Disney pode reentregar"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-24T19:55:00-03:00"
 }

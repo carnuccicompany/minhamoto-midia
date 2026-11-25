@@ -1,0 +1,25 @@
+{
+ "id": "D-20261124-mercado-4",
+ "de": "mercado",
+ "para": "mercado:radar-de-concorrentes",
+ "copia": [
+  "mercado"
+ ],
+ "titulo": "Radar: trocar a linha 'Honda sem app nas populares' pelo que a fonte oficial prova",
+ "por_que": "O radar de 24/11 afirma que quem anda de CG, Pop, Biz e Bros não tem app da marca. A Honda tem o myHonda Connect, que aceita moto (honda.com.br, 24/11, entregas/D-20261124-cria-4.md). Afirmação errada no radar vira pauta e anúncio errados.",
+ "pronto_quando": "Item do radar de 24/11 reescrito: Honda tem app que aceita moto (cadastro e Assistência 24h), lembrete de revisão de moto não confirmado; com o link oficial; sem 'não tem app'.",
+ "prioridade": "P2",
+ "prazo": "2026-11-26T21:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-24T22:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-24T22:00:00-03:00",
+   "quem": "mercado",
+   "o_que": "criou"
+  }
+ ]
+}

@@ -35,3 +35,11 @@
 ## Atualização 24/11/2026
 - Dossiê de Concorrentes entregue ao Shelby (prazo 25/11 18h). Risco: 4 de 5 preços datados de 22/11 e 24/11; reconferir quando a App Store abrir.
 - Prova de que errei: se a reconferência mostrar mudança de preço do Drivvo ou MotorManage, a tabela vira desatualizada.
+
+## Atualização 24/11/2026 (rodada 1, noite)
+- Aposta F-002 reformulada: a prova de cobertura agora vem do código (Stark: 377 modelos, 263 com tabela oficial, escolha por lista, versão 1.0.1 de 17/11). Falta checar os 4 líderes (D-20261124-mercado-1, P1, 25/11 19h40). Frase liberada: "mais de 370 modelos". Proibido: "qualquer moto", "todos têm tabela oficial".
+- Contra-argumento ao MotorManage: ele diz 42.000 (site) ou 45.000 (Fazier) modelos, sem PT-BR. Conferindo em D-20261124-mercado-2 (Sun Tzu, 27/11).
+- Mantida: mata em 27/11 se algum dos 4 líderes não estiver no catálogo, ou sem medida de conversão página→pago.
+- Prova de que errei: líder fora do catálogo, ou conversão da ficha não subir depois da troca de texto. Baseline depende de Turing ler App Store Connect.
+- Janela IPVA: 4 pautas no BANCO aceitas (Disney); pauta 1 não produz sem a lei oficial; pauta 4 só promete "avisa na Garagem".
+- Pendente: Biblioteca de Anúncios (Léo), meta em número, % por modelo (Turing), páginas de novembro dia 20 a 24 do car.blog.br não abriram.

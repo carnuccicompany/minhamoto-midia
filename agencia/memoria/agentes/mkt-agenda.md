@@ -28,3 +28,10 @@
 - Fábrica de infoprodutos: parada. D-20261122-mkt-2 foi cancelada; só reabro depois do radar de 01/12 e com o placar em % na mão.
 - Eu devo: conferir mkt-1 em até 24h da entrega; cobrar Shelby sobre D-20261122-mkt-1 se a meta continuar sem resposta.
 - Black Friday 27/11: NÃO.
+
+## Atualização 2026-11-24 (rodada 1)
+- Iniciativa mantida: garantia de 30 dias no CTA (1 variação por estilo). Travas: parecer oficial do Shelby e termos na Kavoo (D-20261124-mkt-1, P1, 25/11 21h), reentrega do Disney (D-20261123-mkt-2, 26/11), OK do Léo.
+- Placar semanal em % ainda sem acesso (D-20261123-mkt-1 bloqueada). Plano: linha dos Corretores no resumo da ponte do carnucci-dados (D-20261124-mkt-2, Turing, 27/11).
+- Fato novo: tributo da Meta (+12,15%) vale desde 01/01/2026, então não explica o +19% de custo por venda de novembro contra outubro. Culpa mais provável: criativo cansado e queda de página vista (a testar).
+- Eu devo: conferir a reentrega do Disney em até 24h; cobrar o Léo (via Shelby) pelo acesso à UTMify e ao gerenciador (D-20261120-mkt-2, parada desde 22/11).
+- Black Friday 27/11: NÃO. Fábrica de infoprodutos: parada até o radar de 01/12 e placar em %.
