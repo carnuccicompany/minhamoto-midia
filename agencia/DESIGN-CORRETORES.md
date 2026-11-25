@@ -6,6 +6,18 @@
 
 > **Regras de equipe e jeito de trabalhar do Léo:** ver "★ CONSTITUIÇÃO DO ESTÚDIO" no topo do `DESIGN-MINHAMOTO.md` (vale pros dois produtos: não repetir erro já corrigido, toda alteração vira regra na hora e a equipe toda lê, pesquisa de mercado constante, autonomia e avisos).
 
+## 0. ★ FEEDBACK DO LÉO 25/11 (vale acima de tudo neste arquivo)
+Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
+- **Legenda/texto "quadrado" (caixa-alta em bloco, palavra amarela) PROIBIDO.** Ou legenda estilo iPhone, ou Poppins (caixa normal). Ele já tinha reclamado antes: erro repetido. · 25/11
+- **Nunca texto de gancho e legenda ao mesmo tempo na tela** (o início com manchete em cima e legenda embaixo ficou ridículo). · 25/11
+- **Cores: nada de fundo azul o vídeo inteiro.** Azul (+ limão/laranja) é do MinhaMoto. Corretores usam as cores do próprio Mapa Visual (capa e páginas do material). · 25/11
+- **Preço no CTA: o selo verde-escuro "R$27,90" é feio e amador.** O card de preço tem que ter cara de motion profissional. · 25/11
+- **NÃO gerar/emendar áudio de voz** (nada de voz recortada de vários takes, EQ, gravação abafada). · 25/11
+- **ESTRUTURA A · só motion, sem voz nenhuma:** prender a pessoa com efeito sonoro, trilha, transição de texto, efeitos. · 25/11
+- **ESTRUTURA B · motion + body real:** hook em motion → body = trecho de um criativo que JÁ deu certo (ex.: do s10 ao s20), usado como está (voz, legenda e música originais, intactos), com transição forte na entrada e na saída → CTA em motion. Legenda só nos trechos de motion, se precisar. · 25/11
+- **Volume:** não fazer 13 de uma vez. Primeiro 1 piloto por estrutura, aprovação, depois escala. Crédito gasto em peça ruim é prejuízo. · 25/11
+- **Parâmetro de qualidade:** "parece que nunca fez motion na vida" → o nível é motion profissional de anúncio (referência: criativos que já rodam no nicho), não template. · 25/11
+
 ## 1. Pra quem e o que
 - **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)
 - O produto é o **Mapa Visual Completo do Fechamento Imobiliário** (125 páginas visuais, do aceite da proposta às chaves). Ofertas da página: Acesso Essencial R$27,90 e Pacote Completo R$37,90 (Mapa + 5 complementares), acesso vitalício, garantia de 30 dias. **Preço citado no criativo: só "R$27,90", sem parcelamento (decisão do Léo, 23/11, `conhecimento/05-marca.md` e seção 5 abaixo).** ~~"Pacote Completo R$37,90" como preço do criativo~~ → substituída em 23/11 pela decisão do Léo; corrigido pelo Shelby em 24/11 (a linha contradizia a seção de preço). · 23/11
