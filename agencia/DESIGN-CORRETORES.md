@@ -29,6 +29,19 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - **Áudio do jeito que veio:** sem abafar, sem mexer na voz. · 25/11
 - **Parâmetro de qualidade:** "parece que nunca fez motion na vida" → o nível é motion profissional de anúncio (referência: criativos que já rodam no nicho), não template. · 25/11
 
+## 0b. PADRÃO APROVADO PELO LÉO (25/11) — base pros próximos criativos, sem ele ter que guiar
+**Aprovado (manter):**
+- Estrutura: gancho em motion com a voz dela + body longo de pronto que já vendeu (como está) + CTA dela do pronto. · 25/11
+- Gancho do EST2-A: "digitando…" → balão "Você saberia responder?" com "responder?" em verde e selo "?" coral com mola; perguntas 1/3–3/3 com ícone por pergunta, partículas e empurrão de câmera; saem quando ela diz "se não"; card "Essas e muitas outras respostas estão no Mapa" + 3 checks + "+120 mapas". · 25/11
+- Gancho do EST8-A: voz dela do pronto sobre cenas em preto e branco + "Antes" + chip da frase do corretor inseguro. · 25/11
+- CTA: botão "Saiba mais" que recebe um toque, com onda e partículas. · 25/11
+- Áudio: voz do jeito que veio (só ganho igual entre trechos) + efeitos sonoros sutis (pop, whoosh) — aprovados. · 25/11
+- Fonte Poppins caixa normal, cores do Mapa (navy, verde-água, coral), sem preço. · 25/11
+**Reprovado (não repetir):**
+- Dedo do toque dentro de círculo branco → só o símbolo (mão branca com contorno navy, PNG, sem fundo). · 25/11
+- Elementos do body todos iguais no canto superior direito, sem relação com a apostila → elementos centralizados, na faixa logo acima da legenda do pronto, e cada um ligado ao que ela está falando/mostrando (contador +120, ícones dos temas, "ilustrado/organizado/fácil", "?"→"✓" no "nunca mais tenha dúvida", ícones das formas de aquisição). · 25/11
+- Rótulos encostando um no outro (conferir largura com 6 itens). · 25/11
+
 ## 1. Pra quem e o que
 - **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)
 - O produto é o **Mapa Visual Completo do Fechamento Imobiliário** (125 páginas visuais, do aceite da proposta às chaves). Ofertas da página: Acesso Essencial R$27,90 e Pacote Completo R$37,90 (Mapa + 5 complementares), acesso vitalício, garantia de 30 dias. **Preço citado no criativo: só "R$27,90", sem parcelamento (decisão do Léo, 23/11, `conhecimento/05-marca.md` e seção 5 abaixo).** ~~"Pacote Completo R$37,90" como preço do criativo~~ → substituída em 23/11 pela decisão do Léo; corrigido pelo Shelby em 24/11 (a linha contradizia a seção de preço). · 23/11
