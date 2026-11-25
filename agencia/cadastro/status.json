@@ -1,6 +1,6 @@
 {
- "atualizado": "25/11/2026 14:15",
- "pct": 95.0,
+ "atualizado": "25/11/2026 14:22",
+ "pct": 97.5,
  "categorias": [
   {
    "id": "estrutura",
@@ -169,8 +169,9 @@
     {
      "id": "utmify",
      "titulo": "UTMify (leitura do painel)",
-     "status": "pendente",
-     "valor": 0.0
+     "status": "feito",
+     "nota": "25/11: painel lido e gravado no carnucci-dados (dados/utmify/). Leitura diária automática ainda precisa da tarefa presa ao computador do Léo.",
+     "valor": 1.0
     },
     {
      "id": "sdk-appsflyer",
@@ -180,8 +181,8 @@
      "valor": 1.0
     }
    ],
-   "pct": 80.0,
-   "feitos": 8,
+   "pct": 90.0,
+   "feitos": 9,
    "total": 10
   },
   {
@@ -373,16 +374,11 @@
    "total": 9
   }
  ],
- "pendentes": 2,
+ "pendentes": 1,
  "lista_pendentes": [
   {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "TikTok for Business",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "UTMify (leitura do painel)",
    "falta": []
   }
  ],
@@ -405,7 +401,7 @@
   },
   {
    "data": "25/11/2026",
-   "pct": 95.0
+   "pct": 97.5
   }
  ]
 }

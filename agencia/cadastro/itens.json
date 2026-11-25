@@ -137,7 +137,8 @@
         {
           "id": "utmify",
           "titulo": "UTMify (leitura do painel)",
-          "status": "pendente"
+          "status": "feito",
+          "nota": "25/11: painel lido e gravado no carnucci-dados (dados/utmify/). Leitura diária automática ainda precisa da tarefa presa ao computador do Léo."
         },
         {
           "id": "sdk-appsflyer",
