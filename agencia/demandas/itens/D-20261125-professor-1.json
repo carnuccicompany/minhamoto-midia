@@ -1,0 +1,17 @@
+{
+  "id": "D-20261125-professor-1",
+  "de": "professor",
+  "para": "trafego",
+  "copia": ["mkt", "cria"],
+  "titulo": "Rever a estrutura do teste dos 3 estilos dos Corretores (1 CBO por estilo) com a regra de ~50 conversões/semana por conjunto e a leitura por Criativo → Mídia",
+  "por_que": "A regra aceita em D-20261123-mkt-3 prevê um CBO por estilo. A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso (guia oficial de 21/10/2026, registrado em areas/trafego/NOVIDADES.md, rodada de 25/11). Com vendas/dia -43% em novembro (conhecimento/09-numeros.md), 3 campanhas separadas podem ficar todas abaixo do volume e encarecer a venda justo no teste que deve baixar o custo (+19%). A ferramenta oficial de teste de criativo dentro do conjunto que já vende é a alternativa (aula areas/trafego/aulas/2026-11-25-teste-de-criativo-meta-pos-andromeda.md, regra 2). Além disso, desde 12/11 a Meta mede conversões também no aparelho (padrão ligado): a contagem de compras na Meta pode subir sem venda nova, então a leitura do teste tem que ser pela UTMify.",
+  "pronto_quando": "Adendo no fim de agencia/demandas/entregas/D-20261123-mkt-3.md com: (1) a conta verba semanal ÷ (custo por venda alvo × 50) feita com o número do privado, publicando só o resultado em nº de conjuntos; (2) a estrutura escolhida (3 CBOs, ABO com verba igual ou teste de criativo dentro do conjunto que já vende) e o porquê; (3) como o teste será lido (detalhamento Criativo → Mídia + UTMify por utm_content) e a nota da quebra de série de 12/11; (4) a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou editada.",
+  "prioridade": "P1",
+  "prazo": "2026-11-26T12:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-25T12:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [{"quando": "2026-11-25T12:00:00-03:00", "quem": "professor", "o_que": "criou (treino da biblioteca de 25/11: novidade da Meta muda a regra em uso no teste dos 3 estilos)"}]
+}

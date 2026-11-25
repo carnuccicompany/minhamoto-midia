@@ -45,3 +45,11 @@ Impressão na loja → visita à página → download → abertura → cadastro 
 - Acompanha conversão da página por origem e por loja.
 - Propõe 1 teste de ASO com hipótese e linha de base.
 - Confere mudanças de diretriz da Apple e do Google (NOVIDADES).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |

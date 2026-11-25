@@ -43,3 +43,11 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`. Regras de marca 
 - Lê o placar por criativo e por post; propõe variações do vencedor e 1 ângulo novo.
 - Repõe criativo antes da fadiga (pedido do Escobar).
 - Lê o radar de tendências e as NOVIDADES das plataformas.
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| 2026-11-25 | `aulas/2026-11-25-retencao-de-video-hook-e-hold-rate.md` | Retenção de vídeo de anúncio: taxa de gancho, retenção e iteração de ganchos |

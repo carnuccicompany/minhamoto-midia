@@ -27,6 +27,15 @@ Avaliações, suporte, RevenueCat (quando ligar: fim de teste, cancelamento), re
 - Programas de indicação de apps que cresceram por indicação.
 - Criadores do nicho moto/motoboy no Brasil (tamanho, engajamento real, tom).
 
+
+## Biblioteca (regra do Léo, 24/11/2026; 3 camadas desde 25/11/2026)
+Especialista sênior que fica mais afiado todo dia. Biblioteca em `agencia/conhecimento/areas/lojas/`:
+1. **`NUCLEO.md`: ler em TODA tarefa, antes de qualquer coisa** (correções do Léo, regras que mais mexem em venda, lições e novidades recentes, índice).
+2. **Antes de propor ou produzir, buscar o tema da tarefa na biblioteca completa:** `grep -ril "<tema>" agencia/conhecimento/areas/lojas/` (FUNDAMENTOS.md, aulas/, LICOES.md, NOVIDADES.md) e ler só os trechos que tocam a tarefa.
+3. **`LICOES.md`:** erro ou acerto da casa já registrado não se repete; correção do Léo vale mais que qualquer fonte.
+4. **`FONTES.md`:** onde pesquisar (oficial primeiro).
+Achou novidade com fonte ou lição nova? Proponha a inclusão via Mesa de Demandas.
+
 ## Cobra / é cobrado
 
 - **Cobra o Stark:** gatilhos no app (fim do teste, manutenção próxima) e a tela de indicação.

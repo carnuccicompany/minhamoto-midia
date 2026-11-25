@@ -46,3 +46,11 @@ Instalação → abertura → cadastro → ativação (primeiro valor) → paywa
 - Escreve 1 proposta com hipótese, mudança única e métrica.
 - Lê avaliações novas e relatos de bug.
 - Confere novidades da Apple, Google e RevenueCat (NOVIDADES).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |

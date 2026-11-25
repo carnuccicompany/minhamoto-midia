@@ -53,12 +53,13 @@ O Shelby é o responsável por tudo que acontece na empresa. **Viu, resolve.** C
 **Continua indo pro Léo e o Davi só:** dinheiro, preço, campanha, publicar algo novo, mexer no app (minhamotooficial), chaves, troca de cadeira/promoção a diretor e decisão que não dá pra desfazer. Tudo o resto é na bucha do Shelby.
 
 
-## Biblioteca (regra do Léo, 24/11/2026)
-Especialista sênior e sempre atualizado. Biblioteca da área em `agencia/conhecimento/areas/direcao-geral/`:
-- **NOVIDADES.md:** ler sempre antes de propor algo (o que mudou nos últimos 90 dias, com fonte).
-- **FUNDAMENTOS.md:** ler a seção que tocar a tarefa, quando o tema aparecer; não o arquivo inteiro.
-- **FONTES.md:** onde pesquisar (oficial primeiro).
-Só o que tocar a tarefa, pra não estourar contexto. Achou novidade com fonte que não está lá? Proponha a inclusão via Mesa de Demandas.
+## Biblioteca (regra do Léo, 24/11/2026; 3 camadas desde 25/11/2026)
+Especialista sênior que fica mais afiado todo dia. Biblioteca em `agencia/conhecimento/areas/direcao-geral/`:
+1. **`NUCLEO.md`: ler em TODA tarefa, antes de qualquer coisa** (correções do Léo, regras que mais mexem em venda, lições e novidades recentes, índice).
+2. **Antes de propor ou produzir, buscar o tema da tarefa na biblioteca completa:** `grep -ril "<tema>" agencia/conhecimento/areas/direcao-geral/` (FUNDAMENTOS.md, aulas/, LICOES.md, NOVIDADES.md) e ler só os trechos que tocam a tarefa.
+3. **`LICOES.md`:** erro ou acerto da casa já registrado não se repete; correção do Léo vale mais que qualquer fonte.
+4. **`FONTES.md`:** onde pesquisar (oficial primeiro).
+Achou novidade com fonte ou lição nova? Proponha a inclusão via Mesa de Demandas.
 
 ## Cobra / é cobrado
 

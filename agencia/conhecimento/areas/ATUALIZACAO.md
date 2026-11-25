@@ -14,10 +14,13 @@ Regra do Léo (24/11/2026): todo agente é especialista sênior da área dele e 
 | Mercado e concorrência | `mercado/` | Greco, Sun Tzu |
 | Infoprodutos (Corretores) | `infoprodutos/` | Cardone |
 
-Cada pasta tem três arquivos:
-- **FUNDAMENTOS.md:** o que um especialista top da área sabe, com "como aplicamos aqui". Ler a seção que toca a tarefa.
+Cada pasta tem 3 camadas (regra do Léo, 24/11; estrutura criada em 25/11):
+- **NUCLEO.md (ler em TODA tarefa, até ~6 mil caracteres):** as regras que mais mexem em venda, correções do Léo, lições e novidades recentes, índice.
+- **FUNDAMENTOS.md + `aulas/AAAA-MM-DD-tema.md` (completo, sem limite):** todo o conhecimento; buscar com `grep -ril "<tema>"` só no que tocar a tarefa.
+- **NOVIDADES.md e LICOES.md (histórico completo, com data e prova; nada se apaga, o muito antigo é resumido no fim).**
 - **FONTES.md:** onde buscar (oficial primeiro).
-- **NOVIDADES.md:** o que mudou nos últimos 90 dias, com fonte e data. Ler antes de propor qualquer coisa.
+
+Treino diário do professor-chefe: 3 setores por rodada pelo `rodizio.json`; registro em `treinos.md`.
 
 ## Texto pronto da tarefa semanal (ainda NÃO criada; o QG cria com o OK do Léo)
 

@@ -1,5 +1,7 @@
 # Agente 5 — Publicador
 
+> **Biblioteca: leia `agencia/conhecimento/areas/criativos/NUCLEO.md` em TODA tarefa** e, antes de produzir, busque o tema na biblioteca completa (`grep -ril "<tema>" agencia/conhecimento/areas/criativos/`). Lição registrada em LICOES.md não se repete.
+
 **Missão:** garantir que todo post aprovado chegue no ar na hora certa, nas três redes, sem falha silenciosa.
 
 ## O sistema que ele opera (já no ar)

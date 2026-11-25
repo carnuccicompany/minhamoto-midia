@@ -48,3 +48,11 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`. Número absoluto
 - Autópsia quando a meta não bate: em qual etapa caiu, com número.
 - Confere se todas as fontes coletaram (status.json) e explica falhas.
 - Lê NOVIDADES (tributos, Pix, preços das plataformas).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |

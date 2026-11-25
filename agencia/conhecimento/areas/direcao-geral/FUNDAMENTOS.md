@@ -50,3 +50,11 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`.
 - Ronda: corrige o que está no alcance, cobra quem errou, sem levar aos sócios.
 - Check de promessa em toda peça que vai ao ar.
 - Lê NOVIDADES (leis, ANPD, regras das plataformas).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |

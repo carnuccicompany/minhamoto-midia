@@ -1,0 +1,24 @@
+# Tráfego: lições da casa (histórico completo)
+
+Cada acerto ou erro da casa vira lição: data · o que aconteceu · a regra · a prova. Correção do Léo vale mais que qualquer fonte e nunca se repete. Nada se apaga; o muito antigo é resumido no fim. Mais novo em cima.
+
+## Correções e decisões do Léo (valem acima de tudo)
+- **23/11 · Destino do anúncio do MinhaMoto.** O Instagram @minhamotoapp está com link bloqueado (bio e stories). **Regra:** antes de qualquer verba, conferir o link de destino (não pode ser o bloqueado). **Prova:** decisoes.md 23/11; D-20261123-master-1 (aceita).
+- **23/11 · Perguntas já respondidas não voltam ao Léo.** Venda dos Corretores pela Kavoo e rastreio pela UTMify; custo máximo por assinante definido no privado; BM só de anúncios adiada em 18/11. **Regra:** ler decisoes.md e conhecimento/ antes de perguntar. **Prova:** decisoes.md 23/11; D-20261122-trafego-1 cancelada pelo Shelby (itens já respondidos).
+- **20/11 e 22/11 · O app NÃO tem teste grátis.** **Regra:** nunca "teste", "trial", "grátis" ou "X dias" em plano, funil, anúncio ou métrica; benchmark teste→pago não vale pra nós. **Prova:** decisoes.md 22/11; D-20261122-master-1 (correção da r1 do Escobar, aceita).
+- **19/11 · Sem Black Friday** (vale pros Corretores também). **Prova:** decisoes.md 19/11 e 22/11.
+- **18/11 (PENDENCIAS) · Campanhas dos Corretores não se editam sem OK do Léo.** **Regra:** leitura sim, mudança nunca. **Prova:** PENDENCIAS.md 18/11; memória do Cardone 20/11.
+
+## Lições da equipe
+- **25/11 · Leitura de teste de criativo.** Aula do dia: a Meta agrupa criativos parecidos e recomenda ~50 conversões/semana por conjunto. **Regra:** conta dos conjuntos antes de montar o teste; teste = ideia diferente. **Prova:** aulas/2026-11-25-teste-de-criativo-meta-pos-andromeda.md.
+- **24/11 · Sobrescrita de demanda.** Ao criar uma demanda nova, o Escobar sobrescreveu o JSON da D-20261124-trafego-1 e confessou; o Shelby conferiu e não multou. **Regra:** antes de criar, `ls agencia/demandas/itens/ | grep <id>`; id novo = próximo número livre. **Prova:** memória trafego.md, 24/11 (ronda do Shelby).
+- **24/11 · Acerto: dimensionar teste sem a taxa-base.** Com conversão pequena, o nº de vendas por variante quase não depende da taxa-base (~78 vendas pra detectar 50% de diferença, ~200 pra 30%, ~100 por estilo com 3 estilos). **Regra:** usar essa conta pra planejar testes dos Corretores. **Prova:** D-20261123-mkt-3 e D-20261123-dados-6, aceitas.
+- **24/11 · Regra de corte do teste dos 3 estilos.** Dobra até 100% do custo de outubro, mantém 100–119%, corta acima de 119%, pausa a 200% sem venda. **Regra:** escrita antes de gastar, em %; o "200%" ainda é regra sem histórico (revisar com dado). **Prova:** D-20261123-mkt-3 (aceita).
+- **24/11 · Build de 23/11 saiu sem o SDK do AppsFlyer** (ficou no ramo fix/codigo-amigo). **Regra:** verba zero no MinhaMoto até o SDK estar na build publicada e o evento de compra chegar. **Prova:** D-20261124-produto-1; memória trafego.md 24/11.
+- **20–24/11 · Quatro rodadas sem número de campanha.** **Regra:** cadeira de Tráfego se paga com número; cada rodada traz um número (mesmo que de leitura) ou o bloqueio exato. **Prova:** Folha de 20/11 (parecer do Shelby).
+- **23/11 · Aceite do próprio trabalho não vale.** Na D-20261120-dados-3 o entregador foi o próprio Escobar. **Regra:** quem fez não confere; deixa pro dono da demanda. **Prova:** memória trafego.md 23/11.
+- **23/11 · Padrão único de UTM e nome de campanha.** `meta-ads`/`tiktok-ads`, campanha `mm_<rede>_<evento>_<so>_<aamm>`, `utm_content` = `CR-<ângulo>-<nn>`; orgânico fica com `utm_campaign=organico`. **Regra:** um padrão só (o da dados-3) até o Léo responder D-20261123-trafego-1. **Prova:** D-20261120-dados-3.
+- **22/11 · Porcentagem errada.** Escobar disse 40% de 1★ no Android; eram 1 de 3 (33%). Corrigiu sozinho. **Regra:** conferir numerador e denominador antes de publicar %; base pequena se escreve "1 de 3". **Prova:** memória trafego.md 22/11.
+- **22–24/11 · Páginas oficiais da Meta/TikTok sem acesso.** **Regra:** citar só o que já está registrado com link e dizer que não abriu; nunca completar de memória. **Prova:** memória trafego.md 23/11 e 24/11.
+- **Nov · Página pesada derruba o funil.** Clique → visualização da página caiu de ~92% pra ~75%; a página foi de ~25 MB pra ~1 MB em 23/11. **Regra:** em queda, diagnosticar na ordem do FUNDAMENTOS §6, começando pela página. **Prova:** conhecimento/09-numeros.md.
+- **Out–nov · Fadiga nos Corretores.** Os mesmos 6 criativos desde outubro; em novembro o custo por venda subiu 19% e o ROAS foi de 1,88 pra 1,61. **Regra:** reposição semanal de criativo, pedida à Disney antes da fadiga. **Prova:** estudio/produtos/corretores-aprendizados.md; 09-numeros.md.

@@ -38,3 +38,11 @@ Anúncio → página → checkout → compra → bumps → entrega → (reembols
 - Placar: vendas, custo por venda, ROAS, aceite de bumps, reembolso, Pix não pago.
 - Propõe 1 teste de oferta ou página com hipótese.
 - Lê NOVIDADES (Meta, pagamentos, WhatsApp).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| 2026-11-25 | `aulas/2026-11-25-valor-medio-do-pedido-bump-upsell.md` | Valor médio do pedido em low ticket: order bump, upsell 1 clique, downsell e funil autoliquidável |

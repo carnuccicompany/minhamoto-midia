@@ -33,3 +33,11 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`. Concorrentes e f
 - Radar: o que mudou em concorrente (preço, versão, anúncio, nota).
 - Uma oportunidade com prova (ex.: janela do IPVA, modelo líder sem cobertura).
 - Lê NOVIDADES (mercado de motos, regras de documento, concorrentes).
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |

@@ -63,3 +63,11 @@ Atualizado em 24/11/2026. Novidades da área ficam em `NOVIDADES.md` (sempre lei
 - Pede criativo novo à Disney antes da fadiga, com o ângulo que o dado sugere.
 - Confere se o rastreamento continua de pé (evento chegando, valor certo).
 - Lê `NOVIDADES.md` e as fontes oficiais; mudança de política ou produto vira demanda.
+
+---
+## Índice da biblioteca completa (atualizado em 25/11/2026)
+Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
+
+| Data | Aula | Tema |
+|---|---|---|
+| 2026-11-25 | `aulas/2026-11-25-teste-de-criativo-meta-pos-andromeda.md` | Teste de criativo na Meta depois do Andromeda |

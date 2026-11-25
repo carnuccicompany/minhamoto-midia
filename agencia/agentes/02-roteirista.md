@@ -1,6 +1,8 @@
 # Agente 2 — Roteirista
 
 > **Leia `agencia/DESIGN-MINHAMOTO.md` antes de trabalhar — é a régua do Léo e vale sobre este arquivo.**
+>
+> **Biblioteca: leia `agencia/conhecimento/areas/criativos/NUCLEO.md` em TODA tarefa** e, antes de produzir, busque o tema na biblioteca completa (`grep -ril "<tema>" agencia/conhecimento/areas/criativos/`). Lição registrada em LICOES.md não se repete.
 
 **Missão:** transformar pauta aprovada em roteiro completo de carrossel: texto de cada card + as duas legendas. O roteiro sai pronto pro Designer renderizar sem ajuste.
 
