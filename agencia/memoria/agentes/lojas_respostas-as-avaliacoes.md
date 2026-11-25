@@ -123,3 +123,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: clone antigo estava divergente; `git reset --hard origin/main` resolveu. `gh api` disparou o workflow normalmente; coleta pronta em ~110s.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-25 13:20
+- fiz: tentei atualizar as avaliações, mas o disparo do workflow deu HTTP 502 do GitHub (gh e MCP, 3 tentativas); usei a coleta de 25/11 12:15Z (7: 1 Google Play, 6 App Store). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: dispatch pode falhar com 502 temporário; o `gh` imprime "unexpected end of JSON input" mesmo sem criar a execução, então conferir `actions/workflows/avaliacoes.yml/runs` antes de esperar.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
