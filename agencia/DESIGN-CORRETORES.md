@@ -70,6 +70,10 @@
 - **Bolha/chip a pelo menos 120 px do queixo.** · 24/11
 - **Não usar o mesmo clipe com o mesmo texto em duas peças do mesmo lote.** · 24/11
 - **Cena de assinatura de contrato = venda fechada:** nunca embaixo de texto de dúvida/insegurança. · 24/11
+- **Still de página impressa tem que ser nítido (cards legíveis); se não houver frame nítido, usar a página do PDF no tablet.** · 24/11
+- **Cena embaixo de chip/texto de dor mostra a dor (hesitação, dúvida); nunca cliente sorrindo.** · 24/11
+- **Chips e listas também ficam dentro de x 140–940.** · 24/11
+- **Texto de bolha com pelo menos 40 px.** · 24/11
 
 ## 5. Formatos que já existem (pra variar e não repetir)
 - Ana Paula hook + body (impresso/iPad) + CTA (lotes AP DD/LC e Dia 2).
