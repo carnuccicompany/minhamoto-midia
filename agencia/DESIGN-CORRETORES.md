@@ -18,6 +18,8 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - **Um de cada vez, parte por parte, com o Léo aprovando cada parte** (regra geral no topo do DESIGN-MINHAMOTO.md). Não fazer 13 de uma vez. Primeiro 1 piloto por estrutura, aprovação, depois escala. Crédito gasto em peça ruim é prejuízo. · 25/11
 - **EST2-A (25/11):** a ideia do balão "Você saberia responder?" e das perguntas 1/3–3/3 aprovada, a execução não. As perguntas saem da tela quando ela diz "se não, dá uma olhada no material" (nada de pergunta em cima do tablet). · 25/11
 - **EST8-A (25/11):** APROVADO o gancho com a voz dela do próprio pronto (já editada) sobre outra imagem, em preto e branco. Reprovada a forma de apresentar o material na animação. · 25/11
+- **Corte da fala: nunca no meio da frase dela.** O gancho vai até a pausa natural do fim da frase, mesmo que fique 1 s mais longo. ❌ EST2-A v3 cortava no "material". · 25/11
+- **Motion dinâmico, não só balão:** ícones, efeitos, partículas, empurrão de câmera; cada criativo com cara própria (o EST2-A não pode parecer o EST8 com balão). Balão de abertura com acabamento (o "Você saberia responder?" da v3 estava fraco). · 25/11
 - **Mais body:** os dois estavam curtos e corriam pro CTA. Body longo (≈ 25–30 s do pronto), depois o CTA. · 25/11
 - **Preço: tirar de tudo** (volta só se a gente decidir ir por preço, aí em tudo de novo). Body escolhido sem o trecho em que ela fala o preço. · 25/11
 - **Áudio do jeito que veio:** sem abafar, sem mexer na voz. · 25/11

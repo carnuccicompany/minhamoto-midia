@@ -106,7 +106,7 @@ def transicao(img, dt):
         im = Image.blend(im, Image.new("RGB", (W, H), BRANCO), 0.35 * (1 - a / 0.05))
     return im
 
-def render(segs, overlays, cortes_fx, sfx, saida, audio_segs=None):
+def render(segs, overlays, cortes_fx, sfx, saida, audio_segs=None, cam=None):
     tmp = tempfile.mkdtemp(); aud = f"{tmp}/aud.wav"
     montar_audio(audio_segs or segs, sfx, aud)
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
@@ -116,6 +116,11 @@ def render(segs, overlays, cortes_fx, sfx, saida, audio_segs=None):
     for s in segs:
         for img in ler(s):
             t = fr / FPS
+            if cam:
+                z = cam(t)
+                if z > 1.0005:
+                    w2, h2 = int(W * z), int(H * z)
+                    img = img.resize((w2, h2), Image.BILINEAR).crop(((w2 - W) // 2, (h2 - H) // 2, (w2 - W) // 2 + W, (h2 - H) // 2 + H))
             img = img.convert("RGBA")
             for ov in overlays: ov(img, t)
             img = img.convert("RGB")
@@ -137,6 +142,36 @@ def caixa(img, x0, y0, x1, y1, r, cor, alpha=1.0, sombra=True):
 def texto(img, xy, s, peso, tam, cor, alpha=1.0, anchor="la"):
     lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
     ImageDraw.Draw(lay).text(xy, s, font=fonte(peso, tam), fill=cor + (int(255 * alpha),), anchor=anchor)
+    img.alpha_composite(lay)
+
+ICON = "/home/claude/icons/png/"
+_ic = {}
+def icone(img, nome, cx, cy, tam, alpha=1.0):
+    k = (nome, tam)
+    if k not in _ic: _ic[k] = Image.open(ICON + nome + ".png").convert("RGBA").resize((tam, tam), Image.LANCZOS)
+    ic = _ic[k]
+    if alpha < 1:
+        ic = ic.copy(); a = ic.getchannel("A").point(lambda v: int(v * alpha)); ic.putalpha(a)
+    img.alpha_composite(ic, (int(cx - tam / 2), int(cy - tam / 2)))
+
+def disco(img, cx, cy, r, cor, alpha=1.0, sombra=True):
+    if alpha <= 0: return
+    if sombra:
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0)); ImageDraw.Draw(sh).ellipse((cx - r, cy - r + 8, cx + r, cy + r + 8), fill=(0, 0, 0, int(80 * alpha)))
+        img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+    lay = Image.new("RGBA", img.size, (0, 0, 0, 0)); ImageDraw.Draw(lay).ellipse((cx - r, cy - r, cx + r, cy + r), fill=cor + (int(255 * alpha),))
+    img.alpha_composite(lay)
+
+def particulas(img, cx, cy, t, cores=(TEAL, CORAL, (255, 214, 10)), n=12, raio=170, seed=1):
+    """Estouro de partículas (0 ≤ t ≤ 0.6 s)."""
+    if not (0 <= t <= 0.6): return
+    rng = np.random.default_rng(seed); lay = Image.new("RGBA", img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    p = ease(t / 0.6); a = 1 - t / 0.6
+    for i in range(n):
+        ang = 2 * math.pi * i / n + rng.uniform(-0.2, 0.2); rr = raio * p * rng.uniform(0.7, 1.1)
+        x, y = cx + math.cos(ang) * rr, cy + math.sin(ang) * rr; s = 9 * (1 - 0.5 * p)
+        c = cores[i % len(cores)]
+        d.ellipse((x - s, y - s, x + s, y + s), fill=c + (int(255 * a),))
     img.alpha_composite(lay)
 
 def quebra(s, peso, tam, larg):
