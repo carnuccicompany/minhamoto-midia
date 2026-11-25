@@ -111,3 +111,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh` clonou e disparou o workflow normalmente; coleta pronta em ~2 min. O Play agora traz só 1 avaliação (antes 2 e 3): vale o Turing conferir se a coleta está perdendo avaliações.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-24 21:30
+- fiz: atualizei as avaliações (7: 1 Google Play, 6 App Store, coleta 25/11 00:15Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: o clone antigo em /home/claude/minhamoto-midia estava divergente; usei clone novo. `gh api` disparou o workflow normalmente; coleta pronta em ~110s.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
