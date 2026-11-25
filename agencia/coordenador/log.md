@@ -300,3 +300,5 @@
 - 25/11 12h41 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha SUCCEEDED 20/11, próx 27/11), slot 12h publicado (M08), próx 15h02, fila 20,25 dias (81), TikTok 9:16 ok, sem pendentes, sem segredo, insights de hoje no ar.
 
 - 25/11 13h11 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha SUCCEEDED 20/11, próx 27/11), slot 12h publicado (M08), próx 15h02, fila 20,25 dias (81), TikTok 9:16 113/113, sem pendentes, sem segredo, insights de hoje no ar.
+
+- 25/11 14h11 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha 20/11, próx 27/11), slot 12h publicado (M08), próx 15h02, fila 20,25 dias (81), TikTok 9:16 113/113, sem pendentes, sem segredo, painel/tiktok sem link quebrado, insights de hoje no ar. Obs: 2 'Leitura da UTMify' ativas no mesmo horário.
