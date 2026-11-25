@@ -15,7 +15,7 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - **NÃO gerar/emendar áudio de voz** (nada de voz recortada de vários takes, EQ, gravação abafada). · 25/11
 - **ESTRUTURA A · só motion, sem voz nenhuma:** prender a pessoa com efeito sonoro, trilha, transição de texto, efeitos. · 25/11
 - **ESTRUTURA B · motion + body real:** hook em motion → body = trecho de um criativo que JÁ deu certo (ex.: do s10 ao s20), usado como está (voz, legenda e música originais, intactos), com transição forte na entrada e na saída → CTA em motion. Legenda só nos trechos de motion, se precisar. · 25/11
-- **Volume:** não fazer 13 de uma vez. Primeiro 1 piloto por estrutura, aprovação, depois escala. Crédito gasto em peça ruim é prejuízo. · 25/11
+- **Um de cada vez, parte por parte, com o Léo aprovando cada parte** (regra geral no topo do DESIGN-MINHAMOTO.md). Não fazer 13 de uma vez. Primeiro 1 piloto por estrutura, aprovação, depois escala. Crédito gasto em peça ruim é prejuízo. · 25/11
 - **Parâmetro de qualidade:** "parece que nunca fez motion na vida" → o nível é motion profissional de anúncio (referência: criativos que já rodam no nicho), não template. · 25/11
 
 ## 1. Pra quem e o que
