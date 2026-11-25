@@ -42,6 +42,7 @@
 
 **Bloco 3 · vídeo, Reels, stories e motion**
 - **Voz:** dois tipos valem: sem voz (texto + música) e narração ElevenLabs (fluxo de 15/11). Voz gravada por eles: não. · 24/11
+- **(25/11, 19h02) Dois tipos de motion no MinhaMoto:** (1) **com narração** (voz humana ou IA/ElevenLabs): o Claude escreve o roteiro inteiro (fala palavra por palavra + o que aparece em cada fala) → o Léo gera o áudio → o Claude monta o motion no tempo de cada palavra; (2) **sem voz**: no modelo do K6 (só vídeo + trilha original + efeitos). Cada pauta diz qual dos dois é. · 25/11
 - **Duração orgânica:** testar as três faixas (7–15 s, 15–30 s, 30–60 s). · 24/11
 - **Ritmo de corte:** médio (3 de 5). Nem lento estilo Apple, nem frenético. · 24/11
 - **Primeiro segundo:** revezar (texto gancho gigante, movimento de impacto, imagem forte de moto). · 24/11
