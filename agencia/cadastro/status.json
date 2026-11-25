@@ -1,6 +1,6 @@
 {
- "atualizado": "25/11/2026 10:41",
- "pct": 94.2,
+ "atualizado": "25/11/2026 14:15",
+ "pct": 95.0,
  "categorias": [
   {
    "id": "estrutura",
@@ -175,14 +175,13 @@
     {
      "id": "sdk-appsflyer",
      "titulo": "SDK do AppsFlyer dentro do app (Davi)",
-     "status": "parcial",
-     "parcial": 0.7,
-     "nota": "24/11: SDK no ramo fix/codigo-amigo (cadastro, ID pro RevenueCat, ATT, política nova). Falta: entrar na build, chave no Codemagic, integração RevenueCat→AppsFlyer, eventos onboarding/paywall/moto.",
-     "valor": 0.7
+     "status": "feito",
+     "nota": "25/11: Davi confirmou tudo feito (SDK na build, chave no Codemagic, teste no MM1 Dev). Se algo faltar, volta pra parcial. Futuro: eventos onboarding/paywall/moto.",
+     "valor": 1.0
     }
    ],
-   "pct": 77.0,
-   "feitos": 7,
+   "pct": 80.0,
+   "feitos": 8,
    "total": 10
   },
   {
@@ -374,7 +373,7 @@
    "total": 9
   }
  ],
- "pendentes": 3,
+ "pendentes": 2,
  "lista_pendentes": [
   {
    "categoria": "Conexões (tudo linkado)",
@@ -384,11 +383,6 @@
   {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "UTMify (leitura do painel)",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "SDK do AppsFlyer dentro do app (Davi)",
    "falta": []
   }
  ],
@@ -411,7 +405,7 @@
   },
   {
    "data": "25/11/2026",
-   "pct": 94.2
+   "pct": 95.0
   }
  ]
 }
