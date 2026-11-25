@@ -296,3 +296,5 @@
 - 25/11 11h42 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha SUCCEEDED 20/11, próx 27/11), nenhum slot vencido (próx 12h02), fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights de hoje no ar.
 
 - 25/11 12h12 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha SUCCEEDED 20/11, próx 27/11), slot 12h publicado (M08), fila 20.2 dias (81), TikTok 9:16 ok, sem pendentes, sem segredo, insights de hoje no ar.
+
+- 25/11 12h41 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha SUCCEEDED 20/11, próx 27/11), slot 12h publicado (M08), próx 15h02, fila 20,25 dias (81), TikTok 9:16 ok, sem pendentes, sem segredo, insights de hoje no ar.
