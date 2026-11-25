@@ -25,8 +25,8 @@ def mola(x):
     return 1 - math.cos(x * math.pi * 2.2) * math.exp(-5.5 * x)
 
 class Seg:
-    def __init__(self, src, t0, dur, vf="", audio=True, zoom=1.0):
-        self.src, self.t0, self.dur, self.vf, self.audio, self.zoom = src, t0, dur, vf, audio, zoom
+    def __init__(self, src, t0, dur, vf="", audio=True, zoom=1.0, fx=None, fade_out=0.012):
+        self.src, self.t0, self.dur, self.vf, self.audio, self.zoom, self.fx, self.fade_out = src, t0, dur, vf, audio, zoom, fx, fade_out
 
 def ler(seg):
     """Gera quadros RGB 1080x1920 de um trecho (com filtro opcional)."""
@@ -78,7 +78,7 @@ def montar_audio(segs, sfx, saida, alvo=-14.0):
             g = alvo - loud(a)
             b = f"{tmp}/b{i}.wav"
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-af",
-                            f"volume={g:.2f}dB,afade=t=in:d=0.012,afade=t=out:st={s.dur - 0.012:.3f}:d=0.012,apad=whole_dur={s.dur:.3f},atrim=0:{s.dur:.3f}", b], check=True)
+                            f"volume={g:.2f}dB,afade=t=in:d=0.012,afade=t=out:st={s.dur - s.fade_out:.3f}:d={s.fade_out:.3f},apad=whole_dur={s.dur:.3f},atrim=0:{s.dur:.3f}", b], check=True)
         else:
             b = f"{tmp}/b{i}.wav"
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"anullsrc=r=48000:cl=stereo", "-t", f"{s.dur:.3f}", b], check=True)
@@ -114,8 +114,9 @@ def render(segs, overlays, cortes_fx, sfx, saida, audio_segs=None, cam=None):
                             "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", saida], stdin=subprocess.PIPE)
     fr = 0
     for s in segs:
-        for img in ler(s):
+        for i_s, img in enumerate(ler(s)):
             t = fr / FPS
+            if s.fx: img = s.fx(img, s.t0 + i_s / FPS)
             if cam:
                 z = cam(t)
                 if z > 1.0005:
