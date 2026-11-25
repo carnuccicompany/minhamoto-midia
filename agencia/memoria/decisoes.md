@@ -3,6 +3,11 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-25 (registro da conversa principal)
+- **Norte da empresa (Léo, 25/11):** a meta final é migrar a Carnucci pra gringa e vender muito em dólar, euro e libra (EUA e Europa). O foco sempre vai ser levar o máximo possível pra fora; cada agente trabalha pra Léo e Davi chegarem lá e poderem morar em outro país. Está no topo de `merito/CULTURA.md`; números no privado (`metas/norte-gringa.json`).
+- **Recuperação de Pix dos Corretores cancelada (Léo, 25/11):** não propor de novo sem ele pedir.
+- **Agentes enxutos (Léo, 25/11):** Vigia 2x/dia (8h39 e 21h09); Conselho seg e qui; Mesa de Demandas qua + sob demanda (P1/atrasada); avaliações 1x/dia; treino seg/qua/sex. Agente só trabalha quando outro pede.
+
 ## 2026-11-24 (registro do Shelby, ronda do Conselho)
 - **Preço (Léo, 24/11):** em anúncio, post e vídeo PODE "R$19,90"; NÃO pode "por mês". Exceção da Apple (diretriz 2.3.14): imagens e vídeos promocionais dentro da App Store não levam preço. Está em DESIGN-MINHAMOTO.md.
 - **Canal do Shelby v2 (Léo, 24/11):** bilhete de decisões em dia útil às 9h só se houver decisão nova; plano da semana na segunda 8h41; fechamento na sexta 19h17; fechamento do mês no dia 1; WhatsApp como canal principal (a montar); um briefing só pros dois, com dupla assinatura. Texto em `canal/CANAL-SHELBY.md`.
