@@ -116,7 +116,7 @@ def render(segs, overlays, cortes_fx, sfx, saida, audio_segs=None, cam=None):
     for s in segs:
         for i_s, img in enumerate(ler(s)):
             t = fr / FPS
-            if s.fx: img = s.fx(img, s.t0 + i_s / FPS)
+            if s.fx: img = s.fx(img, math.ceil(s.t0 * FPS - 1e-6) / FPS + i_s / FPS)   # tempo real do quadro decodificado (grade de 30 fps)
             if cam:
                 z = cam(t)
                 if z > 1.0005:

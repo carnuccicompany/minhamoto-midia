@@ -43,7 +43,9 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - Rótulos encostando um no outro (conferir largura com 6 itens). · 25/11
 - Texto saindo do cartão ("Nunca mais na dúvida" vazava): cartão sempre do tamanho do texto, nunca largura fixa. · 25/11
 
-**EST2-A v6 = APROVADO e finalizado pelo Léo (25/11).** É a referência dos próximos.
+**EST2-A v6 = APROVADO e finalizado pelo Léo (25/11).** É a referência dos próximos. (v7 = mesma peça com 1 quadro de "CURSOS" corrigido: o recorte do pronto começava no meio de um quadro e a correção de legenda pulava o 1º quadro → agora o motor usa o tempo real do quadro.)
+- **EST8-A (25/11):** hook aprovado ("a gente vai fazer variações disso"); a cortina Antes→Depois passava rápido demais pra ler → a cortina entra, FICA PARADA ~1,3 s com o texto e só então sai. Toda tela de texto tem que durar o suficiente pra ler. · 25/11
+- **Legenda do DD 7 também tem "CURSOS"** (em vez de custos) → corrigida. Os prontos DD têm esse erro: conferir em todo trecho. · 25/11
 
 ## 1. Pra quem e o que
 - **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)
