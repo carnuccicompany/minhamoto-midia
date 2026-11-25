@@ -45,7 +45,7 @@
 - **Duração orgânica:** testar as três faixas (7–15 s, 15–30 s, 30–60 s). · 24/11
 - **Ritmo de corte:** médio (3 de 5). Nem lento estilo Apple, nem frenético. · 24/11
 - **Primeiro segundo:** revezar (texto gancho gigante, movimento de impacto, imagem forte de moto). · 24/11
-- ~~Música: entregar sempre DUAS versões (com trilha e sem música)~~ → substituída em 24/11 (tarde): **entregar só SEM música**; o Léo põe a música na hora de postar/anunciar. Efeitos sonoros continuam. · 24/11
+- ~~Música: entregar sempre DUAS versões (com trilha e sem música)~~ → substituída em 24/11 (tarde). ~~Entregar só SEM música; o Léo põe a música na hora de postar/anunciar~~ → substituída em 25/11 (18h55): **motion sai COM trilha original do Claude (`trilha.py`), como no K6.** Variar a trilha de vídeo pra vídeo (andamento, clima, instrumentos), sempre a mais legal possível e combinando com o app e com o vídeo; cortes no compasso. Efeitos sonoros continuam. · 25/11
 - **Efeitos sonoros (whoosh, clique, notificação):** sim. · 24/11
 - **Texto animado:** branco com a palavra-chave em limão. (O amarelo palavra-por-palavra fica só nos Corretores.) · 24/11
 - **Vídeo do carrossel aprovado:** o mesmo conteúdo animado card a card. · 24/11
@@ -73,7 +73,7 @@
 - **Revelação:** o produto entra girando de leve e assentando com mola, partículas, impacto grave na música; uma pílula curta embaixo. · 25/11
 - **Provas reais em carrossel:** a peça real (página do material / tela real do app) entra deslizando da direita e sai pra esquerda, girando de leve; legenda em pílula branca no alto com ícone colorido + contador pequeno ("1 de +120"); marca-texto amarelo translúcido passando no título. · 25/11
 - **CTA:** título em 2 linhas no alto, produto no meio, botão grande que recebe o toque (mão PNG, onda, partículas) e uma linha de instrução acima do botão (nunca embaixo, onde a mão cobre). · 25/11
-- **Som:** efeitos (pop em cada entrada, whoosh em cada troca) + trilha original com batida desde o 1º segundo (gancho sem batida ficou fraco: corrigido). ⚠️ Pro MinhaMoto continua valendo "entregar SEM música" (regra de 24/11) até o Léo dizer o contrário; os cortes seguem o compasso mesmo assim, pra música que ele puser encaixar. · 25/11
+- **Som:** efeitos (pop em cada entrada, whoosh em cada troca) + trilha original com batida desde o 1º segundo (gancho sem batida ficou fraco: corrigido). ✅ (18h55) Pro MinhaMoto também: COM trilha minha, diversificada por vídeo. · 25/11
 
 **Criativo de venda: regras da revisão independente (24/11, VENDA-MM-R1)**
 1. **Saída do destaque sem fantasma:** o card ampliado volta para a escala e posição da linha real antes de sumir (ou corte seco). Nunca esmaecer por cima da tela rolada. Trava no `render_check.py`. · ❌ VENDA-MM-R1: texto duplicado em V1, V2 (3×), V3, V4, V6.
