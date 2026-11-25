@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T04:10:00-03:00",
+  "rodada": "2026-11-25T04:40:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,7 +8,7 @@
     "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
     "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
     "produção diária": "desativada — prevista em PENDENCIAS",
-    "coordenador": "ok (:09 SUCCEEDED 17h09 BRT; :39 esta rodada)",
+    "coordenador": "ok (:09 SUCCEEDED 04h10 BRT; :39 esta rodada)",
     "checklist pré-build": "lembrete único 23/11 ativo",
     "MM: Reunião do Conselho": "ok (SUCCEEDED 24/11 20h40 BRT; próx 19h23 25/11)",
     "MM: Folha de sexta": "ok (SUCCEEDED 20/11; próx 27/11 17h47)",
@@ -23,8 +23,8 @@
     "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h14 BRT 24/11; próx 09h13 25/11)",
     "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
     "MM: Leitura da UTMify": "ATENÇÃO: 2 tarefas duplicadas com o mesmo nome e horário 7h41 (extra registrado; não mexi)",
-    "MM: Coordenador 24h · :09": "rodando (esta rodada, 04h10 BRT)",
-    "MM: Coordenador 24h · :39": "ok (SUCCEEDED 03h40 BRT)",
+    "MM: Coordenador 24h · :09": "ok (SUCCEEDED 04h10 BRT)",
+    "MM: Coordenador 24h · :39": "rodando (esta rodada, 04h40 BRT)",
     "MM: Treino diário dos diretores": "ok (agendada 05h47 BRT 25/11)"
   },
   "publicacao_hoje": {
