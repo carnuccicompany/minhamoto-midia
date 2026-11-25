@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T06:40:00-03:00",
+  "rodada": "2026-11-25T07:10:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -8,9 +8,9 @@
     "radar semanal": "ok (SUCCEEDED 17/11; próx 24/11)",
     "relatório Analista": "ok (SUCCEEDED 23/11 08h26)",
     "produção diária": "desativada — prevista em PENDENCIAS",
-    "coordenador": "ok (:09 SUCCEEDED 06h09 BRT; :39 esta rodada)",
+    "coordenador": "ok (:39 SUCCEEDED 06h39 BRT; :09 esta rodada)",
     "checklist pré-build": "lembrete único 23/11 ativo",
-    "MM: Reunião do Conselho": "ok (SUCCEEDED 24/11 20h40 BRT; próx 19h23 25/11)",
+    "MM: Reunião do Conselho": "ok (SUCCEEDED 24/11 20h40 BRT; ata 25/11 00h07 UTC; próx 19h23 25/11)",
     "MM: Folha de sexta": "ok (SUCCEEDED 20/11; próx 27/11 17h47)",
     "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
     "MM: Mesa de Demandas": "ok (SUCCEEDED 14h37 BRT; próx 10h37 25/11)",
@@ -23,14 +23,14 @@
     "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h14 BRT 24/11; próx 09h13 25/11)",
     "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
     "MM: Leitura da UTMify": "ATENÇÃO: 2 tarefas duplicadas com o mesmo nome e horário 7h41 (extra registrado; não mexi)",
-    "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h14 BRT)",
-    "MM: Coordenador 24h · :39": "rodando (esta rodada, 06h39 BRT)",
-    "MM: Treino diário dos diretores": "ok (SUCCEEDED 05h47-06h10 BRT 25/11)"
+    "MM: Coordenador 24h · :09": "rodando (esta rodada, 07h09 BRT)",
+    "MM: Coordenador 24h · :39": "ok (SUCCEEDED 06h39 BRT)",
+    "MM: Treino diário dos diretores": "ok (SUCCEEDED 05h47-06h10 BRT 25/11; próx 26/11 05h47)"
   },
   "publicacao_hoje": {
     "ultimo_ok": "DV10 (21h04 BRT 24/11)",
     "proximo": "12h02 BRT 25/11",
-    "obs": "18h de 24/11 não saiu"
+    "obs": "nenhum slot passou ainda hoje; 18h de 24/11 não saiu (não recuperável)"
   },
   "dias_de_fila": 20.5,
   "nao_publicados": 82,
