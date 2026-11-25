@@ -89,4 +89,4 @@ def gerar(dur, saida, intro=(0, 2.4), batida=(2.4, 7.2), pausa=(7.2, 9.6), drop=
     st = np.stack([mix + 0.004 * np.roll(pd, 220), mix + 0.004 * np.roll(pd, -220)], 1)
     st /= np.abs(st).max() / 0.8; sf.write(saida, st, SR); return saida
 if __name__ == "__main__":
-    gerar(28.8, "/home/claude/corretores/voz/trilha_motion.wav"); print("ok")
+    gerar(28.8, "/home/claude/corretores/voz/trilha_motion.wav", batida=(0.0, 7.2)); print("ok")
