@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-11-25T09:13:24.559051Z",
+ "coletado_em": "2026-11-25T11:44:29.490500Z",
  "erros": {},
  "ig_conta": {
   "id": "17841478100957290",
@@ -233,7 +233,7 @@
    "media_product_type": "FEED",
    "timestamp": "2026-11-20T15:05:09+0000",
    "insights": {
-    "reach": 40,
+    "reach": 41,
     "saved": 0,
     "shares": 1,
     "total_interactions": 1
