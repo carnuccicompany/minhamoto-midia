@@ -41,6 +41,9 @@ Os 13 criativos de 24/11 foram reprovados. O que ele disse, virando regra:
 - Dedo do toque dentro de círculo branco → só o símbolo (mão branca com contorno navy, PNG, sem fundo). · 25/11
 - Elementos do body todos iguais no canto superior direito, sem relação com a apostila → elementos centralizados, na faixa logo acima da legenda do pronto, e cada um ligado ao que ela está falando/mostrando (contador +120, ícones dos temas, "ilustrado/organizado/fácil", "?"→"✓" no "nunca mais tenha dúvida", ícones das formas de aquisição). · 25/11
 - Rótulos encostando um no outro (conferir largura com 6 itens). · 25/11
+- Texto saindo do cartão ("Nunca mais na dúvida" vazava): cartão sempre do tamanho do texto, nunca largura fixa. · 25/11
+
+**EST2-A v6 = APROVADO e finalizado pelo Léo (25/11).** É a referência dos próximos.
 
 ## 1. Pra quem e o que
 - **Fala com o corretor de imóveis**, nunca com o comprador. · 23/11 (inicial)

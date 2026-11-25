@@ -155,7 +155,7 @@ def duvida(img, t):                         # "nunca mais tenha dúvida…": o "
     t0, tv, t1 = rb(21.0), rb(21.55), rb(22.6)
     if not (t0 <= t < t1 + 0.3): return
     a = ease((t - t0) / 0.25) * (1 - ease((t - t1) / 0.3))
-    w, h = 520, 140; x0 = W / 2 - w / 2; y0 = FAIXA_Y - h + int((1 - mola((t - t0) / 0.5)) * 30)
+    w, h = 150 + tl("Nunca mais na dúvida", 800, 40) + 44, 140; x0 = W / 2 - w / 2; y0 = FAIXA_Y - h + int((1 - mola((t - t0) / 0.5)) * 30)
     caixa(img, x0, y0, x0 + w, y0 + h, 34, BRANCO, a * 0.94)
     cx, cy = x0 + 80, y0 + h / 2
     if t < tv:
