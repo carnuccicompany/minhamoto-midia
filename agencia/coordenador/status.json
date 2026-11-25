@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T12:41:00-03:00",
+  "rodada": "2026-11-25T13:11:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -27,8 +27,8 @@
     "MM: Coordenador 24h · :39": "ok (SUCCEEDED 09h40 BRT; próx 10h39)",
     "MM: Treino diário dos diretores": "ok (SUCCEEDED 05h47-06h10 BRT 25/11)",
     "MM: Bilhete das decisões": "ok (SUCCEEDED 08h47 BRT)",
-    "MM: Coordenador 24h · :09 (vigia os agentes)": "ok (SUCCEEDED 12h12 BRT; próx 13h09)",
-    "MM: Coordenador 24h · :39 (vigia os agentes)": "rodando (esta rodada, 12h40 BRT)"
+    "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (esta rodada, 13h11 BRT)",
+    "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 12h39 BRT; próx 13h39)"
   },
   "publicacao_hoje": {
     "ultimo_ok": "M08 (12h04 BRT 25/11)",
