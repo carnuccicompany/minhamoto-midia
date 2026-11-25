@@ -131,9 +131,8 @@
         {
           "id": "play",
           "titulo": "Google Play Console (relatórios)",
-          "status": "parcial",
-          "parcial": 0.8,
-          "nota": "Chaves e convite feitos (23/11); aguardando o Google liberar o acesso (até 24h)"
+          "status": "feito",
+          "nota": "25/11: relatórios do Google Play coletando no carnucci-dados."
         },
         {
           "id": "utmify",

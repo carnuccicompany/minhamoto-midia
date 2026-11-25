@@ -1,6 +1,6 @@
 {
- "atualizado": "24/11/2026 21:07",
- "pct": 93.8,
+ "atualizado": "25/11/2026 09:00",
+ "pct": 94.2,
  "categorias": [
   {
    "id": "estrutura",
@@ -162,10 +162,9 @@
     {
      "id": "play",
      "titulo": "Google Play Console (relatórios)",
-     "status": "parcial",
-     "parcial": 0.8,
-     "nota": "Chaves e convite feitos (23/11); aguardando o Google liberar o acesso (até 24h)",
-     "valor": 0.8
+     "status": "feito",
+     "nota": "25/11: relatórios do Google Play coletando no carnucci-dados.",
+     "valor": 1.0
     },
     {
      "id": "utmify",
@@ -182,8 +181,8 @@
      "valor": 0.7
     }
    ],
-   "pct": 75.0,
-   "feitos": 6,
+   "pct": 77.0,
+   "feitos": 7,
    "total": 10
   },
   {
@@ -375,16 +374,11 @@
    "total": 9
   }
  ],
- "pendentes": 4,
+ "pendentes": 3,
  "lista_pendentes": [
   {
    "categoria": "Conexões (tudo linkado)",
    "titulo": "TikTok for Business",
-   "falta": []
-  },
-  {
-   "categoria": "Conexões (tudo linkado)",
-   "titulo": "Google Play Console (relatórios)",
    "falta": []
   },
   {
@@ -414,6 +408,10 @@
   {
    "data": "24/11/2026",
    "pct": 93.8
+  },
+  {
+   "data": "25/11/2026",
+   "pct": 94.2
   }
  ]
 }
