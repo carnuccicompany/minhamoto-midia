@@ -258,3 +258,5 @@
 - 25/11 02h10 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron.
 
 - 25/11 02h40 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron.
+
+- 25/11 03h10 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron; extra: tarefa "MM: Leitura da UTMify" duplicada (2 ativas, mesmo horário).
