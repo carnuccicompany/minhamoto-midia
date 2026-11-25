@@ -84,6 +84,13 @@
 - **Número em R$ de consequência (ex.: peça que estraga):** usar o preço base da PEÇA NOVA de fonte séria (loja/fabricante/concessionária), não "retífica" de blog. · 24/11
 - **Copy sugerida pelo revisor passa pela mesma régua** (grep de imperativo de tu, título até 6 palavras + 1 linha de apoio). ❌ "Adivinha em qual km…" sugerido pelo revisor. · 24/11
 
+15. **A foto prova o texto, como a tela** (ex.: "corrente seca" sobre corrente limpa ❌; "riscou o disco" sobre disco intacto ❌). · 24/11
+16. **A moto da foto é a do público da peça** (motoboy = moto de trabalho, não custom cromada) e é a mesma do começo ao fim quando o texto fala "dela". · 24/11
+17. **Painel só em km/h.** · 24/11
+18. **Nenhuma foto repetida entre peças do mesmo lote.** · 24/11
+19. **Um tratamento de cor por peça.** · 24/11
+20. **Rodapé de preço descreve só o que a fonte mostra** (nada de "original" se a página não diz). · 24/11
+
 **Regras de equipe (texto do Léo, 24/11): valem pra todo agente de marketing**
 - **O Léo ODEIA repetir orientação que já deu.** Antes de criar, todo agente lê esta constituição + o arquivo de design do produto inteiro; antes de entregar, o revisor confere a peça linha a linha contra as regras (preço, telas, termos proibidos, placar de erros). Peça que repete erro já registrado não sai. · 24/11
 - **O Léo ODEIA quando buga e o Claude repete o que ele já disse que está errado.** Se uma correção dele não "pegou", parar, achar a causa (código, asset, regra mal escrita) e consertar na origem antes de reentregar. Nunca reentregar a mesma coisa com outra cara. · 24/11
@@ -196,6 +203,17 @@
 |---|---|---|---|
 | 23/11 | CM01 (rodada 1) | copy fraca; 4 cards iguais com recorte do app; card sem destaque; halo quadrado na logo | regras acima + trava de layout (`agencia/estudio/motores/render_check.py`) |
 | 23/11 | CM01 (rodada 2) | telas da prévia (não reais); celular girado esquisito; print com partes apagadas; card 2 com tela e copy fracas | regras da rodada 2; telas só por captura do app logado |
+
+## 24/11/2026: LOTE 1 de carrosséis (decisões do Léo)
+- ❌ **CM03 "Revisão da CG: de R$ 166 a R$ 1.418" cancelado:** o Léo não gostou do ângulo de valor/preço de revisão. ✅ Não fazer peça orgânica com preço de revisão de concessionária como gancho. · 24/11
+- ✅ **Foto real de moto liberada no lote** (3ª estética): só do banco Pexels de `designer/assets/fotos/`, nítida, coerente com o texto, sem marca de fabricante legível (recortar ou borrar numa cópia; nunca editar o asset). · 24/11
+- **Ordem de publicação do LOTE 1:** CM01 → CM02 → CM04 → CM06 → CM05 (não postar em sequência duas capas com o mesmo truque). · 24/11
+
+### Placar (revisor, 24/11)
+| Data | Peça | Erro | Regra/trava |
+|---|---|---|---|
+| 24/11 | LOTE 1 R1→R2 | Revisor sugeriu "Adivinha" (imperativo de tu) e copy longa demais pra título (CM02 virou parede de texto) | Copy sugerida pelo revisor passa no grep de imperativo de tu e já vem como título (até 6 palavras) + 1 linha de apoio |
+| 24/11 | LOTE 1 R1 | Recorte do app com sobra de outro item, card montado com pedaços, X/alça de sheet, quebra "km" ampliada | Card solto = recorte contínuo de UM item real, sem pedaço de outro, sem ícone de editar/excluir, sem X/alça, sem barra de abas por cima |
 
 ## 20/11/2026: anúncios (decisões do Léo ao lapidar a Disney)
 - Criativo de anúncio se baseia sempre no que está vendendo de verdade (assinante/venda), no nosso app e no nosso infoproduto.
