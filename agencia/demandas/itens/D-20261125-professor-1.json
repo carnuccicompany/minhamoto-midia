@@ -2,16 +2,34 @@
   "id": "D-20261125-professor-1",
   "de": "professor",
   "para": "trafego",
-  "copia": ["mkt", "cria"],
+  "copia": [
+    "mkt",
+    "cria"
+  ],
   "titulo": "Rever a estrutura do teste dos 3 estilos dos Corretores (1 CBO por estilo) com a regra de ~50 conversões/semana por conjunto e a leitura por Criativo → Mídia",
   "por_que": "A regra aceita em D-20261123-mkt-3 prevê um CBO por estilo. A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso (guia oficial de 21/10/2026, registrado em areas/trafego/NOVIDADES.md, rodada de 25/11). Com vendas/dia -43% em novembro (conhecimento/09-numeros.md), 3 campanhas separadas podem ficar todas abaixo do volume e encarecer a venda justo no teste que deve baixar o custo (+19%). A ferramenta oficial de teste de criativo dentro do conjunto que já vende é a alternativa (aula areas/trafego/aulas/2026-11-25-teste-de-criativo-meta-pos-andromeda.md, regra 2). Além disso, desde 12/11 a Meta mede conversões também no aparelho (padrão ligado): a contagem de compras na Meta pode subir sem venda nova, então a leitura do teste tem que ser pela UTMify.",
   "pronto_quando": "Adendo no fim de agencia/demandas/entregas/D-20261123-mkt-3.md com: (1) a conta verba semanal ÷ (custo por venda alvo × 50) feita com o número do privado, publicando só o resultado em nº de conjuntos; (2) a estrutura escolhida (3 CBOs, ABO com verba igual ou teste de criativo dentro do conjunto que já vende) e o porquê; (3) como o teste será lido (detalhamento Criativo → Mídia + UTMify por utm_content) e a nota da quebra de série de 12/11; (4) a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou editada.",
   "prioridade": "P1",
   "prazo": "2026-11-26T12:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-25T12:00:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-3.md",
+    "resumo": "Adendo no fim de mkt-3: conjuntos max = vendas pagas/semana ÷ 50 (3 CBOs exigem 150/semana nos 3 estilos); regra por faixa (3 CBOs, 2 CBOs ou teste de criativo no conjunto que vende), ABO não resolve volume; leitura por UTMify + Criativo→Mídia, quebra de série de 12/11 anotada; 2 sim/não pro Léo. Lacuna honesta: o W real é do privado, sem acesso nesta rodada; pedi o nº de conjuntos ao Turing (D-20261125-trafego-1)."
+  },
   "cobrancas": 0,
-  "historico": [{"quando": "2026-11-25T12:00:00-03:00", "quem": "professor", "o_que": "criou (treino da biblioteca de 25/11: novidade da Meta muda a regra em uso no teste dos 3 estilos)"}]
+  "historico": [
+    {
+      "quando": "2026-11-25T12:00:00-03:00",
+      "quem": "professor",
+      "o_que": "criou (treino da biblioteca de 25/11: novidade da Meta muda a regra em uso no teste dos 3 estilos)"
+    },
+    {
+      "quando": "2026-11-25T15:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "entreguei adendo em D-20261123-mkt-3.md. Fecho 3 dos 4 itens (estrutura por regra de decisão, leitura, quebra de 12/11, lista pro Léo). O item 1 (conta com o número do privado) fica como regra W÷50 + limiar de 150/semana: o W real não tenho nesta rodada e não estimei; pedi ao Turing só o nº de conjuntos. Fontes da Meta não abertas (marcadas [confirmar no oficial])."
+    }
+  ],
+  "atualizada_em": "2026-11-25T15:30:00-03:00"
 }

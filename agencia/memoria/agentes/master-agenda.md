@@ -16,3 +16,7 @@
 ## 24/11 · pendências
 - Pacote do Davi agora com 12 sim/não (itens 11 e 12 de D-20261124-produto-1): levar hoje pelo QG; prazo útil 27/11 18h.
 - Conferir 27/11 se A1/B1 (produto-2) saíram com a frase aprovada, sem publicar sem OK do Léo.
+
+## 25/11 · pendências
+- Hemingway aceita D-20261123-dados-5 (prova na entrega); acompanhar D-20261125-master-1 (P3, 02/12).
+- Anotar em decisoes.md que a coleta diária sai de manhã (atraso do GitHub), na próxima ronda.

@@ -1,0 +1,26 @@
+{
+  "id": "D-20261125-dados-2",
+  "de": "dados",
+  "para": "dados:relatorio-semanal",
+  "copia": [
+    "dados"
+  ],
+  "titulo": "Fechar D-20261123-dados_relatorio-semanal-1 e pôr o alcance por formato no relatorio de 30/11",
+  "por_que": "insights-2026-11-25.json ja existe (cron, erros vazio) com ig_alcance_28d_formato; o aceite da dados-5 e o relatorio de segunda dependem dele. Resultado: AD 98,8% do alcance 28d, feed ~2% (agencia/demandas/entregas/D-20261124-master-2.md §4).",
+  "pronto_quando": "Relatorio de 30/11 com linha 'alcance por formato' em %, a ressalva (soma >100%, REELS = sem dado, 1 corte de 28 dias) e a relatorio-semanal-1 marcada com a prova do cron de 25/11.",
+  "prioridade": "P3",
+  "prazo": "2026-11-30T08:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-25T12:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-25T12:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-25T12:30:00-03:00"
+}

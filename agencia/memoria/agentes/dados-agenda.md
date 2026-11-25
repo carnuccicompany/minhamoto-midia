@@ -49,3 +49,8 @@
 - Criadas: D-20261124-dados-3 (Hemingway, minuta 30/11), -4 (Ness, linha de insights diário no status), -5 (Escobar, portão Meta-AppsFlyer). Prazo 27/11 19h.
 - Conferir 25/11: insights-2026-11-25.json (cron) para aceitar dados-5. 26/11 21h35 UTC: ec124592 sai do Play? 27/11: dados-1 (Disney) e as três de hoje.
 - Aposta nova: sem integração SKAN Meta-AppsFlyer, o anúncio aparece como orgânico; vira portão antes da verba.
+
+## Atualização 2026-11-25
+- Fato novo: alcance 28d por formato (coleta 25/11): AD 98,8%, feed ~2%. A iniciativa "De onde vem o alcance?" muda de pergunta: de que campanha vem o AD (D-20261125-dados-1, Escobar, 27/11 19h).
+- Entreguei master-2 (formato do resumo-pct.json). Espero: QG (ponte), Léo (UTMify), Davi (SDK, evento de moto).
+- Prazos: 26/11 21h35Z ec124592 no Play; 27/11 dados-1 (Disney) e dados-1/3/4/5 abertas; 30/11 trafego-3, 1ª linha de base, relatório (D-20261125-dados-2).

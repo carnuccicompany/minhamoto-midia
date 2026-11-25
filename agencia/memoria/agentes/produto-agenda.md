@@ -47,3 +47,6 @@
 - Fato novo: repo do app com último commit em 17/11; a build de 23/11 e o SDK não aparecem. Criei produto-3 (Shelby, P1: a build saiu?), produto-4 (Jobs: moto fora do catálogo), produto-5 (Turing: tamanho do teste 50/50 em semanas).
 - Aceitei D-20261124-produto-1 e D-20261123-produto_analista-do-paywall-1. Pendências: Davi (pacote de 12 itens); Jobs com as 3 perguntas da P-001 (27/11); Apple HIG segue bloqueado.
 - Pesquisa: RevenueCat, "Paywall placement: deliver value before the paywall" (17/11/2026), https://www.revenuecat.com/blog/growth/app-value-paywall.
+
+## 25/11
+- Reentreguei D-20261124-mercado-1 (4 líderes, versões e anos, Biz 110i até 2024). Aguardo aceite do Mercado. Próximo: Jobs produto-1 (26/11); reconferir catálogo quando a build de 23/11 entrar no repo.

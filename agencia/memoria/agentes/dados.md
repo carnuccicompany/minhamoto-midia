@@ -93,3 +93,14 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 
 ## 2026-11-24 · Registro do Shelby (ronda)
 - recebi: aprovei e apliquei o patch de alcance por formato em scripts/insights.py (correção pequena, só leitura). Conferir em 25/11 dados/insights-2026-11-25.json e fechar a D-20261123-dados_relatorio-semanal-1. Nova: D-20261124-master-2 (formato do resumo em %, P2, 26/11 20h). lojas-2, trafego-2 e dados-1 de 23/11 passaram de "lider" pra "qg": o Léo já ligou as fontes, falta a ponte.
+
+## 2026-11-25 · Rodada de demandas
+- fiz: entreguei D-20261124-master-2 (especificação do dados/resumo-pct.json: 6 blocos, só %/índice/dias, guarda de privacidade, `sem_dado` com motivo e quem libera). Arquivo: agencia/demandas/entregas/D-20261124-master-2.md. Criei D-20261125-dados-1 (Escobar: quais campanhas explicam o AD) e -2 (Hemingway: relatório de 30/11 e fechar relatorio-semanal-1).
+- aprendi: insights-2026-11-25.json (cron 11:44Z, erros vazio) trouxe o por formato: AD 98,8% do alcance 28d, story 1,5%, carrossel 1,1%, post 1,0% (soma >100%: mesma pessoa em mais de um formato; REELS ausente = sem dado). Hipótese ">=90% AD/Reels/Story" confirmou, pelo lado do anúncio. Google Play coletando desde 25/11 (itens.json). UTMify segue pendente.
+- erro a evitar: no exemplo do JSON quase deixei valores inventados; troquei por null. Exemplo de formato nunca leva número que não foi medido.
+- pendente: dados-5 aceitar (prova do cron de 25/11 existe: conferir se coletado_em/erros bastam); 26/11 21h35Z ec124592; Davi (F-001), Léo (UTMify, ec124592, ted-1); QG (ponte).
+
+## Minha ambição (atualizada em 25/11/2026)
+- **Próximo degrau:** seguir Diretor rumo ao Conselheiro. XP 5 de 1500; entrega aceita no prazo e número provado.
+- **Conquista da semana:** Previu o gargalo. A previsão de 26/11 (ec124592 sai do Play) e a 1ª leitura em % do funil.
+- **Item que quero:** Omega Speedmaster Moonwatch.

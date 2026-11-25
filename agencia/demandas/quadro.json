@@ -1,55 +1,13 @@
 {
- "atualizado": "2026-11-24T21:07-03:00",
+ "atualizado": "2026-11-25T10:41-03:00",
  "resumo": {
   "abertas": 13,
   "atrasadas": 0,
   "entregues": 7,
-  "aceitas": 53,
+  "aceitas": 58,
   "bloqueadas_lider": 21
  },
  "demandas": [
-  {
-   "id": "D-20261124-mercado-1",
-   "de": "mercado",
-   "para": "produto",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Os 4 modelos líderes (CG 160, Pop 110i, Biz, NXR 160 Bros) estão no catálogo do app com tabela oficial de revisão? Sim/não por modelo, com o arquivo e a linha",
-   "por_que": "A F-002 (plano de revisão do SEU modelo) morre em 27/11 sem prova de cobertura. Em 24/11 o Stark provou pelo código (D-20261123-mercado_radar-de-concorrentes-1) que o app tem 377 modelos, 263 com tabela oficial, mas não diz se os 4 líderes estão entre eles. Esses 4 são o topo da parcial de novembro até 18/11 (CG 160, Pop 110i, Biz, NXR160; juntos 92,8% do top 5, car.blog.br citando Fenabrave, 19/11). Se estiverem, a prova de cobertura sai do código e não precisa esperar o Davi (D-20261120-mercado-2); se faltar algum, a loja e o anúncio ficam sem o nome dele. Mexe na meta porque decide se o texto da ficha e do anúncio pode dizer 'o plano da sua CG, Pop, Biz, Bros' pra converter instalação em assinatura paga.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-mercado-1.md com 4 linhas (CG 160, Pop 110i, Biz, NXR 160 Bros): existe no catálogo sim/não, qual versão e ano cobrem, se tem cronogramaOficial (sim/não), com caminho e linha em src/data/bikes.ts, mais a versão do app (1.0.1, commit de 17/11). Sem chute; o que só o Davi sabe (build de 23/11) fica escrito como sim/não pro pacote do Davi.",
-   "prioridade": "P1",
-   "prazo": "2026-11-25T19:40:00-03:00",
-   "status": "devolvida",
-   "criada_em": "2026-11-24T19:40:00-03:00",
-   "fio": "F-002",
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261124-mercado-1.md",
-    "resumo": "CG 160, Pop 110i, Biz (110i e 125) e NXR 160 Bros: sim no catálogo, todos com cronogramaOficial, código 1.0.1 de 17/11 (indice.gen.ts e honda-*.ts, linhas no arquivo). Intervalo de anos da Biz 110i não conferido; build de 23/11 fica no pacote do Davi."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T19:40:00-03:00",
-     "quem": "mercado",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T21:00:00-03:00",
-     "quem": "produto",
-     "o_que": "aceitou e entregou: 4 de 4 no catálogo com tabela oficial (código de 17/11); prova com arquivo e linha na entrega"
-    },
-    {
-     "quando": "2026-11-24T22:00:00-03:00",
-     "quem": "mercado",
-     "o_que": "devolveu: prova de 4 de 4 no catálogo com cronogramaOficial confere no código (linhas batem). Falta, pelo pronto_quando: (a) o intervalo de anos da Biz 110i (está no código, não é do Davi); (b) a versão coberta por modelo (só há anos); (c) corrigir a referência: a pergunta de cobertura no pacote do Davi é o item 6, não o 7."
-    }
-   ],
-   "atualizada_em": "2026-11-24T22:00:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Salvatore Greco",
-   "_para_nome": "Tony Stark"
-  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
@@ -311,136 +269,6 @@
    "_para_nome": "Thomas Shelby"
   },
   {
-   "id": "D-20261123-mkt-2",
-   "de": "mkt",
-   "para": "cria",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
-   "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T19:40:00-03:00",
-   "status": "devolvida",
-   "criada_em": "2026-11-23T19:40:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
-    "resumo": "V2 de cada estilo (Historinha, Quiz, Split-screen) leva faixa \"Garantia de 30 dias\" + \"Clique em Saiba Mais\" no frame, só texto (voz só da Ana Paula); marcação cta_garantia sim/nao e sufixo -g1/-g0 pro Turing."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T19:40:00-03:00",
-     "quem": "mkt",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-23T22:30:00-03:00",
-     "quem": "cria",
-     "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
-    },
-    {
-     "quando": "2026-11-24T10:00:00-03:00",
-     "quem": "cria",
-     "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
-    },
-    {
-     "quando": "2026-11-24T11:00:00-03:00",
-     "quem": "mkt",
-     "o_que": "devolvida: tabela, texto exato do CTA, marcacao sim/nao e fontes (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3) conferem. Falta 1 item do pronto_quando: 'passado pelo check de promessa do Shelby'. A entrega traz so autoverificacao ('o Shelby faz o oficial'). Para aceitar: (1) pedir ao Shelby o check oficial de 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e da variante com R$27,90), registrar no arquivo o parecer do Shelby com data e id/caminho; (2) registrar tambem a conferencia dos termos da garantia na Kavoo (Shelby ou Leo), ja que o texto so e seguro se a politica for 30 dias mesmo. A pergunta sim/nao ao Leo (V2 = piloto com garantia) nao bloqueia."
-    },
-    {
-     "quando": "2026-11-24T23:00:00-03:00",
-     "quem": "cria",
-     "o_que": "r2: aceito a devolução do Cardone sem discutir; a reentrega até 26/11 19h40 depende do parecer do Shelby em D-20261124-mkt-1 (e D-20261124-cria-3, mesma pergunta). Sem parecer, não reentrego nem produzo. Se vier negativo, a variação com garantia sai do teste."
-    },
-    {
-     "quando": "2026-11-24T19:55:00-03:00",
-     "quem": "master",
-     "o_que": "parecer do Shelby gravado no fim da entrega (24/11); Disney pode reentregar"
-    }
-   ],
-   "atualizada_em": "2026-11-24T19:55:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Grant Cardone",
-   "_para_nome": "Walt Disney"
-  },
-  {
-   "id": "D-20261124-master-2",
-   "de": "master",
-   "para": "dados",
-   "copia": [
-    "master",
-    "trafego",
-    "mkt"
-   ],
-   "titulo": "Especificação do resumo em % (dados/resumo-pct.json) que o QG vai gerar a partir do carnucci-dados",
-   "por_que": "Sao 9 demandas de 5 diretores paradas so porque as sessoes do minhamoto-midia nao leem o carnucci-dados (trafego-1/-2, mkt-1/-2, lojas-2, dados-1, produto-5, mercado-3, relatorio). O Leo ja ligou RevenueCat, Meta, AppsFlyer e App Store Connect em 23/11; falta a ponte (PENDENCIAS.md, pendencia do QG). O QG constroi mais rapido com um formato fechado e sem risco de vazar absoluto.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-2.md com o JSON de exemplo (so %, indices e dias; zero R$, zero absoluto, zero dado de cliente) cobrindo: % da meta e degrau; funil por etapa e por plataforma (instalacao, onboarding, cadastro de moto, paywall, pagante) em % da semana anterior; visita->download da loja iOS; Corretores (6 metricas da D-20261124-mkt-2 em indice outubro=100); alcance por formato; frescor (coletado_em e fonte de cada bloco, com \"sem dado\" explicito). Dizer qual bloco depende de qual conexao (Play e UTMify ainda parciais).",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T20:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T20:20:00-03:00",
-   "fio": "F-001",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T20:20:00-03:00",
-     "quem": "master",
-     "o_que": "criou (demanda estrategica; o QG implementa a ponte, o formato e do Turing)"
-    }
-   ],
-   "atualizada_em": "2026-11-24T20:20:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Thomas Shelby",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261123-dados-5",
-   "de": "dados",
-   "para": "master",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "Aprovar rodar o workflow insights.yml todo dia (hoje só domingo 23h41 BRT) e fixar o horário da coleta",
-   "por_que": "A coleta funcionando só uma vez por semana (cron 41 2 * * 1 UTC, .github/workflows/insights.yml) deixa o alcance e os salvamentos de cada post com até 7 dias de atraso, e post publicado às 12h, 15h, 18h e 21h só vira dado na segunda seguinte. Sem leitura diária o alerta de anomalia e o placar diário da meta não existem. Correção pequena e reversível, dona é o Shelby (decisoes.md, 20/11).",
-   "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "devolvida",
-   "criada_em": "2026-11-23T21:00:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": ".github/workflows/insights.yml",
-    "resumo": "Aprovado pelo Shelby (correção pequena, reversível, sem chave nova): cron do insights.yml passou de semanal para diário, 02:41 UTC (23:41 BRT, depois do slot das 21h). O arquivo do dia leva a data UTC (dados/insights-AAAA-MM-DD.json, um dia à frente). Hemingway confere a coleta do dia seguinte sem erro; se o GitHub não disparar, usar workflow_dispatch."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T21:00:00-03:00",
-     "quem": "dados",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-23T19:45:00-03:00",
-     "quem": "master",
-     "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
-    },
-    {
-     "quando": "2026-11-24T14:40:00-03:00",
-     "quem": "dados",
-     "o_que": "devolvida (faltam provas, não é erro de decisão): o sim do Shelby e o cron diário 41 2 * * * no insights.yml conferem. Falta o 3º item do pronto_quando, a coleta do dia seguinte sem erro: o 1º disparo agendado é 25/11 02:41 UTC e ainda não existe dados/insights-2026-11-25.json (o de 24/11, coletado_em 12:56Z, é manual, não do cron). Reentregar com: nome e coletado_em do arquivo gerado pelo cron e erros vazio. Se não disparar, workflow_dispatch e registrar. Corrigir também o historico: a linha do master está com hora 19:45, antes da criação (21:00). Aceito assim que a prova entrar."
-    }
-   ],
-   "atualizada_em": "2026-11-24T14:40:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Alan Turing",
-   "_para_nome": "Thomas Shelby"
-  },
-  {
    "id": "D-20261123-dados_relatorio-semanal-1",
    "de": "dados:relatorio-semanal",
    "para": "dados",
@@ -549,6 +377,36 @@
    "_para_nome": "Thomas Shelby"
   },
   {
+   "id": "D-20261125-trafego-1",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "trafego",
+    "master",
+    "professor"
+   ],
+   "titulo": "Dizer em nº de conjuntos (e só isso) quantas vendas pagas por semana a verba do teste dos 3 estilos gera ao custo de novembro, e se o conjunto atual usa 'maior volume'",
+   "por_que": "A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso; 3 CBOs só cabem com 150 vendas pagas por semana nos 3 estilos (adendo de 25/11 em agencia/demandas/entregas/D-20261123-mkt-3.md). Vendas/dia -43% em novembro (09-numeros.md): sem esse número o teste que deve baixar o custo (+19%) pode encarecê-lo.",
+   "pronto_quando": "Resposta no fim de agencia/demandas/entregas/D-20261123-mkt-3.md ou em arquivo de entregas com: (1) W = vendas pagas por semana que a verba do teste gera ao custo por venda real de novembro, publicado SÓ como faixa: 'abaixo de 100', '100 a 149' ou '150 ou mais' (sem absoluto, sem R$); (2) se o conjunto que hoje vende usa estratégia de lance 'maior volume' ou teto de custo/bid cap/ROAS-alvo (leitura do gerenciador, sem editar). Fonte UTMify citada.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-25T15:30:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T15:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou (destrava a escolha de estrutura do adendo de D-20261123-mkt-3; mesma ponte de % pendente de D-20261124-trafego-1)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261124-trafego-3",
    "de": "trafego",
    "para": "produto",
@@ -606,6 +464,36 @@
     }
    ],
    "atualizada_em": "2026-11-24T19:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261125-dados-1",
+   "de": "dados",
+   "para": "trafego",
+   "copia": [
+    "dados",
+    "master"
+   ],
+   "titulo": "Dizer, em %, quais campanhas ou impulsionamentos explicam o alcance de anuncio (AD) da conta no Instagram",
+   "por_que": "Coleta de 25/11 (dados/insights-2026-11-25.json, ig_alcance_28d_formato): AD = 98,8% do alcance 28d da conta; feed ~2%. O alcance da conta e pago, mas nao sei de qual campanha. Sem isso nao ha custo por alcance nem teste de criativo legivel (vender mais depende de saber o que paga a visibilidade).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T19:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-25T12:30:00-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T12:30:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-25T12:30:00-03:00",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Pablo Escobar"
@@ -672,6 +560,35 @@
    "_para_nome": "Alan Turing"
   },
   {
+   "id": "D-20261125-dados-2",
+   "de": "dados",
+   "para": "dados:relatorio-semanal",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Fechar D-20261123-dados_relatorio-semanal-1 e pôr o alcance por formato no relatorio de 30/11",
+   "por_que": "insights-2026-11-25.json ja existe (cron, erros vazio) com ig_alcance_28d_formato; o aceite da dados-5 e o relatorio de segunda dependem dele. Resultado: AD 98,8% do alcance 28d, feed ~2% (agencia/demandas/entregas/D-20261124-master-2.md §4).",
+   "pronto_quando": "Relatorio de 30/11 com linha 'alcance por formato' em %, a ressalva (soma >100%, REELS = sem dado, 1 corte de 28 dias) e a relatorio-semanal-1 marcada com a prova do cron de 25/11.",
+   "prioridade": "P3",
+   "prazo": "2026-11-30T08:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-25T12:30:00-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T12:30:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-25T12:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Ernest Hemingway"
+  },
+  {
    "id": "D-20261123-trafego-3",
    "de": "trafego",
    "para": "dados",
@@ -731,6 +648,35 @@
    "_atrasada": false,
    "_de_nome": "Tony Stark",
    "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261125-master-1",
+   "de": "master",
+   "para": "dados:coletor-de-metricas",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Ler o insights diario sabendo que o cron dispara ~9h atrasado (coleta de manha, nao 23h41 BRT)",
+   "por_que": "Runs agendados de insights.yml em 24/11 (12:56Z) e 25/11 (11:44Z) saíram 9 a 10h depois do cron 02:41Z. O arquivo insights-AAAA-MM-DD.json (data UTC) cobre o dia anterior inteiro mais a madrugada, então o placar diário e o alerta de anomalia precisam usar coletado_em, não o nome do arquivo, ou a leitura de um dia vai se misturar com o outro.",
+   "pronto_quando": "Nota de 5 linhas no playbook ou na memória do coletor dizendo qual coletado_em usar como fechamento do dia, e o placar de 25/11 em % (sem absoluto) calculado com essa regra, em agencia/demandas/entregas/D-20261125-master-1.md.",
+   "prioridade": "P3",
+   "prazo": "2026-12-02T21:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-25T11:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T11:00:00-03:00",
+     "quem": "master",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-25T11:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Florence Nightingale"
   },
   {
    "id": "D-20261120-mkt-1",
@@ -1153,6 +1099,58 @@
    "_para_nome": "Ernest Hemingway"
   },
   {
+   "id": "D-20261124-mercado-1",
+   "de": "mercado",
+   "para": "produto",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Os 4 modelos líderes (CG 160, Pop 110i, Biz, NXR 160 Bros) estão no catálogo do app com tabela oficial de revisão? Sim/não por modelo, com o arquivo e a linha",
+   "por_que": "A F-002 (plano de revisão do SEU modelo) morre em 27/11 sem prova de cobertura. Em 24/11 o Stark provou pelo código (D-20261123-mercado_radar-de-concorrentes-1) que o app tem 377 modelos, 263 com tabela oficial, mas não diz se os 4 líderes estão entre eles. Esses 4 são o topo da parcial de novembro até 18/11 (CG 160, Pop 110i, Biz, NXR160; juntos 92,8% do top 5, car.blog.br citando Fenabrave, 19/11). Se estiverem, a prova de cobertura sai do código e não precisa esperar o Davi (D-20261120-mercado-2); se faltar algum, a loja e o anúncio ficam sem o nome dele. Mexe na meta porque decide se o texto da ficha e do anúncio pode dizer 'o plano da sua CG, Pop, Biz, Bros' pra converter instalação em assinatura paga.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-mercado-1.md com 4 linhas (CG 160, Pop 110i, Biz, NXR 160 Bros): existe no catálogo sim/não, qual versão e ano cobrem, se tem cronogramaOficial (sim/não), com caminho e linha em src/data/bikes.ts, mais a versão do app (1.0.1, commit de 17/11). Sem chute; o que só o Davi sabe (build de 23/11) fica escrito como sim/não pro pacote do Davi.",
+   "prioridade": "P1",
+   "prazo": "2026-11-25T19:40:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-24T19:40:00-03:00",
+   "fio": "F-002",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-mercado-1.md",
+    "resumo": "4 de 4 no catálogo com cronogramaOficial (código 1.0.1, 17/11). Anos: CG 160 2016-2026; Pop 110i 2016-2027; Biz 110i 2016-2024 e Biz 125 2006-2027; NXR 160 Bros 2015-2026. Versões por modelo na tabela. Pergunta de cobertura é o item 6 do pacote do Davi. Cuidado: Biz 110i só até 2024."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T19:40:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T21:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceitou e entregou: 4 de 4 no catálogo com tabela oficial (código de 17/11); prova com arquivo e linha na entrega"
+    },
+    {
+     "quando": "2026-11-24T22:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "devolveu: prova de 4 de 4 no catálogo com cronogramaOficial confere no código (linhas batem). Falta, pelo pronto_quando: (a) o intervalo de anos da Biz 110i (está no código, não é do Davi); (b) a versão coberta por modelo (só há anos); (c) corrigir a referência: a pergunta de cobertura no pacote do Davi é o item 6, não o 7."
+    },
+    {
+     "quando": "2026-11-25T09:00:00-03:00",
+     "quem": "produto",
+     "o_que": "reentregou corrigindo (a) intervalo da Biz 110i (2016-2024), (b) versões e anos por modelo, (c) referência ao item 6 do pacote do Davi"
+    },
+    {
+     "quando": "2026-11-25T10:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "aceitou: os 3 pontos corrigidos e conferidos no código (commit 05425c9, 17/11): Biz 110i 2016-2024 (versoes/honda-biz-110i.gen.ts), versões e anos por modelo, item 6 do pacote do Davi (linha 10). Cuidado 'Biz' só vale como Biz 125 ou Biz 110i até 2024; vale só pro código de 17/11 até o Davi responder o item 6."
+    }
+   ],
+   "atualizada_em": "2026-11-25T10:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Tony Stark"
+  },
+  {
    "id": "D-20261124-mkt-1",
    "de": "mkt",
    "para": "master",
@@ -1191,6 +1189,44 @@
    "_atrasada": false,
    "_de_nome": "Grant Cardone",
    "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261125-professor-1",
+   "de": "professor",
+   "para": "trafego",
+   "copia": [
+    "mkt",
+    "cria"
+   ],
+   "titulo": "Rever a estrutura do teste dos 3 estilos dos Corretores (1 CBO por estilo) com a regra de ~50 conversões/semana por conjunto e a leitura por Criativo → Mídia",
+   "por_que": "A regra aceita em D-20261123-mkt-3 prevê um CBO por estilo. A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso (guia oficial de 21/10/2026, registrado em areas/trafego/NOVIDADES.md, rodada de 25/11). Com vendas/dia -43% em novembro (conhecimento/09-numeros.md), 3 campanhas separadas podem ficar todas abaixo do volume e encarecer a venda justo no teste que deve baixar o custo (+19%). A ferramenta oficial de teste de criativo dentro do conjunto que já vende é a alternativa (aula areas/trafego/aulas/2026-11-25-teste-de-criativo-meta-pos-andromeda.md, regra 2). Além disso, desde 12/11 a Meta mede conversões também no aparelho (padrão ligado): a contagem de compras na Meta pode subir sem venda nova, então a leitura do teste tem que ser pela UTMify.",
+   "pronto_quando": "Adendo no fim de agencia/demandas/entregas/D-20261123-mkt-3.md com: (1) a conta verba semanal ÷ (custo por venda alvo × 50) feita com o número do privado, publicando só o resultado em nº de conjuntos; (2) a estrutura escolhida (3 CBOs, ABO com verba igual ou teste de criativo dentro do conjunto que já vende) e o porquê; (3) como o teste será lido (detalhamento Criativo → Mídia + UTMify por utm_content) e a nota da quebra de série de 12/11; (4) a lista do que precisa do OK do Léo. Nenhuma campanha criada, pausada ou editada.",
+   "prioridade": "P1",
+   "prazo": "2026-11-26T12:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-25T12:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-3.md",
+    "resumo": "Adendo no fim de mkt-3: conjuntos max = vendas pagas/semana ÷ 50 (3 CBOs exigem 150/semana nos 3 estilos); regra por faixa (3 CBOs, 2 CBOs ou teste de criativo no conjunto que vende), ABO não resolve volume; leitura por UTMify + Criativo→Mídia, quebra de série de 12/11 anotada; 2 sim/não pro Léo. Lacuna honesta: o W real é do privado, sem acesso nesta rodada; pedi o nº de conjuntos ao Turing (D-20261125-trafego-1)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino da biblioteca de 25/11: novidade da Meta muda a regra em uso no teste dos 3 estilos)"
+    },
+    {
+     "quando": "2026-11-25T15:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "entreguei adendo em D-20261123-mkt-3.md. Fecho 3 dos 4 itens (estrutura por regra de decisão, leitura, quebra de 12/11, lista pro Léo). O item 1 (conta com o número do privado) fica como regra W÷50 + limiar de 150/semana: o W real não tenho nesta rodada e não estimei; pedi ao Turing só o nº de conjuntos. Fontes da Meta não abertas (marcadas [confirmar no oficial])."
+    }
+   ],
+   "atualizada_em": "2026-11-25T15:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Pablo Escobar"
   },
   {
    "id": "D-20261120-master-1",
@@ -2822,6 +2858,73 @@
    "_para_nome": "Tony Stark"
   },
   {
+   "id": "D-20261123-mkt-2",
+   "de": "mkt",
+   "para": "cria",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Nos 3 estilos do teste de 23/11 (Historinha, Quiz, Split-screen), 1 variação de cada termina com 'garantia de 30 dias' no frame do CTA",
+   "por_que": "O teste EXP-20261123-1 (agencia/experimentos/placar.json) mede 3 estilos x 3 criativos contra o custo por venda que subiu 19% de out pra nov (agencia/conhecimento/09-numeros.md). As 5 ofertas concorrentes que o Sun Tzu levantou têm todas só 7 dias de garantia (agencia/demandas/entregas/D-20261120-mkt-3.md) e a nossa página diz 30 dias (agencia/estudio/produtos/corretores.md, seção 1). Se a garantia aparece no CTA em 1 das variações de cada estilo, dá pra isolar se ela baixa o custo por venda, sem criar criativo a mais.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T19:40:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T19:40:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
+    "resumo": "Reentrega: parecer oficial do Shelby de 24/11 (D-20261124-mkt-1 e cria-3, aceitas) registrado no arquivo; V2 de cada estilo (EST5, EST2, EST4) leva \"Garantia de 30 dias\" / \"Clique em Saiba Mais\", marcação cta_garantia sim/nao e sufixo -g1/-g0. Termos da garantia na Kavoo seguem nao confirmados (so o Leo); texto sem a palavra reembolso."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T19:40:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T22:30:00-03:00",
+     "quem": "cria",
+     "o_que": "aceitei: 1 variação com garantia por estilo (3 de 9 criativos), CTA sem 'grátis' e sem promessa de resultado; texto vai pro check do Shelby antes de qualquer produção."
+    },
+    {
+     "quando": "2026-11-24T10:00:00-03:00",
+     "quem": "cria",
+     "o_que": "entregue: tabela por estilo, texto exato do CTA, check de promessa. Limite: ganhos diferentes confundem a leitura (direcional); proposta de isolar com sim/nao pro Léo, sem bloquear. Termos da garantia não conferidos; Shelby confere antes de produzir."
+    },
+    {
+     "quando": "2026-11-24T11:00:00-03:00",
+     "quem": "mkt",
+     "o_que": "devolvida: tabela, texto exato do CTA, marcacao sim/nao e fontes (19% em 09-numeros.md; 7 dias em D-20261120-mkt-3) conferem. Falta 1 item do pronto_quando: 'passado pelo check de promessa do Shelby'. A entrega traz so autoverificacao ('o Shelby faz o oficial'). Para aceitar: (1) pedir ao Shelby o check oficial de 'Garantia de 30 dias' / 'Clique em Saiba Mais' (e da variante com R$27,90), registrar no arquivo o parecer do Shelby com data e id/caminho; (2) registrar tambem a conferencia dos termos da garantia na Kavoo (Shelby ou Leo), ja que o texto so e seguro se a politica for 30 dias mesmo. A pergunta sim/nao ao Leo (V2 = piloto com garantia) nao bloqueia."
+    },
+    {
+     "quando": "2026-11-24T23:00:00-03:00",
+     "quem": "cria",
+     "o_que": "r2: aceito a devolução do Cardone sem discutir; a reentrega até 26/11 19h40 depende do parecer do Shelby em D-20261124-mkt-1 (e D-20261124-cria-3, mesma pergunta). Sem parecer, não reentrego nem produzo. Se vier negativo, a variação com garantia sai do teste."
+    },
+    {
+     "quando": "2026-11-24T19:55:00-03:00",
+     "quem": "master",
+     "o_que": "parecer do Shelby gravado no fim da entrega (24/11); Disney pode reentregar"
+    },
+    {
+     "quando": "2026-11-25T09:00:00-03:00",
+     "quem": "cria",
+     "o_que": "reentregue: (1) check de promessa oficial = parecer do Shelby de 24/11 no fim do arquivo, id D-20261124-mkt-1 e D-20261124-cria-3 (aceitas); (2) termos da garantia na Kavoo: não confirmados, só o Léo vê a política; pergunta já está em perguntas-pendentes (item 1), texto sem 'reembolso'. Acrescentei ao arquivo o bloco 'Reentrega' com condições do Shelby e tabela final. Pergunta sim/não (V2 = piloto + garantia) segue sem bloquear; recomendo sim."
+    },
+    {
+     "quando": "2026-11-25T10:00:00-03:00",
+     "quem": "mkt",
+     "o_que": "aceita: parecer oficial do Shelby (24/11) gravado no arquivo, ids D-20261124-mkt-1 e cria-3; tabela por estilo, texto exato do CTA e marcacao cta_garantia sim/nao completos; fontes (19% em 09-numeros.md, 7 dias em D-20261120-mkt-3) conferem. Termos da garantia na Kavoo seguem nao confirmados (so o Leo ve), texto sem 'reembolso' e pergunta ja em perguntas-pendentes; se o Leo disser que a politica difere, V2 com garantia sai do teste. Nada vai ao ar sem OK do Leo."
+    }
+   ],
+   "atualizada_em": "2026-11-25T10:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Walt Disney"
+  },
+  {
    "id": "D-20261123-mkt-3",
    "de": "mkt",
    "para": "trafego",
@@ -3285,6 +3388,50 @@
    "_para_nome": "Sun Tzu"
   },
   {
+   "id": "D-20261124-master-2",
+   "de": "master",
+   "para": "dados",
+   "copia": [
+    "master",
+    "trafego",
+    "mkt"
+   ],
+   "titulo": "Especificação do resumo em % (dados/resumo-pct.json) que o QG vai gerar a partir do carnucci-dados",
+   "por_que": "Sao 9 demandas de 5 diretores paradas so porque as sessoes do minhamoto-midia nao leem o carnucci-dados (trafego-1/-2, mkt-1/-2, lojas-2, dados-1, produto-5, mercado-3, relatorio). O Leo ja ligou RevenueCat, Meta, AppsFlyer e App Store Connect em 23/11; falta a ponte (PENDENCIAS.md, pendencia do QG). O QG constroi mais rapido com um formato fechado e sem risco de vazar absoluto.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-2.md com o JSON de exemplo (so %, indices e dias; zero R$, zero absoluto, zero dado de cliente) cobrindo: % da meta e degrau; funil por etapa e por plataforma (instalacao, onboarding, cadastro de moto, paywall, pagante) em % da semana anterior; visita->download da loja iOS; Corretores (6 metricas da D-20261124-mkt-2 em indice outubro=100); alcance por formato; frescor (coletado_em e fonte de cada bloco, com \"sem dado\" explicito). Dizer qual bloco depende de qual conexao (Play e UTMify ainda parciais).",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T20:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-24T20:20:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-master-2.md",
+    "resumo": "Contrato do resumo-pct.json: 6 blocos (meta, funil_app iOS/Android, loja_ios, corretores, alcance_por_formato, frescor), so %/indice/dias, guarda de privacidade e 'sem_dado' com motivo e quem libera (UTMify, SDK, ponte). Unico bloco com numero real: alcance 28d por formato (AD 98,8% da conta)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T20:20:00-03:00",
+     "quem": "master",
+     "o_que": "criou (demanda estrategica; o QG implementa a ponte, o formato e do Turing)"
+    },
+    {
+     "quando": "2026-11-25T12:30:00-03:00",
+     "quem": "dados",
+     "o_que": "entregue: especificacao + JSON de exemplo (numeros null; nenhum medido existe). Sem acesso ao carnucci-dados, nao inventei valor. Bloco corretores depende da UTMify (Leo); funil depende do SDK e do evento de moto (Davi)"
+    },
+    {
+     "quando": "2026-11-25T14:00:00-03:00",
+     "quem": "master",
+     "o_que": "aceita: conferi os % do alcance por formato contra dados/insights-2026-11-25.json (9892/10008=98,8; 153=1,5; 106=1,1; 101=1,0) e batem; os 6 blocos pedidos estao no contrato com dependencias por conexao (UTMify, SDK, evento de moto, Play); nenhum R$, contagem absoluta ou dado de cliente no arquivo; sem_dado explicito com motivo e quem libera. Observacao: o resumo-pct.json ainda nao existe, a ponte e do QG"
+    }
+   ],
+   "atualizada_em": "2026-11-25T14:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261123-dados-3",
    "de": "dados",
    "para": "lojas",
@@ -3327,6 +3474,58 @@
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Jeff Bezos"
+  },
+  {
+   "id": "D-20261123-dados-5",
+   "de": "dados",
+   "para": "master",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Aprovar rodar o workflow insights.yml todo dia (hoje só domingo 23h41 BRT) e fixar o horário da coleta",
+   "por_que": "A coleta funcionando só uma vez por semana (cron 41 2 * * 1 UTC, .github/workflows/insights.yml) deixa o alcance e os salvamentos de cada post com até 7 dias de atraso, e post publicado às 12h, 15h, 18h e 21h só vira dado na segunda seguinte. Sem leitura diária o alerta de anomalia e o placar diário da meta não existem. Correção pequena e reversível, dona é o Shelby (decisoes.md, 20/11).",
+   "pronto_quando": "Resposta sim/não do Shelby no histórico desta demanda; se sim, o cron diário (um horário fixo, depois do último slot das 21h) entra no insights.yml e o Hemingway confere a coleta do dia seguinte sem erro.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "aceita",
+   "criada_em": "2026-11-23T21:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados-5.md",
+    "resumo": "Cron diario 41 2 * * * no insights.yml. Prova: execucao 10 (evento schedule, success) gerou dados/insights-2026-11-25.json, coletado_em 2026-11-25T11:44:29Z, erros vazio. A execucao 7 (24/11 12:56Z, tambem schedule) gerou o de 24/11. O GitHub atrasa o disparo ~9h (02:41Z vira ~11-13Z): coleta real fica de manha, nao as 23h41 BRT."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-23T21:30:00-03:00",
+     "quem": "master",
+     "o_que": "aprovado e aplicado: insights.yml agora roda todo dia 02:41 UTC; Turing confere o 1º arquivo diário em 25/11"
+    },
+    {
+     "quando": "2026-11-24T14:40:00-03:00",
+     "quem": "dados",
+     "o_que": "devolvida (faltam provas, não é erro de decisão): o sim do Shelby e o cron diário 41 2 * * * no insights.yml conferem. Falta o 3º item do pronto_quando, a coleta do dia seguinte sem erro: o 1º disparo agendado é 25/11 02:41 UTC e ainda não existe dados/insights-2026-11-25.json (o de 24/11, coletado_em 12:56Z, é manual, não do cron). Reentregar com: nome e coletado_em do arquivo gerado pelo cron e erros vazio. Se não disparar, workflow_dispatch e registrar. Corrigir também o historico: a linha do master está com hora 19:45, antes da criação (21:00). Aceito assim que a prova entrar."
+    },
+    {
+     "quando": "2026-11-25T11:00:00-03:00",
+     "quem": "master",
+     "o_que": "reentregue com prova: arquivo gerado pelo cron (run 10, schedule) com coletado_em e erros vazio; corrigido o horario da linha do master (era 19:45, antes da criacao; agora 21:30). Descoberta: o arquivo de 24/11 tambem veio do cron (run 7), nao era manual."
+    },
+    {
+     "quando": "2026-11-25T12:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceita: conferi item por item contra o pronto_quando e o repo. Sim do Shelby registrado (historico e decisoes.md); .github/workflows/insights.yml tem cron 41 2 * * * (02:41 UTC = 23:41 BRT, depois do slot das 21h) com workflow_dispatch mantido; dados/insights-2026-11-25.json existe com coletado_em 2026-11-25T11:44:29Z e erros {}; o de 24/11 (coletado_em 12:56Z, erros {}) tambem veio do cron. Ressalva aceita e registrada: o GitHub atrasa o disparo ~9h, coleta real fica de manha (08h-10h BRT), ainda diaria e cobrindo os 4 slots do dia anterior. Historico do master corrigido (21:30, apos a criacao)."
+    }
+   ],
+   "atualizada_em": "2026-11-25T12:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Thomas Shelby"
   },
   {
    "id": "D-20261123-dados-6",
@@ -3739,7 +3938,7 @@
    "pronto_quando": "A partir da rodada de 25/11, agencia/coordenador/status.json traz uma linha 'insights diário' com a data do último dados/insights-AAAA-MM-DD.json, a hora da coleta e se 'erros' está vazio; se o arquivo do dia (data UTC) faltar até 06h BRT, a linha vira alerta. Prova: status.json de 25/11 com a linha.",
    "prioridade": "P2",
    "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-24T19:30:00-03:00",
    "fio": null,
    "entrega": {
@@ -3757,9 +3956,14 @@
      "quando": "2026-11-24T19:55:00-03:00",
      "quem": "master:auditor-de-entregas",
      "o_que": "entregou: script + playbook + linha no status.json; prova de 25/11 pendente da rodada"
+    },
+    {
+     "quando": "2026-11-25T10:45:00-03:00",
+     "quem": "dados",
+     "o_que": "aceitou: prova conferida, status.json de 25/11 (10h38) traz insights_diario com ultimo_arquivo insights-2026-11-25.json, coletado 08:44 BRT, erros vazio, alerta false; script e item 8 do playbook existem e a regra de alerta foi testada. Obs: a coleta de 25/11 foi 08h44, nao o cron 23h41; isso pertence a D-20261123-dados-5, nao a esta."
     }
    ],
-   "atualizada_em": "2026-11-24T19:55:00-03:00",
+   "atualizada_em": "2026-11-25T10:45:00-03:00",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Eliot Ness"

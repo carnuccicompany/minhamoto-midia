@@ -10,7 +10,7 @@
   "pronto_quando": "A partir da rodada de 25/11, agencia/coordenador/status.json traz uma linha 'insights diário' com a data do último dados/insights-AAAA-MM-DD.json, a hora da coleta e se 'erros' está vazio; se o arquivo do dia (data UTC) faltar até 06h BRT, a linha vira alerta. Prova: status.json de 25/11 com a linha.",
   "prioridade": "P2",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T19:30:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,7 +28,12 @@
       "quando": "2026-11-24T19:55:00-03:00",
       "quem": "master:auditor-de-entregas",
       "o_que": "entregou: script + playbook + linha no status.json; prova de 25/11 pendente da rodada"
+    },
+    {
+      "quando": "2026-11-25T10:45:00-03:00",
+      "quem": "dados",
+      "o_que": "aceitou: prova conferida, status.json de 25/11 (10h38) traz insights_diario com ultimo_arquivo insights-2026-11-25.json, coletado 08:44 BRT, erros vazio, alerta false; script e item 8 do playbook existem e a regra de alerta foi testada. Obs: a coleta de 25/11 foi 08h44, nao o cron 23h41; isso pertence a D-20261123-dados-5, nao a esta."
     }
   ],
-  "atualizada_em": "2026-11-24T19:55:00-03:00"
+  "atualizada_em": "2026-11-25T10:45:00-03:00"
 }

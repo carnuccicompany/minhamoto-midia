@@ -10,12 +10,12 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-mercado-1.md com 4 linhas (CG 160, Pop 110i, Biz, NXR 160 Bros): existe no catálogo sim/não, qual versão e ano cobrem, se tem cronogramaOficial (sim/não), com caminho e linha em src/data/bikes.ts, mais a versão do app (1.0.1, commit de 17/11). Sem chute; o que só o Davi sabe (build de 23/11) fica escrito como sim/não pro pacote do Davi.",
   "prioridade": "P1",
   "prazo": "2026-11-25T19:40:00-03:00",
-  "status": "devolvida",
+  "status": "aceita",
   "criada_em": "2026-11-24T19:40:00-03:00",
   "fio": "F-002",
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261124-mercado-1.md",
-    "resumo": "CG 160, Pop 110i, Biz (110i e 125) e NXR 160 Bros: sim no catálogo, todos com cronogramaOficial, código 1.0.1 de 17/11 (indice.gen.ts e honda-*.ts, linhas no arquivo). Intervalo de anos da Biz 110i não conferido; build de 23/11 fica no pacote do Davi."
+    "resumo": "4 de 4 no catálogo com cronogramaOficial (código 1.0.1, 17/11). Anos: CG 160 2016-2026; Pop 110i 2016-2027; Biz 110i 2016-2024 e Biz 125 2006-2027; NXR 160 Bros 2015-2026. Versões por modelo na tabela. Pergunta de cobertura é o item 6 do pacote do Davi. Cuidado: Biz 110i só até 2024."
   },
   "cobrancas": 0,
   "historico": [
@@ -33,7 +33,17 @@
       "quando": "2026-11-24T22:00:00-03:00",
       "quem": "mercado",
       "o_que": "devolveu: prova de 4 de 4 no catálogo com cronogramaOficial confere no código (linhas batem). Falta, pelo pronto_quando: (a) o intervalo de anos da Biz 110i (está no código, não é do Davi); (b) a versão coberta por modelo (só há anos); (c) corrigir a referência: a pergunta de cobertura no pacote do Davi é o item 6, não o 7."
+    },
+    {
+      "quando": "2026-11-25T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "reentregou corrigindo (a) intervalo da Biz 110i (2016-2024), (b) versões e anos por modelo, (c) referência ao item 6 do pacote do Davi"
+    },
+    {
+      "quando": "2026-11-25T10:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceitou: os 3 pontos corrigidos e conferidos no código (commit 05425c9, 17/11): Biz 110i 2016-2024 (versoes/honda-biz-110i.gen.ts), versões e anos por modelo, item 6 do pacote do Davi (linha 10). Cuidado 'Biz' só vale como Biz 125 ou Biz 110i até 2024; vale só pro código de 17/11 até o Davi responder o item 6."
     }
   ],
-  "atualizada_em": "2026-11-24T22:00:00-03:00"
+  "atualizada_em": "2026-11-25T10:00:00-03:00"
 }

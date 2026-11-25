@@ -12,17 +12,30 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-2.md com o JSON de exemplo (so %, indices e dias; zero R$, zero absoluto, zero dado de cliente) cobrindo: % da meta e degrau; funil por etapa e por plataforma (instalacao, onboarding, cadastro de moto, paywall, pagante) em % da semana anterior; visita->download da loja iOS; Corretores (6 metricas da D-20261124-mkt-2 em indice outubro=100); alcance por formato; frescor (coletado_em e fonte de cada bloco, com \"sem dado\" explicito). Dizer qual bloco depende de qual conexao (Play e UTMify ainda parciais).",
   "prioridade": "P2",
   "prazo": "2026-11-26T20:00:00-03:00",
-  "status": "aberta",
+  "status": "aceita",
   "criada_em": "2026-11-24T20:20:00-03:00",
   "fio": "F-001",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-master-2.md",
+    "resumo": "Contrato do resumo-pct.json: 6 blocos (meta, funil_app iOS/Android, loja_ios, corretores, alcance_por_formato, frescor), so %/indice/dias, guarda de privacidade e 'sem_dado' com motivo e quem libera (UTMify, SDK, ponte). Unico bloco com numero real: alcance 28d por formato (AD 98,8% da conta)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T20:20:00-03:00",
       "quem": "master",
       "o_que": "criou (demanda estrategica; o QG implementa a ponte, o formato e do Turing)"
+    },
+    {
+      "quando": "2026-11-25T12:30:00-03:00",
+      "quem": "dados",
+      "o_que": "entregue: especificacao + JSON de exemplo (numeros null; nenhum medido existe). Sem acesso ao carnucci-dados, nao inventei valor. Bloco corretores depende da UTMify (Leo); funil depende do SDK e do evento de moto (Davi)"
+    },
+    {
+      "quando": "2026-11-25T14:00:00-03:00",
+      "quem": "master",
+      "o_que": "aceita: conferi os % do alcance por formato contra dados/insights-2026-11-25.json (9892/10008=98,8; 153=1,5; 106=1,1; 101=1,0) e batem; os 6 blocos pedidos estao no contrato com dependencias por conexao (UTMify, SDK, evento de moto, Play); nenhum R$, contagem absoluta ou dado de cliente no arquivo; sem_dado explicito com motivo e quem libera. Observacao: o resumo-pct.json ainda nao existe, a ponte e do QG"
     }
   ],
-  "atualizada_em": "2026-11-24T20:20:00-03:00"
+  "atualizada_em": "2026-11-25T14:00:00-03:00"
 }

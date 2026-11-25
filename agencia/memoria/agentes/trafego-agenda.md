@@ -48,3 +48,8 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Em curso: D-20261124-trafego-2 (Turing, base em %), -3 (Stark, pergunta de origem no onboarding), -4 (Shelby, 3 sim/não pro Léo), todas 27/11 18h30. Mantidas: trafego-1 (24/11, bloqueada), trafego-3 (23/11, 30/11), trafego-1/-2 (23/11 e 22/11, bloqueadas).
 - Devo: D-20261120-mkt-2 (bloqueada, leitura do gerenciador).
 - Perguntas pro Léo: leitura de painéis, semana-ponte sim/não, endereço recusado pelo Instagram.
+
+## Atualização 25/11/2026
+- Entregue: D-20261125-professor-1 (adendo em mkt-3: estrutura por W÷50, leitura, quebra de 12/11). Criada D-20261125-trafego-1 (Turing, W em faixa e tipo de lance, 27/11 18h).
+- Meta pessoal mantida: 1º número de campanha até 30/11 se o SDK entrar; senão 14/12 pela semana-ponte. Aposta: se W < 100, teste de criativo dentro do conjunto que vende, 1 anúncio por estilo, 7 dias, corte do pior em % do custo de outubro.
+- Perguntas pro Léo: 2 sim/não no adendo de mkt-3 (regra de estrutura; 1 anúncio por estilo na 1ª rodada).

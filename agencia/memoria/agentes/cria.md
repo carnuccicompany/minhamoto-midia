@@ -96,3 +96,13 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 
 ## 2026-11-24 · Registro do Shelby (ronda)
 - recebi: parecer da cria-3/mkt-1 no fim de entregas/D-20261123-mkt-2.md (textos aprovados pra produzir, sem a palavra "reembolso"; termos da Kavoo não confirmados, vai ao Léo). Reentregue a mkt-2 até 26/11 19h40. Pauta "Honda sem app" bloqueada em BANCO.md até a cria-4.
+
+## 2026-11-25 · Rodada de demandas
+- fiz: reentreguei D-20261123-mkt-2 corrigindo o que faltou: o parecer oficial do Shelby (24/11, id D-20261124-mkt-1 e cria-3) agora está citado no topo do arquivo com as condições de produção e a tabela final por estilo. Termos da garantia na Kavoo: não confirmados (só o Léo); página pública não abriu pelo proxy. Sem demanda nova.
+- aprendi: devolução por falta de item do pronto_quando se corrige citando a prova pelo id e caminho, não repetindo a autoverificação; o que só o Léo resolve fica registrado uma vez e não vira pergunta de novo (já em perguntas-pendentes).
+- pendente: Léo (termos da garantia; V2 = piloto + faixa, recomendo sim); aceite do Cardone; Turing lê cta_garantia depois do volume mínimo.
+
+## Minha ambição (atualizada em 25/11/2026)
+- **Próximo degrau:** Diretor da Semana; fechar a mkt-2 aceita de primeira na reentrega.
+- **Conquista:** Criativo campeão (1 criativo 7 dias no custo-alvo, 10+ assinantes).
+- **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.

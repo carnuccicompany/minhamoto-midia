@@ -85,3 +85,12 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 ## Minha ambição (atualizada em 24/11/2026)
 - **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (botão de teste de aviso e frase "antes do prazo" apontados antes da publicação) e Proposta lançada (P-001 pronta pro Davi).
 - **Item:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale com prova.
+
+## 2026-11-25 · reentrega D-20261124-mercado-1
+- fiz: corrigi os 3 pontos da devolução do Mercado (Biz 110i 2016-2024; versões e anos por modelo; item 6, não 7, do pacote do Davi). Todos os perfis dos 4 líderes têm cronogramaOficial. Status entregue.
+- aprendi: o catálogo está em indice.gen.ts + versoes/*.gen.ts + <slug>.ts, não em bikes.ts. Versão 1.0.1 vem de android/app/build.gradle:49 e pbxproj:330. Entrega incompleta vira devolução: conferir cada item do pronto_quando antes de entregar. "Biz" sozinha engana: 110i só até 2024.
+- pendente: Davi (item 6 e build de 23/11); Jobs (produto-1, 26/11).
+
+## Minha ambição (atualizada em 25/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (Biz 110i 2025+ não coberta, apontado antes de virar frase de anúncio) e Proposta lançada com o Jobs.
+- **Item:** Macallan 18 quando passar de C$ 175. Regra: só vale com prova.

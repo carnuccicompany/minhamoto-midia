@@ -1,0 +1,27 @@
+{
+  "id": "D-20261125-dados-1",
+  "de": "dados",
+  "para": "trafego",
+  "copia": [
+    "dados",
+    "master"
+  ],
+  "titulo": "Dizer, em %, quais campanhas ou impulsionamentos explicam o alcance de anuncio (AD) da conta no Instagram",
+  "por_que": "Coleta de 25/11 (dados/insights-2026-11-25.json, ig_alcance_28d_formato): AD = 98,8% do alcance 28d da conta; feed ~2%. O alcance da conta e pago, mas nao sei de qual campanha. Sem isso nao ha custo por alcance nem teste de criativo legivel (vender mais depende de saber o que paga a visibilidade).",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T19:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-25T12:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-25T12:30:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    }
+  ],
+  "atualizada_em": "2026-11-25T12:30:00-03:00"
+}

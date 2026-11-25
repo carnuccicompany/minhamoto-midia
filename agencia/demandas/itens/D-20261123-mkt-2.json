@@ -10,12 +10,12 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261123-mkt-2.md com, para cada um dos 3 estilos, qual variação leva o CTA com garantia de 30 dias, o texto exato do CTA (sem 'grátis', sem promessa de renda ou resultado, preço só R$27,90 se citar preço, voz só da Ana Paula), e a marcação clara de qual é a variável pra o Turing ler depois; passado pelo check de promessa do Shelby. Nada vai ao ar.",
   "prioridade": "P2",
   "prazo": "2026-11-26T19:40:00-03:00",
-  "status": "devolvida",
+  "status": "aceita",
   "criada_em": "2026-11-23T19:40:00-03:00",
   "fio": null,
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261123-mkt-2.md",
-    "resumo": "V2 de cada estilo (Historinha, Quiz, Split-screen) leva faixa \"Garantia de 30 dias\" + \"Clique em Saiba Mais\" no frame, só texto (voz só da Ana Paula); marcação cta_garantia sim/nao e sufixo -g1/-g0 pro Turing."
+    "resumo": "Reentrega: parecer oficial do Shelby de 24/11 (D-20261124-mkt-1 e cria-3, aceitas) registrado no arquivo; V2 de cada estilo (EST5, EST2, EST4) leva \"Garantia de 30 dias\" / \"Clique em Saiba Mais\", marcação cta_garantia sim/nao e sufixo -g1/-g0. Termos da garantia na Kavoo seguem nao confirmados (so o Leo); texto sem a palavra reembolso."
   },
   "cobrancas": 0,
   "historico": [
@@ -48,7 +48,17 @@
       "quando": "2026-11-24T19:55:00-03:00",
       "quem": "master",
       "o_que": "parecer do Shelby gravado no fim da entrega (24/11); Disney pode reentregar"
+    },
+    {
+      "quando": "2026-11-25T09:00:00-03:00",
+      "quem": "cria",
+      "o_que": "reentregue: (1) check de promessa oficial = parecer do Shelby de 24/11 no fim do arquivo, id D-20261124-mkt-1 e D-20261124-cria-3 (aceitas); (2) termos da garantia na Kavoo: não confirmados, só o Léo vê a política; pergunta já está em perguntas-pendentes (item 1), texto sem 'reembolso'. Acrescentei ao arquivo o bloco 'Reentrega' com condições do Shelby e tabela final. Pergunta sim/não (V2 = piloto + garantia) segue sem bloquear; recomendo sim."
+    },
+    {
+      "quando": "2026-11-25T10:00:00-03:00",
+      "quem": "mkt",
+      "o_que": "aceita: parecer oficial do Shelby (24/11) gravado no arquivo, ids D-20261124-mkt-1 e cria-3; tabela por estilo, texto exato do CTA e marcacao cta_garantia sim/nao completos; fontes (19% em 09-numeros.md, 7 dias em D-20261120-mkt-3) conferem. Termos da garantia na Kavoo seguem nao confirmados (so o Leo ve), texto sem 'reembolso' e pergunta ja em perguntas-pendentes; se o Leo disser que a politica difere, V2 com garantia sai do teste. Nada vai ao ar sem OK do Leo."
     }
   ],
-  "atualizada_em": "2026-11-24T19:55:00-03:00"
+  "atualizada_em": "2026-11-25T10:00:00-03:00"
 }

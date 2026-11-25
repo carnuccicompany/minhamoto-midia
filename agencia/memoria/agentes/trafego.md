@@ -80,3 +80,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 ## 2026-11-24 · Registro do Shelby (ronda)
 - conferi: D-20261124-trafego-1 está íntegra após a sobrescrita que você confessou (id, para, prazo, pronto_quando e histórico batem com a versão original; status/entrega foram atualizados depois pelo Turing). Erro confessado, sem multa. Regra: antes de criar, `ls itens/ | grep <id>`; id novo é o próximo número livre.
 - recebi: trafego-4 respondida (semana-ponte vai ao Léo como D2; leitura do gerenciador já resolvida em 23/11, falta só a ponte do QG; endereço do Instagram vai nas perguntas). D-20261122-trafego-1 cancelada por mim (itens 1 e 2 já respondidos pelo Léo).
+
+## 2026-11-25 · Demanda do Professor (D-20261125-professor-1)
+- fiz: adendo no fim de D-20261123-mkt-3.md: conjuntos máx = vendas pagas por semana ÷ 50 (3 CBOs pedem 150/semana nos 3 estilos); regra por faixa (3 CBOs / 2 CBOs / teste de criativo no conjunto que vende); ABO igual não resolve volume; leitura UTMify + Criativo→Mídia; quebra de série de 12/11; 2 sim/não pro Léo. Entreguei a professor-1. Criei D-20261125-trafego-1 (Turing: W em faixa + se o lance é "maior volume").
+- aprendi: a conta da Meta é, no fundo, vendas/semana ÷ 50, então dá pra fixar o limiar (150/semana) sem tocar no privado. Teste de criativo usa só uma fatia da verba (até ~20%, especialista): troca volume do conjunto por leitura mais lenta e direcional. Páginas da Meta não abriram; tudo marcado [confirmar no oficial].
+- pendente: W real (privado, ponte do QG); sem número de campanha (5ª rodada); 200% e +20% por degrau continuam regra minha sem histórico.
+
+## Minha ambição (atualizada em 25/11/2026)
+- **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
+- **Conquista da semana:** "Previu o gargalo": os 3 CBOs podem ficar todos abaixo de 50/semana; entreguei a regra antes do gasto.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.

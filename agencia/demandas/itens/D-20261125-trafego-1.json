@@ -1,0 +1,27 @@
+{
+  "id": "D-20261125-trafego-1",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "trafego",
+    "master",
+    "professor"
+  ],
+  "titulo": "Dizer em nº de conjuntos (e só isso) quantas vendas pagas por semana a verba do teste dos 3 estilos gera ao custo de novembro, e se o conjunto atual usa 'maior volume'",
+  "por_que": "A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso; 3 CBOs só cabem com 150 vendas pagas por semana nos 3 estilos (adendo de 25/11 em agencia/demandas/entregas/D-20261123-mkt-3.md). Vendas/dia -43% em novembro (09-numeros.md): sem esse número o teste que deve baixar o custo (+19%) pode encarecê-lo.",
+  "pronto_quando": "Resposta no fim de agencia/demandas/entregas/D-20261123-mkt-3.md ou em arquivo de entregas com: (1) W = vendas pagas por semana que a verba do teste gera ao custo por venda real de novembro, publicado SÓ como faixa: 'abaixo de 100', '100 a 149' ou '150 ou mais' (sem absoluto, sem R$); (2) se o conjunto que hoje vende usa estratégia de lance 'maior volume' ou teto de custo/bid cap/ROAS-alvo (leitura do gerenciador, sem editar). Fonte UTMify citada.",
+  "prioridade": "P2",
+  "prazo": "2026-11-27T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-25T15:30:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-25T15:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou (destrava a escolha de estrutura do adendo de D-20261123-mkt-3; mesma ponte de % pendente de D-20261124-trafego-1)"
+    }
+  ]
+}

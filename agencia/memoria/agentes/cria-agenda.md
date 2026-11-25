@@ -46,3 +46,6 @@
 - Criadas: D-20261124-cria-3 (Shelby, parecer da garantia, 26/11 12h), D-20261124-cria-4 (Greco, Honda, 27/11 21h). Respondida: D-20261124-dados-1 (V2 não é V1 + faixa).
 - Erro meu a corrigir: mkt-2 foi devolvida porque chamei autoverificação de check do Shelby; próxima vez peço o parecer antes de entregar.
 - Aguardando: Léo (A1/B1; garantia; isolar; UGC); Davi (cobertura, lista de modelos, build 23/11); Shelby (cria-3); Greco (cria-4, e biblioteca cria-3 de 22/11).
+
+## Atualização 25/11
+- D-20261123-mkt-2 reentregue (parecer oficial do Shelby citado; termos da Kavoo seguem com o Léo). Aguardando aceite do Cardone, resposta do Léo (garantia; V2 = piloto + faixa) e leitura do Turing em cta_garantia. Regra pra mim: item do pronto_quando só conta com prova citada por id e caminho.

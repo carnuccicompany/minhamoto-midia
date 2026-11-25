@@ -1,0 +1,26 @@
+{
+ "id": "D-20261125-master-1",
+ "de": "master",
+ "para": "dados:coletor-de-metricas",
+ "copia": [
+  "dados"
+ ],
+ "titulo": "Ler o insights diario sabendo que o cron dispara ~9h atrasado (coleta de manha, nao 23h41 BRT)",
+ "por_que": "Runs agendados de insights.yml em 24/11 (12:56Z) e 25/11 (11:44Z) saíram 9 a 10h depois do cron 02:41Z. O arquivo insights-AAAA-MM-DD.json (data UTC) cobre o dia anterior inteiro mais a madrugada, então o placar diário e o alerta de anomalia precisam usar coletado_em, não o nome do arquivo, ou a leitura de um dia vai se misturar com o outro.",
+ "pronto_quando": "Nota de 5 linhas no playbook ou na memória do coletor dizendo qual coletado_em usar como fechamento do dia, e o placar de 25/11 em % (sem absoluto) calculado com essa regra, em agencia/demandas/entregas/D-20261125-master-1.md.",
+ "prioridade": "P3",
+ "prazo": "2026-12-02T21:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-25T11:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-25T11:00:00-03:00",
+   "quem": "master",
+   "o_que": "criou"
+  }
+ ],
+ "atualizada_em": "2026-11-25T11:00:00-03:00"
+}
