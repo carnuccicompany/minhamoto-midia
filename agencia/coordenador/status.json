@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-24T23:10:00-03:00",
+  "rodada": "2026-11-24T23:40:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -10,7 +10,7 @@
     "produção diária": "desativada — prevista em PENDENCIAS",
     "coordenador": "ok (:09 SUCCEEDED 17h09 BRT; :39 esta rodada)",
     "checklist pré-build": "lembrete único 23/11 ativo",
-    "MM: Reunião do Conselho": "ok (SUCCEEDED 20h40 BRT 24/11; próx 19h23 25/11)",
+    "MM: Reunião do Conselho": "ok (SUCCEEDED 24/11 20h40 BRT; próx 19h23 25/11)",
     "MM: Folha de sexta": "ok (SUCCEEDED 20/11; próx 27/11)",
     "Atualizar Mesa 3D com a Folha": "agendada (18h43 BRT)",
     "MM: Mesa de Demandas": "ok (SUCCEEDED 14h37 BRT; próx 10h37 25/11)",
@@ -23,8 +23,8 @@
     "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h14 BRT; próx 09h13 25/11)",
     "MM: Coordenador 24h · :39": "rodando (06h40)",
     "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h09 BRT)",
-    "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 22h39 BRT)",
-    "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (esta rodada, 23h09 BRT)",
+    "MM: Coordenador 24h · :39 (vigia os agentes)": "rodando (esta rodada, 23h39 BRT)",
+    "MM: Coordenador 24h · :09 (vigia os agentes)": "ok (SUCCEEDED 23h09 BRT)",
     "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
     "MM: Leitura da UTMify": "ok (SUCCEEDED 16h00 BRT; próx 07h41 25/11)"
   },
