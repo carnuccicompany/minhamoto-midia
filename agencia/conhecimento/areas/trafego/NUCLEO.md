@@ -6,7 +6,9 @@ Para: Pablo Escobar. Reescrito em 25/11/2026 pelo professor-chefe. Curto de prop
 - App **sem teste grátis**: nada de "teste", "trial", "grátis", "X dias" em plano, funil ou anúncio (20/11).
 - Campanhas dos **Corretores não se editam sem OK do Léo**; leitura sim (18/11). Nada sobe, nada gasta sem OK.
 - **Destino do anúncio conferido** antes de verba: o link do Instagram @minhamotoapp está bloqueado (23/11).
-- Não perguntar de novo: Kavoo + UTMify; custo máximo por assinante no privado; BM só de anúncios adiada (23/11).
+- **Lição mais cara (25/11):** o Perfect Class estourou, a BM caiu, o pixel caiu junto e o produto nunca voltou. Proteger conta e sinal vem ANTES de escalar (BM de anúncios separada, contas de reserva, pixel/dataset compartilhado, CAPI, um pixel por produto). Ver LICOES.md.
+- "Dois produtos ao mesmo tempo, um para de vender" (Léo, 25/11): diagnosticar, não aceitar como "zica".
+- Não perguntar de novo: Kavoo + UTMify; custo máximo por assinante no privado. BM só de anúncios: adiada em 18/11, reaberta como proposta prioritária em 25/11 (decisão do Léo).
 - Sem Black Friday (19/11). Preço MinhaMoto "R$19,90", nunca "por mês"; asset da App Store sem preço (24/11).
 
 ## 2. As regras que mais mexem em venda

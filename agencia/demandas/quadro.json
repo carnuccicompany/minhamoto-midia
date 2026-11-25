@@ -1,13 +1,43 @@
 {
- "atualizado": "2026-11-25T10:41-03:00",
+ "atualizado": "2026-11-25T16:59-03:00",
  "resumo": {
-  "abertas": 13,
+  "abertas": 14,
   "atrasadas": 0,
   "entregues": 7,
   "aceitas": 58,
   "bloqueadas_lider": 21
  },
  "demandas": [
+  {
+   "id": "D-20261125-trafego-2",
+   "de": "master",
+   "para": "trafego",
+   "copia": [
+    "master",
+    "dados",
+    "infoprodutos"
+   ],
+   "titulo": "Plano de blindagem de conta e sinal (BM, pixel, contas de reserva) + diagnóstico de por que 2 produtos não escalam juntos",
+   "por_que": "Relato do Léo em 25/11: o Perfect Class estourou, a BM caiu, o pixel caiu junto e o produto nunca voltou. Ele não quer isso de novo nos Corretores nem no MinhaMoto, e diz que quando roda 2 produtos juntos um para de vender. Ver LICOES.md de tráfego, 25/11.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) mapa de BMs, contas, pixels/datasets e páginas a partir do que já está no repositório; (2) plano de contingência passo a passo com fonte oficial da Meta (BM de anúncios separada, contas de reserva, compartilhar pixel/dataset como parceiro, CAPI, backup de públicos e criativos, o que fazer nas primeiras 24h se a BM cair), cada passo marcado 'Léo faz' ou 'agente faz'; (3) diagnóstico das hipóteses do '2 produtos não escalam juntos', o que medir pra confirmar cada uma e a estrutura recomendada; (4) 1 pergunta sim/não pro Léo: montar a BM de anúncios separada antes de subir as campanhas novas dos Corretores, com recomendação.",
+   "prioridade": "P1",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-25T17:05:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T17:05:00-03:00",
+     "quem": "master",
+     "o_que": "criou a partir do relato do Léo no chat principal"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Pablo Escobar"
+  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
