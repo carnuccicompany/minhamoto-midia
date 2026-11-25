@@ -40,3 +40,11 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 ## 2026-11-24 (rodada da tarde)
 - fiz: vigia do Gmail; 5 e-mails novos, todos informativos (verificações de login e avisos de conta); nada pediu ação.
 - pendente: Spedy (notas rejeitadas) segue aberta, dono Léo, antes de 30/11.
+
+## 2026-11-25 08:00
+- fiz: resumo da caixa de 25/11; 3 assuntos importam (cliente de infoproduto sem material → Cardone, rascunho pronto; aviso ITMS-90725 da Apple → Stark; workflow insights falhou → Stark). Comecei a gravar a Correspondência do Briefing no repositório privado.
+- aprendi: reclamação de material não recebido no infoproduto se repete desde outubro; tratar como problema de entrega, não caso isolado.
+- pendente: cobranças abertas →
+  - [ ] Notas fiscais rejeitadas na Spedy · dono: Léo/Turing · prazo: antes do alerta de 30/11
+  - [ ] Cliente de infoproduto sem material (rascunho pronto) · dono: Léo/Cardone · prazo: hoje
+  - [ ] Migrar build iOS para Xcode 27 · dono: Stark · prazo: antes de abril/2027
