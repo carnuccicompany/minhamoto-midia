@@ -31,7 +31,7 @@ def capa(tt):
     """Foto real (5195567, Pexels): moto vindo na chuva com farol aceso. Título gigante embaixo."""
     L, w = (140, 800) if tt else (90, 900)
     h = 1920 if tt else 1350
-    arq = foto_prep('5195567', crop=(510, 0, 1072, 1000) if tt else (395, 0, 1195, 1000), nome='cm05_capa_tt' if tt else 'cm05_capa')
+    arq = foto_prep('5195567', satura=.6, frio=.12, crop=(510, 0, 1072, 1000) if tt else (395, 0, 1195, 1000), nome='cm05r5_capa_tt' if tt else 'cm05r5_capa')
     c = foto_fundo(arq, pos='50% 0%', forca=.92, topo=.15)
     ty = 820 if tt else 640
     tam = 190 if tt else 196
@@ -64,7 +64,7 @@ def foto_topo(arq, top, h_total):
 def pneu(tt):
     """Foto 12731259 na largura, subida pra roda dianteira aparecer acima do título; farol neutralizado (sem mancha)."""
     L, w = (140, 800) if tt else (90, 900)
-    arq = foto_prep('12731259', neutro=[(756, 968, 46, 44)], escurece=1.35, nome='cm05_pneu2')
+    arq = foto_prep('12731259', satura=.6, frio=.12, neutro=[(756, 968, 46, 44)], escurece=1.35, nome='cm05r5_pneu')
     c = foto_topo(arq, -120 if tt else -330, 1920 if tt else 1350)
     c += barra(1, L, TOPO_IND(tt), 520, tt)
     y1 = 1160 if tt else 1000
@@ -76,7 +76,7 @@ def pneu(tt):
 def freio(tt):
     """Foto 19949302 (disco de freio dianteiro), esfriada pro tom da peça; texto em cima."""
     L, w = (140, 800) if tt else (90, 900)
-    arq = foto_prep('19949302', crop=(0, 250, 1350, 1800), satura=.35, escurece=.82, frio=.18, nome='cm05_freio')
+    arq = foto_prep('19949302', crop=(0, 250, 1350, 1800), satura=.6, escurece=.95, frio=.12, nome='cm05r5_freio')
     c = foto_fundo(arq, pos='50% 100%', degr='escuro_topo', forca=.93, topo=.35)
     c += barra(2, L, TOPO_IND(tt), 520, tt)
     tam = 112 if not tt else 104
@@ -89,20 +89,20 @@ def freio(tt):
 
 def corrente(tt):
     # foto original 37131862, sem a marca do quadro; 4:5 no enquadramento roda + corrente (sem ampliar demais)
-    arq = foto_prep('37131862', crop=(560, 0, 1520, 1200) if not tt else (900, 300, 1500, 1200), escurece=1.15, nome='cm05_corr2' + ('_tt' if tt else ''))
+    arq = foto_prep('37131862', satura=.6, frio=.12, crop=(560, 0, 1520, 1200) if not tt else (900, 300, 1500, 1200), escurece=1.15, nome='cm05r5_corr' + ('_tt' if tt else ''))
     L, w = (140, 800) if tt else (90, 900)
-    c = foto_fundo(arq, pos='50% 50%', forca=.94, topo=.8)
+    c = foto_fundo(arq, pos='50% 50%', degr='escuro_topo', forca=.94, topo=.5)
     c += barra(3, L, TOPO_IND(tt), 520, tt)
     tam = 96 if not tt else 88
     linhas = ['Pegou chuva?', 'Limpe e lubrifique', 'a corrente.']
-    ty = (1500 - 80 - alt_titulo(3, tam, 1.0) - 60) if tt else (1350 - 90 - alt_titulo(3, tam, 1.0) - 60)
+    ty = 380 if tt else 220
     c += titulo(linhas, L, ty, tam, w=w, azul_de=1, lh=1.0)
     c += apoio(['Antes de rodar de novo.'], L, ty + alt_titulo(3, tam, 1.0) + 26, 36 if not tt else 32, w=w, cor='#F4F7FC')
     return c + pag(4, N, tt)
 
 def visto(tt):
     """Foto 33136700: moto parada na chuva com a luz do farol acesa; placa borrada; texto em cima (cobre o piloto)."""
-    arq = foto_prep('33136700', borrar=[(760, 895, 1000, 1010)], crop=(0, 60, 1387, 1794) if not tt else None, nome='cm05_visto3' + ('_tt' if tt else ''))
+    arq = foto_prep('33136700', satura=.6, frio=.12, borrar=[(760, 895, 1000, 1010)], crop=(0, 60, 1387, 1794) if not tt else None, nome='cm05r5_visto' + ('_tt' if tt else ''))
     L, w = (140, 800) if tt else (90, 900)
     c = foto_fundo(arq, pos='55% 50%', degr='escuro_topo', forca=.94, topo=.45)
     c += barra(4, L, TOPO_IND(tt), 520, tt)
@@ -115,36 +115,35 @@ def visto(tt):
     return c + pag(5, N, tt)
 
 def tela(tt):
-    """Recorte real e limpo do sheet 28-item-proximo: só 'Alta prioridade' + título (sem alça, sem X, sem a quebra do km).
-    O km do lembrete entra como selo da peça, separado do print."""
-    arq, size = recorte('ios-1.0/28-item-proximo.png', (30, 320, 970, 620))
+    """R5 (25/11): momento do app próprio da peça: o lembrete chega como notificação (recurso do K6), com o texto REAL
+    do app ("Lubrificar quando a moto estiver com 29.900 km", tela 28-item-proximo), por cima do celular com essa tela."""
     L, w = (140, 800) if tt else (90, 900)
-    c = fundo(T, (50, 55))
-    ty = 540 if tt else 300
-    tam = 74 if not tt else 66
+    c = fundo(T, (50, 70))
+    ty = 330 if tt else 110
+    tam = 74 if not tt else 62
     c += titulo(['A corrente não reclama.', 'O app lembra por ela.'], L, ty, tam, w=w, azul_de=1)
-    yc = ty + alt_titulo(2, tam) + (130 if tt else 90)
-    cw = w
-    glow = (f"<div style='position:absolute;left:{L + cw//2 - 560}px;top:{yc - 180}px;width:1120px;height:{round(size[1]*cw/size[0]) + 360}px;"
-            f"border-radius:50%;background:radial-gradient(closest-side, rgba(82,169,254,.28), rgba(0,0,0,0) 100%)'></div>")
-    bloco, hc = card_solto(arq, size, cw, L, yc)
-    c += glow + bloco
-    ys = yc + hc + (70 if tt else 50)
-    c += pilula('Lembrete com 29.900 km', AZUL, '#FFFFFF', L, ys, tam=44 if tt else 42, icone_nome='relogio')
-    c += apoio(['No km certo da sua moto.'], L, ys + (140 if tt else 120), 38 if not tt else 34, w=w)
-    return c + pag(6, N, tt)
+    yp = ty + alt_titulo(2, tam) + (300 if tt else 250)
+    wf = 600 if tt else 560
+    c += fone('ios-1.0/28-item-proximo.png', wf, 540, yp, extra='')
+    yn = yp - (150 if tt else 140)
+    nt, hn = notificacao('MinhaMoto', 'Lubrificar quando a moto\nestiver com 29.900 km', L - 20, yn, w=w + 40, linhas=2, escala=1.0 if not tt else .95)
+    return c + nt + pag(6, N, tt)
 
 def final(tt):
+    """R5 (25/11): copy que não promete aviso de chuva (o app avisa manutenção por km) e ícone do app DENTRO do feixe."""
     L, w = (140, 800) if tt else (90, 900)
-    c = fundo_chuva(tt, 760, 560, .9, seed=5)
-    c += f"<img src='file://{ICON}' style='position:absolute;left:{L}px;top:{230 if tt else 120}px;width:120px;height:120px;filter:drop-shadow(0 18px 26px rgba(0,0,0,.5))'>"
-    tam = 90 if not tt else 82
-    ty = 760 if tt else 560
-    c += titulo(['A chuva não avisa.', 'O MinhaMoto avisa.'], L, ty, tam, w=w, azul_de=1)
+    c = fundo_chuva(tt, 540, 560, .9, seed=5)
+    yi = 420 if tt else 130
+    c += (f"<div style='position:absolute;left:50%;top:{yi - 90}px;width:420px;height:420px;margin-left:-210px;border-radius:50%;"
+          f"background:radial-gradient(closest-side, rgba(150,200,255,.45), rgba(82,169,254,.12) 60%, rgba(0,0,0,0) 100%)'></div>")
+    c += f"<img src='file://{ICON}' style='position:absolute;left:50%;margin-left:-90px;top:{yi}px;width:180px;height:180px;filter:drop-shadow(0 22px 30px rgba(0,0,0,.55))'>"
+    tam = 88 if not tt else 64
+    ty = yi + 180 + 90
+    c += titulo(['Chuva não marca hora.', 'Sua manutenção, sim.'], 0 if not tt else 140, ty, tam, w=1080 if not tt else 800, alinha='center', azul_de=1)
     ya = ty + alt_titulo(2, tam) + 34
-    c += apoio(['Baixe agora e saia pro trampo tranquilo.'], L, ya, 40 if not tt else 38, w=w, cor='#F4F7FC')
-    c += f"<div style='position:absolute;left:{L}px;top:{ya + 100}px'><span class=preco><i></i>por R$19,90</span></div>"
-    c += f"<img src='file://{SELOS}' style='position:absolute;left:{L}px;top:{1380 if tt else 1190}px;width:540px'>"
+    c += apoio(['O MinhaMoto lembra no km certo.'], 0 if not tt else 140, ya, 42 if not tt else 40, w=1080 if not tt else 800, alinha='center', cor='#F4F7FC', peso='j600')
+    c += f"<div style='position:absolute;left:0;right:0;text-align:center;top:{ya + 110}px'><span class=preco><i></i>por R$19,90</span></div>"
+    c += f"<div style='position:absolute;left:0;right:0;text-align:center;top:{1380 if tt else 1190}px'><img src='file://{SELOS}' style='width:540px'></div>"
     return c
 
 def lista(tt):

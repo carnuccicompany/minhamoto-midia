@@ -203,6 +203,27 @@ def arco_gauge(cx, cy, r, tema='escuro', opac=.16):
                   f"stroke='rgba({cor},{opac if i % 5 else opac*1.8})' stroke-width='{5 if i % 5 == 0 else 3}' stroke-linecap='round'/>")
     return f"<svg class=fill width='100%' height='100%' style='position:absolute;inset:0'>{''.join(tr)}</svg>"
 
+
+# ---------- R5 (25/11): elementos aprovados no K6 (referência de motion) ----------
+def notificacao(titulo_n, texto_n, left, top, w=900, tema='escuro', hora='agora', opac=1.0, escala=1.0, linhas=1):
+    """Notificação de celular (estilo do K6): cartão claro com o ícone do MinhaMoto, nome do app, 'agora' e a mensagem.
+    Texto real do app (nunca inventar função que o app não tem)."""
+    f = escala; h = round((170 + 48 * (linhas - 1)) * f); r = round(40 * f); ic = round(84 * f)
+    sombra = '0 30px 60px rgba(0,0,0,.45),0 8px 18px rgba(0,0,0,.3)' if tema == 'escuro' else '0 30px 60px rgba(10,26,51,.18),0 8px 18px rgba(10,26,51,.10)'
+    return (f"<div class=uicard style='position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:{r}px;"
+            f"background:rgba(248,250,253,.97);box-shadow:{sombra};opacity:{opac};display:flex;align-items:center'>"
+            f"<img src='file://{ICON}' style='width:{ic}px;height:{ic}px;border-radius:{round(ic*.24)}px;margin:0 {round(28*f)}px 0 {round(30*f)}px'>"
+            f"<div style='flex:1;min-width:0;padding-right:{round(30*f)}px'>"
+            f"<div style='display:flex;justify-content:space-between;font-family:j700;font-size:{round(32*f)}px;color:{NAVY_TXT}'>"
+            f"<span>{H.escape(titulo_n)}</span><span style='font-family:j500;font-size:{round(28*f)}px;color:#8A96AA'>{H.escape(hora)}</span></div>"
+            f"<div style='font-family:j600;font-size:{round(38*f)}px;line-height:1.25;color:#24324A;margin-top:{round(8*f)}px;{'white-space:nowrap;overflow:hidden;text-overflow:ellipsis' if linhas == 1 else ''}'>{H.escape(texto_n) if linhas == 1 else '<br>'.join(H.escape(x) for x in texto_n.split(chr(10)))}</div>"
+            f"</div></div>"), h
+
+def marca_texto(left, top, w, h, cor='rgba(198,255,0,.38)', rot=-1.2):
+    """Marca-texto translúcido atrás de uma palavra/linha (como no K6). Desenhar ANTES do texto."""
+    return (f"<div style='position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:{round(h*.22)}px;"
+            f"background:{cor};transform:rotate({rot}deg)'></div>")
+
 # ---------- card final ----------
 def final_app(tt, tema, l1, l2, sub, preco=False):
     """CTA do app: ícone com brilho redondo (sem halo quadrado), título, traço limão, apoio, preço opcional; selos separados embaixo."""

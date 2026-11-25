@@ -25,25 +25,39 @@ def faixa_painel(atual, left, top, tam=46, gap=26):
         c += luz_painel(nm, tam, cor if i == atual else '#3A4558', x, top, aceso=(i == atual))
     return c
 
+NOMES_CURTOS = ['Óleo', 'Temperatura', 'Injeção', 'Bateria']
+def painel_rodape(atual, left, top, w):
+    """R5 (25/11): barra de painel no rodapé (enche o espaço morto e amarra o card ao tema): as 4 luzes com o nome
+    embaixo; só a do card acesa, as outras apagadas; contador "1 de 4"."""
+    h = 190; tam = 54; caixa = round(tam * 1.55); col = w / 4
+    c = (f"<div style='position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:40px;"
+         f"background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:inset 0 0 0 2px rgba(255,255,255,.08)'></div>")
+    for i, (nm, cor) in enumerate(LUZES):
+        cx = left + col * i + col / 2; x = round(cx - caixa / 2)
+        c += luz_painel(nm, tam, cor if i == atual else '#3A4558', x, top + 22, aceso=(i == atual))
+        c += (f"<div style='position:absolute;left:{round(cx - col/2)}px;width:{round(col)}px;top:{top + 22 + caixa + 10}px;text-align:center;"
+              f"font-family:j700;font-size:26px;color:{'#F4F7FC' if i == atual else 'rgba(255,255,255,.38)'}'>{NOMES_CURTOS[i]}</div>")
+    return c
+
 def capa(tt):
     if tt:
-        L, w, Ty, tam = 140, 800, 330, 88
+        L, w, Ty, tam = 140, 800, 300, 96
     else:
         L, w, Ty, tam = 90, 900, 120, 102
     c = fundo(T, (78, 70))
     c += titulo(['4 luzes no painel.', 'Duas mandam', 'parar na hora.'], L, Ty, tam, w=w, azul_de=1)
     ya = Ty + alt_titulo(3, tam) + 30
-    c += apoio(['Você sabe quais?'], L, ya, 46 if not tt else 44, w=w, cor='#F4F7FC', peso='j600')
+    c += apoio(['Você sabe quais?'], L, ya, 52 if not tt else 54, w=w, cor='#F4F7FC', peso='j700')
     # as 4 luzes, todas em branco (sem entregar a resposta pela cor), numeradas
     tam_i = 110 if not tt else 108
     caixa = round(tam_i * 1.55); gap = (w - 4 * caixa) // 3
-    yl = 800 if not tt else 1080
+    yl = 700 if not tt else 960
     for i, (nm, _) in enumerate(LUZES):
         x = L + i * (caixa + gap)
         c += luz_painel(nm, tam_i, '#EAF2FF', x, yl)
         c += (f"<div class=apoB style='left:{x}px;right:auto;width:{caixa}px;top:{yl + caixa + 22}px;text-align:center;font-family:j700;"
               f"font-size:34px;color:rgba(255,255,255,.6)'>{i + 1}</div>")
-    c += desliza(L, 1210 if not tt else 1400, tt)
+    c += desliza(L, 1210 if not tt else 1360, tt)
     return c
 
 def luz(n, idx, nome_luz, status, cor_st, linhas, apo, lado, tt, modo='padrao', tam_tit=None):
@@ -55,22 +69,22 @@ def luz(n, idx, nome_luz, status, cor_st, linhas, apo, lado, tt, modo='padrao', 
     y_faixa = 1400 if tt else 1170
     if modo == 'gigante':
         c = fundo(T, (85, 18))
-        tam_i = 340 if not tt else 380
+        tam_i = 300 if not tt else 330
         caixa = round(tam_i * 1.55)
-        c += luz_painel(nm, tam_i, cor, 1080 - caixa + 80, 110 if not tt else 220, raio=140)
-        yl = 180 if not tt else 850
-        c += apoio([nome_luz], L, yl, 30 if not tt else 34, w=530 if not tt else 800, cor='#F4F7FC', peso='j600')
-        c += pilula(status, fundo_st, cor_st, L, yl + 70, tam=30 if not tt else 32)
-        tam = tam_tit or (92 if not tt else 88)
-        Ty = 700 if not tt else 1010
+        c += luz_painel(nm, tam_i, cor, 1080 - caixa - (60 if not tt else 140), 110 if not tt else 220, raio=140)
+        yl = 180 if not tt else 760
+        c += apoio(nome_luz.split(' · '), L, yl, 40 if not tt else 40, w=(1080 - caixa - 60 - L - 30) if not tt else 800, cor='#F4F7FC', peso='j700')
+        c += pilula(status, fundo_st, cor_st, L, yl + (122 if (' · ' in nome_luz) else 76), tam=34)
+        tam = tam_tit or (88 if not tt else 88)
+        Ty = 680 if not tt else 1010
     elif modo == 'enorme':
         c = fundo(T, (20, 30))
-        tam_i = 90 if not tt else 100
+        tam_i = 110 if not tt else 120
         caixa = round(tam_i * 1.55)
         ty_i = 140 if not tt else 260
         c += luz_painel(nm, tam_i, cor, L, ty_i)
-        c += apoio([nome_luz], L + caixa + 36, ty_i + 10, 34 if not tt else 36, w=500, cor='#F4F7FC', peso='j600')
-        c += pilula(status, fundo_st, cor_st, L + caixa + 36, ty_i + caixa - 62, tam=28 if not tt else 30)
+        c += apoio([nome_luz], L + caixa + 36, ty_i + 4, 42, w=560, cor='#F4F7FC', peso='j700')
+        c += pilula(status, fundo_st, cor_st, L + caixa + 36, ty_i + caixa - 64, tam=34)
         tam = tam_tit or (132 if not tt else 124)
         Ty = 470 if not tt else 640
     else:
@@ -82,13 +96,14 @@ def luz(n, idx, nome_luz, status, cor_st, linhas, apo, lado, tt, modo='padrao', 
         c += luz_painel(nm, tam_i, cor, xi, top_i)
         xt = L + caixa + 44 if lado == 'esq' else L
         wt = w - caixa - 44
-        c += apoio([nome_luz], xt, top_i + caixa // 2 - 70, 36 if not tt else 36, w=wt, cor='#F4F7FC', peso='j600')
-        c += pilula(status, fundo_st, cor_st, xt, top_i + caixa // 2 + 4, tam=30 if not tt else 32)
+        c += apoio([nome_luz], xt, top_i + caixa // 2 - 78, 44, w=wt, cor='#F4F7FC', peso='j700')
+        c += pilula(status, fundo_st, cor_st, xt, top_i + caixa // 2 + 6, tam=34)
         tam = tam_tit or (94 if not tt else 82)
         Ty = 600 if not tt else 820
     c += titulo(linhas, L, Ty, tam, w=w, azul_de=len(linhas) - 1)
     c += apoio(apo if isinstance(apo, list) else [apo], L, Ty + alt_titulo(len(linhas), tam) + 30, 38 if not tt else 38, w=w)
-    c += faixa_painel(idx, L, y_faixa, tam=40 if not tt else 46)
+    if tt and modo == 'gigante': c += faixa_painel(idx, L, y_faixa, tam=46)
+    else: c += painel_rodape(idx, L, 1120 if not tt else 1290, w)
     return c + pag(n, N, tt)
 
 def tela(tt):

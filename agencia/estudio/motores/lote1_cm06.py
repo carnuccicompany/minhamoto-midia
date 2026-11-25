@@ -50,8 +50,8 @@ def capa(tt):
     tam = 150 if not tt else 134
     c += titulo(['Ninguém lê', 'o manual', 'da moto.'], L, y0 + 90, tam, w=w, azul_de=1, lh=1.0)
     ya = y0 + 90 + alt_titulo(3, tam, 1.0) + 40
-    c += apoio(['Então a gente leu: 3 números', 'que você precisa saber.'], L, ya, 42 if not tt else 40, w=w, cor='#FFFFFF', peso='j600')
-    c += livreto(630 if not tt else 540, 800 if not tt else 1010, 360 if not tt else 400, rot=-9)
+    c += apoio(['Então a gente leu: 3 respostas', 'que você precisa saber.'], L, ya, 42 if not tt else 40, w=w, cor='#FFFFFF', peso='j600')
+    c += livreto(630 if not tt else 540, 800 if not tt else 890, 360 if not tt else 400, rot=-9)
     c += desliza(L, 1240 if not tt else 1420, tt)
     return c + "</div>"
 
@@ -126,7 +126,7 @@ def tela(tt):
     c += fone('ios-1.0/13-conheca-moto', 720 if tt else 600, 540, yph)
     cw = w
     hc = round(size[1] * cw / size[0])
-    yc = (1490 - hc) if tt else (1350 - 14 - hc)
+    yc = (1470 - hc) if tt else (1350 - 70 - hc)
     c += card_solto(arq, size, cw, L, yc, claro=True)[0]
     return c + pag(5, N, tt)
 
@@ -134,9 +134,9 @@ def final(tt):
     L, w = (140, 800) if tt else (90, 900)
     c = "<div class='fill az'>" + fundo_azul((50, 20))
     y0 = 440 if tt else 230
-    c += (f"<div style='position:absolute;left:{540 - 130}px;top:{y0}px;width:260px;height:260px;border-radius:64px;background:#FFFFFF;"
-          f"box-shadow:0 30px 60px rgba(0,30,90,.35);display:flex;align-items:center;justify-content:center'>"
-          f"<img src='file://{ICON}' style='width:220px;height:220px;border-radius:52px'></div>")
+    c += (f"<div style='position:absolute;left:50%;top:{y0 - 150}px;width:560px;height:560px;margin-left:-280px;border-radius:50%;"
+          f"background:radial-gradient(closest-side, rgba(255,255,255,.38), rgba(255,255,255,.10) 55%, rgba(0,0,0,0) 100%);filter:blur(6px)'></div>"
+          f"<img src='file://{ICON}' style='position:absolute;left:50%;margin-left:-120px;top:{y0 + 10}px;width:240px;height:240px;filter:drop-shadow(0 26px 34px rgba(0,20,70,.45))'>")
     tam = 72 if not tt else 60
     ty = y0 + 360
     c += titulo(['O manual que ninguém lê,', 'agora no seu bolso.'], 60 if not tt else L, ty, tam, w=960 if not tt else w, alinha='center', azul_de=1)

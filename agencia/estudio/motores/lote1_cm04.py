@@ -71,7 +71,7 @@ def capa(tt):
     c += desliza(L, 1230 if not tt else 1420, tt)
     return c
 
-def desculpa(n, voce, moto, tt, reacao=None):
+def desculpa(n, voce, moto, tt, reacao=None, extra=None):
     """Conversa de 3 falas (você · a moto · você de novo), centrada na vertical; bolinhas embaixo."""
     L, w = (140, 800) if tt else (90, 900)
     tam = 68 if tt else 66
@@ -79,6 +79,8 @@ def desculpa(n, voce, moto, tt, reacao=None):
     c = fundo(T, (20 if n % 2 else 80, 20))
     top = 340 if tt else 190
     c += pilula(f'Desculpa nº {n - 1}', NAVY_TXT, '#FFFFFF', L, top, tam=30)
+    if extra == 'classica':   # a capa prometeu "a nº 3 é clássica": selo só nela
+        c += pilula('A clássica', LIMAO, NAVY_TXT, L + 300, top, tam=30)
     y1 = top + (150 if tt else 110)
     b1, h1 = balao(voce, 'Você', L, y1, w - 60, tam, 'esq')
     y2 = y1 + h1 + (70 if tt else 44)
@@ -88,20 +90,36 @@ def desculpa(n, voce, moto, tt, reacao=None):
     if reacao:
         b3, h3 = balao([reacao], 'Você', L, yf, w - 60, tr, 'esq')
         c += b3; yf += h3 + (50 if tt else 34)
-    c += pontos(n - 2, 5, L + w - 4 * 44 - 28, yf)
+        if extra == 'visto':
+            c += (f"<div class=apoB style='left:{L}px;right:auto;width:{w - 60}px;top:{yf - (40 if tt else 26)}px;text-align:left;font-family:j600;"
+                  f"font-size:26px;color:rgba(10,26,51,.45)'>Visto às 23:48</div>")
+    if extra == 'digitando':
+        c += digitando(L + w, yf, 1.0)
+    c += pontos(n - 2, 5, 540 - 100, 1450 if tt else 1260)
     return c
 
 def tela(tt):
-    """Só o celular (Histórico), grande, rolado até os registros; a barra de abas fica fora do quadro."""
+    """R5 (25/11): o app responde na conversa: o "eu lembro de cabeça" é respondido com o registro REAL da troca de óleo
+    (06-historico rolagem: 'Troca de óleo e filtro · 25/08/2026 · 27.100 km'), card solto sem os ícones de editar/excluir."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (70, 60))
-    ty = 260 if tt else 110
-    tam = 92 if not tt else 86
+    ty = 300 if tt else 110
+    tam = 92 if not tt else 80
     c += titulo(['Quem não lembra,', 'anota no app.'], L, ty, tam, w=w, azul_de=1)
-    ya = ty + alt_titulo(2, tam) + 26
-    c += apoio(['Data, km e valor de cada serviço.'], L, ya, 40, w=w)
-    c += fone('ios-1.0/rolagem/06-historico', 760 if tt else 620, 540, ya + (110 if tt else 190), rola=1347)
-    return c
+    ya = ty + alt_titulo(2, tam) + 24
+    c += apoio(['Data, km e valor de cada serviço.'], L, ya, 40 if not tt else 38, w=w)
+    tb = 66 if not tt else 64
+    y1 = ya + (150 if tt else 110)
+    b1, h1 = balao(['Eu lembro de cabeça.'], 'Você', L, y1, w - 60, tb, 'esq')
+    c += b1
+    arq, size = recorte('ios-1.0/rolagem/06-historico.png', (48, 2935, 1131, 3296))
+    cw = w; yc = y1 + h1 + (100 if tt else 70)
+    c += (f"<div class=apoB style='left:{L}px;right:auto;width:{cw}px;top:{yc - 46}px;text-align:right;font-family:j600;font-size:28px;"
+          f"color:rgba(10,26,51,.5)'>MinhaMoto</div>")
+    bloco, hc = card_solto(arq, size, cw, L, yc, claro=True)
+    c += bloco
+    b3, h3 = balao(['Tá. Você venceu.'], 'Você', L, yc + hc + (80 if tt else 56), w - 60, round(tb * .9), 'esq')
+    return c + b3
 
 def final(tt):
     """Fecha em formato de conversa: a moto pede, você manda."""
@@ -109,7 +127,7 @@ def final(tt):
     c = fundo(T, (30, 80))
     y0 = 440 if tt else 290
     c += kicker('Salve este post', L, y0, T, w=w, tam=34)
-    tb = 70 if not tt else 64
+    tb = 64 if not tt else 56
     y1 = y0 + 110
     b1, h1 = balao(['Mande isso pro parceiro', 'que sempre diz', '“depois do corre”'], 'A moto', L + 40, y1, w - 40, tb, 'dir')
     y2 = y1 + h1 + 60
@@ -124,9 +142,9 @@ def lista(tt):
     return [
         (T, capa(tt)),
         (T, desculpa(2, ['Tá barulhando,', 'mas tá andando.'], ['Tô avisando faz', 'três semanas.'], tt, 'Semana que vem eu vejo.')),
-        (T, desculpa(3, ['Essa luz sempre', 'acendeu, é normal.'], ['Normal é eu te deixar', 'a pé na entrega.'], tt, 'Calma, não precisa disso.')),
-        (T, desculpa(4, ['Depois do corre', 'eu troco o óleo.'], ['O corre não acaba.', 'Meu óleo, sim.'], tt, 'Essa doeu.')),
-        (T, desculpa(5, ['A corrente tá', 'folgadinha, suave.'], ['Suave até ela', 'pular da coroa.'], tt, 'Amanhã eu ajusto.')),
+        (T, desculpa(3, ['Essa luz sempre', 'acendeu, é normal.'], ['Normal é eu te deixar', 'a pé na entrega.'], tt, 'Tá bom, amanhã eu olho.', extra='visto')),
+        (T, desculpa(4, ['Depois do corre', 'eu troco o óleo.'], ['O corre não acaba.', 'Meu óleo, sim.'], tt, 'Essa doeu.', extra='classica')),
+        (T, desculpa(5, ['A corrente tá', 'folgadinha, suave.'], ['Suave até ela', 'pular da coroa.'], tt, 'Amanhã eu ajusto.', extra='digitando')),
         (T, desculpa(6, ['Eu lembro de cabeça', 'quando troquei.'], ['Lembra? Então', 'fale a data.', 'Eu espero.'], tt, 'Foi… mês passado?')),
         (T, tela(tt)),
         (T, final(tt)),

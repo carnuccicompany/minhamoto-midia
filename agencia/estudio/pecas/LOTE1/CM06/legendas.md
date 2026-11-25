@@ -20,7 +20,7 @@ Cada moto tem os seus números. No MinhaMoto, a ficha do manual da sua fica sepa
 ## TikTok
 Ninguém lê o manual da moto. A gente leu por você.
 
-3 números da CG 160 Titan que todo iniciante precisa saber.
+3 respostas do manual da CG 160 Titan que todo iniciante precisa saber.
 
 📲 Baixe agora o MinhaMoto na App Store e no Google Play.
 
