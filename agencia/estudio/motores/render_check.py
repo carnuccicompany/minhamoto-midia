@@ -63,3 +63,20 @@ def render(html_corpo, w, h, saida):
         print('TRAVA', saida); [print('   -', x) for x in res['problemas']]
         return False
     print('ok', saida); return True
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# TRAVA DE FANTASMA (24/11, revisão independente do VENDA-MM-R1): o recorte ampliado de uma tela do app (o "destaque
+# puxado pra fora") só pode sumir quando estiver exatamente em cima da linha real. Se esmaecer fora do lugar, aparecem
+# dois textos sobrepostos por alguns quadros. Comparamos o quadro COM o recorte e o mesmo quadro SEM o recorte, na área
+# do recorte: no quadro de entrada e no último quadro antes de sumir, a diferença tem que ser praticamente zero.
+LIMIAR_FANTASMA = 3.0   # diferença média de luminância (0–255) aceita na área do recorte, depois de um desfoque de 2,5 px
+# (o desfoque ignora a diferença de reamostragem/subpixel entre o recorte e a tela; texto duplicado deslocado dá 15+)
+
+def fantasma(png_com, png_sem, caixa):
+    """Diferença média (0–255) entre os dois quadros dentro da caixa (x0, y0, x1, y1)."""
+    import numpy as np
+    from PIL import ImageFilter
+    a = np.asarray(Image.open(png_com).convert('L').crop(caixa).filter(ImageFilter.GaussianBlur(2.5))).astype(float)
+    b = np.asarray(Image.open(png_sem).convert('L').crop(caixa).filter(ImageFilter.GaussianBlur(2.5))).astype(float)
+    return float(np.abs(a - b).mean())

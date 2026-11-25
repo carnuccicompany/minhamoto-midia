@@ -2,7 +2,8 @@
 """Revisor automático de peças (vídeo 9:16, carrossel, story). Régua: agencia/DESIGN-MINHAMOTO.md.
 
 Uso:
-  python3 agencia/designer/revisar_video.py <video.mp4|imagem.jpg ...> [--roteiro arquivo.py|.json|.md]
+  python3 agencia/designer/revisar_video.py <video.mp4|imagem.jpg ...> [--roteiro arquivo.py|.json|.md] [--venda]
+  --venda: criativo de venda (anúncio), duração aceita 7–45 s (constituição 24/11: testar 15–30 s e 30–45 s)
 
 Checagens (qualquer REPROVA bloqueia a entrega ao Léo):
   1. Mockup consistente (vídeo): extrai 4 quadros/s, localiza o celular (moldura escura com a tela do app) e
@@ -87,12 +88,15 @@ def texto_fora_zona(img):
     return fora.mean()
 
 
+DUR_MAX = 25
+
+
 def revisar(caminho, roteiro_txt=''):
     erros, avisos = [], []
     ext = caminho.lower().rsplit('.', 1)[-1]
     if ext in ('mp4', 'mov', 'webm'):
         dur = duracao(caminho)
-        if not (7 <= dur <= 25): erros.append(f'duração {dur:.1f}s fora de 7–25s')
+        if not (7 <= dur <= DUR_MAX): erros.append(f'duração {dur:.1f}s fora de 7–{DUR_MAX}s')
         d, fs = quadros(caminho)
         ims = [Image.open(f) for f in fs]
         if ims and ims[0].size != (1080, 1920): erros.append(f'resolução {ims[0].size}, esperado 1080x1920')
@@ -135,6 +139,8 @@ def revisar(caminho, roteiro_txt=''):
 
 if __name__ == '__main__':
     args = sys.argv[1:]; rot = ''
+    if '--venda' in args:
+        args.remove('--venda'); DUR_MAX = 45
     if '--roteiro' in args:
         i = args.index('--roteiro'); rot = open(args[i + 1], encoding='utf-8').read(); del args[i:i + 2]
     res = [revisar(a, rot) for a in args]
