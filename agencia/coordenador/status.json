@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T02:10:00-03:00",
+  "rodada": "2026-11-25T02:40:00-03:00",
   "ok": true,
   "tarefas": {
     "post do horário + aviso TikTok": "ok (SUCCEEDED 21h02 BRT; S04 publicado 21h03; próx 12h02 24/11)",
@@ -23,8 +23,8 @@
     "MM: Respostas às avaliações das lojas": "ok (SUCCEEDED 21h14 BRT 24/11; próx 09h13 25/11)",
     "MM: Coordenador 24h · :39": "rodando (06h40)",
     "MM: Coordenador 24h · :09": "ok (SUCCEEDED 06h09 BRT)",
-    "MM: Coordenador 24h · :39 (vigia os agentes)": "ok (SUCCEEDED 01h40 BRT; próx 02h39)",
-    "MM: Coordenador 24h · :09 (vigia os agentes)": "rodando (esta rodada, 02h10 BRT)",
+    "MM: Coordenador 24h · :39 (vigia os agentes)": "rodando (esta rodada, 02h40 BRT)",
+    "MM: Coordenador 24h · :09 (vigia os agentes)": "ok (SUCCEEDED 02h09 BRT)",
     "MM: Resumo da caixa (Moneypenny)": "ok (SUCCEEDED 07h53 BRT)",
     "MM: Leitura da UTMify": "ok (SUCCEEDED 16h00 BRT; próx 07h41 25/11)"
   },

@@ -256,3 +256,5 @@
 - 25/11 01h10 BRT · sem falha: todas as tarefas ok, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, links ok.
 - 25/11 01h40 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, links ok, insights aguardando cron.
 - 25/11 02h10 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias, TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron.
+
+- 25/11 02h40 BRT · sem falha: todas as tarefas ok (Conselho e Folha incluídos), último post DV10 21h04, próx 12h02, fila 20,5 dias (82), TikTok 9:16 113/113, sem pendentes, sem segredo, insights aguardando cron.
