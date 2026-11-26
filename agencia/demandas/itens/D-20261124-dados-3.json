@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-dados-3.md com (1) tabela diária de 23 a 27/11: alcance 28d em variação % contra 23/11, soma de alcance dos posts / alcance 28d em %, mediana de alcance por post em % dos seguidores, lida dos dados/insights-*.json (cada linha cita o arquivo); (2) as 6 etapas do funil, cada uma marcada 'com dado' ou 'sem dado' com a fonte que falta; nenhum número absoluto de assinante ou R$.",
   "prioridade": "P2",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "entregue",
+  "status": "devolvida",
   "criada_em": "2026-11-24T19:30:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,7 +28,13 @@
       "quando": "2026-11-24T21:00:00-03:00",
       "quem": "dados:relatorio-semanal",
       "o_que": "entregue: minuta do bloco de medicao (tabela 23-24/11 real, 25-27 pendentes; funil 0/6 com dado)"
+    },
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "dados",
+      "o_que": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
     }
   ],
-  "atualizada_em": "2026-11-24T21:00:00-03:00"
+  "atualizada_em": "2026-11-26T12:00:00-03:00",
+  "devolucao": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
 }

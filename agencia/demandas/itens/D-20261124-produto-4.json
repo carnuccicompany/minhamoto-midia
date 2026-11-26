@@ -8,7 +8,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) passo a passo das telas que esse usuário atravessa, com arquivo e linha do código de 17/11 (versão 1.0.1 dita); (2) o que existe hoje pra pedir modelo faltante; (3) UMA mudança proposta, antes/depois, sem prometer modelo nem data, sem R$, sem 'grátis'; (4) evento a medir pra saber o tamanho do grupo. Marcado 'proposta pro Davi, nada mexe no app'.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T21:30:00-03:00",
   "fio": null,
   "entrega": {
@@ -26,7 +26,12 @@
       "quando": "2026-11-24T22:10:00-03:00",
       "quem": "produto:analista-do-paywall",
       "o_que": "entregue: passo a passo com arquivo e linha, pedido de modelo hoje, 1 mudança antes/depois, eventos; corrige a premissa (não chega ao paywall)"
+    },
+    {
+      "quando": "2026-11-26T09:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceita: conferi no código do commit de 17/11 (a7488e6) os trechos citados (paywall só via tour/funil-sem-pro, 'Nenhum modelo encontrado' sem pedido, mailto em branco, '48 horas', versão 1.0.1, onboarding só no aparelho); os 4 itens do pronto_quando estão presentes, sem R$/grátis/promessa, marcado proposta pro Davi. Sem número de fonte externa a fiscalizar (Turing não necessário: 377/263 vêm de D-20261123-mercado_radar-de-concorrentes-1 e o grupo é dito desconhecido)."
     }
   ],
-  "atualizada_em": "2026-11-24T22:10:00-03:00"
+  "atualizada_em": "2026-11-26T09:00:00-03:00"
 }

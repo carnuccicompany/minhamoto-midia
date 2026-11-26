@@ -54,3 +54,8 @@
 - Fato novo: alcance 28d por formato (coleta 25/11): AD 98,8%, feed ~2%. A iniciativa "De onde vem o alcance?" muda de pergunta: de que campanha vem o AD (D-20261125-dados-1, Escobar, 27/11 19h).
 - Entreguei master-2 (formato do resumo-pct.json). Espero: QG (ponte), Léo (UTMify), Davi (SDK, evento de moto).
 - Prazos: 26/11 21h35Z ec124592 no Play; 27/11 dados-1 (Disney) e dados-1/3/4/5 abertas; 30/11 trafego-3, 1ª linha de base, relatório (D-20261125-dados-2).
+
+## Atualização 2026-11-26
+- Fato: alcance por formato estável (AD 98,8% -> 98,9%; feed 2,1% -> 1,8%). relatorio-semanal-1 entregue. Iniciativa segue: de que campanha vem o AD (D-20261125-dados-1, Escobar, 27/11 19h).
+- Bloqueado: trafego-1 (W e tipo de lance) até a ponte de % do QG.
+- Prazos: 27/11 conferir ec124592 na coleta; 30/11 relatório, trafego-3, linha de base.

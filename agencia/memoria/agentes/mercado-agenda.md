@@ -43,3 +43,6 @@
 - Prova de que errei: líder fora do catálogo, ou conversão da ficha não subir depois da troca de texto. Baseline depende de Turing ler App Store Connect.
 - Janela IPVA: 4 pautas no BANCO aceitas (Disney); pauta 1 não produz sem a lei oficial; pauta 4 só promete "avisa na Garagem".
 - Pendente: Biblioteca de Anúncios (Léo), meta em número, % por modelo (Turing), páginas de novembro dia 20 a 24 do car.blog.br não abriram.
+
+## Atualização 26/11/2026 (Sun Tzu)
+- Honda no radar corrigida (D-20261124-mercado-4): myHonda Connect aceita moto; lembrete de revisão não confirmado. Ângulo "Honda não tem app" morto; ângulo seguro depende de OK do Léo e do teste no celular (mercado-3).

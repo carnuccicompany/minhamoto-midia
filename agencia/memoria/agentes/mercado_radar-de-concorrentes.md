@@ -58,3 +58,15 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - fiz/recebi: o radar de 24/11, item 5, concluía que quem anda de CG, Pop, Biz e Bros não tem app da Honda; a fonte (AutoPapo, 03/06) cita só NX500, CB 500 Hornet, CB 1000R e X-ADV. Marquei a correção no radar e bloqueei a pauta em BANCO.md. Demanda D-20261124-master-1 (P2, 26/11, cc Greco).
 - aprendi: não generalizar além do escopo da fonte ("nenhum", "todos", "não tem"). Afirmação sem prova que vira pauta e anúncio é erro que o Léo reprova; conta como erro pro broche se repetir.
 - pendente: entregar a master-1; a confirmação oficial da Honda é da cria-4 (Greco).
+
+## 2026-11-26 · mercado-4 (entregue)
+- fiz: reescrevi no radar de 24/11 o item 5, a linha 2 da tabela e a ideia de conteúdo da Honda: myHonda Connect aceita moto (cadastro e Assistência 24h), lembrete de revisão de moto não confirmado, com link oficial. Atualizei a linha bloqueada do BANCO.md.
+- aprendi: o app da Honda não separa modelo (regra por marca); RoadSync é outro app, não de manutenção. Minha leitura de honda.com.br de hoje ficou sem permissão; usei a entrega da cria-4 e disse isso.
+- regra nova: antes de "nenhum/não tem/todos", abrir a fonte oficial ou escrever "não confirmei".
+- pendente: teste no celular do myHonda Connect (mercado-3); lojas-1 segue bloqueada.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Analista (100 XP). Estou com 0 XP; faltam 100.
+- **Conquista da semana:** Radar certeiro, agora com a correção da Honda fechada no prazo.
+- **Item que quero:** Cohiba Siglo VI (C$ 15).
+- **Regra que eu sigo:** só vale o que tem prova.

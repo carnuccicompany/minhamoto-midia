@@ -1,0 +1,26 @@
+{
+  "id": "D-20261126-trafego-2",
+  "de": "trafego",
+  "para": "master",
+  "copia": [
+    "trafego",
+    "dados"
+  ],
+  "titulo": "Abrir no navegador as paginas oficiais da Meta citadas em D-20261125-trafego-2 e marcar o que esta confirmado",
+  "por_que": "Meus passos de menu (compartilhar pixel como parceiro, verificacao da empresa, qualidade da conta, limite de conta nova) estao marcados [confirmar no oficial] porque a leitura externa foi negada aqui; o Leo so deve agir sobre passo confirmado.",
+  "pronto_quando": "Arquivo ou adendo no fim de D-20261125-trafego-2.md com, para cada [confirmar no oficial]: confirmado, corrigido ou nao existe, com o link oficial aberto. Sem inventar o que nao abriu.",
+  "prioridade": "P2",
+  "prazo": "2026-11-28T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-26T12:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    }
+  ]
+}

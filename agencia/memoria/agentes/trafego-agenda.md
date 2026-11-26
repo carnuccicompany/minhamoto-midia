@@ -53,3 +53,9 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Entregue: D-20261125-professor-1 (adendo em mkt-3: estrutura por W÷50, leitura, quebra de 12/11). Criada D-20261125-trafego-1 (Turing, W em faixa e tipo de lance, 27/11 18h).
 - Meta pessoal mantida: 1º número de campanha até 30/11 se o SDK entrar; senão 14/12 pela semana-ponte. Aposta: se W < 100, teste de criativo dentro do conjunto que vende, 1 anúncio por estilo, 7 dias, corte do pior em % do custo de outubro.
 - Perguntas pro Léo: 2 sim/não no adendo de mkt-3 (regra de estrutura; 1 anúncio por estilo na 1ª rodada).
+
+## Atualização 26/11/2026
+- Entregues: D-20261125-trafego-2 (blindagem de conta e sinal + diagnóstico), D-20261124-dados-5 (6º portão), D-20261125-dados-1 (sem dado, % do alcance AD). Criadas: D-20261126-trafego-1 (Turing, H2 e H8 em %, 30/11) e -2 (Shelby, confirmar passos no oficial, 28/11).
+- Meta pessoal mantida: 1º número de campanha até 30/11 se o SDK entrar; senão 14/12 pela semana-ponte. Agora com 6º portão (eventos mapeados) e BM Operação como pré-condição.
+- Aposta nova: "Cofre e Operação": pixel e páginas na BM que não anuncia; contas de anúncio na BM nova, com 1 reserva. Hipótese; depende do OK do Léo.
+- Perguntas pro Léo: BM Operação antes das campanhas novas (sim, recomendo); 6 verificações antes da verba do teste de 2 ângulos.

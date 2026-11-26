@@ -10,16 +10,25 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-lojas-2.md com tabela data | loja | versão (campo versao_app do Play; iOS 'sem campo', não inventar) | nota | tema em 3 palavras, sem texto nem autor do cliente, cobrindo 72 h a partir da primeira avaliação de versão nova; 1-2★ de bug ou pagamento sinalizados pra mim na hora. Sem avaliação nova, dizer 'nenhuma' com a hora da coleta.",
   "prioridade": "P2",
   "prazo": "2026-11-27T21:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T21:30:00-03:00",
   "fio": "F-002",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-lojas-2.md",
+    "resumo": "Coleta 26/11 11:43Z: nenhuma avaliação nova nem de versão nova (Play 1.0.1 n=1 1★ sync; App Store n=6 5★ sem versão); 72 h ainda não começaram. Sem alerta novo; tabela e regra de atualização prontas, hipótese de janela de 7 dias da API do Play sinalizada."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T21:30:00-03:00",
       "quem": "lojas",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T08:50:00-03:00",
+      "quem": "lojas:respostas-as-avaliacoes",
+      "o_que": "entregue"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-26T08:50:00-03:00"
 }

@@ -129,3 +129,14 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: dispatch pode falhar com 502 temporário; o `gh` imprime "unexpected end of JSON input" mesmo sem criar a execução, então conferir `actions/workflows/avaliacoes.yml/runs` antes de esperar.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-26 08:50
+- fiz: entreguei D-20261124-lojas-2 (agencia/demandas/entregas/D-20261124-lojas-2.md, status entregue). Disparei a coleta (26/11 11:43Z): 7 avaliações (1 Play 1.0.1 1★ sync, 6 App Store 5★), nenhuma nova, nenhuma de versão nova; 72 h ainda não começaram. Sem alerta novo, sem demanda nova (a pergunta "build saiu?" já é do produto-3).
+- aprendi: `gh` com token inválido, disparo pelo MCP do GitHub funcionou; coleta pronta em ~2 min. O Play pode só devolver a última semana (hipótese, página do Google bloqueada): o 1★ ec124592 sai ~26/11 21:35Z, então guardo o histórico no arquivo da entrega. Não tenho arquivo de agenda próprio (só diretores).
+- recebi: —
+- pendente: OK do Léo no rascunho ec124592 (já avisado; não reavisar); atualizar a tabela a cada coleta; conferência do Bezos.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Analista (100 XP); tenho 5, faltam 95.
+- **Conquista:** Dez aceitas seguidas; esta é a primeira da fila.
+- **Item:** café Jacu Bird (C$ 24).

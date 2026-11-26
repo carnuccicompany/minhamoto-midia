@@ -1,4 +1,4 @@
-# Pacote ao Davi (Shelby, 23/11/2026; itens 11 e 12 somados em 24/11 de manhã; 13 a 16 somados em 24/11 à noite) · cobre D-20261122-produto-3, D-20261122-dados-1 e as perguntas bloqueadas dele
+# Pacote ao Davi (Shelby, 23/11/2026; itens 11 e 12 somados em 24/11 de manhã; 13 a 16 somados em 24/11 à noite; 17 a 19 somados em 26/11) · cobre D-20261122-produto-3, D-20261122-dados-1 e as perguntas bloqueadas dele
 
 Só o Davi responde. Uma mensagem, sim/não em cada item. O que o código de 17/11 já respondeu (Jobs e Stark leram, só leitura) saiu da lista.
 
@@ -19,6 +19,12 @@ Só o Davi responde. Uma mensagem, sim/não em cada item. O que o código de 17/
 14. **Dá pra dividir 50/50 por flag remota, sem build nova?** (P-001). Se "não", o teste só entra numa build futura e a leitura espera.
 15. **Posso preparar um rascunho de código num branch separado, sem merge, depois do seu OK na P-001?** (P-001). Recomendo: sim, só depois do OK; nada é escrito antes.
 16. **A build de 23/11 já está nas lojas? Qual versão e que dia?** (D-20261124-produto-3, P1). Sem a data, o vigia de 72 h, a 1ª leitura do funil e a P-001 ficam com o relógio errado. É a pergunta que vai primeiro.
+
+17. **O "em até 48 horas" para pedir modelo de moto que falta é cumprido hoje?** (D-20261124-produto_analista-do-paywall-2, de D-20261124-produto-4, pergunta 1.) Se "não", o texto sai do app de qualquer jeito, sem prazo. Recomendo: responder com o que acontece de fato; nada é prometido antes da resposta.
+18. **Dá pra pôr o cartão "Pedir este modelo" dentro da lista (busca sem resultado) e levar marca e texto buscado no corpo do e-mail, sem mexer no servidor?** (mesma demanda, pergunta 2.) Recomendo: sim, é o mesmo cartão que já existe; só vale depois do OK do Davi e do Léo, nada vai ao ar antes.
+19. **Na build de 23/11, a tela "Esse é o MinhaMoto" ainda completa o plano com 6 itens genéricos (óleo, vela, filtro de ar, pastilhas, corrente, fluido) quando o modelo tem poucos itens?** (mesma demanda, pergunta 3; `esse-e-o-minhamoto.tsx:35-60` no código de 17/11.) Se "sim", o Davi diz se aceita isso como "plano da moto". Liga com o item 6 (moto sem plano), mas pergunta outra coisa: aqui é o complemento genérico, lá é a cobertura por modelo.
+
+Contexto dos itens 17 a 19 (Jobs, entregas/D-20261124-produto-4.md, código de 17/11): quem tem moto fora da lista **não chega ao paywall** (o paywall só abre depois da moto cadastrada), então esse grupo some antes da etapa "paywall visto". Não há dado do tamanho do grupo; só medir com os eventos do item 1.
 
 Recomendação do Shelby nos itens 11 e 12: responder "sim, igual" é o caminho mais barato. Enquanto o Davi não responde, A1/B1 e as séries de IPVA só podem dizer "avisa na Garagem, dentro do app" e nunca "te avisa por notificação do CRLV/CNH" (08-regras.md: promessa que o app não cumpre vira reprovação e 1 estrela). O item 5 acima (tela "Esse é o MinhaMoto") é outro assunto, não duplica.
 

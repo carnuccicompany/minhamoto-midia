@@ -1,43 +1,13 @@
 {
- "atualizado": "2026-11-25T16:59-03:00",
+ "atualizado": "2026-11-26T08:52-03:00",
  "resumo": {
-  "abertas": 14,
+  "abertas": 10,
   "atrasadas": 0,
-  "entregues": 7,
-  "aceitas": 58,
+  "entregues": 9,
+  "aceitas": 61,
   "bloqueadas_lider": 21
  },
  "demandas": [
-  {
-   "id": "D-20261125-trafego-2",
-   "de": "master",
-   "para": "trafego",
-   "copia": [
-    "master",
-    "dados",
-    "infoprodutos"
-   ],
-   "titulo": "Plano de blindagem de conta e sinal (BM, pixel, contas de reserva) + diagnóstico de por que 2 produtos não escalam juntos",
-   "por_que": "Relato do Léo em 25/11: o Perfect Class estourou, a BM caiu, o pixel caiu junto e o produto nunca voltou. Ele não quer isso de novo nos Corretores nem no MinhaMoto, e diz que quando roda 2 produtos juntos um para de vender. Ver LICOES.md de tráfego, 25/11.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) mapa de BMs, contas, pixels/datasets e páginas a partir do que já está no repositório; (2) plano de contingência passo a passo com fonte oficial da Meta (BM de anúncios separada, contas de reserva, compartilhar pixel/dataset como parceiro, CAPI, backup de públicos e criativos, o que fazer nas primeiras 24h se a BM cair), cada passo marcado 'Léo faz' ou 'agente faz'; (3) diagnóstico das hipóteses do '2 produtos não escalam juntos', o que medir pra confirmar cada uma e a estrutura recomendada; (4) 1 pergunta sim/não pro Léo: montar a BM de anúncios separada antes de subir as campanhas novas dos Corretores, com recomendação.",
-   "prioridade": "P1",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-25T17:05:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-25T17:05:00-03:00",
-     "quem": "master",
-     "o_que": "criou a partir do relato do Léo no chat principal"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Thomas Shelby",
-   "_para_nome": "Pablo Escobar"
-  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
@@ -299,142 +269,46 @@
    "_para_nome": "Thomas Shelby"
   },
   {
-   "id": "D-20261123-dados_relatorio-semanal-1",
-   "de": "dados:relatorio-semanal",
-   "para": "dados",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
-   "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-23T23:35:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261123-dados_relatorio-semanal-1.md",
-    "resumo": "Sem META_TOKEN nesta sessao nao testei a chamada. Doc oficial da Meta conferida (breakdown media_product_type so com metric_type=total_value; valores AD/FEED/REELS/STORY; janela maxima nao declarada). Proposta do Hemingway aceita com 5 ajustes, patch pronto e teste de 1 comando sem gravar. Dado de 24/11: 59 posts, todos FEED, explicam no maximo 9,9% do alcance 28d."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-23T23:35:00-03:00",
-     "quem": "dados:relatorio-semanal",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T10:30:00-03:00",
-     "quem": "coordenador",
-     "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
-    },
-    {
-     "quando": "2026-11-24T14:55:00-03:00",
-     "quem": "dados",
-     "o_que": "bloqueada (lider): nao consegui testar sem token; entregue doc oficial, revisao da proposta, patch e teste; pergunta sim/nao ao Davi para aplicar o patch e a coleta das 23h41 trazer por_formato ou o erro exato"
-    },
-    {
-     "quando": "2026-11-24T19:40:00-03:00",
-     "quem": "master",
-     "o_que": "Shelby aprovou e aplicou o patch em scripts/insights.py (so leitura, dentro de tenta(), sem chave nova; reversivel). Correcao pequena, nao e pergunta pro Davi/Leo. A coleta das 23h41 grava ig_alcance_28d_formato (por_formato ou o erro exato da Meta). Turing le dados/insights-2026-11-25.json e fecha; se der erro de janela, 2 chamadas de 14 dias."
-    },
-    {
-     "quando": "2026-11-24T21:00:00-03:00",
-     "quem": "dados:relatorio-semanal",
-     "o_que": "conferido: dados/insights-2026-11-25.json ainda nao existe; aguardo a coleta das 23h41 para ler ig_alcance_28d_formato e fechar com o Turing"
-    }
-   ],
-   "atualizada_em": "2026-11-24T19:40:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Ernest Hemingway",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261124-mercado-4",
-   "de": "mercado",
-   "para": "mercado:radar-de-concorrentes",
-   "copia": [
-    "mercado"
-   ],
-   "titulo": "Radar: trocar a linha 'Honda sem app nas populares' pelo que a fonte oficial prova",
-   "por_que": "O radar de 24/11 afirma que quem anda de CG, Pop, Biz e Bros não tem app da marca. A Honda tem o myHonda Connect, que aceita moto (honda.com.br, 24/11, entregas/D-20261124-cria-4.md). Afirmação errada no radar vira pauta e anúncio errados.",
-   "pronto_quando": "Item do radar de 24/11 reescrito: Honda tem app que aceita moto (cadastro e Assistência 24h), lembrete de revisão de moto não confirmado; com o link oficial; sem 'não tem app'.",
-   "prioridade": "P2",
-   "prazo": "2026-11-26T21:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T22:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T22:00:00-03:00",
-     "quem": "mercado",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Salvatore Greco",
-   "_para_nome": "Sun Tzu"
-  },
-  {
-   "id": "D-20261124-produto_analista-do-paywall-2",
+   "id": "D-20261124-produto_analista-do-paywall-1",
    "de": "produto:analista-do-paywall",
    "para": "master",
    "copia": [
     "produto"
    ],
-   "titulo": "Somar ao pacote do Davi 3 perguntas sim/não sobre moto fora do catálogo (D-20261124-produto-4)",
-   "por_que": "O grupo com moto fora da lista fica parado antes do paywall pelo código de 17/11 (agencia/demandas/entregas/D-20261124-produto-4.md) e a meta é % instalação>pagante; sem as 3 respostas não dá pra decidir a mudança nem saber se a build de 23/11 mudou isso.",
-   "pronto_quando": "As 3 perguntas da seção 'Perguntas pro Davi' da entrega anexadas ao pacote do Davi sem mudar o sentido, ou recusa com motivo; resposta registrada na entrega.",
+   "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
+   "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
+   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
    "prioridade": "P2",
    "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T22:10:00-03:00",
-   "fio": null,
-   "entrega": null,
+   "status": "devolvida",
+   "criada_em": "2026-11-24T11:00:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
+    "resumo": "As 3 perguntas da P-001 (secao 4) somadas como itens 13, 14 e 15 do pacote do Davi, sentido preservado."
+   },
    "cobrancas": 0,
    "historico": [
     {
-     "quando": "2026-11-24T22:10:00-03:00",
+     "quando": "2026-11-24T11:00:00-03:00",
      "quem": "produto:analista-do-paywall",
      "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T20:05:00-03:00",
+     "quem": "master",
+     "o_que": "entregue: itens 13 a 15 no pacote"
+    },
+    {
+     "quando": "2026-11-26T09:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "devolvida: itens 13 a 15 conferem com a secao 4 da P-001 (sentido preservado, ok), mas falta o anexo da pagina agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html no bilhete do Davi (o pacote D-20261123-master-pacote-davi.md nao cita o .html nem diz que vai anexado). Basta incluir o anexo/link no pacote e reentregar. A resposta do Davi na P-001 so e cobrada depois que ele responder."
     }
    ],
+   "atualizada_em": "2026-11-26T09:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Steve Jobs",
    "_para_nome": "Thomas Shelby"
-  },
-  {
-   "id": "D-20261125-trafego-1",
-   "de": "trafego",
-   "para": "dados",
-   "copia": [
-    "trafego",
-    "master",
-    "professor"
-   ],
-   "titulo": "Dizer em nº de conjuntos (e só isso) quantas vendas pagas por semana a verba do teste dos 3 estilos gera ao custo de novembro, e se o conjunto atual usa 'maior volume'",
-   "por_que": "A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso; 3 CBOs só cabem com 150 vendas pagas por semana nos 3 estilos (adendo de 25/11 em agencia/demandas/entregas/D-20261123-mkt-3.md). Vendas/dia -43% em novembro (09-numeros.md): sem esse número o teste que deve baixar o custo (+19%) pode encarecê-lo.",
-   "pronto_quando": "Resposta no fim de agencia/demandas/entregas/D-20261123-mkt-3.md ou em arquivo de entregas com: (1) W = vendas pagas por semana que a verba do teste gera ao custo por venda real de novembro, publicado SÓ como faixa: 'abaixo de 100', '100 a 149' ou '150 ou mais' (sem absoluto, sem R$); (2) se o conjunto que hoje vende usa estratégia de lance 'maior volume' ou teto de custo/bid cap/ROAS-alvo (leitura do gerenciador, sem editar). Fonte UTMify citada.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-25T15:30:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-25T15:30:00-03:00",
-     "quem": "trafego",
-     "o_que": "criou (destrava a escolha de estrutura do adendo de D-20261123-mkt-3; mesma ponte de % pendente de D-20261124-trafego-1)"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Pablo Escobar",
-   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261124-trafego-3",
@@ -470,91 +344,47 @@
    "_para_nome": "Tony Stark"
   },
   {
-   "id": "D-20261124-dados-5",
+   "id": "D-20261124-dados-3",
    "de": "dados",
-   "para": "trafego",
+   "para": "dados:relatorio-semanal",
    "copia": [
     "master"
    ],
-   "titulo": "Somar ao teste pago mínimo o portão 'Meta ligada ao AppsFlyer (SKAN) e eventos mapeados'",
-   "por_que": "Pela AppsFlyer, sem a integração SKAN com a Meta as instalações vindas do anúncio aparecem como orgânicas (https://support.appsflyer.com/hc/en-us/articles/360017095198); sem esse portão o teste D-20261123-dados-6 pode rodar e a instalação do anúncio contar como orgânica, e o custo por pagante não existe.",
-   "pronto_quando": "Em agencia/demandas/entregas/D-20261123-dados-6.md (ou arquivo novo ligado a ele) um 6º portão: a integração Meta-AppsFlyer ativa e os eventos mapeados no SKAN Conversion Studio, com sim/não pro Léo, antes de qualquer verba. Nada é ligado nem gasto.",
+   "titulo": "Minuta do relatório de 30/11 com bloco de medição: alcance 28d em % por dia e cobertura do funil",
+   "por_que": "O alcance 28d da conta ficou parado (-0,4% de 23 para 24/11, dados/insights-2026-11-23.json e -24.json) e os 59 posts de feed explicam no máximo 9,9% dele; sem a série diária em % e a lista de etapas do funil 'com dado/sem dado', a segunda de 30/11 repete o relatório cego (dados/relatorios/2026-11-23.md).",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-dados-3.md com (1) tabela diária de 23 a 27/11: alcance 28d em variação % contra 23/11, soma de alcance dos posts / alcance 28d em %, mediana de alcance por post em % dos seguidores, lida dos dados/insights-*.json (cada linha cita o arquivo); (2) as 6 etapas do funil, cada uma marcada 'com dado' ou 'sem dado' com a fonte que falta; nenhum número absoluto de assinante ou R$.",
    "prioridade": "P2",
    "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "aberta",
+   "status": "devolvida",
    "criada_em": "2026-11-24T19:30:00-03:00",
    "fio": null,
-   "entrega": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-dados-3.md",
+    "resumo": "Tabela 23-24/11 pronta (alcance 28d -0,4% vs 23/11; posts explicam no maximo 9,6% e 9,9%; mediana 0,88% dos seguidores nos dois dias); 25-27/11 pendentes da coleta diaria 23h41. Funil: 0 de 6 etapas com dado, tudo depende da ponte de resumo em % (D-20261124-master-2)."
+   },
    "cobrancas": 0,
    "historico": [
     {
      "quando": "2026-11-24T19:30:00-03:00",
      "quem": "dados",
      "o_que": "criou"
-    }
-   ],
-   "atualizada_em": "2026-11-24T19:30:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Alan Turing",
-   "_para_nome": "Pablo Escobar"
-  },
-  {
-   "id": "D-20261125-dados-1",
-   "de": "dados",
-   "para": "trafego",
-   "copia": [
-    "dados",
-    "master"
-   ],
-   "titulo": "Dizer, em %, quais campanhas ou impulsionamentos explicam o alcance de anuncio (AD) da conta no Instagram",
-   "por_que": "Coleta de 25/11 (dados/insights-2026-11-25.json, ig_alcance_28d_formato): AD = 98,8% do alcance 28d da conta; feed ~2%. O alcance da conta e pago, mas nao sei de qual campanha. Sem isso nao ha custo por alcance nem teste de criativo legivel (vender mais depende de saber o que paga a visibilidade).",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-25T12:30:00-03:00",
-   "fio": "F-001",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
+    },
     {
-     "quando": "2026-11-25T12:30:00-03:00",
+     "quando": "2026-11-24T21:00:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "entregue: minuta do bloco de medicao (tabela 23-24/11 real, 25-27 pendentes; funil 0/6 com dado)"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
      "quem": "dados",
-     "o_que": "criou"
+     "o_que": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
     }
    ],
-   "atualizada_em": "2026-11-25T12:30:00-03:00",
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
+   "devolucao": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte.",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
-   "_para_nome": "Pablo Escobar"
-  },
-  {
-   "id": "D-20261124-lojas-2",
-   "de": "lojas",
-   "para": "lojas:respostas-as-avaliacoes",
-   "copia": [
-    "lojas"
-   ],
-   "titulo": "Vigia pós-build: avaliações novas por versão e plataforma nas 72 h depois da build nova",
-   "por_que": "D-20261123-produto-2 (Stark, 26/11) pede esse vigia; o único 1★ do Play é de sincronização na v1.0.1 (dados/avaliacoes/ultimas.json, coleta 24/11 20h14Z). Se a build nova piorar a nota, o assinante da loja cai antes de o funil mostrar. Reclamação por versão é o que o Stark usa pra priorizar correção.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-lojas-2.md com tabela data | loja | versão (campo versao_app do Play; iOS 'sem campo', não inventar) | nota | tema em 3 palavras, sem texto nem autor do cliente, cobrindo 72 h a partir da primeira avaliação de versão nova; 1-2★ de bug ou pagamento sinalizados pra mim na hora. Sem avaliação nova, dizer 'nenhuma' com a hora da coleta.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T21:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-24T21:30:00-03:00",
-   "fio": "F-002",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T21:30:00-03:00",
-     "quem": "lojas",
-     "o_que": "criou"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Jeff Bezos",
-   "_para_nome": "Ted Lasso"
+   "_para_nome": "Ernest Hemingway"
   },
   {
    "id": "D-20261124-mkt-2",
@@ -590,6 +420,64 @@
    "_para_nome": "Alan Turing"
   },
   {
+   "id": "D-20261126-trafego-2",
+   "de": "trafego",
+   "para": "master",
+   "copia": [
+    "trafego",
+    "dados"
+   ],
+   "titulo": "Abrir no navegador as paginas oficiais da Meta citadas em D-20261125-trafego-2 e marcar o que esta confirmado",
+   "por_que": "Meus passos de menu (compartilhar pixel como parceiro, verificacao da empresa, qualidade da conta, limite de conta nova) estao marcados [confirmar no oficial] porque a leitura externa foi negada aqui; o Leo so deve agir sobre passo confirmado.",
+   "pronto_quando": "Arquivo ou adendo no fim de D-20261125-trafego-2.md com, para cada [confirmar no oficial]: confirmado, corrigido ou nao existe, com o link oficial aberto. Sem inventar o que nao abriu.",
+   "prioridade": "P2",
+   "prazo": "2026-11-28T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-26T12:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261126-trafego-1",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "trafego",
+    "master"
+   ],
+   "titulo": "Ler, so em % e sim/nao, as hipoteses H2 e H8 do \"2 produtos juntos, um para\" e o historico de atividade da conta",
+   "por_que": "D-20261125-trafego-2 (secao 3): H2 (pixel misturado, ja houve 18/11) e H8 (Meta x UTMify x Kavoo) sao so leitura, custam zero e podem explicar a queda do Leo sem mexer em nada; sem elas a estrutura nova pode curar o problema errado.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) por pixel, % das compras que vem de cada produto (nome/URL), sem absoluto; (2) para a mesma semana, direcao e % de diferenca entre Kavoo, UTMify e Meta por produto; (3) data em que o 2o produto foi ligado e se o historico de atividade mostra edicao no 1o nos 3 dias seguintes (sim/nao). Sem leitura, escrever sem dado e quem libera.",
+   "prioridade": "P2",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-26T12:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261125-dados-2",
    "de": "dados",
    "para": "dados:relatorio-semanal",
@@ -601,7 +489,7 @@
    "pronto_quando": "Relatorio de 30/11 com linha 'alcance por formato' em %, a ressalva (soma >100%, REELS = sem dado, 1 corte de 28 dias) e a relatorio-semanal-1 marcada com a prova do cron de 25/11.",
    "prioridade": "P3",
    "prazo": "2026-11-30T08:00:00-03:00",
-   "status": "aberta",
+   "status": "em_andamento",
    "criada_em": "2026-11-25T12:30:00-03:00",
    "fio": "F-001",
    "entrega": null,
@@ -611,9 +499,14 @@
      "quando": "2026-11-25T12:30:00-03:00",
      "quem": "dados",
      "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T10:20:00-03:00",
+     "quem": "dados",
+     "o_que": "em andamento: parte da prova pronta (relatorio-semanal-1 entregue, tabela de 25 e 26/11 na sec. 6 de D-20261123-dados_relatorio-semanal-1.md). Falta o relatorio de 30/11 do Hemingway incluir a linha em % com a ressalva; atualizo com a coleta de 30/11."
     }
    ],
-   "atualizada_em": "2026-11-25T12:30:00-03:00",
+   "atualizada_em": "2026-11-26T10:20:00-03:00",
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Ernest Hemingway"
@@ -1256,6 +1149,46 @@
    "atualizada_em": "2026-11-25T15:30:00-03:00",
    "_atrasada": false,
    "_de_nome": "professor",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261125-trafego-2",
+   "de": "master",
+   "para": "trafego",
+   "copia": [
+    "master",
+    "dados",
+    "infoprodutos"
+   ],
+   "titulo": "Plano de blindagem de conta e sinal (BM, pixel, contas de reserva) + diagnóstico de por que 2 produtos não escalam juntos",
+   "por_que": "Relato do Léo em 25/11: o Perfect Class estourou, a BM caiu, o pixel caiu junto e o produto nunca voltou. Ele não quer isso de novo nos Corretores nem no MinhaMoto, e diz que quando roda 2 produtos juntos um para de vender. Ver LICOES.md de tráfego, 25/11.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) mapa de BMs, contas, pixels/datasets e páginas a partir do que já está no repositório; (2) plano de contingência passo a passo com fonte oficial da Meta (BM de anúncios separada, contas de reserva, compartilhar pixel/dataset como parceiro, CAPI, backup de públicos e criativos, o que fazer nas primeiras 24h se a BM cair), cada passo marcado 'Léo faz' ou 'agente faz'; (3) diagnóstico das hipóteses do '2 produtos não escalam juntos', o que medir pra confirmar cada uma e a estrutura recomendada; (4) 1 pergunta sim/não pro Léo: montar a BM de anúncios separada antes de subir as campanhas novas dos Corretores, com recomendação.",
+   "prioridade": "P1",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-25T17:05:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261125-trafego-2.md",
+    "resumo": "Mapa de BMs/contas/pixels do repo (BM Matriz = ponto unico de falha), plano em 2 BMs (Cofre guarda pixel e paginas, Operacao anuncia) com 11 passos de preparacao e 24h de contingencia marcados Leo faz/agente faz, 8 hipoteses de \"2 produtos nao escalam juntos\" com o que medir e estrutura recomendada. Paginas oficiais da Meta nao abriram: passos de menu marcados [confirmar no oficial]. Sem numero de campanha."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T17:05:00-03:00",
+     "quem": "master",
+     "o_que": "criou a partir do relato do Léo no chat principal"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entregou: mapa, plano de contingencia, diagnostico de 8 hipoteses e pergunta sim/nao pro Leo (recomendacao sim). Sem acesso as paginas oficiais da Meta; passos marcados [confirmar no oficial]"
+    }
+   ],
+   "pergunta": "Leo, sim ou nao: voce monta a BM de anuncios separada (Operacao, com 1 conta de reserva e 2 fatores, pixel e pagina compartilhados como parceira pela Matriz) antes das campanhas novas dos Corretores e da 1a verba do MinhaMoto? Recomendacao do Escobar: SIM; campanhas ativas da CA 01 nao sao editadas.",
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
    "_para_nome": "Pablo Escobar"
   },
   {
@@ -3392,7 +3325,7 @@
    "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-1.md com: (1) cada afirmacao do radar de 24/11 que generaliza (marca, \"nenhum\", \"todos\", \"nao tem\") listada com o escopo real da fonte e o veredito fato/hipotese; (2) item 5 reescrito dentro do que a fonte diz; (3) o que ja foi corrigido por mim (BANCO.md, radar) conferido. A confirmacao oficial da Honda e da D-20261124-cria-4 (Greco), nao duplicar.",
    "prioridade": "P2",
    "prazo": "2026-11-26T20:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-24T20:15:00-03:00",
    "fio": null,
    "entrega": {
@@ -3410,9 +3343,14 @@
      "quando": "2026-11-24T22:10:00-03:00",
      "quem": "mercado:radar-de-concorrentes",
      "o_que": "entregou a auditoria (agencia/demandas/entregas/D-20261124-master-1.md); limite: paginas-fonte nao reabertas hoje"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "master",
+     "o_que": "aceitou: 13 afirmacoes com escopo da fonte e veredito fato/hipotese, item 5 reescrito so no escopo (4 motos, so conectividade), correcoes do BANCO/radar conferidas no arquivo (Lander fora, sem 'nao tem app', link oficial). Limite declarado: paginas-fonte nao reabertas, escopo vem do que o radar anotou; reabrir fica pra proxima rodada"
     }
    ],
-   "atualizada_em": "2026-11-24T22:10:00-03:00",
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Thomas Shelby",
    "_para_nome": "Sun Tzu"
@@ -3607,6 +3545,100 @@
    "_para_nome": "Pablo Escobar"
   },
   {
+   "id": "D-20261123-dados_relatorio-semanal-1",
+   "de": "dados:relatorio-semanal",
+   "para": "dados",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "Testar fora do repositório a chamada de alcance 28d por formato (media_product_type) antes de entrar no insights.py",
+   "por_que": "Hoje o alcance da conta em 28 dias é 6,3x os seguidores e os posts de feed explicam no máximo 9,6% dele (dados/insights-2026-11-23.json). Sem a origem (AD, FEED, REELS, STORY) Tráfego e Criativos não sabem onde investir pra gerar novos pagantes.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo se a chamada da seção 4 de D-20261123-dados-4.md retornou por_formato (AD/FEED/REELS/STORY) ou o erro exato da Meta e o ajuste (janela, parâmetro), testada sem gravar em dados/ e sem token no texto. Alterar o script só depois do aceite do Turing.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-23T23:35:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-dados_relatorio-semanal-1.md",
+    "resumo": "A chamada por media_product_type retornou por_formato sem erro nas coletas de cron de 25/11 e 26/11 (erros vazio). 26/11: AD 98,9% do alcance 28d, story 1,3%, carrossel 1,1%, post 0,7% (soma 102%: mesma pessoa em mais de um formato; REELS = sem dado). Alcance total +0,05% vs 25/11. Sem absoluto, sem token."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-23T23:35:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T10:30:00-03:00",
+     "quem": "coordenador",
+     "o_que": "redirecionada: dados:coletor-de-metricas está na reserva; absorvida pelo diretor dados (ESTRUTURA-ENXUTA)"
+    },
+    {
+     "quando": "2026-11-24T14:55:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada (lider): nao consegui testar sem token; entregue doc oficial, revisao da proposta, patch e teste; pergunta sim/nao ao Davi para aplicar o patch e a coleta das 23h41 trazer por_formato ou o erro exato"
+    },
+    {
+     "quando": "2026-11-24T19:40:00-03:00",
+     "quem": "master",
+     "o_que": "Shelby aprovou e aplicou o patch em scripts/insights.py (so leitura, dentro de tenta(), sem chave nova; reversivel). Correcao pequena, nao e pergunta pro Davi/Leo. A coleta das 23h41 grava ig_alcance_28d_formato (por_formato ou o erro exato da Meta). Turing le dados/insights-2026-11-25.json e fecha; se der erro de janela, 2 chamadas de 14 dias."
+    },
+    {
+     "quando": "2026-11-24T21:00:00-03:00",
+     "quem": "dados:relatorio-semanal",
+     "o_que": "conferido: dados/insights-2026-11-25.json ainda nao existe; aguardo a coleta das 23h41 para ler ig_alcance_28d_formato e fechar com o Turing"
+    },
+    {
+     "quando": "2026-11-26T10:20:00-03:00",
+     "quem": "dados",
+     "o_que": "entregue: conferi insights-2026-11-25.json e insights-2026-11-26.json (cron, erros vazio) com ig_alcance_28d_formato; secao 6 do arquivo de entrega traz a tabela em % e as ressalvas; fechada pelo diretor (subordinado na reserva)"
+    }
+   ],
+   "atualizada_em": "2026-11-26T10:20:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Ernest Hemingway",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261124-mercado-4",
+   "de": "mercado",
+   "para": "mercado:radar-de-concorrentes",
+   "copia": [
+    "mercado"
+   ],
+   "titulo": "Radar: trocar a linha 'Honda sem app nas populares' pelo que a fonte oficial prova",
+   "por_que": "O radar de 24/11 afirma que quem anda de CG, Pop, Biz e Bros não tem app da marca. A Honda tem o myHonda Connect, que aceita moto (honda.com.br, 24/11, entregas/D-20261124-cria-4.md). Afirmação errada no radar vira pauta e anúncio errados.",
+   "pronto_quando": "Item do radar de 24/11 reescrito: Honda tem app que aceita moto (cadastro e Assistência 24h), lembrete de revisão de moto não confirmado; com o link oficial; sem 'não tem app'.",
+   "prioridade": "P2",
+   "prazo": "2026-11-26T21:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T22:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-mercado-4.md",
+    "resumo": "Item 5, linha 2 da tabela e ideia de conteudo do radar de 24/11 reescritos: Honda tem myHonda Connect (cadastro de moto e Assistencia 24h), lembrete de revisao de moto nao confirmado, com link oficial; sem 'nao tem app'. BANCO.md atualizado. Limite: nao reabri honda.com.br hoje, uso a leitura da cria-4."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T22:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T09:00:00-03:00",
+     "quem": "mercado:radar-de-concorrentes",
+     "o_que": "entregou (agencia/demandas/entregas/D-20261124-mercado-4.md)"
+    }
+   ],
+   "atualizada_em": "2026-11-26T09:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Sun Tzu"
+  },
+  {
    "id": "D-20261124-dados-1",
    "de": "dados",
    "para": "cria",
@@ -3743,7 +3775,7 @@
    "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) passo a passo das telas que esse usuário atravessa, com arquivo e linha do código de 17/11 (versão 1.0.1 dita); (2) o que existe hoje pra pedir modelo faltante; (3) UMA mudança proposta, antes/depois, sem prometer modelo nem data, sem R$, sem 'grátis'; (4) evento a medir pra saber o tamanho do grupo. Marcado 'proposta pro Davi, nada mexe no app'.",
    "prioridade": "P2",
    "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-24T21:30:00-03:00",
    "fio": null,
    "entrega": {
@@ -3761,46 +3793,51 @@
      "quando": "2026-11-24T22:10:00-03:00",
      "quem": "produto:analista-do-paywall",
      "o_que": "entregue: passo a passo com arquivo e linha, pedido de modelo hoje, 1 mudança antes/depois, eventos; corrige a premissa (não chega ao paywall)"
+    },
+    {
+     "quando": "2026-11-26T09:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceita: conferi no código do commit de 17/11 (a7488e6) os trechos citados (paywall só via tour/funil-sem-pro, 'Nenhum modelo encontrado' sem pedido, mailto em branco, '48 horas', versão 1.0.1, onboarding só no aparelho); os 4 itens do pronto_quando estão presentes, sem R$/grátis/promessa, marcado proposta pro Davi. Sem número de fonte externa a fiscalizar (Turing não necessário: 377/263 vêm de D-20261123-mercado_radar-de-concorrentes-1 e o grupo é dito desconhecido)."
     }
    ],
-   "atualizada_em": "2026-11-24T22:10:00-03:00",
+   "atualizada_em": "2026-11-26T09:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Tony Stark",
    "_para_nome": "Steve Jobs"
   },
   {
-   "id": "D-20261124-produto_analista-do-paywall-1",
+   "id": "D-20261124-produto_analista-do-paywall-2",
    "de": "produto:analista-do-paywall",
    "para": "master",
    "copia": [
     "produto"
    ],
-   "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
-   "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
-   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
+   "titulo": "Somar ao pacote do Davi 3 perguntas sim/não sobre moto fora do catálogo (D-20261124-produto-4)",
+   "por_que": "O grupo com moto fora da lista fica parado antes do paywall pelo código de 17/11 (agencia/demandas/entregas/D-20261124-produto-4.md) e a meta é % instalação>pagante; sem as 3 respostas não dá pra decidir a mudança nem saber se a build de 23/11 mudou isso.",
+   "pronto_quando": "As 3 perguntas da seção 'Perguntas pro Davi' da entrega anexadas ao pacote do Davi sem mudar o sentido, ou recusa com motivo; resposta registrada na entrega.",
    "prioridade": "P2",
    "prazo": "2026-11-27T18:00:00-03:00",
    "status": "entregue",
-   "criada_em": "2026-11-24T11:00:00-03:00",
-   "fio": "F-001",
+   "criada_em": "2026-11-24T22:10:00-03:00",
+   "fio": null,
    "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
-    "resumo": "As 3 perguntas da P-001 (secao 4) somadas como itens 13, 14 e 15 do pacote do Davi, sentido preservado."
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto_analista-do-paywall-2.md",
+    "resumo": "As 3 perguntas sim/não de produto-4 somadas como itens 17 a 19 do pacote único do Davi, sentido preservado; nenhuma já respondida em decisoes.md/itens.json."
    },
    "cobrancas": 0,
    "historico": [
     {
-     "quando": "2026-11-24T11:00:00-03:00",
+     "quando": "2026-11-24T22:10:00-03:00",
      "quem": "produto:analista-do-paywall",
      "o_que": "criou"
     },
     {
-     "quando": "2026-11-24T20:05:00-03:00",
+     "quando": "2026-11-26T10:00:00-03:00",
      "quem": "master",
-     "o_que": "entregue: itens 13 a 15 no pacote"
+     "o_que": "entregue: itens 17 a 19 no pacote do Davi; aguarda resposta dele"
     }
    ],
-   "atualizada_em": "2026-11-24T20:05:00-03:00",
+   "atualizada_em": "2026-11-26T10:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Steve Jobs",
    "_para_nome": "Thomas Shelby"
@@ -3841,6 +3878,47 @@
    "atualizada_em": "2026-11-24T14:55:00-03:00",
    "bloqueio": "dados",
    "motivo_bloqueio": "Leitura em % da UTMify (vendas pagas/dia 14d e custo por venda por faixa, indice out=100). Falta a ponte de resumo em % do carnucci-dados para as sessoes do minhamoto-midia (PENDENCIAS.md l.101; decisoes.md, ata de 23/11). Ja decidido pelo Leo: nao vira pergunta.",
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261125-trafego-1",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "trafego",
+    "master",
+    "professor"
+   ],
+   "titulo": "Dizer em nº de conjuntos (e só isso) quantas vendas pagas por semana a verba do teste dos 3 estilos gera ao custo de novembro, e se o conjunto atual usa 'maior volume'",
+   "por_que": "A Meta recomenda ~50 conversões por semana por conjunto e relata CPA ~28% maior abaixo disso; 3 CBOs só cabem com 150 vendas pagas por semana nos 3 estilos (adendo de 25/11 em agencia/demandas/entregas/D-20261123-mkt-3.md). Vendas/dia -43% em novembro (09-numeros.md): sem esse número o teste que deve baixar o custo (+19%) pode encarecê-lo.",
+   "pronto_quando": "Resposta no fim de agencia/demandas/entregas/D-20261123-mkt-3.md ou em arquivo de entregas com: (1) W = vendas pagas por semana que a verba do teste gera ao custo por venda real de novembro, publicado SÓ como faixa: 'abaixo de 100', '100 a 149' ou '150 ou mais' (sem absoluto, sem R$); (2) se o conjunto que hoje vende usa estratégia de lance 'maior volume' ou teto de custo/bid cap/ROAS-alvo (leitura do gerenciador, sem editar). Fonte UTMify citada.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-25T15:30:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-1.md",
+    "resumo": "Sem leitura da UTMify nem do gerenciador nesta sessao, nao publico faixa de W nem digo o tipo de lance. Vale a tabela de D-20261124-trafego-1 (dias = 300/V, cenarios, poder do teste) e a regra de decisao de D-20261123-mkt-3 sec. 2: W preenche a escolha de 3 CBOs, 2 CBOs ou teste dentro do conjunto. Preencho no dia em que existir a leitura em %."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T15:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou (destrava a escolha de estrutura do adendo de D-20261123-mkt-3; mesma ponte de % pendente de D-20261124-trafego-1)"
+    },
+    {
+     "quando": "2026-11-26T10:20:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada: sem acesso a UTMify/gerenciador (ponte de % do QG pendente, mesmo bloqueio de D-20261124-trafego-1). Nao estimei W (nao inventar). Itens (1) faixa de W e (2) tipo de lance ficam para o dia da leitura; a regra de decisao ja esta em mkt-3 sec. 2"
+    }
+   ],
+   "bloqueio": "dados",
+   "motivo_bloqueio": "Leitura de W (faixa de vendas pagas/semana do teste) e do tipo de lance do conjunto exige UTMify e gerenciador da Meta no carnucci-dados; a ponte de resumo em % (resumo-pct.json) ainda nao existe no minhamoto-midia e esta sessao nao le o repo privado. Ja decidido: nao vira pergunta ao Leo (ata 23/11).",
+   "atualizada_em": "2026-11-26T10:20:00-03:00",
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Alan Turing"
@@ -3920,43 +3998,6 @@
    "_para_nome": "Thomas Shelby"
   },
   {
-   "id": "D-20261124-dados-3",
-   "de": "dados",
-   "para": "dados:relatorio-semanal",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Minuta do relatório de 30/11 com bloco de medição: alcance 28d em % por dia e cobertura do funil",
-   "por_que": "O alcance 28d da conta ficou parado (-0,4% de 23 para 24/11, dados/insights-2026-11-23.json e -24.json) e os 59 posts de feed explicam no máximo 9,9% dele; sem a série diária em % e a lista de etapas do funil 'com dado/sem dado', a segunda de 30/11 repete o relatório cego (dados/relatorios/2026-11-23.md).",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-dados-3.md com (1) tabela diária de 23 a 27/11: alcance 28d em variação % contra 23/11, soma de alcance dos posts / alcance 28d em %, mediana de alcance por post em % dos seguidores, lida dos dados/insights-*.json (cada linha cita o arquivo); (2) as 6 etapas do funil, cada uma marcada 'com dado' ou 'sem dado' com a fonte que falta; nenhum número absoluto de assinante ou R$.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "entregue",
-   "criada_em": "2026-11-24T19:30:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261124-dados-3.md",
-    "resumo": "Tabela 23-24/11 pronta (alcance 28d -0,4% vs 23/11; posts explicam no maximo 9,6% e 9,9%; mediana 0,88% dos seguidores nos dois dias); 25-27/11 pendentes da coleta diaria 23h41. Funil: 0 de 6 etapas com dado, tudo depende da ponte de resumo em % (D-20261124-master-2)."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-24T19:30:00-03:00",
-     "quem": "dados",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T21:00:00-03:00",
-     "quem": "dados:relatorio-semanal",
-     "o_que": "entregue: minuta do bloco de medicao (tabela 23-24/11 real, 25-27 pendentes; funil 0/6 com dado)"
-    }
-   ],
-   "atualizada_em": "2026-11-24T21:00:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Alan Turing",
-   "_para_nome": "Ernest Hemingway"
-  },
-  {
    "id": "D-20261124-dados-4",
    "de": "dados",
    "para": "master:auditor-de-entregas",
@@ -3997,6 +4038,81 @@
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Eliot Ness"
+  },
+  {
+   "id": "D-20261124-dados-5",
+   "de": "dados",
+   "para": "trafego",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Somar ao teste pago mínimo o portão 'Meta ligada ao AppsFlyer (SKAN) e eventos mapeados'",
+   "por_que": "Pela AppsFlyer, sem a integração SKAN com a Meta as instalações vindas do anúncio aparecem como orgânicas (https://support.appsflyer.com/hc/en-us/articles/360017095198); sem esse portão o teste D-20261123-dados-6 pode rodar e a instalação do anúncio contar como orgânica, e o custo por pagante não existe.",
+   "pronto_quando": "Em agencia/demandas/entregas/D-20261123-dados-6.md (ou arquivo novo ligado a ele) um 6º portão: a integração Meta-AppsFlyer ativa e os eventos mapeados no SKAN Conversion Studio, com sim/não pro Léo, antes de qualquer verba. Nada é ligado nem gasto.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T19:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T19:30:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-dados-5.md",
+    "resumo": "6o portao escrito (Meta-AppsFlyer ativa e eventos de compra mapeados, verificado com instalacao de teste a verba zero). Estado do repo: integracao Meta e TikTok feita em 18/11, mapeamento dos eventos de compra pendente (so af_app_opened), SKAN sem registro; portao nao passa hoje. Sim/nao pro Leo anexo."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T19:30:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entregou o 6o portao (arquivo novo ligado a dados-6); estado do portao conferido em PENDENCIAS"
+    }
+   ],
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Pablo Escobar"
+  },
+  {
+   "id": "D-20261125-dados-1",
+   "de": "dados",
+   "para": "trafego",
+   "copia": [
+    "dados",
+    "master"
+   ],
+   "titulo": "Dizer, em %, quais campanhas ou impulsionamentos explicam o alcance de anuncio (AD) da conta no Instagram",
+   "por_que": "Coleta de 25/11 (dados/insights-2026-11-25.json, ig_alcance_28d_formato): AD = 98,8% do alcance 28d da conta; feed ~2%. O alcance da conta e pago, mas nao sei de qual campanha. Sem isso nao ha custo por alcance nem teste de criativo legivel (vender mais depende de saber o que paga a visibilidade).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T19:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-25T12:30:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261125-dados-1.md",
+    "resumo": "Sem dado de campanha: sem leitura da Meta Ads (ponte de % do QG pendente). Provado em %: AD = ~97% a 99% do alcance 28d da conta, organico ~1% a 3%. Hipoteses: MM - Curtos, impulsionamento pelo botao Promover, outras. Quem libera: ponte do QG ou Leo (objetivo e % do gasto, sem R$)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-25T12:30:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entregou como \"sem dado\" conforme o pronto_quando: % do repositorio, hipoteses e quem libera"
+    }
+   ],
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Pablo Escobar"
   },
   {
    "id": "D-20261124-mercado-2",
@@ -4043,7 +4159,7 @@
    "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261124-cria-4.md com 1 linha por modelo (CG 160, Pop 110i, Biz, Bros 160): 'existe app oficial de manutenção/lembrete: sim, não ou não achei', link da página oficial da Honda (honda.com.br ou loja de apps) e data do acesso. Se a página oficial não abrir, dizer 'não consegui abrir' e não usar fonte de terceiros como prova.",
    "prioridade": "P2",
    "prazo": "2026-11-27T21:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-24T21:30:00-03:00",
    "fio": null,
    "entrega": {
@@ -4061,12 +4177,54 @@
      "quando": "2026-11-24T22:00:00-03:00",
      "quem": "mercado",
      "o_que": "entregue: app oficial myHonda Connect aceita moto; lembrete de revisão pra moto não achado (não afirmado como ausente); ver entrega"
+    },
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "cria",
+     "o_que": "aceita: 4 modelos com resposta (app oficial myHonda Connect: sim; lembrete/revisao: nao achei), links honda.com.br e data 24/11/2026, sem fonte de terceiros; limites declarados. Frase 'sua Honda nao tem app' proibida nos roteiros"
     }
    ],
-   "atualizada_em": "2026-11-24T22:00:00-03:00",
+   "atualizada_em": "2026-11-26T12:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Salvatore Greco"
+  },
+  {
+   "id": "D-20261124-lojas-2",
+   "de": "lojas",
+   "para": "lojas:respostas-as-avaliacoes",
+   "copia": [
+    "lojas"
+   ],
+   "titulo": "Vigia pós-build: avaliações novas por versão e plataforma nas 72 h depois da build nova",
+   "por_que": "D-20261123-produto-2 (Stark, 26/11) pede esse vigia; o único 1★ do Play é de sincronização na v1.0.1 (dados/avaliacoes/ultimas.json, coleta 24/11 20h14Z). Se a build nova piorar a nota, o assinante da loja cai antes de o funil mostrar. Reclamação por versão é o que o Stark usa pra priorizar correção.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-lojas-2.md com tabela data | loja | versão (campo versao_app do Play; iOS 'sem campo', não inventar) | nota | tema em 3 palavras, sem texto nem autor do cliente, cobrindo 72 h a partir da primeira avaliação de versão nova; 1-2★ de bug ou pagamento sinalizados pra mim na hora. Sem avaliação nova, dizer 'nenhuma' com a hora da coleta.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T21:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T21:30:00-03:00",
+   "fio": "F-002",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-lojas-2.md",
+    "resumo": "Coleta 26/11 11:43Z: nenhuma avaliação nova nem de versão nova (Play 1.0.1 n=1 1★ sync; App Store n=6 5★ sem versão); 72 h ainda não começaram. Sem alerta novo; tabela e regra de atualização prontas, hipótese de janela de 7 dias da API do Play sinalizada."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-24T21:30:00-03:00",
+     "quem": "lojas",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T08:50:00-03:00",
+     "quem": "lojas:respostas-as-avaliacoes",
+     "o_que": "entregue"
+    }
+   ],
+   "atualizada_em": "2026-11-26T08:50:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Jeff Bezos",
+   "_para_nome": "Ted Lasso"
   },
   {
    "id": "D-20261124-mercado-3",

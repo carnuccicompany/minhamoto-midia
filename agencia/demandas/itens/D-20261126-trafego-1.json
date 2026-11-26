@@ -1,0 +1,26 @@
+{
+  "id": "D-20261126-trafego-1",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "trafego",
+    "master"
+  ],
+  "titulo": "Ler, so em % e sim/nao, as hipoteses H2 e H8 do \"2 produtos juntos, um para\" e o historico de atividade da conta",
+  "por_que": "D-20261125-trafego-2 (secao 3): H2 (pixel misturado, ja houve 18/11) e H8 (Meta x UTMify x Kavoo) sao so leitura, custam zero e podem explicar a queda do Leo sem mexer em nada; sem elas a estrutura nova pode curar o problema errado.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) por pixel, % das compras que vem de cada produto (nome/URL), sem absoluto; (2) para a mesma semana, direcao e % de diferenca entre Kavoo, UTMify e Meta por produto; (3) data em que o 2o produto foi ligado e se o historico de atividade mostra edicao no 1o nos 3 dias seguintes (sim/nao). Sem leitura, escrever sem dado e quem libera.",
+  "prioridade": "P2",
+  "prazo": "2026-11-30T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-26T12:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    }
+  ]
+}

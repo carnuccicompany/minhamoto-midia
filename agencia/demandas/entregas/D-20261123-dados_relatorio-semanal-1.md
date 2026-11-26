@@ -66,3 +66,23 @@ Fonte: `dados/insights-2026-11-24.json` (coleta 24/11 12h56 UTC, `erros` vazio).
 
 ## Pergunta (sim/não, com recomendação)
 Davi (ou Léo): posso aplicar o patch da seção 2 em `scripts/insights.py` para a coleta das 23h41 de hoje trazer `por_formato` (ou o erro exato da Meta)? É só leitura, dentro de `tenta()`, não grava token e não derruba a coleta. **Recomendo: sim.**
+
+## 6. Fechamento (26/11/2026): a chamada foi testada pelo cron, sem token meu
+Pergunta da demanda: a chamada da seção 4 de D-20261123-dados-4 retorna `por_formato` ou erro? **Retornou `por_formato`, sem erro, duas coletas seguidas.** Fonte: `dados/insights-2026-11-25.json` (coletado_em 2026-11-25T11:44Z, `erros` vazio) e `dados/insights-2026-11-26.json` (coletado_em 2026-11-26T11:29Z, `erros` vazio), ambos do cron. Janela: 28 dias, 1 corte por coleta. Nenhum token no texto, nenhuma gravação minha em `dados/`.
+
+| Formato (% do alcance 28d da conta) | 25/11 | 26/11 |
+|---|---|---|
+| AD (anúncio) | 98,8% | 98,9% |
+| STORY | 1,5% | 1,3% |
+| CAROUSEL_CONTAINER (carrossel de feed) | 1,1% | 1,1% |
+| POST (feed) | 1,0% | 0,7% |
+| Soma | 102,4% | 102,0% |
+
+Leitura e ressalvas:
+- A soma passa de 100% porque a mesma pessoa pode ver mais de um formato no período; não é erro. Cada % é sobre o alcance único total da conta.
+- REELS não veio na resposta: **sem dado**, não zero. Não afirmar "a conta não faz Reels" por isso.
+- O alcance 28d total variou +0,05% de 25 para 26/11 (estável). A fatia de feed (POST + carrossel) fica em 1,8% a 2,1%, abaixo do teto de 9,9% que eu tinha calculado somando posts: a hipótese "pelo menos 90% não vem de feed" confirmou, pelo lado do anúncio.
+- Por que importa pra vender: quase todo o alcance medido da conta é anúncio. O custo por assinante precisa ser lido por anúncio/campanha (pedido D-20261125-dados-1, Escobar), não pelo alcance da conta como se fosse orgânico.
+- Limite: 2 pontos, 1 dia de distância. Tendência só depois de 7 coletas. Janela máxima da Meta continua sem declaração oficial; a chamada de 28 dias funcionou, então não precisa do plano de 2 chamadas de 14 dias.
+
+Aceito o patch do Shelby (24/11). Demanda fechada por mim (diretor, absorvendo o subordinado); a linha em % entra no relatório de 30/11 (D-20261125-dados-2).

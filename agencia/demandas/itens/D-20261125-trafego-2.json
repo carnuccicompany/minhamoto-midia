@@ -12,16 +12,26 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) mapa de BMs, contas, pixels/datasets e páginas a partir do que já está no repositório; (2) plano de contingência passo a passo com fonte oficial da Meta (BM de anúncios separada, contas de reserva, compartilhar pixel/dataset como parceiro, CAPI, backup de públicos e criativos, o que fazer nas primeiras 24h se a BM cair), cada passo marcado 'Léo faz' ou 'agente faz'; (3) diagnóstico das hipóteses do '2 produtos não escalam juntos', o que medir pra confirmar cada uma e a estrutura recomendada; (4) 1 pergunta sim/não pro Léo: montar a BM de anúncios separada antes de subir as campanhas novas dos Corretores, com recomendação.",
   "prioridade": "P1",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-25T17:05:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261125-trafego-2.md",
+    "resumo": "Mapa de BMs/contas/pixels do repo (BM Matriz = ponto unico de falha), plano em 2 BMs (Cofre guarda pixel e paginas, Operacao anuncia) com 11 passos de preparacao e 24h de contingencia marcados Leo faz/agente faz, 8 hipoteses de \"2 produtos nao escalam juntos\" com o que medir e estrutura recomendada. Paginas oficiais da Meta nao abriram: passos de menu marcados [confirmar no oficial]. Sem numero de campanha."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-25T17:05:00-03:00",
       "quem": "master",
       "o_que": "criou a partir do relato do Léo no chat principal"
+    },
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: mapa, plano de contingencia, diagnostico de 8 hipoteses e pergunta sim/nao pro Leo (recomendacao sim). Sem acesso as paginas oficiais da Meta; passos marcados [confirmar no oficial]"
     }
-  ]
+  ],
+  "pergunta": "Leo, sim ou nao: voce monta a BM de anuncios separada (Operacao, com 1 conta de reserva e 2 fatores, pixel e pagina compartilhados como parceira pela Matriz) antes das campanhas novas dos Corretores e da 1a verba do MinhaMoto? Recomendacao do Escobar: SIM; campanhas ativas da CA 01 nao sao editadas.",
+  "atualizada_em": "2026-11-26T12:00:00-03:00"
 }

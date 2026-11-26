@@ -90,3 +90,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
 - **Conquista da semana:** "Previu o gargalo": os 3 CBOs podem ficar todos abaixo de 50/semana; entreguei a regra antes do gasto.
 - **Item que quero:** Don Julio 1942 já; lendário Fat Boy.
+
+## 2026-11-26 · Rodada de demandas
+- fiz: entreguei D-20261125-trafego-2 (P1: mapa de BMs/contas/pixels do repo, plano em 2 BMs "Cofre" e "Operação", 11 passos de preparação e 24 h de contingência com "Léo faz/agente faz", 8 hipóteses do "2 produtos, um para" com o que medir, estrutura recomendada, sim/não pro Léo com recomendação SIM), D-20261124-dados-5 (6º portão Meta-AppsFlyer; hoje não passa: eventos de compra não mapeados, SKAN sem registro) e D-20261125-dados-1 ("sem dado" de campanha; AD é ~97% a 99% do alcance 28d, orgânico ~1% a 3%). Criei D-20261126-trafego-1 (Turing: H2 e H8 só em %) e -2 (Shelby: confirmar no oficial os passos de menu).
+- aprendi: pixel fica com a BM dona; compartilhar como parceiro não salva o sinal se a dona cair, então o pixel deve morar na BM que NÃO anuncia (Cofre) [confirmar no oficial]. O repo não registra pixel dos Corretores nem a BM do Perfect Class: lacunas. WebFetch das páginas da Meta negado de novo; a busca devolveu os links oficiais da API de Conversões (deduplicação, boas práticas), citei sem abrir.
+- pendente: resposta do Léo (BM Operação); H1 a H8 sem número; sem número de campanha (6ª rodada); ponte de % do QG.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
+- **Conquista da semana:** "Previu o gargalo": apontei a BM Matriz como ponto único de falha antes da verba nova.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.

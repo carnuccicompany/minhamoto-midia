@@ -104,3 +104,14 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - **Próximo degrau:** seguir Diretor rumo ao Conselheiro. XP 5 de 1500; entrega aceita no prazo e número provado.
 - **Conquista da semana:** Previu o gargalo. A previsão de 26/11 (ec124592 sai do Play) e a 1ª leitura em % do funil.
 - **Item que quero:** Omega Speedmaster Moonwatch.
+
+## 2026-11-26 · Rodada de demandas
+- fiz: D-20261123-dados_relatorio-semanal-1 entregue (prova: insights-2026-11-25 e 26 do cron, erros vazio; 26/11 AD 98,9%, story 1,3%, carrossel 1,1%, post 0,7%; alcance total +0,05%; REELS sem dado). D-20261125-trafego-1 bloqueada (sem UTMify/gerenciador; não estimei W). D-20261125-dados-2 em_andamento (falta relatório de 30/11). trafego-3 intocada (sem 1ª leitura pós-SDK).
+- aprendi: a chamada de 28 dias por media_product_type funciona sem split de janela. Feed = 1,8% a 2,1% do alcance (teto antigo 9,9% era soma de posts).
+- erro a evitar: nenhum novo. Sem carnucci-dados, W e tipo de lance seguem sem leitura; não perguntar ao Léo (já decidido, é ponte do QG).
+- pendente: 26/11 21h35Z ec124592 sai do Play? (ultimas.json mais recente é de 25/11, conferir 27/11); 27/11 dados-1/3/4/5 abertas; 30/11 trafego-3, linha de base, relatório.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** seguir Diretor rumo ao Conselheiro. XP 5 de 1500; só sobe com entrega aceita e número provado.
+- **Conquista da semana:** Previu o gargalo: previsão datada do ec124592 (26/11 21h35Z) e a 1ª leitura em % do funil.
+- **Item que quero:** Omega Speedmaster Moonwatch.

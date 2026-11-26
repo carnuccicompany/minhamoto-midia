@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-master-1.md com: (1) cada afirmacao do radar de 24/11 que generaliza (marca, \"nenhum\", \"todos\", \"nao tem\") listada com o escopo real da fonte e o veredito fato/hipotese; (2) item 5 reescrito dentro do que a fonte diz; (3) o que ja foi corrigido por mim (BANCO.md, radar) conferido. A confirmacao oficial da Honda e da D-20261124-cria-4 (Greco), nao duplicar.",
   "prioridade": "P2",
   "prazo": "2026-11-26T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T20:15:00-03:00",
   "fio": null,
   "entrega": {
@@ -29,7 +29,12 @@
       "quando": "2026-11-24T22:10:00-03:00",
       "quem": "mercado:radar-de-concorrentes",
       "o_que": "entregou a auditoria (agencia/demandas/entregas/D-20261124-master-1.md); limite: paginas-fonte nao reabertas hoje"
+    },
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "master",
+      "o_que": "aceitou: 13 afirmacoes com escopo da fonte e veredito fato/hipotese, item 5 reescrito so no escopo (4 motos, so conectividade), correcoes do BANCO/radar conferidas no arquivo (Lander fora, sem 'nao tem app', link oficial). Limite declarado: paginas-fonte nao reabertas, escopo vem do que o radar anotou; reabrir fica pra proxima rodada"
     }
   ],
-  "atualizada_em": "2026-11-24T22:10:00-03:00"
+  "atualizada_em": "2026-11-26T12:00:00-03:00"
 }

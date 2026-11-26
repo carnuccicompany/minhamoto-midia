@@ -12,16 +12,27 @@
   "pronto_quando": "Resposta no fim de agencia/demandas/entregas/D-20261123-mkt-3.md ou em arquivo de entregas com: (1) W = vendas pagas por semana que a verba do teste gera ao custo por venda real de novembro, publicado SÓ como faixa: 'abaixo de 100', '100 a 149' ou '150 ou mais' (sem absoluto, sem R$); (2) se o conjunto que hoje vende usa estratégia de lance 'maior volume' ou teto de custo/bid cap/ROAS-alvo (leitura do gerenciador, sem editar). Fonte UTMify citada.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-25T15:30:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-1.md",
+    "resumo": "Sem leitura da UTMify nem do gerenciador nesta sessao, nao publico faixa de W nem digo o tipo de lance. Vale a tabela de D-20261124-trafego-1 (dias = 300/V, cenarios, poder do teste) e a regra de decisao de D-20261123-mkt-3 sec. 2: W preenche a escolha de 3 CBOs, 2 CBOs ou teste dentro do conjunto. Preencho no dia em que existir a leitura em %."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-25T15:30:00-03:00",
       "quem": "trafego",
       "o_que": "criou (destrava a escolha de estrutura do adendo de D-20261123-mkt-3; mesma ponte de % pendente de D-20261124-trafego-1)"
+    },
+    {
+      "quando": "2026-11-26T10:20:00-03:00",
+      "quem": "dados",
+      "o_que": "bloqueada: sem acesso a UTMify/gerenciador (ponte de % do QG pendente, mesmo bloqueio de D-20261124-trafego-1). Nao estimei W (nao inventar). Itens (1) faixa de W e (2) tipo de lance ficam para o dia da leitura; a regra de decisao ja esta em mkt-3 sec. 2"
     }
-  ]
+  ],
+  "bloqueio": "dados",
+  "motivo_bloqueio": "Leitura de W (faixa de vendas pagas/semana do teste) e do tipo de lance do conjunto exige UTMify e gerenciador da Meta no carnucci-dados; a ponte de resumo em % (resumo-pct.json) ainda nao existe no minhamoto-midia e esta sessao nao le o repo privado. Ja decidido: nao vira pergunta ao Leo (ata 23/11).",
+  "atualizada_em": "2026-11-26T10:20:00-03:00"
 }

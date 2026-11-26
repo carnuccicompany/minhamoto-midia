@@ -11,17 +11,25 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
   "prioridade": "P2",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-25T12:30:00-03:00",
   "fio": "F-001",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261125-dados-1.md",
+    "resumo": "Sem dado de campanha: sem leitura da Meta Ads (ponte de % do QG pendente). Provado em %: AD = ~97% a 99% do alcance 28d da conta, organico ~1% a 3%. Hipoteses: MM - Curtos, impulsionamento pelo botao Promover, outras. Quem libera: ponte do QG ou Leo (objetivo e % do gasto, sem R$)."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-25T12:30:00-03:00",
       "quem": "dados",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou como \"sem dado\" conforme o pronto_quando: % do repositorio, hipoteses e quem libera"
     }
   ],
-  "atualizada_em": "2026-11-25T12:30:00-03:00"
+  "atualizada_em": "2026-11-26T12:00:00-03:00"
 }

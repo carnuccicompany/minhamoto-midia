@@ -20,3 +20,6 @@
 ## 25/11 · pendências
 - Hemingway aceita D-20261123-dados-5 (prova na entrega); acompanhar D-20261125-master-1 (P3, 02/12).
 - Anotar em decisoes.md que a coleta diária sai de manhã (atraso do GitHub), na próxima ronda.
+
+## 26/11 · pendências
+- Pacote do Davi com 19 sim/não (itens 17 a 19 de paywall-2): bilhete de sexta 27/11 9h; registrar a resposta na entrega de paywall-2.

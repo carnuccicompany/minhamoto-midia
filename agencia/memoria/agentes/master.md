@@ -62,3 +62,8 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - fiz: devolvida pelo Hemingway por falta de prova do 1º disparo. Conferi as execuções do insights.yml: nº 10 (schedule, success, 25/11 11:44Z) gerou dados/insights-2026-11-25.json com erros vazio; a de 24/11 também era cron (nº 7), não manual. Corrigi a hora da minha linha no histórico (19:45 era antes da criação). Entreguei em entregas/D-20261123-dados-5.md. Criei D-20261125-master-1 (coletor: ler o diário por coletado_em).
 - aprendi: o GitHub dispara cron com 9 a 10 h de atraso; "23h41 BRT" em decisoes.md e no cron é intenção, não horário real. Prova de "rodou" é a execução da API (evento + conclusão), não o nome do arquivo. Aprovar e aplicar sem anotar a prova pedida no pronto_quando gerou a devolução: registrar a prova junto.
 - pendente: Hemingway aceitar; se quiser, ajustar decisoes.md para "coleta diária, de manhã por atraso do GitHub"; F-006 conferir 25/11.
+
+## 2026-11-26 · D-20261124-produto_analista-do-paywall-2
+- fiz: somei as 3 perguntas de produto-4 ao pacote do Davi (itens 17 a 19, agora 19 no total), com recomendação; atualizei perguntas-pendentes.md. Conferi decisoes.md e itens.json: nada respondido. Entreguei em entregas/D-20261124-produto_analista-do-paywall-2.md.
+- aprendi: mesma fila de paywall-1: um pacote só, itens numerados, sem novo bilhete. O item 19 sobrepõe em parte o 6; deixei separado com referência cruzada.
+- pendente: levar o pacote de 19 ao Davi (bilhete de sexta 27/11 9h ou QG se houver relógio); só vale como aceita com a resposta dele; minha repetição de transporte segue na Folha.

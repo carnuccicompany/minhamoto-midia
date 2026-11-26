@@ -10,16 +10,25 @@
   "pronto_quando": "As 3 perguntas da seção 'Perguntas pro Davi' da entrega anexadas ao pacote do Davi sem mudar o sentido, ou recusa com motivo; resposta registrada na entrega.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "aberta",
+  "status": "entregue",
   "criada_em": "2026-11-24T22:10:00-03:00",
   "fio": null,
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-produto_analista-do-paywall-2.md",
+    "resumo": "As 3 perguntas sim/não de produto-4 somadas como itens 17 a 19 do pacote único do Davi, sentido preservado; nenhuma já respondida em decisoes.md/itens.json."
+  },
   "cobrancas": 0,
   "historico": [
     {
       "quando": "2026-11-24T22:10:00-03:00",
       "quem": "produto:analista-do-paywall",
       "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T10:00:00-03:00",
+      "quem": "master",
+      "o_que": "entregue: itens 17 a 19 no pacote do Davi; aguarda resposta dele"
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-26T10:00:00-03:00"
 }

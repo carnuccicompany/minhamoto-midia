@@ -10,7 +10,7 @@
   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "entregue",
+  "status": "devolvida",
   "criada_em": "2026-11-24T11:00:00-03:00",
   "fio": "F-001",
   "entrega": {
@@ -28,7 +28,12 @@
       "quando": "2026-11-24T20:05:00-03:00",
       "quem": "master",
       "o_que": "entregue: itens 13 a 15 no pacote"
+    },
+    {
+      "quando": "2026-11-26T09:00:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "devolvida: itens 13 a 15 conferem com a secao 4 da P-001 (sentido preservado, ok), mas falta o anexo da pagina agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html no bilhete do Davi (o pacote D-20261123-master-pacote-davi.md nao cita o .html nem diz que vai anexado). Basta incluir o anexo/link no pacote e reentregar. A resposta do Davi na P-001 so e cobrada depois que ele responder."
     }
   ],
-  "atualizada_em": "2026-11-24T20:05:00-03:00"
+  "atualizada_em": "2026-11-26T09:00:00-03:00"
 }

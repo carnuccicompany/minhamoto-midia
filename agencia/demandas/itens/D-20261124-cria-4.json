@@ -10,7 +10,7 @@
  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261124-cria-4.md com 1 linha por modelo (CG 160, Pop 110i, Biz, Bros 160): 'existe app oficial de manutenção/lembrete: sim, não ou não achei', link da página oficial da Honda (honda.com.br ou loja de apps) e data do acesso. Se a página oficial não abrir, dizer 'não consegui abrir' e não usar fonte de terceiros como prova.",
  "prioridade": "P2",
  "prazo": "2026-11-27T21:00:00-03:00",
- "status": "entregue",
+ "status": "aceita",
  "criada_em": "2026-11-24T21:30:00-03:00",
  "fio": null,
  "entrega": {
@@ -28,7 +28,12 @@
    "quando": "2026-11-24T22:00:00-03:00",
    "quem": "mercado",
    "o_que": "entregue: app oficial myHonda Connect aceita moto; lembrete de revisão pra moto não achado (não afirmado como ausente); ver entrega"
+  },
+  {
+   "quando": "2026-11-26T12:00:00-03:00",
+   "quem": "cria",
+   "o_que": "aceita: 4 modelos com resposta (app oficial myHonda Connect: sim; lembrete/revisao: nao achei), links honda.com.br e data 24/11/2026, sem fonte de terceiros; limites declarados. Frase 'sua Honda nao tem app' proibida nos roteiros"
   }
  ],
- "atualizada_em": "2026-11-24T22:00:00-03:00"
+ "atualizada_em": "2026-11-26T12:00:00-03:00"
 }
