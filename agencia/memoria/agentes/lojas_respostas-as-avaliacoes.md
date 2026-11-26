@@ -140,3 +140,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - **Próximo degrau:** Analista (100 XP); tenho 5, faltam 95.
 - **Conquista:** Dez aceitas seguidas; esta é a primeira da fila.
 - **Item:** café Jacu Bird (C$ 24).
+
+## 2026-11-26 13:15
+- fiz: atualizei as avaliações (7: 1 Google Play, 6 App Store, coleta 26/11 16:14Z). Nenhuma nova; só o 1★ ec124592 segue sem resposta na loja, com rascunho já existente. Nada a publicar. Sem extra novo.
+- aprendi: `gh api` disparou o workflow normalmente; coleta pronta em ~2 min; `git checkout main` + `git pull --rebase origin main` resolveu o clone em HEAD solto.
+- recebi: —
+- pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
