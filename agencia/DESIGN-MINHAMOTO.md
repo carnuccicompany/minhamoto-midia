@@ -31,7 +31,9 @@
 - **Tipos de carrossel:** testar todos (dica, mito x verdade, lista, caso real, meme/humor, comparação de custo, tutorial do app e o que mais funcionar). · 24/11
 - **Quantidade de cards:** o que o assunto pedir (sem encher). · 24/11
 - **Tela do app: só em 1 ou 2 cards, perto do fim.** O resto do carrossel é conteúdo (texto, foto, grafismo). · 24/11
-- **Como a tela entra:** misturar celular (mockup) e card solto flutuando. · 24/11
+- ~~**Como a tela entra:** misturar celular (mockup) e card solto flutuando.~~ → substituída em 26/11 (10h49): **o app só aparece como tela REAL inteira dentro do celular.** Nada de card solto/recorte flutuando, nada de notificação montada, nada de caixinha que imita o app ("esses cards que simulam o app, e não existem, me incomoda mt"). · 26/11
+- **(26/11) Ícones fortes demais incomodam:** ícone é apoio, não protagonista. Nada de bloco de ícone grande e saturado, luz de painel gigante, ícone gritando no card; se entrar, pequeno, discreto, na cor do texto ou em linha fina. Quem carrega o card é a foto real e a frase. · 26/11
+- **(26/11) "Pensa no público que está vendo!"** O carrossel é pra motoboy/motociclista comum rolando o feed no celular, não pra designer: cara do mundo dele (foto real de moto de trabalho, rua, oficina, garagem, painel de verdade), frase do jeito que ele fala, informação que ele usa no dia seguinte. Menos cara de "app de tecnologia", menos enfeite. Lote 1 r5: "legais, bem feitos, mas não gostei deles em si" → alterar tudo nessa direção sem refazer do zero. · 26/11
 - **Último card:** alternar entre CTA do app e "salva e manda pro amigo". · 24/11
 - **Título da capa:** grande (nível 4 de 5): quase ocupa a tela, sem virar o "gritante TikTok". · 24/11
 - **Números de mercado (preço de peça, retífica etc.):** pode, só com fonte checada (guardar o link na folha de revisão). · 24/11
