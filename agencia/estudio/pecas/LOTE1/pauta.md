@@ -55,3 +55,4 @@ Revisor independente deu: CM01 7 · CM02 6,5 · CM04 7 · CM06 7,5 · CM05 6 (re
 ## Aprovado (26/11, 14h38–14h43)
 - Léo aprovou o lote (r6, sem preço), o piloto de capacete no CM05 e a ordem CM01 → CM02 → CM06 → CM04 → CM05.
 - Entrou na `fila/carrosseis.json` misturado com os antigos: um novo a cada 3 da fila (CM01 é o próximo horário livre). Cards em `carrosseis/CMxx/` e `carrosseis/CMxx/tiktok/`.
+- **(26/11, 15h) Segurados fora da fila até trocar as telas:** o app ganhou o visual novo oficial na 1.0.2 (commit 87411f1, 24/11). As telas `ios-1.0/` nos cards do celular (CM01 06, CM02 06, CM06 05, CM04 07, CM05 06) são do visual antigo, que é material proibido. Os 5 voltam pra fila (um a cada 3) assim que esses cards forem refeitos com as telas da 1.0.2. Os cards ficam em `carrosseis/CMxx/`.
