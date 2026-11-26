@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """LOTE1 · CM01 rodada 4 · "4 luzes no painel. Duas mandam parar na hora."
 Público: quem vai trabalhar de moto · Tipo: dica/teste (manual de bolso) · Ângulo: medo de prejuízo · Tom: especialista
-Estética: escuro premium · Capa: pergunta/teste · Final: CTA do app com "por R$19,90".
+Estética: escuro premium · Capa: pergunta/teste · Final: CTA do app (sem preço, 26/11).
 R4 (constituição 24/11): tela do app só no card 6 (mockup + card solto); cards 2–5 = conteúdo (luz de painel desenhada + copy).
 Conteúdo das 4 luzes = textos do próprio app (tela Sinais de problema, iPhone 1.0).
 Uso: python3 agencia/estudio/motores/lote1_cm01.py
@@ -109,7 +109,7 @@ def lista(tt):
         (T, luz(5, 3, 'Luz da bateria', 'Atenção', AMBAR, ['Desligou,', 'pode não', 'pegar mais.'],
                 'Não apague o motor longe de casa.', 'dir', tt, modo='enorme')),
         (T, tela(tt)),
-        (T, final_app(tt, T, 'Seu painel avisa.', 'O MinhaMoto explica.', 'Baixe agora e entenda sua moto.', preco=True)),
+        (T, final_app(tt, T, 'Seu painel avisa.', 'O MinhaMoto explica.', 'Baixe agora e entenda sua moto.', preco=False)),
     ]
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 # CM05 · "A chuva chegou. Sua moto tá pronta pra ela?" (refeito)
 
-Público: quem vai trabalhar de moto · Ângulo: segurança · Final: CTA do app (por R$19,90)
+Público: quem vai trabalhar de moto · Ângulo: segurança · Final: CTA do app (sem preço)
 
 ## Instagram / Facebook
 A chuva chegou. Sua moto tá pronta pra ela?

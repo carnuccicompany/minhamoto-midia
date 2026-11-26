@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """LOTE1 · CM05 (refeito 24/11 após revisão) · "A chuva chegou. Sua moto tá pronta pra ela?"
 Tipo: checklist sazonal · Público: quem vai trabalhar de moto · Tom: mecânico parceiro · Ângulo: segurança
-Estética: escuro premium com feixe de farol na chuva (SVG, sem foto) · Capa: tipografia gigante · Final: CTA app + "por R$19,90".
+Estética: escuro premium com feixe de farol na chuva (SVG, sem foto) · Capa: tipografia gigante · Final: CTA app (sem preço, 26/11).
 Revisão: sem ícones (tipografia forte no lugar), cada checagem com composição própria, card do app = trecho real
 do sheet 28-item-proximo ampliado (sem 11-cuidados), copy nova.
 Fontes: Portal do Trânsito 09/11/2026 · AutoPapo 01/07/2025 (ver pecas/LOTE1/CM05/fontes.md).
@@ -139,7 +139,6 @@ def final(tt):
     c += titulo(['Chuva não marca hora.', 'Sua manutenção, sim.'], 0 if not tt else 140, ty, tam, w=1080 if not tt else 800, alinha='center', azul_de=1)
     ya = ty + alt_titulo(2, tam) + 34
     c += apoio(['O MinhaMoto lembra no km certo.'], 0 if not tt else 140, ya, 42 if not tt else 40, w=1080 if not tt else 800, alinha='center', cor='#F4F7FC', peso='j600')
-    c += f"<div style='position:absolute;left:0;right:0;text-align:center;top:{ya + 110}px'><span class=preco><i></i>por R$19,90</span></div>"
     c += f"<div style='position:absolute;left:0;right:0;text-align:center;top:{1380 if tt else 1190}px'><img src='file://{SELOS}' style='width:540px'></div>"
     return c
 

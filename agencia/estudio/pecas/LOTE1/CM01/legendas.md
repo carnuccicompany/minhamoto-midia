@@ -1,6 +1,6 @@
 # CM01 r4 · "4 luzes no painel. Duas mandam parar na hora."
 
-Público: quem vai trabalhar de moto · Ângulo: medo de prejuízo · Final: CTA do app (por R$19,90)
+Público: quem vai trabalhar de moto · Ângulo: medo de prejuízo · Final: CTA do app (sem preço)
 
 ## Instagram / Facebook
 4 luzes no painel. Duas mandam parar na hora. Você sabe quais?
