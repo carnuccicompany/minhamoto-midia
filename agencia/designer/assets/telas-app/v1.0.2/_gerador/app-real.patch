@@ -1,0 +1,59 @@
+diff --git a/.env b/.env
+new file mode 100644
+index 0000000..652a8c8
+--- /dev/null
++++ b/.env
+@@ -0,0 +1,7 @@
++# MOCK (captura de telas): nenhum serviço real. Host .invalid nunca resolve;
++# o Playwright intercepta e responde tudo em memória.
++VITE_SUPABASE_URL=https://mock-supabase.invalid
++VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_mock_captura_telas
++VITE_SUPABASE_PROJECT_ID=mock
++SUPABASE_URL=https://mock-supabase.invalid
++SUPABASE_PUBLISHABLE_KEY=sb_publishable_mock_captura_telas
+diff --git a/src/lib/estado-conta-cliente.ts b/src/lib/estado-conta-cliente.ts
+index c3eef5e..fc47eec 100644
+--- a/src/lib/estado-conta-cliente.ts
++++ b/src/lib/estado-conta-cliente.ts
+@@ -46,7 +46,7 @@ export async function lerLeituraEntrada(
+   token: string,
+   app: boolean = EH_APP_MOVEL,
+ ): Promise<LeituraExclusao> {
+-  if (app) return lerEstadoContaHttp(token, { app });
+-  const m = await import("@/lib/exclusao-acompanhamento.functions");
+-  return m.lerMeuPedidoExclusao();
++  // MOCK (captura de telas): conta fictícia sem pedido de exclusão.
++  void token; void app;
++  return { tipo: "livre" };
+ }
+diff --git a/src/routes/_authenticated.tsx b/src/routes/_authenticated.tsx
+index d846ffd..64abc2a 100644
+--- a/src/routes/_authenticated.tsx
++++ b/src/routes/_authenticated.tsx
+@@ -6,7 +6,6 @@ import { resolverAcessoPremium } from "@/lib/acesso-premium-cliente";
+ import { EntradaPilotoBarreira, ENTRADA_PILOTO_ATIVA } from "@/components/entrada-piloto-barreira";
+ import { ProProducaoBarreira, PRO_PRODUCAO_ATIVO } from "@/components/pro-producao-barreira";
+ import { EntradaMotoPrincipal } from "@/components/entrada-moto-principal";
+-import { AceiteLegalOficial } from "@/components/aceite-legal-oficial";
+ 
+ export const Route = createFileRoute("/_authenticated")({
+   ssr: false,
+@@ -26,7 +25,8 @@ export const Route = createFileRoute("/_authenticated")({
+   },
+   component: () => (
+     <EntradaExclusaoBarreira>
+-      <AceiteLegalOficial>
++      {/* MOCK (captura de telas): aceite legal exige prova assinada pelo servidor real. */}
++      <>
+         <EntradaPilotoBarreira>
+           <ProProducaoBarreira>
+             <EntradaMotoPrincipal>
+@@ -34,7 +34,7 @@ export const Route = createFileRoute("/_authenticated")({
+             </EntradaMotoPrincipal>
+           </ProProducaoBarreira>
+         </EntradaPilotoBarreira>
+-      </AceiteLegalOficial>
++      </>
+     </EntradaExclusaoBarreira>
+   ),
+ });

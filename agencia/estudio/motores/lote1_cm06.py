@@ -11,6 +11,7 @@ Uso: python3 agencia/estudio/motores/lote1_cm06.py
 import sys, os, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lote1_base import *
+import lote1_base as _B; _B.IOS = 'v1.0.2'   # r7 (26/11): telas do visual novo 1.0.2
 
 NOME, N = 'CM06', 6
 FONTE = 'manuais do proprietário Honda CG 160 Titan S e CG 160 Start'
@@ -121,7 +122,7 @@ def tela(tt):
     c += titulo(['Os números da sua moto', 'ficam no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
     c += apoio(['Ficha do manual, item por item.'], L, ya, 40, w=w)
-    c += fone('ios-1.0/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=3152 - 210)
+    c += fone('v1.0.2/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=3060)
     return c + pag(5, N, tt)
 
 def final(tt):

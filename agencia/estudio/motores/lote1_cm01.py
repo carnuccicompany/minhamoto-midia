@@ -9,6 +9,7 @@ Uso: python3 agencia/estudio/motores/lote1_cm01.py
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lote1_base import *
+import lote1_base as _B; _B.IOS = 'v1.0.2'   # r7 (26/11): telas do visual novo 1.0.2
 from recortes_app import trecho
 
 NOME, N, T = 'CM01', 7, 'escuro'
@@ -94,7 +95,7 @@ def tela(tt):
     c += titulo(['Cada luz do painel,', 'explicada no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
     c += apoio(['Com o que fazer e quando ir à oficina.'], L, ya, 40, w=w)
-    c += fone('ios-1.0/rolagem/12-sinais-problema', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=9455 - 420)
+    c += fone('v1.0.2/rolagem/12-sinais-problema', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=8900)
     return c + pag(6, N, tt)
 
 def lista(tt):

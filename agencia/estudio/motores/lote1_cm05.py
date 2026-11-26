@@ -10,6 +10,7 @@ Uso: python3 agencia/estudio/motores/lote1_cm05.py
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lote1_base import *
+import lote1_base as _B; _B.IOS = 'v1.0.2'   # r7 (26/11): telas do visual novo 1.0.2
 
 NOME, N, T = 'CM05', 7, 'escuro'
 
@@ -115,7 +116,7 @@ def visto(tt):
     return c + pag(5, N, tt)
 
 def tela(tt):
-    """R6: o app só como tela REAL inteira no celular (28-item-proximo: lubrificar a corrente com 29.900 km). Sem notificação montada."""
+    """R6: o app só como tela REAL inteira no celular (r7: 32-chegando-a-hora, balão 'Lubrificar e ajustar a corrente · aos 29.900 km · faltam 100 km'). Sem notificação montada."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (50, 70))
     ty = 330 if tt else 110
@@ -123,7 +124,7 @@ def tela(tt):
     c += titulo(['A corrente não reclama.', 'O app lembra por ela.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
     c += apoio(['No km certo da sua moto.'], L, ya, 40, w=w, cor='#F4F7FC')
-    c += fone('ios-1.0/28-item-proximo.png', 660 if tt else 600, 540, ya + (130 if tt else 100), extra='')
+    c += fone('v1.0.2/32-chegando-a-hora.png', 660 if tt else 600, 540, ya + (130 if tt else 100), extra='')
     return c + pag(6, N, tt)
 
 def final(tt):

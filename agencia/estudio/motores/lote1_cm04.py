@@ -10,6 +10,7 @@ Uso: python3 agencia/estudio/motores/lote1_cm04.py
 import sys, os, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lote1_base import *
+import lote1_base as _B; _B.IOS = 'v1.0.2'   # r7 (26/11): telas do visual novo 1.0.2
 
 NOME, N, T = 'CM04', 8, 'claro'
 
@@ -111,7 +112,7 @@ def tela(tt):
     y1 = ya + (110 if tt else 84)
     b1, h1 = balao(['Eu lembro de cabeça.'], 'Você', L, y1, w - 60, tb, 'esq')
     c += b1
-    c += fone('ios-1.0/rolagem/06-historico', 660 if tt else 600, 540, y1 + h1 + (60 if tt else 40), rola=2300)
+    c += fone('v1.0.2/rolagem/06-historico', 660 if tt else 600, 540, y1 + h1 + (60 if tt else 40), rola=2360)
     return c
 
 def final(tt):

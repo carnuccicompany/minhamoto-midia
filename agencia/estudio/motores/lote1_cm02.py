@@ -11,6 +11,7 @@ Uso: python3 agencia/estudio/motores/lote1_cm02.py
 import sys, os, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lote1_base import *
+import lote1_base as _B; _B.IOS = 'v1.0.2'   # r7 (26/11): telas do visual novo 1.0.2
 
 NOME, N, T = 'CM02', 7, 'claro'
 AP, CNN = 'Fonte: AutoPapo, 18/09/2026', 'Fonte: CNN Brasil, 25/09/2026'
@@ -132,7 +133,7 @@ def tela(tt):
     c += titulo(['O óleo certo da', 'sua moto já tá no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
     c += apoio(['Direto do manual da sua moto.'], L, ya, 40, w=w)
-    c += fone('ios-1.0/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=1197)
+    c += fone('v1.0.2/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=1190)
     return c + pag(6, N, tt)
 
 def final(tt):

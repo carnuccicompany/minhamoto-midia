@@ -230,7 +230,7 @@ def foto_quadro(arq, left, top, w, h, pos='50% 50%', raio=40, claro=True):
     return (f"<div style=\"position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:{raio}px;overflow:hidden;"
             f"box-shadow:{sombra};background:url('file://{arq}') {pos}/cover\"></div>")
 
-def foto_base(arq, top, h=None, pos='50% 50%', cor_fundo=None, altura=1350):
+def foto_base(arq, top, h=None, pos='50% 50%', cor_fundo=None, altura=1350, fade=.45):
     """R6: foto real ocupando a parte de baixo do card, sumindo suave pro fundo em cima.
     A transição é feita na própria imagem (canal alfa), porque o renderizador não aplica mask-image."""
     import numpy as np, hashlib
@@ -240,10 +240,10 @@ def foto_base(arq, top, h=None, pos='50% 50%', cor_fundo=None, altura=1350):
     im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
     x0 = round((im.width - 1080) * px); y0 = round((im.height - h) * py)
     im = im.crop((x0, y0, x0 + 1080, y0 + h)).convert('RGBA')
-    t = np.linspace(0, 1, h); a = np.clip(t / .45, 0, 1) ** 1.6
+    t = np.linspace(0, 1, h); a = np.clip(t / fade, 0, 1) ** 1.6
     al = np.repeat((a * 255).astype('uint8')[:, None], 1080, axis=1)
     im.putalpha(Image.fromarray(al))
-    out = os.path.join(CACHE, 'base_' + hashlib.md5(f'{arq}{h}{pos}'.encode()).hexdigest()[:10] + '.png'); im.save(out)
+    out = os.path.join(CACHE, 'base_' + hashlib.md5(f'{arq}{h}{pos}{fade}'.encode()).hexdigest()[:10] + '.png'); im.save(out)
     return f"<img src='file://{out}' style='position:absolute;left:0;top:{top}px;width:1080px;height:{h}px'>"
 
 # ---------- card final ----------

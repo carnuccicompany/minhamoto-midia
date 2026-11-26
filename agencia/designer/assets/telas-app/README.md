@@ -1,3 +1,6 @@
+> 🟢 **26/11 · VISUAL NOVO 1.0.2 = ÚNICO QUE VALE.** Use só as telas de **`v1.0.2/`** (e `v1.0.2/rolagem/`), geradas do código `d4942b2a` (origin/HEAD) com a Minha Titan fictícia. Detalhes e como refazer: `v1.0.2/README.md`.
+> As telas da raiz e de `ios-1.0/` são do visual antigo: **proibidas** em peça nova (regra do Léo, 26/11). Nos motores, `lote1_base.IOS = 'v1.0.2'`.
+
 > 📱 **23/11 (noite) · VERSÕES DAS LOJAS.** iPhone = **1.0 build 33** (commit `7e17ed5`, aprovado 06/11). Android = **1.0.1** (no ar desde 17/11, ≈ main de 16/11). A 1.0.1 do iOS ainda não foi enviada (TestFlight build 40).
 > - Telas desta pasta (raiz) = main 17/11 ≈ Android 1.0.1. Telas do iPhone 1.0 em `ios-1.0/`.
 > - **Iguais nas duas versões (pode usar sem medo):** 03 manutenção, 04 uso, 05 combustível, 07 documentos, 09 resumo, 10 lista, 11 cuidados, 12 sinais, 13 conheça, 14 carteirinha, 16 perfil, 25 fontes, 22, 23, 26, 29, 30.
