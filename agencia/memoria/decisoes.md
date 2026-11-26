@@ -99,3 +99,5 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Biblioteca por setor em `agencia/conhecimento/areas/<setor>/`: FUNDAMENTOS (frameworks + como aplicamos aqui), FONTES (oficial primeiro) e NOVIDADES (últimos 90 dias, com fonte e data; sem fonte não entra).
 - Cada playbook ganhou a seção "Biblioteca": ler NOVIDADES antes de propor e FUNDAMENTOS quando o tema aparecer, só o que tocar a tarefa.
 - Atualização semanal (terça cedo): texto pronto em `areas/ATUALIZACAO.md`; a tarefa só é criada com o OK do Léo.
+
+- 26/11 (Léo): MinhaMoto começa com tráfego pra landing → loja. Campanha otimiza IC (clique pra loja, pixel novo). Venda medida por gasto ÷ assinaturas novas no RevenueCat. A/B com campanha de app fica pra depois.
