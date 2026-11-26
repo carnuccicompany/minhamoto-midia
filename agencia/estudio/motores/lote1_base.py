@@ -224,6 +224,28 @@ def marca_texto(left, top, w, h, cor='rgba(198,255,0,.38)', rot=-1.2):
     return (f"<div style='position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:{round(h*.22)}px;"
             f"background:{cor};transform:rotate({rot}deg)'></div>")
 
+def foto_quadro(arq, left, top, w, h, pos='50% 50%', raio=40, claro=True):
+    """R6 (26/11): foto real num quadro arredondado (no lugar de bloco de ícone grande)."""
+    sombra = '0 30px 60px rgba(10,26,51,.18),0 8px 18px rgba(10,26,51,.10)' if claro else '0 30px 60px rgba(0,0,0,.5)'
+    return (f"<div style=\"position:absolute;left:{left}px;top:{top}px;width:{w}px;height:{h}px;border-radius:{raio}px;overflow:hidden;"
+            f"box-shadow:{sombra};background:url('file://{arq}') {pos}/cover\"></div>")
+
+def foto_base(arq, top, h=None, pos='50% 50%', cor_fundo=None, altura=1350):
+    """R6: foto real ocupando a parte de baixo do card, sumindo suave pro fundo em cima.
+    A transição é feita na própria imagem (canal alfa), porque o renderizador não aplica mask-image."""
+    import numpy as np, hashlib
+    h = h or (altura - top)
+    px, py = [float(v.strip('%')) / 100 for v in pos.split()]
+    im = Image.open(arq).convert('RGB'); k = max(1080 / im.width, h / im.height)
+    im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+    x0 = round((im.width - 1080) * px); y0 = round((im.height - h) * py)
+    im = im.crop((x0, y0, x0 + 1080, y0 + h)).convert('RGBA')
+    t = np.linspace(0, 1, h); a = np.clip(t / .45, 0, 1) ** 1.6
+    al = np.repeat((a * 255).astype('uint8')[:, None], 1080, axis=1)
+    im.putalpha(Image.fromarray(al))
+    out = os.path.join(CACHE, 'base_' + hashlib.md5(f'{arq}{h}{pos}'.encode()).hexdigest()[:10] + '.png'); im.save(out)
+    return f"<img src='file://{out}' style='position:absolute;left:0;top:{top}px;width:1080px;height:{h}px'>"
+
 # ---------- card final ----------
 def final_app(tt, tema, l1, l2, sub, preco=False):
     """CTA do app: ícone com brilho redondo (sem halo quadrado), título, traço limão, apoio, preço opcional; selos separados embaixo."""

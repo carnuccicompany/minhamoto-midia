@@ -113,21 +113,15 @@ def corrente(tt):
     return c + pag(4, N, tt)
 
 def tela(tt):
-    """Celular com 13-conheca-moto + card solto: recorte contínuo e real das linhas de pneu de 10-lista-revisao (25 / 29 / 33 psi)."""
+    """R6: o app só como tela REAL inteira no celular: lista de revisão parada nos pneus (25 / 29 / 33 psi), os números do carrossel."""
     L, w = (140, 800) if tt else (90, 900)
-    arq, size = recorte('ios-1.0/rolagem/10-lista-revisao.png', (48, 3152, 1131, 3712))
     c = fundo('claro', (50, 60))
-    ty = 260 if tt else 100
-    tam = 70 if not tt else 62
+    ty = 300 if tt else 100
+    tam = 74 if not tt else 62
     c += titulo(['Os números da sua moto', 'ficam no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
-    c += apoio(['Ficha do manual, item por item.'], L, ya, 40 if not tt else 38, w=w)
-    yph = ya + (215 if tt else 129)
-    c += fone('ios-1.0/13-conheca-moto', 720 if tt else 600, 540, yph)
-    cw = w
-    hc = round(size[1] * cw / size[0])
-    yc = (1470 - hc) if tt else (1350 - 70 - hc)
-    c += card_solto(arq, size, cw, L, yc, claro=True)[0]
+    c += apoio(['Ficha do manual, item por item.'], L, ya, 40, w=w)
+    c += fone('ios-1.0/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=3152 - 210)
     return c + pag(5, N, tt)
 
 def final(tt):

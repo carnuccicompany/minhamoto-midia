@@ -99,27 +99,20 @@ def desculpa(n, voce, moto, tt, reacao=None, extra=None):
     return c
 
 def tela(tt):
-    """R5 (25/11): o app responde na conversa: o "eu lembro de cabeça" é respondido com o registro REAL da troca de óleo
-    (06-historico rolagem: 'Troca de óleo e filtro · 25/08/2026 · 27.100 km'), card solto sem os ícones de editar/excluir."""
+    """R6: o app responde com a tela REAL inteira no celular: histórico parado na troca de óleo (25/08/2026 · 27.100 km)."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (70, 60))
-    ty = 300 if tt else 110
-    tam = 92 if not tt else 80
+    ty = 300 if tt else 100
+    tam = 88 if not tt else 80
     c += titulo(['Quem não lembra,', 'anota no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
-    c += apoio(['Data, km e valor de cada serviço.'], L, ya, 40 if not tt else 38, w=w)
-    tb = 66 if not tt else 64
-    y1 = ya + (150 if tt else 110)
+    c += apoio(['Data, km e valor de cada serviço.'], L, ya, 40, w=w)
+    tb = 58
+    y1 = ya + (110 if tt else 84)
     b1, h1 = balao(['Eu lembro de cabeça.'], 'Você', L, y1, w - 60, tb, 'esq')
     c += b1
-    arq, size = recorte('ios-1.0/rolagem/06-historico.png', (48, 2935, 1131, 3296))
-    cw = w; yc = y1 + h1 + (100 if tt else 70)
-    c += (f"<div class=apoB style='left:{L}px;right:auto;width:{cw}px;top:{yc - 46}px;text-align:right;font-family:j600;font-size:28px;"
-          f"color:rgba(10,26,51,.5)'>MinhaMoto</div>")
-    bloco, hc = card_solto(arq, size, cw, L, yc, claro=True)
-    c += bloco
-    b3, h3 = balao(['Tá. Você venceu.'], 'Você', L, yc + hc + (80 if tt else 56), w - 60, round(tb * .9), 'esq')
-    return c + b3
+    c += fone('ios-1.0/rolagem/06-historico', 660 if tt else 600, 540, y1 + h1 + (60 if tt else 40), rola=2300)
+    return c
 
 def final(tt):
     """Fecha em formato de conversa: a moto pede, você manda."""

@@ -36,3 +36,18 @@ Revisor independente deu: CM01 7 · CM02 6,5 · CM04 7 · CM06 7,5 · CM05 6 (re
 - **CM06:** capa "3 respostas" (eram 5 números, não 3) e legenda TikTok igual; manual do 9:16 fora da faixa da legenda; card do app subido (encostava na borda); ícone final sem a moldura branca (brilho redondo do CTA aprovado).
 - **CM05:** CTA novo que não promete aviso de chuva ("Chuva não marca hora. Sua manutenção, sim." + "O MinhaMoto lembra no km certo."), ícone dentro do feixe e tudo centralizado (não fica gêmeo do CM01); card do app = notificação com o texto REAL do app ("Lubrificar quando a moto estiver com 29.900 km") por cima do celular com a tela 28-item-proximo (sem o selo que imitava botão do app); uma gradação só nas fotos da peça inteira; card da corrente com o título em cima e a corrente à vista.
 - **Ficou de fora (precisa do Léo ou de foto nova):** piloto de capacete nas fotos do CM05 (constituição: "pessoa em cena: por enquanto ninguém" → perguntar); trocar as fotos do freio/corrente do CM05 por fotos melhores (o banco de fotos não está acessível daqui); "com ⏎ garupa" no card 5 do CM06 e o "·" depois da data no histórico são do próprio app (tela real, não dá pra mexer); ordem de publicação sugerida CM01 → CM02 → CM06 → CM04 → CM05 (alterna os finais app/salve) precisa do OK dele.
+
+## Rodada 6 (26/11, manhã) · feedback do Léo: "legais, bem feitos, mas não gostei deles em si"
+- **Cards que simulam o app saíram de todas as peças.** O app agora só aparece como tela real inteira dentro do celular:
+  - CM01: sinais de problema, parado na luz do óleo;
+  - CM02: lista de revisão, no óleo;
+  - CM06: lista de revisão, nos pneus;
+  - CM04: histórico, na troca de óleo, respondendo o "eu lembro de cabeça";
+  - CM05: item próximo, corrente com 29.900 km. A notificação montada saiu.
+- **Ícones mais discretos:**
+  - CM01: saíram as janelas de luz gigantes com brilho e o painel de rodapé. Ficou um ícone pequeno na cor da luz, ao lado do nome, e a capa ganhou ícones discretos;
+  - CM02: saíram os blocos de ícone grandes.
+- **Mais cara do mundo do público:**
+  - CM01: foto real de painel de moto na metade de baixo, em todos os cards;
+  - CM02: foto real de moto parada na garagem no mito 1, de mãos no motor no fundo do mito 2 e de filtro na mão no mito 4.
+- Foto sem piloto onde dava. No CM05 continua a pergunta sobre o piloto de capacete.

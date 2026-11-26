@@ -73,9 +73,9 @@ def m1(tt):   # claro, texto em cima
     c += pilula('Mito nº 1', NAVY_TXT, '#FFFFFF', L, y, tam=30, icone_nome='x')
     c += riscado(['Moto fria tem que', 'esquentar parada.'], L, y + 90, tm, w, 'rgba(10,26,51,.45)', AZUL)
     yv = y + 90 + round(2 * tm * 1.12) + 110
-    c += bloco_icone('relogio', 1080 - (140 if tt else 90) - (220 if tt else 260), yv + 90, lado=220 if tt else 260)
     c += real(['Segundos', 'bastam.'], ['Parada por minutos, a moto a ar', 'esquenta demais.'], L, yv, tv, w, AZUL_ESC, '#45536B', AZUL, '#FFFFFF', tt)
-    c += apoio([AP], L, 1200 if not tt else 1420, 24, w=600, cor='rgba(10,26,51,.45)')
+    c += foto_base(foto_prep('30817486', satura=.8, escurece=.85, nome='cm02r6_m1b'), 1000 if not tt else 1330, pos='50% 60%', altura=1350 if not tt else 1920)
+    c += apoio([AP], L, 1270 if not tt else 1440, 24, w=600, cor='rgba(255,255,255,.85)')
     return c + pag(2, N, tt)
 
 def m2(tt):   # bloco navy em cima (mito) + verdade no claro
@@ -83,13 +83,13 @@ def m2(tt):   # bloco navy em cima (mito) + verdade no claro
     tm, tv = (64, 112) if tt else (66, 120)
     hb = 860 if tt else 560
     c = fundo(T, (50, 80))
-    c += f"<div style='position:absolute;left:0;top:0;width:1080px;height:{hb}px;background:linear-gradient(160deg,#0B1B36,#020812)'></div>"
-    c += f"<div style='position:absolute;left:0;top:0;width:1080px;height:{hb}px;background:radial-gradient(50% 60% at 80% 30%, rgba(82,169,254,.25), rgba(0,0,0,0) 70%)'></div>"
+    arq2 = foto_prep('8550664', satura=.7, nome='cm02r6_m2')
+    c += f"<div style=\"position:absolute;left:0;top:0;width:1080px;height:{hb}px;background:url('file://{arq2}') 50% 45%/cover\"></div>"
+    c += f"<div style='position:absolute;left:0;top:0;width:1080px;height:{hb}px;background:linear-gradient(160deg,rgba(11,27,54,.8),rgba(2,8,18,.88))'></div>"
     y = 460 if tt else 230
     c += pilula('Mito nº 2', 'rgba(255,255,255,.12)', '#FFFFFF', L, y, tam=30, icone_nome='x')
     c += riscado(['Barulho estranho', 'some sozinho.'], L, y + 100, tm, w, 'rgba(255,255,255,.7)', AZUL_CLARO)
     yv = hb + 70
-    c += bloco_icone('som', 1080 - (140 if tt else 90) - 200, yv + 90 + 2*round(tv*1.04) + 40, lado=200)
     c += real(['Não some.', 'Piora.'], ['Estalo, vibração e ruído metálico', 'raramente desaparecem sozinhos.'], L, yv, tv, w, NAVY_TXT, '#45536B', AZUL, '#FFFFFF', tt)
     c += apoio([CNN], L, 1240 if not tt else 1440, 24, w=600, cor='rgba(10,26,51,.45)')
     return c + pag(3, N, tt).replace("class='pag t'", "class='pag t' style='color:rgba(255,255,255,.55)'")
@@ -118,22 +118,21 @@ def m4(tt):   # fundo azul: o maior mito
     c += kicker('O maior mito de todos', L, y, 'escuro', w=w, tam=34)
     c += riscado(['Trocou o óleo,', 'o motor tá protegido.'], L, y + 80, tm, w, 'rgba(255,255,255,.72)', '#FFFFFF')
     yv = y + 80 + round(2 * tm * 1.12) + 90
-    c += bloco_icone('filtro', 1080 - (140 if tt else 90) - (240 if tt else 280), (yv + 90 + 2*round(tv*1.04) + 150), lado=240 if tt else 280, tema='escuro', cor='#FFFFFF')
     c += real(['O vilão é o filtro', 'de ar sujo.'], 'A sujeira passa e contamina o óleo novo.', L, yv, tv, w, '#FFFFFF', 'rgba(255,255,255,.85)', '#FFFFFF', AZUL_ESC, tt)
-    c += apoio([AP], L, 1200 if not tt else 1420, 24, w=600, cor='rgba(255,255,255,.6)')
+    c += foto_base(foto_prep('27704018', satura=.7, escurece=.8, nome='cm02r6_m4'), 930 if not tt else 1280, pos='50% 50%', altura=1350 if not tt else 1920)
+    c += apoio([AP], L, 1270 if not tt else 1440, 24, w=600, cor='rgba(255,255,255,.85)')
     return c + pag(5, N, tt).replace("class='pag t'", "class='pag t' style='color:rgba(255,255,255,.6)'")
 
 def tela(tt):
-    arq, size = recorte('ios-1.0/rolagem/10-lista-revisao.png', (48, 1530, 1131, 1785))
+    """R6: o app só como tela REAL inteira no celular (lista de revisão, parada no óleo do motor)."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (50, 70))
-    ty = 260 if tt else 110
-    tam = 80 if not tt else 72
+    ty = 300 if tt else 110
+    tam = 84 if not tt else 74
     c += titulo(['O óleo certo da', 'sua moto já tá no app.'], L, ty, tam, w=w, azul_de=1)
-    yc = ty + alt_titulo(2, tam) + (70 if tt else 50)
-    bloco, hc = card_solto(arq, size, w, L, yc, claro=True)
-    c += bloco
-    c += fone('ios-1.0/rolagem/10-lista-revisao', 640 if tt else 560, 540, yc + hc + 70, rola=1197)
+    ya = ty + alt_titulo(2, tam) + 24
+    c += apoio(['Direto do manual da sua moto.'], L, ya, 40, w=w)
+    c += fone('ios-1.0/rolagem/10-lista-revisao', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=1197)
     return c + pag(6, N, tt)
 
 def final(tt):

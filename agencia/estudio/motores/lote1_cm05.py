@@ -115,19 +115,16 @@ def visto(tt):
     return c + pag(5, N, tt)
 
 def tela(tt):
-    """R5 (25/11): momento do app próprio da peça: o lembrete chega como notificação (recurso do K6), com o texto REAL
-    do app ("Lubrificar quando a moto estiver com 29.900 km", tela 28-item-proximo), por cima do celular com essa tela."""
+    """R6: o app só como tela REAL inteira no celular (28-item-proximo: lubrificar a corrente com 29.900 km). Sem notificação montada."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (50, 70))
     ty = 330 if tt else 110
-    tam = 74 if not tt else 62
+    tam = 76 if not tt else 62
     c += titulo(['A corrente não reclama.', 'O app lembra por ela.'], L, ty, tam, w=w, azul_de=1)
-    yp = ty + alt_titulo(2, tam) + (300 if tt else 250)
-    wf = 600 if tt else 560
-    c += fone('ios-1.0/28-item-proximo.png', wf, 540, yp, extra='')
-    yn = yp - (150 if tt else 140)
-    nt, hn = notificacao('MinhaMoto', 'Lubrificar quando a moto\nestiver com 29.900 km', L - 20, yn, w=w + 40, linhas=2, escala=1.0 if not tt else .95)
-    return c + nt + pag(6, N, tt)
+    ya = ty + alt_titulo(2, tam) + 24
+    c += apoio(['No km certo da sua moto.'], L, ya, 40, w=w, cor='#F4F7FC')
+    c += fone('ios-1.0/28-item-proximo.png', 660 if tt else 600, 540, ya + (130 if tt else 100), extra='')
+    return c + pag(6, N, tt)
 
 def final(tt):
     """R5 (25/11): copy que não promete aviso de chuva (o app avisa manutenção por km) e ícone do app DENTRO do feixe."""

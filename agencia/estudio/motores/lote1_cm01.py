@@ -49,86 +49,53 @@ def capa(tt):
     ya = Ty + alt_titulo(3, tam) + 30
     c += apoio(['Você sabe quais?'], L, ya, 52 if not tt else 54, w=w, cor='#F4F7FC', peso='j700')
     # as 4 luzes, todas em branco (sem entregar a resposta pela cor), numeradas
-    tam_i = 110 if not tt else 108
+    tam_i = 96 if not tt else 96
     caixa = round(tam_i * 1.55); gap = (w - 4 * caixa) // 3
     yl = 700 if not tt else 960
     for i, (nm, _) in enumerate(LUZES):
         x = L + i * (caixa + gap)
-        c += luz_painel(nm, tam_i, '#EAF2FF', x, yl)
+        c += (f"<div style='position:absolute;left:{x}px;top:{yl}px;width:{caixa}px;height:{caixa}px;border-radius:50%;"
+              f"background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 2px rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center'>"
+              f"<div style='line-height:0;opacity:.85'>{icone(nm, round(tam_i*.55), '#EAF2FF')}</div></div>")
         c += (f"<div class=apoB style='left:{x}px;right:auto;width:{caixa}px;top:{yl + caixa + 22}px;text-align:center;font-family:j700;"
               f"font-size:34px;color:rgba(255,255,255,.6)'>{i + 1}</div>")
+    c += foto_base(foto_prep('6664916', crop=(0, 300, 1301, 1500), satura=.55, escurece=.7, frio=.1, nome='cm01r6_capa'), 880 if not tt else 1180, pos='50% 45%', altura=1350 if not tt else 1920)
     c += desliza(L, 1210 if not tt else 1360, tt)
     return c
 
+FOTOS_LUZ = [('6664916', (0, 300, 1301, 1500), '50% 45%'), ('31664515', (0, 380, 1350, 1600), '50% 40%'),
+             ('6664916', (150, 150, 1301, 1150), '45% 50%'), ('31664515', (100, 250, 1350, 1350), '55% 45%')]
 def luz(n, idx, nome_luz, status, cor_st, linhas, apo, lado, tt, modo='padrao', tam_tit=None):
-    """modo 'padrao': ícone grande + rótulo ao lado; 'gigante': ícone enorme saindo do quadro à direita;
-    'enorme': ícone pequeno e título ocupando 2/3 do card. (revisão 24/11: quebrar a mesmice dos cards 2–5)"""
+    """R6 (26/11): "ícones fortes demais" → ícone pequeno na cor da luz, sem janela nem brilho, ao lado do nome;
+    foto REAL de painel de moto na metade de baixo (mundo do público), mesma gradação na peça toda."""
     nm, cor = LUZES[idx]
     L, w = (140, 800) if tt else (90, 900)
-    fundo_st = 'rgba(255,69,58,.16)' if cor_st == VERM else 'rgba(255,176,32,.16)'
-    y_faixa = 1400 if tt else 1170
-    if modo == 'gigante':
-        c = fundo(T, (85, 18))
-        tam_i = 300 if not tt else 330
-        caixa = round(tam_i * 1.55)
-        c += luz_painel(nm, tam_i, cor, 1080 - caixa - (60 if not tt else 140), 110 if not tt else 220, raio=140)
-        yl = 180 if not tt else 760
-        c += apoio(nome_luz.split(' · '), L, yl, 40 if not tt else 40, w=(1080 - caixa - 60 - L - 30) if not tt else 800, cor='#F4F7FC', peso='j700')
-        c += pilula(status, fundo_st, cor_st, L, yl + (122 if (' · ' in nome_luz) else 76), tam=34)
-        tam = tam_tit or (88 if not tt else 88)
-        Ty = 680 if not tt else 1010
-    elif modo == 'enorme':
-        c = fundo(T, (20, 30))
-        tam_i = 110 if not tt else 120
-        caixa = round(tam_i * 1.55)
-        ty_i = 140 if not tt else 260
-        c += luz_painel(nm, tam_i, cor, L, ty_i)
-        c += apoio([nome_luz], L + caixa + 36, ty_i + 4, 42, w=560, cor='#F4F7FC', peso='j700')
-        c += pilula(status, fundo_st, cor_st, L + caixa + 36, ty_i + caixa - 64, tam=34)
-        tam = tam_tit or (132 if not tt else 124)
-        Ty = 470 if not tt else 640
-    else:
-        c = fundo(T, (22 if lado == 'esq' else 78, 18))
-        tam_i = 200 if not tt else 230
-        top_i = 150 if not tt else 260
-        caixa = round(tam_i * 1.55)
-        xi = L if lado == 'esq' else L + w - caixa
-        c += luz_painel(nm, tam_i, cor, xi, top_i)
-        xt = L + caixa + 44 if lado == 'esq' else L
-        wt = w - caixa - 44
-        c += apoio([nome_luz], xt, top_i + caixa // 2 - 78, 44, w=wt, cor='#F4F7FC', peso='j700')
-        c += pilula(status, fundo_st, cor_st, xt, top_i + caixa // 2 + 6, tam=34)
-        tam = tam_tit or (94 if not tt else 82)
-        Ty = 600 if not tt else 820
+    fundo_st = 'rgba(255,69,58,.18)' if cor_st == VERM else 'rgba(255,176,32,.18)'
+    fid, crop, pos = FOTOS_LUZ[idx]
+    arq = foto_prep(fid, crop=crop, satura=.55, escurece=.85, frio=.1, nome=f'cm01r6_{idx}')
+    c = fundo(T, (50, 10))
+    c += foto_base(arq, 600 if not tt else 950, pos=pos, altura=1350 if not tt else 1920)
+    yl = 150 if not tt else 300
+    c += f"<div style='position:absolute;left:{L}px;top:{yl}px;line-height:0'>{icone(nm, 58, cor)}</div>"
+    c += apoio([nome_luz.replace(' · ', ' (') + (')' if ' · ' in nome_luz else '')], L + 80, yl + 4, 38, w=w - 80, cor='#F4F7FC', peso='j700')
+    c += pilula(status, fundo_st, cor_st, L, yl + 90, tam=32)
+    tam = tam_tit or (94 if not tt else 82)
+    Ty = yl + 210
     c += titulo(linhas, L, Ty, tam, w=w, azul_de=len(linhas) - 1)
-    c += apoio(apo if isinstance(apo, list) else [apo], L, Ty + alt_titulo(len(linhas), tam) + 30, 38 if not tt else 38, w=w)
-    if tt and modo == 'gigante': c += faixa_painel(idx, L, y_faixa, tam=46)
-    else: c += painel_rodape(idx, L, 1120 if not tt else 1290, w)
+    c += apoio(apo if isinstance(apo, list) else [apo], L, Ty + alt_titulo(len(linhas), tam) + 30, 40, w=w, cor='#F4F7FC')
     return c + pag(n, N, tt)
 
 def tela(tt):
-    """Card do app inteiro e contínuo (recorte real de 'Luz de pressão do óleo'), com um contorno azul por fora
-    acendendo só a seção 'O que fazer' (destaque sem apagar nada do print)."""
-    A, B = 9455, 10447
-    arq, size = recorte(SIN_ROL, (48, A, 1131, B))
-    s0, s1 = 9897, 10167            # seção 'O que fazer' (divisórias reais do card)
+    """R6: o app só como tela REAL inteira no celular (sinais de problema, parado na luz de pressão do óleo)."""
     L, w = (140, 800) if tt else (90, 900)
     c = fundo(T, (50, 60))
     ty = 330 if tt else 100
-    tam = 72 if not tt else 66
+    tam = 80 if not tt else 72
     c += titulo(['Cada luz do painel,', 'explicada no app.'], L, ty, tam, w=w, azul_de=1)
     ya = ty + alt_titulo(2, tam) + 24
-    c += apoio(['Com o que fazer e quando ir à oficina.'], L, ya, 38, w=w)
-    cw, cl = w, L
-    yc = ya + (150 if tt else 90)
-    k = cw / size[0]
-    glow = (f"<div style='position:absolute;left:{cl + cw//2 - 560}px;top:{yc - 150}px;width:1120px;height:{round(size[1]*k) + 300}px;"
-            f"border-radius:50%;background:radial-gradient(closest-side, rgba(255,69,58,.14), rgba(0,0,0,0) 100%)'></div>")
-    bloco, hc = card_solto(arq, size, cw, cl, yc)
-    pad = 10
-    anel = (f"<div style='position:absolute;left:{cl - pad}px;top:{yc + round((s0 - A)*k) - pad}px;width:{cw + 2*pad}px;height:{round((s1 - s0)*k) + 2*pad}px;"
-            f"border:5px solid {AZUL_CLARO};border-radius:28px;box-shadow:0 0 36px rgba(82,169,254,.65),inset 0 0 24px rgba(82,169,254,.25)'></div>")
-    return c + glow + bloco + anel + pag(6, N, tt)
+    c += apoio(['Com o que fazer e quando ir à oficina.'], L, ya, 40, w=w)
+    c += fone('ios-1.0/rolagem/12-sinais-problema', 660 if tt else 600, 540, ya + (130 if tt else 100), rola=9455 - 420)
+    return c + pag(6, N, tt)
 
 def lista(tt):
     return [
