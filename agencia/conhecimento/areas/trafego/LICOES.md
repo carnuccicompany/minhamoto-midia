@@ -25,3 +25,12 @@ Cada acerto ou erro da casa vira lição: data · o que aconteceu · a regra · 
 - **22–24/11 · Páginas oficiais da Meta/TikTok sem acesso.** **Regra:** citar só o que já está registrado com link e dizer que não abriu; nunca completar de memória. **Prova:** memória trafego.md 23/11 e 24/11.
 - **Nov · Página pesada derruba o funil.** Clique → visualização da página caiu de ~92% pra ~75%; a página foi de ~25 MB pra ~1 MB em 23/11. **Regra:** em queda, diagnosticar na ordem do FUNDAMENTOS §6, começando pela página. **Prova:** conhecimento/09-numeros.md.
 - **Out–nov · Fadiga nos Corretores.** Os mesmos 6 criativos desde outubro; em novembro o custo por venda subiu 19% e o ROAS foi de 1,88 pra 1,61. **Regra:** reposição semanal de criativo, pedida à Disney antes da fadiga. **Prova:** estudio/produtos/corretores-aprendizados.md; 09-numeros.md.
+
+## 26/11 — Compra do app não chegava na Meta (resolvido)
+- Causa: no AppsFlyer, o parceiro Meta ads (iOS e Android) só repassava `af_app_opened`. A compra chegava no AppsFlyer (RevenueCat S2S), mas não era enviada pra Meta.
+- Correção (iOS e Android, todas as fontes, inclusive orgânico):
+  - rc_initial_purchase_event / rc_trial_converted_event / rc_renewal_event → fb_mobile_purchase (com valor e receita)
+  - rc_trial_started_event → StartTrial
+  - af_complete_registration → fb_mobile_complete_registration
+- UTMify NUNCA vai ver venda feita dentro do app (só web). Pra MinhaMoto, a fonte de verdade é Meta Events Manager (dataset do app) + AppsFlyer + RevenueCat.
+- Próximo passo: quando "Compra" aparecer no dataset do app, campanha de app otimizando pra compra (ou pra StartTrial enquanto o volume de compra for baixo).
