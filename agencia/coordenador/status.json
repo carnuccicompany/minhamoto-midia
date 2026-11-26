@@ -1,5 +1,5 @@
 {
-  "rodada": "2026-11-25T21:40:00-03:00",
+  "rodada": "2026-11-26T08:40:00-03:00",
   "ok": true,
   "tarefas": {
     "resumo": "nenhuma tarefa MM enabled com falha; todas SUCCEEDED na última execução; Vigia (esta) em andamento",
@@ -7,29 +7,31 @@
       "produção diária",
       "MM: Vigia do Gmail (desativada 25/11)"
     ],
-    "obs": "Leitura da UTMify: 2 entradas enabled no mesmo horário (07h41) — possível duplicata, não mexi"
+    "obs": "Leitura da UTMify agora aparece 1 vez só (duplicata sumiu)"
   },
   "publicacao_hoje": {
-    "slots": "12h M08, 15h A12, 18h DV19, 21h M03 — todos publicados",
+    "slots": "ontem 4/4 (M08, A12, DV19, M03 21h04); hoje nenhum slot vencido ainda",
     "proximo": "12h02 BRT 26/11"
   },
   "dias_de_fila": 19.5,
   "nao_publicados": 78,
   "pendentes_aprovacao": 0,
   "tiktok_916": "113/113",
-  "acoes": [],
+  "acoes": [
+    "Disparei MM: Mesa de Demandas (P1 D-20261125-trafego-2 aberta, Mesa não tinha rodado hoje)"
+  ],
   "alertas": [],
   "insights_diario": {
     "data_utc_hoje": "2026-11-26",
     "alerta": false,
-    "ultimo_arquivo": "dados/insights-2026-11-25.json",
-    "coletado_em_brt": "2026-11-25T08:44-03:00",
+    "ultimo_arquivo": "dados/insights-2026-11-26.json",
+    "coletado_em_brt": "2026-11-26T08:29-03:00",
     "erros": [],
-    "linha": "aguardando cron das 23h41 BRT; último insights-2026-11-25.json; erros vazio"
+    "linha": "arquivo de hoje existe · erros vazio"
   },
   "segredos": "vigia_segredos ok",
   "demandas": {
-    "P1_aberta": "D-20261125-trafego-2 (prazo 27/11 18h, criada 17h05, depois da Mesa das 10h37)",
-    "mesa": "já rodou hoje 25/11 10h37 — não disparei; próxima na quarta 02/12 ou sob demanda amanhã"
+    "P1_aberta": "D-20261125-trafego-2 (prazo 27/11 18h)",
+    "mesa": "disparada 26/11 08h40 (uma vez)"
   }
 }

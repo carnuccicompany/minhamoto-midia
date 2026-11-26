@@ -304,3 +304,5 @@
 - 25/11 14h11 BRT · sem falha: todas as tarefas ok (Conselho SUCCEEDED 24/11 20h40, Folha 20/11, próx 27/11), slot 12h publicado (M08), próx 15h02, fila 20,25 dias (81), TikTok 9:16 113/113, sem pendentes, sem segredo, painel/tiktok sem link quebrado, insights de hoje no ar. Obs: 2 'Leitura da UTMify' ativas no mesmo horário.
 
 - 25/11 21h40 BRT · sem falha: nenhuma tarefa com falha, 4 slots do dia publicados (último M03 21h04), fila 19,5 dias (78), TikTok 9:16 113/113, sem pendentes, sem segredo. P1 D-20261125-trafego-2 aberta (prazo 27/11), Mesa já rodou hoje 10h37 — não disparei.
+
+- 26/11 8h40 BRT · sem falha: nenhuma tarefa com falha, 4 slots de ontem publicados, fila 19,5 dias (78), TikTok 9:16 113/113, sem pendentes, sem segredo, insights de hoje ok. Disparei a Mesa de Demandas 1x (P1 D-20261125-trafego-2 aberta, Mesa não rodou hoje).
