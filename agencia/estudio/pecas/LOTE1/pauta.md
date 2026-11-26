@@ -51,3 +51,7 @@ Revisor independente deu: CM01 7 · CM02 6,5 · CM04 7 · CM06 7,5 · CM05 6 (re
   - CM01: foto real de painel de moto na metade de baixo, em todos os cards;
   - CM02: foto real de moto parada na garagem no mito 1, de mãos no motor no fundo do mito 2 e de filtro na mão no mito 4.
 - Foto sem piloto onde dava. No CM05 continua a pergunta sobre o piloto de capacete.
+
+## Aprovado (26/11, 14h38–14h43)
+- Léo aprovou o lote (r6, sem preço), o piloto de capacete no CM05 e a ordem CM01 → CM02 → CM06 → CM04 → CM05.
+- Entrou na `fila/carrosseis.json` misturado com os antigos: um novo a cada 3 da fila (CM01 é o próximo horário livre). Cards em `carrosseis/CMxx/` e `carrosseis/CMxx/tiktok/`.
