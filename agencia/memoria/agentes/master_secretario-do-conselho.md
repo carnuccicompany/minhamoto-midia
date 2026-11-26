@@ -48,3 +48,8 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
   - [ ] Notas fiscais rejeitadas na Spedy · dono: Léo/Turing · prazo: antes do alerta de 30/11
   - [ ] Cliente de infoproduto sem material (rascunho pronto) · dono: Léo/Cardone · prazo: hoje
   - [ ] Migrar build iOS para Xcode 27 · dono: Stark · prazo: antes de abril/2027
+
+## 2026-11-26 08:00
+- fiz: resumo da caixa de 26/11; 3 assuntos novos encaminhados (Turing, Bezos, Stark), nenhum rascunho. Correspondência do Briefing atualizada no repositório privado (detalhes só lá).
+- aprendi: notificação agora começa com o selo de agencia/canal/NOTIFICACOES.md. Aviso de SDK da Apple chega a cada build; não conto mais como novo.
+- pendente: lista de cobranças abertas mantida em briefing/correspondencia.json (repositório privado).
