@@ -1,6 +1,6 @@
 # Fios de conversa abertos
 
-Reuniões do Conselho até hoje: 20/11, 22/11, 23/11 e 24/11. Fio que não se mexeu em 3 reuniões é apontado no master.md (23/11: F-001, F-002, F-004 e F-005 chegaram a 3; 24/11: chegaram a 4 sem resposta).
+Reuniões do Conselho até hoje: 20/11, 22/11, 23/11, 24/11 e 26/11 (5). Fio que não se mexeu em 3 reuniões é apontado no master.md (23/11: F-001, F-002, F-004 e F-005 chegaram a 3; 24/11: chegaram a 4 sem resposta).
 
 ## F-001 · Medição: SDK AppsFlyer e eventos rc_* na build de 23/11 (aberto, 20/11; atualizado 22/11)
 - Turing: cobertura de atribuição é prioridade 1. Escobar: sem `rc_*` mapeados e sem teste de OneLink, verba zero. Stark escalou ao Davi (dados-2, P1 venceu 21/11 20h); Cardone, Bezos e Disney dependem da mesma resposta.
@@ -54,3 +54,23 @@ Reuniões do Conselho até hoje: 20/11, 22/11, 23/11 e 24/11. Fio que não se me
 - **F-005** 1★ de sync: 4 reuniões; relógio real em 26/11 (sai da coleta do Play). Pergunta com relógio ao Léo hoje.
 - **F-006** executores: 4 de 4 em 23/11 e 12h/15h de 24/11; fecha se 25/11 também fechar.
 - **F-007** alcance: andou (por formato na coleta de 25/11).
+
+## Registro do Conselho 26/11 (1 linha por fala)
+- Turing: alcance 28d +0,05% de 25 pra 26/11, 98,9% é anúncio; IC mede clique pra loja, não assinante; `dados/resumo-pct.json` ainda não existe. Disney: A1/B1 viram o material do dia 1; mudou de 12 slots pra 2 no dia 1; régua é assinante pago. Escobar: cancelou a semana-ponte iOS (trafego-4), corte em % do teto em dois níveis, pixel novo é pré-condição. Stark: SDK entrou no código em 24/11, 1.0.2, só 1 evento de funil; iniciativa "Funil visível" (3 eventos). Greco: corrigiu a leitura de 24/11 (queda de novembro é sazonal, CG 160 caiu 13,5% de out pra nov de 2025); iniciativa landing da CG 160 como 2º teste. Bezos: loja alinhada ao anúncio; mata em 07/12 sem base. Cardone: garantia à vista de pé; iniciativa Mapa Visual EUA/Portugal (pesquisa).
+- Mudanças de posição: Disney (12 slots → 2 no dia 1), Escobar (pixel novo passa a pré-condição), Greco (mercado não esfriou; variante CG 160 só depois da 1ª leitura).
+
+## Estado dos fios em 26/11 (5 reuniões)
+- **F-001** medição: andou por fora do Davi. Código de 25/11 (Stark): SDK no app (24/11), `appsflyerID` vai pro RevenueCat, versionName 1.0.2; o QG mapeou compra e cadastro pra Meta em 26/11 (portão 6 cai). Falta só: a 1.0.2 está nas lojas e que dia (pergunta A do pacote v3, o Léo responde olhando as lojas), eventos de funil (pergunta B) e a ponte de % do QG (arquivo ainda não existe). Parado há 5 reuniões na parte do Davi.
+- **F-002** SEU modelo: sem mudança; 4 líderes no catálogo (código 1.0.1); falta confirmar a 1.0.2 (pergunta E). D-20261120-mercado-2 cancelada por superada.
+- **F-004** vídeos A/B: 5 reuniões; virou a DECISÃO 1 (A1/B1 + dia 1 da landing → loja). Parado no Léo.
+- **F-005** 1★ de sync (Play 1.0.1, 19/11): 5 reuniões; a janela de 7 dias da API fecha por volta de 18h35 BRT de 26/11 (hipótese do Turing, prova na coleta de 27/11). Se sair, morre por relógio: Ted/Bezos guardam o texto, o Léo responde no Console se quiser, sem pergunta. Fecha o fio em 27/11.
+- **F-006** executores: 25/11 4 de 4; 18h de 24/11 e 18h de 26/11 sem post provado (cria-3 nova, Fogg, P1 27/11 19h). Segue aberto.
+- **F-007** alcance: fechado (98,9% do alcance de 28d é anúncio; feed não vende). 
+- **F-008** (novo, 26/11) dia 1 landing → loja: dono Escobar, régua assinante pago, depende da DECISÃO 1.
+
+## Conselho 26/11/2026 (secretário)
+- F-001 medição: Turing/Escobar/Stark: SDK 1.0.2 no código, só `af_complete_registration`; IC mede clique, régua é assinante pago em % do teto; ponte de % do QG ainda não existe. Próximo: master-1 (6º portão), trafego-4.
+- F-004 A1/B1: Disney (r2) reduz o dia 1 a A1+B1; vira DECISÃO 1 do Shelby.
+- F-005 1★ do Play: Bezos/Turing; prova na coleta de 27/11 (lojas-1, dados-3 em andamento).
+- F-006 publicação 18h: Fogg provou 24/11 (limite de uso); 26/11 não provado.
+- F-002 modelo: Greco mantém 4 líderes; variante CG 160 fica pro 2º teste (Escobar, Disney, Shelby concordam).

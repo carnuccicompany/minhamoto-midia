@@ -46,3 +46,10 @@
 
 ## Atualização 26/11/2026 (Sun Tzu)
 - Honda no radar corrigida (D-20261124-mercado-4): myHonda Connect aceita moto; lembrete de revisão não confirmado. Ângulo "Honda não tem app" morto; ângulo seguro depende de OK do Léo e do teste no celular (mercado-3).
+
+## Atualização 26/11/2026 (rodada 1)
+- F-002 não morre em 27/11: 4 líderes no catálogo com tabela oficial (D-20261124-mercado-1, aceita). Escrever "Biz 125" ou "Biz 110i (até 2024)", nunca "Biz" solta. Falta o item 6 do pacote do Davi (build de 23/11).
+- Iniciativa nova que escolhi: **landing da SUA CG 160**, encaixada na decisão do Léo de 26/11 (tráfego pra landing, loja, IC). Demandas: D-20261126-mercado-1 (Disney, texto), -2 (Escobar, UTM por variante), -3 (Sun Tzu, licenciamento 2027 e novembro fechado). Vai ao ar só com revisão do Shelby e OK do Léo.
+- Prova de que errei: IC por clique da variante não passar da genérica em 7 dias com mesmo orçamento, ou o texto exigir fato não provado.
+- Correção minha: queda de novembro é sazonal (CG 160 −13,5% de out pra nov/2025, AutoPapo); "mercado esfriou" sai do meu vocabulário sem comparar com novembro do ano anterior.
+- Pendente: meta em número, SDK, item 6 do Davi, Biblioteca de Anúncios (Léo), resposta às 3 perguntas de hoje.

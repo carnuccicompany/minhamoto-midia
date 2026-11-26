@@ -3,6 +3,11 @@
 Todo agente lê este arquivo antes de começar. Decisão registrada aqui vale até o Léo ou o Davi mudarem. Ninguém propõe de novo o que já foi decidido, a não ser com fato novo (e diz qual é o fato novo).
 Formato: data · decisão · contexto. Mais recente em cima. Repositório público: nada de valores em R$, segredo ou dado de cliente.
 
+## 2026-11-26 (decisão do Léo + registro do Shelby)
+- **Tráfego (Léo, 26/11):** MinhaMoto começa com tráfego pra landing → loja. A campanha otimiza IC (clique pra loja, pixel novo). Venda por anúncio no AppsFlyer (OneLink da landing recebe as UTMs; Android exato, iOS parcial); conferir o total no RevenueCat. A/B com campanha de app direto pra loja fica pra depois (a semana-ponte iOS do Escobar foi substituída).
+- **Compra do app agora chega na Meta (QG, 26/11, registrado em `conhecimento/areas/trafego/LICOES.md`):** o AppsFlyer passou a repassar compra (rc_initial_purchase/renewal → fb_mobile_purchase) e cadastro (af_complete_registration) pra Meta, iOS e Android. Isso fecha o 6º portão do Turing (Meta ligada ao AppsFlyer); falta só ver "Compra" aparecer no dataset do app. UTMify nunca vê venda de dentro do app; a fonte é Meta Events Manager + AppsFlyer + RevenueCat.
+- **Shelby, 26/11:** régua do 1º ciclo é custo por assinante pago (IC só dá volume); nenhuma verba até o Léo aprovar. Ver `conselho/rodadas/2026-11-26/master.md`.
+
 ## 2026-11-25 (registro da conversa principal)
 - **Norte da empresa (Léo, 25/11):** a meta final é migrar a Carnucci pra gringa e vender muito em dólar, euro e libra (EUA e Europa). O foco sempre vai ser levar o máximo possível pra fora; cada agente trabalha pra Léo e Davi chegarem lá e poderem morar em outro país. Está no topo de `merito/CULTURA.md`; números no privado (`metas/norte-gringa.json`).
 - **Recuperação de Pix dos Corretores cancelada (Léo, 25/11):** não propor de novo sem ele pedir.
@@ -99,5 +104,3 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Biblioteca por setor em `agencia/conhecimento/areas/<setor>/`: FUNDAMENTOS (frameworks + como aplicamos aqui), FONTES (oficial primeiro) e NOVIDADES (últimos 90 dias, com fonte e data; sem fonte não entra).
 - Cada playbook ganhou a seção "Biblioteca": ler NOVIDADES antes de propor e FUNDAMENTOS quando o tema aparecer, só o que tocar a tarefa.
 - Atualização semanal (terça cedo): texto pronto em `areas/ATUALIZACAO.md`; a tarefa só é criada com o OK do Léo.
-
-- 26/11 (Léo): MinhaMoto começa com tráfego pra landing → loja. Campanha otimiza IC (clique pra loja, pixel novo). Venda por anúncio no AppsFlyer (OneLink da landing recebe as UTMs; Android exato, iOS parcial); conferir total no RevenueCat. A/B com campanha de app fica pra depois.

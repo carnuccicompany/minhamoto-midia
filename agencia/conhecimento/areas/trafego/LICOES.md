@@ -33,4 +33,4 @@ Cada acerto ou erro da casa vira lição: data · o que aconteceu · a regra · 
   - rc_trial_started_event → StartTrial
   - af_complete_registration → fb_mobile_complete_registration
 - UTMify NUNCA vai ver venda feita dentro do app (só web). Venda vinda da landing é atribuída por anúncio no AppsFlyer porque os botões da landing usam OneLink PL15 com as UTMs (pid/c/af_adset/af_ad) — exige UTMs nos anúncios. Pra MinhaMoto, a fonte de verdade é Meta Events Manager (dataset do app) + AppsFlyer + RevenueCat.
-- Próximo passo: quando "Compra" aparecer no dataset do app, campanha de app otimizando pra compra (ou pra StartTrial enquanto o volume de compra for baixo).
+- Próximo passo: quando "Compra" aparecer no dataset do app, campanha de app otimizando pra compra (o app NÃO tem teste grátis, então StartTrial nunca dispara e não serve de evento de volume; o mapeamento rc_trial_* fica sem uso. Correção do Shelby em 26/11).

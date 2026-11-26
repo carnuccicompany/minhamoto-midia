@@ -13,7 +13,7 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`. Detalhes da ofer
 ## 2. Funil
 Anúncio → página → checkout → compra → bumps → entrega → (reembolso).
 - **Página:** promessa = a do anúncio; prova (amostras, depoimento real, a expert); preço claro; CTA repetido; leve e rápida no celular (a página de 25 MB foi reduzida pra ~1 MB em 23/11/2026).
-- **Checkout:** poucos campos, Pix e cartão, prova de segurança, telefone (necessário pra recuperação).
+- **Checkout:** poucos campos, Pix e cartão, prova de segurança, telefone (só se um dia a recuperação de Pix voltar; hoje cancelada, o checkout segue sem pedir telefone, Léo 25/11).
 - **Pós-compra:** entrega imediata, e-mail claro, acesso fácil. Entrega ruim vira reembolso.
 
 ## 3. Criativo é o motor
@@ -22,7 +22,7 @@ Anúncio → página → checkout → compra → bumps → entrega → (reembols
 - Ângulos de ganho (destaque, rapidez, responder tudo, confiança, economia por não pagar serviço externo) e de perda.
 
 ## 4. Recuperação de vendas
-- Pix gerado e não pago é a maior fonte de venda perdida (~1 em 5). Mensagem única e gentil 15 min depois, pelo WhatsApp da operação (nunca o número pessoal da expert). Aprovada e adiada pelo Léo.
+- Pix gerado e não pago é a maior fonte de venda perdida (~1 em 5). Mensagem única e gentil 15 min depois, pelo WhatsApp da operação (nunca o número pessoal da expert). Era a mensagem desenhada em 23/11; **CANCELADA pelo Léo em 25/11** (não propor de novo sem ele pedir; decisoes.md). Fica só como referência de mercado.
 - Carrinho abandonado no cartão: mesma lógica, com cuidado pra não parecer cobrança.
 
 ## 5. Regras e risco

@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo ou adendo no fim de D-20261125-trafego-2.md com, para cada [confirmar no oficial]: confirmado, corrigido ou nao existe, com o link oficial aberto. Sem inventar o que nao abriu.",
   "prioridade": "P2",
   "prazo": "2026-11-28T18:00:00-03:00",
-  "status": "aberta",
+  "status": "bloqueada",
   "criada_em": "2026-11-26T12:00:00-03:00",
   "fio": null,
   "entrega": null,
@@ -21,6 +21,13 @@
       "quando": "2026-11-26T12:00:00-03:00",
       "quem": "trafego",
       "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    },
+    {
+      "quando": "2026-11-26T21:50:00-03:00",
+      "quem": "master",
+      "o_que": "bloqueada: a leitura de paginas externas (developers.facebook.com) foi negada tambem na sessao do Shelby em 26/11 (permissao nao respondida). Passos de menu seguem [confirmar no oficial]; o Leo so age no que ele ve na propria tela da Meta. Nao inventei confirmacao."
     }
-  ]
+  ],
+  "bloqueio": "qg",
+  "atualizada_em": "2026-11-26T21:50:00-03:00"
 }

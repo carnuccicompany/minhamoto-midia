@@ -100,3 +100,22 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
 - **Conquista da semana:** "Previu o gargalo": apontei a BM Matriz como ponto único de falha antes da verba nova.
 - **Item que quero:** Don Julio 1942 já; lendário Fat Boy.
+
+## 2026-11-26 · Rodada do Conselho (r1)
+- fiz: agencia/conselho/rodadas/2026-11-26/trafego-r1.md; criei D-20261126-trafego-3 (Shelby), -4 (Turing), -5 (Disney); cancelei D-20261124-trafego-4 (substituída pela decisão do Léo de 26/11); agenda atualizada. Conferi `ls itens | grep` antes de criar.
+- aprendi: o Léo decidiu em 26/11 começar o MinhaMoto por landing→loja, otimizando IC com o pixel novo; campanha de app direto vira teste depois. Hoje o AppsFlyer passou a mandar compra pra Meta (LICOES 26/11), o que resolve a lacuna do meu 6º portão, falta confirmar com dado. Iniciativa nova: "Primeiro clique que vira assinante" (IC como volume, corte em % do teto por assinante pago). WebFetch da Meta negado de novo; só links, marcados [confirmar no oficial].
+- recebi: nada novo de aceite; dados-5 e dados-1 de 24/11 e 25/11 (entregues por mim) esperam o Turing.
+- pendente: sem número de campanha (6ª rodada); sim do Léo na verba, nome e A1/B1; ponte de % do QG; BM Operação; endereço recusado pelo Instagram.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Diretor segue o cargo; falta XP (5) e número de campanha. Quero Diretor do Mês.
+- **Conquista da semana:** a mais perto é o 1º número de campanha, se o Léo disser sim à landing→loja; "Previu o gargalo" já registrada.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.
+
+## 2026-11-26 · Correcao do Shelby
+- 'Compra chega na Meta' ja foi mapeada pelo QG em 26/11 (decisoes.md); portao 6 cai, falta ver 'Compra' no dataset do app. D-20261125-trafego-2 aceita; BM Operacao vai ao Leo como DECISAO 3 (agir so no que ele confirma na tela da Meta). D-20261126-trafego-2 bloqueada: Meta oficial negada tambem ao Shelby.
+
+## 2026-11-26 · Rodada de demandas (noite)
+- fiz: entreguei D-20261126-dados-1 (URL modelo `?utm_source=meta-ads&utm_medium=t05-direcao&utm_campaign=mm_meta_ic_lp_2611&utm_content=CR-org-11`; pixel novo ligado em 18/11; 1º anúncio e teste de clique iOS/Android "sem dado", Léo/Davi liberam) e D-20261126-cria-1 (12 slots, A1=CR-org-11 e B1=CR-org-12 primeiro, 10 depois da 1ª leitura; corte em 2 níveis em %: IC só pausa, assinante pago decide; tudo "sem histórico"). Nenhuma demanda nova criada.
+- aprendi: com 2 anúncios a mediana é a média, então "200% da mediana" nunca dispara; na Onda 1 o nível 1 usa a razão entre os dois. Zero assinante em iOS é "sem leitura" (atribuição parcial), não motivo de pausa. `pid=meta-ads` é nome custom no AppsFlyer; só o teste do passo 3 mostra como aparece. Mudei da r2: os 12 slots são mapa de IDs/links, o dia 1 roda 2.
+- pendente: sim do Léo na DECISÃO 1, data do 1º anúncio, Android no dia 1 (sim/não), SDK na build (Davi), teste de clique, nomes; sem número de campanha (6ª rodada).

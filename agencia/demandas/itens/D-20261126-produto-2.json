@@ -1,0 +1,25 @@
+{
+ "id": "D-20261126-produto-2",
+ "de": "produto",
+ "para": "produto:analista-do-paywall",
+ "copia": [
+  "produto"
+ ],
+ "titulo": "Proposta pro Davi: 3 eventos de funil (onboarding_complete, paywall_view, moto cadastrada) em cima do SDK que já está no código",
+ "por_que": "O código de 25/11 só dispara 1 evento de funil (af_complete_registration, src/lib/appsflyer.ts:17); não existe onboarding_complete nem paywall_view (grep em src, 26/11). Com tráfego pago começando pra landing e loja (decisão do Léo, 26/11), sem esses 3 eventos não dá pra dizer em qual etapa o instalado some. Mexe na meta porque a % instalação>pagante só é atacável com a etapa certa à vista (RevenueCat, 'Fix onboarding funnels': mais de 80% das assinaturas saem nos 2 primeiros minutos).",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) para cada evento, em que arquivo e momento do fluxo ele dispararia, lido no código de 25/11 (arquivo e linha); (2) nome, sem dado de cliente; (3) 1 sim/não pro Davi (cabe na 1.0.3?); (4) como o Turing lê em %. Só proposta: nada muda no app, paywall intocado, sem 'grátis', sem R$.",
+ "prioridade": "P2",
+ "prazo": "2026-11-29T14:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-26T14:00:00-03:00",
+ "fio": "F-001",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-26T14:00:00-03:00",
+   "quem": "produto",
+   "o_que": "criou"
+  }
+ ]
+}

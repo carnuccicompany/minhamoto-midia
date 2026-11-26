@@ -43,3 +43,9 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - aprendi: o teto é o número de execuções; recuperar slot só ajuda quando há execução sobrando (22/11 sim, 21/11 não: ganho 0).
 - aguardando: sim/não do Léo/Davi (mesma pergunta de D-20261122-mkt_publicador-1). Rodada 23/11: cria-1 de 20/11 e 22/11 já estão aceitas.
 - pendente: conferir run das 12h de 23/11 e registrar run id.
+
+## 2026-11-26 19:55 · D-20261126-cria-3 (slots 18h de 24/11 e 26/11)
+- fiz: entreguei agencia/demandas/entregas/D-20261126-cria-3.md. 24/11 18h BRT (21-23 UTC): não postou, zero execuções na janela (run 55 às 20:23Z, run 56 às 23:40Z); causa: limite de uso das tarefas agendadas (log do Coordenador 24/11 20:42). 26/11 18h: não postou até 22:50Z (janela fecha 23:00Z); último run é o 68 (18:03Z, que foi o slot de 15h). Causa não provada: falta o last_run de "MM: Posts do horário".
+- aprendi: 18h BRT = 21:00Z. Posts com hora 18:04Z em estado.json são os de 15h. Script ok em todos os runs.
+- criei: D-20261126-mkt_publicador-1 (reabre a pergunta sim/não do publicar.py, bloqueada pro Léo/Davi).
+- pendente: conferir 21h de 26/11 (00:00Z de 27/11) e o placar de F-006.

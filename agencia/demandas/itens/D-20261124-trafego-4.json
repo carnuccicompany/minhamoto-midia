@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-4.md ou linha na pauta do Léo com: (1) sim/não: Escobar prepara a semana-ponte iOS (link direto da loja, otimização por instalação, só depois dos portões, dentro do teto da semana 1 no privado); (2) sim/não: leitura só-leitura do gerenciador de anúncios e dos painéis, via resumo em % no carnucci-dados; (3) resposta curta: qual endereço o Instagram recusou. Cada uma com a recomendação do Shelby.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:30:00-03:00",
-  "status": "bloqueada",
+  "status": "cancelada",
   "criada_em": "2026-11-24T18:30:00-03:00",
   "fio": "F-001",
   "entrega": {
@@ -29,9 +29,14 @@
       "quando": "2026-11-24T20:05:00-03:00",
       "quem": "master",
       "o_que": "respondida: itens 1 e 3 vao ao Leo no master de 24/11, item 2 ja resolvido"
+    },
+    {
+      "quando": "2026-11-26T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "cancelada por quem pediu: a decisão do Léo de 26/11 (landing→loja, otimizando IC) substituiu a semana-ponte de app direto pra loja; a pergunta nova está em D-20261126-trafego-3. O item 3 (endereço recusado pelo Instagram) já está nas perguntas ao Léo."
     }
   ],
   "bloqueio": "lider",
   "pergunta_lider": "Léo: o Escobar pode preparar a semana-ponte iOS (só preparar; gasto só depois dos portões e com sua aprovação da verba)? Recomendo: sim.",
-  "atualizada_em": "2026-11-24T20:05:00-03:00"
+  "atualizada_em": "2026-11-26T19:30:00-03:00"
 }

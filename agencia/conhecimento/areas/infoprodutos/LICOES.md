@@ -3,7 +3,7 @@
 Cada acerto ou erro da casa vira lição: data · o que aconteceu · a regra · a prova. Correção do Léo vale mais que qualquer fonte e nunca se repete. Números absolutos só no `carnucci-dados`. Nada se apaga. Mais novo em cima.
 
 ## Correções e decisões do Léo (valem acima de tudo)
-- **23/11 · Teste de 6 estilos novos × 3 criativos**, começando por Historinha, Quiz e Split-screen; **recuperação de Pix adiada**. **Prova:** decisoes.md 23/11.
+- **23/11 · Teste de 6 estilos novos × 3 criativos**, começando por Historinha, Quiz e Split-screen; recuperação de Pix foi adiada em 23/11 e **CANCELADA pelo Léo em 25/11**: não propor de novo sem ele pedir. **Prova:** decisoes.md 23/11 e 25/11.
 - **23/11 · Já respondido, não perguntar de novo:** venda pela Kavoo, rastreio pela UTMify, garantia da página de 30 dias. **Prova:** decisoes.md 23/11.
 - **23/11 · Criativo:** só "R$27,90" sem parcelas; voz só da Ana Paula; 15–30 s; "Clique em Saiba Mais". **Prova:** DESIGN-CORRETORES §4b.
 - **19/11 e 22/11 · Sem Black Friday** nos Corretores. **Prova:** decisoes.md.

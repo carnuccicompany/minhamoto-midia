@@ -1,0 +1,25 @@
+{
+  "id": "D-20261126-mkt-1",
+  "de": "mkt",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [
+    "mercado"
+  ],
+  "titulo": "Sinal de demanda lá fora pro Mapa Visual: 5 ofertas nos EUA (inglês) e 3 em Portugal pra corretor, com preço, garantia e prova",
+  "por_que": "Norte do Léo de 25/11 (decisoes.md): vender em dólar e euro. Corretores hoje: vendas/dia -43% e custo por venda +19% em novembro contra outubro (conhecimento/09-numeros.md, UTMify 23/11), então um 2º mercado pro mesmo material é a única frente que soma venda sem depender só do criativo daqui. Mercado EUA: 1.439.163 membros da NAR em 18/06/2026, -1,7% em 12 meses (fonte secundária, cameronacademy.com/how-many-real-estate-agents-are-there-2026/; falta confirmar na NAR). Sem benchmark de oferta lá fora não proponho nada; a pesquisa custa zero de verba.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mkt-1.md com 5 ofertas dos EUA e 3 de Portugal (guia, curso ou material visual pra corretor): link da página de venda, data de acesso, preço na moeda da página, garantia, bônus, tipo de prova e plataforma de venda; por mercado, 1 linha com a fonte oficial do nº de profissionais (NAR ou ARELLO; IMPIC em Portugal) e 1 linha sobre o que muda no processo de compra e venda (só apontar, sem parecer jurídico); uma linha final 'dá pra copiar / não dá' por oferta. Sem número inventado; página que não abriu escreve 'não abriu'.",
+  "prioridade": "P3",
+  "prazo": "2026-12-03T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-26T20:10:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:10:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    }
+  ]
+}

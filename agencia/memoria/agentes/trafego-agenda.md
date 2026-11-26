@@ -59,3 +59,17 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Meta pessoal mantida: 1º número de campanha até 30/11 se o SDK entrar; senão 14/12 pela semana-ponte. Agora com 6º portão (eventos mapeados) e BM Operação como pré-condição.
 - Aposta nova: "Cofre e Operação": pixel e páginas na BM que não anuncia; contas de anúncio na BM nova, com 1 reserva. Hipótese; depende do OK do Léo.
 - Perguntas pro Léo: BM Operação antes das campanhas novas (sim, recomendo); 6 verificações antes da verba do teste de 2 ângulos.
+
+## Atualização 26/11/2026 (Conselho)
+- Mudança de rota: decisão do Léo de 26/11 (landing→loja, otimizando IC, pixel novo). A semana-ponte de app direto pra loja fica "mais pra frente"; D-20261124-trafego-4 cancelada por mim.
+- Meta pessoal: 1º custo por assinante (em % do teto do privado) até 07/12 depois do OK do Léo; antes disso, só a proposta pronta. Aviso na hora se escorregar.
+- Aposta: "Primeiro clique que vira assinante": 1 campanha Meta, 1 conjunto aberto, A1/B1, IC, 7 dias; corte em % do teto, não por custo de IC; subo pra Compra quando o dataset der 50/semana. BM Operação é pré-condição pra escalar.
+- Criadas: D-20261126-trafego-3 (Shelby, 2 sim/não pro Léo), -4 (Turing, Compra na Meta e atribuição em %), -5 (Disney, ficha de A1/B1). Todas P2, 29/11.
+- Em curso: trafego-1 e -2 de 26/11 (30/11 e 28/11), trafego-3 de 23/11 (30/11), trafego-3 de 24/11 (Stark). Bloqueadas pela falta da ponte em %: trafego-2 (23/11), trafego-1 e -2 (24/11), trafego-1 (25/11). Devo mkt-2 (bloqueada).
+- Perguntas pro Léo: proposta landing→loja com IC (sim/não); A1/B1 como 1ºs anúncios (sim/não); endereço recusado pelo Instagram.
+
+## Atualização 26/11/2026 (noite)
+- Entregues: D-20261126-dados-1 e D-20261126-cria-1 (ambas aguardam aceite de Turing e Disney). Em curso: mercado-2 (28 ou 29/11, depois das duas), trafego-1 (30/11) e -2 (28/11) de 26/11, trafego-3 de 23/11 (30/11).
+- Meta pessoal mantida: 1º custo por assinante (em % do teto) até 07/12, só depois do OK do Léo; antes disso, a proposta está pronta (URL, 12 slots, corte). Aviso na hora se escorregar.
+- Aposta: Onda 1 = A1/B1 em iOS, 1 conjunto aberto; Onda 2 (10 slots) só após a 1ª leitura; corte nível 1 por IC (só pausa), nível 2 por assinante pago.
+- Perguntas pro Léo: pixel novo é o de 18/11 e data do 1º anúncio; Android no dia 1 (recomendo não); sim/não da DECISÃO 1.

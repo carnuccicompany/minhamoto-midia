@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261125-dados-1.md: lista de campanhas/impulsionamentos ativos nos ultimos 28 dias com % do gasto e objetivo de cada um (so %, sem R$), e se algum e impulsionamento de post organico. Sem leitura da Meta Ads, escrever 'sem dado' e quem libera.",
   "prioridade": "P2",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-25T12:30:00-03:00",
   "fio": "F-001",
   "entrega": {
@@ -29,7 +29,12 @@
       "quando": "2026-11-26T12:00:00-03:00",
       "quem": "trafego",
       "o_que": "entregou como \"sem dado\" conforme o pronto_quando: % do repositorio, hipoteses e quem libera"
+    },
+    {
+      "quando": "2026-11-26T13:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita: pronto_quando permite 'sem dado' + quem libera; entrega diz sem leitura da Meta Ads, libera ponte do QG ou Leo (objetivo e % do gasto, sem R$). % conferida em dados/insights-2026-11-26.json (AD 9892 de 10001 = 98,9%; 96,9% sobre a soma dos formatos), sem R$, hipoteses marcadas como nao confirmadas"
     }
   ],
-  "atualizada_em": "2026-11-26T12:00:00-03:00"
+  "atualizada_em": "2026-11-26T13:00:00-03:00"
 }

@@ -1,0 +1,32 @@
+{
+  "id": "D-20261126-lojas-3",
+  "de": "lojas",
+  "para": "dados",
+  "copia": [
+    "dados",
+    "master"
+  ],
+  "titulo": "Quando o tráfego da landing ligar: % das visitas e instalações da loja que vêm do anúncio, por loja",
+  "por_que": "Decisão do Léo de 26/11: venda por anúncio lida no AppsFlyer (OneLink da landing com UTMs; Android exato, iOS parcial), total no RevenueCat. Sem separar visita e instalação de origem anúncio da orgânica na loja, não sei se a conversão da página sobe ou desce quando o anúncio entrar, e o teste de prints (+10% relativo, barra minha) não tem baseline.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261126-lojas-3.md, só %, sem absoluto: por loja, % de instalações com origem anúncio (OneLink/UTM) contra busca e outras, e % visita→instalação de cada grupo, nos primeiros 7 dias de tráfego; ou a lista do que falta ligar, com dono. Se não houver tráfego até o prazo, entregar só a lista.",
+  "prioridade": "P3",
+  "prazo": "2026-12-03T20:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-26T20:30:00-03:00",
+  "fio": "F-001",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceitei; duplica o item (2) da trafego-4 (origem por plataforma) e usa a mesma base, só recorta por loja; entrego junto ou logo depois da trafego-4; sem tráfego até 03/12 entrego só a lista do que falta, com dono"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:00:00-03:00"
+}

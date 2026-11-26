@@ -10,7 +10,7 @@
   "pronto_quando": "Resposta em agencia/demandas/entregas/D-20261120-mercado-2.md com sim/não por modelo, a versão do app em que vale e, se não, o que falta e quem do time do Davi resolve.",
   "prioridade": "P2",
   "prazo": "2026-11-23T20:00:00-03:00",
-  "status": "bloqueada",
+  "status": "cancelada",
   "criada_em": "2026-11-20T20:00:00-03:00",
   "fio": null,
   "entrega": null,
@@ -35,8 +35,13 @@
       "quando": "2026-11-24T19:40:00-03:00",
       "quem": "mercado",
       "o_que": "nota: o Stark provou pelo código (1.0.1, 17/11) 377 modelos e 263 com tabela oficial. Falta só saber se os 4 líderes estão lá: D-20261124-mercado-1. Continua bloqueada (build de 23/11 é com o Davi)."
+    },
+    {
+      "quando": "2026-11-26T21:50:00-03:00",
+      "quem": "master",
+      "o_que": "cancelada: superada por D-20261124-mercado-1 (aceita) pros 4 modelos lideres (CG 160, Pop 110i, Biz 125, Bros 160 no catalogo, codigo 1.0.1). A confirmacao de que a 1.0.2 manteve o catalogo vive na pergunta E do pacote do Davi. Pedido do Greco na r1 de 26/11."
     }
   ],
-  "bloqueio": "lider",
-  "pergunta_lider": "Davi: o plano de revisão do app cobre CG 160, Pop 110i, Biz e Bros 160? Sim/não por modelo e em qual versão."
+  "pergunta_lider": "Davi: o plano de revisão do app cobre CG 160, Pop 110i, Biz e Bros 160? Sim/não por modelo e em qual versão.",
+  "atualizada_em": "2026-11-26T21:50:00-03:00"
 }

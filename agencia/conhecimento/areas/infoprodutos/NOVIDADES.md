@@ -2,6 +2,10 @@
 
 Janela coberta: 26/08/2026 a 25/11/2026. Pesquisado em 24/11/2026 e 25/11/2026. Histórico completo: nada se apaga; o muito antigo é resumido no fim. Mais novo em cima.
 
+## Rodada de 26/11/2026 (correção do Shelby)
+### 26/11/2026 · Kavoo descreve upsell e downsell de 1 clique, order bump e Exit Popup [texto comercial; comportamento no Pix e reembolso não confirmados]
+- Fonte: https://formulario.kavoo.com.br/ (lida pelo Cardone em 26/11; não cita UTMify, pixel, reembolso nem Pix no upsell). **O que muda pra nós:** a pergunta "a Kavoo faz upsell 1 clique e o que acontece no Pix?" passa a ter pista, não resposta; segue indo ao Léo só com o teste de upsell. Recuperação de Pix continua cancelada (Léo, 25/11).
+
 ## Rodada de 25/11/2026 (professor-chefe) · itens que faltavam
 ### 12/11/2026 · Meta liga por padrão a medição de conversões no dispositivo do cliente no Pixel [confirmar no oficial]
 - Exige pixel instalado direto na página. **O que muda pra nós:** compras dos Corretores na Meta podem subir sem venda nova; vale a UTMify. Conferir com o Léo se o pixel da página/Kavoo está "direto na página".
@@ -21,7 +25,7 @@ Janela coberta: 26/08/2026 a 25/11/2026. Pesquisado em 24/11/2026 e 25/11/2026. 
 
 ## 16/11/2026 · Pix: pessoa para empresa chega a 45% das transações
 - Banco Central: até out/2026, 76 bilhões de transações no ano; 45% das transações já são de pessoa para empresa.
-- **O que muda pra nós:** Pix continua sendo o meio principal; recuperar Pix não pago é prioridade quando o telefone entrar no checkout.
+- **O que muda pra nós:** Pix continua sendo o meio principal; a recuperação de Pix foi CANCELADA pelo Léo em 25/11 (não propor de novo sem ele pedir); o dado serve só de contexto de mercado.
 - Fonte: https://agenciagov.ebc.com.br/noticias/202611/pix-celebra-6-anos-como-motor-de-inclusao-e-eficiencia-financeira-em-todo-o-brasil
 
 ## 06/10/2026 · Meta: excluir quem já comprou nas campanhas de aquisição
@@ -31,5 +35,5 @@ Janela coberta: 26/08/2026 a 25/11/2026. Pesquisado em 24/11/2026 e 25/11/2026. 
 
 ## 01/10/2026 · WhatsApp: cobrança por mensagem também dentro da janela de 24h
 - Mensagem de recuperação (modelo de utilidade) custa ≈ US$0,0068 por envio no Brasil; 1.000 mensagens de atendimento grátis por mês por número.
-- **O que muda pra nós:** custo da recuperação de Pix é irrisório perto do valor da venda; a conta fecha.
+- **O que muda pra nós:** contexto de custo apenas: a recuperação de Pix está cancelada (Léo, 25/11) e não se propõe de novo sem ele pedir.
 - Fontes: https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing · https://www.courier.com/guides/whatsapp-pricing

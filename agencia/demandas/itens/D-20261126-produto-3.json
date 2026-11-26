@@ -1,0 +1,31 @@
+{
+ "id": "D-20261126-produto-3",
+ "de": "produto",
+ "para": "dados",
+ "copia": [
+  "dados"
+ ],
+ "titulo": "1ª leitura em % do funil instalação > cadastro > pagante, por plataforma, assim que a 1.0.2 estiver ao vivo",
+ "por_que": "O código de 25/11 tem SDK e o evento af_complete_registration; o RevenueCat recebe o UID do AppsFlyer. É a primeira vez que existe sinal pra dividir o instalado em 'cadastrou' e 'pagou'. A meta é novos assinantes pagos por semana e, sem a etapa que perde mais gente, a P-001 e o tráfego novo andam no escuro. Sem baseline ninguém promete ganho (06-produto.md, Lapidado).",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com instalação>cadastro e cadastro>pagante em %, iOS e Android separados, diz a data em que a 1.0.2 passou a valer nas lojas e o tamanho da amostra só em faixa (pequena/média/grande), sem número absoluto. Se a versão ainda não estiver ao vivo ou o evento não chegar, o arquivo diz isso e o que falta, em vez de número.",
+ "prioridade": "P2",
+ "prazo": "2026-11-29T14:00:00-03:00",
+ "status": "em_andamento",
+ "criada_em": "2026-11-26T14:00:00-03:00",
+ "fio": "F-001",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-26T14:00:00-03:00",
+   "quem": "produto",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-26T21:00:00-03:00",
+   "quem": "dados",
+   "o_que": "aceitei; só entrego % depois da 1.0.2 confirmada nas lojas (Davi/Shelby) e do evento chegando; senão em 29/11 14h entrego arquivo 'sem dado' com o que falta; sobrepõe o bloco de funil da dados-1 e da master-2, uma base só"
+  }
+ ],
+ "atualizada_em": "2026-11-26T21:00:00-03:00"
+}

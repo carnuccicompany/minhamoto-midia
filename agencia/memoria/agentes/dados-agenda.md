@@ -59,3 +59,13 @@
 - Fato: alcance por formato estável (AD 98,8% -> 98,9%; feed 2,1% -> 1,8%). relatorio-semanal-1 entregue. Iniciativa segue: de que campanha vem o AD (D-20261125-dados-1, Escobar, 27/11 19h).
 - Bloqueado: trafego-1 (W e tipo de lance) até a ponte de % do QG.
 - Prazos: 27/11 conferir ec124592 na coleta; 30/11 relatório, trafego-3, linha de base.
+
+## Atualização 2026-11-26 (rodada 1 do Conselho)
+- Iniciativa nova: "Cobertura da landing até a compra" (decisão do Léo, 26/11: tráfego pra landing → loja, otimizando IC). Hipótese: >80% das instalações do anúncio com origem no Android (corte meu), menos no iOS; vazamento maior entre clique pra loja e compra. 1ª leitura 7 dias após o 1º clique pago. Precisa: data do pixel novo, UTMs conferidas, Meta-AppsFlyer com compra mapeada (portão 6), ponte de % do QG.
+- Criadas: D-20261126-dados-1 (Escobar, P1 27/11 20h), -2 (Shelby: reatribuir master-1 da reserva e corrigir "teste iniciado" na PENDENCIAS l.105, P2 29/11), -3 (Ness: ids do Play por coleta, P1 27/11 20h).
+- Prazos: 27/11 conferir ec124592 (previsão: sai após 26/11 21h35Z); 27/11 devolvida dados-3 do Hemingway; 30/11 relatório, trafego-3, linha de base; 01/12 produto-5.
+- Aposta: IC não é assinante; custo por pagante só com RevenueCat ÷ gasto.
+
+## Atualização 2026-11-26 (noite)
+- Portão 6 corrigido: mapeado pelo QG; falta ver Compra no dataset (D-20261126-trafego-4 em_andamento, 'sem dado'). Regra por criativo escrita (cria-2): índice vs campanha, mínimo em pagantes, iOS piso/Android exato; limites a calibrar quando p0 existir.
+- Prazos: 27/11 ec124592; 30/11 relatório, trafego-3, linha de base.

@@ -306,3 +306,5 @@
 - 25/11 21h40 BRT · sem falha: nenhuma tarefa com falha, 4 slots do dia publicados (último M03 21h04), fila 19,5 dias (78), TikTok 9:16 113/113, sem pendentes, sem segredo. P1 D-20261125-trafego-2 aberta (prazo 27/11), Mesa já rodou hoje 10h37 — não disparei.
 
 - 26/11 8h40 BRT · sem falha: nenhuma tarefa com falha, 4 slots de ontem publicados, fila 19,5 dias (78), TikTok 9:16 113/113, sem pendentes, sem segredo, insights de hoje ok. Disparei a Mesa de Demandas 1x (P1 D-20261125-trafego-2 aberta, Mesa não rodou hoje).
+
+- 26/11 ~21h BRT (Eliot, D-20261126-dados-3) · avaliacoes Play registradas em status.json (avaliacoes_play): coleta 2026-11-26T16:14:57Z, ids [ec124592]; ec124592 presente: sim. Nenhuma coleta posterior a 21h35Z existe no repo ainda.

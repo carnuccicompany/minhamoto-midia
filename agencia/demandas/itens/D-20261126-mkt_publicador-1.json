@@ -1,0 +1,27 @@
+{
+  "id": "D-20261126-mkt_publicador-1",
+  "de": "mkt:publicador",
+  "para": "master",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Sim/não do Léo/Davi: script recuperar slot aberto do dia (slot falhou de novo em 24 e 26/11)",
+  "por_que": "Shelby cancelou D-20261122-mkt_publicador-1 em 23/11 com 'reabrir se um slot falhar de novo'. Falhou: 24/11 18h e 26/11 18h sem post, sem execução na janela (agencia/demandas/entregas/D-20261126-cria-3.md). F-006 só fecha com 3 dias de 4/4.",
+  "pronto_quando": "Resposta sim/não do Léo/Davi registrada aqui: autorizar mudar scripts/publicar.py para publicar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, sem mudar a ordem da fila). Se sim, o Fogg altera e valida com SIMULAR=1.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T19:00:00-03:00",
+  "status": "bloqueada",
+  "bloqueio": "lider",
+  "pergunta": "Léo/Davi: autorizam mudar o scripts/publicar.py para recuperar um slot aberto do dia que falhou (máx. 1 por execução e 4 por dia, sem mexer na ordem da fila)? Sim ou não.",
+  "criada_em": "2026-11-26T19:55:00-03:00",
+  "fio": "F-006",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:55:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "criou; bloqueada: só Léo/Davi autorizam mudar o publicar.py"
+    }
+  ]
+}

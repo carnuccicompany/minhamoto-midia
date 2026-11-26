@@ -1,0 +1,41 @@
+{
+  "id": "D-20261126-trafego-3",
+  "de": "trafego",
+  "para": "master",
+  "copia": [
+    "trafego",
+    "dados",
+    "cria"
+  ],
+  "titulo": "Levar ao Léo 2 sim/não da campanha MinhaMoto landing→loja otimizando clique pra loja (IC): preparar a proposta e usar A1/B1 como anúncios",
+  "por_que": "Decisão do Léo de 26/11 (decisoes.md): MinhaMoto começa com tráfego pra landing→loja, otimizando IC com o pixel novo. Isso troca a semana-ponte de D-20261124-trafego-4 (campanha de app direto pra loja, que o Léo deixou 'mais pra frente' em PENDENCIAS). Sem número de campanha há 5 rodadas (boletim de 20/11); só o pago tem volume controlável (orgânico: mediana de ~10 pessoas por post, dados/insights-2026-11-23.json). Os nomes e a verba são do Léo (diretoria/05-trafego.md).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-trafego-3.md ou linha na pauta do Léo com: (1) sim/não: Escobar prepara a proposta (1 campanha Meta, 1 conjunto aberto, destino minhamotopagina.online com UTMs meta-ads, evento IC do pixel novo, 7 dias, nome mm_meta_ic_lp_2611, gasto só com a aprovação da verba pelo Léo, dentro do teto da semana 1 do privado); (2) sim/não: A1/B1 (video-aviso.mp4) são os 2 primeiros anúncios (junta com D-20261123-cria-2). Cada item com a recomendação do Shelby (a minha: sim nos dois). Resposta registrada em decisoes.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-26T19:30:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-trafego-3.md",
+    "resumo": "Os 2 sim/nao viraram DECISAO 1 do master.md de 26/11 (com cria-2 e trafego-1 de 23/11), recomendacao sim nos dois."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou (Conselho 26/11, r1)"
+    },
+    {
+      "quando": "2026-11-26T21:50:00-03:00",
+      "quem": "master",
+      "o_que": "entregou: levada como DECISAO 1"
+    },
+    {
+      "quando": "2026-11-26T22:10:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitou: os 2 sim/nao estao na DECISAO 1 do master.md de 26/11 com a recomendacao sim nos dois e o escopo da proposta (campanha, conjunto, UTMs, IC, 7 dias, nome, verba so com OK do Leo dentro do teto); a resposta do Leo vai a decisoes.md quando vier"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:10:00-03:00"
+}

@@ -40,3 +40,9 @@
 - Aposta mantida: prints de benefício, barra +10% relativo; morre em 30/11 sem base iOS.
 - Novas: D-20261124-lojas-2 (Ted, vigia pós-build, 27/11) e -3 (Escobar, ficha personalizada Android, 01/12).
 - Risco: 1★ ec124592 sai da janela da API por volta de 26/11 21h35Z. Pendências do Léo: OK do 1★, nota oficial do Play, domínios das lojas (master-3 vence 24/11 20h).
+
+## Atualização 26/11 (r1)
+- Contexto novo (Léo, 26/11): anúncio → landing → loja, campanha otimiza clique pra loja. A loja vira a etapa final; minha aposta passa a ser "loja alinhada à promessa do anúncio" (prints de benefício, variação A). Barra +10% relativo visita→instalação; sem base nem tráfego até 07/12, eu encerro.
+- Novas: D-20261126-lojas-1 (Ted, prova da janela de 7 dias do Play, P1 27/11 12h), -2 (Disney, promessa do anúncio x prints, 03/12), -3 (Turing, % de instalação por origem, 03/12).
+- Pesquisa: developer.apple.com (páginas de produto personalizadas e limites de metadados) bloqueada pelo WebFetch hoje; só o link veio da busca. A conferir.
+- Pendências do Léo: OK do 1★ ec124592 (sai da janela ~26/11 21h35Z), nota oficial do Play, domínios das lojas. D-20261123-lojas-2 venceu hoje, bloqueada.

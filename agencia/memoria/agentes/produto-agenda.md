@@ -50,3 +50,10 @@
 
 ## 25/11
 - Reentreguei D-20261124-mercado-1 (4 líderes, versões e anos, Biz 110i até 2024). Aguardo aceite do Mercado. Próximo: Jobs produto-1 (26/11); reconferir catálogo quando a build de 23/11 entrar no repo.
+
+## Rodada 26/11 (Conselho, r1)
+- Iniciativa trocada: "Funil visível" (3 eventos mínimos sobre o SDK já no código) vem antes da P-001; a P-001 espera a etapa que mais perde gente. Mato se o evento chegar e não houver diferença entre etapas.
+- Fato novo do repo do app (leitura): 89 commits, último 25/11 (d4942b2), versão 1.0.2, SDK AppsFlyer mergeado em 24/11 (99c9a96), único evento af_complete_registration, UID vai pro RevenueCat. Não prova que a 1.0.2 está nas lojas. "Esse é o MinhaMoto" continua no fim do tour, antes do paywall (79d19d1); a P-001 não entrou.
+- Criadas: D-20261126-produto-1 (Shelby, P1), -2 (Jobs, P2), -3 (Turing, P2). Aceitei D-20261124-produto-4.
+- Pendências: Davi (pacote); Jobs (trafego-3, 27/11); Turing (produto-5, 01/12). Apple HIG, Google In-App Review e a página de novembro da RevenueCat bloqueados.
+- Pesquisa: RevenueCat, hard paywall e jornada de ativação (08/09/2026), https://www.revenuecat.com/blog/growth/hard-paywall-activation-journey.

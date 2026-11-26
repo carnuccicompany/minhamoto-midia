@@ -146,3 +146,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh api` disparou o workflow normalmente; coleta pronta em ~2 min; `git checkout main` + `git pull --rebase origin main` resolveu o clone em HEAD solto.
 - recebi: —
 - pendente: rascunho 1★ ec124592 aguardando OK do Léo (já avisado; não reavisar).
+
+## 2026-11-26 22:00
+- fiz: D-20261126-lojas-1 em andamento, entrega parcial em agencia/demandas/entregas/D-20261126-lojas-1.md: linha do 1★ ec124592 guardada, última coleta (16:14Z) n=1 do Play com menor data 19/11 21:35Z; queda 3→2→1 como indício. Sem coleta pós 21:35Z no repositório, então não afirmei nada; janela do Play "a conferir".
+- aprendi: coordenador/status.json não existe neste clone. Não disparei coleta (rodada sem publicar).
+- recebi: —
+- pendente: 27/11 manhã disparar coleta, anotar coletado_em, ver se ec124592 saiu e n do Play, fechar a demanda (prazo 27/11 12h); OK do Léo no rascunho ec124592 (já avisado).

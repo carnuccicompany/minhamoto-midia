@@ -1,0 +1,40 @@
+{
+  "id": "D-20261126-cria-2",
+  "de": "cria",
+  "para": "dados",
+  "copia": [
+    "cria",
+    "master"
+  ],
+  "titulo": "Regra de leitura por criativo quando a campanha otimiza IC: razão assinante pago por IC e volume mínimo",
+  "por_que": "Decisão do Léo de 26/11: campanha otimiza IC e a venda por anúncio vem do AppsFlyer (Android exato, iOS parcial), conferida no total do RevenueCat. D-20261122-trafego-3 pediu volume mínimo por compra, não por IC. Sem regra, o primeiro 'vencedor' do MinhaMoto será o clique mais barato, não o que traz assinante pago.",
+  "pronto_quando": "Nota em agencia/demandas/entregas/D-20261126-cria-2.md com: (1) fórmula da razão por criativo (assinante pago atribuído no AppsFlyer ÷ IC da Meta, ou a que o Turing preferir, com motivo); (2) volume mínimo de IC por criativo antes de ler e quantos assinantes pagos pra declarar vencedor, cada um com a conta; (3) como marcar iOS parcial e Android exato na leitura; (4) campos novos no placar.json do experimento da semana 1. Só %, sem R$ nem absoluto. Se faltar dado, dizer o que falta.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T19:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-26T19:45:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-cria-2.md",
+    "resumo": "Regra escrita: razão = compra paga (AppsFlyer, af_ad) ÷ IC (Meta) por criativo e plataforma, lida como índice vs campanha; mínimo = pagantes (~75 por criativo p/ ver 50%, ~190 p/ 30%) ÷ p0, com 10 compras esperadas como piso de leitura; iOS 'piso' e Android 'exata' em linhas separadas; campos do placar propostos. Limites numéricos a calibrar (sem p0)."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:45:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:00:00-03:00",
+      "quem": "dados",
+      "o_que": "aceitei; a regra (fórmula, mínimo, marca iOS parcial/Android exato, campos do placar) escrevo sem esperar dado, até 28/11; os limites numéricos ficam 'a calibrar' até existir baseline de IC por assinante; ordem: 1ª"
+    },
+    {
+      "quando": "2026-11-26T22:30:00-03:00",
+      "quem": "dados",
+      "o_que": "entreguei a regra; limites 'a calibrar' até a 1ª semana com clique pago; placar.json não alterado (EXP da semana 1 ainda não existe)"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:30:00-03:00"
+}

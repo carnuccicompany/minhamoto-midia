@@ -88,7 +88,7 @@ Base teórica do Léo (6 FIGURES/ÂNGULOS DE CRIATIVOS.docx): dor, desejo/transf
 - **Ângulos equilibrados:** perda (venda que morre depois do sim) + ganho (destaque/qualificação, vender mais rápido, responder tudo, confiança, economia: não pagar serviço externo de finalização e ficar com mais do lucro). Detalhe em `agencia/DESIGN-CORRETORES.md` §4b.
 - **Ainda a confirmar:** o erro do Acesso Essencial listando os mesmos itens do Completo; quais criativos venceram (ver `corretores-aprendizados.md`: a UTMify mostra AP - 1 e AP - 4 como os melhores).
 
-## 8. Recuperação de Pix (decisões do Léo, 23/11)
+## 8. Recuperação de Pix (desenhada em 23/11; **CANCELADA pelo Léo em 25/11, não propor de novo sem ele pedir**; o texto abaixo é só histórico)
 - **Uma mensagem só**, 15 minutos depois do Pix gerado e não pago. Curta, simpática, tom de quem ajuda (nunca cobrar nem apontar que a pessoa não pagou). Não assina como Ana Paula nem como "suporte".
 - **Canal:** número só da operação (chip dedicado), nunca o WhatsApp pessoal do Léo, do Davi ou da Ana Paula — na API oficial o número sai do app do WhatsApp, e por QR code corre risco de banimento. Exige telefone no checkout da Kavoo (hoje não pede; o Léo aceitou colocar).
 - **Ferramenta:** Reportana (integração aparece na Kavoo) ou PlugLead; decisão e assinatura do Léo.

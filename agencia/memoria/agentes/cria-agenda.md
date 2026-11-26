@@ -49,3 +49,10 @@
 
 ## Atualização 25/11
 - D-20261123-mkt-2 reentregue (parecer oficial do Shelby citado; termos da Kavoo seguem com o Léo). Aguardando aceite do Cardone, resposta do Léo (garantia; V2 = piloto + faixa) e leitura do Turing em cta_garantia. Regra pra mim: item do pronto_quando só conta com prova citada por id e caminho.
+
+## Atualização 26/11 (noite, r1)
+- Fato novo: o Léo decidiu hoje (decisoes.md 26/11) que o MinhaMoto começa com tráfego pra landing, campanha otimizando IC; A/B com campanha de app fica pra depois. Os briefs de 22 e 23/11 foram escritos pra compra inicial em iOS e precisam de corte novo.
+- Iniciativa nova: "Dia 1 da landing: o clique barato não é o assinante". 12 slots com CR-xx no link, leitura em duas colunas (IC e assinante pago), vencedor só por assinante pago. Prometi até 27/11 21h os 3 roteiros em texto do ângulo catálogo, sem "sua Honda não tem app" (myHonda Connect existe, D-20261124-cria-4).
+- Criadas: D-20261126-cria-1 (Escobar, P1 27/11 19h), -2 (Turing, P2 29/11), -3 (Fogg, P1 27/11 19h; 18h de 24/11 falhou, F-006 não fecha).
+- Aguardando: Léo (D-20261123-cria-2, vence 26/11 20h; landing mostra preço e escolha da moto; iOS/Android; data do dia 1); Stark/Davi (D-20261120-cria-3); Greco (D-20261122-cria-3).
+- Se o Léo disser não em A1/B1: dia 1 sobe só com roteiro em texto e o motivo vira regra no DESIGN-MINHAMOTO.

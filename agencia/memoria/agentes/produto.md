@@ -94,3 +94,16 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 ## Minha ambição (atualizada em 25/11/2026)
 - **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (Biz 110i 2025+ não coberta, apontado antes de virar frase de anúncio) e Proposta lançada com o Jobs.
 - **Item:** Macallan 18 quando passar de C$ 175. Regra: só vale com prova.
+
+## 2026-11-26 (Conselho, rodada 1)
+- fiz: produto-r1.md; criei D-20261126-produto-1 (Shelby, pacote do Davi atualizado, P1), -2 (Jobs, 3 eventos de funil, P2), -3 (Turing, 1ª leitura em % por plataforma, P2); aceitei D-20261124-produto-4; atualizei produto-agenda.md.
+- aprendi: o repo do app (minhamotooficial) agora tem 89 commits, último em 25/11 (d4942b2), versionName 1.0.2, SDK AppsFlyer entrou em 24/11 (99c9a96) e o UID vai pro RevenueCat; o único evento de funil no código é af_complete_registration; não achei onboarding_complete, paywall_view, modelo como propriedade nem pedido de avaliação confirmado. Errei ao tratar o código como de 17/11 por 3 dias seguidos sem rodar git log de novo: reabrir o repo no começo de toda rodada. RevenueCat (08/09/2026, hard-paywall-activation-journey): com paywall duro o primeiro valor tem que pousar bem; mede-se tempo até o valor.
+- recebi: nada novo do Davi; bloqueadas no pacote: dados-2, produto-3 (22/11 e 24/11), lojas-2, mercado-2, mercado-4, cria-3.
+- pendente: se a 1.0.2 está nas lojas; Davi responde pacote; Jobs (trafego-3, 27/11; paywall-1 com anexo da P-001); Turing (produto-5, 01/12); Apple HIG bloqueado.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (apontei o pacote do Davi desatualizado e a lacuna de eventos antes da 1ª campanha) e Proposta lançada com o Jobs.
+- **Item:** Macallan 18 quando passar de C$ 175 de saldo. Regra: só vale com prova.
+
+## 2026-11-26 · Entregue pelo Shelby (D-20261126-produto-1)
+- Pacote do Davi v3: seus achados do codigo de 25/11 cortaram 19 itens para 9 perguntas (A a I); A (1.0.2 nas lojas, que dia) vai primeiro e o Leo responde olhando as lojas. Eventos de funil = pergunta B. Anexo da P-001 incluido.

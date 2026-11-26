@@ -1,0 +1,29 @@
+{
+  "id": "D-20261126-master-2",
+  "de": "master",
+  "para": "mercado",
+  "copia": [
+    "produto",
+    "dados",
+    "cria",
+    "master"
+  ],
+  "titulo": "Norte da gringa: onde o MinhaMoto entra primeiro em moeda forte (Portugal, EUA ou Reino Unido), só pesquisa e zero gasto",
+  "por_que": "O norte do Léo e do Davi (25/11, CULTURA.md) é vender fora do Brasil em dólar, euro e libra. Na r1 de 26/11 só o Cardone trouxe uma iniciativa que aproxima a empresa disso (Mapa Visual); Turing, Stark, Disney, Escobar e Bezos não disseram nada, e CULTURA.md pede que toda iniciativa diga se aproxima. O app de manutenção de moto é o produto da meta de assinatura; sem um mapa de entrada, nenhuma decisão de app (idioma, loja, preço) será tomada com fato.",
+  "pronto_quando": "Uma página em agencia/demandas/entregas/D-20261126-master-2.md comparando Portugal, EUA e Reino Unido: tamanho do mercado de moto (fonte oficial ou instituto, com link e data), 3 apps concorrentes de manutenção por país com preço de vitrine em moeda local, idioma e regras de loja/privacidade que o app teria que cumprir (GDPR/UK GDPR), e recomendação de 1 país primeiro com o que muda no app (só lista, quem decide é o Davi). Sem número da Carnucci; o que não abrir, marcar 'sem dado'.",
+  "prioridade": "P3",
+  "prazo": "2026-12-03T20:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-26T22:00:00-03:00",
+  "fio": null,
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T22:00:00-03:00",
+      "quem": "master",
+      "o_que": "criou (ronda do Shelby 26/11)"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:00:00-03:00"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "D-20261126-cria-3",
+  "de": "cria",
+  "para": "mkt:publicador",
+  "copia": [
+    "cria"
+  ],
+  "titulo": "Slot de 18h de 24/11 e de 18h de 26/11: causa provada e id do post",
+  "por_que": "fila/estado.json (lido 26/11 19h31): 24/11 saíram 3 de 4 (12h, 15h, 21h; faltou 18h) e em 26/11 constam 12h (J05) e 15h (A04), sem o de 18h. D-20261122-mkt_publicador-1 foi cancelada pelo Shelby em 23/11 com 'reabrir se um slot falhar de novo'; F-006 só fecha com 3 dias seguidos de 4 de 4. Fila: 78 posts, 19,5 dias (coordenador/status.json 26/11).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-cria-3.md com, pro 18h de 24/11 e pro 18h de 26/11: id do run do workflow, hora UTC, 'postou' ou 'não postou' (com o id do post quando postou), causa provada ou 'não consegui provar'. Sem mexer em publicar.py e sem postar fora de horário.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T19:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-26T19:45:00-03:00",
+  "fio": "F-006",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-cria-3.md",
+    "resumo": "18h de 24/11: não postou, causa provada (zero execuções na janela 21-23 UTC; limite de uso registrado no log do Coordenador 20:42). 18h de 26/11: não postou até 22:50 UTC (janela fecha 23:00), causa não provada: falta o last_run de 'MM: Posts do horário' (Léo/Davi/Coordenador). Script não é a causa."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:45:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T19:55:00-03:00",
+      "quem": "mkt:publicador",
+      "o_que": "entregue: 24/11 provado; 26/11 sem prova no repositório, pede last_run da tarefa; janela de 26/11 ainda aberta até 20h BRT"
+    }
+  ]
+}

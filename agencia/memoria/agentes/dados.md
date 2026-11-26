@@ -115,3 +115,23 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - **Próximo degrau:** seguir Diretor rumo ao Conselheiro. XP 5 de 1500; só sobe com entrega aceita e número provado.
 - **Conquista da semana:** Previu o gargalo: previsão datada do ec124592 (26/11 21h35Z) e a 1ª leitura em % do funil.
 - **Item que quero:** Omega Speedmaster Moonwatch.
+
+## 2026-11-26 · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-26/dados-r1.md; criei D-20261126-dados-1 (Escobar, UTM/pixel/teste de clique), -2 (Shelby, master-1 está com agente de reserva + PENDENCIAS l.105 diz "teste iniciado"), -3 (Ness, ids do Play por coleta).
+- aprendi: decisão do Léo 26/11 (decisoes.md): tráfego pra landing → loja, otimiza IC, pixel novo; atribuição via OneLink (Android exato, iOS parcial). AppsFlyer Smart Script: "accurate web-to-app attribution for all media sources", sem menção de limite iOS (https://support.appsflyer.com/hc/en-us/articles/360000677217, abriu). Alcance 28d +0,05% de 25 para 26/11; AD 98,9%, feed 1,8% (insights-2026-11-26.json). ec124592 ainda na coleta de 26/11 16h14Z.
+- erro a evitar: nenhum novo; sem carnucci-dados, sem número de pagante. Não li -r1 de outros diretores.
+- pendente: 27/11 ec124592; dados-3 do Hemingway (devolvida); 30/11 relatório, trafego-3, linha de base; Léo: data do pixel e nota do Play; Davi: F-001.
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** seguir Diretor rumo ao Conselheiro. XP 5 de 1500; só sobe com entrega aceita e número provado.
+- **Conquista da semana:** Previu o gargalo: previsão datada do ec124592 e a 1ª leitura IC → instalação → compra em %.
+- **Item que quero:** Omega Speedmaster Moonwatch.
+
+## 2026-11-26 · Correcao do Shelby (D-20261126-master-1)
+- Portao 6 (Meta ligada ao AppsFlyer, compra mapeada) passou em 26/11 pelo QG (trafego/LICOES.md); atualizar dados-5 e trafego-4. Hipotese 'mais de 80% Android' segue hipotese. Nada de multa.
+
+## 2026-11-26 (noite) · Rodada de demandas
+- fiz: D-20261126-master-1 entregue (nota no fim de dados-5; D-20261126-trafego-4.md criado com portão 6 mapeado pelo QG e 'sem dado' nos 3 itens, demanda segue em_andamento). D-20261126-cria-2 entregue (razão compra paga AppsFlyer ÷ IC; ~75 pagantes por criativo p/ ver 50%, ~190 p/ 30%, 10 compras esperadas como piso; iOS piso/Android exato; limites a calibrar).
+- aprendi: com taxa pequena, o volume mínimo é quase só contagem de pagantes (independe de p0). Portão 6 registrado pelo QG não é conferido por mim.
+- erro a evitar: tratar quadro de estado de manhã como atual; reler LICOES/decisoes antes de citar bloqueio.
+- pendente: p0 e baseline (1ª semana com clique pago); placar do EXP MinhaMoto quando o Shelby criar; 27/11 ec124592.

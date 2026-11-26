@@ -20,4 +20,4 @@
 - Baymard Institute (usabilidade de checkout): https://baymard.com/blog
 - SamCart, guia de order bump (vendedor; direção): https://www.samcart.com/blog/the-complete-guide-to-order-bumps
 - TJDFT, Direito Fácil (CDC, arrependimento): https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil
-- Kavoo: sem documentação pública de upsell/Pix encontrada em 25/11; perguntar ao suporte via Léo.
+- Kavoo: em 25/11 não achamos documentação pública. Em 26/11 o Cardone leu a página comercial https://formulario.kavoo.com.br/ (upsell e downsell de 1 clique, order bump e Exit Popup; não cita UTMify, pixel, reembolso nem Pix no upsell). É texto comercial: comportamento no Pix e reembolso seguem não confirmados; perguntar ao suporte via Léo.

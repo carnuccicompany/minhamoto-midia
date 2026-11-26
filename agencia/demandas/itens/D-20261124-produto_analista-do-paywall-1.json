@@ -15,7 +15,7 @@
   "fio": "F-001",
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
-    "resumo": "As 3 perguntas da P-001 (secao 4) somadas como itens 13, 14 e 15 do pacote do Davi, sentido preservado."
+    "resumo": "Itens 13 a 15 viraram a pergunta H do pacote v3, com o anexo P-001 .html (agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html)."
   },
   "cobrancas": 0,
   "historico": [
@@ -33,7 +33,17 @@
       "quando": "2026-11-26T09:00:00-03:00",
       "quem": "produto:analista-do-paywall",
       "o_que": "devolvida: itens 13 a 15 conferem com a secao 4 da P-001 (sentido preservado, ok), mas falta o anexo da pagina agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html no bilhete do Davi (o pacote D-20261123-master-pacote-davi.md nao cita o .html nem diz que vai anexado). Basta incluir o anexo/link no pacote e reentregar. A resposta do Davi na P-001 so e cobrada depois que ele responder."
+    },
+    {
+      "quando": "2026-11-26T21:50:00-03:00",
+      "quem": "master",
+      "o_que": "reentregou: anexo da P-001 incluido no pacote v3, pergunta H"
+    },
+    {
+      "quando": "2026-11-26T22:10:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "devolvida: o anexo P-001 .html agora esta na pergunta H (ok), mas a 1a pergunta mudou de sentido. A secao 4 pergunta se, logo apos o cadastro, o app ja tem os dados pra montar o plano DAQUELA MOTO SEM O KM DA CONFIGURACAO (se nao, vira plano em km medio do modelo). A H cortou 'sem o km da configuracao'; o Davi pode responder sim achando que o km existe. Falta restaurar esse trecho na H, copiando as 3 perguntas da secao 4 sem cortes (as 2 e 3 conferem). Resposta do Davi na P-001 so e cobrada depois que ele responder."
     }
   ],
-  "atualizada_em": "2026-11-26T09:00:00-03:00"
+  "atualizada_em": "2026-11-26T22:10:00-03:00"
 }

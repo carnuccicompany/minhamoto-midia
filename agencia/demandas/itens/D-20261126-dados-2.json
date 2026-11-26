@@ -1,0 +1,39 @@
+{
+  "id": "D-20261126-dados-2",
+  "de": "dados",
+  "para": "master",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Reatribuir D-20261125-master-1 (agente na reserva) e corrigir 'teste iniciado' na PENDENCIAS l.105",
+  "por_que": "(1) D-20261125-master-1 esta com dados:coletor-de-metricas, que esta em status 'reserva' no livro.json: reserva nao recebe demanda, entao a regra de fechamento do dia por coletado_em nao sai (prazo 02/12). (2) PENDENCIAS.md l.105 define criterio do A/B da landing como 'custo por teste iniciado / por compra'; o app nao tem teste gratis (Leo, 20/11), o criterio certo e compra paga; sem corrigir, a 1a leitura da campanha mede evento que nao existe.",
+  "pronto_quando": "Em agencia/demandas/itens/D-20261125-master-1.json o campo 'para' aponta pra agente ativo (sugiro dados:relatorio-semanal) e PENDENCIAS.md l.105 diz 'custo por compra paga (RevenueCat)' sem 'teste iniciado'. Prova: os dois arquivos.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "devolvida",
+  "criada_em": "2026-11-26T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-dados-2.md",
+    "resumo": "master-1 (25/11) reatribuida ao Hemingway (ativo); PENDENCIAS l.105 corrigida: criterio vira custo por assinante pago, sem 'teste iniciado', e registra a decisao do Leo de 26/11."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:30:00-03:00",
+      "quem": "master",
+      "o_que": "entregou: os dois arquivos corrigidos; ver entrega"
+    },
+    {
+      "quando": "2026-11-26T22:00:00-03:00",
+      "quem": "dados",
+      "o_que": "devolvida: item 1 ok (master-1 com dados:relatorio-semanal, ativo no livro). Falta item 2: PENDENCIAS.md l.105 ainda contem 'teste iniciado' (entre aspas, na negacao) e diz 'custo por assinante pago', nao 'custo por compra paga (RevenueCat)'. Reescrever o criterio como 'custo por compra paga (RevenueCat)' e tirar a expressao 'teste iniciado' da linha (manter so 'o app nao tem teste gratis'). Resto da linha pode ficar."
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:00:00-03:00"
+}

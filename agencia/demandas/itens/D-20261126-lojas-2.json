@@ -1,0 +1,32 @@
+{
+  "id": "D-20261126-lojas-2",
+  "de": "lojas",
+  "para": "cria",
+  "copia": [
+    "cria",
+    "mkt"
+  ],
+  "titulo": "Conferir se a promessa do anúncio A1/B1 bate com os 3 primeiros prints da loja (variação A)",
+  "por_que": "26/11 (decisoes.md): MinhaMoto começa com anúncio → landing → loja, otimizado pra clique até a loja. Quem clica e vê na loja outra promessa do que leu no anúncio desiste na página (hipótese minha, sem baseline ainda); a loja é a última etapa antes do assinante. Prints: D-20261123-lojas-3; anúncios: decisão D2 de 24/11.",
+  "pronto_quando": "Tabela em agencia/demandas/entregas/D-20261126-lojas-2.md: linha por anúncio (A1, B1), colunas: promessa em até 6 palavras | print 1, 2 ou 3 que a repete ou 'não repete' | se a tela existe na build (sim, não ou a conferir) | risco de regra (sem preço nos assets da App Store, Apple 2.3.14; sem grátis, teste, X dias). Nada vai à loja; só texto e apontamento.",
+  "prioridade": "P3",
+  "prazo": "2026-12-03T18:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-26T20:30:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei; tabela até 30/11; coluna 'tela na build' fica 'a conferir' até as 5 telas do Davi (cria-3 do Stark)"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:30:00-03:00"
+}

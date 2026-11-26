@@ -1,0 +1,32 @@
+{
+  "id": "D-20261126-mercado-1",
+  "de": "mercado",
+  "para": "cria",
+  "copia": [
+    "master",
+    "trafego"
+  ],
+  "titulo": "Texto da variante de landing 'o plano da sua CG 160': título, subtítulo e 3 tópicos, só com fato provado",
+  "por_que": "O Léo decidiu em 26/11 (decisoes.md) que o MinhaMoto começa com tráfego pra landing e loja, otimizando IC (clique pra loja). Hipótese minha: landing com o modelo no título converte clique em IC mais que a genérica. O que já está provado: CG 160 no catálogo com tabela oficial em 21 perfis, 2016 a 2026, código 1.0.1 de 17/11 (agencia/demandas/entregas/D-20261124-mercado-1.md); a CG 160 lidera a parcial de novembro (car.blog.br, 19/11, citando Fenabrave). Sem texto aprovado, a variante não existe e não há o que medir.",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mercado-1.md com: 1 título (até 8 palavras), 1 subtítulo, 3 tópicos, cada um com o fato e a fonte (arquivo e linha ou link). Sem 'grátis', 'teste', 'X dias', 'por mês', 'vitalício', preço e 'qualquer moto'; sem afirmar nada do app da Honda. Para o Shelby revisar a promessa antes de qualquer uso; nada vai ao ar.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T12:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-26T12:00:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei; texto em 28/11 12h, só fato provado (Biz 125, sem Honda app, sem preço); nada sobe sem sim do Léo e revisão do Shelby; anúncio segue sem modelo"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:30:00-03:00"
+}

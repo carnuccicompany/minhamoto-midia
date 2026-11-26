@@ -46,3 +46,8 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - fiz: aceitei a entrega do Phileas. Refiz a conta no fila/estado.json (horarios_feitos + campo "em" convertido de UTC para BRT): 4 de 8 slots (21/11: 12h, 18h, 21h; 22/11: 18h) e simulação da opção A = 6 posts (+2). Bate. Opção B sem número é declarada como "não provado", certo; C = +1 bate.
 - aprendi: entrega boa separa o que é provado do que é aposta. Ressalva mínima: a tabela chama de "cron" 8 execuções, mas 1 foi manual (23h10 de 22/11); o cron foi 7, igual à dados-3. Não devolvi porque não muda a decisão.
 - pendente: a pergunta sim/não ainda é do Léo (item 1 de D-20261123-master-pacote-leo.md); se vier sim, conferir a alteração do publicar.py com SIMULAR=1 antes de aceitar. Demanda -2 (Shelby) ainda a conferir. Pedir pra Mesa lançar +5 XP/C$ 5 (aceite no prazo, se couber a ela; eu não editei livro nem lançamentos).
+
+## 2026-11-26 21:00 · D-20261126-dados-3 (ids do Play por coleta)
+- fiz: bloco avaliacoes_play em coordenador/status.json + linha no log; ec124592 presente: sim na coleta 16:14Z. Entrega em demandas/entregas/D-20261126-dados-3.md (parcial).
+- aprendi: ultimas.json guarda so a coleta mais recente; historico por coleta so existe se o Coordenador registrar a cada rodada.
+- pendente: rodadas de 27/11 e 28/11 acrescentarem coletas e a linha.

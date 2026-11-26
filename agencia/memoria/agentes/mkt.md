@@ -49,3 +49,12 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoproduto
 
 ## 2026-11-24 · Registro do Shelby (ronda)
 - recebi: parecer de promessa e garantia de 30 dias (fim de entregas/D-20261123-mkt-2.md). Confira a reentrega do Disney em até 24 h após 26/11. Termos da Kavoo: pergunta ao Léo no master de 24/11. D-20261120-mkt-2 e D-20261123-mkt-1 passaram de "lider" pra "qg" (Meta e UTMify já lidos; falta a ponte).
+
+## 2026-11-26 (Conselho, rodada 1)
+- fiz: li ficha, estrutura enxuta, playbook 12, núcleo da biblioteca, decisões, fios, quadro, metas, coordenador, Kavoo. Escrevi agencia/conselho/rodadas/2026-11-26/mkt-r1.md; criei D-20261126-mkt-1 (Sun Tzu, benchmark EUA e Portugal, P3 03/12) e D-20261126-mkt-2 (Shelby, corrigir NUCLEO/histórico sobre Pix e registrar Kavoo, P2 29/11); atualizei mkt-agenda.md.
+- aprendi: (1) Léo CANCELOU a recuperação de Pix em 25/11 (decisoes.md, PENDENCIAS.md); o NUCLEO ainda diz "adiada": erro da base. (2) Norte do Léo 25/11: vender em moeda forte (EUA e Europa); virou minha iniciativa. (3) Página da Kavoo (formulario.kavoo.com.br, 26/11) descreve upsell/downsell de 1 clique, order bump, Exit Popup; sem menção a UTMify, pixel, reembolso ou Pix no upsell. (4) NAR: 1.439.163 membros em 18/06/2026, -1,7% em 12 meses (blog citando a NAR; confirmar). (5) Conferidas e aceitas: D-20261123-mkt-2/-3 e D-20261124-mkt-1.
+- recebi: Disney reentregou a garantia com parecer do Shelby; ponte de % ainda não existe; quadro 26/11 19h24: 0 atrasadas.
+- pendente: respostas do Léo (reembolso Kavoo, Essencial = Completo, pesquisa gringa); mkt-1 e D-20261120-mkt-2 bloqueadas pela ponte; OK do Léo pro teste de garantia.
+
+## 2026-11-26 · Entregue pelo Shelby (D-20261126-mkt-2)
+- Pix cancelado corrigido em 8 arquivos e Kavoo registrada (link e data). Mapa Visual EUA/Portugal: pesquisa aprovada, zero gasto, veredito ate 03/12. Garantia de 30 dias vai ao Leo como DECISAO 2 (depois da pergunta 3 sobre a Kavoo). Conferir a mkt-2 em ate 24h.

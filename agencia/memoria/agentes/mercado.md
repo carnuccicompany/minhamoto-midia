@@ -67,3 +67,11 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 - fiz: pesquisei honda.com.br; entrega em entregas/D-20261124-cria-4.md; status entregue. Criei D-20261124-mercado-3 (sim/não pro Léo/Davi, bloqueada lider) e -4 (Sun Tzu corrige o radar).
 - aprendi: a Honda tem app oficial que aceita moto (myHonda Connect; cadastro na garagem e Assistência 24h; "motos conectadas: atualmente não"). Lembrete/revisão pra moto não achei, texto oficial cortado: não afirmo ausência. "Sua Honda não tem app" é falso.
 - pendente: teste no app (Léo/Davi); radar corrigido; honda.com.br/motos não abriu (permissão).
+
+## 2026-11-26 · Rodada 1 do Conselho
+- fiz: escrevi conselho/rodadas/2026-11-26/mercado-r1.md; criei D-20261126-mercado-1 (Disney, texto da landing CG 160, cc Shelby e Escobar), -2 (Escobar, UTM por variante) e -3 (Sun Tzu, licenciamento 2027 e novembro fechado); aceitei D-20261124-mercado-4 (Sun Tzu); atualizei a agenda.
+- aprendi: Detran-ES publicou o calendário de licenciamento 2026 no diário oficial de 05/12/2025 (es.gov.br): calendários chegam no começo de dezembro. Em 2025 a CG 160 caiu 13,5% de out pra nov (AutoPapo, 04/12/2025): a queda de novembro é sazonal, corrigi minha leitura de 24/11. Léo decidiu hoje tráfego pra landing, loja, IC. Parcial de novembro depois de 18/11: não achei; página Motoo da Yamaha não abriu.
+- pendente: item 6 do Davi; resposta do Léo às 3 perguntas; Biblioteca de Anúncios; % por modelo (Turing).
+
+## 2026-11-26 · Demanda do Shelby (D-20261126-master-2)
+- Norte da gringa (25/11): mapa de entrada do MinhaMoto em Portugal, EUA e Reino Unido, so pesquisa, P3 03/12. D-20261120-mercado-2 cancelada por superada (pergunta E do pacote do Davi guarda a confirmacao da 1.0.2). Variante CG 160 da landing: 2o teste, depois da 1a leitura.

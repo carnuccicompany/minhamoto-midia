@@ -53,5 +53,5 @@ Legenda: **[OF]** documentação oficial de plataforma/órgão · **[ESP]** espe
 3. **Antes de propor upsell, confirmar com a Kavoo** (pergunta pro Léo, que tem o acesso): existe upsell pós-compra? É 1 clique no cartão? E no Pix, gera novo QR? Com ~85% dos pagamentos em Pix, um upsell com novo QR deve aceitar bem menos (faixa 2–5% de "checkout novo").
 4. **Testes candidatos (só com OK do Léo, um por vez):** (a) 4 bumps contra os 2 mais vendidos; (b) preço do bump mais vendido; (c) upsell pós-compra de um complementar com página própria; (d) bônus pequeno pra quem paga no cartão, se a Kavoo fizer upsell 1 clique só no cartão.
 5. **Proibido:** bump pré-marcado, "de/por" falso, urgência falsa, promessa de renda. Garantia sempre "Garantia de 30 dias" sem a palavra "reembolso" até o Léo confirmar os termos da Kavoo (Shelby, 24/11).
-6. **Checkout enxuto:** nome, e-mail, CPF se a Kavoo exigir e telefone (necessário pra recuperação de Pix, que está adiada pelo Léo). Campo a mais = venda a menos.
+6. **Checkout enxuto:** nome, e-mail, CPF se a Kavoo exigir e telefone só se a recuperação de Pix voltar (cancelada pelo Léo em 25/11; o checkout segue sem telefone). Campo a mais = venda a menos.
 7. **Toda proposta de verba nos Corretores usa o AOV líquido**, não o preço da frente, pra calcular o custo por venda que dá pra pagar (com o Escobar; conta no privado).

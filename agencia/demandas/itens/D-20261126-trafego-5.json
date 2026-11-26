@@ -1,0 +1,32 @@
+{
+  "id": "D-20261126-trafego-5",
+  "de": "trafego",
+  "para": "cria",
+  "copia": [
+    "cria",
+    "trafego"
+  ],
+  "titulo": "Ficha de anúncio de A1 e B1 pra campanha de landing→loja: texto, título, formatos 9:16 e 4:5 e CR-ID, sem 'grátis', sem modelo de moto, sem ângulo de Android",
+  "por_que": "Os 2 anúncios vão sair no mesmo teste e hoje A1 e B1 diferem em mais de uma variável (r1 de 24/11 e F-004); sem ficha pronta e sem CR-ID no utm_content, a leitura por criativo não fecha e o custo por assinante por anúncio fica sem dono. Meta (guia de testes da casa, aulas/2026-11-25) pede ideias realmente diferentes por criativo, 9:16 e 4:5.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com, para A1 e B1: texto principal (até 125 caracteres) e título (até 40), CTA, 9:16 e 4:5 conferidos, utm_content CR-<ângulo>-<nn>, a frase 'por R$19,90' sem 'por mês', e a lista do que mudou entre A1 e B1 (ângulo, gancho, pessoa, cena). Nada vai pro ar.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T18:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-26T19:30:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:30:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou (Conselho 26/11, r1)"
+    },
+    {
+      "quando": "2026-11-26T21:30:00-03:00",
+      "quem": "cria",
+      "o_que": "aceitei; ficha de A1/B1 em 28/11 21h, como rascunho: nada vai ao ar sem o sim do Léo (cria-2)"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:30:00-03:00"
+}

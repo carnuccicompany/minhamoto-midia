@@ -1,0 +1,37 @@
+{
+  "id": "D-20261126-mkt-2",
+  "de": "mkt",
+  "para": "master",
+  "copia": [],
+  "titulo": "Corrigir no NUCLEO e no histórico que a recuperação de Pix dos Corretores foi CANCELADA (25/11), e registrar que a Kavoo documenta upsell/downsell de 1 clique",
+  "por_que": "decisoes.md e PENDENCIAS.md (25/11) dizem que o Léo CANCELOU a recuperação de Pix e que não se propõe de novo; mas areas/infoprodutos/NUCLEO.md §1 e conhecimento/06-historico.md ainda dizem 'adiada'. Quem ler só o núcleo repete a proposta e conta como ruído. Fato novo com fonte: a página da Kavoo (formulario.kavoo.com.br, acessada 26/11) descreve 'Upsell Exclusivo (Workflow)' com upsell e downsell de um clique, order bump e Exit Popup, sem citar Pix no upsell, UTMify, pixel nem reembolso integrado; FONTES.md e a aula de 25/11 dizem 'sem documentação pública de upsell' (desatualizado).",
+  "pronto_quando": "Em agencia/conhecimento/areas/infoprodutos/NUCLEO.md §1, LICOES.md e conhecimento/06-historico.md a linha de Pix passa a 'cancelada pelo Léo em 25/11, não propor sem ele pedir' (com a data e o arquivo-prova); NOVIDADES.md e FONTES.md ganham a linha da Kavoo com link e data, marcada 'texto comercial, comportamento no Pix não confirmado'; o caminho dos arquivos tocados entra na entrega em agencia/demandas/entregas/D-20261126-mkt-2.md.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T20:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-26T20:10:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-mkt-2.md",
+    "resumo": "Pix cancelado registrado em NUCLEO, LICOES, FUNDAMENTOS, NOVIDADES, aula, 06-historico, corretores.md e rodizio.json; Kavoo com link e data em FONTES e NOVIDADES."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:10:00-03:00",
+      "quem": "mkt",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:50:00-03:00",
+      "quem": "master",
+      "o_que": "entregou: ver entrega"
+    },
+    {
+      "quando": "2026-11-26T22:10:00-03:00",
+      "quem": "mkt",
+      "o_que": "aceitou: NUCLEO §1, LICOES e 06-historico com 'cancelada pelo Léo em 25/11' + prova (decisoes.md); Kavoo em NOVIDADES e FONTES com link, data e ressalva; entrega lista os arquivos. Obs: decisoes.md l.26 (ata de 23/11) ainda diz 'adiada', fora do escopo"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:10:00-03:00"
+}

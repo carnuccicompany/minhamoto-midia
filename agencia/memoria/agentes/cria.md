@@ -106,3 +106,18 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 - **Próximo degrau:** Diretor da Semana; fechar a mkt-2 aceita de primeira na reentrega.
 - **Conquista:** Criativo campeão (1 criativo 7 dias no custo-alvo, 10+ assinantes).
 - **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.
+
+## 2026-11-26 · Conselho rodada 1 (noite)
+- fiz: li ficha, playbooks 04 e 03, base, NÚCLEO de criativos, quadro, fios, decisões, insights de 26/11, fila e status do coordenador; criei D-20261126-cria-1 (Escobar, P1), -2 (Turing, P2), -3 (Fogg, P1); pus contexto novo na D-20261123-cria-2; escrevi conselho/rodadas/2026-11-26/cria-r1.md e atualizei a agenda.
+- aprendi: (1) decisão do Léo de 26/11: tráfego pra landing, otimiza IC, venda no AppsFlyer (Android exato, iOS parcial); o brief antigo cortava por compra e vira errado; (2) fila/estado.json: 18h de 24/11 não saiu (3 de 4), então F-006 não fecha, e o 18h de 26/11 não aparecia às 19h31; (3) orgânico 26/11: 60 posts, mediana 13 pessoas (~0,8%), alcance 28d +0,05% de 25 pra 26/11, 98,9% do alcance é anúncio; (4) Meta (Jon Loomer, secundária): variação só vale se for visivelmente diferente; TikTok oficial e Meta oficial não abriram.
+- recebi: nada novo do Léo além da decisão de 26/11; cria-4 do Greco aceita com limites.
+- pendente: Léo (A1/B1 hoje 20h; 3 perguntas da r1); Escobar (cria-1); Turing (cria-2); Fogg (cria-3); roteiros catálogo até 27/11 21h (eu).
+- sugestão pro main: guardar a decisão de 26/11 do Léo (landing → loja, otimiza IC) e que o corte de criativo por compra do brief de 22/11 precisa de revisão (fonte: decisoes.md 26/11, item (c) da r1).
+
+## Minha ambição (atualizada em 26/11/2026)
+- **Próximo degrau:** Diretor da Semana; 3 demandas novas ligadas à decisão de hoje e 3 roteiros de catálogo até 27/11.
+- **Conquista:** Criativo campeão (1 criativo 7 dias no custo-alvo, 10+ assinantes); o dia 1 da landing é a primeira chance real.
+- **Item:** Dom Pérignon; lendário: Ducati Panigale V4 S.
+
+## 2026-11-26 · Resposta do Shelby
+- A1/B1 + dia 1 viraram DECISAO 1 (2 anuncios no dia 1, nao 12: sua propria r2). Fogg deve a causa do 18h (cria-3, P1 27/11 19h). Perguntas sobre landing, iOS/Android e Instagram viraram PERGUNTA 2.

@@ -18,7 +18,7 @@ _Status: pré-preenchido pelo Claude em 23/11/2026. Números absolutos no reposi
 - Estrutura que funcionou em outubro: teste em CBO (5 anúncios) → vencedor em ABO 1-2-1. (dados, UTMify 23/11)
 - Queda de novembro: sem criativo novo desde o fim de outubro (fadiga), teste e escala parados, menos verba, e página pesada (25 MB). Página corrigida em 23/11. (dados, UTMify e medição, 23/11)
 - Decisão de teste em 23/11: 6 estilos novos × 3 criativos, começando por Historinha, Quiz e Split-screen. (Léo, 23/11)
-- Recuperação de Pix: plano pronto, adiado pelo Léo. (Léo, 23/11)
+- Recuperação de Pix: plano desenhado em 23/11 e **CANCELADA pelo Léo em 25/11**; não propor de novo sem ele pedir. Checkout segue sem pedir telefone. (Léo, 25/11; decisoes.md)
 
 ## Perguntas pro Léo
 - [x] Quais criativos bombaram e por quê? (Corretores: AP - 1, AP - 4, DD 10, LC 9; expert falando, curto)

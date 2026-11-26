@@ -3,7 +3,7 @@
 Para: Grant Cardone (Corretores e fábrica de infoprodutos). Reescrito em 25/11/2026 pelo professor-chefe. Antes de propor, busque o tema: `grep -ril "<tema>" agencia/conhecimento/areas/infoprodutos/`. Oferta completa: `agencia/estudio/produtos/corretores.md`.
 
 ## 1. Correções do Léo (nunca repetir)
-- Teste de 6 estilos × 3 criativos (Historinha, Quiz, Split-screen primeiro); **recuperação de Pix adiada** (23/11).
+- Teste de 6 estilos × 3 criativos (Historinha, Quiz, Split-screen primeiro); **recuperação de Pix CANCELADA pelo Léo em 25/11** (decisoes.md): não propor de novo sem ele pedir.
 - Não perguntar de novo: venda pela Kavoo, rastreio pela UTMify, garantia de 30 dias (23/11).
 - Criativo: só "R$27,90" sem parcelas; voz só da Ana Paula; 15–30 s; "Clique em Saiba Mais" (23/11).
 - Sem Black Friday (19/11). Campanhas não se editam sem OK do Léo (18/11). Teste de oferta só com OK do Léo.

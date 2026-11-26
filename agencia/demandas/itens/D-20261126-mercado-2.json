@@ -1,0 +1,31 @@
+{
+  "id": "D-20261126-mercado-2",
+  "de": "mercado",
+  "para": "trafego",
+  "copia": [
+    "master",
+    "cria"
+  ],
+  "titulo": "A landing atual aceita uma variante por modelo com UTM e OneLink próprios? Sim/não e como ler IC por variante",
+  "por_que": "Decisão do Léo de 26/11: venda por anúncio no AppsFlyer via OneLink da landing com UTMs (Android exato, iOS parcial), campanha otimiza IC. Pra provar se a página por modelo vence a genérica preciso separar as duas por utm_content e comparar IC por clique em %, mesmo orçamento e criativo. Sem essa separação, a iniciativa do Greco fica sem medida (PENDENCIAS.md linha 105 já pede o desenho do teste da landing).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mercado-2.md com: sim/não pra variante por modelo na landing de hoje (onde o texto mora, no repositório ou fora); nome do parâmetro UTM que separa as duas versões; qual evento mede o IC por variante; critério de decisão em % e dias. Sem gastar verba e sem mexer na campanha: só desenho.",
+  "prioridade": "P2",
+  "prazo": "2026-11-29T12:00:00-03:00",
+  "status": "em_andamento",
+  "criada_em": "2026-11-26T12:00:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitei como desenho; 3º na ordem, até 29/11 12h; texto da landing fora do repositório, sim/não pode sair 'sem dado'"
+    }
+  ]
+}

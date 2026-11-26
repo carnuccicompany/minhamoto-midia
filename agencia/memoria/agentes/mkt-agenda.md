@@ -35,3 +35,10 @@
 - Fato novo: tributo da Meta (+12,15%) vale desde 01/01/2026, então não explica o +19% de custo por venda de novembro contra outubro. Culpa mais provável: criativo cansado e queda de página vista (a testar).
 - Eu devo: conferir a reentrega do Disney em até 24h; cobrar o Léo (via Shelby) pelo acesso à UTMify e ao gerenciador (D-20261120-mkt-2, parada desde 22/11).
 - Black Friday 27/11: NÃO. Fábrica de infoprodutos: parada até o radar de 01/12 e placar em %.
+
+## Atualização 2026-11-26 (rodada 1)
+- Iniciativa nova: Mapa Visual lá fora (EUA em inglês, Portugal em euro), alinhada ao norte do Léo de 25/11. Só pesquisa, zero verba. Entrego veredito sim/não até 03/12. Depende de D-20261126-mkt-1 (Sun Tzu, 03/12) e do sim do Léo. A garantia à vista segue pronta, esperando só o OK do Léo.
+- Placar: sem número novo. Ponte `dados/resumo-pct.json` (contrato em D-20261124-master-2) ainda não existe; mkt-1 e D-20261120-mkt-2 seguem bloqueadas "qg".
+- Corrigir: recuperação de Pix foi CANCELADA pelo Léo (25/11); NUCLEO e 06-historico dizem "adiada". Pedi o conserto ao Shelby (D-20261126-mkt-2). Não propor Pix de novo.
+- Eu devo: conferir D-20261126-mkt-1 em até 24h da entrega; conferir mkt-2 de hoje em até 24h.
+- Black Friday 27/11: NÃO. Agentes enxutos: só crio demanda quando serve (2 hoje).

@@ -23,6 +23,12 @@
       "quando": "2026-11-23T20:10:00-03:00",
       "quem": "cria",
       "o_que": "criou e bloqueou: depende do Léo"
+    },
+    {
+      "quando": "2026-11-26T19:45:00-03:00",
+      "quem": "cria",
+      "o_que": "contexto novo: decisão do Léo de 26/11 (tráfego pra landing, campanha otimiza IC) faz de A1/B1 o material do dia 1; sem o sim, o dia 1 sobe só com roteiro em texto. Segue bloqueada pro Léo."
     }
-  ]
+  ],
+  "atualizada_em": "2026-11-26T19:45:00-03:00"
 }

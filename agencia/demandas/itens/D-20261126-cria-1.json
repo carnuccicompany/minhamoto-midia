@@ -1,0 +1,40 @@
+{
+  "id": "D-20261126-cria-1",
+  "de": "cria",
+  "para": "trafego",
+  "copia": [
+    "cria",
+    "master"
+  ],
+  "titulo": "Refazer o brief dos 12 slots pra decisão do Léo de 26/11: tráfego pra landing, campanha otimizando clique pra loja (IC)",
+  "por_que": "Decisão do Léo de 26/11 (agencia/memoria/decisoes.md): MinhaMoto começa com tráfego pra landing, campanha otimiza IC. Os briefs D-20261122-cria-2 e D-20261123-cria-4 foram escritos pra compra inicial só em iOS, com corte 'pausa em 200% do custo-alvo sem compra'; com IC a compra quase não aparece por criativo na 1ª semana, então esse corte ou mata criativo bom ou segura criativo ruim. IC é só proxy: a meta é assinante pago por semana (merito/metas.json).",
+  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-cria-1.md com: (1) os 12 slots com o utm_content CR-xx que vai no link da landing (OneLink: pid, c, af_adset, af_ad), sem criar anúncio; (2) corte em dois níveis, só em % (pausa por custo por IC em % da mediana dos slots do mesmo teste, valor proposto e marcado 'sem histórico'; vencedor só por assinante pago, nunca por IC); (3) quais slots rodam em iOS (atribuição parcial) e quais em Android (exata); (4) o que ainda depende do Léo. Sem R$ nem número absoluto.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T19:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-26T19:45:00-03:00",
+  "fio": "F-004",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-cria-1.md",
+    "resumo": "12 slots com utm_content CR-xx e link da landing; A1 (CR-org-11) e B1 (CR-org-12) vao primeiro, os outros 10 so apos a 1a leitura. Corte em 2 niveis em % (IC so pausa; assinante pago decide), tudo marcado sem historico; iOS/Android por slot e lista do que depende do Leo."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T19:45:00-03:00",
+      "quem": "cria",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitei; 2º na ordem, entrego até 27/11 19h, depende da URL modelo de UTMs"
+    },
+    {
+      "quando": "2026-11-26T21:45:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: brief refeito pra landing e IC; muda a r2 (12 slots vira mapa, A1/B1 primeiro)"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:45:00-03:00"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "D-20261126-dados-1",
+  "de": "dados",
+  "para": "trafego",
+  "copia": [],
+  "titulo": "Anuncio de IC: URL modelo com UTMs no padrao, data do pixel novo e teste de clique a verba zero",
+  "por_que": "Decisao do Leo de 26/11 (decisoes.md): trafego pra landing, otimizando IC com pixel novo. A landing ja repassa UTMs ao OneLink (PENDENCIAS l.61), mas sem conferir o anuncio real nao sei se a instalacao chega com origem; sem isso nao existe custo por pagante (meta: assinantes pagos novos/semana). Pixel novo corta a serie de IC: preciso da data.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261126-dados-1.md com (1) a URL modelo do anuncio com utm_source/medium/campaign/content no padrao de D-20261120-dados-3; (2) a data do pixel novo e do 1o anuncio; (3) resultado de 1 clique de teste no iOS e 1 no Android a verba zero: a UTM aparece no OneLink e a instalacao de teste aparece no AppsFlyer com a campanha (sim/nao por plataforma, so %/sim-nao, sem absoluto). Sem acesso, escrever 'sem dado' e quem libera.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T20:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-26T20:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-dados-1.md",
+    "resumo": "URL modelo no padrao da dados-3 (meta-ads, t05-direcao, mm_meta_ic_lp_2611, CR-org-11) com o que nao esta provado; pixel novo ligado em 18/11 (PENDENCIAS), data do 1o anuncio sem dado (Leo). Teste de clique iOS e Android: sem dado (login AppsFlyer e build com SDK: Leo e Davi)."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T20:00:00-03:00",
+      "quem": "dados",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "aceitei; 1º na ordem pro item 1 (URL modelo), fecho até 27/11 20h; itens 2 e 3 provavelmente 'sem dado' (Léo/acesso)"
+    },
+    {
+      "quando": "2026-11-26T21:55:00-03:00",
+      "quem": "trafego",
+      "o_que": "entregou: item 1 feito; itens 2 (1o anuncio) e 3 (clique iOS/Android) como \"sem dado\" com quem libera; pergunta sim/nao+data pro Leo no arquivo"
+    }
+  ],
+  "atualizada_em": "2026-11-26T21:55:00-03:00"
+}

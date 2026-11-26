@@ -27,3 +27,8 @@ Os diretores juntam aqui o que falta saber (o Shelby filtra). O Léo responde no
 - Davi: pacote de 19 sim/não sobre a build e o app (itens 17 a 19: moto fora do catálogo; item 16, "a build saiu? versão e dia", vai primeiro). Texto em `agencia/demandas/entregas/D-20261123-master-pacote-davi.md`. (Stark, Turing, Escobar, Greco, Disney, Bezos)
 - Léo, 3 respostas curtas: (1) a garantia de 30 dias dos Corretores é reembolso total, pedido por qual caminho, e a Kavoo manda o reembolso pra UTMify? (Cardone, Disney) (2) publica a resposta ao 1★ ec124592 e deixa o Ted responder 1-2★ de bug; e qual a nota do Play hoje? (relógio 26/11 12h; Bezos, Turing, Stark) (3) libera apps.apple.com, play.google.com e as bibliotecas de anúncios (ou cola), e qual endereço o Instagram recusou? (Bezos, Greco, Escobar)
 - Riscadas: leitura de gerenciador, App Store Connect, RevenueCat e AppsFlyer (já ligados 23/11; falta a ponte do QG); "a garantia dos Corretores é de 30 dias?" (respondido 23/11; só faltam os termos); roteirizar vídeo do Léo ou do Davi (Disney, sem demanda que dependa).
+
+## Aprovadas pelo Shelby, Conselho 26/11/2026
+- A 1.0.2 já está nas duas lojas? Que dia? (Stark, Turing, Bezos)
+- A primeira tela da landing mostra "R$19,90" e a escolha da moto? O dia 1 roda em iOS e Android ou só iOS? Qual endereço o Instagram recusou? (Disney, Escobar)
+- Corretores: a garantia de 30 dias é reembolso total pela Kavoo e a Kavoo manda o reembolso pra UTMify? O Acesso Essencial listar os mesmos itens do Completo é erro da página? (Cardone)

@@ -33,5 +33,21 @@
   "demandas": {
     "P1_aberta": "D-20261125-trafego-2 (prazo 27/11 18h)",
     "mesa": "disparada 26/11 08h40 (uma vez)"
+  },
+  "avaliacoes_play": {
+    "demanda": "D-20261126-dados-3",
+    "fonte": "dados/avaliacoes/ultimas.json (campo coletado_em; so o arquivo mais recente fica no repo)",
+    "coletas": [
+      {
+        "coletado_em": "2026-11-26T16:14:57.480500Z",
+        "ids_play_8": [
+          "ec124592"
+        ],
+        "google_play_status": "ok (1 avaliações)",
+        "ec124592_presente": "sim"
+      }
+    ],
+    "linha": "ec124592 presente: sim (coleta 2026-11-26T16:14:57Z; ainda sem coleta posterior a 21h35Z para provar saida)",
+    "regra": "a cada rodada, se coletado_em de ultimas.json for novo, acrescentar objeto em coletas; manter ate 28/11; nao responder avaliacao."
   }
 }

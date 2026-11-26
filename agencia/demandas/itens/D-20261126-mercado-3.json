@@ -1,0 +1,25 @@
+{
+  "id": "D-20261126-mercado-3",
+  "de": "mercado",
+  "para": "mercado:radar-de-concorrentes",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Radar de 01/12 com extra: calendário de licenciamento 2027 publicado por Detran oficial (SP, MG, RJ, PR, RS) e fechamento de novembro da Fenabrave",
+  "por_que": "Janela do 'documento em dia' (dezembro e janeiro) depende de o calendário sair. Prova de prazo: o Detran-ES publicou o de 2026 na Instrução de Serviço nº 43, no diário oficial de 05/12/2025 (es.gov.br, lido 26/11). Pauta e anúncio entram 2 a 4 semanas antes. E o fechamento de novembro diz se a queda é sazonal: em 2025 a CG 160 caiu 13,5% de outubro pra novembro (AutoPapo, 04/12/2025), então 'esfriou' não pode ir ao radar sem comparar certo. Alimenta D-20261123-mercado-2 (pautas de IPVA, Disney).",
+  "pronto_quando": "Na seção do radar de 01/12 (agencia/radar/2026-12-01.md): (1) tabela dos 5 estados com 'calendário 2027 publicado sim/não', link do Detran ou diário oficial e data de publicação; o que não abrir fica escrito como 'não abriu'; (2) top 5 de motos de novembro com fonte e a variação contra novembro de 2025, não só contra outubro, com a data de corte dita. Nada de 'nenhum' ou 'todos' sem abrir a fonte oficial.",
+  "prioridade": "P2",
+  "prazo": "2026-11-30T12:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-26T12:00:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "criou"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
   "pronto_quando": "Item do radar de 24/11 reescrito: Honda tem app que aceita moto (cadastro e Assistência 24h), lembrete de revisão de moto não confirmado; com o link oficial; sem 'não tem app'.",
   "prioridade": "P2",
   "prazo": "2026-11-26T21:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T22:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -28,7 +28,12 @@
       "quando": "2026-11-26T09:00:00-03:00",
       "quem": "mercado:radar-de-concorrentes",
       "o_que": "entregou (agencia/demandas/entregas/D-20261124-mercado-4.md)"
+    },
+    {
+      "quando": "2026-11-26T12:00:00-03:00",
+      "quem": "mercado",
+      "o_que": "aceitou: item 5, linha 2 da tabela e ideia de conteúdo do radar de 24/11 conferem com a fonte oficial da cria-4; sem 'não tem app'; limite (não reabriu honda.com.br) declarado. Pergunta do lembrete de revisão segue em D-20261124-mercado-3."
     }
   ],
-  "atualizada_em": "2026-11-26T09:00:00-03:00"
+  "atualizada_em": "2026-11-26T12:00:00-03:00"
 }

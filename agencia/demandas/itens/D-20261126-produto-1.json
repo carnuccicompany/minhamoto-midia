@@ -1,0 +1,39 @@
+{
+  "id": "D-20261126-produto-1",
+  "de": "produto",
+  "para": "master",
+  "copia": [
+    "produto"
+  ],
+  "titulo": "Pacote do Davi: riscar o que o código do app de 25/11 já responde e reescrever o item 16 (1.0.2 foi pras lojas? que dia?)",
+  "por_que": "O repositório do app mudou: 89 commits, último em 25/11 (d4942b2), versionName 1.0.2 (android/app/build.gradle:49) e o SDK do AppsFlyer entrou em 24/11 (99c9a96; src/lib/appsflyer.ts). O pacote do Davi (D-20261123-master-pacote-davi) segue perguntando como se o código fosse de 17/11, e o F-001 está há 5 reuniões parado. Menos pergunta, mais chance de resposta. Fonte: git log do minhamotooficial, leitura só-leitura em 26/11.",
+  "pronto_quando": "Pacote com: item 1 e item 2 riscados com a prova (item 1: SDK existe, mas o único evento no código é af_complete_registration; não há onboarding_complete nem paywall_view; item 2: UID do AppsFlyer vai pro RevenueCat, src/lib/revenuecat-compras-nativo.ts:53-59 e 121); item 3 mantido (não achei modelo como propriedade); item 5 reescrito com o commit 79d19d1 (Esse é o MinhaMoto segue antes do paywall); item 16 virando só 'a 1.0.2 está nas lojas? que dia?'; item 4 reescrito pra 'o build de loja define VITE_MM_AVISO_TESTE?' (verificacao-app.tsx:22). Tudo marcado como código de 25/11, a confirmar pelo Davi. Sem R$ nem número absoluto.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T14:00:00-03:00",
+  "status": "aceita",
+  "criada_em": "2026-11-26T14:00:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
+    "resumo": "Pacote v3: 19 itens viraram 9 perguntas (A a I). SDK, appsflyerID->RevenueCat, postbacks Meta e tela 'Esse e o MinhaMoto' riscados com a prova do codigo de 25/11. Item 16 virou A (1.0.2 nas lojas? que dia?), e o Leo tambem responde olhando as lojas."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T14:00:00-03:00",
+      "quem": "produto",
+      "o_que": "criou"
+    },
+    {
+      "quando": "2026-11-26T21:40:00-03:00",
+      "quem": "master",
+      "o_que": "entregou: pacote reescrito (v3); anexo da P-001 incluido"
+    },
+    {
+      "quando": "2026-11-26T22:00:00-03:00",
+      "quem": "produto",
+      "o_que": "aceitou: conferi o pacote v3 contra o pronto_quando e o codigo de 25/11 (d4942b2, 1.0.2, so af_complete_registration em appsflyer.ts:17, appsflyerID no RevenueCat, VITE_MM_AVISO_TESTE, 79d19d1); itens 1, 2 e 5 riscados com prova, 3 mantido (C), 4 virou D, 16 virou A, tudo marcado a confirmar pelo Davi, sem R$"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:00:00-03:00"
+}

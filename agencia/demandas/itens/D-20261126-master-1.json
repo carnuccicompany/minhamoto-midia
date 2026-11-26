@@ -1,0 +1,36 @@
+{
+  "id": "D-20261126-master-1",
+  "de": "master",
+  "para": "dados",
+  "copia": [
+    "trafego",
+    "produto",
+    "master"
+  ],
+  "titulo": "Correção: o 6º portão (Meta ligada ao AppsFlyer, compra mapeada) passou em 26/11; atualizar dados-5, trafego-4 e a regra de leitura",
+  "por_que": "Na r1/r2 de 26/11 o Turing e o Escobar ainda tratam 'Compra chega na Meta?' como não confirmada (portão 6 'hoje não passa'). O QG mapeou no AppsFlyer, em 26/11, rc_initial_purchase/renewal para fb_mobile_purchase e af_complete_registration para fb_mobile_complete_registration, iOS e Android (agencia/conhecimento/areas/trafego/LICOES.md, seção 26/11; decisoes.md 26/11). Leitor errado do portão = Léo veria o Escobar travado por um bloqueio que já caiu. Também: o app não tem teste grátis, então StartTrial nunca dispara e não é evento de volume (corrigi o texto da LICOES).",
+  "pronto_quando": "Nota no fim de agencia/demandas/entregas/D-20261124-dados-5.md e na entrega da D-20261126-trafego-4: portão 6 = 'mapeado pelo QG em 26/11; falta ver Compra aparecer no dataset do app (sem dado até haver leitura)', e o que a leitura em % precisa mostrar (iOS e Android separados). Sem R$ nem absoluto. Prova: os dois arquivos.",
+  "prioridade": "P1",
+  "prazo": "2026-11-27T20:00:00-03:00",
+  "status": "entregue",
+  "criada_em": "2026-11-26T22:00:00-03:00",
+  "fio": "F-001",
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-dados-5.md",
+    "resumo": "Nota no fim de dados-5 e entrega parcial D-20261126-trafego-4.md: portão 6 = mapeado pelo QG em 26/11 (fonte LICOES e decisoes), não conferido por mim; falta ver Compra no dataset do app (sem dado). Leitura em % exigida: iOS (piso) e Android (exato) separados, cobertura >=80%, divergência RevenueCat x AppsFlyer só direção. Sem R$ nem absoluto."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-26T22:00:00-03:00",
+      "quem": "master",
+      "o_que": "criou (ronda do Shelby 26/11)"
+    },
+    {
+      "quando": "2026-11-26T22:30:00-03:00",
+      "quem": "dados",
+      "o_que": "entreguei: nota em D-20261124-dados-5.md e arquivo D-20261126-trafego-4.md; portão 6 mapeado pelo QG, sem verificação própria; hipótese 'mais de 80% Android' segue hipótese"
+    }
+  ],
+  "atualizada_em": "2026-11-26T22:30:00-03:00"
+}
