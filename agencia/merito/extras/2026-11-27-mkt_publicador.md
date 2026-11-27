@@ -25,3 +25,8 @@
 - tipo: ideia
 - o quê: a fila tem 78 carrosséis sem IG; a 4 posts por dia dura cerca de 19 dias. Vale reservar tempo pra abastecer a fila antes de 14/12.
 - prova: fila/carrosseis.json (118 itens) menos fila/estado.json (40 publicados) = 78.
+
+## mkt:publicador · 2026-11-27 21:10
+- tipo: risco
+- o quê: a cobrança de 30 min do TikTok das 21h (CM02) também não foi criada; 5ª rodada seguida sem cobrança, porque create_trigger exige aprovação do Léo em rodada agendada. Sem ajuste, nenhum lembrete de 30 min sai.
+- prova: create_trigger "Cobrança TikTok 18h" recusado em 27/11 21:0x UTC ("needs the user's approval"); CM02 publicado em 21:04 UTC (fila/estado.json).
