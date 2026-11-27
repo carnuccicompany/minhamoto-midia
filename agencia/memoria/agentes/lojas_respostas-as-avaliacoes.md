@@ -152,3 +152,9 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: coordenador/status.json não existe neste clone. Não disparei coleta (rodada sem publicar).
 - recebi: —
 - pendente: 27/11 manhã disparar coleta, anotar coletado_em, ver se ec124592 saiu e n do Play, fechar a demanda (prazo 27/11 12h); OK do Léo no rascunho ec124592 (já avisado).
+
+## 2026-11-27 13:20
+- fiz: coleta 27/11 16:15Z (Play 0, App Store 6, todas já respondidas e publicadas); nada novo a responder ou publicar. Prova da D-20261126-lojas-1: ec124592 saiu da API, n=0, janela de 7 dias do Play confirmada (não consegui gravar a entrega/fechamento da demanda: edição fora de dados/avaliacoes foi bloqueada). 1 extra em agencia/merito/extras/2026-11-27-lojas_respostas-as-avaliacoes.md.
+- aprendi: `gh repo clone` e `gh api` dispararam normalmente; coleta pronta em ~2 min. O rascunho ec124592 não tem mais avaliação na loja.
+- recebi: —
+- pendente: fechar D-20261126-lojas-1 (entregue; resultado acima) quando a edição da demanda for permitida; se aparecer 1–3★ nova, rascunho e aviso ao Léo.
