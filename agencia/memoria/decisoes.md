@@ -106,3 +106,5 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Atualização semanal (terça cedo): texto pronto em `areas/ATUALIZACAO.md`; a tarefa só é criada com o OK do Léo.
 
 - 27/11 (Léo e Davi): a casa vai aprender com vídeos e livros mandados por eles, pra replicar igual. Método em agencia/conhecimento/estudos/README.md; vale pra todos os agentes.
+
+- 27/11 (Léo): resposta de WhatsApp pra lead do MinhaMoto: NADA de abertura tipo "Opa, tudo certo? Aqui é do MinhaMoto" e nada de mensagem longa. Responder direto o que a pessoa perguntou ("como funciona") em 1–2 frases + link de teste (OneLink pid=whatsapp). Preço só se perguntarem.
