@@ -1,11 +1,11 @@
 {
- "atualizado": "2026-11-26T19:51-03:00",
+ "atualizado": "2026-11-27T08:50-03:00",
  "resumo": {
-  "abertas": 23,
+  "abertas": 27,
   "atrasadas": 0,
   "entregues": 11,
   "aceitas": 67,
-  "bloqueadas_lider": 20
+  "bloqueadas_lider": 19
  },
  "demandas": [
   {
@@ -46,6 +46,43 @@
    "_para_nome": "Ted Lasso"
   },
   {
+   "id": "D-20261126-mkt_publicador-1",
+   "de": "master",
+   "para": "mkt:publicador",
+   "copia": [
+    "cria"
+   ],
+   "titulo": "Sim/não do Léo/Davi: script recuperar slot aberto do dia (slot falhou de novo em 24 e 26/11)",
+   "por_que": "Shelby cancelou D-20261122-mkt_publicador-1 em 23/11 com 'reabrir se um slot falhar de novo'. Falhou: 24/11 18h e 26/11 18h sem post, sem execução na janela (agencia/demandas/entregas/D-20261126-cria-3.md). F-006 só fecha com 3 dias de 4/4.",
+   "pronto_quando": "publicar.py recupera o slot aberto mais antigo do dia (máx. 1 por execução, 4/dia, ordem da fila intacta, nunca de dia anterior), validado com SIMULAR=1 e saída anexada em agencia/demandas/entregas/D-20261126-mkt_publicador-1.md.",
+   "prioridade": "P1",
+   "prazo": "2026-11-27T19:00:00-03:00",
+   "status": "aberta",
+   "bloqueio": null,
+   "pergunta": "Léo/Davi: autorizam mudar o scripts/publicar.py para recuperar um slot aberto do dia que falhou (máx. 1 por execução e 4 por dia, sem mexer na ordem da fila)? Sim ou não.",
+   "criada_em": "2026-11-26T19:55:00-03:00",
+   "fio": "F-006",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T19:55:00-03:00",
+     "quem": "mkt:publicador",
+     "o_que": "criou; bloqueada: só Léo/Davi autorizam mudar o publicar.py"
+    },
+    {
+     "quando": "2026-11-27T08:55:00-03:00",
+     "quem": "master",
+     "o_que": "Shelby resolveu sem levar aos sócios (correção de erro, sem dinheiro, sem conteúdo novo); desbloqueada e devolvida ao Fogg com SIMULAR=1 obrigatório"
+    }
+   ],
+   "resposta_shelby": "Autorizado pelo Shelby (27/11, regra 'Dono da porra toda': correção de erro, só peças já aprovadas da fila, sem dinheiro, nada novo no ar). Fogg altera scripts/publicar.py para publicar o slot aberto mais antigo do dia: máx. 1 por execução, 4 por dia, sem mudar a ordem da fila, nunca slot de dia anterior. Validar com SIMULAR=1 e anexar a saída na entrega antes do primeiro run real.",
+   "atualizada_em": "2026-11-27T08:55:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Thomas Shelby",
+   "_para_nome": "Phileas Fogg"
+  },
+  {
    "id": "D-20261126-dados-3",
    "de": "dados",
    "para": "master:auditor-de-entregas",
@@ -80,6 +117,64 @@
    "_atrasada": false,
    "_de_nome": "Alan Turing",
    "_para_nome": "Eliot Ness"
+  },
+  {
+   "id": "D-20261127-professor-1",
+   "de": "professor",
+   "para": "produto",
+   "copia": [
+    "lojas",
+    "master"
+   ],
+   "titulo": "Proteger o paywall de 2 riscos de loja: oferta introdutória que liga 'dias grátis' sozinha e a exceção do '/mês' dentro da tela que cobra",
+   "por_que": "(1) O paywall do código de 25/11 lê o teste oferecido pela loja e passa a mostrar 'X dias grátis' / 'Começar X dias grátis' sem mudança de código (pro-producao-checkout.tsx:167 e :510; paywall-minhamoto.tsx:489 e :586) — se alguém ligar oferta introdutória na App Store Connect ou no Play, quebra a decisão do Léo 'app sem teste grátis' (decisoes.md 20–22/11). (2) A Apple (3.1.2(c), https://developer.apple.com/app-store/subscriptions/) e o Google (https://support.google.com/googleplay/android-developer/answer/9900533) exigem duração e preço de renovação em destaque na tela de assinatura: a regra do Léo 'nunca por mês' (24/11) não pode ser aplicada ao paywall nem à descrição da assinatura na loja, ou o app arrisca rejeição. Hoje o paywall está conforme. Ver areas/produto/aulas/2026-11-27-paywall-pago-direto.md e LICOES.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (a) pergunta sim/não pronta pro Davi conferir que nenhuma oferta introdutória/teste está ligada nas duas lojas e manter assim; (b) pergunta sim/não pro Léo registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que dentro da tela que cobra e na ficha da assinatura ficam período e renovação como as lojas exigem. Demanda vai a 'bloqueada' com bloqueio 'lider' até as respostas.",
+   "prioridade": "P1",
+   "prazo": "2026-11-28T12:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Tony Stark"
+  },
+  {
+   "id": "D-20261127-professor-2",
+   "de": "professor",
+   "para": "lojas",
+   "copia": [
+    "produto",
+    "master"
+   ],
+   "titulo": "Dar dono e data a 3 prazos de loja sem responsável: descritores de idade da Apple (12/01/2027), questionário IARC/Age Signals do Play (11/12/2026) e verificação de desenvolvedor Android",
+   "por_que": "Apple: dois descritores novos (Localização compartilhada, Namoro) já são pedidos em todo envio desde 16/11 e todos os apps têm que responder até 12/01/2027, senão a atualização trava (https://developer.apple.com/news/?id=yxkh08us). Play: Age Signals para todos os usuários até 11/12/2026 e app com classificação errada pode ser removido (https://developer.android.com/google/play/age-signals/release-notes?hl=pt, https://support.google.com/googleplay/android-developer/answer/9898843). Verificação de desenvolvedor Android vale no Brasil desde 30/09/2026; app não registrado corre risco de remoção (https://developer.android.com/developer-verification). Não há demanda nem decisão com dono para nenhum dos três. Pelo código de 25/11 a resposta provável aos descritores é 'Não'; não subir pra 18+ 'por segurança' (bloqueia download no Brasil). Detalhe e checklist: areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md §9 e areas/lojas/NOVIDADES.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com as respostas sugeridas aos descritores da Apple e ao questionário IARC (com base no código), e um pacote de perguntas sim/não pro Davi: (a) app aparece registrado na Home do Play Console? (b) responde os descritores da Apple até 05/01/2027 com as respostas sugeridas? (c) confere o IARC até 11/12/2026 e manda print da classificação atual nas duas lojas? Status 'bloqueada' com bloqueio 'lider' até a resposta.",
+   "prioridade": "P1",
+   "prazo": "2026-11-28T12:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Jeff Bezos"
   },
   {
    "id": "D-20261120-dados-2",
@@ -339,36 +434,6 @@
    "atualizada_em": "2026-11-24T20:05:00-03:00",
    "_atrasada": false,
    "_de_nome": "Tony Stark",
-   "_para_nome": "Thomas Shelby"
-  },
-  {
-   "id": "D-20261126-mkt_publicador-1",
-   "de": "mkt:publicador",
-   "para": "master",
-   "copia": [
-    "cria"
-   ],
-   "titulo": "Sim/não do Léo/Davi: script recuperar slot aberto do dia (slot falhou de novo em 24 e 26/11)",
-   "por_que": "Shelby cancelou D-20261122-mkt_publicador-1 em 23/11 com 'reabrir se um slot falhar de novo'. Falhou: 24/11 18h e 26/11 18h sem post, sem execução na janela (agencia/demandas/entregas/D-20261126-cria-3.md). F-006 só fecha com 3 dias de 4/4.",
-   "pronto_quando": "Resposta sim/não do Léo/Davi registrada aqui: autorizar mudar scripts/publicar.py para publicar o slot aberto mais antigo do dia (máx. 1 por execução, 4 por dia, sem mudar a ordem da fila). Se sim, o Fogg altera e valida com SIMULAR=1.",
-   "prioridade": "P1",
-   "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "bloqueada",
-   "bloqueio": "lider",
-   "pergunta": "Léo/Davi: autorizam mudar o scripts/publicar.py para recuperar um slot aberto do dia que falhou (máx. 1 por execução e 4 por dia, sem mexer na ordem da fila)? Sim ou não.",
-   "criada_em": "2026-11-26T19:55:00-03:00",
-   "fio": "F-006",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-26T19:55:00-03:00",
-     "quem": "mkt:publicador",
-     "o_que": "criou; bloqueada: só Léo/Davi autorizam mudar o publicar.py"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Phileas Fogg",
    "_para_nome": "Thomas Shelby"
   },
   {
@@ -808,6 +873,34 @@
    "_atrasada": false,
    "_de_nome": "Salvatore Greco",
    "_para_nome": "Sun Tzu"
+  },
+  {
+   "id": "D-20261127-professor-3",
+   "de": "professor",
+   "para": "trafego",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Confirmar idade mínima 18 nos públicos dos anúncios (MinhaMoto e Corretores) antes da próxima verba",
+   "por_que": "ECA Digital (Lei 15.211, art. 22) proíbe usar perfil de menor para publicidade, e a ANPD começa a fiscalizar em jan/2027 (https://www.gov.br/anpd/pt-br/assuntos/eca-digital). Anúncio entregue a menor é risco jurídico e de conta. Não há registro de que a idade mínima 18 está travada nos conjuntos. Ver areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo, por campanha ativa e planejada, a idade mínima configurada e se é controle fixo (não só sugestão do Advantage+), sem mexer em nada; se precisar mudar, pergunta sim/não pro Léo/Davi e status 'bloqueada' com bloqueio 'lider'.",
+   "prioridade": "P2",
+   "prazo": "2026-11-30T12:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Pablo Escobar"
   },
   {
    "id": "D-20261126-trafego-1",
