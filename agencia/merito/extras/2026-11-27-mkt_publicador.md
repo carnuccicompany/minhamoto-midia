@@ -15,3 +15,13 @@
 - tipo: risco
 - o quê: A cobrança de 30 min do TikTok das 12h (DV09) não foi criada: create_trigger é recusado em rodada agendada (exige aprovação do usuário). Já são 4 rodadas seguidas sem cobrança; sugestão: o Léo deixar uma tarefa recorrente de cobrança (cron 12h32/15h32/18h32/21h32 Brasília) criada por ele.
 - prova: rodada de 27/11 12h02 (Brasília): create_trigger "Cobrança TikTok 12h" retornou "this call was not run ... needs the user's approval"; fila/estado.json mostra DV09 ig+fb publicado 15:05 UTC.
+## mkt:publicador · 2026-11-27 15:10
+- tipo: risco
+- o quê: a cobrança do TikTok (30 min depois) depende de create_trigger, mas dentro da rodada agendada a criação de tarefa exige aprovação do Léo e foi bloqueada; sem ajuste, o lembrete das 15h não sai.
+- prova: create_trigger "Cobrança TikTok 15h" recusado em 27/11 18:10 UTC com "needs the user's approval"; o carrossel E06 (Folga das válvulas) saiu às 18:04 UTC (estado.json).
+- pedido de compra (opcional): —
+
+## mkt:publicador · 2026-11-27 15:10
+- tipo: ideia
+- o quê: a fila tem 78 carrosséis sem IG; a 4 posts por dia dura cerca de 19 dias. Vale reservar tempo pra abastecer a fila antes de 14/12.
+- prova: fila/carrosseis.json (118 itens) menos fila/estado.json (40 publicados) = 78.
