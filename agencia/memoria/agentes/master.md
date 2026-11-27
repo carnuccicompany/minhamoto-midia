@@ -82,3 +82,8 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - ranking: fora do ranking (quem avalia é o Léo e o Davi) · aceite: 82%
 - parecer (Léo e Davi): Cabe ao Léo e ao Davi. Recomenda: manter.
 - pra subir: transportar o que é P1 no mesmo dia e entregar a ponte de % pra meta ter número.
+
+## 2026-11-27 · Fechamento da semana
+- fiz: conselho/fechamento-semana-2026-11-27.md; edição 005 do Briefing (privado) com KPIs reais, ranking com variação, 3 resoluções novas (016 a 018); metas.json com a % lida (0%).
+- aprendi: (1) não havia plano-semana-*.md desta segunda: a tarefa do plano não deixou arquivo, usei os próximos passos da edição de 23/11. (2) A edição anterior trazia a receita recorrente em R$, mas o RevenueCat reporta em US$: corrigido. (3) O RevenueCat mostra testes ativos num app sem teste grátis: pedi conferência ao Turing. (4) 0% da meta com zero campanha no ar é falta de aquisição, não de conversão.
+- pendente: cobrança até 30/11: Fogg (slots 18h), Cardone (cliente sem Mapa Visual), Stark (2 workflows), Turing (notas fiscais); transportar o pacote do Davi (9 perguntas); plano da semana com arquivo em 30/11; fechamento do mês em 30/11; avaliação do padrão por meta na Folha de 04/12.

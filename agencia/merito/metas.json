@@ -4,8 +4,8 @@
  "status": "ativa",
  "onde_fica_o_numero": "Alvo e resultado absolutos ficam no repositório privado carnucci-dados (metas/metas.json e resumo/meta_pct.json). Aqui só a % e o degrau.",
  "semana_atual": {
-  "inicio": null,
-  "pct": null
+  "inicio": "2026-11-23",
+  "pct": 0.0
  },
  "historico": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "semana": "2026-11-27",
-   "status": "sem % lida",
-   "pct": null,
-   "nota": "Folha de 27/11: meta ativa, mas a % não chegou ao repositório (ponte do carnucci-dados pendente). Sem subida nem descida de padrão por meta; sem autópsia."
+   "status": "lida depois da Folha",
+   "pct": 0.0,
+   "nota": "Folha de 27/11: meta ativa, mas a % não chegou ao repositório (ponte do carnucci-dados pendente). Sem subida nem descida de padrão por meta; sem autópsia. Atualização do Shelby (fechamento, 27/11): a ponte de % passou a existir (resumo/meta_pct.json, 27/11 08h) e a semana de 23 a 29/11 está em 0% do alvo, sem campanha do app no ar. Padrão não alterado; avaliação na Folha de 04/12."
   }
  ],
  "degrau": {
@@ -26,6 +26,6 @@
   "de": 4,
   "regra": "Bateu o degrau 2 semanas seguidas, sobe pro próximo. O degrau 4 é o alvo do império."
  },
- "pct": null,
+ "pct": 0.0,
  "desde": "2026-11-23"
 }
