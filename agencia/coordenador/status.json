@@ -1,38 +1,40 @@
 {
-  "rodada": "2026-11-26T08:40:00-03:00",
+  "rodada": "2026-11-26T21:50:00-03:00",
   "ok": true,
   "tarefas": {
-    "resumo": "nenhuma tarefa MM enabled com falha; todas SUCCEEDED na última execução; Vigia (esta) em andamento",
+    "resumo": "nenhuma tarefa MM enabled com falha (todas SUCCEEDED ou sem execução devida); Vigia (esta) em andamento",
     "desativadas_nao_reativadas": [
       "produção diária",
       "MM: Vigia do Gmail (desativada 25/11)"
-    ],
-    "obs": "Leitura da UTMify agora aparece 1 vez só (duplicata sumiu)"
+    ]
   },
   "publicacao_hoje": {
-    "slots": "ontem 4/4 (M08, A12, DV19, M03 21h04); hoje nenhum slot vencido ainda",
-    "proximo": "12h02 BRT 26/11"
+    "slots": "26/11: 12h J05 ok, 15h A04 ok, 18h NÃO rodou (gatilho das 18h02 não disparou: sem run às 21Z), 21h CM01: FB ok, IG falhou (Meta 9007 'mídia não pronta', transitório)",
+    "proximo": "12h02 BRT 27/11"
   },
-  "dias_de_fila": 19.5,
-  "nao_publicados": 78,
+  "dias_de_fila": 19.75,
+  "nao_publicados": 79,
   "pendentes_aprovacao": 0,
   "tiktok_916": "113/113",
   "acoes": [
-    "Disparei MM: Mesa de Demandas (P1 D-20261125-trafego-2 aberta, Mesa não tinha rodado hoje)"
+    "Disparei publicar.yml 2x: 1ª (normal, nada a fazer: slot 21h já marcado), 2ª com forcar=true -> publicou só o IG pendente do CM01 (FB já existia, sem duplicar) às 00:46Z; IG/FB do CM01 completos",
+    "Mesa de Demandas NÃO disparada (já rodou hoje 08h40; P1 D-20261126-lojas-1 e dados-3 em andamento, no prazo)"
   ],
-  "alertas": [],
+  "alertas": [
+    "Post das 18h BRT de 26/11 perdido (gatilho não disparou); fila segue em 19,75 dias, sem urgência. Vigiar se o gatilho das 18h02 dispara 27/11."
+  ],
   "insights_diario": {
-    "data_utc_hoje": "2026-11-26",
+    "data_utc_hoje": "2026-11-27",
     "alerta": false,
     "ultimo_arquivo": "dados/insights-2026-11-26.json",
     "coletado_em_brt": "2026-11-26T08:29-03:00",
     "erros": [],
-    "linha": "arquivo de hoje existe · erros vazio"
+    "linha": "aguardando cron das 23h41 BRT; erros vazio"
   },
   "segredos": "vigia_segredos ok",
   "demandas": {
-    "P1_aberta": "D-20261125-trafego-2 (prazo 27/11 18h)",
-    "mesa": "disparada 26/11 08h40 (uma vez)"
+    "P1_aberta": "D-20261126-lojas-1 (prazo 27/11 12h), D-20261126-dados-3 (prazo 27/11 20h), D-20261125-trafego-2 (27/11 18h)",
+    "mesa": "rodou 26/11 08h40; não redisparada"
   },
   "avaliacoes_play": {
     "demanda": "D-20261126-dados-3",
@@ -47,7 +49,7 @@
         "ec124592_presente": "sim"
       }
     ],
-    "linha": "ec124592 presente: sim (coleta 2026-11-26T16:14:57Z; ainda sem coleta posterior a 21h35Z para provar saida)",
+    "linha": "ec124592 presente: sim (última coleta segue 2026-11-26T16:14Z; ainda sem coleta posterior a 21h35Z; Respostas roda 13h13 de 27/11)",
     "regra": "a cada rodada, se coletado_em de ultimas.json for novo, acrescentar objeto em coletas; manter ate 28/11; nao responder avaliacao."
   }
 }
