@@ -49,3 +49,12 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - aprendi: 18h BRT = 21:00Z. Posts com hora 18:04Z em estado.json são os de 15h. Script ok em todos os runs.
 - criei: D-20261126-mkt_publicador-1 (reabre a pergunta sim/não do publicar.py, bloqueada pro Léo/Davi).
 - pendente: conferir 21h de 26/11 (00:00Z de 27/11) e o placar de F-006.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 65 (7 lançamentos) · multas: C$ -55 — extra de ruído: slots perdidos de 21 e 22/11: já era a demanda dele (D-20261122-cria-1) e extra do Ness de 22/11, sem fato novo; extra de ruído: fila ~22 dias: repete o extra já aprovado em 20/11, sem fato novo; extra de ruído: fila sem reposição: repete; a reposição foi cancelada pelo Shelby em 23/11 (D-20261123-cria-1), sem fato novo; extra de ruído: fila 77 pendentes (12h): repetição, sem fato novo; extra de ruído: cobrança TikTok falhou (15h): repetição do mesmo dia, sem fato novo; extra de ruído: fila 76 pendentes (15h): repetição, sem fato novo; extra de ruído: cobrança TikTok falhou (26/11 21h): repetição, sem fato novo; extra de ruído: fila 81 pendentes (26/11 21h): repetição, sem fato novo; extra de ruído: cobrança TikTok falhou (27/11 12h): repetição, sem fato novo; extra de ruído: cobrança TikTok falhou (27/11 15h): repetição, sem fato novo; extra de ruído: fila 78 pendentes (27/11 15h): repetição, sem fato novo
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 20.0 · XP +65 (total 90) · saldo depois do pôquer C$ 44.7
+- broche: bronze → prata (2 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 12º na empresa · aceite: 35%
+- parecer (Walt Disney): O Fogg vê o problema certo, mas repete o mesmo aviso seis vezes por dia. Um alerta vale uma vez; a segunda é ruído. Os três extras novos foram bons, principalmente o 2207027 com a correção pronta. Recomenda: manter.
+- pra subir: um alerta vale uma vez: repetição é ruído. Fechar a cria-3 e a mkt_publicador-1 com prova. Faltam 10 XP pra Analista.

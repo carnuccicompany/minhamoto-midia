@@ -52,3 +52,12 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - fiz: entreguei D-20261124-produto-4 (moto fora do catálogo). Li o código de 17/11: o paywall só abre no fim do tour (tour-onboarding.tsx:119) ou no "assinar" do borrão pós-onboarding (funil-sem-pro.tsx:63,97); quem não cadastra moto fica em em_andamento, app livre e vazio, nunca vê paywall. Premissa da demanda corrigida. Pedido de modelo hoje = mailto em branco (app-ui.tsx:446) na marca vazia e no pé da Garagem; nada na busca vazia nem em versão/ano. Proposta: cartão de pedido pré-preenchido onde trava, sem prazo. Criei D-20261124-produto_analista-do-paywall-2 (3 perguntas pro pacote do Davi).
 - aprendi: estado do onboarding é só local (lib/onboarding.ts:46), servidor não vê quem parou; não há evento de funil. Checar a premissa no código antes de aceitar a da demanda.
 - pendente: conferência do Stark; respostas do Davi; build de 23/11 fora do repo.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 20 (4 lançamentos) · multas: C$ 0
+- gorjetas dos pets: Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 33.0 · XP +25 (total 25) · saldo depois do pôquer C$ 29.7
+- broche: nenhum → bronze (1 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 10º na empresa · aceite: 100%
+- parecer (Tony Stark): O Jobs lê o código antes de propor e não entrega nada pela metade. Passou o diretor dele no placar, e eu assino isso. Recomenda: aumento.
+- pra subir: registrar extras com prova: o que ele vê a mais não está no placar. Faltam 75 XP pra Analista.

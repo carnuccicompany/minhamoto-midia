@@ -1,13 +1,14 @@
 {
  "regra": "ver README, seção Os pets",
- "semana": "2026-11-20",
+ "semana": "2026-11-27",
  "humor": {
-  "cria": "foda",
-  "lojas": "foda",
-  "mercado": "ok",
-  "produto": "ok",
-  "dados": "fraco",
-  "trafego": "fraco"
+  "mercado": "foda",
+  "dados": "foda",
+  "lojas": "ok",
+  "trafego": "ok",
+  "cria": "ok",
+  "produto": "fraco",
+  "mkt": "fraco"
  },
  "historico": [
   {
@@ -36,7 +37,41 @@
      "Carinho do Carnucci"
     ]
    }
+  },
+  {
+   "semana": "2026-11-27",
+   "humor": {
+    "mercado": "foda",
+    "dados": "foda",
+    "lojas": "ok",
+    "trafego": "ok",
+    "cria": "ok",
+    "produto": "fraco",
+    "mkt": "fraco"
+   },
+   "gorjetas": {
+    "mercado": [
+     "Fogo da Marnevali",
+     "Carinho do Carnucci"
+    ],
+    "dados": [
+     "Fogo da Marnevali",
+     "Carinho do Carnucci"
+    ],
+    "master:auditor-de-entregas": [
+     "Carinho do Carnucci"
+    ],
+    "produto:analista-do-paywall": [
+     "Carinho do Carnucci"
+    ],
+    "lojas:respostas-as-avaliacoes": [
+     "Carinho do Carnucci"
+    ],
+    "mercado:radar-de-concorrentes": [
+     "Carinho do Carnucci"
+    ]
+   }
   }
  ],
- "criterio": "Semana 1 sem histórico: entregas e extras com prova da semana. Ordem dos setores: Criativos, Lojas, Mercado, Produto, Dados, Tráfego (desempate: bônus líquido do setor → entregas com prova → fala no Conselho com número verificável)."
+ "criterio": "Ranking dos setores pelos pontos da semana (bônus com prova − multas, diretor + equipe). 7 diretores: 2 de cima foda, 3 do meio ok, 2 de baixo fraco. Carinho do Carnucci pro subagente que ficou em 1º no próprio setor (passou o diretor). O Shelby fica fora: quem avalia é o Léo e o Davi."
 }

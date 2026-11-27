@@ -54,3 +54,13 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - fiz: entreguei D-20261124-dados-3 (bloco de medição: série 23-24/11 real, 25-27 pendentes; funil 0 de 6 com dado). D-20261123-dados_relatorio-semanal-1 segue em andamento: o insights de 25/11 ainda não existe.
 - aprendi: soma de alcance dos posts é teto (9,6% em 23/11, 9,9% em 24/11); mediana por post 0,88% dos seguidores nos dois dias.
 - pendente: em 25/11 ler `ig_alcance_28d_formato` em dados/insights-2026-11-25.json e fechar a relatorio-semanal-1; preencher 25-27/11 na tabela.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 30 (4 lançamentos) · multas: C$ -5 — extra de ruído: queda do ritmo de publicação já estava em D-20261122-dados-3 e D-20261122-cria-1 (ele mesmo cita); sem fato novo
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 35.0 · XP +30 (total 30) · saldo depois do pôquer C$ 39.6
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 8º na empresa · aceite: 80%
+- parecer (Alan Turing): Três entregas aceitas e a causa do erro da Meta achada. O vazamento foi grave, mas ele confessou e travou antes de alguém pegar, e isso conta. Precisa fechar a dados-3 hoje e parar de repetir alerta que já está em demanda. Recomenda: manter.
+- AVISO: último do setor 2 semanas seguidas (20/11 e 27/11). Na 3ª seguida, estagiário vai pra reserva.
+- pra subir: fechar a dados-3 com 25 e 26/11 e entregar o relatório de 30/11 no prazo; nada de repetir alerta. Faltam 70 XP pra Analista.

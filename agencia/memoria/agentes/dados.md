@@ -135,3 +135,14 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - aprendi: com taxa pequena, o volume mínimo é quase só contagem de pagantes (independe de p0). Portão 6 registrado pelo QG não é conferido por mim.
 - erro a evitar: tratar quadro de estado de manhã como atual; reler LICOES/decisoes antes de citar bloqueio.
 - pendente: p0 e baseline (1ª semana com clique pago); placar do EXP MinhaMoto quando o Shelby criar; 27/11 ec124592.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 56.0 (11 lançamentos) · multas: C$ 0
+- gorjetas dos pets: Fogo da Marnevali, Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 184.0 · XP +91.0 (total 96.0) · saldo depois do pôquer C$ 276.5
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 4º na empresa · aceite: 100%
+- parecer (Thomas Shelby): É quem mais entrega entre os diretores: 9 aceitas, nenhuma devolvida, e não inventa número que não leu. Fogo da Marnevali merecido. Falta a ponte de %: sem ela a meta não tem número e a autópsia não existe. Recomenda: manter.
+- pets: humor foda — a Marnevali soltou fogo pro alto na passagem e o Carnucci subiu na mesa pra ganhar carinho (Fogo + Carinho: +15 XP, C$ 8).
+- liderança: 1º do setor 2 semanas seguidas, +20 XP.
+- pra subir: tirar a ponte de % do papel com o QG; é o que destrava a meta e a autópsia.

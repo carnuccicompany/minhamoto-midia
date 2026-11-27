@@ -58,3 +58,13 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - fiz: resumo da caixa de 27/11; 5 assuntos novos encaminhados (Bezos, Escobar, Stark), 1 rascunho pronto. Correspondência do Briefing atualizada no repositório privado (detalhes só lá).
 - aprendi: pedido de "incluir modelo" pode ser de moto que já está no app; conferir o catálogo no minhamotooficial antes de rascunhar.
 - pendente: cobranças abertas em briefing/correspondencia.json (privado).
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 65 (5 lançamentos) · multas: C$ 0
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 75.0 · XP +65 (total 70) · saldo depois do pôquer C$ 79.7
+- broche: bronze → prata (2 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 2º na empresa · aceite: 100%
+- parecer (Thomas Shelby): Ela vê na caixa o que ninguém abriu: nota fiscal rejeitada há três semanas, aviso da Apple pra abril. Quatro extras, quatro aprovados. O aviso é regra de placar, não falta de trabalho. Pra sair dele, transforme um alerta em entrega fechada com dono. Recomenda: manter.
+- AVISO: último do setor 2 semanas seguidas (20/11 e 27/11). Na 3ª seguida, estagiário vai pra reserva.
+- pra subir: transformar um alerta da caixa em demanda fechada com dono e prova; sair da lanterna do setor. Faltam 30 XP pra Analista.

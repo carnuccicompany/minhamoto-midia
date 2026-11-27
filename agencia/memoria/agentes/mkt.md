@@ -58,3 +58,13 @@ Setor: Marketing · Cargo: Diretor · Playbook: agencia/diretoria/12-infoproduto
 
 ## 2026-11-26 · Entregue pelo Shelby (D-20261126-mkt-2)
 - Pix cancelado corrigido em 8 arquivos e Kavoo registrada (link e data). Mapa Visual EUA/Portugal: pesquisa aprovada, zero gasto, veredito ate 03/12. Garantia de 30 dias vai ao Leo como DECISAO 2 (depois da pergunta 3 sobre a Kavoo). Conferir a mkt-2 em ate 24h.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 5 (1 lançamentos) · multas: C$ 0
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 125.0 · XP +5 (total 5) · saldo depois do pôquer C$ 178.8
+- broche: nenhum → bronze (1 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 13º na empresa · aceite: sem entrega avaliada
+- parecer (Thomas Shelby): Primeira semana na cadeira e só fala de reunião. Diretor de Infoprodutos se mede em venda dos Corretores; sem placar, não tem como ganhar ponto. A Marnevali passou acuada. Recomenda: manter.
+- pets: humor fraco — a Marnevali passou acuadinha, de cabeça baixa; o Carnucci não foi e a Fartuzzi encarou mais tempo (sem multa, fica registrado).
+- pra subir: colocar de pé o placar de vendas dos Corretores (em %) e entregar uma demanda conferida.

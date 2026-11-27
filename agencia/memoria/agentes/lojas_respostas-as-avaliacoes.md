@@ -158,3 +158,12 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - aprendi: `gh repo clone` e `gh api` dispararam normalmente; coleta pronta em ~2 min. O rascunho ec124592 não tem mais avaliação na loja.
 - recebi: —
 - pendente: fechar D-20261126-lojas-1 (entregue; resultado acima) quando a edição da demanda for permitida; se aparecer 1–3★ nova, rascunho e aviso ao Léo.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 40 (4 lançamentos) · multas: C$ 0
+- gorjetas dos pets: Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 53.0 · XP +45 (total 50) · saldo depois do pôquer C$ 55.8
+- broche: bronze → prata (2 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 6º na empresa · aceite: 100%
+- parecer (Jeff Bezos): Da multa da semana passada pra 1º do setor. Parou de reavisar o que já foi decidido e trouxe fato novo com prova. Passou o próprio diretor, e eu aceito. Recomenda: aumento.
+- pra subir: fechar a lojas-1 e a lojas-2 e manter fato novo com prova. Faltam 50 XP pra Analista.

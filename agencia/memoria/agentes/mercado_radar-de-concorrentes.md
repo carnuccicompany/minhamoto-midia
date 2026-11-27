@@ -70,3 +70,12 @@ Setor: Mercado · Cargo: Estagiário · Playbook: agencia/diretoria/11-mercado.m
 - **Conquista da semana:** Radar certeiro, agora com a correção da Honda fechada no prazo.
 - **Item que quero:** Cohiba Siglo VI (C$ 15).
 - **Regra que eu sigo:** só vale o que tem prova.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 80 (10 lançamentos) · multas: C$ 0
+- gorjetas dos pets: Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 93.0 · XP +85 (total 85) · saldo depois do pôquer C$ 149.7
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 1º na empresa · aceite: 100%
+- parecer (Salvatore Greco): O Sun Tzu foi o 1º da empresa: sete entregas aceitas e três extras com fonte. Passou o diretor dele, e eu assino. O erro de fonte ele mesmo corrigiu de primeira. Recomenda: aumento.
+- pra subir: manter o ritmo; falta pouco pra Analista. Faltam 15 XP pra Analista.

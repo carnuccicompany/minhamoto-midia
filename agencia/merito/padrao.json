@@ -43,7 +43,7 @@
   }
  },
  "empresa": "ouro",
- "semana": "2026-11-20",
+ "semana": "2026-11-27",
  "setores_rebaixados": {},
  "historico": [
   {
@@ -52,6 +52,13 @@
    "meta": "aguardando",
    "setores_rebaixados": {},
    "nota": "Meta aguardando o número do Léo e o RevenueCat: ninguém sobe nem desce por meta. Sem autópsia."
+  },
+  {
+   "semana": "2026-11-27",
+   "empresa": "ouro",
+   "meta": "sem % lida",
+   "setores_rebaixados": {},
+   "nota": "metas.json está \"ativa\" desde 23/11, mas pct segue nulo: a ponte de % do carnucci-dados (dados/resumo-pct.json) ainda não existe. Sem número, ninguém sobe nem desce por meta e não há autópsia."
   }
  ]
 }

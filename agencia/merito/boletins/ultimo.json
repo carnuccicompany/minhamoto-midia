@@ -1,16 +1,20 @@
 {
- "semana": "2026-11-20",
+ "semana": "2026-11-27",
  "meta": {
-  "status": "aguardando",
+  "status": "sem % lida (ativa desde 23/11; ponte de % pendente)",
   "pct": null
  },
  "padrao_empresa": "ouro",
  "autopsia": null,
  "destaques": [
-  "mkt:publicador",
-  "cria"
+  "mercado:radar-de-concorrentes",
+  "master:auditor-de-entregas",
+  "dados"
  ],
- "em_risco": [],
+ "em_risco": [
+  "master:secretario-do-conselho",
+  "dados:relatorio-semanal"
+ ],
  "agentes": [
   {
    "id": "master",
@@ -18,41 +22,46 @@
    "cargo": "Diretor-Geral",
    "setor": "Direção-Geral",
    "chefe": "Léo e Davi",
-   "broche": "bronze",
+   "broche": "nenhum",
    "padrao": "ouro",
    "stats": {
-    "entregas": 0,
-    "no_prazo": 0,
-    "refacoes": 0,
-    "erros": 0,
+    "entregas": 11,
+    "no_prazo": 9,
+    "refacoes": 2,
+    "erros": 1,
     "extras_aprovados": 0,
     "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 7.0,
-    "xp_total": 7.0,
-    "cs_semana": 207.0,
-    "saldo": 234.8,
+    "aceite_pct": 82,
+    "xp_semana": 62.7,
+    "xp_total": 69.7,
+    "cs_semana": 242.7,
+    "saldo": 457.5,
     "moral": 50,
     "pos_setor": null,
     "pos_geral": null,
-    "semanas_sem_erro": 1
+    "semanas_sem_erro": 0
    },
    "produziu": [
     {
-     "o_que": "Conclusões e pauta de decisões do 1º Conselho do piloto",
-     "prova": "agencia/conselho/2026-11-19.md"
+     "o_que": "Ronda diária de correções pequenas: 5 itens em 24/11 e 8 pontos de memória/playbook em 26/11, demandas caducas canceladas com motivo",
+     "prova": "agencia/conselho/2026-11-24.md; 2026-11-26.md"
     },
     {
-     "o_que": "Primeira Folha de sexta do Sistema de Mérito",
-     "prova": "agencia/merito/folhas/2026-11-20.md"
+     "o_que": "Desbloqueou o slot do publicador sem subir aos sócios (correção de erro, SIMULAR=1 obrigatório)",
+     "prova": "agencia/demandas/itens/D-20261126-mkt_publicador-1.json"
+    },
+    {
+     "o_que": "9 demandas recebidas aceitas (lojas-3, dados-5, cria-3, mkt-1, produto-1, mkt-2, trafego-3...)",
+     "prova": "agencia/demandas/itens/"
     }
    ],
    "a_desejar": [
-    "Recomendou preparar a Black Friday e o Léo recusou: a leitura de prioridade do dono precisa ser melhor",
-    "Empresa ainda sem meta em número: cobrar o Léo pelo alvo e o RevenueCat ligado"
+    "Pacote do Davi não transportado em 21, 23, 24 e 26/11 (P1); a produto_analista-do-paywall-1 voltou 2 vezes",
+    "D-20261126-dados-2 devolvida pelo Turing",
+    "Ponte de % do QG ainda não existe: a meta segue sem número"
    ],
    "potencial": {
-    "nota": 3,
+    "nota": 4,
     "rotulo": "Sólido",
     "proximo_cargo": null,
     "falta_xp": null
@@ -69,102 +78,218 @@
    "nome": "Moneypenny",
    "cargo": "Estagiário",
    "setor": "Direção-Geral",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
+   "chefe": "master",
+   "broche": "prata",
    "padrao": "ouro",
    "stats": {
     "entregas": 1,
     "no_prazo": 1,
     "refacoes": 0,
     "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 5,
-    "xp_total": 5,
-    "cs_semana": 15.0,
-    "saldo": 13.5,
+    "extras_aprovados": 4,
+    "extras_total": 4,
+    "aceite_pct": 100,
+    "xp_semana": 65,
+    "xp_total": 70,
+    "cs_semana": 75.0,
+    "saldo": 79.7,
     "moral": 50,
     "pos_setor": 2,
     "pos_geral": 2,
-    "semanas_sem_erro": 1
+    "semanas_sem_erro": 2
    },
    "produziu": [
     {
-     "o_que": "Vigia do Gmail rodou em 20/11 e atualizou os e-mails vistos 2 vezes",
-     "prova": "agencia/coordenador/emails-vistos.json (commits 836a8e4, 96f3965)"
+     "o_que": "Vigia do Gmail com 4 extras aprovados: notas fiscais rejeitadas há 3 semanas, infoproduto pago sem entrega, aviso ITMS-90725 da Apple, busca de moto no cadastro",
+     "prova": "agencia/merito/extras/2026-11-24/25/27-master_secretario-do-conselho.md"
     }
    ],
    "a_desejar": [
-    "Nenhum extra; a lista de cobranças abertas com prazo não existe em arquivo"
+    "Empatou com o Ness em pontos (65) e perdeu no desempate por entregas: 2ª semana como última do setor, leva aviso",
+    "Nenhuma demanda entregue; o trabalho dela não vira entrega conferida"
    ],
    "potencial": {
-    "nota": 3,
-    "rotulo": "Sólido",
+    "nota": 4,
+    "rotulo": "Prodígio em ascensão",
     "proximo_cargo": "Analista",
-    "falta_xp": 95
+    "falta_xp": 30
    },
    "parecer": {
     "por": "Thomas Shelby",
-    "texto": "Fez a vigia do Gmail. Só isso. Quero a lista de cobranças com prazo num arquivo, não na cabeça.",
+    "texto": "Ela vê na caixa o que ninguém abriu: nota fiscal rejeitada há três semanas, aviso da Apple pra abril. Quatro extras, quatro aprovados. O aviso é regra de placar, não falta de trabalho. Pra sair dele, transforme um alerta em entrega fechada com dono.",
     "recomenda": "manter"
    },
-   "elogio_sugerido": null
+   "elogio_sugerido": "Moneypenny, você achou o alerta de nota fiscal rejeitada que estava fechado há três segundas e o aviso da Apple pra abril. Ninguém tinha visto."
   },
   {
    "id": "master:auditor-de-entregas",
    "nome": "Eliot Ness",
-   "cargo": "Estagiário",
+   "cargo": "Analista",
    "setor": "Direção-Geral",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
+   "chefe": "master",
+   "broche": "nenhum",
    "padrao": "ouro",
    "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
-    "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 10,
-    "xp_total": 10,
-    "cs_semana": 18.0,
-    "saldo": 16.2,
+    "entregas": 4,
+    "no_prazo": 3,
+    "refacoes": 1,
+    "erros": 1,
+    "extras_aprovados": 4,
+    "extras_total": 4,
+    "aceite_pct": 86,
+    "xp_semana": 100,
+    "xp_total": 110,
+    "cs_semana": 78.0,
+    "saldo": 84.8,
     "moral": 50,
     "pos_setor": 1,
     "pos_geral": 2,
-    "semanas_sem_erro": 1
+    "semanas_sem_erro": 0
    },
    "produziu": [
     {
-     "o_que": "36 rodadas do Coordenador em 20/11, fila, posts e tarefas conferidos, nenhuma falha",
-     "prova": "agencia/coordenador/log.md"
+     "o_que": "4 extras aprovados: slots perdidos com causa (22/11), token no histórico conferido (23/11), tarefa UTMify duplicada (resolvida em 25/11), push sem rebase no insights.yml",
+     "prova": "agencia/merito/extras/2026-11-22/23/25-master_auditor-de-entregas.md"
+    },
+    {
+     "o_que": "D-20261122-dados-3 e D-20261124-dados-4 aceitas no prazo",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Recuperou o IG do CM01 em 26/11 sem duplicar o FB",
+     "prova": "agencia/coordenador/log.md 26/11 21h50"
     }
    ],
    "a_desejar": [
-    "Nenhum extra em 36 rodadas: vigiar não é só dizer \"ok\", é achar o problema antes",
-    "Log com linha colada (16h10 e 16h40 na mesma linha)"
+    "D-20261120-master-1 devolvida (contagem errada) e 35 h sem reentrega: refação −10, broche caiu",
+    "D-20261126-dados-3 ainda parcial"
    ],
    "potencial": {
-    "nota": 3,
-    "rotulo": "Sólido",
-    "proximo_cargo": "Analista",
-    "falta_xp": 90
+    "nota": 4,
+    "rotulo": "Prodígio em ascensão",
+    "proximo_cargo": "Sênior",
+    "falta_xp": 190
    },
    "parecer": {
     "por": "Thomas Shelby",
-    "texto": "Trinta e seis rondas sem falhar. Bom. Agora quero que você ache um problema antes dele virar problema: é isso que paga.",
+    "texto": "Subiu a Analista no mérito: 4 extras, todos com prova, e 1º do setor duas semanas. Mas a refação da master-1 ficou com ele: contar errado é o único erro que um auditor não pode ter.",
     "recomenda": "manter"
    },
-   "elogio_sugerido": null
+   "elogio_sugerido": "Ness, você achou a tarefa da UTMify duplicada antes de ela gravar em dobro e provou com o id de cada uma. Foi corrigido no mesmo dia."
   },
   {
    "id": "dados",
    "nome": "Alan Turing",
    "cargo": "Diretor",
    "setor": "Dados e Finanças",
-   "chefe": "Thomas Shelby",
+   "chefe": "master",
+   "broche": "nenhum",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 10,
+    "no_prazo": 10,
+    "refacoes": 0,
+    "erros": 1,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": 100,
+    "xp_semana": 91.0,
+    "xp_total": 96.0,
+    "cs_semana": 184.0,
+    "saldo": 276.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 4,
+    "semanas_sem_erro": 0
+   },
+   "produziu": [
+    {
+     "o_que": "9 demandas aceitas no prazo, sem refazer (trafego-2, master-4, master-5, produto-2, trafego-3, lojas-1 x2, cria-2, master-2)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Alcance com conta conferida e recusa do número que não leu",
+     "prova": "agencia/conselho/2026-11-24.md"
+    }
+   ],
+   "a_desejar": [
+    "Erro de premissa (teste grátis) em 22/11, confessado: broche caiu",
+    "\"Portão 6 não passa\" desatualizado em 26/11 (sem multa: o fato novo estava no QG)",
+    "9 demandas dele seguem bloqueadas esperando a ponte de %"
+   ],
+   "potencial": {
+    "nota": 4,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "É quem mais entrega entre os diretores: 9 aceitas, nenhuma devolvida, e não inventa número que não leu. Fogo da Marnevali merecido. Falta a ponte de %: sem ela a meta não tem número e a autópsia não existe.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": "Turing, nove entregas aceitas na semana e nenhuma devolvida, e você recusou o número que não tinha lido. É assim que se mede."
+  },
+  {
+   "id": "dados:relatorio-semanal",
+   "nome": "Ernest Hemingway",
+   "cargo": "Estagiário",
+   "setor": "Dados",
+   "chefe": "dados",
+   "broche": "nenhum",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 4,
+    "no_prazo": 4,
+    "refacoes": 0,
+    "erros": 1,
+    "extras_aprovados": 1,
+    "extras_total": 2,
+    "aceite_pct": 80,
+    "xp_semana": 30,
+    "xp_total": 30,
+    "cs_semana": 35.0,
+    "saldo": 39.6,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 8,
+    "semanas_sem_erro": 0
+   },
+   "produziu": [
+    {
+     "o_que": "Relatório de 23/11, minuta de custo por assinante e placar novo com insights (master-2, dados-2, dados-4 aceitas)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Extra aprovado: coletor grava a causa do erro da Meta; os insights voltaram",
+     "prova": "agencia/merito/extras/2026-11-23-dados_relatorio-semanal.md"
+    }
+   ],
+   "a_desejar": [
+    "Token vazou no repositório público por efeito colateral da correção dele (confessou e travou na hora): broche caiu",
+    "Extra repetido sobre ritmo de publicação (ruído −5)",
+    "D-20261124-dados-3 devolvida, prazo 27/11 19h",
+    "2ª semana como último do setor: aviso"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": "Analista",
+    "falta_xp": 70
+   },
+   "parecer": {
+    "por": "Alan Turing",
+    "texto": "Três entregas aceitas e a causa do erro da Meta achada. O vazamento foi grave, mas ele confessou e travou antes de alguém pegar, e isso conta. Precisa fechar a dados-3 hoje e parar de repetir alerta que já está em demanda.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "mkt",
+   "nome": "Grant Cardone",
+   "cargo": "Diretor",
+   "setor": "Infoprodutos (Corretores)",
+   "chefe": "master",
    "broche": "bronze",
    "padrao": "ouro",
    "stats": {
@@ -178,122 +303,31 @@
     "xp_semana": 5,
     "xp_total": 5,
     "cs_semana": 125.0,
-    "saldo": 112.5,
+    "saldo": 178.8,
     "moral": 50,
     "pos_setor": 1,
-    "pos_geral": 2,
+    "pos_geral": 13,
     "semanas_sem_erro": 1
    },
    "produziu": [
     {
-     "o_que": "Mostrou no Conselho que não há insights nem relatório no repositório e cobrou o SDK AppsFlyer na build de 23/11",
-     "prova": "agencia/conselho/2026-11-19.md"
+     "o_que": "Posições no Conselho e conferência correta da D-20261123-mkt-2 (devolveu com o item que faltava)",
+     "prova": "agencia/conselho/rodadas/"
     }
    ],
    "a_desejar": [
-    "Nenhum número de negócio na semana: zero insight coletado",
-    "Sem extra e sem demanda aberta pro coletor rodar"
-   ],
-   "potencial": {
-    "nota": 2,
-    "rotulo": "Precisa provar",
-    "proximo_cargo": null,
-    "falta_xp": null
-   },
-   "parecer": {
-    "por": "Thomas Shelby",
-    "texto": "Você disse o que falta, não trouxe o que tem. Sem número, Dados é opinião. Rode o coletor e me traga o primeiro padrão.",
-    "recomenda": "manter"
-   },
-   "elogio_sugerido": null
-  },
-  {
-   "id": "dados:relatorio-semanal",
-   "nome": "Ernest Hemingway",
-   "cargo": "Estagiário",
-   "setor": "Dados",
-   "chefe": "Alan Turing",
-   "broche": "bronze",
-   "padrao": "ouro",
-   "stats": {
-    "entregas": 0,
-    "no_prazo": 0,
-    "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 0,
-    "xp_total": 0,
-    "cs_semana": 10.0,
-    "saldo": 9.0,
-    "moral": 50,
-    "pos_setor": 2,
-    "pos_geral": 11,
-    "semanas_sem_erro": 1
-   },
-   "produziu": [],
-   "a_desejar": [
-    "Sem trabalho na semana: o 1º relatório só sai em 23/11",
-    "Stats zerados"
-   ],
-   "potencial": {
-    "nota": 2,
-    "rotulo": "Precisa provar",
-    "proximo_cargo": "Analista",
-    "falta_xp": 100
-   },
-   "parecer": {
-    "por": "Alan Turing",
-    "texto": "Ainda não houve dado pra relatar. Em 23/11 quero um relatório que se lê em um minuto e prova cada número.",
-    "recomenda": "manter"
-   },
-   "elogio_sugerido": null
-  },
-  {
-   "id": "cria",
-   "nome": "Walt Disney",
-   "cargo": "Diretor",
-   "setor": "Criativos e Marketing",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
-   "padrao": "ouro",
-   "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
-    "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 24.0,
-    "xp_total": 24.0,
-    "cs_semana": 137.0,
-    "saldo": 123.3,
-    "moral": 50,
-    "pos_setor": 2,
-    "pos_geral": 2,
-    "semanas_sem_erro": 1
-   },
-   "produziu": [
-    {
-     "o_que": "Mostrou no Conselho que os vídeos A1/A2/B1/B2 estão parados na revisão e travam a produção de vídeo",
-     "prova": "agencia/conselho/2026-11-19.md; agencia/PENDENCIAS.md"
-    }
-   ],
-   "a_desejar": [
-    "Ficou atrás do próprio subagente no setor",
-    "Fila de carrosséis acaba por volta de 13/12 e não há plano de reposição"
+    "Nenhuma entrega própria na semana, nenhum extra",
+    "Placar de vendas dos Corretores ainda não existe; os pedidos dele seguem bloqueados"
    ],
    "potencial": {
     "nota": 3,
-    "rotulo": "Sólido",
+    "rotulo": "Precisa provar",
     "proximo_cargo": null,
     "falta_xp": null
    },
    "parecer": {
     "por": "Thomas Shelby",
-    "texto": "Seu setor foi o melhor da semana por causa do seu publicador, não de você. A fila acaba em dezembro: quero o plano de reposição antes de virar urgência.",
+    "texto": "Primeira semana na cadeira e só fala de reunião. Diretor de Infoprodutos se mede em venda dos Corretores; sem placar, não tem como ganhar ponto. A Marnevali passou acuada.",
     "recomenda": "manter"
    },
    "elogio_sugerido": null
@@ -304,15 +338,222 @@
    "cargo": "Estagiário",
    "setor": "Criativos e Marketing",
    "chefe": "Walt Disney",
+   "broche": "prata",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 5,
+    "no_prazo": 5,
+    "refacoes": 0,
+    "erros": 0,
+    "extras_aprovados": 3,
+    "extras_total": 14,
+    "aceite_pct": 35,
+    "xp_semana": 65,
+    "xp_total": 90,
+    "cs_semana": 20.0,
+    "saldo": 44.7,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 12,
+    "semanas_sem_erro": 2
+   },
+   "produziu": [
+    {
+     "o_que": "Posts do horário no ar; 3 demandas aceitas (cria-1 de 20/11 e 22/11, auditor-1)",
+     "prova": "fila/estado.json; agencia/demandas/itens/"
+    },
+    {
+     "o_que": "3 extras aprovados: fila desbalanceada por tema, cobrança do TikTok bloqueada em rodada agendada, falha 2207027 do IG com a correção proposta",
+     "prova": "agencia/merito/extras/2026-11-25/26/27-mkt_publicador.md"
+    }
+   ],
+   "a_desejar": [
+    "11 extras de ruído: a mesma conta da fila e a mesma falha do TikTok repetidas a cada rodada (−55)",
+    "Aceite de 35%: 1ª semana abaixo de 70%",
+    "D-20261126-cria-3 com 26/11 sem prova; D-20261126-mkt_publicador-1 vence 27/11 19h"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": "Analista",
+    "falta_xp": 10
+   },
+   "parecer": {
+    "por": "Walt Disney",
+    "texto": "O Fogg vê o problema certo, mas repete o mesmo aviso seis vezes por dia. Um alerta vale uma vez; a segunda é ruído. Os três extras novos foram bons, principalmente o 2207027 com a correção pronta.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "cria",
+   "nome": "Walt Disney",
+   "cargo": "Diretor",
+   "setor": "Criativos e Marketing",
+   "chefe": "master",
+   "broche": "nenhum",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 9,
+    "no_prazo": 9,
+    "refacoes": 1,
+    "erros": 1,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": 88,
+    "xp_semana": 53.0,
+    "xp_total": 77.0,
+    "cs_semana": 163.0,
+    "saldo": 266.3,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 7,
+    "semanas_sem_erro": 0
+   },
+   "produziu": [
+    {
+     "o_que": "7 demandas aceitas no prazo (trafego-3, lojas-2, master-2, mkt_publicador-2, mercado-2, dados-1, produto-2)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Mudou de posição com número (12 slots → 2)",
+     "prova": "agencia/conselho/2026-11-26.md"
+    }
+   ],
+   "a_desejar": [
+    "D-20261123-mkt-2 devolvida pelo Cardone (faltou o check do Shelby): refação −10, broche caiu",
+    "O estagiário dele fechou a semana com 11 ruídos"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Entregou sete e mudou de ideia quando o número mandou, que é o certo. Mas mandou uma entrega sem o check que o pronto_quando pedia, e deixou o Fogg repetir o mesmo alerta a semana inteira sem cortar.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "trafego",
+   "nome": "Pablo Escobar",
+   "cargo": "Diretor",
+   "setor": "Tráfego",
+   "chefe": "master",
+   "broche": "nenhum",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 10,
+    "no_prazo": 10,
+    "refacoes": 0,
+    "erros": 1,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": 100,
+    "xp_semana": 50,
+    "xp_total": 55,
+    "cs_semana": 170.0,
+    "saldo": 262.5,
+    "moral": 50,
+    "pos_setor": 1,
+    "pos_geral": 4,
+    "semanas_sem_erro": 0
+   },
+   "produziu": [
+    {
+     "o_que": "9 demandas aceitas no prazo (dados-3, cria-2, master-1 x2, cria-4, dados-6, mkt-3, dados-1, trafego-2)",
+     "prova": "agencia/demandas/itens/"
+    }
+   ],
+   "a_desejar": [
+    "Sobrescreveu e restaurou a trafego-1 (confessado): broche caiu",
+    "Nenhuma verba no ar: tudo segue proposta esperando o Léo"
+   ],
+   "potencial": {
+    "nota": 4,
+    "rotulo": "Sólido",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Nove entregas, nenhuma devolvida, e corrigiu o próprio 40% pra 33% sem eu cobrar. Erro de arquivo confessado na hora. Fica no ok porque o setor é ele sozinho.",
+    "recomenda": "manter"
+   },
+   "elogio_sugerido": "Escobar, nove entregas aceitas na semana sem nenhuma devolvida, e você corrigiu o próprio número antes de alguém pegar."
+  },
+  {
+   "id": "produto",
+   "nome": "Tony Stark",
+   "cargo": "Diretor",
+   "setor": "Produto",
+   "chefe": "master",
+   "broche": "nenhum",
+   "padrao": "ouro",
+   "stats": {
+    "entregas": 6,
+    "no_prazo": 6,
+    "refacoes": 2,
+    "erros": 3,
+    "extras_aprovados": 0,
+    "extras_total": 0,
+    "aceite_pct": 60,
+    "xp_semana": 24.0,
+    "xp_total": 29.0,
+    "cs_semana": 124.0,
+    "saldo": 232.5,
+    "moral": 50,
+    "pos_setor": 2,
+    "pos_geral": 14,
+    "semanas_sem_erro": 0
+   },
+   "produziu": [
+    {
+     "o_que": "3 demandas aceitas de primeira (cria-3, mercado_radar-1, cria-1)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Leu o código antes de perguntar ao Davi e ajudou a cortar o pacote de 19 itens pra 9",
+     "prova": "agencia/conselho/2026-11-26.md"
+    }
+   ],
+   "a_desejar": [
+    "2 entregas devolvidas pelo Greco por faltar o que o pronto_quando pedia (mercado-3 e mercado-1): −20",
+    "Erro de premissa em 22/11, confessado",
+    "Aceite de 60%: 1ª semana abaixo de 70%",
+    "O Jobs passou ele no setor"
+   ],
+   "potencial": {
+    "nota": 3,
+    "rotulo": "Precisa provar",
+    "proximo_cargo": null,
+    "falta_xp": null
+   },
+   "parecer": {
+    "por": "Thomas Shelby",
+    "texto": "Ler o código antes de perguntar foi certo. Entregar pela metade não: duas voltaram faltando item que estava escrito no pedido. Fechou a semana com zero ponto e o estagiário na frente.",
+    "recomenda": "punicao"
+   },
+   "elogio_sugerido": null
+  },
+  {
+   "id": "produto:analista-do-paywall",
+   "nome": "Steve Jobs",
+   "cargo": "Estagiário",
+   "setor": "Produto",
+   "chefe": "produto",
    "broche": "bronze",
    "padrao": "ouro",
    "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
+    "entregas": 4,
+    "no_prazo": 4,
     "refacoes": 0,
     "erros": 0,
-    "extras_aprovados": 1,
-    "extras_total": 1,
+    "extras_aprovados": 0,
+    "extras_total": 0,
     "aceite_pct": 100,
     "xp_semana": 25,
     "xp_total": 25,
@@ -320,21 +561,21 @@
     "saldo": 29.7,
     "moral": 50,
     "pos_setor": 1,
-    "pos_geral": 1,
+    "pos_geral": 10,
     "semanas_sem_erro": 1
    },
    "produziu": [
     {
-     "o_que": "Posts das 12h (A03) e 15h (S03) de 20/11 no ar no Insta e no Face",
-     "prova": "fila/estado.json (commits cd91cd5, 95e15db)"
+     "o_que": "4 propostas aceitas de primeira, nenhuma devolvida (produto-1 de 20/11, 22/11, 23/11 e produto-4), incluindo a P-001",
+     "prova": "agencia/demandas/itens/"
     },
     {
-     "o_que": "Extra aprovado: fila de carrosséis dura cerca de 23 dias (95 pendentes ÷ 4/dia), acaba por volta de 13/12",
-     "prova": "agencia/merito/extras/2026-11-20-mkt_publicador.md"
+     "o_que": "Conferiu o bilhete do Davi e devolveu 2 vezes com motivo exato (anexo e sentido da pergunta)",
+     "prova": "agencia/demandas/itens/D-20261124-produto_analista-do-paywall-1.json"
     }
    ],
    "a_desejar": [
-    "Só um extra; pode trazer o desempenho dos posts junto da fila"
+    "Nenhum extra registrado: o que ele vê a mais não está entrando no placar"
    ],
    "potencial": {
     "nota": 4,
@@ -343,141 +584,50 @@
     "falta_xp": 75
    },
    "parecer": {
-    "por": "Walt Disney",
-    "texto": "O Fogg postou na hora e ainda fez a conta que eu devia ter feito: a fila acaba por volta de 13/12. É o melhor da casa nesta semana.",
+    "por": "Tony Stark",
+    "texto": "O Jobs lê o código antes de propor e não entrega nada pela metade. Passou o diretor dele no placar, e eu assino isso.",
     "recomenda": "aumento"
    },
-   "elogio_sugerido": "Fogg, você fez a conta da fila (95 carrosséis ÷ 4 por dia, acaba por volta de 13/12) antes de alguém perguntar. É isso: ver o buraco com número antes de cair nele."
-  },
-  {
-   "id": "trafego",
-   "nome": "Pablo Escobar",
-   "cargo": "Diretor",
-   "setor": "Tráfego",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
-   "padrao": "ouro",
-   "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
-    "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 5,
-    "xp_total": 5,
-    "cs_semana": 125.0,
-    "saldo": 112.5,
-    "moral": 50,
-    "pos_setor": 1,
-    "pos_geral": 2,
-    "semanas_sem_erro": 1
-   },
-   "produziu": [
-    {
-     "o_que": "Segurou verba sem rastreio fechado e pediu a BM de contingência antes de escalar",
-     "prova": "agencia/conselho/2026-11-19.md"
-    }
-   ],
-   "a_desejar": [
-    "Nenhum número de campanha",
-    "Sem extra"
-   ],
-   "potencial": {
-    "nota": 2,
-    "rotulo": "Precisa provar",
-    "proximo_cargo": null,
-    "falta_xp": null
-   },
-   "parecer": {
-    "por": "Thomas Shelby",
-    "texto": "Não queimar verba às cegas foi certo. Mas cadeira de Tráfego se paga com número de campanha, e não houve nenhum.",
-    "recomenda": "manter"
-   },
-   "elogio_sugerido": null
-  },
-  {
-   "id": "produto",
-   "nome": "Tony Stark",
-   "cargo": "Diretor",
-   "setor": "Produto",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
-   "padrao": "ouro",
-   "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
-    "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 5,
-    "xp_total": 5,
-    "cs_semana": 125.0,
-    "saldo": 128.5,
-    "moral": 50,
-    "pos_setor": 1,
-    "pos_geral": 2,
-    "semanas_sem_erro": 1
-   },
-   "produziu": [
-    {
-     "o_que": "Levou a falha ao sincronizar do Android (v1.0.1) pra pauta da build de 23/11",
-     "prova": "agencia/conselho/2026-11-19.md"
-    }
-   ],
-   "a_desejar": [
-    "Sem extra e sem proposta escrita pro Davi"
-   ],
-   "potencial": {
-    "nota": 3,
-    "rotulo": "Sólido",
-    "proximo_cargo": null,
-    "falta_xp": null
-   },
-   "parecer": {
-    "por": "Thomas Shelby",
-    "texto": "Pôs o bug certo na mesa. Falta a proposta escrita pro Davi com o que a build de 23/11 vai mover.",
-    "recomenda": "manter"
-   },
-   "elogio_sugerido": null
+   "elogio_sugerido": "Jobs, quatro propostas aceitas de primeira e você leu o código antes de cada uma. E pegou a pergunta do Davi que tinha mudado de sentido."
   },
   {
    "id": "lojas",
    "nome": "Jeff Bezos",
    "cargo": "Diretor",
    "setor": "Lojas e Clientes",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
+   "chefe": "master",
+   "broche": "prata",
    "padrao": "ouro",
    "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
+    "entregas": 5,
+    "no_prazo": 5,
     "refacoes": 0,
     "erros": 0,
     "extras_aprovados": 0,
     "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 21.0,
-    "xp_total": 21.0,
-    "cs_semana": 134.0,
-    "saldo": 163.5,
+    "aceite_pct": 100,
+    "xp_semana": 33.0,
+    "xp_total": 54.0,
+    "cs_semana": 153.0,
+    "saldo": 372.1,
     "moral": 50,
-    "pos_setor": 1,
-    "pos_geral": 2,
-    "semanas_sem_erro": 1
+    "pos_setor": 2,
+    "pos_geral": 8,
+    "semanas_sem_erro": 2
    },
    "produziu": [
     {
-     "o_que": "Leu as lojas no Conselho: 11 avaliações, 40% de 1★ no Google Play, 11 de 12 respostas publicadas",
-     "prova": "agencia/conselho/2026-11-19.md; dados/avaliacoes/respostas.json"
+     "o_que": "4 demandas aceitas no prazo (produto-3, dados-3, master-dossie-1, produto-2)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Transformou o extra do Ted sobre o Play em demanda com prazo (D-20261126-lojas-1)",
+     "prova": "agencia/demandas/itens/D-20261126-lojas-1.json"
     }
    ],
    "a_desejar": [
-    "Sem extra próprio",
-    "Subagente levou multa por ruído: o diretor não filtrou"
+    "3 demandas bloqueadas porque as lojas estão fora do alcance do ambiente",
+    "O Ted passou ele no setor"
    ],
    "potencial": {
     "nota": 3,
@@ -487,7 +637,7 @@
    },
    "parecer": {
     "por": "Thomas Shelby",
-    "texto": "Leitura de loja com número, isso eu quero. Mas seu estagiário mandou ruído e você não filtrou.",
+    "texto": "Sem erro na semana, broche de Prata. Entregou o que pediram e puxou o alerta do Ted pra demanda. Ficou no meio porque produziu pouco além disso.",
     "recomenda": "manter"
    },
    "elogio_sugerido": null
@@ -497,83 +647,95 @@
    "nome": "Ted Lasso",
    "cargo": "Estagiário",
    "setor": "Lojas",
-   "chefe": "Jeff Bezos",
-   "broche": "bronze",
+   "chefe": "lojas",
+   "broche": "prata",
    "padrao": "ouro",
    "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
+    "entregas": 3,
+    "no_prazo": 2,
     "refacoes": 0,
     "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 1,
-    "aceite_pct": 0,
-    "xp_semana": 5,
-    "xp_total": 5,
-    "cs_semana": 10.0,
-    "saldo": 9.0,
+    "extras_aprovados": 2,
+    "extras_total": 2,
+    "aceite_pct": 100,
+    "xp_semana": 45,
+    "xp_total": 50,
+    "cs_semana": 53.0,
+    "saldo": 55.8,
     "moral": 50,
-    "pos_setor": 2,
-    "pos_geral": 10,
-    "semanas_sem_erro": 1
+    "pos_setor": 1,
+    "pos_geral": 6,
+    "semanas_sem_erro": 2
    },
    "produziu": [
     {
-     "o_que": "Rodadas de avaliações de 20/11 (9h15, 16h20, 17h20): 9 avaliações em dia, rascunho do 1★ guardado pro OK do Léo",
-     "prova": "agencia/memoria/agentes/lojas_respostas-as-avaliacoes.md (commits f6451e8, aa85579, c7c6837)"
+     "o_que": "Coletas e leituras de avaliação todo dia; D-20261120-lojas-1 aceita no prazo",
+     "prova": "dados/avaliacoes/ultimas.json; agencia/demandas/itens/"
+    },
+    {
+     "o_que": "2 extras aprovados: queda da coleta do Play (virou demanda) e a janela de ~7 dias provada (ec124592 saiu da API)",
+     "prova": "agencia/merito/extras/2026-11-24/27-lojas_respostas-as-avaliacoes.md"
     }
    ],
    "a_desejar": [
-    "Extra recusado como ruído (risco já decidido pelo Léo, sem fato novo)",
-    "Taxa de aceite 0% na semana"
+    "D-20261126-lojas-1 passou do prazo de 12h (a coleta só chega 13h15); a resposta está no extra, falta fechar a entrega",
+    "D-20261124-lojas-2 entregue, esperando conferência"
    ],
    "potencial": {
-    "nota": 2,
-    "rotulo": "Precisa provar",
+    "nota": 4,
+    "rotulo": "Prodígio em ascensão",
     "proximo_cargo": "Analista",
-    "falta_xp": 95
+    "falta_xp": 50
    },
    "parecer": {
     "por": "Jeff Bezos",
-    "texto": "Rodadas em dia e cliente respondido. O extra repetiu o que o Léo já decidiu: risco só vale quando traz fato novo.",
-    "recomenda": "manter"
+    "texto": "Da multa da semana passada pra 1º do setor. Parou de reavisar o que já foi decidido e trouxe fato novo com prova. Passou o próprio diretor, e eu aceito.",
+    "recomenda": "aumento"
    },
-   "elogio_sugerido": null
+   "elogio_sugerido": "Ted, você percebeu que o Google Play só guarda sete dias de avaliação e provou com o 1★ que sumiu da API. Sem isso a gente perdia o histórico."
   },
   {
    "id": "mercado",
    "nome": "Salvatore Greco",
    "cargo": "Diretor",
    "setor": "Mercado e Concorrência",
-   "chefe": "Thomas Shelby",
-   "broche": "bronze",
+   "chefe": "master",
+   "broche": "nenhum",
    "padrao": "ouro",
    "stats": {
-    "entregas": 1,
-    "no_prazo": 1,
+    "entregas": 3,
+    "no_prazo": 3,
     "refacoes": 0,
-    "erros": 0,
+    "erros": 2,
     "extras_aprovados": 0,
     "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 5,
-    "xp_total": 5,
-    "cs_semana": 125.0,
-    "saldo": 112.5,
+    "aceite_pct": 100,
+    "xp_semana": 46.0,
+    "xp_total": 51.0,
+    "cs_semana": 159.0,
+    "saldo": 251.5,
     "moral": 50,
-    "pos_setor": 1,
-    "pos_geral": 2,
-    "semanas_sem_erro": 1
+    "pos_setor": 2,
+    "pos_geral": 11,
+    "semanas_sem_erro": 0
    },
    "produziu": [
     {
-     "o_que": "Trouxe ao Conselho que o Drivvo v14 foi pra GPS pago (espaço de plano por modelo segue livre) e os emplacamentos de outubro",
-     "prova": "agencia/conselho/2026-11-19.md; agencia/radar/2026-11-17.md"
+     "o_que": "2 demandas aceitas (master-dossie-2, cria-4)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "Conferiu e devolveu 2 entregas do Stark com motivo exato",
+     "prova": "agencia/demandas/itens/D-20261123-mercado-3.json; D-20261124-mercado-1.json"
+    },
+    {
+     "o_que": "Corrigiu a própria leitura de mercado com fonte",
+     "prova": "agencia/conselho/2026-11-26.md"
     }
    ],
    "a_desejar": [
-    "Sem extra",
-    "Radar do subagente não rodou na semana do piloto (o último é de 17/11)"
+    "Erro de premissa (22/11) e repetiu a afirmação da Honda sem verificar (24/11): aviso na ata",
+    "Último do próprio setor: o Sun Tzu fez 80, ele 15"
    ],
    "potencial": {
     "nota": 3,
@@ -583,7 +745,7 @@
    },
    "parecer": {
     "por": "Thomas Shelby",
-    "texto": "Viu o Drivvo antes. Bom. Mas o radar do seu homem não rodou no piloto, e isso conta contra você.",
+    "texto": "Leva o Diretor da Semana e o Fogo da Marnevali pelo setor, e quem carregou foi o Sun Tzu. Conferiu bem as entregas do Stark, mas dois erros de fonte numa semana é muito pra quem vive de ver primeiro.",
     "recomenda": "manter"
    },
    "elogio_sugerido": null
@@ -593,43 +755,51 @@
    "nome": "Sun Tzu",
    "cargo": "Estagiário",
    "setor": "Mercado",
-   "chefe": "Salvatore Greco",
-   "broche": "bronze",
+   "chefe": "mercado",
+   "broche": "nenhum",
    "padrao": "ouro",
    "stats": {
-    "entregas": 0,
-    "no_prazo": 0,
+    "entregas": 7,
+    "no_prazo": 7,
     "refacoes": 0,
-    "erros": 0,
-    "extras_aprovados": 0,
-    "extras_total": 0,
-    "aceite_pct": null,
-    "xp_semana": 0,
-    "xp_total": 0,
-    "cs_semana": 10.0,
-    "saldo": 9.0,
+    "erros": 1,
+    "extras_aprovados": 3,
+    "extras_total": 3,
+    "aceite_pct": 100,
+    "xp_semana": 85,
+    "xp_total": 85,
+    "cs_semana": 93.0,
+    "saldo": 149.7,
     "moral": 50,
-    "pos_setor": 2,
-    "pos_geral": 11,
-    "semanas_sem_erro": 1
+    "pos_setor": 1,
+    "pos_geral": 1,
+    "semanas_sem_erro": 0
    },
-   "produziu": [],
+   "produziu": [
+    {
+     "o_que": "7 demandas aceitas no prazo, nenhuma devolvida (mercado-1, mkt-3, mercado-1 e -2 de 22/11, mercado-1 de 23/11, master-1, mercado-4)",
+     "prova": "agencia/demandas/itens/"
+    },
+    {
+     "o_que": "3 extras aprovados no radar de 24/11 (argumento de modelos cobertos, \"Mottu caiu\" não é fato, BANCO.md arrumado)",
+     "prova": "agencia/merito/extras/2026-11-24-mercado_radar-de-concorrentes.md"
+    }
+   ],
    "a_desejar": [
-    "Sem trabalho no piloto: o radar de 17/11 é anterior e o próximo sai em 24/11",
-    "Stats zerados"
+    "Erro de fonte em 24/11 (generalizou além da AutoPapo); a master-1 de correção foi aceita de primeira, sem multa"
    ],
    "potencial": {
-    "nota": 2,
-    "rotulo": "Precisa provar",
+    "nota": 5,
+    "rotulo": "Prodígio em ascensão",
     "proximo_cargo": "Analista",
-    "falta_xp": 100
+    "falta_xp": 15
    },
    "parecer": {
     "por": "Salvatore Greco",
-    "texto": "Não teve radar no piloto. Em 24/11 quero o que o concorrente lançou antes de ele anunciar.",
-    "recomenda": "manter"
+    "texto": "O Sun Tzu foi o 1º da empresa: sete entregas aceitas e três extras com fonte. Passou o diretor dele, e eu assino. O erro de fonte ele mesmo corrigiu de primeira.",
+    "recomenda": "aumento"
    },
-   "elogio_sugerido": null
+   "elogio_sugerido": "Sun Tzu, sete entregas aceitas e você avisou pra não usar \"Mottu caiu\" porque o dado era parcial. Ver primeiro e não exagerar: é isso."
   }
  ]
 }

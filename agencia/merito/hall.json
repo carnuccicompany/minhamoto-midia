@@ -1,10 +1,10 @@
 {
  "semana": {
-  "id": "cria",
-  "nome": "Walt Disney",
-  "simbolo": "castelo",
-  "motivo": "Criativos e Marketing foi o setor que mais desenrolou com prova: posts das 12h e 15h de 20/11 no ar no Insta e no Face pelo Phileas Fogg, na hora e o único extra aprovado da semana (fila de carrosséis acaba por volta de 13/12, conta conferida).",
-  "data": "2026-11-20"
+  "id": "mercado",
+  "nome": "Salvatore Greco",
+  "simbolo": "luneta",
+  "motivo": "Mercado e Concorrência foi o setor que mais desenrolou com prova: 95 pontos, 9 demandas aceitas sem refazer (7 do Sun Tzu, 2 do Greco) e os 3 extras do radar aprovados. O título é do setor; quem segurou o placar foi o Sun Tzu, e o Greco levou dois erros de fonte na semana.",
+  "data": "2026-11-27"
  },
  "mes": null,
  "historico": [
@@ -15,6 +15,14 @@
    "simbolo": "castelo",
    "motivo": "Criativos e Marketing foi o setor que mais desenrolou com prova: posts das 12h e 15h de 20/11 no ar no Insta e no Face pelo Phileas Fogg, na hora e o único extra aprovado da semana (fila de carrosséis acaba por volta de 13/12, conta conferida).",
    "data": "2026-11-20"
+  },
+  {
+   "semana": "2026-11-27",
+   "id": "mercado",
+   "nome": "Salvatore Greco",
+   "simbolo": "luneta",
+   "motivo": "Mercado e Concorrência foi o setor que mais desenrolou com prova: 95 pontos, 9 demandas aceitas sem refazer (7 do Sun Tzu, 2 do Greco) e os 3 extras do radar aprovados. O título é do setor; quem segurou o placar foi o Sun Tzu, e o Greco levou dois erros de fonte na semana.",
+   "data": "2026-11-27"
   }
  ]
 }

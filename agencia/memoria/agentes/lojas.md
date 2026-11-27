@@ -91,3 +91,13 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - **Conquista:** Nota subiu; precisa de histórico + nota oficial do Console como base.
 - **Item:** Creed Aventus.
 - **Regra:** só vale o que tem prova; fonte bloqueada vira "a conferir", nunca fato.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 33.0 (6 lançamentos) · multas: C$ 0
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 153.0 · XP +33.0 (total 54.0) · saldo depois do pôquer C$ 372.1
+- broche: bronze → prata (2 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 8º na empresa · aceite: 100%
+- parecer (Thomas Shelby): Sem erro na semana, broche de Prata. Entregou o que pediram e puxou o alerta do Ted pra demanda. Ficou no meio porque produziu pouco além disso. Recomenda: manter.
+- pets: humor ok — a Marnevali passou de olho; o Carnucci não parou (sem gorjeta).
+- pra subir: achar trabalho que mova número com as lojas fora do alcance (ex.: histórico próprio do Play).

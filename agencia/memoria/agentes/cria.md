@@ -121,3 +121,13 @@ Setor: Criativos · Cargo: Diretor · Playbook: agencia/diretoria/04-criativos.m
 
 ## 2026-11-26 · Resposta do Shelby
 - A1/B1 + dia 1 viraram DECISAO 1 (2 anuncios no dia 1, nao 12: sua propria r2). Fogg deve a causa do 18h (cria-3, P1 27/11 19h). Perguntas sobre landing, iOS/Android e Instagram viraram PERGUNTA 2.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 53.0 (9 lançamentos) · multas: C$ -10 — refação por erro dele: D-20261123-mkt-2 devolvida pelo Cardone (faltou o check de promessa do Shelby, item do pronto_quando)
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 163.0 · XP +53.0 (total 77.0) · saldo depois do pôquer C$ 266.3
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 7º na empresa · aceite: 88%
+- parecer (Thomas Shelby): Entregou sete e mudou de ideia quando o número mandou, que é o certo. Mas mandou uma entrega sem o check que o pronto_quando pedia, e deixou o Fogg repetir o mesmo alerta a semana inteira sem cortar. Recomenda: manter.
+- pets: humor ok — a Marnevali passou de olho; o Carnucci não parou (sem gorjeta).
+- pra subir: entregar tudo com o check pedido no pronto_quando e cortar o ruído do Fogg.

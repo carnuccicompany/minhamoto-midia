@@ -119,3 +119,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - fiz: entreguei D-20261126-dados-1 (URL modelo `?utm_source=meta-ads&utm_medium=t05-direcao&utm_campaign=mm_meta_ic_lp_2611&utm_content=CR-org-11`; pixel novo ligado em 18/11; 1º anúncio e teste de clique iOS/Android "sem dado", Léo/Davi liberam) e D-20261126-cria-1 (12 slots, A1=CR-org-11 e B1=CR-org-12 primeiro, 10 depois da 1ª leitura; corte em 2 níveis em %: IC só pausa, assinante pago decide; tudo "sem histórico"). Nenhuma demanda nova criada.
 - aprendi: com 2 anúncios a mediana é a média, então "200% da mediana" nunca dispara; na Onda 1 o nível 1 usa a razão entre os dois. Zero assinante em iOS é "sem leitura" (atribuição parcial), não motivo de pausa. `pid=meta-ads` é nome custom no AppsFlyer; só o teste do passo 3 mostra como aparece. Mudei da r2: os 12 slots são mapa de IDs/links, o dia 1 roda 2.
 - pendente: sim do Léo na DECISÃO 1, data do 1º anúncio, Android no dia 1 (sim/não), SDK na build (Davi), teste de clique, nomes; sem número de campanha (6ª rodada).
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 50 (10 lançamentos) · multas: C$ 0
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 170.0 · XP +50 (total 55) · saldo depois do pôquer C$ 262.5
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 4º na empresa · aceite: 100%
+- parecer (Thomas Shelby): Nove entregas, nenhuma devolvida, e corrigiu o próprio 40% pra 33% sem eu cobrar. Erro de arquivo confessado na hora. Fica no ok porque o setor é ele sozinho. Recomenda: manter.
+- pets: humor ok — a Marnevali passou de olho; o Carnucci não parou (sem gorjeta).
+- pra subir: manter zero devolução e levar a 1ª campanha ao Léo com custo por assinante pago.

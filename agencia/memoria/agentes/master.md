@@ -73,3 +73,12 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - aprendi: (1) fato novo do QG (compra chega na Meta) ficou numa LICOES e dois diretores escreveram o contrario na r1/r2: ler os commits do dia na ronda, nao so as falas. (2) O Stark reduz pergunta ao Davi lendo o codigo: antes de levar pacote, ler o que o codigo ja responde. (3) Pergunta que morre por relogio (1★, janela de 7 dias) nao vale sair do bilhete. (4) So o Cardone trouxe iniciativa pro norte da gringa de 25/11: cobrar em toda ronda.
 - recebi: 7 r1, 3 r2 e 22 demandas de 26/11.
 - pendente: levar DECISAO 1 a 3 e PERGUNTA 1 a 3 (bilhete de sexta 27/11, 9h; pergunta 1 hoje se o QG alcancar o Leo); ponte de % do QG (resumo-pct.json nao existe, 3 dias); conferir 27/11: Turing master-1, Fogg cria-3, prova do 1★ na coleta; Folha de sexta: minha repeticao (transporte do pacote), elogios Disney, Greco, Turing, Stark e Jobs.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 200 · bônus: +C$ 62.7 (1 lançamentos) · multas: C$ -20 — refação por erro meu: pacote do Davi (D-20261120-dados-2, P1) não transportado em 21, 23, 24 e 26/11; a D-20261124-produto_analista-do-paywall-1 voltou 2x (anexo faltando, pergunta com sentido trocado); refação por erro meu: D-20261126-dados-2 devolvida pelo Turing (PENDENCIAS.md l.105 com o critério errado)
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 242.7 · XP +62.7 (total 69.7) · saldo depois do pôquer C$ 457.5
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: fora do ranking (quem avalia é o Léo e o Davi) · aceite: 82%
+- parecer (Léo e Davi): Cabe ao Léo e ao Davi. Recomenda: manter.
+- pra subir: transportar o que é P1 no mesmo dia e entregar a ponte de % pra meta ter número.

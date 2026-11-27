@@ -75,3 +75,13 @@ Setor: Mercado · Cargo: Diretor · Playbook: agencia/diretoria/11-mercado.md
 
 ## 2026-11-26 · Demanda do Shelby (D-20261126-master-2)
 - Norte da gringa (25/11): mapa de entrada do MinhaMoto em Portugal, EUA e Reino Unido, so pesquisa, P3 03/12. D-20261120-mercado-2 cancelada por superada (pergunta E do pacote do Davi guarda a confirmacao da 1.0.2). Variante CG 160 da landing: 2o teste, depois da 1a leitura.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 31.0 (4 lançamentos) · multas: C$ 0
+- gorjetas dos pets: Fogo da Marnevali, Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 159.0 · XP +46.0 (total 51.0) · saldo depois do pôquer C$ 251.5
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 11º na empresa · aceite: 100%
+- parecer (Thomas Shelby): Leva o Diretor da Semana e o Fogo da Marnevali pelo setor, e quem carregou foi o Sun Tzu. Conferiu bem as entregas do Stark, mas dois erros de fonte numa semana é muito pra quem vive de ver primeiro. Recomenda: manter.
+- pets: humor foda — a Marnevali soltou fogo pro alto na passagem e o Carnucci subiu na mesa pra ganhar carinho (Fogo + Carinho: +15 XP, C$ 8).
+- pra subir: zero erro de fonte; voltar a passar o Sun Tzu no placar.

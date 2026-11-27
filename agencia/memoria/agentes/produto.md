@@ -107,3 +107,13 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 
 ## 2026-11-26 · Entregue pelo Shelby (D-20261126-produto-1)
 - Pacote do Davi v3: seus achados do codigo de 25/11 cortaram 19 itens para 9 perguntas (A a I); A (1.0.2 nas lojas, que dia) vai primeiro e o Leo responde olhando as lojas. Eventos de funil = pergunta B. Anexo da P-001 incluido.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 120 · bônus: +C$ 24.0 (5 lançamentos) · multas: C$ -20 — refação por erro dele: D-20261123-mercado-3 devolvida pelo Greco (sem print do selo e sem versão do app); refação por erro dele: D-20261124-mercado-1 devolvida pelo Greco (faltaram anos da Biz 110i, versão por modelo e a referência)
+- gorjetas dos pets: nenhuma · elogio do dono: nenhum
+- semana: C$ 124.0 · XP +24.0 (total 29.0) · saldo depois do pôquer C$ 232.5
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 2º no setor · 14º na empresa · aceite: 60%
+- parecer (Thomas Shelby): Ler o código antes de perguntar foi certo. Entregar pela metade não: duas voltaram faltando item que estava escrito no pedido. Fechou a semana com zero ponto e o estagiário na frente. Recomenda: punicao.
+- pets: humor fraco — a Marnevali passou acuadinha, de cabeça baixa; o Carnucci não foi e a Fartuzzi encarou mais tempo (sem multa, fica registrado).
+- pra subir: reler o pronto_quando antes de entregar: zero devolução na semana que vem.

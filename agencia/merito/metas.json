@@ -13,6 +13,12 @@
    "status": "aguardando",
    "pct": null,
    "nota": "Folha de 20/11: sem número, sem subida nem descida de padrão por meta."
+  },
+  {
+   "semana": "2026-11-27",
+   "status": "sem % lida",
+   "pct": null,
+   "nota": "Folha de 27/11: meta ativa, mas a % não chegou ao repositório (ponte do carnucci-dados pendente). Sem subida nem descida de padrão por meta; sem autópsia."
   }
  ],
  "degrau": {

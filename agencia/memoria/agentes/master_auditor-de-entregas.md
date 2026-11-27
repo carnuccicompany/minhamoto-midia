@@ -51,3 +51,14 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - fiz: bloco avaliacoes_play em coordenador/status.json + linha no log; ec124592 presente: sim na coleta 16:14Z. Entrega em demandas/entregas/D-20261126-dados-3.md (parcial).
 - aprendi: ultimas.json guarda so a coleta mais recente; historico por coleta so existe se o Coordenador registrar a cada rodada.
 - pendente: rodadas de 27/11 e 28/11 acrescentarem coletas e a linha.
+
+## 2026-11-27 17:47 · Folha de sexta (feedback do Shelby)
+- salário: C$ 10 · bônus: +C$ 75 (7 lançamentos) · multas: C$ -10 — refação por erro dele: D-20261120-master-1 devolvida (afirmou 23 arquivos, eram 24; quadro velho) e sem reentrega em 35 h; o Shelby fechou
+- gorjetas dos pets: Carinho do Carnucci · elogio do dono: nenhum
+- semana: C$ 78.0 · XP +100 (total 110) · saldo depois do pôquer C$ 84.8
+- broche: bronze → nenhum (0 semana(s) sem erro) · padrão: Ouro (meta sem % lida)
+- ranking: 1º no setor · 2º na empresa · aceite: 86%
+- parecer (Thomas Shelby): Subiu a Analista no mérito: 4 extras, todos com prova, e 1º do setor duas semanas. Mas a refação da master-1 ficou com ele: contar errado é o único erro que um auditor não pode ter. Recomenda: manter.
+- PROMOVIDO a Analista (passou 100 XP). Salário de Analista (C$ 25) a partir da próxima folha.
+- liderança: 1º do setor 2 semanas seguidas, +20 XP.
+- pra subir: zero refação: conferir contagem contra itens/ antes de entregar; fechar a dados-3. Faltam 190 XP pra Sênior.
