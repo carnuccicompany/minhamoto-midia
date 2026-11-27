@@ -53,3 +53,8 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - fiz: resumo da caixa de 26/11; 3 assuntos novos encaminhados (Turing, Bezos, Stark), nenhum rascunho. Correspondência do Briefing atualizada no repositório privado (detalhes só lá).
 - aprendi: notificação agora começa com o selo de agencia/canal/NOTIFICACOES.md. Aviso de SDK da Apple chega a cada build; não conto mais como novo.
 - pendente: lista de cobranças abertas mantida em briefing/correspondencia.json (repositório privado).
+
+## 2026-11-27 07:55
+- fiz: resumo da caixa de 27/11; 5 assuntos novos encaminhados (Bezos, Escobar, Stark), 1 rascunho pronto. Correspondência do Briefing atualizada no repositório privado (detalhes só lá).
+- aprendi: pedido de "incluir modelo" pode ser de moto que já está no app; conferir o catálogo no minhamotooficial antes de rascunhar.
+- pendente: cobranças abertas em briefing/correspondencia.json (privado).
