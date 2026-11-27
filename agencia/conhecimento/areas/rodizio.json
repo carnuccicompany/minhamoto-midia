@@ -1,25 +1,118 @@
 {
-  "atualizado": "2026-11-25",
-  "regra": "Toda rodada treina 3 setores: os treinados há mais tempo (null = nunca). Tráfego, criativos e infoprodutos têm prioridade enquanto houver teste de criativo rodando (EXP-20261123-1). Tema de aula nunca se repete.",
-  "prioridade_enquanto_teste_de_criativo": ["trafego", "criativos", "infoprodutos"],
+  "atualizado": "2026-11-27",
+  "regra": "Toda rodada treina 3 setores: os treinados há mais tempo (null = nunca). Tráfego, criativos e infoprodutos têm prioridade enquanto houver teste de criativo rodando (EXP-20261123-1). Tema de aula nunca se repete. Prioridade dos 3 vale com o teste RODANDO; com EXP-20261123-1 ainda 'planejado' (27/11), o rodízio cobriu os nunca treinados.",
+  "prioridade_enquanto_teste_de_criativo": [
+    "trafego",
+    "criativos",
+    "infoprodutos"
+  ],
   "setores": {
-    "trafego":        {"quem": ["trafego"], "ultimo_treino": "2026-11-25", "temas": ["2026-11-25 teste de criativo na Meta pós-Andromeda"]},
-    "criativos":      {"quem": ["cria", "mkt:publicador"], "ultimo_treino": "2026-11-25", "temas": ["2026-11-25 retenção de vídeo: taxa de gancho, retenção e iteração de ganchos"]},
-    "infoprodutos":   {"quem": ["mkt"], "ultimo_treino": "2026-11-25", "temas": ["2026-11-25 valor médio do pedido: order bump, upsell 1 clique, downsell, funil autoliquidável"]},
-    "direcao-geral":  {"quem": ["master", "master:secretario-do-conselho", "master:auditor-de-entregas"], "ultimo_treino": null, "temas": []},
-    "dados-financas": {"quem": ["dados", "dados:relatorio-semanal"], "ultimo_treino": null, "temas": []},
-    "produto":        {"quem": ["produto", "produto:analista-do-paywall"], "ultimo_treino": null, "temas": []},
-    "lojas":          {"quem": ["lojas", "lojas:respostas-as-avaliacoes"], "ultimo_treino": null, "temas": []},
-    "mercado":        {"quem": ["mercado", "mercado:radar-de-concorrentes"], "ultimo_treino": null, "temas": []}
+    "trafego": {
+      "quem": [
+        "trafego"
+      ],
+      "ultimo_treino": "2026-11-25",
+      "temas": [
+        "2026-11-25 teste de criativo na Meta pós-Andromeda"
+      ]
+    },
+    "criativos": {
+      "quem": [
+        "cria",
+        "mkt:publicador"
+      ],
+      "ultimo_treino": "2026-11-25",
+      "temas": [
+        "2026-11-25 retenção de vídeo: taxa de gancho, retenção e iteração de ganchos"
+      ]
+    },
+    "infoprodutos": {
+      "quem": [
+        "mkt"
+      ],
+      "ultimo_treino": "2026-11-25",
+      "temas": [
+        "2026-11-25 valor médio do pedido: order bump, upsell 1 clique, downsell, funil autoliquidável"
+      ]
+    },
+    "direcao-geral": {
+      "quem": [
+        "master",
+        "master:secretario-do-conselho",
+        "master:auditor-de-entregas"
+      ],
+      "ultimo_treino": "2026-11-27",
+      "temas": [
+        "2026-11-27 classificação etária e ECA Digital pra app de assinatura no Brasil"
+      ]
+    },
+    "dados-financas": {
+      "quem": [
+        "dados",
+        "dados:relatorio-semanal"
+      ],
+      "ultimo_treino": null,
+      "temas": []
+    },
+    "produto": {
+      "quem": [
+        "produto",
+        "produto:analista-do-paywall"
+      ],
+      "ultimo_treino": "2026-11-27",
+      "temas": [
+        "2026-11-27 paywall pago direto: o que mostrar antes de cobrar e o que a tela que cobra tem que ter"
+      ]
+    },
+    "lojas": {
+      "quem": [
+        "lojas",
+        "lojas:respostas-as-avaliacoes"
+      ],
+      "ultimo_treino": "2026-11-27",
+      "temas": [
+        "2026-11-27 páginas de produto personalizadas (iOS) e fichas personalizadas (Play) pra tráfego pago"
+      ]
+    },
+    "mercado": {
+      "quem": [
+        "mercado",
+        "mercado:radar-de-concorrentes"
+      ],
+      "ultimo_treino": null,
+      "temas": []
+    }
   },
   "proximos_temas_sugeridos": {
-    "trafego": ["escada de evento e sinal de compra no app (SKAN/AdAttributionKit + AppsFlyer)", "incrementalidade e conversion lift com verba pequena"],
-    "criativos": ["estrutura de criativo de app de assinatura que converte (tela em ação)", "UGC e roteiro de expert: direção de gravação"],
-    "infoprodutos": ["página de vendas low ticket: estrutura e velocidade", "carrinho abandonado e upsell (recuperação de Pix cancelada pelo Léo em 25/11, não treinar)"],
-    "direcao-geral": ["classificação etária da Apple com regras do Brasil (prazo 12/01/2027)"],
-    "dados-financas": ["LTV e payback de assinatura com pouca base"],
-    "produto": ["paywall pago direto: o que o top 1% mostra antes de cobrar"],
-    "lojas": ["páginas de produto personalizadas (iOS) e fichas personalizadas (Play) pra tráfego pago"],
-    "mercado": ["Jobs to be Done do motoqueiro com dados de avaliações"]
+    "trafego": [
+      "escada de evento e sinal de compra no app (SKAN/AdAttributionKit + AppsFlyer)",
+      "incrementalidade e conversion lift com verba pequena"
+    ],
+    "criativos": [
+      "estrutura de criativo de app de assinatura que converte (tela em ação)",
+      "UGC e roteiro de expert: direção de gravação"
+    ],
+    "infoprodutos": [
+      "página de vendas low ticket: estrutura e velocidade",
+      "carrinho abandonado e upsell (recuperação de Pix cancelada pelo Léo em 25/11, não treinar)"
+    ],
+    "direcao-geral": [
+      "CDC e direito de arrependimento em infoproduto e assinatura (reembolso, Procon)",
+      "reforma tributária CBS/IBS pra infoproduto e app (2027)"
+    ],
+    "dados-financas": [
+      "LTV e payback de assinatura com pouca base"
+    ],
+    "produto": [
+      "carência e recuperação de pagamento recusado (billing retry) no Android",
+      "mensagem de retenção no cancelamento (Apple e Play)"
+    ],
+    "lojas": [
+      "respostas a avaliações que viram nota: método e tempo",
+      "experimentos de página da loja (Play) e Product Page Optimization (iOS)"
+    ],
+    "mercado": [
+      "Jobs to be Done do motoqueiro com dados de avaliações"
+    ]
   }
 }

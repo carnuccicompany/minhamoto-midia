@@ -1,0 +1,26 @@
+{
+ "id": "D-20261127-professor-1",
+ "de": "professor",
+ "para": "produto",
+ "copia": [
+  "lojas",
+  "master"
+ ],
+ "titulo": "Proteger o paywall de 2 riscos de loja: oferta introdutória que liga 'dias grátis' sozinha e a exceção do '/mês' dentro da tela que cobra",
+ "por_que": "(1) O paywall do código de 25/11 lê o teste oferecido pela loja e passa a mostrar 'X dias grátis' / 'Começar X dias grátis' sem mudança de código (pro-producao-checkout.tsx:167 e :510; paywall-minhamoto.tsx:489 e :586) — se alguém ligar oferta introdutória na App Store Connect ou no Play, quebra a decisão do Léo 'app sem teste grátis' (decisoes.md 20–22/11). (2) A Apple (3.1.2(c), https://developer.apple.com/app-store/subscriptions/) e o Google (https://support.google.com/googleplay/android-developer/answer/9900533) exigem duração e preço de renovação em destaque na tela de assinatura: a regra do Léo 'nunca por mês' (24/11) não pode ser aplicada ao paywall nem à descrição da assinatura na loja, ou o app arrisca rejeição. Hoje o paywall está conforme. Ver areas/produto/aulas/2026-11-27-paywall-pago-direto.md e LICOES.md.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (a) pergunta sim/não pronta pro Davi conferir que nenhuma oferta introdutória/teste está ligada nas duas lojas e manter assim; (b) pergunta sim/não pro Léo registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que dentro da tela que cobra e na ficha da assinatura ficam período e renovação como as lojas exigem. Demanda vai a 'bloqueada' com bloqueio 'lider' até as respostas.",
+ "prioridade": "P1",
+ "prazo": "2026-11-28T12:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-27T12:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-27T12:00:00-03:00",
+   "quem": "professor",
+   "o_que": "criou (treino de 27/11)"
+  }
+ ]
+}

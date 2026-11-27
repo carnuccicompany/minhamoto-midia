@@ -35,6 +35,7 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`.
 - A ANPD orienta verificação etária proporcional ao risco, com mínimo de dados.
 - Lojas: a Apple bloqueia no Brasil o download de app 18+ para quem não confirmou ser adulto (desde 24/02/2026) e oferece a API Declared Age Range.
 - **Como aplicamos aqui:** MinhaMoto é app de manutenção de moto (público adulto, mas sem conteúdo proibido a menores): manter a classificação etária correta e não mirar anúncio em menor. Conferir com advogado se algum recurso novo exigir verificação.
+- **Aprofundado na aula de 27/11/2026** (`aulas/2026-11-27-classificacao-etaria-e-eca-digital.md`): tabela do Brasil na Apple (AL a A18), IARC/ClassInd no Play, régua do "acesso provável" (art. 1º), prazos 11/12/2026 (Play) e 12/01/2027 (Apple), fiscalização da ANPD a partir de jan/2027 e checklist com dono.
 
 ### Plataformas
 - Termos da Meta, TikTok, Apple e Google valem tanto quanto a lei na prática: violação derruba conta. Política de anúncio (promessa, antes/depois, dados pessoais) e diretrizes das lojas (2.3, 3.1, 5.1 da Apple) são leitura obrigatória antes de aprovar peça.
@@ -52,9 +53,9 @@ Atualizado em 24/11/2026. Antes de propor, leia `NOVIDADES.md`.
 - Lê NOVIDADES (leis, ANPD, regras das plataformas).
 
 ---
-## Índice da biblioteca completa (atualizado em 25/11/2026)
+## Índice da biblioteca completa (atualizado em 27/11/2026)
 Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
 
 | Data | Aula | Tema |
 |---|---|---|
-| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |
+| 27/11/2026 | `aulas/2026-11-27-classificacao-etaria-e-eca-digital.md` | Classificação etária (Apple e Play) e ECA Digital pra app de assinatura: o que é obrigatório, prazos, acesso provável, checklist |

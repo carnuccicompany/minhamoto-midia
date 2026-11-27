@@ -19,6 +19,7 @@ Instalação → abertura → cadastro → ativação (primeiro valor) → paywa
 - **Âncora:** mostrar o anual com o equivalente mensal; o plano que você quer vender aparece selecionado (hoje: mensal selecionado, decisão do Davi de 17/11).
 - **Momento:** paywall depois de entregar valor converte melhor que paywall seco na abertura; "valor antes do paywall" é a tese que a RevenueCat defende (17/11/2026).
 - Sem teste grátis no MinhaMoto: nunca escrever "grátis" em tela, loja ou anúncio.
+- Exigências das lojas na tela que cobra, checklist e números hard × freemium: ver `aulas/2026-11-27-paywall-pago-direto.md`.
 
 ## 4. Retenção e cancelamento
 - **Churn** mensal e retenção por coorte (mês de assinatura) são os números de produto que mais mexem no LTV.
@@ -48,9 +49,9 @@ Instalação → abertura → cadastro → ativação (primeiro valor) → paywa
 - Confere novidades da Apple, Google e RevenueCat (NOVIDADES).
 
 ---
-## Índice da biblioteca completa (atualizado em 25/11/2026)
+## Índice da biblioteca completa (atualizado em 27/11/2026)
 Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
 
 | Data | Aula | Tema |
 |---|---|---|
-| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |
+| 27/11/2026 | `aulas/2026-11-27-paywall-pago-direto.md` | Paywall pago direto: o que mostrar antes de cobrar, desenho da tela que cobra, exigências da Apple (3.1.2, HIG) e do Google, números hard × freemium, regras da casa |

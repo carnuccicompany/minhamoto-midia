@@ -14,7 +14,7 @@ Impressão na loja → visita à página → download → abertura → cadastro 
 - **Prints e vídeo:** os 3 primeiros prints decidem a maior parte. Legenda de benefício (o que a pessoa ganha) converte mais que tela crua. Mostrar o app real: print que promete o que o app não faz é motivo de rejeição.
 - **Ícone:** reconhecível em tamanho pequeno, contraste, sem texto pequeno.
 - **Testes:** Apple tem Product Page Optimization (até 3 variações de ícone, prints e vídeo) e Custom Product Pages (páginas para cada anúncio). Google Play tem experimentos de página (ícone, gráfico, prints; descrições em experimentos localizados).
-- **Como aplicamos aqui:** teste dos 3 primeiros prints com legenda de benefício nas duas lojas. Página personalizada por ângulo de anúncio quando o tráfego pago do app começar.
+- **Como aplicamos aqui:** teste dos 3 primeiros prints com legenda de benefício nas duas lojas. Página personalizada (CPP) por ângulo de anúncio, ligada pelo OneLink da landing; Android só quando houver campanha Android. Detalhe: `aulas/2026-11-27-paginas-de-produto-personalizadas.md`.
 
 ## 3. Avaliações e respostas
 - Nota e volume de avaliações pesam em conversão e em ranking. Uma nota abaixo de 4 derruba a conversão da página.
@@ -47,9 +47,9 @@ Impressão na loja → visita à página → download → abertura → cadastro 
 - Confere mudanças de diretriz da Apple e do Google (NOVIDADES).
 
 ---
-## Índice da biblioteca completa (atualizado em 25/11/2026)
+## Índice da biblioteca completa (atualizado em 27/11/2026)
 Camadas: `NUCLEO.md` (ler em toda tarefa) → este arquivo + `aulas/` (buscar o tema com grep) → `NOVIDADES.md` e `LICOES.md` (histórico com data e prova).
 
 | Data | Aula | Tema |
 |---|---|---|
-| — | (nenhuma ainda; primeira aula no próximo treino do rodízio) | — |
+| 27/11/2026 | [`aulas/2026-11-27-paginas-de-produto-personalizadas.md`](aulas/2026-11-27-paginas-de-produto-personalizadas.md) | Páginas de produto personalizadas (Apple CPP, até 70) e fichas personalizadas do Play (até 50) pra tráfego pago: limites, revisão, ligação pelo OneLink, números de referência, erros, regras da casa |
