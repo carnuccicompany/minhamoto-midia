@@ -35,8 +35,13 @@
       "quando": "2026-11-26T21:50:00-03:00",
       "quem": "master",
       "o_que": "aceita: conferi mapa, plano e 8 hipoteses contra PENDENCIAS, 07-canais e LICOES; sem R$ nem ID; limites declarados (nenhum passo de menu aberto no oficial). Sim/nao da BM Operacao vai ao Leo como DECISAO 3 do master.md de 26/11, com a ressalva de agir so em passo que ele confirme na propria tela."
+    },
+    {
+      "quando": "2026-11-27T18:10:00-03:00",
+      "quem": "master",
+      "o_que": "atualizou a entrega (seção 6): pixel antigo nas campanhas MinhaMoto corrigido, fonte oficial do compartilhamento de pixel, 3 passos urgentes, runbook de 5 passos e checklist mensal"
     }
   ],
   "pergunta": "Leo, sim ou nao: voce monta a BM de anuncios separada (Operacao, com 1 conta de reserva e 2 fatores, pixel e pagina compartilhados como parceira pela Matriz) antes das campanhas novas dos Corretores e da 1a verba do MinhaMoto? Recomendacao do Escobar: SIM; campanhas ativas da CA 01 nao sao editadas.",
-  "atualizada_em": "2026-11-26T21:50:00-03:00"
+  "atualizada_em": "2026-11-27T18:10:00-03:00"
 }
