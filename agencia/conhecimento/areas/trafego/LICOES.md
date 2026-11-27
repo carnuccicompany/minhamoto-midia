@@ -34,3 +34,8 @@ Cada acerto ou erro da casa vira lição: data · o que aconteceu · a regra · 
   - af_complete_registration → fb_mobile_complete_registration
 - UTMify NUNCA vai ver venda feita dentro do app (só web). Venda vinda da landing é atribuída por anúncio no AppsFlyer porque os botões da landing usam OneLink PL15 com as UTMs (pid/c/af_adset/af_ad) — exige UTMs nos anúncios. Pra MinhaMoto, a fonte de verdade é Meta Events Manager (dataset do app) + AppsFlyer + RevenueCat.
 - Próximo passo: quando "Compra" aparecer no dataset do app, campanha de app otimizando pra compra (o app NÃO tem teste grátis, então StartTrial nunca dispara e não serve de evento de volume; o mapeamento rc_trial_* fica sem uso. Correção do Shelby em 26/11).
+
+## 27/11 — Campanhas MinhaMoto estavam otimizando errado (corrigido)
+- Os 18 conjuntos ativos otimizavam "Compra no site" no **Pixel MinhaMoto ANTIGO** (4034…) e tinham "Complementos do navegador: WhatsApp" ligado (era daí que vinha o número do Léo nos anúncios). Resultado: "Aprendizado limitado", zero sinal.
+- Correção (Léo autorizou): pausados os 18; duplicados com Pixel MinhaMoto Novo + evento **Iniciar finalização da compra** (clique no botão da loja) + complementos do navegador desligados + sem recomendações da Meta; início 28/11 06h.
+- Regra: MinhaMoto pela landing SEMPRE otimiza IC no Pixel Novo; nunca Compra (a compra acontece no app). Na duplicação, desmarcar todas as "recomendações" (orçamento, Advantage+, ligações/WhatsApp) e conferir Destinos personalizados.

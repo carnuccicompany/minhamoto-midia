@@ -2,7 +2,7 @@
 
 - **O que é:** app de assinatura pra motociclista cuidar da moto: plano de revisão por modelo e km, histórico de manutenção, saúde da moto (em dia, atenção, vencido, acompanhamento, sem histórico), combustível e consumo, documentos, gastos, várias motos na garagem, notificações de marcos.
 - **Onde:** App Store (id 6815447825) e Google Play (com.carnuccicompany.minhamoto).
-- **Oferta:** "por R$19,90" (sem dizer "por mês" quando citar no vídeo). Descontos em trimestral, semestral e anual. **Sem teste grátis.** Nunca "vitalício" (oferta antiga).
+- **Oferta:** "por R$19,90" (sem dizer "por mês" quando citar no vídeo). Descontos em trimestral, semestral e anual. **Tem teste grátis de 7 dias** (confirmado 27/11: landing diz "7 dias grátis" e o RevenueCat mostra testes; ~~sem teste grátis~~ era a regra antiga). Nunca "vitalício" (oferta antiga).
 - **Público:** motociclista brasileiro do dia a dia: trabalha de moto (motoboy, entregador), usa pra se locomover, cuida da própria moto. Simples, direto, odeia enrolação.
 - **Meta da empresa:** novos assinantes pagos por semana (degrau atual: 100/semana; alvo império 700).
 - **CTA fixo das legendas:** "📲 Baixe agora o MinhaMoto na App Store e no Google Play."

@@ -108,3 +108,5 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - 27/11 (Léo e Davi): a casa vai aprender com vídeos e livros mandados por eles, pra replicar igual. Método em agencia/conhecimento/estudos/README.md; vale pra todos os agentes.
 
 - 27/11 (Léo): resposta de WhatsApp pra lead do MinhaMoto: NADA de abertura tipo "Opa, tudo certo? Aqui é do MinhaMoto" e nada de mensagem longa. Responder direto o que a pessoa perguntou ("como funciona") em 1–2 frases + link de teste (OneLink pid=whatsapp). Preço só se perguntarem.
+
+- 27/11 (Léo): campanhas MinhaMoto refeitas: Pixel Novo + IC + sem WhatsApp, início 28/11 6h; os antigos pausados. Teste de fogo dos agentes remarcado pra 28/11 15h.
