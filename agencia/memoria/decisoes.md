@@ -104,3 +104,5 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Biblioteca por setor em `agencia/conhecimento/areas/<setor>/`: FUNDAMENTOS (frameworks + como aplicamos aqui), FONTES (oficial primeiro) e NOVIDADES (últimos 90 dias, com fonte e data; sem fonte não entra).
 - Cada playbook ganhou a seção "Biblioteca": ler NOVIDADES antes de propor e FUNDAMENTOS quando o tema aparecer, só o que tocar a tarefa.
 - Atualização semanal (terça cedo): texto pronto em `areas/ATUALIZACAO.md`; a tarefa só é criada com o OK do Léo.
+
+- 27/11 (Léo e Davi): a casa vai aprender com vídeos e livros mandados por eles, pra replicar igual. Método em agencia/conhecimento/estudos/README.md; vale pra todos os agentes.
