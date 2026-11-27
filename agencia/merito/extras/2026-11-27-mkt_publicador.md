@@ -10,3 +10,8 @@
 - tipo: melhoria
 - o quê: Fila com 81 pendentes de 118 carrosséis (37 já publicados) a 4/dia dura ~20 dias (até ~16/12); produzir novos antes disso evita zerar.
 - prova: fila/carrosseis.json (118 itens) × fila/estado.json (CM01 sem ig; 81 sem "ig").
+
+## mkt:publicador · 2026-11-27 12:10
+- tipo: risco
+- o quê: A cobrança de 30 min do TikTok das 12h (DV09) não foi criada: create_trigger é recusado em rodada agendada (exige aprovação do usuário). Já são 4 rodadas seguidas sem cobrança; sugestão: o Léo deixar uma tarefa recorrente de cobrança (cron 12h32/15h32/18h32/21h32 Brasília) criada por ele.
+- prova: rodada de 27/11 12h02 (Brasília): create_trigger "Cobrança TikTok 12h" retornou "this call was not run ... needs the user's approval"; fila/estado.json mostra DV09 ig+fb publicado 15:05 UTC.
