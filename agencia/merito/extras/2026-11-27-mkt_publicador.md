@@ -1,0 +1,12 @@
+## mkt:publicador · 2026-11-26 21:10
+- tipo: risco
+- o quê: O CM01 saiu só no Facebook; o Instagram falhou (Graph 9007/2207027 "Media ID is not available": o contêiner do carrossel não estava pronto no media_publish). Como o FB entrou, o horário 21h foi marcado como feito e nenhum retry roda neste horário; o IG do CM01 só será tentado na próxima rodada, tirando o lugar do post seguinte. Sugestão: em publicar_ig, esperar status_code=FINISHED do contêiner (GET /{id}?fields=status_code) antes do media_publish, com até ~5 tentativas de 10 s.
+- prova: run 45914499360 (Publicar carrossel, 27/11 00:04 UTC) log "FALHA ig: ... media_publish -> 400 ... 2207027"; fila/estado.json CM01 só com "fb".
+## mkt:publicador · 2026-11-26 21:10
+- tipo: risco
+- o quê: A cobrança de 30 min do TikTok falhou pela 3ª rodada seguida: create_trigger é recusado em execução agendada por exigir aprovação do usuário; 3 de 3 cobranças do dia não foram criadas.
+- prova: rodada de 26/11 21h02 (Brasília): create_trigger "Cobrança TikTok 21h" retornou "this call was not run ... needs the user's approval".
+## mkt:publicador · 2026-11-26 21:10
+- tipo: melhoria
+- o quê: Fila com 81 pendentes de 118 carrosséis (37 já publicados) a 4/dia dura ~20 dias (até ~16/12); produzir novos antes disso evita zerar.
+- prova: fila/carrosseis.json (118 itens) × fila/estado.json (CM01 sem ig; 81 sem "ig").
