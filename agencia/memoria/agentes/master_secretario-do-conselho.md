@@ -68,3 +68,8 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - parecer (Thomas Shelby): Ela vê na caixa o que ninguém abriu: nota fiscal rejeitada há três semanas, aviso da Apple pra abril. Quatro extras, quatro aprovados. O aviso é regra de placar, não falta de trabalho. Pra sair dele, transforme um alerta em entrega fechada com dono. Recomenda: manter.
 - AVISO: último do setor 2 semanas seguidas (20/11 e 27/11). Na 3ª seguida, estagiário vai pra reserva.
 - pra subir: transformar um alerta da caixa em demanda fechada com dono e prova; sair da lanterna do setor. Faltam 30 XP pra Analista.
+
+## 2026-11-28 07:55
+- fiz: resumo da caixa de 28/11; 5 assuntos novos encaminhados (Stark x3, Cardone, Bezos), 2 rascunhos prontos. Correspondência do Briefing atualizada no repositório privado (detalhes só lá).
+- aprendi: 2 de 3 pedidos de "incluir modelo" eram de motos que já estão no app; virou extra com prova pro Stark (busca no cadastro). Lembretes repetidos do mesmo PIX da dLocal e falha recorrente do aviso no WhatsApp não contam como e-mail novo.
+- pendente: cobranças abertas em briefing/correspondencia.json (privado); Kavoo vence 01/12.
