@@ -117,3 +117,13 @@ Setor: Produto · Cargo: Diretor · Playbook: agencia/diretoria/06-produto.md
 - parecer (Thomas Shelby): Ler o código antes de perguntar foi certo. Entregar pela metade não: duas voltaram faltando item que estava escrito no pedido. Fechou a semana com zero ponto e o estagiário na frente. Recomenda: punicao.
 - pets: humor fraco — a Marnevali passou acuadinha, de cabeça baixa; o Carnucci não foi e a Fartuzzi encarou mais tempo (sem multa, fica registrado).
 - pra subir: reler o pronto_quando antes de entregar: zero devolução na semana que vem.
+
+## 2026-11-27 (noite) · entregas
+- fiz: `git log` do minhamotooficial antes de tudo (d4942b2, 25/11, 1.0.2, 89 commits). Entreguei D-20261127-professor-1 (P1; premissa conferida no código: paywall escreve "dias grátis" sozinho com oferta introdutória da loja, em paywall-minhamoto.tsx:489, 586, 501 e 597 (achado novo, "Nada é cobrado hoje"); paywall hoje conforme com as lojas) e bloqueei com bloqueio lider: pergunta 1 ao Davi (conferir lojas sem oferta), pergunta 2 ao Léo (exceção do "/mês" dentro da tela que cobra). Entreguei D-20261124-trafego-3 (atrasada; proposta da tela de origem, 5 opções + Pular, após o cadastro da moto, 1 sim/não ao Davi). Criei D-20261127-produto-1 (Jobs: varrer P-001 por palavra de teste) e -2 (Turing: regra de leitura da % por origem).
+- aprendi: a premissa da trafego-3 ("sem SDK") tinha envelhecido (SDK em 24/11, compra na Meta em 26/11); a entrega diz isso primeiro. Apple e Google: WebFetch bloqueado pelo ambiente hoje, então citei a aula do professor (lida em 27/11) e disse que não reli. Conferi decisoes.md e itens.json: nada sobre oferta introdutória nem sobre a exceção do "/mês", então não era pergunta repetida. Fluxo no código: aceite > boas-vindas > cadastro da moto > configuração > briefing (avisos, ATT) > tour > "Esse é o MinhaMoto" > paywall.
+- erro a não repetir: a folha de 27/11 me multou duas refações por item faltando; reli o pronto_quando de cada uma contra o arquivo antes de entregar.
+- pendente: Davi (pergunta 1 do professor-1, pergunta da tela de origem); Léo (pergunta 2); Jobs (produto-1, 30/11); Turing (produto-2, 04/12 e produto-5, 01/12); Apple/Google ainda não relidos por mim.
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Diretor do Mês. **Conquista:** Pegou antes do cliente (paywall que ligaria "dias grátis" sozinho, apontado antes de qualquer oferta ligada) e Proposta lançada com o Jobs.
+- **Item:** Macallan 18 quando passar de C$ 175 de saldo (saldo atual C$ 232,5, por isso o foco é aceite sem devolução, meta 70%+). Regra: só vale com prova.

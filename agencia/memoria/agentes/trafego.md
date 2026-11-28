@@ -129,3 +129,13 @@ Setor: Tráfego · Cargo: Diretor · Playbook: agencia/diretoria/05-trafego.md
 - parecer (Thomas Shelby): Nove entregas, nenhuma devolvida, e corrigiu o próprio 40% pra 33% sem eu cobrar. Erro de arquivo confessado na hora. Fica no ok porque o setor é ele sozinho. Recomenda: manter.
 - pets: humor ok — a Marnevali passou de olho; o Carnucci não parou (sem gorjeta).
 - pra subir: manter zero devolução e levar a 1ª campanha ao Léo com custo por assinante pago.
+
+## 2026-11-27 · Rodada de demandas (noite)
+- fiz: entreguei D-20261126-mercado-2 (landing por modelo: sem dado se a página aceita variante, texto fora do repo; a página já repassa UTM pro OneLink; separo por `utm_term`/`af_sub1`, não por `utm_content`, pra não misturar criativo e página; IC por clique em %, 7 dias, ~200 IC por versão, +30% pra vencer, tudo regra minha sem histórico) e D-20261127-professor-3 (idade mínima 18: sem dado em todas as campanhas; marquei bloqueada com sim/não pro Léo, recomendação SIM, antes de 28/11 6h). Criei D-20261127-trafego-1 (Turing, IC por clique da genérica em %) e -2 (Disney, revisão sem cara infantil).
+- aprendi: 18 conjuntos duplicados entram 28/11 6h e a LICOES de 27/11 não fala de idade; "18 mínimo" na Meta pode ser sugestão (Advantage+) e não controle fixo [confirmar no oficial]. Minha proposta de 26/11 não trazia idade: erro de checklist meu, agora é o 7º portão. WebFetch das docs oficiais negado de novo; só links, marcados.
+- pendente: sem número de campanha (7ª rodada); sim do Léo na idade e na 2ª URL da landing; texto da CG 160 (mercado-1).
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Diretor segue o cargo; XP 55. Quero Diretor do Mês.
+- **Conquista da semana:** "Previu o gargalo": apontei a idade mínima 18 sem prova a horas do início das campanhas.
+- **Item que quero:** Don Julio 1942 já; lendário Fat Boy.

@@ -10,12 +10,12 @@
   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
   "prioridade": "P2",
   "prazo": "2026-11-27T18:00:00-03:00",
-  "status": "devolvida",
+  "status": "entregue",
   "criada_em": "2026-11-24T11:00:00-03:00",
   "fio": "F-001",
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
-    "resumo": "Itens 13 a 15 viraram a pergunta H do pacote v3, com o anexo P-001 .html (agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html)."
+    "resumo": "Pergunta H do pacote v3 (linha 20) restaurada: 'logo apos o cadastro, o app ja tem os dados pra montar o plano daquela moto (sem o km da configuracao)? Se nao, vira plano em km medio do modelo'; perguntas 2 e 3 e anexo .html mantidos."
   },
   "cobrancas": 1,
   "historico": [
@@ -53,7 +53,12 @@
       "quando": "2026-11-27T22:00:00-03:00",
       "quem": "produto:analista-do-paywall",
       "o_que": "reconferido: continua devolvida. A -2 nao cobre esta (e o tema moto fora do catalogo, itens I do pacote); a pergunta H do pacote v3 (linha 20) ainda diz 'o app ja tem os dados pra montar o plano?' sem 'daquela moto sem o km da configuracao' e sem 'se nao, vira plano em km medio do modelo'. Basta restaurar esse trecho copiando a pergunta 1 da secao 4 da P-001; as perguntas 2 e 3 conferem."
+    },
+    {
+      "quando": "2026-11-27T22:30:00-03:00",
+      "quem": "master",
+      "o_que": "reentregou: H agora copia a pergunta 1 da secao 4 sem cortes"
     }
   ],
-  "atualizada_em": "2026-11-27T21:44-03:00"
+  "atualizada_em": "2026-11-27T22:30:00-03:00"
 }

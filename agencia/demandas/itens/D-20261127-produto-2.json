@@ -1,0 +1,27 @@
+{
+ "id": "D-20261127-produto-2",
+ "de": "produto",
+ "para": "dados",
+ "copia": [
+  "produto",
+  "master"
+ ],
+ "titulo": "Turing: dizer como lerá a % por origem declarada (instagram, tiktok, amigo, loja_busca, outro, pulou) por plataforma e qual amostra mínima antes de decidir qualquer coisa",
+ "por_que": "A proposta D-20261124-trafego-3 pede 1 tela 'Como você conheceu o MinhaMoto?' no onboarding. Sem regra de leitura definida antes, a resposta vira opinião: é 'declarada' e tem viés. A régua final continua custo por assinante pago (decisoes.md 26/11); a pergunta só divide o denominador quando o SDK falhar (iOS sem rastreio, orgânico sem link).",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261127-produto-2.md com: fórmula de cada % (por origem entre respondentes; instalação>pagante por origem; cruzamento com mídia do AppsFlyer), iOS e Android separados; amostra mínima por origem antes de qualquer leitura; só % ou variação, sem número absoluto no repo público; se o RevenueCat aceita atributo próprio do assinante, dizer com link oficial.",
+ "prioridade": "P3",
+ "prazo": "2026-12-04T18:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-27T22:30-03:00",
+ "fio": "F-001",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-27T22:30-03:00",
+   "quem": "produto",
+   "o_que": "criou"
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:30-03:00"
+}

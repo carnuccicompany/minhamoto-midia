@@ -11,16 +11,28 @@
  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com as respostas sugeridas aos descritores da Apple e ao questionário IARC (com base no código), e um pacote de perguntas sim/não pro Davi: (a) app aparece registrado na Home do Play Console? (b) responde os descritores da Apple até 05/01/2027 com as respostas sugeridas? (c) confere o IARC até 11/12/2026 e manda print da classificação atual nas duas lojas? Status 'bloqueada' com bloqueio 'lider' até a resposta.",
  "prioridade": "P1",
  "prazo": "2026-11-28T12:00:00-03:00",
- "status": "aberta",
+ "status": "bloqueada",
  "criada_em": "2026-11-27T12:00:00-03:00",
  "fio": null,
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261127-professor-2.md",
+  "resumo": "Respostas sugeridas (Apple: Não/Não/Publicidade Não; Play: sem conteúdo sensível, L), dono e data dos 3 prazos e pacote de 3 perguntas sim/não pro Davi com recomendação. Fontes oficiais não abriram hoje: a conferir."
+ },
  "cobrancas": 0,
  "historico": [
   {
    "quando": "2026-11-27T12:00:00-03:00",
    "quem": "professor",
    "o_que": "criou (treino de 27/11)"
+  },
+  {
+   "quando": "2026-11-27T20:00:00-03:00",
+   "quem": "lojas",
+   "o_que": "bloqueada (lider): entrega gravada, 3 perguntas sim/não pro Davi"
   }
- ]
+ ],
+ "bloqueio": "lider",
+ "pergunta": "Davi: (a) o MinhaMoto aparece registrado na Home do Play Console? Recomendo conferir hoje. (b) Responde os descritores da Apple (Localização compartilhada: Não; Namoro: Não; Publicidade: Não) até 05/01/2027? Recomendo sim. (c) Confere o IARC até 11/12/2026 e manda print da classificação nas duas lojas? Recomendo sim.",
+ "motivo_bloqueio": "Só o dono das contas (Davi) vê a Home do Play Console, responde o questionário da Apple e confere o IARC.",
+ "atualizada_em": "2026-11-27T20:00:00-03:00"
 }

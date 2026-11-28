@@ -57,3 +57,9 @@
 - Criadas: D-20261126-produto-1 (Shelby, P1), -2 (Jobs, P2), -3 (Turing, P2). Aceitei D-20261124-produto-4.
 - Pendências: Davi (pacote); Jobs (trafego-3, 27/11); Turing (produto-5, 01/12). Apple HIG, Google In-App Review e a página de novembro da RevenueCat bloqueados.
 - Pesquisa: RevenueCat, hard paywall e jornada de ativação (08/09/2026), https://www.revenuecat.com/blog/growth/hard-paywall-activation-journey.
+
+## Rodada 27/11 (noite)
+- Entregues: professor-1 (bloqueada, lider: Davi confere lojas sem oferta introdutória; Léo registra exceção do "/mês" na tela que cobra) e trafego-3 (proposta da tela de origem, pergunta ao Davi na mesma build dos eventos).
+- Criadas: produto-1 (Jobs varre a P-001 por palavra de teste, 30/11) e produto-2 (Turing: regra de leitura da % por origem, 04/12).
+- Meta pessoal: zero devolução na semana (aceite hoje 60%): reler cada item do pronto_quando contra o arquivo antes de marcar entregue.
+- Pendências: respostas do Davi e do Léo; pacote do Davi (A: 1.0.2 nas lojas?); Turing produto-5 (01/12).

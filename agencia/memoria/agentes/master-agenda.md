@@ -23,3 +23,5 @@
 
 ## 26/11 · pendências
 - Pacote do Davi com 19 sim/não (itens 17 a 19 de paywall-2): bilhete de sexta 27/11 9h; registrar a resposta na entrega de paywall-2.
+
+- 27/11: aguardar conferencia do Jobs (paywall-1) e do Turing (dados-2); proxima rodada, reconferir o pacote v3 contra as fontes antes de entregar.

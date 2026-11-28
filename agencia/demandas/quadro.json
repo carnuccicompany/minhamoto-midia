@@ -1,211 +1,13 @@
 {
- "atualizado": "2026-11-27T21:52-03:00",
+ "atualizado": "2026-11-27T21:55-03:00",
  "resumo": {
-  "abertas": 22,
-  "atrasadas": 3,
-  "entregues": 12,
-  "aceitas": 71,
-  "bloqueadas_lider": 19
+  "abertas": 16,
+  "atrasadas": 0,
+  "entregues": 15,
+  "aceitas": 73,
+  "bloqueadas_lider": 24
  },
  "demandas": [
-  {
-   "id": "D-20261124-produto_analista-do-paywall-1",
-   "de": "produto:analista-do-paywall",
-   "para": "master",
-   "copia": [
-    "produto"
-   ],
-   "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
-   "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
-   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:00:00-03:00",
-   "status": "devolvida",
-   "criada_em": "2026-11-24T11:00:00-03:00",
-   "fio": "F-001",
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
-    "resumo": "Itens 13 a 15 viraram a pergunta H do pacote v3, com o anexo P-001 .html (agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html)."
-   },
-   "cobrancas": 1,
-   "historico": [
-    {
-     "quando": "2026-11-24T11:00:00-03:00",
-     "quem": "produto:analista-do-paywall",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T20:05:00-03:00",
-     "quem": "master",
-     "o_que": "entregue: itens 13 a 15 no pacote"
-    },
-    {
-     "quando": "2026-11-26T09:00:00-03:00",
-     "quem": "produto:analista-do-paywall",
-     "o_que": "devolvida: itens 13 a 15 conferem com a secao 4 da P-001 (sentido preservado, ok), mas falta o anexo da pagina agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html no bilhete do Davi (o pacote D-20261123-master-pacote-davi.md nao cita o .html nem diz que vai anexado). Basta incluir o anexo/link no pacote e reentregar. A resposta do Davi na P-001 so e cobrada depois que ele responder."
-    },
-    {
-     "quando": "2026-11-26T21:50:00-03:00",
-     "quem": "master",
-     "o_que": "reentregou: anexo da P-001 incluido no pacote v3, pergunta H"
-    },
-    {
-     "quando": "2026-11-26T22:10:00-03:00",
-     "quem": "produto:analista-do-paywall",
-     "o_que": "devolvida: o anexo P-001 .html agora esta na pergunta H (ok), mas a 1a pergunta mudou de sentido. A secao 4 pergunta se, logo apos o cadastro, o app ja tem os dados pra montar o plano DAQUELA MOTO SEM O KM DA CONFIGURACAO (se nao, vira plano em km medio do modelo). A H cortou 'sem o km da configuracao'; o Davi pode responder sim achando que o km existe. Falta restaurar esse trecho na H, copiando as 3 perguntas da secao 4 sem cortes (as 2 e 3 conferem). Resposta do Davi na P-001 so e cobrada depois que ele responder."
-    },
-    {
-     "quando": "2026-11-27T21:44-03:00",
-     "quem": "mesa-de-demandas",
-     "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Thomas Shelby"
-    },
-    {
-     "quando": "2026-11-27T22:00:00-03:00",
-     "quem": "produto:analista-do-paywall",
-     "o_que": "reconferido: continua devolvida. A -2 nao cobre esta (e o tema moto fora do catalogo, itens I do pacote); a pergunta H do pacote v3 (linha 20) ainda diz 'o app ja tem os dados pra montar o plano?' sem 'daquela moto sem o km da configuracao' e sem 'se nao, vira plano em km medio do modelo'. Basta restaurar esse trecho copiando a pergunta 1 da secao 4 da P-001; as perguntas 2 e 3 conferem."
-    }
-   ],
-   "atualizada_em": "2026-11-27T21:44-03:00",
-   "_atrasada": true,
-   "_de_nome": "Steve Jobs",
-   "_para_nome": "Thomas Shelby"
-  },
-  {
-   "id": "D-20261124-trafego-3",
-   "de": "trafego",
-   "para": "produto",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Proposta pro Davi: pergunta 'como você conheceu o MinhaMoto?' no onboarding (5 opções), pra separar pago de orgânico mesmo sem SDK",
-   "por_que": "Sem SDK nenhuma assinatura chega com campanha (D-20261122-master-5: 'não tem remendo'), e o orgânico por post também não sai pelo link (mesmo arquivo). Uma pergunta de origem no onboarding dá a divisão pago x orgânico x indicação por assinante e deixa o custo por assinante calculável na semana-ponte. Mexe direto na meta: custo por assinante pago exige saber quantos assinantes novos vieram do anúncio.",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-3.md com: (1) em que tela do onboarding entra e por que ali, sem atrasar o paywall; (2) 5 opções de resposta (Instagram, TikTok, indicação de amigo, loja/busca, outro); (3) 1 sim/não pro Davi (a pergunta cabe na próxima build?); (4) como o resultado vira % por origem. Só proposta: nada muda no app.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T18:30:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-24T18:30:00-03:00",
-   "fio": "F-001",
-   "entrega": null,
-   "cobrancas": 1,
-   "historico": [
-    {
-     "quando": "2026-11-24T18:30:00-03:00",
-     "quem": "trafego",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T21:00:00-03:00",
-     "quem": "produto",
-     "o_que": "aceitou: faço a proposta (tela, 5 opções, 1 sim/não, % por origem) até 27/11, só proposta, paywall intocado. Repasso a pergunta ao Jobs; o sim do Davi entra no pacote"
-    },
-    {
-     "quando": "2026-11-27T21:44-03:00",
-     "quem": "mesa-de-demandas",
-     "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Tony Stark"
-    }
-   ],
-   "atualizada_em": "2026-11-27T21:44-03:00",
-   "_atrasada": true,
-   "_de_nome": "Pablo Escobar",
-   "_para_nome": "Tony Stark"
-  },
-  {
-   "id": "D-20261124-mkt-2",
-   "de": "mkt",
-   "para": "dados",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Incluir os Corretores no resumo em % que a ponte do carnucci-dados publicará: vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido e % reembolso, por semana",
-   "por_que": "Sem placar semanal não há meta nem leitura do teste dos 3 estilos: hoje só existe o mensal (vendas/dia -43%, custo por venda +19%, ROAS 1,88 para 1,61; agencia/conhecimento/09-numeros.md) e D-20261123-mkt-1 está bloqueada por falta de acesso. A decisão de 23/11 pede um resumo só em % que as sessões leiam; os Corretores precisam estar nele.",
-   "pronto_quando": "Especificação (ou o próprio arquivo, se a ponte já existir) em agencia/demandas/entregas/D-20261124-mkt-2.md com as 6 métricas em % ou variação, semana contra semana, e a fonte de cada uma (UTMify/Kavoo); sem R$ nem contagem absoluta; o que não tem dado fica escrito 'sem dado' e quem libera.",
-   "prioridade": "P2",
-   "prazo": "2026-11-27T21:00:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-24T21:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 1,
-   "historico": [
-    {
-     "quando": "2026-11-24T21:00:00-03:00",
-     "quem": "mkt",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-24T23:00:00-03:00",
-     "quem": "dados",
-     "o_que": "aceita: escrevo a especificacao das 6 metricas dos Corretores com fonte (UTMify/Kavoo) e 'sem dado' onde faltar; so em % e variacao. Nao prometo o numero: depende do Leo liberar a UTMify (mkt-r1, pergunta 3)"
-    },
-    {
-     "quando": "2026-11-27T21:44-03:00",
-     "quem": "mesa-de-demandas",
-     "o_que": "cobrança 1: prazo vencido há 0 h; cobrado Alan Turing"
-    }
-   ],
-   "atualizada_em": "2026-11-27T21:44-03:00",
-   "_atrasada": true,
-   "_de_nome": "Grant Cardone",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261127-professor-1",
-   "de": "professor",
-   "para": "produto",
-   "copia": [
-    "lojas",
-    "master"
-   ],
-   "titulo": "Proteger o paywall de 2 riscos de loja: oferta introdutória que liga 'dias grátis' sozinha e a exceção do '/mês' dentro da tela que cobra",
-   "por_que": "(1) O paywall do código de 25/11 lê o teste oferecido pela loja e passa a mostrar 'X dias grátis' / 'Começar X dias grátis' sem mudança de código (pro-producao-checkout.tsx:167 e :510; paywall-minhamoto.tsx:489 e :586) — se alguém ligar oferta introdutória na App Store Connect ou no Play, quebra a decisão do Léo 'app sem teste grátis' (decisoes.md 20–22/11). (2) A Apple (3.1.2(c), https://developer.apple.com/app-store/subscriptions/) e o Google (https://support.google.com/googleplay/android-developer/answer/9900533) exigem duração e preço de renovação em destaque na tela de assinatura: a regra do Léo 'nunca por mês' (24/11) não pode ser aplicada ao paywall nem à descrição da assinatura na loja, ou o app arrisca rejeição. Hoje o paywall está conforme. Ver areas/produto/aulas/2026-11-27-paywall-pago-direto.md e LICOES.md.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (a) pergunta sim/não pronta pro Davi conferir que nenhuma oferta introdutória/teste está ligada nas duas lojas e manter assim; (b) pergunta sim/não pro Léo registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que dentro da tela que cobra e na ficha da assinatura ficam período e renovação como as lojas exigem. Demanda vai a 'bloqueada' com bloqueio 'lider' até as respostas.",
-   "prioridade": "P1",
-   "prazo": "2026-11-28T12:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-27T12:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-27T12:00:00-03:00",
-     "quem": "professor",
-     "o_que": "criou (treino de 27/11)"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "professor",
-   "_para_nome": "Tony Stark"
-  },
-  {
-   "id": "D-20261127-professor-2",
-   "de": "professor",
-   "para": "lojas",
-   "copia": [
-    "produto",
-    "master"
-   ],
-   "titulo": "Dar dono e data a 3 prazos de loja sem responsável: descritores de idade da Apple (12/01/2027), questionário IARC/Age Signals do Play (11/12/2026) e verificação de desenvolvedor Android",
-   "por_que": "Apple: dois descritores novos (Localização compartilhada, Namoro) já são pedidos em todo envio desde 16/11 e todos os apps têm que responder até 12/01/2027, senão a atualização trava (https://developer.apple.com/news/?id=yxkh08us). Play: Age Signals para todos os usuários até 11/12/2026 e app com classificação errada pode ser removido (https://developer.android.com/google/play/age-signals/release-notes?hl=pt, https://support.google.com/googleplay/android-developer/answer/9898843). Verificação de desenvolvedor Android vale no Brasil desde 30/09/2026; app não registrado corre risco de remoção (https://developer.android.com/developer-verification). Não há demanda nem decisão com dono para nenhum dos três. Pelo código de 25/11 a resposta provável aos descritores é 'Não'; não subir pra 18+ 'por segurança' (bloqueia download no Brasil). Detalhe e checklist: areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md §9 e areas/lojas/NOVIDADES.md.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com as respostas sugeridas aos descritores da Apple e ao questionário IARC (com base no código), e um pacote de perguntas sim/não pro Davi: (a) app aparece registrado na Home do Play Console? (b) responde os descritores da Apple até 05/01/2027 com as respostas sugeridas? (c) confere o IARC até 11/12/2026 e manda print da classificação atual nas duas lojas? Status 'bloqueada' com bloqueio 'lider' até a resposta.",
-   "prioridade": "P1",
-   "prazo": "2026-11-28T12:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-27T12:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-27T12:00:00-03:00",
-     "quem": "professor",
-     "o_que": "criou (treino de 27/11)"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "professor",
-   "_para_nome": "Jeff Bezos"
-  },
   {
    "id": "D-20261120-dados-2",
    "de": "dados",
@@ -467,6 +269,87 @@
    "_para_nome": "Thomas Shelby"
   },
   {
+   "id": "D-20261127-professor-1",
+   "de": "professor",
+   "para": "produto",
+   "copia": [
+    "lojas",
+    "master"
+   ],
+   "titulo": "Proteger o paywall de 2 riscos de loja: oferta introdutória que liga 'dias grátis' sozinha e a exceção do '/mês' dentro da tela que cobra",
+   "por_que": "(1) O paywall do código de 25/11 lê o teste oferecido pela loja e passa a mostrar 'X dias grátis' / 'Começar X dias grátis' sem mudança de código (pro-producao-checkout.tsx:167 e :510; paywall-minhamoto.tsx:489 e :586) — se alguém ligar oferta introdutória na App Store Connect ou no Play, quebra a decisão do Léo 'app sem teste grátis' (decisoes.md 20–22/11). (2) A Apple (3.1.2(c), https://developer.apple.com/app-store/subscriptions/) e o Google (https://support.google.com/googleplay/android-developer/answer/9900533) exigem duração e preço de renovação em destaque na tela de assinatura: a regra do Léo 'nunca por mês' (24/11) não pode ser aplicada ao paywall nem à descrição da assinatura na loja, ou o app arrisca rejeição. Hoje o paywall está conforme. Ver areas/produto/aulas/2026-11-27-paywall-pago-direto.md e LICOES.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (a) pergunta sim/não pronta pro Davi conferir que nenhuma oferta introdutória/teste está ligada nas duas lojas e manter assim; (b) pergunta sim/não pro Léo registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que dentro da tela que cobra e na ficha da assinatura ficam período e renovação como as lojas exigem. Demanda vai a 'bloqueada' com bloqueio 'lider' até as respostas.",
+   "prioridade": "P1",
+   "prazo": "2026-11-28T12:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261127-professor-1.md",
+    "resumo": "Premissa confere no código d4942b2 (1.0.2): paywall liga 'dias grátis' sozinho com oferta introdutória da loja (4 pontos, um novo: 'Nada é cobrado hoje', :597). Paywall hoje conforme. 2 sim/não prontos: Davi (conferir lojas sem oferta) e Léo (exceção do '/mês' dentro da tela que cobra)."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    },
+    {
+     "quando": "2026-11-27T22:30-03:00",
+     "quem": "produto",
+     "o_que": "entreguei e bloqueei com bloqueio lider: pergunta 1 ao Davi, pergunta 2 ao Léo; código conferido (d4942b2, 1.0.2)"
+    }
+   ],
+   "bloqueio": "lider",
+   "pergunta_lider": "Davi: você confere no App Store Connect e no Play Console que nenhum produto de assinatura tem oferta introdutória (teste ou preço de entrada) ligada, e mantém assim? Recomendo: sim. Léo: registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que na tela que cobra e na ficha da assinatura nas lojas ficam duração e renovação (exigência Apple/Google)? Recomendo: sim.",
+   "atualizada_em": "2026-11-27T22:30-03:00",
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Tony Stark"
+  },
+  {
+   "id": "D-20261127-professor-2",
+   "de": "professor",
+   "para": "lojas",
+   "copia": [
+    "produto",
+    "master"
+   ],
+   "titulo": "Dar dono e data a 3 prazos de loja sem responsável: descritores de idade da Apple (12/01/2027), questionário IARC/Age Signals do Play (11/12/2026) e verificação de desenvolvedor Android",
+   "por_que": "Apple: dois descritores novos (Localização compartilhada, Namoro) já são pedidos em todo envio desde 16/11 e todos os apps têm que responder até 12/01/2027, senão a atualização trava (https://developer.apple.com/news/?id=yxkh08us). Play: Age Signals para todos os usuários até 11/12/2026 e app com classificação errada pode ser removido (https://developer.android.com/google/play/age-signals/release-notes?hl=pt, https://support.google.com/googleplay/android-developer/answer/9898843). Verificação de desenvolvedor Android vale no Brasil desde 30/09/2026; app não registrado corre risco de remoção (https://developer.android.com/developer-verification). Não há demanda nem decisão com dono para nenhum dos três. Pelo código de 25/11 a resposta provável aos descritores é 'Não'; não subir pra 18+ 'por segurança' (bloqueia download no Brasil). Detalhe e checklist: areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md §9 e areas/lojas/NOVIDADES.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com as respostas sugeridas aos descritores da Apple e ao questionário IARC (com base no código), e um pacote de perguntas sim/não pro Davi: (a) app aparece registrado na Home do Play Console? (b) responde os descritores da Apple até 05/01/2027 com as respostas sugeridas? (c) confere o IARC até 11/12/2026 e manda print da classificação atual nas duas lojas? Status 'bloqueada' com bloqueio 'lider' até a resposta.",
+   "prioridade": "P1",
+   "prazo": "2026-11-28T12:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261127-professor-2.md",
+    "resumo": "Respostas sugeridas (Apple: Não/Não/Publicidade Não; Play: sem conteúdo sensível, L), dono e data dos 3 prazos e pacote de 3 perguntas sim/não pro Davi com recomendação. Fontes oficiais não abriram hoje: a conferir."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    },
+    {
+     "quando": "2026-11-27T20:00:00-03:00",
+     "quem": "lojas",
+     "o_que": "bloqueada (lider): entrega gravada, 3 perguntas sim/não pro Davi"
+    }
+   ],
+   "bloqueio": "lider",
+   "pergunta": "Davi: (a) o MinhaMoto aparece registrado na Home do Play Console? Recomendo conferir hoje. (b) Responde os descritores da Apple (Localização compartilhada: Não; Namoro: Não; Publicidade: Não) até 05/01/2027? Recomendo sim. (c) Confere o IARC até 11/12/2026 e manda print da classificação nas duas lojas? Recomendo sim.",
+   "motivo_bloqueio": "Só o dono das contas (Davi) vê a Home do Play Console, responde o questionário da Apple e confere o IARC.",
+   "atualizada_em": "2026-11-27T20:00:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Jeff Bezos"
+  },
+  {
    "id": "D-20261126-mercado-1",
    "de": "mercado",
    "para": "cria",
@@ -500,115 +383,6 @@
    "_atrasada": false,
    "_de_nome": "Salvatore Greco",
    "_para_nome": "Walt Disney"
-  },
-  {
-   "id": "D-20261126-mercado-2",
-   "de": "mercado",
-   "para": "trafego",
-   "copia": [
-    "master",
-    "cria"
-   ],
-   "titulo": "A landing atual aceita uma variante por modelo com UTM e OneLink próprios? Sim/não e como ler IC por variante",
-   "por_que": "Decisão do Léo de 26/11: venda por anúncio no AppsFlyer via OneLink da landing com UTMs (Android exato, iOS parcial), campanha otimiza IC. Pra provar se a página por modelo vence a genérica preciso separar as duas por utm_content e comparar IC por clique em %, mesmo orçamento e criativo. Sem essa separação, a iniciativa do Greco fica sem medida (PENDENCIAS.md linha 105 já pede o desenho do teste da landing).",
-   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mercado-2.md com: sim/não pra variante por modelo na landing de hoje (onde o texto mora, no repositório ou fora); nome do parâmetro UTM que separa as duas versões; qual evento mede o IC por variante; critério de decisão em % e dias. Sem gastar verba e sem mexer na campanha: só desenho.",
-   "prioridade": "P2",
-   "prazo": "2026-11-29T12:00:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-26T12:00:00-03:00",
-   "fio": "F-002",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-26T12:00:00-03:00",
-     "quem": "mercado",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-26T21:00:00-03:00",
-     "quem": "trafego",
-     "o_que": "aceitei como desenho; 3º na ordem, até 29/11 12h; texto da landing fora do repositório, sim/não pode sair 'sem dado'"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "Salvatore Greco",
-   "_para_nome": "Pablo Escobar"
-  },
-  {
-   "id": "D-20261126-produto-3",
-   "de": "produto",
-   "para": "dados",
-   "copia": [
-    "dados"
-   ],
-   "titulo": "1ª leitura em % do funil instalação > cadastro > pagante, por plataforma, assim que a 1.0.2 estiver ao vivo",
-   "por_que": "O código de 25/11 tem SDK e o evento af_complete_registration; o RevenueCat recebe o UID do AppsFlyer. É a primeira vez que existe sinal pra dividir o instalado em 'cadastrou' e 'pagou'. A meta é novos assinantes pagos por semana e, sem a etapa que perde mais gente, a P-001 e o tráfego novo andam no escuro. Sem baseline ninguém promete ganho (06-produto.md, Lapidado).",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com instalação>cadastro e cadastro>pagante em %, iOS e Android separados, diz a data em que a 1.0.2 passou a valer nas lojas e o tamanho da amostra só em faixa (pequena/média/grande), sem número absoluto. Se a versão ainda não estiver ao vivo ou o evento não chegar, o arquivo diz isso e o que falta, em vez de número.",
-   "prioridade": "P2",
-   "prazo": "2026-11-29T14:00:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-26T14:00:00-03:00",
-   "fio": "F-001",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-26T14:00:00-03:00",
-     "quem": "produto",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-26T21:00:00-03:00",
-     "quem": "dados",
-     "o_que": "aceitei; só entrego % depois da 1.0.2 confirmada nas lojas (Davi/Shelby) e do evento chegando; senão em 29/11 14h entrego arquivo 'sem dado' com o que falta; sobrepõe o bloco de funil da dados-1 e da master-2, uma base só"
-    }
-   ],
-   "atualizada_em": "2026-11-26T21:00:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Tony Stark",
-   "_para_nome": "Alan Turing"
-  },
-  {
-   "id": "D-20261126-trafego-4",
-   "de": "trafego",
-   "para": "dados",
-   "copia": [
-    "dados",
-    "master",
-    "trafego"
-   ],
-   "titulo": "Confirmar em %/sim-não que a compra chega na Meta e que o clique da landing chega atribuído no AppsFlyer (iOS e Android)",
-   "por_que": "Hoje (26/11, LICOES.md) o AppsFlyer passou a mandar as compras pra Meta (fb_mobile_purchase) e o OneLink da landing leva as UTMs; sem confirmar com dado, a campanha de IC não tem leitura de custo por assinante (meta de assinantes pagos novos por semana). Android sai exato e iOS parcial (PENDENCIAS.md): preciso saber o tamanho do buraco do iOS em %. Fecha o 6º portão de D-20261124-dados-5.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) sim/não e data: 'Compra' aparece no dataset do app do pixel novo na Meta; (2) em %: das visitas com UTM na landing, quantas chegam com campanha/anúncio no AppsFlyer, separado em iOS e Android; (3) se o RevenueCat e o AppsFlyer divergem no total de assinantes da semana, só direção e % de diferença. Sem leitura, escrever 'sem dado' e quem libera. Sem número absoluto nem R$.",
-   "prioridade": "P2",
-   "prazo": "2026-11-29T18:00:00-03:00",
-   "status": "em_andamento",
-   "criada_em": "2026-11-26T19:30:00-03:00",
-   "fio": "F-001",
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-26T19:30:00-03:00",
-     "quem": "trafego",
-     "o_que": "criou (Conselho 26/11, r1)"
-    },
-    {
-     "quando": "2026-11-26T21:00:00-03:00",
-     "quem": "dados",
-     "o_que": "aceitei; junto com dados-1 (UTM/pixel) e lojas-3 (mesma base de origem); sem pixel novo e sem integração Meta-AppsFlyer conferida a entrega sai como 'sem dado' + quem libera (Léo: data do pixel; Escobar: UTM); % por plataforma só depois de tráfego e da ponte do QG"
-    },
-    {
-     "quando": "2026-11-26T22:30:00-03:00",
-     "quem": "dados",
-     "o_que": "registrei portão 6 e 'sem dado' nos 3 itens em entregas/D-20261126-trafego-4.md; segue em_andamento até haver leitura"
-    }
-   ],
-   "atualizada_em": "2026-11-26T22:30:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Pablo Escobar",
-   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261126-trafego-5",
@@ -646,48 +420,6 @@
    "_para_nome": "Walt Disney"
   },
   {
-   "id": "D-20261126-dados-2",
-   "de": "dados",
-   "para": "master",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Reatribuir D-20261125-master-1 (agente na reserva) e corrigir 'teste iniciado' na PENDENCIAS l.105",
-   "por_que": "(1) D-20261125-master-1 esta com dados:coletor-de-metricas, que esta em status 'reserva' no livro.json: reserva nao recebe demanda, entao a regra de fechamento do dia por coletado_em nao sai (prazo 02/12). (2) PENDENCIAS.md l.105 define criterio do A/B da landing como 'custo por teste iniciado / por compra'; o app nao tem teste gratis (Leo, 20/11), o criterio certo e compra paga; sem corrigir, a 1a leitura da campanha mede evento que nao existe.",
-   "pronto_quando": "Em agencia/demandas/itens/D-20261125-master-1.json o campo 'para' aponta pra agente ativo (sugiro dados:relatorio-semanal) e PENDENCIAS.md l.105 diz 'custo por compra paga (RevenueCat)' sem 'teste iniciado'. Prova: os dois arquivos.",
-   "prioridade": "P2",
-   "prazo": "2026-11-29T20:00:00-03:00",
-   "status": "devolvida",
-   "criada_em": "2026-11-26T20:00:00-03:00",
-   "fio": null,
-   "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261126-dados-2.md",
-    "resumo": "master-1 (25/11) reatribuida ao Hemingway (ativo); PENDENCIAS l.105 corrigida: criterio vira custo por assinante pago, sem 'teste iniciado', e registra a decisao do Leo de 26/11."
-   },
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-26T20:00:00-03:00",
-     "quem": "dados",
-     "o_que": "criou"
-    },
-    {
-     "quando": "2026-11-26T21:30:00-03:00",
-     "quem": "master",
-     "o_que": "entregou: os dois arquivos corrigidos; ver entrega"
-    },
-    {
-     "quando": "2026-11-26T22:00:00-03:00",
-     "quem": "dados",
-     "o_que": "devolvida: item 1 ok (master-1 com dados:relatorio-semanal, ativo no livro). Falta item 2: PENDENCIAS.md l.105 ainda contem 'teste iniciado' (entre aspas, na negacao) e diz 'custo por assinante pago', nao 'custo por compra paga (RevenueCat)'. Reescrever o criterio como 'custo por compra paga (RevenueCat)' e tirar a expressao 'teste iniciado' da linha (manter so 'o app nao tem teste gratis'). Resto da linha pode ficar."
-    }
-   ],
-   "atualizada_em": "2026-11-26T22:00:00-03:00",
-   "_atrasada": false,
-   "_de_nome": "Alan Turing",
-   "_para_nome": "Thomas Shelby"
-  },
-  {
    "id": "D-20261126-mercado-3",
    "de": "mercado",
    "para": "mercado:radar-de-concorrentes",
@@ -716,34 +448,6 @@
    "_para_nome": "Sun Tzu"
   },
   {
-   "id": "D-20261127-professor-3",
-   "de": "professor",
-   "para": "trafego",
-   "copia": [
-    "master"
-   ],
-   "titulo": "Confirmar idade mínima 18 nos públicos dos anúncios (MinhaMoto e Corretores) antes da próxima verba",
-   "por_que": "ECA Digital (Lei 15.211, art. 22) proíbe usar perfil de menor para publicidade, e a ANPD começa a fiscalizar em jan/2027 (https://www.gov.br/anpd/pt-br/assuntos/eca-digital). Anúncio entregue a menor é risco jurídico e de conta. Não há registro de que a idade mínima 18 está travada nos conjuntos. Ver areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md.",
-   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo, por campanha ativa e planejada, a idade mínima configurada e se é controle fixo (não só sugestão do Advantage+), sem mexer em nada; se precisar mudar, pergunta sim/não pro Léo/Davi e status 'bloqueada' com bloqueio 'lider'.",
-   "prioridade": "P2",
-   "prazo": "2026-11-30T12:00:00-03:00",
-   "status": "aberta",
-   "criada_em": "2026-11-27T12:00:00-03:00",
-   "fio": null,
-   "entrega": null,
-   "cobrancas": 0,
-   "historico": [
-    {
-     "quando": "2026-11-27T12:00:00-03:00",
-     "quem": "professor",
-     "o_que": "criou (treino de 27/11)"
-    }
-   ],
-   "_atrasada": false,
-   "_de_nome": "professor",
-   "_para_nome": "Pablo Escobar"
-  },
-  {
    "id": "D-20261126-trafego-1",
    "de": "trafego",
    "para": "dados",
@@ -766,6 +470,93 @@
      "quando": "2026-11-26T12:00:00-03:00",
      "quem": "trafego",
      "o_que": "criou a partir da entrega de D-20261125-trafego-2"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261127-produto-1",
+   "de": "produto",
+   "para": "produto:analista-do-paywall",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Jobs: checar a P-001 e a página de decisão contra a regra 'nada de grátis/teste/dias' e o checklist da tela que cobra (aula 27/11, §7.3)",
+   "por_que": "O paywall do código de 25/11 (d4942b2) escreve 'X dias grátis' sozinho se a loja tiver oferta introdutória (paywall-minhamoto.tsx:489, 586, 597). A P-001 vai ao Davi; se ela ou os mockups tiverem qualquer palavra de teste, ou tirarem o período da tela que cobra, contradizem Léo (22/11) e as lojas (D-20261127-professor-1). Evita devolução e risco de rejeição antes do sim do Davi.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261127-produto-1.md com: lista de cada ocorrência de 'grátis', 'teste', 'dias' e 'vitalício' em P-001 (.md e .html) e no mockup D-20261122-produto-1 (zero, ou onde estão e a troca); confirmação de que nenhuma tela proposta tira duração/renovação do paywall; só leitura, nada publicado.",
+   "prioridade": "P2",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T22:30-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T22:30-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:30-03:00",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Steve Jobs"
+  },
+  {
+   "id": "D-20261127-trafego-2",
+   "de": "trafego",
+   "para": "cria",
+   "copia": [
+    "master",
+    "trafego"
+   ],
+   "titulo": "Revisão visual de A1 e B1 e dos próximos criativos: sem personagem, cena, cor ou linguagem com cara de público infantil (ECA Digital art. 22)",
+   "por_que": "A aula de 27/11 (direcao-geral) e a D-20261127-professor-3 pedem anúncio sem sinal de atratividade a menor; o Play também não aceita anúncio mais infantil que o app. Reduz risco de conta e de multa antes da verba, sem custo de produção.",
+   "pronto_quando": "Checklist de 5 linhas por criativo (personagem, cena, cor, texto, música) em agencia/demandas/entregas/, 'ok' ou 'trocar' com o motivo, e regra de uma linha pra todo criativo novo. Nada vai ao ar.",
+   "prioridade": "P2",
+   "prazo": "2026-11-30T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T23:20:00-03:00",
+   "fio": "F-004",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T23:20:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Walt Disney"
+  },
+  {
+   "id": "D-20261127-trafego-1",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "master",
+    "trafego"
+   ],
+   "titulo": "IC por clique em % da landing genérica (pixel novo, 28/11 em diante) e razão IC/clique entre A1 e B1, só em %",
+   "por_que": "O teste da landing por modelo (D-20261126-mercado-2) só tem critério de vencedor se a base da genérica existir: hoje 200 IC por versão e +30% são regras minhas, sem histórico. A 1ª leitura troca por número da casa. Vende mais porque decide, com prova, se página por modelo aumenta clique pra loja.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com IC ÷ cliques no link da genérica por dia, em % (índice, sem número absoluto), razão A1/B1 e dias de leitura; se a ponte de % do QG não existir, 'sem dado' com o dono do bloqueio.",
+   "prioridade": "P2",
+   "prazo": "2026-12-01T12:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T23:20:00-03:00",
+   "fio": "F-002",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T23:20:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
     }
    ],
    "_atrasada": false,
@@ -1031,6 +822,36 @@
    "_atrasada": false,
    "_de_nome": "Grant Cardone",
    "_para_nome": "Sun Tzu"
+  },
+  {
+   "id": "D-20261127-produto-2",
+   "de": "produto",
+   "para": "dados",
+   "copia": [
+    "produto",
+    "master"
+   ],
+   "titulo": "Turing: dizer como lerá a % por origem declarada (instagram, tiktok, amigo, loja_busca, outro, pulou) por plataforma e qual amostra mínima antes de decidir qualquer coisa",
+   "por_que": "A proposta D-20261124-trafego-3 pede 1 tela 'Como você conheceu o MinhaMoto?' no onboarding. Sem regra de leitura definida antes, a resposta vira opinião: é 'declarada' e tem viés. A régua final continua custo por assinante pago (decisoes.md 26/11); a pergunta só divide o denominador quando o SDK falhar (iOS sem rastreio, orgânico sem link).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261127-produto-2.md com: fórmula de cada % (por origem entre respondentes; instalação>pagante por origem; cruzamento com mídia do AppsFlyer), iOS e Android separados; amostra mínima por origem antes de qualquer leitura; só % ou variação, sem número absoluto no repo público; se o RevenueCat aceita atributo próprio do assinante, dizer com link oficial.",
+   "prioridade": "P3",
+   "prazo": "2026-12-04T18:00:00-03:00",
+   "status": "aberta",
+   "criada_em": "2026-11-27T22:30-03:00",
+   "fio": "F-001",
+   "entrega": null,
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T22:30-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:30-03:00",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Alan Turing"
   },
   {
    "id": "D-20261120-mkt-1",
@@ -1734,7 +1555,7 @@
    "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-cria-1.md com: (1) os 12 slots com o utm_content CR-xx que vai no link da landing (OneLink: pid, c, af_adset, af_ad), sem criar anúncio; (2) corte em dois níveis, só em % (pausa por custo por IC em % da mediana dos slots do mesmo teste, valor proposto e marcado 'sem histórico'; vencedor só por assinante pago, nunca por IC); (3) quais slots rodam em iOS (atribuição parcial) e quais em Android (exata); (4) o que ainda depende do Léo. Sem R$ nem número absoluto.",
    "prioridade": "P1",
    "prazo": "2026-11-27T19:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-26T19:45:00-03:00",
    "fio": "F-004",
    "entrega": {
@@ -1757,9 +1578,14 @@
      "quando": "2026-11-26T21:45:00-03:00",
      "quem": "trafego",
      "o_que": "entregou: brief refeito pra landing e IC; muda a r2 (12 slots vira mapa, A1/B1 primeiro)"
+    },
+    {
+     "quando": "2026-11-27T20:00:00-03:00",
+     "quem": "cria",
+     "o_que": "aceita: 12 slots com utm_content e link da landing, corte em 2 niveis so em % marcado 'sem historico' (IC so pausa, assinante pago decide), iOS parcial/Android exato por slot e lista do que depende do Leo, sem R$; bate o pronto_quando. A1/B1 primeiro e coerente com a decisao do Leo. Obs: a decisao de 27/11 (pixel novo, inicio 28/11 6h) pode exigir ajustar nomes de campanha, fica por conta da Decisao 1."
     }
    ],
-   "atualizada_em": "2026-11-26T21:45:00-03:00",
+   "atualizada_em": "2026-11-27T20:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Pablo Escobar"
@@ -4622,6 +4448,73 @@
    "_para_nome": "Steve Jobs"
   },
   {
+   "id": "D-20261124-produto_analista-do-paywall-1",
+   "de": "produto:analista-do-paywall",
+   "para": "master",
+   "copia": [
+    "produto"
+   ],
+   "titulo": "Somar ao pacote do Davi as 3 perguntas sim/não da proposta P-001 (plano após o cadastro)",
+   "por_que": "Sem proposta decidida o teste não entra na janela pós-build; a meta é % instalação>pagante. O pacote atual (D-20261123-master-pacote-davi) cobre briefing na build, modelos e SDK, mas não pergunta se o plano dá pra montar logo após o cadastro, se há flag 50/50 ou se posso rascunhar branch. Fonte: agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.md (seção 4).",
+   "pronto_quando": "As 3 perguntas da seção 4 de P-001 (copiadas sem mudar o sentido) anexadas ao bilhete do Davi, com a página P-001 .html como anexo, ou recusa com motivo. Resposta do Davi registrada na P-001.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T11:00:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
+    "resumo": "Pergunta H do pacote v3 (linha 20) restaurada: 'logo apos o cadastro, o app ja tem os dados pra montar o plano daquela moto (sem o km da configuracao)? Se nao, vira plano em km medio do modelo'; perguntas 2 e 3 e anexo .html mantidos."
+   },
+   "cobrancas": 1,
+   "historico": [
+    {
+     "quando": "2026-11-24T11:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T20:05:00-03:00",
+     "quem": "master",
+     "o_que": "entregue: itens 13 a 15 no pacote"
+    },
+    {
+     "quando": "2026-11-26T09:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "devolvida: itens 13 a 15 conferem com a secao 4 da P-001 (sentido preservado, ok), mas falta o anexo da pagina agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html no bilhete do Davi (o pacote D-20261123-master-pacote-davi.md nao cita o .html nem diz que vai anexado). Basta incluir o anexo/link no pacote e reentregar. A resposta do Davi na P-001 so e cobrada depois que ele responder."
+    },
+    {
+     "quando": "2026-11-26T21:50:00-03:00",
+     "quem": "master",
+     "o_que": "reentregou: anexo da P-001 incluido no pacote v3, pergunta H"
+    },
+    {
+     "quando": "2026-11-26T22:10:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "devolvida: o anexo P-001 .html agora esta na pergunta H (ok), mas a 1a pergunta mudou de sentido. A secao 4 pergunta se, logo apos o cadastro, o app ja tem os dados pra montar o plano DAQUELA MOTO SEM O KM DA CONFIGURACAO (se nao, vira plano em km medio do modelo). A H cortou 'sem o km da configuracao'; o Davi pode responder sim achando que o km existe. Falta restaurar esse trecho na H, copiando as 3 perguntas da secao 4 sem cortes (as 2 e 3 conferem). Resposta do Davi na P-001 so e cobrada depois que ele responder."
+    },
+    {
+     "quando": "2026-11-27T21:44-03:00",
+     "quem": "mesa-de-demandas",
+     "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Thomas Shelby"
+    },
+    {
+     "quando": "2026-11-27T22:00:00-03:00",
+     "quem": "produto:analista-do-paywall",
+     "o_que": "reconferido: continua devolvida. A -2 nao cobre esta (e o tema moto fora do catalogo, itens I do pacote); a pergunta H do pacote v3 (linha 20) ainda diz 'o app ja tem os dados pra montar o plano?' sem 'daquela moto sem o km da configuracao' e sem 'se nao, vira plano em km medio do modelo'. Basta restaurar esse trecho copiando a pergunta 1 da secao 4 da P-001; as perguntas 2 e 3 conferem."
+    },
+    {
+     "quando": "2026-11-27T22:30:00-03:00",
+     "quem": "master",
+     "o_que": "reentregou: H agora copia a pergunta 1 da secao 4 sem cortes"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Steve Jobs",
+   "_para_nome": "Thomas Shelby"
+  },
+  {
    "id": "D-20261124-produto_analista-do-paywall-2",
    "de": "produto:analista-do-paywall",
    "para": "master",
@@ -4772,6 +4665,53 @@
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261124-trafego-3",
+   "de": "trafego",
+   "para": "produto",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Proposta pro Davi: pergunta 'como você conheceu o MinhaMoto?' no onboarding (5 opções), pra separar pago de orgânico mesmo sem SDK",
+   "por_que": "Sem SDK nenhuma assinatura chega com campanha (D-20261122-master-5: 'não tem remendo'), e o orgânico por post também não sai pelo link (mesmo arquivo). Uma pergunta de origem no onboarding dá a divisão pago x orgânico x indicação por assinante e deixa o custo por assinante calculável na semana-ponte. Mexe direto na meta: custo por assinante pago exige saber quantos assinantes novos vieram do anúncio.",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-3.md com: (1) em que tela do onboarding entra e por que ali, sem atrasar o paywall; (2) 5 opções de resposta (Instagram, TikTok, indicação de amigo, loja/busca, outro); (3) 1 sim/não pro Davi (a pergunta cabe na próxima build?); (4) como o resultado vira % por origem. Só proposta: nada muda no app.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T18:30:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T18:30:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-trafego-3.md",
+    "resumo": "Proposta: 1 tela 'Como você conheceu o MinhaMoto?' (5 opções + Pular) logo após o cadastro da moto, evento origem_declarada, leitura em % por origem e plataforma, 1 sim/não ao Davi (mesma build dos eventos). Corrige a premissa: o SDK já entrou em 24/11; a pergunta cobre orgânico sem link, iOS sem rastreio e indicação."
+   },
+   "cobrancas": 1,
+   "historico": [
+    {
+     "quando": "2026-11-24T18:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T21:00:00-03:00",
+     "quem": "produto",
+     "o_que": "aceitou: faço a proposta (tela, 5 opções, 1 sim/não, % por origem) até 27/11, só proposta, paywall intocado. Repasso a pergunta ao Jobs; o sim do Davi entra no pacote"
+    },
+    {
+     "quando": "2026-11-27T21:44-03:00",
+     "quem": "mesa-de-demandas",
+     "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Tony Stark"
+    },
+    {
+     "quando": "2026-11-27T22:30-03:00",
+     "quem": "produto",
+     "o_que": "entreguei a proposta (tela, 5 opções, 1 sim/não, % por origem); só proposta, nada muda no app; premissa 'sem SDK' corrigida"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:30-03:00",
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Tony Stark"
   },
   {
    "id": "D-20261124-trafego-4",
@@ -5142,6 +5082,53 @@
    "_para_nome": "Thomas Shelby"
   },
   {
+   "id": "D-20261124-mkt-2",
+   "de": "mkt",
+   "para": "dados",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Incluir os Corretores no resumo em % que a ponte do carnucci-dados publicará: vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido e % reembolso, por semana",
+   "por_que": "Sem placar semanal não há meta nem leitura do teste dos 3 estilos: hoje só existe o mensal (vendas/dia -43%, custo por venda +19%, ROAS 1,88 para 1,61; agencia/conhecimento/09-numeros.md) e D-20261123-mkt-1 está bloqueada por falta de acesso. A decisão de 23/11 pede um resumo só em % que as sessões leiam; os Corretores precisam estar nele.",
+   "pronto_quando": "Especificação (ou o próprio arquivo, se a ponte já existir) em agencia/demandas/entregas/D-20261124-mkt-2.md com as 6 métricas em % ou variação, semana contra semana, e a fonte de cada uma (UTMify/Kavoo); sem R$ nem contagem absoluta; o que não tem dado fica escrito 'sem dado' e quem libera.",
+   "prioridade": "P2",
+   "prazo": "2026-11-27T21:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-24T21:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261124-mkt-2.md",
+    "resumo": "Especificação das 6 métricas dos Corretores (vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido, % reembolso) em índice/% semana contra semana, com fonte (UTMify/Kavoo) e \"sem dado\" + quem libera. A ponte resumo-pct.json ainda não existe aqui; nenhum número semanal lido. Corrigida a divergência: UTMify está \"feito\" no cadastro, falta leitura diária e ponte."
+   },
+   "cobrancas": 1,
+   "historico": [
+    {
+     "quando": "2026-11-24T21:00:00-03:00",
+     "quem": "mkt",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-24T23:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceita: escrevo a especificacao das 6 metricas dos Corretores com fonte (UTMify/Kavoo) e 'sem dado' onde faltar; so em % e variacao. Nao prometo o numero: depende do Leo liberar a UTMify (mkt-r1, pergunta 3)"
+    },
+    {
+     "quando": "2026-11-27T21:44-03:00",
+     "quem": "mesa-de-demandas",
+     "o_que": "cobrança 1: prazo vencido há 0 h; cobrado Alan Turing"
+    },
+    {
+     "quando": "2026-11-27T22:10:00-03:00",
+     "quem": "dados",
+     "o_que": "entregue (atrasada ~1 h do prazo de 27/11 21h; especificação, sem número semanal)"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:10:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Grant Cardone",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261126-trafego-2",
    "de": "trafego",
    "para": "master",
@@ -5176,6 +5163,48 @@
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261126-mercado-2",
+   "de": "mercado",
+   "para": "trafego",
+   "copia": [
+    "master",
+    "cria"
+   ],
+   "titulo": "A landing atual aceita uma variante por modelo com UTM e OneLink próprios? Sim/não e como ler IC por variante",
+   "por_que": "Decisão do Léo de 26/11: venda por anúncio no AppsFlyer via OneLink da landing com UTMs (Android exato, iOS parcial), campanha otimiza IC. Pra provar se a página por modelo vence a genérica preciso separar as duas por utm_content e comparar IC por clique em %, mesmo orçamento e criativo. Sem essa separação, a iniciativa do Greco fica sem medida (PENDENCIAS.md linha 105 já pede o desenho do teste da landing).",
+   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mercado-2.md com: sim/não pra variante por modelo na landing de hoje (onde o texto mora, no repositório ou fora); nome do parâmetro UTM que separa as duas versões; qual evento mede o IC por variante; critério de decisão em % e dias. Sem gastar verba e sem mexer na campanha: só desenho.",
+   "prioridade": "P2",
+   "prazo": "2026-11-29T12:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-26T12:00:00-03:00",
+   "fio": "F-002",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-mercado-2.md",
+    "resumo": "Variante por modelo na landing: sem dado (texto fora do repo); página já repassa UTM pro OneLink. Separar por utm_term (af_sub1), IC por clique em % no pixel novo, 7 dias, ~200 IC por versão, +30% pra vencer (regras minhas, sem histórico). Pergunta sim/não pro Léo/Davi sobre 2ª URL."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T12:00:00-03:00",
+     "quem": "mercado",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T21:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "aceitei como desenho; 3º na ordem, até 29/11 12h; texto da landing fora do repositório, sim/não pode sair 'sem dado'"
+    },
+    {
+     "quando": "2026-11-27T23:10:00-03:00",
+     "quem": "trafego",
+     "o_que": "entreguei o desenho do teste; variante por modelo sem dado; utm_term em vez de utm_content pra não misturar criativo e página"
+    }
+   ],
+   "_atrasada": false,
+   "_de_nome": "Salvatore Greco",
+   "_para_nome": "Pablo Escobar"
   },
   {
    "id": "D-20261126-produto-2",
@@ -5215,6 +5244,103 @@
    "_para_nome": "Steve Jobs"
   },
   {
+   "id": "D-20261126-produto-3",
+   "de": "produto",
+   "para": "dados",
+   "copia": [
+    "dados"
+   ],
+   "titulo": "1ª leitura em % do funil instalação > cadastro > pagante, por plataforma, assim que a 1.0.2 estiver ao vivo",
+   "por_que": "O código de 25/11 tem SDK e o evento af_complete_registration; o RevenueCat recebe o UID do AppsFlyer. É a primeira vez que existe sinal pra dividir o instalado em 'cadastrou' e 'pagou'. A meta é novos assinantes pagos por semana e, sem a etapa que perde mais gente, a P-001 e o tráfego novo andam no escuro. Sem baseline ninguém promete ganho (06-produto.md, Lapidado).",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com instalação>cadastro e cadastro>pagante em %, iOS e Android separados, diz a data em que a 1.0.2 passou a valer nas lojas e o tamanho da amostra só em faixa (pequena/média/grande), sem número absoluto. Se a versão ainda não estiver ao vivo ou o evento não chegar, o arquivo diz isso e o que falta, em vez de número.",
+   "prioridade": "P2",
+   "prazo": "2026-11-29T14:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-26T14:00:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-produto-3.md",
+    "resumo": "Sem leitura: nenhum arquivo confirma a 1.0.2 ao vivo nem o evento af_complete_registration chegando. Registrei o que falta, a coorte e a regra de leitura (iOS/Android separados, 7 dias após a versão). Nenhum número inventado."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T14:00:00-03:00",
+     "quem": "produto",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceitei; só entrego % depois da 1.0.2 confirmada nas lojas (Davi/Shelby) e do evento chegando; senão em 29/11 14h entrego arquivo 'sem dado' com o que falta; sobrepõe o bloco de funil da dados-1 e da master-2, uma base só"
+    },
+    {
+     "quando": "2026-11-27T22:10:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada pro líder: versão ao vivo não confirmada em nenhum arquivo (pergunta A do Conselho 26/11 sem resposta); arquivo sem número registra o que falta"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:10:00-03:00",
+   "bloqueio": "lider",
+   "pergunta": "Léo ou Davi, sim ou não: a 1.0.2 (com o SDK do AppsFlyer) já está ao vivo nas duas lojas? Se sim, diga o dia de cada loja. Recomendação: responder hoje olhando as lojas; começa a contagem dos 7 dias da primeira leitura do funil.",
+   "pergunta_lider": "Léo ou Davi, sim ou não: a 1.0.2 (com o SDK do AppsFlyer) já está ao vivo nas duas lojas? Se sim, diga o dia de cada loja. Recomendação: responder hoje olhando as lojas; começa a contagem dos 7 dias da primeira leitura do funil.",
+   "_atrasada": false,
+   "_de_nome": "Tony Stark",
+   "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261126-trafego-4",
+   "de": "trafego",
+   "para": "dados",
+   "copia": [
+    "dados",
+    "master",
+    "trafego"
+   ],
+   "titulo": "Confirmar em %/sim-não que a compra chega na Meta e que o clique da landing chega atribuído no AppsFlyer (iOS e Android)",
+   "por_que": "Hoje (26/11, LICOES.md) o AppsFlyer passou a mandar as compras pra Meta (fb_mobile_purchase) e o OneLink da landing leva as UTMs; sem confirmar com dado, a campanha de IC não tem leitura de custo por assinante (meta de assinantes pagos novos por semana). Android sai exato e iOS parcial (PENDENCIAS.md): preciso saber o tamanho do buraco do iOS em %. Fecha o 6º portão de D-20261124-dados-5.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) sim/não e data: 'Compra' aparece no dataset do app do pixel novo na Meta; (2) em %: das visitas com UTM na landing, quantas chegam com campanha/anúncio no AppsFlyer, separado em iOS e Android; (3) se o RevenueCat e o AppsFlyer divergem no total de assinantes da semana, só direção e % de diferença. Sem leitura, escrever 'sem dado' e quem libera. Sem número absoluto nem R$.",
+   "prioridade": "P2",
+   "prazo": "2026-11-29T18:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-26T19:30:00-03:00",
+   "fio": "F-001",
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-trafego-4.md",
+    "resumo": "Os 3 itens estão \"sem dado\" (Compra no dataset, % de atribuição iOS/Android, RevenueCat x AppsFlyer). Nada lido; nenhum número inventado. Portão 6 registrado como mapeado pelo QG."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T19:30:00-03:00",
+     "quem": "trafego",
+     "o_que": "criou (Conselho 26/11, r1)"
+    },
+    {
+     "quando": "2026-11-26T21:00:00-03:00",
+     "quem": "dados",
+     "o_que": "aceitei; junto com dados-1 (UTM/pixel) e lojas-3 (mesma base de origem); sem pixel novo e sem integração Meta-AppsFlyer conferida a entrega sai como 'sem dado' + quem libera (Léo: data do pixel; Escobar: UTM); % por plataforma só depois de tráfego e da ponte do QG"
+    },
+    {
+     "quando": "2026-11-26T22:30:00-03:00",
+     "quem": "dados",
+     "o_que": "registrei portão 6 e 'sem dado' nos 3 itens em entregas/D-20261126-trafego-4.md; segue em_andamento até haver leitura"
+    },
+    {
+     "quando": "2026-11-27T22:10:00-03:00",
+     "quem": "dados",
+     "o_que": "bloqueada pro Léo: sem acesso à Meta/AppsFlyer/ponte, itens 1 a 3 seguem \"sem dado\"; campanha nova só começa 28/11 6h, então nem existe compra pra ler antes do prazo"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:10:00-03:00",
+   "bloqueio": "lider",
+   "pergunta": "Léo, sim ou não: depois do 1º clique pago de 28/11 (pixel novo), você cola até 29/11 18h o print do Events Manager do pixel novo mostrando se \"Compra\" e \"Cadastro concluído\" aparecem? Recomendação: sim; é a única prova direta que o QG ainda não consegue ler, e sem ela o custo por assinante da campanha de IC fica sem leitura.",
+   "pergunta_lider": "Léo, sim ou não: depois do 1º clique pago de 28/11 (pixel novo), você cola até 29/11 18h o print do Events Manager do pixel novo mostrando se \"Compra\" e \"Cadastro concluído\" aparecem? Recomendação: sim; é a única prova direta que o QG ainda não consegue ler, e sem ela o custo por assinante da campanha de IC fica sem leitura.",
+   "_atrasada": false,
+   "_de_nome": "Pablo Escobar",
+   "_para_nome": "Alan Turing"
+  },
+  {
    "id": "D-20261126-cria-2",
    "de": "cria",
    "para": "dados",
@@ -5227,7 +5353,7 @@
    "pronto_quando": "Nota em agencia/demandas/entregas/D-20261126-cria-2.md com: (1) fórmula da razão por criativo (assinante pago atribuído no AppsFlyer ÷ IC da Meta, ou a que o Turing preferir, com motivo); (2) volume mínimo de IC por criativo antes de ler e quantos assinantes pagos pra declarar vencedor, cada um com a conta; (3) como marcar iOS parcial e Android exato na leitura; (4) campos novos no placar.json do experimento da semana 1. Só %, sem R$ nem absoluto. Se faltar dado, dizer o que falta.",
    "prioridade": "P2",
    "prazo": "2026-11-29T19:00:00-03:00",
-   "status": "entregue",
+   "status": "aceita",
    "criada_em": "2026-11-26T19:45:00-03:00",
    "fio": "F-001",
    "entrega": {
@@ -5250,12 +5376,64 @@
      "quando": "2026-11-26T22:30:00-03:00",
      "quem": "dados",
      "o_que": "entreguei a regra; limites 'a calibrar' até a 1ª semana com clique pago; placar.json não alterado (EXP da semana 1 ainda não existe)"
+    },
+    {
+     "quando": "2026-11-27T20:00:00-03:00",
+     "quem": "cria",
+     "o_que": "aceita: formula R = compra paga (AppsFlyer af_ad) / IC (Meta) com indice vs campanha, minimo com a conta (conferi a de 1%: ~7.741 IC bate a formula de trafego-3), piso de 10 compras, iOS piso / Android exata em linhas separadas, campos do placar propostos; limites 'a calibrar' declarados por falta de p0, sem inventar numero. Bate o pronto_quando."
     }
    ],
-   "atualizada_em": "2026-11-26T22:30:00-03:00",
+   "atualizada_em": "2026-11-27T20:00:00-03:00",
    "_atrasada": false,
    "_de_nome": "Walt Disney",
    "_para_nome": "Alan Turing"
+  },
+  {
+   "id": "D-20261126-dados-2",
+   "de": "dados",
+   "para": "master",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Reatribuir D-20261125-master-1 (agente na reserva) e corrigir 'teste iniciado' na PENDENCIAS l.105",
+   "por_que": "(1) D-20261125-master-1 esta com dados:coletor-de-metricas, que esta em status 'reserva' no livro.json: reserva nao recebe demanda, entao a regra de fechamento do dia por coletado_em nao sai (prazo 02/12). (2) PENDENCIAS.md l.105 define criterio do A/B da landing como 'custo por teste iniciado / por compra'; o app nao tem teste gratis (Leo, 20/11), o criterio certo e compra paga; sem corrigir, a 1a leitura da campanha mede evento que nao existe.",
+   "pronto_quando": "Em agencia/demandas/itens/D-20261125-master-1.json o campo 'para' aponta pra agente ativo (sugiro dados:relatorio-semanal) e PENDENCIAS.md l.105 diz 'custo por compra paga (RevenueCat)' sem 'teste iniciado'. Prova: os dois arquivos.",
+   "prioridade": "P2",
+   "prazo": "2026-11-29T20:00:00-03:00",
+   "status": "entregue",
+   "criada_em": "2026-11-26T20:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-dados-2.md",
+    "resumo": "PENDENCIAS.md l.105 agora diz 'custo por compra paga (RevenueCat...)' e nao contem mais 'teste iniciado' (grep = 0); master-1 de 25/11 segue com dados:relatorio-semanal."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-26T20:00:00-03:00",
+     "quem": "dados",
+     "o_que": "criou"
+    },
+    {
+     "quando": "2026-11-26T21:30:00-03:00",
+     "quem": "master",
+     "o_que": "entregou: os dois arquivos corrigidos; ver entrega"
+    },
+    {
+     "quando": "2026-11-26T22:00:00-03:00",
+     "quem": "dados",
+     "o_que": "devolvida: item 1 ok (master-1 com dados:relatorio-semanal, ativo no livro). Falta item 2: PENDENCIAS.md l.105 ainda contem 'teste iniciado' (entre aspas, na negacao) e diz 'custo por assinante pago', nao 'custo por compra paga (RevenueCat)'. Reescrever o criterio como 'custo por compra paga (RevenueCat)' e tirar a expressao 'teste iniciado' da linha (manter so 'o app nao tem teste gratis'). Resto da linha pode ficar."
+    },
+    {
+     "quando": "2026-11-27T22:30:00-03:00",
+     "quem": "master",
+     "o_que": "reentregou: l.105 reescrita como 'custo por compra paga (RevenueCat)', expressao 'teste iniciado' removida"
+    }
+   ],
+   "atualizada_em": "2026-11-27T22:30:00-03:00",
+   "_atrasada": false,
+   "_de_nome": "Alan Turing",
+   "_para_nome": "Thomas Shelby"
   },
   {
    "id": "D-20261126-mkt-2",
@@ -5340,6 +5518,44 @@
    "_atrasada": false,
    "_de_nome": "Pablo Escobar",
    "_para_nome": "Thomas Shelby"
+  },
+  {
+   "id": "D-20261127-professor-3",
+   "de": "professor",
+   "para": "trafego",
+   "copia": [
+    "master"
+   ],
+   "titulo": "Confirmar idade mínima 18 nos públicos dos anúncios (MinhaMoto e Corretores) antes da próxima verba",
+   "por_que": "ECA Digital (Lei 15.211, art. 22) proíbe usar perfil de menor para publicidade, e a ANPD começa a fiscalizar em jan/2027 (https://www.gov.br/anpd/pt-br/assuntos/eca-digital). Anúncio entregue a menor é risco jurídico e de conta. Não há registro de que a idade mínima 18 está travada nos conjuntos. Ver areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md.",
+   "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo, por campanha ativa e planejada, a idade mínima configurada e se é controle fixo (não só sugestão do Advantage+), sem mexer em nada; se precisar mudar, pergunta sim/não pro Léo/Davi e status 'bloqueada' com bloqueio 'lider'.",
+   "prioridade": "P2",
+   "prazo": "2026-11-30T12:00:00-03:00",
+   "status": "bloqueada",
+   "criada_em": "2026-11-27T12:00:00-03:00",
+   "fio": null,
+   "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261127-professor-3.md",
+    "resumo": "Idade mínima por campanha: sem dado (sem acesso ao Gerenciador); 18 conjuntos duplicados entram 28/11 6h. Risco: 18 pode ser só sugestão do Advantage+. Entreguei checklist (7º portão) e pergunta sim/não ao Léo com recomendação SIM."
+   },
+   "cobrancas": 0,
+   "historico": [
+    {
+     "quando": "2026-11-27T12:00:00-03:00",
+     "quem": "professor",
+     "o_que": "criou (treino de 27/11)"
+    },
+    {
+     "quando": "2026-11-27T23:00:00-03:00",
+     "quem": "trafego",
+     "o_que": "entreguei diagnóstico: idade mínima sem dado por campanha; bloqueada (lider) com sim/não pro Léo, recomendação SIM; erro meu registrado: proposta de 26/11 não tinha idade"
+    }
+   ],
+   "bloqueio": "lider",
+   "pergunta": "Léo, nos conjuntos do MinhaMoto que entram 28/11 às 6h (e nos dos Corretores), a idade mínima está em 18 como controle fixo (não só sugestão do Advantage+)? Sim/não. Se não, posso pedir pra você trocar pra 18 fixo antes de ligar? Recomendo SIM: 5 minutos, fecha risco do art. 22 do ECA Digital.",
+   "_atrasada": false,
+   "_de_nome": "professor",
+   "_para_nome": "Pablo Escobar"
   },
   {
    "id": "D-20261122-master-4",

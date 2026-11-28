@@ -11,7 +11,7 @@
   "pronto_quando": "Nota em agencia/demandas/entregas/D-20261126-cria-2.md com: (1) fórmula da razão por criativo (assinante pago atribuído no AppsFlyer ÷ IC da Meta, ou a que o Turing preferir, com motivo); (2) volume mínimo de IC por criativo antes de ler e quantos assinantes pagos pra declarar vencedor, cada um com a conta; (3) como marcar iOS parcial e Android exato na leitura; (4) campos novos no placar.json do experimento da semana 1. Só %, sem R$ nem absoluto. Se faltar dado, dizer o que falta.",
   "prioridade": "P2",
   "prazo": "2026-11-29T19:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-26T19:45:00-03:00",
   "fio": "F-001",
   "entrega": {
@@ -34,7 +34,12 @@
       "quando": "2026-11-26T22:30:00-03:00",
       "quem": "dados",
       "o_que": "entreguei a regra; limites 'a calibrar' até a 1ª semana com clique pago; placar.json não alterado (EXP da semana 1 ainda não existe)"
+    },
+    {
+      "quando": "2026-11-27T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceita: formula R = compra paga (AppsFlyer af_ad) / IC (Meta) com indice vs campanha, minimo com a conta (conferi a de 1%: ~7.741 IC bate a formula de trafego-3), piso de 10 compras, iOS piso / Android exata em linhas separadas, campos do placar propostos; limites 'a calibrar' declarados por falta de p0, sem inventar numero. Bate o pronto_quando."
     }
   ],
-  "atualizada_em": "2026-11-26T22:30:00-03:00"
+  "atualizada_em": "2026-11-27T20:00:00-03:00"
 }

@@ -87,3 +87,7 @@ Setor: Direção-Geral · Cargo: Diretor-Geral · Playbook: agencia/diretoria/01
 - fiz: conselho/fechamento-semana-2026-11-27.md; edição 005 do Briefing (privado) com KPIs reais, ranking com variação, 3 resoluções novas (016 a 018); metas.json com a % lida (0%).
 - aprendi: (1) não havia plano-semana-*.md desta segunda: a tarefa do plano não deixou arquivo, usei os próximos passos da edição de 23/11. (2) A edição anterior trazia a receita recorrente em R$, mas o RevenueCat reporta em US$: corrigido. (3) O RevenueCat mostra testes ativos num app sem teste grátis: pedi conferência ao Turing. (4) 0% da meta com zero campanha no ar é falta de aquisição, não de conversão.
 - pendente: cobrança até 30/11: Fogg (slots 18h), Cardone (cliente sem Mapa Visual), Stark (2 workflows), Turing (notas fiscais); transportar o pacote do Davi (9 perguntas); plano da semana com arquivo em 30/11; fechamento do mês em 30/11; avaliação do padrão por meta na Folha de 04/12.
+
+
+## 27/11 licao
+Devolucao por 'sentido mudou': ao resumir pergunta do Davi, copiar a pergunta sem cortes (caso H/P-001 'sem o km da configuracao'). Ao corrigir linha pedida, usar a expressao exata do pedido e conferir com grep. Reentregues: D-20261124-produto_analista-do-paywall-1 e D-20261126-dados-2.

@@ -11,7 +11,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-cria-1.md com: (1) os 12 slots com o utm_content CR-xx que vai no link da landing (OneLink: pid, c, af_adset, af_ad), sem criar anúncio; (2) corte em dois níveis, só em % (pausa por custo por IC em % da mediana dos slots do mesmo teste, valor proposto e marcado 'sem histórico'; vencedor só por assinante pago, nunca por IC); (3) quais slots rodam em iOS (atribuição parcial) e quais em Android (exata); (4) o que ainda depende do Léo. Sem R$ nem número absoluto.",
   "prioridade": "P1",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-26T19:45:00-03:00",
   "fio": "F-004",
   "entrega": {
@@ -34,7 +34,12 @@
       "quando": "2026-11-26T21:45:00-03:00",
       "quem": "trafego",
       "o_que": "entregou: brief refeito pra landing e IC; muda a r2 (12 slots vira mapa, A1/B1 primeiro)"
+    },
+    {
+      "quando": "2026-11-27T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceita: 12 slots com utm_content e link da landing, corte em 2 niveis so em % marcado 'sem historico' (IC so pausa, assinante pago decide), iOS parcial/Android exato por slot e lista do que depende do Leo, sem R$; bate o pronto_quando. A1/B1 primeiro e coerente com a decisao do Leo. Obs: a decisao de 27/11 (pixel novo, inicio 28/11 6h) pode exigir ajustar nomes de campanha, fica por conta da Decisao 1."
     }
   ],
-  "atualizada_em": "2026-11-26T21:45:00-03:00"
+  "atualizada_em": "2026-11-27T20:00:00-03:00"
 }

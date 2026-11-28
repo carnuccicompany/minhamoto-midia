@@ -10,10 +10,13 @@
  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-trafego-3.md com: (1) em que tela do onboarding entra e por que ali, sem atrasar o paywall; (2) 5 opções de resposta (Instagram, TikTok, indicação de amigo, loja/busca, outro); (3) 1 sim/não pro Davi (a pergunta cabe na próxima build?); (4) como o resultado vira % por origem. Só proposta: nada muda no app.",
  "prioridade": "P2",
  "prazo": "2026-11-27T18:30:00-03:00",
- "status": "em_andamento",
+ "status": "entregue",
  "criada_em": "2026-11-24T18:30:00-03:00",
  "fio": "F-001",
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261124-trafego-3.md",
+  "resumo": "Proposta: 1 tela 'Como você conheceu o MinhaMoto?' (5 opções + Pular) logo após o cadastro da moto, evento origem_declarada, leitura em % por origem e plataforma, 1 sim/não ao Davi (mesma build dos eventos). Corrige a premissa: o SDK já entrou em 24/11; a pergunta cobre orgânico sem link, iOS sem rastreio e indicação."
+ },
  "cobrancas": 1,
  "historico": [
   {
@@ -30,7 +33,12 @@
    "quando": "2026-11-27T21:44-03:00",
    "quem": "mesa-de-demandas",
    "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Tony Stark"
+  },
+  {
+   "quando": "2026-11-27T22:30-03:00",
+   "quem": "produto",
+   "o_que": "entreguei a proposta (tela, 5 opções, 1 sim/não, % por origem); só proposta, nada muda no app; premissa 'sem SDK' corrigida"
   }
  ],
- "atualizada_em": "2026-11-27T21:44-03:00"
+ "atualizada_em": "2026-11-27T22:30-03:00"
 }

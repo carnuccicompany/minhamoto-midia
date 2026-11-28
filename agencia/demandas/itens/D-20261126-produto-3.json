@@ -10,10 +10,13 @@
  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com instalação>cadastro e cadastro>pagante em %, iOS e Android separados, diz a data em que a 1.0.2 passou a valer nas lojas e o tamanho da amostra só em faixa (pequena/média/grande), sem número absoluto. Se a versão ainda não estiver ao vivo ou o evento não chegar, o arquivo diz isso e o que falta, em vez de número.",
  "prioridade": "P2",
  "prazo": "2026-11-29T14:00:00-03:00",
- "status": "em_andamento",
+ "status": "bloqueada",
  "criada_em": "2026-11-26T14:00:00-03:00",
  "fio": "F-001",
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261126-produto-3.md",
+  "resumo": "Sem leitura: nenhum arquivo confirma a 1.0.2 ao vivo nem o evento af_complete_registration chegando. Registrei o que falta, a coorte e a regra de leitura (iOS/Android separados, 7 dias após a versão). Nenhum número inventado."
+ },
  "cobrancas": 0,
  "historico": [
   {
@@ -25,7 +28,15 @@
    "quando": "2026-11-26T21:00:00-03:00",
    "quem": "dados",
    "o_que": "aceitei; só entrego % depois da 1.0.2 confirmada nas lojas (Davi/Shelby) e do evento chegando; senão em 29/11 14h entrego arquivo 'sem dado' com o que falta; sobrepõe o bloco de funil da dados-1 e da master-2, uma base só"
+  },
+  {
+   "quando": "2026-11-27T22:10:00-03:00",
+   "quem": "dados",
+   "o_que": "bloqueada pro líder: versão ao vivo não confirmada em nenhum arquivo (pergunta A do Conselho 26/11 sem resposta); arquivo sem número registra o que falta"
   }
  ],
- "atualizada_em": "2026-11-26T21:00:00-03:00"
+ "atualizada_em": "2026-11-27T22:10:00-03:00",
+ "bloqueio": "lider",
+ "pergunta": "Léo ou Davi, sim ou não: a 1.0.2 (com o SDK do AppsFlyer) já está ao vivo nas duas lojas? Se sim, diga o dia de cada loja. Recomendação: responder hoje olhando as lojas; começa a contagem dos 7 dias da primeira leitura do funil.",
+ "pergunta_lider": "Léo ou Davi, sim ou não: a 1.0.2 (com o SDK do AppsFlyer) já está ao vivo nas duas lojas? Se sim, diga o dia de cada loja. Recomendação: responder hoje olhando as lojas; começa a contagem dos 7 dias da primeira leitura do funil."
 }

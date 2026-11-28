@@ -11,16 +11,27 @@
  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (a) pergunta sim/não pronta pro Davi conferir que nenhuma oferta introdutória/teste está ligada nas duas lojas e manter assim; (b) pergunta sim/não pro Léo registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que dentro da tela que cobra e na ficha da assinatura ficam período e renovação como as lojas exigem. Demanda vai a 'bloqueada' com bloqueio 'lider' até as respostas.",
  "prioridade": "P1",
  "prazo": "2026-11-28T12:00:00-03:00",
- "status": "aberta",
+ "status": "bloqueada",
  "criada_em": "2026-11-27T12:00:00-03:00",
  "fio": null,
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261127-professor-1.md",
+  "resumo": "Premissa confere no código d4942b2 (1.0.2): paywall liga 'dias grátis' sozinho com oferta introdutória da loja (4 pontos, um novo: 'Nada é cobrado hoje', :597). Paywall hoje conforme. 2 sim/não prontos: Davi (conferir lojas sem oferta) e Léo (exceção do '/mês' dentro da tela que cobra)."
+ },
  "cobrancas": 0,
  "historico": [
   {
    "quando": "2026-11-27T12:00:00-03:00",
    "quem": "professor",
    "o_que": "criou (treino de 27/11)"
+  },
+  {
+   "quando": "2026-11-27T22:30-03:00",
+   "quem": "produto",
+   "o_que": "entreguei e bloqueei com bloqueio lider: pergunta 1 ao Davi, pergunta 2 ao Léo; código conferido (d4942b2, 1.0.2)"
   }
- ]
+ ],
+ "bloqueio": "lider",
+ "pergunta_lider": "Davi: você confere no App Store Connect e no Play Console que nenhum produto de assinatura tem oferta introdutória (teste ou preço de entrada) ligada, e mantém assim? Recomendo: sim. Léo: registrar em decisoes.md que 'nunca por mês' vale pra anúncio, post e vídeo, e que na tela que cobra e na ficha da assinatura nas lojas ficam duração e renovação (exigência Apple/Google)? Recomendo: sim.",
+ "atualizada_em": "2026-11-27T22:30-03:00"
 }

@@ -1,0 +1,26 @@
+{
+  "id": "D-20261127-trafego-2",
+  "de": "trafego",
+  "para": "cria",
+  "copia": [
+    "master",
+    "trafego"
+  ],
+  "titulo": "Revisão visual de A1 e B1 e dos próximos criativos: sem personagem, cena, cor ou linguagem com cara de público infantil (ECA Digital art. 22)",
+  "por_que": "A aula de 27/11 (direcao-geral) e a D-20261127-professor-3 pedem anúncio sem sinal de atratividade a menor; o Play também não aceita anúncio mais infantil que o app. Reduz risco de conta e de multa antes da verba, sem custo de produção.",
+  "pronto_quando": "Checklist de 5 linhas por criativo (personagem, cena, cor, texto, música) em agencia/demandas/entregas/, 'ok' ou 'trocar' com o motivo, e regra de uma linha pra todo criativo novo. Nada vai ao ar.",
+  "prioridade": "P2",
+  "prazo": "2026-11-30T18:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-27T23:20:00-03:00",
+  "fio": "F-004",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-27T23:20:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    }
+  ]
+}

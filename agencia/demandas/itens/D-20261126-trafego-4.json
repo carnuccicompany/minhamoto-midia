@@ -1,38 +1,49 @@
 {
-  "id": "D-20261126-trafego-4",
-  "de": "trafego",
-  "para": "dados",
-  "copia": [
-    "dados",
-    "master",
-    "trafego"
-  ],
-  "titulo": "Confirmar em %/sim-não que a compra chega na Meta e que o clique da landing chega atribuído no AppsFlyer (iOS e Android)",
-  "por_que": "Hoje (26/11, LICOES.md) o AppsFlyer passou a mandar as compras pra Meta (fb_mobile_purchase) e o OneLink da landing leva as UTMs; sem confirmar com dado, a campanha de IC não tem leitura de custo por assinante (meta de assinantes pagos novos por semana). Android sai exato e iOS parcial (PENDENCIAS.md): preciso saber o tamanho do buraco do iOS em %. Fecha o 6º portão de D-20261124-dados-5.",
-  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) sim/não e data: 'Compra' aparece no dataset do app do pixel novo na Meta; (2) em %: das visitas com UTM na landing, quantas chegam com campanha/anúncio no AppsFlyer, separado em iOS e Android; (3) se o RevenueCat e o AppsFlyer divergem no total de assinantes da semana, só direção e % de diferença. Sem leitura, escrever 'sem dado' e quem libera. Sem número absoluto nem R$.",
-  "prioridade": "P2",
-  "prazo": "2026-11-29T18:00:00-03:00",
-  "status": "em_andamento",
-  "criada_em": "2026-11-26T19:30:00-03:00",
-  "fio": "F-001",
-  "entrega": null,
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-26T19:30:00-03:00",
-      "quem": "trafego",
-      "o_que": "criou (Conselho 26/11, r1)"
-    },
-    {
-      "quando": "2026-11-26T21:00:00-03:00",
-      "quem": "dados",
-      "o_que": "aceitei; junto com dados-1 (UTM/pixel) e lojas-3 (mesma base de origem); sem pixel novo e sem integração Meta-AppsFlyer conferida a entrega sai como 'sem dado' + quem libera (Léo: data do pixel; Escobar: UTM); % por plataforma só depois de tráfego e da ponte do QG"
-    },
-    {
-      "quando": "2026-11-26T22:30:00-03:00",
-      "quem": "dados",
-      "o_que": "registrei portão 6 e 'sem dado' nos 3 itens em entregas/D-20261126-trafego-4.md; segue em_andamento até haver leitura"
-    }
-  ],
-  "atualizada_em": "2026-11-26T22:30:00-03:00"
+ "id": "D-20261126-trafego-4",
+ "de": "trafego",
+ "para": "dados",
+ "copia": [
+  "dados",
+  "master",
+  "trafego"
+ ],
+ "titulo": "Confirmar em %/sim-não que a compra chega na Meta e que o clique da landing chega atribuído no AppsFlyer (iOS e Android)",
+ "por_que": "Hoje (26/11, LICOES.md) o AppsFlyer passou a mandar as compras pra Meta (fb_mobile_purchase) e o OneLink da landing leva as UTMs; sem confirmar com dado, a campanha de IC não tem leitura de custo por assinante (meta de assinantes pagos novos por semana). Android sai exato e iOS parcial (PENDENCIAS.md): preciso saber o tamanho do buraco do iOS em %. Fecha o 6º portão de D-20261124-dados-5.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/ com: (1) sim/não e data: 'Compra' aparece no dataset do app do pixel novo na Meta; (2) em %: das visitas com UTM na landing, quantas chegam com campanha/anúncio no AppsFlyer, separado em iOS e Android; (3) se o RevenueCat e o AppsFlyer divergem no total de assinantes da semana, só direção e % de diferença. Sem leitura, escrever 'sem dado' e quem libera. Sem número absoluto nem R$.",
+ "prioridade": "P2",
+ "prazo": "2026-11-29T18:00:00-03:00",
+ "status": "bloqueada",
+ "criada_em": "2026-11-26T19:30:00-03:00",
+ "fio": "F-001",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261126-trafego-4.md",
+  "resumo": "Os 3 itens estão \"sem dado\" (Compra no dataset, % de atribuição iOS/Android, RevenueCat x AppsFlyer). Nada lido; nenhum número inventado. Portão 6 registrado como mapeado pelo QG."
+ },
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-26T19:30:00-03:00",
+   "quem": "trafego",
+   "o_que": "criou (Conselho 26/11, r1)"
+  },
+  {
+   "quando": "2026-11-26T21:00:00-03:00",
+   "quem": "dados",
+   "o_que": "aceitei; junto com dados-1 (UTM/pixel) e lojas-3 (mesma base de origem); sem pixel novo e sem integração Meta-AppsFlyer conferida a entrega sai como 'sem dado' + quem libera (Léo: data do pixel; Escobar: UTM); % por plataforma só depois de tráfego e da ponte do QG"
+  },
+  {
+   "quando": "2026-11-26T22:30:00-03:00",
+   "quem": "dados",
+   "o_que": "registrei portão 6 e 'sem dado' nos 3 itens em entregas/D-20261126-trafego-4.md; segue em_andamento até haver leitura"
+  },
+  {
+   "quando": "2026-11-27T22:10:00-03:00",
+   "quem": "dados",
+   "o_que": "bloqueada pro Léo: sem acesso à Meta/AppsFlyer/ponte, itens 1 a 3 seguem \"sem dado\"; campanha nova só começa 28/11 6h, então nem existe compra pra ler antes do prazo"
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:10:00-03:00",
+ "bloqueio": "lider",
+ "pergunta": "Léo, sim ou não: depois do 1º clique pago de 28/11 (pixel novo), você cola até 29/11 18h o print do Events Manager do pixel novo mostrando se \"Compra\" e \"Cadastro concluído\" aparecem? Recomendação: sim; é a única prova direta que o QG ainda não consegue ler, e sem ela o custo por assinante da campanha de IC fica sem leitura.",
+ "pergunta_lider": "Léo, sim ou não: depois do 1º clique pago de 28/11 (pixel novo), você cola até 29/11 18h o print do Events Manager do pixel novo mostrando se \"Compra\" e \"Cadastro concluído\" aparecem? Recomendação: sim; é a única prova direta que o QG ainda não consegue ler, e sem ela o custo por assinante da campanha de IC fica sem leitura."
 }

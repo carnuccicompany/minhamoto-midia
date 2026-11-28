@@ -71,3 +71,8 @@
 - Prazos: 27/11 ec124592; 30/11 relatório, trafego-3, linha de base.
 
 - 27/11 (Hemingway): relatório de 30/11 abre com o bloco de medição de D-20261124-dados-3; antes de afirmar variação, checar se o salto de 27/11 (+25,7%) se manteve em 28 e 29/11.
+
+## Atualização 2026-11-27
+- Entregue: mkt-2 (spec Corretores). Bloqueadas pro Léo: trafego-4 (print do pixel após 1º clique pago de 28/11) e produto-3 (1.0.2 ao vivo? que dia?). Sem demanda nova.
+- Cobrar: QG (ponte resumo-pct.json, bloco corretores e funil_app), Léo (UTMify diária, Kavoo Pix/reembolso).
+- Prazos: 29/11 14h produto-3 e 18h trafego-4 (dependem da resposta); 30/11 relatório, trafego-3, linha de base; 01/12 produto-5.

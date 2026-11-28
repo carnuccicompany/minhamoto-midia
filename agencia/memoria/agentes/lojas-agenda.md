@@ -49,3 +49,7 @@
 
 ## Atualização 27/11 (Ted, lojas-1)
 - Janela de 7 dias do Play confirmada (ec124592 ausente na coleta 27/11 16:15Z, n=0). Entrega em demandas/entregas/D-20261126-lojas-1.md. Histórico próprio depende do Davi (D-20261124-dados-3); nota oficial do Console segue com o Léo.
+
+## Atualização 27/11 (professor-2)
+- Pendências do Davi: registro Android na Home do Play Console (hoje), descritores Apple até 05/01/2027, IARC até 11/12/2026 com print. Entrega: D-20261127-professor-2 (bloqueada, lider).
+- Calendário meu: cobrar o Davi em 04/12 (IARC) e 29/12 (Apple). Sem demandas novas.

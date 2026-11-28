@@ -11,10 +11,13 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-mercado-2.md com: sim/não pra variante por modelo na landing de hoje (onde o texto mora, no repositório ou fora); nome do parâmetro UTM que separa as duas versões; qual evento mede o IC por variante; critério de decisão em % e dias. Sem gastar verba e sem mexer na campanha: só desenho.",
   "prioridade": "P2",
   "prazo": "2026-11-29T12:00:00-03:00",
-  "status": "em_andamento",
+  "status": "entregue",
   "criada_em": "2026-11-26T12:00:00-03:00",
   "fio": "F-002",
-  "entrega": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261126-mercado-2.md",
+    "resumo": "Variante por modelo na landing: sem dado (texto fora do repo); página já repassa UTM pro OneLink. Separar por utm_term (af_sub1), IC por clique em % no pixel novo, 7 dias, ~200 IC por versão, +30% pra vencer (regras minhas, sem histórico). Pergunta sim/não pro Léo/Davi sobre 2ª URL."
+  },
   "cobrancas": 0,
   "historico": [
     {
@@ -26,6 +29,11 @@
       "quando": "2026-11-26T21:00:00-03:00",
       "quem": "trafego",
       "o_que": "aceitei como desenho; 3º na ordem, até 29/11 12h; texto da landing fora do repositório, sim/não pode sair 'sem dado'"
+    },
+    {
+      "quando": "2026-11-27T23:10:00-03:00",
+      "quem": "trafego",
+      "o_que": "entreguei o desenho do teste; variante por modelo sem dado; utm_term em vez de utm_content pra não misturar criativo e página"
     }
   ]
 }

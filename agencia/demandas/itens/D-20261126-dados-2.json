@@ -10,12 +10,12 @@
   "pronto_quando": "Em agencia/demandas/itens/D-20261125-master-1.json o campo 'para' aponta pra agente ativo (sugiro dados:relatorio-semanal) e PENDENCIAS.md l.105 diz 'custo por compra paga (RevenueCat)' sem 'teste iniciado'. Prova: os dois arquivos.",
   "prioridade": "P2",
   "prazo": "2026-11-29T20:00:00-03:00",
-  "status": "devolvida",
+  "status": "entregue",
   "criada_em": "2026-11-26T20:00:00-03:00",
   "fio": null,
   "entrega": {
     "arquivo": "agencia/demandas/entregas/D-20261126-dados-2.md",
-    "resumo": "master-1 (25/11) reatribuida ao Hemingway (ativo); PENDENCIAS l.105 corrigida: criterio vira custo por assinante pago, sem 'teste iniciado', e registra a decisao do Leo de 26/11."
+    "resumo": "PENDENCIAS.md l.105 agora diz 'custo por compra paga (RevenueCat...)' e nao contem mais 'teste iniciado' (grep = 0); master-1 de 25/11 segue com dados:relatorio-semanal."
   },
   "cobrancas": 0,
   "historico": [
@@ -33,7 +33,12 @@
       "quando": "2026-11-26T22:00:00-03:00",
       "quem": "dados",
       "o_que": "devolvida: item 1 ok (master-1 com dados:relatorio-semanal, ativo no livro). Falta item 2: PENDENCIAS.md l.105 ainda contem 'teste iniciado' (entre aspas, na negacao) e diz 'custo por assinante pago', nao 'custo por compra paga (RevenueCat)'. Reescrever o criterio como 'custo por compra paga (RevenueCat)' e tirar a expressao 'teste iniciado' da linha (manter so 'o app nao tem teste gratis'). Resto da linha pode ficar."
+    },
+    {
+      "quando": "2026-11-27T22:30:00-03:00",
+      "quem": "master",
+      "o_que": "reentregou: l.105 reescrita como 'custo por compra paga (RevenueCat)', expressao 'teste iniciado' removida"
     }
   ],
-  "atualizada_em": "2026-11-26T22:00:00-03:00"
+  "atualizada_em": "2026-11-27T22:30:00-03:00"
 }

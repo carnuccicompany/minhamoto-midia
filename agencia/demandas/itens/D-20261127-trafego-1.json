@@ -1,0 +1,26 @@
+{
+  "id": "D-20261127-trafego-1",
+  "de": "trafego",
+  "para": "dados",
+  "copia": [
+    "master",
+    "trafego"
+  ],
+  "titulo": "IC por clique em % da landing genérica (pixel novo, 28/11 em diante) e razão IC/clique entre A1 e B1, só em %",
+  "por_que": "O teste da landing por modelo (D-20261126-mercado-2) só tem critério de vencedor se a base da genérica existir: hoje 200 IC por versão e +30% são regras minhas, sem histórico. A 1ª leitura troca por número da casa. Vende mais porque decide, com prova, se página por modelo aumenta clique pra loja.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ com IC ÷ cliques no link da genérica por dia, em % (índice, sem número absoluto), razão A1/B1 e dias de leitura; se a ponte de % do QG não existir, 'sem dado' com o dono do bloqueio.",
+  "prioridade": "P2",
+  "prazo": "2026-12-01T12:00:00-03:00",
+  "status": "aberta",
+  "criada_em": "2026-11-27T23:20:00-03:00",
+  "fio": "F-002",
+  "entrega": null,
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-27T23:20:00-03:00",
+      "quem": "trafego",
+      "o_que": "criou"
+    }
+  ]
+}

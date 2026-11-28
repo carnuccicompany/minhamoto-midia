@@ -1,25 +1,35 @@
 {
- "id": "D-20261127-professor-3",
- "de": "professor",
- "para": "trafego",
- "copia": [
-  "master"
- ],
- "titulo": "Confirmar idade mínima 18 nos públicos dos anúncios (MinhaMoto e Corretores) antes da próxima verba",
- "por_que": "ECA Digital (Lei 15.211, art. 22) proíbe usar perfil de menor para publicidade, e a ANPD começa a fiscalizar em jan/2027 (https://www.gov.br/anpd/pt-br/assuntos/eca-digital). Anúncio entregue a menor é risco jurídico e de conta. Não há registro de que a idade mínima 18 está travada nos conjuntos. Ver areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md.",
- "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo, por campanha ativa e planejada, a idade mínima configurada e se é controle fixo (não só sugestão do Advantage+), sem mexer em nada; se precisar mudar, pergunta sim/não pro Léo/Davi e status 'bloqueada' com bloqueio 'lider'.",
- "prioridade": "P2",
- "prazo": "2026-11-30T12:00:00-03:00",
- "status": "aberta",
- "criada_em": "2026-11-27T12:00:00-03:00",
- "fio": null,
- "entrega": null,
- "cobrancas": 0,
- "historico": [
-  {
-   "quando": "2026-11-27T12:00:00-03:00",
-   "quem": "professor",
-   "o_que": "criou (treino de 27/11)"
-  }
- ]
+  "id": "D-20261127-professor-3",
+  "de": "professor",
+  "para": "trafego",
+  "copia": [
+    "master"
+  ],
+  "titulo": "Confirmar idade mínima 18 nos públicos dos anúncios (MinhaMoto e Corretores) antes da próxima verba",
+  "por_que": "ECA Digital (Lei 15.211, art. 22) proíbe usar perfil de menor para publicidade, e a ANPD começa a fiscalizar em jan/2027 (https://www.gov.br/anpd/pt-br/assuntos/eca-digital). Anúncio entregue a menor é risco jurídico e de conta. Não há registro de que a idade mínima 18 está travada nos conjuntos. Ver areas/direcao-geral/aulas/2026-11-27-classificacao-etaria-e-eca-digital.md.",
+  "pronto_quando": "Arquivo em agencia/demandas/entregas/ dizendo, por campanha ativa e planejada, a idade mínima configurada e se é controle fixo (não só sugestão do Advantage+), sem mexer em nada; se precisar mudar, pergunta sim/não pro Léo/Davi e status 'bloqueada' com bloqueio 'lider'.",
+  "prioridade": "P2",
+  "prazo": "2026-11-30T12:00:00-03:00",
+  "status": "bloqueada",
+  "criada_em": "2026-11-27T12:00:00-03:00",
+  "fio": null,
+  "entrega": {
+    "arquivo": "agencia/demandas/entregas/D-20261127-professor-3.md",
+    "resumo": "Idade mínima por campanha: sem dado (sem acesso ao Gerenciador); 18 conjuntos duplicados entram 28/11 6h. Risco: 18 pode ser só sugestão do Advantage+. Entreguei checklist (7º portão) e pergunta sim/não ao Léo com recomendação SIM."
+  },
+  "cobrancas": 0,
+  "historico": [
+    {
+      "quando": "2026-11-27T12:00:00-03:00",
+      "quem": "professor",
+      "o_que": "criou (treino de 27/11)"
+    },
+    {
+      "quando": "2026-11-27T23:00:00-03:00",
+      "quem": "trafego",
+      "o_que": "entreguei diagnóstico: idade mínima sem dado por campanha; bloqueada (lider) com sim/não pro Léo, recomendação SIM; erro meu registrado: proposta de 26/11 não tinha idade"
+    }
+  ],
+  "bloqueio": "lider",
+  "pergunta": "Léo, nos conjuntos do MinhaMoto que entram 28/11 às 6h (e nos dos Corretores), a idade mínima está em 18 como controle fixo (não só sugestão do Advantage+)? Sim/não. Se não, posso pedir pra você trocar pra 18 fixo antes de ligar? Recomendo SIM: 5 minutos, fecha risco do art. 22 do ECA Digital."
 }

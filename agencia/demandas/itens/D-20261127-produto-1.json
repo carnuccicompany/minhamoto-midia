@@ -1,0 +1,26 @@
+{
+ "id": "D-20261127-produto-1",
+ "de": "produto",
+ "para": "produto:analista-do-paywall",
+ "copia": [
+  "produto"
+ ],
+ "titulo": "Jobs: checar a P-001 e a página de decisão contra a regra 'nada de grátis/teste/dias' e o checklist da tela que cobra (aula 27/11, §7.3)",
+ "por_que": "O paywall do código de 25/11 (d4942b2) escreve 'X dias grátis' sozinho se a loja tiver oferta introdutória (paywall-minhamoto.tsx:489, 586, 597). A P-001 vai ao Davi; se ela ou os mockups tiverem qualquer palavra de teste, ou tirarem o período da tela que cobra, contradizem Léo (22/11) e as lojas (D-20261127-professor-1). Evita devolução e risco de rejeição antes do sim do Davi.",
+ "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261127-produto-1.md com: lista de cada ocorrência de 'grátis', 'teste', 'dias' e 'vitalício' em P-001 (.md e .html) e no mockup D-20261122-produto-1 (zero, ou onde estão e a troca); confirmação de que nenhuma tela proposta tira duração/renovação do paywall; só leitura, nada publicado.",
+ "prioridade": "P2",
+ "prazo": "2026-11-30T18:00:00-03:00",
+ "status": "aberta",
+ "criada_em": "2026-11-27T22:30-03:00",
+ "fio": "F-001",
+ "entrega": null,
+ "cobrancas": 0,
+ "historico": [
+  {
+   "quando": "2026-11-27T22:30-03:00",
+   "quem": "produto",
+   "o_que": "criou"
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:30-03:00"
+}

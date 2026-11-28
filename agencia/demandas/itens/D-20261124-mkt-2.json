@@ -10,10 +10,13 @@
  "pronto_quando": "Especificação (ou o próprio arquivo, se a ponte já existir) em agencia/demandas/entregas/D-20261124-mkt-2.md com as 6 métricas em % ou variação, semana contra semana, e a fonte de cada uma (UTMify/Kavoo); sem R$ nem contagem absoluta; o que não tem dado fica escrito 'sem dado' e quem libera.",
  "prioridade": "P2",
  "prazo": "2026-11-27T21:00:00-03:00",
- "status": "em_andamento",
+ "status": "entregue",
  "criada_em": "2026-11-24T21:00:00-03:00",
  "fio": null,
- "entrega": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261124-mkt-2.md",
+  "resumo": "Especificação das 6 métricas dos Corretores (vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido, % reembolso) em índice/% semana contra semana, com fonte (UTMify/Kavoo) e \"sem dado\" + quem libera. A ponte resumo-pct.json ainda não existe aqui; nenhum número semanal lido. Corrigida a divergência: UTMify está \"feito\" no cadastro, falta leitura diária e ponte."
+ },
  "cobrancas": 1,
  "historico": [
   {
@@ -30,7 +33,12 @@
    "quando": "2026-11-27T21:44-03:00",
    "quem": "mesa-de-demandas",
    "o_que": "cobrança 1: prazo vencido há 0 h; cobrado Alan Turing"
+  },
+  {
+   "quando": "2026-11-27T22:10:00-03:00",
+   "quem": "dados",
+   "o_que": "entregue (atrasada ~1 h do prazo de 27/11 21h; especificação, sem número semanal)"
   }
  ],
- "atualizada_em": "2026-11-27T21:44-03:00"
+ "atualizada_em": "2026-11-27T22:10:00-03:00"
 }

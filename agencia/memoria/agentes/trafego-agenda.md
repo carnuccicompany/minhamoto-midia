@@ -73,3 +73,9 @@ BM de anúncios antes da 1ª verba? Há campanha MinhaMoto rodando? Custo máxim
 - Meta pessoal mantida: 1º custo por assinante (em % do teto) até 07/12, só depois do OK do Léo; antes disso, a proposta está pronta (URL, 12 slots, corte). Aviso na hora se escorregar.
 - Aposta: Onda 1 = A1/B1 em iOS, 1 conjunto aberto; Onda 2 (10 slots) só após a 1ª leitura; corte nível 1 por IC (só pausa), nível 2 por assinante pago.
 - Perguntas pro Léo: pixel novo é o de 18/11 e data do 1º anúncio; Android no dia 1 (recomendo não); sim/não da DECISÃO 1.
+
+## Atualização 27/11/2026 (noite)
+- Entregues: D-20261126-mercado-2 (desenho do teste da landing) e D-20261127-professor-3 (bloqueada, lider: idade 18). Criadas: D-20261127-trafego-1 (Turing, base de IC por clique em %, 01/12) e -2 (Disney, revisão sem cara infantil, 30/11).
+- Meta pessoal mantida: 1º custo por assinante (em % do teto) até 07/12, só depois do OK do Léo. Aviso na hora se escorregar.
+- Aposta: 7º portão (idade mínima 18 por controle fixo em cada conjunto) antes de a verba rodar; teste da landing só depois da Onda 1 (uma variável por vez).
+- Perguntas pro Léo: idade 18 fixa nos conjuntos de 28/11 6h (sim/não, recomendo sim); 2ª URL da landing com o mesmo repasse de UTM (sim/não, recomendo sim).

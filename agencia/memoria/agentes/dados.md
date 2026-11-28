@@ -146,3 +146,14 @@ Setor: Dados · Cargo: Diretor · Playbook: agencia/diretoria/02-dados.md
 - pets: humor foda — a Marnevali soltou fogo pro alto na passagem e o Carnucci subiu na mesa pra ganhar carinho (Fogo + Carinho: +15 XP, C$ 8).
 - liderança: 1º do setor 2 semanas seguidas, +20 XP.
 - pra subir: tirar a ponte de % do papel com o QG; é o que destrava a meta e a autópsia.
+
+## 2026-11-27 · Rodada de demandas
+- fiz: D-20261124-mkt-2 entregue (especificação das 6 métricas dos Corretores, fonte UTMify/Kavoo, "sem dado" + quem libera; ~1 h depois do prazo). D-20261126-trafego-4 e D-20261126-produto-3 bloqueadas pro líder com pergunta sim/não (print do Events Manager do pixel novo; 1.0.2 ao vivo e em que dia). Nenhuma demanda nova criada.
+- aprendi: `cadastro/itens.json` diz UTMify "feito" (25/11); minha master-2 dizia pendente: corrigido na mkt-2. `dados/resumo-pct.json` ainda não existe no repo; sem ele e sem acesso ao carnucci-dados nenhuma das três vira número. Campanha nova (pixel novo, IC) começa 28/11 6h, então "Compra" só existe depois.
+- erro a evitar: deixar spec desatualizada contra o cadastro; conferir `cadastro/itens.json` antes de escrever "pendente".
+- pendente: Léo (1.0.2 nas lojas; print do pixel; Kavoo Pix/reembolso); QG (ponte); 30/11 relatório, trafego-3, linha de base; conferir ec124592 na coleta de 27/11.
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** seguir Diretor (XP 96 de 1500) e Conselheiro; defender a cadeira com número provado.
+- **Conquista da semana:** Previu o gargalo (precisa da 1ª leitura em % por etapa; depende da 1.0.2 ao vivo e da ponte).
+- **Item que quero:** Omega Speedmaster Moonwatch.

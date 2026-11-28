@@ -101,3 +101,14 @@ Setor: Lojas · Cargo: Diretor · Playbook: agencia/diretoria/08-lojas.md
 - parecer (Thomas Shelby): Sem erro na semana, broche de Prata. Entregou o que pediram e puxou o alerta do Ted pra demanda. Ficou no meio porque produziu pouco além disso. Recomenda: manter.
 - pets: humor ok — a Marnevali passou de olho; o Carnucci não parou (sem gorjeta).
 - pra subir: achar trabalho que mova número com as lojas fora do alcance (ex.: histórico próprio do Play).
+
+## 2026-11-27 20:00 · D-20261127-professor-2
+- fiz: entreguei D-20261127-professor-2 (bloqueada, lider): respostas sugeridas aos descritores da Apple (Não/Não/Publicidade Não) e ao IARC (L), dono e data dos 3 prazos, 3 perguntas sim/não pro Davi (registro Android, Apple até 05/01/2027, IARC até 11/12/2026 com print).
+- aprendi: sem dono registrado, prazo de loja vira risco de travar envio ou remover app; WebFetch recusou developer.apple.com e developer.android.com hoje, então fontes ficaram "a conferir". Respostas valem só pra versão 1.0.2 (leitura de 25/11).
+- pendente: respostas do Davi; lembretes em 04/12 e 29/12.
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Diretor do Mês.
+- **Conquista:** Nota subiu (histórico + nota oficial do Console).
+- **Item:** Creed Aventus.
+- **Regra:** só vale o que tem prova; fonte bloqueada vira "a conferir".
