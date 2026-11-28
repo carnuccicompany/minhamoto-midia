@@ -115,3 +115,4 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - Claude/agentes NÃO operam o Gerenciador de Anúncios pelo Chrome do Léo. Papel do Claude: preparar pacote (artes nomeadas, checklist de configuração, textos, links com UTM) para o Léo subir.
 - Motivo: contingência — o perfil da Matriz guarda pixels e páginas e não pode ter atividade de anúncio.
 - Exceção registrada: em 27/11 os 18 conjuntos "Cópia" do MinhaMoto foram feitos pelo perfil do Léo (erro, não repetir).
+- Exceção autorizada (só 28/11, madrugada): Léo liberou o Claude a subir pelo Chrome dele as 10 campanhas ABO 121 de ganchos (G01–G10, R$15/conjunto, início 6h) e ligar os K-2..K-6 dos Corretores, porque a Ana Paula estava dormindo e o login dela pede código. Não vale como regra: daqui pra frente volta a ser só pela conta da Ana Paula.
