@@ -1,0 +1,892 @@
+{
+ "coletado_em": "2026-11-28T10:54:02.936974Z",
+ "erros": {},
+ "ig_conta": {
+  "id": "17841478100957290",
+  "followers_count": 1619,
+  "media_count": 73,
+  "username": "minhamotoapp"
+ },
+ "ig_alcance_28d": {
+  "data": [
+   {
+    "id": "17841478100957290/insights/reach/days_28",
+    "name": "reach",
+    "period": "days_28",
+    "values": [
+     {
+      "value": 14338,
+      "end_time": "2026-11-27T08:00:00+0000"
+     },
+     {
+      "value": 16662,
+      "end_time": "2026-11-28T08:00:00+0000"
+     }
+    ],
+    "title": "Alcance",
+    "description": "Número total de vezes que os objetos de mídia da conta comercial foram visualizados unicamente"
+   }
+  ]
+ },
+ "ig_midias": [
+  {
+   "id": "18135161486504346",
+   "caption": "O posto mais barato compensou mesmo?\n\nMesmo combustível, mesmo posto anotado, ciclos comparáveis. 5 coisas pra comparar ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-28T00:04:44+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18135967273890748",
+   "caption": "Deixar a moto esquentando 5 minutos não protege o motor. E esse nem é o maior mito da garagem.\n\nSegundo um técnico da Ho",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-27T21:04:44+0000",
+   "insights": {
+    "reach": 7,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17919547506544009",
+   "caption": "Folga das válvulas: o cuidado que quase ninguém lembra.\n\nUma medida pequena que faz parte do funcionamento do motor. Arr",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-27T18:04:48+0000",
+   "insights": {
+    "reach": 6,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17915502828563657",
+   "caption": "Qual óleo sua moto usa? E a medida do pneu? Sem pesquisar no Google.\n\nViscosidade do óleo, capacidade, fluidos, medidas ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-27T15:05:01+0000",
+   "insights": {
+    "reach": 6,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17914558998306046",
+   "caption": "4 luzes no painel. Duas mandam parar na hora. Você sabe quais?\n\nÓleo e temperatura: encoste e desligue o motor. Injeção ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-27T00:46:37+0000",
+   "insights": {
+    "reach": 11,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18005823962995211",
+   "caption": "Quer vender a moto pelo preço que ela vale? Tenha isso em mãos.\n\nData de cada serviço, nome do que foi feito e tudo pron",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-26T18:04:12+0000",
+   "insights": {
+    "reach": 22,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18152856305672382",
+   "caption": "\"O que já fizeram nessa moto?\"\n\nNa hora de vender, \"acho que fiz\" derruba o preço. Arraste e veja o que muda com o histó",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-26T15:04:07+0000",
+   "insights": {
+    "reach": 20,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18106532765361948",
+   "caption": "Tem BMW na garagem?\n\nG 310, F 850, R 1250 GS e mais: os cuidados do seu modelo por km e por tempo, sem procurar no manua",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-26T00:04:20+0000",
+   "insights": {
+    "reach": 12,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18119567714033815",
+   "caption": "Quanto sua moto te custou esse mês? Se você não sabe, provavelmente é mais do que imagina.\n\nAnote o valor de cada manute",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-25T21:04:25+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18147124969590485",
+   "caption": "Duas pessoas usam a mesma moto? Então já rolou o \"achei que você tinha feito\".\n\nOnde deixar os avisos, quando mandar o k",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-25T18:04:05+0000",
+   "insights": {
+    "reach": 28,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17905230537378774",
+   "caption": "Tem Royal Enfield na garagem?\n\nHimalayan, Hunter, Meteor, Classic: os cuidados do seu modelo organizados por km e por te",
+   "comments_count": 0,
+   "like_count": 1,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-25T15:04:26+0000",
+   "insights": {
+    "reach": 16,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 1
+   }
+  },
+  {
+   "id": "18229428766340438",
+   "caption": "Moto parada também precisa de manutenção. E é aí que muita gente se ferra.\n\nTem cuidado que vence por tempo, não por km.",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-25T00:04:09+0000",
+   "insights": {
+    "reach": 6,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18149137012597841",
+   "caption": "Passou do km da revisão? Respira.\n\nConfirme o painel, separe as últimas notas e abra o marco que ficou pra trás. 5 passo",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-24T18:04:06+0000",
+   "insights": {
+    "reach": 17,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18172284745468431",
+   "caption": "Nem toda revisão é troca de peça.\n\nInspecionar é conferir. Substituir é trocar. Entender a diferença muda como você lê o",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-24T15:04:03+0000",
+   "insights": {
+    "reach": 7,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18427368103158093",
+   "caption": "\"Não lembro quando troquei.\" Normal. E agora?\n\nArraste pra ver por onde começar a organizar a manutenção a partir de hoj",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-24T00:03:51+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18346178359261127",
+   "caption": "Comprou moto usada? O histórico dela começa hoje.\n\nVocê não sabe tudo o que o dono anterior fez, mas pode registrar o qu",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-23T21:04:11+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17874860331645998",
+   "caption": "Pegou chuva a semana inteira? Confira isso quando o sol voltar.\n\nEquipamento secando aberto, viseira olhada com boa luz ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-23T18:03:51+0000",
+   "insights": {
+    "reach": 24,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18095703194210064",
+   "caption": "Te pararam e pediram CRLV, CNH e nota. Você acha de primeira?\n\nArraste e veja como deixar os documentos da moto sempre à",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-23T15:04:39+0000",
+   "insights": {
+    "reach": 9,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18168848740489894",
+   "caption": "Sua moto rodou pouco. O óleo não sabe disso.\n\nAlguns cuidados vencem pelo calendário, não pelo km. Arraste e entenda por",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-22T22:25:00+0000",
+   "insights": {
+    "reach": 11,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18073348811786513",
+   "caption": "Verde, amarelo ou vermelho: em que cor tá a sua moto hoje?\n\nNa tela Saúde, verde é em dia, amarelo pede atenção, vermelh",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-22T01:42:36+0000",
+   "insights": {
+    "reach": 8,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18104100647399352",
+   "caption": "Nunca diga \"pode fazer\" na oficina antes dessas 5 perguntas.\n\nO que encontrou na peça? Quanto é peça e quanto é mão de o",
+   "comments_count": 0,
+   "like_count": 1,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-21T21:50:30+0000",
+   "insights": {
+    "reach": 25,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 1
+   }
+  },
+  {
+   "id": "18378881500241829",
+   "caption": "Tem Suzuki na garagem?\n\nYes, Intruder, V-Strom, GSX: o plano de manutenção do seu modelo, com tudo que precisa por km e ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-21T16:27:31+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18063897887534168",
+   "caption": "Parou na blitz e cadê o documento da moto?\n\nGuarde cópias de CRLV, seguro e comprovantes direto na moto certa, em PDF ou",
+   "comments_count": 0,
+   "like_count": 1,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-21T00:04:07+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 1
+   }
+  },
+  {
+   "id": "18125525026980280",
+   "caption": "Trocou só a corrente? Então trocou errado.\n\nCorrente, coroa e pinhão trabalham juntos e se desgastam juntos. Arraste pra",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-20T21:03:57+0000",
+   "insights": {
+    "reach": 8,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17957547801039713",
+   "caption": "A revisão começa ANTES de você chegar na oficina.\n\n3 respostas que você leva e que mudam a conversa com o mecânico. Arra",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-20T18:04:22+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18163296364507286",
+   "caption": "Viagem longa de moto marcada? Resolve isso antes de sair.\n\nPrimeira parada definida, rota salva offline e uma conta rápi",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-20T15:05:09+0000",
+   "insights": {
+    "reach": 51,
+    "saved": 0,
+    "shares": 1,
+    "total_interactions": 1
+   }
+  },
+  {
+   "id": "18179808436446656",
+   "caption": "Primeira moto? Esse é o carrossel que ninguém te mostrou na concessionária.\n\nCadastre sua moto, informe o km e veja o pl",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-20T00:03:57+0000",
+   "insights": {
+    "reach": 9,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18038334791903543",
+   "caption": "Tem Kawasaki na garagem?\n\nDo manual do fabricante pra sua rotina: os cuidados do seu modelo organizados por km e por tem",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-19T21:03:58+0000",
+   "insights": {
+    "reach": 21,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18003444207031958",
+   "caption": "Vai ver moto usada amanhã? Não fecha negócio antes de ler isso.\n\nPeça modelo, versão e ano antes de sair, marque com luz",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-19T18:03:54+0000",
+   "insights": {
+    "reach": 19,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18092494376257117",
+   "caption": "Tem Yamaha na garagem? Salve esse.\n\nFazer, Factor, NMAX, Lander, MT-03: o MinhaMoto mostra os cuidados previstos pro seu",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-19T15:04:38+0000",
+   "insights": {
+    "reach": 8,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18000363917832738",
+   "caption": "Quanto você gastou de gasolina esse mês? Chuta um número.\n\nAnote litros e valor a cada abastecida, marque quando o tanqu",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-19T00:04:36+0000",
+   "insights": {
+    "reach": 5,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18154454611509148",
+   "caption": "Sua moto faz quantos km por litro DE VERDADE?\n\nComece no tanque cheio, anote os parciais e acompanhe a média. Em 5 dicas",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-18T21:03:59+0000",
+   "insights": {
+    "reach": 29,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17929166958431357",
+   "caption": "Cadê a nota da última revisão?\n\nGaveta, porta-luva, foto perdida no celular… Arraste e veja como deixar revisões, serviç",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-18T18:03:49+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18101349905655095",
+   "caption": "Sua moto é seu ganha-pão. Moto parada na oficina é dinheiro perdido.\n\nInforme quanto você roda, veja a previsão dos próx",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-18T15:04:21+0000",
+   "insights": {
+    "reach": 3,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18122573551756707",
+   "caption": "Você trocou o óleo… mas quando mesmo?\n\n5 jeitos de recuperar a data perdida: conversa com a oficina, foto do painel, com",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-18T00:04:33+0000",
+   "insights": {
+    "reach": 12,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18118471265019602",
+   "caption": "Filtro de ar e filtro de óleo NÃO são a mesma coisa.\n\nO nome é parecido, mas um protege o motor do que entra e o outro d",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-17T21:04:01+0000",
+   "insights": {
+    "reach": 8,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18084644324357864",
+   "caption": "Você compraria a sua moto de você?\n\nSe o comprador pedisse o histórico dela hoje, você teria o que mostrar? Arrasta e vê",
+   "comments_count": 0,
+   "like_count": 2,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-17T18:04:50+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 2
+   }
+  },
+  {
+   "id": "17953486095056558",
+   "caption": "Sua moto tem um plano de revisão. Você sabe qual é o dela?\n\nCada modelo tem seus próprios intervalos de troca e inspeção",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-17T15:04:51+0000",
+   "insights": {
+    "reach": 3,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18116301278099903",
+   "caption": "Pegou a moto zero? Faz isso HOJE, antes da primeira volta.\n\nFoto do painel na entrega, nota e termo de entrega guardados",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-17T00:04:14+0000",
+   "insights": {
+    "reach": 28,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18121076581989278",
+   "caption": "Tem Honda na garagem? Isso aqui é pra você.\n\nCG, Biz, PCX, XRE, CB 500F, Africa Twin: o MinhaMoto já tem o plano de manu",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-16T21:04:27+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18418477537085879",
+   "caption": "10W-30: você sabe o que esses números dizem?\n\nO W não é de “weight” e número maior não quer dizer óleo melhor. Arrasta p",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-16T18:35:53+0000",
+   "insights": {
+    "reach": 7,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18108636722568240",
+   "caption": "Chegou na oficina e o barulho sumiu? Acontece mais do que parece.\n\nAntes de levar a moto, anota essas 5 coisas. Elas aju",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-11-16T17:41:48+0000",
+   "insights": {
+    "reach": 13,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18132696464499578",
+   "caption": "Últimas trocas, próximos cuidados, consumo e documentos. É muita coisa para guardar de cabeça...\n\nNo MinhaMoto, essas in",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T18:22:14+0000",
+   "insights": {
+    "reach": 144,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18126520229488668",
+   "caption": "Cuidar da moto também é pensar em quem espera você voltar!\n\nNo MinhaMoto, acompanhe os prazos de manutenção, consulte as",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T18:21:37+0000",
+   "insights": {
+    "reach": 23,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18099831422399061",
+   "caption": "Pequenos componentes também merecem grandes cuidados!\n\nNo MinhaMoto, você consulta as especificações do seu modelo, vers",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T18:14:06+0000",
+   "insights": {
+    "reach": 31,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17874912876638755",
+   "caption": "Sua moto é uma só. Os cuidados são muitos!\n\nManutenção, combustível, gastos, documentos e segurança. Cada parte merece a",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T18:07:28+0000",
+   "insights": {
+    "reach": 17,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18371701696215575",
+   "caption": "Cuidar da moto durante a semana ajuda a deixar o sábado para o que você gosta.\n\nNo MinhaMoto, acompanhe os prazos de man",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T17:48:17+0000",
+   "insights": {
+    "reach": 11,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18101165465075054",
+   "caption": "Depois do barro e da poeira, o cuidado continua.\n\nCorrente, pneus, freios, filtros e outros itens merecem atenção confor",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T17:40:53+0000",
+   "insights": {
+    "reach": 16,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18106457297250187",
+   "caption": "Trabalho, estudo, compras e o caminho de volta para casa.\n\nCuidar da moto também é cuidar da sua rotina.\n\nNo MinhaMoto, ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T17:30:36+0000",
+   "insights": {
+    "reach": 16,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18395419048164082",
+   "caption": "Preço por litro é só parte da conta!\n\nNo MinhaMoto, registre seus abastecimentos e acompanhe consumo em km/L, gastos e m",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T17:24:43+0000",
+   "insights": {
+    "reach": 19,
+    "saved": 1,
+    "shares": 0,
+    "total_interactions": 1
+   }
+  },
+  {
+   "id": "17895053682614009",
+   "caption": "Quanto você roda também entra no planejamento da manutenção!\n\nNo MinhaMoto, sua média de uso diário, semanal ou mensal a",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T17:14:26+0000",
+   "insights": {
+    "reach": 14,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18223390105339708",
+   "caption": "Na hora de vender, o histórico também conta!\n\nDatas, quilometragens, manutenções e comprovantes ajudam a mostrar os cuid",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:56:40+0000",
+   "insights": {
+    "reach": 10,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18147938446583366",
+   "caption": "Antes de chegar à oficina, organize o que precisa de atenção.\n\nNo MinhaMoto, você reúne numa lista os itens que precisam",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:49:12+0000",
+   "insights": {
+    "reach": 6,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17945340447090154",
+   "caption": "Quilometragem, últimas trocas e especificações deixam a conversa na oficina mais clara.\n\nNo MinhaMoto, você consulta as ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:44:05+0000",
+   "insights": {
+    "reach": 16,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18114675568850108",
+   "caption": "Aparência parecida não garante a mesma aplicação!\n\nNo MinhaMoto, consulte medidas de pneus, especificações de fluidos, c",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:40:04+0000",
+   "insights": {
+    "reach": 15,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17918024964265134",
+   "caption": "Uma para o dia a dia, outra para viajar, outra para o fim de semana.\n\nCada moto tem sua quilometragem, suas últimas troc",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:33:18+0000",
+   "insights": {
+    "reach": 34,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18129677674748907",
+   "caption": "Qual óleo usar? Quando trocar os filtros? Qual a pressão dos pneus?\n\nA primeira moto traz dúvidas que merecem respostas ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:20:33+0000",
+   "insights": {
+    "reach": 14,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17951461287056300",
+   "caption": "Entre uma entrega e outra, sua moto também precisa de atenção!\n\nNo MinhaMoto, acompanhe o consumo e os gastos com combus",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:15:58+0000",
+   "insights": {
+    "reach": 17,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18648467542038113",
+   "caption": "Quem vai na garupa também conta com o seu cuidado!\n\nNo MinhaMoto, consulte as informações sobre pneus, freios, suspensão",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T15:12:57+0000",
+   "insights": {
+    "reach": 8,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18402312964206565",
+   "caption": "Elas escolhem a moto, comandam o guidão e decidem o caminho!\n\nNo MinhaMoto, especificações, manutenções, consumo e docum",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-27T14:53:51+0000",
+   "insights": {
+    "reach": 35,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  }
+ ],
+ "fb_pagina": {
+  "fan_count": 45,
+  "followers_count": 45,
+  "name": "MinhaMoto",
+  "id": "1319425834577827"
+ },
+ "fb_impressoes": {
+  "data": []
+ },
+ "ig_alcance_28d_formato": {
+  "janela_dias": 28,
+  "total": 14338,
+  "por_formato": {
+   "AD": 14202,
+   "CAROUSEL_CONTAINER": 133,
+   "STORY": 141,
+   "POST": 68
+  }
+ }
+}
