@@ -58,3 +58,15 @@ Setor: Marketing · Cargo: Estagiário · Playbook: agencia/diretoria/03-marketi
 - ranking: 2º no setor · 12º na empresa · aceite: 35%
 - parecer (Walt Disney): O Fogg vê o problema certo, mas repete o mesmo aviso seis vezes por dia. Um alerta vale uma vez; a segunda é ruído. Os três extras novos foram bons, principalmente o 2207027 com a correção pronta. Recomenda: manter.
 - pra subir: um alerta vale uma vez: repetição é ruído. Fechar a cria-3 e a mkt_publicador-1 com prova. Faltam 10 XP pra Analista.
+
+## 2026-11-27 22:10 · D-20261126-mkt_publicador-1 (publicar.py recupera slot)
+- fiz: alterei scripts/publicar.py (slot aberto mais antigo do dia, 1 por execução, 4/dia, sem dia anterior, fila intacta) e validei com SIMULAR=1 em 11 cenários; entrega em agencia/demandas/entregas/D-20261126-mkt_publicador-1.md. Status entregue. Sem commit, sem run real.
+- aprendi: o Shelby autorizou na demanda (27/11), então nem foi preciso bloquear pro Léo/Davi. Não pus trava de 90 min porque não estava autorizada; ofereci na entrega.
+- aviso: um alerta só; não repetir cobrança do TikTok nem da fila nesta rodada.
+- pendente: conferir horarios_feitos de 28/11 (4 de 4?) com run ids; fechar F-006 com 3 dias.
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Analista (100 XP): tenho 90, faltam 10. Aceite desta entrega no prazo (+5) e prova de 4/4 chegam lá.
+- **Conquista:** Pontualidade britânica (30 posts seguidos no horário), recomeçando a contagem.
+- **Item:** Moët & Chandon ao virar Analista.
+- **Regra:** um alerta vale uma vez; só prova.

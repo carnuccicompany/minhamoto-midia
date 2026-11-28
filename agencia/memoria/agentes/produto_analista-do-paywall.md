@@ -61,3 +61,20 @@ Setor: Produto · Cargo: Estagiário · Playbook: agencia/diretoria/06-produto.m
 - ranking: 1º no setor · 10º na empresa · aceite: 100%
 - parecer (Tony Stark): O Jobs lê o código antes de propor e não entrega nada pela metade. Passou o diretor dele no placar, e eu assino isso. Recomenda: aumento.
 - pra subir: registrar extras com prova: o que ele vê a mais não está no placar. Faltam 75 XP pra Analista.
+
+## 2026-11-27 (entrega)
+- fiz: entreguei D-20261126-produto-2 (agencia/demandas/entregas/D-20261126-produto-2.md). `git log -1` do app antes: d4942b2, 25/11, 1.0.2. Premissa conferida: só existe `af_complete_registration` (appsflyer.ts:17, logEvent em :125). Pontos dos 3 eventos: `moto_cadastrada` em garagem-home.tsx:713 (depois de `confirmado`, :711), `onboarding_complete` em tour-onboarding.tsx:80 (dentro de `liberar`), `paywall_view` em pro-producao-checkout.tsx:499 (planos montados). Nomes sem `af_` (reservado; custom até 100 caracteres, dev.appsflyer.com/hc/docs/inappevents). Não usei `af_tutorial_completion`: mapeia pra evento de otimização da Meta (decisão do Escobar/Léo). Leitura do Turing em %, iOS e Android separados, amostra em faixa. O sim/não pro Davi já é a pergunta B do pacote v3 (recomendo sim): não criei bilhete novo.
+- D-20261124-produto_analista-do-paywall-1: reconferida, segue devolvida. A -2 não cobre (outro tema). A pergunta H do pacote ainda corta "daquela moto sem o km da configuração"; registrei no histórico o trecho exato a restaurar. Quem ajusta é o Shelby (mesa já cobrou).
+- aprendi: antes de criar bilhete pro Davi, ver se a pergunta já está no pacote (B estava). RevenueCat "Fix onboarding funnels" (17/11/2025, atualizado 06/05/2026): mais de 80% das assinaturas em até 2 min do download; abrir funil por plataforma.
+- notei: `dispensado` nunca é gravado no app (só tipo em onboarding.ts:20); reinstalar apaga a marca local, então ler por usuário único.
+- pendente: resposta do Davi à B; conferência do Stark; Shelby restaurar a H; a 1.0.2 está nas lojas? (pergunta A).
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Analista (100 XP). Tenho 25 XP; faltam 75. Entrega aceita no prazo dá +5.
+- **Conquista:** Proposta lançada (P-001 ou os 3 eventos aprovados pelo Davi e dentro de uma versão). Os 3 eventos são o caminho mais curto: pedem pouco código e destravam a leitura.
+- **Item que quero:** Montblanc Meisterstück, quando chegar a Sênior. Só vale o que tem prova.
+
+## Agenda (sem arquivo próprio; iniciativa em curso)
+1. Eventos de funil na 1.0.3 (aguarda B do Davi); depois acompanho a 1ª leitura do Turing em % e aponto a maior queda.
+2. P-001 espera essa leitura; se o vazamento maior for depois do paywall, eu mesmo rebaixo a P-001.
+3. Moto fora do catálogo (itens I do pacote) só entra depois de saber o tamanho do grupo.

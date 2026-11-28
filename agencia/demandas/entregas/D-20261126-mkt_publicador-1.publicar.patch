@@ -1,0 +1,59 @@
+diff --git a/scripts/publicar.py b/scripts/publicar.py
+index 03df1c5..75e29e6 100644
+--- a/scripts/publicar.py
++++ b/scripts/publicar.py
+@@ -6,10 +6,10 @@ Variáveis de ambiente (segredos do repositório):
+                Se for de usuário do sistema, o script troca sozinho pelo token da Página (sem gravar em lugar nenhum).
+   IG_USER_ID   opcional (padrão: @minhamotoapp)
+   FB_PAGE_ID   opcional (padrão: página MinhaMoto)
+-Opcional: GRAPH_VERSION (padrão v27.0), REDES (padrão "ig,fb"), SIMULAR=1 (não publica)
++Opcional: GRAPH_VERSION (padrão v27.0), REDES (padrão "ig,fb"), SIMULAR=1 (não publica; com AGORA_BRT="AAAA-MM-DD HH:MM" simula a hora)
+ """
+ import json, os, sys, time, urllib.parse, urllib.request
+-from datetime import datetime, timezone
++from datetime import datetime, timedelta, timezone
+ 
+ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ REPO = os.environ.get("GITHUB_REPOSITORY", "carnuccicompany/minhamoto-midia")
+@@ -24,7 +24,7 @@ REDES = [r.strip() for r in os.environ.get("REDES", "ig,fb").split(",") if r.str
+ SIMULAR = os.environ.get("SIMULAR") == "1"
+ FORCAR = os.environ.get("FORCAR") == "1"  # execução manual: publica o próximo sem olhar horário
+ HORARIOS = [12, 15, 18, 21]  # horário de Brasília
+-JANELA_H = 2  # se o GitHub atrasar, ainda publica até 2h depois do horário
++# Slot atrasado ou perdido é recuperado até 23h59 do mesmo dia (D-20261126-mkt_publicador-1).
+ 
+ 
+ def chamar(metodo, caminho, dados=None):
+@@ -90,20 +90,25 @@ def main():
+     caminho_estado = os.path.join(RAIZ, "fila/estado.json")
+     estado = json.load(open(caminho_estado, encoding="utf-8"))
+     pub = estado.setdefault("publicados", {})
+-    from datetime import timedelta
+     agora = datetime.now(timezone.utc) - timedelta(hours=3)
++    if SIMULAR and os.environ.get("AGORA_BRT"):  # só para teste com SIMULAR=1: "AAAA-MM-DD HH:MM"
++        agora = datetime.strptime(os.environ["AGORA_BRT"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
++    feitos_hoje = estado.get("horarios_feitos", [])
++    # Slot aberto = horário de hoje (BRT) que já começou e ainda não está em horarios_feitos.
++    # Publica o mais antigo (recupera slot perdido do mesmo dia): no máximo 1 por execução, no
++    # máximo 4 por dia (um por horário), nunca de dia anterior (não atravessa a meia-noite).
+     slot = None
+     for h in HORARIOS:
+         inicio = agora.replace(hour=h, minute=0, second=0, microsecond=0)
+-        if inicio <= agora < inicio + timedelta(hours=JANELA_H):
+-            slot = inicio.strftime("%Y-%m-%d %H")
++        s_h = inicio.strftime("%Y-%m-%d %H")
++        if inicio <= agora and s_h not in feitos_hoje:
++            slot = s_h
++            break
+     if not FORCAR:
+         if not slot:
+-            print("Fora de um horário de postagem. Nada a fazer.")
+-            return
+-        if slot in estado.get("horarios_feitos", []):
+-            print(f"Horário {slot} já publicado.")
++            print("Nenhum horário aberto agora (todos de hoje já publicados ou ainda não começaram). Nada a fazer.")
+             return
++        print(f"Slot aberto mais antigo de hoje: {slot}h")
+     if estado.get("pausado"):
+         print("Fila pausada em fila/estado.json. Nada a fazer.")
+         return

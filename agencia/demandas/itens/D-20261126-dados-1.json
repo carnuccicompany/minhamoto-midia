@@ -8,7 +8,7 @@
   "pronto_quando": "Arquivo em agencia/demandas/entregas/D-20261126-dados-1.md com (1) a URL modelo do anuncio com utm_source/medium/campaign/content no padrao de D-20261120-dados-3; (2) a data do pixel novo e do 1o anuncio; (3) resultado de 1 clique de teste no iOS e 1 no Android a verba zero: a UTM aparece no OneLink e a instalacao de teste aparece no AppsFlyer com a campanha (sim/nao por plataforma, so %/sim-nao, sem absoluto). Sem acesso, escrever 'sem dado' e quem libera.",
   "prioridade": "P1",
   "prazo": "2026-11-27T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-26T20:00:00-03:00",
   "fio": null,
   "entrega": {
@@ -31,7 +31,12 @@
       "quando": "2026-11-26T21:55:00-03:00",
       "quem": "trafego",
       "o_que": "entregou: item 1 feito; itens 2 (1o anuncio) e 3 (clique iOS/Android) como \"sem dado\" com quem libera; pergunta sim/nao+data pro Leo no arquivo"
+    },
+    {
+      "quando": "2026-11-27T18:30:00-03:00",
+      "quem": "dados",
+      "o_que": "aceita. Conferido: URL modelo no padrao da dados-3 (PENDENCIAS l.61 e cria-4 CR-org-11 batem; mm_meta_ic_lp_2611 e proposta do master.md 26/11, marcada como nao aprovada); pixel novo 18/11 bate com PENDENCIAS l.39 e l.41; teste de clique iOS/Android e 1o anuncio como 'sem dado' com quem libera, como o pronto_quando previa. Nota: decisoes.md 27/11 registra campanhas refeitas com Pixel Novo + IC, inicio 28/11 6h; o teste de clique segue pendente (SDK/Leo/Davi) e vira passo antes de gastar."
     }
   ],
-  "atualizada_em": "2026-11-26T21:55:00-03:00"
+  "atualizada_em": "2026-11-27T18:30:00-03:00"
 }

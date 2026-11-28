@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-cria-3.md com, pro 18h de 24/11 e pro 18h de 26/11: id do run do workflow, hora UTC, 'postou' ou 'não postou' (com o id do post quando postou), causa provada ou 'não consegui provar'. Sem mexer em publicar.py e sem postar fora de horário.",
   "prioridade": "P1",
   "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-26T19:45:00-03:00",
   "fio": "F-006",
   "entrega": {
@@ -28,6 +28,11 @@
       "quando": "2026-11-26T19:55:00-03:00",
       "quem": "mkt:publicador",
       "o_que": "entregue: 24/11 provado; 26/11 sem prova no repositório, pede last_run da tarefa; janela de 26/11 ainda aberta até 20h BRT"
+    },
+    {
+      "quando": "2026-11-27T20:00:00-03:00",
+      "quem": "cria",
+      "o_que": "aceita: pronto_quando cumprido (24/11 provado por log.md linha 247 do Coordenador e lista de runs; 26/11 'não consegui provar' declarado, permitido; estado.json confere: 24/11 sem 18, 26/11 sem 18). Pendência de dados fica com Léo/Davi/Coordenador (last_run de 'MM: Posts do horário'); F-006 segue aberto."
     }
   ]
 }

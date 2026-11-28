@@ -1,40 +1,50 @@
 {
-  "id": "D-20261124-dados-3",
-  "de": "dados",
-  "para": "dados:relatorio-semanal",
-  "copia": [
-    "master"
-  ],
-  "titulo": "Minuta do relatório de 30/11 com bloco de medição: alcance 28d em % por dia e cobertura do funil",
-  "por_que": "O alcance 28d da conta ficou parado (-0,4% de 23 para 24/11, dados/insights-2026-11-23.json e -24.json) e os 59 posts de feed explicam no máximo 9,9% dele; sem a série diária em % e a lista de etapas do funil 'com dado/sem dado', a segunda de 30/11 repete o relatório cego (dados/relatorios/2026-11-23.md).",
-  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-dados-3.md com (1) tabela diária de 23 a 27/11: alcance 28d em variação % contra 23/11, soma de alcance dos posts / alcance 28d em %, mediana de alcance por post em % dos seguidores, lida dos dados/insights-*.json (cada linha cita o arquivo); (2) as 6 etapas do funil, cada uma marcada 'com dado' ou 'sem dado' com a fonte que falta; nenhum número absoluto de assinante ou R$.",
-  "prioridade": "P2",
-  "prazo": "2026-11-27T19:00:00-03:00",
-  "status": "devolvida",
-  "criada_em": "2026-11-24T19:30:00-03:00",
-  "fio": null,
-  "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261124-dados-3.md",
-    "resumo": "Tabela 23-24/11 pronta (alcance 28d -0,4% vs 23/11; posts explicam no maximo 9,6% e 9,9%; mediana 0,88% dos seguidores nos dois dias); 25-27/11 pendentes da coleta diaria 23h41. Funil: 0 de 6 etapas com dado, tudo depende da ponte de resumo em % (D-20261124-master-2)."
+ "id": "D-20261124-dados-3",
+ "de": "dados",
+ "para": "dados:relatorio-semanal",
+ "copia": [
+  "master"
+ ],
+ "titulo": "Minuta do relatório de 30/11 com bloco de medição: alcance 28d em % por dia e cobertura do funil",
+ "por_que": "O alcance 28d da conta ficou parado (-0,4% de 23 para 24/11, dados/insights-2026-11-23.json e -24.json) e os 59 posts de feed explicam no máximo 9,9% dele; sem a série diária em % e a lista de etapas do funil 'com dado/sem dado', a segunda de 30/11 repete o relatório cego (dados/relatorios/2026-11-23.md).",
+ "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-dados-3.md com (1) tabela diária de 23 a 27/11: alcance 28d em variação % contra 23/11, soma de alcance dos posts / alcance 28d em %, mediana de alcance por post em % dos seguidores, lida dos dados/insights-*.json (cada linha cita o arquivo); (2) as 6 etapas do funil, cada uma marcada 'com dado' ou 'sem dado' com a fonte que falta; nenhum número absoluto de assinante ou R$.",
+ "prioridade": "P2",
+ "prazo": "2026-11-27T19:00:00-03:00",
+ "status": "entregue",
+ "criada_em": "2026-11-24T19:30:00-03:00",
+ "fio": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261124-dados-3.md",
+  "resumo": "Tabela 23 a 27/11 completa, lida dos 5 insights: alcance 28d -0,38/-0,45/-0,40% vs 23/11 (24 a 26), posts explicam no maximo 9,6 a 9,9%, mediana 0,88 e depois 0,82% dos seguidores (13 pessoas por post em 25 e 26/11). 27/11: +25,68% com alerta (valor de 26/11 revisado pela Meta no arquivo de 27/11; nao tratar como tendencia). Alcance por formato: anuncio 98,8%. Base dos 25/26 explicada (devolucao usou 22/11). Funil: 0 de 6 com dado, resumo-pct.json ainda nao existe."
+ },
+ "cobrancas": 1,
+ "historico": [
+  {
+   "quando": "2026-11-24T19:30:00-03:00",
+   "quem": "dados",
+   "o_que": "criou"
   },
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-24T19:30:00-03:00",
-      "quem": "dados",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-24T21:00:00-03:00",
-      "quem": "dados:relatorio-semanal",
-      "o_que": "entregue: minuta do bloco de medicao (tabela 23-24/11 real, 25-27 pendentes; funil 0/6 com dado)"
-    },
-    {
-      "quando": "2026-11-26T12:00:00-03:00",
-      "quem": "dados",
-      "o_que": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
-    }
-  ],
-  "atualizada_em": "2026-11-26T12:00:00-03:00",
-  "devolucao": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
+  {
+   "quando": "2026-11-24T21:00:00-03:00",
+   "quem": "dados:relatorio-semanal",
+   "o_que": "entregue: minuta do bloco de medicao (tabela 23-24/11 real, 25-27 pendentes; funil 0/6 com dado)"
+  },
+  {
+   "quando": "2026-11-26T12:00:00-03:00",
+   "quem": "dados",
+   "o_que": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
+  },
+  {
+   "quando": "2026-11-27T21:44-03:00",
+   "quem": "mesa-de-demandas",
+   "o_que": "cobrança 1: prazo vencido há 2 h; cobrado Ernest Hemingway"
+  },
+  {
+   "quando": "2026-11-27T22:30:00-03:00",
+   "quem": "dados:relatorio-semanal",
+   "o_que": "entregue de novo: linhas 25, 26 e 27/11 preenchidas dos insights; nota de leitura ajustada (mediana 14 para 13); alerta do salto de 27/11; diferenca de base explicada (-0,45/-0,40 contra 23/11; a devolucao usou 22/11). Funil segue 0/6."
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:30:00-03:00",
+ "devolucao": "devolvida: faltam as linhas de 25/11 e 26/11. Os arquivos dados/insights-2026-11-25.json e -26.json ja existem. Conferido por mim: 25/11 = -0,42% vs 23/11, posts/alcance 9,82%, mediana 0,82% dos seguidores, 60 posts; 26/11 = -0,37%, 9,71%, 0,82%, 60 posts. Preencher a tabela e ajustar a nota de leitura (mediana caiu de 14 para 13 pessoas por post). A linha 27/11 pode seguir 'pendente' (coleta 23h41 roda depois do prazo das 19h), dizendo isso na tabela. Linhas 23 e 24, funil 0/6 e ausencia de R$/assinantes estao corretos e com fonte."
 }

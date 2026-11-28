@@ -314,3 +314,5 @@
 - 27/11 8h41 BRT · sem falha: nenhuma tarefa com falha, 21h de ontem completo, fila 20 dias (80), sem pendentes, sem segredo, insights de hoje ok. Mesa não disparada (sem P1 aberta/devolvida nem atrasada).
 
 - 27/11 21h45 BRT · sem falha: 4/4 posts de hoje IG+FB, nenhuma tarefa com falha, fila 19 dias (76), sem pendentes, sem segredo, insights ok. Disparei a Mesa de Demandas 1x (P1 abertas: mkt_publicador-1, professor-1/2).
+
+- 27/11 ~22h BRT (Eliot, D-20261126-dados-3) · coleta 2026-11-27T16:15Z: Play 0 avaliações; **ec124592 presente: nao** (estava em 26/11 16h14Z). Registrado em status.json avaliacoes_play.

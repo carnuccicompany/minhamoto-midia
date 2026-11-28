@@ -1,51 +1,57 @@
 {
-  "rodada": "2026-11-27T21:45:00-03:00",
-  "ok": true,
-  "tarefas": {
-    "resumo": "todas as tarefas MM enabled com último status SUCCEEDED (Vigia = esta rodada); nada a re-disparar",
-    "desativadas_nao_reativadas": [
-      "produção diária",
-      "MM: Vigia do Gmail (desativada 25/11)"
-    ]
-  },
-  "publicacao_hoje": {
-    "slots": "27/11: 12h DV09, 15h E06, 18h CM02, 21h B15 — 4/4 IG+FB (o gatilho das 12h02 disparou; o 18h de 26/11 já tinha sido recuperado antes)",
-    "proximo": "12h02 BRT 28/11"
-  },
-  "dias_de_fila": 19.0,
-  "nao_publicados": 76,
-  "pendentes_aprovacao": 0,
-  "tiktok_916": "113/113",
-  "acoes": [
-    "Disparei 1x a Mesa de Demandas (P1 abertas: mkt_publicador-1, professor-1/2; lojas-1 em andamento; Mesa não rodou em 27/11)"
-  ],
-  "alertas": [],
-  "insights_diario": {
-    "data_utc_hoje": "2026-11-28",
-    "alerta": false,
-    "ultimo_arquivo": "dados/insights-2026-11-27.json",
-    "erros": [],
-    "linha": "último arquivo 27/11; cron 23h41 BRT gera o de 28/11 · erros vazio"
-  },
-  "segredos": "vigia_segredos ok",
-  "demandas": {
-    "P1_aberta": "mkt_publicador-1 (aberta, Fogg), professor-1 e professor-2 (prazo 28/11 12h), lojas-1 e dados-3 em andamento",
-    "mesa": "disparada 27/11 21h45 BRT (1x)"
-  },
-  "avaliacoes_play": {
-    "demanda": "D-20261126-dados-3",
-    "fonte": "dados/avaliacoes/ultimas.json (campo coletado_em; so o arquivo mais recente fica no repo)",
-    "coletas": [
-      {
-        "coletado_em": "2026-11-26T16:14:57.480500Z",
-        "ids_play_8": [
-          "ec124592"
-        ],
-        "google_play_status": "ok (1 avaliações)",
-        "ec124592_presente": "sim"
-      }
+ "rodada": "2026-11-27T21:45:00-03:00",
+ "ok": true,
+ "tarefas": {
+  "resumo": "todas as tarefas MM enabled com último status SUCCEEDED (Vigia = esta rodada); nada a re-disparar",
+  "desativadas_nao_reativadas": [
+   "produção diária",
+   "MM: Vigia do Gmail (desativada 25/11)"
+  ]
+ },
+ "publicacao_hoje": {
+  "slots": "27/11: 12h DV09, 15h E06, 18h CM02, 21h B15 — 4/4 IG+FB (o gatilho das 12h02 disparou; o 18h de 26/11 já tinha sido recuperado antes)",
+  "proximo": "12h02 BRT 28/11"
+ },
+ "dias_de_fila": 19.0,
+ "nao_publicados": 76,
+ "pendentes_aprovacao": 0,
+ "tiktok_916": "113/113",
+ "acoes": [
+  "Disparei 1x a Mesa de Demandas (P1 abertas: mkt_publicador-1, professor-1/2; lojas-1 em andamento; Mesa não rodou em 27/11)"
+ ],
+ "alertas": [],
+ "insights_diario": {
+  "data_utc_hoje": "2026-11-28",
+  "alerta": false,
+  "ultimo_arquivo": "dados/insights-2026-11-27.json",
+  "erros": [],
+  "linha": "último arquivo 27/11; cron 23h41 BRT gera o de 28/11 · erros vazio"
+ },
+ "segredos": "vigia_segredos ok",
+ "demandas": {
+  "P1_aberta": "mkt_publicador-1 (aberta, Fogg), professor-1 e professor-2 (prazo 28/11 12h), lojas-1 e dados-3 em andamento",
+  "mesa": "disparada 27/11 21h45 BRT (1x)"
+ },
+ "avaliacoes_play": {
+  "demanda": "D-20261126-dados-3",
+  "fonte": "dados/avaliacoes/ultimas.json (campo coletado_em; so o arquivo mais recente fica no repo)",
+  "coletas": [
+   {
+    "coletado_em": "2026-11-26T16:14:57.480500Z",
+    "ids_play_8": [
+     "ec124592"
     ],
-    "linha": "ec124592 presente: sim (última coleta segue 2026-11-26T16:14Z; ainda sem coleta posterior a 21h35Z; Respostas roda 13h13 de 27/11)",
-    "regra": "a cada rodada, se coletado_em de ultimas.json for novo, acrescentar objeto em coletas; manter ate 28/11; nao responder avaliacao."
-  }
+    "google_play_status": "ok (1 avaliações)",
+    "ec124592_presente": "sim"
+   },
+   {
+    "coletado_em": "2026-11-27T16:15:44.824886Z",
+    "ids_play_8": [],
+    "google_play_status": "ok (0 avaliações)",
+    "ec124592_presente": "nao"
+   }
+  ],
+  "linha": "ec124592 presente: nao (coleta 2026-11-27T16:15Z, Play 0 avaliações; ainda presente em 2026-11-26T16:14Z). Saída ocorreu entre as duas coletas, idade 6d18h a 7d18h; compatível com janela de ~7 dias.",
+  "regra": "a cada rodada, se coletado_em de ultimas.json for novo, acrescentar objeto em coletas; manter ate 28/11; nao responder avaliacao."
+ }
 }

@@ -64,3 +64,8 @@ Setor: Dados · Cargo: Estagiário · Playbook: agencia/diretoria/02-dados.md
 - parecer (Alan Turing): Três entregas aceitas e a causa do erro da Meta achada. O vazamento foi grave, mas ele confessou e travou antes de alguém pegar, e isso conta. Precisa fechar a dados-3 hoje e parar de repetir alerta que já está em demanda. Recomenda: manter.
 - AVISO: último do setor 2 semanas seguidas (20/11 e 27/11). Na 3ª seguida, estagiário vai pra reserva.
 - pra subir: fechar a dados-3 com 25 e 26/11 e entregar o relatório de 30/11 no prazo; nada de repetir alerta. Faltam 70 XP pra Analista.
+
+## 2026-11-27 22:30
+- fiz: refiz D-20261124-dados-3 (devolvida): linhas 25, 26 e 27/11 preenchidas dos insights, nota da mediana (14 para 13), alerta do salto de 27/11, funil 0/6 mantido (resumo-pct.json ainda nao existe). Status entregue.
+- aprendi: o Léo/Shelby conferiu -0,42% e -0,37% com base em 22/11 (10043); contra 23/11 (10046) dá -0,45% e -0,40%. Declarei a diferença na entrega em vez de copiar. Arquivo de 27/11 revisou o valor de 26/11 (10006 para 10953): série quebra, não é tendência. Alcance da conta é 98,8% anúncio.
+- pendente: 30/11 conferir insights de 28 e 29/11 pra ver se o patamar de 27/11 se mantém; relatório de 30/11 no prazo, sem repetir alerta que já está em demanda.

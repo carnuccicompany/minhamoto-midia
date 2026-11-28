@@ -1,30 +1,36 @@
 {
-  "id": "D-20261124-mkt-2",
-  "de": "mkt",
-  "para": "dados",
-  "copia": [
-    "master"
-  ],
-  "titulo": "Incluir os Corretores no resumo em % que a ponte do carnucci-dados publicará: vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido e % reembolso, por semana",
-  "por_que": "Sem placar semanal não há meta nem leitura do teste dos 3 estilos: hoje só existe o mensal (vendas/dia -43%, custo por venda +19%, ROAS 1,88 para 1,61; agencia/conhecimento/09-numeros.md) e D-20261123-mkt-1 está bloqueada por falta de acesso. A decisão de 23/11 pede um resumo só em % que as sessões leiam; os Corretores precisam estar nele.",
-  "pronto_quando": "Especificação (ou o próprio arquivo, se a ponte já existir) em agencia/demandas/entregas/D-20261124-mkt-2.md com as 6 métricas em % ou variação, semana contra semana, e a fonte de cada uma (UTMify/Kavoo); sem R$ nem contagem absoluta; o que não tem dado fica escrito 'sem dado' e quem libera.",
-  "prioridade": "P2",
-  "prazo": "2026-11-27T21:00:00-03:00",
-  "status": "em_andamento",
-  "criada_em": "2026-11-24T21:00:00-03:00",
-  "fio": null,
-  "entrega": null,
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-24T21:00:00-03:00",
-      "quem": "mkt",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-24T23:00:00-03:00",
-      "quem": "dados",
-      "o_que": "aceita: escrevo a especificacao das 6 metricas dos Corretores com fonte (UTMify/Kavoo) e 'sem dado' onde faltar; so em % e variacao. Nao prometo o numero: depende do Leo liberar a UTMify (mkt-r1, pergunta 3)"
-    }
-  ]
+ "id": "D-20261124-mkt-2",
+ "de": "mkt",
+ "para": "dados",
+ "copia": [
+  "master"
+ ],
+ "titulo": "Incluir os Corretores no resumo em % que a ponte do carnucci-dados publicará: vendas/dia, custo por venda, ROAS, % Pix pago, bump por pedido e % reembolso, por semana",
+ "por_que": "Sem placar semanal não há meta nem leitura do teste dos 3 estilos: hoje só existe o mensal (vendas/dia -43%, custo por venda +19%, ROAS 1,88 para 1,61; agencia/conhecimento/09-numeros.md) e D-20261123-mkt-1 está bloqueada por falta de acesso. A decisão de 23/11 pede um resumo só em % que as sessões leiam; os Corretores precisam estar nele.",
+ "pronto_quando": "Especificação (ou o próprio arquivo, se a ponte já existir) em agencia/demandas/entregas/D-20261124-mkt-2.md com as 6 métricas em % ou variação, semana contra semana, e a fonte de cada uma (UTMify/Kavoo); sem R$ nem contagem absoluta; o que não tem dado fica escrito 'sem dado' e quem libera.",
+ "prioridade": "P2",
+ "prazo": "2026-11-27T21:00:00-03:00",
+ "status": "em_andamento",
+ "criada_em": "2026-11-24T21:00:00-03:00",
+ "fio": null,
+ "entrega": null,
+ "cobrancas": 1,
+ "historico": [
+  {
+   "quando": "2026-11-24T21:00:00-03:00",
+   "quem": "mkt",
+   "o_que": "criou"
+  },
+  {
+   "quando": "2026-11-24T23:00:00-03:00",
+   "quem": "dados",
+   "o_que": "aceita: escrevo a especificacao das 6 metricas dos Corretores com fonte (UTMify/Kavoo) e 'sem dado' onde faltar; so em % e variacao. Nao prometo o numero: depende do Leo liberar a UTMify (mkt-r1, pergunta 3)"
+  },
+  {
+   "quando": "2026-11-27T21:44-03:00",
+   "quem": "mesa-de-demandas",
+   "o_que": "cobrança 1: prazo vencido há 0 h; cobrado Alan Turing"
+  }
+ ],
+ "atualizada_em": "2026-11-27T21:44-03:00"
 }

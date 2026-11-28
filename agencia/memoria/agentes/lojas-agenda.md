@@ -46,3 +46,6 @@
 - Novas: D-20261126-lojas-1 (Ted, prova da janela de 7 dias do Play, P1 27/11 12h), -2 (Disney, promessa do anúncio x prints, 03/12), -3 (Turing, % de instalação por origem, 03/12).
 - Pesquisa: developer.apple.com (páginas de produto personalizadas e limites de metadados) bloqueada pelo WebFetch hoje; só o link veio da busca. A conferir.
 - Pendências do Léo: OK do 1★ ec124592 (sai da janela ~26/11 21h35Z), nota oficial do Play, domínios das lojas. D-20261123-lojas-2 venceu hoje, bloqueada.
+
+## Atualização 27/11 (Ted, lojas-1)
+- Janela de 7 dias do Play confirmada (ec124592 ausente na coleta 27/11 16:15Z, n=0). Entrega em demandas/entregas/D-20261126-lojas-1.md. Histórico próprio depende do Davi (D-20261124-dados-3); nota oficial do Console segue com o Léo.

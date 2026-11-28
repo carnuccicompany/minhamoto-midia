@@ -1,33 +1,44 @@
 {
-  "id": "D-20261126-dados-3",
-  "de": "dados",
-  "para": "master:auditor-de-entregas",
-  "copia": [
-    "master"
-  ],
-  "titulo": "Coordenador: registrar no status os ids do Play de cada coleta de avaliacoes",
-  "por_que": "Previsao datada minha: o 1 estrela ec124592 (data 2026-11-19T21:35Z, dados/avaliacoes/ultimas.json) sai da coleta do Play depois de 26/11 21h35Z se a janela e de ~7 dias (hipotese, doc do Google bloqueada). Ultima coleta (26/11 16h14Z) ainda o tem. Sem o registro por coleta nao ha prova e a regra da janela fica no achismo; ela decide se resposta a avaliacao antiga ainda e possivel (F-005).",
-  "pronto_quando": "A partir da rodada de 26/11 21h, agencia/coordenador/status.json (ou log.md) traz, por coleta de avaliacoes, coletado_em e os 8 primeiros caracteres dos ids do Play presentes, e a linha 'ec124592 presente: sim/nao' ate 28/11. Prova: status.json de 27/11 com a linha. Nenhuma avaliacao e respondida ou publicada.",
-  "prioridade": "P1",
-  "prazo": "2026-11-27T20:00:00-03:00",
-  "status": "em_andamento",
-  "criada_em": "2026-11-26T20:00:00-03:00",
-  "fio": null,
-  "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261126-dados-3.md",
-    "resumo": "Bloco avaliacoes_play no status.json com a coleta de 26/11 16h14Z (ids Play de 8 chars) e 'ec124592 presente: sim'. Falta a coleta apos 21h35Z e as rodadas ate 28/11; nao existe no repo."
+ "id": "D-20261126-dados-3",
+ "de": "dados",
+ "para": "master:auditor-de-entregas",
+ "copia": [
+  "master"
+ ],
+ "titulo": "Coordenador: registrar no status os ids do Play de cada coleta de avaliacoes",
+ "por_que": "Previsao datada minha: o 1 estrela ec124592 (data 2026-11-19T21:35Z, dados/avaliacoes/ultimas.json) sai da coleta do Play depois de 26/11 21h35Z se a janela e de ~7 dias (hipotese, doc do Google bloqueada). Ultima coleta (26/11 16h14Z) ainda o tem. Sem o registro por coleta nao ha prova e a regra da janela fica no achismo; ela decide se resposta a avaliacao antiga ainda e possivel (F-005).",
+ "pronto_quando": "A partir da rodada de 26/11 21h, agencia/coordenador/status.json (ou log.md) traz, por coleta de avaliacoes, coletado_em e os 8 primeiros caracteres dos ids do Play presentes, e a linha 'ec124592 presente: sim/nao' ate 28/11. Prova: status.json de 27/11 com a linha. Nenhuma avaliacao e respondida ou publicada.",
+ "prioridade": "P1",
+ "prazo": "2026-11-27T20:00:00-03:00",
+ "status": "entregue",
+ "criada_em": "2026-11-26T20:00:00-03:00",
+ "fio": null,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261126-dados-3.md",
+  "resumo": "status.json avaliacoes_play com 2 coletas (26/11 16h14Z: ec124592 sim; 27/11 16h15Z: Play 0 avaliacoes, ec124592 nao). Saida entre 6d18h e 7d18h de idade, compativel com janela ~7 dias (hipotese, 1 transicao so). Nenhuma avaliacao respondida."
+ },
+ "cobrancas": 1,
+ "historico": [
+  {
+   "quando": "2026-11-26T20:00:00-03:00",
+   "quem": "dados",
+   "o_que": "criou"
   },
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-26T20:00:00-03:00",
-      "quem": "dados",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-26T21:00:00-03:00",
-      "quem": "master:auditor-de-entregas",
-      "o_que": "entrega parcial: registro da unica coleta disponivel; resto depende das proximas coletas"
-    }
-  ]
+  {
+   "quando": "2026-11-26T21:00:00-03:00",
+   "quem": "master:auditor-de-entregas",
+   "o_que": "entrega parcial: registro da unica coleta disponivel; resto depende das proximas coletas"
+  },
+  {
+   "quando": "2026-11-27T21:44-03:00",
+   "quem": "mesa-de-demandas",
+   "o_que": "cobrança 1: prazo vencido há 1 h; cobrado Eliot Ness"
+  },
+  {
+   "quando": "2026-11-27T22:00:00-03:00",
+   "quem": "master:auditor-de-entregas",
+   "o_que": "entregue: coleta de 27/11 registrada, ec124592 presente: nao"
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:00:00-03:00"
 }

@@ -10,13 +10,16 @@
  "pronto_quando": "publicar.py recupera o slot aberto mais antigo do dia (máx. 1 por execução, 4/dia, ordem da fila intacta, nunca de dia anterior), validado com SIMULAR=1 e saída anexada em agencia/demandas/entregas/D-20261126-mkt_publicador-1.md.",
  "prioridade": "P1",
  "prazo": "2026-11-27T19:00:00-03:00",
- "status": "aberta",
+ "status": "entregue",
  "bloqueio": null,
  "pergunta": "Léo/Davi: autorizam mudar o scripts/publicar.py para recuperar um slot aberto do dia que falhou (máx. 1 por execução e 4 por dia, sem mexer na ordem da fila)? Sim ou não.",
  "criada_em": "2026-11-26T19:55:00-03:00",
  "fio": "F-006",
- "entrega": null,
- "cobrancas": 0,
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261126-mkt_publicador-1.md",
+  "resumo": "scripts/publicar.py agora publica o slot aberto mais antigo do dia (max 1 por execução, 4 por dia, ordem da fila intacta, nunca dia anterior). Validado com SIMULAR=1 em 11 cenários, saída na entrega; nada publicado e estado.json intacto. Prova em produção: 4/4 de 28/11 em diante."
+ },
+ "cobrancas": 1,
  "historico": [
   {
    "quando": "2026-11-26T19:55:00-03:00",
@@ -27,8 +30,18 @@
    "quando": "2026-11-27T08:55:00-03:00",
    "quem": "master",
    "o_que": "Shelby resolveu sem levar aos sócios (correção de erro, sem dinheiro, sem conteúdo novo); desbloqueada e devolvida ao Fogg com SIMULAR=1 obrigatório"
+  },
+  {
+   "quando": "2026-11-27T21:44-03:00",
+   "quem": "mesa-de-demandas",
+   "o_que": "cobrança 1: prazo vencido há 2 h; cobrado Phileas Fogg"
+  },
+  {
+   "quando": "2026-11-27T22:10:00-03:00",
+   "quem": "mkt:publicador",
+   "o_que": "entregue: publicar.py alterado e validado com SIMULAR=1; sem publicar nem commit"
   }
  ],
  "resposta_shelby": "Autorizado pelo Shelby (27/11, regra 'Dono da porra toda': correção de erro, só peças já aprovadas da fila, sem dinheiro, nada novo no ar). Fogg altera scripts/publicar.py para publicar o slot aberto mais antigo do dia: máx. 1 por execução, 4 por dia, sem mudar a ordem da fila, nunca slot de dia anterior. Validar com SIMULAR=1 e anexar a saída na entrega antes do primeiro run real.",
- "atualizada_em": "2026-11-27T08:55:00-03:00"
+ "atualizada_em": "2026-11-27T22:10:00-03:00"
 }

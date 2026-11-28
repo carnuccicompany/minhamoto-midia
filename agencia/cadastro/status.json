@@ -1,5 +1,5 @@
 {
- "atualizado": "26/11/2026 19:51",
+ "atualizado": "27/11/2026 21:52",
  "pct": 97.5,
  "categorias": [
   {
@@ -206,7 +206,7 @@
     },
     {
      "id": "master:auditor-de-entregas",
-     "titulo": "Eliot Ness — Estagiário · Direção-Geral",
+     "titulo": "Eliot Ness — Analista · Direção-Geral",
      "valor": 1.0,
      "status": "feito",
      "falta": []
@@ -405,6 +405,10 @@
   },
   {
    "data": "26/11/2026",
+   "pct": 97.5
+  },
+  {
+   "data": "27/11/2026",
    "pct": 97.5
   }
  ]

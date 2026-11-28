@@ -1,34 +1,44 @@
 {
-  "id": "D-20261126-lojas-1",
-  "de": "lojas",
-  "para": "lojas:respostas-as-avaliacoes",
-  "copia": [
-    "lojas"
-  ],
-  "titulo": "Guardar hoje o 1★ ec124592 e provar se a janela do Play é de 7 dias",
-  "por_que": "O 1★ de sincronização (v1.0.1, 19/11 21h35Z) é a única avaliação do Play em dados/avaliacoes/ultimas.json (coleta 26/11 16h14Z); a hipótese é que ele sai da API por volta de 26/11 21h35Z e a nota do Play vira n=0 sem histórico. Sem prova da janela não dá pra provar 'nota subiu' (+0,2 em 30 dias) nem planejar coleta.",
-  "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-lojas-1.md com: (1) numa coleta disparada depois de 26/11 21h35Z (27/11 de manhã), se ec124592 (só o id) ainda aparece, sim ou não, com a hora da coleta; (2) quantas avaliações o Play devolve e a menor data; (3) uma linha: janela de 7 dias confirmada, refutada ou a conferir. Sem texto nem autor do cliente.",
-  "prioridade": "P1",
-  "prazo": "2026-11-27T12:00:00-03:00",
-  "status": "em_andamento",
-  "criada_em": "2026-11-26T20:30:00-03:00",
-  "fio": "F-005",
-  "entrega": {
-    "arquivo": "agencia/demandas/entregas/D-20261126-lojas-1.md",
-    "resumo": "Parcial: linha do 1★ ec124592 guardada; última coleta (26/11 16:14Z) traz n=1 do Play, menor data 19/11 21:35Z, com a queda 3→2→1 como indício. Falta coleta posterior a 26/11 21:35Z (27/11 manhã) pra responder (1) e (3); janela segue 'a conferir'."
+ "id": "D-20261126-lojas-1",
+ "de": "lojas",
+ "para": "lojas:respostas-as-avaliacoes",
+ "copia": [
+  "lojas"
+ ],
+ "titulo": "Guardar hoje o 1★ ec124592 e provar se a janela do Play é de 7 dias",
+ "por_que": "O 1★ de sincronização (v1.0.1, 19/11 21h35Z) é a única avaliação do Play em dados/avaliacoes/ultimas.json (coleta 26/11 16h14Z); a hipótese é que ele sai da API por volta de 26/11 21h35Z e a nota do Play vira n=0 sem histórico. Sem prova da janela não dá pra provar 'nota subiu' (+0,2 em 30 dias) nem planejar coleta.",
+ "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261126-lojas-1.md com: (1) numa coleta disparada depois de 26/11 21h35Z (27/11 de manhã), se ec124592 (só o id) ainda aparece, sim ou não, com a hora da coleta; (2) quantas avaliações o Play devolve e a menor data; (3) uma linha: janela de 7 dias confirmada, refutada ou a conferir. Sem texto nem autor do cliente.",
+ "prioridade": "P1",
+ "prazo": "2026-11-27T12:00:00-03:00",
+ "status": "entregue",
+ "criada_em": "2026-11-26T20:30:00-03:00",
+ "fio": "F-005",
+ "entrega": {
+  "arquivo": "agencia/demandas/entregas/D-20261126-lojas-1.md",
+  "resumo": "Coleta 27/11 16:15Z: ec124592 ausente, Play n=0 (sem menor data; sem erro de coleta), App Store n=6. Janela de 7 dias do Play confirmada pelos dados (3→2→1→0); a citação oficial não consegui ler. Nota do Play sem histórico: depende de D-20261124-dados-3."
+ },
+ "cobrancas": 1,
+ "historico": [
+  {
+   "quando": "2026-11-26T20:30:00-03:00",
+   "quem": "lojas",
+   "o_que": "criou"
   },
-  "cobrancas": 0,
-  "historico": [
-    {
-      "quando": "2026-11-26T20:30:00-03:00",
-      "quem": "lojas",
-      "o_que": "criou"
-    },
-    {
-      "quando": "2026-11-26T22:00:00-03:00",
-      "quem": "lojas:respostas-as-avaliacoes",
-      "o_que": "em_andamento: entrega parcial gravada; falta a coleta pós 26/11 21h35Z (27/11 manhã), que não existe no repositório; nada inventado"
-    }
-  ],
-  "atualizada_em": "2026-11-26T22:00:00-03:00"
+  {
+   "quando": "2026-11-26T22:00:00-03:00",
+   "quem": "lojas:respostas-as-avaliacoes",
+   "o_que": "em_andamento: entrega parcial gravada; falta a coleta pós 26/11 21h35Z (27/11 manhã), que não existe no repositório; nada inventado"
+  },
+  {
+   "quando": "2026-11-27T21:44-03:00",
+   "quem": "mesa-de-demandas",
+   "o_que": "cobrança 1: prazo vencido há 9 h; cobrado Ted Lasso"
+  },
+  {
+   "quando": "2026-11-27T22:00:00-03:00",
+   "quem": "lojas:respostas-as-avaliacoes",
+   "o_que": "entregue: prova da janela de 7 dias gravada (coleta 27/11 16:15Z, ec124592 ausente, n=0)"
+  }
+ ],
+ "atualizada_em": "2026-11-27T22:00:00-03:00"
 }

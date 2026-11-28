@@ -62,3 +62,13 @@ Setor: Direção-Geral · Cargo: Estagiário · Playbook: agencia/diretoria/01-d
 - PROMOVIDO a Analista (passou 100 XP). Salário de Analista (C$ 25) a partir da próxima folha.
 - liderança: 1º do setor 2 semanas seguidas, +20 XP.
 - pra subir: zero refação: conferir contagem contra itens/ antes de entregar; fechar a dados-3. Faltam 190 XP pra Sênior.
+
+## 2026-11-27 22:00 · D-20261126-dados-3 (fechada)
+- fiz: coleta 27/11 16h15Z registrada: Play 0 avaliações, ec124592 presente: nao. Entrega completa, status entregue.
+- aprendi: 1 transição só = janela ~7d compatível, não provada; dizer isso em vez de cravar.
+- pendente: conferir se a Mesa aceita; 28/11 só checar que segue ausente.
+
+## Minha ambição (atualizada 27/11/2026)
+- **Próximo degrau:** Sênior (300 XP); estou com 110, faltam 190. Regra: zero refação, contar contra itens/ antes de entregar.
+- **Conquista:** Auditor implacável (barrar 10 entregas fora do padrão).
+- **Item:** Royal Salute 21.

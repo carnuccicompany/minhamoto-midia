@@ -10,7 +10,7 @@
   "pronto_quando": "Arquivo agencia/demandas/entregas/D-20261124-lojas-2.md com tabela data | loja | versão (campo versao_app do Play; iOS 'sem campo', não inventar) | nota | tema em 3 palavras, sem texto nem autor do cliente, cobrindo 72 h a partir da primeira avaliação de versão nova; 1-2★ de bug ou pagamento sinalizados pra mim na hora. Sem avaliação nova, dizer 'nenhuma' com a hora da coleta.",
   "prioridade": "P2",
   "prazo": "2026-11-27T21:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-24T21:30:00-03:00",
   "fio": "F-002",
   "entrega": {
@@ -28,7 +28,12 @@
       "quando": "2026-11-26T08:50:00-03:00",
       "quem": "lojas:respostas-as-avaliacoes",
       "o_que": "entregue"
+    },
+    {
+      "quando": "2026-11-27T13:30:00-03:00",
+      "quem": "lojas",
+      "o_que": "aceita: tabela bate com dados/avaliacoes/ultimas.json (App Store 6x5★ com datas 18/11,11/11,10/11x2,09/11x2; iOS 'sem campo'; sem texto/autor), 'nenhuma' com hora da coleta, sem 1-2★ novo. Coleta de 27/11 16:15Z mostra Play com 0 avaliações, o que reforça a hipótese de janela do Play e a decisão de guardar o histórico aqui. As 72 h seguem sem relógio por falta de versão nova, o que o arquivo declara."
     }
   ],
-  "atualizada_em": "2026-11-26T08:50:00-03:00"
+  "atualizada_em": "2026-11-27T13:30:00-03:00"
 }

@@ -12,7 +12,7 @@
   "pronto_quando": "Nota no fim de agencia/demandas/entregas/D-20261124-dados-5.md e na entrega da D-20261126-trafego-4: portão 6 = 'mapeado pelo QG em 26/11; falta ver Compra aparecer no dataset do app (sem dado até haver leitura)', e o que a leitura em % precisa mostrar (iOS e Android separados). Sem R$ nem absoluto. Prova: os dois arquivos.",
   "prioridade": "P1",
   "prazo": "2026-11-27T20:00:00-03:00",
-  "status": "entregue",
+  "status": "aceita",
   "criada_em": "2026-11-26T22:00:00-03:00",
   "fio": "F-001",
   "entrega": {
@@ -30,7 +30,12 @@
       "quando": "2026-11-26T22:30:00-03:00",
       "quem": "dados",
       "o_que": "entreguei: nota em D-20261124-dados-5.md e arquivo D-20261126-trafego-4.md; portão 6 mapeado pelo QG, sem verificação própria; hipótese 'mais de 80% Android' segue hipótese"
+    },
+    {
+      "quando": "2026-11-27T18:30:00-03:00",
+      "quem": "master",
+      "o_que": "aceitei: nota no fim de D-20261124-dados-5.md e em D-20261126-trafego-4.md confere com o pronto_quando (portao 6 mapeado pelo QG, fonte LICOES 26/11 e decisoes 26/11; falta Compra no dataset; leitura em % iOS/Android separados; sem R$ nem absoluto; honesto ao dizer que nao verificou no AppsFlyer)"
     }
   ],
-  "atualizada_em": "2026-11-26T22:30:00-03:00"
+  "atualizada_em": "2026-11-27T18:30:00-03:00"
 }

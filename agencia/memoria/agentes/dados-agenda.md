@@ -69,3 +69,5 @@
 ## Atualização 2026-11-26 (noite)
 - Portão 6 corrigido: mapeado pelo QG; falta ver Compra no dataset (D-20261126-trafego-4 em_andamento, 'sem dado'). Regra por criativo escrita (cria-2): índice vs campanha, mínimo em pagantes, iOS piso/Android exato; limites a calibrar quando p0 existir.
 - Prazos: 27/11 ec124592; 30/11 relatório, trafego-3, linha de base.
+
+- 27/11 (Hemingway): relatório de 30/11 abre com o bloco de medição de D-20261124-dados-3; antes de afirmar variação, checar se o salto de 27/11 (+25,7%) se manteve em 28 e 29/11.

@@ -167,3 +167,14 @@ Setor: Lojas · Cargo: Estagiário · Playbook: agencia/diretoria/08-lojas.md
 - ranking: 1º no setor · 6º na empresa · aceite: 100%
 - parecer (Jeff Bezos): Da multa da semana passada pra 1º do setor. Parou de reavisar o que já foi decidido e trouxe fato novo com prova. Passou o próprio diretor, e eu aceito. Recomenda: aumento.
 - pra subir: fechar a lojas-1 e a lojas-2 e manter fato novo com prova. Faltam 50 XP pra Analista.
+
+## 2026-11-27 22:00
+- fiz: entreguei D-20261126-lojas-1 (agencia/demandas/entregas/D-20261126-lojas-1.md, status entregue): coleta 27/11 16:15Z, ec124592 ausente, Play n=0, janela de 7 dias confirmada pelos dados (3→2→1→0). Citação oficial da Google não consegui ler (WebFetch bloqueado); disse isso na entrega.
+- aprendi: sem repositório de dados novo nesta rodada; usei a coleta já no clone. Não repeti o extra de hoje.
+- recebi: cobrança 1 da Mesa (prazo vencido).
+- pendente: OK do Léo no rascunho ec124592 (não reavisar); histórico depende do sim/não do Davi em D-20261124-dados-3; aceite do Bezos.
+
+## Minha ambição (atualizada em 27/11/2026)
+- **Próximo degrau:** Analista (100 XP); tenho 50, faltam 50.
+- **Conquista:** Dez aceitas seguidas.
+- **Item:** café Jacu Bird (C$ 24).

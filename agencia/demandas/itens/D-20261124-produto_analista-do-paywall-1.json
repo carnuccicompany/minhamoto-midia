@@ -17,7 +17,7 @@
     "arquivo": "agencia/demandas/entregas/D-20261123-master-pacote-davi.md",
     "resumo": "Itens 13 a 15 viraram a pergunta H do pacote v3, com o anexo P-001 .html (agencia/produto/propostas/P-001-plano-da-moto-apos-cadastro.html)."
   },
-  "cobrancas": 0,
+  "cobrancas": 1,
   "historico": [
     {
       "quando": "2026-11-24T11:00:00-03:00",
@@ -43,7 +43,17 @@
       "quando": "2026-11-26T22:10:00-03:00",
       "quem": "produto:analista-do-paywall",
       "o_que": "devolvida: o anexo P-001 .html agora esta na pergunta H (ok), mas a 1a pergunta mudou de sentido. A secao 4 pergunta se, logo apos o cadastro, o app ja tem os dados pra montar o plano DAQUELA MOTO SEM O KM DA CONFIGURACAO (se nao, vira plano em km medio do modelo). A H cortou 'sem o km da configuracao'; o Davi pode responder sim achando que o km existe. Falta restaurar esse trecho na H, copiando as 3 perguntas da secao 4 sem cortes (as 2 e 3 conferem). Resposta do Davi na P-001 so e cobrada depois que ele responder."
+    },
+    {
+      "quando": "2026-11-27T21:44-03:00",
+      "quem": "mesa-de-demandas",
+      "o_que": "cobrança 1: prazo vencido há 3 h; cobrado Thomas Shelby"
+    },
+    {
+      "quando": "2026-11-27T22:00:00-03:00",
+      "quem": "produto:analista-do-paywall",
+      "o_que": "reconferido: continua devolvida. A -2 nao cobre esta (e o tema moto fora do catalogo, itens I do pacote); a pergunta H do pacote v3 (linha 20) ainda diz 'o app ja tem os dados pra montar o plano?' sem 'daquela moto sem o km da configuracao' e sem 'se nao, vira plano em km medio do modelo'. Basta restaurar esse trecho copiando a pergunta 1 da secao 4 da P-001; as perguntas 2 e 3 conferem."
     }
   ],
-  "atualizada_em": "2026-11-26T22:10:00-03:00"
+  "atualizada_em": "2026-11-27T21:44-03:00"
 }

@@ -20,8 +20,8 @@
 
 - Léo/Davi: mesma pergunta, agora com 3 opções e números em entregas/D-20261122-master_auditor-de-entregas-1.md (recomendo A).
 
-- Léo/Davi: sim/não do publicar.py reaberto em D-20261126-mkt_publicador-1 (24 e 26/11 18h sem post). Léo/Coordenador: last_run de 'MM: Posts do horário' em 26/11 18h02 BRT (prova que falta).
-- Próxima rodada: conferir 21h de 26/11 e rodada das 12h de 27/11 em horarios_feitos (lembrar: BRT = UTC-3).
+- (resolvido 27/11: Shelby autorizou; publicar.py alterado, aguardando aceite do Shelby em D-20261126-mkt_publicador-1.) Antes: sim/não do publicar.py reaberto (24 e 26/11 18h sem post). Léo/Coordenador: last_run de 'MM: Posts do horário' em 26/11 18h02 BRT (prova que falta).
+- Próxima rodada (28/11): conferir horarios_feitos 4/4 com run ids (primeira prova do slot recuperado; F-006 = 3 dias). Antes: conferir 21h de 26/11 e rodada das 12h de 27/11 em horarios_feitos (lembrar: BRT = UTC-3).
 
 ## Ideias guardadas
 - Se o script passar a recuperar slot, mostrar no tiktok.html o aviso só quando o post sair de fato.
