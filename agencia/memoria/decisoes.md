@@ -110,3 +110,8 @@ Formato: data · decisão · contexto. Mais recente em cima. Repositório públi
 - 27/11 (Léo): resposta de WhatsApp pra lead do MinhaMoto: NADA de abertura tipo "Opa, tudo certo? Aqui é do MinhaMoto" e nada de mensagem longa. Responder direto o que a pessoa perguntou ("como funciona") em 1–2 frases + link de teste (OneLink pid=whatsapp). Preço só se perguntarem.
 
 - 27/11 (Léo): campanhas MinhaMoto refeitas: Pixel Novo + IC + sem WhatsApp, início 28/11 6h; os antigos pausados. Teste de fogo dos agentes remarcado pra 28/11 15h.
+## 28/11 — Campanhas sobem SÓ pela conta da Ana Paula (Dolphin)
+- Toda criação/edição de campanha é feita pelo Léo no Dolphin, na conta da Ana Paula (BM de anúncios). Nunca pelo perfil pessoal do Léo (perfil da Matriz) nem pelo Chrome dele.
+- Claude/agentes NÃO operam o Gerenciador de Anúncios pelo Chrome do Léo. Papel do Claude: preparar pacote (artes nomeadas, checklist de configuração, textos, links com UTM) para o Léo subir.
+- Motivo: contingência — o perfil da Matriz guarda pixels e páginas e não pode ter atividade de anúncio.
+- Exceção registrada: em 27/11 os 18 conjuntos "Cópia" do MinhaMoto foram feitos pelo perfil do Léo (erro, não repetir).
