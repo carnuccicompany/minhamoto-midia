@@ -1,39 +1,36 @@
 {
-  "rodada": "2026-11-27T08:41:00-03:00",
+  "rodada": "2026-11-27T21:45:00-03:00",
   "ok": true,
   "tarefas": {
-    "resumo": "nenhuma tarefa MM enabled com falha (todas SUCCEEDED; Vigia desta rodada em andamento)",
+    "resumo": "todas as tarefas MM enabled com último status SUCCEEDED (Vigia = esta rodada); nada a re-disparar",
     "desativadas_nao_reativadas": [
       "produção diária",
       "MM: Vigia do Gmail (desativada 25/11)"
     ]
   },
   "publicacao_hoje": {
-    "slots": "27/11: nenhum slot venceu ainda (12h02 BRT é o primeiro); 21h de 26/11 (CM01) completo IG+FB",
-    "proximo": "12h02 BRT 27/11 (vigiar se o gatilho dispara; 18h de 26/11 já foi perdido)"
+    "slots": "27/11: 12h DV09, 15h E06, 18h CM02, 21h B15 — 4/4 IG+FB (o gatilho das 12h02 disparou; o 18h de 26/11 já tinha sido recuperado antes)",
+    "proximo": "12h02 BRT 28/11"
   },
-  "dias_de_fila": 20.0,
-  "nao_publicados": 80,
+  "dias_de_fila": 19.0,
+  "nao_publicados": 76,
   "pendentes_aprovacao": 0,
   "tiktok_916": "113/113",
   "acoes": [
-    "Nenhuma ação corretiva necessária; Mesa de Demandas NÃO disparada (sem P1 aberta/devolvida e sem demanda atrasada: P1 lojas-1 e dados-3 em andamento no prazo; trafego-2 já aceita)"
+    "Disparei 1x a Mesa de Demandas (P1 abertas: mkt_publicador-1, professor-1/2; lojas-1 em andamento; Mesa não rodou em 27/11)"
   ],
-  "alertas": [
-    "Vigiar se o gatilho das 12h02 BRT dispara hoje (18h de 26/11 foi perdido)."
-  ],
+  "alertas": [],
   "insights_diario": {
-    "data_utc_hoje": "2026-11-27",
+    "data_utc_hoje": "2026-11-28",
     "alerta": false,
     "ultimo_arquivo": "dados/insights-2026-11-27.json",
-    "coletado_em_brt": "2026-11-27T08:25-03:00",
     "erros": [],
-    "linha": "arquivo de hoje existe · erros vazio"
+    "linha": "último arquivo 27/11; cron 23h41 BRT gera o de 28/11 · erros vazio"
   },
   "segredos": "vigia_segredos ok",
   "demandas": {
-    "P1_aberta": "D-20261126-lojas-1 (prazo 27/11 12h, em andamento), D-20261126-dados-3 (27/11 20h, em andamento)",
-    "mesa": "rodou 26/11 08h40; não redisparada"
+    "P1_aberta": "mkt_publicador-1 (aberta, Fogg), professor-1 e professor-2 (prazo 28/11 12h), lojas-1 e dados-3 em andamento",
+    "mesa": "disparada 27/11 21h45 BRT (1x)"
   },
   "avaliacoes_play": {
     "demanda": "D-20261126-dados-3",

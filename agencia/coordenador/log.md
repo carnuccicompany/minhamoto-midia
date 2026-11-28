@@ -312,3 +312,5 @@
 - 26/11 21h50 BRT · 1 falha de post: 18h perdido (gatilho não disparou) e 21h CM01 saiu só no FB (IG erro Meta 9007 transitório). Recuperei: publicador forcar=true publicou o IG do CM01 (sem duplicar FB). Fila 19,75 dias (79), sem pendentes, sem segredo, nenhuma tarefa com falha. Mesa não redisparada (rodou 8h40).
 
 - 27/11 8h41 BRT · sem falha: nenhuma tarefa com falha, 21h de ontem completo, fila 20 dias (80), sem pendentes, sem segredo, insights de hoje ok. Mesa não disparada (sem P1 aberta/devolvida nem atrasada).
+
+- 27/11 21h45 BRT · sem falha: 4/4 posts de hoje IG+FB, nenhuma tarefa com falha, fila 19 dias (76), sem pendentes, sem segredo, insights ok. Disparei a Mesa de Demandas 1x (P1 abertas: mkt_publicador-1, professor-1/2).
