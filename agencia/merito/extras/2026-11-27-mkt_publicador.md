@@ -30,3 +30,8 @@
 - tipo: risco
 - o quê: a cobrança de 30 min do TikTok das 21h (CM02) também não foi criada; 5ª rodada seguida sem cobrança, porque create_trigger exige aprovação do Léo em rodada agendada. Sem ajuste, nenhum lembrete de 30 min sai.
 - prova: create_trigger "Cobrança TikTok 18h" recusado em 27/11 21:0x UTC ("needs the user's approval"); CM02 publicado em 21:04 UTC (fila/estado.json).
+
+## mkt:publicador · 2026-11-27 21:15
+- tipo: risco
+- o quê: a cobrança de 30 min do TikTok das 21h (B15) não foi criada; 6ª rodada seguida sem cobrança, porque create_trigger exige aprovação do Léo em rodada agendada. Opção: o Léo criar a cobrança fixa nas 4 horas (12h32, 15h32, 18h32, 21h32) numa tarefa própria.
+- prova: create_trigger "Cobrança TikTok 21h" recusado em 28/11 00:0x UTC ("needs the user's approval"); B15 publicado às 00:04:48 UTC (fila/estado.json).
